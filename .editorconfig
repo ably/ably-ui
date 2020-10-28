@@ -1,0 +1,19 @@
+# http://editorconfig.org
+
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Set default charset
+[*.{js,rb,css}]
+charset = utf-8
+
+[*.{css,html,js,jsx,json,rb}]
+indent_size = 2
