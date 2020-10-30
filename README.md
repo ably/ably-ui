@@ -160,11 +160,24 @@ Adapted components are HTML components which have been wrapped into `React` or `
 
 In some cases, these components will not work as intended - for example, if we have a component that needs to remove/add many DOM nodes as part of it's functionality. This would break `React` rendering. For these cases, add an exception to the build script for the given framework and create a dedicated component for that framework. ⚠️
 
-### Publishing ⚠️
+### Publishing
 
 We use [Semantic Versioning 2.0.0](https://semver.org/) to version different library versions.
 
-Publishing is done by tagging a release in Github. This triggers a Github action that pushes to the private npm and gem registries as well as publishing new artifacts in the CDN, with the version taken from the tag of the Github release.
+Packages are published to the [Github private registry](https://github.com/features/packages).
+
+Publishing is done by tagging a release in Github. This triggers a Github action that pushes to the private npm and gem registries as well as publishing new artifacts in the CDN, with the version taken from the tag of the Github release. ⚠️
+
+#### Local publishing
+
+You will need to authenticate with the Github [npm registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
+
+To publish, run:
+```
+./release.sh VERSION_NUMBER
+```
+
+This will release the packages, update `package.json` and `version.rb` and create & push a new git tag.
 
 ### Running tests ⚠️
 

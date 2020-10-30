@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dominik.piatek@ably.com"]
   spec.summary       = "Shared component library and design system for Ably Real-time Ltd (ably.com)"
   spec.licenses      = ['Apache-2.0']
+  spec.homepage      = "https://github.com/ably/ably-ui"
 
   spec.metadata = {
     "source_code_uri" => "https://github.com/ably/ably-ui",
