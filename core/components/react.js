@@ -1,1 +1,1 @@
-export { default as Meganav } from './Meganav/component.jsx';
+export { default as Meganav } from "./Meganav/component.jsx";
