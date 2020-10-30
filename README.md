@@ -41,9 +41,11 @@ https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/meganav/index.html
 ```
 
 
-### NPM ⚠️
+### NPM
 
 This type of installation gives you access to `HTML` and `React` components.
+
+⚠️  This works currently only through our private GitHub registry, so you will need a [Github Access Token in an `.npmrc` at the root of your project](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#installing-a-package).
 
 
 ```bash
@@ -56,7 +58,7 @@ yarn add @ably/ably-ui
 
 ___Note:___ Following examples assume an `es6` modules Javascript environment.
 
-To attach the imported javascript from the `core` module to the `window` object:
+To attach the imported javascript from the `core` module to the `window` object: ⚠️
 
 ```js
 import "@ably/ably-ui/core/global";
@@ -64,36 +66,36 @@ import "@ably/ably-ui/core/global";
 // ablyUi.core is now available on window
 ```
 
-To import an es6 `core` module and expose nothing to window:
+To import an es6 `core` module and expose nothing to window: ⚠️
 
 ```js
 import ablyUiCore from "@ably/ably-ui/core";
 ```
 
-To import the javascript for an `Accordion` component:
+To import the javascript for an `Accordion` component: ⚠️
 
 ```js
 import Accordion from "@ably/ably-ui/core/accordion";
 ```
 
-If your bundler supports HTML/CSS/etc importing you can import the module assets:
+If your bundler supports HTML/CSS/etc importing you can import the module assets: ⚠️
 
 ```js
 import "@ably/ably-ui/core/styles.css";
 ```
 
-And components assets:
+And components assets: ⚠️
 
 ```js
 import megaNavHTML from "@ably/ably-ui/core/meganav/index.html";
 ```
 
-#### Importing React components ⚠️
+#### Importing React components
 
-If you are using [React](https://reactjs.org/), the import is sligtly different and the imported component will include all of its required assets (ie. styles unique to that component):
+If you are using [React](https://reactjs.org/), the import is different and the imported component will include all of its required assets (ie. styles unique to that component):
 
 ```js
-import MegaNav from "@ably/ably-ui/modules/core/meganav-react";
+import { Meganav } from '@ably/ably-ui/core/components/react';
 ```
 
 #### Importing ViewComponent (Rails) components ⚠️
@@ -108,7 +110,7 @@ gem 'ably-ui'
 Components are exposed as [View Components](https://github.com/github/view_component) and should be available in any view:
 
 ```erb
-<%= render(AblyUI::Core::MegaNav.new) %>
+<%= render(AblyUi::Core::Meganav.new) %>
 ```
 
 See the [sidecar instructions](https://github.com/github/view_component#sidecar-assets-experimental) for how to load CSS/javascript assets included with components.
@@ -142,9 +144,11 @@ See `package.json` for the minimum required node/yarn versions and then install 
 
 To start the server, run `yarn start` and go to `http://localhost:9000`. When changes are made to any files the server will refresh the page automatically.
 
-### Adapted components ⚠️
+### Adapted components
 
-Adapted components are components which have a version of themselves for `React` or `Rails` created by our scripts. A data structure in `src/build.js` lists all adapted components. Otherwise, all components in `components` folders are transpiled where necessary and added to `dist`, from which the pipeline will push the new files to their correct destinations.
+Adapted components are HTML components which have been wrapped into `React` or `Rails` compatible wrappers during build time. Details depend on the wrapper, but these components still can have an external JS and/or CSS file.
+
+In some cases, these components will not work as intended - for example, if we have a component that needs to remove/add many DOM nodes as part of it's functionality. This would break `React` rendering. For these cases, add an exception to the build script for the given framework and create a dedicated component for that framework. ⚠️
 
 ### Publishing ⚠️
 
