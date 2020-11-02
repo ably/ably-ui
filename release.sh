@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
-set -euxo pipefail
+set -euo pipefail
 
 echo "Fetching remote for up to date commit history"
 git fetch
