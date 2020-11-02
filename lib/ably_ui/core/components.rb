@@ -3,4 +3,4 @@ module AblyUi
   end
 end
 
-require "ably_ui/core/Meganav/component"
+require "ably_ui/core/meganav/component"
