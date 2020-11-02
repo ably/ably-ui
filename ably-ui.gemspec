@@ -17,4 +17,6 @@ Gem::Specification.new do |spec|
   }
 
   spec.files         = `git ls-files`.split("\n")
+
+  spec.add_dependency "view_component", '~> 2.21.0'
 end
