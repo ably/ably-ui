@@ -73,17 +73,18 @@ modules.forEach((moduleName) => {
     path.join(railsPath, snakeCaseModuleName, "components.rb"),
     { flags: "a" }
   );
-  railsComponentIndex.write(rubyModuleTemplate(moduleName));
+  railsComponentIndex.write(rubyModuleTemplate(snakeCaseModuleName));
 
   // Find all component.html files
   const componentsHTML = findAllComponentFiles(`src/${moduleName}`);
 
   const createRailsComponent = (filepath) => {
     const componentName = componentNameFromPath(path.dirname(filepath));
+    const snakeCaseComponentName = snakeCase(componentName);
     const railsComponentPath = path.join(
       railsPath,
       snakeCaseModuleName,
-      snakeCase(componentName)
+      snakeCaseComponentName
     );
 
     fs.mkdirSync(railsComponentPath);
@@ -96,7 +97,7 @@ modules.forEach((moduleName) => {
       rubyComponentTemplate(moduleName, componentName)
     );
     railsComponentIndex.write(
-      `require "ably_ui/${snakeCaseModuleName}/${componentName}/component"`
+      `require "ably_ui/${snakeCaseModuleName}/${snakeCaseComponentName}/component"`
     );
   };
 
