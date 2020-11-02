@@ -1,5 +1,10 @@
 #!/bin/bash
-set -e
+
+# See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
+set -euxo pipefail
+
+echo "Fetching remote for up to date commit history"
+git fetch
 
 if [ $# -ne 1 ]; then
   echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
