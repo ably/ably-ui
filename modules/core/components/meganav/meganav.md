@@ -1,1 +1,0 @@
-<!-- documents the meganav component -->

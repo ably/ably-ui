@@ -1,0 +1,30 @@
+{
+  "name": "@ably/ably-ui",
+  "version": "0.0.11",
+  "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
+  "repository": "git@github.com:ably/ably-ui.git",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "change-case": "^4.1.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-react": "^7.21.5",
+    "html-to-react-components": "^1.6.6",
+    "prettier": "2.1.2"
+  },
+  "files": [
+    "core"
+  ],
+  "scripts": {
+    "build:adapted-components": "node build-adapted-components.js",
+    "format:js": "yarn prettier --write \"src/**/*.js\" build-adapted-components.js",
+    "lint:js": "eslint \"src/**/*.js\" build-adapted-components.js"
+  },
+  "engines": {
+    "node": ">=12.16.1",
+    "yarn": ">=1.22.4"
+  }
+}
