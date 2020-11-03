@@ -7,7 +7,7 @@ const capitalCase = require("change-case").capitalCase;
 const modules = ["core"];
 const htmlTemplate = "component.html";
 
-const railsPath = path.join("lib", "ably_ui");
+const rubyPath = path.join("lib", "ably_ui");
 
 const findAllComponentFiles = (
   root,
@@ -53,50 +53,50 @@ const createNpmModuleDir = (moduleName) => {
   fs.mkdirSync(path.join(moduleName, "components"), { recursive: true });
 };
 
-const createRailsModuleDir = (snakeCaseModuleName) => {
-  const railsModulePath = path.join(railsPath, snakeCaseModuleName);
-  fs.rmdirSync(railsModulePath, { recursive: true });
-  fs.mkdirSync(railsModulePath, { recursive: true });
+const createRubyModuleDir = (snakeCaseModuleName) => {
+  const rubyModulePath = path.join(rubyPath, snakeCaseModuleName);
+  fs.rmdirSync(rubyModulePath, { recursive: true });
+  fs.mkdirSync(rubyModulePath, { recursive: true });
 };
 
 modules.forEach((moduleName) => {
   const snakeCaseModuleName = snakeCase(moduleName);
 
   createNpmModuleDir(moduleName);
-  createRailsModuleDir(snakeCaseModuleName);
+  createRubyModuleDir(snakeCaseModuleName);
 
   // Open files for writing that will be indexes for components
   const reactComponentIndex = fs.createWriteStream(
     path.join(moduleName, "components", "react.js")
   );
-  const railsComponentIndex = fs.createWriteStream(
-    path.join(railsPath, snakeCaseModuleName, "components.rb"),
+  const rubyComponentIndex = fs.createWriteStream(
+    path.join(rubyPath, snakeCaseModuleName, "components.rb"),
     { flags: "a" }
   );
-  railsComponentIndex.write(rubyModuleTemplate(snakeCaseModuleName));
+  rubyComponentIndex.write(rubyModuleTemplate(snakeCaseModuleName));
 
   // Find all component.html files
   const componentsHTML = findAllComponentFiles(`src/${moduleName}`);
 
-  const createRailsComponent = (filepath) => {
+  const createRubyComponent = (filepath) => {
     const componentName = componentNameFromPath(path.dirname(filepath));
     const snakeCaseComponentName = snakeCase(componentName);
-    const railsComponentPath = path.join(
-      railsPath,
+    const rubyComponentPath = path.join(
+      rubyPath,
       snakeCaseModuleName,
       snakeCaseComponentName
     );
 
-    fs.mkdirSync(railsComponentPath);
+    fs.mkdirSync(rubyComponentPath);
     fs.copyFileSync(
       filepath,
-      path.join(railsComponentPath, "component.html.erb")
+      path.join(rubyComponentPath, "component.html.erb")
     );
     fs.writeFileSync(
-      path.join(railsComponentPath, "component.rb"),
+      path.join(rubyComponentPath, "component.rb"),
       rubyComponentTemplate(moduleName, componentName)
     );
-    railsComponentIndex.write(
+    rubyComponentIndex.write(
       `require "ably_ui/${snakeCaseModuleName}/${snakeCaseComponentName}/component"`
     );
   };
@@ -124,9 +124,9 @@ modules.forEach((moduleName) => {
 
   componentsHTML.forEach((filepath) => {
     createReactComponent(filepath);
-    createRailsComponent(filepath);
+    createRubyComponent(filepath);
   });
 
   reactComponentIndex.end();
-  railsComponentIndex.end();
+  rubyComponentIndex.end();
 });
