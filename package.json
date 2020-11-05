@@ -1,11 +1,11 @@
 {
   "name": "@ably/ably-ui",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ably"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "change-case": "^4.1.1",
