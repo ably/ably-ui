@@ -5,7 +5,7 @@
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/ably"
   },
   "devDependencies": {
     "change-case": "^4.1.1",
