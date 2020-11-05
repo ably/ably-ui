@@ -11,7 +11,9 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-if [[ "$BRANCH" != "main" ]]; then
+BRANCH=$(git branch --show-current)
+
+if [[ $BRANCH != "main" ]]; then
   echo $0: "Error: Versions can only be released from the main branch"
   exit 1
 fi
