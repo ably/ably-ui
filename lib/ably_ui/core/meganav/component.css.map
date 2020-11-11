@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://AblyUi.Core.[name]/src/core/Meganav/component.css"],"names":[],"mappings":"AAAA;EACE,UAAU;AACZ","file":"core/Meganav/component.css","sourcesContent":[".a-core-meganav {\n  color: red;\n}\n"],"sourceRoot":""}
