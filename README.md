@@ -31,24 +31,18 @@ You can access all assets directly on the CDN:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/styles.min.css"
+  href="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/styles.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/scripts.js"></script>
 ```
 
-The above includes all the global CSS classes and variables from the `core` module and the `ablyUi.core` javascript namespace.
-
-If needed, component HTML can be accessed as well:
-
-```http
-https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/meganav/index.html
-```
+The above includes all the CSS from the `Core` module and the `AblyUi.Core` javascript namespace.
 
 ### NPM
 
-This type of installation gives you access to `HTML` and `React` components.
+This type of installation gives you access to module/components assets as well as React components.
 
-⚠️ This works currently only through our private GitHub registry, so you will need a [Github Access Token in an `.npmrc` at the root of your project](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#installing-a-package).
+Note the package is currently hosted in our private GitHub registry, so you will need a `GITHUB_REGISTRY_TOKEN` environment variable in your shell to be able to install it. See [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for instructions on obtaining one.
 
 ```bash
 npm install @ably/ably-ui
@@ -58,46 +52,38 @@ npm install @ably/ably-ui
 yarn add @ably/ably-ui
 ```
 
-**_Note:_** Following examples assume an `es6` modules Javascript environment.
-
-To attach the imported javascript from the `core` module to the `window` object: ⚠️
+To attach the imported javascript from the `Core` module to the `window` object:
 
 ```js
-import "@ably/ably-ui/core/global";
+import "@ably/ably-ui/core/scripts";
 
-// ablyUi.core is now available on window
+// AblyUi.Core is now available on window
 ```
 
-To import an es6 `core` module and expose nothing to window: ⚠️
+To import an es6 `core` module and expose nothing to window:
 
 ```js
-import ablyUiCore from "@ably/ably-ui/core";
+import ablyUiCore from "@ably/ably-ui/core/scripts";
 ```
 
-To import the javascript for an `Accordion` component: ⚠️
+To import the javascript for an `Accordion` component:
 
 ```js
-import Accordion from "@ably/ably-ui/core/accordion";
+import Accordion from "@ably/ably-ui/core/accordion/component";
 ```
 
-If your bundler supports HTML/CSS/etc importing you can import the module assets: ⚠️
+If your bundler supports CSS importing you can import is as well:
 
 ```js
 import "@ably/ably-ui/core/styles.css";
 ```
 
-And components assets: ⚠️
-
-```js
-import megaNavHTML from "@ably/ably-ui/core/meganav/index.html";
-```
-
 #### Importing React components
 
-If you are using [React](https://reactjs.org/), the import is different and the imported component will include all of its required assets (ie. styles unique to that component):
+If you are using [React](https://reactjs.org/), the import is different. Note that depending on the component, you might still need include CSS & JS for it:
 
 ```js
-import { Meganav } from "@ably/ably-ui/core/components/react";
+import Meganav from "@ably/ably-ui/core/Meganav";
 ```
 
 #### Importing ViewComponent (Rails) components ⚠️
@@ -105,8 +91,16 @@ import { Meganav } from "@ably/ably-ui/core/components/react";
 To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
 
 ```ruby
-gem 'ably-ui'
+gem "ably-ui", '~> 0.0.13', require: 'ably_ui', source: "https://rubygems.pkg.github.com/ably"
 ```
+
+And then run:
+
+```bash
+bundle config https://rubygems.pkg.github.com/ably USERNAME:TOKEN
+```
+
+Where `USERNAME` is your Github username (without the `@`) and TOKEN is your [Github access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token). This is require because the gem is downloaded from a private gem registry on Github.
 
 Components are exposed as [View Components](https://github.com/github/view_component) and should be available in any view:
 
@@ -114,7 +108,27 @@ Components are exposed as [View Components](https://github.com/github/view_compo
 <%= render(AblyUi::Core::Meganav.new) %>
 ```
 
-See the [sidecar instructions](https://github.com/github/view_component#sidecar-assets-experimental) for how to load CSS/javascript assets included with components.
+To load CSS/JS, in `application.rb` add:
+
+```
+config.assets.paths << AblyUi::Integration.asset_paths
+```
+
+Then in files Javascript files loaded by Sprockets, you can do:
+
+```js
+//= require ably_ui/core/accordion/component
+```
+
+And in CSS files:
+
+```css
+/*
+*=require ably_ui/core/meganav/component
+*/
+```
+
+If you are using webpacker, install the npm module and import from there. (Note: it would obviously be better to have a single dependency but webpacker does not support dynamic path loading at the time of writing).
 
 ## Usage
 
@@ -154,11 +168,44 @@ See `package.json` for the minimum required node/yarn versions and then install 
 
 To start the server, run `yarn start` and go to `http://localhost:9000`. When changes are made to any files the server will refresh the page automatically.
 
-### Adapted components
+### Components
 
-Adapted components are HTML components which have been wrapped into `React` or `Rails` compatible wrappers during build time. Details depend on the wrapper, but these components still can have an external JS and/or CSS file.
+Components and modules contain JS and CSS files but no templates. Instead, for each framework that a given component supports, a separate "framework template" is created. A component can still be used in any other framework by just using it's required assets.
 
-In some cases, these components will not work as intended - for example, if we have a component that needs to remove/add many DOM nodes as part of it's functionality. This would break `React` rendering. For these cases, add an exception to the build script for the given framework and create a dedicated component for that framework. ⚠️
+All components live in `src` and follow a directory and filename convention:
+
+- module directory (TitleCase)
+  - module asset files: `scripts.js` for Javascript and `styles.css` for CSS
+  - component directory (TitleCase)
+    - entry asset, template and framework files (all named `component` but with adequate extensions)
+    - other files ⚠️
+
+For example:
+
+```
+- Core
+  - script.js
+  - styles.css
+  - Accordion
+    - component.rb
+    - component.html.erb
+    - component.js
+    - component.css
+    - component.jsx
+```
+
+#### Bundling
+
+Run the `./build.sh` script. This will:
+
+- remove all module directories at root and at `lib/ably_ui`
+- run webpack to compile assets into module directories
+- copy files that are compiled by webpack into `lib/ably_ui`
+- copy files that do not need compilation from `src` to `lib/ably_ui`
+
+### Adding a new component ⚠️
+
+### Adding a new module ⚠️
 
 ### Publishing
 
@@ -173,6 +220,7 @@ Publishing is done by tagging a release in Github. This triggers a Github action
 You will need to authenticate with the Github [npm registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
 
 To publish, run:
+
 ```
 ./release.sh VERSION_NUMBER
 ```
