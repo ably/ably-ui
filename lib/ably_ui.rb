@@ -1,7 +1,12 @@
 require "ably_ui/version"
 
 module AblyUi
-  module Core
+  module Integration
+    class << self
+      def asset_paths
+        File.expand_path("../lib", File.dirname(__FILE__))
+      end
+    end
   end
 end
 
