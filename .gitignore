@@ -2,3 +2,4 @@ node_modules
 vendor
 .bundle
 ably-ui-*.gem
+.DS_Store
