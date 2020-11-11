@@ -1,0 +1,6 @@
+lib
+*.rb
+*.html.rb
+ably-ui.gemspec
+Gemfile
+Gemfile.lock
