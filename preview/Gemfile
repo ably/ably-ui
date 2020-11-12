@@ -29,3 +29,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Rails shared components framework
+gem "view_component", '~> 2.21.0', require: "view_component/engine"
+
+gem "ably-ui", '~> 0.0.14', require: 'ably_ui', path: ".."
