@@ -91,12 +91,12 @@ import Meganav from "@ably/ably-ui/core/Meganav";
 To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
 
 ```ruby
-gem "ably-ui", '~> 0.0.13', require: 'ably_ui', source "https://rubygems.pkg.github.com/ably"
+gem "ably-ui", '~> 0.0.13', require: 'ably_ui', source: "https://rubygems.pkg.github.com/ably"
 ```
 
 And then run:
 
-```
+```bash
 bundle config https://rubygems.pkg.github.com/ably USERNAME:TOKEN
 ```
 
