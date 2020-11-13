@@ -166,7 +166,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ably-ui (~> 0.0.14)!
+  ably-ui (~> 0.0.15)!
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
