@@ -79,6 +79,30 @@ const copyComponentTemplates = (mod, componentName) => {
   printDone();
 };
 
+// TODO: we don't need to do this on every compile as they don't change as much but for now it's fast anyway
+const copyFonts = (mod) => {
+  process.stdout.write(`> Copying fonts for ${colorizeMod(mod.name)} ... `);
+
+  const fontsPath = path.join(srcPath, mod.directory, "fonts");
+  const gemFontsPath = path.join(rubyPath, mod.directory, "fonts");
+  const npmFontsPath = path.join(mod.directory, "fonts");
+
+  const fonts = fs.readdirSync(fontsPath);
+
+  fs.rmdirSync(gemFontsPath, { recursive: true });
+  fs.rmdirSync(npmFontsPath, { recursive: true });
+
+  fs.mkdirSync(gemFontsPath);
+  fs.mkdirSync(npmFontsPath);
+
+  fonts.forEach((filename) => {
+    copyFromTo(fontsPath, npmFontsPath)(filename);
+    copyFromTo(fontsPath, gemFontsPath)(filename);
+  });
+
+  printDone();
+};
+
 const sync = () => {
   console.log("");
 
@@ -86,6 +110,7 @@ const sync = () => {
     fs.rmdirSync(path.join(rubyPath, mod.directory), { recursive: true });
 
     copyCompiledModuleAssets(mod);
+    copyFonts(mod);
 
     mod.components.forEach((componentName) => {
       copyComponentTemplates(mod, componentName);
