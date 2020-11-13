@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack://AblyUi.[name]/src/core/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;AACjB","file":"core/styles.css","sourcesContent":["body {\n  font-size: 12px;\n}\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack://AblyUi.Core/src/core/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;AACjB","file":"core/styles.css","sourcesContent":["body {\n  font-size: 12px;\n}\n"],"sourceRoot":""}
