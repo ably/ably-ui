@@ -79,13 +79,19 @@ const copyComponentTemplates = (mod, componentName) => {
   printDone();
 };
 
-modules.forEach((mod) => {
-  fs.rmdirSync(path.join(rubyPath, mod.directory), { recursive: true });
+const sync = () => {
+  console.log("");
 
-  copyCompiledModuleAssets(mod);
+  modules.forEach((mod) => {
+    fs.rmdirSync(path.join(rubyPath, mod.directory), { recursive: true });
 
-  mod.components.forEach((componentName) => {
-    copyComponentTemplates(mod, componentName);
-    copyCompiledComponentAssets(mod, componentName);
+    copyCompiledModuleAssets(mod);
+
+    mod.components.forEach((componentName) => {
+      copyComponentTemplates(mod, componentName);
+      copyCompiledComponentAssets(mod, componentName);
+    });
   });
-});
+};
+
+module.exports = sync;
