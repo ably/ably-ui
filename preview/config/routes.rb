@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  get '/globals', to: 'pages#globals'
+
   root 'pages#index'
 end

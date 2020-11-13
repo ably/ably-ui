@@ -25,5 +25,7 @@ module Preview
     config.generators.system_tests = nil
 
     config.assets.paths << AblyUi::Integration.asset_paths
+
+    config.assets.precompile += %w( globals.js )
   end
 end

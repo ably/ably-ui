@@ -1,14 +1,12 @@
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
-const path = require("path");
 const environment = require("./environment");
+const chokidar = require("chokidar");
 
-environment.config.devServer.watchContentBase = true;
-environment.config.devServer.contentBase = [
-  path.join(__dirname, "../../app/views"),
-  path.join(__dirname, "../../../src"),
-  path.join(__dirname, "../../../lib"),
-  path.join(__dirname, "../../../core"),
-];
+environment.config.devServer.before = (_, server) => {
+  chokidar
+    .watch(["app/views", "../core/**/*.css"])
+    .on("change", () => server.sockWrite(server.sockets, "content-changed"));
+};
 
 module.exports = environment.toWebpackConfig();
