@@ -1,3 +1,5 @@
-const { environment } = require('@rails/webpacker')
+const { environment } = require("@rails/webpacker");
 
-module.exports = environment
+environment.resolvedModules.append("preview", "preview/node_modules");
+
+module.exports = environment;
