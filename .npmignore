@@ -4,3 +4,15 @@ lib
 ably-ui.gemspec
 Gemfile
 Gemfile.lock
+.bundle
+preview
+scripts
+vendor
+.babelrc
+.editorconfig
+.eslintrc.js
+.prettierignore
+.pretterrc.json
+modules-config.js
+release.sh
+webpack.config.js
