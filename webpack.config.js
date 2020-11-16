@@ -6,6 +6,29 @@ const modules = require("./modules-config");
 const commonConfig = {
   mode: "development",
   devtool: "source-map",
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+    ],
+  },
+  externals: {
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+    },
+  },
 };
 
 const commonOutputConfig = {
@@ -24,21 +47,13 @@ const modulesConfig = modules.map((mod) => ({
   },
   output: {
     ...commonOutputConfig,
-    library: ["AblyUi", "[name]"],
+    library: ["AblyUi", mod.name],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: `${mod.directory}/styles.css`,
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-    ],
-  },
 }));
 
 const componentsConfig = modules.map((mod) => ({
@@ -56,20 +71,13 @@ const componentsConfig = modules.map((mod) => ({
   output: {
     ...commonOutputConfig,
     library: ["AblyUi", mod.name, "[name]"],
+    libraryExport: "default",
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: `${mod.directory}/[name]/component.css`,
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-    ],
-  },
 }));
 
 const reactConfig = modules.map((mod) => ({
@@ -86,21 +94,6 @@ const reactConfig = modules.map((mod) => ({
   ),
   output: {
     ...commonOutputConfig,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
-      },
-    ],
-  },
-  externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-    },
   },
 }));
 
