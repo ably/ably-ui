@@ -1,12 +1,9 @@
-PATH
-  remote: ..
+GEM
+  remote: https://rubygems.org/
+  remote: https://rubygems.pkg.github.com/ably/
   specs:
     ably-ui (0.0.15)
       view_component (~> 2.21.0)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
     actioncable (6.0.3.4)
       actionpack (= 6.0.3.4)
       nio4r (~> 2.0)
