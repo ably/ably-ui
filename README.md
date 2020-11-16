@@ -2,7 +2,7 @@
 
 # ably-ui
 
-`ably-ui` is the of home of the Ably design system library ([design.ably.com](https://design.ably.com)) ⚠️ . It provides a showcase, development/test environment and a publishing pipeline for different distributables.
+`ably-ui` is the of home of the Ably design system library ([https://ably-ui.herokuapp.com/](https://ably-ui.herokuapp.com/)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.
 
 ## Getting started
 
@@ -72,7 +72,7 @@ To import the javascript for an `Accordion` component:
 import Accordion from "@ably/ably-ui/core/accordion/component";
 ```
 
-If your bundler supports CSS importing you can import is as well:
+If your bundler supports CSS importing you can import it as well:
 
 ```js
 import "@ably/ably-ui/core/styles.css";
@@ -86,7 +86,7 @@ If you are using [React](https://reactjs.org/), the import is different. Note th
 import Meganav from "@ably/ably-ui/core/Meganav";
 ```
 
-#### Importing ViewComponent (Rails) components ⚠️
+#### Importing ViewComponent (Rails) components
 
 To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
 
@@ -132,27 +132,9 @@ If you are using webpacker, install the npm module and import from there. (Note:
 
 ## Usage
 
-### Fonts ⚠️
+### Fonts & Assets ⚠️
 
-Fonts are loaded as part of the `core` module, but also accessible directly:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/fonts.css"
-/>
-```
-
-### Images ⚠️
-
-Some images are part of modules and/or components and you might need to load them separately:
-
-```html
-<img
-  src="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/images/logo.svg"
-  alt="Ably logo"
-/>
-```
+Fonts and assets are not loaded as part of Javascript or CSS files (though some small images might be inlined with `svg` or `data-uri`). To use them, require or copy them from the package.
 
 When using npm:
 
@@ -160,13 +142,71 @@ When using npm:
 import ablyLogo from "@ably/ably-ui/core/images/logo.svg";
 ```
 
-## Development ⚠️
+When importing directly:
 
-`ably-ui` is meant to be developed in separation by building and testing its elements first and foremost in a dedicated environment and only after in consumers.
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/fonts/NEXT-Book-Light.woff"
+/>
+```
 
-See `package.json` for the minimum required node/yarn versions and then install dependencies with: `yarn`.
+Note that for fonts, it's recommended you specify your own `font-face` rule, just for the fonts you are using. An example can be found in the fonts directory (ie. for the NEXT core font, it will be in `core/fonts/next.css`).
 
-To start the server, run `yarn start` and go to `http://localhost:9000`. When changes are made to any files the server will refresh the page automatically.
+#### Rails
+
+Because the gem directories are on the asset path (see [Importing ViewComponent (Rails) components)]() section), they will work with standard asset helpers.
+
+## Development
+
+The repository includes a "preview" app which is serves both as a showcase and development environment. To start it, go into the preview directory and run:
+
+```bash
+# install dependecies
+bundle
+yarn
+
+# run server
+bin/rails server
+bin/webpack-dev-server
+```
+
+This will run the app but used the published versions of the `ably-ui` gem and npm package. To develop the package locally, you will need to do 2 things:
+
+1. Make the app use local versions of the packages
+2. Run a process to rebuild the packages
+
+For `1`, do the following:
+
+```bash
+# in the root directory
+yarn link
+# in the the "preview" directory
+yarn link @ably/ably-ui
+
+
+# for gem, in the "preview" directory
+bundle config --local local.ably-ui ../
+```
+
+For `2`:
+
+```bash
+# install foreman gem
+gem install foreman
+
+foreman start
+```
+
+This will start 3 processes: webpack rebuild for the package, webpack-dev-server to observe these changes and the rails server to run the app.
+
+If at anytime you don't want to use the local gems anymore, you can do:
+
+```bash
+# in "preview" directory
+yarn unlink @ably/ably-ui
+bundle config --delete local.ably-ui
+```
 
 ### Components
 
