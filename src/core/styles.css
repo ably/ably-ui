@@ -1,3 +1,5 @@
-body {
-  font-size: 12px;
-}
+@import "./styles/patterns/text.css";
+
+@import "./styles/utility/typography.css";
+@import "./styles/utility/color.css";
+@import "./styles/utility/margin.css";
