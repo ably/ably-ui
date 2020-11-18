@@ -87,6 +87,11 @@ const copyFonts = (mod) => {
   const gemFontsPath = path.join(rubyPath, mod.directory, "fonts");
   const npmFontsPath = path.join(mod.directory, "fonts");
 
+  if (!fs.existsSync(fontsPath)) {
+    console.log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
+    return;
+  }
+
   const fonts = fs.readdirSync(fontsPath);
 
   fs.rmdirSync(gemFontsPath, { recursive: true });
@@ -103,6 +108,17 @@ const copyFonts = (mod) => {
   printDone();
 };
 
+const createGitignoreFiles = (mod) => {
+  process.stdout.write(
+    `> Creating .gitignore file for ${colorizeMod(mod.name)} ... `
+  );
+
+  fs.writeFileSync(path.join(mod.directory, ".gitignore"), "*");
+  fs.writeFileSync(path.join(rubyPath, mod.directory, ".gitignore"), "*");
+
+  printDone();
+};
+
 const sync = () => {
   console.log("");
 
@@ -111,6 +127,7 @@ const sync = () => {
 
     copyCompiledModuleAssets(mod);
     copyFonts(mod);
+    createGitignoreFiles(mod);
 
     mod.components.forEach((componentName) => {
       copyComponentTemplates(mod, componentName);

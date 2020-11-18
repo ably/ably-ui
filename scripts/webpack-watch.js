@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 
 const config = require("../webpack.config");
-const syncViewComponentAssets = require("./sync-view-component-assets");
+const setupModules = require("./setup-modules");
 
 const compiler = webpack(config);
 
@@ -24,5 +24,5 @@ compiler.watch({}, (err, stats) => {
     })
   );
 
-  syncViewComponentAssets();
+  setupModules();
 });
