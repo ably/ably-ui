@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     "source_code_uri" => "https://github.com/ably/ably-ui",
   }
 
-  spec.files         = `git ls-files lib Gemfile Gemfile.lock LICENSE README.md ably-ui.gemspec`.split("\n")
+  spec.files         = Dir['lib/**/*'] + %w[Gemfile Gemfile.lock LICENSE README.md ably-ui.gemspec]
 
   spec.add_dependency "view_component", '~> 2.21.0'
 end

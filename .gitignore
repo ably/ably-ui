@@ -1,5 +1,5 @@
+.bundle
+.DS_Store
+ably-ui-*.gem
 node_modules
 vendor
-.bundle
-ably-ui-*.gem
-.DS_Store
