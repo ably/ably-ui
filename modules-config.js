@@ -4,4 +4,9 @@ module.exports = [
     directory: "core",
     components: ["Meganav"],
   },
+  {
+    name: "Reset",
+    directory: "reset",
+    components: [],
+  },
 ];

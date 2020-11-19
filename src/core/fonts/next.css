@@ -19,7 +19,7 @@
  */
 
 @font-face {
-  font-family: "NEXT";
+  font-family: "NEXT Book";
   src: url("NEXT-Book-Light.eot");
   src: url("NEXT-Book-Light.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Light.woff2") format("woff2"),
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: "NEXT";
+  font-family: "NEXT Book";
   src: url("NEXT-Book-Light-Italic.eot");
   src: url("NEXT-Book-Light-Italic.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Light-Italic.woff2") format("woff2"),
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "NEXT";
+  font-family: "NEXT Book";
   src: url("NEXT-Book-Medium.eot");
   src: url("NEXT-Book-Medium.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Medium.woff2") format("woff2"),
@@ -49,7 +49,7 @@
 }
 
 @font-face {
-  font-family: "NEXT";
+  font-family: "NEXT Book";
   src: url("NEXT-Book-Medium-Italic.eot");
   src: url("NEXT-Book-Medium-Italic.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Medium-Italic.woff2") format("woff2"),

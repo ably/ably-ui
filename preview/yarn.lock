@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@^0.0.16":
-  version "0.0.16"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/0.0.16/11ceef30b53c77893920873cfa5a519ce612a979c89fe2331562904664f6b95b#a7f063619979e83ae1bf4ef3d4f9f25eea8df2e9"
-  integrity sha512-WgoePgg6vN25Mh3eb8xbvNeKpP2aba+slg8+iwmivl2PffT/oNaUyVNSSz7hKvZQLyOzDlbKJCuZN8BgRZZIVA==
+"@ably/ably-ui@0.0.16-dev.7":
+  version "0.0.16-dev.7"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/0.0.16-dev.7/2f0c71368276c8baf6ee0dcaea723cfdee876795398b36f8db120769535b4221#34c31ec44f82374c31a4154d50eb3035915b5a11"
+  integrity sha512-z/Qca7yJsc4doVNWuNaFmFIpj53plaX0ZrA5U+YxB5F+8uRQ+APstWg/PjSRzK/X7PpPpucQ4w1oH27pZLgiBw==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"

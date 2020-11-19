@@ -27,5 +27,7 @@ module Preview
     config.assets.paths << AblyUi::Integration.asset_paths
 
     config.assets.precompile += %w( globals.js )
+
+    config.assets.precompile << ["*.eot", "*.otf", "*.woff", "*.woff2"]
   end
 end
