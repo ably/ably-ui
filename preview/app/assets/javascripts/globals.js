@@ -5,5 +5,4 @@
 
 /* global AblyUi */
 
-AblyUi.Core.utilityFunction();
 AblyUi.Core.Meganav();
