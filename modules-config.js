@@ -2,7 +2,13 @@ module.exports = [
   {
     name: "Core",
     directory: "core",
-    components: ["Meganav", "Logo", "PlatformPanel", "WhyAblyPanel"],
+    components: [
+      "Meganav",
+      "Logo",
+      "PlatformPanel",
+      "WhyAblyPanel",
+      "DevelopersPanel",
+    ],
   },
   {
     name: "Reset",
