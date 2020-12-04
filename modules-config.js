@@ -10,6 +10,7 @@ module.exports = [
       "DevelopersPanel",
       "PanelCloseControl",
       "PanelOpenControl",
+      "MeganavItemControl",
     ],
   },
   {
