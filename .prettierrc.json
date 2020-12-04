@@ -1,1 +1,11 @@
-{}
+{
+  "overrides": [
+    {
+      "files": ["*.html", "*.jsx"],
+      "options": {
+        "printWidth": 160,
+        "htmlWhitespaceSensitivity": "strict"
+      }
+    }
+  ]
+}

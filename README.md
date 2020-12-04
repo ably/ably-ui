@@ -243,6 +243,16 @@ Run the `./build.sh` script. This will:
 - copy files that are compiled by webpack into `lib/ably_ui`
 - copy files that do not need compilation from `src` to `lib/ably_ui`
 
+### Formatting & linting files
+
+By default, [Prettier](https://prettier.io/) & [Eslint](https://eslint.org/) will handle most of the frontend files. You can use them through you editor (which should pick up the relevant config files) or on the command line (see `scripts` in package.json).
+
+Neither handles `erb` and `rb` files; in fact the only config for those files is at the moment in `editorconfig`.
+
+#### Note
+
+Until we have setup formatting scripts for `erb` it's worth setting up [htmlbeautifier](https://github.com/threedaymonk/htmlbeautifier) for your editor (for example with https://github.com/aliariff/vscode-erb-beautify if you use vscode) and tracking [this issue in Prettier](https://github.com/prettier/plugin-ruby/issues/371), as Prettier is much faster and hopefully will get support for `erb`.
+
 ### Adding a new component ⚠️
 
 ### Adding a new module ⚠️
