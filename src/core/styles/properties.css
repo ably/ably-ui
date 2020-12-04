@@ -1,0 +1,68 @@
+:root {
+  --color-cool-black: #03020d;
+  --color-active-orange: #ff5416;
+  --color-white: #ffffff;
+  --color-electric-cyan: #4af7ff;
+  --color-zingy-green: #08ff13;
+  --color-bright-red: #ff2739;
+  --color-jazzy-pink: #ff17d2;
+  --color-light-grey: #f5f5f6;
+  --color-mid-grey: #dbdbdc;
+  --color-dark-grey: #76767c;
+  --color-charcoal-grey: #292831;
+  --color-gui-default: #0073e6;
+  --color-gui-hover: #0867c4;
+  --color-gui-focus: #0657a5;
+  --color-gui-viewed: #4887c2;
+  --color-gui-unavailable: #a8a8a8;
+
+  --fs-title: 4rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.5rem;
+  --fs-h4: 1.125rem;
+  --fs-p1: 1.125rem;
+  --fs-p2: 1rem;
+  --fs-p3: 0.875rem;
+  --fs-standfirst1: 2.25rem;
+  --fs-standfirst2: 1.75rem;
+  --fs-sub-header: 1.5rem;
+  --fs-overline1: 1rem;
+  --fs-overline2: 0.875rem;
+  --fs-btn1: 1.125rem;
+  --fs-btn2: 1rem;
+  --fs-menu1: 1.125rem;
+  --fs-menu2: 1rem;
+  --fs-menu3: 0.875rem;
+
+  --lh-tight: 1.125;
+  --lh-snug: 1.15;
+  --lh-normal: 1.25;
+  --lh-relaxed: 1.45;
+
+  --ls-tighten-0_025: -0.025em;
+  --ls-tighten-0_02: -0.02em;
+  --ls-tighten-0_01: -0.01em;
+  --ls-tighten-0_005: -0.005em;
+  --ls-tighten-0_0025: -0.0025em;
+  --ls-widen-0_1: 0.1em;
+  --ls-widen-0_15: 0.15em;
+
+  --spacing-0: 0px;
+  --spacing-1: 1px;
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-64: 4rem;
+
+  --bp-sm: 600px;
+  --bp-md: 845px;
+  --bp-lg: 1040px;
+  --bp-xl: 1440px;
+}
