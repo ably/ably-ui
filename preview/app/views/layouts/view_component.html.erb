@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Preview</title>
+    <title>Preview (View component)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application' %>
-    <%= javascript_include_tag 'globals' %>
   </head>
-
   <body>
+    <%= render(AblyUi::Core::Meganav.new) %>
     <%= yield %>
+    <%= javascript_include_tag 'globals' %>
   </body>
 </html>
