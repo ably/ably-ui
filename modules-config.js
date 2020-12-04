@@ -11,6 +11,7 @@ module.exports = [
       "PanelCloseControl",
       "PanelOpenControl",
       "MeganavItemControl",
+      "MobileMenuControl",
     ],
   },
   {
