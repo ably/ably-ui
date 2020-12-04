@@ -1,0 +1,9 @@
+<%= button_tag(type: "button",
+               class: "c-meganav-mobile-link",
+               data: { id: "meganav-mobile-panel-btn" },
+               aria: { expanded: false, controls: @aria_controls }) do %>
+  <%= content %>
+  <svg class="transform -rotate-90 ml-auto float-right w-12 h-12 icon-dark-grey">
+    <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
+  </svg>
+<% end %>

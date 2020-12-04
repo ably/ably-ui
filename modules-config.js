@@ -9,6 +9,7 @@ module.exports = [
       "WhyAblyPanel",
       "DevelopersPanel",
       "PanelCloseControl",
+      "PanelOpenControl",
     ],
   },
   {
