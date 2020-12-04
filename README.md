@@ -171,7 +171,7 @@ bin/rails server
 bin/webpack-dev-server
 ```
 
-This will run the app but used the published versions of the `ably-ui` gem and npm package. To develop the package locally, you will need to do 2 things:
+This will run the app but use the published versions of the `ably-ui` gem and npm package. To develop the package locally, you will need to do 2 things:
 
 1. Make the app use local versions of the packages
 2. Run a process to rebuild the packages
@@ -183,13 +183,17 @@ For `1`, do the following:
 yarn link
 # in the the "preview" directory
 yarn link @ably/ably-ui
-
-
-# for gem, in the "preview" directory
-bundle config --local local.ably-ui ../
 ```
 
+For the gem, in the gemfile replace `source: "https://rubygems.pkg.github.com/ably"` with `path: '../'`. You might need to do `bundle clean --force` for bundler to start using the local version of the gem.
+
 For `2`:
+
+```
+./scripts/webpack-watch.js
+```
+
+Alternatively, there is a `procfile` that can be used by [foreman](https://github.com/ddollar/foreman) and will run all 3 processes for you:
 
 ```bash
 # install foreman gem
@@ -198,15 +202,27 @@ gem install foreman
 foreman start
 ```
 
-This will start 3 processes: webpack rebuild for the package, webpack-dev-server to observe these changes and the rails server to run the app.
+This will start webpack rebuild for the package, webpack-dev-server to observe these changes and the rails server to run the app.
 
 If at anytime you don't want to use the local gems anymore, you can do:
 
 ```bash
 # in "preview" directory
 yarn unlink @ably/ably-ui
-bundle config --delete local.ably-ui
 ```
+
+And change back `path` to source `source`. If this just for a review app deployment, you can rebuild the `Gemfile.lock` without installing packages with `bundle lock`.
+
+#### Publishing packages for review apps
+
+To deploy a review app with your in-progress code, you can use the `pre-release` script:
+
+```bash
+# in root
+./pre-release 0.0.16 20
+```
+
+The first number should be the current semver and second should can be any identifier from the last `0.0.16.dev.xx` number. Note when we move to a public repo, this will be removed and replaced with a system where review apps can download directly from the repo.
 
 ### Components
 
