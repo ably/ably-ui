@@ -2,10 +2,7 @@ module.exports = [
   {
     name: "Core",
     directory: "core",
-    components: [
-      "Meganav",
-      "Logo",
-    ],
+    components: ["Meganav", "Logo", "PlatformPanel"],
   },
   {
     name: "Reset",
