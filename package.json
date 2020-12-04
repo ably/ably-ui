@@ -1,6 +1,6 @@
 {
   "name": "@ably/ably-ui",
-  "version": "0.0.16-dev.7",
+  "version": "0.0.16-dev.11",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
@@ -15,22 +15,29 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
+    "autoprefixer": "^10.0.2",
     "babel-loader": "^8.2.0",
     "change-case": "^4.1.1",
     "css-loader": "^5.0.0",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-react": "^7.21.5",
+    "extra-watch-webpack-plugin": "^1.0.3",
     "mini-css-extract-plugin": "^1.2.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.1.7",
+    "postcss": "^8.1.10",
     "postcss-calc": "^7.0.5",
+    "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^10.0.0",
+    "postcss-each": "^0.10.0",
     "postcss-import": "^13.0.0",
     "postcss-insert": "^1.0.0",
     "postcss-loader": "^4.0.4",
     "postcss-nested": "^5.0.1",
     "prettier": "2.1.2",
+    "prop-types": "^15.7.2",
+    "svg-spritemap-webpack-plugin": "^3.7.1",
+    "tailwindcss": "^2.0.1",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.2.0"
   },
@@ -43,9 +50,10 @@
     "node": ">=12.16.1",
     "yarn": ">=1.22.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "focus-within-polyfill": "^5.1.0"
+  },
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.1"
   }
 }
