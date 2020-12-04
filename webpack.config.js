@@ -52,6 +52,12 @@ const modulesConfig = modules.map((mod) => ({
     library: ["AblyUi", mod.name],
   },
   plugins: [
+    new SVGSpritemapPlugin(`src/${mod.directory}/icons/*.svg`, {
+      output: {
+        filename: `${mod.directory}/sprites.svg`,
+        svgo: false,
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: `${mod.directory}/styles.css`,
     }),
@@ -100,6 +106,11 @@ const reactConfig = modules.map((mod) => ({
   output: {
     ...commonOutputConfig,
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: `${mod.directory}/[name]/component.css`,
+    }),
+  ],
 }));
 
 module.exports = [...modulesConfig, ...componentsConfig, ...reactConfig];
