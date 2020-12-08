@@ -13,7 +13,7 @@ RUBY_VERSION=$1.dev.$2
 TAG=v$1-dev.$2
 
 echo "Building assets"
-node scripts/webpack-build.js
+NODE_ENV=production node scripts/webpack-build.js
 
 echo "Tagging commit with $TAG"
 git tag -a $TAG -m "$TAG"

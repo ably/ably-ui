@@ -6,8 +6,6 @@ const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
 const modules = require("./modules-config");
 
 const commonConfig = {
-  mode: "development",
-  devtool: "source-map",
   module: {
     rules: [
       {

@@ -1,6 +1,9 @@
 const webpack = require("webpack");
 
-const config = require("../webpack.config");
+const config =
+  process.env.NODE_ENV === "production"
+    ? require("../webpack.prod")
+    : require("../webpack.dev");
 const setupModules = require("./setup-modules");
 
 const compiler = webpack(config);
