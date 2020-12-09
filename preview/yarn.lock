@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@1.0.0":
-  version "1.0.0"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/1.0.0/755f9c1886c448d3d1297529d225857a7b2ea07a7d9544420f9ff5026d16842c#14beba870b85f6f5aa2942f1a2999579349d0697"
-  integrity sha512-xZiuTcnphjT2ketgplV1NcDAaSAZE9CAofAgUYkPe28pJ7dI2WOZsZHHi0U0pWfatODVriFunViPVHD1UzUUSA==
+"@ably/ably-ui@1.0.1":
+  version "1.0.1"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/1.0.1/be631160dc6d6f4dd349f3829b5d1100c9437d3f313a93af81ae30c677d697df#8a84adea54144d20882643d781280c2d45376ece"
+  integrity sha512-r8ppASo1HirAUNSP3D789DYY+yuG84IRj3w+2z9J3esHKCvC2l+S3rUZwYQXS3iEm+qzKcelnpc0gX+PrOh9AA==
   dependencies:
     focus-within-polyfill "^5.1.0"
 
