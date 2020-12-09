@@ -1,3 +1,145 @@
-.a-core-meganav {
-  color: red;
+/* TODO: use postcss importFrom feature to have a single source of truth for these. CSS custom properties can't be used
+   in media queries */
+@custom-media --bp-lg (min-width: 1040px);
+
+@layer components {
+  .c-meganav-wrapper {
+    @apply antialiased shadow-subtle bg-white font-sans font-light top-0 fixed w-full;
+  }
+
+  .c-meganav {
+    @apply h-64 flex justify-between items-center max-w-screen-xl mx-auto px-24 md:px-32 lg:px-40 xl:px-64;
+  }
+
+  .c-meganav-dropdown,
+  .c-meganav-mobile-dropdown,
+  .c-meganav-mobile-panel {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+
+    top: var(--spacing-64);
+    left: 0;
+    right: 0;
+
+    opacity: 0.3;
+    overflow: scroll;
+
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+
+    transition: 300ms all 100ms ease-out;
+    @apply border-mid-grey border-t;
+  }
+
+  .c-meganav-dropdown {
+    background-color: var(--color-white);
+  }
+
+  .c-meganav-mobile-panel {
+    z-index: 2;
+    top: 0;
+    background-color: var(--color-white);
+    opacity: 0.3;
+    transform: translateX(-100%);
+    min-height: 100%;
+    padding-bottom: var(--spacing-8);
+  }
+
+  .c-meganav-item:focus-within .c-meganav-dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+  }
+
+  .c-meganav-item:focus-within .c-meganav-mobile-dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+    height: 90vh;
+  }
+
+  /* Controls the hamburger/close menu button switch */
+  .c-meganav-item:focus-within
+    [aria-controls="mobile-dropdown"]
+    svg:first-child {
+    display: none;
+  }
+
+  .c-meganav-item:focus-within
+    [aria-controls="mobile-dropdown"]
+    svg:last-child {
+    display: inline;
+  }
+
+  /* Hover styles on touch devices are translated into clicks and if possible, focus.
+     Apply them only if we're somewhat confident we are on a mouse controlled device */
+  @media (hover: hover) and (pointer: fine) and (--bp-lg) {
+    .c-meganav-item:hover .c-meganav-dropdown {
+      @apply visible opacity-100 transform rotate-0;
+    }
+  }
+
+  .c-meganav-mobile-item:focus-within .c-meganav-mobile-panel {
+    @apply visible opacity-100 transform translate-x-0;
+  }
+
+  .c-meganav-nav-item {
+    @apply text-menu2 font-medium block mx-8 xl:mx-12 px-0 py-20 text-gui-alt hover:text-gui-hover focus:text-gui-focus focus:outline-none;
+  }
+
+  .c-meganav-mobile-link {
+    padding: 15px 0 14px;
+    @apply text-menu2 block flex items-baseline font-medium text-gui-alt outline-none w-full text-left focus:outline-none;
+  }
+
+  .c-meganav-panel {
+    @apply grid gap-24 md:gap-32 grid-cols-1 max-w-screen-xl py-24 lg:py-32 px-24 md:px-32 lg:px-32 xl:px-64 mx-auto;
+  }
+
+  .c-meganav-media {
+    width: calc(100% + var(--spacing-8));
+    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8;
+  }
+
+  .c-meganav-media-with-image {
+    width: calc(100% + var(--spacing-8));
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 1fr;
+
+    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 grid gap-x-16;
+  }
+
+  .c-meganav-media-heading {
+    @apply text-menu3 text-cool-black font-medium group-hover:text-gui-hover group-focus:text-gui-focus;
+  }
+
+  .c-meganav-media-copy {
+    @apply text-p3 text-dark-grey;
+  }
+
+  .c-meganav-link {
+    @apply text-menu3 font-medium block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none;
+  }
+
+  .c-meganav-overline {
+    padding: 11px 0;
+    @apply text-overline2 text-cool-black uppercase font-medium;
+  }
+
+  .c-meganav-hr {
+    @apply my-0 text-mid-grey;
+  }
+
+  .c-meganav-search-input {
+    padding-top: 14px;
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    @apply text-p2 font-light bg-light-grey rounded pb-12 pl-48 pr-16 w-full leading-none appearance-none border border-mid-grey transition-input;
+    @apply hover:bg-white hover:shadow-input hover:border-transparent;
+    @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-none;
+  }
 }

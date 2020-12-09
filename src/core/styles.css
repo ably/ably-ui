@@ -1,5 +1,29 @@
-@import "./styles/patterns/text.css";
+@import "./styles/properties.css";
 
-@import "./styles/utility/typography.css";
-@import "./styles/utility/color.css";
-@import "./styles/utility/margin.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .c-btn-alt {
+    @apply text-btn2 font-medium block bg-gui-alt hover:bg-gui-hover focus:bg-gui-focus focus:outline-none disabled:bg-gui-unavailable text-white rounded px-24 py-12;
+  }
+
+  /* Basis for icon component */
+  .icon-cool-black {
+    stroke: var(--color-cool-black);
+  }
+
+  .icon-dark-grey {
+    stroke: var(--color-dark-grey);
+  }
+
+  /* Extend how tailwind does group hover for icons */
+  .group {
+    &:hover {
+      .group-hover\:icon-gui-hover {
+        stroke: var(--color-gui-hover);
+      }
+    }
+  }
+}

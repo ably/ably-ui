@@ -24,10 +24,12 @@ module Preview
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    config.assets.precompile += %w(globals.js)
+
+    # Ably UI specific config
     config.assets.paths << AblyUi::Integration.asset_paths
-
-    config.assets.precompile += %w( globals.js )
-
     config.assets.precompile << ["*.eot", "*.otf", "*.woff", "*.woff2"]
+    config.assets.precompile << AblyUi::Integration.precompile_images_paths
+    config.assets.precompile << AblyUi::Integration.icon_sprites_paths
   end
 end

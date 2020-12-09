@@ -32,6 +32,9 @@ fi
 VERSION=$1
 TAG=v$1
 
+echo "Building assets"
+NODE_ENV=production node scripts/webpack-build.js
+
 echo "Tagging commit with $TAG"
 git tag -a $TAG -m "$TAG"
 

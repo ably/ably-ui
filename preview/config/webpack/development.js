@@ -5,7 +5,7 @@ const chokidar = require("chokidar");
 
 environment.config.devServer.before = (_, server) => {
   chokidar
-    .watch(["app/views", "../core/**/*.css"])
+    .watch(["app/views"])
     .on("change", () => server.sockWrite(server.sockets, "content-changed"));
 };
 

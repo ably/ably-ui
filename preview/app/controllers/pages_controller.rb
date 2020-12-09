@@ -1,10 +1,12 @@
 class PagesController < ApplicationController
-  def index
-  end
+  layout :page_layout
 
+  def index; end
   def typography; end
 
-  def globals
-    render :globals, layout: 'view_component'
+  private
+
+  def page_layout
+    params['vw'].nil? ? "application" : "view_component"
   end
 end
