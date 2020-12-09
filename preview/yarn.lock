@@ -2,10 +2,12 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@0.0.16-dev.7":
-  version "0.0.16-dev.7"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/0.0.16-dev.7/2f0c71368276c8baf6ee0dcaea723cfdee876795398b36f8db120769535b4221#34c31ec44f82374c31a4154d50eb3035915b5a11"
-  integrity sha512-z/Qca7yJsc4doVNWuNaFmFIpj53plaX0ZrA5U+YxB5F+8uRQ+APstWg/PjSRzK/X7PpPpucQ4w1oH27pZLgiBw==
+"@ably/ably-ui@0.0.16-dev.11":
+  version "0.0.16-dev.11"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/0.0.16-dev.11/5600b8c9e0aa15ddbcba192c13641af03c0907e2f5ebdb4037b7e4d0c6596d69#f7ad5184573ba1782150df80003b8de70138c1a1"
+  integrity sha512-SwMKyoNGXQu4BKV3vERyF/OL/lZaatnyEfqfPkgnpjchB5DqgmCdb16Ur9Qh9gF2M734PdwA4OmxAL7+4FmdMw==
+  dependencies:
+    focus-within-polyfill "^5.1.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
@@ -3165,6 +3167,11 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+focus-within-polyfill@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/focus-within-polyfill/-/focus-within-polyfill-5.1.0.tgz#a32ed39503a7e95a5eb208367083858af533178c"
+  integrity sha512-u944FX2NsX5nhCi3jsXcWkUcPAekvFHnhl5+OQJZvZeRamPXhQxwvOVs1ordzyIaP7sc+cW3PU7z1fDKPYM9+A==
 
 follow-redirects@^1.0.0:
   version "1.13.0"

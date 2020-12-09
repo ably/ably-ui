@@ -4,11 +4,10 @@ const snakeCase = require("change-case").snakeCase;
 
 const modules = require("../modules-config");
 
-const rubyPath = path.join("lib", "ably_ui");
-const srcPath = path.join("src");
 const extPredicate = (extRegex) => (path) => path.match(extRegex);
 const templatesPredicate = extPredicate(/(.rb|.erb)$/);
 const assetsPredicate = extPredicate(/(.js|.css|.js.map|.css.map)$/);
+const dataPredicate = extPredicate(/(.json)$/);
 
 const printDone = () => console.log("\x1b[32m%s\x1b[0m", "Done"); // green
 const colorizeMod = (name) => `\x1b[33m${name}\x1b[0m`; // yellow
@@ -17,104 +16,159 @@ const colorizeComponentName = (name) => `\x1b[35m${name}\x1b[0m`; //magenta
 const copyFromTo = (from, to) => (filename) =>
   fs.copyFileSync(path.join(from, filename), path.join(to, filename));
 
-const copyCompiledModuleAssets = (mod) => {
-  process.stdout.write(
-    `> Copying compiled module assets for ${colorizeMod(mod.name)} ... `
+const findFiles = (dir, predicate) => fs.readdirSync(dir).filter(predicate);
+
+const srcPathResolve = (moduleDir, component = "") =>
+  path.join("src", moduleDir, component);
+
+const npmPathResolve = (moduleDir, component = "") =>
+  path.join(moduleDir, component);
+
+const rubyPathResolve = (moduleDir, component = "", transformCase = true) =>
+  path.join(
+    "lib",
+    "ably_ui",
+    moduleDir,
+    transformCase ? snakeCase(component) : component
   );
 
-  const moduleCompiledAssets = fs
-    .readdirSync(mod.directory)
-    .filter(assetsPredicate);
+const print = (msg, exec) => (...args) => {
+  process.stdout.write(msg(...args));
 
-  fs.mkdirSync(path.join(rubyPath, mod.directory));
-
-  moduleCompiledAssets.forEach(
-    copyFromTo(mod.directory, path.join(rubyPath, mod.directory))
-  );
-
-  printDone();
-};
-
-const copyCompiledComponentAssets = (mod, componentName) => {
-  process.stdout.write(
-    `> Copying compiled component assets for ${colorizeComponentName(
-      componentName
-    )} in module ${colorizeMod(mod.name)} ... `
-  );
-
-  const compiledAssets = fs
-    .readdirSync(path.join(mod.directory, componentName))
-    .filter(assetsPredicate);
-
-  compiledAssets.forEach(
-    copyFromTo(
-      path.join(mod.directory, componentName),
-      path.join(rubyPath, mod.directory, snakeCase(componentName))
-    )
-  );
-
-  printDone();
-};
-
-const copyComponentTemplates = (mod, componentName) => {
-  process.stdout.write(
-    `> Copying component templates for ${colorizeComponentName(
-      componentName
-    )} in module ${colorizeMod(mod.name)} ... `
-  );
-
-  const templates = fs
-    .readdirSync(path.join(srcPath, mod.directory, componentName))
-    .filter(templatesPredicate);
-
-  fs.mkdirSync(path.join(rubyPath, mod.directory, snakeCase(componentName)));
-
-  templates.forEach(
-    copyFromTo(
-      path.join(srcPath, mod.directory, componentName),
-      path.join(rubyPath, mod.directory, snakeCase(componentName))
-    )
-  );
-
-  printDone();
-};
-
-// TODO: we don't need to do this on every compile as they don't change as much but for now it's fast anyway
-const copyFonts = (mod) => {
-  process.stdout.write(`> Copying fonts for ${colorizeMod(mod.name)} ... `);
-
-  const fontsPath = path.join(srcPath, mod.directory, "fonts");
-  const gemFontsPath = path.join(rubyPath, mod.directory, "fonts");
-  const npmFontsPath = path.join(mod.directory, "fonts");
-
-  if (!fs.existsSync(fontsPath)) {
-    console.log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
+  if (exec(...args)) {
     return;
   }
 
-  const fonts = fs.readdirSync(fontsPath);
-
-  fs.rmdirSync(gemFontsPath, { recursive: true });
-  fs.rmdirSync(npmFontsPath, { recursive: true });
-
-  fs.mkdirSync(gemFontsPath);
-  fs.mkdirSync(npmFontsPath);
-
-  fonts.forEach((filename) => {
-    copyFromTo(fontsPath, npmFontsPath)(filename);
-    copyFromTo(fontsPath, gemFontsPath)(filename);
-  });
-
   printDone();
 };
+
+const copyCompiledModuleAssets = print(
+  (mod) => `> Copying compiled module assets for ${colorizeMod(mod.name)} ... `,
+  (mod) => {
+    const rubyPath = rubyPathResolve(mod.directory);
+    const npmPath = npmPathResolve(mod.directory);
+
+    findFiles(npmPath, assetsPredicate).forEach(copyFromTo(npmPath, rubyPath));
+  }
+);
+
+const copyCompiledComponentAssets = print(
+  (mod, componentName) =>
+    `> Copying compiled component assets for ${colorizeComponentName(
+      componentName
+    )} in module ${colorizeMod(mod.name)} ... `,
+  (mod, componentName) => {
+    const rubyPath = rubyPathResolve(mod.directory, componentName);
+    const npmPath = npmPathResolve(mod.directory, componentName);
+
+    findFiles(npmPath, assetsPredicate).forEach(copyFromTo(npmPath, rubyPath));
+  }
+);
+
+const copyComponentTemplates = print(
+  (mod, componentName) =>
+    `> Copying component templates for ${colorizeComponentName(
+      componentName
+    )} in module ${colorizeMod(mod.name)} ... `,
+  (mod, componentName) => {
+    const rubyPath = rubyPathResolve(mod.directory, componentName);
+    const srcPath = srcPathResolve(mod.directory, componentName);
+
+    findFiles(srcPath, templatesPredicate).forEach(
+      copyFromTo(srcPath, rubyPath)
+    );
+  }
+);
+
+const copyFonts = print(
+  (mod) => `> Copying fonts for ${colorizeMod(mod.name)} ... `,
+  (mod) => {
+    const fonts = srcPathResolve(mod.directory, "fonts");
+    const rubyPath = rubyPathResolve(mod.directory, "fonts", false);
+    const npmPath = npmPathResolve(mod.directory, "fonts");
+
+    if (!fs.existsSync(fonts)) {
+      console.log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
+      return true;
+    }
+
+    fs.rmdirSync(rubyPath, { recursive: true });
+    fs.rmdirSync(npmPath, { recursive: true });
+
+    fs.mkdirSync(rubyPath);
+    fs.mkdirSync(npmPath);
+
+    fs.readdirSync(fonts).forEach((filename) => {
+      copyFromTo(fonts, npmPath)(filename);
+      copyFromTo(fonts, rubyPath)(filename);
+    });
+  }
+);
+
+const copyImages = print(
+  (mod) => `> Copying images for ${colorizeMod(mod.name)} ... `,
+  (mod) => {
+    const images = srcPathResolve(mod.directory, "images");
+    const rubyPath = rubyPathResolve(mod.directory, "images", false);
+    const npmPath = npmPathResolve(mod.directory, "images");
+
+    if (!fs.existsSync(images)) {
+      console.log("\x1b[32m%s\x1b[0m", "No images directory found, skipping"); // green
+      return true;
+    }
+
+    fs.rmdirSync(rubyPath, { recursive: true });
+    fs.rmdirSync(npmPath, { recursive: true });
+
+    fs.mkdirSync(rubyPath);
+    fs.mkdirSync(npmPath);
+
+    fs.readdirSync(images).forEach((filename) => {
+      copyFromTo(images, npmPath)(filename);
+      copyFromTo(images, rubyPath)(filename);
+    });
+  }
+);
+
+const copyIconSprites = print(
+  (mod) => `> Copying icon sprites file for ${colorizeMod(mod.name)} ... `,
+  (mod) => {
+    const rubyPath = rubyPathResolve(mod.directory);
+    const spriteFilename = "sprites.svg";
+
+    if (!fs.existsSync(npmPathResolve(mod.directory, spriteFilename))) {
+      console.log("\x1b[32m%s\x1b[0m", "No icon sprites file found, skipping"); // green
+      return true;
+    }
+
+    copyFromTo(npmPathResolve(mod.directory), rubyPath)(spriteFilename);
+  }
+);
+
+const copyComponentData = print(
+  (mod, componentName) =>
+    `> Copying component data for ${colorizeComponentName(
+      componentName
+    )} in module ${colorizeMod(mod.name)} ... `,
+  (mod, componentName) => {
+    const rubyPath = rubyPathResolve(mod.directory, componentName);
+    const npmPath = npmPathResolve(mod.directory, componentName);
+    const srcPath = srcPathResolve(mod.directory, componentName);
+
+    findFiles(srcPath, dataPredicate).forEach((filename) => {
+      copyFromTo(srcPath, npmPath)(filename);
+      copyFromTo(srcPath, rubyPath)(filename);
+    });
+  }
+);
 
 const createGitignoreFiles = (mod) => {
   process.stdout.write(
     `> Creating .gitignore file for ${colorizeMod(mod.name)} ... `
   );
 
-  fs.writeFileSync(path.join(mod.directory, ".gitignore"), "*");
-  fs.writeFileSync(path.join(rubyPath, mod.directory, ".gitignore"), "*");
+  fs.writeFileSync(npmPathResolve(mod.directory, ".gitignore"), "*");
+  fs.writeFileSync(rubyPathResolve(mod.directory, ".gitignore", false), "*");
 
   printDone();
 };
@@ -123,15 +177,23 @@ const sync = () => {
   console.log("");
 
   modules.forEach((mod) => {
-    fs.rmdirSync(path.join(rubyPath, mod.directory), { recursive: true });
+    const rubyPath = rubyPathResolve(mod.directory);
+
+    fs.rmdirSync(rubyPath, { recursive: true });
+    fs.mkdirSync(rubyPath);
 
     copyCompiledModuleAssets(mod);
     copyFonts(mod);
+    copyImages(mod);
+    copyIconSprites(mod);
     createGitignoreFiles(mod);
 
     mod.components.forEach((componentName) => {
+      fs.mkdirSync(rubyPathResolve(mod.directory, componentName));
+
       copyComponentTemplates(mod, componentName);
       copyCompiledComponentAssets(mod, componentName);
+      copyComponentData(mod, componentName);
     });
   });
 };

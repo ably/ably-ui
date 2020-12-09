@@ -1,5 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
+const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
 
 const modules = require("./modules-config");
 
@@ -50,8 +52,17 @@ const modulesConfig = modules.map((mod) => ({
     library: ["AblyUi", mod.name],
   },
   plugins: [
+    new SVGSpritemapPlugin(`src/${mod.directory}/icons/*.svg`, {
+      output: {
+        filename: `${mod.directory}/sprites.svg`,
+        svgo: false,
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: `${mod.directory}/styles.css`,
+    }),
+    new ExtraWatchWebpackPlugin({
+      files: ["src/**/*.erb", "src/**/*.rb"],
     }),
   ],
 }));
@@ -95,6 +106,11 @@ const reactConfig = modules.map((mod) => ({
   output: {
     ...commonOutputConfig,
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: `${mod.directory}/[name]/component.css`,
+    }),
+  ],
 }));
 
 module.exports = [...modulesConfig, ...componentsConfig, ...reactConfig];
