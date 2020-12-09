@@ -46,10 +46,6 @@
     "format-write": "yarn prettier -w .",
     "lint": "eslint ."
   },
-  "engines": {
-    "node": ">=12.16.1",
-    "yarn": ">=1.22.4"
-  },
   "dependencies": {
     "focus-within-polyfill": "^5.1.0"
   },
