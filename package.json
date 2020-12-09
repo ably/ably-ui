@@ -35,10 +35,9 @@
     "webpack-cli": "^4.2.0"
   },
   "scripts": {
-    "format-check:js": "yarn prettier -c 'src/**/*.js' 'scripts/**/*.js' webpack.config.js",
-    "format-write:js": "yarn prettier -w 'src/**/*.js' 'scripts/**/*.js' webpack.config.js",
-    "lint:js": "eslint 'src/**/*.js' 'scripts/**/*.js'",
-    "check:js": "yarn format-check:js && yarn lint:js"
+    "format-check": "yarn prettier -c .",
+    "format-write": "yarn prettier -w .",
+    "lint": "eslint ."
   },
   "engines": {
     "node": ">=12.16.1",
