@@ -10,10 +10,10 @@ const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
     aria-controls={ariaControls}
   >
     <svg className="h-24 w-24 icon-cool-black">
-      <use href={`${iconSpritesPath}/#sprite-menu`}></use>
+      <use href={`${iconSpritesPath}#sprite-menu`}></use>
     </svg>
     <svg className="h-24 w-24 icon-cool-black hidden">
-      <use href={`${iconSpritesPath}/#sprite-close`}></use>
+      <use href={`${iconSpritesPath}#sprite-close`}></use>
     </svg>
   </button>
 );

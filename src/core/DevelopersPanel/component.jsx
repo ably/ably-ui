@@ -8,7 +8,7 @@ const DevelopersPanel = ({ paths }) => (
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
           <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 icon-cool-black">
-            <use href={`${paths.iconSprites}/#sprite-search`}></use>
+            <use href={`${paths.iconSprites}#sprite-search`}></use>
           </svg>
           <input type="search" name="q" className="c-meganav-search-input" placeholder="Search docs" />
         </form>
@@ -19,7 +19,7 @@ const DevelopersPanel = ({ paths }) => (
       <a href="/documentation" className="c-meganav-link group">
         Visit Documentation
         <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}/#sprite-disclosure-arrow`}></use>
+          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
         </svg>
       </a>
     </div>

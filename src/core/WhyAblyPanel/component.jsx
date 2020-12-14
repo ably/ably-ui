@@ -75,7 +75,7 @@ const WhyAblyPanel = ({ paths }) => (
       <a href="/four-pillars-of-dependability" className="c-meganav-link group">
         Explore our Four Pillars of Dependability
         <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}/#sprite-disclosure-arrow`}></use>
+          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
         </svg>
       </a>
     </div>
@@ -107,7 +107,7 @@ const WhyAblyPanel = ({ paths }) => (
       <a href="/blog" className="c-meganav-link group">
         More from our Blog
         <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}/#sprite-disclosure-arrow`}></use>
+          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
         </svg>
       </a>
     </div>
