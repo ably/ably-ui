@@ -6,7 +6,10 @@
 
 @layer components {
   .c-btn-alt {
-    @apply text-btn2 font-medium block bg-gui-alt hover:bg-gui-hover focus:bg-gui-focus focus:outline-none disabled:bg-gui-unavailable text-white rounded px-24 py-12;
+    @apply text-btn2 font-medium block bg-gui-alt text-white rounded px-24 py-12;
+    @apply hover:text-white hover:bg-gui-hover;
+    @apply focus:text-white focus:bg-gui-focus focus:outline-none;
+    @apply disabled:bg-gui-unavailable;
   }
 
   /* Basis for icon component */
