@@ -1,6 +1,7 @@
 :root {
   --color-cool-black: #03020d;
   --color-active-orange: #ff5416;
+  --color-red-orange: #e40000;
   --color-white: #ffffff;
   --color-electric-cyan: #4af7ff;
   --color-zingy-green: #08ff13;
@@ -12,9 +13,11 @@
   --color-charcoal-grey: #292831;
   --color-gui-default: #0073e6;
   --color-gui-hover: #0867c4;
-  --color-gui-focus: #0657a5;
+  --color-gui-focus: #80b9f2;
+  --color-gui-active: #074095;
   --color-gui-viewed: #4887c2;
   --color-gui-unavailable: #a8a8a8;
+  --color-gui-error: #fb0c0c;
 
   --fs-title: 4rem;
   --fs-h1: 3rem;
@@ -53,6 +56,7 @@
   --spacing-4: 0.25rem;
   --spacing-8: 0.5rem;
   --spacing-12: 0.75rem;
+  --spacing-14: 0.875rem;
   --spacing-16: 1rem;
   --spacing-20: 1.25rem;
   --spacing-24: 1.5rem;
@@ -60,6 +64,13 @@
   --spacing-40: 2.5rem;
   --spacing-48: 3rem;
   --spacing-64: 4rem;
+
+  --spacing-btn: 0.9375rem 1.5rem;
+  --spacing-menu-row: 0.6875rem 0.5rem 0.625rem;
+  --spacing-menu-row-snug: 0.4375rem 0.5rem 0.375rem;
+  --spacing-media: 0.5rem;
+  --spacing-input: 0.8125rem 1rem 0.75rem;
+  --spacing-overline: 0.6875rem 0;
 
   --bp-sm: 600px;
   --bp-md: 845px;

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.html.erb", "./src/**/*.jsx"],
+  purge: ["./src/**/*.html.erb", "./src/**/*.jsx", "./src/**/*.js"],
   darkMode: false,
   theme: {
     screens: {
@@ -32,6 +32,7 @@ module.exports = {
       transparent: "transparent",
       "cool-black": "var(--color-cool-black)",
       "active-orange": "var(--color-active-orange)",
+      "red-orange": "var(--color-red-orange)",
       white: "var(--color-white)",
       "electric-cyan": "var(--color-electric-cyan)",
       "zingy-green": "var(--color-zingy-green)",
@@ -47,6 +48,7 @@ module.exports = {
       "gui-focus": "var(--color-gui-focus)",
       "gui-viewed": "var(--color-gui-viewed)",
       "gui-unavailable": "var(--color-gui-unavailable)",
+      "gui-error": "var(--color-gui-error)",
     },
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
@@ -55,12 +57,22 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
     }),
+    padding: (theme) => ({
+      btn: "var(--spacing-btn)",
+      "menu-row": "var(--spacing-menu-row)",
+      "menu-row-snug": "var(--spacing-menu-row-snug)",
+      media: "var(--spacing-media)",
+      input: "var(--spacing-input)",
+      overline: "var(--spacing-overline)",
+      ...theme("spacing"),
+    }),
     spacing: {
       0: "var(--spacing-0)",
       1: "var(--spacing-1)",
       4: "var(--spacing-4)",
       8: "var(--spacing-8)",
       12: "var(--spacing-12)",
+      14: "var(--spacing-14)",
       16: "var(--spacing-16)",
       20: "var(--spacing-20)",
       24: "var(--spacing-24)",
@@ -85,17 +97,28 @@ module.exports = {
       "widen-0.1": "var(--ls-widen-0_1: 0.1em)",
       "widen-0.15": "var(--ls-widen-0_15: 0.15em)",
     },
+    borderRadius: {
+      none: "0",
+      DEFAULT: "0.375rem",
+    },
     extend: {
       transitionProperty: {
         input: "background-color, box-shadow",
+      },
+      outline: {
+        "gui-focus": "4px solid var(--color-gui-focus)",
+      },
+      width: {
+        "extend-8": "calc(100% + var(--spacing-8))",
       },
     },
   },
   variants: {
     extend: {
-      textColor: ["hover", "focus", "active", "group-focus"],
+      borderColor: ["hover", "focus", "active", "group-focus", "disabled"],
+      textColor: ["hover", "focus", "active", "group-focus", "disabled"],
       display: ["group-focus"],
-      backgroundColor: ["disabled"],
+      backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
     },
   },
   corePlugins: {
