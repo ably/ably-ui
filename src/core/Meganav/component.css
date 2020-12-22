@@ -118,10 +118,6 @@
     @apply text-p3 text-dark-grey;
   }
 
-  .c-meganav-link {
-    @apply text-menu3 font-medium block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none;
-  }
-
   .c-meganav-overline {
     padding: 11px 0;
     @apply text-overline2 text-cool-black uppercase font-medium;

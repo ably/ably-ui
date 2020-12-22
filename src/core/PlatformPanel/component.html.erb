@@ -4,14 +4,12 @@
        <%= image_tag(ably_stack_path, alt: "Ably homepage") %>
       <p class="c-meganav-overline ml-24">The Ably Platform</p>
     </div>
+
     <p class="text-p1 text-cool-black mb-20">
       Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything realtime, and lets you focus on your code.
     </p>
-    <!-- Template processing does not remove spacing so svg needs to be immediately after the text to avoid extra spacing -->
-    <a href="/pub-sub-messaging" class="c-meganav-link group">Explore how it works<svg class="w-12 h-12 transform -rotate-90 align-top ml-4 icon-dark-grey group-hover:icon-gui-hover">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/pub-sub-messaging")) do %>Explore how it works<% end %>
   </div>
 
   <div>
@@ -48,11 +46,8 @@
         </a>
       </li>
     </ul>
-    <!-- Template processing does not remove spacing so svg needs to be immediately after the text to avoid extra spacing -->
-    <a href="/four-pillars-of-dependability" class="c-meganav-link group">Explore all platform features<svg class="w-12 h-12 transform -rotate-90 align-top ml-4 icon-dark-grey group-hover:icon-gui-hover">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore all platform features<% end %>
   </div>
 
   <div>
@@ -83,10 +78,7 @@
         </a>
       </li>
     </ul>
-    <!-- Template processing does not remove spacing so svg needs to be immediately after the text to avoid extra spacing -->
-    <a href="/four-pillars-of-dependability" class="c-meganav-link group">Explore our Four Pillars of Dependability<svg class="w-12 h-12 transform -rotate-90 align-top ml-4 icon-dark-grey group-hover:icon-gui-hover">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
   </div>
 </div>

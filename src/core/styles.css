@@ -28,5 +28,11 @@
         stroke: var(--color-gui-hover);
       }
     }
+
+    &:focus {
+      .group-focus\:icon-gui-focus {
+        stroke: var(--color-gui-focus);
+      }
+    }
   }
 }

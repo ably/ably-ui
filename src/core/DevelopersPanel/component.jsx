@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import FeaturedLink from "../FeaturedLink/component.jsx";
+
 const DevelopersPanel = ({ paths }) => (
   <div className="c-meganav-panel md:grid-cols-3">
     <div>
@@ -16,12 +18,10 @@ const DevelopersPanel = ({ paths }) => (
       <p className="text-p1 text-cool-black mb-20">
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
-      <a href="/documentation" className="c-meganav-link group">
+
+      <FeaturedLink url="/documentation" iconSpritesPath={paths.iconSprites}>
         Visit Documentation
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
 
     <div>

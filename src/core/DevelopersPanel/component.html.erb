@@ -17,11 +17,8 @@
     <p class="text-p1 text-cool-black mb-20">
       Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
     </p>
-    <a href="/documentation" class="c-meganav-link group">Visit Documentation
-      <svg class="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/documentation")) do %>Visit Documentation<% end %>
   </div>
 
   <div>

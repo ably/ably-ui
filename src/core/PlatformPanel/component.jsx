@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import FeaturedLink from "../FeaturedLink/component.jsx";
+
 const PlatformPanel = ({ paths }) => (
   <div className="c-meganav-panel sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
@@ -12,17 +14,15 @@ const PlatformPanel = ({ paths }) => (
         Easily power any realtime experience in your application.No complex infrastructure to manage or provision.Just a simple API that handles everything
         realtime, and lets you focus on your code.
       </p>
-      <a href="/pub-sub-messaging" className="c-meganav-link group">
+
+      <FeaturedLink url="/pub-sub-messaging" iconSpritesPath={paths.iconSprites}>
         Explore how it works
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
 
     <div>
       <p className="c-meganav-overline">Our features</p>
-      <ul className="mb-8">
+      <ul>
         <li>
           <a href="/pub-sub-messaging" className="group c-meganav-media">
             <p className="c-meganav-media-heading">Publish/subscribe messaging</p>
@@ -54,12 +54,10 @@ const PlatformPanel = ({ paths }) => (
           </a>
         </li>
       </ul>
-      <a href="" className="c-meganav-link group">
+
+      <FeaturedLink url="/four-pillars-of-dependability" iconSpritesPath={paths.iconSprites}>
         Explore all platform features
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
 
     <div>
@@ -90,12 +88,10 @@ const PlatformPanel = ({ paths }) => (
           </a>
         </li>
       </ul>
-      <a href="/four-pillars-of-dependability" className="c-meganav-link group">
+
+      <FeaturedLink url="/four-pillars-of-dependability" iconSpritesPath={paths.iconSprites}>
         Explore our Four Pillars of Dependability
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
   </div>
 );

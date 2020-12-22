@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import FeaturedLink from "../FeaturedLink/component.jsx";
+
 const WhyAblyPanel = ({ paths }) => (
   <div className="c-meganav-panel md:grid-cols-3">
     <div>
@@ -72,12 +74,10 @@ const WhyAblyPanel = ({ paths }) => (
           </a>
         </li>
       </ul>
-      <a href="/four-pillars-of-dependability" className="c-meganav-link group">
+
+      <FeaturedLink url="/four-pillars-of-dependability" iconSpritesPath={paths.iconSprites}>
         Explore our Four Pillars of Dependability
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
 
     <div>
@@ -104,12 +104,10 @@ const WhyAblyPanel = ({ paths }) => (
           </a>
         </li>
       </ul>
-      <a href="/blog" className="c-meganav-link group">
+
+      <FeaturedLink url="/blog" iconSpritesPath={paths.iconSprites}>
         More from our Blog
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
   </div>
 );
