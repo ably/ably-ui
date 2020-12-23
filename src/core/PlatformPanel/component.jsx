@@ -10,8 +10,8 @@ const PlatformPanel = ({ paths }) => (
         <img src={paths.ablyStack} alt="Ably homepage" />
         <p className="c-meganav-overline ml-24">The Ably Platform</p>
       </div>
-      <p className="text-p1 text-cool-black mb-20">
-        Easily power any realtime experience in your application.No complex infrastructure to manage or provision.Just a simple API that handles everything
+      <p className="text-p2 font-medium text-cool-black">
+        Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
         realtime, and lets you focus on your code.
       </p>
 
