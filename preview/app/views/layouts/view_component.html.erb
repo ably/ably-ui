@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag 'application' %>
   </head>
   <body>
-    <%= render(AblyUi::Core::Meganav.new) %>
+    <%= render(AblyUi::Core::Meganav.new(session_data: {})) %>
     <%= yield %>
     <%= javascript_include_tag 'globals' %>
   </body>
