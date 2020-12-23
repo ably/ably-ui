@@ -5,7 +5,7 @@ const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
   <button
     type="button"
     className="c-meganav-nav-item mr-0 py-16 focus:outline-none"
-    data-id="meganav-mobile-menu-btn"
+    data-id="meganav-mobile-menu"
     aria-expanded="false"
     aria-controls={ariaControls}
   >

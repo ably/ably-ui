@@ -135,6 +135,11 @@ export default function Meganav({ paths }) {
     MeganavScripts();
   }, []);
 
+  useEffect(() => {
+    const teardown = MeganavScripts();
+    return () => teardown();
+  }, []);
+
   return (
     <div className="c-meganav-wrapper">
       <div aria-label="Main Navigation" className="c-meganav" data-id="meganav">

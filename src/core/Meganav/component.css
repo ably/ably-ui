@@ -46,6 +46,11 @@
     padding-bottom: var(--spacing-8);
   }
 
+  /* Used by js to show dropdowns on hover */
+  .c-meganav-item-hover .c-meganav-dropdown {
+    @apply visible opacity-100;
+  }
+
   .c-meganav-item:focus-within .c-meganav-dropdown {
     visibility: visible;
     opacity: 1;
@@ -70,14 +75,6 @@
     [aria-controls="mobile-dropdown"]
     svg:last-child {
     display: inline;
-  }
-
-  /* Hover styles on touch devices are translated into clicks and if possible, focus.
-     Apply them only if we're somewhat confident we are on a mouse controlled device */
-  @media (hover: hover) and (pointer: fine) and (--bp-lg) {
-    .c-meganav-item:hover .c-meganav-dropdown {
-      @apply visible opacity-100 transform rotate-0;
-    }
   }
 
   .c-meganav-mobile-item:focus-within .c-meganav-mobile-panel {

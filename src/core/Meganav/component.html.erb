@@ -1,5 +1,5 @@
-<div class="c-meganav-wrapper">
-  <div aria-label="Main Navigation" class="c-meganav" data-id="meganav">
+<div class="c-meganav-wrapper"  data-id="meganav">
+  <div aria-label="Main Navigation" class="c-meganav">
     <%= render(AblyUi::Core::Logo.new) %>
     <!-- Desktop nav items -->
     <ul class="hidden lg:flex">
@@ -15,7 +15,7 @@
         </li>
       <% end %>
       <li>
-        <a href="/pricing" class="c-meganav-nav-item">Pricing</a>
+        <a href="/pricing" class="c-meganav-nav-item h-64 items-center flex">Pricing</a>
       </li>
     </ul>
     <!-- Signed-out nav items -->
