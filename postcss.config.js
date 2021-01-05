@@ -1,9 +1,9 @@
 module.exports = {
   plugins: [
     "postcss-import",
+    "postcss-nested",
     "tailwindcss",
     "postcss-each",
-    "postcss-nested",
     "postcss-custom-properties",
     "postcss-calc",
     "postcss-insert",
