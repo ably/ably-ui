@@ -21,18 +21,6 @@ const WhyAblyPanel = ({ paths }) => (
         </li>
 
         <li>
-          <a href="/migrate" className="group ui-meganav-media py-12">
-            <p className="ui-meganav-media-heading">Risk-free migration</p>
-          </a>
-        </li>
-
-        <li>
-          <a href="/enterprise" className="group ui-meganav-media py-12">
-            <p className="ui-meganav-media-heading">For enterprises</p>
-          </a>
-        </li>
-
-        <li>
           <a href="/aws" className="group ui-meganav-media py-12">
             <p className="ui-meganav-media-heading">Ably & AWS</p>
           </a>
@@ -83,24 +71,23 @@ const WhyAblyPanel = ({ paths }) => (
     <div>
       <p className="ui-meganav-overline">Blog</p>
       <ul className="mb-8">
+        {/* Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image */}
         <li>
-          {/* Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image */}
-          <a href="/blog/ably-wins-two-2020-devportal-awards" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Ably wins two 2020 Devportal Awards</p>
-            <p className="ui-meganav-media-copy">Nov 26, 2020</p>
+          <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications">
+            <p className="ui-meganav-media-heading">6 realtime engineering challenges for EdTech applications</p>
+            <p className="ui-meganav-media-copy">Jan 05, 2021</p>
           </a>
         </li>
         <li>
-          <a href="/blog/achieving-exactly-once-message-processing-with-ably" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Achieving exactly-once message processing with Ably</p>
-            <p className="ui-meganav-media-copy">Nov 17, 2020</p>
+          <a href="/blog/iot-wearable-azure-cognitive-services-ably" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Making a wearable live caption display using Azure Cognitive Services and Ably</p>
+            <p className="ui-meganav-media-copy">Dec 21, 2020</p>
           </a>
         </li>
-
         <li>
-          <a href="/blog/ablys-partnership-with-aws" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Ably’s partnership and global GTM strategy with AWS</p>
-            <p className="ui-meganav-media-copy">Oct 15, 2020</p>
+          <a href="/blog/airtable-database-realtime-messages" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Using Airtable as a database to store realtime messages</p>
+            <p className="ui-meganav-media-copy">Dec 15, 2020</p>
           </a>
         </li>
       </ul>

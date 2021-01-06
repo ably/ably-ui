@@ -1,55 +1,31 @@
 import React from "react";
 
 const UseCasesPanel = () => (
-  <div className="ui-meganav-panel md:grid-cols-2">
+  <div className="ui-meganav-panel md:grid-cols-2 gap-y-0 md:gap-y-32">
     <div>
-      <p className="ui-meganav-overline">By realtime use case</p>
+      <p className="ui-meganav-overline">By industry use case</p>
       <ul>
         <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Chat</p>
+          <a href="/solutions/edtech" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">EdTech</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Presence</p>
+          <a href="/solutions/automotive-logistics-and-mobility" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Automotive, Logistics, & Mobility</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Geolocation</p>
+          <a href="/solutions/b2b-platforms" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">B2B Platforms</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Multi-user spaces</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Charts & Dashboards</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Live Updates & Results</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">IoT Device Control</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Streaming Data Sources</p>
+          <a href="/solutions/healthcare" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Healthcare</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
@@ -57,52 +33,27 @@ const UseCasesPanel = () => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">By industry use case</p>
-      <ul>
+      <ul className="md:mt-40">
         <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">EdTech</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Automotive, Logistics, & Mobility</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">B2B Platforms</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Healthcare</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
-          </a>
-        </li>
-        <li>
-          <a href="" className="ui-meganav-media group">
+          <a href="/solutions/iot-and-connected-devices" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">eCommerce & Retail</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
+          <a href="/industry/sports-media-and-audience-engagement" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Sports & Media</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
+          <a href="/industry/gaming" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Gaming</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>
         </li>
         <li>
-          <a href="" className="ui-meganav-media group">
+          <a href="/industry/ecommerce-and-retail" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
             <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
           </a>

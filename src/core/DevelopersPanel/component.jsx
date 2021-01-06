@@ -30,25 +30,19 @@ const DevelopersPanel = ({ paths }) => (
         <li>
           <a href="/integrations" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Third-party integrations & plugins</p>
-            <p className="ui-meganav-media-copy">Extend Ably’s platform into third party clouds and systems like AWS Lambda and AWS Kinesis.</p>
+            <p className="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
           </a>
         </li>
         <li>
           <a href="/protocols" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Multi-protocol messaging</p>
-            <p className="ui-meganav-media-copy">Protocols serve different purposes. We support WebSockets, MQTT, SSE, and more.</p>
+            <p className="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
           </a>
         </li>
         <li>
           <a href="/hub" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Streaming data sources</p>
-            <p className="ui-meganav-media-copy">Free streaming data sources from across industries like transport and finance.</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://labs.ably.com" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Ably Labs</p>
-            <p className="ui-meganav-media-copy">See Ably in action. See what you can do with Ably. Do more with Ably.</p>
+            <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
           </a>
         </li>
       </ul>
@@ -60,19 +54,16 @@ const DevelopersPanel = ({ paths }) => (
           <p className="ui-meganav-media-heading">Download an SDK</p>
         </a>
       </li>
-
       <li>
         <a href="https://changelog.ably.com/" className="group ui-meganav-media py-12">
           <p className="ui-meganav-media-heading">Platform changelog</p>
         </a>
       </li>
-
       <li>
         <a href="/support" className="group ui-meganav-media py-12">
           <p className="ui-meganav-media-heading">Support & FAQs</p>
         </a>
       </li>
-
       <li>
         <a href="http://status.ably.io/" className="group ui-meganav-media py-12">
           <p className="ui-meganav-media-heading">Status</p>
