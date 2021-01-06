@@ -47,9 +47,11 @@
 
             <hr class="ui-meganav-hr mb-16" />
 
-            <% if @session_data[:logOut] %>
-              <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: "block mx-8 my-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8" %>
-            <% end %>
+            <div className="mb-16 px-16">
+              <% if @session_data[:logOut] %>
+                <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: "block mx-8 my-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8" %>
+              <% end %>
+            </div>
           </div>
         </li>
 
