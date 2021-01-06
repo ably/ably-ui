@@ -2,7 +2,7 @@ import "./component.css";
 
 // The below javascript is not required for the meganav to function but will add behaviours that users expect, help with managing focus and aria attributes
 
-const HOVER_CLASS = "c-meganav-item-hover";
+const HOVER_CLASS = "ui-meganav-item-hover";
 
 const queryId = (val, append = "") =>
   document.querySelector(`[data-id=${val}]${append}`);

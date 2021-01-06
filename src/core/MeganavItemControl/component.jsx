@@ -5,7 +5,7 @@ const MeganavItemControl = ({ iconSpritesPath, ariaControls, children }) => (
   <button
     data-id="meganav-item-control"
     type="button"
-    className="c-meganav-nav-item h-64 flex items-center group"
+    className="ui-meganav-nav-item h-64 flex items-center group"
     aria-expanded="false"
     aria-controls={ariaControls}
   >

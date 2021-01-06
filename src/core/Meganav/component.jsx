@@ -35,19 +35,19 @@ const panels = [
 const DesktopNavItems = ({ paths }) => (
   <ul className="hidden lg:flex">
     {panels.map((panel) => (
-      <li className="c-meganav-item" key={panel.id}>
+      <li className="ui-meganav-item" key={panel.id}>
         <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls={panel.id}>
           {panel.label}
         </MeganavItemControl>
 
-        <div className="c-meganav-dropdown" id={panel.id}>
+        <div className="ui-meganav-dropdown" id={panel.id}>
           <panel.component paths={paths} />
         </div>
       </li>
     ))}
 
-    <li className="c-meganav-item">
-      <a href="/pricing" className="c-meganav-nav-item h-64 items-center flex">
+    <li className="ui-meganav-item">
+      <a href="/pricing" className="ui-meganav-nav-item h-64 items-center flex">
         Pricing
       </a>
     </li>
@@ -94,13 +94,13 @@ const SignedInNavItems = ({ sessionState, paths }) => {
 
   return (
     <ul className="hidden lg:flex items-center">
-      <li className="c-meganav-item relative">
+      <li className="ui-meganav-item relative">
         <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel">
           {accountNameTruncated}
         </MeganavItemControl>
 
-        <div className="c-meganav-account-panel" id="account-panel">
-          <p className="c-meganav-overline mt-24 mx-16">Your account</p>
+        <div className="ui-meganav-account-panel" id="account-panel">
+          <p className="ui-meganav-overline mt-24 mx-16">Your account</p>
           <ul className="mb-16 mx-16">
             {links.map((item) => (
               <li key={item.href}>
@@ -111,7 +111,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
             ))}
           </ul>
 
-          <p className="c-meganav-overline mx-16">{preferredEmailTruncated}</p>
+          <p className="ui-meganav-overline mx-16">{preferredEmailTruncated}</p>
           <ul className="mb-8 mx-16">
             <li>
               <a
@@ -123,7 +123,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
             </li>
           </ul>
 
-          <hr className="c-meganav-hr mb-16" />
+          <hr className="ui-meganav-hr mb-16" />
 
           {sessionState.logOut && (
             <div className="mb-16 px-16">
@@ -145,7 +145,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
 
       {sessionState.account && (
         <li className="ml-16">
-          <a href={sessionState.account.links.dashboard.href} className="c-btn-secondary">
+          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary">
             Dashboard
           </a>
         </li>
@@ -162,17 +162,17 @@ SignedInNavItems.propTypes = {
 const SignedOutNavItems = () => (
   <ul className="hidden lg:flex items-center">
     <li>
-      <a href="/contact" className="c-meganav-nav-item">
+      <a href="/contact" className="ui-meganav-nav-item">
         Contact us
       </a>
     </li>
     <li>
-      <a href="/login" className="c-meganav-nav-item">
+      <a href="/login" className="ui-meganav-nav-item">
         Login
       </a>
     </li>
     <li className="ml-16">
-      <a href="/sign-up" className="c-btn">
+      <a href="/sign-up" className="ui-btn">
         Sign up free
       </a>
     </li>
@@ -185,32 +185,32 @@ const MobileNavItems = ({ paths, sessionState }) => (
       {sessionState.signedIn && sessionState.logOut ? (
         <LogOutLink {...sessionState.logOut}>
           {({ text, href, onClick }) => (
-            <a onClick={onClick} href={href} className="c-meganav-nav-item">
+            <a onClick={onClick} href={href} className="ui-meganav-nav-item">
               {text}
             </a>
           )}
         </LogOutLink>
       ) : (
-        <a href="/login" className="c-meganav-nav-item">
+        <a href="/login" className="ui-meganav-nav-item">
           Login
         </a>
       )}
     </li>
 
-    <li className="c-meganav-item">
+    <li className="ui-meganav-item">
       <MobileMenuControl iconSpritesPath={paths.iconSprites} ariaControls="mobile-dropdown" />
 
-      <div className="c-meganav-mobile-dropdown" id="mobile-dropdown">
+      <div className="ui-meganav-mobile-dropdown" id="mobile-dropdown">
         <div className="py-16 px-24 md:px-32 lg:px-64 bg-white">
           <ul className="mb-16">
             {panels.map((panel) => {
               return (
-                <li className="c-meganav-mobile-item" key={`${panel.id}-mobile`}>
+                <li className="ui-meganav-mobile-item" key={`${panel.id}-mobile`}>
                   <PanelOpenControl iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`}>
                     {panel.label}
                   </PanelOpenControl>
 
-                  <div className="c-meganav-mobile-panel" id={`${panel.id}-mobile`}>
+                  <div className="ui-meganav-mobile-panel" id={`${panel.id}-mobile`}>
                     <PanelCloseControl iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
                     <panel.component paths={paths} />
                   </div>
@@ -218,24 +218,24 @@ const MobileNavItems = ({ paths, sessionState }) => (
               );
             })}
             <li>
-              <a href="/pricing" className="c-meganav-mobile-link">
+              <a href="/pricing" className="ui-meganav-mobile-link">
                 Pricing
               </a>
             </li>
           </ul>
 
-          <hr className="c-meganav-hr mb-20" />
+          <hr className="ui-meganav-hr mb-20" />
 
           <div className="flex justify-between items-center mb-16">
-            <a href="/contact" className="c-meganav-nav-item ml-0 py-0">
+            <a href="/contact" className="ui-meganav-nav-item ml-0 py-0">
               Contact us
             </a>
             {sessionState.signedIn && sessionState.account ? (
-              <a href={sessionState.account.links.dashboard.href} className="c-btn-secondary">
+              <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary">
                 Dashboard
               </a>
             ) : (
-              <a href="/sign-up" className="c-btn">
+              <a href="/sign-up" className="ui-btn">
                 Sign up free
               </a>
             )}
@@ -267,8 +267,8 @@ export default function Meganav({ paths }) {
   }, [sessionState?.signedIn]);
 
   return (
-    <div className="c-meganav-wrapper" data-id="meganav">
-      <div aria-label="Main Navigation" className="c-meganav">
+    <div className="ui-meganav-wrapper" data-id="meganav">
+      <div aria-label="Main Navigation" className="ui-meganav">
         <Logo logoPath={paths.logo} />
         <DesktopNavItems paths={paths} />
         {sessionState ? <SignIn sessionState={sessionState} paths={paths} /> : <SignInPlaceholder />}

@@ -1,16 +1,16 @@
 @layer components {
-  .c-meganav-wrapper {
+  .ui-meganav-wrapper {
     @apply antialiased shadow-subtle bg-white font-sans font-light top-0 fixed w-full;
   }
 
-  .c-meganav {
+  .ui-meganav {
     @apply h-64 flex justify-between items-center max-w-screen-xl mx-auto px-24 md:px-32 lg:px-40 xl:px-64;
   }
 
-  .c-meganav-dropdown,
-  .c-meganav-mobile-dropdown,
-  .c-meganav-mobile-panel,
-  .c-meganav-account-panel {
+  .ui-meganav-dropdown,
+  .ui-meganav-mobile-dropdown,
+  .ui-meganav-mobile-panel,
+  .ui-meganav-account-panel {
     position: absolute;
     visibility: hidden;
     z-index: 1;
@@ -24,19 +24,19 @@
     @apply border-mid-grey border-t;
   }
 
-  .c-meganav-account-panel {
+  .ui-meganav-account-panel {
     left: auto;
     min-width: 320px;
     box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
     @apply bg-white rounded-t-none;
   }
 
-  .c-meganav-dropdown {
+  .ui-meganav-dropdown {
     box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
     background-color: var(--color-white);
   }
 
-  .c-meganav-mobile-panel {
+  .ui-meganav-mobile-panel {
     z-index: 2;
     top: 0;
     background-color: var(--color-white);
@@ -47,31 +47,31 @@
   }
 
   /* Used by js to show dropdowns on hover */
-  .c-meganav-item-hover .c-meganav-dropdown,
-  .c-meganav-item-hover .c-meganav-account-panel {
+  .ui-meganav-item-hover .ui-meganav-dropdown,
+  .ui-meganav-item-hover .ui-meganav-account-panel {
     @apply visible opacity-100;
   }
 
-  .c-meganav-item:focus-within .c-meganav-dropdown {
+  .ui-meganav-item:focus-within .ui-meganav-dropdown {
     visibility: visible;
     opacity: 1;
     transform: rotateX(0);
     transition: none;
   }
 
-  .c-meganav-item:focus-within ~ .c-meganav-item .c-meganav-dropdown {
+  .ui-meganav-item:focus-within ~ .ui-meganav-item .ui-meganav-dropdown {
     visibility: hidden;
     opacity: 0;
   }
 
-  .c-meganav-item:focus-within .c-meganav-mobile-dropdown {
+  .ui-meganav-item:focus-within .ui-meganav-mobile-dropdown {
     visibility: visible;
     opacity: 1;
     /* transform: rotateX(0); */
     height: 90vh;
   }
 
-  .c-meganav-item:focus-within .c-meganav-account-panel {
+  .ui-meganav-item:focus-within .ui-meganav-account-panel {
     visibility: visible;
     opacity: 1;
     transition: none;
@@ -79,59 +79,59 @@
   }
 
   /* Controls the hamburger/close menu button switch */
-  .c-meganav-item:focus-within
+  .ui-meganav-item:focus-within
     [aria-controls="mobile-dropdown"]
     svg:first-child {
     display: none;
   }
 
-  .c-meganav-item:focus-within
+  .ui-meganav-item:focus-within
     [aria-controls="mobile-dropdown"]
     svg:last-child {
     display: inline;
   }
 
-  .c-meganav-mobile-item:focus-within .c-meganav-mobile-panel {
+  .ui-meganav-mobile-item:focus-within .ui-meganav-mobile-panel {
     @apply visible opacity-100 transform translate-x-0;
   }
 
-  .c-meganav-nav-item {
+  .ui-meganav-nav-item {
     @apply text-menu2 font-medium block mx-8 xl:mx-12 px-0 py-20 text-cool-black hover:text-gui-hover focus:text-gui-focus focus:outline-none;
   }
 
-  .c-meganav-mobile-link {
+  .ui-meganav-mobile-link {
     padding: 15px 0 14px;
     @apply text-menu2 block flex items-baseline font-medium text-cool-black outline-none w-full text-left focus:outline-none;
   }
 
-  .c-meganav-panel {
+  .ui-meganav-panel {
     @apply grid gap-24 md:gap-32 grid-cols-1 max-w-screen-xl py-24 lg:py-32 px-24 md:px-32 lg:px-32 xl:px-64 mx-auto;
   }
 
-  .c-meganav-media {
+  .ui-meganav-media {
     @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
   }
 
-  .c-meganav-media-with-image {
+  .ui-meganav-media-with-image {
     grid-template-columns: max-content 1fr;
     grid-template-rows: min-content 1fr;
 
     @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 grid gap-x-16 w-extend-8;
   }
 
-  .c-meganav-media-heading {
+  .ui-meganav-media-heading {
     @apply text-menu3 text-cool-black font-medium group-hover:text-gui-hover group-focus:text-gui-focus;
   }
 
-  .c-meganav-media-copy {
+  .ui-meganav-media-copy {
     @apply text-p3 text-dark-grey;
   }
 
-  .c-meganav-overline {
+  .ui-meganav-overline {
     @apply text-overline2 text-cool-black uppercase font-medium tracking-widen-0.15 p-overline;
   }
 
-  .c-meganav-hr {
+  .ui-meganav-hr {
     @apply my-0 text-mid-grey;
   }
 }

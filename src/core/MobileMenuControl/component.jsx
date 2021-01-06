@@ -4,7 +4,7 @@ import T from "prop-types";
 const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
   <button
     type="button"
-    className="c-meganav-nav-item mr-0 py-16 focus:outline-none"
+    className="ui-meganav-nav-item mr-0 py-16 focus:outline-none"
     data-id="meganav-mobile-menu"
     aria-expanded="false"
     aria-controls={ariaControls}
