@@ -13,15 +13,19 @@ const queryIdAll = (val, append = "") =>
 const hoverEnabled = () =>
   window.matchMedia(
     "(hover: hover) and (pointer: fine) and (min-width: 1040px)"
+  ).matches;
+
+const dropDownsHaveFocus = (nodeList) =>
+  Array.from(nodeList).some(
+    (btn) =>
+      document.activeElement !== btn &&
+      btn.parentNode.contains(document.activeElement)
   );
 
-const focusOutsideNodeTree = (nodeList) =>
-  !Array.from(nodeList).some((btn) =>
-    btn.parentNode.contains(document.activeElement)
-  );
+const itemControlsFocused = (itemControls) =>
+  Array.from(itemControls).some((btn) => document.activeElement === btn);
 
 export default function Meganav() {
-  const meganav = queryId("meganav");
   const mobileMenu = queryId("meganav-mobile-menu");
   const itemControls = queryIdAll("meganav-item-control");
   const mobilePanelOpen = queryIdAll("meganav-mobile-panel-open");
@@ -40,30 +44,43 @@ export default function Meganav() {
     otherControls
       .map((control) => Array.from(control))
       .flat()
-      .forEach((btn) => btn.setAttribute("aria-expanded", false));
+      .forEach((btn) => {
+        btn.setAttribute("aria-expanded", false);
+      });
 
     itemControls.forEach((btn) => btn.parentNode.classList.remove(HOVER_CLASS));
   };
 
   const itemControlsEvents = () => {
-    // Open meganav on hover, but only under conditions where hover is "likely".
-    // Panels opening on focus is done using CSS only.
+    // Open meganav on hover, but only under conditions where hover is "likely" and panels don't have focus.
+    // Panels opening on focus is done using CSS only, but we update aria attributes here.
     const mouseenterHandler = (btn) => () => {
-      if (focusOutsideNodeTree(itemControls) && hoverEnabled()) {
+      if (
+        !dropDownsHaveFocus(itemControls) &&
+        !itemControlsFocused(itemControls) &&
+        hoverEnabled()
+      ) {
         btn.parentNode.classList.add(HOVER_CLASS);
         btn.setAttribute("aria-expanded", true);
       }
     };
 
     const mouseleaveHandler = (btn) => () => {
-      if (focusOutsideNodeTree(itemControls) && hoverEnabled()) {
-        btn.setAttribute("aria-expanded", false);
+      if (
+        !dropDownsHaveFocus(itemControls) &&
+        !itemControlsFocused(itemControls) &&
+        hoverEnabled()
+      ) {
         btn.parentNode.classList.remove(HOVER_CLASS);
+        btn.setAttribute("aria-expanded", false);
       }
     };
 
     const focusHandler = (btn) => () => {
-      itemControls.forEach((btn) => btn.setAttribute("aria-expanded", false));
+      itemControls.forEach((btn) => {
+        btn.parentNode.classList.remove(HOVER_CLASS);
+        btn.setAttribute("aria-expanded", false);
+      });
       btn.setAttribute("aria-expanded", true);
     };
 
@@ -90,14 +107,13 @@ export default function Meganav() {
     return teardown;
   };
 
+  // Close menu when user clicks outside of viewport
   const windowOnBlur = () => {
-    // Close when user clicks outside of viewport
-    window.addEventListener("onblur", () => closeAndCleanUp());
+    window.onblur = () => closeAndCleanUp();
     return () => (window.onblur = null);
   };
 
   const mobilePanelOpenClick = () => {
-    // Open mobile panels
     const clickHandler = (btn) => () => {
       btn.setAttribute("aria-expanded", true);
       const ariaId = btn.getAttribute("aria-controls");
@@ -118,7 +134,6 @@ export default function Meganav() {
   };
 
   const mobilePanelCloseClick = () => {
-    // Close mobile panels
     const clickHandler = (btn) => () => {
       btn.setAttribute("aria-expanded", false);
       const ariaId = btn.getAttribute("aria-controls");
@@ -140,8 +155,8 @@ export default function Meganav() {
     return teardown;
   };
 
+  // Mobile menu toggle
   const mobileMenuToggleClick = () => {
-    // Mobile menu toggle; clear focus
     const clickHandler = ({ currentTarget }) => {
       const ariaExpanded = currentTarget.getAttribute("aria-expanded");
 
@@ -161,18 +176,31 @@ export default function Meganav() {
     };
   };
 
-  const meganavFocusout = () => {
-    const focusoutHandler = () => {
-      if (meganav.contains(document.activeElement)) return;
+  // Close menu when click/tap outside of nav
+  const documentClick = () => {
+    // Fetch li's that contain buttons and check if the click happens within the panel they hold,
+    // as well as the mobile menu button - if not, close the nav
+    const clickHandler = (e) => {
+      if (
+        Array.from(itemControls).some((btn) =>
+          btn.parentNode.contains(e.target)
+        ) ||
+        Array.from(mobilePanelOpen).some((btn) =>
+          btn.parentNode.contains(e.target)
+        ) ||
+        e.target === mobileMenu
+      )
+        return;
+      console.log("here");
       closeAndCleanUp();
     };
 
-    meganav.addEventListener("focusout", focusoutHandler);
+    document.addEventListener("click", clickHandler);
 
     return {
-      target: meganav,
-      event: "focusout",
-      handler: focusoutHandler,
+      target: document,
+      event: "focusin",
+      handler: clickHandler,
     };
   };
 
@@ -182,7 +210,7 @@ export default function Meganav() {
     mobilePanelOpenClick(),
     mobilePanelCloseClick(),
     mobileMenuToggleClick(),
-    meganavFocusout(),
+    documentClick(),
   ].flat();
 
   return () =>
