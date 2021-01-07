@@ -8,25 +8,25 @@ const UseCasesPanel = () => (
         <li>
           <a href="/solutions/edtech" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">EdTech</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Deliver interactive learning experiences like multi-user classrooms with chat.</p>
           </a>
         </li>
         <li>
           <a href="/solutions/automotive-logistics-and-mobility" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Automotive, Logistics, & Mobility</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Power asset tracking, live transit updates, race-critical diagnostics, and more.</p>
           </a>
         </li>
         <li>
           <a href="/solutions/b2b-platforms" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">B2B Platforms</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Empower customers with realtime technology that gives them a competitive edge.</p>
           </a>
         </li>
         <li>
           <a href="/solutions/healthcare" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Healthcare</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Provide HIPAA-compliant realtime apps healthcare professionals can depend on.</p>
           </a>
         </li>
       </ul>
@@ -35,27 +35,27 @@ const UseCasesPanel = () => (
     <div>
       <ul className="md:mt-40">
         <li>
-          <a href="/solutions/iot-and-connected-devices" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">eCommerce & Retail</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+          <a href="/industry/ecommerce-and-retail" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
+            <p className="ui-meganav-media-copy">Monitor and control global IoT deployments of any kind in realtime.</p>
           </a>
         </li>
         <li>
           <a href="/industry/sports-media-and-audience-engagement" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Sports & Media</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Deliver global realtime experiences to keep fans informed, engaged, entertained.</p>
           </a>
         </li>
         <li>
           <a href="/industry/gaming" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Gaming</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+            <p className="ui-meganav-media-copy">Power interactive gaming experiences that are wicked fast and utterly reliable.</p>
           </a>
         </li>
         <li>
-          <a href="/industry/ecommerce-and-retail" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
-            <p className="ui-meganav-media-copy">Some copy will come here soon and it won’t be longer than 80 characters. 80 now.</p>
+          <a href="/solutions/iot-and-connected-devices" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">eCommerce & Retail</p>
+            <p className="ui-meganav-media-copy">Enable realtime pricing, inventory, and transactions to enrich user experiences.</p>
           </a>
         </li>
       </ul>
