@@ -4,11 +4,11 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const PlatformPanel = ({ paths }) => (
-  <div className="ui-meganav-panel sm:grid-cols-2 md:grid-cols-3">
+  <section className="ui-meganav-panel sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
       <div className="flex items-center mb-20 lg:-mt-12">
         <img src={paths.ablyStack} alt="Ably homepage" />
-        <p className="ui-meganav-overline ml-24">The Ably Platform</p>
+        <h3 className="ui-meganav-overline ml-24">The Ably Platform</h3>
       </div>
       <p className="text-p2 font-medium text-cool-black">
         Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
@@ -21,8 +21,10 @@ const PlatformPanel = ({ paths }) => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">Our features</p>
-      <ul>
+      <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-our-features">
+        Our features
+      </h3>
+      <ul aria-labelledby="meganav-platform-panel-list-our-features">
         <li>
           <a href="/pub-sub-messaging" className="group ui-meganav-media">
             <p className="ui-meganav-media-heading">Publish/subscribe messaging</p>
@@ -61,8 +63,10 @@ const PlatformPanel = ({ paths }) => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">Our technology</p>
-      <ul className="mb-8">
+      <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">
+        Our technology
+      </h3>
+      <ul className="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
         <li>
           <a href="/four-pillars-of-dependability#performance" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Predictable performance</p>
@@ -93,7 +97,7 @@ const PlatformPanel = ({ paths }) => (
         Explore our Four Pillars of Dependability
       </FeaturedLink>
     </div>
-  </div>
+  </section>
 );
 
 PlatformPanel.propTypes = {

@@ -1,10 +1,12 @@
 import React from "react";
 
 const UseCasesPanel = () => (
-  <div className="ui-meganav-panel md:grid-cols-2 gap-y-0 md:gap-y-32">
+  <section className="ui-meganav-panel md:grid-cols-2 gap-y-0 md:gap-y-32">
     <div>
-      <p className="ui-meganav-overline">By industry use case</p>
-      <ul>
+      <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry-use-cases">
+        By industry use case
+      </h3>
+      <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
         <li>
           <a href="/solutions/edtech" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">EdTech</p>
@@ -60,7 +62,7 @@ const UseCasesPanel = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 );
 
 export default UseCasesPanel;

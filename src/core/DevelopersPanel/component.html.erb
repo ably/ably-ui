@@ -1,6 +1,6 @@
-<div class="ui-meganav-panel md:grid-cols-3">
+<section class="ui-meganav-panel md:grid-cols-3">
   <div>
-    <p class="ui-meganav-overline">Documentation</p>
+    <h3 class="ui-meganav-overline">Documentation</h3>
     <div class="relative mb-16">
       <form class="relative" action="/search" method="get">
         <svg class="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 icon-cool-black">
@@ -22,8 +22,8 @@
   </div>
 
   <div>
-    <p class="ui-meganav-overline">EXPLORE</p>
-    <ul>
+    <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">Explore</h3>
+    <ul aria-labelledby="meganav-developers-panel-explore">
       <li>
         <a href="/integrations" class="ui-meganav-media group">
           <p class="ui-meganav-media-heading">Third-party integrations & plugins</p>
@@ -45,7 +45,7 @@
     </ul>
   </div>
 
-  <ul>
+  <ul aria-labelledby="meganav-developers-panel-explore">
     <li>
       <a href="/download" class="group ui-meganav-media py-12">
         <p class="ui-meganav-media-heading">Download an SDK</p>
@@ -70,4 +70,4 @@
       </a>
     </li>
   </ul>
-</div>
+</section>

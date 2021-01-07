@@ -4,9 +4,9 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const DevelopersPanel = ({ paths }) => (
-  <div className="ui-meganav-panel md:grid-cols-3">
+  <section className="ui-meganav-panel md:grid-cols-3">
     <div>
-      <p className="ui-meganav-overline">Documentation</p>
+      <h3 className="ui-meganav-overline">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
           <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 icon-cool-black">
@@ -25,8 +25,10 @@ const DevelopersPanel = ({ paths }) => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">EXPLORE</p>
-      <ul>
+      <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
+        EXPLORE
+      </h3>
+      <ul aria-labelledby="meganav-developers-panel-explore">
         <li>
           <a href="/integrations" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Third-party integrations & plugins</p>
@@ -48,7 +50,7 @@ const DevelopersPanel = ({ paths }) => (
       </ul>
     </div>
 
-    <ul>
+    <ul aria-labelledby="meganav-developers-panel-explore">
       <li>
         <a href="/download" className="group ui-meganav-media py-12">
           <p className="ui-meganav-media-heading">Download an SDK</p>
@@ -70,7 +72,7 @@ const DevelopersPanel = ({ paths }) => (
         </a>
       </li>
     </ul>
-  </div>
+  </section>
 );
 
 DevelopersPanel.propTypes = {

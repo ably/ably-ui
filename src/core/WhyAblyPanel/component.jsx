@@ -4,10 +4,12 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const WhyAblyPanel = ({ paths }) => (
-  <div className="ui-meganav-panel md:grid-cols-3">
+  <section className="ui-meganav-panel md:grid-cols-3">
     <div>
-      <p className="ui-meganav-overline">Why companies choose Ably</p>
-      <ul>
+      <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">
+        Why companies choose Ably
+      </h3>
+      <ul aria-labelledby="meganav-why-ably-panel-list-why-companies">
         <li>
           <a href="/customers" className="group ui-meganav-media py-12">
             <p className="ui-meganav-media-heading">Customer stories</p>
@@ -35,8 +37,10 @@ const WhyAblyPanel = ({ paths }) => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">Four pillars of dependability</p>
-      <ul className="mb-8">
+      <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-four-pillars">
+        Four pillars of dependability
+      </h3>
+      <ul className="mb-8" aria-labelledby="meganav-why-ably-panel-list-four-pillars">
         <li>
           <a href="/four-pillars-of-dependability#performance" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Predictable performance</p>
@@ -69,11 +73,13 @@ const WhyAblyPanel = ({ paths }) => (
     </div>
 
     <div>
-      <p className="ui-meganav-overline">Blog</p>
-      <ul className="mb-8">
+      <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">
+        Blog
+      </h3>
+      <ul className="mb-16" aria-labelledby="meganav-why-ably-panel-list-blog">
         {/* Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image */}
         <li>
-          <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications">
+          <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">6 realtime engineering challenges for EdTech applications</p>
             <p className="ui-meganav-media-copy">Jan 05, 2021</p>
           </a>
@@ -96,7 +102,7 @@ const WhyAblyPanel = ({ paths }) => (
         More from our Blog
       </FeaturedLink>
     </div>
-  </div>
+  </section>
 );
 
 WhyAblyPanel.propTypes = {

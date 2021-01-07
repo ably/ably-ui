@@ -260,14 +260,14 @@ export default function Meganav({ paths }) {
   }, [sessionState?.signedIn]);
 
   return (
-    <div className="ui-meganav-wrapper" data-id="meganav">
-      <div aria-label="Main Navigation" className="ui-meganav">
+    <nav className="ui-meganav-wrapper" data-id="meganav" aria-label="Main">
+      <div className="ui-meganav ui-grid-px">
         <Logo logoPath={paths.logo} />
         <DesktopNavItems paths={paths} />
         {sessionState ? <SignIn sessionState={sessionState} paths={paths} /> : <SignInPlaceholder />}
         <MobileNavItems sessionState={sessionState || {}} paths={paths} />
       </div>
-    </div>
+    </nav>
   );
 }
 
