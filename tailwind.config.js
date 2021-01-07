@@ -86,6 +86,7 @@ module.exports = {
     }),
     boxShadow: {
       subtle: "0px 1px 0px var(--color-mid-grey)",
+      container: "0px 24px 80px rgba(0, 0, 0, 0.1)",
       input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", //color-gui-hover at 50% opacity
     },
     letterSpacing: {

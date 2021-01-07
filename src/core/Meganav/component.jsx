@@ -104,7 +104,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
           <ul className="mb-16 mx-16">
             {links.map((item) => (
               <li key={item.href}>
-                <a className="block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8" href={item.href}>
+                <a className="ui-meganav-account-panel-link" href={item.href}>
                   {item.text}
                 </a>
               </li>
@@ -114,10 +114,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
           <p className="ui-meganav-overline mx-16">{preferredEmailTruncated}</p>
           <ul className="mb-8 mx-16">
             <li>
-              <a
-                href={sessionState.mySettings.href}
-                className="block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8"
-              >
+              <a href={sessionState.mySettings.href} className="ui-meganav-account-panel-link">
                 {sessionState.mySettings.text}
               </a>
             </li>
@@ -129,11 +126,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
             <div className="mb-16 px-16">
               <LogOutLink {...sessionState.logOut}>
                 {({ text, href, onClick }) => (
-                  <a
-                    onClick={onClick}
-                    href={href}
-                    className="block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8"
-                  >
+                  <a onClick={onClick} href={href} className="ui-meganav-account-panel-link">
                     {text}
                   </a>
                 )}

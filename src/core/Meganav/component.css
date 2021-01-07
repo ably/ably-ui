@@ -1,6 +1,7 @@
 @layer components {
   .ui-meganav-wrapper {
-    @apply antialiased shadow-subtle bg-white font-sans font-light top-0 fixed w-full;
+    /* z-index root for meganav */
+    @apply antialiased shadow-subtle bg-white font-sans top-0 fixed w-full;
   }
 
   .ui-meganav {
@@ -12,38 +13,29 @@
   .ui-meganav-mobile-panel,
   .ui-meganav-account-panel {
     position: absolute;
-    visibility: hidden;
     z-index: 1;
-
-    top: var(--spacing-64);
-    left: 0;
-    right: 0;
-
     overflow: scroll;
 
-    @apply border-mid-grey border-t;
-  }
-
-  .ui-meganav-account-panel {
-    left: auto;
-    min-width: 320px;
-    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
-    @apply bg-white rounded-t-none;
+    @apply border-mid-grey border-t shadow-container top-64 left-0 right-0;
+    @apply opacity-0 invisible;
   }
 
   .ui-meganav-dropdown {
-    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
     background-color: var(--color-white);
   }
 
   .ui-meganav-mobile-panel {
     z-index: 2;
-    top: 0;
-    background-color: var(--color-white);
-    opacity: 0.3;
-    transform: translateX(-100%);
     min-height: 100%;
-    padding-bottom: var(--spacing-8);
+
+    @apply top-0 bg-white transform -translate-x-full pt-16 border-0 opacity-30;
+  }
+
+  .ui-meganav-account-panel {
+    left: auto;
+    min-width: 320px;
+
+    @apply bg-white rounded-t-none;
   }
 
   /* Used by js to show dropdowns on hover */
@@ -52,30 +44,21 @@
     @apply visible opacity-100;
   }
 
+  /* Display dropdowns and panels on focus */
   .ui-meganav-item:focus-within .ui-meganav-dropdown {
-    visibility: visible;
-    opacity: 1;
-    transform: rotateX(0);
-    transition: none;
+    @apply opacity-100 visible;
   }
 
   .ui-meganav-item:focus-within ~ .ui-meganav-item .ui-meganav-dropdown {
-    visibility: hidden;
-    opacity: 0;
+    @apply opacity-0 invisible;
   }
 
   .ui-meganav-item:focus-within .ui-meganav-mobile-dropdown {
-    visibility: visible;
-    opacity: 1;
-    /* transform: rotateX(0); */
-    height: 90vh;
+    @apply opacity-100 visible;
   }
 
   .ui-meganav-item:focus-within .ui-meganav-account-panel {
-    visibility: visible;
-    opacity: 1;
-    transition: none;
-    /* transform: rotateX(0); */
+    @apply opacity-100 visible;
   }
 
   /* Controls the hamburger/close menu button switch */
@@ -91,17 +74,30 @@
     display: inline;
   }
 
+  /* When mobile panels are open, make the nav  */
+  .ui-meganav-mobile-dropdown:focus-within {
+    height: calc(100vh - 64px);
+  }
+
   .ui-meganav-mobile-item:focus-within .ui-meganav-mobile-panel {
     @apply visible opacity-100 transform translate-x-0;
   }
 
   .ui-meganav-nav-item {
-    @apply text-menu2 font-medium block mx-8 xl:mx-12 px-0 py-20 text-cool-black hover:text-gui-hover focus:text-gui-focus focus:outline-none;
+    @apply text-menu2 font-medium block text-cool-black;
+    @apply mx-8 xl:mx-12 px-0 py-20;
+    @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
   }
 
   .ui-meganav-mobile-link {
-    padding: 15px 0 14px;
-    @apply text-menu2 block flex items-baseline font-medium text-cool-black outline-none w-full text-left focus:outline-none;
+    @apply p-menu-row relative -left-8 w-extend-8;
+    @apply text-menu2 font-medium block text-cool-black text-left;
+    @apply flex items-baseline;
+    @apply focus:text-gui-focus focus:outline-none;
+  }
+
+  .ui-meganav-account-panel-link {
+    @apply block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8 font-light;
   }
 
   .ui-meganav-panel {
@@ -116,7 +112,8 @@
     grid-template-columns: max-content 1fr;
     grid-template-rows: min-content 1fr;
 
-    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 grid gap-x-16 w-extend-8;
+    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
+    @apply grid gap-x-16;
   }
 
   .ui-meganav-media-heading {
@@ -124,7 +121,7 @@
   }
 
   .ui-meganav-media-copy {
-    @apply text-p3 text-dark-grey;
+    @apply text-p3 text-dark-grey font-light;
   }
 
   .ui-meganav-overline {

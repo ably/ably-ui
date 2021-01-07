@@ -6,7 +6,7 @@
 
 @layer components {
   .ui-btn {
-    @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block rounded px-24 py-14;
+    @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block rounded p-btn;
     @apply hover:text-white hover:bg-active-orange;
     @apply active:text-white active:bg-red-orange;
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
@@ -14,7 +14,7 @@
   }
 
   .ui-btn-secondary {
-    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-2 border-cool-black rounded px-24 py-12;
+    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-2 border-cool-black rounded p-btn;
     @apply hover:text-active-orange hover:border-active-orange hover:bg-white;
     @apply active:text-red-orange hover:border-red-orange active:bg-white;
     @apply focus:text-cool-black focus:border-cool-black focus:bg-white focus:outline-gui-focus;
