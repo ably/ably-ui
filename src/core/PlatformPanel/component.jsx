@@ -55,7 +55,7 @@ const PlatformPanel = ({ paths }) => (
         </li>
       </ul>
 
-      <FeaturedLink url="/four-pillars-of-dependability" iconSpritesPath={paths.iconSprites}>
+      <FeaturedLink url="/platform" iconSpritesPath={paths.iconSprites}>
         Explore all platform features
       </FeaturedLink>
     </div>
