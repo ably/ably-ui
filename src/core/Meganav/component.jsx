@@ -33,7 +33,7 @@ const panels = [
 ];
 
 const DesktopNavItems = ({ paths }) => (
-  <ul className="hidden lg:flex">
+  <ul className="hidden md:flex">
     {panels.map((panel) => (
       <li className="ui-meganav-item" key={panel.id}>
         <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls={panel.id}>
@@ -93,7 +93,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
   const preferredEmailTruncated = truncate(sessionState.preferredEmail);
 
   return (
-    <ul className="hidden lg:flex items-center">
+    <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
         <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel">
           {accountNameTruncated}
@@ -138,7 +138,7 @@ const SignedInNavItems = ({ sessionState, paths }) => {
 
       {sessionState.account && (
         <li className="ml-16">
-          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary">
+          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary px-16">
             Dashboard
           </a>
         </li>
@@ -153,7 +153,7 @@ SignedInNavItems.propTypes = {
 };
 
 const SignedOutNavItems = () => (
-  <ul className="hidden lg:flex items-center">
+  <ul className="hidden md:flex items-center">
     <li>
       <a href="/contact" className="ui-meganav-nav-item">
         Contact us
@@ -165,7 +165,7 @@ const SignedOutNavItems = () => (
       </a>
     </li>
     <li className="ml-16">
-      <a href="/sign-up" className="ui-btn">
+      <a href="/sign-up" className="ui-btn px-16">
         Sign up free
       </a>
     </li>
@@ -173,7 +173,7 @@ const SignedOutNavItems = () => (
 );
 
 const MobileNavItems = ({ paths, sessionState }) => (
-  <ul className="flex lg:hidden">
+  <ul className="flex md:hidden">
     <li>
       {sessionState.signedIn && sessionState.logOut ? (
         <LogOutLink {...sessionState.logOut}>
@@ -194,7 +194,7 @@ const MobileNavItems = ({ paths, sessionState }) => (
       <MobileMenuControl iconSpritesPath={paths.iconSprites} ariaControls="mobile-dropdown" />
 
       <div className="ui-meganav-mobile-dropdown" id="mobile-dropdown">
-        <div className="py-16 px-24 md:px-32 lg:px-64 bg-white">
+        <div className="ui-grid-px bg-white">
           <ul className="mb-16">
             {panels.map((panel) => {
               return (

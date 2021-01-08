@@ -72,10 +72,14 @@
   --spacing-input: 0.8125rem 1rem 0.75rem;
   --spacing-overline: 0.6875rem 0;
 
-  --bp-sm: 600px;
-  --bp-md: 845px;
-  --bp-lg: 1040px;
-  --bp-xl: 1440px;
+  /* In components, when looking at implementing viewport margin and spacing between elements,
+     the values in the comments can be used as guide as they represent the grid the elements (should) sit on.
+     alternatively, look for ui-grid-* helpers. */
+  --bp-xs: 375px; /* gutters 8px, side-margin 24px */
+  --bp-sm: 600px; /* gutters 16px, side-margin 32px */
+  --bp-md: 1040px; /* gutters 24px, side-margin 40px, meganav desktop */
+  --bp-lg: 1280px; /* gutters 24px, side-margin 64px */
+  --bp-xl: 1440px; /* gutters 32px, side-margin 64px */
 
   /* Page stacking context. If components create new stacking contexts z-index values should be defined within them. */
   --stacking-context-page-meganav: 100;

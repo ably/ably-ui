@@ -13,7 +13,7 @@
   .ui-meganav {
     height: var(--ui-meganav-height);
 
-    @apply flex justify-between items-center max-w-screen-xl mx-auto px-24 md:px-32 lg:px-40 xl:px-64;
+    @apply flex justify-between items-center max-w-screen-xl mx-auto;
   }
 
   .ui-meganav-dropdown,
@@ -91,7 +91,7 @@
 
   .ui-meganav-nav-item {
     @apply text-menu2 font-medium block text-cool-black;
-    @apply mx-8 xl:mx-12 px-0 py-20;
+    @apply mx-8 lg:mx-12 px-0 py-20;
     @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
   }
 
@@ -107,7 +107,9 @@
   }
 
   .ui-meganav-panel {
-    @apply grid gap-24 md:gap-32 grid-cols-1 max-w-screen-xl py-24 lg:py-32 px-24 md:px-32 lg:px-32 xl:px-64 mx-auto;
+    @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
+    @apply grid grid-cols-1;
+    @apply px-24 md:px-32 lg:px-32 xl:px-64;
   }
 
   .ui-meganav-media {

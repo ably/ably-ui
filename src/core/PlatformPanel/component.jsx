@@ -4,7 +4,7 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const PlatformPanel = ({ paths }) => (
-  <section className="ui-meganav-panel sm:grid-cols-2 md:grid-cols-3">
+  <section className="ui-meganav-panel ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
       <div className="flex items-center mb-20 lg:-mt-12">
         <img src={paths.ablyStack} alt="Ably homepage" />

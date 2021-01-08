@@ -1,9 +1,9 @@
 <nav class="ui-meganav-wrapper" data-id="meganav" aria-label="Main">
-  <div class="ui-meganav">
+  <div class="ui-meganav ui-grid-px">
     <%= render(AblyUi::Core::Logo.new) %>
 
     <!-- Desktop nav items -->
-    <ul class="hidden lg:flex">
+    <ul class="hidden md:flex">
       <% panels.each do |panel| %>
         <li class="ui-meganav-item">
           <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: panel[:id])) do %>
@@ -22,7 +22,7 @@
 
     <!-- Signed-out nav items -->
     <% if @session_data[:signedIn] %>
-      <ul class="hidden lg:flex items-center">
+      <ul class="hidden md:flex items-center">
         <li class="ui-meganav-item relative">
           <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: "account-panel")) do %>
             <%= @session_data[:accountName] %>
@@ -57,12 +57,12 @@
 
         <% if @session_data[:account] %>
           <li class="ml-16">
-            <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
+            <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary px-16" %>
           </li>
         <% end %>
       </ul>
     <% else %>
-      <ul class="hidden lg:flex items-center">
+      <ul class="hidden md:flex items-center">
         <li>
           <a href="/contact" class="ui-meganav-nav-item">Contact us</a>
         </li>
@@ -70,20 +70,20 @@
           <a href="/login" class="ui-meganav-nav-item">Login</a>
         </li>
         <li class="ml-16">
-          <a href="/sign-up" class="ui-btn">Sign up free</a>
+          <a href="/sign-up" class="ui-btn px-16">Sign up free</a>
         </li>
       </ul>
     <% end %>
 
     <!-- Mobile nav items -->
-    <ul class="flex lg:hidden">
+    <ul class="flex md:hidden">
       <li>
         <a href="/login" class="ui-meganav-nav-item">Login</a>
       </li>
       <li class="ui-meganav-item">
         <%= render(AblyUi::Core::MobileMenuControl.new(aria_controls: "mobile-dropdown")) %>
         <div class="ui-meganav-mobile-dropdown" id="mobile-dropdown">
-          <div class="py-16 px-24 md:px-32 lg:px-64 bg-white">
+          <div class="py-16 ui-grid-px bg-white">
             <ul class="mb-16">
               <% panels.each do |panel| %>
                 <li class="ui-meganav-mobile-item">

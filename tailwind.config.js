@@ -3,9 +3,11 @@ module.exports = {
   darkMode: false,
   theme: {
     screens: {
+      // CSS custom properties can't be used in media queries
+      xs: "375px",
       sm: "600px",
-      md: "845px",
-      lg: "1040px",
+      md: "1040px",
+      lg: "1280px",
       xl: "1440px",
     },
     fontSize: {

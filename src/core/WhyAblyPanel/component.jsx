@@ -4,7 +4,7 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const WhyAblyPanel = ({ paths }) => (
-  <section className="ui-meganav-panel md:grid-cols-3">
+  <section className="ui-meganav-panel ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">
         Why companies choose Ably
