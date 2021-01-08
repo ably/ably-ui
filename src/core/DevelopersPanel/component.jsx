@@ -9,7 +9,7 @@ const DevelopersPanel = ({ paths }) => (
       <h3 className="ui-meganav-overline">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
-          <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 icon-cool-black">
+          <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
             <use href={`${paths.iconSprites}#sprite-search`}></use>
           </svg>
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />

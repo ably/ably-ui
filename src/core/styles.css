@@ -28,11 +28,11 @@
   }
 
   /* Basis for icon component */
-  .icon-cool-black {
+  .ui-icon-cool-black {
     stroke: var(--color-cool-black);
   }
 
-  .icon-dark-grey {
+  .ui-icon-dark-grey {
     stroke: var(--color-dark-grey);
   }
 

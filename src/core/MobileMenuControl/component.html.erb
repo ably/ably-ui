@@ -2,11 +2,11 @@
                class: "ui-meganav-nav-item mr-0 py-16 focus:outline-none",
                data: { id: "meganav-mobile-menu" },
                aria: { expanded: false, controls: @aria_controls }) do %>
-  <svg class="h-24 w-24 icon-cool-black">
+  <svg class="h-24 w-24 ui-icon-cool-black">
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-menu" %>
   </svg>
 
-  <svg class="hidden h-24 w-24 icon-cool-black">
+  <svg class="hidden h-24 w-24 ui-icon-cool-black">
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-close" %>
   </svg>
 <% end %>

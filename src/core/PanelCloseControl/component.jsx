@@ -11,7 +11,7 @@ const PanelCloseControl = ({ iconSpritesPath, ariaControls }) => (
       aria-controls={ariaControls}
       aria-label="Hide panel"
     >
-      <svg className="transform rotate-90 w-12 h-12 mr-8 icon-dark-grey">
+      <svg className="transform rotate-90 w-12 h-12 mr-8 ui-icon-dark-grey">
         <use href={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
       </svg>
       Menu
