@@ -105,7 +105,12 @@
             <hr class="ui-meganav-hr mb-20" />
             <div class="flex justify-between items-center mb-16">
               <a href="/contact" class="ui-meganav-nav-item ml-0 py-0">Contact us</a>
-              <a href="/sign-up" class="ui-btn">Sign up free</a>
+
+              <% if @session_data[:signedIn] && @session_data[:account] %>
+                <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
+              <% else %>
+                <a href="/sign-up" class="ui-btn">Sign up free</a>
+              <% end %>
             </div>
           </div>
         </div>
