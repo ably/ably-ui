@@ -76,4 +76,10 @@
   --bp-md: 845px;
   --bp-lg: 1040px;
   --bp-xl: 1440px;
+
+  /* Page stacking context. If components create new stacking contexts z-index values should be defined within them. */
+  --stacking-context-page-meganav: 100;
+
+  /* Expose component values for cross-component usage */
+  --ui-meganav-height: 4rem;
 }

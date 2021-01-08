@@ -260,6 +260,12 @@ For example:
     - component.jsx
 ```
 
+#### CSS
+
+##### z-index and positioning
+
+If using positioning any other then static, be mindful of creating stacking contexts. In `properties.css` you'll find the `z-index` values for the html stacking context (used by components like the meganav). When creating a new one within your component, hoist the z-index values to the selector that creates the stacking context and define `z-index` values there for easy scanning (see https://www.oreilly.com/library/view/developing-web-components/9781491905685/ch04.html for a good write up on stacking contexts and z-index.).
+
 #### Bundling
 
 Run the `./build.sh` script. This will:

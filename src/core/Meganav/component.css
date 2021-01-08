@@ -1,11 +1,19 @@
 @layer components {
   .ui-meganav-wrapper {
-    /* z-index root for meganav */
-    @apply antialiased shadow-subtle bg-white font-sans top-0 fixed w-full;
+    position: fixed;
+    z-index: var(--stacking-context-page-meganav);
+
+    /* Define values for new stacking context defined by position: fixed */
+    --stacking-context-meganav-dropdown: 10;
+    --stacking-context-meganav-mobile-panel: 20;
+
+    @apply antialiased shadow-subtle bg-white font-sans top-0 w-full;
   }
 
   .ui-meganav {
-    @apply h-64 flex justify-between items-center max-w-screen-xl mx-auto px-24 md:px-32 lg:px-40 xl:px-64;
+    height: var(--ui-meganav-height);
+
+    @apply flex justify-between items-center max-w-screen-xl mx-auto px-24 md:px-32 lg:px-40 xl:px-64;
   }
 
   .ui-meganav-dropdown,
@@ -13,11 +21,10 @@
   .ui-meganav-mobile-panel,
   .ui-meganav-account-panel {
     position: absolute;
-    z-index: 1;
-    overflow: scroll;
+    z-index: var(--stacking-context-meganav-dropdown);
 
     @apply border-mid-grey border-t shadow-container top-64 left-0 right-0;
-    @apply opacity-0 invisible;
+    @apply opacity-0 invisible overflow-y-auto;
   }
 
   .ui-meganav-dropdown {
@@ -25,15 +32,14 @@
   }
 
   .ui-meganav-mobile-panel {
-    z-index: 2;
-    min-height: 100%;
+    z-index: var(--stacking-context-meganav-mobile-panel);
 
-    @apply top-0 bg-white transform -translate-x-full pt-16 border-0 opacity-30;
+    @apply top-0 bg-white transform -translate-x-full pt-16 border-0 opacity-30 min-h-full;
   }
 
   .ui-meganav-account-panel {
     left: auto;
-    min-width: 320px;
+    min-width: 20rem;
 
     @apply bg-white rounded-t-none;
   }
@@ -76,7 +82,7 @@
 
   /* When mobile panels are open, make the nav  */
   .ui-meganav-mobile-dropdown:focus-within {
-    height: calc(100vh - 64px);
+    height: calc(100vh - var(--ui-meganav-height));
   }
 
   .ui-meganav-mobile-item:focus-within .ui-meganav-mobile-panel {
