@@ -1,7 +1,5 @@
 import "./component.css";
 
-// The below javascript is not required for the meganav to function but will add behaviours that users expect, help with managing focus and aria attributes
-
 const HOVER_CLASS = "ui-meganav-item-hover";
 
 const queryId = (val, append = "") =>
@@ -25,7 +23,10 @@ const dropDownsHaveFocus = (nodeList) =>
 const itemControlsFocused = (itemControls) =>
   Array.from(itemControls).some((btn) => document.activeElement === btn);
 
-export default function Meganav() {
+export default function Meganav({ themeName } = { themeName: null }) {
+  const meganav = queryId("meganav");
+  const meganavLogo = queryId("meganav-logo");
+  const meganavNavItems = queryIdAll("meganav-nav-item");
   const mobileMenu = queryId("meganav-mobile-menu");
   const itemControls = queryIdAll("meganav-item-control");
   const mobilePanelOpen = queryIdAll("meganav-mobile-panel-open");
@@ -191,7 +192,6 @@ export default function Meganav() {
         e.target === mobileMenu
       )
         return;
-      console.log("here");
       closeAndCleanUp();
     };
 
@@ -204,6 +204,39 @@ export default function Meganav() {
     };
   };
 
+  // Invert from transparent to white
+  const documentScroll = (themeName) => {
+    if (themeName !== "transparentToWhite") return;
+
+    const invertTextCollection = Array.from(itemControls)
+      .concat(Array.from(meganavNavItems))
+      .concat([mobileMenu, meganavLogo]);
+
+    const scrollHandler = () => {
+      if (window.scrollY > 5) {
+        meganav.classList.replace("bg-transparent", "bg-white");
+
+        invertTextCollection.forEach((n) =>
+          n.classList.replace("text-white", "text-cool-black")
+        );
+      } else {
+        meganav.classList.replace("bg-white", "bg-transparent");
+
+        invertTextCollection.forEach((n) =>
+          n.classList.replace("text-cool-black", "text-white")
+        );
+      }
+    };
+
+    document.addEventListener("scroll", scrollHandler);
+
+    return {
+      target: document,
+      event: "scroll",
+      handler: scrollHandler,
+    };
+  };
+
   const teardowns = [
     itemControlsEvents(),
     windowOnBlur(),
@@ -211,11 +244,14 @@ export default function Meganav() {
     mobilePanelCloseClick(),
     mobileMenuToggleClick(),
     documentClick(),
+    documentScroll(themeName),
   ].flat();
 
   return () =>
     teardowns.forEach((teardown) => {
-      if (typeof teardown === "function") {
+      if (typeof teardown === "undefined") {
+        return;
+      } else if (typeof teardown === "function") {
         teardown();
       } else {
         const { target, event, handler } = teardown;
