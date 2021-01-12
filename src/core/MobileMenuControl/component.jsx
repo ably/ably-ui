@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
+const MobileMenuControl = ({ iconSpritesPath, ariaControls, theme }) => (
   <button
     type="button"
     className="ui-meganav-nav-item mr-0 py-16 focus:outline-none"
@@ -9,10 +9,10 @@ const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
     aria-expanded="false"
     aria-controls={ariaControls}
   >
-    <svg className="h-24 w-24 ui-icon-cool-black">
+    <svg className={`h-24 w-24 ${theme.mobileMenuColor}`}>
       <use href={`${iconSpritesPath}#sprite-menu`}></use>
     </svg>
-    <svg className="h-24 w-24 ui-icon-cool-black hidden">
+    <svg className={`h-24 w-24 hidden ${theme.mobileMenuColor}`}>
       <use href={`${iconSpritesPath}#sprite-close`}></use>
     </svg>
   </button>
@@ -21,6 +21,7 @@ const MobileMenuControl = ({ iconSpritesPath, ariaControls }) => (
 MobileMenuControl.propTypes = {
   iconSpritesPath: T.string,
   ariaControls: T.string,
+  theme: T.object,
 };
 
 export default MobileMenuControl;
