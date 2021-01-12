@@ -45,6 +45,10 @@
     stroke: var(--color-cool-black);
   }
 
+  .ui-icon-white {
+    stroke: var(--color-white);
+  }
+
   .ui-icon-dark-grey {
     stroke: var(--color-dark-grey);
   }
