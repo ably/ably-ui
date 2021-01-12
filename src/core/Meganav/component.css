@@ -7,7 +7,7 @@
     --stacking-context-meganav-dropdown: 10;
     --stacking-context-meganav-mobile-panel: 20;
 
-    @apply antialiased shadow-subtle font-sans top-0 w-full transition-colors;
+    @apply antialiased font-sans top-0 w-full transition-colors;
   }
 
   .ui-meganav {

@@ -278,7 +278,7 @@ export default function Meganav({ paths, themeName = "white" }) {
   const theme = MeganavData.themes[themeName];
 
   return (
-    <nav className={`ui-meganav-wrapper ${theme.backgroundColor}`} data-id="meganav" aria-label="Main">
+    <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
       <div className="ui-meganav ui-grid-px">
         <Logo theme={theme} />
         <DesktopNavItems paths={paths} theme={theme} />

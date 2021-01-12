@@ -6,7 +6,8 @@
       "buttonBackgroundColor": "",
       "buttonTextColor": "",
       "mobileMenuColor": "ui-icon-cool-black",
-      "logoTextColor": "text-cool-black"
+      "logoTextColor": "text-cool-black",
+      "barShadow": "shadow-subtle"
     },
     "black": {
       "backgroundColor": "bg-cool-black",
@@ -14,7 +15,8 @@
       "buttonBackgroundColor": "bg-white",
       "buttonTextColor": "text-cool-black",
       "mobileMenuColor": "ui-icon-white",
-      "logoTextColor": "text-white"
+      "logoTextColor": "text-white",
+      "barShadow": ""
     },
     "transparentToWhite": {
       "backgroundColor": "bg-transparent",
@@ -22,7 +24,8 @@
       "buttonBackgroundColor": "",
       "buttonTextColor": "",
       "mobileMenuColor": "ui-icon-cool-black",
-      "logoTextColor": "text-cool-black"
+      "logoTextColor": "text-cool-black",
+      "barShadow": ""
     }
   }
 }
