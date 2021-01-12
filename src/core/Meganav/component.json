@@ -1,0 +1,28 @@
+{
+  "themes": {
+    "white": {
+      "backgroundColor": "bg-white",
+      "textColor": "text-cool-black",
+      "buttonBackgroundColor": "",
+      "buttonTextColor": "",
+      "mobileMenuColor": "ui-icon-cool-black",
+      "logoTextColor": "text-cool-black"
+    },
+    "black": {
+      "backgroundColor": "bg-cool-black",
+      "textColor": "text-white",
+      "buttonBackgroundColor": "bg-white",
+      "buttonTextColor": "text-cool-black",
+      "mobileMenuColor": "ui-icon-white",
+      "logoTextColor": "text-white"
+    },
+    "transparentToWhite": {
+      "backgroundColor": "bg-transparent",
+      "textColor": "text-white",
+      "buttonBackgroundColor": "",
+      "buttonTextColor": "",
+      "mobileMenuColor": "ui-icon-cool-black",
+      "logoTextColor": "text-cool-black"
+    }
+  }
+}

@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./src/**/*.html.erb", "./src/**/*.jsx", "./src/**/*.js"],
+  purge: [
+    "./src/**/*.html.erb",
+    "./src/**/*.jsx",
+    "./src/**/*.js",
+    "./src/**/*.json",
+  ],
   darkMode: false,
   theme: {
     screens: {
