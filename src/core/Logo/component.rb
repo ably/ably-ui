@@ -1,8 +1,10 @@
 module AblyUi
   module Core
     class Logo < ViewComponent::Base
-      def logo_path
-        asset_path 'ably_ui/core/images/ably-logo.svg'
+      include AblyUi::Core::MeganavThemes
+
+      def initialize(theme_name:)
+        theme_setup(theme_name)
       end
     end
   end
