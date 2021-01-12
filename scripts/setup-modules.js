@@ -5,7 +5,7 @@ const snakeCase = require("change-case").snakeCase;
 const modules = require("../modules-config");
 
 const extPredicate = (extRegex) => (path) => path.match(extRegex);
-const templatesPredicate = extPredicate(/(.rb|.erb)$/);
+const rubyPredicate = extPredicate(/(.rb|.erb)$/);
 const assetsPredicate = extPredicate(/(.js|.css|.js.map|.css.map)$/);
 const dataPredicate = extPredicate(/(.json)$/);
 
@@ -42,6 +42,16 @@ const print = (msg, exec) => (...args) => {
   printDone();
 };
 
+const copyRubyModuleConfig = print(
+  (mod) => `> Copying ruby module files for ${colorizeMod(mod.name)} ... `,
+  (mod) => {
+    const rubyPath = rubyPathResolve(mod.directory);
+    const srcPath = srcPathResolve(mod.directory);
+
+    findFiles(srcPath, rubyPredicate).forEach(copyFromTo(srcPath, rubyPath));
+  }
+);
+
 const copyCompiledModuleAssets = print(
   (mod) => `> Copying compiled module assets for ${colorizeMod(mod.name)} ... `,
   (mod) => {
@@ -74,9 +84,7 @@ const copyComponentTemplates = print(
     const rubyPath = rubyPathResolve(mod.directory, componentName);
     const srcPath = srcPathResolve(mod.directory, componentName);
 
-    findFiles(srcPath, templatesPredicate).forEach(
-      copyFromTo(srcPath, rubyPath)
-    );
+    findFiles(srcPath, rubyPredicate).forEach(copyFromTo(srcPath, rubyPath));
   }
 );
 
@@ -182,6 +190,7 @@ const sync = () => {
     fs.rmdirSync(rubyPath, { recursive: true });
     fs.mkdirSync(rubyPath);
 
+    copyRubyModuleConfig(mod);
     copyCompiledModuleAssets(mod);
     copyFonts(mod);
     copyImages(mod);
