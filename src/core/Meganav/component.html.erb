@@ -94,9 +94,10 @@
                   <%= render(AblyUi::Core::PanelOpenControl.new(aria_controls: "#{panel[:id]}-mobile")) do %>
                     <%= panel[:label] %>
                   <% end %>
+
                   <%= content_tag(:div, class: "ui-meganav-mobile-panel", id: "#{panel[:id]}-mobile") do %>
-                    <%= render(AblyUi::Core::PanelCloseControl.new(aria_controls: "platform-panel-mobile")) %>
-                    <%= render(AblyUi::Core::PlatformPanel.new) %>
+                    <%= render(AblyUi::Core::PanelCloseControl.new(aria_controls: "#{panel[:id]}-mobile")) %>
+                    <%= render(panel[:class].constantize.new) %>
                   <% end %>
                 </li>
               <% end %>
