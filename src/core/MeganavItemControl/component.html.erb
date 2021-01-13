@@ -1,6 +1,6 @@
 <%= button_tag(type: "button",
-               class: ["ui-meganav-nav-item", "h-64", "flex", "items-center", "group", theme(:text_color)],
-               data: { id: "meganav-item-control" },
+               class: ["ui-meganav-link", "h-64", "flex", "items-center", "group", theme(:text_color)],
+               data: { id: "meganav-control" },
                aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do %><%= content %><svg class="w-12 h-12 ml-8 ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus">
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
   </svg>

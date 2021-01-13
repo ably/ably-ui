@@ -42,14 +42,14 @@ const DesktopNavItems = ({ paths, theme }) => (
           {panel.label}
         </MeganavItemControl>
 
-        <div className="ui-meganav-dropdown" id={panel.id}>
+        <div className="ui-meganav-panel invisible" id={panel.id} data-id="meganav-panel">
           <panel.component paths={paths} />
         </div>
       </li>
     ))}
 
     <li className="ui-meganav-item">
-      <a href="/pricing" data-id="meganav-nav-item" className={`ui-meganav-nav-item h-64 items-center flex ${theme.textColor}`}>
+      <a href="/pricing" data-id="meganav-link" className={`ui-meganav-link h-64 items-center flex ${theme.textColor}`}>
         Pricing
       </a>
     </li>
@@ -97,17 +97,17 @@ const SignedInNavItems = ({ sessionState, paths, theme }) => {
 
   return (
     <ul className="hidden md:flex items-center">
-      <li className="ui-meganav-item relative" data-id="meganav-nav-item">
+      <li className="ui-meganav-item relative">
         <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel" theme={theme}>
           {accountNameTruncated}
         </MeganavItemControl>
 
-        <div className="ui-meganav-account-panel" id="account-panel">
+        <div className="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
           <p className="ui-meganav-overline mt-24 mx-16">Your account</p>
           <ul className="mb-16 mx-16">
             {links.map((item) => (
               <li key={item.href}>
-                <a className="ui-meganav-account-panel-link" href={item.href}>
+                <a className="ui-meganav-account-link" href={item.href}>
                   {item.text}
                 </a>
               </li>
@@ -117,7 +117,7 @@ const SignedInNavItems = ({ sessionState, paths, theme }) => {
           <p className="ui-meganav-overline mx-16">{preferredEmailTruncated}</p>
           <ul className="mb-8 mx-16">
             <li>
-              <a href={sessionState.mySettings.href} className="ui-meganav-account-panel-link">
+              <a href={sessionState.mySettings.href} className="ui-meganav-account-link">
                 {sessionState.mySettings.text}
               </a>
             </li>
@@ -129,7 +129,7 @@ const SignedInNavItems = ({ sessionState, paths, theme }) => {
             <div className="mb-16 px-16">
               <LogOutLink {...sessionState.logOut}>
                 {({ text, href, onClick }) => (
-                  <a onClick={onClick} href={href} className="ui-meganav-account-panel-link">
+                  <a onClick={onClick} href={href} className="ui-meganav-account-link">
                     {text}
                   </a>
                 )}
@@ -159,12 +159,12 @@ SignedInNavItems.propTypes = {
 const SignedOutNavItems = ({ theme }) => (
   <ul className="hidden md:flex items-center">
     <li>
-      <a href="/contact" className={`ui-meganav-nav-item ${theme.textColor}`}>
+      <a href="/contact" className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
         Contact us
       </a>
     </li>
     <li>
-      <a href="/login" className={`ui-meganav-nav-item ${theme.textColor}`}>
+      <a href="/login" className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
         Login
       </a>
     </li>
@@ -181,7 +181,7 @@ SignedOutNavItems.propTypes = {
 };
 
 const MobileNavItems = ({ paths, sessionState, theme }) => {
-  const classNames = `ui-meganav-nav-item ${theme.textColor}`;
+  const classNames = `ui-meganav-link ${theme.textColor}`;
 
   return (
     <ul className="flex md:hidden">
@@ -202,9 +202,9 @@ const MobileNavItems = ({ paths, sessionState, theme }) => {
       </li>
 
       <li className="ui-meganav-item">
-        <MobileMenuControl theme={theme} iconSpritesPath={paths.iconSprites} ariaControls="mobile-dropdown" />
+        <MobileMenuControl theme={theme} iconSpritesPath={paths.iconSprites} />
 
-        <div className="ui-meganav-mobile-dropdown" id="mobile-dropdown">
+        <div className="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
           <div className="py-16 ui-grid-px bg-white">
             <ul className="mb-16">
               {panels.map((panel) => (
@@ -213,7 +213,7 @@ const MobileNavItems = ({ paths, sessionState, theme }) => {
                     {panel.label}
                   </PanelOpenControl>
 
-                  <div className="ui-meganav-mobile-panel" id={`${panel.id}-mobile`}>
+                  <div className="ui-meganav-panel-mobile invisible" id={`${panel.id}-mobile`}>
                     <PanelCloseControl iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
                     <panel.component paths={paths} />
                   </div>
@@ -229,10 +229,7 @@ const MobileNavItems = ({ paths, sessionState, theme }) => {
             <hr className="ui-meganav-hr mb-20" />
 
             <div className="flex justify-between items-center mb-16">
-              <a
-                href="/contact"
-                className="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 py-0 px-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
-              >
+              <a href="/contact" className="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">
                 Contact us
               </a>
               {sessionState.signedIn && sessionState.account ? (
@@ -273,7 +270,7 @@ export default function Meganav({ paths, themeName = "white" }) {
   useEffect(() => {
     const teardown = MeganavScripts({ themeName });
     return () => teardown();
-  }, [sessionState?.signedIn]);
+  }, [sessionState]);
 
   const theme = MeganavData.themes[themeName];
 
@@ -291,5 +288,5 @@ export default function Meganav({ paths, themeName = "white" }) {
 
 Meganav.propTypes = {
   paths: PathsT,
-  theme: T.oneOf(["white", "black", "transparentToWhite"]),
+  themeName: T.oneOf(["white", "black", "transparentToWhite"]),
 };

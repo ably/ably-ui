@@ -1,13 +1,13 @@
 @layer components {
   .ui-meganav-wrapper {
-    position: fixed;
-    z-index: var(--stacking-context-page-meganav);
-
     /* Define values for new stacking context defined by position: fixed */
     --stacking-context-meganav-dropdown: 10;
     --stacking-context-meganav-mobile-panel: 20;
 
-    @apply antialiased font-sans top-0 w-full transition-colors;
+    z-index: var(--stacking-context-page-meganav);
+
+    @apply fixed top-0 w-full;
+    @apply antialiased font-sans transition-colors;
   }
 
   .ui-meganav {
@@ -16,80 +16,41 @@
     @apply flex justify-between items-center max-w-screen-xl mx-auto;
   }
 
-  .ui-meganav-dropdown,
+  .ui-meganav-panel,
   .ui-meganav-mobile-dropdown,
-  .ui-meganav-mobile-panel,
-  .ui-meganav-account-panel {
-    position: absolute;
+  .ui-meganav-panel-mobile,
+  .ui-meganav-panel-account {
     z-index: var(--stacking-context-meganav-dropdown);
 
-    @apply border-mid-grey border-t shadow-container top-64 left-0 right-0;
-    @apply opacity-0 invisible overflow-y-auto;
+    @apply absolute top-64 left-0 right-0;
+    @apply border-mid-grey border-t shadow-container invisible;
   }
 
-  .ui-meganav-dropdown {
-    background-color: var(--color-white);
+  .ui-meganav-panel {
+    @apply bg-white;
   }
 
-  .ui-meganav-mobile-panel {
+  .ui-meganav-mobile-dropdown {
+    @apply overflow-y-auto;
+  }
+
+  .ui-meganav-panel-mobile {
     z-index: var(--stacking-context-meganav-mobile-panel);
 
-    @apply top-0 bg-white transform -translate-x-full pt-16 border-0 opacity-30 min-h-full;
+    @apply top-0 bg-white pt-16 border-0 min-h-full;
   }
 
-  .ui-meganav-account-panel {
+  .ui-meganav-panel-account {
     left: auto;
     min-width: 20rem;
-
     @apply bg-white rounded-t-none;
   }
 
-  /* Used by js to show dropdowns on hover */
-  .ui-meganav-item-hover .ui-meganav-dropdown,
-  .ui-meganav-item-hover .ui-meganav-account-panel {
-    @apply visible opacity-100;
-  }
-
-  /* Display dropdowns and panels on focus */
-  .ui-meganav-item:focus-within .ui-meganav-dropdown {
-    @apply opacity-100 visible;
-  }
-
-  .ui-meganav-item:focus-within ~ .ui-meganav-item .ui-meganav-dropdown {
-    @apply opacity-0 invisible;
-  }
-
-  .ui-meganav-item:focus-within .ui-meganav-mobile-dropdown {
-    @apply opacity-100 visible;
-  }
-
-  .ui-meganav-item:focus-within .ui-meganav-account-panel {
-    @apply opacity-100 visible;
-  }
-
-  /* Controls the hamburger/close menu button switch */
-  .ui-meganav-item:focus-within
-    [aria-controls="mobile-dropdown"]
-    svg:first-child {
-    display: none;
-  }
-
-  .ui-meganav-item:focus-within
-    [aria-controls="mobile-dropdown"]
-    svg:last-child {
-    display: inline;
-  }
-
-  /* When mobile panels are open, make the nav  */
-  .ui-meganav-mobile-dropdown:focus-within {
+  .ui-meganav-mobile-dropdown-expand {
     height: calc(100vh - var(--ui-meganav-height));
   }
 
-  .ui-meganav-mobile-item:focus-within .ui-meganav-mobile-panel {
-    @apply visible opacity-100 transform translate-x-0;
-  }
-
-  .ui-meganav-nav-item {
+  .ui-meganav-link {
     @apply text-menu2 font-medium block;
     @apply mx-8 lg:mx-12 px-0 py-20;
     @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
@@ -103,11 +64,11 @@
     @apply focus:text-gui-focus focus:outline-none;
   }
 
-  .ui-meganav-account-panel-link {
+  .ui-meganav-account-link {
     @apply block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8 font-light;
   }
 
-  .ui-meganav-panel {
+  .ui-meganav-content {
     @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
     @apply grid grid-cols-1;
     @apply px-24 md:px-32 lg:px-32 xl:px-64;

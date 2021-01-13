@@ -4,7 +4,7 @@ import T from "prop-types";
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const DevelopersPanel = ({ paths }) => (
-  <section className="ui-meganav-panel ui-grid-gap md:grid-cols-3">
+  <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">

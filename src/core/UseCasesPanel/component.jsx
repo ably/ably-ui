@@ -1,7 +1,7 @@
 import React from "react";
 
 const UseCasesPanel = () => (
-  <section className="ui-meganav-panel ui-grid-gap md:grid-cols-2 gap-y-0 md:gap-y-32">
+  <section className="ui-meganav-content ui-grid-gap md:grid-cols-2 gap-y-0 md:gap-y-32">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry-use-cases">
         By industry use case

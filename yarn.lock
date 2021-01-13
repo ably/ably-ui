@@ -2107,11 +2107,6 @@ flatted@^2.0.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
 
-focus-within-polyfill@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/focus-within-polyfill/-/focus-within-polyfill-5.1.0.tgz#a32ed39503a7e95a5eb208367083858af533178c"
-  integrity sha512-u944FX2NsX5nhCi3jsXcWkUcPAekvFHnhl5+OQJZvZeRamPXhQxwvOVs1ordzyIaP7sc+cW3PU7z1fDKPYM9+A==
-
 fs-extra@^9.0.1:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.0.1.tgz#910da0062437ba4c39fedd863f1675ccfefcb9fc"

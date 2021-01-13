@@ -6,7 +6,7 @@ const PanelCloseControl = ({ iconSpritesPath, ariaControls }) => (
     <button
       type="button"
       className="ui-meganav-mobile-link mb-16"
-      data-id="meganav-mobile-panel-close"
+      data-id="meganav-control-mobile-panel-close"
       aria-expanded="false"
       aria-controls={ariaControls}
       aria-label="Hide panel"

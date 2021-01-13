@@ -1,13 +1,13 @@
 import React from "react";
 import T from "prop-types";
 
-const MobileMenuControl = ({ iconSpritesPath, ariaControls, theme }) => (
+const MobileMenuControl = ({ iconSpritesPath, theme }) => (
   <button
     type="button"
-    className="ui-meganav-nav-item mr-0 py-16 focus:outline-none"
-    data-id="meganav-mobile-menu"
+    className="block ml-8 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none transition-colors"
+    data-id="meganav-control-mobile-dropdown"
     aria-expanded="false"
-    aria-controls={ariaControls}
+    aria-controls="meganav-mobile-dropdown"
   >
     <svg className={`h-24 w-24 ${theme.mobileMenuColor}`}>
       <use href={`${iconSpritesPath}#sprite-menu`}></use>
@@ -20,7 +20,6 @@ const MobileMenuControl = ({ iconSpritesPath, ariaControls, theme }) => (
 
 MobileMenuControl.propTypes = {
   iconSpritesPath: T.string,
-  ariaControls: T.string,
   theme: T.object,
 };
 

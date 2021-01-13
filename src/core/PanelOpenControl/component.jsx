@@ -5,7 +5,7 @@ const PanelOpenControl = ({ iconSpritesPath, ariaControls, children }) => (
   <button
     type="button"
     className="ui-meganav-mobile-link"
-    data-id="meganav-mobile-panel-open"
+    data-id="meganav-control-mobile-panel-open"
     aria-expanded="false"
     aria-controls={ariaControls}
     aria-label={`Show ${children}`}
