@@ -1,6 +1,6 @@
 import { queryId } from "../dom-query";
 
-const MobileMenuControl = ({ clearPanels }) => {
+const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const control = queryId("meganav-control-mobile-dropdown");
   const dropdown = queryId("meganav-mobile-dropdown");
   const menuIcon = control.childNodes[0];
@@ -35,4 +35,4 @@ const MobileMenuControl = ({ clearPanels }) => {
   };
 };
 
-export default MobileMenuControl;
+export default MeganavControlMobileDropdown;

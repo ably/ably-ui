@@ -6,7 +6,7 @@
     <ul class="hidden md:flex">
       <% panels.each do |panel| %>
         <li class="ui-meganav-item">
-          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
+          <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
             <%= panel[:label] %>
           <% end %>
 
@@ -23,7 +23,7 @@
     <% if @session_data[:signedIn] %>
       <ul class="hidden md:flex items-center">
         <li class="ui-meganav-item relative">
-          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: "account-panel", theme_name: @theme_name)) do %>
+          <%= render(AblyUi::Core::MeganavControl.new(aria_controls: "account-panel", theme_name: @theme_name)) do %>
             <%= @session_data[:accountName] %>
           <% end %>
 
@@ -85,19 +85,19 @@
       </li>
 
       <li class="ui-meganav-item">
-        <%= render(AblyUi::Core::MobileMenuControl.new(theme_name: @theme_name)) %>
+        <%= render(AblyUi::Core::MeganavControlMobileDropdown.new(theme_name: @theme_name)) %>
 
         <div class="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
           <div class="py-16 ui-grid-px bg-white">
             <ul class="mb-16">
               <% panels.each do |panel| %>
                 <li class="ui-meganav-mobile-item">
-                  <%= render(AblyUi::Core::PanelOpenControl.new(aria_controls: "#{panel[:id]}-mobile")) do %>
+                  <%= render(AblyUi::Core::MeganavControlMobilePanelOpen.new(aria_controls: "#{panel[:id]}-mobile")) do %>
                     <%= panel[:label] %>
                   <% end %>
 
                   <%= content_tag(:div, class: "ui-meganav-panel-mobile invisible", id: "#{panel[:id]}-mobile") do %>
-                    <%= render(AblyUi::Core::PanelCloseControl.new(aria_controls: "#{panel[:id]}-mobile")) %>
+                    <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
                     <%= render(panel[:class].constantize.new) %>
                   <% end %>
                 </li>

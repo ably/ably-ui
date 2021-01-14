@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const PlatformPanel = ({ paths }) => (
+const MeganavContentPlatform = ({ paths }) => (
   <section className="ui-meganav-content ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
       <div className="flex mb-20">
@@ -100,11 +100,11 @@ const PlatformPanel = ({ paths }) => (
   </section>
 );
 
-PlatformPanel.propTypes = {
+MeganavContentPlatform.propTypes = {
   paths: T.shape({
     ablyStack: T.string,
     iconSprites: T.string,
   }),
 };
 
-export default PlatformPanel;
+export default MeganavContentPlatform;

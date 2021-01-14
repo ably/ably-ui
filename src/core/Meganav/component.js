@@ -10,11 +10,11 @@ import "./component.css";
 
 import { queryId, queryIdAll } from "../dom-query";
 
-import MeganavItemControl from "../MeganavItemControl/component";
+import MeganavControl from "../MeganavControl/component";
 
-import MobileMenuControl from "../MobileMenuControl/component";
-import MobilePanelOpenClick from "../PanelOpenControl/component";
-import MobilePanelCloseClick from "../PanelCloseControl/component";
+import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component";
+import MobilePanelOpenClick from "../MeganavControlMobilePanelOpen/component";
+import MobilePanelCloseClick from "../MeganavControlMobilePanelClose/component";
 
 // Close menu when user clicks outside of viewport
 const windowOnBlur = (closeAll) => {
@@ -78,11 +78,11 @@ const documentScroll = (themeName) => {
 };
 
 export default function Meganav({ themeName } = { themeName: null }) {
-  const controls = MeganavItemControl();
+  const controls = MeganavControl();
   const panelOpenControls = MobilePanelOpenClick();
   const panelCloseControls = MobilePanelCloseClick();
 
-  const mobileDropdownControl = MobileMenuControl({
+  const mobileDropdownControl = MeganavControlMobileDropdown({
     clearPanels: () =>
       [...panelOpenControls, ...panelCloseControls].forEach((i) => i.clear()),
   });

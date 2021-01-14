@@ -1,9 +1,9 @@
 import React from "react";
 import T from "prop-types";
 
-import FeaturedLink from "../FeaturedLink/component.jsx";
+import FeaturedLink from "../FeaturedLink/component.js";
 
-const DevelopersPanel = ({ paths }) => (
+const MeganavContentDevelopers = ({ paths }) => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
@@ -80,10 +80,10 @@ const DevelopersPanel = ({ paths }) => (
   </section>
 );
 
-DevelopersPanel.propTypes = {
+MeganavContentDevelopers.propTypes = {
   paths: T.shape({
     iconSprites: T.string,
   }),
 };
 
-export default DevelopersPanel;
+export default MeganavContentDevelopers;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const UseCasesPanel = () => (
+const MeganavContentUseCases = () => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-2 gap-y-0 md:gap-y-32">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry-use-cases">
@@ -65,4 +65,4 @@ const UseCasesPanel = () => (
   </section>
 );
 
-export default UseCasesPanel;
+export default MeganavContentUseCases;

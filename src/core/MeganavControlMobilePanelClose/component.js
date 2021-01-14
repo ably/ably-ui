@@ -1,6 +1,6 @@
 import { queryId, queryIdAll } from "../dom-query";
 
-const MobilePanelCloseClick = () => {
+export default () => {
   const closeControls = Array.from(
     queryIdAll("meganav-control-mobile-panel-close")
   );
@@ -34,5 +34,3 @@ const MobilePanelCloseClick = () => {
     };
   });
 };
-
-export default MobilePanelCloseClick;

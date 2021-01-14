@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MeganavItemControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
+const MeganavControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
   <button
     type="button"
     data-id="meganav-control"
@@ -17,11 +17,11 @@ const MeganavItemControl = ({ iconSpritesPath, ariaControls, children, theme }) 
   </button>
 );
 
-MeganavItemControl.propTypes = {
+MeganavControl.propTypes = {
   iconSpritesPath: T.string,
   ariaControls: T.string,
   children: T.node,
   theme: T.object,
 };
 
-export default MeganavItemControl;
+export default MeganavControl;

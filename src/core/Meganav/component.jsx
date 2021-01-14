@@ -6,15 +6,15 @@ import fetchSessionData from "../fetch-session-data";
 import MeganavScripts from "./component.js";
 
 import Logo from "../Logo/component.jsx";
-import MeganavItemControl from "../MeganavItemControl/component.jsx";
-import MobileMenuControl from "../MobileMenuControl/component.jsx";
-import PanelCloseControl from "../PanelCloseControl/component.jsx";
-import PanelOpenControl from "../PanelOpenControl/component.jsx";
+import MeganavControl from "../MeganavControl/component.jsx";
+import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.jsx";
+import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.jsx";
+import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.jsx";
 
-import PlatformPanel from "../PlatformPanel/component.jsx";
-import UseCasesPanel from "../UseCasesPanel/component.jsx";
-import WhyAblyPanel from "../WhyAblyPanel/component.jsx";
-import DevelopersPanel from "../DevelopersPanel/component.jsx";
+import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
+import MeganavContentUseCases from "../MeganavContentUseCases/component.js";
+import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.js";
+import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
 
 import MeganavData from "./component.json";
 
@@ -28,19 +28,19 @@ const PathsT = T.shape({
 });
 
 const panels = [
-  { label: "Platform", id: "platform-panel", component: PlatformPanel },
-  { label: "Use Cases", id: "use-cases-panel", component: UseCasesPanel },
-  { label: "Why Ably", id: "why-ably-panel", component: WhyAblyPanel },
-  { label: "Developers", id: "developers-panel", component: DevelopersPanel },
+  { label: "Platform", id: "platform-panel", component: MeganavContentPlatform },
+  { label: "Use Cases", id: "use-cases-panel", component: MeganavContentUseCases },
+  { label: "Why Ably", id: "why-ably-panel", component: MeganavContentWhyAbly },
+  { label: "Developers", id: "developers-panel", component: MeganavContentDevelopers },
 ];
 
 const DesktopNavItems = ({ paths, theme }) => (
   <ul className="hidden md:flex">
     {panels.map((panel) => (
       <li className="ui-meganav-item" key={panel.id}>
-        <MeganavItemControl theme={theme} iconSpritesPath={paths.iconSprites} ariaControls={panel.id}>
+        <MeganavControl theme={theme} iconSpritesPath={paths.iconSprites} ariaControls={panel.id}>
           {panel.label}
-        </MeganavItemControl>
+        </MeganavControl>
 
         <div className="ui-meganav-panel invisible" id={panel.id} data-id="meganav-panel">
           <panel.component paths={paths} />
@@ -98,9 +98,9 @@ const SignedInNavItems = ({ sessionState, paths, theme }) => {
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <MeganavItemControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel" theme={theme}>
+        <MeganavControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel" theme={theme}>
           {accountNameTruncated}
-        </MeganavItemControl>
+        </MeganavControl>
 
         <div className="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
           <p className="ui-meganav-overline mt-24 mx-16">Your account</p>
@@ -202,19 +202,19 @@ const MobileNavItems = ({ paths, sessionState, theme }) => {
       </li>
 
       <li className="ui-meganav-item">
-        <MobileMenuControl theme={theme} iconSpritesPath={paths.iconSprites} />
+        <MeganavControlMobileDropdown theme={theme} iconSpritesPath={paths.iconSprites} />
 
         <div className="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
           <div className="py-16 ui-grid-px bg-white">
             <ul className="mb-16">
               {panels.map((panel) => (
                 <li className="ui-meganav-mobile-item" key={`${panel.id}-mobile`}>
-                  <PanelOpenControl iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`}>
+                  <MeganavControlMobilePanelOpen iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`}>
                     {panel.label}
-                  </PanelOpenControl>
+                  </MeganavControlMobilePanelOpen>
 
                   <div className="ui-meganav-panel-mobile invisible" id={`${panel.id}-mobile`}>
-                    <PanelCloseControl iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
+                    <MeganavControlMobilePanelClose iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
                     <panel.component paths={paths} />
                   </div>
                 </li>

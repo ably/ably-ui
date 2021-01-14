@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const PanelCloseControl = ({ iconSpritesPath, ariaControls }) => (
+const MeganavControlMobilePanelClose = ({ iconSpritesPath, ariaControls }) => (
   <div className="mx-24 md:mx-32">
     <button
       type="button"
@@ -20,9 +20,9 @@ const PanelCloseControl = ({ iconSpritesPath, ariaControls }) => (
   </div>
 );
 
-PanelCloseControl.propTypes = {
+MeganavControlMobilePanelClose.propTypes = {
   iconSpritesPath: T.string,
   ariaControls: T.string,
 };
 
-export default PanelCloseControl;
+export default MeganavControlMobilePanelClose;

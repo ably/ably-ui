@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MobileMenuControl = ({ iconSpritesPath, theme }) => (
+const MeganavControlMobileDropdown = ({ iconSpritesPath, theme }) => (
   <button
     type="button"
     className="block ml-8 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none transition-colors"
@@ -18,9 +18,9 @@ const MobileMenuControl = ({ iconSpritesPath, theme }) => (
   </button>
 );
 
-MobileMenuControl.propTypes = {
+MeganavControlMobileDropdown.propTypes = {
   iconSpritesPath: T.string,
   theme: T.object,
 };
 
-export default MobileMenuControl;
+export default MeganavControlMobileDropdown;

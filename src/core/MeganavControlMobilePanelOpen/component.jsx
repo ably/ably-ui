@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const PanelOpenControl = ({ iconSpritesPath, ariaControls, children }) => (
+const MeganavControlMobilePanelOpen = ({ iconSpritesPath, ariaControls, children }) => (
   <button
     type="button"
     className="ui-meganav-mobile-link"
@@ -17,10 +17,10 @@ const PanelOpenControl = ({ iconSpritesPath, ariaControls, children }) => (
   </button>
 );
 
-PanelOpenControl.propTypes = {
+MeganavControlMobilePanelOpen.propTypes = {
   iconSpritesPath: T.string,
   ariaControls: T.string,
   children: T.node,
 };
 
-export default PanelOpenControl;
+export default MeganavControlMobilePanelOpen;

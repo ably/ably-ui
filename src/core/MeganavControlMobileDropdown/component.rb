@@ -1,6 +1,6 @@
 module AblyUi
   module Core
-    class MobileMenuControl < ViewComponent::Base
+    class MeganavControlMobileDropdown < ViewComponent::Base
       include AblyUi::Core::MeganavThemes
 
       def initialize(theme_name:)

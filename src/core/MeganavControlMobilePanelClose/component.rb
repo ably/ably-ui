@@ -1,6 +1,6 @@
 module AblyUi
   module Core
-    class PanelOpenControl < ViewComponent::Base
+    class MeganavControlMobilePanelClose < ViewComponent::Base
       def initialize(aria_controls:)
         @aria_controls = aria_controls
       end

@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const WhyAblyPanel = ({ paths }) => (
+const MeganavContentWhyAbly = ({ paths }) => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">
@@ -105,7 +105,7 @@ const WhyAblyPanel = ({ paths }) => (
   </section>
 );
 
-WhyAblyPanel.propTypes = {
+MeganavContentWhyAbly.propTypes = {
   paths: T.shape({
     blogThumb1: T.string,
     blogThumb2: T.string,
@@ -114,4 +114,4 @@ WhyAblyPanel.propTypes = {
   }),
 };
 
-export default WhyAblyPanel;
+export default MeganavContentWhyAbly;
