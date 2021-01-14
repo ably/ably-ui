@@ -1,65 +1,10 @@
 <%= tag.nav(class: ["ui-meganav-wrapper", theme(:background_color), theme(:bar_shadow)], data: { id: "meganav" }, aria: { label: "Main" }) do %>
   <div class="ui-meganav ui-grid-px">
     <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name)) %>
-
-    <!-- Desktop nav items -->
-    <ul class="hidden md:flex">
-      <% panels.each do |panel| %>
-        <li class="ui-meganav-item">
-          <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
-            <%= panel[:label] %>
-          <% end %>
-
-          <%= content_tag :div, class: 'ui-meganav-panel invisible', data: { id: "meganav-panel" }, id: panel[:id] do %>
-            <%= render(panel[:class].constantize.new) %>
-          <% end %>
-        </li>
-      <% end %>
-      <li>
-        <%= link_to "Pricing", "/pricing", data: { id: "meganav-link" }, class: ["ui-meganav-link", "h-64", "items-center", "flex", theme(:text_color)] %>
-      </li>
-    </ul>
+    <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name)) %>
 
     <% if @session_data[:signedIn] %>
-      <ul class="hidden md:flex items-center">
-        <li class="ui-meganav-item relative">
-          <%= render(AblyUi::Core::MeganavControl.new(aria_controls: "account-panel", theme_name: @theme_name)) do %>
-            <%= @session_data[:accountName] %>
-          <% end %>
-
-          <div class="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
-            <p class="ui-meganav-overline mt-24 mx-16">Your account</p>
-            <ul class="mb-16 mx-16">
-              <% @session_data[:account][:links].each do |key, link| %>
-                <li>
-                  <%= link_to link[:text], link[:href], class: "ui-meganav-account-link" %>
-                </li>
-              <% end %>
-            </ul>
-
-            <p class="ui-meganav-overline mx-16"><%= @session_data[:preferredEmail] %></p>
-            <ul class="mb-8 mx-16">
-              <li>
-                <%= link_to @session_data[:mySettings][:text], @session_data[:mySettings][:href], class: "ui-meganav-account-link" %>
-              </li>
-            </ul>
-
-            <hr class="ui-meganav-hr mb-16" />
-
-            <div class="mb-16 px-16">
-              <% if @session_data[:logOut] %>
-                <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: "ui-meganav-account-link" %>
-              <% end %>
-            </div>
-          </div>
-        </li>
-
-        <% if @session_data[:account] %>
-          <li class="ml-16">
-            <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary px-16" %>
-          </li>
-        <% end %>
-      </ul>
+      <%= render(AblyUi::Core::MeganavItemsSignedIn.new(session_data: @session_data, theme_name: @theme_name)) %>
     <% else %>
       <ul class="hidden md:flex items-center">
         <li>
@@ -74,55 +19,6 @@
       </ul>
     <% end %>
 
-    <!-- Mobile nav items -->
-    <ul class="flex md:hidden">
-      <li>
-        <% if @session_data[:signedIn] && @session_data[:logOut] %>
-          <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: ["ui-meganav-link", theme(:text_color)] %>
-        <% else %>
-          <%= link_to "Login", "/login", class: ["ui-meganav-link", theme(:text_color)] %>
-        <% end %>
-      </li>
-
-      <li class="ui-meganav-item">
-        <%= render(AblyUi::Core::MeganavControlMobileDropdown.new(theme_name: @theme_name)) %>
-
-        <div class="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
-          <div class="py-16 ui-grid-px bg-white">
-            <ul class="mb-16">
-              <% panels.each do |panel| %>
-                <li class="ui-meganav-mobile-item">
-                  <%= render(AblyUi::Core::MeganavControlMobilePanelOpen.new(aria_controls: "#{panel[:id]}-mobile")) do %>
-                    <%= panel[:label] %>
-                  <% end %>
-
-                  <%= content_tag(:div, class: "ui-meganav-panel-mobile invisible", id: "#{panel[:id]}-mobile") do %>
-                    <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
-                    <%= render(panel[:class].constantize.new) %>
-                  <% end %>
-                </li>
-              <% end %>
-              <li>
-                <a href="/pricing" class="ui-meganav-mobile-link">
-                  Pricing
-                </a>
-              </li>
-            </ul>
-
-            <hr class="ui-meganav-hr mb-20" />
-
-            <div class="flex justify-between items-center mb-16">
-              <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">Contact us</a>
-
-              <% if @session_data[:signedIn] && @session_data[:account] %>
-                <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
-              <% else %>
-                <a href="/sign-up" class="ui-btn">Sign up free</a>
-              <% end %>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <%= render(AblyUi::Core::MeganavItemsMobile.new(session_data: @session_data, theme_name: @theme_name)) %>
   </div>
 <% end %>

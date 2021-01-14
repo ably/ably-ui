@@ -3,7 +3,7 @@ require "json"
 module AblyUi
   module Core
     class Meganav < ViewComponent::Base
-      include MeganavThemes
+      include MeganavConfig
 
       def initialize(session_data: {}, theme_name: :white)
         @session_data = session_data

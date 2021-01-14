@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-import FeaturedLink from "../FeaturedLink/component.js";
+import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const MeganavContentDevelopers = ({ paths }) => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">

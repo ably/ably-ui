@@ -4,13 +4,17 @@ MEGANAV_DATA = JSON.parse(File.read(File.join(File.dirname(__FILE__), 'meganav',
 
 module AblyUi
   module Core
-    module MeganavThemes
+    module MeganavConfig
       def theme_setup(theme_name)
         @theme_name = theme_name
       end
 
       def themes
         MEGANAV_DATA["themes"].deep_transform_keys { |key| key.underscore.to_sym }
+      end
+
+      def panels
+        MEGANAV_DATA["panels"].map { |panel| panel.deep_transform_keys { |key| key.underscore.to_sym } }
       end
 
       def theme(style)

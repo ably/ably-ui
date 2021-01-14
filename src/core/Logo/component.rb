@@ -1,7 +1,7 @@
 module AblyUi
   module Core
     class Logo < ViewComponent::Base
-      include AblyUi::Core::MeganavThemes
+      include AblyUi::Core::MeganavConfig
 
       def initialize(theme_name:)
         theme_setup(theme_name)

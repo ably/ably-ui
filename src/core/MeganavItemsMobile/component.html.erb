@@ -1,0 +1,49 @@
+<ul class="flex md:hidden">
+  <li>
+    <% if @session_data[:signedIn] && @session_data[:logOut] %>
+      <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)])) %>
+    <% else %>
+      <%= link_to "Login", "/login", class: ["ui-meganav-link", theme(:text_color)] %>
+    <% end %>
+  </li>
+
+  <li class="ui-meganav-item">
+    <%= render(AblyUi::Core::MeganavControlMobileDropdown.new(theme_name: @theme_name)) %>
+
+    <div class="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
+      <div class="py-16 ui-grid-px bg-white">
+        <ul class="mb-16">
+          <% panels.each do |panel| %>
+            <li class="ui-meganav-mobile-item">
+              <%= render(AblyUi::Core::MeganavControlMobilePanelOpen.new(aria_controls: "#{panel[:id]}-mobile")) do %>
+                <%= panel[:label] %>
+              <% end %>
+
+              <%= content_tag(:div, class: "ui-meganav-panel-mobile invisible", id: "#{panel[:id]}-mobile") do %>
+                <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
+                <%= render("AblyUi::Core::#{panel[:component]}".constantize.new) %>
+              <% end %>
+            </li>
+          <% end %>
+          <li>
+            <a href="/pricing" class="ui-meganav-mobile-link">
+              Pricing
+            </a>
+          </li>
+        </ul>
+
+        <hr class="ui-meganav-hr mb-20" />
+
+        <div class="flex justify-between items-center mb-16">
+          <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">Contact us</a>
+
+          <% if @session_data[:signedIn] && @session_data[:account] %>
+            <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
+          <% else %>
+            <a href="/sign-up" class="ui-btn">Sign up free</a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

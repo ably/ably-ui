@@ -1,7 +1,7 @@
 module AblyUi
   module Core
     class MeganavControl < ViewComponent::Base
-      include AblyUi::Core::MeganavThemes
+      include AblyUi::Core::MeganavConfig
 
       def initialize(aria_controls:, theme_name:)
         @aria_controls = aria_controls

@@ -1,0 +1,39 @@
+<ul class="hidden md:flex items-center">
+  <li class="ui-meganav-item relative">
+    <%= render(AblyUi::Core::MeganavControl.new(aria_controls: "account-panel", theme_name: @theme_name)) do %>
+      <%= @session_data[:accountName] %>
+    <% end %>
+
+    <div class="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
+      <p class="ui-meganav-overline mt-24 mx-16">Your account</p>
+      <ul class="mb-16 mx-16">
+        <% @session_data[:account][:links].each do |key, link| %>
+          <li>
+            <%= link_to link[:text], link[:href], class: "ui-meganav-account-link" %>
+          </li>
+        <% end %>
+      </ul>
+
+      <p class="ui-meganav-overline mx-16"><%= @session_data[:preferredEmail] %></p>
+      <ul class="mb-8 mx-16">
+        <li>
+          <%= link_to @session_data[:mySettings][:text], @session_data[:mySettings][:href], class: "ui-meganav-account-link" %>
+        </li>
+      </ul>
+
+      <hr class="ui-meganav-hr mb-16" />
+
+      <div class="mb-16 px-16">
+        <% if @session_data[:logOut] %>
+          <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-account-link", theme(:text_color)])) %>
+        <% end %>
+      </div>
+    </div>
+  </li>
+
+  <% if @session_data[:account] %>
+    <li class="ml-16">
+      <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary px-16" %>
+    </li>
+  <% end %>
+</ul>
