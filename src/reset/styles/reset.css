@@ -104,6 +104,10 @@ textarea::placeholder {
   color: #a0aec0;
 }
 
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
 button,
 [role="button"] {
   cursor: pointer;

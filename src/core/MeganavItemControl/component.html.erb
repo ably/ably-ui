@@ -1,7 +1,7 @@
 <%= button_tag(type: "button",
-               class: "c-meganav-nav-item flex items-center group",
-               data: { id: "meganav-nav-item" },
-               aria: { expanded: false, controls: @aria_controls }) do %><%= content %><svg class="w-12 h-12 ml-8 icon-dark-grey group-hover:icon-gui-hover">
+               class: "ui-meganav-nav-item h-64 flex items-center group",
+               data: { id: "meganav-item-control" },
+               aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do %><%= content %><svg class="w-12 h-12 ml-8 ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus">
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
   </svg>
 <% end %>

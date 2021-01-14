@@ -3,6 +3,7 @@ module.exports = [
     name: "Core",
     directory: "core",
     components: [
+      "FeaturedLink",
       "Meganav",
       "Logo",
       "PlatformPanel",

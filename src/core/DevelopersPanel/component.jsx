@@ -1,85 +1,78 @@
 import React from "react";
 import T from "prop-types";
 
+import FeaturedLink from "../FeaturedLink/component.jsx";
+
 const DevelopersPanel = ({ paths }) => (
-  <div className="c-meganav-panel md:grid-cols-3">
+  <section className="ui-meganav-panel ui-grid-gap md:grid-cols-3">
     <div>
-      <p className="c-meganav-overline">Documentation</p>
+      <h3 className="ui-meganav-overline">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
-          <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 icon-cool-black">
+          <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
             <use href={`${paths.iconSprites}#sprite-search`}></use>
           </svg>
-          <input type="search" name="q" className="c-meganav-search-input" placeholder="Search docs" />
+          <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
       </div>
       <p className="text-p1 text-cool-black mb-20">
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
-      <a href="/documentation" className="c-meganav-link group">
+
+      <FeaturedLink url="/documentation" iconSpritesPath={paths.iconSprites}>
         Visit Documentation
-        <svg className="w-12 h-12 transform -rotate-90 align-top icon-dark-grey group-hover:icon-gui-hover ml-4">
-          <use href={`${paths.iconSprites}#sprite-disclosure-arrow`}></use>
-        </svg>
-      </a>
+      </FeaturedLink>
     </div>
 
     <div>
-      <p className="c-meganav-overline">EXPLORE</p>
-      <ul>
+      <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
+        EXPLORE
+      </h3>
+      <ul aria-labelledby="meganav-developers-panel-explore">
         <li>
-          <a href="/integrations" className="c-meganav-media group">
-            <p className="c-meganav-media-heading">Third-party integrations & plugins</p>
-            <p className="c-meganav-media-copy">Extend Ably’s platform into third party clouds and systems like AWS Lambda and AWS Kinesis.</p>
+          <a href="/integrations" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Third-party integrations & plugins</p>
+            <p className="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
           </a>
         </li>
         <li>
-          <a href="/protocols" className="c-meganav-media group">
-            <p className="c-meganav-media-heading">Multi-protocol messaging</p>
-            <p className="c-meganav-media-copy">Protocols serve different purposes. We support WebSockets, MQTT, SSE, and more.</p>
+          <a href="/protocols" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Multi-protocol messaging</p>
+            <p className="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
           </a>
         </li>
         <li>
-          <a href="/hub" className="c-meganav-media group">
-            <p className="c-meganav-media-heading">Streaming data sources</p>
-            <p className="c-meganav-media-copy">Free streaming data sources from across industries like transport and finance.</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://labs.ably.com" className="c-meganav-media group">
-            <p className="c-meganav-media-heading">Ably Labs</p>
-            <p className="c-meganav-media-copy">See Ably in action. See what you can do with Ably. Do more with Ably.</p>
+          <a href="/hub" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Streaming data sources</p>
+            <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
           </a>
         </li>
       </ul>
     </div>
 
-    <ul>
+    <ul aria-labelledby="meganav-developers-panel-explore">
       <li>
-        <a href="/download" className="group c-meganav-media py-12">
-          <p className="c-meganav-media-heading">Download an SDK</p>
+        <a href="/download" className="group ui-meganav-media py-12">
+          <p className="ui-meganav-media-heading">Download an SDK</p>
         </a>
       </li>
-
       <li>
-        <a href="https://changelog.ably.com/" className="group c-meganav-media py-12">
-          <p className="c-meganav-media-heading">Platform changelog</p>
+        <a href="https://changelog.ably.com/" className="group ui-meganav-media py-12">
+          <p className="ui-meganav-media-heading">Platform changelog</p>
         </a>
       </li>
-
       <li>
-        <a href="/support" className="group c-meganav-media py-12">
-          <p className="c-meganav-media-heading">Support & FAQs</p>
+        <a href="/support" className="group ui-meganav-media py-12">
+          <p className="ui-meganav-media-heading">Support & FAQs</p>
         </a>
       </li>
-
       <li>
-        <a href="http://status.ably.io/" className="group c-meganav-media py-12">
-          <p className="c-meganav-media-heading">Status</p>
+        <a href="http://status.ably.io/" className="group ui-meganav-media py-12">
+          <p className="ui-meganav-media-heading">Status</p>
         </a>
       </li>
     </ul>
-  </div>
+  </section>
 );
 
 DevelopersPanel.propTypes = {

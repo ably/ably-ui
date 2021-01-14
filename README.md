@@ -16,6 +16,16 @@ In a couple of cases, this is not practical. Some components will be more specia
 2. Use the web platform as much as possible without relying on frameworks
 3. Be flexible in how the library can be integrated
 
+#### Accessibility
+
+An important part of ably-ui is ensuring the produced UI is accessible to as wide range of users as possible. All components should adhere to at least AA accessiblity standards. In most cases this can be accomplished by following a few simple rules:
+
+- use the correct [HTML elements](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML): anchors for navigation, buttons for interacting, lists for lists etc
+- test using a screen reader (for example [Voice Over on a Mac OSX with Web rotor](https://support.apple.com/en-gb/guide/voiceover/welcome/mac))
+- confirm designs have appropriate tap targets, contrast
+- use [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) where you reach the limits of what you can do with HTML
+- don't break the web platform (ie. don't break the behaviour of a back button, scrolling, in-page links etc)
+
 ### Library structure
 
 The library is built out of modules and components. A module contains assets and/or components (which can have their own assets too, like additional stylesheets or images) that are meant to help you construct a given type of UI.
@@ -249,6 +259,12 @@ For example:
     - component.css
     - component.jsx
 ```
+
+#### CSS
+
+##### z-index and positioning
+
+If using positioning any other then static, be mindful of creating stacking contexts. In `properties.css` you'll find the `z-index` values for the html stacking context (used by components like the meganav). When creating a new one within your component, hoist the z-index values to the selector that creates the stacking context and define `z-index` values there for easy scanning (see https://www.oreilly.com/library/view/developing-web-components/9781491905685/ch04.html for a good write up on stacking contexts and z-index.).
 
 #### Bundling
 

@@ -1,106 +1,89 @@
-<div class="c-meganav-panel md:grid-cols-3">
+<section class="ui-meganav-panel ui-grid-gap md:grid-cols-3">
   <div>
-    <p class="c-meganav-overline">Why companies choose Ably</p>
-    <ul>
+    <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">Why companies choose Ably</h3>
+    <ul aria-labelledby="meganav-why-ably-panel-list-why-companies">
       <li>
-        <a href="/customers" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">Customer stories</p>
+        <a href="/customers" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">Customer stories</p>
         </a>
       </li>
 
       <li>
-        <a href="/compare" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">Compare our tech</p>
+        <a href="/compare" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">Compare our tech</p>
         </a>
       </li>
 
       <li>
-        <a href="/migrate" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">Risk-free migration</p>
+        <a href="/aws" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">Ably & AWS</p>
         </a>
       </li>
 
       <li>
-        <a href="/enterprise" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">For enterprises</p>
-        </a>
-      </li>
-
-      <li>
-        <a href="/aws" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">Ably & AWS</p>
-        </a>
-      </li>
-
-      <li>
-        <a href="/resources/datasheets" class="group c-meganav-media py-12">
-          <p class="c-meganav-media-heading">Resources</p>
+        <a href="/resources/datasheets" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">Resources</p>
         </a>
       </li>
     </ul>
   </div>
 
   <div>
-    <p class="c-meganav-overline">Four pillars of dependability</p>
-    <ul class="mb-8">
+    <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-four-pillars">Four pillars of dependability</h3>
+    <ul class="mb-8" aria-labelledby="meganav-why-ably-panel-list-four-pillars">
       <li>
-        <a href="/four-pillars-of-dependability#performance" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">Predictable performance</p>
-          <p class="c-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
+        <a href="/four-pillars-of-dependability#performance" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Predictable performance</p>
+          <p class="ui-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
         </a>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#integrity" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">Guaranteed ordering & delivery</p>
-          <p class="c-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
+        <a href="/four-pillars-of-dependability#integrity" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
+          <p class="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
         </a>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#reliability" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">Fault tolerant infrastructure</p>
-          <p class="c-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
+        <a href="/four-pillars-of-dependability#reliability" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
+          <p class="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
         </a>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#availability" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">High scalability & availability</p>
-          <p class="c-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
+        <a href="/four-pillars-of-dependability#availability" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">High scalability & availability</p>
+          <p class="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
         </a>
       </li>
     </ul>
-    <a href="/four-pillars-of-dependability" class="c-meganav-link group">Explore our Four Pillars of Dependability<svg class="w-12 h-12 transform -rotate-90 align-top ml-4 icon-dark-grey group-hover:icon-gui-hover">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
   </div>
 
   <div>
-    <p class="c-meganav-overline">Blog</p>
-    <ul class="mb-16">
-      <!-- Without thumb until we fetch them dynamically, use CSS class c-meganav-media-with-image -->
+    <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">Blog</h3>
+    <ul class="mb-16" aria-labelledby="meganav-why-ably-panel-list-blog">
+      <!-- Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image -->
       <li>
-        <a href="/blog/ably-wins-two-2020-devportal-awards" class="c-meganav-media-with group">
-          <p class="c-meganav-media-heading">Ably wins two 2020 Devportal Awards</p>
-          <p class="c-meganav-media-copy">Nov 26, 2020</p>
+        <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">6 realtime engineering challenges for EdTech applications</p>
+          <p class="ui-meganav-media-copy">Jan 05, 2021</p>
         </a>
       </li>
       <li>
-        <a href="/blog/achieving-exactly-once-message-processing-with-ably" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">Achieving exactly-once message processing with Ably</p>
-          <p class="c-meganav-media-copy">Nov 17, 2020</p>
+        <a href="/blog/iot-wearable-azure-cognitive-services-ably" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Making a wearable live caption display using Azure Cognitive Services and Ably</p>
+          <p class="ui-meganav-media-copy">Dec 21, 2020</p>
         </a>
       </li>
-
       <li>
-        <a href="/blog/ablys-partnership-with-aws" class="c-meganav-media group">
-          <p class="c-meganav-media-heading">Ably’s partnership and global GTM strategy with AWS</p>
-          <p class="c-meganav-media-copy">Oct 15, 2020</p>
+        <a href="/blog/airtable-database-realtime-messages" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Using Airtable as a database to store realtime messages</p>
+          <p class="ui-meganav-media-copy">Dec 15, 2020</p>
         </a>
       </li>
     </ul>
-    <a href="/blog" class="c-meganav-link group">More from our Blog<svg class="w-12 h-12 transform -rotate-90 align-top ml-4 icon-dark-grey group-hover:icon-gui-hover">
-        <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
-      </svg>
-    </a>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/blog")) do %>More from our Blog<% end %>
   </div>
-</div>
+</section>
