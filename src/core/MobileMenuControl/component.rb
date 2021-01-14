@@ -1,8 +1,11 @@
 module AblyUi
   module Core
     class MobileMenuControl < ViewComponent::Base
-      def initialize(aria_controls:)
+      include AblyUi::Core::MeganavThemes
+
+      def initialize(aria_controls:, theme_name:)
         @aria_controls = aria_controls
+        theme_setup(theme_name)
       end
     end
   end

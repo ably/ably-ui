@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./src/**/*.html.erb", "./src/**/*.jsx", "./src/**/*.js"],
+  purge: [
+    "./src/**/*.html.erb",
+    "./src/**/*.jsx",
+    "./src/**/*.js",
+    "./src/**/*.json",
+  ],
   darkMode: false,
   theme: {
     screens: {
@@ -88,7 +93,7 @@ module.exports = {
     }),
     boxShadow: {
       subtle: "0px 1px 0px var(--color-mid-grey)",
-      container: "0px 24px 80px rgba(0, 0, 0, 0.1)",
+      container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
       input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", //color-gui-hover at 50% opacity
     },
     letterSpacing: {
@@ -97,8 +102,8 @@ module.exports = {
       "tighten-0.01": "var(--ls-tighten-0_01)",
       "tighten-0.005": "var(--ls-tighten-0_005)",
       "tighten-0.0025": "var(--ls-tighten-0_0025)",
-      "widen-0.1": "var(--ls-widen-0_1: 0.1em)",
-      "widen-0.15": "var(--ls-widen-0_15: 0.15em)",
+      "widen-0.1": "var(--ls-widen-0_1)",
+      "widen-0.15": "var(--ls-widen-0_15)",
     },
     borderRadius: {
       none: "0",

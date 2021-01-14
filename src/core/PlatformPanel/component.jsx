@@ -6,11 +6,11 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 const PlatformPanel = ({ paths }) => (
   <section className="ui-meganav-panel ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
-      <div className="flex items-center mb-20 lg:-mt-12">
+      <div className="flex mb-20">
         <img src={paths.ablyStack} alt="Ably homepage" />
         <h3 className="ui-meganav-overline ml-24">The Ably Platform</h3>
       </div>
-      <p className="text-p2 font-medium text-cool-black">
+      <p className="text-p2 font-medium text-cool-black mb-8">
         Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
         realtime, and lets you focus on your code.
       </p>

@@ -1,11 +1,11 @@
 import React from "react";
 import T from "prop-types";
 
-const MeganavItemControl = ({ iconSpritesPath, ariaControls, children }) => (
+const MeganavItemControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
   <button
     data-id="meganav-item-control"
     type="button"
-    className="ui-meganav-nav-item h-64 flex items-center group"
+    className={`ui-meganav-nav-item h-64 flex items-center group ${theme.textColor}`}
     aria-expanded="false"
     aria-controls={ariaControls}
     aria-label={`Show ${children}`}
@@ -21,6 +21,7 @@ MeganavItemControl.propTypes = {
   iconSpritesPath: T.string,
   ariaControls: T.string,
   children: T.node,
+  theme: T.object,
 };
 
 export default MeganavItemControl;

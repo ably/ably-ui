@@ -76,7 +76,7 @@ const WhyAblyPanel = ({ paths }) => (
       <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">
         Blog
       </h3>
-      <ul className="mb-16" aria-labelledby="meganav-why-ably-panel-list-blog">
+      <ul className="mb-8" aria-labelledby="meganav-why-ably-panel-list-blog">
         {/* Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image */}
         <li>
           <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications" className="ui-meganav-media group">

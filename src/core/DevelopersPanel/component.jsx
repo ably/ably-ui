@@ -6,7 +6,7 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 const DevelopersPanel = ({ paths }) => (
   <section className="ui-meganav-panel ui-grid-gap md:grid-cols-3">
     <div>
-      <h3 className="ui-meganav-overline">Documentation</h3>
+      <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
           <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
@@ -15,7 +15,7 @@ const DevelopersPanel = ({ paths }) => (
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
       </div>
-      <p className="text-p1 text-cool-black mb-20">
+      <p className="text-p1 font-medium text-cool-black mb-20">
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
 
@@ -50,28 +50,33 @@ const DevelopersPanel = ({ paths }) => (
       </ul>
     </div>
 
-    <ul aria-labelledby="meganav-developers-panel-explore">
-      <li>
-        <a href="/download" className="group ui-meganav-media py-12">
-          <p className="ui-meganav-media-heading">Download an SDK</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://changelog.ably.com/" className="group ui-meganav-media py-12">
-          <p className="ui-meganav-media-heading">Platform changelog</p>
-        </a>
-      </li>
-      <li>
-        <a href="/support" className="group ui-meganav-media py-12">
-          <p className="ui-meganav-media-heading">Support & FAQs</p>
-        </a>
-      </li>
-      <li>
-        <a href="http://status.ably.io/" className="group ui-meganav-media py-12">
-          <p className="ui-meganav-media-heading">Status</p>
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">
+        Quick links
+      </h3>
+      <ul aria-labelledby="meganav-developers-panel-quick-links">
+        <li>
+          <a href="/download" className="group ui-meganav-media py-12">
+            <p className="ui-meganav-media-heading">Download an SDK</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://changelog.ably.com/" className="group ui-meganav-media py-12">
+            <p className="ui-meganav-media-heading">Platform changelog</p>
+          </a>
+        </li>
+        <li>
+          <a href="/support" className="group ui-meganav-media py-12">
+            <p className="ui-meganav-media-heading">Support & FAQs</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://status.ably.io/" className="group ui-meganav-media py-12">
+            <p className="ui-meganav-media-heading">Status</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 );
 

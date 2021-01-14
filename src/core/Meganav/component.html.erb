@@ -1,12 +1,12 @@
-<nav class="ui-meganav-wrapper" data-id="meganav" aria-label="Main">
+<%= tag.nav(class: ["ui-meganav-wrapper", theme(:background_color), theme(:bar_shadow)], data: { id: "meganav" }, aria: { label: "Main" }) do %>
   <div class="ui-meganav ui-grid-px">
-    <%= render(AblyUi::Core::Logo.new) %>
+    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name)) %>
 
     <!-- Desktop nav items -->
     <ul class="hidden md:flex">
       <% panels.each do |panel| %>
         <li class="ui-meganav-item">
-          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: panel[:id])) do %>
+          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
             <%= panel[:label] %>
           <% end %>
 
@@ -16,15 +16,14 @@
         </li>
       <% end %>
       <li>
-        <a href="/pricing" class="ui-meganav-nav-item h-64 items-center flex">Pricing</a>
+        <%= link_to "Pricing", "/pricing", class: ["ui-meganav-nav-item", "h-64", "items-center", "flex", theme(:text_color)] %>
       </li>
     </ul>
 
-    <!-- Signed-out nav items -->
     <% if @session_data[:signedIn] %>
       <ul class="hidden md:flex items-center">
         <li class="ui-meganav-item relative">
-          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: "account-panel")) do %>
+          <%= render(AblyUi::Core::MeganavItemControl.new(aria_controls: "account-panel", theme_name: @theme_name)) do %>
             <%= @session_data[:accountName] %>
           <% end %>
 
@@ -47,7 +46,7 @@
 
             <hr class="ui-meganav-hr mb-16" />
 
-            <div className="mb-16 px-16">
+            <div class="mb-16 px-16">
               <% if @session_data[:logOut] %>
                 <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: "ui-meganav-account-panel-link" %>
               <% end %>
@@ -64,13 +63,13 @@
     <% else %>
       <ul class="hidden md:flex items-center">
         <li>
-          <a href="/contact" class="ui-meganav-nav-item">Contact us</a>
+          <%= link_to "Contact us", "/contact", class: ["ui-meganav-nav-item", theme(:text_color)] %>
         </li>
         <li>
-          <a href="/login" class="ui-meganav-nav-item">Login</a>
+          <%= link_to "Login", "/login", class: ["ui-meganav-nav-item", theme(:text_color)] %>
         </li>
         <li class="ml-16">
-          <a href="/sign-up" class="ui-btn px-16">Sign up free</a>
+          <%= link_to "Sign up free", "/sign-up", class: ["ui-btn", "px-16", theme(:button_background_color), theme(:button_text_color)] %>
         </li>
       </ul>
     <% end %>
@@ -78,10 +77,15 @@
     <!-- Mobile nav items -->
     <ul class="flex md:hidden">
       <li>
-        <a href="/login" class="ui-meganav-nav-item">Login</a>
+        <% if @session_data[:signedIn] && @session_data[:logOut] %>
+          <%= link_to @session_data[:logOut][:text], @session_data[:logOut][:href], method: :delete, class: ["ui-meganav-nav-item", theme(:text_color)] %>
+        <% else %>
+          <%= link_to "Login", "/login", class: ["ui-meganav-nav-item", theme(:text_color)] %>
+        <% end %>
       </li>
+
       <li class="ui-meganav-item">
-        <%= render(AblyUi::Core::MobileMenuControl.new(aria_controls: "mobile-dropdown")) %>
+        <%= render(AblyUi::Core::MobileMenuControl.new(aria_controls: "mobile-dropdown", theme_name: @theme_name)) %>
         <div class="ui-meganav-mobile-dropdown" id="mobile-dropdown">
           <div class="py-16 ui-grid-px bg-white">
             <ul class="mb-16">
@@ -90,9 +94,10 @@
                   <%= render(AblyUi::Core::PanelOpenControl.new(aria_controls: "#{panel[:id]}-mobile")) do %>
                     <%= panel[:label] %>
                   <% end %>
+
                   <%= content_tag(:div, class: "ui-meganav-mobile-panel", id: "#{panel[:id]}-mobile") do %>
-                    <%= render(AblyUi::Core::PanelCloseControl.new(aria_controls: "platform-panel-mobile")) %>
-                    <%= render(AblyUi::Core::PlatformPanel.new) %>
+                    <%= render(AblyUi::Core::PanelCloseControl.new(aria_controls: "#{panel[:id]}-mobile")) %>
+                    <%= render(panel[:class].constantize.new) %>
                   <% end %>
                 </li>
               <% end %>
@@ -104,7 +109,7 @@
             </ul>
             <hr class="ui-meganav-hr mb-20" />
             <div class="flex justify-between items-center mb-16">
-              <a href="/contact" class="ui-meganav-nav-item ml-0 py-0">Contact us</a>
+              <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 py-0 px-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">Contact us</a>
 
               <% if @session_data[:signedIn] && @session_data[:account] %>
                 <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
@@ -117,4 +122,4 @@
       </li>
     </ul>
   </div>
-</nav>
+<% end %>
