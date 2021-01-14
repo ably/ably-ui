@@ -3,8 +3,8 @@ import { queryId } from "../dom-query";
 const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const control = queryId("meganav-control-mobile-dropdown");
   const dropdown = queryId("meganav-mobile-dropdown");
-  const menuIcon = control.childNodes[0];
-  const closeIcon = control.childNodes[1];
+  const menuIcon = queryId("meganav-control-mobile-dropdown-menu");
+  const closeIcon = queryId("meganav-control-mobile-dropdown-menu-close");
 
   const clickHandler = () => {
     const ariaExpanded = control.getAttribute("aria-expanded");

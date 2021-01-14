@@ -9,10 +9,10 @@ const MeganavControlMobileDropdown = ({ iconSpritesPath, theme }) => (
     aria-expanded="false"
     aria-controls="meganav-mobile-dropdown"
   >
-    <svg className={`h-24 w-24 ${theme.mobileMenuColor}`}>
+    <svg className={`h-24 w-24 ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-menu">
       <use href={`${iconSpritesPath}#sprite-menu`}></use>
     </svg>
-    <svg className={`h-24 w-24 hidden ${theme.mobileMenuColor}`}>
+    <svg className={`h-24 w-24 hidden ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-menu-close">
       <use href={`${iconSpritesPath}#sprite-close`}></use>
     </svg>
   </button>
