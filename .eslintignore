@@ -1,6 +1,6 @@
 vendor
-core
-reset
+./core
+./reset
 preview/public
 preview/tmp
 node_modules

@@ -3,7 +3,7 @@ require "json"
 module AblyUi
   module Core
     class Meganav < ViewComponent::Base
-      include MeganavThemes
+      include MeganavConfig
 
       def initialize(session_data: {}, theme_name: :white)
         @session_data = session_data
@@ -13,10 +13,10 @@ module AblyUi
 
       def panels
         [
-          { label: "Platform", id: "platform-panel", class: "AblyUi::Core::PlatformPanel" },
-          { label: "Use Cases", id: "use-cases-panel", class: "AblyUi::Core::UseCasesPanel" },
-          { label: "Why Ably", id: "why-ably-panel", class: "AblyUi::Core::WhyAblyPanel" },
-          { label: "Developers", id: "developers-panel", class: "AblyUi::Core::DevelopersPanel" },
+          { label: "Platform", id: "platform-panel", class: "AblyUi::Core::MeganavContentPlatform" },
+          { label: "Use Cases", id: "use-cases-panel", class: "AblyUi::Core::MeganavContentUseCases" },
+          { label: "Why Ably", id: "why-ably-panel", class: "AblyUi::Core::MeganavContentWhyAbly" },
+          { label: "Developers", id: "developers-panel", class: "AblyUi::Core::MeganavContentDevelopers" },
         ]
       end
     end

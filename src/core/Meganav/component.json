@@ -27,5 +27,11 @@
       "logoTextColor": "text-cool-black",
       "barShadow": ""
     }
-  }
+  },
+  "panels": [
+    { "label": "Platform", "id": "platform-panel", "component": "MeganavContentPlatform" },
+    { "label": "Use Cases", "id": "use-cases-panel", "component": "MeganavContentUseCases" },
+    { "label": "Why Ably", "id": "why-ably-panel", "component": "MeganavContentWhyAbly" },
+    { "label": "Developers", "id": "developers-panel", "component": "MeganavContentDevelopers" }
+  ]
 }

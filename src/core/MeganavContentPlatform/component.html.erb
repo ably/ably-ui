@@ -1,0 +1,88 @@
+<section class="ui-meganav-content ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
+  <div class="sm:col-span-full md:col-span-1">
+    <div class="flex mb-20">
+       <%= image_tag(ably_stack_path, alt: "Ably homepage") %>
+      <h3 class="ui-meganav-overline ml-24">The Ably Platform</h3>
+    </div>
+
+    <p class="text-p2 font-medium text-cool-black mb-8">
+      Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything realtime, and lets you focus on your code.
+    </p>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/pub-sub-messaging")) do %>Explore how it works<% end %>
+  </div>
+
+  <div>
+      <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-features">
+        Our features
+      </h3>
+      <ul aria-labelledby="meganav-platform-panel-list-our-features">
+      <li>
+        <a href="/pub-sub-messaging" class="group ui-meganav-media">
+          <p class="ui-meganav-media-heading">Publish/subscribe messaging</p>
+          <p class="ui-meganav-media-copy">Feature-rich pub/sub messaging to power any realtime requirement.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/push-notifications" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Push notifications</p>
+          <p class="ui-meganav-media-copy">Deliver native notifications at scale with our unified API.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/integrations" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Third-party integrations</p>
+          <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/protocols" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
+          <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/hub" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Streaming data sources</p>
+          <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
+        </a>
+      </li>
+    </ul>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/platform")) do %>Explore all platform features<% end %>
+  </div>
+
+  <div>
+      <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">
+        Our technology
+      </h3>
+      <ul class="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
+      <li>
+        <a href="/four-pillars-of-dependability#performance" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Predictable performance</p>
+          <p class="ui-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/four-pillars-of-dependability#integrity" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
+          <p class="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/four-pillars-of-dependability#reliability" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
+          <p class="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/four-pillars-of-dependability#availability" class="ui-meganav-media group">
+          <p class="ui-meganav-media-heading">High scalability & availability</p>
+          <p class="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
+        </a>
+      </li>
+    </ul>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
+  </div>
+</section>

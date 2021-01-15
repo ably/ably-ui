@@ -1,6 +1,6 @@
 module AblyUi
   module Core
-    class Logo < ViewComponent::Base
+    class MeganavControlMobileDropdown < ViewComponent::Base
       include AblyUi::Core::MeganavConfig
 
       def initialize(theme_name:)

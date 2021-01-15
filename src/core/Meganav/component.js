@@ -1,261 +1,109 @@
 import "./component.css";
 
-const HOVER_CLASS = "ui-meganav-item-hover";
+// Glossary:
+// item - is the element which contains both the control and the panel - these are adjacent
+// control - interactive element that controls showing and hiding of dropdown or panel
+// panel - container for meganav content
+// dropdown - container for top level items on mobile
+// clear - return to initial state
+// teardown - remove all event listeners (for example when removing nodes)
 
-const queryId = (val, append = "") =>
-  document.querySelector(`[data-id=${val}]${append}`);
+import { queryId, queryIdAll } from "../dom-query";
 
-const queryIdAll = (val, append = "") =>
-  document.querySelectorAll(`[data-id=${val}]${append}`);
+import MeganavControl from "../MeganavControl/component";
 
-const hoverEnabled = () =>
-  window.matchMedia(
-    "(hover: hover) and (pointer: fine) and (min-width: 1040px)"
-  ).matches;
+import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component";
+import MobilePanelOpenClick from "../MeganavControlMobilePanelOpen/component";
+import MobilePanelCloseClick from "../MeganavControlMobilePanelClose/component";
 
-const dropDownsHaveFocus = (nodeList) =>
-  Array.from(nodeList).some(
-    (btn) =>
-      document.activeElement !== btn &&
-      btn.parentNode.contains(document.activeElement)
-  );
+// Close menu when user clicks outside of viewport
+const windowOnBlur = (closeAll) => {
+  window.onblur = () => closeAll();
+  return { teardown: () => (window.onblur = null) };
+};
 
-const itemControlsFocused = (itemControls) =>
-  Array.from(itemControls).some((btn) => document.activeElement === btn);
-
-export default function Meganav({ themeName } = { themeName: null }) {
+// Close menu when click/tap outside of nav
+const documentClick = (closeAll) => {
   const meganav = queryId("meganav");
-  const meganavLogo = queryId("meganav-logo");
-  const meganavNavItems = queryIdAll("meganav-nav-item");
-  const mobileMenu = queryId("meganav-mobile-menu");
-  const itemControls = queryIdAll("meganav-item-control");
-  const mobilePanelOpen = queryIdAll("meganav-mobile-panel-open");
-  const mobilePanelClose = queryIdAll("meganav-mobile-panel-close");
-  const otherControls = [
-    [mobileMenu],
-    mobilePanelOpen,
-    mobilePanelClose,
-    itemControls,
+
+  const clickHandler = (e) => {
+    if (meganav.contains(e.target)) return;
+    closeAll();
+  };
+
+  document.addEventListener("click", clickHandler);
+
+  return {
+    teardown: () => document.removeEventListener("click", clickHandler),
+  };
+};
+
+// Invert from transparent to white
+const documentScroll = (themeName) => {
+  if (themeName !== "transparentToWhite") return { teardown: () => {} };
+
+  const meganav = queryId("meganav");
+  const navItems = queryIdAll("meganav-link");
+  const controlMobileDropdown = queryId("meganav-control-mobile-dropdown");
+  const controls = queryIdAll("meganav-control");
+
+  const invertTextCollection = [
+    ...Array.from(controls),
+    ...Array.from(navItems),
+    controlMobileDropdown,
+    queryId("meganav-logo"),
   ];
 
-  const closeAndCleanUp = () => {
-    // Clear focus to force close the nav
-    document.activeElement.blur();
+  const scrollHandler = () => {
+    if (window.scrollY > 5) {
+      meganav.classList.replace("bg-transparent", "bg-white");
 
-    otherControls
-      .map((control) => Array.from(control))
-      .flat()
-      .forEach((btn) => {
-        btn.setAttribute("aria-expanded", false);
-      });
+      invertTextCollection.forEach((n) =>
+        n.classList.replace("text-white", "text-cool-black")
+      );
+    } else {
+      meganav.classList.replace("bg-white", "bg-transparent");
 
-    itemControls.forEach((btn) => btn.parentNode.classList.remove(HOVER_CLASS));
+      invertTextCollection.forEach((n) =>
+        n.classList.replace("text-cool-black", "text-white")
+      );
+    }
   };
 
-  const itemControlsEvents = () => {
-    // Open meganav on hover, but only under conditions where hover is "likely" and panels don't have focus.
-    // Panels opening on focus is done using CSS only, but we update aria attributes here.
-    const mouseenterHandler = (btn) => () => {
-      if (
-        !dropDownsHaveFocus(itemControls) &&
-        !itemControlsFocused(itemControls) &&
-        hoverEnabled()
-      ) {
-        btn.parentNode.classList.add(HOVER_CLASS);
-        btn.setAttribute("aria-expanded", true);
-      }
-    };
+  document.addEventListener("scroll", scrollHandler);
 
-    const mouseleaveHandler = (btn) => () => {
-      if (
-        !dropDownsHaveFocus(itemControls) &&
-        !itemControlsFocused(itemControls) &&
-        hoverEnabled()
-      ) {
-        btn.parentNode.classList.remove(HOVER_CLASS);
-        btn.setAttribute("aria-expanded", false);
-      }
-    };
-
-    const focusHandler = (btn) => () => {
-      itemControls.forEach((btn) => {
-        btn.parentNode.classList.remove(HOVER_CLASS);
-        btn.setAttribute("aria-expanded", false);
-      });
-      btn.setAttribute("aria-expanded", true);
-    };
-
-    const teardown = Array.from(itemControls)
-      .map((btn) => {
-        const item = btn.parentNode;
-
-        const mouseenterRef = mouseenterHandler(btn);
-        const mouseleaveRef = mouseleaveHandler(btn);
-        const focusRef = focusHandler(btn);
-
-        item.addEventListener("mouseenter", mouseenterRef);
-        item.addEventListener("mouseleave", mouseleaveRef);
-        btn.addEventListener("focus", focusRef);
-
-        return [
-          { target: item, event: "mouseenter", handler: mouseenterRef },
-          { target: item, event: "mouseleave", handler: mouseleaveRef },
-          { target: btn, event: "focus", handler: focusRef },
-        ];
-      })
-      .flat();
-
-    return teardown;
+  return {
+    teardown: () => document.removeEventListener("scroll", scrollHandler),
   };
+};
 
-  // Close menu when user clicks outside of viewport
-  const windowOnBlur = () => {
-    window.onblur = () => closeAndCleanUp();
-    return () => (window.onblur = null);
-  };
+export default function Meganav({ themeName } = { themeName: null }) {
+  const controls = MeganavControl();
+  const panelOpenControls = MobilePanelOpenClick();
+  const panelCloseControls = MobilePanelCloseClick();
 
-  const mobilePanelOpenClick = () => {
-    const clickHandler = (btn) => () => {
-      btn.setAttribute("aria-expanded", true);
-      const ariaId = btn.getAttribute("aria-controls");
+  const mobileDropdownControl = MeganavControlMobileDropdown({
+    clearPanels: () =>
+      [...panelOpenControls, ...panelCloseControls].forEach((i) => i.clear()),
+  });
 
-      queryId(
-        "meganav-mobile-panel-close",
-        `[aria-controls=${ariaId}]`
-      ).setAttribute("aria-expanded", true);
-    };
-
-    const teardown = Array.from(mobilePanelOpen).map((btn) => {
-      const handler = clickHandler(btn);
-      btn.addEventListener("click", handler);
-      return { target: btn, event: "click", handler };
-    });
-
-    return teardown;
-  };
-
-  const mobilePanelCloseClick = () => {
-    const clickHandler = (btn) => () => {
-      btn.setAttribute("aria-expanded", false);
-      const ariaId = btn.getAttribute("aria-controls");
-
-      queryId(
-        "meganav-mobile-panel-open",
-        `[aria-controls=${ariaId}]`
-      ).setAttribute("aria-expanded", false);
-
-      mobileMenu.focus();
-    };
-
-    const teardown = Array.from(mobilePanelClose).map((btn) => {
-      const handler = clickHandler(btn);
-      btn.addEventListener("click", handler);
-      return { target: btn, event: "click", handler };
-    });
-
-    return teardown;
-  };
-
-  // Mobile menu toggle
-  const mobileMenuToggleClick = () => {
-    const clickHandler = ({ currentTarget }) => {
-      const ariaExpanded = currentTarget.getAttribute("aria-expanded");
-
-      if (ariaExpanded === "true") {
-        closeAndCleanUp();
-      } else {
-        currentTarget.setAttribute("aria-expanded", true);
-      }
-    };
-
-    mobileMenu.addEventListener("click", clickHandler);
-
-    return {
-      target: mobileMenu,
-      event: "click",
-      handler: clickHandler,
-    };
-  };
-
-  // Close menu when click/tap outside of nav
-  const documentClick = () => {
-    // Fetch li's that contain buttons and check if the click happens within the panel they hold,
-    // as well as the mobile menu button - if not, close the nav
-    const clickHandler = (e) => {
-      if (
-        Array.from(itemControls).some((btn) =>
-          btn.parentNode.contains(e.target)
-        ) ||
-        Array.from(mobilePanelOpen).some((btn) =>
-          btn.parentNode.contains(e.target)
-        ) ||
-        e.target === mobileMenu
-      )
-        return;
-      closeAndCleanUp();
-    };
-
-    document.addEventListener("click", clickHandler);
-
-    return {
-      target: document,
-      event: "focusin",
-      handler: clickHandler,
-    };
-  };
-
-  // Invert from transparent to white
-  const documentScroll = (themeName) => {
-    if (themeName !== "transparentToWhite") return;
-
-    const invertTextCollection = Array.from(itemControls)
-      .concat(Array.from(meganavNavItems))
-      .concat([mobileMenu, meganavLogo]);
-
-    const scrollHandler = () => {
-      if (window.scrollY > 5) {
-        meganav.classList.replace("bg-transparent", "bg-white");
-
-        invertTextCollection.forEach((n) =>
-          n.classList.replace("text-white", "text-cool-black")
-        );
-      } else {
-        meganav.classList.replace("bg-white", "bg-transparent");
-
-        invertTextCollection.forEach((n) =>
-          n.classList.replace("text-cool-black", "text-white")
-        );
-      }
-    };
-
-    document.addEventListener("scroll", scrollHandler);
-
-    return {
-      target: document,
-      event: "scroll",
-      handler: scrollHandler,
-    };
-  };
+  const closeAll = () =>
+    [
+      mobileDropdownControl,
+      ...panelOpenControls,
+      ...panelCloseControls,
+      ...controls,
+    ].forEach((i) => i.clear());
 
   const teardowns = [
-    itemControlsEvents(),
-    windowOnBlur(),
-    mobilePanelOpenClick(),
-    mobilePanelCloseClick(),
-    mobileMenuToggleClick(),
-    documentClick(),
     documentScroll(themeName),
-  ].flat();
+    documentClick(closeAll),
+    windowOnBlur(closeAll),
+    mobileDropdownControl,
+    ...controls,
+    ...panelOpenControls,
+    ...panelCloseControls,
+  ].map((i) => i.teardown);
 
-  return () =>
-    teardowns.forEach((teardown) => {
-      if (typeof teardown === "undefined") {
-        return;
-      } else if (typeof teardown === "function") {
-        teardown();
-      } else {
-        const { target, event, handler } = teardown;
-        target.removeEventListener(event, handler);
-      }
-    });
+  return () => teardowns.forEach((teardown) => teardown());
 }
