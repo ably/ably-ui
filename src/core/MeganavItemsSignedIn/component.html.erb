@@ -25,7 +25,7 @@
 
       <div class="mb-16 px-16">
         <% if @session_data[:logOut] %>
-          <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-account-link", theme(:text_color)])) %>
+          <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: "ui-meganav-account-link")) %>
         <% end %>
       </div>
     </div>
