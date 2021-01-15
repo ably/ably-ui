@@ -19,7 +19,7 @@
                 <%= panel[:label] %>
               <% end %>
 
-              <%= content_tag(:div, class: "ui-meganav-panel-mobile invisible", id: "#{panel[:id]}-mobile") do %>
+              <%= content_tag(:div, class: "ui-meganav-panel-mobile hidden", id: "#{panel[:id]}-mobile") do %>
                 <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
                 <%= render("AblyUi::Core::#{panel[:component]}".constantize.new) %>
               <% end %>

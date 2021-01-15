@@ -44,7 +44,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme }) => {
                       {panel.label}
                     </MeganavControlMobilePanelOpen>
 
-                    <div className="ui-meganav-panel-mobile invisible" id={`${panel.id}-mobile`}>
+                    <div className="ui-meganav-panel-mobile hidden" id={`${panel.id}-mobile`}>
                       <MeganavControlMobilePanelClose iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
                       <PanelComponent paths={paths} />
                     </div>

@@ -7,13 +7,12 @@ export default () => {
   const openControls = Array.from(
     queryIdAll("meganav-control-mobile-panel-open")
   );
-  const dropdown = queryId("meganav-mobile-dropdown");
 
   const clickHandler = (btn, openBtn, panel) => () => {
     btn.setAttribute("aria-expanded", false);
     openBtn.setAttribute("aria-expanded", false);
-    panel.classList.replace("visible", "invisible");
-    dropdown.classList.remove("ui-meganav-mobile-dropdown-expand");
+    panel.classList.replace("block", "hidden");
+    panel.style.height = null;
   };
 
   return closeControls.map((btn) => {
