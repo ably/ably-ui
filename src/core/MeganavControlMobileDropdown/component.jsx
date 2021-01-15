@@ -4,7 +4,7 @@ import T from "prop-types";
 const MeganavControlMobileDropdown = ({ iconSpritesPath, theme }) => (
   <button
     type="button"
-    className="block ml-8 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none transition-colors"
+    className="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none transition-colors"
     data-id="meganav-control-mobile-dropdown"
     aria-expanded="false"
     aria-controls="meganav-mobile-dropdown"
