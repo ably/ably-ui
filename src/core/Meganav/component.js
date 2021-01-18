@@ -1,3 +1,5 @@
+import throttle from "lodash.throttle";
+
 import "./component.css";
 
 // Glossary:
@@ -44,31 +46,63 @@ const documentScroll = (themeName) => {
 
   const meganav = queryId("meganav");
   const navItems = queryIdAll("meganav-link");
-  const controlMobileDropdown = queryId("meganav-control-mobile-dropdown");
+  const controlMobileDropdownMenu = queryId(
+    "meganav-control-mobile-dropdown-menu"
+  );
+  const controlMobileDropdownClose = queryId(
+    "meganav-control-mobile-dropdown-close"
+  );
   const controls = queryIdAll("meganav-control");
+  const signUpBtn = queryId("meganav-sign-up-btn");
 
   const invertTextCollection = [
     ...Array.from(controls),
     ...Array.from(navItems),
-    controlMobileDropdown,
     queryId("meganav-logo"),
   ];
 
-  const scrollHandler = () => {
+  const invertMobleDropdownColor = (invert) => {
+    const whiteToBlack = ["ui-icon-white", "ui-icon-cool-black"];
+    const blackToWhite = [...whiteToBlack].reverse();
+
+    if (invert) {
+      controlMobileDropdownMenu?.classList.replace(...whiteToBlack);
+      controlMobileDropdownClose?.classList.replace(...whiteToBlack);
+    } else {
+      controlMobileDropdownMenu?.classList.replace(...blackToWhite);
+      controlMobileDropdownClose?.classList.replace(...blackToWhite);
+    }
+  };
+
+  const inverSignupBtnColors = (invert) => {
+    if (invert) {
+      signUpBtn?.classList.replace("bg-white", "bg-cool-black");
+      signUpBtn?.classList.replace("text-cool-black", "text-white");
+    } else {
+      signUpBtn?.classList.replace("bg-cool-black", "bg-white");
+      signUpBtn?.classList.replace("text-white", "text-cool-black");
+    }
+  };
+
+  const scrollHandler = throttle(() => {
     if (window.scrollY > 5) {
       meganav.classList.replace("bg-transparent", "bg-white");
+      inverSignupBtnColors(true);
+      invertMobleDropdownColor(true);
 
       invertTextCollection.forEach((n) =>
         n.classList.replace("text-white", "text-cool-black")
       );
     } else {
       meganav.classList.replace("bg-white", "bg-transparent");
+      inverSignupBtnColors(false);
+      invertMobleDropdownColor(false);
 
       invertTextCollection.forEach((n) =>
         n.classList.replace("text-cool-black", "text-white")
       );
     }
-  };
+  }, 150);
 
   document.addEventListener("scroll", scrollHandler);
 

@@ -1,12 +1,12 @@
 <%= button_tag(type: "button",
-               class: "block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none transition-colors",
+               class: "block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none",
                data: { id: "meganav-control-mobile-dropdown" },
                aria: { expanded: false, controls: "meganav-mobile-dropdown" }) do %>
-  <%= tag.svg class: ["h-24", "w-24", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-menu" } do %>
+  <%= tag.svg class: ["h-24", "w-24", "transition-colors", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-menu" } do %>
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-menu" %>
   <% end %>
 
-  <%= tag.svg class: ["h-24", "w-24", "hidden", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-menu-close" } do %>
+  <%= tag.svg class: ["h-24", "w-24", "transition-colors", "hidden", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-menu-close" } do %>
     <%= tag.use href: "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-close" %>
   <% end %>
 <% end %>

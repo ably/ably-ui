@@ -3,7 +3,7 @@
     <% if @session_data[:signedIn] && @session_data[:logOut] %>
       <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)])) %>
     <% else %>
-      <%= link_to "Login", "/login", class: ["ui-meganav-link", theme(:text_color)] %>
+      <%= link_to "Login", "/login", data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
     <% end %>
   </li>
 

@@ -17,13 +17,13 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme }) => {
         {sessionState.signedIn && sessionState.logOut ? (
           <SignOutLink {...sessionState.logOut}>
             {({ text, href, onClick }) => (
-              <a onClick={onClick} href={href} className={classNames}>
+              <a onClick={onClick} href={href} className={classNames} data-id="meganav-link">
                 {text}
               </a>
             )}
           </SignOutLink>
         ) : (
-          <a href="/login" className={classNames}>
+          <a href="/login" className={classNames} data-id="meganav-link">
             Login
           </a>
         )}
