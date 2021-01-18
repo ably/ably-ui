@@ -69,7 +69,7 @@ export default function Meganav({ paths, themeName = "white" }) {
   return (
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
       <div className="ui-meganav ui-grid-px">
-        <Logo theme={theme} />
+        <Logo theme={theme} dataId="meganav-logo" />
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}

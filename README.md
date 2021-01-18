@@ -8,7 +8,9 @@
 
 `ably-ui` is a library built in mind with supporting a variety of websites/apps based on core web technologies. That's why where possible we build based on those but publish in a way that is easy to consume for frameworks we use across our properties.
 
-In a couple of cases, this is not practical. Some components will be more specialized and take advantage of a given framework, making it an explicit dependency. Check the dependencies section of a given module/component docs to see what is required.
+As an example, the `Logo` component has two templates, for a [react](https://reactjs.org/) component and [view-component](https://viewcomponent.org/) one but uses the same CSS classes and same Javascript hooks (`data-id`).
+
+In a some cases, this is not practical. Some components will be more specialized and take advantage of a given framework and we will have no need to make it available in multiple frameworks (for example, something that is only used within signed in, SPA like areas). Check the dependencies section of a given module/component docs to see what is required. ⚠️
 
 ### Guiding principles
 
@@ -46,7 +48,7 @@ You can access all assets directly on the CDN:
 <script src="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/scripts.js"></script>
 ```
 
-The above includes all the CSS from the `Core` module and the `AblyUi.Core` javascript namespace.
+The above includes all the CSS from the `Core` module and the `AblyUi.Core` Javascript namespace.
 
 ### NPM
 
@@ -62,7 +64,7 @@ npm install @ably/ably-ui
 yarn add @ably/ably-ui
 ```
 
-To attach the imported javascript from the `Core` module to the `window` object:
+To attach the imported Javascript from the `Core` module to the `window` object:
 
 ```js
 import "@ably/ably-ui/core/scripts";
@@ -76,7 +78,7 @@ To import an es6 `core` module and expose nothing to window:
 import ablyUiCore from "@ably/ably-ui/core/scripts";
 ```
 
-To import the javascript for an `Accordion` component:
+To import the Javascript for an `Accordion` component:
 
 ```js
 import Accordion from "@ably/ably-ui/core/accordion/component";

@@ -1,6 +1,6 @@
 <%= tag.nav(class: ["ui-meganav-wrapper", theme(:background_color), theme(:bar_shadow)], data: { id: "meganav" }, aria: { label: "Main" }) do %>
   <div class="ui-meganav ui-grid-px">
-    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name)) %>
+    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name, data_id: "meganav-logo")) %>
     <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name)) %>
 
     <% if @session_data[:signedIn] %>
