@@ -12,7 +12,7 @@ const MeganavControlMobilePanelOpen = ({ iconSpritesPath, ariaControls, children
   >
     {children}
     <svg className="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-dark-grey">
-      <use href={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
+      <use xlinkHref={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
     </svg>
   </button>
 );

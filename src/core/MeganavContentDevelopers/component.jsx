@@ -10,7 +10,7 @@ const MeganavContentDevelopers = ({ paths }) => (
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
           <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
-            <use href={`${paths.iconSprites}#sprite-search`}></use>
+            <use xlinkHref={`${paths.iconSprites}#sprite-search`}></use>
           </svg>
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
