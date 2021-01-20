@@ -66,6 +66,7 @@ module.exports = {
     }),
     padding: (theme) => ({
       btn: "var(--spacing-btn)",
+      "btn-small": "var(--spacing-btn-small)",
       "menu-row": "var(--spacing-menu-row)",
       "menu-row-snug": "var(--spacing-menu-row-snug)",
       media: "var(--spacing-media)",

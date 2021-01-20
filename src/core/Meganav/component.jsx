@@ -31,7 +31,7 @@ const SignIn = ({ sessionState, paths, theme }) =>
         </a>
       </li>
       <li className="ml-16">
-        <a href="/sign-up" data-id="meganav-sign-up-btn" className={`ui-btn px-16 ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>
+        <a href="/sign-up" data-id="meganav-sign-up-btn" className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>
           Sign up free
         </a>
       </li>
