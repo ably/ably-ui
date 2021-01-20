@@ -12,7 +12,7 @@ const MeganavControlMobileDropdown = ({ iconSpritesPath, theme }) => (
     <svg className={`h-24 w-24 transition-colors ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-menu">
       <use xlinkHref={`${iconSpritesPath}#sprite-menu`}></use>
     </svg>
-    <svg className={`h-24 w-24 transition-colors hidden ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-menu-close">
+    <svg className={`h-24 w-24 transition-colors hidden ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-close">
       <use xlinkHref={`${iconSpritesPath}#sprite-close`}></use>
     </svg>
   </button>

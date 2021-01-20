@@ -6,7 +6,7 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const control = queryId("meganav-control-mobile-dropdown");
   const dropdown = queryId("meganav-mobile-dropdown");
   const menuIcon = queryId("meganav-control-mobile-dropdown-menu");
-  const closeIcon = queryId("meganav-control-mobile-dropdown-menu-close");
+  const closeIcon = queryId("meganav-control-mobile-dropdown-close");
 
   const clickHandler = () => {
     const ariaExpanded = control.getAttribute("aria-expanded");
