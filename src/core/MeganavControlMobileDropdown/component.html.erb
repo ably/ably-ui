@@ -3,10 +3,10 @@
                data: { id: "meganav-control-mobile-dropdown" },
                aria: { expanded: false, controls: "meganav-mobile-dropdown" }) do %>
   <%= tag.svg class: ["h-24", "w-24", "transition-colors", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-menu" } do %>
-    <%= tag.use "xlink:href": "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-menu" %>
+    <use xlink:href="#sprite-menu"></use>
   <% end %>
 
   <%= tag.svg class: ["h-24", "w-24", "transition-colors", "hidden", theme(:mobile_menu_color)], data: { id: "meganav-control-mobile-dropdown-close" } do %>
-    <%= tag.use "xlink:href": "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-close" %>
+    <use xlink:href="#sprite-close"></use>
   <% end %>
 <% end %>

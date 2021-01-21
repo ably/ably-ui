@@ -30,7 +30,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme }) => {
       </li>
 
       <li className="ui-meganav-item">
-        <MeganavControlMobileDropdown theme={theme} iconSpritesPath={paths.iconSprites} />
+        <MeganavControlMobileDropdown theme={theme} />
 
         <div className="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
           <div className="py-16 ui-grid-px bg-white">
@@ -40,12 +40,10 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme }) => {
 
                 return (
                   <li className="ui-meganav-mobile-item" key={`${panel.id}-mobile`}>
-                    <MeganavControlMobilePanelOpen iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`}>
-                      {panel.label}
-                    </MeganavControlMobilePanelOpen>
+                    <MeganavControlMobilePanelOpen ariaControls={`${panel.id}-mobile`}>{panel.label}</MeganavControlMobilePanelOpen>
 
                     <div className="ui-meganav-panel-mobile hidden" id={`${panel.id}-mobile`} data-scroll-lock-scrollable>
-                      <MeganavControlMobilePanelClose iconSpritesPath={paths.iconSprites} ariaControls={`${panel.id}-mobile`} />
+                      <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} />
                       <PanelComponent paths={paths} />
                     </div>
                   </li>

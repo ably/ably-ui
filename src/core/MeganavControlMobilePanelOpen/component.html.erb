@@ -4,6 +4,6 @@
                aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do %>
   <%= content %>
   <svg class="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-dark-grey">
-    <%= tag.use "xlink:href": "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
+    <use xlink:href="#sprite-disclosure-arrow"></use>
   </svg>
 <% end %>

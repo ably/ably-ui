@@ -1,5 +1,5 @@
 <%= link_to(@url, class: "text-menu3 font-medium text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group") do %>
   <%= content %><svg class="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4">
-    <%= tag.use "xlink:href": "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
+    <use xlink:href="#sprite-disclosure-arrow"></use>
   </svg>
 <% end %>

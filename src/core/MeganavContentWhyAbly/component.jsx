@@ -1,9 +1,8 @@
 import React from "react";
-import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const MeganavContentWhyAbly = ({ paths }) => (
+const MeganavContentWhyAbly = () => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">
@@ -67,9 +66,7 @@ const MeganavContentWhyAbly = ({ paths }) => (
         </li>
       </ul>
 
-      <FeaturedLink url="/four-pillars-of-dependability" iconSpritesPath={paths.iconSprites}>
-        Explore our Four Pillars of Dependability
-      </FeaturedLink>
+      <FeaturedLink url="/four-pillars-of-dependability">Explore our Four Pillars of Dependability</FeaturedLink>
     </div>
 
     <div>
@@ -98,20 +95,9 @@ const MeganavContentWhyAbly = ({ paths }) => (
         </li>
       </ul>
 
-      <FeaturedLink url="/blog" iconSpritesPath={paths.iconSprites}>
-        More from our Blog
-      </FeaturedLink>
+      <FeaturedLink url="/blog">More from our Blog</FeaturedLink>
     </div>
   </section>
 );
-
-MeganavContentWhyAbly.propTypes = {
-  paths: T.shape({
-    blogThumb1: T.string,
-    blogThumb2: T.string,
-    blogThumb3: T.string,
-    iconSprites: T.string,
-  }),
-};
 
 export default MeganavContentWhyAbly;

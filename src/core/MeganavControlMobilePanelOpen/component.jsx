@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MeganavControlMobilePanelOpen = ({ iconSpritesPath, ariaControls, children }) => (
+const MeganavControlMobilePanelOpen = ({ ariaControls, children }) => (
   <button
     type="button"
     className="ui-meganav-mobile-link"
@@ -12,13 +12,12 @@ const MeganavControlMobilePanelOpen = ({ iconSpritesPath, ariaControls, children
   >
     {children}
     <svg className="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-dark-grey">
-      <use xlinkHref={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
+      <use xlinkHref="#sprite-disclosure-arrow"></use>
     </svg>
   </button>
 );
 
 MeganavControlMobilePanelOpen.propTypes = {
-  iconSpritesPath: T.string,
   ariaControls: T.string,
   children: T.node,
 };

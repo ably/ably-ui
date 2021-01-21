@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MeganavControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
+const MeganavControl = ({ ariaControls, children, theme }) => (
   <button
     type="button"
     data-id="meganav-control"
@@ -12,13 +12,12 @@ const MeganavControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
   >
     {children}
     <svg className="w-12 h-12 ml-8 ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus">
-      <use xlinkHref={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
+      <use xlinkHref="#sprite-disclosure-arrow"></use>
     </svg>
   </button>
 );
 
 MeganavControl.propTypes = {
-  iconSpritesPath: T.string,
   ariaControls: T.string,
   children: T.node,
   theme: T.object,

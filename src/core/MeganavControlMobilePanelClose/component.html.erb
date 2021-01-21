@@ -4,7 +4,7 @@
                  data: { id: "meganav-control-mobile-panel-close" },
                  aria: { expanded: false, controls: @aria_controls, label: "Hide panel" }) do %>
     <svg class="transform rotate-90 w-12 h-12 mr-8 ui-icon-dark-grey">
-      <%= tag.use "xlink:href": "#{asset_path 'ably_ui/core/sprites.svg'}#sprite-disclosure-arrow" %>
+      <use xlink:href="#sprite-disclosure-arrow"></use>
     </svg>Menu
   <% end %>
   <hr class="ui-meganav-hr" />

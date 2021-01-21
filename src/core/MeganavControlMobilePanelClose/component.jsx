@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const MeganavControlMobilePanelClose = ({ iconSpritesPath, ariaControls }) => (
+const MeganavControlMobilePanelClose = ({ ariaControls }) => (
   <div className="mx-24 md:mx-32">
     <button
       type="button"
@@ -12,7 +12,7 @@ const MeganavControlMobilePanelClose = ({ iconSpritesPath, ariaControls }) => (
       aria-label="Hide panel"
     >
       <svg className="transform rotate-90 w-12 h-12 mr-8 ui-icon-dark-grey">
-        <use xlinkHref={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
+        <use xlinkHref="#sprite-disclosure-arrow"></use>
       </svg>
       Menu
     </button>
@@ -21,7 +21,6 @@ const MeganavControlMobilePanelClose = ({ iconSpritesPath, ariaControls }) => (
 );
 
 MeganavControlMobilePanelClose.propTypes = {
-  iconSpritesPath: T.string,
   ariaControls: T.string,
 };
 

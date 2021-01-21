@@ -1,16 +1,15 @@
 import React from "react";
-import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const MeganavContentDevelopers = ({ paths }) => (
+const MeganavContentDevelopers = () => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
           <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
-            <use xlinkHref={`${paths.iconSprites}#sprite-search`}></use>
+            <use xlinkHref="#sprite-search" />
           </svg>
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
@@ -19,9 +18,7 @@ const MeganavContentDevelopers = ({ paths }) => (
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
 
-      <FeaturedLink url="/documentation" iconSpritesPath={paths.iconSprites}>
-        Visit Documentation
-      </FeaturedLink>
+      <FeaturedLink url="/documentation">Visit Documentation</FeaturedLink>
     </div>
 
     <div>
@@ -79,11 +76,5 @@ const MeganavContentDevelopers = ({ paths }) => (
     </div>
   </section>
 );
-
-MeganavContentDevelopers.propTypes = {
-  paths: T.shape({
-    iconSprites: T.string,
-  }),
-};
 
 export default MeganavContentDevelopers;
