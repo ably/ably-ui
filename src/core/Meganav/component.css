@@ -18,36 +18,32 @@
 
   .ui-meganav-panel,
   .ui-meganav-mobile-dropdown,
-  .ui-meganav-panel-mobile,
   .ui-meganav-panel-account {
     z-index: var(--stacking-context-meganav-dropdown);
 
     @apply absolute top-64 left-0 right-0;
-    @apply border-mid-grey border-t shadow-container invisible;
+    @apply border-mid-grey border-t shadow-container;
   }
 
   .ui-meganav-panel {
     @apply bg-white;
   }
 
-  .ui-meganav-mobile-dropdown {
-    @apply overflow-y-auto;
-  }
-
   .ui-meganav-panel-mobile {
     z-index: var(--stacking-context-meganav-mobile-panel);
 
-    @apply top-0 bg-white pt-16 border-0 min-h-full;
+    /* Prevents momentum-based scrolling https://devdocs.io/css/-webkit-overflow-scrolling */
+    -webkit-overflow-scrolling: auto;
+
+    @apply bg-white pt-16 border-0;
+    @apply border-mid-grey border-t shadow-container;
+    @apply fixed top-64 left-0 right-0 overflow-y-auto;
   }
 
   .ui-meganav-panel-account {
     left: auto;
     min-width: 20rem;
     @apply bg-white rounded-t-none;
-  }
-
-  .ui-meganav-mobile-dropdown-expand {
-    height: calc(100vh - var(--ui-meganav-height));
   }
 
   .ui-meganav-link {

@@ -12,7 +12,7 @@ const MeganavControl = ({ iconSpritesPath, ariaControls, children, theme }) => (
   >
     {children}
     <svg className="w-12 h-12 ml-8 ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus">
-      <use href={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
+      <use xlinkHref={`${iconSpritesPath}#sprite-disclosure-arrow`}></use>
     </svg>
   </button>
 );

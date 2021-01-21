@@ -3,7 +3,7 @@
     <% if @session_data[:signedIn] && @session_data[:logOut] %>
       <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)])) %>
     <% else %>
-      <%= link_to "Login", "/login", class: ["ui-meganav-link", theme(:text_color)] %>
+      <%= link_to "Login", "/login", data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
     <% end %>
   </li>
 
@@ -19,7 +19,7 @@
                 <%= panel[:label] %>
               <% end %>
 
-              <%= content_tag(:div, class: "ui-meganav-panel-mobile invisible", id: "#{panel[:id]}-mobile") do %>
+              <%= content_tag(:div, class: "ui-meganav-panel-mobile hidden", id: "#{panel[:id]}-mobile", data: { scroll_lock_scrollable: true }) do %>
                 <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
                 <%= render("AblyUi::Core::#{panel[:component]}".constantize.new) %>
               <% end %>

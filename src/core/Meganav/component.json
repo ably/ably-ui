@@ -21,10 +21,10 @@
     "transparentToWhite": {
       "backgroundColor": "bg-transparent",
       "textColor": "text-white",
-      "buttonBackgroundColor": "",
-      "buttonTextColor": "",
-      "mobileMenuColor": "ui-icon-cool-black",
-      "logoTextColor": "text-cool-black",
+      "buttonBackgroundColor": "bg-white",
+      "buttonTextColor": "text-cool-black",
+      "mobileMenuColor": "ui-icon-white",
+      "logoTextColor": "text-white",
       "barShadow": ""
     }
   },

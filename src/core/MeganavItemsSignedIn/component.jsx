@@ -53,7 +53,7 @@ const MeganavItemsSignedIn = ({ sessionState, paths, theme }) => {
 
       {sessionState.account && (
         <li className="ml-16">
-          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary px-16">
+          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary p-btn-small">
             Dashboard
           </a>
         </li>

@@ -11,6 +11,7 @@
     @apply active:text-white active:bg-red-orange;
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
     @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply transition-colors;
   }
 
   .ui-btn-secondary {
@@ -19,6 +20,7 @@
     @apply active:text-red-orange hover:border-red-orange active:bg-white;
     @apply focus:text-cool-black focus:border-cool-black focus:bg-white focus:outline-gui-focus;
     @apply disabled:text-mid-grey disabled:border-mid-grey disabled:bg-white;
+    @apply transition-colors;
   }
 
   .ui-input {

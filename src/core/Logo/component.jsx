@@ -1,10 +1,10 @@
 import React from "react";
 import T from "prop-types";
 
-const Logo = ({ theme }) => (
+const Logo = ({ theme, dataId }) => (
   <a href="/" className="h-32">
     <svg
-      data-id="meganav-logo"
+      data-id={dataId}
       className={`${theme.logoTextColor} transition-colors`}
       width="108"
       height="32"
@@ -43,7 +43,8 @@ const Logo = ({ theme }) => (
 );
 
 Logo.propTypes = {
-  logoPath: T.string,
+  dataId: T.string,
+  theme: T.object,
 };
 
 export default Logo;
