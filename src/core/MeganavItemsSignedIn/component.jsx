@@ -4,13 +4,13 @@ import T from "prop-types";
 import MeganavControl from "../MeganavControl/component.jsx";
 import SignOutLink from "../SignOutLink/component.jsx";
 
-const MeganavItemsSignedIn = ({ sessionState, paths, theme }) => {
+const MeganavItemsSignedIn = ({ sessionState, theme }) => {
   const links = Object.keys(sessionState.account.links).map((key) => sessionState.account.links[key]);
 
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <MeganavControl iconSpritesPath={paths.iconSprites} ariaControls="account-panel" theme={theme}>
+        <MeganavControl ariaControls="account-panel" theme={theme}>
           {sessionState.accountName}
         </MeganavControl>
 
