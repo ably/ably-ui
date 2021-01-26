@@ -3,3 +3,4 @@
 ably-ui-*.gem
 node_modules
 vendor
+cypress/screenshots
