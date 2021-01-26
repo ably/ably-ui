@@ -4,14 +4,20 @@ import T from "prop-types";
 import MeganavControl from "../MeganavControl/component.jsx";
 import SignOutLink from "../SignOutLink/component.jsx";
 
+const truncate = (string, length) => {
+  return string?.length && string.length > length ? `${string.slice(0, length - 1)}…` : string;
+};
+
 const MeganavItemsSignedIn = ({ sessionState, theme }) => {
   const links = Object.keys(sessionState.account.links).map((key) => sessionState.account.links[key]);
+  const accountName = truncate(sessionState.accountName, 20);
+  const preferredEmail = truncate(sessionState.preferredEmail, 20);
 
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
         <MeganavControl ariaControls="account-panel" theme={theme}>
-          {sessionState.accountName}
+          {accountName}
         </MeganavControl>
 
         <div className="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
@@ -26,7 +32,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
             ))}
           </ul>
 
-          <p className="ui-meganav-overline mx-16">{sessionState.preferredEmail}</p>
+          <p className="ui-meganav-overline mx-16">{preferredEmail}</p>
           <ul className="mb-8 mx-16">
             <li>
               <a href={sessionState.mySettings.href} className="ui-meganav-account-link">
