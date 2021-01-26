@@ -8,12 +8,6 @@
     <%= stylesheet_pack_tag 'application' %>
   </head>
   <body>
-    <%= react_component('meganav', paths: { logo: asset_path('ably_ui/core/images/ably-logo.svg'),
-                                            icon_sprites: asset_path('ably_ui/core/sprites.svg'),
-                                            ably_stack: asset_path('ably_ui/core/images/ably-stack.svg'),
-                                            blog_thumb1: asset_path('ably_ui/core/images/blog-thumb1.jpg'),
-                                            blog_thumb2: asset_path('ably_ui/core/images/blog-thumb2.jpg'),
-                                            blog_thumb3: asset_path('ably_ui/core/images/blog-thumb3.jpg') }) %>
     <%= yield %>
     <%= javascript_pack_tag 'application' %>
   </body>
