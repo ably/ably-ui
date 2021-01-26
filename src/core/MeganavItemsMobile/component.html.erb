@@ -1,4 +1,4 @@
-<ul class="flex md:hidden">
+<ul class="flex md:hidden" data-id="meganav-items-mobile">
   <li>
     <% if @session_data[:signedIn] && @session_data[:logOut] %>
       <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)])) %>

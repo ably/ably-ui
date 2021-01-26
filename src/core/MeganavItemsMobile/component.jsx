@@ -12,7 +12,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme }) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
   return (
-    <ul className="flex md:hidden">
+    <ul className="flex md:hidden" data-id="meganav-items-mobile">
       <li>
         {sessionState.signedIn && sessionState.logOut ? (
           <SignOutLink {...sessionState.logOut}>

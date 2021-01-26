@@ -5,7 +5,7 @@ import MeganavData from "../Meganav/component.json";
 import MeganavControl from "../MeganavControl/component.jsx";
 
 const MeganavDesktopItems = ({ panels, paths, theme }) => (
-  <ul className="hidden md:flex">
+  <ul className="hidden md:flex" data-id="meganav-items-desktop">
     {MeganavData.panels.map((panel) => {
       const PanelComponent = panels[panel.component];
 
