@@ -76,21 +76,21 @@ const MeganavContentWhyAbly = () => (
       <ul className="mb-8" aria-labelledby="meganav-why-ably-panel-list-blog">
         {/* Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image */}
         <li>
+          <a href="/blog/ably-flutter-plugin" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Introducing the Ably Flutter plugin</p>
+            <p className="ui-meganav-media-copy">Jan 20, 2021</p>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/4-essential-infrastructure-considerations-for-realtime-edtech-applications" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">4 essential infrastructure considerations for realtime EdTech applications</p>
+            <p className="ui-meganav-media-copy">Jan 12, 2021</p>
+          </a>
+        </li>
+        <li>
           <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">6 realtime engineering challenges for EdTech applications</p>
             <p className="ui-meganav-media-copy">Jan 05, 2021</p>
-          </a>
-        </li>
-        <li>
-          <a href="/blog/iot-wearable-azure-cognitive-services-ably" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Making a wearable live caption display using Azure Cognitive Services and Ably</p>
-            <p className="ui-meganav-media-copy">Dec 21, 2020</p>
-          </a>
-        </li>
-        <li>
-          <a href="/blog/airtable-database-realtime-messages" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Using Airtable as a database to store realtime messages</p>
-            <p className="ui-meganav-media-copy">Dec 15, 2020</p>
           </a>
         </li>
       </ul>
