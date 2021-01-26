@@ -179,7 +179,7 @@ bundle
 yarn
 
 # run server
-bin/rails server
+bin/rails server -p 5000
 bin/webpack-dev-server
 ```
 
@@ -311,9 +311,9 @@ To publish, run:
 
 This will release the packages, update `package.json` and `version.rb` and create & push a new git tag.
 
-### Running tests ⚠️
+### Running tests
 
-Unit tests (using [Jest](https://jestjs.io/)):
+Unit tests (using [Jest](https://jestjs.io/)): ⚠️
 
 ```bash
 yarn jest
@@ -322,22 +322,14 @@ yarn jest
 yarn jest:watch
 ```
 
-To run integration tests (using [Cypress](https://www.cypress.io/)), you'll need to first start a dedicated test server with:
+#### Integration & Visual testing
+
+The repo includes [Cypress](https://www.cypress.io/) for integration and visual testing. The visual testing includes parity checking for vw/react components - screenshots are taken of both versions and fail if they are different. Note these screenshot only a given component but still navigate to the given pages to see them (ie. they don't load templates individually like unit tests would). The diff is
+
+To run integration tests (using [Cypress](https://www.cypress.io/)), you'll need to have the preview app running on port 5000, then run:
 
 ```bash
-yarn cy:server
+yarn cy:open
 ```
 
-And then run the test app with:
-
-```bash
-yarn cy:run
-```
-
-To run visual tests:
-
-```bash
-yarn viz
-```
-
-This will then open a results window.
+This will open the UI for Cypress from which you can run the tests. Screenshots are saved in `cypress/screenshots`.
