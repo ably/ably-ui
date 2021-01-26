@@ -78,7 +78,7 @@ const MeganavContentPlatform = ({ paths }) => (
         <li>
           <a href="/four-pillars-of-dependability#reliability" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Fault tolerant infrastructure</p>
-            <p className="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLA</p>
+            <p className="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
           </a>
         </li>
         <li>
