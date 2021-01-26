@@ -27,6 +27,7 @@ fi
 
 if [[ `git status --porcelain --untracked-files=no` ]]; then
   echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
+  exit 1
 fi
 
 VERSION=$1
