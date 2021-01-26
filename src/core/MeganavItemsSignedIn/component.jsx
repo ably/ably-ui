@@ -21,7 +21,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
         </MeganavControl>
 
         <div className="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
-          <p className="ui-meganav-overline mt-24 mx-16">Your account</p>
+          <p className="ui-meganav-overline mt-16 mx-16">Your account</p>
           <ul className="mb-16 mx-16">
             {links.map((item) => (
               <li key={item.href}>
