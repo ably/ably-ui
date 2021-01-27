@@ -1,0 +1,5 @@
+<%= render(AblyUi::Core::ContactFooter.new(props)) %>
+
+<% content_for :component_init_js do %>
+  AblyUi.Core.ContactFooter();
+<% end %>

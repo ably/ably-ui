@@ -19,6 +19,7 @@ module.exports = [
       "MeganavItemsSignedIn",
       "MeganavItemsMobile",
       "MeganavBlogPostsList",
+      "ContactFooter",
     ],
   },
   {

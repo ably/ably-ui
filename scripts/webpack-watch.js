@@ -1,3 +1,5 @@
+#!/bin/node
+
 const webpack = require("webpack");
 
 const config =

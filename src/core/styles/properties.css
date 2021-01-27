@@ -19,6 +19,13 @@
   --color-gui-unavailable: #a8a8a8;
   --color-gui-error: #fb0c0c;
 
+  --gradient-active-orange: linear-gradient(
+    61.2deg,
+    var(--color-active-orange) 15%,
+    var(--color-red-orange) 45%,
+    var(--color-active-orange) 85%
+  );
+
   --fs-title: 4rem;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
