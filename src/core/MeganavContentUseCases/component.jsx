@@ -37,19 +37,19 @@ const MeganavContentUseCases = () => (
     <div>
       <ul className="md:mt-40">
         <li>
-          <a href="/industry/ecommerce-and-retail" className="ui-meganav-media group">
+          <a href="/solutions/ecommerce-and-retail" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
             <p className="ui-meganav-media-copy">Monitor and control global IoT deployments of any kind in realtime.</p>
           </a>
         </li>
         <li>
-          <a href="/industry/sports-media-and-audience-engagement" className="ui-meganav-media group">
+          <a href="/solutions/sports-and-media" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Sports & Media</p>
             <p className="ui-meganav-media-copy">Deliver global realtime experiences to keep fans informed, engaged, entertained.</p>
           </a>
         </li>
         <li>
-          <a href="/industry/gaming" className="ui-meganav-media group">
+          <a href="/solutions/gaming" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Gaming</p>
             <p className="ui-meganav-media-copy">Power interactive gaming experiences that are wicked fast and utterly reliable.</p>
           </a>
