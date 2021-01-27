@@ -1,0 +1,9 @@
+@layer components {
+  .ui-contact-footer {
+    background: var(--gradient-active-orange), var(--color-active-orange);
+    background-size: 3000px 500px;
+    background-position: 200px 50%;
+
+    @apply relative top-64 w-full;
+  }
+}
