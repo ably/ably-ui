@@ -13,5 +13,6 @@ module.exports = {
         "custom-properties": false,
       },
     }),
+    require("tailwindcss"),
   ],
 };
