@@ -37,7 +37,7 @@ const MeganavContentUseCases = () => (
     <div>
       <ul className="md:mt-40">
         <li>
-          <a href="/solutions/ecommerce-and-retail" className="ui-meganav-media group">
+          <a href="/solutions/iot-and-connected-devices" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
             <p className="ui-meganav-media-copy">Monitor and control global IoT deployments of any kind in realtime.</p>
           </a>
@@ -55,7 +55,7 @@ const MeganavContentUseCases = () => (
           </a>
         </li>
         <li>
-          <a href="/solutions/iot-and-connected-devices" className="ui-meganav-media group">
+          <a href="/solutions/ecommerce-and-retail" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">eCommerce & Retail</p>
             <p className="ui-meganav-media-copy">Enable realtime pricing, inventory, and transactions to enrich user experiences.</p>
           </a>
