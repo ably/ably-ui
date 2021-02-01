@@ -68,11 +68,11 @@ const MeganavContentDevelopers = () => (
           </a>
         </li>
         <li>
-          <a href="http://status.ably.io/" className="group ui-meganav-media py-12">
+          <a href="http://status.ably.com/" className="group ui-meganav-media py-12">
             <p className="ui-meganav-media-heading">
               Status
               <iframe
-                src="https://status.ably.io/embed/icon"
+                src="https://status.ably.com/embed/icon"
                 allowtransparency="true"
                 frameBorder="0"
                 scrolling="no"
