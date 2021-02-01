@@ -5,14 +5,16 @@
     <% end %>
 
     <div class="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
-      <p class="ui-meganav-overline mt-16 mx-16">Your account</p>
-      <ul class="mb-16 mx-16">
-        <% @session_data[:account][:links].each do |key, link| %>
-          <li>
-            <%= link_to link[:text], link[:href], class: "ui-meganav-account-link" %>
-          </li>
-        <% end %>
-      </ul>
+      <% if account? %>
+        <p class="ui-meganav-overline mt-16 mx-16">Your account</p>
+        <ul class="mb-16 mx-16">
+          <% @session_data[:account][:links].each do |key, link| %>
+            <li>
+              <%= link_to link[:text], link[:href], class: "ui-meganav-account-link" %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
 
       <p class="ui-meganav-overline mx-16"><%= preferred_email %></p>
       <ul class="mb-8 mx-16">
@@ -31,7 +33,7 @@
     </div>
   </li>
 
-  <% if @session_data[:account] %>
+  <% if account? %>
     <li class="ml-16">
       <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary p-btn-small" %>
     </li>

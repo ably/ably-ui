@@ -9,7 +9,7 @@ const truncate = (string, length) => {
 };
 
 const MeganavItemsSignedIn = ({ sessionState, theme }) => {
-  const links = Object.keys(sessionState.account.links).map((key) => sessionState.account.links[key]);
+  const links = sessionState.account ? Object.keys(sessionState.account.links).map((key) => sessionState.account.links[key]) : [];
   const accountName = truncate(sessionState.accountName, 20);
   const preferredEmail = truncate(sessionState.preferredEmail, 20);
 
@@ -21,16 +21,21 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
         </MeganavControl>
 
         <div className="ui-meganav-panel-account invisible" id="account-panel" data-id="meganav-panel">
-          <p className="ui-meganav-overline mt-16 mx-16">Your account</p>
-          <ul className="mb-16 mx-16">
-            {links.map((item) => (
-              <li key={item.href}>
-                <a className="ui-meganav-account-link" href={item.href}>
-                  {item.text}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {/* Users exist without accounts in which case there is no links here */}
+          {sessionState.account && (
+            <>
+              <p className="ui-meganav-overline mt-16 mx-16">Your account</p>
+              <ul className="mb-16 mx-16">
+                {links.map((item) => (
+                  <li key={item.href}>
+                    <a className="ui-meganav-account-link" href={item.href}>
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
           <p className="ui-meganav-overline mx-16">{preferredEmail}</p>
           <ul className="mb-8 mx-16">
