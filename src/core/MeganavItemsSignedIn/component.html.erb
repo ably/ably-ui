@@ -21,6 +21,12 @@
         <li>
           <%= link_to @session_data[:mySettings][:text], @session_data[:mySettings][:href], class: "ui-meganav-account-link" %>
         </li>
+
+        <% if access_tokens? %>
+          <li>
+            <%= link_to @session_data[:myAccessTokens][:text], @session_data[:myAccessTokens][:href], class: "ui-meganav-account-link" %>
+          </li>
+        <% end %>
       </ul>
 
       <hr class="ui-meganav-hr mb-16" />

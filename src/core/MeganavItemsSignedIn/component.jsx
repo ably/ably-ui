@@ -44,6 +44,13 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
                 {sessionState.mySettings.text}
               </a>
             </li>
+            {sessionState.myAccessTokens && (
+              <li>
+                <a href={sessionState.myAccessTokens.href} className="ui-meganav-account-link">
+                  {sessionState.myAccessTokens.text}
+                </a>
+              </li>
+            )}
           </ul>
 
           <hr className="ui-meganav-hr mb-16" />

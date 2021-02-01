@@ -12,6 +12,11 @@ module AblyUi
         @session_data[:account].present?
       end
 
+      # Access tokens are behind a feature flag
+      def access_tokens?
+        @session_data[:accessTokens].present?
+      end
+
       def account_name
         truncate(@session_data[:accountName], length: 20)
       end
