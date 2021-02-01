@@ -8,6 +8,10 @@ module AblyUi
         @session_data = session_data
       end
 
+      def account?
+        @session_data[:account].present?
+      end
+
       def account_name
         truncate(@session_data[:accountName], length: 20)
       end
