@@ -14,7 +14,7 @@ module AblyUi
 
       # Access tokens are behind a feature flag
       def access_tokens?
-        @session_data[:accessTokens].present?
+        @session_data[:myAccessTokens].present?
       end
 
       def account_name
