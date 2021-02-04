@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import T from "prop-types";
 
-import fetchSessionData from "../fetch-session-data";
+import { connectState } from "../remote-data-store";
+import { selectSessionData } from "../remote-session-data";
+
 import Logo from "../Logo/component.jsx";
 
 import MeganavScripts from "./component.js";
@@ -46,12 +48,17 @@ SignIn.propTypes = {
 
 const SignInPlaceholder = () => <div />;
 
+const panels = {
+  MeganavContentPlatform: MeganavContentPlatform,
+  MeganavContentUseCases: MeganavContentUseCases,
+  MeganavContentWhyAbly: MeganavContentWhyAbly,
+  MeganavContentDevelopers: MeganavContentDevelopers,
+};
+
 export default function Meganav({ paths, themeName = "white" }) {
   const [sessionState, setSessionState] = useState(null);
 
-  useEffect(() => {
-    fetchSessionData(setSessionState);
-  }, []);
+  useEffect(() => connectState(selectSessionData, setSessionState), []);
 
   useEffect(() => {
     const teardown = MeganavScripts({ themeName });
@@ -59,12 +66,6 @@ export default function Meganav({ paths, themeName = "white" }) {
   }, [sessionState]);
 
   const theme = MeganavData.themes[themeName];
-  const panels = {
-    MeganavContentPlatform: MeganavContentPlatform,
-    MeganavContentUseCases: MeganavContentUseCases,
-    MeganavContentWhyAbly: MeganavContentWhyAbly,
-    MeganavContentDevelopers: MeganavContentDevelopers,
-  };
 
   return (
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
