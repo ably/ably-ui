@@ -18,6 +18,7 @@ module.exports = [
       "MeganavItemsDesktop",
       "MeganavItemsSignedIn",
       "MeganavItemsMobile",
+      "MeganavBlogPostsList",
     ],
   },
   {

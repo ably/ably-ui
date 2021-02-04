@@ -60,30 +60,5 @@
     <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
   </div>
 
-  <div>
-    <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">Blog</h3>
-    <ul class="mb-8" aria-labelledby="meganav-why-ably-panel-list-blog">
-      <!-- Without thumb until we fetch them dynamically, use CSS class ui-meganav-media-with-image -->
-      <li>
-        <a href="/blog/ably-flutter-plugin" class="ui-meganav-media group">
-          <p class="ui-meganav-media-heading">Introducing the Ably Flutter plugin</p>
-          <p class="ui-meganav-media-copy">Jan 20, 2021</p>
-        </a>
-      </li>
-      <li>
-        <a href="/blog/4-essential-infrastructure-considerations-for-realtime-edtech-applications" class="ui-meganav-media group">
-          <p class="ui-meganav-media-heading">4 essential infrastructure considerations for realtime EdTech applications</p>
-          <p class="ui-meganav-media-copy">Jan 12, 2021</p>
-        </a>
-      </li>
-      <li>
-        <a href="/blog/6-realtime-engineering-challenges-for-edtech-applications" class="ui-meganav-media group">
-          <p class="ui-meganav-media-heading">6 realtime engineering challenges for EdTech applications</p>
-          <p class="ui-meganav-media-copy">Jan 05, 2021</p>
-        </a>
-      </li>
-    </ul>
-
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/blog")) do %>More from our Blog<% end %>
-  </div>
+  <%= render(AblyUi::Core::MeganavBlogPostsList.new) %>
 </section>
