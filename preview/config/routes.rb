@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/components/meganav', to: 'components#meganav'
 
   get '/api/me', to: 'api/user_session#me'
+  get '/api/blog', to: 'api/blog#recent_blog_posts'
 
   root 'pages#index'
 end
