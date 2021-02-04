@@ -88,4 +88,13 @@ MeganavItemsMobile.propTypes = {
   theme: T.object,
 };
 
-export default MeganavItemsMobile;
+export default React.memo(MeganavItemsMobile, (oldState, newState) => {
+  const { pathsOld, themeOld } = oldState;
+  const { pathsNew, themeNew } = newState;
+
+  if (pathsOld === pathsNew && themeOld === themeNew && Object.keys(newState.sessionState || {}).length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+});

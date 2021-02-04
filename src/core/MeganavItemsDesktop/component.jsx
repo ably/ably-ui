@@ -43,4 +43,4 @@ MeganavDesktopItems.propTypes = {
   theme: T.object,
 };
 
-export default MeganavDesktopItems;
+export default React.memo(MeganavDesktopItems);
