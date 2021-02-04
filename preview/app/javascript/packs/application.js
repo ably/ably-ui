@@ -1,11 +1,36 @@
 import "../styles/application.css";
 
 import Meganav from "@ably/ably-ui/core/Meganav";
-import { reactRenderer, loadSprites } from "@ably/ably-ui/core/scripts";
+import {
+  reactRenderer,
+  loadSprites,
+  createRemoteDataStore,
+  attachStoreToWindow,
+  fetchBlogPosts,
+  reducerBlogPosts,
+  fetchSessionData,
+  reducerSessionData,
+} from "@ably/ably-ui/core/scripts";
 
 import sprites from "@ably/ably-ui/core/sprites.svg";
-loadSprites(sprites);
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Inserts a sprite map for <use> tags
+  loadSprites(sprites);
+
+  // Create store before we render, the store is also added
+  // to the global namespace
+  const store = createRemoteDataStore({
+    ...reducerBlogPosts,
+    ...reducerSessionData,
+  });
+
+  attachStoreToWindow(store);
+
+  // Render components
   reactRenderer({ Meganav });
+
+  // Fetch additional data, trigger a re-render for components subscribed to store
+  fetchSessionData(store, "/api/me");
+  fetchBlogPosts(store, "/api/blog");
 });
