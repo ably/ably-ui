@@ -2,8 +2,22 @@
 //
 //= require ably_ui/core/scripts
 //= require ably_ui/core/meganav/component
+//= require ably_ui/core/meganav_blog_posts_list/component
 
 /* global AblyUi */
 
-AblyUi.Core.loadSprites("<%= asset_path("ably_ui/core/sprites.svg") %>");
-AblyUi.Core.Meganav();
+document.addEventListener("DOMContentLoaded", () => {
+  // Note this code is not transpiled and assumes browser support for spread syntax
+  const store = AblyUi.Core.createRemoteDataStore({ ...AblyUi.Core.reducerBlogPosts, ...AblyUi.Core.reducerSessionData });
+  AblyUi.Core.attachStoreToWindow(store);
+
+  // Inserts a sprite map for <use> tags
+  AblyUi.Core.loadSprites("<%= asset_path('ably_ui/core/sprites.svg') %>");
+
+  // Init components
+  AblyUi.Core.Meganav();
+  AblyUi.Core.MeganavBlogPostsList();
+
+  // Fetch additional data, trigger a re-render for components subscribed to store
+  AblyUi.Core.fetchBlogPosts(store, "/api/blog");
+});
