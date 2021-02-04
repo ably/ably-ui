@@ -2,6 +2,10 @@ import { isJsonResponse } from "./remote-data-util";
 
 const fetchBlogPosts = async (store, blogUrl) => {
   try {
+    if (!blogUrl) {
+      throw new Error(`Invalid blogUrl: "${blogUrl}"`);
+    }
+
     const res = await fetch(blogUrl);
 
     if (isJsonResponse(res.headers.get("content-type"))) {
