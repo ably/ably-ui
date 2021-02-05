@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 import MeganavBlogPostsList from "../MeganavBlogPostsList/component.jsx";
 
 import { selectRecentBlogPosts } from "../remote-blogs-posts";
-import { connectState } from "../remote-data-store";
+import { ConnectStateWrapper } from "../remote-react-util";
 
 const MeganavContentWhyAbly = () => {
-  const [recentBlogPosts, setRecentBlogPosts] = useState(null);
-
-  useEffect(() => connectState(selectRecentBlogPosts, setRecentBlogPosts), []);
+  const BlogPostsList = ConnectStateWrapper(MeganavBlogPostsList, { recentBlogPosts: selectRecentBlogPosts });
 
   return (
     <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
@@ -78,7 +76,7 @@ const MeganavContentWhyAbly = () => {
         <FeaturedLink url="/four-pillars-of-dependability">Explore our Four Pillars of Dependability</FeaturedLink>
       </div>
 
-      <MeganavBlogPostsList recentBlogPosts={recentBlogPosts} />
+      <BlogPostsList />
     </section>
   );
 };
