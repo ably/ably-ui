@@ -17,9 +17,9 @@ import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
 
-const SignIn = ({ sessionState, paths, theme }) =>
+const SignIn = ({ sessionState, theme }) =>
   sessionState.signedIn ? (
-    <MeganavItemsSignedIn sessionState={sessionState} paths={paths} theme={theme} />
+    <MeganavItemsSignedIn sessionState={sessionState} theme={theme} />
   ) : (
     <ul className="hidden md:flex items-center">
       <li>
@@ -78,7 +78,7 @@ export default function Meganav({ paths, themeName = "white" }) {
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
-        {sessionState ? <SignIn sessionState={sessionState} paths={paths} theme={theme} /> : <SignInPlaceholder />}
+        {sessionState ? <SignIn sessionState={sessionState} theme={theme} /> : <SignInPlaceholder />}
 
         <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} />
       </div>
