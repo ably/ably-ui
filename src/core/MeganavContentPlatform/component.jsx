@@ -66,7 +66,9 @@ const MeganavContentPlatform = ({ paths }) => (
         <li>
           <a href="/four-pillars-of-dependability#performance" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Predictable performance</p>
-            <p className="ui-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
+            <p className="ui-meganav-media-copy">
+              We provide predictability so you can be confident your realtime application will always perform as expected.
+            </p>
           </a>
         </li>
         <li>
@@ -82,9 +84,9 @@ const MeganavContentPlatform = ({ paths }) => (
           </a>
         </li>
         <li>
-          <a href="/four-pillars-of-dependability#availability" className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">High scalability & availability</p>
-            <p className="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
+          <a href="/network" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Global edge network</p>
+            <p className="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 200+ PoPs.</p>
           </a>
         </li>
       </ul>
