@@ -4,8 +4,8 @@
   "env": {
     "cypress-plugin-snapshots": {
       "imageConfig": {
-        "threshold": 0.05,
-        "thresholdType": "pixel"
+        "threshold": 0.1,
+        "thresholdType": "percent"
       },
       "backgroundBlend": "overlay"
     }
