@@ -58,3 +58,6 @@ git add package.json lib/ably_ui/version.rb && git commit -m "Bump version to $T
 
 echo "Pushing tag to origin"
 git push origin $TAG
+
+echo "Remove local gem artifact"
+rm ably-ui-$VERSION.gem
