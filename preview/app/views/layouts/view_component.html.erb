@@ -10,5 +10,13 @@
   <body>
     <%= yield %>
     <%= javascript_include_tag 'globals' %>
+
+    <% if content_for?(:component_init_js) %>
+      <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+          <%= yield :component_init_js %>
+        });
+      </script>
+    <% end %>
   </body>
 </html>

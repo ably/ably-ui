@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inserts a sprite map for <use> tags
   AblyUi.Core.loadSprites("<%= asset_path('ably_ui/core/sprites.svg') %>");
 
-  // Init components
-  AblyUi.Core.Meganav();
-  AblyUi.Core.MeganavBlogPostsList();
+  // Components could be initialized here but because we serve a page per component they are initialized on particular pages
 
   // Fetch additional data, trigger a re-render for components subscribed to store
   AblyUi.Core.fetchBlogPosts(store, "/api/blog");
