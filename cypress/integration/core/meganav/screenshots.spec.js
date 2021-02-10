@@ -42,7 +42,9 @@ describe("Content", () => {
   describe("Developers", () => {
     it("has the correct content", () => {
       cy.get(DEVELOPERS_PANEL_OPEN_CONTROL).trigger("click");
-      cy.get(DEVELOPERS_PANEL).toMatchImageSnapshot();
+      cy.get(DEVELOPERS_PANEL).toMatchImageSnapshot({
+        imageConfig: { threshold: 0.001 },
+      });
     });
   });
 });
