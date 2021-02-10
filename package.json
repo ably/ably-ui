@@ -22,7 +22,7 @@
     "blink-diff": "^1.0.13",
     "change-case": "^4.1.1",
     "css-loader": "^5.0.0",
-    "cypress": "^6.3.0",
+    "cypress": "^6.4.0",
     "cypress-plugin-snapshots": "^1.4.4",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
