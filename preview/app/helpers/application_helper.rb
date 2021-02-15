@@ -8,7 +8,8 @@ module ApplicationHelper
       emulatingUser: false,
       pageVisitCount: 9,
       cookiesAcceptedByUser: true,
-      account: nil
+      account: nil,
+      myAccessTokens: { text: 'My Access Tokens', href: '/users/9478/access_tokens' }
     }
 
     base[:hubspot] = {
