@@ -70,4 +70,13 @@
       }
     }
   }
+
+  .ui-version-tag {
+    @apply inline-block absolute align-top uppercase font-bold whitespace-nowrap;
+
+    position: relative;
+    vertical-align: super;
+    margin-left: 3px;
+    font-size: 8px;
+  }
 }
