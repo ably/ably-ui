@@ -1,4 +1,4 @@
-import { queryId } from "../dom-query";
+import { queryIdAll } from "../dom-query";
 import { selectRecentBlogPosts } from "../remote-blogs-posts";
 import { connectState } from "../remote-data-store";
 
@@ -26,14 +26,18 @@ const template = ({ link, title, pubDate }) => {
 export default () => {
   connectState(selectRecentBlogPosts, (recentBlogPosts) => {
     if (Array.isArray(recentBlogPosts) && recentBlogPosts.length > 0) {
-      const section = queryId("meganav-why-ably-panel-blog-section");
-      const container = queryId("meganav-why-ably-panel-recent-blog-posts");
+      const sections = queryIdAll("meganav-why-ably-panel-blog-section");
+      const containers = queryIdAll("meganav-why-ably-panel-recent-blog-posts");
 
-      const fragment = document.createDocumentFragment();
-      recentBlogPosts.forEach((post) => fragment.appendChild(template(post)));
-      container.appendChild(fragment);
+      Array.from(containers).forEach((container) => {
+        const fragment = document.createDocumentFragment();
+        recentBlogPosts.forEach((post) => fragment.appendChild(template(post)));
+        container.appendChild(fragment);
+      });
 
-      section.classList.remove("hidden");
+      Array.from(sections).forEach((section) =>
+        section.classList.remove("hidden")
+      );
     }
   });
 };
