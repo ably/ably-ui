@@ -15,11 +15,11 @@
   }
 
   .ui-btn-secondary {
-    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-2 border-cool-black rounded p-btn;
+    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-btn border-cool-black rounded p-btn;
     @apply hover:text-active-orange hover:border-active-orange hover:bg-white;
     @apply active:text-red-orange hover:border-red-orange active:bg-white;
     @apply focus:text-cool-black focus:border-cool-black focus:bg-white focus:outline-gui-focus;
-    @apply disabled:text-mid-grey disabled:border-mid-grey disabled:bg-white;
+    @apply disabled:text-mid-grey disabled:border-gui-unavailable disabled:bg-white;
     @apply transition-colors;
   }
 
