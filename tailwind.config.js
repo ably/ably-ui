@@ -108,6 +108,7 @@ module.exports = {
     },
     borderRadius: {
       none: "0",
+      sm: '1px',
       DEFAULT: "0.375rem",
     },
     extend: {
@@ -120,6 +121,9 @@ module.exports = {
       width: {
         "extend-8": "calc(100% + var(--spacing-8))",
       },
+      borderWidth: {
+        "btn": "1.5px"
+      }
     },
   },
   variants: {

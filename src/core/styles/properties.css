@@ -20,10 +20,10 @@
   --color-gui-error: #fb0c0c;
 
   --gradient-active-orange: linear-gradient(
-    61.2deg,
-    var(--color-active-orange) 15%,
-    var(--color-red-orange) 45%,
-    var(--color-active-orange) 85%
+    62deg,
+    var(--color-active-orange) 0,
+    var(--color-active-orange) 60%,
+    var(--color-red-orange) 100%
   );
 
   --fs-title: 4rem;
