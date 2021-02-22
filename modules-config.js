@@ -21,6 +21,7 @@ module.exports = [
       "MeganavBlogPostsList",
       "ContactFooter",
       "Footer",
+      "Showcase",
     ],
   },
   {

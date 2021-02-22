@@ -105,6 +105,7 @@ module.exports = {
     boxShadow: {
       subtle: "0px 1px 0px var(--color-mid-grey)",
       container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
+      "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
       input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", //color-gui-hover at 50% opacity
     },
     letterSpacing: {
@@ -121,9 +122,14 @@ module.exports = {
       sm: "1px",
       DEFAULT: "0.375rem",
     },
+    filter: {
+      none: "none",
+      grayscale: "grayscale(1)",
+    },
     extend: {
       transitionProperty: {
         input: "background-color, box-shadow",
+        filter: "filter",
       },
       outline: {
         "gui-focus": "4px solid var(--color-gui-focus)",
@@ -133,6 +139,10 @@ module.exports = {
       },
       borderWidth: {
         btn: "1.5px",
+      },
+      translate: {
+        "double-full": "200%",
+        "-double-full": "-200%",
       },
     },
   },
@@ -147,4 +157,5 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  plugins: [require("tailwindcss-filters")],
 };

@@ -9,7 +9,12 @@ class ComponentsController < ApplicationController
 
   def contact_footer
     template = "contact_footer_#{framework}.html.erb"
-    render template, locals: { props: framework == "react" ? react_props : vw_props }
+    render template
+  end
+
+  def showcase
+    template = "showcase_#{framework}.html.erb"
+    render template
   end
 
   def footer
