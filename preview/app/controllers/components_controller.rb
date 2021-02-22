@@ -4,17 +4,18 @@ class ComponentsController < ApplicationController
   def meganav
     session[:signed_in] =  signed_in?
     template = "meganav_#{framework}.html.erb"
-    render template, locals: { props: framework == "react" ? react_props : vw_props }
+    render template, locals: { props: framework == "react" ? meganav_react_props : meganav_vw_props }
   end
 
-  def contact_footer
-    template = "contact_footer_#{framework}.html.erb"
-    render template
-  end
+  def show
+    component_name = params[:component_name]
+    template = "components/#{component_name.underscore}_#{framework}.html.erb"
 
-  def showcase
-    template = "showcase_#{framework}.html.erb"
-    render template
+    if template_exists?(template)
+      render template
+    else
+      render status: 404, plain: "#{template} not found"
+    end
   end
 
   def footer
@@ -24,7 +25,7 @@ class ComponentsController < ApplicationController
 
   private
 
-  def react_props
+  def meganav_react_props
     {
       paths: {
         logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
@@ -47,7 +48,7 @@ class ComponentsController < ApplicationController
     }
   end
 
-  def vw_props
+  def meganav_vw_props
     signed_in? ? { session_data: helpers.session_data } : {}
   end
 
