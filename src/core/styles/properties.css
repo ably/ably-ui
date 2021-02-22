@@ -105,4 +105,6 @@
 
   /* Expose component values for cross-component usage */
   --ui-meganav-height: 4rem;
+  --ui-showcase-client-logo-min-width: 8.75rem; /* 140px at 16px base*/
+  --ui-showcase-client-logo-max-width: 15rem; /* 240px at 16px base*/
 }

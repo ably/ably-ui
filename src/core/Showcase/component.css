@@ -1,0 +1,32 @@
+@layer components {
+  .ui-showcase-overflow-container {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    @apply overflow-x-auto;
+  }
+
+  .ui-showcase-overflow-container::-webkit-scrollbar {
+    @apply hidden; /* Safari and Chrome */
+  }
+
+  .ui-showcase-logo-wrapper {
+    min-width: calc(3 * var(--ui-showcase-client-logo-min-width));
+    @apply flex bg-white;
+  }
+
+  .ui-showcase-logo {
+    min-width: var(--ui-showcase-client-logo-min-width);
+    @apply w-full py-16 px-12 flex items-center justify-center;
+  }
+
+  .ui-showcase-logo-img {
+    max-width: var(--ui-showcase-client-logo-max-width);
+    @apply w-full;
+  }
+
+  .ui-showcase-index-bar {
+    min-width: calc(3 * var(--ui-showcase-client-logo-min-width));
+    @apply bg-mid-grey;
+  }
+}

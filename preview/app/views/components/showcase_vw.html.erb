@@ -1,0 +1,14 @@
+<div class="m-32">
+ <%= render(AblyUi::Core::Showcase.new) %>
+</div>
+
+<div class="m-32 max-w-screen-sm">
+ <%= render(AblyUi::Core::Showcase.new) %>
+</div>
+
+<% content_for :component_init_js do %>
+  var showcases = document.querySelectorAll('[data-id="showcase"]');
+  showcases.forEach(showcase => AblyUi.Core.Showcase(showcase));
+
+  document.body.classList.add('bg-light-grey')
+<% end %>
