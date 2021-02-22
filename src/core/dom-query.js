@@ -1,5 +1,5 @@
-export const queryId = (val, append = "") =>
-  document.querySelector(`[data-id=${val}]${append}`);
+export const queryId = (val, root = document) =>
+  root.querySelector(`[data-id=${val}]`);
 
-export const queryIdAll = (val, append = "") =>
-  document.querySelectorAll(`[data-id=${val}]${append}`);
+export const queryIdAll = (val, root = document) =>
+  root.querySelectorAll(`[data-id=${val}]`);
