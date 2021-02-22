@@ -4,8 +4,7 @@ Rails.application.routes.draw do
 
   get '/components/meganav', to: 'components#meganav'
   get '/components/footer', to: 'components#footer'
-  get '/components/contact-footer', to: 'components#contact_footer'
-  get '/components/showcase', to: 'components#showcase'
+  get '/components/:component_name', to: 'components#show'
 
   get '/api/me', to: 'api/user_session#me'
   get '/api/blog', to: 'api/blog#recent_blog_posts'
