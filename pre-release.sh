@@ -36,4 +36,4 @@ echo "Commiting version bump"
 git add package.json lib/ably_ui/version.rb && git commit -m "Bump version to $TAG"
 
 echo "Remove local gem artifact"
-rm ably-ui-$VERSION.gem
+rm ably-ui.$VERSION.gem
