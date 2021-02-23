@@ -14,7 +14,7 @@ fi
 BRANCH=$(git branch --show-current)
 
 if [[ $BRANCH != "main" ]]; then
-  echo $0: "Error: Versions can only be released from the main branch"
+  echo $0: "Error: Releases can only be made from the main branch"
   exit 1
 fi
 
@@ -33,31 +33,56 @@ fi
 VERSION=$1
 TAG=v$1
 
-echo "Building assets"
+echo "Install packages, making sure they are up to date"
+yarn --frozen-lockfile
+bundle --frozen
+
+echo "Build library"
 NODE_ENV=production node scripts/webpack-build.js
 
-echo "Tagging commit with $TAG"
-git tag -a $TAG -m "$TAG"
+echo "Update version.rb file"
+echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
 
-echo "Updating version.rb file"
-echo -e "module AblyUi\n  VERSION = '$1'\nend" > ./lib/ably_ui/version.rb
-
-echo "Building the gem"
+echo "Build the gem"
 gem build ably-ui.gemspec
 
-echo "Pushing the gem to the registry"
+echo "Push the gem to the registry"
 gem push --key github \
     --host https://rubygems.pkg.github.com/ably \
-    ably-ui-$1.gem
-
-echo "Publishing the npm package to the registry"
-yarn publish --no-git-tag-version --new-version $1
-
-echo "Commiting version bump"
-git add package.json lib/ably_ui/version.rb && git commit -m "Bump version to $TAG"
-
-echo "Pushing tag to origin"
-git push origin $TAG
+    ably-ui-$VERSION.gem
 
 echo "Remove local gem artifact"
-rm ably-ui-$VERSION.gem
+rm ably-ui.$VERSION.gem
+
+echo "Publish the npm package to the registry"
+yarn publish --no-git-tag-version --new-version $VERSION
+
+echo "Update preview app version"
+cd preview
+
+echo "Read the current version from package.json"
+ABLY_UI_OLD_VERSION=$(node -e "const p = require('./package.json'); console.log(p.dependencies['@ably/ably-ui'])")
+
+echo "Update Gemfile"
+sed -i "s/gem 'ably-ui', '${ABLY_UI_OLD_VERSION}'/gem 'ably-ui', '${VERSION}'/" Gemfile
+
+echo "Update ably-ui npm package in preview app"
+yarn upgrade @ably/ably-ui@$VERSION
+
+echo "Update Gemfile.lock"
+bundle lock  # don't change contents gem dir as it might be using local paths
+
+echo "Commit version publish and preview app update to $TAG"
+cd ..
+git add package.json lib/ably_ui/version.rb
+git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
+git commit -m "Publish $TAG and update preview app"
+
+echo "Tag commit with $TAG"
+git tag -a $TAG -m "$TAG"
+
+echo "Push tag to origin"
+git push origin $TAG
+
+echo "Push main to origin"
+git push origin main
