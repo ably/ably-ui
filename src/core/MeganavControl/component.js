@@ -3,10 +3,13 @@ import { queryIdAll } from "../dom-query";
 const MeganavControl = () => {
   const controls = Array.from(queryIdAll("meganav-control"));
   const panels = Array.from(queryIdAll("meganav-panel"));
+  const mdBreakpoint = getComputedStyle(
+    document.documentElement
+  ).getPropertyValue("--bp-md");
 
   const hoverEnabled = () =>
     window.matchMedia(
-      "(hover: hover) and (pointer: fine) and (min-width: 1040px)"
+      `(hover: hover) and (pointer: fine) and (min-width: ${mdBreakpoint})`
     ).matches;
 
   const controlsHaveFocus = () =>
