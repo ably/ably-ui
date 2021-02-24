@@ -22,7 +22,7 @@ module ApplicationHelper
       lastName: "Doe",
       accountNameForCrm: "Free account : ably_free (8885)",
       id: 9478,
-      adminUrl: "https://www.ably.io/go/users/9478",
+      adminUrl: "https://ably.com/go/users/9478",
     }
 
     base[:account] = {
