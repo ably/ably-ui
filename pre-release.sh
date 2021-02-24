@@ -13,7 +13,7 @@ PACKAGE_SUFFIX=$(git rev-parse --short HEAD)
 echo "SHA is ${PACKAGE_SUFFIX}"
 
 echo "Read the current version from package.json"
-ABLY_UI_VERSION=$(node -e "const p = require('./package.json'); console.log(p.dependencies['@ably/ably-ui'])")
+ABLY_UI_VERSION=$(node -e "const p = require('./package.json'); console.log(p.version);")
 
 # Note the . and - before "dev" - this is due to the differences between gems and npm in what they consider a pre-release version
 VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
