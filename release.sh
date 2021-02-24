@@ -40,7 +40,9 @@ fi
 
 echo "Install packages, making sure they are up to date"
 yarn --frozen-lockfile
-bundle --frozen
+bundle config set --local frozen true
+bundle
+bundle config set --local frozen false
 
 echo "Build library"
 NODE_ENV=production node scripts/webpack-build.js
