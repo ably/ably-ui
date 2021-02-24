@@ -1,14 +1,24 @@
-<div class="m-32">
- <%= render(AblyUi::Core::Showcase.new) %>
+<%= render(TitleComponent.new(react: false, vw: true)) do %>
+  Showcase
+<% end %>
+
+<p class="text-p1 font-light font-sans antialiased mb-8">Showcase component in a large container with slideshow enabled</p>
+
+<div class="my-32 max-w-screen-xl">
+  <%= render(AblyUi::Core::Showcase.new) %>
 </div>
 
-<div class="m-32 max-w-screen-sm">
- <%= render(AblyUi::Core::Showcase.new) %>
+<p class="text-p1 font-light font-sans antialiased mb-8 mt-32">Showcase component in a small container with slideshow disabled</p>
+
+<div class="my-32 max-w-screen-sm">
+  <%= render(AblyUi::Core::Showcase.new) %>
 </div>
 
 <% content_for :component_init_js do %>
-  var showcases = document.querySelectorAll('[data-id="showcase"]');
-  showcases.forEach(showcase => AblyUi.Core.Showcase(showcase));
+  const showcases = document.querySelectorAll('[data-id="showcase"]');
 
-  document.body.classList.add('bg-light-grey')
+  AblyUi.Core.Showcase(showcases[0], true);
+  AblyUi.Core.Showcase(showcases[1], false);
+
+  document.body.classList.add('bg-light-grey', 'm-32')
 <% end %>

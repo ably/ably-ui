@@ -1,0 +1,13 @@
+  <div class="mb-32">
+    <h1 class="text-title font-sans antialiased mb-16"><%= @content %></h1>
+
+    <p class="text-p1 font-medium font-sans antialiased flex items-center">Available for:
+      <%= render(ActiveLinkComponent.new(to: url_for, classes: "ml-8 flex items-center opacity-50", active_classes: "opacity-100")) do %>
+        <%= image_tag "react.png", alt: "React framework logo", class: "ml-auto w-24 h-24" %>
+      <% end if react_available? %>
+
+      <%= render(ActiveLinkComponent.new(to: "#{url_for}?framework=vw", classes: "flex items-center opacity-50", active_classes: "opacity-100")) do %>
+        <%= image_tag "ruby.png", alt: "Ruby programming language logo", class: "ml-8 w-24 h-24" %>
+      <% end if vw_available? %>
+    </p>
+  </div>

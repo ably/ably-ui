@@ -8,5 +8,6 @@ module.exports = {
     "./app/assets/**/*.css",
     "./app/javascript/**/*.js",
     "./app/javascript/**/*.css",
+    "./app/components/**/*.html.erb",
   ],
 };
