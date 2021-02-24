@@ -1,5 +1,3 @@
-export const remsToPixelValue = (prop) =>
-  parseInt(
-    getComputedStyle(document.documentElement).getPropertyValue(prop),
-    10
-  ) * parseInt(getComputedStyle(document.documentElement).fontSize, 10);
+export const remsToPixelValue = (remString) =>
+  parseFloat(remString) *
+  parseFloat(getComputedStyle(document.documentElement).fontSize);

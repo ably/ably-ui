@@ -11,7 +11,11 @@ export default () => {
   const dropdown = queryId("meganav-mobile-dropdown");
 
   // Height is defined in rem's so to get the pixel value we need to find the fontSize on root
-  const meganavHeight = remsToPixelValue("--ui-meganav-height");
+  const meganavHeight = remsToPixelValue(
+    getComputedStyle(document.documentElement).getPropertyValue(
+      "--ui-meganav-height"
+    )
+  );
 
   const clickHandler = (btn, closeBtn, panel) => () => {
     btn.setAttribute("aria-expanded", true);
