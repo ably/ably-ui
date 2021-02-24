@@ -33,6 +33,11 @@ fi
 VERSION=$1
 TAG=v$1
 
+if git rev-parse "${TAG}" >/dev/null 2>&1; then
+  echo $0: "Error: ${TAG} already exists"
+  exit 1
+fi
+
 echo "Install packages, making sure they are up to date"
 yarn --frozen-lockfile
 bundle --frozen
