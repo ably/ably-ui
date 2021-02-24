@@ -59,7 +59,7 @@ gem push --key github \
     ably-ui-$VERSION.gem
 
 echo "Remove local gem artifact"
-rm ably-ui.$VERSION.gem
+rm ably-ui-$VERSION.gem
 
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION

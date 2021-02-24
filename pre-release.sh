@@ -45,6 +45,9 @@ gem push --key github \
     --host https://rubygems.pkg.github.com/ably \
     ably-ui-$RUBY_VERSION.gem
 
+echo "Remove local gem artifact"
+rm ably-ui-$RUBY_VERSION.gem
+
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
 
