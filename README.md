@@ -144,26 +144,37 @@ If you are using webpacker, install the npm module and import from there. (Note:
 
 ## Usage
 
-### Fonts & Assets ⚠️
+### Icons
 
-Fonts and assets are not loaded as part of Javascript or CSS files (though some small images might be inlined with `svg` or `data-uri`). To use them, require or copy them from the package.
+Putting svg files inside and `src/MODULE_NAME/icons` folder will add them to a per-module sprites file that will be available at the root of the module (eg. `core/sprites.svg`). This file can be loaded with the `loadSprites` helper available in the `core` module or include in the page directly. The only thing to remember here is that we use the `<use>` tag for loading icons which at the time of writing does not support CORS and so expects an identifier of a `symbol` already loaded on the page.
 
-When using npm:
-
-```js
-import ablyLogo from "@ably/ably-ui/core/images/logo.svg";
-```
-
-When importing directly:
+A simple example of using an icon directly would be:
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@ably/ably-ui@1.0.0/core/fonts/NEXT-Book-Light.woff"
-/>
+<!-- The width and height are required for correct sizing. The actual color class might depend on the svg and whether it uses strokes, fills etc. Note as well xlink:href, which is xlinkHref in react. -->
+<svg class="w-12 h-12 text-cool-black">
+  <use xlink:href="#sprite-disclosure-arrow" />
+</svg>
 ```
 
-Note that for fonts, it's recommended you specify your own `font-face` rule, just for the fonts you are using. An example can be found in the fonts directory (ie. for the NEXT core font, it will be in `core/fonts/next.css`).
+A react example with hover states, note the [group](https://tailwindcss.com/docs/hover-focus-and-other-states#group-hover) class:
+
+```jsx
+<a
+  href="{url}"
+  className="text-gui-default hover:text-gui-hover focus:text-gui-focus group"
+>
+  {children}
+  <svg className="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4">
+    <use xlinkHref="#sprite-disclosure-arrow" />
+  </svg>
+</a>
+```
+
+### Fonts
+
+Font assets are not included automagically but are part of the repo, together with an example of font-face file; see `src/core/fonts` for examples. Make sure to include the licence file declaration on usage.
+See `preview/app/javascript/styles/application.css` for an example when using webpacker/rails.
 
 #### Rails
 
