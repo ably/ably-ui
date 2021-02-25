@@ -12,8 +12,8 @@ echo "Save short SHA for package name"
 PACKAGE_SUFFIX=$(git rev-parse --short HEAD)
 echo "SHA is ${PACKAGE_SUFFIX}"
 
-echo "Read the current version from package.json"
-ABLY_UI_VERSION=$(node -e "const p = require('./package.json'); console.log(p.version);")
+echo "Read the current semver from package.json, ignoring pre-release versions"
+ABLY_UI_VERSION=$(node -e "const p = require('./package.json'); console.log(p.version.split('-dev')[0]);")
 
 # Note the . and - before "dev" - this is due to the differences between gems and npm in what they consider a pre-release version
 VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
@@ -48,6 +48,9 @@ gem push --key github \
 echo "Remove local gem artifact"
 rm ably-ui-$RUBY_VERSION.gem
 
+echo "Update Gemfile.lock"
+bundle
+
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
 
@@ -71,7 +74,7 @@ bundle lock  # don't change contents gem dir as it might be using local paths
 
 echo "Commit version publish and preview app update to $TAG"
 cd ..
-git add package.json lib/ably_ui/version.rb
+git add package.json lib/ably_ui/version.rb Gemfile.lock
 git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
 git commit -m "Publish $TAG and update preview app"
 
