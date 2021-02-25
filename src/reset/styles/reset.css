@@ -121,3 +121,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+svg {
+  fill: currentColor;
+}
