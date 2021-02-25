@@ -4,7 +4,7 @@
       <% @companies.each_with_index do |company, index| %>
         <li class="ui-showcase-logo">
           <%= tag.button class: [index === 0 ? 'filter-none' : 'filter-grayscale', 'focus:outline-none', 'border-none', 'p-0', 'transition-filter'], type: 'button', data: { id: 'showcase-control' } do %>
-            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: 'ui-showcase-logo-img' %>
+            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: 'ui-showcase-logo-img', srcset: [["#{company[:logo2x]}", "2x"]] %>
           <% end %>
         </li>
       <% end %>

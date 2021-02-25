@@ -10,6 +10,7 @@ module AblyUi
           {
             name: "Hubspot",
             logo: asset_path("ably_ui/core/images/cust-logo-hubspot-col-pos.png"),
+            logo2x: asset_path("ably_ui/core/images/cust-logo-hubspot-col-pos@2x.png"),
             quote: "Ably’s realtime infrastructure layer seamlessly supports HubSpot's entire realtime needs and helps us meet technical, business, and product development requirements.",
             author: {
               name: "Max Freiert",
@@ -20,6 +21,7 @@ module AblyUi
           {
             name: "Vitac",
             logo: asset_path("ably_ui/core/images/cust-logo-vitac-col-pos.png"),
+            logo2x: asset_path("ably_ui/core/images/cust-logo-vitac-col-pos@2x.png"),
             quote: "In a high-stakes, highly competitive industry, VITAC sought a provider that could operate realtime infrastructure for transporting live data to end-users via a complex, multi-hop process. In media accessibility environments - where there’s zero margin for error - Ably’s infrastructure performs and exceeds expectations.",
             author: {
               name: "Joe Antonio",
@@ -30,6 +32,7 @@ module AblyUi
           {
             name: "Split",
             logo: asset_path("ably_ui/core/images/cust-logo-split-col-pos.png"),
+            logo2x: asset_path("ably_ui/core/images/cust-logo-split-col-pos@2x.png"),
             quote: "You miss so much by not using a platform like Ably. When you need to implement a new feature, the capabilities are there, ready to go. Or when you need to scale, the capacity is seamlessly available. There’s no need to even think about these things. Building on Ably was the only logical choice because we managed to bypass a hefty DevOps debt and rapidly ship our new streaming capabilities while keeping our architecture as simple and reliable as possible.",
             author: {
               name: "Pato Echagüe",
