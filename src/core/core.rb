@@ -21,5 +21,11 @@ module AblyUi
         themes[@theme_name][style]
       end
     end
+
+    module SharedAssets
+      def ably_stack_path
+        asset_path 'ably_ui/core/images/ably-stack.svg'
+      end
+    end
   end
 end
