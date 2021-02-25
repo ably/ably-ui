@@ -1,0 +1,149 @@
+exports[`Showcase > the button is inactive without Hubspot widget #0`] = `
+<div
+  class="font-sans antialiased rounded-sm shadow-container-subtle"
+  data-id="showcase"
+>
+  <div class="ui-showcase-overflow-container">
+    <ol class="ui-showcase-logo-wrapper" data-id="showcase-controls">
+      <li class="ui-showcase-logo">
+        <button
+          class="opacity-100 focus:outline-none border-none p-0 transition-opacity"
+          type="button"
+          data-id="showcase-control"
+        >
+          <img
+            alt="Vitac logo"
+            src="/assets/ably_ui/core/images/company-hubspot-monochrome-61a2ebff65554c7dd4c3107fcd969c987e72e286fdd701ae8f34c0fc2a657ea6.svg"
+          />
+        </button>
+      </li>
+      <li class="ui-showcase-logo">
+        <button
+          class="opacity-75 focus:outline-none border-none p-0 transition-opacity"
+          type="button"
+          data-id="showcase-control"
+        >
+          <img
+            alt="Split logo"
+            src="/assets/ably_ui/core/images/company-hubspot-monochrome-61a2ebff65554c7dd4c3107fcd969c987e72e286fdd701ae8f34c0fc2a657ea6.svg"
+          />
+        </button>
+      </li>
+      <li class="ui-showcase-logo">
+        <button
+          class="opacity-75 focus:outline-none border-none p-0 transition-opacity"
+          type="button"
+          data-id="showcase-control"
+        >
+          <img
+            alt="Hubspot logo"
+            src="/assets/ably_ui/core/images/company-hubspot-monochrome-61a2ebff65554c7dd4c3107fcd969c987e72e286fdd701ae8f34c0fc2a657ea6.svg"
+          />
+        </button>
+      </li>
+    </ol>
+
+    <div class="ui-showcase-index-bar">
+      <div
+        data-id="showcase-index-bar"
+        class="transform transition-transform w-1/3 h-4 bg-active-orange relative"
+      ></div>
+    </div>
+  </div>
+
+  <div class="overflow-x-hidden">
+    <ol class="flex transform transition-transform" data-id="showcase-slides">
+      <li class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-40 bg-white">
+        <svg class="block mb-16 w-24 h-20">
+          <use xlink:href="#sprite-quote"></use>
+        </svg>
+
+        <p class="text-p1 font-medium mb-24">
+          In a high-stakes, highly competitive industry, VITAC sought a provider
+          that could operate realtime infrastructure for transporting live data
+          to end-users via a complex, multi-hop process. In media accessibility
+          environments - where there’s zero margin for error - Ably’s
+          infrastructure performs and exceeds expectations.
+        </p>
+
+        <div class="flex">
+          <div
+            class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48"
+            style="border-radius: 50%"
+          >
+            <img
+              alt="Picture of Joe Antonio, Chief Information Officer / VITAC"
+              class="w-48 h-48"
+              src="/assets/ably_ui/core/images/company-vitac-joe-antonio-59f768c62ef8b3e2dbeb5def1d4a25ba52d10c6d120159e5f93dafc3688f8ac0.jpg"
+            />
+          </div>
+          <div>
+            <p class="text-p2 font-medium">Joe Antonio</p>
+            <p class="text-p3 font-light">Chief Information Officer / VITAC</p>
+          </div>
+        </div>
+      </li>
+      <li class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-40 bg-white">
+        <svg class="block mb-16 w-24 h-20">
+          <use xlink:href="#sprite-quote"></use>
+        </svg>
+
+        <p class="text-p1 font-medium mb-24">
+          You miss so much by not using a platform like Ably. When you need to
+          implement a new feature, the capabilities are there, ready to go. Or
+          when you need to scale, the capacity is seamlessly available. There’s
+          no need to even think about these things. Building on Ably was the
+          only logical choice because we managed to bypass a hefty DevOps debt
+          and rapidly ship our new streaming capabilities while keeping our
+          architecture as simple and reliable as possible.
+        </p>
+
+        <div class="flex">
+          <div
+            class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48"
+            style="border-radius: 50%"
+          >
+            <img
+              alt="Picture of Pato Echagüe, Chief Technical Officer / Split"
+              class="w-48 h-48"
+              src="/assets/ably_ui/core/images/company-split-pato-echague-156804965f97044c436ab199e005cd2c781c0688c37def7f7c462b5bf4b24678.jpg"
+            />
+          </div>
+          <div>
+            <p class="text-p2 font-medium">Pato Echagüe</p>
+            <p class="text-p3 font-light">Chief Technical Officer / Split</p>
+          </div>
+        </div>
+      </li>
+      <li class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-40 bg-white">
+        <svg class="block mb-16 w-24 h-20">
+          <use xlink:href="#sprite-quote"></use>
+        </svg>
+
+        <p class="text-p1 font-medium mb-24">
+          Ably’s realtime infrastructure layer seamlessly supports HubSpot's
+          entire realtime needs and helps us meet technical, business, and
+          product development requirements.
+        </p>
+
+        <div class="flex">
+          <div
+            class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48"
+            style="border-radius: 50%"
+          >
+            <img
+              alt="Picture of Max Freiert, Product Group Lead / HubSpot"
+              class="w-48 h-48"
+              src="/assets/ably_ui/core/images/company-hubspot-max-freiert-3e738823ae19395da23919cc20c795b5814aa0e22f828affc07ed44c2b125b02.jpg"
+            />
+          </div>
+          <div>
+            <p class="text-p2 font-medium">Max Freiert</p>
+            <p class="text-p3 font-light">Product Group Lead / HubSpot</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
