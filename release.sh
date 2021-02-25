@@ -71,7 +71,7 @@ echo "Update preview app version"
 cd preview
 
 echo "Update Gemfile"
-sed -i.bak "s/gem 'ably-ui', '.*'/gem 'ably-ui', '${VERSION}'/" Gemfile
+sed -i.bak "s/gem 'ably-ui', '.*',/gem 'ably-ui', '${VERSION}',/" Gemfile
 rm Gemfile.bak
 
 echo "Update ably-ui npm package in preview app"

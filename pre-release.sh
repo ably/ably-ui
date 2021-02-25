@@ -60,7 +60,7 @@ cd preview
 echo "Update Gemfile"
 # Using -i.bak is a cross-platform way of using sed
 # https://stackoverflow.com/a/22084103
-sed -i.bak "s/gem 'ably-ui', '.*'/gem 'ably-ui', '${RUBY_VERSION}'/" Gemfile
+sed -i.bak "s/gem 'ably-ui', '.*',/gem 'ably-ui', '${RUBY_VERSION}',/" Gemfile
 rm Gemfile.bak
 
 echo "Update ably-ui npm package in preview app"
