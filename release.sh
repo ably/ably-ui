@@ -58,6 +58,9 @@ gem push --key github \
     --host https://rubygems.pkg.github.com/ably \
     ably-ui-$VERSION.gem
 
+echo "Update Gemfile.lock"
+bundle
+
 echo "Remove local gem artifact"
 rm ably-ui-$VERSION.gem
 
@@ -82,7 +85,7 @@ bundle lock  # don't change contents gem dir as it might be using local paths
 
 echo "Commit version publish and preview app update to $TAG"
 cd ..
-git add package.json lib/ably_ui/version.rb
+git add package.json lib/ably_ui/version.rb Gemfile.lock
 git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
 git commit -m "Publish $TAG and update preview app"
 
