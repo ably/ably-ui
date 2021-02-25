@@ -70,11 +70,8 @@ yarn publish --no-git-tag-version --new-version $VERSION
 echo "Update preview app version"
 cd preview
 
-echo "Read the current version from package.json"
-ABLY_UI_OLD_VERSION=$(node -e "const p = require('./package.json'); console.log(p.dependencies['@ably/ably-ui'])")
-
 echo "Update Gemfile"
-sed -i.bak "s/gem 'ably-ui', '${ABLY_UI_OLD_VERSION}'/gem 'ably-ui', '${VERSION}'/" Gemfile
+sed -i.bak "s/gem 'ably-ui', '.*'/gem 'ably-ui', '${VERSION}'/" Gemfile
 rm Gemfile.bak
 
 echo "Update ably-ui npm package in preview app"
