@@ -17,8 +17,8 @@
 <% content_for :component_init_js do %>
   const showcases = document.querySelectorAll('[data-id="showcase"]');
 
-  AblyUi.Core.Showcase(showcases[0], true);
-  AblyUi.Core.Showcase(showcases[1], false);
+  AblyUi.Core.Showcase(showcases[0], false);
+  AblyUi.Core.Showcase(showcases[1], true);
 
   document.body.classList.add('bg-light-grey', 'm-32')
 <% end %>
