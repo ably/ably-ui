@@ -12,16 +12,33 @@ class ComponentsController < ApplicationController
     render template, locals: { props: framework == "react" ? react_props : vw_props }
   end
 
+  def footer
+    template = "footer_#{framework}.html.erb"
+    render template, locals: { props: framework == "react" ? react_footer_props : {} }
+  end
+
   private
 
   def react_props
     {
-      paths: { logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
-               icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
-               ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
-               blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
-               blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
-               blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg') }
+      paths: {
+        logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
+        icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
+        blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
+        blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg')
+      }
+    }
+  end
+
+  def react_footer_props
+    {
+      paths: {
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        rocket_list: helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
+        flexible_companies: helpers.asset_path('ably_ui/core/images/flexible-companies.png'),
+      }
     }
   end
 

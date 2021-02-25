@@ -1,5 +1,6 @@
 import "../styles/application.css";
 import Meganav from "@ably/ably-ui/core/Meganav";
+import Footer from "@ably/ably-ui/core/Footer";
 import ContactFooter from "@ably/ably-ui/core/ContactFooter";
 
 import {
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   attachStoreToWindow(store);
 
   // Render components
-  reactRenderer({ Meganav, ContactFooter });
+  reactRenderer({ Meganav, Footer, ContactFooter });
 
   // Fetch additional data, trigger a re-render for components subscribed to store
   fetchSessionData(store, "/api/me");
