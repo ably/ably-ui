@@ -1,0 +1,11 @@
+@layer components {
+  .ui-footer {
+    @apply relative bg-light-grey font-sans antialiased;
+
+    &-content {
+      @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
+      @apply grid grid-cols-1;
+      @apply px-24 md:px-32 lg:px-32 xl:px-64;
+    }
+  }
+}

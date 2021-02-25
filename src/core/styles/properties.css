@@ -19,6 +19,12 @@
   --color-gui-unavailable: #a8a8a8;
   --color-gui-error: #fb0c0c;
 
+  /* flat colors for social icons */
+  --icon-color-linkedin: #1269bf;
+  --icon-color-twitter: #2caae1;
+  --icon-color-glassdoor: #0baa41;
+  --icon-color-github: #000000;
+
   --gradient-active-orange: linear-gradient(
     62deg,
     var(--color-active-orange) 0,
@@ -71,6 +77,10 @@
   --spacing-40: 2.5rem;
   --spacing-48: 3rem;
   --spacing-64: 4rem;
+  --spacing-72: 4.5rem;
+  --spacing-80: 5rem;
+  --spacing-88: 5.5rem;
+  --spacing-96: 6rem;
 
   --spacing-btn: 0.9375rem 1.5rem;
   --spacing-btn-small: 0.6875rem 1rem;

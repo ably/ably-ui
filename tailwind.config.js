@@ -56,13 +56,18 @@ module.exports = {
       "gui-viewed": "var(--color-gui-viewed)",
       "gui-unavailable": "var(--color-gui-unavailable)",
       "gui-error": "var(--color-gui-error)",
+      "icon-linkedin": "var(--icon-color-linkedin)",
+      "icon-twitter": "var(--icon-color-twitter)",
+      "icon-glassdoor": "var(--icon-color-glassdoor)",
+      "icon-github": "var(--icon-color-github)",
     },
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
     },
-    margin: (theme) => ({
+    margin: (theme, { negative }) => ({
       auto: "auto",
       ...theme("spacing"),
+      ...negative(theme("spacing")),
     }),
     padding: (theme) => ({
       btn: "var(--spacing-btn)",
@@ -88,6 +93,10 @@ module.exports = {
       40: "var(--spacing-40)",
       48: "var(--spacing-48)",
       64: "var(--spacing-64)",
+      72: "var(--spacing-72)",
+      80: "var(--spacing-80)",
+      88: "var(--spacing-88)",
+      96: "var(--spacing-96)",
     },
     maxWidth: (theme, { breakpoints }) => ({
       ...breakpoints(theme("screens")),

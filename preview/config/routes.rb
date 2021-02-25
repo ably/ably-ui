@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/foundations/typography', to: 'pages#typography'
 
   get '/components/meganav', to: 'components#meganav'
+  get '/components/footer', to: 'components#footer'
   get '/components/contact-footer', to: 'components#contact_footer'
 
   get '/api/me', to: 'api/user_session#me'

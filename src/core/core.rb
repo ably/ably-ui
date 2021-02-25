@@ -26,6 +26,14 @@ module AblyUi
       def ably_stack_path
         asset_path 'ably_ui/core/images/ably-stack.svg'
       end
+
+      def rocket_list
+        asset_path 'ably_ui/core/images/rocket-list-2021.png'
+      end
+
+      def flexible_companies
+        asset_path 'ably_ui/core/images/flexible-companies.png'
+      end
     end
   end
 end
