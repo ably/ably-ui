@@ -1,4 +1,4 @@
-**_Note:_** this project is documentation-driven, meaning most features described here are not yet implemented. Anything marked as ⚠️ is still WIP.
+**_Note:_** some features are still in development and their documentation might be incomplete. Lookout for the ⚠️ icon.
 
 # ably-ui
 
@@ -8,35 +8,37 @@
 
 `ably-ui` is a library built in mind with supporting a variety of websites/apps based on core web technologies. That's why where possible we build based on those but publish in a way that is easy to consume for frameworks we use across our properties.
 
-As an example, the `Logo` component has two templates, for a [react](https://reactjs.org/) component and [view-component](https://viewcomponent.org/) one but uses the same CSS classes and same Javascript hooks (`data-id`).
+As an example, the `Logo` component has two templates, for a [react](https://reactjs.org/) component and [view-component](https://viewcomponent.org/) but uses the same CSS classes and same Javascript hooks (`data-id`).
 
-In a some cases, this is not practical. Some components will be more specialized and take advantage of a given framework and we will have no need to make it available in multiple frameworks (for example, something that is only used within signed in, SPA like areas). Check the dependencies section of a given module/component docs to see what is required. ⚠️
+In a some cases, this is not practical. Some components will be more specialized and take advantage of a given framework and we will have no need to make it available in multiple frameworks (for example, something that is only used within signed in, SPA like areas).
+
+⚠️ We should add per-component docs to make figuring out the above easier.
 
 ### Guiding principles
 
-1. Provide easy access to common patterns, from brand colors to navigation
+1. Provide easy access to common patterns and assets, from brand colors to navigation
 2. Use the web platform as much as possible without relying on frameworks
 3. Be flexible in how the library can be integrated
 
-#### Accessibility
-
-An important part of ably-ui is ensuring the produced UI is accessible to as wide range of users as possible. All components should adhere to at least AA accessiblity standards. In most cases this can be accomplished by following a few simple rules:
-
-- use the correct [HTML elements](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML): anchors for navigation, buttons for interacting, lists for lists etc
-- test using a screen reader (for example [Voice Over on a Mac OSX with Web rotor](https://support.apple.com/en-gb/guide/voiceover/welcome/mac))
-- confirm designs have appropriate tap targets, contrast
-- use [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) where you reach the limits of what you can do with HTML
-- don't break the web platform (ie. don't break the behaviour of a back button, scrolling, in-page links etc)
-
 ### Library structure
 
-The library is built out of modules and components. A module contains assets and/or components (which can have their own assets too, like additional stylesheets or images) that are meant to help you construct a given type of UI.
+The library is built out of modules, assets, javascript & ruby modules and components. A module is a contaier for all of those.
 
-For example, the `core` module provides the most general elements one can build the "chrome" of a web based interface - typography, colors, spacing (ie. containers) etc. The components within the module support our most common needs to build that "chrome", like navigation, footer, hero sections, code samples etc. ⚠️
+For example, the `core` module provides the most general elements one can build the "chrome" of a web based interface - typography, colors, spacing (ie. containers) etc. The components within the module support our most common needs to build that "chrome", like navigation, footer, hero sections, code samples etc. Assets, javascript & ruby modules are all shared between the components in the module.
+
+Components do not requires assets directly - instead, it's up to the consumer to load the assets and pass them to the components. This ensures flexibility in terms of URLs.
+
+Each module, apart from components, exposes a `scripts.js`, `styles.css` and `MODULE_NAME.rb` files. `scripts.js` contains helper functions, `MODULE_NAME.rb` contains modules that components can include. `styles.css` is an entry point for tailwind, but maybe counterintuitively, needs to included after components - we rely on the order of CSS, not specificty.
+
+All of this makes it more complicated to include `ably-ui` but gives you full flexibility in terms of what you want to include. It makes it valid to include `ably-ui` and use a single component, asset or even function.
+
+⚠️ There should be an alternative way to make this easier.
 
 ### Installation
 
-### CDN ⚠️
+### CDN
+
+⚠️ This feature is not yet available.
 
 You can access all assets directly on the CDN:
 
@@ -103,7 +105,7 @@ import Meganav from "@ably/ably-ui/core/Meganav";
 To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
 
 ```ruby
-gem "ably-ui", '~> 0.0.13', require: 'ably_ui', source: "https://rubygems.pkg.github.com/ably"
+gem "ably-ui", '1.0.0', require: 'ably_ui', source: "https://rubygems.pkg.github.com/ably"
 ```
 
 And then run:
@@ -178,7 +180,17 @@ See `preview/app/javascript/styles/application.css` for an example when using we
 
 #### Rails
 
-Because the gem directories are on the asset path (see [Importing ViewComponent (Rails) components)]() section), they will work with standard asset helpers.
+Because the gem directories are on the asset path (see [Importing ViewComponent (Rails) components)](#user-content-importing-viewcomponent-rails-components) section), they will work with standard asset helpers (ie. `asset_path`).
+
+### Accessibility
+
+An important part of ably-ui is ensuring the produced UI is accessible to as wide range of users as possible. All components should adhere to at least AA accessiblity standards. In most cases this can be accomplished by following a few simple rules:
+
+- use the correct [HTML elements](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML): anchors for navigation, buttons for interacting, lists for lists etc
+- test using a screen reader (for example [Voice Over on a Mac OSX with Web rotor](https://support.apple.com/en-gb/guide/voiceover/welcome/mac))
+- confirm designs have appropriate tap targets, contrast
+- use [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) where you reach the limits of what you can do with HTML
+- don't break the web platform (ie. don't break the behaviour of a back button, scrolling, in-page links etc)
 
 ## Development
 
@@ -194,10 +206,14 @@ bin/rails server -p 5000
 bin/webpack-dev-server
 ```
 
-This will run the app but use the published versions of the `ably-ui` gem and npm package. To develop the package locally, you will need to do 2 things:
+This will run the app but use the published versions of the `ably-ui` gem and npm package.
 
-1. Make the app use local versions of the packages
-2. Run a process to rebuild the packages
+### Using the development build of ably-ui in the preview app
+
+To develop the package locally, you will need to do 2 things:
+
+1. Make the app use local versions of `ably-ui`
+2. Run a process to rebuild `ably-ui`s
 
 For `1`, do the following:
 
@@ -209,6 +225,7 @@ yarn link @ably/ably-ui
 ```
 
 For the gem, in the gemfile replace `source: "https://rubygems.pkg.github.com/ably"` with `path: '../'`. You might need to do `bundle clean --force` for bundler to start using the local version of the gem.
+Why not `bundle config set local.ably-ui ../`? Because that feature is built around the local gem being a separate repo and works poorly with our config.
 
 For `2`:
 
@@ -236,16 +253,27 @@ yarn unlink @ably/ably-ui
 
 And change back `path` to source `source`. If this just for a review app deployment, you can rebuild the `Gemfile.lock` without installing packages with `bundle lock`.
 
-#### Publishing packages for review apps
+#### Publishing pre-release packages for review apps
+
+Make sure you commit & push your work and remove the [development specific config]() before doing this.
 
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
 
 ```bash
 # in root
-./pre-release 0.0.16 20
+./pre-release
 ```
 
-The first number should be the current semver and second should can be any identifier from the last `0.0.16.dev.xx` number. Note when we move to a public repo, this will be removed and replaced with a system where review apps can download directly from the repo.
+This will do a couple of things:
+
+- update your local dependecies for ably-ui and run a production build
+- release a gem and an npm package with the version built from your current semver but adding a pre-release tag based on a short SHA of your HEAD commit
+- update the preview app
+- commit all of the above an push to origin
+
+This will trigger a build of the review app.
+
+For full releases, see
 
 ### Components
 
@@ -256,8 +284,10 @@ All components live in `src` and follow a directory and filename convention:
 - module directory (TitleCase)
   - module asset files: `scripts.js` for Javascript and `styles.css` for CSS
   - component directory (TitleCase)
-    - entry asset, template and framework files (all named `component` but with adequate extensions)
-    - other files ⚠️
+    - `component.js` - this is the entry file for a component and is the only required file
+    - `components.css` - additional CSS
+    - for ruby components, you need `component.rb` and `component.html.erb`
+    - for react, `components.jsx`
 
 For example:
 
