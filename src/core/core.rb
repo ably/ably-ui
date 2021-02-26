@@ -35,5 +35,15 @@ module AblyUi
         asset_path 'ably_ui/core/images/flexible-companies.png'
       end
     end
+
+    module Util
+      # This is useful where we need to use an HTML id (like in aria-controls attribute) but we know the component
+      # might be used multiple times per page so we can't just hard code one in HTML.
+      # eg. my-component -> my-component-uur0cj2h
+      # credits https://gist.github.com/mbajur/2aba832a6df3fc31fe7a82d3109cb626
+      def append_random_postfix(id)
+        "#{id}-#{rand(36**8).to_s(36)}"
+      end
+    end
   end
 end

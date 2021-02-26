@@ -5,11 +5,11 @@ import "./component.css";
 
 const SLIDE_SHOW_INTERVAL = 5000;
 
-const updateControlsOpacity = (controls, currentIndex) => {
+const updateLogoOpacity = (logos, currentIndex) => {
   const visible = ["filter-grayscale", "filter-none"];
   const opaque = [...visible].reverse();
-  controls.forEach((control, i) => {
-    control.classList.replace(...(i === currentIndex ? visible : opaque));
+  logos.forEach((logo, i) => {
+    logo.classList.replace(...(i === currentIndex ? visible : opaque));
   });
 };
 
@@ -69,6 +69,7 @@ const mobileBreakpoint = () => {
 export default (node, enableSlideshow) => {
   const container = node || queryId("showcase");
   const controls = Array.from(queryIdAll("showcase-control", container));
+  const logos = controls.map((control) => control.querySelector("img"));
   const controlsContainer = queryId("showcase-controls", container);
   const indexBar = queryId("showcase-index-bar", container);
   const slides = queryId("showcase-slides", container);
@@ -80,7 +81,7 @@ export default (node, enableSlideshow) => {
   const updateSlide = (index) => {
     moveSlides(slides, index);
     moveIndexBar(indexBar, index);
-    updateControlsOpacity(controls, index);
+    updateLogoOpacity(logos, index);
 
     if (mobileBreakpoint()) {
       moveControlsContainer(controlsContainer, index);
@@ -161,6 +162,7 @@ export default (node, enableSlideshow) => {
   const slideshowInit = () => {
     if (enableSlideshow) {
       scheduleSlideMove();
+      container.setAttribute("aria-live", "polite");
 
       const teardowns = [
         pointerOverContainer(),
