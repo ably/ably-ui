@@ -1,10 +1,19 @@
-<div class="font-sans antialiased rounded-sm shadow-container-subtle" data-id="showcase">
+<section
+  aria-roledescription="carousel"
+  aria-label="Ably customers showcase"
+  aria-live="off"
+  class="font-sans antialiased rounded-sm shadow-container-subtle"
+  data-id="showcase"
+>
   <div class="ui-showcase-overflow-container">
     <ol class="ui-showcase-logo-wrapper" data-id="showcase-controls">
       <% @companies.each_with_index do |company, index| %>
         <li class="ui-showcase-logo">
-          <%= tag.button class: [index === 0 ? 'filter-none' : 'filter-grayscale', 'focus:outline-none', 'border-none', 'p-0', 'transition-filter'], type: 'button', data: { id: 'showcase-control' } do %>
-            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: 'ui-showcase-logo-img', srcset: [["#{company[:logo2x]}", "2x"]] %>
+          <%= tag.button class: ['focus:outline-gui-focus', 'border-none', 'p-0', 'transition-filter'],
+                         type: 'button',
+                         data: { id: 'showcase-control' },
+                         aria: { controls: @random_id } do %>
+            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: ['ui-showcase-logo-img', index === 0 ? 'filter-none' : 'filter-grayscale'], srcset: [["#{company[:logo2x]}", "2x"]] %>
           <% end %>
         </li>
       <% end %>
@@ -16,9 +25,14 @@
   </div>
 
   <div class="overflow-x-hidden">
-    <ol class="flex transform transition-transform" data-id="showcase-slides">
-      <% @companies.each do |company| %>
-        <li class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-40 bg-white">
+    <ol class="flex transform transition-transform" data-id="showcase-slides" id="<%= @random_id %>">
+      <% @companies.each_with_index do |company, index| %>
+        <li
+          class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-40 bg-white"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="<%= index + 1 %> of <%= @companies.length %>"
+        >
           <svg class="block mb-16 w-24 h-20">
             <use xlink:href="#sprite-quote"></use>
           </svg>
@@ -38,4 +52,4 @@
       <% end %>
     </ol>
   </div>
-</div>
+</section>

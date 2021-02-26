@@ -1,8 +1,11 @@
 module AblyUi
   module Core
     class Showcase < ViewComponent::Base
+      include AblyUi::Core::Util
+
       def initialize(companies: default_companies)
         @companies = companies
+        @random_id = append_random_postfix("showcase-slides")
       end
 
       def default_companies
