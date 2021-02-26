@@ -5,16 +5,16 @@ describe("Showcase", () => {
     cy.visit("/components/showcase?framework=vw")
       .get("[data-id='showcase-slides']")
       .first()
-      .then(() => cy.contains("Pato Echagüe").should("not.be.visible"));
+      .then(() => cy.contains("Joe Antonio").should("not.be.visible"));
 
-    cy.get("[data-id='showcase-slides']")
+    cy.get("[data-id='showcase-controls']")
       .first()
-      .find("li:nth-child(2)")
+      .find("li:nth-child(2) button")
       .trigger("click");
 
     cy.get("[data-id='showcase-slides']")
       .first()
-      .contains("Pato Echagüe")
+      .contains("Joe Antonio")
       .should("be.visible");
   });
 
@@ -26,13 +26,13 @@ describe("Showcase", () => {
       .get("[data-id='showcase-slides']")
       .last()
       .scrollIntoView()
-      .then(() => cy.contains("Pato Echagüe").should("not.be.visible"));
+      .then(() => cy.contains("Joe Antonio").should("not.be.visible"));
 
     cy.tick(5010);
 
     cy.get("[data-id='showcase-slides']")
       .last()
-      .contains("Pato Echagüe")
+      .contains("Joe Antonio")
       .should("be.visible");
   });
 
@@ -44,7 +44,7 @@ describe("Showcase", () => {
       .get("[data-id='showcase-slides']")
       .last()
       .scrollIntoView()
-      .then(() => cy.contains("Pato Echagüe").should("not.be.visible"));
+      .then(() => cy.contains("Joe Antonio").should("not.be.visible"));
 
     cy.get("[data-id='showcase-slides']").last().trigger("mouseover");
 
@@ -52,7 +52,7 @@ describe("Showcase", () => {
 
     cy.get("[data-id='showcase-slides']")
       .last()
-      .contains("Pato Echagüe")
+      .contains("Joe Antonio")
       .should("not.be.visible");
   });
 });
