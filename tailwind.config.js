@@ -34,6 +34,7 @@ module.exports = {
       menu1: ["var(--fs-menu1)", "var(--lh-tight)"],
       menu2: ["var(--fs-menu2)", "var(--lh-tight)"],
       menu3: ["var(--fs-menu3)", "var(--lh-snug)"],
+      quote: ["var(--fs-quote)", "var(--lh-relaxed)"],
     },
     colors: {
       transparent: "transparent",
@@ -152,6 +153,7 @@ module.exports = {
       textColor: ["hover", "focus", "active", "group-focus", "disabled"],
       display: ["group-focus"],
       backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
+      filter: ["hover"],
     },
   },
   corePlugins: {
