@@ -1,11 +1,13 @@
 @layer components {
-  .ui-footer {
-    @apply relative bg-light-grey font-sans antialiased;
+  .ui-footer-col-title {
+    @apply text-overline2 p-menu-row-title font-normal uppercase tracking-widen-0.1;
+  }
 
-    &-content {
-      @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
-      @apply grid grid-cols-1;
-      @apply px-24 md:px-32 lg:px-32 xl:px-64;
-    }
+  .ui-footer-menu-row-link {
+    @apply text-menu3 text-cool-black font-light hover:text-gui-hover block;
+  }
+
+  .ui-footer-link {
+    @apply text-gui-default hover:text-gui-hover hover:underline text-menu3 font-light;
   }
 }

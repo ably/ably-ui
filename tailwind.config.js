@@ -33,7 +33,7 @@ module.exports = {
       btn2: ["var(--fs-btn2)", "var(--lh-tight)"],
       menu1: ["var(--fs-menu1)", "var(--lh-tight)"],
       menu2: ["var(--fs-menu2)", "var(--lh-tight)"],
-      menu3: ["var(--fs-menu3)", "var(--lh-tight)"],
+      menu3: ["var(--fs-menu3)", "var(--lh-snug)"],
     },
     colors: {
       transparent: "transparent",
@@ -74,6 +74,7 @@ module.exports = {
       "btn-small": "var(--spacing-btn-small)",
       "menu-row": "var(--spacing-menu-row)",
       "menu-row-snug": "var(--spacing-menu-row-snug)",
+      "menu-row-title": "var(--spacing-menu-row-title)",
       media: "var(--spacing-media)",
       input: "var(--spacing-input)",
       overline: "var(--spacing-overline)",
@@ -117,7 +118,7 @@ module.exports = {
     },
     borderRadius: {
       none: "0",
-      sm: '1px',
+      sm: "1px",
       DEFAULT: "0.375rem",
     },
     extend: {
@@ -131,8 +132,8 @@ module.exports = {
         "extend-8": "calc(100% + var(--spacing-8))",
       },
       borderWidth: {
-        "btn": "1.5px"
-      }
+        btn: "1.5px",
+      },
     },
   },
   variants: {
