@@ -3,6 +3,17 @@
 # See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
 set -euo pipefail
 
+echo "Fetching remote for up to date commit history"
+git fetch
+
+BRANCH=$(git branch --show-current)
+COMMITS_AHEAD=$(git rev-list $BRANCH...origin/$BRANCH --count)
+
+if [ $COMMITS_AHEAD -gt 0 ]; then
+  echo $0: "Error: branch origin/${BRANCH} is ahead of your local branch ${BRANCH}"
+  exit 1
+fi
+
 if [[ `git status --porcelain --untracked-files=no` ]]; then
   echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
   exit 1
