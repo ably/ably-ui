@@ -13,7 +13,7 @@
                          type: 'button',
                          data: { id: 'showcase-control' },
                          aria: { controls: @random_id } do %>
-            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: ['ui-showcase-logo-img', index === 0 ? 'filter-none' : 'filter-grayscale'], srcset: [["#{company[:logo2x]}", "2x"]] %>
+            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: ['ui-showcase-logo-img', index === 0 ? 'filter-none' : 'filter-grayscale', 'hover:filter-none'], srcset: [["#{company[:logo2x]}", "2x"]] %>
           <% end %>
         </li>
       <% end %>
@@ -37,9 +37,9 @@
             <use xlink:href="#sprite-quote"></use>
           </svg>
 
-          <p class="text-p1 font-medium mb-24"><%= company[:quote] %></p>
+          <p class="text-quote font-light mb-24"><%= company[:quote] %></p>
 
-          <div class="flex">
+          <div class="flex items-center">
             <div class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48" style="border-radius: 50%">
               <%= image_tag company[:author][:thumbnail], alt: "Picture of #{company[:author][:name]}, #{company[:author][:title]}", class: "w-48 h-48 filter-grayscale" %>
             </div>
