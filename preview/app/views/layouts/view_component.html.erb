@@ -6,11 +6,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application' %>
-    <%= stylesheet_pack_tag 'tailwind'  %>
+    <%= stylesheet_pack_tag 'tailwind' %>
   </head>
   <body>
     <%= yield %>
     <%= javascript_include_tag 'globals' %>
+    <%= javascript_pack_tag 'tailwind' %>
 
     <% if content_for?(:component_init_js) %>
       <script type="text/javascript">
