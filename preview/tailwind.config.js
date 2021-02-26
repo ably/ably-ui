@@ -9,5 +9,6 @@ module.exports = {
     "./app/javascript/**/*.js",
     "./app/javascript/**/*.css",
     "./app/components/**/*.html.erb",
+    "./app/components/**/*.rb",
   ],
 };
