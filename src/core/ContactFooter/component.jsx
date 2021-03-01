@@ -14,7 +14,7 @@ export default function ContactFooter() {
   useEffect(() => toggleChatWidget(), []);
 
   return (
-    <div className="ui-contact-footer font-sans" data-id="contact-footer">
+    <div className="ui-contact-footer font-sans antialiased" data-id="contact-footer">
       <div className="w-full bp-lg max-w-screen-xl mx-auto py-64 grid grid-cols-1 md:grid-cols-3 ui-grid-gap ui-grid-px">
         <div className={listItemClasses}>
           {svgicon("sprite-live-chat")}
