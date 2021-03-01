@@ -6,7 +6,7 @@ import "./component.css";
 export default function Footer({ paths }) {
   return (
     <footer className="bg-light-grey font-sans antialiased" data-id="footer">
-      <div className="max-w-screen-xl mx-auto p-24 md:px-32 lg:p-32 xl:p-64 ui-grid-gap grid grid-cols-6">
+      <div className="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6">
         <div className="col-span-full md:col-span-2">
           <div className="flex flex-row p-menu-row-snug">
             <img className="mr-24 -mt-16" src={paths.ablyStack} alt="Ably homepage" />
@@ -214,12 +214,12 @@ export default function Footer({ paths }) {
         </div>
       </div>
 
-      <div className="max-w-screen-xl px-24 md:px-32 xl:px-64 mx-auto">
+      <div className="max-w-screen-xl ui-grid-px mx-auto">
         <hr className="border-t-1 border-mid-grey" />
       </div>
 
-      <div className="max-w-screen-xl mx-auto p-24 md:px-32 lg:p-32 xl:px-64 grid grid-cols-2">
-        <div className="flex flex-col flex-auto pb-40 ml-12 col-span-full md:col-span-1">
+      <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
+        <div className="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
           <div className="ui-footer-legals">
             <a href="/privacy" className="pr-24 ui-footer-link">
               Cookies
@@ -267,7 +267,7 @@ export default function Footer({ paths }) {
           </div>
         </div>
 
-        <div className="md:text-right col-span-full md:col-span-1 ml-12">
+        <div className="md:text-right col-span-full md:col-span-1 ml-8">
           <img className="mr-24 w-96 h-96" src={paths.rocketList} alt="Rocket List 2021" />
           <img className="w-96 h-96" src={paths.flexibleCompanies} alt="Flexible Companies 2021" />
         </div>
