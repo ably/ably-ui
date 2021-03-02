@@ -2,7 +2,7 @@ name: Remove old package versions
 on:
   schedule:
     # every Monday 9:00am
-    - cron: "*/5 * * * *"
+    - cron: "0 9 * * 1"
 
 jobs:
   remove-package-versions:
