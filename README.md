@@ -105,7 +105,10 @@ import Meganav from "@ably/ably-ui/core/Meganav";
 To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
 
 ```ruby
-gem "ably-ui", '1.0.0', require: 'ably_ui', source: "https://rubygems.pkg.github.com/ably"
+gem 'ably-ui',
+    '1.0.0',
+    require: 'ably_ui',
+    source: 'https://rubygems.pkg.github.com/ably'
 ```
 
 And then run:
@@ -344,28 +347,33 @@ Publishing is done by tagging a release in Github. This triggers a Github action
 
 You will need to authenticate with the Github [npm registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
 
+After the above you should have:
+
+- GITHUB_REGISTRY_TOKEN set in your environment
+- a `~/.gem/credentials` file with a `:github: Bearer $GITHUB_REGISTRY_TOKEN`
+
 To publish, run:
 
 ```
 ./release.sh VERSION_NUMBER
 ```
 
-This will release the packages, update `package.json` and `version.rb` and create & push a new git tag.
+This will release the packages, update library & preview app and create & push the commit and tag.
 
 ### Running tests
 
-Unit tests (using [Jest](https://jestjs.io/)): ⚠️
+The repo includes [Cypress](https://www.cypress.io/) for snapshot, screenshot, parity and behaviour testing. The preview app contains routes under `/components` that are accessed in those tests.
 
-```bash
-yarn jest
+Snapshot testing takes saves the DOM and compares it between runs - updating of snapshots can be done in the Cypress UI.
 
-// or, to rerun tests on changes
-yarn jest:watch
-```
+Screenshot testing takes a screenhost of a component and compares it between runs. Note though our current setup of Cypress has issues with loading files so if you want to:
 
-#### Integration & Visual testing
+- See the diffs: go into `cypress/screenshots` to see it
+- Update a screenshot: delete the existing screenshot
 
-The repo includes [Cypress](https://www.cypress.io/) for integration and visual testing. The visual testing includes parity checking for vw/react components - screenshots are taken of both versions and fail if they are different. Note these screenshot only a given component but still navigate to the given pages to see them (ie. they don't load templates individually like unit tests would). The diff is
+Parity testing checks vw/react components; screenshots are taken of both versions and fail if they are different. Note these screenshot only a given component but still navigate to the given pages to see them (ie. they don't load templates individually like unit tests would).
+
+Behaviour testing clicks around the dom and checks for singular elements on the page to be updated.
 
 To run integration tests (using [Cypress](https://www.cypress.io/)), you'll need to have the preview app running on port 5000, then run:
 
