@@ -22,8 +22,8 @@ export default function ContactFooter() {
             <div className="text-h3 mb-24">Live Chat</div>
             <p className="text-p1 font-light">Reach out team of experts over chat powered by Ably.</p>
           </div>
-          <button type="button" className="ui-btn-secondary self-start p-btn mt-16" data-id="open-chat-widget">
-            Start a live chat
+          <button type="button" className="ui-btn-secondary self-start mt-16" disabled data-id="open-chat-widget">
+            Live chat unavailable
           </button>
         </div>
 
@@ -46,7 +46,7 @@ export default function ContactFooter() {
           {svgicon("sprite-tech-account-comms")}
           <div>
             <div className="text-h3 mb-24">Technical and account support</div>
-            <p className="text-p1 font-light">We're standing by to help with any questions or code.</p>
+            <p className="text-p1 font-light">We&apos;re standing by to help with any questions or code.</p>
           </div>
           <a className="ui-btn-secondary self-start p-btn mt-16" href="https://google.com">
             Get support now

@@ -1,35 +1,45 @@
 import { queryId } from "../dom-query";
 
-function hubspotWidget() {
-  const { HubSpotConversations = null } = window;
-  return HubSpotConversations //
-    ? HubSpotConversations.widget
-    : null;
+function enableBtn(el) {
+  el.disabled = false;
+  el.innerText = "Start a live chat";
 }
 
-function disabled(el) {
-  const unavailable = "Live chat unavailable";
-
-  el.setAttribute("disabled", true);
-  el.innerHTML = unavailable;
-  el.onclick = null;
+function disableBtn(el) {
+  el.disabled = true;
+  el.innerText = "Live chat unavailable";
 }
+
+const WAIT_BETWEEN_RETRIES_MS = 300;
 
 export default function toggleChatWidget() {
-  const scope = queryId("contact-footer");
-  const triggers = scope.querySelectorAll("[data-id='open-chat-widget']");
-  const widget = hubspotWidget();
+  const container = queryId("contact-footer");
+  const trigger = queryId("open-chat-widget", container);
 
-  triggers.forEach((el) => {
-    if (!widget) return disabled(el);
+  let retries = 10;
+  let clickHandler;
 
-    el.onclick = (e) => {
+  const waitForScript = () => {
+    const widget = window?.HubSpotConversations?.widget;
+
+    clickHandler = (e) => {
       e.preventDefault();
       widget.open();
     };
-  });
 
-  return function teardown() {
-    triggers.forEach(disabled);
+    if (widget) {
+      trigger.addEventListener("click", clickHandler);
+      enableBtn(trigger);
+    } else if (retries > 0) {
+      retries -= 1;
+      setTimeout(waitForScript, WAIT_BETWEEN_RETRIES_MS);
+    }
+  };
+
+  waitForScript();
+
+  return () => {
+    disableBtn(trigger);
+    trigger.removeEventListener("click", clickHandler);
   };
 }
