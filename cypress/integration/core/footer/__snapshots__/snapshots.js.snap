@@ -1,0 +1,545 @@
+exports[`Footer Snapshot Test > react > test case common to both #0`] = `
+<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+  <div
+    class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
+  >
+    <div class="col-span-full md:col-span-2">
+      <div class="flex flex-row p-menu-row-snug">
+        <img
+          class="mr-24 -mt-16"
+          src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
+          alt="Ably homepage"
+        />
+        <h2
+          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
+        >
+          The Ably Platform
+        </h2>
+      </div>
+      <div class="grid grid-cols-4">
+        <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
+          Easily power any realtime experience in your application via a simple
+          API that handles everything realtime.
+        </p>
+      </div>
+      <ul
+        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
+      >
+        <li class="p-menu-row-snug">
+          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
+            >Pub/sub messaging</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/push-notifications" class="ui-footer-menu-row-link"
+            >Push notifications</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/integrations" class="ui-footer-menu-row-link"
+            >Third-party integrations</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/protocols" class="ui-footer-menu-row-link"
+            >Multiple protocol messaging</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/hub" class="ui-footer-menu-row-link"
+            >Streaming data sources</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Ably is for</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/automotive-logistics-and-mobility"
+            class="ui-footer-menu-row-link"
+            >Automotive, Logistics, &amp; Mobility</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/b2b-platforms" class="ui-footer-menu-row-link"
+            >B2B Platforms</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
+            >Healthcare</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/hub" class="ui-footer-menu-row-link"
+            >Streaming data sources</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/ecommerce-and-retail"
+            class="ui-footer-menu-row-link"
+            >eCommerce &amp; Retail</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/sports-and-media" class="ui-footer-menu-row-link"
+            >Sports &amp; Media</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/gaming" class="ui-footer-menu-row-link">Gaming</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/iot-and-connected-devices"
+            class="ui-footer-menu-row-link"
+            >IoT &amp; Connected Devices</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Developers</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a
+            href="/documentation/quick-start-guide"
+            class="ui-footer-menu-row-link"
+            >Start in 5 minutes</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/documentation/" class="ui-footer-menu-row-link"
+            >Documentation</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="https://changelog.ably.com/" class="ui-footer-menu-row-link"
+            >Changelog</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/support" class="ui-footer-menu-row-link"
+            >Support &amp; FAQs</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/download" class="ui-footer-menu-row-link">SDKs</a>
+        </li>
+        <li class="p-menu-row-snug flex items-center">
+          <a
+            class="pr-8 ui-footer-menu-row-link"
+            href="https://status.ably.com/"
+            >System status</a
+          ><iframe
+            class="w-24 h-24 mt-4"
+            src="https://status.ably.io/embed/icon"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">WHY ABLY</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/customers" class="ui-footer-menu-row-link"
+            >Customer Stories</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/four-pillars-of-dependability"
+            class="ui-footer-menu-row-link"
+            >Four Pillars of Dependability</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/compare" class="ui-footer-menu-row-link"
+            >Compare our tech</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/protocols" class="ui-footer-menu-row-link"
+            >Multi protocol support</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/integrations" class="ui-footer-menu-row-link"
+            >Third-party integrations</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">ABOUT</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/about" class="ui-footer-menu-row-link">About Ably</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/pricing" class="ui-footer-menu-row-link">Pricing</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/enterprise" class="ui-footer-menu-row-link">Enterprise</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/open-policy" class="ui-footer-menu-row-link"
+            >Open protocol policy</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/contact" class="ui-footer-menu-row-link">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-screen-xl ui-grid-px mx-auto">
+    <hr class="border-t-1 border-mid-grey" />
+  </div>
+  <div
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
+  >
+    <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
+      <div class="ui-footer-legals">
+        <a href="/privacy" class="pr-24 ui-footer-link">Cookies</a
+        ><a href="/legals" class="pr-24 ui-footer-link">Legals</a
+        ><a href="/data-protection" class="ui-footer-link">Data Protection</a>
+      </div>
+      <div class="pt-32 flex items-center">
+        <a
+          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
+          href="https://twitter.com/ablyrealtime"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-twitter"></use></svg></a
+        ><a
+          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
+          href="https://www.linkedin.com/company/ably-realtime"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-linkedin"></use></svg></a
+        ><a
+          class="h-24 pr-24 text-cool-black hover:text-icon-github"
+          href="https://github.com/ably/"
+          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
+        ></a>
+        <div class="border-l-2 h-40"></div>
+        <a
+          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
+          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-glassdoor"></use></svg
+        ></a>
+        <div class="pl-16 text-menu3 font-light">
+          <strong class="block font-medium">Were hiring!</strong
+          ><a
+            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+            class="ui-footer-link"
+            >Learn more</a
+          >&nbsp;at Glass Door
+        </div>
+      </div>
+    </div>
+    <div class="md:text-right col-span-full md:col-span-1 ml-8">
+      <img
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
+        alt="Rocket List 2021"
+      /><img
+        class="w-96 h-96"
+        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
+        alt="Flexible Companies 2021"
+      />
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`Footer Snapshot Test > view component > test case common to both #0`] = `
+<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+  <div
+    class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
+  >
+    <div class="col-span-full md:col-span-2">
+      <div class="flex flex-row p-menu-row-snug">
+        <img
+          class="mr-24 -mt-16"
+          src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
+          alt="Ably homepage"
+        />
+        <h2
+          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
+        >
+          The Ably Platform
+        </h2>
+      </div>
+      <div class="grid grid-cols-4">
+        <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
+          Easily power any realtime experience in your application via a simple
+          API that handles everything realtime.
+        </p>
+      </div>
+      <ul
+        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
+      >
+        <li class="p-menu-row-snug">
+          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
+            >Pub/sub messaging</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/push-notifications" class="ui-footer-menu-row-link"
+            >Push notifications</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/integrations" class="ui-footer-menu-row-link"
+            >Third-party integrations</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/protocols" class="ui-footer-menu-row-link"
+            >Multiple protocol messaging</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/hub" class="ui-footer-menu-row-link"
+            >Streaming data sources</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Ably is for</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/automotive-logistics-and-mobility"
+            class="ui-footer-menu-row-link"
+            >Automotive, Logistics, &amp; Mobility</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/b2b-platforms" class="ui-footer-menu-row-link"
+            >B2B Platforms</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
+            >Healthcare</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/hub" class="ui-footer-menu-row-link"
+            >Streaming data sources</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/ecommerce-and-retail"
+            class="ui-footer-menu-row-link"
+            >eCommerce &amp; Retail</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/sports-and-media" class="ui-footer-menu-row-link"
+            >Sports &amp; Media</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/solutions/gaming" class="ui-footer-menu-row-link">Gaming</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/iot-and-connected-devices"
+            class="ui-footer-menu-row-link"
+            >IoT &amp; Connected Devices</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Developers</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a
+            href="/documentation/quick-start-guide"
+            class="ui-footer-menu-row-link"
+            >Start in 5 minutes</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/documentation/" class="ui-footer-menu-row-link"
+            >Documentation</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="https://changelog.ably.com/" class="ui-footer-menu-row-link"
+            >Changelog</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/support" class="ui-footer-menu-row-link"
+            >Support &amp; FAQs</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/download" class="ui-footer-menu-row-link">SDKs</a>
+        </li>
+        <li class="p-menu-row-snug flex items-center">
+          <a
+            class="pr-8 ui-footer-menu-row-link"
+            href="https://status.ably.com/"
+            >System status</a
+          ><iframe
+            class="w-24 h-24 mt-4"
+            src="https://status.ably.io/embed/icon"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">WHY ABLY</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/customers" class="ui-footer-menu-row-link"
+            >Customer Stories</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/four-pillars-of-dependability"
+            class="ui-footer-menu-row-link"
+            >Four Pillars of Dependability</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/compare" class="ui-footer-menu-row-link"
+            >Compare our tech</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/protocols" class="ui-footer-menu-row-link"
+            >Multi protocol support</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/integrations" class="ui-footer-menu-row-link"
+            >Third-party integrations</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">ABOUT</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <a href="/about" class="ui-footer-menu-row-link">About Ably</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/pricing" class="ui-footer-menu-row-link">Pricing</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/enterprise" class="ui-footer-menu-row-link">Enterprise</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/open-policy" class="ui-footer-menu-row-link"
+            >Open protocol policy</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/contact" class="ui-footer-menu-row-link">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-screen-xl ui-grid-px mx-auto">
+    <hr class="border-t-1 border-mid-grey" />
+  </div>
+  <div
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
+  >
+    <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
+      <div class="ui-footer-legals">
+        <a href="/privacy" class="pr-24 ui-footer-link">Cookies</a
+        ><a href="/legals" class="pr-24 ui-footer-link">Legals</a
+        ><a href="/data-protection" class="ui-footer-link">Data Protection</a>
+      </div>
+      <div class="pt-32 flex items-center">
+        <a
+          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
+          href="https://twitter.com/ablyrealtime"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-twitter"></use></svg></a
+        ><a
+          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
+          href="https://www.linkedin.com/company/ably-realtime"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-linkedin"></use></svg></a
+        ><a
+          class="h-24 pr-24 text-cool-black hover:text-icon-github"
+          href="https://github.com/ably/"
+          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
+        ></a>
+        <div class="border-l-2 h-40"></div>
+        <a
+          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
+          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+          ><svg class="w-24 h-24">
+            <use xlink:href="#sprite-glassdoor"></use></svg
+        ></a>
+        <div class="pl-16 text-menu3 font-light">
+          <strong class="block font-medium">Were hiring!</strong
+          ><a
+            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+            class="ui-footer-link"
+            >Learn more</a
+          >&nbsp;at Glass Door
+        </div>
+      </div>
+    </div>
+    <div class="md:text-right col-span-full md:col-span-1 ml-8">
+      <img
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
+        alt="Rocket List 2021"
+      /><img
+        class="w-96 h-96"
+        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
+        alt="Flexible Companies 2021"
+      />
+    </div>
+  </div>
+</footer>
+`;
