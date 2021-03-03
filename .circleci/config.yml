@@ -2,7 +2,7 @@ version: 2.1
 
 executors:
   default:
-    description: The official CircleCI Ruby Docker image
+    description: Image for running rails with cypress
     parameters:
       tag:
         description: The circleci/ruby Docker image version tag
@@ -74,7 +74,8 @@ commands:
       - run: |
           cd preview
           bundle config https://rubygems.pkg.github.com/ably $GITHUB_REGISTRY_USERNAME:$GITHUB_REGISTRY_TOKEN
-          bundle install --path vendor/bundle
+          bundle config set --local path 'vendor/bundle'
+          bundle install
       - save_bundle_cache
   yarn_install:
     description: Install javascript packages
@@ -99,7 +100,7 @@ jobs:
   cypress_tests:
     executor:
       name: default
-      tag: 2.6.6
+      tag: 3.0.0
     working_directory: ~/ably-ui/preview
     steps:
       - checkout
