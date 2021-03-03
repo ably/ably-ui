@@ -12,7 +12,7 @@ import {
 
 beforeEach(fixSnapshotSpec(__filename));
 
-describe("Content", () => {
+describe.skip("Content", () => {
   beforeEach(() => {
     cy.viewport("macbook-15");
     cy.visit("/components/meganav");

@@ -2,7 +2,7 @@ import { fixSnapshotSpec } from "../../../support";
 
 beforeEach(fixSnapshotSpec(__filename));
 
-describe("Showcase", () => {
+describe.skip("Showcase", () => {
   beforeEach(() => {
     cy.viewport("macbook-16");
     cy.visit("/components/showcase?framework=vw");
