@@ -1,0 +1,133 @@
+version: 2.1
+
+executors:
+  default:
+    description: The official CircleCI Ruby Docker image
+    parameters:
+      tag:
+        description: The circleci/ruby Docker image version tag
+        type: string
+        default: latest
+    docker:
+      - image: cimg/ruby:<< parameters.tag >>-browsers
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_USER: ably_db_user
+          POSTGRES_PASSWORD: password
+      - image: circleci/redis:6
+    environment:
+      - BUNDLER_VERSION: 2.2.11
+      - BUNDLE_JOBS: 4
+      - BUNDLE_PATH: vendor/bundle
+      - BUNDLE_RETRY: 3
+      - PGHOST: 127.0.0.1
+      - PG_USER: ably_db_user
+      - PG_PASSWORD: password
+      - RAILS_ENV: test
+      - NODE_VERSION: 12.16.3
+      - YARN_VERSION: 1.22.10
+
+caches:
+  - &bundle_cache ably-ui-preview-bundle-v1-{{ checksum "Gemfile.lock" }}-{{ checksum "preview/Gemfile.lock" }}
+  - &yarn_cache ably-ui-preview-yarn-v1-{{ checksum "yarn.lock" }}-{{ checksum "preview/yarn.lock" }}
+
+commands:
+  save_bundle_cache:
+    description: Save bundle cache
+    steps:
+      - save_cache:
+          key: *bundle_cache
+          paths:
+            - vendor/bundle
+            - preview/vendor/bundle
+  restore_bundle_cache:
+    description: Restore bundler cache
+    steps:
+      - restore_cache:
+          keys:
+            - *bundle_cache
+  save_yarn_cache:
+    description: Save yarn cache
+    steps:
+      - save_cache:
+          key: *yarn_cache
+          paths:
+            - node_modules
+            - preview/node_modules
+            - ~/.cache
+  restore_yarn_cache:
+    description: Restore yarn cache
+    steps:
+      - restore_cache:
+          keys:
+            - *yarn_cache
+  install_bundler:
+    description: Install bundler
+    steps:
+      - run: gem install bundler --version $BUNDLER_VERSION
+  bundle_install:
+    description: Install gems
+    steps:
+      - restore_bundle_cache
+      - install_bundler
+      - run: bundle install --path vendor/bundle
+      - run: |
+          cd preview
+          bundle config https://rubygems.pkg.github.com/ably $GITHUB_REGISTRY_USERNAME:$GITHUB_REGISTRY_TOKEN
+          bundle install --path vendor/bundle
+      - save_bundle_cache
+  yarn_install:
+    description: Install javascript packages
+    steps:
+      - restore_yarn_cache
+      - run: yarn --frozen-lockfile
+      - save_yarn_cache
+  start_server:
+    description: Run rails server in background
+    steps:
+      - run:
+          command: cd preview && bin/rails server -e test -p 5000
+          background: true
+  precompile_assets:
+    description: Compile assets for rails app
+    steps:
+      - run: |
+          cd preview
+          RAILS_ENV=test bin/rails assets:precompile assets:clean
+
+jobs:
+  cypress_tests:
+    executor:
+      name: default
+      tag: 2.6.6
+    working_directory: ~/ably-ui/preview
+    steps:
+      - checkout
+      - bundle_install
+      - yarn_install
+      - precompile_assets
+      - start_server
+      - run:
+          name: Wait for server
+          command: |
+            until $(curl --retry 10 --output /dev/null --silent --head --fail http://127.0.0.1:5000/); do
+                printf '.'
+                sleep 5
+            done
+      - run:
+          name: Executes Cypress end-to-end tests
+          command: |
+            yarn cypress run \
+              --reporter junit \
+              --reporter-options "mochaFile=test-results/cypress-[hash].xml,toConsole=true"
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+
+workflows:
+  build:
+    jobs:
+      - cypress_tests
