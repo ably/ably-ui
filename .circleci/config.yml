@@ -144,8 +144,6 @@ jobs:
           chmod 600 ~/.gem/credentials
       - run: gem build ably-ui.gemspec -o ably-ui-${CIRCLE_TAG:1}.gem
       - run: bundle
-      - run: git diff
-      - run: cat
       - run: gem push --key github --host https://rubygems.pkg.github.com/ably ably-ui-${CIRCLE_TAG:1}.gem
 
 workflows:
