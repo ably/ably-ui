@@ -139,8 +139,8 @@ jobs:
       - yarn_install
       - run: NODE_ENV=production node scripts/webpack-build.js
       - run: echo -e "module AblyUi\n  VERSION = '${CIRCLE_TAG:1}'\nend" > ./lib/ably_ui/version.rb
-      - run: cat ./lib/ably_ui/version.rb
-      - run: gem build ably-ui.gemspec
+      - run: gem build ably-ui.gemspec -o ably-ui-${CIRCLE_TAG:1}.gem
+      - run: git diff
       - run: gem push --key github --host https://rubygems.pkg.github.com/ably ably-ui-${CIRCLE_TAG:1}.gem
 
 workflows:
