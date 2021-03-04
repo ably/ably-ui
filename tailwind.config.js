@@ -122,7 +122,7 @@ module.exports = {
     },
     borderRadius: {
       none: "0",
-      sm: "1px",
+      sm: "0.125rem",
       DEFAULT: "0.375rem",
     },
     filter: {
