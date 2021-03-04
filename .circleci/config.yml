@@ -134,7 +134,7 @@ jobs:
       tag: 2.6.6
     steps:
       - checkout
-      - run: echo $CIRCLE_TAG
+      - run: echo ${CIRCLE_TAG}
 
 workflows:
   build:
@@ -145,6 +145,6 @@ workflows:
       - release:
           filters:
             tags:
-              only: /^v\d+\.\d+\.\d+-dev\..+/
+              only: /^v.*/
             branches:
-              only: add-circleci
+              ignore: /.*/
