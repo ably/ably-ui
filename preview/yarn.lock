@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.2.4":
-  version "2.2.4"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.2.4/aaa34cc0093d615f31c0831b4b728efba77d5e1042ac94e0c2f228a4f4b03535#f829ca726d78cf9dd5ced6abfa23552d642aa09e"
-  integrity sha1-+CnKcm14z53Vztar+iNVLWQqoJ4=
+"@ably/ably-ui@2.2.4-dev.efbdffd":
+  version "2.2.4-dev.efbdffd"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.2.4-dev.efbdffd/cc2e5fbc91948638a4bfa0761b443b89198828960960d1a911ae63c7e431fcf9#7fb323a2887dd15843b0ceb8814d339b9ac803e3"
+  integrity sha512-VBBOYPUZd+ouNn8oxV1eRrHMSopBxHJfnHsZo6291BknVMazf7XfWFticewE0RjO3sm5yZ0zos24enI6Umevkg==
   dependencies:
     array-flat-polyfill "^1.0.1"
     lodash.throttle "^4.1.1"
