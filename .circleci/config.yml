@@ -63,22 +63,24 @@ commands:
   install_bundler:
     description: Install bundler
     steps:
-      - run: |
-          cd preview
-          gem install bundler --version $BUNDLER_VERSION
+      - run: gem install bundler --version $BUNDLER_VERSION
   bundle_install:
     description: Install gems
     steps:
+      - restore_bundle_cache
       - install_bundler
       - run: |
           cd preview
           bundle config https://rubygems.pkg.github.com/ably $GITHUB_REGISTRY_USERNAME:$GITHUB_REGISTRY_TOKEN
           bundle install --path vendor/bundle
           bundle clean
+      - save_bundle_cache
   yarn_install:
     description: Install javascript packages
     steps:
+      - restore_yarn_cache
       - run: yarn --frozen-lockfile
+      - save_yarn_cache
   start_server:
     description: Run rails server in background
     steps:
@@ -100,12 +102,8 @@ jobs:
     working_directory: ~/ably-ui/preview
     steps:
       - checkout
-      - restore_bundle_cache
       - bundle_install
-      - save_bundle_cache
-      - restore_yarn_cache
       - yarn_install
-      - save_yarn_cache
       - precompile_assets
       - start_server
       - run:
@@ -134,7 +132,11 @@ jobs:
       tag: 2.6.6
     steps:
       - checkout
-      - run: echo ${CIRCLE_TAG}
+      - run: echo $CIRCLE_TAG
+      - install_bundler
+      - run: bundle
+      - yarn_install
+      - run: NODE_ENV=production node scripts/webpack-build.js
 
 workflows:
   build:
@@ -145,6 +147,6 @@ workflows:
       - release:
           filters:
             tags:
-              only: /^v.*/
+              only: /^v\d+\.\d+\.\d+-dev\..+/
             branches:
               ignore: /.*/
