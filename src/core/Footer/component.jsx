@@ -215,7 +215,7 @@ export default function Footer({ paths }) {
       </div>
 
       <div className="max-w-screen-xl ui-grid-px mx-auto">
-        <hr className="border-t-1 border-mid-grey" />
+        <hr className="border-t border-mid-grey" />
       </div>
 
       <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
@@ -248,7 +248,7 @@ export default function Footer({ paths }) {
                 <use xlinkHref="#sprite-github"></use>
               </svg>
             </a>
-            <div className="border-l-2 h-40"></div>
+            <div className="border-l border-mid-grey h-40"></div>
             <a
               className="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
               href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
