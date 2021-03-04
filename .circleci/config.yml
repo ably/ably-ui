@@ -147,4 +147,4 @@ workflows:
             tags:
               only: /^v\d+\.\d+\.\d+-dev\..+/
             branches:
-              ignore: /.*/
+              only: add-circleci
