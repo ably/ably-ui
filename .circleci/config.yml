@@ -145,6 +145,6 @@ workflows:
       - release:
           filters:
             tags:
-              only: ^v\d+\.\d+\.\d+-dev\..+/
+              only: /^v\d+\.\d+\.\d+-dev\..+/
             branches:
               ignore: /.*/
