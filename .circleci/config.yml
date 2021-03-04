@@ -128,7 +128,23 @@ jobs:
       - store_artifacts:
           path: cypress/screenshots
 
+  release:
+    executor:
+      name: default
+      tag: 2.6.6
+    steps:
+      - checkout
+      - run: echo $CIRCLE_TAG
+
 workflows:
   build:
     jobs:
       - cypress_tests
+  release:
+    jobs:
+      - release:
+          filters:
+            tags:
+              only: ^v\d+\.\d+\.\d+-dev\..+/
+            branches:
+              ignore: /.*/
