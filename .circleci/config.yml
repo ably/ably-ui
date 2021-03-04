@@ -140,10 +140,12 @@ jobs:
       - run: NODE_ENV=production node scripts/webpack-build.js
       - run: echo -e "module AblyUi\n  VERSION = '${CIRCLE_TAG:1}'\nend" > ./lib/ably_ui/version.rb
       - run: |
-          echo -e ':github: Bearer ${GITHUB_REGISTRY_TOKEN}' > ~/.gem/credentials
+          echo -e ":github: Bearer ${GITHUB_REGISTRY_TOKEN}" > ~/.gem/credentials
           chmod 600 ~/.gem/credentials
       - run: gem build ably-ui.gemspec -o ably-ui-${CIRCLE_TAG:1}.gem
+      - run: bundle
       - run: git diff
+      - run: cat
       - run: gem push --key github --host https://rubygems.pkg.github.com/ably ably-ui-${CIRCLE_TAG:1}.gem
 
 workflows:
