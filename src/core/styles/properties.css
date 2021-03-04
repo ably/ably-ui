@@ -32,7 +32,9 @@
     var(--color-red-orange) 100%
   );
 
-  --fs-title: 4rem;
+  --fs-title-xl: 4rem;
+  --fs-title: 3.5rem;
+  --fs-title-xs: 3.25rem;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.5rem;

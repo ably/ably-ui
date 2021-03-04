@@ -17,6 +17,8 @@ module.exports = {
     },
     fontSize: {
       title: ["var(--fs-title)", "var(--lh-tight)"],
+      "title-xl": ["var(--fs-title-xl)", "var(--lh-tight)"],
+      "title-xs": ["var(--fs-title-xs)", "var(--lh-tight)"],
       h1: ["var(--fs-h1)", "var(--lh-tight)"],
       h2: ["var(--fs-h2)", "var(--lh-tight)"],
       h3: ["var(--fs-h3)", "var(--lh-tight)"],
