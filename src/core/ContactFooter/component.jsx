@@ -4,7 +4,6 @@ import "./component.css";
 import toggleChatWidget from "./component.js";
 
 export default function ContactFooter() {
-  const listItemClasses = "xs:p-24 xl:p-40 sm:p-32 bg-white flex flex-col justify-between rounded-sm";
   const svgicon = (id) => (
     <svg className="w-48 h-48 block mb-16">
       <use xlinkHref={"#" + id}></use>
@@ -16,7 +15,7 @@ export default function ContactFooter() {
   return (
     <div className="ui-contact-footer font-sans antialiased" data-id="contact-footer">
       <div className="w-full bp-lg max-w-screen-xl mx-auto py-64 grid grid-cols-1 md:grid-cols-3 ui-grid-gap ui-grid-px">
-        <div className={listItemClasses}>
+        <div className="ui-contact-footer-box">
           {svgicon("sprite-live-chat")}
           <div>
             <div className="text-h3 mb-24">Live Chat</div>
@@ -27,7 +26,7 @@ export default function ContactFooter() {
           </button>
         </div>
 
-        <div className={listItemClasses}>
+        <div className="ui-contact-footer-box">
           {svgicon("sprite-call-mobile")}
           <div className="flex-grow">
             <div className="text-h3 mb-24">Call us</div>
@@ -42,7 +41,7 @@ export default function ContactFooter() {
           </div>
         </div>
 
-        <div className={listItemClasses}>
+        <div className="ui-contact-footer-box">
           {svgicon("sprite-tech-account-comms")}
           <div>
             <div className="text-h3 mb-24">Technical and account support</div>
