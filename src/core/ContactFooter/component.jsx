@@ -47,7 +47,7 @@ export default function ContactFooter() {
             <div className="text-h3 mb-24">Technical and account support</div>
             <p className="text-p1 font-light">We&apos;re standing by to help with any questions or code.</p>
           </div>
-          <a className="ui-btn-secondary self-start p-btn mt-16" href="https://google.com">
+          <a className="ui-btn-secondary self-start p-btn mt-16" href="/support">
             Get support now
           </a>
         </div>
