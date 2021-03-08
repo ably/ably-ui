@@ -258,7 +258,7 @@ export default function Footer({ paths }) {
               </svg>
             </a>
             <div className="pl-16 text-menu3 font-light">
-              <strong className="block font-medium">Were hiring!</strong>
+              <strong className="block font-medium">We&apos;re hiring!</strong>
               <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
                 Learn more
               </a>
