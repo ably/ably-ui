@@ -212,7 +212,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
     </div>
   </div>
   <div class="max-w-screen-xl ui-grid-px mx-auto">
-    <hr class="border-t-1 border-mid-grey" />
+    <hr class="border-t border-mid-grey" />
   </div>
   <div
     class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
@@ -239,7 +239,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           href="https://github.com/ably/"
           ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
         ></a>
-        <div class="border-l-2 h-40"></div>
+        <div class="border-l border-mid-grey h-40"></div>
         <a
           class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
           href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
@@ -485,7 +485,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
     </div>
   </div>
   <div class="max-w-screen-xl ui-grid-px mx-auto">
-    <hr class="border-t-1 border-mid-grey" />
+    <hr class="border-t border-mid-grey" />
   </div>
   <div
     class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
@@ -512,7 +512,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           href="https://github.com/ably/"
           ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
         ></a>
-        <div class="border-l-2 h-40"></div>
+        <div class="border-l border-mid-grey h-40"></div>
         <a
           class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
           href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
