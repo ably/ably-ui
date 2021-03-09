@@ -191,11 +191,6 @@ export default function Footer({ paths }) {
               </a>
             </li>
             <li className="p-menu-row-snug">
-              <a href="/enterprise" className="ui-footer-menu-row-link">
-                Enterprise
-              </a>
-            </li>
-            <li className="p-menu-row-snug">
               <a href="/careers" className="ui-footer-menu-row-link">
                 Careers
               </a>
