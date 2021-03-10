@@ -15,7 +15,7 @@ const MeganavContentPlatform = ({ paths }) => (
         realtime, and lets you focus on your code.
       </p>
 
-      <FeaturedLink url="/pub-sub-messaging">Explore how it works</FeaturedLink>
+      <FeaturedLink url="/platform">Explore how it works</FeaturedLink>
     </div>
 
     <div>
