@@ -349,8 +349,9 @@ You will need to authenticate with the Github [npm registry](https://docs.github
 
 After the above you should have:
 
-- GITHUB_REGISTRY_TOKEN set in your environment
-- a `~/.gem/credentials` file with a `:github: Bearer $GITHUB_REGISTRY_TOKEN`
+- GITHUB_REGISTRY_TOKEN set in your environment (`.npmrc` will read from it)
+- you should do registry login as described in the above docs with your github username and password
+- a `~/.gem/credentials` file with a `:github: Bearer TOKEN` (replace GITHUB_REGISTRY_TOKEN with your token - interpolation does not work here)
 
 To publish, run:
 
