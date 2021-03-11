@@ -1,4 +1,4 @@
-<%= render(AblyUi::Core::Meganav.new(props)) %>
+<%= render(AblyUi::Core::Meganav.new(**props)) %>
 
 <% content_for :component_init_js do %>
   AblyUi.Core.Meganav();
