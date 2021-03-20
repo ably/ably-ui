@@ -18,7 +18,7 @@ const MeganavContentWhyAbly = () => {
         <ul aria-labelledby="meganav-why-ably-panel-list-why-companies">
           <li>
             <a href="/customers" className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Customer stories</p>
+              <p className="ui-meganav-media-heading">Customers</p>
             </a>
           </li>
 
