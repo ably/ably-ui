@@ -146,7 +146,7 @@ export default function Footer({ paths }) {
           <ul>
             <li className="p-menu-row-snug">
               <a href="/customers" className="ui-footer-menu-row-link">
-                Customer Stories
+                Customers
               </a>
             </li>
             <li className="p-menu-row-snug">
