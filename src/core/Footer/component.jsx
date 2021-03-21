@@ -150,6 +150,11 @@ export default function Footer({ paths }) {
               </a>
             </li>
             <li className="p-menu-row-snug">
+              <a href="/case-studies" className="ui-footer-menu-row-link">
+                Case Studies
+              </a>
+            </li>
+            <li className="p-menu-row-snug">
               <a href="/four-pillars-of-dependability" className="ui-footer-menu-row-link">
                 Four Pillars of Dependability
               </a>
