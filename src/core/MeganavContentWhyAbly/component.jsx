@@ -23,6 +23,12 @@ const MeganavContentWhyAbly = () => {
           </li>
 
           <li>
+            <a href="/case-studies" className="group ui-meganav-media py-12">
+              <p className="ui-meganav-media-heading">Case studies</p>
+            </a>
+          </li>
+
+          <li>
             <a href="/compare" className="group ui-meganav-media py-12">
               <p className="ui-meganav-media-heading">Compare our tech</p>
             </a>
