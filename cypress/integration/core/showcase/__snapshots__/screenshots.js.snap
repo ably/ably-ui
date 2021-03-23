@@ -176,8 +176,11 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link"
-            >Customer Stories</a
+          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/case-studies" class="ui-footer-menu-row-link"
+            >Case Studies</a
           >
         </li>
         <li class="p-menu-row-snug">
@@ -215,9 +218,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         </li>
         <li class="p-menu-row-snug">
           <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/enterprise" class="ui-footer-menu-row-link">Enterprise</a>
         </li>
         <li class="p-menu-row-snug">
           <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
@@ -269,7 +269,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             <use xlink:href="#sprite-glassdoor"></use></svg
         ></a>
         <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">Were hiring!</strong
+          <strong class="block font-medium">We're hiring!</strong
           ><a
             href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
             class="ui-footer-link"
@@ -449,8 +449,11 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link"
-            >Customer Stories</a
+          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/case-studies" class="ui-footer-menu-row-link"
+            >Case Studies</a
           >
         </li>
         <li class="p-menu-row-snug">
@@ -488,9 +491,6 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </li>
         <li class="p-menu-row-snug">
           <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/enterprise" class="ui-footer-menu-row-link">Enterprise</a>
         </li>
         <li class="p-menu-row-snug">
           <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
@@ -542,7 +542,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
             <use xlink:href="#sprite-glassdoor"></use></svg
         ></a>
         <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">Were hiring!</strong
+          <strong class="block font-medium">We're hiring!</strong
           ><a
             href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
             class="ui-footer-link"

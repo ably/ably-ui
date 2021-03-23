@@ -155,7 +155,12 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <ul>
         <li class="p-menu-row-snug">
           <a href="/customers" class="ui-footer-menu-row-link"
-            >Customer Stories</a
+            >Customers</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/case-studies" class="ui-footer-menu-row-link"
+            >Case Studies</a
           >
         </li>
         <li class="p-menu-row-snug">
@@ -424,8 +429,11 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link"
-            >Customer Stories</a
+          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="/case-studies" class="ui-footer-menu-row-link"
+            >Case Studies</a
           >
         </li>
         <li class="p-menu-row-snug">
