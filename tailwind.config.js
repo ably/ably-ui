@@ -1,10 +1,15 @@
 module.exports = {
-  purge: [
-    "./src/**/*.html.erb",
-    "./src/**/*.jsx",
-    "./src/**/*.js",
-    "./src/**/*.json",
-  ],
+  purge: {
+    content: [
+      "./src/**/*.html.erb",
+      "./src/**/*.jsx",
+      "./src/**/*.js",
+      "./src/**/*.json",
+    ],
+    options: {
+      safelist: ["w-1/2", "w-1/3", "w-1/4", "w-1/5", "w-1/6"],
+    },
+  },
   darkMode: false,
   theme: {
     screens: {
@@ -111,7 +116,8 @@ module.exports = {
       subtle: "0px 1px 0px var(--color-mid-grey)",
       container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
       "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
-      input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", //color-gui-hover at 50% opacity
+      input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", // color-gui-hover at 50%
+      // opacity
     },
     letterSpacing: {
       "tighten-0.025": "var(--ls-tighten-0_025)",
@@ -127,6 +133,7 @@ module.exports = {
       sm: "0.125rem",
       lg: "0.5rem",
       xl: "0.75rem",
+      full:  "9999px",
       DEFAULT: "0.375rem",
     },
     filter: {
@@ -146,10 +153,6 @@ module.exports = {
       },
       borderWidth: {
         btn: "1.5px",
-      },
-      translate: {
-        "double-full": "200%",
-        "-double-full": "-200%",
       },
     },
   },
