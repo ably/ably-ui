@@ -8,10 +8,22 @@
   <%= render(AblyUi::Core::Showcase.new) %>
 </div>
 
+<hr />
+
 <p class="text-p1 font-light font-sans antialiased mb-8 mt-32">Showcase component in a small container with slideshow disabled</p>
 
 <div class="my-32 max-w-screen-sm">
   <%= render(AblyUi::Core::Showcase.new) %>
+</div>
+
+<hr />
+
+<h1>case studies</h1>
+
+<div class="my-32 max-w-screen-xl">
+  <%=
+    render(AblyUi::Core::Showcase.new(companies: %w[hubspot lightspeed vitac split australian_open], layout: 'casestudies'))
+  %>
 </div>
 
 <% content_for :component do %>
@@ -25,6 +37,7 @@
 
       AblyUi.Core.Showcase(showcases[0], false);
       AblyUi.Core.Showcase(showcases[1], true);
+      AblyUi.Core.Showcase(showcases[2], false);
     });
   </script>
 <% end %>
