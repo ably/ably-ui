@@ -243,9 +243,15 @@ Alternatively, there is a `procfile` that can be used by [foreman](https://githu
 gem install foreman
 
 foreman start
+
+# OR ...
+
+./cleanstart.sh
 ```
 
 This will start webpack rebuild for the package, webpack-dev-server to observe these changes and the rails server to run the app.
+
+The second option `cleanstart.sh` will ensure the webpack assets are up-to-date. It will execute a webpack build before calling `foreman start`.
 
 If at anytime you don't want to use the local gems anymore, you can do:
 
