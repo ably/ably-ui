@@ -13,6 +13,6 @@ describe.skip("Showcase", () => {
   });
 
   it("looks as per design in a narrow container", () => {
-    cy.get("[data-id='showcase']").last().toMatchImageSnapshot();
+    cy.get("[data-id='showcase']").eq(1).toMatchImageSnapshot();
   });
 });
