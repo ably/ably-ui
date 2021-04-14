@@ -1,0 +1,35 @@
+@layer components {
+  .ui-feature-footer {
+    background: var(--gradient-active-orange);
+    background-size: 100% 100%;
+    background-position: right center;
+    @apply w-full;
+  }
+
+  .ui-feature-footer-box {
+    @apply p-24 sm:p-32 xl:p-40 flex flex-col justify-between rounded-sm;
+  }
+
+  :root {
+    --li-icon-tick: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.832 1.55471L5.83204 13.5547L4.21912 13.6247L0.219116 8.62471L1.78085 7.37532L4.92653 11.3074L12.1679 0.445312L13.832 1.55471Z' fill='%2303020D'/%3E%3C/svg%3E%0A");
+  }
+
+  .ui-custom-list li {
+    position: relative;
+    margin-left: 2em;
+  }
+
+  .ui-custom-list li:before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: var(--li-icon-tick);
+    background-repeat: no-repeat;
+    vertical-align: baseline;
+    margin-top: 8px;
+    position: absolute;
+    left: -2em;
+    top: 0;
+  }
+}

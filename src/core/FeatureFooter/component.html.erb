@@ -1,0 +1,47 @@
+<div class="ui-feature-footer font-sans antialiased" data-id="feature-footer">
+  <div class="w-full  bp-lg max-w-screen-xl mx-auto py-64 md:grid grid-cols-3 ui-grid-gap ui-grid-px">
+    <div class="col-span-2 bg-cool-black text-white rounded-lg overflow-hidden sm:flex flex-row mb-24 md:mb-0">
+      <div class="ui-feature-image flex-0 bg-center bg-cover w-full h-256 sm:w-1/2 sm:h-auto"
+         style="background-image:url(<%= asset_path("ably_ui/core/images/portrait-01-368x400.jpg")%>)"
+        ></div>
+      <div class="p-24 sm:p-32 flex-1 h-full">
+        <div class="flex flex-row flex-col h-full space-between">
+          <span class="flex-1">
+            <div class="text-h3 mb-24 flex-1">Talk to our technical team</div>
+            <p class="text-p1 font-light">
+              If you&apos;re having technical or account issues just get in touch
+            </p>
+            <button type="button"
+                  class="ui-btn color-white bg-transparent border-2 self-start mt-24 disabled:bg-transparent"
+                  data-id="open-chat-widget"
+                  disabled>Live chat unavailable</button>
+          </span>
+          <span class="flex-0 mt-24 md:mt-0">
+            <p class="text-p1 font-light">
+              For all the ways to get in touch with us, visist our
+              <a href="/contact/" class="text-gui-default">contact page</a>
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg p-24 sm:p-32 w-auto">
+      <div class="flex flex-col h-full space-between">
+        <span class="flex-1">
+          <div class="text-h3 mb-24">Try our APIs for free</div>
+          <p class="text-p1 font-medium mb-16">Our free plan includes</p>
+          <ul class="ui-custom-list text-p1 font-light leading-8" >
+            <li>3m messages per month</li>
+            <li>100 peak connections</li>
+            <li>100 peak channels</li>
+            <li>Loads of features</li>
+          </ul>
+        </span>
+        <span class="flex-0">
+          <a class="ui-btn-secondary self-start p-btn mt-16"
+              href="/support">Start with a free account</a>
+        </span>
+      </div>
+  </div>
+</div>

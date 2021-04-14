@@ -85,6 +85,10 @@
   --spacing-88: 5.5rem;
   --spacing-96: 6rem;
 
+  --spacing-128: 128px;
+  --spacing-256: 256px;
+  --spacing-512: 512px;
+
   --spacing-btn: 0.9375rem 1.5rem; /* 15px 24px */
   --spacing-btn-small: 0.6875rem 1rem; /* 11px 16px */
   --spacing-menu-row: 0.625rem 0.5rem 0.6875rem; /* 10px 8px 11px */
