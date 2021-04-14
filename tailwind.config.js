@@ -64,6 +64,9 @@ module.exports = {
       "icon-glassdoor": "var(--icon-color-glassdoor)",
       "icon-github": "var(--icon-color-github)",
     },
+    backgroundColor: theme => ({
+      ...theme('colors')
+    }),
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
     },
@@ -101,6 +104,9 @@ module.exports = {
       80: "var(--spacing-80)",
       88: "var(--spacing-88)",
       96: "var(--spacing-96)",
+      128: "var(--spacing-128)",
+      256: "var(--spacing-256)",
+      512: "var(--spacing-512)",
     },
     maxWidth: (theme, { breakpoints }) => ({
       ...breakpoints(theme("screens")),
@@ -123,6 +129,8 @@ module.exports = {
     borderRadius: {
       none: "0",
       sm: "0.125rem",
+      lg: "0.5rem",
+      xl: "0.75rem",
       DEFAULT: "0.375rem",
     },
     filter: {
@@ -154,7 +162,14 @@ module.exports = {
       borderColor: ["hover", "focus", "active", "group-focus", "disabled"],
       textColor: ["hover", "focus", "active", "group-focus", "disabled"],
       display: ["group-focus"],
-      backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
+      backgroundColor: [
+        "hover", //
+        "focus",
+        "active",
+        "group-focus",
+        "disabled",
+
+      ],
       filter: ["hover"],
     },
   },

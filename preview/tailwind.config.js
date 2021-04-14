@@ -10,5 +10,6 @@ module.exports = {
     "./app/javascript/**/*.css",
     "./app/components/**/*.html.erb",
     "./app/components/**/*.rb",
+    "./node_modules/@ably/ably-ui/**/*"
   ],
 };
