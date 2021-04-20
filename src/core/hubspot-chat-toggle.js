@@ -31,7 +31,6 @@ let MAX_RETRY_COUNT = 30;
 
 export default function toggleChatWidget(params = {}) {
   const {dataId, textEnabled, textDisabled} = params;
-  console.log("init", params);
   const container = queryId(dataId);
 
   if(!dataId || !container) return;
