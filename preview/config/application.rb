@@ -26,6 +26,8 @@ module Preview
 
     config.assets.precompile += %w(globals.js)
 
+    config.assets.paths << Rails.root.join("app/javascript/")
+
     # Ably UI specific config
     config.assets.paths << AblyUi::Integration.asset_paths
     config.assets.precompile << ["*.eot", "*.otf", "*.woff", "*.woff2"]
