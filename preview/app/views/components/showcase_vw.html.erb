@@ -14,11 +14,17 @@
   <%= render(AblyUi::Core::Showcase.new) %>
 </div>
 
-<% content_for :component_init_js do %>
-  const showcases = document.querySelectorAll('[data-id="showcase"]');
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/showcase/component' %>
 
-  AblyUi.Core.Showcase(showcases[0], false);
-  AblyUi.Core.Showcase(showcases[1], true);
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
 
-  document.body.classList.add('bg-light-grey', 'm-32')
+    document.addEventListener("DOMContentLoaded", () => {
+      const showcases = document.querySelectorAll('[data-id="showcase"]');
+
+      AblyUi.Core.Showcase(showcases[0], false);
+      AblyUi.Core.Showcase(showcases[1], true);
+    });
+  </script>
 <% end %>

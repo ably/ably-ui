@@ -1,7 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @import "@ably/ably-ui/reset/styles.css";
 @import "@ably/ably-ui/core/Meganav/component.css";
 @import "@ably/ably-ui/core/ContactFooter/component.css";
 @import "@ably/ably-ui/core/Footer/component.css";
+@import "@ably/ably-ui/core/Showcase/component.css";
 @import "@ably/ably-ui/core/styles.css";
 
 @font-face {

@@ -1,6 +1,13 @@
 <%= render(AblyUi::Core::Meganav.new(**props)) %>
 
-<% content_for :component_init_js do %>
-  AblyUi.Core.Meganav();
-  AblyUi.Core.MeganavBlogPostsList();
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/meganav/component' %>
+  <%= javascript_include_tag 'ably_ui/core/meganav_blog_posts_list/component' %>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      AblyUi.Core.Meganav();
+      AblyUi.Core.MeganavBlogPostsList();
+    });
+  </script>
 <% end %>
