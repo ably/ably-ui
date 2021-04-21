@@ -1,5 +1,11 @@
 <%= render(AblyUi::Core::ContactFooter.new) %>
 
-<% content_for :component_init_js do %>
-  AblyUi.Core.ContactFooter();
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/footer/component' %>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      AblyUi.Core.ContactFooter();
+    });
+  </script>
 <% end %>

@@ -1,11 +1,11 @@
 require_relative 'boot'
 
-require "rails"
-require "active_model/railtie"
-require "active_job/railtie"
-require "action_controller/railtie"
-require "action_view/railtie"
-require "sprockets/railtie"
+require 'rails'
+require 'active_model/railtie'
+require 'active_job/railtie'
+require 'action_controller/railtie'
+require 'action_view/railtie'
+require 'sprockets/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -24,11 +24,18 @@ module Preview
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    config.assets.precompile += %w(globals.js)
+    Dir[
+      File.join(
+        AblyUi::Integration.asset_paths,
+        'ably_ui',
+        '**',
+        'component.js'
+      )
+    ].each { |path| config.assets.precompile << path }
 
     # Ably UI specific config
     config.assets.paths << AblyUi::Integration.asset_paths
-    config.assets.precompile << ["*.eot", "*.otf", "*.woff", "*.woff2"]
+    config.assets.precompile << %w[*.eot *.otf *.woff *.woff2]
     config.assets.precompile << AblyUi::Integration.precompile_images_paths
     config.assets.precompile << AblyUi::Integration.icon_sprites_paths
   end

@@ -1,6 +1,4 @@
 class ComponentsController < ApplicationController
-  layout :page_layout
-
   def meganav
     session[:signed_in] =  signed_in?
     template = "meganav_#{framework}.html.erb"
@@ -50,10 +48,6 @@ class ComponentsController < ApplicationController
 
   def meganav_vw_props
     signed_in? ? { session_data: helpers.session_data } : {}
-  end
-
-  def page_layout
-    params['framework'].nil? ? "application" : "view_component"
   end
 
   def framework
