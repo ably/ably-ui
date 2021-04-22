@@ -1,9 +1,7 @@
-import "../styles/application.css";
-
-import Meganav from "@ably/ably-ui/core/Meganav";
-import Footer from "@ably/ably-ui/core/Footer";
-import ContactFooter from "@ably/ably-ui/core/ContactFooter";
-import FeatureFooter from "@ably/ably-ui/core/FeatureFooter";
+import Meganav from "@ably/ably-ui/core/Meganav.jsx";
+import Footer from "@ably/ably-ui/core/Footer.jsx";
+import ContactFooter from "@ably/ably-ui/core/ContactFooter.jsx";
+import FeatureFooter from "@ably/ably-ui/core/FeatureFooter.jsx";
 
 import {
   reactRenderer,

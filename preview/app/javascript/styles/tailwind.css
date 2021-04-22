@@ -1,5 +1,0 @@
-/* This file is required in app/assets/stylesheets/application.css.erb */
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
