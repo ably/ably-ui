@@ -9,7 +9,11 @@ const rubyPredicate = extPredicate(/(.rb|.erb)$/);
 const assetsPredicate = extPredicate(/(.js|.css|.js.map|.css.map)$/);
 const dataPredicate = extPredicate(/(.json)$/);
 
-const printDone = () => console.log("\x1b[32m%s\x1b[0m", "Done"); // green
+let VERBOSE_LOG = false;
+const log = (...args) => (VERBOSE_LOG ? console.log(...args) : null);
+const printWrite = (...args) =>
+  VERBOSE_LOG ? process.stdout.write(...args) : null;
+const printDone = () => log("\x1b[32m%s\x1b[0m", "Done"); // green
 const colorizeMod = (name) => `\x1b[33m${name}\x1b[0m`; // yellow
 const colorizeComponentName = (name) => `\x1b[35m${name}\x1b[0m`; //magenta
 
@@ -33,7 +37,7 @@ const rubyPathResolve = (moduleDir, component = "", transformCase = true) =>
   );
 
 const print = (msg, exec) => (...args) => {
-  process.stdout.write(msg(...args));
+  printWrite(msg(...args));
 
   if (exec(...args)) {
     return;
@@ -96,7 +100,7 @@ const copyFonts = print(
     const npmPath = npmPathResolve(mod.directory, "fonts");
 
     if (!fs.existsSync(fonts)) {
-      console.log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
+      log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
       return true;
     }
 
@@ -121,7 +125,7 @@ const copyImages = print(
     const npmPath = npmPathResolve(mod.directory, "images");
 
     if (!fs.existsSync(images)) {
-      console.log("\x1b[32m%s\x1b[0m", "No images directory found, skipping"); // green
+      log("\x1b[32m%s\x1b[0m", "No images directory found, skipping"); // green
       return true;
     }
 
@@ -145,7 +149,7 @@ const copyIconSprites = print(
     const spriteFilename = "sprites.svg";
 
     if (!fs.existsSync(npmPathResolve(mod.directory, spriteFilename))) {
-      console.log("\x1b[32m%s\x1b[0m", "No icon sprites file found, skipping"); // green
+      log("\x1b[32m%s\x1b[0m", "No icon sprites file found, skipping"); // green
       return true;
     }
 
@@ -171,9 +175,7 @@ const copyComponentData = print(
 );
 
 const createGitignoreFiles = (mod) => {
-  process.stdout.write(
-    `> Creating .gitignore file for ${colorizeMod(mod.name)} ... `
-  );
+  printWrite(`> Creating .gitignore file for ${colorizeMod(mod.name)} ... `);
 
   fs.writeFileSync(npmPathResolve(mod.directory, ".gitignore"), "*");
   fs.writeFileSync(rubyPathResolve(mod.directory, ".gitignore", false), "*");
@@ -181,8 +183,10 @@ const createGitignoreFiles = (mod) => {
   printDone();
 };
 
-const sync = () => {
-  console.log("");
+const sync = ({ verbose } = { verbose: false }) => {
+  VERBOSE_LOG = verbose;
+
+  log("");
 
   modules.forEach((mod) => {
     const rubyPath = rubyPathResolve(mod.directory);
