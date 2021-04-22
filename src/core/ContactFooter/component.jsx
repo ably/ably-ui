@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import "./component.css";
 import toggleChatWidget from "./component.js";
 
 export default function ContactFooter() {

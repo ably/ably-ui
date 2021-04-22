@@ -2,23 +2,26 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
+const webpack = require("webpack");
 
 const modules = require("./modules-config");
 
-const commonConfig = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
-      },
-    ],
+const cssRules = [
+  {
+    test: /\.css$/i,
+    use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
   },
+];
+
+const jsRules = [
+  {
+    test: /\.(js|jsx)$/,
+    exclude: /node_modules/,
+    use: ["babel-loader"],
+  },
+];
+
+const externalsConfig = {
   externals: {
     react: {
       commonjs: "react",
@@ -38,7 +41,10 @@ const commonOutputConfig = {
 };
 
 const modulesConfig = modules.map((mod) => ({
-  ...commonConfig,
+  ...externalsConfig,
+  module: {
+    rules: [...cssRules, ...jsRules],
+  },
   entry: {
     [mod.name]: {
       import: `./src/${mod.directory}/scripts.js`,
@@ -66,7 +72,10 @@ const modulesConfig = modules.map((mod) => ({
 }));
 
 const componentsConfig = modules.map((mod) => ({
-  ...commonConfig,
+  ...externalsConfig,
+  module: {
+    rules: [...cssRules, ...jsRules],
+  },
   entry: mod.components.reduce(
     (acc, componentName) => ({
       [componentName]: {
@@ -90,7 +99,10 @@ const componentsConfig = modules.map((mod) => ({
 }));
 
 const reactConfig = modules.map((mod) => ({
-  ...commonConfig,
+  ...externalsConfig,
+  module: {
+    rules: [{ test: /\.css$/i, loader: "null-loader" }, ...jsRules],
+  },
   entry: mod.components.reduce(
     (acc, componentName) => ({
       [componentName]: {
@@ -104,11 +116,6 @@ const reactConfig = modules.map((mod) => ({
   output: {
     ...commonOutputConfig,
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: `${mod.directory}/[name]/component.css`,
-    }),
-  ],
 }));
 
 module.exports = [...modulesConfig, ...componentsConfig, ...reactConfig];

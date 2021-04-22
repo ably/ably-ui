@@ -1,8 +1,6 @@
 import React from "react";
 import T from "prop-types";
 
-import "./component.css";
-
 export default function Footer({ paths }) {
   return (
     <footer className="bg-light-grey font-sans antialiased" data-id="footer">
