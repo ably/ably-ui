@@ -1,4 +1,3 @@
-import "../styles/application.css";
 import Meganav from "@ably/ably-ui/core/Meganav";
 import Footer from "@ably/ably-ui/core/Footer";
 import ContactFooter from "@ably/ably-ui/core/ContactFooter";
