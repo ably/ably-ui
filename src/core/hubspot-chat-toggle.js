@@ -51,8 +51,6 @@ export default function toggleChatWidget(params = {}) {
     } else if (--MAX_RETRY_COUNT) {
       setTimeout(() => waitForScript(WAIT_BETWEEN_RETRIES_MS), delay);
     }
-
-    trigger.style.visibility = "visible";
   };
 
   disableBtn(trigger, textDisabled);
