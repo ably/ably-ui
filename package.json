@@ -34,6 +34,7 @@
     "extra-watch-webpack-plugin": "^1.0.3",
     "mini-css-extract-plugin": "^1.2.1",
     "normalize.css": "^8.0.1",
+    "null-loader": "^4.0.1",
     "postcss": "^8.1.10",
     "postcss-calc": "^7.0.5",
     "postcss-custom-media": "^7.0.8",
