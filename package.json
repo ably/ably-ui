@@ -60,13 +60,11 @@
     "cy:open": "cypress open",
     "cy:headless": "cypress run --quiet"
   },
-  "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
   "dependencies": {
     "array-flat-polyfill": "^1.0.1",
     "lodash.throttle": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "redux": "^4.0.5",
     "scroll-lock": "^2.1.4"
   }
