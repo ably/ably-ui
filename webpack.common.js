@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
@@ -91,16 +92,20 @@ const componentsConfig = modules.map((mod) => ({
 
 const reactConfig = modules.map((mod) => ({
   ...commonConfig,
-  entry: mod.components.reduce(
-    (acc, componentName) => ({
+  entry: mod.components.reduce((acc, componentName) => {
+    const path = `./src/${mod.directory}/${componentName}/component.jsx`;
+
+    // react versions of components are optional
+    if (!fs.existsSync(path)) return acc;
+
+    return {
       [componentName]: {
         import: `./src/${mod.directory}/${componentName}/component.jsx`,
         filename: `${mod.directory}/${componentName}.jsx`,
       },
       ...acc,
-    }),
-    {}
-  ),
+    };
+  }, {}),
   output: {
     ...commonOutputConfig,
   },
