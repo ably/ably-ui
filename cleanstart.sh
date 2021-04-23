@@ -14,4 +14,4 @@ fi
 
 # Ensure updated webpack assets before foreman
 clear;
-node scripts/webpack-build.js && foreman start
+node scripts/build.js && foreman start
