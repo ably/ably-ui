@@ -213,12 +213,9 @@ This will run the app but use the published versions of the `ably-ui` gem and np
 
 ### Using the development build of ably-ui in the preview app
 
-To develop the package locally, you will need to do 2 things:
+To develop the package locally, follow these steps:
 
-1. Make the app use local versions of `ably-ui`
-2. Run a process to rebuild `ably-ui`s
-
-For `1`, do the following:
+1. Use the local version of `ably-ui` (both of the npm package and gem)
 
 ```bash
 # in the root directory
@@ -227,44 +224,51 @@ yarn link
 yarn link @ably/ably-ui
 ```
 
-For the gem, in the gemfile replace `source: "https://rubygems.pkg.github.com/ably"` with `path: '../'`. You might need to do `bundle clean --force` for bundler to start using the local version of the gem.
+For the gem, in the gemfile replace `source: "https://rubygems.pkg.github.com/ably"` with `path: '../'` and run:
+
+```bash
+# in preview
+bundle
+
+# in some instances, you might need to run `bundle clean --force` for bundler to start using the local version of the gem.
+```
+
 Why not `bundle config set local.ably-ui ../`? Because that feature is built around the local gem being a separate repo and works poorly with our config.
 
-For `2`:
+2. Build the library & run the server
 
-```
-./scripts/webpack-watch.js
-```
+There things need to happen when developing:
 
-Alternatively, there is a `procfile` that can be used by [foreman](https://github.com/ddollar/foreman) and will run all 3 processes for you:
+1. The library needs to be built
+2. Assets in the preview app need to be built
+3. The preview server needs to be started
+
+The easiest way to do this is to run `yarn dev` which wraps all of these in the right order. Note it uses [foreman](https://github.com/ddollar/foreman) which you will need install separately:
 
 ```bash
 # install foreman gem
 gem install foreman
 
-foreman start
-
-# OR ...
-
-./cleanstart.sh
+# watches the files in src
+# runs webpack-dev-server for the preview app
+# starts the preview server
+yarn dev
 ```
 
-This will start webpack rebuild for the package, webpack-dev-server to observe these changes and the rails server to run the app.
+### Using a deployed package of ably-ui in the preview app
 
-The second option `cleanstart.sh` will ensure the webpack assets are up-to-date. It will execute a webpack build before calling `foreman start`.
-
-If at anytime you don't want to use the local gems anymore, you can do:
+If at anytime you don't want to use the local npm package and/or gems anymore, you can do:
 
 ```bash
 # in "preview" directory
 yarn unlink @ably/ably-ui
 ```
 
-And change back `path` to source `source`. If this just for a review app deployment, you can rebuild the `Gemfile.lock` without installing packages with `bundle lock`.
+And change back `path` to source `source` in the `Gemfile`. If you need to update Gemfile.lock without installing gems you can run `bundle lock`.
 
 #### Publishing pre-release packages for review apps
 
-Make sure you commit & push your work and remove the [development specific config]() before doing this.
+Make sure you commit & push your work and remove the [development specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
 

@@ -45,7 +45,7 @@ bundle
 bundle config set --local frozen false
 
 echo "Build library"
-NODE_ENV=production node scripts/webpack-build.js
+NODE_ENV=production node scripts/webpack.js
 
 echo "Update version.rb file"
 echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
