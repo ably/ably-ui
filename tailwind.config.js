@@ -56,6 +56,7 @@ module.exports = {
       "gui-alt": "var(--color-cool-black)",
       "gui-hover": "var(--color-gui-hover)",
       "gui-focus": "var(--color-gui-focus)",
+      "gui-active": "var(--color-gui-active)",
       "gui-viewed": "var(--color-gui-viewed)",
       "gui-unavailable": "var(--color-gui-unavailable)",
       "gui-error": "var(--color-gui-error)",
