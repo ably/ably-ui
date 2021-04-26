@@ -10,7 +10,7 @@
     @apply hover:text-white hover:bg-active-orange;
     @apply active:text-white active:bg-red-orange;
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
-    @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply disabled:text-bg-gui-unavailable disabled:bg-gui-unavailable;
     @apply transition-colors;
   }
 
