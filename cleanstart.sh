@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # A script to ensure webpack assets are up-to-date
-set -euo pipefail
+set -eo pipefail
 
-# A script to ensure webpack assets are up-to-date
+UPDATE="$1"
+
 if ! which foreman &> /dev/null; then
   echo "foreman executable could not be found."
   echo "Install it with 'gem install foreman'."
@@ -12,6 +13,19 @@ if ! which foreman &> /dev/null; then
   exit
 fi
 
-# Ensure updated webpack assets before foreman
 clear;
-node scripts/build.js && foreman start
+
+if [[ $UPDATE == "--update-deps" ]]; then
+  # Ensure recently added components are up-to-date
+  echo "Update yarn and gems for new modules"
+  yarn --frozen-lockfile
+  bundle config set --local frozen true
+  bundle
+  bundle config set --local frozen false
+fi
+
+echo "Creating webpack build assets"
+node scripts/build.js
+
+echo "Running webpack and rails server with foreman"
+foreman start
