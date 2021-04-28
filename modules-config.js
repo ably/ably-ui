@@ -23,11 +23,8 @@ module.exports = [
       "FeatureFooter",
       "Footer",
       "Showcase",
+      "Code",
     ],
   },
-  {
-    name: "Reset",
-    directory: "reset",
-    components: [],
-  },
+  { name: "Reset", directory: "reset", components: [] },
 ];

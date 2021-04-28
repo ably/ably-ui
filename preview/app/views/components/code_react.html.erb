@@ -1,0 +1,47 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Code Component
+<% end %>
+
+<h1 class="text-h2 font-large">JavaScript</h1>
+<%= react_component('code', {
+  language: "javascript",
+  snippet: %{
+const abc = 123;
+// code comment inline
+const { href } = window.location;
+console.log(href);
+const literal = `${abc * 2}`;
+let float = 12.3456 / 0.12;
+}}) %>
+
+
+<h1 class="text-h2 font-large my-16">CSharp</h1>
+<%= react_component('code', {
+  language: "csharp",
+  snippet: %{
+using System.IO.Compression;
+
+#pragma warning disable 414, 3021
+
+namespace MyApplication
+{
+    [Obsolete("...")]
+    class Program : IInterface
+    {
+        public static List<int> JustDoIt(int count)
+        {
+            Span<int> numbers = stackalloc int[length];
+            Console.WriteLine($"Hello {Name}!");
+            return new List<int>(new int[] { 1, 2, 3 })
+        }
+    }
+}
+}}) %>
+
+<% content_for :component do %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <%= javascript_include_tag 'ably_ui/core/code/component' %>
+  <script>
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>

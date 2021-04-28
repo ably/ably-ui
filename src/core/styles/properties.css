@@ -19,6 +19,20 @@
   --color-gui-unavailable: #a8a8a8;
   --color-gui-error: #fb0c0c;
 
+  /* syntax highlight JS */
+  --syntax-black: var(--color-cool-black);
+  --syntax-charcoal: var(--color-charcoal-grey);
+  --syntax-dark-grey: var(--color-dark-grey);
+  --syntax-mid-grey: var(--color-mid-grey);
+  --syntax-light-grey: var(--color-light-grey);
+
+  --syntax-red: #d54e53;
+  --syntax-orange: #e78c45;
+  --syntax-yellow: #e7c547;
+  --syntax-green: #b9ca4a;
+  --syntax-blue: #3490ec;
+  --syntax-lilac: #bb87d3;
+
   /* flat colors for social icons */
   --icon-color-linkedin: #1269bf;
   --icon-color-twitter: #2caae1;
