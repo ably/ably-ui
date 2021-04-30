@@ -72,6 +72,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
+      mono: ["Source Code Pro", "Courier", "monospace"],
     },
     margin: (theme, { negative }) => ({
       auto: "auto",
@@ -133,7 +134,7 @@ module.exports = {
       sm: "0.125rem",
       lg: "0.5rem",
       xl: "0.75rem",
-      full:  "9999px",
+      full: "9999px",
       DEFAULT: "0.375rem",
     },
     filter: {
