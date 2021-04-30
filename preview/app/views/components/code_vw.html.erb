@@ -1,0 +1,60 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Code Component
+<% end %>
+
+<h1 class="text-h2 my-16">JavaScript</h1>
+
+<%= render(AblyUi::Core::Code.new(language: "javascript",
+  snippet: %q{
+var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
+var channel = ably.channels.get('web-pal');
+
+// Subscribe to messages on channel
+channel.subscribe('greeting', function(message) {
+  alert(message.data);
+});
+})) %>
+
+<h1 class="text-h2 my-16">iOS Swift</h1>
+
+<%= render(AblyUi::Core::Code.new(language: "swift",
+  snippet: %q{
+let ably = ARTRealtime(key: "1WChTA.mc0Biw:kNfiYG4KiPgmHHgH")
+let channel = ably.channels.get("web-pal")
+
+// Subscribe to messages on channel
+channel.subscribe("greeting") { message in
+  print("\(message.data)")
+}
+})) %>
+
+<h1 class="text-h2 my-16">Java</h1>
+
+<%= render(AblyUi::Core::Code.new(language: "java",
+  snippet: %q{
+AblyRealtime ably = new AblyRealtime("1WChTA.mc0Biw:kNfiYG4KiPgmHHgH");
+Channel channel = ably.channels.get("web-pal");
+
+/* Subscribe to messages on channel */
+
+MessageListener listener;
+listener = new MessageListener() {
+  @Override
+  public void onMessage(Message message) {
+    System.out.print(message.data);
+  };
+};
+channel.subscribe("greeting", listener);
+})) %>
+
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/code/component' %>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      const blocks = document.querySelectorAll("[data-id=code]");
+      Array.from(blocks).forEach(AblyUi.Core.Code);
+
+      document.body.classList.add("bg-light-grey", "m-32");
+    });
+  </script>
+<% end %>
