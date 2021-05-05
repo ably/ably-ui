@@ -2,12 +2,13 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.4.1":
-  version "2.4.1"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.4.1/604136474e818255feed782edea58ddf59d4a8e5eec1c88f591f31f3870f560f#132fef4b3cb916bdb77f1daa6d961d434446fb4a"
-  integrity sha512-mLAGCxHvmlfJGjiPmZsDT4xPjCi66wBdJuCIsaBE7x0gG81fSjtZA90ZVs2GdRKPNq0zhyXrCutuJr4KqmFm9g==
+"@ably/ably-ui@2.4.1-dev.9085710":
+  version "2.4.1-dev.9085710"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.4.1-dev.9085710/cd01517359c73a6a2214d357d44fa8f4727fd009ab2d1185c17ae6ba7e3125f0#30ddc594babb134c26c27cc6f0afc94492d3996f"
+  integrity sha512-I7qcDF1juRYy/0kgYsjHJNKvee7886A2g5tc8uqZtWDNG5ye3sdeRUW7z/e9jp1uEyfKRLfqnv3U04sRJW0wzQ==
   dependencies:
     array-flat-polyfill "^1.0.1"
+    highlight.js "^10.7.2"
     lodash.throttle "^4.1.1"
     react "^17.0.1"
     react-dom "^17.0.1"
@@ -3664,6 +3665,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+highlight.js@^10.7.2:
+  version "10.7.2"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.2.tgz#89319b861edc66c48854ed1e6da21ea89f847360"
+  integrity sha512-oFLl873u4usRM9K63j4ME9u3etNF0PLiJhSQ8rdfuL51Wn3zkD6drf9ZW0dOzjnZI22YYG24z30JcmfCZjMgYg==
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
