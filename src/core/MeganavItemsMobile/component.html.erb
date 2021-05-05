@@ -26,16 +26,16 @@
             </li>
           <% end %>
           <li>
-            <a href="/pricing" class="ui-meganav-mobile-link">
-              Pricing
-            </a>
+            <a href="/pricing" class="ui-meganav-mobile-link">Pricing</a>
           </li>
         </ul>
 
         <hr class="ui-meganav-hr mb-20" />
 
         <div class="flex justify-between items-center mb-16">
-          <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">Contact us</a>
+          <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">
+            Contact us
+          </a>
 
           <% if @session_data[:signedIn] && @session_data[:account] %>
             <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>

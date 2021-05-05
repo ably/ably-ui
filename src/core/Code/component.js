@@ -42,13 +42,13 @@ const register = [
 register.forEach(({ key, module }) => hljs.registerLanguage(key, module));
 
 function convertCodeToHTML(el) {
-  if(!el) throw 'Missing code element';
+  if (!el) throw "Missing code element";
 
   const pre = el.querySelector("pre");
   const code = el.querySelector("code");
   const language = pre.getAttribute("lang");
 
-  if(!code || !pre || !language) throw 'Malformed code element';
+  if (!code || !pre || !language) throw "Malformed code element";
 
   const { innerHTML } = code;
   const html = hljs.highlight(innerHTML, { language }).value;
@@ -56,9 +56,9 @@ function convertCodeToHTML(el) {
   code.innerHTML = html;
 }
 
-function highlight (language, snippet) {
+function highlight(language, snippet) {
   return hljs.highlight(snippet, { language }).value;
 }
 
-export { highlight }
+export { highlight };
 export default convertCodeToHTML;

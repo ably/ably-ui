@@ -33,7 +33,6 @@
           aria-roledescription="slide"
           aria-label="<%= index + 1 %> of <%= @companies.size %>"
         >
-
           <% if company[:layout] == "quotes" %>
             <svg class="block mb-16 w-24 h-20">
               <use xlink:href="#sprite-quote"></use>
@@ -54,7 +53,7 @@
 
           <% if company[:layout] == "casestudies" %>
             <div class="flex justify-evenly text-cool-black full-width flex-col md:flex-row" data-id="showcase-casestudy">
-            <% company[:columns].each_with_index do |col, n| %>
+              <% company[:columns].each_with_index do |col, n| %>
                 <% if company[:columns].last == col %>
                   <div class="flex-1 mt-40 sm:mt-0 <%= col[:classname] %>" data-id="casestudy-column">
                     <p class="text-h4 pb-24"><%= col[:heading] %></p>
@@ -69,7 +68,7 @@
                     <p class="text-p1 font-light mb-0 sm:mb-32"><%= col[:text] %></p>
                   </div>
                 <% end %>
-            <% end %>
+              <% end %>
             </div>
           <% end %>
         </li>

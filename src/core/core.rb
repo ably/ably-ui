@@ -1,6 +1,9 @@
-require "json"
+require 'json'
 
-MEGANAV_DATA = JSON.parse(File.read(File.join(File.dirname(__FILE__), 'meganav', 'component.json')))
+MEGANAV_DATA =
+  JSON.parse(
+    File.read(File.join(File.dirname(__FILE__), 'meganav', 'component.json'))
+  )
 
 module AblyUi
   module Core
@@ -10,11 +13,15 @@ module AblyUi
       end
 
       def themes
-        MEGANAV_DATA["themes"].deep_transform_keys { |key| key.underscore.to_sym }
+        MEGANAV_DATA['themes'].deep_transform_keys do |key|
+          key.underscore.to_sym
+        end
       end
 
       def panels
-        MEGANAV_DATA["panels"].map { |panel| panel.deep_transform_keys { |key| key.underscore.to_sym } }
+        MEGANAV_DATA['panels'].map do |panel|
+          panel.deep_transform_keys { |key| key.underscore.to_sym }
+        end
       end
 
       def theme(style)

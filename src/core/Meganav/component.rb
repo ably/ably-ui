@@ -1,4 +1,4 @@
-require "json"
+require 'json'
 
 module AblyUi
   module Core
@@ -13,10 +13,26 @@ module AblyUi
 
       def panels
         [
-          { label: "Platform", id: "platform-panel", class: "AblyUi::Core::MeganavContentPlatform" },
-          { label: "Use Cases", id: "use-cases-panel", class: "AblyUi::Core::MeganavContentUseCases" },
-          { label: "Why Ably", id: "why-ably-panel", class: "AblyUi::Core::MeganavContentWhyAbly" },
-          { label: "Developers", id: "developers-panel", class: "AblyUi::Core::MeganavContentDevelopers" },
+          {
+            label: 'Platform',
+            id: 'platform-panel',
+            class: 'AblyUi::Core::MeganavContentPlatform'
+          },
+          {
+            label: 'Use Cases',
+            id: 'use-cases-panel',
+            class: 'AblyUi::Core::MeganavContentUseCases'
+          },
+          {
+            label: 'Why Ably',
+            id: 'why-ably-panel',
+            class: 'AblyUi::Core::MeganavContentWhyAbly'
+          },
+          {
+            label: 'Developers',
+            id: 'developers-panel',
+            class: 'AblyUi::Core::MeganavContentDevelopers'
+          }
         ]
       end
     end
