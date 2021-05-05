@@ -95,8 +95,41 @@ commands:
       - run: |
           cd preview
           RAILS_ENV=test bin/rails assets:precompile assets:clean
+  lint:
+    description: Run eslint on library
+    steps:
+      - run:
+          command: |
+            mkdir -p ~/reports
+            yarn lint --format junit --output-file ~/reports/eslint.xml
+          when: always
+      - store_test_results:
+          path: ~/reports
+      - store_artifacts:
+          path: ~/reports
+
+  format_check:
+    description: Run prettier on library
+    steps:
+      - run: yarn format:check
 
 jobs:
+  lint:
+    executor:
+      name: default
+      tag: 3.0.0
+    steps:
+      - checkout
+      - yarn_install
+      - lint
+  format_check:
+    executor:
+      name: default
+      tag: 3.0.0
+    steps:
+      - checkout
+      - yarn_install
+      - format_check
   cypress_tests:
     executor:
       name: default
@@ -132,3 +165,5 @@ workflows:
   build:
     jobs:
       - cypress_tests
+      - lint
+      - format_check
