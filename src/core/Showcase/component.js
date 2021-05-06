@@ -28,7 +28,7 @@ const moveControlsContainer = (controlsContainer, currentIndex) => {
 
   const width = widthChildren / countChildren;
   const firstOrLast = !currentIndex || !(countChildren - currentIndex - 1);
-  const offsetLeft = !firstOrLast ? parentCenter - (width / 2) : 0;
+  const offsetLeft = !firstOrLast ? parentCenter - width / 2 : 0;
   const left = currentIndex * width - (offsetLeft >> 0);
 
   parentNode.scrollTo({ left, behavior: "smooth" });

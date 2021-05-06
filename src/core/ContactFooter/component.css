@@ -9,5 +9,4 @@
   .ui-contact-footer-box {
     @apply p-24 sm:p-32 xl:p-40 bg-white flex flex-col justify-between rounded-sm;
   }
-
 }
