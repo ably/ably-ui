@@ -371,6 +371,16 @@ To publish, run:
 
 This will release the packages, update library & preview app and create & push the commit and tag.
 
+### Updating dependent apps
+
+After releasing a version, if you have GITHUB_REGISTRY_TOKEN and GITHUB_REGISTRY_USERNAME (without the @) set you can run:
+
+```
+yarn update:all
+```
+
+This will trigger github actions in supported apps to create a PR with an ably-ui version update.
+
 ### Running tests
 
 The repo includes [Cypress](https://www.cypress.io/) for snapshot, screenshot, parity and behaviour testing. The preview app contains routes under `/components` that are accessed in those tests.
