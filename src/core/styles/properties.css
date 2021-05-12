@@ -32,6 +32,11 @@
   --syntax-red: #d54e53;
   --syntax-lilac: #bb87d3;
 
+  /* uptime status colors */
+  --uptime-color-up: #39b54a;
+  --uptime-color-trouble: #e87623;
+  --uptime-color-down: #e6242c;
+
   /* flat colors for social icons */
   --icon-color-linkedin: #1269bf;
   --icon-color-twitter: #2caae1;

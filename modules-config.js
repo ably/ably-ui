@@ -24,6 +24,7 @@ module.exports = [
       "Footer",
       "Showcase",
       "Code",
+      "Uptime",
     ],
   },
   {

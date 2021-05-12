@@ -9,6 +9,7 @@
 @import "@ably/ably-ui/core/Footer/component.css";
 @import "@ably/ably-ui/core/Showcase/component.css";
 @import "@ably/ably-ui/core/Code/component.css";
+@import "@ably/ably-ui/core/Uptime/component.css";
 @import "@ably/ably-ui/core/styles.css";
 
 @font-face {

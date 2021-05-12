@@ -1,0 +1,120 @@
+exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
+<div class="ui-uptime-widget" data-id="uptime">
+  <div class="ui-uptime-graph">
+    <ul class="ui-uptime-list">
+      <li class="ui-uptime-day ui-uptime-up" data-label="13 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="12 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="11 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="10 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="09 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="08 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="07 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="06 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="05 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="04 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="03 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="02 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="01 May UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="30 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="29 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="28 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="27 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="26 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="25 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="24 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="23 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="22 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="21 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="20 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="19 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="18 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="17 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="16 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="15 Apr UTC"></li>
+      <li class="ui-uptime-seperator"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="14 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="13 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="12 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="11 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="10 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="09 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="08 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="07 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="06 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="05 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="04 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="03 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="02 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="01 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="31 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="30 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="29 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="28 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="27 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="26 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="25 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="24 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="23 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="22 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="21 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="20 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="19 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="18 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="17 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="16 Mar UTC"></li>
+      <li class="ui-uptime-seperator"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="15 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="14 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="13 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="12 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="11 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="10 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="09 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="08 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="07 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="06 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="05 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="04 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="03 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="02 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="01 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="28 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="27 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="26 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="25 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="24 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="23 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="22 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="21 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="20 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="19 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="18 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="17 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="16 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="15 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="14 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up" data-label="13 Feb UTC"></li>
+    </ul>
+  </div>
+  <div class="ui-uptime-footer">
+    <div class="ui-uptime-legend">
+      <span class="ui-uptime-key ui-uptime-up">All good</span
+      ><span class="ui-uptime-key ui-uptime-trouble">Performance issue</span
+      ><span class="ui-uptime-key ui-uptime-down">Service disruption</span>
+    </div>
+    <div class="ui-uptime-link-back">
+      <a href="//status.ably.com">More on our status site</a>
+      <svg class="w-12 h-12 ml-4 transform -rotate-90">
+        <use xlink:href="#sprite-disclosure-arrow-path"></use>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
+<div class="ui-uptime-error" data-id="uptime">
+  <strong>An Error has occured.</strong><em>Failed to fetch</em
+  ><span>https://does-not-exist.ably.com/not/available.json</span>
+</div>
+`;

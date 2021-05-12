@@ -1,0 +1,115 @@
+@layer components {
+  .ui-uptime-widget {
+    --status-up: var(--uptime-color-up);
+    --status-trouble: var(--uptime-color-trouble);
+    --status-down: var(--uptime-color-down);
+    --ui-uptime-key-size: 1.625rem;
+    --tooltip-offset: 3.5rem;
+
+    max-width: var(--bp-lg);
+    color: inherit;
+    @apply m-auto font-sans antialiased;
+  }
+
+  .ui-uptime-list {
+    @apply flex flex-wrap flex-row list-none p-0 m-0 items-center;
+  }
+
+  .ui-uptime-day {
+    @apply h-40 relative flex-auto p-0 my-0 mx-1 bg-cool-black;
+  }
+
+  .ui-uptime-day:hover {
+    filter: brightness(1.2);
+    @apply z-10;
+  }
+  .ui-uptime-day:hover:after {
+    transform: translate(-45%);
+    @apply block;
+  }
+
+  .ui-uptime-day:after {
+    content: attr(data-label);
+    top: calc(var(--tooltip-offset) * -1);
+    @apply absolute hidden text-p3 border rounded-lg border-light-grey;
+    @apply py-12 px-16 shadow-tooltip whitespace-nowrap text-cool-black;
+    @apply bg-white text-center z-10;
+  }
+
+  .ui-uptime-seperator {
+    @apply my-12 h-1 w-full relative;
+    @apply uptime-md:w-32 uptime-md:h-80 uptime-md:m-0 uptime-md:bg-none;
+  }
+
+  .ui-uptime-seperator:before {
+    content: "";
+    left: 48%;
+    @apply uptime-md:absolute uptime-md:h-full uptime-md:w-1 uptime-md:bg-dark-grey uptime-md:z-0;
+  }
+
+  .ui-uptime-up {
+    background: var(--status-up);
+  }
+
+  .ui-uptime-trouble {
+    background: var(--status-trouble);
+  }
+
+  .ui-uptime-down {
+    background: var(--status-down);
+  }
+
+  .ui-uptime-legend {
+    @apply whitespace-nowrap;
+  }
+
+  .ui-uptime-key {
+    @apply block mt-16 mr-20 bg-transparent;
+    @apply sm:inline-block  sm:mt-0;
+  }
+
+  .ui-uptime-key:first-child {
+    @apply mt-0;
+  }
+
+  .ui-uptime-key::before {
+    content: " ";
+    width: var(--ui-uptime-key-size);
+    height: var(--ui-uptime-key-size);
+    @apply inline-block mr-16 bg-cool-black align-text-bottom rounded-full;
+  }
+
+  .ui-uptime-key.ui-uptime-up:before {
+    background: var(--status-up);
+  }
+
+  .ui-uptime-key.ui-uptime-trouble:before {
+    background: var(--status-trouble);
+  }
+
+  .ui-uptime-key.ui-uptime-down:before {
+    background: var(--status-down);
+  }
+
+  .ui-uptime-footer {
+    @apply mt-40 flex justify-between items-start flex-col;
+    @apply uptime-md:flex-row uptime-md:items-center;
+  }
+
+  .ui-uptime-link-back {
+    @apply mt-40 whitespace-nowrap;
+    @apply uptime-md:mt-0;
+  }
+
+  .ui-uptime-link-back a {
+    @apply text-p1 text-gui-default font-medium no-underline;
+  }
+
+  .ui-uptime-error {
+    @apply flex flex-col uptime-md:flex-row justify-center p-24 bg-gui-error;
+  }
+
+  .ui-uptime-error > * {
+    @apply mx-4;
+  }
+}
