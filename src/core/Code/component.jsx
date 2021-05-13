@@ -1,9 +1,10 @@
 import React from "react";
+import T from "prop-types";
 
 import "./component.css";
 import { highlight } from "./component.js";
 
-export default function Code({ language, snippet }) {
+const Code = ({ language, snippet }) => {
   const HTMLraw = highlight(language, `${snippet}`.trim());
   const className = `font-mono language-${language}`;
   return (
@@ -13,4 +14,11 @@ export default function Code({ language, snippet }) {
       </pre>
     </div>
   );
-}
+};
+
+Code.propTypes = {
+  language: T.string,
+  snippet: T.string,
+};
+
+export default Code;
