@@ -59,9 +59,9 @@
     "build:verbose": "node scripts/build.js -v",
     "watch": "node scripts/build.js -w",
     "dev": "./cleanstart.sh",
-    "format:check": "yarn prettier -c *.js src cypress",
-    "format:write": "yarn prettier -w *.js src cypress",
-    "lint": "eslint *.js src cypress",
+    "format:check": "yarn prettier -c *.js src src/**/*.jsx cypress",
+    "format:write": "yarn prettier -w *.js src src/**/*.jsx cypress",
+    "lint": "eslint *.js src src/**/*.jsx cypress",
     "cy:open": "cypress open",
     "cy:headless": "cypress run --quiet",
     "update:all": "./scripts/update-dependents.sh"
