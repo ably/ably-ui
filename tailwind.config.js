@@ -22,6 +22,8 @@ module.exports = {
       md: "1040px",
       lg: "1280px",
       xl: "1440px",
+      // utility breakpoints not part of design system
+      "uptime-md": "800px",
     },
     fontSize: {
       title: ["var(--fs-title)", "var(--lh-tight)"],
@@ -118,6 +120,7 @@ module.exports = {
     }),
     boxShadow: {
       subtle: "0px 1px 0px var(--color-mid-grey)",
+      tooltip: "0px 5px 10px 0px #00000022",
       container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
       "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
       input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", // color-gui-hover at 50%

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/api/me', to: 'api/user_session#me'
   get '/api/blog', to: 'api/blog#recent_blog_posts'
+  get '/api/uptime', to: 'api/uptime#uptime_json'
 
   root 'pages#index'
 end
