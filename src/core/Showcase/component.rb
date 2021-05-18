@@ -70,7 +70,7 @@ module AblyUi
         {
           hubspot: {
             quote:
-              "Ably’s realtime infrastructure layer seamlessly supports HubSpot's entire realtime needs and helps us meet technical, business, and product development requirements.",
+              "Ably&#39;s realtime infrastructure layer seamlessly supports HubSpot's entire realtime needs and helps us meet technical, business, and product development requirements.",
             author: {
               name: 'Max Freiert',
               thumbnail:
