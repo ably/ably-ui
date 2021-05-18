@@ -13,6 +13,7 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+import "@percy/cypress";
 import "cypress-plugin-snapshots/commands";
 import "./commands";
 
