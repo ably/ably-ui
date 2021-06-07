@@ -31,7 +31,7 @@ export const ConnectStateWrapper = (Component, selectors) => {
     // Create a store subscription for each selector. Depending on your use case, this can be inefficient.
     // When optimising for renders, look for wins with selectors better for your use and using connectState directly.
     Object.keys(selectors).forEach((key) => {
-      connectState(selectors[key], () => setStateForKey(key));
+      connectState(selectors[key], setStateForKey(key));
     });
   }, []);
 
