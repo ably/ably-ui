@@ -4,6 +4,3 @@ vendor
 ./preview/public
 ./preview/tmp
 node_modules
-
-# See https://github.com/adamzapasnik/prettier-plugin-eex/issues/15
-src/core/SignOutLink/component.html.erb

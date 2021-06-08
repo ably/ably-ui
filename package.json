@@ -1,6 +1,6 @@
 {
   "name": "@ably/ably-ui",
-  "version": "2.6.1",
+  "version": "2.6.1-dev.05ec635",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
@@ -44,8 +44,7 @@
     "postcss-insert": "^1.0.0",
     "postcss-loader": "^4.0.4",
     "postcss-nested": "^5.0.1",
-    "prettier": "^2.2.1",
-    "prettier-plugin-erb": "^0.1.0",
+    "prettier": "^2.3.0",
     "prop-types": "^15.7.2",
     "svg-spritemap-webpack-plugin": "^3.7.1",
     "tailwindcss": "^2.0.1",
