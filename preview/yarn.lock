@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.1/2c09aa0dea6a2efae9eb3b27654f4f4f95172f39280287a2794e80f238a14879#5413a7a1638c6ae6e73ff4f071b80715564d43f6"
-  integrity sha512-Lqo2SuP5YhkuAJyW95Y3syV1/pn+tohJsRAu4GjbGFG8wBe/uZDh2Ze2/UBYDY/S5sdugpmnHTPp7KJsBiT2EA==
+"@ably/ably-ui@2.6.1-dev.05ec635":
+  version "2.6.1-dev.05ec635"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.1-dev.05ec635/e971bc9053a7af358a1eab99e8308c8dea7f97b311993127f19088f14c72601f#f5e60c386f56c765cef6cc91a47c440ad5cabc70"
+  integrity sha512-70XrO54FsbTp3q2uEUGBHfKZ+zFDZ0v2iBBFl15V/gLuZQAV63pfxr9GJwDsZFnPGSzhUQy4JJMKSQ63vuPyZQ==
   dependencies:
     array-flat-polyfill "^1.0.1"
     highlight.js "^10.7.2"
@@ -1035,7 +1035,8 @@
     webpack-cli "^3.3.10"
     webpack-sources "^1.4.3"
 
-"@tailwindcss/postcss7-compat@^2.0.3", tailwindcss@^2.0.3, "tailwindcss@npm:@tailwindcss/postcss7-compat":
+"@tailwindcss/postcss7-compat@^2.0.3", "tailwindcss@npm:@tailwindcss/postcss7-compat":
+  name tailwindcss
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@tailwindcss/postcss7-compat/-/postcss7-compat-2.1.4.tgz#427a2fd1837a3d9a54a296cc8b86a3f76b1452a7"
   integrity sha512-KYRj/AGNwE4tPf02IvT+J36Twlrwg/OJJuSckSupX2T+xIOHSXPugNJZ7Stn9F67hh/qH+2Y2HXK6vpBadW6qw==
