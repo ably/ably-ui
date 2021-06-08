@@ -10,6 +10,7 @@
   "files": [
     "core",
     "reset",
+    "react",
     "tailwind.config.js"
   ],
   "devDependencies": {

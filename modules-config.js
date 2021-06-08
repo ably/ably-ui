@@ -32,4 +32,9 @@ module.exports = [
     directory: "reset",
     components: [],
   },
+  {
+    name: "React",
+    directory: "react",
+    components: ["ConnectStateWrapper"],
+  },
 ];
