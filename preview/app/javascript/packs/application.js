@@ -7,7 +7,6 @@ import Code from "@ably/ably-ui/core/Code";
 import Uptime from "@ably/ably-ui/core/Uptime";
 
 import {
-  reactRenderer,
   loadSprites,
   createRemoteDataStore,
   attachStoreToWindow,
@@ -16,6 +15,8 @@ import {
   fetchSessionData,
   reducerSessionData,
 } from "@ably/ably-ui/core/scripts";
+
+import { reactRenderer } from "@ably/ably-ui/react/scripts";
 
 import sprites from "@ably/ably-ui/core/sprites.svg";
 
