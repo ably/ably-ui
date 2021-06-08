@@ -4,7 +4,7 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 import MeganavBlogPostsList from "../MeganavBlogPostsList/component.jsx";
 
 import { selectRecentBlogPosts } from "../remote-blogs-posts";
-import { ConnectStateWrapper } from "../remote-react-util";
+import { ConnectStateWrapper } from "../../react/ConnectStateWrapper/component.jsx";
 
 const MeganavContentWhyAbly = () => {
   const BlogPostsList = ConnectStateWrapper(MeganavBlogPostsList, { recentBlogPosts: selectRecentBlogPosts });
