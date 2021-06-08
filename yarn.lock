@@ -4970,19 +4970,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-html-templates@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/prettier-html-templates/-/prettier-html-templates-0.1.0.tgz#dfa12bd71c032e3b796e8c645210c5614403575d"
-  integrity sha512-KdLveYzO2kJLiwUAebd5UFeKP8h3OqFhOiLbkgeIuS1WNoCRTyxW4KuyGfbh3F+Rp/2A6mipRxCq2zPi+//pmg==
-
-prettier-plugin-erb@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-erb/-/prettier-plugin-erb-0.1.0.tgz#02e1b05ed0736adb5ac46642d2c093126540d390"
-  integrity sha512-tBtVX7THf5YrOPl7ssoFHllehT8jXCZJuu+7EdrRdQ6yPsyqYkZo2fUJkP0lhufOBnd494QmSIjHcAwankKiHg==
-  dependencies:
-    prettier-html-templates "^0.1.0"
-
-prettier@>=1.10, prettier@^2.2.1:
+prettier@>=1.10, prettier@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.1.tgz#76903c3f8c4449bc9ac597acefa24dc5ad4cbea6"
   integrity sha512-p+vNbgpLjif/+D+DwAZAbndtRrR0md0MwfmOVN9N+2RgyACMT+7tfaRnT+WDPkqnuVwleyuBIG2XBxKDme3hPA==
