@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   remote: https://rubygems.pkg.github.com/ably/
   specs:
-    ably-ui (2.6.1.dev.05ec635)
-      view_component (~> 2.21.0)
+    ably-ui (2.6.2)
+      view_component (~> 2.33.0)
     actioncable (6.0.3.4)
       actionpack (= 6.0.3.4)
       nio4r (~> 2.0)
@@ -148,7 +148,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
-    view_component (2.21.0)
+    view_component (2.33.0)
       activesupport (>= 5.0.0, < 7.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
@@ -168,7 +168,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ably-ui (= 2.6.1.dev.05ec635)!
+  ably-ui (= 2.6.2)!
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
@@ -178,7 +178,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
-  view_component (~> 2.21.0)
+  view_component (~> 2.33.0)
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 

@@ -32,8 +32,8 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Rails shared components framework
-gem 'view_component', '~> 2.21.0', require: 'view_component/engine'
+gem 'view_component', '~> 2.33.0', require: 'view_component/engine'
 
 gem 'responders'
 
-gem 'ably-ui', '2.6.1.dev.05ec635', require: 'ably_ui', source: 'https://rubygems.pkg.github.com/ably'
+gem 'ably-ui', '2.6.2', require: 'ably_ui', source: 'https://rubygems.pkg.github.com/ably'

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.6.1-dev.05ec635":
-  version "2.6.1-dev.05ec635"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.1-dev.05ec635/e971bc9053a7af358a1eab99e8308c8dea7f97b311993127f19088f14c72601f#f5e60c386f56c765cef6cc91a47c440ad5cabc70"
-  integrity sha512-70XrO54FsbTp3q2uEUGBHfKZ+zFDZ0v2iBBFl15V/gLuZQAV63pfxr9GJwDsZFnPGSzhUQy4JJMKSQ63vuPyZQ==
+"@ably/ably-ui@2.6.2":
+  version "2.6.2"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2/a490bfc99717edf2219e696694009d35de39952fda55ae3cdd9de180eb271506#780e1c49482fab5b990dc3e0cd6c929acb6ad75b"
+  integrity sha512-fwnglVn5UObAPkeUjpuqVpj2Ya3+THyVfOCddWTj93pTugGmAowUe3pAT8tRtSrF5ZzbNsUg73bCGrim/U9Pag==
   dependencies:
     array-flat-polyfill "^1.0.1"
     highlight.js "^10.7.2"
