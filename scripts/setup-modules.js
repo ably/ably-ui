@@ -36,15 +36,17 @@ const rubyPathResolve = (moduleDir, component = "", transformCase = true) =>
     transformCase ? snakeCase(component) : component
   );
 
-const print = (msg, exec) => (...args) => {
-  printWrite(msg(...args));
+const print =
+  (msg, exec) =>
+  (...args) => {
+    printWrite(msg(...args));
 
-  if (exec(...args)) {
-    return;
-  }
+    if (exec(...args)) {
+      return;
+    }
 
-  printDone();
-};
+    printDone();
+  };
 
 const copyRubyModuleConfig = print(
   (mod) => `> Copying ruby module files for ${colorizeMod(mod.name)} ... `,
@@ -88,7 +90,15 @@ const copyComponentTemplates = print(
     const rubyPath = rubyPathResolve(mod.directory, componentName);
     const srcPath = srcPathResolve(mod.directory, componentName);
 
-    findFiles(srcPath, rubyPredicate).forEach(copyFromTo(srcPath, rubyPath));
+    findFiles(srcPath, rubyPredicate).forEach((filename) => {
+      fs.copyFileSync(
+        path.join(srcPath, filename),
+        path.join(
+          rubyPath,
+          filename.replace("component", snakeCase(componentName))
+        )
+      );
+    });
   }
 );
 
