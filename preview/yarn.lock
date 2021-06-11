@@ -2,13 +2,15 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.6.2":
-  version "2.6.2"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2/a490bfc99717edf2219e696694009d35de39952fda55ae3cdd9de180eb271506#780e1c49482fab5b990dc3e0cd6c929acb6ad75b"
-  integrity sha512-fwnglVn5UObAPkeUjpuqVpj2Ya3+THyVfOCddWTj93pTugGmAowUe3pAT8tRtSrF5ZzbNsUg73bCGrim/U9Pag==
+"@ably/ably-ui@2.6.2-dev.a79e26c":
+  version "2.6.2-dev.a79e26c"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2-dev.a79e26c/fa4ffc2c85e5f662c56c29b04f16cd709b9055694a083249e755c1bb13442c6a#ee596bd195c43e2ba313d7df34b5fb528f9c55de"
+  integrity sha512-looPIzjMqix+QZovaWJMgULW7h73mNsf7LPIB95fjXwCFuPY6sPrEleCDXz/EPP5+SIgmTNa7mwbFg3jeRdSzQ==
   dependencies:
     array-flat-polyfill "^1.0.1"
     highlight.js "^10.7.2"
+    js-cookie "^2.2.1"
+    lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
     react "^17.0.1"
     react-dom "^17.0.1"
@@ -4384,6 +4386,11 @@ js-base64@^2.1.8:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
   integrity sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
