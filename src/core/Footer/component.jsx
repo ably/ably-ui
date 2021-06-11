@@ -218,7 +218,7 @@ export default function Footer({ paths }) {
 
       <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
         <div className="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-          <div className="ui-footer-legals">
+          <div className="inline-flex">
             <a href="/privacy" className="pr-24 ui-footer-link">
               Cookies
             </a>

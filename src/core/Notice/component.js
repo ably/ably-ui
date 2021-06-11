@@ -2,18 +2,38 @@ import "./component.css";
 import Cookie from "js-cookie";
 import debounce from "lodash.debounce";
 
+import { queryId } from "../dom-query";
+
 const COOKIE_EXPIRY = 90;
 const COLLAPSE_TRIGGER_DISTANCE = 10;
 const SCROLL_LISTENER_DEBOUNCE = 100;
 
+const adjustFlashMargin = (open) => {
+  // HACK ALERT
+  // Add margin to flashes when opening the notice.
+  // Flashes are react components and this notice needs to work as a view-component and react component.
+  // We could do this with redux but then we potentially update state on every scroll event, which
+  // even with debounce will deplate our frame budget.
+
+  const flash = queryId("ui-flashes");
+
+  if (flash) {
+    flash.style.marginTop = open ? `4rem` : null;
+  }
+};
+
 const hideNotice = (bannerContainer) => {
   bannerContainer.style.maxHeight = 0;
   bannerContainer.style.overflow = "hidden";
+
+  adjustFlashMargin(false);
 };
 
 const showNotice = (bannerContainer) => {
   bannerContainer.style.maxHeight = null;
   bannerContainer.style.overflow = null;
+
+  adjustFlashMargin(true);
 };
 
 const setupRememberClosed = (cookieId, noticeId) => {

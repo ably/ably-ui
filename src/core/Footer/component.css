@@ -7,11 +7,6 @@
     @apply text-menu3 text-cool-black font-light hover:text-gui-hover block;
   }
 
-  .ui-footer-legals {
-    /* Remove the extra spacing that comes from inline elements */
-    display: inline-flex;
-  }
-
   .ui-footer-link {
     @apply text-gui-default hover:text-gui-hover hover:underline text-menu3 font-light;
   }
