@@ -1,9 +1,12 @@
 require 'json'
+require_relative '../notice/notice.rb'
 
 module AblyUi
   module Core
     class Meganav < ViewComponent::Base
       include MeganavConfig
+
+      renders_one :notice, AblyUi::Core::Notice
 
       def initialize(session_data: {}, theme_name: :white)
         @session_data = session_data

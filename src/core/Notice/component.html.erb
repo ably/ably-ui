@@ -1,0 +1,18 @@
+<%# Note the style attribute is used for entry animation %>
+<div class="ui-announcement" data-id="ui-notice" style="max-height: 0; overflow: hidden">
+  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+    <%= content_wrapper class: "font-light w-full pr-8 text-p3" do %>
+      <strong class="font-medium whitespace-nowrap pr-4"><%= @contents[:title] %></strong>
+      <span class="pr-4"><%= @contents[:body_text] %></span>
+      <span class="underline cursor-pointer whitespace-nowrap"><%= @contents[:button_label] %></span>
+    <% end %>
+
+    <% if close_btn? %>
+      <%= button_tag type: 'button', class: 'mt-4 ml-auto border-none bg-none' do %>
+        <%= tag.svg class: ["h-24", "w-24", "ui-icon-white"] do %>
+          <use xlink:href="#sprite-close"></use>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
