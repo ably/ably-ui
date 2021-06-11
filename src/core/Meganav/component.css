@@ -21,7 +21,7 @@
   .ui-meganav-panel-account {
     z-index: var(--stacking-context-meganav-dropdown);
 
-    @apply absolute top-64 left-0 right-0;
+    @apply absolute left-0 right-0;
     @apply border-mid-grey border-t shadow-container;
   }
 
