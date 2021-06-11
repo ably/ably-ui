@@ -3,7 +3,7 @@ describe("Code Parity test", () => {
     cy.viewport("macbook-15");
     cy.compareComponents({
       reactComponentUrl: "/components/code",
-      viewComponentUrl: "/components/code?vw=true",
+      viewComponentUrl: "/components/code?framework=vw",
       selector: "body",
     });
   });

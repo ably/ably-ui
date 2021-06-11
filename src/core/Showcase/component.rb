@@ -4,16 +4,22 @@ module AblyUi
       include AblyUi::Core::Util
       def initialize(companies: default_companies, layout: 'quotes')
         @random_id = append_random_postfix('showcase-slides')
-        @companies =
-          companies.map do |key|
-            logo = company_logos[key]
-            logo[:layout] = layout
+        @companies = companies
+        @layout = layout
+        @companies_data_cache = nil
+      end
 
-            content = layout != 'quotes' ? case_studies : quotations
+      def companies_data
+        @companies_data_cache ||=
+          @companies.map do |key|
+            logo = company_logos[key]
+            logo[:layout] = @layout
+
+            content = @layout != 'quotes' ? case_studies : quotations
 
             if !content[key]
               # Exception errors can not be rescued
-              raise Exception.new "Showcase Error: Can't find content item [#{key}] for layout [#{layout}]"
+              raise Exception.new "Showcase Error: Can't find content item [#{key}] for layout [#{@layout}]"
             end
 
             logo.merge(content[key])

@@ -3,7 +3,7 @@ import { MOBILE_DROPDOWN_CONTROL } from "./shared";
 
 beforeEach(fixSnapshotSpec(__filename));
 
-describe("ControlMobileDropdown", () => {
+describe.only("ControlMobileDropdown", () => {
   const sharedSpecs = () => {
     it("renders correctly by default", () => {
       cy.get(MOBILE_DROPDOWN_CONTROL).toMatchSnapshot();
@@ -28,7 +28,7 @@ describe("ControlMobileDropdown", () => {
 
   describe("vw", () => {
     beforeEach(() => {
-      cy.visit("/components/meganav?vw=true");
+      cy.visit("/components/meganav?framework=vw");
     });
 
     sharedSpecs();

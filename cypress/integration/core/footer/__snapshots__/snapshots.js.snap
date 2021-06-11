@@ -154,9 +154,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link"
-            >Customers</a
-          >
+          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
         </li>
         <li class="p-menu-row-snug">
           <a href="/case-studies" class="ui-footer-menu-row-link"
@@ -258,7 +256,9 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         </div>
       </div>
     </div>
-    <div class="md:text-right col-span-full md:col-span-1 ml-8">
+    <div
+      class="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto"
+    >
       <img
         class="mr-24 w-96 h-96"
         src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
@@ -531,7 +531,9 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </div>
       </div>
     </div>
-    <div class="md:text-right col-span-full md:col-span-1 ml-8">
+    <div
+      class="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto"
+    >
       <img
         class="mr-24 w-96 h-96"
         src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"

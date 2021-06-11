@@ -265,7 +265,7 @@ export default function Footer({ paths }) {
           </div>
         </div>
 
-        <div className="md:text-right col-span-full md:col-span-1 ml-8">
+        <div className="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto">
           <img className="mr-24 w-96 h-96" src={paths.rocketList} alt="Rocket List 2021" />
           <img className="w-96 h-96" src={paths.flexibleCompanies} alt="Flexible Companies 2021" />
         </div>

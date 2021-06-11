@@ -47,7 +47,8 @@ describe("Opening panels on desktop", () => {
       cy.get(PLATFORM_PANEL_OPEN_CONTROL).trigger("click").focus();
       cy.get(PLATFORM_PANEL).should("be.visible");
 
-      cy.get(OUTSIDE_MEGANAV).trigger("click");
+      // We force a click because body has no height and Cypress tries to click on the open nav instead
+      cy.get(OUTSIDE_MEGANAV).trigger("click", { force: true });
       cy.get(PLATFORM_PANEL).should("not.be.visible");
     });
   };
@@ -66,7 +67,7 @@ describe("Opening panels on desktop", () => {
 
   describe("vw", () => {
     beforeEach(() => {
-      cy.visit("/components/meganav?vw=true");
+      cy.visit("/components/meganav?framework=vw");
     });
 
     sharedSpecs();
@@ -110,7 +111,7 @@ describe("Opening panels on mobile", () => {
 
   describe("vw", () => {
     beforeEach(() => {
-      cy.visit("/components/meganav?vw=true");
+      cy.visit("/components/meganav?framework=vw");
     });
 
     sharedSpecs();

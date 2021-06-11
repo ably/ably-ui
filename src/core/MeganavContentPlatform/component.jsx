@@ -84,6 +84,12 @@ const MeganavContentPlatform = ({ paths }) => (
           </a>
         </li>
         <li>
+          <a href="/four-pillars-of-dependability#availability" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">High scalability & availability</p>
+            <p className="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
+          </a>
+        </li>
+        <li>
           <a href="/network" className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Global edge network</p>
             <p className="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 200+ PoPs.</p>

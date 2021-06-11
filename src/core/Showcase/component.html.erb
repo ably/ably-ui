@@ -7,7 +7,7 @@
 >
   <div class="ui-showcase-overflow-container">
     <ol class="ui-showcase-logo-wrapper" data-id="showcase-controls">
-      <% @companies.each_with_index do |company, index| %>
+      <% companies_data.each_with_index do |company, index| %>
         <li class="ui-showcase-logo">
           <%= tag.button class: ['focus:outline-gui-focus', 'border-none', 'p-0', 'transition-filter'],
                          type: 'button',
@@ -20,18 +20,18 @@
     </ol>
 
     <div class="ui-showcase-index-bar">
-      <div data-id="showcase-index-bar" class="transform transition-transform w-1/<%= @companies.size %> h-4 bg-active-orange relative"></div>
+      <div data-id="showcase-index-bar" class="transform transition-transform w-1/<%= companies_data.size %> h-4 bg-active-orange relative"></div>
     </div>
   </div>
 
   <div class="overflow-x-hidden">
     <ol class="flex transform transition-transform" data-id="showcase-slides" id="<%= @random_id %>">
-      <% @companies.each_with_index do |company, index| %>
+      <% companies_data.each_with_index do |company, index| %>
         <li
           class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-64 bg-white"
           role="group"
           aria-roledescription="slide"
-          aria-label="<%= index + 1 %> of <%= @companies.size %>"
+          aria-label="<%= index + 1 %> of <%= companies_data.size %>"
         >
           <% if company[:layout] == "quotes" %>
             <svg class="block mb-16 w-24 h-20">

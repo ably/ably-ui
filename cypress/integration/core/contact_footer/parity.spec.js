@@ -3,7 +3,7 @@ describe("Contact Footer Panel", () => {
     cy.viewport("macbook-15");
     cy.compareComponents({
       reactComponentUrl: "/components/contact-footer",
-      viewComponentUrl: "/components/contact-footer?vw=true",
+      viewComponentUrl: "/components/contact-footer?framework=vw",
       selector: '[data-id="contact-footer"]',
     });
   });
@@ -12,7 +12,7 @@ describe("Contact Footer Panel", () => {
     cy.viewport("ipad-2");
     cy.compareComponents({
       reactComponentUrl: "/components/contact-footer",
-      viewComponentUrl: "/components/contact-footer?vw=true",
+      viewComponentUrl: "/components/contact-footer?framework=vw",
       selector: '[data-id="contact-footer"]',
     });
   });
@@ -21,7 +21,7 @@ describe("Contact Footer Panel", () => {
     cy.viewport("iphone-8");
     cy.compareComponents({
       reactComponentUrl: "/components/contact-footer",
-      viewComponentUrl: "/components/contact-footer?vw=true",
+      viewComponentUrl: "/components/contact-footer?framework=vw",
       selector: '[data-id="contact-footer"]',
     });
   });
