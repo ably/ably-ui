@@ -1,8 +1,14 @@
 class ComponentsController < ApplicationController
   def meganav
-    session[:signed_in] =  signed_in?
+    session[:signed_in] = signed_in?
     template = "meganav_#{framework}.html.erb"
-    render template, locals: { props: framework == "react" ? meganav_react_props : meganav_vw_props }
+    render template,
+           locals: {
+             props:
+               framework == 'react' ? meganav_react_props : meganav_vw_props,
+             notice_props: notice_props,
+             notice_config: notice_config
+           }
   end
 
   def show
@@ -18,10 +24,28 @@ class ComponentsController < ApplicationController
 
   def footer
     template = "footer_#{framework}.html.erb"
-    render template, locals: { props: framework == "react" ? react_footer_props : {} }
+    render template,
+           locals: {
+             props: framework == 'react' ? react_footer_props : {}
+           }
   end
 
   private
+
+  def notice_props
+    {
+      title: 'Something something',
+      body_text:
+        'Lorem ipsum dolor sit amet, in nonumes delectus nominati eam, novum recusabo an mel. Aeque maiorum patrioque te per, congue epicurei qualisque at quo. An has quis ludus appellantur. Id vis solum assentior theophrastus',
+      button_link: '/',
+      button_label: 'CLICK ME',
+      close_btn: notice_close_btn
+    }
+  end
+
+  def notice_config
+    { cookie_id: '2', notice_id: 'B', collapse: notice_collapse }
+  end
 
   def meganav_react_props
     {
@@ -32,6 +56,10 @@ class ComponentsController < ApplicationController
         blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
         blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
         blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg')
+      },
+      notice: {
+        props: notice_props,
+        config: notice_config
       }
     }
   end
@@ -40,8 +68,10 @@ class ComponentsController < ApplicationController
     {
       paths: {
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
-        rocket_list: helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
-        flexible_companies: helpers.asset_path('ably_ui/core/images/flexible-companies.png'),
+        rocket_list:
+          helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
+        flexible_companies:
+          helpers.asset_path('ably_ui/core/images/flexible-companies.png')
       }
     }
   end
@@ -51,10 +81,18 @@ class ComponentsController < ApplicationController
   end
 
   def framework
-    params['framework'].nil? ? "react" : "vw"
+    params['framework'].nil? ? 'react' : 'vw'
   end
 
   def signed_in?
-    params['signed-in'] == "true"
+    params['signed-in'] == 'true'
+  end
+
+  def notice_close_btn
+    params['notice-close-btn'] != 'false'
+  end
+
+  def notice_collapse
+    params['notice-collapse'] != 'false'
   end
 end
