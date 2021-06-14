@@ -148,6 +148,9 @@ module.exports = {
       grayscale: "grayscale(1)",
     },
     extend: {
+      backgroundImage: {
+        "gradient-active-orange": "var(--gradient-active-orange)",
+      },
       transitionProperty: {
         input: "background-color, box-shadow",
         filter: "filter",
