@@ -19,7 +19,7 @@ ContentWrapper.propTypes = {
   children: T.node,
 };
 
-const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn }) => {
+const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn, bgColor = "bg-gradient-active-orange", textColor = "text-white" }) => {
   useEffect(() => {
     NoticeScripts({
       bannerContainer: document.querySelector('[data-id="ui-notice"]'),
@@ -31,9 +31,10 @@ const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn }) 
     });
   }, []);
 
+  const wrapperClasses = ["ui-announcement", bgColor, textColor].join(" ");
+
   return (
-    // Note the style attribute is used for entry animation
-    <div className="ui-announcement" data-id="ui-notice" style={{ maxHeight: 0, overflow: "hidden" }}>
+    <div className={wrapperClasses} data-id="ui-notice" style={{ maxHeight: 0, overflow: "hidden" }}>
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-center">
         <ContentWrapper buttonLink={buttonLink}>
           <strong className="font-medium whitespace-nowrap pr-4">{title}</strong>
@@ -64,6 +65,8 @@ Notice.propTypes = {
     noticeId: T.string,
     cookieId: T.string,
   }),
+  bgColor: T.string,
+  textColor: T.string,
 };
 
 export default Notice;

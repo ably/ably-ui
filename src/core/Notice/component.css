@@ -1,6 +1,5 @@
 .ui-announcement {
-  @apply text-white font-sans;
-  background: var(--gradient-active-orange);
+  @apply font-sans;
   max-height: 37.5rem;
   transition: max-height 300ms;
 }
