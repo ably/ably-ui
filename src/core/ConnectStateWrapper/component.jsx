@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { connectState, getRemoteDataStore } from "./remote-data-store";
+import { connectState, getRemoteDataStore } from "../remote-data-store";
 
 /*
   Connect a react component to a global store.
@@ -15,15 +15,11 @@ import { connectState, getRemoteDataStore } from "./remote-data-store";
 export const ConnectStateWrapper = (Component, selectors) => {
   const [state, setState] = useState({});
 
-  const setStateForKey = (key) => (storeState) =>
-    setState(() => ({ [key]: storeState }));
+  const setStateForKey = (key) => (storeState) => setState(() => ({ [key]: storeState }));
 
   useEffect(() => {
     const store = getRemoteDataStore();
-    const resolvedState = Object.keys(selectors).reduce(
-      (acc, key) => ({ ...acc, [key]: selectors[key](store) }),
-      {}
-    );
+    const resolvedState = Object.keys(selectors).reduce((acc, key) => ({ ...acc, [key]: selectors[key](store) }), {});
 
     // Set initial state
     setState(resolvedState);
@@ -39,3 +35,5 @@ export const ConnectStateWrapper = (Component, selectors) => {
 
   return WrappedComponent;
 };
+
+export default ConnectStateWrapper;
