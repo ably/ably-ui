@@ -3,6 +3,7 @@ import Cookie from "js-cookie";
 import debounce from "lodash.debounce";
 
 import { queryId } from "../dom-query";
+import { FLASH_DATA_ID } from "../Flash/component.jsx";
 
 const COOKIE_EXPIRY = 90;
 const COLLAPSE_TRIGGER_DISTANCE = 10;
@@ -15,7 +16,7 @@ const adjustFlashMargin = (open) => {
   // We could do this with redux but then we potentially update state on every scroll event, which
   // even with debounce will deplate our frame budget.
 
-  const flash = queryId("ui-flashes");
+  const flash = queryId(FLASH_DATA_ID);
 
   if (flash) {
     flash.style.marginTop = open ? `4rem` : null;

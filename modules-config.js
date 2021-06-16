@@ -27,6 +27,7 @@ module.exports = [
       "Code",
       "Uptime",
       "ConnectStateWrapper",
+      "Flash",
     ],
   },
   {
