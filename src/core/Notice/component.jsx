@@ -35,7 +35,7 @@ const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn, bg
 
   return (
     <div className={wrapperClasses} data-id="ui-notice" style={{ maxHeight: 0, overflow: "hidden" }}>
-      <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-center">
+      <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink}>
           <strong className="font-medium whitespace-nowrap pr-4">{title}</strong>
           <span className="pr-4">{bodyText}</span>
