@@ -1,9 +1,8 @@
 @layer components {
   .ui-contact-footer {
-    background: var(--gradient-active-orange);
     background-size: 100% 100%;
     background-position: right center;
-    @apply w-full;
+    @apply w-full bg-gradient-active-orange;
   }
 
   .ui-contact-footer-box {

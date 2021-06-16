@@ -5,6 +5,7 @@ import Footer from "@ably/ably-ui/core/Footer";
 import ContactFooter from "@ably/ably-ui/core/ContactFooter";
 import Code from "@ably/ably-ui/core/Code";
 import Uptime from "@ably/ably-ui/core/Uptime";
+import Flash, { reducerFlashes } from "@ably/ably-ui/core/Flash";
 
 import {
   reactRenderer,
@@ -28,12 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const store = createRemoteDataStore({
     ...reducerBlogPosts,
     ...reducerSessionData,
+    ...reducerFlashes,
   });
 
   attachStoreToWindow(store);
 
   // Render components
-  reactRenderer({ Meganav, Footer, Code, Uptime, ContactFooter });
+  reactRenderer({ Meganav, Footer, Code, Uptime, ContactFooter, Flash });
 
   // Fetch additional data, trigger a re-render for components subscribed to store
   fetchSessionData(store, "/api/me");

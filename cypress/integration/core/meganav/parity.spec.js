@@ -2,7 +2,7 @@ describe("Logo", () => {
   it("looks the same", () => {
     cy.compareComponents({
       reactComponentUrl: "/components/meganav",
-      viewComponentUrl: "/components/meganav?vw=true",
+      viewComponentUrl: "/components/meganav?framework=vw",
       selector: '[data-id="meganav-logo"]',
     });
   });
@@ -15,7 +15,7 @@ describe("Navigation Items", () => {
 
       cy.compareComponents({
         reactComponentUrl: "/components/meganav",
-        viewComponentUrl: "/components/meganav?vw=true",
+        viewComponentUrl: "/components/meganav?framework=vw",
         selector: '[data-id="meganav-items-desktop"]',
       });
     });
@@ -25,7 +25,7 @@ describe("Navigation Items", () => {
 
       cy.compareComponents({
         reactComponentUrl: "/components/meganav?signed-in=true",
-        viewComponentUrl: "/components/meganav?vw=true&signed-in=true",
+        viewComponentUrl: "/components/meganav?framework=vw&signed-in=true",
         selector: '[data-id="meganav-items-desktop"]',
       });
     });
@@ -37,7 +37,7 @@ describe("Navigation Items", () => {
 
       cy.compareComponents({
         reactComponentUrl: "/components/meganav",
-        viewComponentUrl: "/components/meganav?vw=true",
+        viewComponentUrl: "/components/meganav?framework=vw",
         selector: '[data-id="meganav-items-mobile"]',
       });
     });
@@ -47,7 +47,7 @@ describe("Navigation Items", () => {
 
       cy.compareComponents({
         reactComponentUrl: "/components/meganav?signed-in=true",
-        viewComponentUrl: "/components/meganav?vw=true&signed-in=true",
+        viewComponentUrl: "/components/meganav?framework=vw&signed-in=true",
         selector: '[data-id="meganav-items-mobile"]',
       });
     });
@@ -60,7 +60,7 @@ describe("Panels", () => {
     type,
     urls = {
       reactComponentUrl: "/components/meganav",
-      viewComponentUrl: "/components/meganav?vw=true",
+      viewComponentUrl: "/components/meganav?framework=vw",
     }
   ) => {
     const noSpacesName = name.replace(" ", "");
@@ -137,7 +137,7 @@ describe("Panels", () => {
       cy.compareComponents(
         config("Account", "desktop", {
           reactComponentUrl: "/components/meganav?signed-in=true",
-          viewComponentUrl: "/components/meganav?signed-in=true&vw=true",
+          viewComponentUrl: "/components/meganav?signed-in=true&framework=vw",
         })
       ));
   });

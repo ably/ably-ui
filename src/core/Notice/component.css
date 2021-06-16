@@ -1,0 +1,5 @@
+.ui-announcement {
+  @apply font-sans;
+  max-height: 37.5rem;
+  transition: max-height 300ms;
+}

@@ -10,7 +10,7 @@
 
       <li>
         <a href="/case-studies" class="group ui-meganav-media py-12">
-          <p class="ui-meganav-media-heading">Case Studies</p>
+          <p class="ui-meganav-media-heading">Case studies</p>
         </a>
       </li>
 
@@ -63,9 +63,7 @@
       </li>
     </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>
-      Explore our Four Pillars of Dependability
-    <% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
   </div>
 
   <%= render(AblyUi::Core::MeganavBlogPostsList.new) %>

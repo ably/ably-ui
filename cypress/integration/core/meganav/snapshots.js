@@ -1,9 +1,9 @@
 import { fixSnapshotSpec } from "../../../support";
-import { MOBILE_DROPDOWN_CONTROL } from "./shared";
+import { MOBILE_DROPDOWN_CONTROL, NOTICE } from "./shared";
 
 beforeEach(fixSnapshotSpec(__filename));
 
-describe("ControlMobileDropdown", () => {
+describe.only("ControlMobileDropdown", () => {
   const sharedSpecs = () => {
     it("renders correctly by default", () => {
       cy.get(MOBILE_DROPDOWN_CONTROL).toMatchSnapshot();
@@ -28,7 +28,35 @@ describe("ControlMobileDropdown", () => {
 
   describe("vw", () => {
     beforeEach(() => {
-      cy.visit("/components/meganav?vw=true");
+      cy.visit("/components/meganav?framework=vw");
+    });
+
+    sharedSpecs();
+  });
+});
+
+describe("Notice", () => {
+  const sharedSpecs = () => {
+    it("renders correctly by default", () => {
+      cy.get(NOTICE).toMatchSnapshot();
+    });
+  };
+
+  beforeEach(() => {
+    cy.viewport("iphone-8");
+  });
+
+  describe("react", () => {
+    beforeEach(() => {
+      cy.visit("/components/meganav");
+    });
+
+    sharedSpecs();
+  });
+
+  describe("vw", () => {
+    beforeEach(() => {
+      cy.visit("/components/meganav?framework=vw");
     });
 
     sharedSpecs();

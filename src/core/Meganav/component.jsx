@@ -10,6 +10,7 @@ import MeganavScripts from "./component.js";
 import MeganavItemsDesktop from "../MeganavItemsDesktop/component.jsx";
 import MeganavItemsSignedIn from "../MeganavItemsSignedIn/component.jsx";
 import MeganavItemsMobile from "../MeganavItemsMobile/component.jsx";
+import Notice from "../Notice/component.jsx";
 import MeganavData from "./component.json";
 
 import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
@@ -55,7 +56,7 @@ const panels = {
   MeganavContentDevelopers: MeganavContentDevelopers,
 };
 
-export default function Meganav({ paths, themeName = "white" }) {
+export default function Meganav({ paths, themeName = "white", notice }) {
   const [sessionState, setSessionState] = useState(null);
 
   useEffect(() => {
@@ -73,6 +74,7 @@ export default function Meganav({ paths, themeName = "white" }) {
 
   return (
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
+      {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
         <Logo theme={theme} dataId="meganav-logo" />
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} />
@@ -89,4 +91,18 @@ export default function Meganav({ paths, themeName = "white" }) {
 Meganav.propTypes = {
   paths: T.object,
   themeName: T.oneOf(["white", "black", "transparentToWhite"]),
+  notice: T.shape({
+    props: T.shape({
+      title: T.string,
+      bodyText: T.string,
+      buttonLink: T.string,
+      buttonLabel: T.string,
+      closeBtn: T.bool,
+    }),
+    config: T.shape({
+      cookieId: T.string,
+      noticeId: T.string,
+      collapse: T.bool,
+    }),
+  }),
 };

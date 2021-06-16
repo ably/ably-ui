@@ -24,4 +24,4 @@ end
 require File.join(File.dirname(__FILE__), 'ably_ui', 'core', 'core.rb')
 
 # Components; can be loaded in any order as they don't depend on each other at require time
-Dir[File.join(File.dirname(__FILE__), 'ably_ui', '**' , 'component.rb')].each {|file| require file }
+Dir[File.join(File.dirname(__FILE__), 'ably_ui', '**' , '*.rb')].each {|file| require file }

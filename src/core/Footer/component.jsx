@@ -218,7 +218,7 @@ export default function Footer({ paths }) {
 
       <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
         <div className="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-          <div className="ui-footer-legals">
+          <div className="inline-flex">
             <a href="/privacy" className="pr-24 ui-footer-link">
               Cookies
             </a>
@@ -265,7 +265,7 @@ export default function Footer({ paths }) {
           </div>
         </div>
 
-        <div className="md:text-right col-span-full md:col-span-1 ml-8">
+        <div className="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto">
           <img className="mr-24 w-96 h-96" src={paths.rocketList} alt="Rocket List 2021" />
           <img className="w-96 h-96" src={paths.flexibleCompanies} alt="Flexible Companies 2021" />
         </div>

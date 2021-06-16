@@ -2,13 +2,16 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.6.2":
-  version "2.6.2"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2/a490bfc99717edf2219e696694009d35de39952fda55ae3cdd9de180eb271506#780e1c49482fab5b990dc3e0cd6c929acb6ad75b"
-  integrity sha512-fwnglVn5UObAPkeUjpuqVpj2Ya3+THyVfOCddWTj93pTugGmAowUe3pAT8tRtSrF5ZzbNsUg73bCGrim/U9Pag==
+"@ably/ably-ui@2.6.2-dev.a759882":
+  version "2.6.2-dev.a759882"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2-dev.a759882/ffe6aa1c7a815af80144356ad95d77cc78130bd9c3e480a3969ff8638184ec3f#06432596ffbd9ddc36fc0f5c81c07de1c07dd1eb"
+  integrity sha512-zpRCqD20g2u6rEWm44CEF1K+CbZovhRuxzQ2whFNLkJ0Ful0wbYZOpGmnF8OmQ11VhmbFe3pv80aSx0icSfpPQ==
   dependencies:
     array-flat-polyfill "^1.0.1"
+    dompurify "^2.2.9"
     highlight.js "^10.7.2"
+    js-cookie "^2.2.1"
+    lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
     react "^17.0.1"
     react-dom "^17.0.1"
@@ -2879,6 +2882,11 @@ domelementtype@^2.0.1:
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
   integrity sha512-DtBMo82pv1dFtUmHyr48beiuq792Sxohr+8Hm9zoxklYPfa6n0Z3Byjj2IV7bmr2IyqClnqEQhfgHJJ5QF0R5A==
 
+dompurify@^2.2.9:
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.2.9.tgz#4b42e244238032d9286a0d2c87b51313581d9624"
+  integrity sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w==
+
 domutils@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
@@ -4384,6 +4392,11 @@ js-base64@^2.1.8:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
   integrity sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"

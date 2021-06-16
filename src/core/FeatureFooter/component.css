@@ -3,7 +3,7 @@
     background: var(--gradient-active-orange);
     background-size: 100% 100%;
     background-position: right center;
-    @apply w-full font-sans antialiased;
+    @apply w-full font-sans antialiased bg-gradient-active-orange;
   }
 
   .ui-feature-footer-box {

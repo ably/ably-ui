@@ -25,3 +25,17 @@ export const MOBILE_PLATFORM_PANEL_CLOSE_CONTROL =
   "[data-id='meganav-control-mobile-panel-close'][aria-controls='platform-panel-mobile']";
 
 export const OUTSIDE_MEGANAV = "body";
+
+export const NOTICE = "[data-id='ui-notice']";
+
+export const mockContent = (document) => {
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("mt-64", "max-w-screen-lg");
+  let content;
+  Array.from({ length: 100 }, () => {
+    content +=
+      "Quis et est veniam sit minim culpa minim esse Lorem est est cupidatat.";
+  });
+  wrapper.innerText = content;
+  return wrapper;
+};
