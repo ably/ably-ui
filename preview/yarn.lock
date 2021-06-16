@@ -2,12 +2,13 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.6.2-dev.1ca3169":
-  version "2.6.2-dev.1ca3169"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2-dev.1ca3169/5933ec7c065b06b89ab05721212b8c123535c6a382be2ec042afc0030b84b377#13c454dffe668da57dfb0bf54bce914e177cd9ea"
-  integrity sha512-TFI2nNxRPnPIF2feE/nSJaCMCNkcKX2qJztdbycFaMcOfPFe9rkRBCJqsEP6BFW2K4PmPajtC5gC7/4Er33PYg==
+"@ably/ably-ui@2.6.2-dev.d2a9ba7":
+  version "2.6.2-dev.d2a9ba7"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.6.2-dev.d2a9ba7/e55508b95273ece7dd698eacc9add1cb1df11851fbb4d3b617afda6cfc8e1351#35910f63b5022c563a9b5f21db21ea9ba2bb0b3a"
+  integrity sha512-FRK2T5Zz4UgSPtumVIH+rLnN7PWd0oDXk4P1pXfjHlX8OVUIudflIyyDdKprK1TPaz7fBE1L6YtFQXgfZKwnqA==
   dependencies:
     array-flat-polyfill "^1.0.1"
+    dompurify "^2.2.9"
     highlight.js "^10.7.2"
     js-cookie "^2.2.1"
     lodash.debounce "^4.0.8"
@@ -2880,6 +2881,11 @@ domelementtype@^2.0.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
   integrity sha512-DtBMo82pv1dFtUmHyr48beiuq792Sxohr+8Hm9zoxklYPfa6n0Z3Byjj2IV7bmr2IyqClnqEQhfgHJJ5QF0R5A==
+
+dompurify@^2.2.9:
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.2.9.tgz#4b42e244238032d9286a0d2c87b51313581d9624"
+  integrity sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w==
 
 domutils@^1.7.0:
   version "1.7.0"
