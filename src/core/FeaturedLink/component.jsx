@@ -4,7 +4,7 @@ import T from "prop-types";
 const FeaturedLink = ({ url, children }) => (
   <a
     href={url}
-    className="text-menu3 font-medium text-gui-default flex items-center hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group"
+    className={`${textSize} ${textWeight} ${textColor} flex items-center hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group`}
   >
     {children}
     <svg className="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4">

@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from "react";
 import T from "prop-types";
 
-function StatusLegend({ metadata }) {
+import FeaturedLink from "../FeaturedLink/component.jsx";
+
+export const themes = {
+  light: {
+    text: "text-cool-black",
+  },
+  dark: {
+    text: "text-white",
+  },
+};
+
+export const ThemeContext = React.createContext();
+
+function StatusLegend({ metadata, textColor }) {
   const items = Object.entries(metadata[0]).map((e) => {
     const [id, text] = e;
-    const classname = `ui-uptime-key ui-uptime-${id}`;
+    const classname = `ui-uptime-key ui-uptime-${id} ${textColor}`;
     return (
       <span key={id} className={classname}>
         {text}
@@ -42,10 +55,9 @@ function SvgIcon({ id }) {
 }
 
 function StatusCtaLink({ href, text }) {
-  const CtaLink = () => <a href={href}>{text}</a>;
   return (
     <div className="ui-uptime-link-back">
-      <CtaLink /> <SvgIcon id="disclosure-arrow-path" />
+      <FeaturedLink url={href}>{text}</FeaturedLink>
     </div>
   );
 }
@@ -53,7 +65,7 @@ function StatusCtaLink({ href, text }) {
 function StatusFooter({ metadata, href, text }) {
   return (
     <div className="ui-uptime-footer">
-      <StatusLegend {...{ metadata }} />
+      <ThemeContext.Consumer>{({ text }) => <StatusLegend {...{ metadata }} textColor={text} />}</ThemeContext.Consumer>
       <StatusCtaLink {...{ href, text }} />
     </div>
   );
@@ -66,7 +78,7 @@ function handleError(err) {
   return { error: true, message };
 }
 
-export default function Uptime({ serverUrl, linkTo = null }) {
+export default function Uptime({ serverUrl, linkTo = null, theme = "light" }) {
   if (!serverUrl) throw new Error("Server endpoint URL required");
 
   const [data, setData] = useState(null);
@@ -93,20 +105,23 @@ export default function Uptime({ serverUrl, linkTo = null }) {
 
   if (data && data.error) {
     return (
-      <div className="ui-uptime-error" data-id="uptime">
-        <strong>An Error has occured.</strong>
-        <em>{data.message}</em>
-        <span>{serverUrl}</span>
+      <div
+        className={`flex uptime-md:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 ${themes[theme].text}`}
+        data-id="uptime-error"
+      >
+        Sorry, we can’t retrieve uptime data right now.
       </div>
     );
   }
 
   return (
     data && (
-      <div className="ui-uptime-widget" data-id="uptime">
-        <UptimeGraph {...{ collection }} />
-        {showFooterRow && <StatusFooter {...{ metadata, ...linkTo }} />}
-      </div>
+      <ThemeContext.Provider value={themes[theme]}>
+        <div className="ui-uptime-widget" data-id="uptime">
+          <UptimeGraph {...{ collection }} />
+          {showFooterRow && <StatusFooter {...{ metadata, ...linkTo }} />}
+        </div>
+      </ThemeContext.Provider>
     )
   );
 }
@@ -116,6 +131,7 @@ UptimeGraph.propTypes = {
 
 StatusLegend.propTypes = {
   metadata: T.array,
+  textColor: T.string,
 };
 
 SvgIcon.propTypes = {
@@ -136,4 +152,5 @@ StatusCtaLink.propTypes = {
 Uptime.propTypes = {
   serverUrl: T.string,
   linkTo: T.object,
+  theme: T.oneOf(["light", "dark"]),
 };

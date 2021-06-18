@@ -98,24 +98,33 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
   </div>
   <div class="ui-uptime-footer">
     <div class="ui-uptime-legend">
-      <span class="ui-uptime-key ui-uptime-up">All good</span
-      ><span class="ui-uptime-key ui-uptime-trouble">Performance issue</span
-      ><span class="ui-uptime-key ui-uptime-down">Service disruption</span>
+      <span class="ui-uptime-key ui-uptime-up text-white">All good</span
+      ><span class="ui-uptime-key ui-uptime-trouble text-white"
+        >Performance issue</span
+      ><span class="ui-uptime-key ui-uptime-down text-white"
+        >Service disruption</span
+      >
     </div>
     <div class="ui-uptime-link-back">
-      <a href="//status.ably.com">More on our status site</a>
-      <svg class="w-12 h-12 ml-4 transform -rotate-90">
-        <use xlink:href="#sprite-disclosure-arrow-path"></use>
-      </svg>
+      <a
+        href="//status.ably.com"
+        class="text-menu3 text-gui-default font-medium flex items-center hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group"
+        >More on our status site<svg
+          class="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4"
+        >
+          <use xlink:href="#sprite-disclosure-arrow"></use></svg
+      ></a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
-<div class="ui-uptime-error" data-id="uptime">
-  <strong>An Error has occured.</strong><em>Failed to fetch</em
-  ><span>https://does-not-exist.ably.com/not/available.json</span>
+<div
+  class="flex uptime-md:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 text-cool-black"
+  data-id="uptime-error"
+>
+  Sorry, we can’t retrieve uptime data right now.
 </div>
 `;
 
