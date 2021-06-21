@@ -1,0 +1,37 @@
+@layer components {
+  .ui-btn {
+    @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block rounded p-btn;
+    @apply hover:text-white hover:bg-active-orange;
+    @apply active:text-white active:bg-red-orange;
+    @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply transition-colors;
+  }
+
+  .ui-btn-invert {
+    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block rounded p-btn;
+    @apply hover:text-white hover:bg-active-orange;
+    @apply active:text-white active:bg-red-orange;
+    @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply transition-colors;
+  }
+
+  .ui-btn-secondary {
+    @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-btn border-cool-black rounded p-btn;
+    @apply hover:border-active-orange hover:bg-white;
+    @apply active:border-red-orange active:bg-white;
+    @apply focus:border-cool-black focus:bg-white focus:outline-gui-focus;
+    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white;
+    @apply transition-colors;
+  }
+
+  .ui-btn-secondary-invert {
+    @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block border-btn border-mid-grey rounded p-btn;
+    @apply hover:border-white;
+    @apply active:border-dark-grey;
+    @apply focus:outline-gui-focus;
+    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable;
+    @apply transition-colors;
+  }
+}

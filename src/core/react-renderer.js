@@ -8,11 +8,7 @@ export default function reactRenderer(components) {
     const className = node.getAttribute("data-react");
     const Constructor = components[className];
 
-    if (!Constructor) {
-      throw new Error(
-        `Found a data-react attribute with "${className}" but no matching component.`
-      );
-    }
+    if (!Constructor) return;
 
     const propsJson = node.getAttribute("data-react-props");
     const props = propsJson && JSON.parse(propsJson || {});

@@ -8,8 +8,8 @@ describe("Uptime Snapshot Test", () => {
     beforeEach(() => cy.visit(url));
 
     it("test case common to both", () => {
-      cy.get(".ui-uptime-widget").first().toMatchSnapshot();
-      cy.get(".ui-uptime-error").first().toMatchSnapshot();
+      cy.get('[data-id="uptime"]').first().toMatchSnapshot();
+      cy.get('[data-id="uptime-error"]').first().toMatchSnapshot();
     });
   };
 

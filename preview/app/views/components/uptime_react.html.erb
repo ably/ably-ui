@@ -3,10 +3,14 @@
 
 <h1 class="text-h1 mt-32">Standard output </h1>
 <p class="mb-32">(<a href="#" onclick="jumble()" class="underline">Generate simulated uptime issues</a>)</p>
-<%= react_component('uptime', {
-  serverUrl: "/api/uptime",
-  linkTo: { href: "//status.ably.com", text: "More on our status site" }
-}) %>
+
+<div class="bg-cool-black">
+  <%= react_component('uptime', {
+    serverUrl: "/api/uptime",
+    linkTo: { href: "//status.ably.com", text: "More on our status site" },
+    theme: 'dark'
+  }) %>
+</div>
 
 
 <h1 class="text-h1 mt-96 mb-32">Error handling</h1>
@@ -20,7 +24,6 @@
 <% content_for :component do %>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("bg-light-grey", "m-32");
       window.jumble = () => {
         const classes = ["ui-uptime-up","ui-uptime-trouble","ui-uptime-down"];
         const array = Array.from(document.querySelectorAll(".ui-uptime-day"));
