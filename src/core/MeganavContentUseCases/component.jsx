@@ -31,6 +31,12 @@ const MeganavContentUseCases = () => (
             <p className="ui-meganav-media-copy">Provide HIPAA-compliant realtime apps healthcare professionals can depend on.</p>
           </a>
         </li>
+        <li>
+          <a href="/solutions/virtual-events" className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Virtual Events</p>
+            <p className="ui-meganav-media-copy">Power engaging virtual events with interactive realtime features.</p>
+          </a>
+        </li>
       </ul>
     </div>
 
