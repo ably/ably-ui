@@ -14,7 +14,7 @@ const MeganavControlMobilePanelClose = ({ ariaControls }) => (
       <svg className="transform rotate-90 w-12 h-12 mr-8 ui-icon-cool-black">
         <use xlinkHref="#sprite-disclosure-arrow"></use>
       </svg>
-      Menu
+      Back
     </button>
     <hr className="ui-meganav-hr" />
   </div>
