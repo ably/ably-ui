@@ -11,7 +11,7 @@ const MeganavControlMobilePanelOpen = ({ ariaControls, children }) => (
     aria-label={`Show ${children}`}
   >
     {children}
-    <svg className="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-dark-grey">
+    <svg className="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-cool-black">
       <use xlinkHref="#sprite-disclosure-arrow"></use>
     </svg>
   </button>
