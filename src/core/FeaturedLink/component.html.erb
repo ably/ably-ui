@@ -1,5 +1,5 @@
-<%= link_to(@url, class: "#{@text_color} #{@text_size} #{@text_weight} flex items-center hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group") do %>
-  <%= content %><svg class="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4">
+<%= link_to(@url, class: "#{@text_size} text-gui-default font-medium flex items-baseline hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus #{@flush ? '' : 'py-8'} block group") do %>
+  <%= content -%><%= tag.svg class: "w-12 h-12 transform -rotate-90 align-top #{@icon_color} group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4" do %>
     <use xlink:href="#sprite-disclosure-arrow"></use>
-  </svg>
+  <% end %>
 <% end %>
