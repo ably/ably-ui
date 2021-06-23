@@ -46,6 +46,9 @@ const FLASH_TEXT_COLOR = {
   alert: "text-white",
 };
 
+const AUTO_HIDE = ["success", "info"];
+const AUTO_HIDE_TIME = 8000;
+
 const FlashIcon = ({ icon, color }) => (
   <svg className={`h-24 w-24 ${color} mr-16 self-baseline`}>
     <use xlinkHref={`#sprite-${icon}`}></use>
@@ -64,6 +67,14 @@ const Flash = ({ type, content }) => {
   const [triggerEntryAnimation, setTriggerEntryAnimation] = useState(false);
 
   useEffect(() => setTriggerEntryAnimation(true), []);
+  useEffect(() => {
+    if (AUTO_HIDE.includes(type)) {
+      setTimeout(() => {
+        // closeFlash is idempotent, we can call it even if the flash has been already closed
+        closeFlash();
+      }, AUTO_HIDE_TIME);
+    }
+  }, [closed]);
 
   const closeFlash = () => {
     if (ref.current) {
