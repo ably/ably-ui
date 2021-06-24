@@ -108,9 +108,9 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
     <div class="ui-uptime-link-back">
       <a
         href="//status.ably.com"
-        class="text-menu3 text-gui-default font-medium flex items-center hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group"
+        class="text-menu3 text-gui-default font-medium flex items-baseline hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus py-8 block group"
         >More on our status site<svg
-          class="w-12 h-12 transform -rotate-90 align-top ui-icon-dark-grey group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4"
+          class="w-12 h-12 transform -rotate-90 align-top ui-icon-white group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4"
         >
           <use xlink:href="#sprite-disclosure-arrow"></use></svg
       ></a>
@@ -838,6 +838,7 @@ exports[`ControlMobileDropdown > react > renders correctly on click #0`] = `
 
 exports[`ControlMobileDropdown > vw > renders correctly by default #0`] = `
 <button
+  name="button"
   type="button"
   class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
   data-id="meganav-control-mobile-dropdown"
@@ -848,8 +849,9 @@ exports[`ControlMobileDropdown > vw > renders correctly by default #0`] = `
     class="h-24 w-24 transition-colors ui-icon-cool-black"
     data-id="meganav-control-mobile-dropdown-menu"
   >
-    <use xlink:href="#sprite-menu"></use></svg
-  ><svg
+    <use xlink:href="#sprite-menu"></use>
+  </svg>
+  <svg
     class="h-24 w-24 transition-colors hidden ui-icon-cool-black"
     data-id="meganav-control-mobile-dropdown-close"
   >
@@ -860,6 +862,7 @@ exports[`ControlMobileDropdown > vw > renders correctly by default #0`] = `
 
 exports[`ControlMobileDropdown > vw > renders correctly on click #0`] = `
 <button
+  name="button"
   type="button"
   class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
   data-id="meganav-control-mobile-dropdown"
@@ -870,8 +873,9 @@ exports[`ControlMobileDropdown > vw > renders correctly on click #0`] = `
     class="h-24 w-24 transition-colors ui-icon-cool-black hidden"
     data-id="meganav-control-mobile-dropdown-menu"
   >
-    <use xlink:href="#sprite-menu"></use></svg
-  ><svg
+    <use xlink:href="#sprite-menu"></use>
+  </svg>
+  <svg
     class="h-24 w-24 transition-colors ui-icon-cool-black"
     data-id="meganav-control-mobile-dropdown-close"
   >

@@ -28,8 +28,8 @@
 
   .ui-btn-secondary-invert {
     @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block border-btn border-mid-grey rounded p-btn;
-    @apply hover:border-white;
-    @apply active:border-dark-grey;
+    @apply hover:border-active-orange;
+    @apply active:border-red-orange;
     @apply focus:outline-gui-focus;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable;
     @apply transition-colors;

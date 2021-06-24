@@ -3,14 +3,14 @@ module AblyUi
     class FeaturedLink < ViewComponent::Base
       def initialize(
         url:,
-        text_color: 'text-gui-default',
         text_size: 'text-menu3',
-        text_weight: 'font-medium'
+        icon_color: 'ui-icon-cool-black',
+        flush: false
       )
         @url = url
-        @text_color = text_color
         @text_size = text_size
-        @text_weight = text_weight
+        @icon_color = icon_color
+        @flush = flush
       end
     end
   end
