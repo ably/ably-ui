@@ -61,7 +61,7 @@
   }
 
   .ui-meganav-account-link {
-    @apply block px-8 py-8 hover:bg-light-grey hover:text-active-orange rounded relative -left-8 text-menu3 w-extend-8 font-light;
+    @apply block px-8 py-8 hover:bg-light-grey hover:text-gui-hover rounded relative -left-8 text-menu3 w-extend-8 font-light;
   }
 
   .ui-meganav-content {
