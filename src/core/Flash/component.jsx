@@ -46,7 +46,7 @@ const FLASH_TEXT_COLOR = {
   alert: "text-white",
 };
 
-const AUTO_HIDE = ["success", "info"];
+const AUTO_HIDE = ["success", "info", "notice"];
 const AUTO_HIDE_TIME = 8000;
 
 const FlashIcon = ({ icon, color }) => (

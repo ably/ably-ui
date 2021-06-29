@@ -204,6 +204,16 @@ export default function Footer({ paths }) {
               </a>
             </li>
             <li className="p-menu-row-snug">
+              <a
+                href="https://www.notion.so/ably/Ably-Press-Center-551152f5be724d4495a7c2e29d9f51c7"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="ui-footer-menu-row-link"
+              >
+                Press & Media
+              </a>
+            </li>
+            <li className="p-menu-row-snug">
               <a href="/contact" className="ui-footer-menu-row-link">
                 Contact us
               </a>
