@@ -1,13 +1,16 @@
 import "./component.css";
 import Cookie from "js-cookie";
-import debounce from "lodash.debounce";
+import throttle from "lodash.throttle";
 
 import { queryId } from "../dom-query";
 import { FLASH_DATA_ID } from "../Flash/component.jsx";
 
 const COOKIE_EXPIRY = 90;
-const COLLAPSE_TRIGGER_DISTANCE = 10;
-const SCROLL_LISTENER_DEBOUNCE = 100;
+const COLLAPSE_TRIGGER_DISTANCE = 5;
+const SCROLL_LISTENER_THROTTLE = 100;
+const RESIZE_LISTENER_THROTTLE = 100;
+
+const isMdViewport = () => !window.matchMedia(`(min-width: 65rem)`).matches;
 
 const adjustFlashMargin = (open) => {
   // HACK ALERT
@@ -20,6 +23,14 @@ const adjustFlashMargin = (open) => {
 
   if (flash) {
     flash.style.marginTop = open ? `4rem` : null;
+  }
+};
+
+const hideOnMobile = (bannerContainer) => {
+  if (isMdViewport()) {
+    bannerContainer.style.display = "none";
+  } else {
+    bannerContainer.style.display = null;
   }
 };
 
@@ -55,7 +66,7 @@ const setupNoticeCollapse = (bannerContainer) => {
     hideNotice(bannerContainer);
   }
 
-  const listener = debounce(() => {
+  const listener = throttle(() => {
     const scrollTop = window.scrollY;
 
     if (scrollTop > COLLAPSE_TRIGGER_DISTANCE) {
@@ -63,7 +74,7 @@ const setupNoticeCollapse = (bannerContainer) => {
     } else if (bannerContainer.style.overflow) {
       showNotice(bannerContainer);
     }
-  }, SCROLL_LISTENER_DEBOUNCE);
+  }, SCROLL_LISTENER_THROTTLE);
 
   document.addEventListener("scroll", listener);
 
@@ -92,6 +103,16 @@ const setupCloseBtn = (
   return () => document.removeEventListener("click", listener);
 };
 
+const resizeHandler = (bannerContainer) => {
+  const handler = throttle(() => {
+    hideOnMobile(bannerContainer);
+  }, RESIZE_LISTENER_THROTTLE);
+
+  window.addEventListener("resize", handler);
+
+  return () => window.removeEventListener("resize", handler);
+};
+
 const Notice = ({ bannerContainer, cookieId, noticeId, options }) => {
   if (typeof window === "undefined") return () => {};
 
@@ -104,6 +125,7 @@ const Notice = ({ bannerContainer, cookieId, noticeId, options }) => {
 
   if (hasBeenClosedBefore(cookieId, noticeId)) return () => {};
 
+  hideOnMobile(bannerContainer);
   showNotice(bannerContainer);
 
   const opts = { collapse: true, ...options };
@@ -119,10 +141,14 @@ const Notice = ({ bannerContainer, cookieId, noticeId, options }) => {
     collapseUnmountListeners
   );
 
+  const resizeUnmountListener = resizeHandler(bannerContainer);
+
   return () => {
-    [closeBtnUnmountListeners, collapseUnmountListeners].forEach((unmount) =>
-      unmount()
-    );
+    [
+      closeBtnUnmountListeners,
+      collapseUnmountListeners,
+      resizeUnmountListener,
+    ].forEach((unmount) => unmount());
   };
 };
 

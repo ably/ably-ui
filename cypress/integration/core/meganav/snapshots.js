@@ -3,7 +3,7 @@ import { MOBILE_DROPDOWN_CONTROL, NOTICE } from "./shared";
 
 beforeEach(fixSnapshotSpec(__filename));
 
-describe.only("ControlMobileDropdown", () => {
+describe("ControlMobileDropdown", () => {
   const sharedSpecs = () => {
     it("renders correctly by default", () => {
       cy.get(MOBILE_DROPDOWN_CONTROL).toMatchSnapshot();
