@@ -270,7 +270,7 @@ export default function Footer({ paths }) {
               <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
                 Learn more
               </a>
-              &nbsp;at Glass Door
+              &nbsp;at Glassdoor
             </div>
           </div>
         </div>

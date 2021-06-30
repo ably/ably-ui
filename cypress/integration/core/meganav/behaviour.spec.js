@@ -143,6 +143,18 @@ describe("Notice", () => {
 
       cy.get(NOTICE).should("not.be.visible");
     });
+
+    it("does not display on smaller viewports", () => {
+      cy.viewport("ipad-2");
+      cy.get(NOTICE).should("not.be.visible");
+    });
+
+    it("does not display on smaller viewports after resize", () => {
+      cy.viewport("macbook-13");
+      cy.get(NOTICE).should("be.visible");
+      cy.viewport("ipad-2");
+      cy.get(NOTICE).should("not.be.visible");
+    });
   };
 
   const sharedNonDefaultsSpecs = (url) => {
@@ -162,6 +174,10 @@ describe("Notice", () => {
       cy.get(NOTICE).should("be.visible");
     });
   };
+
+  beforeEach(() => {
+    cy.viewport("macbook-13");
+  });
 
   describe("react", () => {
     describe("with defaults", () => {
