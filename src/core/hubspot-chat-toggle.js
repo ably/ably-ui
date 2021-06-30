@@ -40,12 +40,15 @@ export default function toggleChatWidget(params = {}) {
   const waitForScript = (delay) => {
     const widget = window?.HubSpotConversations?.widget;
 
+    // If the chat is set to be hidden out of hours this will return null
+    const iframe = document.querySelector("#hubspot-messages-iframe-container");
+
     clickHandler = (e) => {
       e.preventDefault();
       widget.open();
     };
 
-    if (widget) {
+    if (widget && iframe) {
       trigger.addEventListener("click", clickHandler);
       enableBtn(trigger, textEnabled);
     } else if (--MAX_RETRY_COUNT) {
