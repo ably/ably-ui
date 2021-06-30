@@ -97,7 +97,7 @@ const MeganavContentPlatform = ({ paths }) => (
         </li>
       </ul>
 
-      <FeaturedLink url="/four-pillars-of-dependability">Explore our Four Pillars of Dependability</FeaturedLink>
+      <FeaturedLink url="/four-pillars-of-dependability">Explore our technology</FeaturedLink>
     </div>
   </section>
 );
