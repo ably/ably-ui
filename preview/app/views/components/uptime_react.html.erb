@@ -1,17 +1,12 @@
-<%= render(TitleComponent.new(react: true, vw: false)) do %>Uptime<% end %>
+<h1 class="text-h1 my-32">Standard output </h1>
 
-
-<h1 class="text-h1 mt-32">Standard output </h1>
-<p class="mb-32">(<a href="#" onclick="jumble()" class="underline">Generate simulated uptime issues</a>)</p>
-
-<div class="bg-cool-black">
+<div class="bg-cool-black p-32">
   <%= react_component('uptime', {
     serverUrl: "/api/uptime",
     linkTo: { href: "//status.ably.com", text: "More on our status site" },
     theme: 'dark'
   }) %>
 </div>
-
 
 <h1 class="text-h1 mt-96 mb-32">Error handling</h1>
 
@@ -20,28 +15,10 @@
   linkTo: { href: "//status.ably.com", text: "More on our status site" }
 }) %>
 
-
 <% content_for :component do %>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
-      window.jumble = () => {
-        const classes = ["ui-uptime-up","ui-uptime-trouble","ui-uptime-down"];
-        const array = Array.from(document.querySelectorAll(".ui-uptime-day"));
-        array
-          .map(el => {
-            el.className = "ui-uptime-day ui-uptime-up";
-            return el;
-          })
-          .filter(() => Math.random() > 0.7)
-          .map(el => {
-            const r = classes[((Math.random() * 10) % 3) >> 0];
-            el.classList.add(r);
-            return el;
-          });
-
-        return false;
-      }
+      document.body.classList.add("bg-light-grey", "m-32");
     });
   </script>
 <% end %>
-
