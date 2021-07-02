@@ -4,6 +4,7 @@
 
 <h1 class="text-h2 my-16">JavaScript</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= react_component('code', {
   language: "javascript",
   snippet: %q{
@@ -15,9 +16,11 @@ channel.subscribe('greeting', function(message) {
   alert(message.data);
 });
 }}) %>
+</div>
 
 <h1 class="text-h2 my-16">iOS Swift</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= react_component('code', {
   language: "swift",
   snippet: %q{
@@ -29,9 +32,11 @@ channel.subscribe("greeting") { message in
   print("\\(message.data)")
 }
 }}) %>
+</div>
 
 <h1 class="text-h2 my-16">Java</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= react_component('code', {
   language: "java",
   snippet: %q{
@@ -49,6 +54,7 @@ listener = new MessageListener() {
 };
 channel.subscribe("greeting", listener);
 }}) %>
+</div>
 
 <% content_for :component do %>
   <script type="text/javascript">

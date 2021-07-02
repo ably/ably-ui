@@ -4,6 +4,7 @@
 
 <h1 class="text-h2 my-16">JavaScript</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= render(AblyUi::Core::Code.new(language: "javascript",
   snippet: %q{
 var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
@@ -14,9 +15,11 @@ channel.subscribe('greeting', function(message) {
   alert(message.data);
 });
 })) %>
+</div>
 
 <h1 class="text-h2 my-16">iOS Swift</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= render(AblyUi::Core::Code.new(language: "swift",
   snippet: %q{
 let ably = ARTRealtime(key: "1WChTA.mc0Biw:kNfiYG4KiPgmHHgH")
@@ -27,9 +30,11 @@ channel.subscribe("greeting") { message in
   print("\(message.data)")
 }
 })) %>
+</div>
 
 <h1 class="text-h2 my-16">Java</h1>
 
+<div style="padding:32px;background-color:var(--syntax-black)">
 <%= render(AblyUi::Core::Code.new(language: "java",
   snippet: %q{
 AblyRealtime ably = new AblyRealtime("1WChTA.mc0Biw:kNfiYG4KiPgmHHgH");
@@ -46,6 +51,7 @@ listener = new MessageListener() {
 };
 channel.subscribe("greeting", listener);
 })) %>
+</div>
 
 <% content_for :component do %>
   <%= javascript_include_tag 'ably_ui/core/code/component' %>
