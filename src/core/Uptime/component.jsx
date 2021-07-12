@@ -48,10 +48,11 @@ function UptimeGraph({ collection }) {
   collection.splice(29, 0, null);
   collection.splice(60, 0, null);
 
+  const MAX_TOOLTIP_CHAR_LENGTH = 80;
+
   const items = collection.map((row, i) => {
     if (!row) return <li key={i} className="ui-uptime-seperator"></li>;
 
-    const maxLength = 80;
     const [alignment = {}] = [0, 29, 60, 91].map((value) => applyAlignment(value, i)).filter((s) => s);
     const { align = null, amount = null, sign = null } = alignment;
     const labelAlign = alignment && `ui-uptime-align-${align}`;
@@ -60,8 +61,8 @@ function UptimeGraph({ collection }) {
     const { label } = row;
     const { length } = label.trim();
 
-    const tooltext = length < maxLength ? label : label.slice(0, maxLength - 1) + "…";
-    const width = (length > maxLength - 10 && "extra-wide") || (length > maxLength / 2 && "wide") || "normal";
+    const tooltext = length < MAX_TOOLTIP_CHAR_LENGTH ? label : label.slice(0, MAX_TOOLTIP_CHAR_LENGTH - 1) + "…";
+    const width = (length > MAX_TOOLTIP_CHAR_LENGTH - 10 && "extra-wide") || (length > MAX_TOOLTIP_CHAR_LENGTH / 2 && "wide") || "normal";
     const translateX = Math.min((Math.max(amount - 1, 0) * 10) >> 0, 50) * sign;
     const transform = align ? { transform: `translateX(${translateX}%)` } : {};
 
