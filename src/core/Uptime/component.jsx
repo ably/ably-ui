@@ -67,9 +67,9 @@ function UptimeGraph({ collection }) {
 
     return (
       <li key={i} className={classname}>
-        <em className={`ui-uptime-width-${width}`} style={transform}>
+        <span className={`ui-uptime-width-${width}`} style={transform}>
           {tooltext}
-        </em>
+        </span>
       </li>
     );
   });

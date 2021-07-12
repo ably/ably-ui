@@ -17,7 +17,7 @@
     @apply h-40 relative flex-auto p-0 my-0 mx-1 bg-cool-black;
   }
 
-  .ui-uptime-day em {
+  .ui-uptime-day span {
     @apply absolute text-p3 border rounded-lg border-light-grey;
     @apply py-12 px-16 shadow-tooltip text-cool-black;
     @apply bg-white text-left z-10 hidden;
@@ -34,15 +34,15 @@
     @apply z-10;
   }
 
-  .ui-uptime-day:hover em {
+  .ui-uptime-day:hover span {
     display: block;
   }
 
-  .ui-uptime-day.ui-uptime-align-left em {
+  .ui-uptime-day.ui-uptime-align-left span {
     left: 0;
   }
 
-  .ui-uptime-day.ui-uptime-align-right em {
+  .ui-uptime-day.ui-uptime-align-right span {
     right: 0;
   }
   .ui-uptime-day .ui-uptime-width-wide {
