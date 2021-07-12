@@ -45,6 +45,7 @@
   .ui-uptime-day.ui-uptime-align-right span {
     right: 0;
   }
+
   .ui-uptime-day .ui-uptime-width-wide {
     @apply whitespace-normal;
     width: 8rem;
