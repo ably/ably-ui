@@ -1,4 +1,8 @@
-<h1 class="text-h1 my-32">Standard output </h1>
+<%= render(TitleComponent.new(react: true, vw: false)) do %>
+  Uptime
+<% end %>
+
+<h2 class="text-h1 my-32">Standard output </h2>
 
 <div class="bg-cool-black p-32">
   <%= react_component('uptime', {
@@ -8,7 +12,7 @@
   }) %>
 </div>
 
-<h1 class="text-h1 mt-96 mb-32">Error handling</h1>
+<h2 class="text-h1 mt-96 mb-32">Error handling</h2>
 
 <%= react_component('uptime', {
   serverUrl: "https://does-not-exist.ably.com/not/available.json",
