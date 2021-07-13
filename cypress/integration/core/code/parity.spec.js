@@ -4,7 +4,7 @@ describe("Code Parity test", () => {
     cy.compareComponents({
       reactComponentUrl: "/components/code",
       viewComponentUrl: "/components/code?framework=vw",
-      selector: "body",
+      selector: "[data-id='code']:first",
     });
   });
 });

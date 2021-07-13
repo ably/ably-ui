@@ -2,98 +2,412 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
 <div class="ui-uptime-widget" data-id="uptime">
   <div class="ui-uptime-graph">
     <ul class="ui-uptime-list">
-      <li class="ui-uptime-day ui-uptime-up" data-label="13 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="12 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="11 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="10 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="09 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="08 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="07 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="06 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="05 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="04 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="03 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="02 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="01 May UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="30 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="29 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="28 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="27 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="26 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="25 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="24 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="23 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="22 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="21 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="20 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="19 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="18 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="17 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="16 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="15 Apr UTC"></li>
+      <li class="ui-uptime-day ui-uptime-trouble ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-extra-wide"
+          style="transform: translateX(0%);"
+          >09pm for 13 mins - Network connectivity issues in the Asia-Pacific
+          region</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >12 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-10%);"
+          >11 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-20%);"
+          >10 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-30%);"
+          >09 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-40%);"
+          >08 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-50%);"
+          >07 May UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-trouble ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-extra-wide"
+          style="transform: translateX(-50%);"
+          >09pm for 13 mins - Network connectivity issues in the Asia-Pacific
+          region</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">05 May UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">04 May UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">03 May UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">02 May UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">01 May UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">30 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">29 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">28 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">27 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">26 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">25 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">24 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">23 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">22 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >21 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >20 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(40%);"
+          >19 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(30%);"
+          >18 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(20%);"
+          >17 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(10%);"
+          >16 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >15 Apr UTC</span
+        >
+      </li>
       <li class="ui-uptime-seperator"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="14 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="13 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="12 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="11 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="10 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="09 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="08 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="07 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="06 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="05 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="04 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="03 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="02 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="01 Apr UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="31 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="30 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="29 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="28 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="27 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="26 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="25 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="24 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="23 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="22 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="21 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="20 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="19 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="18 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="17 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="16 Mar UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >14 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-10%);"
+          >13 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-20%);"
+          >12 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-30%);"
+          >11 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-40%);"
+          >10 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-50%);"
+          >09 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-50%);"
+          >08 Apr UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">07 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">06 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">05 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">04 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">03 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">02 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">01 Apr UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">31 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">30 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">29 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">28 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">27 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">26 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">25 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">24 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">23 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >22 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >21 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(40%);"
+          >20 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(30%);"
+          >19 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(20%);"
+          >18 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(10%);"
+          >17 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-trouble ui-uptime-align-right">
+        <span
+          class="ui-uptime-width-extra-wide"
+          style="transform: translateX(0%);"
+          >Extreme - Ad ipisicing officia be atae rerum soluta cupid it ate
+          Libero nulla n…</span
+        >
+      </li>
       <li class="ui-uptime-seperator"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="15 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="14 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="13 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="12 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="11 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="10 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="09 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="08 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="07 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="06 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="05 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="04 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="03 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="02 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="01 Mar UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="28 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="27 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="26 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="25 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="24 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="23 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="22 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="21 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="20 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="19 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="18 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="17 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="16 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="15 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="14 Feb UTC"></li>
-      <li class="ui-uptime-day ui-uptime-up" data-label="13 Feb UTC"></li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >15 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-10%);"
+          >14 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-20%);"
+          >13 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-30%);"
+          >12 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-40%);"
+          >11 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-50%);"
+          >10 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-left">
+        <span
+          class="ui-uptime-width-normal"
+          style="transform: translateX(-50%);"
+          >09 Mar UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">08 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">07 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">06 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">05 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">04 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">03 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">02 Mar UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-down ui-uptime-align-null">
+        <span class="ui-uptime-width-extra-wide"
+          >09pm for 13 mins - Network connectivity issues in the Asia-Pacific
+          region</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">28 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">27 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">26 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">25 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">24 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">23 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">22 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-null">
+        <span class="ui-uptime-width-normal">21 Feb UTC</span>
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >20 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(50%);"
+          >19 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(40%);"
+          >18 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(30%);"
+          >17 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(20%);"
+          >16 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(10%);"
+          >15 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >14 Feb UTC</span
+        >
+      </li>
+      <li class="ui-uptime-day ui-uptime-up ui-uptime-align-right">
+        <span class="ui-uptime-width-normal" style="transform: translateX(0%);"
+          >13 Feb UTC</span
+        >
+      </li>
     </ul>
   </div>
   <div class="ui-uptime-footer">
@@ -125,807 +439,5 @@ exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
   data-id="uptime-error"
 >
   Sorry, we can’t retrieve uptime data right now.
-</div>
-`;
-
-exports[`Code Snapshot Test > react > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="javascript"
-  ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
-<span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
-
-<span class="hljs-comment">// Subscribe to messages on channel</span>
-channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
-  alert(message.data);
-});</code></pre>
-</div>
-`;
-
-exports[`Code Snapshot Test > react > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="swift"
-  ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
-<span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
-
-<span class="hljs-comment">// Subscribe to messages on channel</span>
-channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span class="hljs-keyword">in</span>
-  <span class="hljs-built_in">print</span>(<span class="hljs-string">"<span class="hljs-subst">\\(message.data)</span>"</span>)
-}</code></pre>
-</div>
-`;
-
-exports[`Code Snapshot Test > react > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="java"
-  ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
-Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
-
-<span class="hljs-comment">/* Subscribe to messages on channel */</span>
-
-MessageListener listener;
-listener = <span class="hljs-keyword">new</span> MessageListener() {
-  <span class="hljs-meta">@Override</span>
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onMessage</span><span class="hljs-params">(Message message)</span> </span>{
-    System.out.print(message.data);
-  };
-};
-channel.subscribe(<span class="hljs-string">"greeting"</span>, listener);</code></pre>
-</div>
-`;
-
-exports[`Code Snapshot Test > view component > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="javascript"
-  ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
-<span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
-
-<span class="hljs-comment">// Subscribe to messages on channel</span>
-channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
-  alert(message.data);
-});</code></pre>
-</div>
-`;
-
-exports[`Code Snapshot Test > view component > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="swift"
-  ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
-<span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
-
-<span class="hljs-comment">// Subscribe to messages on channel</span>
-channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span class="hljs-keyword">in</span>
-  <span class="hljs-built_in">print</span>(<span class="hljs-string">"<span class="hljs-subst">\\(message.data)</span>"</span>)
-}</code></pre>
-</div>
-`;
-
-exports[`Code Snapshot Test > view component > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre
-    lang="java"
-  ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
-Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
-
-<span class="hljs-comment">/* Subscribe to messages on channel */</span>
-
-MessageListener listener;
-listener = <span class="hljs-keyword">new</span> MessageListener() {
-  <span class="hljs-meta">@Override</span>
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onMessage</span><span class="hljs-params">(Message message)</span> </span>{
-    System.out.print(message.data);
-  };
-};
-channel.subscribe(<span class="hljs-string">"greeting"</span>, listener);</code></pre>
-</div>
-`;
-
-exports[`Chat button state > react > the button is inactive without Hubspot widget #0`] = `
-<button
-  type="button"
-  class="ui-btn-secondary self-start mt-16"
-  disabled=""
-  data-id="open-chat-widget"
->
-  Live chat unavailable
-</button>
-`;
-
-exports[`Chat button state > vw > the button is inactive without Hubspot widget #0`] = `
-<button
-  type="button"
-  class="ui-btn-secondary self-start mt-16"
-  disabled=""
-  data-id="open-chat-widget"
->
-  Live chat unavailable
-</button>
-`;
-
-exports[`Footer Snapshot Test > react > test case common to both #0`] = `
-<footer class="bg-light-grey font-sans antialiased" data-id="footer">
-  <div
-    class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
-  >
-    <div class="col-span-full md:col-span-2">
-      <div class="flex flex-row p-menu-row-snug">
-        <img
-          class="mr-24 -mt-16"
-          src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
-          alt="Ably homepage"
-        />
-        <h2
-          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
-        >
-          The Ably Platform
-        </h2>
-      </div>
-      <div class="grid grid-cols-4">
-        <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
-          Easily power any realtime experience in your application via a simple
-          API that handles everything realtime.
-        </p>
-      </div>
-      <ul
-        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
-      >
-        <li class="p-menu-row-snug">
-          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
-            >Pub/sub messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/push-notifications" class="ui-footer-menu-row-link"
-            >Push notifications</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/integrations" class="ui-footer-menu-row-link"
-            >Third-party integrations</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/protocols" class="ui-footer-menu-row-link"
-            >Multiple protocol messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">Ably is for</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/automotive-logistics-and-mobility"
-            class="ui-footer-menu-row-link"
-            >Automotive, Logistics, &amp; Mobility</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/b2b-platforms" class="ui-footer-menu-row-link"
-            >B2B Platforms</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
-            >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/ecommerce-and-retail"
-            class="ui-footer-menu-row-link"
-            >eCommerce &amp; Retail</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/sports-and-media" class="ui-footer-menu-row-link"
-            >Sports &amp; Media</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/gaming" class="ui-footer-menu-row-link">Gaming</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/iot-and-connected-devices"
-            class="ui-footer-menu-row-link"
-            >IoT &amp; Connected Devices</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">Developers</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a
-            href="/documentation/quick-start-guide"
-            class="ui-footer-menu-row-link"
-            >Start in 5 minutes</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/documentation/" class="ui-footer-menu-row-link"
-            >Documentation</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="https://changelog.ably.com/" class="ui-footer-menu-row-link"
-            >Changelog</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/support" class="ui-footer-menu-row-link"
-            >Support &amp; FAQs</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/download" class="ui-footer-menu-row-link">SDKs</a>
-        </li>
-        <li class="p-menu-row-snug flex items-center">
-          <a
-            class="pr-8 ui-footer-menu-row-link"
-            href="https://status.ably.com/"
-            >System status</a
-          ><iframe
-            class="w-24 h-24 mt-4"
-            src="https://status.ably.io/embed/icon"
-            allowtransparency="true"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">WHY ABLY</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/case-studies" class="ui-footer-menu-row-link"
-            >Case Studies</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/four-pillars-of-dependability"
-            class="ui-footer-menu-row-link"
-            >Four Pillars of Dependability</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/compare" class="ui-footer-menu-row-link"
-            >Compare our tech</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/protocols" class="ui-footer-menu-row-link"
-            >Multi protocol support</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/integrations" class="ui-footer-menu-row-link"
-            >Third-party integrations</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">ABOUT</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/about" class="ui-footer-menu-row-link">About Ably</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/pricing" class="ui-footer-menu-row-link">Pricing</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/open-policy" class="ui-footer-menu-row-link"
-            >Open protocol policy</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/contact" class="ui-footer-menu-row-link">Contact us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="max-w-screen-xl ui-grid-px mx-auto">
-    <hr class="border-t border-mid-grey" />
-  </div>
-  <div
-    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
-  >
-    <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-      <div class="ui-footer-legals">
-        <a href="/privacy" class="pr-24 ui-footer-link">Cookies</a
-        ><a href="/legals" class="pr-24 ui-footer-link">Legals</a
-        ><a href="/data-protection" class="ui-footer-link">Data Protection</a>
-      </div>
-      <div class="pt-32 flex items-center">
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
-          href="https://twitter.com/ablyrealtime"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-twitter"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
-          href="https://www.linkedin.com/company/ably-realtime"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-linkedin"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-github"
-          href="https://github.com/ably/"
-          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
-        ></a>
-        <div class="border-l border-mid-grey h-40"></div>
-        <a
-          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
-          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-glassdoor"></use></svg
-        ></a>
-        <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">We're hiring!</strong
-          ><a
-            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-            class="ui-footer-link"
-            >Learn more</a
-          >&nbsp;at Glass Door
-        </div>
-      </div>
-    </div>
-    <div class="md:text-right col-span-full md:col-span-1 ml-8">
-      <img
-        class="mr-24 w-96 h-96"
-        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
-        alt="Rocket List 2021"
-      /><img
-        class="w-96 h-96"
-        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
-        alt="Flexible Companies 2021"
-      />
-    </div>
-  </div>
-</footer>
-`;
-
-exports[`Footer Snapshot Test > view component > test case common to both #0`] = `
-<footer class="bg-light-grey font-sans antialiased" data-id="footer">
-  <div
-    class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
-  >
-    <div class="col-span-full md:col-span-2">
-      <div class="flex flex-row p-menu-row-snug">
-        <img
-          class="mr-24 -mt-16"
-          src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
-          alt="Ably homepage"
-        />
-        <h2
-          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
-        >
-          The Ably Platform
-        </h2>
-      </div>
-      <div class="grid grid-cols-4">
-        <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
-          Easily power any realtime experience in your application via a simple
-          API that handles everything realtime.
-        </p>
-      </div>
-      <ul
-        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
-      >
-        <li class="p-menu-row-snug">
-          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
-            >Pub/sub messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/push-notifications" class="ui-footer-menu-row-link"
-            >Push notifications</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/integrations" class="ui-footer-menu-row-link"
-            >Third-party integrations</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/protocols" class="ui-footer-menu-row-link"
-            >Multiple protocol messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">Ably is for</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/automotive-logistics-and-mobility"
-            class="ui-footer-menu-row-link"
-            >Automotive, Logistics, &amp; Mobility</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/b2b-platforms" class="ui-footer-menu-row-link"
-            >B2B Platforms</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
-            >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/ecommerce-and-retail"
-            class="ui-footer-menu-row-link"
-            >eCommerce &amp; Retail</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/sports-and-media" class="ui-footer-menu-row-link"
-            >Sports &amp; Media</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/solutions/gaming" class="ui-footer-menu-row-link">Gaming</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/solutions/iot-and-connected-devices"
-            class="ui-footer-menu-row-link"
-            >IoT &amp; Connected Devices</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">Developers</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a
-            href="/documentation/quick-start-guide"
-            class="ui-footer-menu-row-link"
-            >Start in 5 minutes</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/documentation/" class="ui-footer-menu-row-link"
-            >Documentation</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="https://changelog.ably.com/" class="ui-footer-menu-row-link"
-            >Changelog</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/support" class="ui-footer-menu-row-link"
-            >Support &amp; FAQs</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/download" class="ui-footer-menu-row-link">SDKs</a>
-        </li>
-        <li class="p-menu-row-snug flex items-center">
-          <a
-            class="pr-8 ui-footer-menu-row-link"
-            href="https://status.ably.com/"
-            >System status</a
-          ><iframe
-            class="w-24 h-24 mt-4"
-            src="https://status.ably.io/embed/icon"
-            allowtransparency="true"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">WHY ABLY</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/customers" class="ui-footer-menu-row-link">Customers</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/case-studies" class="ui-footer-menu-row-link"
-            >Case Studies</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a
-            href="/four-pillars-of-dependability"
-            class="ui-footer-menu-row-link"
-            >Four Pillars of Dependability</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/compare" class="ui-footer-menu-row-link"
-            >Compare our tech</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/protocols" class="ui-footer-menu-row-link"
-            >Multi protocol support</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/integrations" class="ui-footer-menu-row-link"
-            >Third-party integrations</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
-      <h2 class="ui-footer-col-title">ABOUT</h2>
-      <ul>
-        <li class="p-menu-row-snug">
-          <a href="/about" class="ui-footer-menu-row-link">About Ably</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/pricing" class="ui-footer-menu-row-link">Pricing</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/blog" class="ui-footer-menu-row-link">Blog</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/careers" class="ui-footer-menu-row-link">Careers</a>
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/open-policy" class="ui-footer-menu-row-link"
-            >Open protocol policy</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/contact" class="ui-footer-menu-row-link">Contact us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="max-w-screen-xl ui-grid-px mx-auto">
-    <hr class="border-t border-mid-grey" />
-  </div>
-  <div
-    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
-  >
-    <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-      <div class="ui-footer-legals">
-        <a href="/privacy" class="pr-24 ui-footer-link">Cookies</a
-        ><a href="/legals" class="pr-24 ui-footer-link">Legals</a
-        ><a href="/data-protection" class="ui-footer-link">Data Protection</a>
-      </div>
-      <div class="pt-32 flex items-center">
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
-          href="https://twitter.com/ablyrealtime"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-twitter"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
-          href="https://www.linkedin.com/company/ably-realtime"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-linkedin"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-github"
-          href="https://github.com/ably/"
-          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
-        ></a>
-        <div class="border-l border-mid-grey h-40"></div>
-        <a
-          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
-          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-          ><svg class="w-24 h-24">
-            <use xlink:href="#sprite-glassdoor"></use></svg
-        ></a>
-        <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">We're hiring!</strong
-          ><a
-            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-            class="ui-footer-link"
-            >Learn more</a
-          >&nbsp;at Glass Door
-        </div>
-      </div>
-    </div>
-    <div class="md:text-right col-span-full md:col-span-1 ml-8">
-      <img
-        class="mr-24 w-96 h-96"
-        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
-        alt="Rocket List 2021"
-      /><img
-        class="w-96 h-96"
-        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
-        alt="Flexible Companies 2021"
-      />
-    </div>
-  </div>
-</footer>
-`;
-
-exports[`ControlMobileDropdown > react > renders correctly by default #0`] = `
-<button
-  type="button"
-  class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
-  data-id="meganav-control-mobile-dropdown"
-  aria-expanded="false"
-  aria-controls="meganav-mobile-dropdown"
->
-  <svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-menu"
-  >
-    <use xlink:href="#sprite-menu"></use></svg
-  ><svg
-    class="h-24 w-24 transition-colors hidden ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-close"
-  >
-    <use xlink:href="#sprite-close"></use>
-  </svg>
-</button>
-`;
-
-exports[`ControlMobileDropdown > react > renders correctly on click #0`] = `
-<button
-  type="button"
-  class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
-  data-id="meganav-control-mobile-dropdown"
-  aria-expanded="true"
-  aria-controls="meganav-mobile-dropdown"
->
-  <svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black hidden"
-    data-id="meganav-control-mobile-dropdown-menu"
-  >
-    <use xlink:href="#sprite-menu"></use></svg
-  ><svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-close"
-  >
-    <use xlink:href="#sprite-close"></use>
-  </svg>
-</button>
-`;
-
-exports[`ControlMobileDropdown > vw > renders correctly by default #0`] = `
-<button
-  name="button"
-  type="button"
-  class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
-  data-id="meganav-control-mobile-dropdown"
-  aria-expanded="false"
-  aria-controls="meganav-mobile-dropdown"
->
-  <svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-menu"
-  >
-    <use xlink:href="#sprite-menu"></use>
-  </svg>
-  <svg
-    class="h-24 w-24 transition-colors hidden ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-close"
-  >
-    <use xlink:href="#sprite-close"></use>
-  </svg>
-</button>
-`;
-
-exports[`ControlMobileDropdown > vw > renders correctly on click #0`] = `
-<button
-  name="button"
-  type="button"
-  class="block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
-  data-id="meganav-control-mobile-dropdown"
-  aria-expanded="true"
-  aria-controls="meganav-mobile-dropdown"
->
-  <svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black hidden"
-    data-id="meganav-control-mobile-dropdown-menu"
-  >
-    <use xlink:href="#sprite-menu"></use>
-  </svg>
-  <svg
-    class="h-24 w-24 transition-colors ui-icon-cool-black"
-    data-id="meganav-control-mobile-dropdown-close"
-  >
-    <use xlink:href="#sprite-close"></use>
-  </svg>
-</button>
-`;
-
-exports[`Notice > react > renders correctly by default #0`] = `
-<div class="ui-announcement" data-id="ui-notice" style="">
-  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-center">
-    <a href="/" class="font-light w-full pr-8 text-p3"
-      ><strong class="font-medium whitespace-nowrap pr-4"
-        >Something something</strong
-      ><span class="pr-4"
-        >Lorem ipsum dolor sit amet, in nonumes delectus nominati eam, novum
-        recusabo an mel. Aeque maiorum patrioque te per, congue epicurei
-        qualisque at quo. An has quis ludus appellantur. Id vis solum assentior
-        theophrastus</span
-      ><span class="underline cursor-pointer whitespace-nowrap"
-        >CLICK ME</span
-      ></a
-    ><button type="button" class="mt-4 ml-auto border-none bg-none">
-      <svg class="h-24 w-24 ui-icon-white">
-        <use xlink:href="#sprite-close"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Notice > vw > renders correctly by default #0`] = `
-<div class="ui-announcement" data-id="ui-notice" style="">
-  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-center">
-    <a href="/" class="font-light w-full pr-8 text-p3"
-      ><strong class="font-medium whitespace-nowrap pr-4"
-        >Something something</strong
-      ><span class="pr-4"
-        >Lorem ipsum dolor sit amet, in nonumes delectus nominati eam, novum
-        recusabo an mel. Aeque maiorum patrioque te per, congue epicurei
-        qualisque at quo. An has quis ludus appellantur. Id vis solum assentior
-        theophrastus</span
-      ><span class="underline cursor-pointer whitespace-nowrap"
-        >CLICK ME</span
-      ></a
-    ><button type="button" class="mt-4 ml-auto border-none bg-none">
-      <svg class="h-24 w-24 ui-icon-white">
-        <use xlink:href="#sprite-close"></use>
-      </svg>
-    </button>
-  </div>
 </div>
 `;

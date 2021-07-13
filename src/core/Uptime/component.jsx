@@ -29,16 +29,50 @@ function StatusLegend({ metadata, textColor }) {
   return <div className="ui-uptime-legend">{items}</div>;
 }
 
+function applyAlignment(value, i, count = 8) {
+  const before = i < value + count;
+  const after = i > value - count;
+
+  if (i > 0 && !(before && after)) return null;
+
+  const align = i === 0 || i > value ? "left" : "right";
+  const diff = value - i;
+  const amount = Math.abs(diff) || 0;
+  const sign = i > value ? -1 : 1;
+
+  return { align, amount, sign };
+}
+
 function UptimeGraph({ collection }) {
   // add 30 day split deliminators
   collection.splice(29, 0, null);
   collection.splice(60, 0, null);
 
+  const MAX_TOOLTIP_CHAR_LENGTH = 80;
+
   const items = collection.map((row, i) => {
     if (!row) return <li key={i} className="ui-uptime-seperator"></li>;
 
-    const classname = `ui-uptime-day ui-uptime-${row.class}`;
-    return <li key={i} className={classname} data-label={row.label}></li>;
+    const [alignment = {}] = [0, 29, 60, 91].map((value) => applyAlignment(value, i)).filter((s) => s);
+    const { align = null, amount = null, sign = null } = alignment;
+    const labelAlign = alignment && `ui-uptime-align-${align}`;
+    const classname = `ui-uptime-day ui-uptime-${row.class} ${labelAlign}`.trim();
+
+    const { label } = row;
+    const { length } = label.trim();
+
+    const tooltext = length < MAX_TOOLTIP_CHAR_LENGTH ? label : label.slice(0, MAX_TOOLTIP_CHAR_LENGTH - 1) + "…";
+    const width = (length > MAX_TOOLTIP_CHAR_LENGTH - 10 && "extra-wide") || (length > MAX_TOOLTIP_CHAR_LENGTH / 2 && "wide") || "normal";
+    const translateX = Math.min((Math.max(amount - 1, 0) * 10) >> 0, 50) * sign;
+    const transform = align ? { transform: `translateX(${translateX}%)` } : {};
+
+    return (
+      <li key={i} className={classname}>
+        <span className={`ui-uptime-width-${width}`} style={transform}>
+          {tooltext}
+        </span>
+      </li>
+    );
   });
 
   return (
