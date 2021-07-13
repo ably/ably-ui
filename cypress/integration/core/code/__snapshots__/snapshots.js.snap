@@ -1,5 +1,5 @@
 exports[`Code Snapshot Test > react > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="javascript"
   ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
@@ -13,7 +13,7 @@ channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs
 `;
 
 exports[`Code Snapshot Test > react > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="swift"
   ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
@@ -27,7 +27,7 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span c
 `;
 
 exports[`Code Snapshot Test > react > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="java"
   ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
@@ -47,7 +47,7 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>, listener);</code>
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="javascript"
   ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
@@ -61,7 +61,7 @@ channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="swift"
   ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
@@ -75,7 +75,7 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span c
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs" data-id="code">
   <pre
     lang="java"
   ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
