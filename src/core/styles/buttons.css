@@ -19,7 +19,7 @@
 
   .ui-btn-secondary {
     @apply text-cool-black bg-white text-btn2 font-sans font-medium inline-block border-btn border-cool-black rounded p-btn;
-    @apply hover:border-active-orange hover:bg-white;
+    @apply hover:text-cool-black hover:border-active-orange hover:bg-white;
     @apply active:border-red-orange active:bg-white;
     @apply focus:border-cool-black focus:bg-white focus:outline-gui-focus;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white;
@@ -28,7 +28,7 @@
 
   .ui-btn-secondary-invert {
     @apply text-white bg-cool-black text-btn2 font-sans font-medium inline-block border-btn border-mid-grey rounded p-btn;
-    @apply hover:border-active-orange;
+    @apply hover:text-white hover:border-active-orange;
     @apply active:border-red-orange;
     @apply focus:outline-gui-focus;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable;
