@@ -1,21 +1,16 @@
 import React, { useEffect } from "react";
 
+import Icon from "../Icon/component.jsx";
 import toggleChatWidget from "./component.js";
 
 export default function ContactFooter() {
-  const svgicon = (id) => (
-    <svg className="w-48 h-48 block mb-16">
-      <use xlinkHref={"#" + id}></use>
-    </svg>
-  );
-
   useEffect(() => toggleChatWidget(), []);
 
   return (
     <div className="ui-contact-footer font-sans antialiased" data-id="contact-footer">
       <div className="w-full bp-lg max-w-screen-xl mx-auto py-64 grid grid-cols-1 md:grid-cols-3 ui-grid-gap ui-grid-px">
         <div className="ui-contact-footer-box">
-          {svgicon("sprite-live-chat")}
+          <Icon name="live-chat" size="3rem" additionalCSS="block mb-16" />
           <div>
             <div className="text-h3 mb-24">Live Chat</div>
             <p className="text-p1 font-light">Reach out team of experts over chat powered by Ably.</p>
@@ -26,7 +21,7 @@ export default function ContactFooter() {
         </div>
 
         <div className="ui-contact-footer-box">
-          {svgicon("sprite-call-mobile")}
+          <Icon name="call-mobile" size="3rem" additionalCSS="block mb-16" />
           <div className="flex-grow">
             <div className="text-h3 mb-24">Call us</div>
             <p className="text-p1 font-light">
@@ -41,7 +36,7 @@ export default function ContactFooter() {
         </div>
 
         <div className="ui-contact-footer-box">
-          {svgicon("sprite-tech-account-comms")}
+          <Icon name="tech-account-comms" size="3rem" additionalCSS="block mb-16" />
           <div>
             <div className="text-h3 mb-24">Technical and account support</div>
             <p className="text-p1 font-light">We&apos;re standing by to help with any questions or code.</p>
