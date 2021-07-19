@@ -1,0 +1,24 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Icon
+<% end %>
+
+<%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters, framework: framework } %>
+
+<h2 class="text-h2 mb-32 font-sans">Core Icons</h2>
+
+<div class="grid grid-cols-4 ui-grid-gap max-w-screen-md">
+  <% core_icons.each do |icon_name| %>
+    <div class="border p-16">
+      <code class="font-mono text-p2 mb-8 block"><%= icon_name %></code>
+      <div class="border inline-flex flex-0">
+        <%= react_component('icon', { name: icon_name, size: '2rem', additionalCSS: "hover:text-active-orange", color: 'text-cool-black' }, { wrapper_css: 'flex pi-checkered-bg' }) %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<% content_for :component do %>
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>

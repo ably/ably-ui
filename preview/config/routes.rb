@@ -1,14 +1,18 @@
-Rails.application.routes.draw do
-  get '/globals', to: 'pages#globals'
-  get '/foundations/typography', to: 'pages#typography'
+Rails
+  .application
+  .routes
+  .draw do
+    get '/globals', to: 'pages#globals'
+    get '/foundations/typography', to: 'pages#typography'
 
-  get '/components/meganav', to: 'components#meganav'
-  get '/components/footer', to: 'components#footer'
-  get '/components/:component_name', to: 'components#show'
+    get '/components/meganav', to: 'components#meganav'
+    get '/components/footer', to: 'components#footer'
+    get '/components/icon', to: 'components#icon'
+    get '/components/:component_name', to: 'components#show'
 
-  get '/api/me', to: 'api/user_session#me'
-  get '/api/blog', to: 'api/blog#recent_blog_posts'
-  get '/api/uptime', to: 'api/uptime#uptime_json'
+    get '/api/me', to: 'api/user_session#me'
+    get '/api/blog', to: 'api/blog#recent_blog_posts'
+    get '/api/uptime', to: 'api/uptime#uptime_json'
 
-  root 'pages#index'
-end
+    root 'pages#index'
+  end
