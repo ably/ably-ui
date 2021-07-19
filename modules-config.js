@@ -29,6 +29,7 @@ module.exports = [
       "ConnectStateWrapper",
       "Flash",
       "CookieMessage",
+      "Icon",
     ],
   },
   {
