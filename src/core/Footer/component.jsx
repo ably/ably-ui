@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 export default function Footer({ paths }) {
   return (
     <footer className="bg-light-grey font-sans antialiased" data-id="footer">
@@ -242,28 +244,20 @@ export default function Footer({ paths }) {
 
           <div className="pt-32 flex items-center">
             <a className="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime">
-              <svg className="w-24 h-24">
-                <use xlinkHref="#sprite-twitter"></use>
-              </svg>
+              <Icon name="twitter" size="1.5rem" />
             </a>
             <a className="h-24 pr-24 text-cool-black hover:text-icon-linkedin" href="https://www.linkedin.com/company/ably-realtime">
-              <svg className="w-24 h-24">
-                <use xlinkHref="#sprite-linkedin"></use>
-              </svg>
+              <Icon name="linkedin" size="1.5rem" />
             </a>
             <a className="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/">
-              <svg className="w-24 h-24">
-                <use xlinkHref="#sprite-github"></use>
-              </svg>
+              <Icon name="github" size="1.5rem" />
             </a>
             <div className="border-l border-mid-grey h-40"></div>
             <a
               className="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
               href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
             >
-              <svg className="w-24 h-24">
-                <use xlinkHref="#sprite-glassdoor"></use>
-              </svg>
+              <Icon name="glassdoor" size="1.5rem" />
             </a>
             <div className="pl-16 text-menu3 font-light">
               <strong className="block font-medium">We&apos;re hiring!</strong>
