@@ -1,0 +1,22 @@
+@layer components {
+  .ui-cookie-message {
+    @apply p-16 rounded-lg bg-white mr-96;
+    @apply block sm:flex justify-between items-center;
+    @apply relative;
+    box-shadow: 0px 24px 32px 0px #0000000d;
+    border: 1px solid var(--color-mid-grey);
+    opacity: 1;
+    bottom: 0;
+  }
+
+  .ui-cookie-message-cyan {
+    @apply ui-cookie-message;
+    border-left: 0.5rem solid var(--color-electric-cyan);
+  }
+
+  .ui-cookie-message-vanish {
+    opacity: 0;
+    bottom: 1rem;
+    transition: bottom 250ms ease-out, opacity 150ms ease-out;
+  }
+}
