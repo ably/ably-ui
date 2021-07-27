@@ -1,17 +1,16 @@
 import React from "react";
 import T from "prop-types";
 
-const FeaturedLink = ({ url, textSize = "text-menu3", iconColor = "ui-icon-cool-black", flush = false, children }) => (
+import Icon from "../Icon/component.jsx";
+
+const FeaturedLink = ({ url, textSize = "text-menu3", iconColor = "text-cool-black", flush = false, children }) => (
   <a
     href={url}
-    className={`${textSize} text-gui-default font-medium flex items-baseline hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus ${
-      flush ? "" : "py-8"
-    } block group`}
+    className={`ui-featured-link ${textSize} ${flush ? "" : "py-8"} `}
+    style={{ "--featured-link-icon-size": `var(${textSize.replace("text", "--fs")})` }}
   >
     {children}
-    <svg className={`w-12 h-12 transform -rotate-90 align-top ${iconColor} group-hover:icon-gui-hover group-focus:icon-gui-focus ml-4`}>
-      <use xlinkHref="#sprite-disclosure-arrow" />
-    </svg>
+    <Icon name="disclosure-arrow-path" size={`calc(var(--featured-link-icon-size) * 0.6)`} color={iconColor} additionalCSS="ui-featured-link-icon" />
   </a>
 );
 
