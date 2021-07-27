@@ -8,6 +8,7 @@ import Uptime from "@ably/ably-ui/core/Uptime";
 import CookieMessage from "@ably/ably-ui/core/CookieMessage";
 import Flash, { reducerFlashes } from "@ably/ably-ui/core/Flash";
 import Icon from "@ably/ably-ui/core/Icon";
+import FeaturedLink from "@ably/ably-ui/core/FeaturedLink";
 
 import {
   reactRenderer,
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Flash,
     CookieMessage,
     Icon,
+    FeaturedLink,
   });
 
   // Fetch additional data, trigger a re-render for components subscribed to store
