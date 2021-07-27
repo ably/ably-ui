@@ -1,36 +1,88 @@
 class ComponentsController < ApplicationController
-  def meganav
-    session[:signed_in] = signed_in?
-    template = "meganav_#{framework}.html.erb"
-    render template,
-           locals: {
-             props:
-               framework == 'react' ? meganav_react_props : meganav_vw_props,
-             notice_props: notice_props,
-             notice_config: notice_config
-           }
-  end
-
   def show
     component_name = params[:component_name]
     template = "components/#{component_name.underscore}_#{framework}.html.erb"
 
     if template_exists?(template)
-      render template
+      render template,
+             locals: {
+               framework: framework,
+               component_parameters:
+                 component_parameters(component_name.underscore)
+             }
     else
       render status: 404, plain: "#{template} not found"
     end
   end
 
-  def footer
-    template = "footer_#{framework}.html.erb"
+  def meganav
+    session[:signed_in] = signed_in?
+    template = "meganav_#{framework}.html.erb"
+
     render template,
            locals: {
-             props: framework == 'react' ? react_footer_props : {}
+             props: meganav_props,
+             notice_props: notice_props,
+             notice_config: notice_config,
+             framework: framework,
+             component_parameters: component_parameters('meganav')
+           }
+  end
+
+  def footer
+    template = "footer_#{framework}.html.erb"
+
+    render template,
+           locals: {
+             props: framework == 'react' ? footer_react_props : {},
+             framework: framework,
+             component_parameters: component_parameters('footer')
+           }
+  end
+
+  def icon
+    template = "icon_#{framework}.html.erb"
+    core_icons = %w[
+      search
+      it-support-helpdesk
+      platform
+      github
+      icon-gui-warning
+      disclosure-arrow
+      call-mobile
+      tick
+      it-support-access
+      icon-gui-tick
+      close
+      icon-gui-ably-badge
+      linkedin
+      live-chat
+      general-comms
+      twitter
+      tech-account-comms
+      quote
+      glassdoor
+      menu
+    ]
+
+    render template,
+           locals: {
+             core_icons: core_icons,
+             framework: framework,
+             component_parameters: component_parameters('icon')
            }
   end
 
   private
+
+  def component_parameters(component_name)
+    path =
+      Rails
+        .root
+        .join('app', 'views', 'components', "#{component_name}_params.yml")
+        .to_s
+    File.file?(path) ? YAML.load(File.read(path)) : []
+  end
 
   def notice_props
     {
@@ -45,6 +97,10 @@ class ComponentsController < ApplicationController
 
   def notice_config
     { cookie_id: '2', notice_id: 'B', collapse: notice_collapse }
+  end
+
+  def meganav_props
+    framework == 'react' ? meganav_react_props : meganav_vw_props
   end
 
   def meganav_react_props
@@ -64,7 +120,11 @@ class ComponentsController < ApplicationController
     }
   end
 
-  def react_footer_props
+  def meganav_vw_props
+    signed_in? ? { session_data: helpers.session_data } : {}
+  end
+
+  def footer_react_props
     {
       paths: {
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
@@ -74,10 +134,6 @@ class ComponentsController < ApplicationController
           helpers.asset_path('ably_ui/core/images/flexible-companies.png')
       }
     }
-  end
-
-  def meganav_vw_props
-    signed_in? ? { session_data: helpers.session_data } : {}
   end
 
   def framework
