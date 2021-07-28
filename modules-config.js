@@ -28,6 +28,7 @@ module.exports = [
       "Uptime",
       "ConnectStateWrapper",
       "Flash",
+      "CookieMessage",
     ],
   },
   {
