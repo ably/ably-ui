@@ -10,7 +10,7 @@ const FeaturedLink = ({ url, textSize = "text-menu3", iconColor = "text-cool-bla
     style={{ "--featured-link-icon-size": `var(${textSize.replace("text", "--fs")})` }}
   >
     {children}
-    <Icon name="disclosure-arrow-path" size={`calc(var(--featured-link-icon-size) * 0.6)`} color={iconColor} additionalCSS="ui-featured-link-icon" />
+    <Icon name="disclosure-arrow" size={`calc(var(--featured-link-icon-size) * 0.6)`} color={iconColor} additionalCSS="ui-featured-link-icon" />
   </a>
 );
 

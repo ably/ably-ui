@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 const MeganavControl = ({ ariaControls, children, theme }) => (
   <button
     type="button"
@@ -11,9 +13,7 @@ const MeganavControl = ({ ariaControls, children, theme }) => (
     aria-label={`Show ${children}`}
   >
     {children}
-    <svg className="w-12 h-12 ml-8 ui-icon-cool-black group-hover:icon-gui-hover group-focus:icon-gui-focus">
-      <use xlinkHref="#sprite-disclosure-arrow"></use>
-    </svg>
+    <Icon name="disclosure-arrow" color="text-cool-black" size="0.75rem" additionalCSS="ml-8 group-hover:text-gui-hover group-focus:text-gui-focus" />
   </button>
 );
 

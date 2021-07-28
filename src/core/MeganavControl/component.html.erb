@@ -2,7 +2,5 @@
                class: ["ui-meganav-link", "h-64", "flex", "items-center", "group", theme(:text_color)],
                data: { id: "meganav-control" },
                aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do -%>
-  <%= content -%><svg class="w-12 h-12 ml-8 ui-icon-cool-black group-hover:icon-gui-hover group-focus:icon-gui-focus">
-    <use xlink:href="#sprite-disclosure-arrow"></use>
-  </svg>
+  <%= content -%><%= render(AblyUi::Core::Icon.new(name: "disclosure-arrow", size: "0.75rem", color: "text-cool-black", additional_css: "ml-8 group-hover:text-gui-hover group-focus:text-gui-focus")) %>
 <% end %>

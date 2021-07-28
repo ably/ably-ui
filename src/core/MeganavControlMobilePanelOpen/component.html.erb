@@ -3,7 +3,5 @@
                data: { id: "meganav-control-mobile-panel-open" },
                aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do %>
   <%= content %>
-  <svg class="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-cool-black">
-    <use xlink:href="#sprite-disclosure-arrow"></use>
-  </svg>
+  <%= render(AblyUi::Core::Icon.new(name: "disclosure-arrow", size: "0.6rem", color: "text-cool-black", additional_css: "transform -rotate-90 ml-auto float-right")) %>
 <% end %>

@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 const MeganavControlMobilePanelOpen = ({ ariaControls, children }) => (
   <button
     type="button"
@@ -11,9 +13,7 @@ const MeganavControlMobilePanelOpen = ({ ariaControls, children }) => (
     aria-label={`Show ${children}`}
   >
     {children}
-    <svg className="transform -rotate-90 ml-auto float-right w-12 h-12 ui-icon-cool-black">
-      <use xlinkHref="#sprite-disclosure-arrow"></use>
-    </svg>
+    <Icon name="disclosure-arrow" color="text-cool-black" size="0.6rem" additionalCSS="transform -rotate-90 ml-auto float-right" />
   </button>
 );
 

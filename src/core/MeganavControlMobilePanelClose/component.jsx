@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 const MeganavControlMobilePanelClose = ({ ariaControls }) => (
   <div className="mx-24 md:mx-32">
     <button
@@ -11,9 +13,7 @@ const MeganavControlMobilePanelClose = ({ ariaControls }) => (
       aria-controls={ariaControls}
       aria-label="Hide panel"
     >
-      <svg className="transform rotate-90 w-12 h-12 mr-8 ui-icon-cool-black">
-        <use xlinkHref="#sprite-disclosure-arrow"></use>
-      </svg>
+      <Icon name="disclosure-arrow" color="text-cool-black" size="0.6rem" additionalCSS="transform rotate-90 mr-8" />
       Back
     </button>
     <hr className="ui-meganav-hr" />
