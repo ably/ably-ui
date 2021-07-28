@@ -1,4 +1,9 @@
   <div class="mb-32">
+    <a href="/" class="text-p2 text-gui-default hover:text-gui-hover font-sans font-light mb-32 block">
+      <%= render(AblyUi::Core::Icon.new(name: "disclosure-arrow", size: "0.5rem", additional_css: "transform rotate-90 mr-4")) %>
+      Back
+    </a>
+
     <h1 class="text-title font-sans antialiased mb-16"><%= content %></h1>
 
     <p class="text-p1 font-medium font-sans antialiased flex items-center">Available for:
