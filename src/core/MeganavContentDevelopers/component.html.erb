@@ -3,9 +3,7 @@
     <h3 class="ui-meganav-overline md:mb-8">Documentation</h3>
     <div class="relative mb-16">
       <form class="relative" action="/search" method="get">
-        <svg class="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
-          <use xlink:href="#sprite-search"></use>
-        </svg>
+        <%= render(AblyUi::Core::Icon.new(name: "search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-8 left-8 pt-1 mt-1")) %>
         <input type="search" name="q" class="ui-input pl-48" placeholder="Search docs" />
       </form>
     </div>

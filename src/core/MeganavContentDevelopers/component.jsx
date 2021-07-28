@@ -1,6 +1,7 @@
 import React from "react";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
+import Icon from "../Icon/component.jsx";
 
 const MeganavContentDevelopers = () => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
@@ -8,9 +9,7 @@ const MeganavContentDevelopers = () => (
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
-          <svg className="absolute top-8 left-8 w-24 h-24 pt-1 mt-1 ui-icon-cool-black">
-            <use xlinkHref="#sprite-search" />
-          </svg>
+          <Icon name="search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-8 left-8 pt-1 mt-1" />
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
       </div>
