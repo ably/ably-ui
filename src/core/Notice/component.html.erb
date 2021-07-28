@@ -9,9 +9,7 @@
 
     <% if close_btn? %>
       <%= button_tag type: 'button', class: 'h-20 w-20 mt-4 ml-auto border-none bg-none self-baseline' do %>
-        <%= tag.svg class: ["h-20", "w-20", "ui-icon-white"] do %>
-          <use xlink:href="#sprite-close"></use>
-        <% end %>
+        <%= render(AblyUi::Core::Icon.new(name: "close", size: "1.25rem", color: "text-white")) %>
       <% end %>
     <% end %>
   </div>

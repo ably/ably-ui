@@ -1,6 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 const MeganavControlMobileDropdown = ({ theme }) => (
   <button
     type="button"
@@ -9,12 +11,8 @@ const MeganavControlMobileDropdown = ({ theme }) => (
     aria-expanded="false"
     aria-controls="meganav-mobile-dropdown"
   >
-    <svg className={`h-24 w-24 transition-colors ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-menu">
-      <use xlinkHref="#sprite-menu"></use>
-    </svg>
-    <svg className={`h-24 w-24 transition-colors hidden ${theme.mobileMenuColor}`} data-id="meganav-control-mobile-dropdown-close">
-      <use xlinkHref="#sprite-close"></use>
-    </svg>
+    <Icon name="menu" size="1.5rem" color={theme.mobileMenuColor} additionalCSS="transition-colors" data-id="meganav-control-mobile-dropdown-menu" />
+    <Icon name="close" size="1.5rem" color={theme.mobileMenuColor} additionalCSS="transition-colors hidden" data-id="meganav-control-mobile-dropdown-close" />
   </button>
 );
 
