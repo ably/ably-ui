@@ -34,9 +34,7 @@
           aria-label="<%= index + 1 %> of <%= companies_data.size %>"
         >
           <% if company[:layout] == "quotes" %>
-            <svg class="block mb-16 w-24 h-20">
-              <use xlink:href="#sprite-quote"></use>
-            </svg>
+            <%= render(AblyUi::Core::Icon.new(name: "quote", size: "1.25rem", color: "text-cool-black")) %>
 
             <p class="text-quote font-light mb-24"><%= company[:quote] %></p>
 
