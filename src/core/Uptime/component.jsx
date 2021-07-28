@@ -82,14 +82,6 @@ function UptimeGraph({ collection }) {
   );
 }
 
-function SvgIcon({ id }) {
-  return (
-    <svg className="w-12 h-12 ml-4 transform -rotate-90">
-      <use xlinkHref={"#sprite-" + id}></use>
-    </svg>
-  );
-}
-
 function StatusCtaLink({ href, text }) {
   return (
     <div className="ui-uptime-link-back">
@@ -174,10 +166,6 @@ UptimeGraph.propTypes = {
 StatusLegend.propTypes = {
   metadata: T.array,
   textColor: T.string,
-};
-
-SvgIcon.propTypes = {
-  id: T.string,
 };
 
 StatusFooter.propTypes = {
