@@ -426,9 +426,9 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
         style="--featured-link-icon-size:var(--fs-menu3);"
         >More on our status site<svg
           class="text-white ui-featured-link-icon"
-          style="width: calc(var(--featured-link-icon-size) * 1.43); height: calc(var(--featured-link-icon-size) * 1.43);"
+          style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
         >
-          <use xlink:href="#sprite-icon-gui-disclosure-arrow"></use></svg
+          <use xlink:href="#sprite-icon-gui-link-arrow"></use></svg
       ></a>
     </div>
   </div>

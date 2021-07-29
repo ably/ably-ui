@@ -236,23 +236,24 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         <a
           class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
           href="https://twitter.com/ablyrealtime"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-twitter"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
           href="https://www.linkedin.com/company/ably-realtime"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-linkedin"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-github"
           href="https://github.com/ably/"
-          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+            <use xlink:href="#sprite-github"></use></svg
         ></a>
         <div class="border-l border-mid-grey h-40"></div>
         <a
           class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
           href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-glassdoor"></use></svg
         ></a>
         <div class="pl-16 text-menu3 font-light">
@@ -520,23 +521,24 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         <a
           class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
           href="https://twitter.com/ablyrealtime"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-twitter"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
           href="https://www.linkedin.com/company/ably-realtime"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-linkedin"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-github"
           href="https://github.com/ably/"
-          ><svg class="w-24 h-24"><use xlink:href="#sprite-github"></use></svg
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+            <use xlink:href="#sprite-github"></use></svg
         ></a>
         <div class="border-l border-mid-grey h-40"></div>
         <a
           class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
           href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-          ><svg class="w-24 h-24">
+          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-glassdoor"></use></svg
         ></a>
         <div class="pl-16 text-menu3 font-light">
