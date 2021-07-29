@@ -6,11 +6,11 @@
   }
 
   .ui-featured-link:hover svg {
-    @apply ml-8;
+    @apply left-0;
   }
 
   .ui-featured-link-icon {
-    transition: margin-left 100ms ease-in-out;
-    @apply align-middle ml-4 relative -top-1;
+    transition: left 100ms ease-in-out;
+    @apply align-middle ml-8 relative -top-1 -left-4;
   }
 }

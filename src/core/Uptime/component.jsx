@@ -6,11 +6,11 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 export const themes = {
   light: {
     text: "text-cool-black",
-    iconColor: "ui-icon-cool-black",
+    iconColor: "text-cool-black",
   },
   dark: {
     text: "text-white",
-    iconColor: "ui-icon-white",
+    iconColor: "text-white",
   },
 };
 
