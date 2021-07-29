@@ -51,6 +51,8 @@ class ComponentsController < ApplicationController
       icon-gui-tick
       icon-gui-ably-badge
       icon-gui-warning
+      icon-gui-external-link
+      icon-gui-link-arrow
     ]
 
     display_icons = %w[

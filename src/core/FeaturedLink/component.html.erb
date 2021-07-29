@@ -1,6 +1,6 @@
 <%= link_to(@url, class: "ui-featured-link #{@text_size} #{@flush ? '' : 'py-8'}", style: "--featured-link-icon-size: var(#{@text_size.gsub("text", "--fs")})") do %>
-  <%= content -%><%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow",
-                                                   size: "calc(var(--featured-link-icon-size) * 1.43)",
+  <%= content -%><%= render(AblyUi::Core::Icon.new(name: "icon-gui-link-arrow",
+                                                   size: "calc(var(--featured-link-icon-size) * 1.25)",
                                                    color: @icon_color,
                                                    additional_css: "ui-featured-link-icon")) %>
 <% end %>
