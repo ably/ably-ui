@@ -5,18 +5,13 @@
 <%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters, framework: framework } %>
 
 <h2 class="text-h2 mb-32 font-sans">Core Icons</h2>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: core_icons } %>
 
-<div class="grid grid-cols-4 ui-grid-gap">
-  <% core_icons.each do |icon_name| %>
-    <div class="border p-16">
-      <code class="font-mono text-p2 mb-8 block"><%= icon_name %></code>
-      <div class="border inline-flex flex-0">
-        <%= render(AblyUi::Core::Icon.new(name: icon_name, size: 32, additional_css: "hover:text-active-orange")) %>
-      </div>
-    </div>
-  <% end %>
-</div>
+<h2 class="text-h2 mb-32 font-sans">Display Icons</h2>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: display_icons } %>
 
+<h2 class="text-h2 mb-32 font-sans">Social Icons</h2>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: social_icons } %>
 
 <% content_for :component do %>
   <script type="text/javascript">

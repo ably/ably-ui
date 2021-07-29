@@ -56,7 +56,7 @@
   .ui-meganav-mobile-link {
     @apply p-menu-row relative -left-8 w-extend-8;
     @apply text-menu2 font-medium block text-cool-black text-left;
-    @apply flex items-baseline;
+    @apply flex items-center;
     @apply focus:text-gui-focus focus:outline-none;
   }
 

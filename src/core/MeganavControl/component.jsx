@@ -13,7 +13,12 @@ const MeganavControl = ({ ariaControls, children, theme }) => (
     aria-label={`Show ${children}`}
   >
     {children}
-    <Icon name="disclosure-arrow" color="text-cool-black" size="0.75rem" additionalCSS="ml-8 group-hover:text-gui-hover group-focus:text-gui-focus" />
+    <Icon
+      name="icon-gui-disclosure-arrow"
+      color="text-cool-black"
+      size="1.5rem"
+      additionalCSS="transform rotate-90 ml-8 group-hover:text-gui-hover group-focus:text-gui-focus"
+    />
   </button>
 );
 

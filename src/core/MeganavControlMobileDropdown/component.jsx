@@ -11,8 +11,20 @@ const MeganavControlMobileDropdown = ({ theme }) => (
     aria-expanded="false"
     aria-controls="meganav-mobile-dropdown"
   >
-    <Icon name="menu" size="1.5rem" color={theme.mobileMenuColor} additionalCSS="transition-colors" data-id="meganav-control-mobile-dropdown-menu" />
-    <Icon name="close" size="1.5rem" color={theme.mobileMenuColor} additionalCSS="transition-colors hidden" data-id="meganav-control-mobile-dropdown-close" />
+    <Icon
+      name="icon-gui-burger-menu"
+      size="1.5rem"
+      color={theme.mobileMenuColor}
+      additionalCSS="transition-colors"
+      data-id="meganav-control-mobile-dropdown-menu"
+    />
+    <Icon
+      name="icon-gui-close"
+      size="1.5rem"
+      color={theme.mobileMenuColor}
+      additionalCSS="transition-colors hidden"
+      data-id="meganav-control-mobile-dropdown-close"
+    />
   </button>
 );
 

@@ -9,7 +9,7 @@ const MeganavContentDevelopers = () => (
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">
         <form className="relative" action="/search" method="get">
-          <Icon name="search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-8 left-8 pt-1 mt-1" />
+          <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-8 left-8 pt-1 mt-1" />
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
       </div>

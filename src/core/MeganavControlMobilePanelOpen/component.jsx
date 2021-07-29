@@ -13,7 +13,7 @@ const MeganavControlMobilePanelOpen = ({ ariaControls, children }) => (
     aria-label={`Show ${children}`}
   >
     {children}
-    <Icon name="disclosure-arrow" color="text-cool-black" size="0.6rem" additionalCSS="transform -rotate-90 ml-auto float-right" />
+    <Icon name="icon-gui-disclosure-arrow" color="text-cool-black" size="1.5rem" additionalCSS="relative -top-1 ml-auto float-right" />
   </button>
 );
 

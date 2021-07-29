@@ -11,6 +11,6 @@
 
   .ui-featured-link-icon {
     transition: margin-left 100ms ease-in-out;
-    @apply align-baseline transform -rotate-90 ml-4;
+    @apply align-middle ml-4 relative -top-1;
   }
 }

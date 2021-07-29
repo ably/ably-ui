@@ -43,31 +43,34 @@ class ComponentsController < ApplicationController
   def icon
     template = "icon_#{framework}.html.erb"
     core_icons = %w[
-      search
+      icon-gui-search
+      icon-gui-plus
+      icon-gui-disclosure-arrow
+      icon-gui-burger-menu
+      icon-gui-close
+      icon-gui-tick
+      icon-gui-ably-badge
+      icon-gui-warning
+    ]
+
+    display_icons = %w[
       it-support-helpdesk
       platform
-      github
-      icon-gui-warning
-      disclosure-arrow
       call-mobile
-      tick
       it-support-access
-      icon-gui-tick
-      close
-      icon-gui-ably-badge
-      linkedin
       live-chat
       general-comms
-      twitter
       tech-account-comms
       quote
-      glassdoor
-      menu
     ]
+
+    social_icons = %w[linkedin twitter github glassdoor]
 
     render template,
            locals: {
              core_icons: core_icons,
+             display_icons: display_icons,
+             social_icons: social_icons,
              framework: framework,
              component_parameters: component_parameters('icon')
            }
