@@ -30,6 +30,7 @@ module.exports = [
       "Flash",
       "CookieMessage",
       "Icon",
+      "Slider",
     ],
   },
   {

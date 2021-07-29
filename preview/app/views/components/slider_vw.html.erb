@@ -1,0 +1,22 @@
+<%= render(TitleComponent.new(react: false, vw: true)) do %>
+  Slider
+<% end %>
+
+<%= render(AblyUi::Core::Slider.new) %>
+
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/slider/component' %>
+
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.querySelector('[data-id="slider"]');
+
+      if (slider) {
+        AblyUi.Core.Slider(slider);
+      }
+    });
+  </script>
+<% end %>
+
