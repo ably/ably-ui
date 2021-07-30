@@ -24,13 +24,12 @@ export default function CookieMessage(props) {
   if (hideCookieMessage) return null;
 
   return (
-    <div className="ui-cookie-message-container" ref={ref}>
+    <div className="ui-cookie-message" ref={ref}>
       <span className="text-p2 text-cool-black pr-32">
-        We use cookies to improve your experience and for marketing, laid out in our{" "}
         <a href="/privacy" className="underline">
-          cookie policy
-        </a>
-        .
+          How we use cookies
+        </a>{" "}
+        to improve your experience.
       </span>
       <button className="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap" onClick={handleClose}>
         Accept and close

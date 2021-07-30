@@ -8,7 +8,7 @@ describe("Cookie Message Snapshot Test", () => {
     beforeEach(() => cy.visit(url));
 
     it("the message component is visible", () => {
-      cy.get(".ui-cookie-message-container").first().toMatchSnapshot();
+      cy.get(".ui-cookie-message").first().toMatchSnapshot();
     });
   };
 
