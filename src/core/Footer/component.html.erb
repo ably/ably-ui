@@ -158,28 +158,20 @@
 
       <div class="pt-32 flex items-center">
         <a class="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime">
-          <svg class="w-24 h-24">
-            <use xlink:href="#sprite-twitter"></use>
-          </svg>
+          <%= render(AblyUi::Core::Icon.new(name: "twitter", size: "1.5rem")) %>
         </a>
         <a class="h-24 pr-24 text-cool-black hover:text-icon-linkedin" href="https://www.linkedin.com/company/ably-realtime">
-          <svg class="w-24 h-24">
-            <use xlink:href="#sprite-linkedin"></use>
-          </svg>
+          <%= render(AblyUi::Core::Icon.new(name: "linkedin", size: "1.5rem")) %>
         </a>
         <a class="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/">
-          <svg class="w-24 h-24">
-            <use xlink:href="#sprite-github"></use>
-          </svg>
+          <%= render(AblyUi::Core::Icon.new(name: "github", size: "1.5rem")) %>
         </a>
         <div class="border-l border-mid-grey h-40"></div>
         <a
           class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
           href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
         >
-          <svg class="w-24 h-24">
-            <use xlink:href="#sprite-glassdoor"></use>
-          </svg>
+          <%= render(AblyUi::Core::Icon.new(name: "glassdoor", size: "1.5rem")) %>
         </a>
         <div class="pl-16 text-menu3 font-light">
           <strong class="block font-medium">We&apos;re hiring!</strong>

@@ -4,7 +4,7 @@ module AblyUi
       def initialize(
         url:,
         text_size: 'text-menu3',
-        icon_color: 'ui-icon-cool-black',
+        icon_color: 'text-cool-black',
         flush: false
       )
         @url = url

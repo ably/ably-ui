@@ -1,11 +1,9 @@
 <div class="mx-24 md:mx-32">
   <%= button_tag(type: "button",
-                 class: "ui-meganav-mobile-link mb-16",
+                 class: "ui-meganav-mobile-link text-gui-default mb-16",
                  data: { id: "meganav-control-mobile-panel-close" },
                  aria: { expanded: false, controls: @aria_controls, label: "Hide panel" }) do -%>
-    <svg class="transform rotate-90 w-12 h-12 mr-8 ui-icon-cool-black">
-      <use xlink:href="#sprite-disclosure-arrow"></use>
-    </svg>
+    <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black", additional_css: "relative -top-1 transform rotate-180")) %>
     Back
   <% end %>
   <hr class="ui-meganav-hr" />

@@ -6,11 +6,11 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 export const themes = {
   light: {
     text: "text-cool-black",
-    iconColor: "ui-icon-cool-black",
+    iconColor: "text-cool-black",
   },
   dark: {
     text: "text-white",
-    iconColor: "ui-icon-white",
+    iconColor: "text-white",
   },
 };
 
@@ -79,14 +79,6 @@ function UptimeGraph({ collection }) {
     <div className="ui-uptime-graph">
       <ul className="ui-uptime-list">{items}</ul>
     </div>
-  );
-}
-
-function SvgIcon({ id }) {
-  return (
-    <svg className="w-12 h-12 ml-4 transform -rotate-90">
-      <use xlinkHref={"#sprite-" + id}></use>
-    </svg>
   );
 }
 
@@ -174,10 +166,6 @@ UptimeGraph.propTypes = {
 StatusLegend.propTypes = {
   metadata: T.array,
   textColor: T.string,
-};
-
-SvgIcon.propTypes = {
-  id: T.string,
 };
 
 StatusFooter.propTypes = {

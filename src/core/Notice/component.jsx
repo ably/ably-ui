@@ -4,6 +4,7 @@ import T from "prop-types";
 const contentWrapperClasses = "font-light w-full pr-8 text-p3 self-center";
 
 import NoticeScripts from "./component.js";
+import Icon from "../Icon/component.jsx";
 
 const ContentWrapper = ({ buttonLink, children }) =>
   buttonLink ? (
@@ -44,9 +45,7 @@ const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn, bg
 
         {closeBtn && (
           <button type="button" className="ml-auto h-20 w-20 border-none bg-none self-baseline">
-            <svg className="h-20 w-20 ui-icon-white">
-              <use xlinkHref="#sprite-close"></use>
-            </svg>
+            <Icon name="close" size="1.25rem" color="text-white" />
           </button>
         )}
       </div>

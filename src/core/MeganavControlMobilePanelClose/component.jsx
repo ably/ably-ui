@@ -1,19 +1,19 @@
 import React from "react";
 import T from "prop-types";
 
+import Icon from "../Icon/component.jsx";
+
 const MeganavControlMobilePanelClose = ({ ariaControls }) => (
   <div className="mx-24 md:mx-32">
     <button
       type="button"
-      className="ui-meganav-mobile-link mb-16"
+      className="ui-meganav-mobile-link text-gui-default mb-16"
       data-id="meganav-control-mobile-panel-close"
       aria-expanded="false"
       aria-controls={ariaControls}
       aria-label="Hide panel"
     >
-      <svg className="transform rotate-90 w-12 h-12 mr-8 ui-icon-cool-black">
-        <use xlinkHref="#sprite-disclosure-arrow"></use>
-      </svg>
+      <Icon name="icon-gui-disclosure-arrow" color="text-cool-black" size="1.5rem" additionalCSS="relative -top-1 transform rotate-180" />
       Back
     </button>
     <hr className="ui-meganav-hr" />

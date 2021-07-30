@@ -1,13 +1,18 @@
   <div class="mb-32">
+    <a href="/" class="text-p2 text-gui-default hover:text-gui-hover font-sans font-light mb-32 block">
+      <%= render(AblyUi::Core::Icon.new(name: "disclosure-arrow", size: "0.5rem", additional_css: "transform rotate-90 mr-4")) %>
+      Back
+    </a>
+
     <h1 class="text-title font-sans antialiased mb-16"><%= content %></h1>
 
     <p class="text-p1 font-medium font-sans antialiased flex items-center">Available for:
       <%= render(ActiveLinkComponent.new(to: url_for, classes: "ml-8 flex items-center opacity-50", active_classes: "opacity-100")) do %>
-        <%= image_tag "react.png", alt: "React framework logo", class: "ml-auto w-24 h-24" %>
+        <%= image_tag "react.png", alt: "React framework logo", class: "ml-auto w-16 h-16" %>
       <% end if react_available? %>
 
       <%= render(ActiveLinkComponent.new(to: "#{url_for}?framework=vw", classes: "flex items-center opacity-50", active_classes: "opacity-100")) do %>
-        <%= image_tag "ruby.png", alt: "Ruby programming language logo", class: "ml-8 w-24 h-24" %>
+        <%= image_tag "ruby.png", alt: "Ruby programming language logo", class: "ml-8 w-16 h-16" %>
       <% end if vw_available? %>
     </p>
   </div>

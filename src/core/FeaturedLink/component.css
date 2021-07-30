@@ -1,0 +1,16 @@
+@layer components {
+  .ui-featured-link {
+    max-width: calc(100% - 1.25rem);
+    @apply font-medium block;
+    @apply text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus;
+  }
+
+  .ui-featured-link:hover svg {
+    @apply left-0;
+  }
+
+  .ui-featured-link-icon {
+    transition: left 100ms ease-in-out;
+    @apply align-middle ml-8 relative -top-1 -left-4;
+  }
+}

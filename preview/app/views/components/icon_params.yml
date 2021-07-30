@@ -1,0 +1,26 @@
+---
+- :name: name
+  :optional: "No"
+  :default: ""
+  :type: String
+  :description: Which icon to display; matches entry in spritesheet.
+- :name: size
+  :optional: "Yes"
+  :default: 0.75rem
+  :type: String
+  :description:
+    Size of the icon, applies to both width and height. Must be a valid
+    CSS width.
+- :name: color
+  :optional: "Yes"
+  :default: ""
+  :type: String
+  :description:
+    Color of the icon. Depends on icons being drawn with strokes the currentColor
+    property being applied to all svgs.  Meant to use tailwind color classes (i.e.
+    text-white).
+- :name: additional_css
+  :optional: "Yes"
+  :default: ""
+  :type: String
+  :description: Additional classes to add on the svg element.
