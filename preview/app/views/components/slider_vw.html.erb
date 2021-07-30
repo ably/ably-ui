@@ -2,7 +2,51 @@
   Slider
 <% end %>
 
-<%= render(AblyUi::Core::Slider.new) %>
+
+<% slides_content = [
+  {
+    text: "Powers live chat, updates, analytics, and composition for millions of users.",
+  },
+  {
+    text: "Powers virtual venues for millions of event attendees around the world.",
+  },
+  {
+    text: "Provides 5 million daily users with live financial commentary and stock tickers.",
+  },
+  {
+    text: "Monitors live car performance data across the USA.",
+  }
+] %>
+
+<h2 class="text-h2 font-sans mb-32">Slider enabled on all breakpoints</h2>
+
+<p class="text-p2 font-sans font-light mb-32 max-w-screen-md">The Slider is not intended to be used on all breakpoints. The current slide is centered and content will overflow and be hidden. Intended usage is for only a small amount of whitespace to be present between the left edge of the viewport and the first slide.</p>
+
+<div class="font-sans font-light max-w-screen-xl mb-64 border-1">
+  <%= render(AblyUi::Core::Slider.new) do |slider| %>
+    <% slides_content.each do |item| %>
+      <% slider.slide do %>
+        <div class="h-full p-24 bg-white rounded">
+          <p class="text-p2 text-center"><%= item[:text] %></p>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+<h2 class="text-h2 font-sans mb-32 max-w-screen-md">Slider enabled only on small breakpoint, with number of columns changing as the viewport grows</h2>
+
+<div class="font-sans font-light max-w-screen-xl border-1">
+  <%= render(AblyUi::Core::Slider.new(classes: "sm:grid-cols-#{slides_content.length / 2} md:grid-cols-#{slides_content.length}")) do |slider| %>
+    <% slides_content.each do |item| %>
+      <% slider.slide do %>
+        <div class="h-full p-24 bg-white rounded">
+          <p class="text-p2 text-center"><%= item[:text] %></p>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
 
 <% content_for :component do %>
   <%= javascript_include_tag 'ably_ui/core/slider/component' %>
@@ -11,11 +55,18 @@
     document.body.classList.add("bg-light-grey", "m-32");
 
     document.addEventListener("DOMContentLoaded", () => {
-      const slider = document.querySelector('[data-id="slider"]');
+      const slider = document.querySelectorAll('[data-id="slider"]');
 
-      if (slider) {
-        AblyUi.Core.Slider(slider);
-      }
+      AblyUi.Core.Slider({
+        container: slider[0],
+        mqEnableThreshold: () => true
+      });
+
+      AblyUi.Core.Slider({
+        container: slider[1],
+        // match sm breakpoint
+        mqEnableThreshold: () => !window.matchMedia("(min-width: 37.5rem)").matches
+      });
     });
   </script>
 <% end %>
