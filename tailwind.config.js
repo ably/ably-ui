@@ -166,6 +166,10 @@ module.exports = {
       borderWidth: {
         btn: "1.5px",
       },
+      gridTemplateColumns: {
+        dynamic:
+          "repeat(var(--dynamic-grid-columns-count), minmax(var(--dynamic-grid-column-min-width), var(--dynamic-grid-column-max-width)))",
+      },
     },
   },
   variants: {
