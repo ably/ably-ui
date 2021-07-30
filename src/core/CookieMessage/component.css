@@ -1,16 +1,13 @@
 @layer components {
   .ui-cookie-message {
-    @apply p-16 rounded-lg bg-white mr-96;
-    @apply block sm:flex justify-between items-center;
-    @apply relative opacity-100 bottom-0;
+    @apply rounded-lg bg-white;
+    @apply justify-between items-center;
+    @apply opacity-100 z-20 bottom-0 fixed sm:flex;
+    @apply p-16 mb-16 ml-16;
+    max-width: 70vw;
     box-shadow: 0px 24px 32px 0px #0000000d;
     border: 1px solid var(--color-mid-grey);
-    transition: bottom 250ms ease-out, opacity 150ms ease-out;
-  }
-
-  .ui-cookie-message-container {
-    @apply ui-cookie-message;
-    @apply fixed bottom-0 mb-16 ml-16;
     border-left: 0.5rem solid var(--color-electric-cyan);
+    transition: bottom 250ms ease-out, opacity 150ms ease-out;
   }
 }
