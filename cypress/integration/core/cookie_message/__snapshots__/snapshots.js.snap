@@ -1,9 +1,10 @@
 exports[`Cookie Message Snapshot Test > react > the message component is visible #0`] = `
 <div class="ui-cookie-message">
-  <span class="text-p2 text-cool-black pr-32"
-    ><a href="/privacy" class="underline">How we use cookies</a> to improve your
-    experience.</span
-  ><button class="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap">
+  <p class="text-p2 text-cool-black pr-32">
+    <a href="/privacy" class="underline">How we use cookies</a> to improve your
+    experience.
+  </p>
+  <button class="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap">
     Accept and close
   </button>
 </div>

@@ -1,6 +1,6 @@
 @layer components {
   .ui-cookie-message {
-    @apply rounded-lg bg-white;
+    @apply rounded-lg bg-white font-sans;
     @apply justify-between items-center;
     @apply opacity-100 z-50 bottom-0 fixed sm:flex;
     @apply p-16 mb-16 ml-16;
