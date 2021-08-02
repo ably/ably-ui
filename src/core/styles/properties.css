@@ -60,9 +60,10 @@
   --fs-p1: 1.125rem;
   --fs-p2: 1rem;
   --fs-p3: 0.875rem;
-  --fs-standfirst1: 2.25rem;
-  --fs-standfirst2: 1.75rem;
+  --fs-standfirst-xl: 2.25rem;
+  --fs-standfirst: 1.5rem;
   --fs-sub-header: 1.5rem;
+  --fs-sub-header-xs: 1.125rem;
   --fs-overline1: 1rem;
   --fs-overline2: 0.875rem;
   --fs-btn1: 1.125rem;
@@ -79,6 +80,7 @@
 
   --ls-tighten-0_025: -0.025em;
   --ls-tighten-0_02: -0.02em;
+  --ls-tighten-0_015: -0.015em;
   --ls-tighten-0_01: -0.01em;
   --ls-tighten-0_005: -0.005em;
   --ls-tighten-0_0025: -0.0025em;

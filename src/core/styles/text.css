@@ -1,0 +1,91 @@
+@layer components {
+  .ui-text-title {
+    @apply font-sans font-medium text-cool-black;
+    @apply text-title-xs xs:text-title xl:text-title-xl;
+    @apply tracking-tighten-0.01 xs:tracking-tighten-0.015 xl:tracking-tighten-0.02;
+  }
+
+  .ui-text-h1 {
+    @apply font-sans font-medium text-cool-black;
+    @apply text-h1;
+    @apply tracking-tighten-0.01;
+  }
+
+  .ui-text-h2 {
+    @apply font-sans font-medium text-cool-black;
+    @apply text-h2;
+    @apply tracking-tighten-0.01;
+  }
+
+  .ui-text-h3 {
+    @apply font-sans font-medium text-cool-black;
+    @apply text-h3;
+    @apply tracking-tighten-0.0025;
+  }
+
+  .ui-text-h4 {
+    @apply font-sans font-medium text-cool-black;
+    @apply text-h4;
+    @apply tracking-widen-0.1;
+  }
+
+  .ui-text-p1 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-p1;
+  }
+
+  .ui-text-p2 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-p2;
+  }
+
+  .ui-text-p3 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-p3;
+  }
+
+  .ui-text-standfirst {
+    @apply font-sans font-light text-active-orange;
+    @apply text-standfirst xl:text-standfirst-xl;
+    @apply tracking-tighten-0.025 xl:tracking-tighten-0.015;
+  }
+
+  .ui-text-quote {
+    @apply font-sans font-light text-cool-black;
+    @apply text-quote;
+    @apply tracking-tighten-0.025;
+  }
+
+  .ui-text-sub-header {
+    @apply font-sans font-light text-dark-grey;
+    @apply text-sub-header-xs xs:text-sub-header;
+    @apply tracking-tighten-0.025;
+  }
+
+  .ui-text-overline1 {
+    @apply font-sans font-medium text-dark-grey uppercase;
+    @apply text-overline1;
+    @apply tracking-widen-0.15;
+  }
+
+  .ui-text-overline2 {
+    @apply font-sans font-medium text-dark-grey uppercase;
+    @apply text-overline2;
+    @apply tracking-widen-0.1;
+  }
+
+  .ui-text-menu1 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-menu1;
+  }
+
+  .ui-text-menu2 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-menu2;
+  }
+
+  .ui-text-menu3 {
+    @apply font-sans font-light text-cool-black;
+    @apply text-menu3;
+  }
+}
