@@ -45,7 +45,7 @@ const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn, bg
 
         {closeBtn && (
           <button type="button" className="ml-auto h-20 w-20 border-none bg-none self-baseline">
-            <Icon name="close" size="1.25rem" color="text-white" />
+            <Icon name="icon-gui-close" size="1.25rem" color="text-white" />
           </button>
         )}
       </div>
