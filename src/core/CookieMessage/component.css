@@ -2,7 +2,7 @@
   .ui-cookie-message {
     @apply rounded-lg bg-white;
     @apply justify-between items-center;
-    @apply opacity-100 z-20 bottom-0 fixed sm:flex;
+    @apply opacity-100 z-50 bottom-0 fixed sm:flex;
     @apply p-16 mb-16 ml-16;
     max-width: 70vw;
     box-shadow: 0px 24px 32px 0px #0000000d;
