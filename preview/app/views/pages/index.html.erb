@@ -51,6 +51,9 @@
             <li>
               <a href="#section-buttons">Buttons</a>
             </li>
+            <li>
+              <a href="#section-typography">Typography</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -58,16 +61,63 @@
 
     <article class="col-span-3">
       <section id="section-brand">
-        <section id="section-colour">
+        <section id="section-colour" class="mb-64">
           <h2 class="text-h1 font-medium mb-16">Colour</h2>
           <%= render(ColoursListComponent.new) %>
         </section>
-      </section>
 
-      <section id="section-brand">
-        <section id="section-buttons">
+        <section id="section-buttons" class="mb-64">
           <h2 class="text-h1 font-medium mb-16">Buttons</h2>
           <%= render(ButtonsListComponent.new) %>
+        </section>
+
+        <section id="section-typography" class="mb-64">
+          <h2 class="text-h1 font-medium mb-40">Typography</h2>
+
+          <p class="ui-text-p1 mb-32">Type definitions do not include margin as it can be contextual. Figma and the below list include recommended margins.</p>
+          <p class="ui-text-p1 mb-32">The below list is created with ui-text-* helpers which include properties beyond the the standard <code class="pi-inline-code">font-size</code> and <code class="pi-inline-code">line-height</code> that text-* includes.</p>
+
+          <div>
+            <hr class="m-0" />
+            <p class="ui-text-title mt-64 mb-40 sm:mt-80 sm:mb-40">Title</p>
+            <hr class="m-0" />
+            <p class="ui-text-h1 mb-40">H1</p>
+            <hr class="m-0" />
+            <p class="ui-text-h2 mb-32">H2</p>
+            <hr class="m-0" />
+            <p class="ui-text-h3 mb-24">H3</p>
+            <hr class="m-0" />
+            <p class="ui-text-h4 mb-16">H4</p>
+            <hr class="m-0" />
+            <p class="ui-text-p1 mb-32">Paragraph 1</p>
+            <hr class="m-0" />
+            <p class="ui-text-p1 font-medium mb-32">Paragraph 1 (strong)</p>
+            <hr class="m-0" />
+            <p class="ui-text-p2 mb-24">Paragraph 2</p>
+            <hr class="m-0" />
+            <p class="ui-text-p2 font-medium mb-24">Paragraph 2 (strong)</p>
+            <hr class="m-0" />
+            <p class="ui-text-p3 mb-24">Paragraph 3</p>
+            <hr class="m-0" />
+            <p class="ui-text-p3 font-medium mb-24">Paragraph 3 (strong)</p>
+            <hr class="m-0" />
+            <p class="ui-text-standfirst mb-48 xl:mb-64">Standfirst</p>
+            <hr class="m-0" />
+            <p class="ui-text-quote mb-48">Quote</p>
+            <hr class="m-0" />
+            <p class="ui-text-sub-header mb-40">Sub-header</p>
+            <hr class="m-0" />
+            <p class="ui-text-overline1 mb-8">Overline 1</p>
+            <hr class="m-0" />
+            <p class="ui-text-overline2 mb-8">Overline 2</p>
+            <hr class="m-0" />
+            <p class="ui-text-menu1">Menu label 1</p>
+            <hr class="m-0" />
+            <p class="ui-text-menu2">Menu label 2</p>
+            <hr class="m-0" />
+            <p class="ui-text-menu3">Menu label 3</p>
+            <hr class="m-0" />
+          </div>
         </section>
       </section>
     </article>
