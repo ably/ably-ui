@@ -2,6 +2,7 @@ Rails
   .application
   .routes
   .draw do
+    get '/layout', to: 'pages#layout'
 
     get '/components/meganav', to: 'components#meganav'
     get '/components/footer', to: 'components#footer'
