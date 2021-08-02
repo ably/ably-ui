@@ -56,23 +56,30 @@ class ComponentsController < ApplicationController
     ]
 
     display_icons = %w[
-      it-support-helpdesk
-      platform
-      call-mobile
-      it-support-access
-      live-chat
-      general-comms
-      tech-account-comms
-      quote
+      icon-display-browser
+      icon-display-documentation
+      icon-display-map-pin
+      icon-display-padlock-closed
+      icon-display-sla
+      icon-display-it-support-helpdesk
+      icon-display-platform
+      icon-display-call-mobile
+      icon-display-it-support-access
+      icon-display-live-chat
+      icon-display-general-comms
+      icon-display-tech-account-comms
     ]
 
     social_icons = %w[linkedin twitter github glassdoor]
+
+    other_icons = %w[quote]
 
     render template,
            locals: {
              core_icons: core_icons,
              display_icons: display_icons,
              social_icons: social_icons,
+             other_icons: other_icons,
              framework: framework,
              component_parameters: component_parameters('icon')
            }

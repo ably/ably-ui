@@ -3,7 +3,9 @@
     <div class="border p-16">
       <code class="font-mono text-p2 mb-8 block"><%= icon_name %></code>
       <div class="border inline-flex flex-0">
-        <%= render(AblyUi::Core::Icon.new(name: icon_name, size: "1.5rem", additional_css: "hover:text-active-orange")) %>
+        <div class="flex pi-checkered-bg">
+          <%= render(AblyUi::Core::Icon.new(name: icon_name, size: "2rem", additional_css: "hover:text-active-orange")) %>
+        </div>
       </div>
     </div>
   <% end %>

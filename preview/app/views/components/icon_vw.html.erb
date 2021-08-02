@@ -13,6 +13,9 @@
 <h2 class="text-h2 mb-32 font-sans">Social Icons</h2>
 <%= render partial: 'components/icon/grid_vw', locals: { icons: social_icons } %>
 
+<h2 class="text-h2 mb-32 font-sans">Other</h2>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: other_icons } %>
+
 <% content_for :component do %>
   <script type="text/javascript">
     document.body.classList.add("bg-light-grey", "m-32");
