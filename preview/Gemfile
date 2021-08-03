@@ -36,4 +36,4 @@ gem 'view_component', '~> 2.33.0', require: 'view_component/engine'
 
 gem 'responders'
 
-gem 'ably-ui', '2.11.0.dev.ffc05f5', require: 'ably_ui', source: 'https://rubygems.pkg.github.com/ably'
+gem 'ably-ui', '2.12.0', require: 'ably_ui', source: 'https://rubygems.pkg.github.com/ably'
