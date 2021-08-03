@@ -56,6 +56,11 @@ class ComponentsController < ApplicationController
     ]
 
     display_icons = %w[
+      icon-display-48hrs
+      icon-display-calendar
+      icon-display-laptop
+      icon-display-message
+      icon-display-shopping-cart
       icon-display-browser
       icon-display-documentation
       icon-display-map-pin
