@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ably-ui (2.11.0)
+    ably-ui (2.11.0.dev.ffc05f5)
       view_component (~> 2.33.0)
 
 GEM

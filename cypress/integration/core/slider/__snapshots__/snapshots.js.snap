@@ -1,0 +1,783 @@
+exports[`Slider Snapshot Test > renders the sliders correctly on desktop viewport #0`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform "
+    data-id="slider-strip"
+    style="transform: translateX(333px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider Snapshot Test > renders the sliders correctly on desktop viewport #1`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform sm:grid-cols-2 md:grid-cols-4"
+    data-id="slider-strip"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div
+    class="flex justify-center items-center my-24 hidden"
+    data-id="slider-controls"
+  >
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider Snapshot Test > renders the sliders correctly on mobile viewport #0`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform "
+    data-id="slider-strip"
+    style="transform: translateX(333px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider Snapshot Test > renders the sliders correctly on mobile viewport #1`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform sm:grid-cols-2 md:grid-cols-4"
+    data-id="slider-strip"
+    style="transform: translateX(20.5px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider > renders the sliders correctly on desktop viewport #0`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform "
+    data-id="slider-strip"
+    style="transform: translateX(333px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider > renders the sliders correctly on desktop viewport #1`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform sm:grid-cols-2 md:grid-cols-4"
+    data-id="slider-strip"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div
+    class="flex justify-center items-center my-24 hidden"
+    data-id="slider-controls"
+  >
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider > renders the sliders correctly on mobile viewport #0`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform "
+    data-id="slider-strip"
+    style="transform: translateX(333px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Slider > renders the sliders correctly on mobile viewport #1`] = `
+<div
+  class="w-full overflow-x-hidden"
+  data-id="slider"
+  style="--dynamic-grid-columns-count: 4; --dynamic-grid-column-min-width: 16.875rem; --dynamic-grid-column-max-width: 1fr;"
+>
+  <ol
+    class="grid ui-grid-gap grid-cols-dynamic transform transition-transform sm:grid-cols-2 md:grid-cols-4"
+    data-id="slider-strip"
+    style="transform: translateX(20.5px);"
+  >
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers live chat, updates, analytics, and composition for millions of
+          users.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Powers virtual venues for millions of event attendees around the
+          world.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Provides 5 million daily users with live financial commentary and
+          stock tickers.
+        </p>
+      </div>
+    </li>
+    <li class="" data-id="slider-slide">
+      <div class="h-full p-24 bg-white rounded">
+        <p class="text-p2 text-center">
+          Monitors live car performance data across the USA.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="flex justify-center items-center my-24" data-id="slider-controls">
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-previous"
+    >
+      <svg
+        class="text-cool-black transform rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <li>
+        <span
+          class="ui-slider-marker text-active-orange"
+          data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+      <li>
+        <span class="ui-slider-marker text-cool-black" data-id="slider-marker"
+          >⬤</span
+        >
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus"
+      data-id="slider-next"
+    >
+      <svg
+        class="text-cool-black transform -rotate-90"
+        style="width: 0.75rem; height: 0.75rem"
+      >
+        <use xlink:href="#sprite-disclosure-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;

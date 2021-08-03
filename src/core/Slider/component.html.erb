@@ -1,0 +1,28 @@
+<%= tag.div class: "w-full overflow-x-hidden", data: { id: "slider" }, style: "--dynamic-grid-columns-count: #{slides.length}; --dynamic-grid-column-min-width: #{slide_min_width}; --dynamic-grid-column-max-width: #{slide_max_width};" do %>
+  <%= tag.ol class: "grid ui-grid-gap grid-cols-dynamic transform transition-transform #{classes}", data: { id: "slider-strip" }, **additional_attributes do %>
+    <% slides.each do |slide| %>
+      <%= slide %>
+    <% end %>
+  <% end %>
+
+  <div class="flex justify-center items-center my-24 hidden" data-id="slider-controls">
+    <button type="button" class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-previous">
+      <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black", additional_css: "transform rotate-180")) %>
+    </button>
+
+    <ul class="flex justify-center items-center mx-32 relative h-24">
+      <% slides.each do |slide| %>
+        <li>
+          <span
+            class="ui-slider-marker text-cool-black"
+            data-id="slider-marker"
+          >&#x2b24;</span> <%# ⬤ %>
+        </li>
+      <% end %>
+    </ul>
+
+    <button type="button" class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-next">
+      <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black")) %>
+    </button>
+  </div>
+<% end %>

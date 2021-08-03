@@ -1,0 +1,38 @@
+exports[`Slider > should change the slide forward on click #0`] = `
+<ol
+  class="grid ui-grid-gap grid-cols-dynamic transform transition-transform "
+  data-id="slider-strip"
+  style="transform: translateX(184px);"
+>
+  <li class="" data-id="slider-slide">
+    <div class="h-full p-24 bg-white rounded">
+      <p class="text-p2 text-center">
+        Powers live chat, updates, analytics, and composition for millions of
+        users.
+      </p>
+    </div>
+  </li>
+  <li class="" data-id="slider-slide">
+    <div class="h-full p-24 bg-white rounded">
+      <p class="text-p2 text-center">
+        Powers virtual venues for millions of event attendees around the world.
+      </p>
+    </div>
+  </li>
+  <li class="" data-id="slider-slide">
+    <div class="h-full p-24 bg-white rounded">
+      <p class="text-p2 text-center">
+        Provides 5 million daily users with live financial commentary and stock
+        tickers.
+      </p>
+    </div>
+  </li>
+  <li class="" data-id="slider-slide">
+    <div class="h-full p-24 bg-white rounded">
+      <p class="text-p2 text-center">
+        Monitors live car performance data across the USA.
+      </p>
+    </div>
+  </li>
+</ol>
+`;

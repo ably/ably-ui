@@ -4,6 +4,7 @@ import T from "prop-types";
 
 import { getRemoteDataStore } from "../remote-data-store";
 import ConnectStateWrapper from "../ConnectStateWrapper/component.jsx";
+import Icon from "../Icon/component.jsx";
 
 const REDUCER_KEY = "flashes";
 const FLASH_DATA_ID = "ui-flashes";
@@ -48,17 +49,6 @@ const FLASH_TEXT_COLOR = {
 
 const AUTO_HIDE = ["success", "info", "notice"];
 const AUTO_HIDE_TIME = 8000;
-
-const FlashIcon = ({ icon, color }) => (
-  <svg className={`h-24 w-24 ${color} mr-16 self-baseline`}>
-    <use xlinkHref={`#sprite-${icon}`}></use>
-  </svg>
-);
-
-FlashIcon.propTypes = {
-  icon: T.string,
-  color: T.string,
-};
 
 const Flash = ({ type, content }) => {
   const ref = useRef(null);
@@ -118,7 +108,7 @@ const Flash = ({ type, content }) => {
   return (
     <div className={`ui-flash-message ui-grid-px ${animateEntry ? "ui-flash-message-enter" : ""}`} style={style} ref={ref} data-id="ui-flash">
       <div className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}>
-        {withIcons[type] && <FlashIcon icon={withIcons[type]} color={iconColor[type]} />}
+        {withIcons[type] && <Icon name={withIcons[type]} color={iconColor[type]} size="1.5rem" additionalCSS="mr-16 self-baseline" />}
         <p className={`ui-flash-text ${FLASH_TEXT_COLOR[type]}`} dangerouslySetInnerHTML={{ __html: safeContent }} />
         <button type="button" className="p-0 ml-auto self-start" onClick={closeFlash}>
           <svg className="h-24 w-24 transition-colors ui-icon-cool-black">

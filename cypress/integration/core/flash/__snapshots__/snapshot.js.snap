@@ -6,7 +6,10 @@ exports[`Flash Snapshot Test > renders correcty #0`] = `
   <div
     class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle"
   >
-    <svg class="h-24 w-24 text-cool-black mr-16 self-baseline">
+    <svg
+      class="text-cool-black mr-16 self-baseline"
+      style="width: 1.5rem; height: 1.5rem;"
+    >
       <use xlink:href="#sprite-icon-gui-tick"></use>
     </svg>
     <p class="ui-flash-text text-cool-black">
@@ -29,7 +32,10 @@ exports[`Flash Snapshot Test > renders correcty #1`] = `
   <div
     class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle"
   >
-    <svg class="h-24 w-24 text-cool-black mr-16 self-baseline">
+    <svg
+      class="text-cool-black mr-16 self-baseline"
+      style="width: 1.5rem; height: 1.5rem;"
+    >
       <use xlink:href="#sprite-icon-gui-ably-badge"></use>
     </svg>
     <p class="ui-flash-text text-cool-black">This is a notice</p>
@@ -50,7 +56,10 @@ exports[`Flash Snapshot Test > renders correcty #2`] = `
   <div
     class="bg-gui-error p-32 flex align-center rounded shadow-container-subtle"
   >
-    <svg class="h-24 w-24 text-white mr-16 self-baseline">
+    <svg
+      class="text-white mr-16 self-baseline"
+      style="width: 1.5rem; height: 1.5rem;"
+    >
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
     <p class="ui-flash-text text-white">This is an error, very bad</p>
@@ -71,7 +80,10 @@ exports[`Flash Snapshot Test > renders correcty #3`] = `
   <div
     class="bg-active-orange p-32 flex align-center rounded shadow-container-subtle"
   >
-    <svg class="h-24 w-24 text-white mr-16 self-baseline">
+    <svg
+      class="text-white mr-16 self-baseline"
+      style="width: 1.5rem; height: 1.5rem;"
+    >
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
     <p class="ui-flash-text text-white">This is an alert</p>

@@ -15,6 +15,7 @@
 @import "@ably/ably-ui/core/CookieMessage/component.css";
 @import "@ably/ably-ui/core/Icon/component.css";
 @import "@ably/ably-ui/core/FeaturedLink/component.css";
+@import "@ably/ably-ui/core/Slider/component.css";
 @import "@ably/ably-ui/core/styles.css";
 
 @font-face {

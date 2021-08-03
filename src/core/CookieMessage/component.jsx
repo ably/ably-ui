@@ -25,12 +25,12 @@ export default function CookieMessage(props) {
 
   return (
     <div className="ui-cookie-message" ref={ref}>
-      <span className="text-p2 text-cool-black pr-32">
+      <p className="text-p2 text-cool-black pr-32">
         <a href="/privacy" className="underline">
           How we use cookies
         </a>{" "}
         to improve your experience.
-      </span>
+      </p>
       <button className="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap" onClick={handleClose}>
         Accept and close
       </button>

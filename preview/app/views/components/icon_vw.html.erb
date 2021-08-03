@@ -5,13 +5,16 @@
 <%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters, framework: framework } %>
 
 <h2 class="text-h2 mb-32 font-sans">Core Icons</h2>
-<%= render partial: 'components/icon/grid_vw', locals: { icons: core_icons } %>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: core_icons, size: "1.25rem" } %>
 
 <h2 class="text-h2 mb-32 font-sans">Display Icons</h2>
-<%= render partial: 'components/icon/grid_vw', locals: { icons: display_icons } %>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: display_icons, size: "2.5rem" } %>
 
 <h2 class="text-h2 mb-32 font-sans">Social Icons</h2>
-<%= render partial: 'components/icon/grid_vw', locals: { icons: social_icons } %>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: social_icons, size: "1.5rem" } %>
+
+<h2 class="text-h2 mb-32 font-sans">Other</h2>
+<%= render partial: 'components/icon/grid_vw', locals: { icons: other_icons, size: "1.5rem" } %>
 
 <% content_for :component do %>
   <script type="text/javascript">
