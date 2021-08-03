@@ -121,7 +121,7 @@ exports[`Notice > react > renders correctly by default #0`] = `
       class="ml-auto h-20 w-20 border-none bg-none self-baseline"
     >
       <svg class="text-white " style="width: 1.25rem; height: 1.25rem;">
-        <use xlink:href="#sprite-close"></use>
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
@@ -153,7 +153,7 @@ exports[`Notice > vw > renders correctly by default #0`] = `
       class="h-20 w-20 mt-4 ml-auto border-none bg-none self-baseline"
     >
       <svg class="text-white " style="width: 1.25rem; height: 1.25rem">
-        <use xlink:href="#sprite-close"></use>
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
