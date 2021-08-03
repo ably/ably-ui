@@ -114,6 +114,7 @@ module.exports = {
       80: "var(--spacing-80)",
       88: "var(--spacing-88)",
       96: "var(--spacing-96)",
+      160: "var(--spacing-160)",
       256: "var(--spacing-256)",
     },
     maxWidth: (theme, { breakpoints }) => ({
