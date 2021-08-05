@@ -121,7 +121,7 @@ class ComponentsController < ApplicationController
   end
 
   def meganav_react_props
-    {
+    props = {
       paths: {
         logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
         icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
@@ -135,10 +135,16 @@ class ComponentsController < ApplicationController
         config: notice_config
       }
     }
+
+    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props
   end
 
   def meganav_vw_props
-    signed_in? ? { session_data: helpers.session_data } : {}
+    props = {}
+    props[:session_data] = helpers.session_data if signed_in?
+    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props
   end
 
   def footer_react_props
@@ -159,6 +165,10 @@ class ComponentsController < ApplicationController
 
   def signed_in?
     params['signed-in'] == 'true'
+  end
+
+  def custom_login_link?
+    params['custom-login-link'] == 'true'
   end
 
   def notice_close_btn
