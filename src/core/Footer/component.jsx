@@ -237,8 +237,11 @@ export default function Footer({ paths }) {
             <a href="/legals" className="pr-24 ui-footer-link">
               Legals
             </a>
-            <a href="/data-protection" className="ui-footer-link">
+            <a href="/data-protection" className="pr-24 ui-footer-link">
               Data Protection
+            </a>
+            <a href="/privacy" className="ui-footer-link">
+              Privacy
             </a>
           </div>
 
