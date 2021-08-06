@@ -1,6 +1,6 @@
 {
   "name": "@ably/ably-ui",
-  "version": "2.12.1-dev.c7ff68e",
+  "version": "2.13.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
@@ -66,6 +66,7 @@
     "update:all": "./scripts/update-dependents.sh"
   },
   "dependencies": {
+    "@ably/ably-ui": "2.13.0",
     "array-flat-polyfill": "^1.0.1",
     "dompurify": "^2.2.9",
     "highlight.js": "^10.7.2",
