@@ -120,6 +120,76 @@ describe("Opening panels on mobile", () => {
   });
 });
 
+describe("Meganav options", () => {
+  describe("react", () => {
+    beforeEach(() => {
+      cy.visit("/components/meganav");
+    });
+
+    it("uses a custom login link", () => {
+      cy.viewport("macbook-15");
+
+      cy.contains("Login").invoke("attr", "href").should("eq", "/login");
+
+      cy.visit("/components/meganav?custom-login-link=true");
+
+      cy.contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/custom-login-link");
+    });
+
+    it("uses a custom login link on mobile", () => {
+      cy.viewport("iphone-8");
+
+      cy.get("[data-id='meganav-items-mobile']")
+        .contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/login");
+
+      cy.visit("/components/meganav?custom-login-link=true");
+
+      cy.get("[data-id='meganav-items-mobile']")
+        .contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/custom-login-link");
+    });
+  });
+
+  describe("vw", () => {
+    beforeEach(() => {
+      cy.visit("/components/meganav?framework=vw");
+    });
+
+    it("uses a custom login link", () => {
+      cy.viewport("macbook-15");
+
+      cy.contains("Login").invoke("attr", "href").should("eq", "/login");
+
+      cy.visit("/components/meganav?framework=vw&custom-login-link=true");
+
+      cy.contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/custom-login-link");
+    });
+
+    it("uses a custom login link on mobile", () => {
+      cy.viewport("iphone-8");
+
+      cy.get("[data-id='meganav-items-mobile']")
+        .contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/login");
+
+      cy.visit("/components/meganav?framework=vw&custom-login-link=true");
+
+      cy.get("[data-id='meganav-items-mobile']")
+        .contains("Login")
+        .invoke("attr", "href")
+        .should("eq", "/custom-login-link");
+    });
+  });
+});
+
 describe("Notice", () => {
   const sharedSpecs = () => {
     it("collapses after scrolling down", () => {

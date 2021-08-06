@@ -18,7 +18,7 @@ import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
 
-const SignIn = ({ sessionState, theme }) =>
+const SignIn = ({ sessionState, theme, options }) =>
   sessionState.signedIn ? (
     <MeganavItemsSignedIn sessionState={sessionState} theme={theme} />
   ) : (
@@ -29,7 +29,7 @@ const SignIn = ({ sessionState, theme }) =>
         </a>
       </li>
       <li>
-        <a href="/login" className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
+        <a href={options.loginLink} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
           Login
         </a>
       </li>
@@ -45,6 +45,7 @@ SignIn.propTypes = {
   sessionState: T.object,
   paths: T.object,
   theme: T.object,
+  options: T.object,
 };
 
 const SignInPlaceholder = () => <div />;
@@ -56,7 +57,7 @@ const panels = {
   MeganavContentDevelopers: MeganavContentDevelopers,
 };
 
-export default function Meganav({ paths, themeName = "white", notice }) {
+export default function Meganav({ paths, themeName = "white", notice, options = { loginLink: "/login" } }) {
   const [sessionState, setSessionState] = useState(null);
 
   useEffect(() => {
@@ -80,9 +81,9 @@ export default function Meganav({ paths, themeName = "white", notice }) {
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
-        {sessionState ? <SignIn sessionState={sessionState} theme={theme} /> : <SignInPlaceholder />}
+        {sessionState ? <SignIn sessionState={sessionState} theme={theme} options={options} /> : <SignInPlaceholder />}
 
-        <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} />
+        <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} options={options} />
       </div>
     </nav>
   );
@@ -104,5 +105,8 @@ Meganav.propTypes = {
       noticeId: T.string,
       collapse: T.bool,
     }),
+  }),
+  options: T.shape({
+    loginLink: T.string,
   }),
 };
