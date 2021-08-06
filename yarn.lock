@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@ably/ably-ui@2.13.0":
+  version "2.13.0"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.13.0/2e8c58cb4d088f94134bbb26db7444f442dacae53a6df4e893c4059e0ca437dd#848d64d2408123ba84036c5dea33536479fceebc"
+  integrity sha512-WNPGN1fduoZld5DOWeceSSKDifUQbxL8hWmA7Nwz94DODc/jg911Y1Ht2cxUAdh12xPFcppFXTNWAXnF3vJAlw==
+  dependencies:
+    array-flat-polyfill "^1.0.1"
+    dompurify "^2.2.9"
+    highlight.js "^10.7.2"
+    js-cookie "^2.2.1"
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+    react "^17.0.1"
+    react-dom "^17.0.1"
+    redux "^4.0.5"
+    scroll-lock "^2.1.4"
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
