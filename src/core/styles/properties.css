@@ -52,9 +52,13 @@
 
   --fs-title-xl: 4rem;
   --fs-title: 3.5rem;
-  --fs-title-xs: 3.25rem;
+  --fs-title-xs: 3rem;
+  --fs-h1-xl: 3.5rem;
   --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h1-xs: 2.625rem;
+  --fs-h2-xl: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h2-xs: 1.875rem;
   --fs-h3: 1.5rem;
   --fs-h4: 1.125rem;
   --fs-p1: 1.125rem;
