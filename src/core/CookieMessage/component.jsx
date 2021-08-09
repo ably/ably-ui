@@ -25,7 +25,7 @@ export default function CookieMessage(props) {
 
   return (
     <div className="ui-cookie-message" ref={ref}>
-      <p className="text-p2 text-cool-black pr-32">
+      <p className="ui-text-p2 pr-32">
         <a href="/privacy" className="underline">
           How we use cookies
         </a>{" "}
