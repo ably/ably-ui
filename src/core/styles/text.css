@@ -7,13 +7,13 @@
 
   .ui-text-h1 {
     @apply font-sans font-medium text-cool-black;
-    @apply text-h1-xs xs:text-title xl:text-h1-xl;
+    @apply text-h1-xs xs:text-h1 xl:text-h1-xl;
     @apply tracking-tighten-0.01;
   }
 
   .ui-text-h2 {
     @apply font-sans font-medium text-cool-black;
-    @apply text-h2-xs xs:text-title xl:text-h2-xl;
+    @apply text-h2-xs xs:text-h2 xl:text-h2-xl;
     @apply tracking-tighten-0.01;
   }
 
