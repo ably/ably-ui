@@ -44,6 +44,15 @@ module AblyUi
     end
 
     module Util
+      # For components which use relative links we need an option to set a base URL because they might be used
+      # on a different domain (like pages.ably.com). The below sets a default method to be used in templates but
+      # requires the definition of url_base.
+      DEFAULT_URL_BASE = ''
+
+      def abs_url(path)
+        "#{url_base}#{path}"
+      end
+
       # This is useful where we need to use an HTML id (like in aria-controls attribute) but we know the component
       # might be used multiple times per page so we can't just hard code one in HTML.
       # eg. my-component -> my-component-uur0cj2h
