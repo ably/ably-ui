@@ -136,14 +136,15 @@ class ComponentsController < ApplicationController
       }
     }
 
-    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props[:login_link] = '/custom-login-link' if custom_login_link?
     props
   end
 
   def meganav_vw_props
     props = {}
     props[:session_data] = helpers.session_data if signed_in?
-    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props[:login_link] = '/custom-login-link' if custom_login_link?
+
     props
   end
 

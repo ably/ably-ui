@@ -5,18 +5,15 @@ module AblyUi
   module Core
     class Meganav < ViewComponent::Base
       include MeganavConfig
-      attr_reader :options
+      attr_reader :options, :login_link
 
       renders_one :notice, AblyUi::Core::Notice
 
-      def initialize(
-        session_data: {},
-        theme_name: :white,
-        options: { login_link: '/login' }
-      )
+      def initialize(session_data: {}, theme_name: :white, login_link: '/login')
         @session_data = session_data
         @theme_name = theme_name
         @options = options
+        @login_link = login_link
         theme_setup(theme_name)
       end
 

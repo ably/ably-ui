@@ -8,7 +8,7 @@ import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/compon
 import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.jsx";
 import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.jsx";
 
-const MeganavItemsMobile = ({ panels, paths, sessionState, theme, options }) => {
+const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink }) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
   return (
@@ -23,7 +23,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, options }) => 
             )}
           </SignOutLink>
         ) : (
-          <a href={options.loginLink} className={classNames} data-id="meganav-link">
+          <a href={loginLink} className={classNames} data-id="meganav-link">
             Login
           </a>
         )}
@@ -86,9 +86,7 @@ MeganavItemsMobile.propTypes = {
   }),
   sessionState: T.object,
   theme: T.object,
-  options: T.shape({
-    loginLink: T.string,
-  }),
+  loginLink: T.string,
 };
 
 export default React.memo(MeganavItemsMobile, (oldState, newState) => {
