@@ -22,7 +22,7 @@
           <span class="flex-0 mt-24 md:mt-0">
             <p class="text-p1 font-light">
               Don’t want to chat?
-              <a href="/contact" class="text-white underline font-medium hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus">Get in touch via our contact page</a>.
+              <%= link_to 'Get in touch via our contact page', abs_url("/contact"), class: "text-white underline font-medium hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus" %>
             </p>
           </span>
         </div>
@@ -54,7 +54,7 @@
           </ul>
         </span>
         <span class="flex-0">
-          <a class="ui-btn-secondary self-start mt-24" href="/sign-up">Start with a free account</a>
+          <%= link_to 'Start with a free account', abs_url("/sign-up"), class: "ui-btn-secondary self-start mt-24" %>
         </span>
       </div>
     </div>
