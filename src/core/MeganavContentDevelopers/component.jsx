@@ -1,14 +1,15 @@
 import React from "react";
+import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 import Icon from "../Icon/component.jsx";
 
-const MeganavContentDevelopers = () => (
+const MeganavContentDevelopers = ({ absUrl }) => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
     <div>
       <h3 className="ui-meganav-overline md:mb-8">Documentation</h3>
       <div className="mb-16">
-        <form className="relative" action="/search" method="get">
+        <form className="relative" action={absUrl("/search")} method="get">
           <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-8 left-8 pt-1 mt-1" />
           <input type="search" name="q" className="ui-input pl-48" placeholder="Search docs" />
         </form>
@@ -17,7 +18,7 @@ const MeganavContentDevelopers = () => (
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
 
-      <FeaturedLink url="/documentation">Visit Documentation</FeaturedLink>
+      <FeaturedLink url={absUrl("/documentation")}>Visit Documentation</FeaturedLink>
     </div>
 
     <div>
@@ -26,19 +27,19 @@ const MeganavContentDevelopers = () => (
       </h3>
       <ul aria-labelledby="meganav-developers-panel-explore">
         <li>
-          <a href="/integrations" className="ui-meganav-media group">
+          <a href={absUrl("/integrations")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Third-party integrations & plugins</p>
             <p className="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
           </a>
         </li>
         <li>
-          <a href="/protocols" className="ui-meganav-media group">
+          <a href={absUrl("/protocols")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Multi-protocol messaging</p>
             <p className="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
           </a>
         </li>
         <li>
-          <a href="/hub" className="ui-meganav-media group">
+          <a href={absUrl("/hub")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Streaming data sources</p>
             <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
           </a>
@@ -52,7 +53,7 @@ const MeganavContentDevelopers = () => (
       </h3>
       <ul aria-labelledby="meganav-developers-panel-quick-links">
         <li>
-          <a href="/download" className="group ui-meganav-media py-12">
+          <a href={absUrl("/download")} className="group ui-meganav-media py-12">
             <p className="ui-meganav-media-heading">Download an SDK</p>
           </a>
         </li>
@@ -62,7 +63,7 @@ const MeganavContentDevelopers = () => (
           </a>
         </li>
         <li>
-          <a href="/support" className="group ui-meganav-media py-12">
+          <a href={absUrl("/support")} className="group ui-meganav-media py-12">
             <p className="ui-meganav-media-heading">Support & FAQs</p>
           </a>
         </li>
@@ -84,5 +85,9 @@ const MeganavContentDevelopers = () => (
     </div>
   </section>
 );
+
+MeganavContentDevelopers.propTypes = {
+  absUrl: T.func,
+};
 
 export default MeganavContentDevelopers;

@@ -4,7 +4,7 @@ import T from "prop-types";
 import MeganavData from "../Meganav/component.json";
 import MeganavControl from "../MeganavControl/component.jsx";
 
-const MeganavDesktopItems = ({ panels, paths, theme }) => (
+const MeganavDesktopItems = ({ panels, paths, theme, absUrl }) => (
   <ul className="hidden md:flex" data-id="meganav-items-desktop">
     {MeganavData.panels.map((panel) => {
       const PanelComponent = panels[panel.component];
@@ -16,14 +16,14 @@ const MeganavDesktopItems = ({ panels, paths, theme }) => (
           </MeganavControl>
 
           <div className="ui-meganav-panel invisible" id={panel.id} data-id="meganav-panel">
-            <PanelComponent paths={paths} />
+            <PanelComponent paths={paths} absUrl={absUrl} />
           </div>
         </li>
       );
     })}
 
     <li className="ui-meganav-item">
-      <a href="/pricing" data-id="meganav-link" className={`ui-meganav-link h-64 items-center flex ${theme.textColor}`}>
+      <a href={absUrl("/pricing")} data-id="meganav-link" className={`ui-meganav-link h-64 items-center flex ${theme.textColor}`}>
         Pricing
       </a>
     </li>
@@ -41,6 +41,7 @@ MeganavDesktopItems.propTypes = {
     blogThumb3: T.string,
   }),
   theme: T.object,
+  absUrl: T.func,
 };
 
 export default React.memo(MeganavDesktopItems);

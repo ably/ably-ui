@@ -1,8 +1,8 @@
 import React from "react";
 import T from "prop-types";
 
-const Logo = ({ theme, dataId }) => (
-  <a href="/" className="h-32">
+const Logo = ({ theme, dataId, href = "/" }) => (
+  <a href={href} className="h-32">
     <svg
       data-id={dataId}
       className={`${theme.logoTextColor} transition-colors`}
@@ -45,6 +45,7 @@ const Logo = ({ theme, dataId }) => (
 Logo.propTypes = {
   dataId: T.string,
   theme: T.object,
+  href: T.string,
 };
 
 export default React.memo(Logo);

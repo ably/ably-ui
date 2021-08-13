@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const MeganavContentPlatform = ({ paths }) => (
+const MeganavContentPlatform = ({ paths, absUrl }) => (
   <section className="ui-meganav-content ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
     <div className="sm:col-span-full md:col-span-1">
       <div className="flex mb-20">
@@ -15,7 +15,7 @@ const MeganavContentPlatform = ({ paths }) => (
         realtime, and lets you focus on your code.
       </p>
 
-      <FeaturedLink url="/platform">Explore how it works</FeaturedLink>
+      <FeaturedLink url={absUrl("/platform")}>Explore how it works</FeaturedLink>
     </div>
 
     <div>
@@ -24,38 +24,38 @@ const MeganavContentPlatform = ({ paths }) => (
       </h3>
       <ul aria-labelledby="meganav-platform-panel-list-our-features">
         <li>
-          <a href="/pub-sub-messaging" className="group ui-meganav-media">
+          <a href={absUrl("/pub-sub-messaging")} className="group ui-meganav-media">
             <p className="ui-meganav-media-heading">Publish/subscribe messaging</p>
             <p className="ui-meganav-media-copy">Feature-rich pub/sub messaging to power any realtime requirement.</p>
           </a>
         </li>
         <li>
-          <a href="/push-notifications" className="ui-meganav-media group">
+          <a href={absUrl("/push-notifications")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Push notifications</p>
             <p className="ui-meganav-media-copy">Deliver native notifications at scale with our unified API.</p>
           </a>
         </li>
         <li>
-          <a href="/integrations" className="ui-meganav-media group">
+          <a href={absUrl("/integrations")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Third-party integrations</p>
             <p className="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
           </a>
         </li>
         <li>
-          <a href="/protocols" className="ui-meganav-media group">
+          <a href={absUrl("/protocols")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Multi-protocol messaging</p>
             <p className="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
           </a>
         </li>
         <li>
-          <a href="/hub" className="ui-meganav-media group">
+          <a href={absUrl("/hub")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Streaming data sources</p>
             <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
           </a>
         </li>
       </ul>
 
-      <FeaturedLink url="/platform">Explore all platform features</FeaturedLink>
+      <FeaturedLink url={absUrl("/platform")}>Explore all platform features</FeaturedLink>
     </div>
 
     <div>
@@ -64,7 +64,7 @@ const MeganavContentPlatform = ({ paths }) => (
       </h3>
       <ul className="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
         <li>
-          <a href="/four-pillars-of-dependability#performance" className="ui-meganav-media group">
+          <a href={absUrl("/four-pillars-of-dependability#performance")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Predictable performance</p>
             <p className="ui-meganav-media-copy">
               We provide predictability so you can be confident your realtime application will always perform as expected.
@@ -72,32 +72,32 @@ const MeganavContentPlatform = ({ paths }) => (
           </a>
         </li>
         <li>
-          <a href="/four-pillars-of-dependability#integrity" className="ui-meganav-media group">
+          <a href={absUrl("/four-pillars-of-dependability#integrity")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
             <p className="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
           </a>
         </li>
         <li>
-          <a href="/four-pillars-of-dependability#reliability" className="ui-meganav-media group">
+          <a href={absUrl("/four-pillars-of-dependability#reliability")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Fault tolerant infrastructure</p>
             <p className="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
           </a>
         </li>
         <li>
-          <a href="/four-pillars-of-dependability#availability" className="ui-meganav-media group">
+          <a href={absUrl("/four-pillars-of-dependability#availability")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">High scalability & availability</p>
             <p className="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
           </a>
         </li>
         <li>
-          <a href="/network" className="ui-meganav-media group">
+          <a href={absUrl("/network")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Global edge network</p>
             <p className="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 200+ PoPs.</p>
           </a>
         </li>
       </ul>
 
-      <FeaturedLink url="/four-pillars-of-dependability">Explore our technology</FeaturedLink>
+      <FeaturedLink url={absUrl("/four-pillars-of-dependability")}>Explore our technology</FeaturedLink>
     </div>
   </section>
 );
@@ -107,6 +107,7 @@ MeganavContentPlatform.propTypes = {
     ablyStack: T.string,
     iconSprites: T.string,
   }),
+  absUrl: T.func,
 };
 
 export default MeganavContentPlatform;

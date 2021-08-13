@@ -8,22 +8,22 @@ import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/compon
 import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.jsx";
 import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.jsx";
 
-const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink }) => {
+const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, absUrl }) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
   return (
     <ul className="flex md:hidden" data-id="meganav-items-mobile">
       <li>
         {sessionState.signedIn && sessionState.logOut ? (
-          <SignOutLink {...sessionState.logOut}>
+          <SignOutLink absUrl={absUrl} {...sessionState.logOut}>
             {({ text, href, onClick }) => (
-              <a onClick={onClick} href={href} className={classNames} data-id="meganav-link">
+              <a onClick={onClick} href={absUrl(href)} className={classNames} data-id="meganav-link">
                 {text}
               </a>
             )}
           </SignOutLink>
         ) : (
-          <a href={loginLink} className={classNames} data-id="meganav-link">
+          <a href={absUrl(loginLink)} className={classNames} data-id="meganav-link">
             Login
           </a>
         )}
@@ -44,13 +44,13 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink }) =
 
                     <div className="ui-meganav-panel-mobile hidden" id={`${panel.id}-mobile`} data-scroll-lock-scrollable>
                       <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} />
-                      <PanelComponent paths={paths} />
+                      <PanelComponent paths={paths} absUrl={absUrl} />
                     </div>
                   </li>
                 );
               })}
               <li>
-                <a href="/pricing" className="ui-meganav-mobile-link">
+                <a href={absUrl("/pricing")} className="ui-meganav-mobile-link">
                   Pricing
                 </a>
               </li>
@@ -59,15 +59,18 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink }) =
             <hr className="ui-meganav-hr mb-20" />
 
             <div className="flex justify-between items-center mb-16">
-              <a href="/contact" className="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">
+              <a
+                href={absUrl("/contact")}
+                className="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
+              >
                 Contact us
               </a>
               {sessionState.signedIn && sessionState.account ? (
-                <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary">
+                <a href={absUrl(sessionState.account.links.dashboard.href)} className="ui-btn-secondary">
                   Dashboard
                 </a>
               ) : (
-                <a href="/sign-up" className="ui-btn">
+                <a href={absUrl("/sign-up")} className="ui-btn">
                   Sign up free
                 </a>
               )}
@@ -87,6 +90,7 @@ MeganavItemsMobile.propTypes = {
   sessionState: T.object,
   theme: T.object,
   loginLink: T.string,
+  absUrl: T.func,
 };
 
 export default React.memo(MeganavItemsMobile, (oldState, newState) => {

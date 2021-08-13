@@ -6,11 +6,11 @@
       <% end %>
 
       <%= content_tag :div, class: 'ui-meganav-panel invisible', data: { id: "meganav-panel" }, id: panel[:id] do %>
-        <%= render("AblyUi::Core::#{panel[:component]}".constantize.new) %>
+        <%= render("AblyUi::Core::#{panel[:component]}".constantize.new(url_base: url_base)) %>
       <% end %>
     </li>
   <% end %>
   <li>
-    <%= link_to "Pricing", "/pricing", data: { id: "meganav-link" }, class: ["ui-meganav-link", "h-64", "items-center", "flex", theme(:text_color)] %>
+    <%= link_to "Pricing", abs_url("/pricing"), data: { id: "meganav-link" }, class: ["ui-meganav-link", "h-64", "items-center", "flex", theme(:text_color)] %>
   </li>
 </ul>

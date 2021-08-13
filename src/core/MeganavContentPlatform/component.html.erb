@@ -10,82 +10,82 @@
       realtime, and lets you focus on your code.
     </p>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/platform")) do %>Explore how it works<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore how it works<% end %>
   </div>
 
   <div>
     <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-features">Our features</h3>
     <ul aria-labelledby="meganav-platform-panel-list-our-features">
       <li>
-        <a href="/pub-sub-messaging" class="group ui-meganav-media">
+        <%= link_to abs_url("/pub-sub-messaging"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Publish/subscribe messaging</p>
           <p class="ui-meganav-media-copy">Feature-rich pub/sub messaging to power any realtime requirement.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/push-notifications" class="ui-meganav-media group">
+        <%= link_to abs_url("/push-notifications"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Push notifications</p>
           <p class="ui-meganav-media-copy">Deliver native notifications at scale with our unified API.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/integrations" class="ui-meganav-media group">
+        <%= link_to abs_url("/integrations"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Third-party integrations</p>
           <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/protocols" class="ui-meganav-media group">
+        <%= link_to abs_url("/protocols"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
           <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/hub" class="ui-meganav-media group">
+        <%= link_to abs_url("/hub"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Streaming data sources</p>
           <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
-        </a>
+        <% end %>
       </li>
     </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/platform")) do %>Explore all platform features<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore all platform features<% end %>
   </div>
 
   <div>
     <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">Our technology</h3>
     <ul class="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
       <li>
-        <a href="/four-pillars-of-dependability#performance" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#performance"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Predictable performance</p>
           <p class="ui-meganav-media-copy">We provide predictability so you can be confident your realtime application will always perform as expected.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#integrity" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#integrity"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
           <p class="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#reliability" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#reliability"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
           <p class="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#availability" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#availability"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">High scalability & availability</p>
           <p class="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/network" class="ui-meganav-media group">
+        <%= link_to abs_url("/network"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Global edge network</p>
           <p class="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 200+ PoPs.</p>
-        </a>
+        <% end %>
       </li>
     </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our technology<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"))) do %>Explore our technology<% end %>
   </div>
 </section>

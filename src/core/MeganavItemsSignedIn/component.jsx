@@ -8,7 +8,7 @@ const truncate = (string, length) => {
   return string?.length && string.length > length ? `${string.slice(0, length - 1)}…` : string;
 };
 
-const MeganavItemsSignedIn = ({ sessionState, theme }) => {
+const MeganavItemsSignedIn = ({ sessionState, theme, absUrl }) => {
   const links = sessionState.account ? Object.keys(sessionState.account.links).map((key) => sessionState.account.links[key]) : [];
   const accountName = truncate(sessionState.accountName, 20);
   const preferredEmail = truncate(sessionState.preferredEmail, 20);
@@ -28,7 +28,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
               <ul className="mb-16 mx-16">
                 {links.map((item) => (
                   <li key={item.href}>
-                    <a className="ui-meganav-account-link" href={item.href}>
+                    <a className="ui-meganav-account-link" href={absUrl(item.href)}>
                       {item.text}
                     </a>
                   </li>
@@ -40,13 +40,13 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
           <p className="ui-meganav-overline mx-16">{preferredEmail}</p>
           <ul className="mb-8 mx-16">
             <li>
-              <a href={sessionState.mySettings.href} className="ui-meganav-account-link">
+              <a href={absUrl(sessionState.mySettings.href)} className="ui-meganav-account-link">
                 {sessionState.mySettings.text}
               </a>
             </li>
             {sessionState.myAccessTokens && (
               <li>
-                <a href={sessionState.myAccessTokens.href} className="ui-meganav-account-link">
+                <a href={absUrl(sessionState.myAccessTokens.href)} className="ui-meganav-account-link">
                   {sessionState.myAccessTokens.text}
                   <span className="ui-version-tag">beta</span>
                 </a>
@@ -58,9 +58,9 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
 
           {sessionState.logOut && (
             <div className="mb-16 px-16">
-              <SignOutLink {...sessionState.logOut}>
+              <SignOutLink absUrl={absUrl} {...sessionState.logOut}>
                 {({ text, href, onClick }) => (
-                  <a onClick={onClick} href={href} className="ui-meganav-account-link">
+                  <a onClick={onClick} href={absUrl(href)} className="ui-meganav-account-link">
                     {text}
                   </a>
                 )}
@@ -72,7 +72,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme }) => {
 
       {sessionState.account && (
         <li className="ml-16">
-          <a href={sessionState.account.links.dashboard.href} className="ui-btn-secondary p-btn-small">
+          <a href={absUrl(sessionState.account.links.dashboard.href)} className="ui-btn-secondary p-btn-small">
             Dashboard
           </a>
         </li>
@@ -87,6 +87,7 @@ MeganavItemsSignedIn.propTypes = {
     iconSprites: T.string,
   }),
   theme: T.object,
+  absUrl: T.func,
 };
 
 export default MeganavItemsSignedIn;

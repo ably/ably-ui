@@ -2,38 +2,38 @@
   <div>
     <h3 class="ui-meganav-overline md:mb-8">Documentation</h3>
     <div class="relative mb-16">
-      <form class="relative" action="/search" method="get">
+      <%= tag.form class: "relative", action: abs_url("/search"), method: "get" do %>
         <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-8 left-8 pt-1 mt-1")) %>
         <input type="search" name="q" class="ui-input pl-48" placeholder="Search docs" />
-      </form>
+      <% end %>
     </div>
     <p class="text-p1 font-medium text-cool-black mb-20">
       Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
     </p>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/documentation")) do %>Visit Documentation<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/documentation"))) do %>Visit Documentation<% end %>
   </div>
 
   <div>
     <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">Explore</h3>
     <ul aria-labelledby="meganav-developers-panel-explore">
       <li>
-        <a href="/integrations" class="ui-meganav-media group">
+        <%= link_to abs_url("/integrations"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Third-party integrations & plugins</p>
           <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/protocols" class="ui-meganav-media group">
+        <%= link_to abs_url("/protocols"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
           <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/hub" class="ui-meganav-media group">
+        <%= link_to abs_url("/hub"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Streaming data sources</p>
           <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
-        </a>
+         <% end %>
       </li>
     </ul>
   </div>
@@ -42,9 +42,9 @@
     <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">Quick links</h3>
     <ul aria-labelledby="meganav-developers-panel-quick-links">
       <li>
-        <a href="/download" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/download"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Download an SDK</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
@@ -54,9 +54,9 @@
       </li>
 
       <li>
-        <a href="/support" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/support"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Support & FAQs</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
