@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
+import T from "prop-types";
 
 import Icon from "../Icon/component.jsx";
+import _absUrl from "../url-base";
+
 import toggleChatWidget from "./component.js";
 
-export default function ContactFooter() {
+export default function ContactFooter({ urlBase }) {
   useEffect(() => toggleChatWidget(), []);
+  const absUrl = (path) => _absUrl(path, urlBase);
 
   return (
     <div className="ui-contact-footer font-sans antialiased" data-id="contact-footer">
@@ -41,7 +45,7 @@ export default function ContactFooter() {
             <div className="text-h3 mb-24">Technical and account support</div>
             <p className="text-p1 font-light">We&apos;re standing by to help with any questions or code.</p>
           </div>
-          <a className="ui-btn-secondary self-start p-btn mt-16" href="/support">
+          <a className="ui-btn-secondary self-start p-btn mt-16" href={absUrl("/support")}>
             Get support now
           </a>
         </div>
@@ -49,3 +53,7 @@ export default function ContactFooter() {
     </div>
   );
 }
+
+ContactFooter.propTypes = {
+  urlBase: T.string,
+};
