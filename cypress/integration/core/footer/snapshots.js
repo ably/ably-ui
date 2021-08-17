@@ -23,6 +23,6 @@ describe("Footer Snapshot Test", () => {
   });
 
   describe("view component", () => {
-    sharedSpecs(`${url}?iframework=vw`);
+    sharedSpecs(`${url}?framework=vw`);
   });
 });

@@ -2,10 +2,14 @@ module AblyUi
   module Core
     class MeganavItemsSignedIn < ViewComponent::Base
       include MeganavConfig
+      include Util
 
-      def initialize(session_data:, theme_name:)
+      attr_reader :url_base
+
+      def initialize(session_data:, theme_name:, url_base:)
         @theme_name = theme_name
         @session_data = session_data
+        @url_base = url_base
       end
 
       def account?

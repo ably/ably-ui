@@ -2,25 +2,25 @@
   <%= notice %>
 
   <div class="ui-meganav ui-grid-px">
-    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name, data_id: "meganav-logo")) %>
-    <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name)) %>
+    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name, data_id: "meganav-logo", href: url_base)) %>
+    <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name, url_base: url_base)) %>
 
     <% if @session_data[:signedIn] %>
-      <%= render(AblyUi::Core::MeganavItemsSignedIn.new(session_data: @session_data, theme_name: @theme_name)) %>
+      <%= render(AblyUi::Core::MeganavItemsSignedIn.new(session_data: @session_data, theme_name: @theme_name, url_base: url_base)) %>
     <% else %>
       <ul class="hidden md:flex items-center">
         <li>
-          <%= link_to "Contact us", "/contact", data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
+          <%= link_to "Contact us", abs_url("/contact"), data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
         </li>
         <li>
-          <%= link_to "Login", options[:login_link], data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
+          <%= link_to "Login", abs_url(login_link), data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
         </li>
         <li class="ml-16">
-          <%= link_to "Sign up free", "/sign-up", data: { id: "meganav-sign-up-btn" }, class: ["ui-btn", "p-btn-small", theme(:button_background_color), theme(:button_text_color)] %>
+          <%= link_to "Sign up free", abs_url("/sign-up"), data: { id: "meganav-sign-up-btn" }, class: ["ui-btn", "p-btn-small", theme(:button_background_color), theme(:button_text_color)] %>
         </li>
       </ul>
     <% end %>
 
-    <%= render(AblyUi::Core::MeganavItemsMobile.new(session_data: @session_data, theme_name: @theme_name, options: options)) %>
+    <%= render(AblyUi::Core::MeganavItemsMobile.new(session_data: @session_data, theme_name: @theme_name, login_link: login_link, url_base: url_base)) %>
   </div>
 <% end %>

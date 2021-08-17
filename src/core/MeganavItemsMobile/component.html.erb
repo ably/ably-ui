@@ -1,9 +1,9 @@
 <ul class="flex md:hidden" data-id="meganav-items-mobile">
   <li>
     <% if @session_data[:signedIn] && @session_data[:logOut] %>
-      <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)])) %>
+      <%= render(AblyUi::Core::SignOutLink.new(session_data: @session_data, classes: ["ui-meganav-link", theme(:text_color)], url_base: url_base)) %>
     <% else %>
-      <%= link_to "Login", options[:login_link], data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
+      <%= link_to "Login", abs_url(login_link), data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
     <% end %>
   </li>
 
@@ -21,26 +21,24 @@
 
               <%= content_tag(:div, class: "ui-meganav-panel-mobile hidden", id: "#{panel[:id]}-mobile", data: { scroll_lock_scrollable: true }) do %>
                 <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
-                <%= render("AblyUi::Core::#{panel[:component]}".constantize.new) %>
+                <%= render("AblyUi::Core::#{panel[:component]}".constantize.new(url_base: url_base)) %>
               <% end %>
             </li>
           <% end %>
           <li>
-            <a href="/pricing" class="ui-meganav-mobile-link">Pricing</a>
+            <%= link_to "Pricing", abs_url("/pricing"), class: "ui-meganav-mobile-link" %>
           </li>
         </ul>
 
         <hr class="ui-meganav-hr mb-20" />
 
         <div class="flex justify-between items-center mb-16">
-          <a href="/contact" class="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none">
-            Contact us
-          </a>
+          <%= link_to "Contact us", abs_url("/contact"), class: "text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none" %>
 
           <% if @session_data[:signedIn] && @session_data[:account] %>
-            <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary" %>
+            <%= link_to "Dashboard", abs_url(@session_data[:account][:links][:dashboard][:href]), class: "ui-btn-secondary" %>
           <% else %>
-            <a href="/sign-up" class="ui-btn">Sign up free</a>
+            <%= link_to "Sign up free", abs_url("/sign-up"), class: "ui-btn" %>
           <% end %>
         </div>
       </div>

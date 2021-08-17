@@ -12,40 +12,43 @@ import MeganavItemsSignedIn from "../MeganavItemsSignedIn/component.jsx";
 import MeganavItemsMobile from "../MeganavItemsMobile/component.jsx";
 import Notice from "../Notice/component.jsx";
 import MeganavData from "./component.json";
+import _absUrl from "../url-base";
 
 import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
 
-const SignIn = ({ sessionState, theme, options }) =>
-  sessionState.signedIn ? (
-    <MeganavItemsSignedIn sessionState={sessionState} theme={theme} />
+const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
+  return sessionState.signedIn ? (
+    <MeganavItemsSignedIn absUrl={absUrl} sessionState={sessionState} theme={theme} />
   ) : (
     <ul className="hidden md:flex items-center">
       <li>
-        <a href="/contact" className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
+        <a href={absUrl("/contact")} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
           Contact us
         </a>
       </li>
       <li>
-        <a href={options.loginLink} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
+        <a href={absUrl(loginLink)} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
           Login
         </a>
       </li>
       <li className="ml-16">
-        <a href="/sign-up" data-id="meganav-sign-up-btn" className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>
+        <a href={absUrl("/sign-up")} data-id="meganav-sign-up-btn" className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>
           Sign up free
         </a>
       </li>
     </ul>
   );
+};
 
 SignIn.propTypes = {
   sessionState: T.object,
   paths: T.object,
   theme: T.object,
-  options: T.object,
+  loginLink: T.string,
+  absUrl: T.func,
 };
 
 const SignInPlaceholder = () => <div />;
@@ -57,7 +60,7 @@ const panels = {
   MeganavContentDevelopers: MeganavContentDevelopers,
 };
 
-export default function Meganav({ paths, themeName = "white", notice, options = { loginLink: "/login" } }) {
+export default function Meganav({ paths, themeName = "white", notice, loginLink = "/login", urlBase }) {
   const [sessionState, setSessionState] = useState(null);
 
   useEffect(() => {
@@ -72,18 +75,19 @@ export default function Meganav({ paths, themeName = "white", notice, options = 
   }, [sessionState]);
 
   const theme = MeganavData.themes[themeName];
+  const absUrl = (path) => _absUrl(path, urlBase);
 
   return (
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
       {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
-        <Logo theme={theme} dataId="meganav-logo" />
-        <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} />
+        <Logo theme={theme} dataId="meganav-logo" href={urlBase} />
+        <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} absUrl={absUrl} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
-        {sessionState ? <SignIn sessionState={sessionState} theme={theme} options={options} /> : <SignInPlaceholder />}
+        {sessionState ? <SignIn sessionState={sessionState} theme={theme} loginLink={loginLink} absUrl={absUrl} /> : <SignInPlaceholder />}
 
-        <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} options={options} />
+        <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} loginLink={loginLink} absUrl={absUrl} />
       </div>
     </nav>
   );
@@ -106,7 +110,6 @@ Meganav.propTypes = {
       collapse: T.bool,
     }),
   }),
-  options: T.shape({
-    loginLink: T.string,
-  }),
+  loginLink: T.string,
+  urlBase: T.string,
 };

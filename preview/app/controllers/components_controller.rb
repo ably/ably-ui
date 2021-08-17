@@ -136,14 +136,16 @@ class ComponentsController < ApplicationController
       }
     }
 
-    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props[:login_link] = '/custom-login-link' if custom_login_link?
+    props[:url_base] = 'https://pages.ably.com' if custom_url_base?
     props
   end
 
   def meganav_vw_props
     props = {}
     props[:session_data] = helpers.session_data if signed_in?
-    props[:options] = { login_link: '/custom-login-link' } if custom_login_link?
+    props[:login_link] = '/custom-login-link' if custom_login_link?
+    props[:url_base] = 'https://pages.ably.com' if custom_url_base?
     props
   end
 
@@ -169,6 +171,10 @@ class ComponentsController < ApplicationController
 
   def custom_login_link?
     params['custom-login-link'] == 'true'
+  end
+
+  def custom_url_base?
+    params['custom-url-base'] == 'true'
   end
 
   def notice_close_btn

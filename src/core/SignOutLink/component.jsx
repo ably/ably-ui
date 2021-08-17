@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import T from "prop-types";
 
-const SignOutLink = ({ token, href, text, children }) => {
+const SignOutLink = ({ token, href, text, children, absUrl }) => {
   const formRef = useRef(null);
 
   const onClick = (e) => {
@@ -11,7 +11,7 @@ const SignOutLink = ({ token, href, text, children }) => {
 
   return (
     <>
-      <form ref={formRef} method="post" action={href} className="hidden">
+      <form ref={formRef} method="post" action={absUrl(href)} className="hidden">
         <input name="_method" value="delete" type="hidden" />
         <input name="authenticity_token" value={token} type="hidden" />
       </form>
@@ -26,6 +26,7 @@ SignOutLink.propTypes = {
   href: T.string,
   text: T.string,
   children: T.func,
+  absUrl: T.func,
 };
 
 export default SignOutLink;

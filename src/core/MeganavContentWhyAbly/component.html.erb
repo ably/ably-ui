@@ -3,33 +3,33 @@
     <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">Why companies choose Ably</h3>
     <ul aria-labelledby="meganav-why-ably-panel-list-why-companies">
       <li>
-        <a href="/customers" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/customers"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Customers</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
-        <a href="/case-studies" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/case-studies"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Case studies</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
-        <a href="/compare" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/compare"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Compare our tech</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
-        <a href="/aws" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/aws"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Ably & AWS</p>
-        </a>
+        <% end %>
       </li>
 
       <li>
-        <a href="/resources/datasheets" class="group ui-meganav-media py-12">
+        <%= link_to abs_url("/resources/datasheets"), class: "group ui-meganav-media py-12" do %>
           <p class="ui-meganav-media-heading">Resources</p>
-        </a>
+        <% end %>
       </li>
     </ul>
   </div>
@@ -38,33 +38,33 @@
     <h3 class="ui-meganav-overline" id="meganav-why-ably-panel-list-four-pillars">Four pillars of dependability</h3>
     <ul class="mb-8" aria-labelledby="meganav-why-ably-panel-list-four-pillars">
       <li>
-        <a href="/four-pillars-of-dependability#performance" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#performance"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Predictable performance</p>
           <p class="ui-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#integrity" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#integrity"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
           <p class="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#reliability" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#reliability"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
           <p class="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/four-pillars-of-dependability#availability" class="ui-meganav-media group">
+        <%= link_to abs_url("/four-pillars-of-dependability#availability"), class: "ui-meganav-media group" do %>
           <p class="ui-meganav-media-heading">High scalability & availability</p>
           <p class="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
-        </a>
+        <% end %>
       </li>
     </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: "/four-pillars-of-dependability")) do %>Explore our Four Pillars of Dependability<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"))) do %>Explore our Four Pillars of Dependability<% end %>
   </div>
 
-  <%= render(AblyUi::Core::MeganavBlogPostsList.new) %>
+  <%= render(AblyUi::Core::MeganavBlogPostsList.new(url_base: url_base)) %>
 </section>

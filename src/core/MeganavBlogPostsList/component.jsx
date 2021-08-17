@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const MeganavBlogPostsList = ({ recentBlogPosts }) =>
+const MeganavBlogPostsList = ({ recentBlogPosts, absUrl }) =>
   recentBlogPosts ? (
     <div>
       <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">
@@ -20,7 +20,7 @@ const MeganavBlogPostsList = ({ recentBlogPosts }) =>
         ))}
       </ul>
 
-      <FeaturedLink url="/blog">More from our Blog</FeaturedLink>
+      <FeaturedLink url={absUrl("/blog")}>More from our Blog</FeaturedLink>
     </div>
   ) : null;
 
@@ -32,6 +32,7 @@ MeganavBlogPostsList.propTypes = {
       pubDate: T.string,
     })
   ),
+  absUrl: T.func,
 };
 
 export default MeganavBlogPostsList;
