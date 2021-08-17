@@ -18,10 +18,10 @@
     redux "^4.0.5"
     scroll-lock "^2.1.4"
 
-"@ably/ably-ui@2.13.3-dev.f639997":
-  version "2.13.3-dev.f639997"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.13.3-dev.f639997/cfbcee29b9dc367337bc8b51faf049963c59b38d1fe422a1cf04105484d9490f#71e96f24715a9dd81a696ec95923249ed943ce0f"
-  integrity sha512-K5YEk8l0Pnjtx4U5otNvLaJOESn9HsdLNmVgi7Tc2oz00gR8BAlFElfe8jgkc6lyVTPRxahgmvdB6FPmE3wyHw==
+"@ably/ably-ui@2.14.0":
+  version "2.14.0"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.14.0/ac8ac094a651bfecf77e9a2c5b9cf4479c4338f6df4cd26f2a8165b210c45f6a#aa319d00b40b4f91adf4595c96387c68d6ef6e9b"
+  integrity sha512-SgbCJ1CWR/+7FDThGb7x17C/ENjycN5gKxN7OZg954D9DAqNM6aOH1HGYF5dWqJ4BQoc4goeeGFidaDCo0prWg==
   dependencies:
     "@ably/ably-ui" "2.13.0"
     array-flat-polyfill "^1.0.1"
