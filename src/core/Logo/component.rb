@@ -5,10 +5,14 @@ module AblyUi
 
       attr_reader :href, :data_id
 
-      def initialize(theme_name:, data_id: '', href: '/')
+      def initialize(theme_name:, data_id: '', href:)
         @data_id = data_id
         @href = href
         theme_setup(theme_name)
+      end
+
+      def logo_href
+        href.blank? ? '/' : href
       end
     end
   end
