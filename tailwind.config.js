@@ -122,6 +122,9 @@ module.exports = {
       256: "var(--spacing-256)",
     },
     maxWidth: (theme, { breakpoints }) => ({
+      0: "0",
+      none: "none",
+      unset: "unset",
       ...breakpoints(theme("screens")),
     }),
     boxShadow: {
