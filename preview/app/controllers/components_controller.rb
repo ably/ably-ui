@@ -53,6 +53,7 @@ class ComponentsController < ApplicationController
       icon-gui-warning
       icon-gui-external-link
       icon-gui-link-arrow
+      icon-gui-minus
     ]
 
     display_icons = %w[
