@@ -1,4 +1,8 @@
-<%= render(AblyUi::Core::FeatureFooter.new) %>
+<%= render(AblyUi::Core::FeatureFooter.new(
+        image_url: asset_path('ably_ui/core/images/technical-support-01-800x533.jpg'),
+        cta_text: 'Talk to our technical team ',
+        text: "If you're having technical or account issues just get in touch.",
+)) %>
 
 <% content_for :component do %>
   <%= javascript_include_tag 'ably_ui/core/feature_footer/component' %>
