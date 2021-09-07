@@ -2,28 +2,11 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.13.0":
-  version "2.13.0"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.13.0/2e8c58cb4d088f94134bbb26db7444f442dacae53a6df4e893c4059e0ca437dd#848d64d2408123ba84036c5dea33536479fceebc"
-  integrity sha512-WNPGN1fduoZld5DOWeceSSKDifUQbxL8hWmA7Nwz94DODc/jg911Y1Ht2cxUAdh12xPFcppFXTNWAXnF3vJAlw==
+"@ably/ably-ui@2.18.0":
+  version "2.18.0"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.18.0/64d362c36383b4528a5e858f626cdafb26a47a13bf9a9f2d433fcf501ef7280b#5a5a0f1b4bc383f823f049af4d53fa5f427be38c"
+  integrity sha512-jARtg3zyBSJSTI5HvAGEi8BUJW+7Re36kcIM4kKg6YgFzSJnXjt6vzGlOEm7xDrbv2dO69gZmcIj9bkJqDaraA==
   dependencies:
-    array-flat-polyfill "^1.0.1"
-    dompurify "^2.2.9"
-    highlight.js "^10.7.2"
-    js-cookie "^2.2.1"
-    lodash.debounce "^4.0.8"
-    lodash.throttle "^4.1.1"
-    react "^17.0.1"
-    react-dom "^17.0.1"
-    redux "^4.0.5"
-    scroll-lock "^2.1.4"
-
-"@ably/ably-ui@2.17.0-dev.2782164":
-  version "2.17.0-dev.2782164"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.17.0-dev.2782164/ca63830c155fdb8d1dddcf5dc9a803dcea856a2fabac7fa816c5609c12e7bc35#b6cabc63cd4810f4cdf2691403ed15b6b1a7eeb7"
-  integrity sha512-xWXzUdC5cGQ4X+ABOLNqxqeV3e7/mpTVGuTCfMCsrZ0BDTdq+mg+H8mE7U+foK8mzPjRRns6YTmV9KQDHxfHxQ==
-  dependencies:
-    "@ably/ably-ui" "2.13.0"
     array-flat-polyfill "^1.0.1"
     dompurify "^2.2.9"
     highlight.js "^10.7.2"
