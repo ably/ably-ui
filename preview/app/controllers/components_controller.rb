@@ -54,6 +54,7 @@ class ComponentsController < ApplicationController
       icon-gui-external-link
       icon-gui-link-arrow
       icon-gui-minus
+      icon-gui-enlarge
     ]
 
     display_icons = %w[
