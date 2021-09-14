@@ -7,3 +7,4 @@ export { default as loadSprites } from "./load-sprites";
 export * from "./remote-data-store";
 export * from "./remote-blogs-posts";
 export * from "./remote-session-data";
+export * from "./dom-query";
