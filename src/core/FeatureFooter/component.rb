@@ -7,9 +7,9 @@ module AblyUi
 
       def initialize(
         url_base: AblyUi::Core::Util::DEFAULT_URL_BASE,
-        image_url: '',
-        cta_text: '',
-        text: ''
+        image_url: nil,
+        cta_text: 'Talk to our technical team',
+        text: "If you're having technical or account issues just get in touch."
       )
         @url_base = url_base
         @image_url = image_url
