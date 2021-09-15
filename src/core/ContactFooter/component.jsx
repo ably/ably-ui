@@ -19,7 +19,14 @@ export default function ContactFooter({ urlBase }) {
             <div className="text-h3 mb-24">Live Chat</div>
             <p className="text-p1 font-light">Reach out team of experts over chat powered by Ably.</p>
           </div>
-          <button type="button" className="ui-btn-secondary self-start mt-16" disabled data-id="open-chat-widget">
+          <button
+            type="button"
+            className="ui-btn-secondary self-start mt-16"
+            disabled
+            data-id="open-chat-widget"
+            data-enabled-label="Start a live chat"
+            data-disabled-label="Live chat unavailable"
+          >
             Live chat unavailable
           </button>
         </div>
