@@ -4,6 +4,8 @@ exports[`Chat button state > react > the button is inactive without Hubspot widg
   class="ui-btn-secondary self-start mt-16"
   disabled=""
   data-id="open-chat-widget"
+  data-enabled-label="Start a live chat"
+  data-disabled-label="Live chat unavailable"
 >
   Live chat unavailable
 </button>
@@ -27,6 +29,8 @@ exports[`Chat button state > vw > the button is inactive without Hubspot widget 
   class="ui-btn-secondary self-start mt-16"
   disabled=""
   data-id="open-chat-widget"
+  data-enabled-label="Start a live chat"
+  data-disabled-label="Live chat unavailable"
 >
   Live chat unavailable
 </button>
