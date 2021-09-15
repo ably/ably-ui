@@ -1,23 +1,16 @@
 <%- @image_url ||= asset_path('ably_ui/core/images/technical-support-01-800x533.jpg') %>
-
 <div class="ui-feature-footer" data-id="feature-footer">
   <div class="w-full bp-lg max-w-screen-xl mx-auto py-64 md:grid grid-cols-3 ui-grid-gap ui-grid-px">
     <div class="col-span-2 bg-cool-black text-white rounded-lg overflow-hidden sm:flex flex-row mb-24 md:mb-0">
-
       <%= tag.div class: 'ui-feature-image flex-0 bg-center bg-cover w-full h-256 sm:w-1/2 sm:h-auto', style: "background-image:url(#{@image_url})" %>
       <div class="p-24 sm:p-32 flex-1 h-full">
-        <div class="flex flex-row flex-col h-full space-between">
+        <div class="flex flex-col h-full space-between">
           <span class="flex-1">
-            <div class="text-h3 mb-24 flex-1"><%= @cta_text %> </div>
-            <p class="text-p1 font-light"><%= @text %></p>
-            <button
-              type="button"
-              class="ui-btn-secondary-invert self-start mt-24"
-              data-id="open-chat-widget"
-              disabled
-            >
-              Live chat unavailable
-            </button>
+            <div class="text-h3 mb-24 flex-1"><%= @title %> </div>
+            <p class="text-p1 font-light"><%= @subtitle %></p>
+            <%= tag.button type: "button", class: "ui-btn-secondary-invert self-start mt-24", data: { id: "open-chat-widget", enabled_label: live_chat_label, disabled_label: live_chat_disabled_label }, disabled: true do %>
+              <%= live_chat_disabled_label %>
+            <% end %>
           </span>
           <span class="flex-0 mt-24 md:mt-0">
             <p class="text-p1 font-light">
@@ -28,7 +21,6 @@
         </div>
       </div>
     </div>
-
     <div class="bg-white rounded-lg p-24 sm:p-32 w-auto">
       <div class="flex flex-col h-full space-between">
         <span class="flex-1">
