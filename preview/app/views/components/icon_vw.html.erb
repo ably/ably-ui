@@ -4,6 +4,13 @@
 
 <%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters, framework: framework } %>
 
+<h2 class="text-h2 mb-32 font-sans">Usage example</h2>
+<div class="bg-cool-black text-white p-24 mb-32 font-mono" style="font-size: 0.9rem">
+<pre>
+&lt;%= render(AblyUi::Core::Icon.new(name: "glassdoor", size: "1.5remk", color: "text-cool-black", additional_css: "mb-40")) %&gt;
+</pre>
+</div>
+
 <h2 class="text-h2 mb-32 font-sans">Core Icons</h2>
 <%= render partial: 'components/icon/grid_vw', locals: { icons: core_icons, size: "1.25rem" } %>
 

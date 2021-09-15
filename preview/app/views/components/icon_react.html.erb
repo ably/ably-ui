@@ -4,6 +4,13 @@
 
 <%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters, framework: framework } %>
 
+<h2 class="text-h2 mb-32 font-sans">Usage example</h2>
+<div class="bg-cool-black text-white p-24 mb-32 font-mono" style="font-size: 0.9rem">
+<pre>
+&lt;Icon name="glassdoor" size="1.5rem" color: "text-cool-black" additionalCss: "mb-40" /&gt;
+</pre>
+</div>
+
 <h2 class="text-h2 mb-32 font-sans">Core Icons</h2>
 <%= render partial: 'components/icon/grid_react', locals: { icons: core_icons, size: "1.25rem" } %>
 
@@ -12,7 +19,6 @@
 
 <h2 class="text-h2 mb-32 font-sans">Social Icons</h2>
 <%= render partial: 'components/icon/grid_react', locals: { icons: social_icons, size: "1.5rem" } %>
-
 
 <h2 class="text-h2 mb-32 font-sans">Other</h2>
 <%= render partial: 'components/icon/grid_react', locals: { icons: other_icons, size: "1.5rem" } %>
