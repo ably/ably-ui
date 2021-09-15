@@ -75,9 +75,10 @@ class ComponentsController < ApplicationController
       icon-display-live-chat
       icon-display-general-comms
       icon-display-tech-account-comms
+      icon-display-web-view
     ]
 
-    social_icons = %w[linkedin twitter github glassdoor]
+    social_icons = %w[linkedin twitter github glassdoor apple android]
 
     other_icons = %w[quote]
 
