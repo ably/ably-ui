@@ -6,9 +6,10 @@
         <div class="text-h3 mb-24">Live Chat</div>
         <p class="text-p1 font-light">Reach out team of experts over chat powered by Ably.</p>
       </div>
-      <button type="button" class="ui-btn-secondary self-start mt-16" data-id="open-chat-widget" disabled>Live chat unavailable</button>
+      <%= tag.button type: "button", class: "ui-btn-secondary self-start mt-16", data: { id: "open-chat-widget", enabled_label: "Start a live chat", disabled_label: "Live chat unavailable" }, disabled: true do %>
+        Live chat unavailable
+      <% end %>
     </div>
-
     <div class="ui-contact-footer-box">
       <%= render(AblyUi::Core::Icon.new(name: "icon-display-call-mobile", size: "3rem", additional_css: "block mb-16")) %>
       <div class="flex-grow">
@@ -19,7 +20,6 @@
         </p>
       </div>
     </div>
-
     <div class="ui-contact-footer-box">
       <%= render(AblyUi::Core::Icon.new(name: "icon-display-tech-account-comms", size: "3rem", additional_css: "block mb-16")) %>
       <div>

@@ -5,32 +5,33 @@ import { queryId } from "./dom-query";
     is used to open the HubSpot chat widget
 
     If the Chat widget is unavailable this script
-    will apply a disabled propery and change
+    will apply a disabled property and change
     the text on the button, to warn the user.
 
     Params:
     - dataId        the parent container data-id
-    - textEnabled   label for an active button
-    - textDisable   label for an active button
 
 */
 
 function enableBtn(el, text) {
   el.disabled = false;
-  el.innerText = text || "Start a live chat";
+  el.innerText = text;
 }
 
 function disableBtn(el, text) {
   el.disabled = true;
-  el.innerText = text || "Live chat unavailable";
+  el.innerText = text;
 }
 
 const WAIT_BETWEEN_RETRIES_MS = 100;
 let MAX_RETRY_COUNT = 30;
 
 export default function toggleChatWidget(params = {}) {
-  const { dataId, textEnabled, textDisabled } = params;
+  const { dataId } = params;
   const container = queryId(dataId);
+  const chatButton = queryId("open-chat-widget", container);
+  const textEnabled = chatButton.dataset.enabledLabel;
+  const textDisabled = chatButton.dataset.disabledLabel;
 
   if (!dataId || !container) return;
   const trigger = queryId("open-chat-widget", container);
