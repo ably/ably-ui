@@ -8,9 +8,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
+    "src",
     "core",
     "reset",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "tailwind.extend.js"
   ],
   "devDependencies": {
     "@babel/core": "^7.12.3",
