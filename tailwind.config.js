@@ -178,6 +178,9 @@ module.exports = {
         dynamic:
           "repeat(var(--dynamic-grid-columns-count), minmax(var(--dynamic-grid-column-min-width), var(--dynamic-grid-column-max-width)))",
       },
+      gridRowStart: {
+        8: "8",
+      },
     },
   },
   variants: {
