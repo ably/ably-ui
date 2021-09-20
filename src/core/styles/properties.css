@@ -1,139 +1,141 @@
-:root {
-  --color-cool-black: #03020d;
-  --color-active-orange: #ff5416;
-  --color-red-orange: #e40000;
-  --color-white: #ffffff;
-  --color-electric-cyan: #4af7ff;
-  --color-zingy-green: #08ff13;
-  --color-bright-red: #ff2739;
-  --color-jazzy-pink: #ff17d2;
-  --color-light-grey: #f5f5f6;
-  --color-mid-grey: #dbdbdc;
-  --color-dark-grey: #76767c;
-  --color-charcoal-grey: #292831;
-  --color-gui-default: #0073e6;
-  --color-gui-hover: #0867c4;
-  --color-gui-focus: #80b9f2;
-  --color-gui-active: #074095;
-  --color-gui-viewed: #4887c2;
-  --color-gui-unavailable: #a8a8a8;
-  --color-gui-error: #fb0c0c;
+@layer base {
+  :root {
+    --color-cool-black: #03020d;
+    --color-active-orange: #ff5416;
+    --color-red-orange: #e40000;
+    --color-white: #ffffff;
+    --color-electric-cyan: #4af7ff;
+    --color-zingy-green: #08ff13;
+    --color-bright-red: #ff2739;
+    --color-jazzy-pink: #ff17d2;
+    --color-light-grey: #f5f5f6;
+    --color-mid-grey: #dbdbdc;
+    --color-dark-grey: #76767c;
+    --color-charcoal-grey: #292831;
+    --color-gui-default: #0073e6;
+    --color-gui-hover: #0867c4;
+    --color-gui-focus: #80b9f2;
+    --color-gui-active: #074095;
+    --color-gui-viewed: #4887c2;
+    --color-gui-unavailable: #a8a8a8;
+    --color-gui-error: #fb0c0c;
 
-  /* code syntax: theme */
-  --syntax-black: var(--color-cool-black);
-  --syntax-dark-grey: var(--color-dark-grey);
-  --syntax-mid-grey: var(--color-mid-grey);
-  --syntax-light-grey: var(--color-light-grey);
+    /* code syntax: theme */
+    --syntax-black: var(--color-cool-black);
+    --syntax-dark-grey: var(--color-dark-grey);
+    --syntax-mid-grey: var(--color-mid-grey);
+    --syntax-light-grey: var(--color-light-grey);
 
-  --syntax-orange: #e78c45;
-  --syntax-yellow: #e7c547;
-  --syntax-blue: #3490ec;
-  --syntax-green: #b9ca4a;
-  --syntax-red: #d54e53;
-  --syntax-lilac: #bb87d3;
+    --syntax-orange: #e78c45;
+    --syntax-yellow: #e7c547;
+    --syntax-blue: #3490ec;
+    --syntax-green: #b9ca4a;
+    --syntax-red: #d54e53;
+    --syntax-lilac: #bb87d3;
 
-  /* uptime status colors */
-  --uptime-color-up: #39b54a;
-  --uptime-color-trouble: #e87623;
-  --uptime-color-down: #e6242c;
+    /* uptime status colors */
+    --uptime-color-up: #39b54a;
+    --uptime-color-trouble: #e87623;
+    --uptime-color-down: #e6242c;
 
-  /* flat colors for social icons */
-  --icon-color-linkedin: #1269bf;
-  --icon-color-twitter: #2caae1;
-  --icon-color-glassdoor: #0baa41;
-  --icon-color-github: #000000;
+    /* flat colors for social icons */
+    --icon-color-linkedin: #1269bf;
+    --icon-color-twitter: #2caae1;
+    --icon-color-glassdoor: #0baa41;
+    --icon-color-github: #000000;
 
-  --gradient-active-orange: linear-gradient(
-    62deg,
-    var(--color-active-orange) 0,
-    var(--color-active-orange) 60%,
-    var(--color-red-orange) 100%
-  );
+    --gradient-active-orange: linear-gradient(
+      62deg,
+      var(--color-active-orange) 0,
+      var(--color-active-orange) 60%,
+      var(--color-red-orange) 100%
+    );
 
-  --fs-title-xl: 4rem;
-  --fs-title: 3.5rem;
-  --fs-title-xs: 3rem;
-  --fs-h1-xl: 3.5rem;
-  --fs-h1: 3rem;
-  --fs-h1-xs: 2.625rem;
-  --fs-h2-xl: 2.5rem;
-  --fs-h2: 2rem;
-  --fs-h2-xs: 1.875rem;
-  --fs-h3: 1.5rem;
-  --fs-h4: 1.125rem;
-  --fs-p1: 1.125rem;
-  --fs-p2: 1rem;
-  --fs-p3: 0.875rem;
-  --fs-standfirst-xl: 2.25rem;
-  --fs-standfirst: 1.5rem;
-  --fs-sub-header: 1.5rem;
-  --fs-sub-header-xs: 1.125rem;
-  --fs-overline1: 1rem;
-  --fs-overline2: 0.875rem;
-  --fs-btn1: 1.125rem;
-  --fs-btn2: 1rem;
-  --fs-menu1: 1.125rem;
-  --fs-menu2: 1rem;
-  --fs-menu3: 0.875rem;
-  --fs-quote: 1.5rem;
+    --fs-title-xl: 4rem;
+    --fs-title: 3.5rem;
+    --fs-title-xs: 3rem;
+    --fs-h1-xl: 3.5rem;
+    --fs-h1: 3rem;
+    --fs-h1-xs: 2.625rem;
+    --fs-h2-xl: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h2-xs: 1.875rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.125rem;
+    --fs-p1: 1.125rem;
+    --fs-p2: 1rem;
+    --fs-p3: 0.875rem;
+    --fs-standfirst-xl: 2.25rem;
+    --fs-standfirst: 1.5rem;
+    --fs-sub-header: 1.5rem;
+    --fs-sub-header-xs: 1.125rem;
+    --fs-overline1: 1rem;
+    --fs-overline2: 0.875rem;
+    --fs-btn1: 1.125rem;
+    --fs-btn2: 1rem;
+    --fs-menu1: 1.125rem;
+    --fs-menu2: 1rem;
+    --fs-menu3: 0.875rem;
+    --fs-quote: 1.5rem;
 
-  --lh-tight: 1.125;
-  --lh-snug: 1.15;
-  --lh-normal: 1.25;
-  --lh-relaxed: 1.45;
+    --lh-tight: 1.125;
+    --lh-snug: 1.15;
+    --lh-normal: 1.25;
+    --lh-relaxed: 1.45;
 
-  --ls-tighten-0_025: -0.025em;
-  --ls-tighten-0_02: -0.02em;
-  --ls-tighten-0_015: -0.015em;
-  --ls-tighten-0_01: -0.01em;
-  --ls-tighten-0_005: -0.005em;
-  --ls-tighten-0_0025: -0.0025em;
-  --ls-widen-0_1: 0.1em;
-  --ls-widen-0_15: 0.15em;
+    --ls-tighten-0_025: -0.025em;
+    --ls-tighten-0_02: -0.02em;
+    --ls-tighten-0_015: -0.015em;
+    --ls-tighten-0_01: -0.01em;
+    --ls-tighten-0_005: -0.005em;
+    --ls-tighten-0_0025: -0.0025em;
+    --ls-widen-0_1: 0.1em;
+    --ls-widen-0_15: 0.15em;
 
-  --spacing-0: 0px;
-  --spacing-1: 1px;
-  --spacing-4: 0.25rem;
-  --spacing-8: 0.5rem;
-  --spacing-12: 0.75rem;
-  --spacing-14: 0.875rem;
-  --spacing-16: 1rem;
-  --spacing-20: 1.25rem;
-  --spacing-24: 1.5rem;
-  --spacing-32: 2rem;
-  --spacing-40: 2.5rem;
-  --spacing-48: 3rem;
-  --spacing-64: 4rem;
-  --spacing-72: 4.5rem;
-  --spacing-80: 5rem;
-  --spacing-88: 5.5rem;
-  --spacing-96: 6rem;
-  --spacing-160: 10rem;
-  --spacing-256: 16rem;
+    --spacing-0: 0px;
+    --spacing-1: 1px;
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-12: 0.75rem;
+    --spacing-14: 0.875rem;
+    --spacing-16: 1rem;
+    --spacing-20: 1.25rem;
+    --spacing-24: 1.5rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-48: 3rem;
+    --spacing-64: 4rem;
+    --spacing-72: 4.5rem;
+    --spacing-80: 5rem;
+    --spacing-88: 5.5rem;
+    --spacing-96: 6rem;
+    --spacing-160: 10rem;
+    --spacing-256: 16rem;
 
-  --spacing-btn: 0.9375rem 1.5rem; /* 15px 24px */
-  --spacing-btn-small: 0.6875rem 1rem; /* 11px 16px */
-  --spacing-menu-row: 0.625rem 0.5rem 0.6875rem; /* 10px 8px 11px */
-  --spacing-menu-row-snug: 0.4375rem 0.5rem 0.375rem; /* 7px 8px 6px */
-  --spacing-menu-row-title: 0.6875rem 0.5rem; /* 11px 8px */
-  --spacing-media: 0.5rem; /* 8px */
-  --spacing-input: 0.8125rem 1rem 0.75rem; /* 13px 16px 12px */
-  --spacing-overline: 0.6875rem 0; /* 11px 0 */
+    --spacing-btn: 0.9375rem 1.5rem; /* 15px 24px */
+    --spacing-btn-small: 0.6875rem 1rem; /* 11px 16px */
+    --spacing-menu-row: 0.625rem 0.5rem 0.6875rem; /* 10px 8px 11px */
+    --spacing-menu-row-snug: 0.4375rem 0.5rem 0.375rem; /* 7px 8px 6px */
+    --spacing-menu-row-title: 0.6875rem 0.5rem; /* 11px 8px */
+    --spacing-media: 0.5rem; /* 8px */
+    --spacing-input: 0.8125rem 1rem 0.75rem; /* 13px 16px 12px */
+    --spacing-overline: 0.6875rem 0; /* 11px 0 */
 
-  /* In components, when looking at implementing viewport margin and spacing between elements,
-     the values in the comments can be used as guide as they represent the grid the elements (should) sit on.
-     alternatively, look for ui-grid-* helpers. */
-  --bp-xs: 375px; /* gutters 8px, side-margin 24px */
-  --bp-sm: 600px; /* gutters 16px, side-margin 32px */
-  --bp-md: 1040px; /* gutters 24px, side-margin 40px, meganav desktop */
-  --bp-lg: 1280px; /* gutters 24px, side-margin 64px */
-  --bp-xl: 1440px; /* gutters 32px, side-margin 64px */
+    /* In components, when looking at implementing viewport margin and spacing between elements,
+       the values in the comments can be used as guide as they represent the grid the elements (should) sit on.
+       alternatively, look for ui-grid-* helpers. */
+    --bp-xs: 375px; /* gutters 8px, side-margin 24px */
+    --bp-sm: 600px; /* gutters 16px, side-margin 32px */
+    --bp-md: 1040px; /* gutters 24px, side-margin 40px, meganav desktop */
+    --bp-lg: 1280px; /* gutters 24px, side-margin 64px */
+    --bp-xl: 1440px; /* gutters 32px, side-margin 64px */
 
-  /* Page stacking context. If components create new stacking contexts z-index values should be defined within them. */
-  --stacking-context-page-meganav: 100;
+    /* Page stacking context. If components create new stacking contexts z-index values should be defined within them. */
+    --stacking-context-page-meganav: 100;
 
-  /* Expose component values for cross-component usage */
-  --ui-meganav-height: 4rem;
-  --ui-showcase-client-logo-min-width: 8.75rem; /* 140px at 16px base*/
-  --ui-showcase-client-logo-max-width: 15rem; /* 240px at 16px base*/
+    /* Expose component values for cross-component usage */
+    --ui-meganav-height: 4rem;
+    --ui-showcase-client-logo-min-width: 8.75rem; /* 140px at 16px base*/
+    --ui-showcase-client-logo-max-width: 15rem; /* 240px at 16px base*/
+  }
 }
