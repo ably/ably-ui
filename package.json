@@ -39,13 +39,9 @@
     "null-loader": "^4.0.1",
     "postcss": "^8.1.10",
     "postcss-calc": "^7.0.5",
-    "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^10.0.0",
-    "postcss-each": "^0.10.0",
     "postcss-import": "^13.0.0",
-    "postcss-insert": "^1.0.0",
     "postcss-loader": "^4.0.4",
-    "postcss-nested": "^5.0.1",
     "prettier": "^2.3.0",
     "prop-types": "^15.7.2",
     "svg-spritemap-webpack-plugin": "^3.7.1",
@@ -69,6 +65,7 @@
   },
   "dependencies": {
     "array-flat-polyfill": "^1.0.1",
+    "deepmerge": "^4.2.2",
     "dompurify": "^2.2.9",
     "highlight.js": "^10.7.2",
     "js-cookie": "^2.2.1",
@@ -77,6 +74,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "redux": "^4.0.5",
-    "scroll-lock": "^2.1.4"
+    "scroll-lock": "^2.1.4",
+    "postcss-js": "^3.0.3"
   }
 }
