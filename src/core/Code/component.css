@@ -1,6 +1,8 @@
-@layer components {
+@layer base {
   @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+}
 
+@layer components {
   .hljs {
     background: var(--syntax-black);
     color: var(--syntax-light-grey);
