@@ -17,50 +17,54 @@
 @import "@ably/ably-ui/core/Slider/component.css";
 @import "@ably/ably-ui/core/styles.css";
 
-@font-face {
-  font-family: "NEXT Book";
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.eot");
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.eot?iefix")
-      format("embedded-opentype"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.woff2") format("woff2"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
+@layer base {
+  @font-face {
+    font-family: "NEXT Book";
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.eot");
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.eot?iefix")
+        format("embedded-opentype"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.woff2") format("woff2"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: "NEXT Book";
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.eot");
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.woff2")
-      format("woff2"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
+  @font-face {
+    font-family: "NEXT Book";
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.eot");
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.eot?#iefix")
+        format("embedded-opentype"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.woff2")
+        format("woff2"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Light-Italic.woff")
+        format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
 
-@font-face {
-  font-family: "NEXT Book";
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.eot");
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.woff2") format("woff2"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
+  @font-face {
+    font-family: "NEXT Book";
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.eot");
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.woff2") format("woff2"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: "NEXT Book";
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.eot");
-  src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.woff2")
-      format("woff2"),
-    url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
+  @font-face {
+    font-family: "NEXT Book";
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.eot");
+    src: url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.eot?#iefix")
+        format("embedded-opentype"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.woff2")
+        format("woff2"),
+      url("~@ably/ably-ui/core/fonts/NEXT-Book-Medium-Italic.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
 }
 
 @layer components {
