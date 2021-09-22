@@ -68,7 +68,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
           </a>
         </li>
         <li>
-          <a href={absUrl("/asset-tracking")} className="ui-meganav-media group">
+          <a href={absUrl("/solutions/asset-tracking")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Asset Tracking</p>
             <p className="ui-meganav-media-copy">
               Track assets in realtime with a solution optimized for last mile logistics, food delivery applications, and urban mobility services.
