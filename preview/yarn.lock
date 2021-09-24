@@ -2,12 +2,13 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@2.24.0":
-  version "2.24.0"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.24.0/07d7f15a075007f7e30907f313260813ed6b9c40407dd60c7dd9a2c2507527e0#2aa1d5c14dd46909d73dff8b2dce5f33fdf90101"
-  integrity sha512-CrZn6cFq2QWdOiVCcRF9JeNb4ofkjXhdJFcQu1HHEX+V7L5ZxEvG1OnkSs1DejgtETeGH0LhHm9JgAdDLLRMLQ==
+"@ably/ably-ui@2.24.0-dev.5e35ccf":
+  version "2.24.0-dev.5e35ccf"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/2.24.0-dev.5e35ccf/9757153a5a1ab82db92f1e926dd224c372497fbb65f5e42938722b92f2b222a9#883e34cd62b3d152c3918ed6497a435a454f481c"
+  integrity sha512-ctciJz4pHeb6zKMxXKyGsTcQkvserudyIg9ehsq0qkl+byC8hW8W4/eAs3w9qSJKJqGEOiYvAhpEN2maWNYixw==
   dependencies:
     array-flat-polyfill "^1.0.1"
+    deepmerge "^4.2.2"
     dompurify "^2.2.9"
     highlight.js "^10.7.2"
     js-cookie "^2.2.1"
@@ -2717,6 +2718,11 @@ deep-equal@^1.0.1:
     object-is "^1.0.1"
     object-keys "^1.1.1"
     regexp.prototype.flags "^1.2.0"
+
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
 default-gateway@^4.2.0:
   version "4.2.0"

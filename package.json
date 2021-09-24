@@ -1,6 +1,6 @@
 {
   "name": "@ably/ably-ui",
-  "version": "2.24.0",
+  "version": "2.24.0-dev.5e35ccf",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": "git@github.com:ably/ably-ui.git",
   "license": "Apache-2.0",
@@ -8,9 +8,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
+    "src",
     "core",
     "reset",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "tailwind.extend.js"
   ],
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -33,17 +35,12 @@
     "eslint-plugin-react": "^7.21.5",
     "extra-watch-webpack-plugin": "^1.0.3",
     "mini-css-extract-plugin": "^1.2.1",
-    "normalize.css": "^8.0.1",
     "null-loader": "^4.0.1",
     "postcss": "^8.1.10",
     "postcss-calc": "^7.0.5",
-    "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^10.0.0",
-    "postcss-each": "^0.10.0",
     "postcss-import": "^13.0.0",
-    "postcss-insert": "^1.0.0",
     "postcss-loader": "^4.0.4",
-    "postcss-nested": "^5.0.1",
     "prettier": "^2.3.0",
     "prop-types": "^15.7.2",
     "svg-spritemap-webpack-plugin": "^3.7.1",
@@ -67,6 +64,7 @@
   },
   "dependencies": {
     "array-flat-polyfill": "^1.0.1",
+    "deepmerge": "^4.2.2",
     "dompurify": "^2.2.9",
     "highlight.js": "^10.7.2",
     "js-cookie": "^2.2.1",
