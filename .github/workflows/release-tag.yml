@@ -27,7 +27,8 @@ jobs:
         env:
           GITHUB_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
         run: |
-          ./release.sh "${GITHUB_REF/refs\/tags\//}"
+          ./release.sh "${ABLY_TEST}"
+          # GITHUB_REF/refs\/tags\//
         shell: bash
       # - name: Create PR on Voltaire and Website
       #   run: "./scripts/update-dependents.sh"
