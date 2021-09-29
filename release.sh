@@ -2,37 +2,41 @@
 
 # See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
 set -euo pipefail
-echo $0
+echo $1
 
-# echo "Fetching remote for up to date commit history"
-# git fetch
+echo "Fetching remote for up to date commit history"
+git fetch
 
-# if [ $# -ne 1 ]; then
-#   echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
-#   exit 1
-# fi
+if [ $# -ne 1 ]; then
+  echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
+  exit 1
+fi
 
-# BRANCH=$(git branch --show-current)
+BRANCH=$(git branch --show-current)
 
-# if [[ $BRANCH != "main" ]]; then
-#   echo $0: "Error: Releases can only be made from the main branch"
-#   exit 1
-# fi
+if [[ $BRANCH != "main" ]]; then
+  echo $0: "Error: Releases can only be made from the main branch"
+  exit 1
+fi
 
-# COMMITS_AHEAD=$(git rev-list main...origin/main --count)
+COMMITS_AHEAD=$(git rev-list main...origin/main --count)
 
-# if [ $COMMITS_AHEAD -gt 0 ]; then
-#   echo $0: "Error: branch origin/main is ahead of your local main"
-#   exit 1
-# fi
+if [ $COMMITS_AHEAD -gt 0 ]; then
+  echo $0: "Error: branch origin/main is ahead of your local main"
+  exit 1
+fi
 
-# if [[ `git status --porcelain --untracked-files=no` ]]; then
-#   echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
-#   exit 1
-# fi
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+  echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
+  exit 1
+fi
 
-# VERSION=$1
-# TAG=v$1
+VERSION=$1
+TAG=v$1
+
+echo $VERSION
+echo $TAG
+
 
 # if git rev-parse "${TAG}" >/dev/null 2>&1; then
 #   echo $0: "Error: ${TAG} already exists"

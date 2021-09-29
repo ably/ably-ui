@@ -7,14 +7,16 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
+      - name: Run Checkout Script
+        uses: actions/checkout@v2
       - name: Grant permissions to Scripts
         run: |
           chmod +x "release.sh"
-          chmod +x "./scripts/update-dependents.sh"
-        shell: bash
+      #     chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
-        run: "./release.sh " ${GITHUB_REF/refs\/tags\//}
+        run: |
+          echo "Hello World"
+          ./release.sh "${GITHUB_REF}"
         shell: bash
       # - name: Create PR on Voltaire and Website
       #   run: "./scripts/update-dependents.sh"
-      #   shell: bash
