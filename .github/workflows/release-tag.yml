@@ -15,8 +15,7 @@ jobs:
       #     chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
         run: |
-          echo "Hello World"
-          ./release.sh "${GITHUB_REF}"
+          ./release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
       # - name: Create PR on Voltaire and Website
       #   run: "./scripts/update-dependents.sh"

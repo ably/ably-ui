@@ -4,6 +4,9 @@
 set -euo pipefail
 echo $1
 
+VERSION=$1
+TAG=v$1
+
 echo "Fetching remote for up to date commit history"
 git fetch
 
@@ -31,71 +34,64 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
   exit 1
 fi
 
-VERSION=$1
-TAG=v$1
+if git rev-parse "${TAG}" >/dev/null 2>&1; then
+  echo $0: "Error: ${TAG} already exists"
+  exit 1
+fi
 
-echo $VERSION
-echo $TAG
+echo "Install packages, making sure they are up to date"
+yarn --frozen-lockfile
+bundle config set --local frozen true
+bundle
+bundle config set --local frozen false
 
+echo "Build library"
+NODE_ENV=production node scripts/build.js
 
-# if git rev-parse "${TAG}" >/dev/null 2>&1; then
-#   echo $0: "Error: ${TAG} already exists"
-#   exit 1
-# fi
+echo "Update version.rb file"
+echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
 
-# echo "Install packages, making sure they are up to date"
-# yarn --frozen-lockfile
-# bundle config set --local frozen true
-# bundle
-# bundle config set --local frozen false
+echo "Build the gem"
+gem build ably-ui.gemspec
 
-# echo "Build library"
-# NODE_ENV=production node scripts/build.js
+echo "Push the gem to the registry"
+gem push --key github \
+    --host https://rubygems.pkg.github.com/ably \
+    ably-ui-$VERSION.gem
 
-# echo "Update version.rb file"
-# echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
+echo "Update Gemfile.lock"
+bundle
 
-# echo "Build the gem"
-# gem build ably-ui.gemspec
+echo "Remove local gem artifact"
+rm ably-ui-$VERSION.gem
 
-# echo "Push the gem to the registry"
-# gem push --key github \
-#     --host https://rubygems.pkg.github.com/ably \
-#     ably-ui-$VERSION.gem
+echo "Publish the npm package to the registry"
+yarn publish --no-git-tag-version --new-version $VERSION
 
-# echo "Update Gemfile.lock"
-# bundle
+echo "Update preview app version"
+cd preview
 
-# echo "Remove local gem artifact"
-# rm ably-ui-$VERSION.gem
+echo "Update Gemfile"
+sed -i.bak "s/gem 'ably-ui', '.*', require/gem 'ably-ui', '${VERSION}', require/" Gemfile
+rm Gemfile.bak
 
-# echo "Publish the npm package to the registry"
-# yarn publish --no-git-tag-version --new-version $VERSION
+echo "Update ably-ui npm package in preview app"
+yarn upgrade @ably/ably-ui@$VERSION
 
-# echo "Update preview app version"
-# cd preview
+echo "Update Gemfile.lock"
+bundle lock  # don't change contents gem dir as it might be using local paths
 
-# echo "Update Gemfile"
-# sed -i.bak "s/gem 'ably-ui', '.*', require/gem 'ably-ui', '${VERSION}', require/" Gemfile
-# rm Gemfile.bak
+echo "Commit version publish and preview app update to $TAG"
+cd ..
+git add package.json lib/ably_ui/version.rb Gemfile.lock
+git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
+git commit -m "Publish $TAG and update preview app"
 
-# echo "Update ably-ui npm package in preview app"
-# yarn upgrade @ably/ably-ui@$VERSION
+echo "Tag commit with $TAG"
+git tag -a $TAG -m "$TAG"
 
-# echo "Update Gemfile.lock"
-# bundle lock  # don't change contents gem dir as it might be using local paths
+echo "Push tag to origin"
+git push origin $TAG
 
-# echo "Commit version publish and preview app update to $TAG"
-# cd ..
-# git add package.json lib/ably_ui/version.rb Gemfile.lock
-# git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
-# git commit -m "Publish $TAG and update preview app"
-
-# echo "Tag commit with $TAG"
-# git tag -a $TAG -m "$TAG"
-
-# echo "Push tag to origin"
-# git push origin $TAG
-
-# echo "Push main to origin"
-# git push origin main
+echo "Push main to origin"
+git push origin main
