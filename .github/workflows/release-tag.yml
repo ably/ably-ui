@@ -14,6 +14,8 @@ jobs:
           chmod +x "release.sh"
       #     chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
+        env:
+          GITHUB_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
         run: |
           ./release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
