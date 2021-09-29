@@ -9,14 +9,17 @@ jobs:
     steps:
       - name: Run Checkout Script
         uses: actions/checkout@v2
-      - name: Grant permissions to Scripts
-        run: |
-          chmod +x "release.sh"
-          chmod +x "./scripts/update-dependents.sh"
-        shell: bash
-      - name: Release latest Ably UI version
-        run: "./release.sh"
-        shell: bash
-      - name: Create PR on Voltaire and Website
-        run: "./scripts/update-dependents.sh"
-        shell: bash
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+#       - name: Grant permissions to Scripts
+#         run: |
+#           chmod +x "release.sh"
+#           chmod +x "./scripts/update-dependents.sh"
+#         shell: bash
+#       - name: Release latest Ably UI version
+#         run: "./release.sh"
+#         shell: bash
+#       - name: Create PR on Voltaire and Website
+#         run: "./scripts/update-dependents.sh"
+#         shell: bash
