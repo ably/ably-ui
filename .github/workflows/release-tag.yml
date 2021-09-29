@@ -14,6 +14,7 @@ jobs:
         run: |
           echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
           echo ${{ steps.get_version.outputs.VERSION }}
+          echo ${GITHUB_REF/refs\/tags\//}
 
 #       - name: Grant permissions to Scripts
 #         run: |
