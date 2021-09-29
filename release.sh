@@ -7,12 +7,6 @@ echo $1
 VERSION=$1
 TAG=v$1
 
-echo "Fetching remote for up to date commit history"
-git fetch
-
-echo "Check out main"
-git checkout main
-
 if [ $# -ne 1 ]; then
   echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
   exit 1
