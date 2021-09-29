@@ -18,6 +18,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "12.16.3"
+      - run: npm install -g yarn
       - name: Grant permissions to Scripts
         run: |
           chmod +x "release.sh"
@@ -30,3 +31,4 @@ jobs:
         shell: bash
       # - name: Create PR on Voltaire and Website
       #   run: "./scripts/update-dependents.sh"
+      - run: npm uninstall yarn
