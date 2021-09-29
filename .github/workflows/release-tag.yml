@@ -7,8 +7,14 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Checkout Script
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.0
+          bundler-cache: true
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12.16.3"
       - name: Grant permissions to Scripts
         run: |
           chmod +x "release.sh"
