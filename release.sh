@@ -52,6 +52,18 @@ echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
 echo "Build the gem"
 gem build ably-ui.gemspec
 
+echo "Setting up gem credentials..."
+set +x
+mkdir -p ~/.gem
+
+cat << EOF > ~/.gem/credentials
+---
+:github: Bearer ${GITHUB_TOKEN}
+EOF
+
+chmod 0600 ~/.gem/credentials
+set -x
+
 echo "Push the gem to the registry"
 gem push --key github \
     --host https://rubygems.pkg.github.com/ably \
