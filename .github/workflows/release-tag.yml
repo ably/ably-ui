@@ -11,7 +11,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+        run: |
+          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+          echo ${{ steps.get_version.outputs.VERSION }}
+
 #       - name: Grant permissions to Scripts
 #         run: |
 #           chmod +x "release.sh"
