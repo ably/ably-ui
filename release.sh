@@ -2,6 +2,10 @@
 
 # See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
 set -euo pipefail
+echo $1
+
+VERSION=$1
+TAG=v$1
 
 echo "Fetching remote for up to date commit history"
 git fetch
@@ -29,9 +33,6 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
   echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
   exit 1
 fi
-
-VERSION=$1
-TAG=v$1
 
 if git rev-parse "${TAG}" >/dev/null 2>&1; then
   echo $0: "Error: ${TAG} already exists"
