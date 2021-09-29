@@ -7,23 +7,14 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Checkout Script
-        uses: actions/checkout@v2
-      - name: Get the version
-        id: get_version
+      - name: Grant permissions to Scripts
         run: |
-          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-          echo ${{ steps.get_version.outputs.VERSION }}
-          echo ${GITHUB_REF/refs\/tags\//}
-
-#       - name: Grant permissions to Scripts
-#         run: |
-#           chmod +x "release.sh"
-#           chmod +x "./scripts/update-dependents.sh"
-#         shell: bash
-#       - name: Release latest Ably UI version
-#         run: "./release.sh"
-#         shell: bash
-#       - name: Create PR on Voltaire and Website
-#         run: "./scripts/update-dependents.sh"
-#         shell: bash
+          chmod +x "release.sh"
+          chmod +x "./scripts/update-dependents.sh"
+        shell: bash
+      - name: Release latest Ably UI version
+        run: "./release.sh ${GITHUB_REF/refs\/tags\//}"
+        shell: bash
+      # - name: Create PR on Voltaire and Website
+      #   run: "./scripts/update-dependents.sh"
+      #   shell: bash
