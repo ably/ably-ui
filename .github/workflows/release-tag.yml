@@ -25,7 +25,9 @@ jobs:
       #     chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+          GITHUB_REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: '${{ secrets.REGISTRY_USERNAME }}:${{ secrets.REGISTRY_TOKEN }}'
         run: |
           ./release.sh "${ABLY_TEST}"
           # GITHUB_REF/refs\/tags\//
