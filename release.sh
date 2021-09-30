@@ -58,7 +58,7 @@ mkdir -p ~/.gem
 
 cat << EOF > ~/.gem/credentials
 ---
-:github: Bearer ${GITHUB_TOKEN}
+:github: Bearer ${GITHUB_REGISTRY_TOKEN}
 EOF
 
 chmod 0600 ~/.gem/credentials
