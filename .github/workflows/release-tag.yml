@@ -27,7 +27,7 @@ jobs:
       - name: Grant permissions to Scripts
         run: |
           chmod +x "release.sh"
-      #     chmod +x "./scripts/update-dependents.sh"
+          chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
         env:
           GITHUB_REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
@@ -37,6 +37,9 @@ jobs:
           git config --global user.name "Github Action"
           ./release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
-      # - name: Create PR on Voltaire and Website
-      #   run: "./scripts/update-dependents.sh"
-      - run: npm uninstall yarn
+      - name: Create PR on Voltaire and Website
+        env:
+          GITHUB_REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: '${{ secrets.REGISTRY_USERNAME }}:${{ secrets.REGISTRY_TOKEN }}'
+        run: "./scripts/update-dependents.sh"
+        shell: bash
