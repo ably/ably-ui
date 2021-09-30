@@ -15,11 +15,6 @@ fi
 
 BRANCH=$(git branch --show-current)
 
-if [[ $BRANCH != "main" ]]; then
-  echo $0: "Error: Releases can only be made from the main branch"
-  exit 1
-fi
-
 COMMITS_AHEAD=$(git rev-list main...origin/main --count)
 
 if [ $COMMITS_AHEAD -gt 0 ]; then
