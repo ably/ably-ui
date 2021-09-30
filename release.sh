@@ -7,9 +7,6 @@ env
 VERSION=$1
 TAG=v$1
 
-echo "Check out main"
-git checkout main
-
 echo "Install packages, making sure they are up to date"
 yarn --frozen-lockfile
 bundle config set --local frozen true
