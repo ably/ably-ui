@@ -8,30 +8,6 @@ env
 VERSION=$1
 TAG=v$1
 
-if [ $# -ne 1 ]; then
-  echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
-  exit 1
-fi
-
-BRANCH=$(git branch --show-current)
-
-COMMITS_AHEAD=$(git rev-list main...origin/main --count)
-
-if [ $COMMITS_AHEAD -gt 0 ]; then
-  echo $0: "Error: branch origin/main is ahead of your local main"
-  exit 1
-fi
-
-if [[ `git status --porcelain --untracked-files=no` ]]; then
-  echo $0: "Error: you have uncommited changes. A package is created from the filesystem, not git state so it's important to not have uncommited changes."
-  exit 1
-fi
-
-if git rev-parse "${TAG}" >/dev/null 2>&1; then
-  echo $0: "Error: ${TAG} already exists"
-  exit 1
-fi
-
 echo "Install packages, making sure they are up to date"
 yarn --frozen-lockfile
 bundle config set --local frozen true
