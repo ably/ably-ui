@@ -70,7 +70,7 @@ gem push --key github \
     ably-ui-$VERSION.gem
 
 echo "Update Gemfile.lock"
-bundle config unset frozen
+bundle config unset deployment
 bundle
 
 echo "Remove local gem artifact"
