@@ -1,14 +1,14 @@
 name: Release Ably UI
 on: push
 # on:
-  # release:
-    # types: [published]
+# release:
+# types: [published]
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
     # permissions:
-      # packages: write
+    # packages: write
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
@@ -27,6 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
           GITHUB_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
+          RUBYGEMS_API_KEY: ${{secrets.GH_REGISTRY_TOKEN}}
         run: |
           ./release.sh "${ABLY_TEST}"
           # GITHUB_REF/refs\/tags\//
