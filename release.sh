@@ -8,6 +8,15 @@ env
 VERSION=$1
 TAG=v$1
 
+echo "==============================="
+echo "VERSION---"
+echo $VERSION
+echo "TAG---"
+echo $TAG
+echo "$RUBYGEMS_API_KEY=-----------"
+echo $RUBYGEMS_API_KEY
+echo "==============================="
+
 if [ $# -ne 1 ]; then
   echo $0: "Error: Please provide a valid semver version, ie. ./release.sh 1.2.1"
   exit 1
@@ -47,7 +56,7 @@ echo "Build library"
 NODE_ENV=production node scripts/build.js
 
 echo "Update version.rb file"
-echo -e "module AblyUi\n  VERSION = '$VERSION'\nend" > ./lib/ably_ui/version.rb
+echo -e "module AblyUi\n  VERSION = '${VERSION}'\nend" > ./lib/ably_ui/version.rb
 
 echo "Build the gem"
 gem build ably-ui.gemspec
@@ -67,13 +76,13 @@ set -x
 echo "Push the gem to the registry"
 gem push --key github \
     --host https://rubygems.pkg.github.com/ably \
-    ably-ui-$VERSION.gem
+    ably-ui-${VERSION}.gem
 
 echo "Update Gemfile.lock"
 bundle
 
 echo "Remove local gem artifact"
-rm ably-ui-$VERSION.gem
+rm ably-ui-${VERSION}.gem
 
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
