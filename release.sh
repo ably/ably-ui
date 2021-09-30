@@ -68,6 +68,7 @@ mkdir -p ~/.gem
 cat << EOF > ~/.gem/credentials
 ---
 :github: Bearer ${GITHUB_TOKEN}
+:rubygems_api_key: ${GITHUB_TOKEN}
 EOF
 
 chmod 0600 ~/.gem/credentials
