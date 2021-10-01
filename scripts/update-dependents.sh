@@ -2,8 +2,8 @@
 
 set -eou pipefail
 
-if [[ -z $GITHUB_REGISTRY_USERNAME || -z $GITHUB_REGISTRY_TOKEN ]]; then
-  echo "GITHUB_REGISTRY_USERNAME or GITHUB_REGISTRY_TOKEN are not set, cannot trigger github actions"
+if [[ -z $REGISTRY_USERNAME || -z $REGISTRY_TOKEN ]]; then
+  echo "REGISTRY_USERNAME or REGISTRY_TOKEN are not set, cannot trigger github actions"
   exit 1
 fi
 
@@ -12,7 +12,7 @@ WEBSITE_RESULT=$(curl \
     -sS \
     -X POST \
     -H "Accept: application/vnd.github.github.v3+json" \
-    -u "${GITHUB_REGISTRY_USERNAME}:${GITHUB_REGISTRY_TOKEN}" \
+    -u "${REGISTRY_USERNAME}:${REGISTRY_TOKEN}" \
     https://api.github.com/repos/ably/website/actions/workflows/update-ably-ui.yml/dispatches \
     -d '{"ref": "main"}')
 
@@ -30,7 +30,7 @@ VOLTAIRE_RESULT=$(curl \
     -sS \
     -X POST \
     -H "Accept: application/vnd.github.github.v3+json" \
-    -u "${GITHUB_REGISTRY_USERNAME}:${GITHUB_REGISTRY_TOKEN}" \
+    -u "${REGISTRY_USERNAME}:${REGISTRY_TOKEN}" \
     https://api.github.com/repos/ably/voltaire/actions/workflows/update-ably-ui.yml/dispatches \
     -d '{"ref": "main"}')
 

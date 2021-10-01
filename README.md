@@ -268,6 +268,14 @@ Then change back `path` to source `source` in the `Gemfile`. If you need to upda
 
 Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
+You will need to authenticate with the GitHub [NPM registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
+
+After the above, you should have:
+
+- GITHUB_REGISTRY_TOKEN set in your environment (`.npmrc` will read from it)
+- you should do registry login as described in the above docs with your GitHub username and password
+- a `~/.gem/credentials` file with a `:github: Bearer TOKEN` (replace GITHUB_REGISTRY_TOKEN with your token - interpolation does not work here)
+
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
 
 ```bash
@@ -376,33 +384,16 @@ Packages are published to the [GitHub private registry](https://github.com/featu
 
 Publishing is done by tagging a release in GitHub. This triggers a GitHub action that pushes to the private NPM and gem registries as well as publishing new artefacts in the CDN, with the version taken from the tag of the GitHub release. ⚠️
 
-#### Local publishing
+This will trigger GitHub actions in supported apps (currently [Voltaire](http://github.com/ably/voltaire) & [Website](http://github.com/ably/website)) to create a PR with an ably-ui version update.
 
-You will need to authenticate with the GitHub [NPM registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
+**To trigger a release:**
 
-After the above, you should have:
+- Merge your PR into `main`.
+- On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
+- Create a new tag with the new version number for the release.
+- Publish Release.
 
-- GITHUB_REGISTRY_TOKEN set in your environment (`.npmrc` will read from it)
-- you should do registry login as described in the above docs with your GitHub username and password
-- a `~/.gem/credentials` file with a `:github: Bearer TOKEN` (replace GITHUB_REGISTRY_TOKEN with your token - interpolation does not work here)
-
-To publish, run:
-
-```
-./release.sh VERSION_NUMBER
-```
-
-This will release the packages, update library & preview app and create & push the commit and tag.
-
-### Updating dependent apps
-
-After releasing a version, if you have GITHUB_REGISTRY_TOKEN and GITHUB_REGISTRY_USERNAME (without the @) set, you can run:
-
-```
-yarn update:all
-```
-
-This will trigger GitHub actions in supported apps to create a PR with an ably-ui version update.
+This will release the packages, update library & preview app and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website.
 
 ### Running tests
 
