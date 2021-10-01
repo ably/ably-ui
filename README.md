@@ -268,6 +268,14 @@ Then change back `path` to source `source` in the `Gemfile`. If you need to upda
 
 Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
+You will need to authenticate with the GitHub [NPM registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
+
+After the above, you should have:
+
+- GITHUB_REGISTRY_TOKEN set in your environment (`.npmrc` will read from it)
+- you should do registry login as described in the above docs with your GitHub username and password
+- a `~/.gem/credentials` file with a `:github: Bearer TOKEN` (replace GITHUB_REGISTRY_TOKEN with your token - interpolation does not work here)
+
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
 
 ```bash
