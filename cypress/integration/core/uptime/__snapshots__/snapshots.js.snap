@@ -437,7 +437,7 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
 
 exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
 <div
-  class="flex uptime-md:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 text-cool-black"
+  class="flex sm:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 text-cool-black"
   data-id="uptime-error"
 >
   Sorry, we can’t retrieve uptime data right now.

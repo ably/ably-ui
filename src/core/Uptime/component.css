@@ -58,13 +58,13 @@
 
   .ui-uptime-seperator {
     @apply my-12 h-1 w-full relative;
-    @apply uptime-md:w-32 uptime-md:h-80 uptime-md:m-0 uptime-md:bg-none;
+    @apply sm:w-32 sm:h-80 sm:m-0 sm:bg-none;
   }
 
   .ui-uptime-seperator:before {
     content: "";
     left: 48%;
-    @apply uptime-md:absolute uptime-md:h-full uptime-md:w-1 uptime-md:bg-dark-grey uptime-md:z-0;
+    @apply sm:absolute sm:h-full sm:w-1 sm:bg-dark-grey sm:z-0;
   }
 
   .ui-uptime-up {
@@ -114,12 +114,12 @@
 
   .ui-uptime-footer {
     @apply mt-40 flex justify-between items-start flex-col;
-    @apply uptime-md:flex-row uptime-md:items-center;
+    @apply sm:flex-row sm:items-center;
   }
 
   .ui-uptime-link-back {
     @apply mt-40 whitespace-nowrap;
-    @apply uptime-md:mt-0;
+    @apply sm:mt-0;
   }
 
   .ui-uptime-link-back a {

@@ -22,8 +22,6 @@ module.exports = {
       md: "1040px",
       lg: "1280px",
       xl: "1440px",
-      // utility breakpoints not part of design system
-      "uptime-md": "800px",
     },
     fontSize: {
       title: ["var(--fs-title)", "var(--lh-tight)"],
