@@ -391,6 +391,9 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 - Merge your PR into `main`.
 - On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
 - Create a new tag with the new version number for the release.
+  - _Do not prefix the tag with a `v`_
+- Add a meaningful title for the Release.
+- Click on the Autogenerate release notes button.
 - Publish Release.
 
 This will release the packages, update library & preview app and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website.
