@@ -139,7 +139,7 @@ export default function Footer({ paths, urlBase }) {
               <a className="pr-8 ui-footer-menu-row-link" href="https://status.ably.com/">
                 System status
               </a>
-              <iframe className="w-24 h-24 mt-4" src="https://status.ably.io/embed/icon" allowtransparency="true" frameBorder="0" scrolling="no"></iframe>
+              <iframe className="w-24 h-24 mt-4" src="https://status.ably.com/embed/icon" allowtransparency="true" frameBorder="0" scrolling="no"></iframe>
             </li>
           </ul>
         </div>

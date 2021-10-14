@@ -142,7 +142,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             >System status</a
           ><iframe
             class="w-24 h-24 mt-4"
-            src="https://status.ably.io/embed/icon"
+            src="https://status.ably.com/embed/icon"
             allowtransparency="true"
             frameborder="0"
             scrolling="no"
@@ -434,7 +434,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           >
           <iframe
             class="w-24 h-24 mt-4"
-            src="https://status.ably.io/embed/icon"
+            src="https://status.ably.com/embed/icon"
             allowtransparency="true"
             frameborder="0"
             scrolling="no"

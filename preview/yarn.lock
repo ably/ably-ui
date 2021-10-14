@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ably-ui@4.1.0":
-  version "4.1.0"
-  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/4.1.0/8b2817ab08e7ef9416b05482d9d44b9394ebb0d7fcbda2e4ff017b3e73d08f40#d5771382a96abfc1ce0697e17a48c07125c2fb33"
-  integrity sha512-8Ri2Zw5YQPBupIRUI6MYKbMWLSR5fTS1coUHaEd6761qBkkqF6m2H8Ly45O0kYRa3+pRl61KysEXgVQTjXIDYQ==
+"@ably/ably-ui@4.1.0-dev.5a3c660":
+  version "4.1.0-dev.5a3c660"
+  resolved "https://npm.pkg.github.com/download/@ably/ably-ui/4.1.0-dev.5a3c660/508094a5523732595537241eeb5dd67b2bdb453fb90004923ee49fc1daeaff32#6b79efac1583143aac1b371b017f868e3559a47c"
+  integrity sha512-Hj6Y2/uYKhigo7Z2zMYjXMvpGKP3QREB1D+NpPdjnztgc330gFqo2wradKdqLZXXgBE0cH9fZvhTjQXuLOGbAg==
   dependencies:
     array-flat-polyfill "^1.0.1"
     deepmerge "^4.2.2"
