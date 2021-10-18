@@ -1,12 +1,12 @@
 {
-  "name": "@ably/ably-ui",
+  "name": "@ably/ui",
   "version": "4.2.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
-  "repository": "git@github.com:ably/ably-ui.git",
-  "license": "Apache-2.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ably/ably-ui.git"
   },
+  "license": "Apache-2.0",
   "files": [
     "src",
     "core",
@@ -74,5 +74,21 @@
     "react-dom": "^17.0.1",
     "redux": "^4.0.5",
     "scroll-lock": "^2.1.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ably/ably-ui/issues"
+  },
+  "homepage": "https://github.com/ably/ably-ui#readme",
+  "main": "modules-config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "ui",
+    "tailwind",
+    "ably",
+    "react",
+    "view-components"
+  ],
+  "author": "Ably Real-time Ltd <support@ably.com>"
 }
