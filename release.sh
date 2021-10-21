@@ -26,10 +26,10 @@ echo "Setting up gem credentials..."
 set +x
 mkdir -p ~/.gem
 
-cat << EOF > ~/.gem/credentials
----
-:github: Bearer ${GITHUB_REGISTRY_TOKEN}
-EOF
+# cat << EOF > ~/.gem/credentials
+# ---
+# :github: Bearer ${GITHUB_REGISTRY_TOKEN}
+# EOF
 
 chmod 0600 ~/.gem/credentials
 set -x
