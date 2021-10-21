@@ -19,6 +19,23 @@
     redux "^4.0.5"
     scroll-lock "^2.1.4"
 
+"@ably/ui@4.2.0-dev.04ce1ff":
+  version "4.2.0-dev.04ce1ff"
+  resolved "https://npm.pkg.github.com/download/@ably/ui/4.2.0-dev.04ce1ff/04dab2b124dcdf2e0a74c1ccbe06b3df9ec28caa117dbb739e926a834f439828#f9887ee6e69ce68a51591d0ce2eb9ac941798da8"
+  integrity sha512-rjfKzV084cZyhh84MSHrv+zr2nK+a/T3u8992AZA8oJsh7LXCpCPpMsMC79mS2ex8GgmEDBOAL2D6kzL3/UghQ==
+  dependencies:
+    array-flat-polyfill "^1.0.1"
+    deepmerge "^4.2.2"
+    dompurify "^2.2.9"
+    highlight.js "^10.7.2"
+    js-cookie "^2.2.1"
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+    react "^17.0.1"
+    react-dom "^17.0.1"
+    redux "^4.0.5"
+    scroll-lock "^2.1.4"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"
