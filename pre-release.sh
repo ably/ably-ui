@@ -37,13 +37,11 @@ if git rev-parse "${TAG}" >/dev/null 2>&1; then
 fi
 
 echo "> Install packages, making sure they are up to date"
-echo "> yarn (npm)"
 yarn --frozen-lockfile
 
-echo "> gems"
-# bundle config set --local frozen true
+bundle config set --local frozen true
 bundle
-# bundle config set --local frozen false
+bundle config set --local frozen false
 
 echo "> Build library"
 NODE_ENV=production node scripts/build.js
@@ -54,9 +52,8 @@ echo -e "module AblyUi\n  VERSION = '$RUBY_VERSION'\nend" > ./lib/ably_ui/versio
 echo "> Build the gem"
 gem build ably-ui.gemspec
 
-sleep 1
-echo "> Push the gem to the registry ($VERSION)"
-gem push ably-ui-$VERSION.gem
+echo "> Push the gem to the registry ($RUBY_VERSION)"
+gem push ably-ui-$RUBY_VERSION.gem
 
 echo "> Remove local gem artifact ($RUBY_VERSION)"
 rm ably-ui-$RUBY_VERSION.gem

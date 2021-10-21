@@ -79,10 +79,6 @@
     "url": "https://github.com/ably/ui/issues"
   },
   "homepage": "https://github.com/ably/ui#readme",
-  "main": "modules-config.js",
-  "directories": {
-    "lib": "lib"
-  },
   "keywords": [
     "ui",
     "tailwind",
