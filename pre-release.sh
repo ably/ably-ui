@@ -75,7 +75,7 @@ sed -i.bak "s/gem 'ably-ui', '.*', require/gem 'ably-ui', '${RUBY_VERSION}', req
 rm Gemfile.bak
 
 echo "Update ably-ui npm package in preview app"
-yarn upgrade @ably/ably-ui@$VERSION
+yarn upgrade @ably/ui@$VERSION
 
 echo "Update Gemfile.lock"
 bundle lock  # don't change contents gem dir as it might be using local paths

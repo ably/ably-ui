@@ -9,7 +9,7 @@ if ! which foreman &> /dev/null; then
   echo "foreman executable could not be found."
   echo "Install it with 'gem install foreman'."
   echo
-  echo "See https://github.com/ably/ably-ui#using-the-development-build-of-ably-ui-in-the-preview-app for details"
+  echo "See https://github.com/ably/ui#using-the-development-build-of-ably-ui-in-the-preview-app for details"
   exit
 fi
 
