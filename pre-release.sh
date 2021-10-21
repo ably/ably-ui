@@ -37,7 +37,10 @@ if git rev-parse "${TAG}" >/dev/null 2>&1; then
 fi
 
 echo "> Install packages, making sure they are up to date"
+echo "> yarn (npm)"
 yarn --frozen-lockfile
+
+echo "> gems"
 bundle config set --local frozen true
 bundle
 bundle config set --local frozen false
