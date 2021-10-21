@@ -5,7 +5,7 @@ require "ably_ui/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ably-ui"
-  spec.version       = "6.6.6"
+  spec.version       = AblyUi::VERSION
   spec.authors       = ["Dominik Piatek", "Arti Mathanda", "Bruce Thomas"]
   spec.email         = ["dominik.piatek@ably.com", "arti.mathanda@ably.com", "bruce.thomas@ably.com"]
   spec.summary       = "Shared component library and design system for Ably Real-time Ltd (ably.com)"
