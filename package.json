@@ -76,9 +76,9 @@
     "scroll-lock": "^2.1.4"
   },
   "bugs": {
-    "url": "https://github.com/ably/ably-ui/issues"
+    "url": "https://github.com/ably/ui/issues"
   },
-  "homepage": "https://github.com/ably/ably-ui#readme",
+  "homepage": "https://github.com/ably/ui#readme",
   "main": "modules-config.js",
   "directories": {
     "lib": "lib"

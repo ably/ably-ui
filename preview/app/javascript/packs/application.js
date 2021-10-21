@@ -1,14 +1,14 @@
 import "../styles/application.css";
 
-import Meganav from "@ably/ably-ui/core/Meganav";
-import Footer from "@ably/ably-ui/core/Footer";
-import ContactFooter from "@ably/ably-ui/core/ContactFooter";
-import Code from "@ably/ably-ui/core/Code";
-import Uptime from "@ably/ably-ui/core/Uptime";
-import CookieMessage from "@ably/ably-ui/core/CookieMessage";
-import Flash, { reducerFlashes } from "@ably/ably-ui/core/Flash";
-import Icon from "@ably/ably-ui/core/Icon";
-import FeaturedLink from "@ably/ably-ui/core/FeaturedLink";
+import Meganav from "@ably/ui/core/Meganav";
+import Footer from "@ably/ui/core/Footer";
+import ContactFooter from "@ably/ui/core/ContactFooter";
+import Code from "@ably/ui/core/Code";
+import Uptime from "@ably/ui/core/Uptime";
+import CookieMessage from "@ably/ui/core/CookieMessage";
+import Flash, { reducerFlashes } from "@ably/ui/core/Flash";
+import Icon from "@ably/ui/core/Icon";
+import FeaturedLink from "@ably/ui/core/FeaturedLink";
 
 import {
   reactRenderer,
@@ -19,9 +19,9 @@ import {
   reducerBlogPosts,
   fetchSessionData,
   reducerSessionData,
-} from "@ably/ably-ui/core/scripts";
+} from "@ably/ui/core/scripts";
 
-import sprites from "@ably/ably-ui/core/sprites.svg";
+import sprites from "@ably/ui/core/sprites.svg";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Inserts a sprite map for <use> tags

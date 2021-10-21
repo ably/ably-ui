@@ -21,7 +21,7 @@ Please refer to the [README](./README.md#running-tests) for further details.
 
 ## Contributing
 
-1. Fork the [repo](https://github.com/ably/ably-ui/).
+1. Fork the [repo](https://github.com/ably/ui/).
 1. Create your update in a new branch - `git checkout -b new-feature`
 1. When you're ready to submit your contribution, create a Pull Request
 1. Make sure you have rebased against Ably UI's main branch.

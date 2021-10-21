@@ -37,17 +37,17 @@ This type of installation gives you access to module/components assets as well a
 Note, the package is currently hosted in our private GitHub registry, so you will need a `GITHUB_REGISTRY_TOKEN` environment variable in your shell to be able to install it. See [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for instructions on obtaining one.
 
 ```bash
-npm install @ably/ably-ui
+npm install @ably/ui
 
 # or
 
-yarn add @ably/ably-ui
+yarn add @ably/ui
 ```
 
 To attach the imported JavaScript from the `Core` module to the `window` object:
 
 ```js
-import "@ably/ably-ui/core/scripts";
+import "@ably/ui/core/scripts";
 
 // AblyUi.Core is now available on window
 ```
@@ -55,19 +55,19 @@ import "@ably/ably-ui/core/scripts";
 To import an es6 `core` module and expose nothing to window:
 
 ```js
-import ablyUiCore from "@ably/ably-ui/core/scripts";
+import ablyUiCore from "@ably/ui/core/scripts";
 ```
 
 To import the JavaScript for an `Accordion` component:
 
 ```js
-import Accordion from "@ably/ably-ui/core/accordion/component";
+import Accordion from "@ably/ui/core/accordion/component";
 ```
 
 If your bundler supports CSS importing, you can import it as well:
 
 ```js
-import "@ably/ably-ui/core/styles.css";
+import "@ably/ui/core/styles.css";
 ```
 
 ### Setting up TailwindCSS
@@ -79,7 +79,7 @@ Currently, AblyUI CSS is built to work with TailwindCSS. To integrate it into yo
 1. Add the following to your `tailwind.config.js`. Note how different config properties are always extended by the `ablyUIConfig`:
 
 ```js
-const extendConfig = require("@ably/ably-ui/tailwind.extend.js");
+const extendConfig = require("@ably/ui/tailwind.extend.js");
 
 module.exports = extendConfig((ablyUIConfig) => ({
   ...ablyUIConfig,
@@ -102,10 +102,10 @@ module.exports = extendConfig((ablyUIConfig) => ({
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "@ably/ably-ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
-@import "@ably/ably-ui/core/styles.css"; /* styles for core module components and more */
-@import "@ably/ably-ui/core/Meganav/component.css";
-@import "@ably/ably-ui/core/ContactFooter/component.css";
+@import "@ably/ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
+@import "@ably/ui/core/styles.css"; /* styles for core module components and more */
+@import "@ably/ui/core/Meganav/component.css";
+@import "@ably/ui/core/ContactFooter/component.css";
 ```
 
 #### Importing React components
@@ -113,7 +113,7 @@ module.exports = extendConfig((ablyUIConfig) => ({
 Note that depending on the component, you might still need to include CSS & JS for it:
 
 ```js
-import Meganav from "@ably/ably-ui/core/Meganav";
+import Meganav from "@ably/ui/core/Meganav";
 ```
 
 #### Importing ViewComponent (Rails) components
@@ -237,7 +237,7 @@ For `npm`:
 # in the root directory
 yarn link
 # in the the "preview" directory
-yarn link @ably/ably-ui
+yarn link @ably/ui
 ```
 
 For `ruby`:
@@ -259,7 +259,7 @@ If at anytime you don't want to use the local NPM package and/or gems any more, 
 
 ```bash
 # in "preview" directory
-yarn unlink @ably/ably-ui
+yarn unlink @ably/ui
 ```
 
 Then change back `path` to source `source` in the `Gemfile`. If you need to update `Gemfile.lock` without installing gems, you can run `bundle lock`.
@@ -389,7 +389,7 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 **To trigger a release:**
 
 - Merge your PR into `main`.
-- On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
+- On the Github [Ably-UI](http://github.com/ably/ui) repo, [create a new release](https://github.com/ably/ui/releases/new) tag.
 - Create a new tag with the new version number for the release.
   - _Do not prefix the tag with a `v`_
 - Add a meaningful title for the Release.
