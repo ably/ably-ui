@@ -54,6 +54,7 @@ echo -e "module AblyUi\n  VERSION = '$RUBY_VERSION'\nend" > ./lib/ably_ui/versio
 echo "> Build the gem"
 gem build ably-ui.gemspec
 
+sleep 1
 echo "> Push the gem to the registry ($VERSION)"
 gem push ably-ui-$VERSION.gem
 
