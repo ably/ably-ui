@@ -52,9 +52,7 @@ echo "Build the gem"
 gem build ably-ui.gemspec
 
 echo "Push the gem to the registry"
-gem push --key github \
-    --host https://rubygems.pkg.github.com/ably \
-    ably-ui-$RUBY_VERSION.gem
+gem push ably-ui-$VERSION.gem
 
 echo "Remove local gem artifact"
 rm ably-ui-$RUBY_VERSION.gem
