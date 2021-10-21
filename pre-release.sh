@@ -54,10 +54,10 @@ echo -e "module AblyUi\n  VERSION = '$RUBY_VERSION'\nend" > ./lib/ably_ui/versio
 echo "> Build the gem"
 gem build ably-ui.gemspec
 
-echo "> Push the gem to the registry"
+echo "> Push the gem to the registry ($VERSION)"
 gem push ably-ui-$VERSION.gem
 
-echo "> Remove local gem artifact"
+echo "> Remove local gem artifact ($RUBY_VERSION)"
 rm ably-ui-$RUBY_VERSION.gem
 
 echo "> Update Gemfile.lock"
