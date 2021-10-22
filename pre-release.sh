@@ -41,9 +41,9 @@ echo "> yarn (npm)"
 yarn --frozen-lockfile
 
 echo "> gems"
-# bundle config set --local frozen true
+bundle config set --local frozen true
 bundle
-# bundle config set --local frozen false
+bundle config set --local frozen false
 
 echo "> Build library"
 NODE_ENV=production node scripts/build.js
