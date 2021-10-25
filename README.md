@@ -34,20 +34,18 @@ Each module, apart from components, exposes a `scripts.js`, `styles.css` and `MO
 
 This type of installation gives you access to module/components assets as well as React components.
 
-Note, the package is currently hosted in our private GitHub registry, so you will need a `GITHUB_REGISTRY_TOKEN` environment variable in your shell to be able to install it. See [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for instructions on obtaining one.
-
 ```bash
-npm install @ably/ably-ui
+npm install @ably/ui
 
 # or
 
-yarn add @ably/ably-ui
+yarn add @ably/ui
 ```
 
 To attach the imported JavaScript from the `Core` module to the `window` object:
 
 ```js
-import "@ably/ably-ui/core/scripts";
+import "@ably/ui/core/scripts";
 
 // AblyUi.Core is now available on window
 ```
@@ -55,19 +53,19 @@ import "@ably/ably-ui/core/scripts";
 To import an es6 `core` module and expose nothing to window:
 
 ```js
-import ablyUiCore from "@ably/ably-ui/core/scripts";
+import ablyUiCore from "@ably/ui/core/scripts";
 ```
 
 To import the JavaScript for an `Accordion` component:
 
 ```js
-import Accordion from "@ably/ably-ui/core/accordion/component";
+import Accordion from "@ably/ui/core/accordion/component";
 ```
 
 If your bundler supports CSS importing, you can import it as well:
 
 ```js
-import "@ably/ably-ui/core/styles.css";
+import "@ably/ui/core/styles.css";
 ```
 
 ### Setting up TailwindCSS
@@ -79,7 +77,7 @@ Currently, AblyUI CSS is built to work with TailwindCSS. To integrate it into yo
 1. Add the following to your `tailwind.config.js`. Note how different config properties are always extended by the `ablyUIConfig`:
 
 ```js
-const extendConfig = require("@ably/ably-ui/tailwind.extend.js");
+const extendConfig = require("@ably/ui/tailwind.extend.js");
 
 module.exports = extendConfig((ablyUIConfig) => ({
   ...ablyUIConfig,
@@ -102,10 +100,10 @@ module.exports = extendConfig((ablyUIConfig) => ({
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "@ably/ably-ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
-@import "@ably/ably-ui/core/styles.css"; /* styles for core module components and more */
-@import "@ably/ably-ui/core/Meganav/component.css";
-@import "@ably/ably-ui/core/ContactFooter/component.css";
+@import "@ably/ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
+@import "@ably/ui/core/styles.css"; /* styles for core module components and more */
+@import "@ably/ui/core/Meganav/component.css";
+@import "@ably/ui/core/ContactFooter/component.css";
 ```
 
 #### Importing React components
@@ -113,7 +111,7 @@ module.exports = extendConfig((ablyUIConfig) => ({
 Note that depending on the component, you might still need to include CSS & JS for it:
 
 ```js
-import Meganav from "@ably/ably-ui/core/Meganav";
+import Meganav from "@ably/ui/core/Meganav";
 ```
 
 #### Importing ViewComponent (Rails) components
@@ -123,17 +121,8 @@ To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui
 ```ruby
 gem 'ably-ui',
     '1.0.0',
-    require: 'ably_ui',
-    source: 'https://rubygems.pkg.github.com/ably'
+    require: 'ably_ui'
 ```
-
-And then run:
-
-```bash
-bundle config https://rubygems.pkg.github.com/ably USERNAME:TOKEN
-```
-
-Where `USERNAME` is your GitHub username (without the `@`) and TOKEN is your [GitHub access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token). This is required because the gem is downloaded from a private gem registry on GitHub.
 
 Components are exposed as [View Components](https://github.com/github/view_component) and should be available in any view:
 
@@ -237,7 +226,7 @@ For `npm`:
 # in the root directory
 yarn link
 # in the the "preview" directory
-yarn link @ably/ably-ui
+yarn link @ably/ui
 ```
 
 For `ruby`:
@@ -259,7 +248,7 @@ If at anytime you don't want to use the local NPM package and/or gems any more, 
 
 ```bash
 # in "preview" directory
-yarn unlink @ably/ably-ui
+yarn unlink @ably/ui
 ```
 
 Then change back `path` to source `source` in the `Gemfile`. If you need to update `Gemfile.lock` without installing gems, you can run `bundle lock`.
@@ -268,13 +257,20 @@ Then change back `path` to source `source` in the `Gemfile`. If you need to upda
 
 Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
-You will need to authenticate with the GitHub [NPM registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages) and [gem registry](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-rubygems-for-use-with-github-packages#authenticating-with-a-personal-access-token) to publish.
+You will need to authenticate with [npmjs](https://docs.npmjs.com/creating-and-viewing-access-tokens) and [Ruby Gems](https://guides.rubygems.org/api-key-scopes/) to publish.
 
 After the above, you should have:
 
-- GITHUB_REGISTRY_TOKEN set in your environment (`.npmrc` will read from it)
-- you should do registry login as described in the above docs with your GitHub username and password
-- a `~/.gem/credentials` file with a `:github: Bearer TOKEN` (replace GITHUB_REGISTRY_TOKEN with your token - interpolation does not work here)
+- NPM_TOKEN set in your environment
+- `.npmrc` file to read NPM_TOKEN from your environment like this:
+  ```
+  //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+  ```
+- a `~/.gem/credentials` file that has your Rubygems API key:
+  ```
+  ---
+  :rubygems_api_key: REPLACE_THIS_WITH_YOUR_OWN_API_KEY
+  ```
 
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
 
