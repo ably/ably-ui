@@ -28,8 +28,8 @@ jobs:
           chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
         env:
-          GITHUB_REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: "${{ secrets.REGISTRY_USERNAME }}:${{ secrets.REGISTRY_TOKEN }}"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          RUBYGEMS_API_KEY: "${{ secrets.RUBYGEMS_API_KEY }}"
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
@@ -37,9 +37,7 @@ jobs:
         shell: bash
       - name: Create PR on Voltaire and Website
         env:
-          GITHUB_REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
           REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
           REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: "${{ secrets.REGISTRY_USERNAME }}:${{ secrets.REGISTRY_TOKEN }}"
         run: "./scripts/update-dependents.sh"
         shell: bash
