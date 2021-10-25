@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: HEAD
+          ref: "web-1942-public-repo"
           token: ${{ secrets.REGISTRY_TOKEN }}
       - uses: ruby/setup-ruby@v1
         with:
