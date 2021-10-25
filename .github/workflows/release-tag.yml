@@ -1,8 +1,7 @@
 name: Release Ably UI
 on:
-  push
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
 
 jobs:
   run-script:
