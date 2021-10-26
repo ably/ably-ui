@@ -1,4 +1,4 @@
-const extendConfig = require("@ably/ably-ui/tailwind.extend.js");
+const extendConfig = require("@ably/ui/tailwind.extend.js");
 
 module.exports = extendConfig((ablyUIConfig) => ({
   ...ablyUIConfig,

@@ -73,7 +73,6 @@ commands:
       - run: bundle install --path vendor/bundle
       - run: |
           cd preview
-          bundle config https://rubygems.pkg.github.com/ably $GITHUB_REGISTRY_USERNAME:$GITHUB_REGISTRY_TOKEN
           bundle config set --local path 'vendor/bundle'
           bundle install
       - save_bundle_cache
