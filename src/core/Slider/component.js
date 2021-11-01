@@ -80,7 +80,7 @@ const init = (slidesContainer) => {
 
   return () => {
     transformContainer.style.transform = null;
-    sliderControls.classList.("flex", "hidden");
+    sliderControls.classList.replace("flex", "hidden");
   };
 };
 
