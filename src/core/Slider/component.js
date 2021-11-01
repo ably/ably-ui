@@ -15,7 +15,7 @@ const init = (slidesContainer) => {
   const slideMarkers = Array.from(queryIdAll("slider-marker", slidesContainer));
   const sliderControls = queryId("slider-controls", slidesContainer);
 
-  sliderControls.classList.remove("hidden");
+  sliderControls.classList.replace("hidden", "flex");
   const slidesLength = slides.length;
 
   const slidesWidth = slidesContainer.getBoundingClientRect().width;
@@ -80,7 +80,7 @@ const init = (slidesContainer) => {
 
   return () => {
     transformContainer.style.transform = null;
-    sliderControls.classList.add("hidden");
+    sliderControls.classList.("flex", "hidden");
   };
 };
 
