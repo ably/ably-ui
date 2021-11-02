@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ui@5.0.0-dev.d3162ab":
-  version "5.0.0-dev.d3162ab"
-  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-5.0.0-dev.d3162ab.tgz#2761b1056367917862b85f402f1c30eb7537d89b"
-  integrity sha512-0JVcWaLAPC9yj2Bk9JCMuTYDEzWCuj+ekxtD4U3q/BKUmt5OvQQUp/DZ7UM4uwu7QdhU6pY1Zjt6jPkW0cKxdQ==
+"@ably/ui@5.0.0-dev.eec45a0":
+  version "5.0.0-dev.eec45a0"
+  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-5.0.0-dev.eec45a0.tgz#19b6efabcf053f0ef070580c60c3cc08751ea917"
+  integrity sha512-+mlpJ4oADqkhzlvqtA+kowltKbQcU9OSbgLpexT6SZ8wVN/3SnbLkK7xbxzo2afXAZWAKENkbfM1UEWEq1U9rA==
   dependencies:
     array-flat-polyfill "^1.0.1"
     deepmerge "^4.2.2"
