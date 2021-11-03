@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slides,
     classes: `sm:grid-cols-${slides.length / 2} md:grid-cols-${slides.length}`,
     // match sm breakpoint
-    mqEnableThreshold: () => !window.matchMedia("(min-width: 37.5rem)").matches,
+    mqEnableThreshold: () => !window.matchMedia("(min-width: 48rem)").matches,
   };
 
   [slider1, slider2].forEach((slider) => {

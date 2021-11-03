@@ -4,7 +4,7 @@ import throttle from "lodash.throttle";
 
 import { queryId, queryIdAll } from "../dom-query";
 
-const mdBreakpoint = () => window.matchMedia("(min-width: 600px)").matches;
+const mdBreakpoint = () => window.matchMedia("(min-width: 48rem)").matches;
 const DRAG_BUFFER = 20;
 
 const init = (slidesContainer) => {
