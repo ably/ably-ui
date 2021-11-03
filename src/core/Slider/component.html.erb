@@ -6,7 +6,7 @@
   <% end %>
 
   <div class="hidden justify-center items-center my-24" data-id="slider-controls">
-    <button type="button" class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-previous">
+    <button type="button" class="p-0 w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-previous">
       <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black", additional_css: "transform rotate-180")) %>
     </button>
 
@@ -21,7 +21,7 @@
       <% end %>
     </ul>
 
-    <button type="button" class="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-next">
+    <button type="button" class="p-0 w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-next">
       <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black")) %>
     </button>
   </div>

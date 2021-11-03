@@ -45,7 +45,7 @@ const Slider = ({
       </ol>
 
       <div className="justify-center items-center my-24 hidden" data-id="slider-controls">
-        <button type="button" className="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-previous">
+        <button type="button" className="p-0 w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-previous">
           <Icon
             name="icon-gui-disclosure-arrow"
             size="1.5rem"
@@ -66,7 +66,7 @@ const Slider = ({
           ))}
         </ul>
 
-        <button type="button" className="p-0 group w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-next">
+        <button type="button" className="p-0 w-24 h-24 flex items-center focus:outline-gui-focus" data-id="slider-next">
           <Icon name="icon-gui-disclosure-arrow" size="1.5rem" color="text-cool-black" data-id="meganav-control-mobile-dropdown-menu" />
         </button>
       </div>
