@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const renderComponent = (Component, props, node) =>
+  // eslint-disable-next-line react/no-render-return-value
+  ReactDOM.render(<Component {...props} />, node);
+
+export { renderComponent };
+
 export default function reactRenderer(components) {
   const reactComponents = document.querySelectorAll("[data-react]");
 

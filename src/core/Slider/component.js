@@ -4,7 +4,7 @@ import throttle from "lodash.throttle";
 
 import { queryId, queryIdAll } from "../dom-query";
 
-const mdBreakpoint = () => window.matchMedia("(min-width: 600px)").matches;
+const mdBreakpoint = () => window.matchMedia("(min-width: 48rem)").matches;
 const DRAG_BUFFER = 20;
 
 const init = (slidesContainer) => {
@@ -15,7 +15,7 @@ const init = (slidesContainer) => {
   const slideMarkers = Array.from(queryIdAll("slider-marker", slidesContainer));
   const sliderControls = queryId("slider-controls", slidesContainer);
 
-  sliderControls.classList.remove("hidden");
+  sliderControls.classList.replace("hidden", "flex");
   const slidesLength = slides.length;
 
   const slidesWidth = slidesContainer.getBoundingClientRect().width;
@@ -80,7 +80,7 @@ const init = (slidesContainer) => {
 
   return () => {
     transformContainer.style.transform = null;
-    sliderControls.classList.add("hidden");
+    sliderControls.classList.replace("flex", "hidden");
   };
 };
 
