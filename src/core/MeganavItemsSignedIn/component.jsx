@@ -48,7 +48,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme, absUrl }) => {
               <li>
                 <a href={absUrl(sessionState.myAccessTokens.href)} className="ui-meganav-account-link">
                   {sessionState.myAccessTokens.text}
-                  <span className="ui-version-tag">beta</span>
+                  <span className="ui-version-tag">preview</span>
                 </a>
               </li>
             )}
