@@ -31,6 +31,7 @@ module.exports = [
       "CookieMessage",
       "Icon",
       "Slider",
+      "CustomerLogos",
     ],
   },
   {
