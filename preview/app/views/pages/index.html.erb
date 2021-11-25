@@ -63,6 +63,9 @@
             <li>
               <a href="/layout">Layout</a>
             </li>
+             <li>
+              <a href="#section-forms">Forms</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -126,6 +129,108 @@
             <hr class="m-0" />
             <p class="ui-text-menu3">Menu label 3</p>
             <hr class="m-0" />
+          </div>
+        </section>
+
+        <section id="section-forms" class="mb-64">
+          <h2 class="text-h1 font-medium mb-32">Forms</h2>
+
+          <h3 class="text-h2 font-medium mb-24">Checkboxes</h3>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Checkboxes with P1 size text</h4>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-1" name="checkbox-example-1" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-1" class="ui-checkbox-label-p1">Welcome to the Ably privacy policy. Ably respects your privacy, is committed to protecting your personal data, and is compliant with applicable data protection law. This privacy policy will inform you as to how we look after certain of your personal data and tell you about your privacy rights and how the law protects you. Please refer to the Glossary below to understand the meaning of some of the terms used in this privacy policy.</label>
+            </div>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-2" name="checkbox-example-2" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-2" class="ui-checkbox-label-p1">Subscribe to the Ably Newsletter</label>
+            </div>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native disabled type="checkbox" id="checkbox-example-3" name="checkbox-example-3" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-3" class="ui-checkbox-label-p1">This option is not available</label>
+            </div>
+          </div>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Checkboxes with P2 size text and tighter spacing</h4>
+
+            <div class="flex items-start mb-12">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-4" name="checkbox-example-4" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-4" class="ui-checkbox-label-p2">Welcome to the Ably privacy policy. Ably respects your privacy, is committed to protecting your personal data, and is compliant with applicable data protection law. This privacy policy will inform you as to how we look after certain of your personal data and tell you about your privacy rights and how the law protects you. Please refer to the Glossary below to understand the meaning of some of the terms used in this privacy policy.</label>
+            </div>
+
+            <div class="flex items-start mb-12">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-5" name="checkbox-example-5" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-5" class="ui-checkbox-label-p2">Subscribe to the Ably Newsletter</label>
+            </div>
+
+            <div class="ui-checkbox-p2">
+              <input data-ui-checkbox-native disabled type="checkbox" id="checkbox-example-6" name="checkbox-example-6" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-6" class="ui-checkbox-label-p2">This option is not available</label>
+            </div>
+          </div>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Example HTML</h4>
+
+            <%= react_component('code', {
+              language: "xml",
+              snippet: %q{
+<div class="ui-checkbox-p1">
+  <input
+    data-ui-checkbox-native
+    type="checkbox"
+    id="checkbox"
+    name="checkbox"
+    value="yes"
+    class="ui-checkbox-input" />
+
+  <div
+    data-ui-checkbox-styled
+    class="ui-checkbox-styled">
+    <svg class="ui-checkbox-styled-tick">
+      <use xlink:href="#sprite-icon-gui-tick"></use>
+    </svg>
+  </div>
+
+  <label for="checkbox-example" class="ui-checkbox-label-p1">Yes</label>
+</div>
+            }}) %>
           </div>
         </section>
       </section>
