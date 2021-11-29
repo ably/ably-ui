@@ -88,4 +88,39 @@
     @apply font-sans font-light text-cool-black;
     @apply text-menu3;
   }
+
+  .ui-unordered-list {
+    @apply text-p1 font-light text-cool-black;
+    @apply list-disc ml-32 mb-24;
+  }
+
+  .ui-unordered-list ul {
+    @apply ml-24 mt-16 list-circle;
+  }
+
+  .ui-unordered-list ul ul {
+    @apply list-square;
+  }
+
+  .ui-unordered-list-with-emphasis {
+    @apply text-p1 font-light text-cool-black;
+    @apply list-disc ml-32 mt-32 -mb-12;
+  }
+
+  .ui-unordered-list-with-emphasis li div {
+    @apply relative -top-12;
+  }
+
+  .ui-unordered-list-with-emphasis li div > strong {
+    @apply block;
+  }
+
+  .ui-unordered-list-with-emphasis ul {
+    margin-top: calc(var(--spacing-16) + var(--spacing-8));
+    @apply ml-24 list-disc;
+  }
+
+  .ui-unordered-list-with-emphasis ul ul {
+    @apply list-circle;
+  }
 }
