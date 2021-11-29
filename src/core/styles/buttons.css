@@ -4,8 +4,39 @@
     @apply hover:text-white hover:bg-active-orange;
     @apply active:text-white active:bg-red-orange;
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
-    @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
+    @apply flex items-center;
+  }
+
+  .ui-btn-alt {
+    transition: background-position 0.2s;
+    background: linear-gradient(
+      61.2deg,
+      var(--color-active-orange) 5%,
+      #fe5215 19%,
+      #fc4a13 27%,
+      #f73c10 33%,
+      #f1280a 39%,
+      #e90f04 44%,
+      var(--color-red-orange) 50%
+    );
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+
+    @apply text-white text-btn2 font-sans font-medium inline-block rounded p-btn;
+    @apply focus:outline-gui-focus;
+    @apply flex items-center;
+  }
+
+  .ui-btn-alt:hover,
+  .ui-btn-alt:focus {
+    background-position: 100% 0%;
+  }
+
+  .ui-btn-alt:disabled {
+    background: linear-gradient(var(--gradient-transparent));
+    @apply bg-gui-unavailable text-mid-grey cursor-not-allowed;
   }
 
   .ui-btn-invert {
@@ -13,8 +44,9 @@
     @apply hover:text-white hover:bg-active-orange;
     @apply active:text-white active:bg-red-orange;
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
-    @apply disabled:text-mid-grey disabled:bg-gui-unavailable;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
+    @apply flex items-center;
   }
 
   .ui-btn-secondary {
@@ -22,8 +54,9 @@
     @apply hover:text-cool-black hover:border-active-orange hover:bg-white;
     @apply active:border-red-orange active:bg-white;
     @apply focus:border-cool-black focus:bg-white focus:outline-gui-focus;
-    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white;
+    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white disabled:cursor-not-allowed;
     @apply transition-colors;
+    @apply flex items-center;
   }
 
   .ui-btn-secondary-invert {
@@ -31,7 +64,20 @@
     @apply hover:text-white hover:border-active-orange;
     @apply active:border-red-orange;
     @apply focus:outline-gui-focus;
-    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable;
+    @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
+    @apply flex items-center;
+  }
+
+  .ui-btn-icon {
+    @apply w-24 h-24 mr-16;
+  }
+
+  .ui-btn-icon-small {
+    @apply w-20 h-20 mr-12;
+  }
+
+  .ui-btn-icon-xsmall {
+    @apply w-16 h-16 mr-8;
   }
 }
