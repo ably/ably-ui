@@ -163,6 +163,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
+        "gradient-hot-pink": "var(--gradient-hot-pink)",
       },
       transitionProperty: {
         input: "background-color, box-shadow",

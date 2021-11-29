@@ -62,6 +62,12 @@
       rgba(255, 255, 255, 0)
     );
 
+    --gradient-hot-pink: linear-gradient(
+      80.2deg,
+      var(--color-bright-red) 0%,
+      var(--color-jazzy-pink) 100%
+    );
+
     --fs-title-xl: 4rem;
     --fs-title: 3.5rem;
     --fs-title-xs: 3rem;

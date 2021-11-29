@@ -5,12 +5,14 @@ module AblyUi
         url:,
         text_size: 'text-menu3',
         icon_color: 'text-cool-black',
-        flush: false
+        flush: false,
+        additional_css: ''
       )
         @url = url
         @text_size = text_size
         @icon_color = icon_color
         @flush = flush
+        @additional_css = additional_css
       end
     end
   end
