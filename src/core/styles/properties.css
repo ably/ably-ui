@@ -142,6 +142,10 @@
     --spacing-media: 0.5rem; /* 8px */
     --spacing-input: 0.8125rem 1rem 0.75rem; /* 13px 16px 12px */
     --spacing-overline: 0.6875rem 0; /* 11px 0 */
+    --spacing-chip-xsmall: 0.375rem 0.5rem; /* 6px 8px */
+    --spacing-chip-small: 0.5rem 0.75rem; /* 8px 12px */
+    --spacing-chip: 0.75rem 1rem; /* 6px 8px */
+    --spacing-chip-large: 1rem 1.25rem; /* 16px 20px */
 
     /* In components, when looking at implementing viewport margin and spacing between elements,
        the values in the comments can be used as guide as they represent the grid the elements (should) sit on.

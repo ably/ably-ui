@@ -83,6 +83,65 @@
           <%= render(ButtonsListComponent.new) %>
         </section>
 
+        <section id="section-buttons" class="mb-64">
+          <h2 class="text-h1 font-medium mb-16">Chips</h2>
+          <p class="ui-text-p1 mb-32">Different size chips can be achieved by using padding and text utilities, see examples below.</p>
+
+          <div>
+            <div class="inline-block mr-16">
+              <h3 class="ui-text-h3 mb-24">On light background</h3>
+              <div class="mb-40 p-12 border rounded inline-block">
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-xsmall">Default</button>
+                  <button type="button" class="ui-chip p-chip-xsmall" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-xsmall" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-small">Default</button>
+                  <button type="button" class="ui-chip p-chip-small" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-small" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip">Default</button>
+                  <button type="button" class="ui-chip" data-selected>Selected</button>
+                  <button type="button" class="ui-chip" disabled>Unavailable</button>
+                </div>
+                <div class="flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-large text-btn-2">Default</button>
+                  <button type="button" class="ui-chip p-chip-large text-btn-2" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-large text-btn-2" disabled>Unavailable</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <h3 class="ui-text-h3 mb-24">On dark background</h3>
+              <div class="bg-cool-black mb-40 p-12 border rounded inline-block">
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-xsmall">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-xsmall" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-xsmall" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-small">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-small" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-small" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt">Default</button>
+                  <button type="button" class="ui-chip-alt" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt" disabled>Unavailable</button>
+                </div>
+                <div class="flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2" disabled>Unavailable</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="section-typography" class="mb-64">
           <h2 class="text-h1 font-medium mb-40">Typography</h2>
 

@@ -80,4 +80,45 @@
   .ui-btn-icon-xsmall {
     @apply w-16 h-16 mr-8;
   }
+
+  .ui-chip {
+    @apply text-btn3 p-chip rounded text-cool-black;
+    @apply hover:bg-mid-grey;
+    @apply active:bg-red-orange active:text-white;
+    @apply focus:bg-red-orange focus:text-white focus:outline-none;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
+    @apply transition-colors;
+  }
+
+  .ui-chip[data-selected] {
+    @apply bg-active-orange text-white;
+  }
+
+  .ui-chip[data-selected]:hover {
+    @apply bg-mid-grey text-cool-black;
+  }
+
+  .ui-chip[data-selected]:focus {
+    @apply bg-red-orange text-white;
+  }
+
+  .ui-chip-alt {
+    @apply text-btn3 p-chip rounded text-white;
+    @apply hover:bg-gui-hover;
+    @apply active:bg-gui-active active:text-white;
+    @apply focus:bg-gui-active focus:text-white focus:outline-none;
+    @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
+    @apply transition-colors;
+  }
+
+  .ui-chip-alt[data-selected] {
+    @apply bg-dark-grey text-white;
+  }
+  .ui-chip-alt[data-selected]:hover {
+    @apply bg-gui-hover text-white;
+  }
+
+  .ui-chip-alt[data-selected]:focus {
+    @apply bg-gui-active text-white;
+  }
 }
