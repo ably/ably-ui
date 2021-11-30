@@ -14,7 +14,7 @@
   .ui-text-h2 {
     @apply font-sans font-medium text-cool-black;
     @apply text-h2-xs xs:text-h2 xl:text-h2-xl;
-    @apply tracking-tighten-0.01;
+    @apply tracking-tighten-0.005;
   }
 
   .ui-text-h3 {
@@ -87,6 +87,14 @@
   .ui-text-menu3 {
     @apply font-sans font-light text-cool-black;
     @apply text-menu3;
+  }
+
+  .ui-text-code1 {
+    @apply font-mono font-normal text-code1;
+  }
+
+  .ui-text-code2 {
+    @apply font-mono font-normal text-code2;
   }
 
   .ui-unordered-list {

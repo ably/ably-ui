@@ -1,3 +1,3 @@
-<div class="hljs p-32 overflow-auto" data-id="code">
-  <pre lang="<%= @language %>"><code class="font-mono language-<%= @language %>"><%= @snippet %></code></pre>
-</div>
+<%= tag.div class: "hljs p-32 overflow-auto", data: { id: "code" } do %>
+  <%= tag.pre lang: @language do %><%= tag.code class: "language-#{@language} #{@text_size}" do %><%= @snippet %><% end %><% end %>
+<% end %>
