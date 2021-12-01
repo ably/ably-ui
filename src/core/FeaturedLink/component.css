@@ -1,7 +1,6 @@
 @layer components {
   .ui-featured-link {
-    max-width: calc(100% - 1.25rem);
-    @apply font-medium block;
+    @apply font-sans font-medium block;
     @apply text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus;
   }
 

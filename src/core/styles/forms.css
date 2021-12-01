@@ -1,0 +1,50 @@
+@layer components {
+  .ui-checkbox-p1 {
+    @apply flex items-start mb-16 font-sans;
+  }
+
+  .ui-checkbox-p2 {
+    @apply flex items-start mb-12 font-sans;
+  }
+
+  .ui-checkbox-input {
+    @apply opacity-0 absolute h-20 w-20;
+  }
+
+  .ui-checkbox-styled {
+    @apply w-20 h-20 mr-16;
+    @apply bg-white flex flex-shrink-0 justify-center items-center;
+    @apply border border-dark-grey rounded-md focus-within:border-active-orange;
+  }
+
+  .ui-checkbox-styled-tick {
+    @apply hidden text-white;
+  }
+
+  .ui-checkbox-label-p1 {
+    @apply select-none;
+    @apply text-p1 font-light text-cool-black;
+  }
+
+  .ui-checkbox-label-p2 {
+    @apply select-none;
+    @apply text-p2 font-light text-cool-black;
+  }
+
+  .ui-checkbox-input:disabled + .ui-checkbox-styled {
+    @apply bg-gui-unavailable border;
+  }
+
+  .ui-checkbox-input:focus + .ui-checkbox-styled {
+    border-width: 0.125rem;
+    @apply border-gui-focus;
+  }
+
+  .ui-checkbox-input:checked + .ui-checkbox-styled {
+    @apply bg-active-orange border-dark-grey border;
+  }
+
+  .ui-checkbox-input:checked + .ui-checkbox-styled svg {
+    @apply block;
+  }
+}

@@ -4,12 +4,34 @@
 
 <%= render(ParameterTableComponent.new(component_parameters, framework)) %>
 
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p1')) do %>Link Paragraph 1<% end %>
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p2')) do %>Link Paragraph 2<% end %>
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p3')) do %>Link Paragraph 3<% end %>
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu1')) do %>Link Menu 1<% end %>
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu2')) do %>Link Menu 2<% end %>
-<%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu3')) do %>Link Menu 3<% end %>
+<div class="flex flex-wrap gap-16 grid-cols-3">
+  <div class="p-16 mb-16 border rounded">
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p1')) do %>Link Paragraph 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p2')) do %>Link Paragraph 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p3')) do %>Link Paragraph 3<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu1')) do %>Link Menu 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu2')) do %>Link Menu 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu3')) do %>Link Menu 3<% end %>
+  </div>
+
+  <div class="bg-cool-black p-16 mb-16 border rounded">
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p1', icon_color: 'text-white')) do %>Link Paragraph 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p2', icon_color: 'text-white')) do %>Link Paragraph 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p3', icon_color: 'text-white')) do %>Link Paragraph 3<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu1', icon_color: 'text-white')) do %>Link Menu 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu2', icon_color: 'text-white')) do %>Link Menu 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu3', icon_color: 'text-white')) do %>Link Menu 3<% end %>
+  </div>
+
+  <div class="bg-gradient-hot-pink p-16 mb-16 border rounded">
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p1', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Paragraph 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p2', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Paragraph 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p3', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Paragraph 3<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu1', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Menu 1<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu2', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Menu 2<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-menu3', icon_color: 'text-cool-black', additional_css: 'text-white hover:text-white focus:text-white focus:text-white')) do %>Link Menu 3<% end %>
+  </div>
+</div>
 
 <div class="max-w-screen-xs">
   <%= render(AblyUi::Core::FeaturedLink.new(url: '/blog', text_size: 'text-p1')) do %>Really long text in here to show how the link wraps<% end %>

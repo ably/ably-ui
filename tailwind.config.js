@@ -44,12 +44,16 @@ module.exports = {
       "sub-header-xs": ["var(--fs-sub-header-xs)", "var(--lh-normal)"],
       overline1: ["var(--fs-overline1)", "var(--lh-normal)"],
       overline2: ["var(--fs-overline2)", "var(--lh-normal)"],
-      btn1: ["var(--fs-btn1)", "var(--lh-tight)"],
+      btn1: ["var(--fs-btn1)", "var(--lh-normal)"],
       btn2: ["var(--fs-btn2)", "var(--lh-tight)"],
+      btn3: ["var(--fs-btn2)", "var(--lh-tight)"],
+      btn4: ["var(--fs-btn3)", "var(--lh-dense)"],
       menu1: ["var(--fs-menu1)", "var(--lh-tight)"],
       menu2: ["var(--fs-menu2)", "var(--lh-tight)"],
       menu3: ["var(--fs-menu3)", "var(--lh-snug)"],
       quote: ["var(--fs-quote)", "var(--lh-relaxed)"],
+      code1: ["var(--fs-code1)", "var(--lh-relaxed)"],
+      code2: ["var(--fs-code2)", "var(--lh-relaxed)"],
     },
     colors: {
       transparent: "transparent",
@@ -90,6 +94,12 @@ module.exports = {
     padding: (theme) => ({
       btn: "var(--spacing-btn)",
       "btn-small": "var(--spacing-btn-small)",
+      "btn-xsmall": "var(--spacing-btn-xsmall)",
+      "btn-large": "var(--spacing-btn-large)",
+      chip: "var(--spacing-chip)",
+      "chip-small": "var(--spacing-chip-small)",
+      "chip-xsmall": "var(--spacing-chip-xsmall)",
+      "chip-large": "var(--spacing-chip-large)",
       "menu-row": "var(--spacing-menu-row)",
       "menu-row-snug": "var(--spacing-menu-row-snug)",
       "menu-row-title": "var(--spacing-menu-row-title)",
@@ -146,6 +156,7 @@ module.exports = {
     borderRadius: {
       none: "0",
       sm: "0.125rem",
+      md: "0.1875rem",
       lg: "0.5rem",
       xl: "0.75rem",
       full: "9999px",
@@ -158,6 +169,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
+        "gradient-hot-pink": "var(--gradient-hot-pink)",
       },
       transitionProperty: {
         input: "background-color, box-shadow",
@@ -180,6 +192,13 @@ module.exports = {
         8: "8",
       },
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      circle: "circle",
+    },
   },
   variants: {
     extend: {
@@ -187,7 +206,9 @@ module.exports = {
       textColor: ["hover", "focus", "active", "group-focus", "disabled"],
       display: ["group-focus"],
       backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
+      backgroundImage: ["hover", "active", "focus"],
       filter: ["hover"],
+      cursor: ["disabled"],
     },
   },
   corePlugins: {

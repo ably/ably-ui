@@ -63,6 +63,9 @@
             <li>
               <a href="/layout">Layout</a>
             </li>
+             <li>
+              <a href="#section-forms">Forms</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -80,13 +83,72 @@
           <%= render(ButtonsListComponent.new) %>
         </section>
 
+        <section id="section-buttons" class="mb-64">
+          <h2 class="text-h1 font-medium mb-16">Chips</h2>
+          <p class="ui-text-p1 mb-32">Different size chips can be achieved by using padding and text utilities, see examples below.</p>
+
+          <div>
+            <div class="inline-block mr-16">
+              <h3 class="ui-text-h3 mb-24">On light background</h3>
+              <div class="mb-40 p-12 border rounded inline-block">
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-xsmall">Default</button>
+                  <button type="button" class="ui-chip p-chip-xsmall" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-xsmall" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-small">Default</button>
+                  <button type="button" class="ui-chip p-chip-small" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-small" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip">Default</button>
+                  <button type="button" class="ui-chip" data-selected>Selected</button>
+                  <button type="button" class="ui-chip" disabled>Unavailable</button>
+                </div>
+                <div class="flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip p-chip-large text-btn-2">Default</button>
+                  <button type="button" class="ui-chip p-chip-large text-btn-2" data-selected>Selected</button>
+                  <button type="button" class="ui-chip p-chip-large text-btn-2" disabled>Unavailable</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <h3 class="ui-text-h3 mb-24">On dark background</h3>
+              <div class="bg-cool-black mb-40 p-12 border rounded inline-block">
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-xsmall">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-xsmall" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-xsmall" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-small">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-small" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-small" disabled>Unavailable</button>
+                </div>
+                <div class="mb-12 mr-16 flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt">Default</button>
+                  <button type="button" class="ui-chip-alt" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt" disabled>Unavailable</button>
+                </div>
+                <div class="flex flex-wrap items-start gap-12">
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2">Default</button>
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2" data-selected>Selected</button>
+                  <button type="button" class="ui-chip-alt p-chip-large text-btn-2" disabled>Unavailable</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="section-typography" class="mb-64">
           <h2 class="text-h1 font-medium mb-40">Typography</h2>
 
           <p class="ui-text-p1 mb-32">Type definitions do not include margin as it can be contextual. Figma and the below list include recommended margins.</p>
           <p class="ui-text-p1 mb-32">The below list is created with ui-text-* helpers which include properties beyond the the standard <code class="pi-inline-code">font-size</code> and <code class="pi-inline-code">line-height</code> that text-* includes.</p>
 
-          <div>
+          <div class="mb-40">
             <hr class="m-0" />
             <p class="ui-text-title mt-64 mb-40 sm:mt-80 sm:mb-40">Title</p>
             <hr class="m-0" />
@@ -126,6 +188,189 @@
             <hr class="m-0" />
             <p class="ui-text-menu3">Menu label 3</p>
             <hr class="m-0" />
+            <p class="ui-text-code1">Code 1</p>
+            <hr class="m-0" />
+            <p class="ui-text-code2">Code 2</p>
+            <hr class="m-0" />
+          </div>
+
+          <div class="mb-40">
+            <h3 class="ui-text-h2 mb-24">Links</h3>
+
+            <p class="ui-text-p1 mb-24">The default text color is inherited from the surrounding text.</p>
+
+            <div class="flex flex-wrap">
+              <div class="p-16 mb-16 mr-16 border rounded">
+                <p class="font-sans ui-text-p1 text-charcoal-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, <a href="/xyz" class="ui-link">per inceptos himenaeos</a>.</p>
+              </div>
+
+              <div class="p-16 mb-16 mr-16 border rounded bg-cool-black">
+                <p class="font-sans ui-text-p1 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, <a href="/123" class="ui-link">per inceptos himenaeos</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-40">
+            <h3 class="text-h2 font-medium mb-24">Lists</h3>
+
+            <div class="mb-40">
+              <h4 class="text-h3 font-medium mb-16">Unordered</h4>
+
+              <p class="ui-text-p1 mb-24">This is the preceding paragraph sed nisl id lectus scelerisque facilisis consectetur eget nisl. Morbi scelerisque felis vel ullamcorper viverra. In id ante quis quam sodales auctor in a ante. Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.</p>
+
+              <ul class="ui-unordered-list">
+                <li>Pellentesque consequat elit eget tristique sagittis. Etiam et erat et lorem elementum commodo. Aenean congue diam a nibh accumsan tincidunt.
+                  <ul>
+                    <li>In id ante quis quam sodales auctor in a ante. Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.
+                      <ul>
+                        <li>Etiam et erat et lorem elementum commodo.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p class="ui-text-p1 mb-24">This is the following paragraph sed nisl id lectus scelerisque facilisis consectetur eget nisl. Morbi scelerisque felis vel ullamcorper viverra. In id ante quis quam sodales auctor in a ante. Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.</p>
+            </div>
+
+            <div class="mb-40">
+              <h4 class="text-h3 font-medium mb-16">Unordered list with emphasis</h4>
+
+              <p class="ui-text-p1 mb-24">This is the preceding paragraph sed nisl id lectus scelerisque facilisis consectetur eget nisl. Morbi scelerisque felis vel ullamcorper viverra. In id ante quis quam sodales auctor in a ante. Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.</p>
+
+              <ul class="ui-unordered-list-with-emphasis">
+                <li>
+                  <div>
+                    <strong>Pellentesque consequat elit eget tristique sagittis.</strong>
+                    Etiam et erat et lorem elementum commodo. Aenean congue diam a nibh accumsan tincidunt.
+
+                    <ul>
+                      <li>
+                        <div>
+                          <strong>In id ante quis quam sodales auctor in a ante.</strong>
+                          Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.
+
+                          <ul>
+                            <li>
+                              <div class="relative -top-12">
+                                <strong>Etiam et erat et lorem elementum commodo.</strong>
+                                Morbi scelerisque felis vel.
+                              </div>
+                            </li>
+                          </ul>
+
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                </li>
+              </ul>
+
+              <p class="ui-text-p1 mb-24">This is the following paragraph sed nisl id lectus scelerisque facilisis consectetur eget nisl. Morbi scelerisque felis vel ullamcorper viverra. In id ante quis quam sodales auctor in a ante. Maecenas faucibus, diam sit amet sollicitudin pellentesque, est nulla pellentesque sapien.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-forms" class="mb-64">
+          <h2 class="text-h1 font-medium mb-32">Forms</h2>
+
+          <h3 class="text-h2 font-medium mb-24">Checkboxes</h3>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Checkboxes with P1 size text</h4>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-1" name="checkbox-example-1" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-1" class="ui-checkbox-label-p1">Welcome to the Ably privacy policy. Ably respects your privacy, is committed to protecting your personal data, and is compliant with applicable data protection law. This privacy policy will inform you as to how we look after certain of your personal data and tell you about your privacy rights and how the law protects you. Please refer to the Glossary below to understand the meaning of some of the terms used in this privacy policy.</label>
+            </div>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-2" name="checkbox-example-2" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-2" class="ui-checkbox-label-p1">Subscribe to the Ably Newsletter</label>
+            </div>
+
+            <div class="ui-checkbox-p1">
+              <input data-ui-checkbox-native disabled type="checkbox" id="checkbox-example-3" name="checkbox-example-3" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-3" class="ui-checkbox-label-p1">This option is not available</label>
+            </div>
+          </div>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Checkboxes with P2 size text and tighter spacing</h4>
+
+            <div class="flex items-start mb-12">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-4" name="checkbox-example-4" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-4" class="ui-checkbox-label-p2">Welcome to the Ably privacy policy. Ably respects your privacy, is committed to protecting your personal data, and is compliant with applicable data protection law. This privacy policy will inform you as to how we look after certain of your personal data and tell you about your privacy rights and how the law protects you. Please refer to the Glossary below to understand the meaning of some of the terms used in this privacy policy.</label>
+            </div>
+
+            <div class="flex items-start mb-12">
+              <input data-ui-checkbox-native type="checkbox" id="checkbox-example-5" name="checkbox-example-5" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-5" class="ui-checkbox-label-p2">Subscribe to the Ably Newsletter</label>
+            </div>
+
+            <div class="ui-checkbox-p2">
+              <input data-ui-checkbox-native disabled type="checkbox" id="checkbox-example-6" name="checkbox-example-6" value="yes" class="ui-checkbox-input" />
+
+              <div data-ui-checkbox-styled class="ui-checkbox-styled">
+                <svg class="ui-checkbox-styled-tick"><use xlink:href="#sprite-icon-gui-tick"></use></svg>
+              </div>
+
+              <label for="checkbox-example-6" class="ui-checkbox-label-p2">This option is not available</label>
+            </div>
+          </div>
+
+          <div class="mb-40">
+            <h4 class="text-h3 font-medium mb-16">Example HTML</h4>
+
+            <%= react_component('code', {
+              language: "xml",
+              snippet: %q{
+<div class="ui-checkbox-p1">
+  <input
+    data-ui-checkbox-native
+    type="checkbox"
+    id="checkbox"
+    name="checkbox"
+    value="yes"
+    class="ui-checkbox-input" />
+
+  <div
+    data-ui-checkbox-styled
+    class="ui-checkbox-styled">
+    <svg class="ui-checkbox-styled-tick">
+      <use xlink:href="#sprite-icon-gui-tick"></use>
+    </svg>
+  </div>
+
+  <label for="checkbox-example" class="ui-checkbox-label-p1">Yes</label>
+</div>
+            }}) %>
           </div>
         </section>
       </section>

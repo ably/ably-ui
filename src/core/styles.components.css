@@ -1,6 +1,7 @@
 @import "./styles/buttons.css";
 @import "./styles/layout.css";
 @import "./styles/text.css";
+@import "./styles/forms.css";
 
 @layer components {
   .ui-input {

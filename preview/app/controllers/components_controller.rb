@@ -43,37 +43,42 @@ class ComponentsController < ApplicationController
   def icon
     template = "icon_#{framework}.html.erb"
     core_icons = %w[
-      icon-gui-search
-      icon-gui-plus
-      icon-gui-disclosure-arrow
+      icon-gui-ably-badge
       icon-gui-burger-menu
       icon-gui-close
-      icon-gui-tick
-      icon-gui-ably-badge
-      icon-gui-warning
+      icon-gui-disclosure-arrow
+      icon-gui-enlarge
       icon-gui-external-link
+      icon-gui-history
       icon-gui-link-arrow
       icon-gui-minus
-      icon-gui-enlarge
+      icon-gui-plus
+      icon-gui-refresh
+      icon-gui-search
+      icon-gui-tick
+      icon-gui-warning
     ]
 
     display_icons = %w[
       icon-display-48hrs
-      icon-display-calendar
-      icon-display-laptop
-      icon-display-message
-      icon-display-shopping-cart
+      icon-display-api-keys
       icon-display-browser
-      icon-display-documentation
-      icon-display-map-pin
-      icon-display-padlock-closed
-      icon-display-sla
-      icon-display-it-support-helpdesk
-      icon-display-platform
+      icon-display-calendar
       icon-display-call-mobile
-      icon-display-it-support-access
-      icon-display-live-chat
+      icon-display-cloud-servers
+      icon-display-documentation
       icon-display-general-comms
+      icon-display-it-support-access
+      icon-display-it-support-helpdesk
+      icon-display-laptop
+      icon-display-live-chat
+      icon-display-map-pin
+      icon-display-message
+      icon-display-padlock-closed
+      icon-display-platform
+      icon-display-servers
+      icon-display-shopping-cart
+      icon-display-sla
       icon-display-tech-account-comms
     ]
 

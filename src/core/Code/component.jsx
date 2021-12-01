@@ -4,9 +4,9 @@ import T from "prop-types";
 import "./component.css";
 import { highlight } from "./component.js";
 
-const Code = ({ language, snippet }) => {
+const Code = ({ language, snippet, textSize = "ui-text-code1" }) => {
   const HTMLraw = highlight(language, `${snippet}`.trim());
-  const className = `font-mono language-${language}`;
+  const className = `language-${language} ${textSize}`;
   return (
     <div className="hljs p-32 overflow-auto" data-id="code">
       <pre lang={language}>
@@ -19,6 +19,7 @@ const Code = ({ language, snippet }) => {
 Code.propTypes = {
   language: T.string,
   snippet: T.string,
+  textSize: T.string,
 };
 
 export default Code;
