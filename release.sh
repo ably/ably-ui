@@ -47,6 +47,9 @@ rm ably-ui-$VERSION.gem
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
 
+echo "Waiting to make sure packages are available in registries"
+sleep 30
+
 echo "Update preview app version"
 cd preview
 
@@ -64,7 +67,7 @@ echo "Commit version publish and preview app update to $TAG"
 cd ..
 git add package.json lib/ably_ui/version.rb Gemfile.lock
 git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
-git commit -m "Update preview app"
+git commit -m "Commit verion bump & preview app update"
 
 echo "Push main to origin"
 git push origin main
