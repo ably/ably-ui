@@ -6,7 +6,7 @@
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
     @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
-    @apply flex items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   .ui-btn-alt {
@@ -26,7 +26,7 @@
 
     @apply text-white text-btn2 font-sans font-medium inline-block rounded p-btn;
     @apply focus:outline-gui-focus;
-    @apply flex items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   .ui-btn-alt:hover,
@@ -46,7 +46,7 @@
     @apply focus:text-white focus:bg-cool-black focus:outline-gui-focus;
     @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
-    @apply flex items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   .ui-btn-secondary {
@@ -56,7 +56,7 @@
     @apply focus:border-cool-black focus:bg-white focus:outline-gui-focus;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white disabled:cursor-not-allowed;
     @apply transition-colors;
-    @apply flex items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   .ui-btn-secondary-invert {
@@ -66,7 +66,7 @@
     @apply focus:outline-gui-focus;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
-    @apply flex items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   .ui-btn-icon {
