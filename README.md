@@ -73,8 +73,16 @@ import "@ably/ui/core/styles.css";
 Currently, AblyUI CSS is built to work with TailwindCSS. To integrate it into your app:
 
 1. Add AblyUI to your project
-1. Add TailwindCSS to your project https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin
-1. Add the following to your `tailwind.config.js`. Note how different config properties are always extended by the `ablyUIConfig`:
+2. Add TailwindCSS to your project
+   1. By project type:
+       1. In [HTML](https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin)
+       2. In [Gatsby](https://tailwindcss.com/docs/guides/gatsby)
+          1. Add postCSS import with `npm install postcss-import`
+    1. Contrary to the instructions, if installation is hanging for over 5 minutes or otherwise problematic, try installing the libraries one at a time
+    2. Make sure you are installing v2 with `npm install -D tailwindcss@2.X`
+    3. Make sure that tailwindcss-filters is also set to v2 in your package.json: otherwise `npm install -D tailwindcss-filters@2.X`
+3. Make sure you are using the format `@import 'tailwindcss/base';...` in your `global.css` file rather than the `@tailwind/base` format from Tailwind v3
+4. Add the following to your `tailwind.config.js`. Note how different config properties are always extended by the `ablyUIConfig`:
 
 ```js
 const extendConfig = require("@ably/ui/tailwind.extend.js");
@@ -93,7 +101,7 @@ module.exports = extendConfig((ablyUIConfig) => ({
 }));
 ```
 
-1. In the CSS file you added your tailwind declarations too, import the CSS for the modules and components you need:
+1. In the CSS file you added your tailwind declarations to, import the CSS for the modules and components you need:
 
 ```css
 @import "tailwindcss/base";
@@ -136,7 +144,7 @@ Note that this loads neither CSS nor JS — these need to still be loaded by a b
 
 ### Icons
 
-Putting SVG files inside and `src/MODULE_NAME/icons` folder will add them to a per-module sprites file that will be available at the root of the module (e.g., `core/sprites.svg`). This file can be loaded with the `loadSprites` helper available in the `core` module or include in the page directly.
+Putting SVG files inside a`src/MODULE_NAME/icons` folder will add them to a per-module sprites file that will be available at the root of the module (e.g., `core/sprites.svg`). This file can be loaded with the `loadSprites` helper available in the `core` module or include in the page directly.
 
 Usage with the `Icon` React component:
 
