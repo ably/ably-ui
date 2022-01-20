@@ -60,11 +60,14 @@ gem push ably-ui-$RUBY_VERSION.gem
 echo "> Remove local gem artifact ($RUBY_VERSION)"
 rm ably-ui-$RUBY_VERSION.gem
 
-echo "> Update Gemfile.lock"
-bundle
-
 echo "> Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
+
+echo "Waiting to make sure packages are available in registries"
+sleep 30
+
+echo "> Update Gemfile.lock"
+bundle
 
 echo "> Update preview app version"
 cd preview
