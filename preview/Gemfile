@@ -36,4 +36,4 @@ gem 'view_component', '~> 2.33.0', require: 'view_component/engine'
 
 gem 'responders'
 
-gem 'ably-ui', '6.0.1.dev.2e2d2c8', require: 'ably_ui'
+gem 'ably-ui', '6.0.1.dev.3582953', require: 'ably_ui'
