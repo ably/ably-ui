@@ -1,0 +1,20 @@
+<%= render(TitleComponent.new(react: false, vw: true)) do %>
+  Company Autocomplete
+<% end %>
+
+<div class="max-w-screen-xs">
+	<input type="text" placeholder="Company name" class="w-full" />
+</div>
+
+<% content_for :component do %>
+  <%= javascript_include_tag 'ably_ui/core/company_autocomplete/component' %>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.querySelector('input');
+      AblyUi.Core.CompanyAutocomplete(input, "https://autocomplete.clearbit.com/v1/companies/suggest");
+
+      document.body.classList.add("bg-light-grey", "m-32");
+    });
+  </script>
+<% end %>
