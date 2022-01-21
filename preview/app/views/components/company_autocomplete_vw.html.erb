@@ -12,7 +12,7 @@
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
       const input = document.querySelector('input');
-      AblyUi.Core.CompanyAutocomplete(input, "https://autocomplete.clearbit.com/v1/companies/suggest");
+      AblyUi.Core.CompanyAutocomplete(input, "/api/companies");
 
       document.body.classList.add("bg-light-grey", "m-32");
     });
