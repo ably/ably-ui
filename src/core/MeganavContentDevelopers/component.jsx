@@ -44,6 +44,12 @@ const MeganavContentDevelopers = ({ absUrl }) => (
             <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
           </a>
         </li>
+        <li>
+          <a href={absUrl("/periodic-table-of-realtime")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">The Periodic Table of Realtime</p>
+            <p className="ui-meganav-media-copy">A compendium for all things realtime and event-driven.</p>
+          </a>
+        </li>
       </ul>
     </div>
 
