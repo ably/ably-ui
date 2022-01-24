@@ -32,6 +32,7 @@ module.exports = [
       "Icon",
       "Slider",
       "CustomerLogos",
+      "CompanyAutocomplete",
     ],
   },
   {
