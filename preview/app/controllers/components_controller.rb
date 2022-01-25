@@ -57,6 +57,7 @@ class ComponentsController < ApplicationController
       icon-gui-search
       icon-gui-tick
       icon-gui-warning
+      icon-gui-clock
     ]
 
     display_icons = %w[
@@ -82,7 +83,7 @@ class ComponentsController < ApplicationController
       icon-display-tech-account-comms
     ]
 
-    social_icons = %w[linkedin twitter github glassdoor]
+    social_icons = %w[linkedin twitter github glassdoor facebook]
 
     other_icons = %w[quote]
 
