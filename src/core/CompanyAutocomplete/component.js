@@ -162,6 +162,8 @@ const handleEnter = (input, event) => {
 const CompanyAutocomplete = (input, url) => {
   if (!input || !url) return;
 
+  input.setAttribute("autocomplete", "off");
+
   input.addEventListener(
     "keyup",
     throttle(
