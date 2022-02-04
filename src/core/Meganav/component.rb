@@ -6,7 +6,7 @@ module AblyUi
     class Meganav < ViewComponent::Base
       include MeganavConfig
       include Util
-      attr_reader :options, :login_link, :url_base
+      attr_reader :options, :login_link, :logo_link, :url_base
 
       renders_one :notice, AblyUi::Core::Notice
 
@@ -14,6 +14,7 @@ module AblyUi
         session_data: {},
         theme_name: :white,
         login_link: '/login',
+        logo_link: '',
         url_base: AblyUi::Core::Util::DEFAULT_URL_BASE
       )
         @session_data = session_data
@@ -21,6 +22,7 @@ module AblyUi
         @options = options
         @login_link = login_link
         @url_base = url_base
+        @logo_link = logo_link || url_base
         theme_setup(theme_name)
       end
 
