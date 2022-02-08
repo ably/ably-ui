@@ -133,6 +133,7 @@ module.exports = {
       0: "0",
       none: "none",
       unset: "unset",
+      ...theme("spacing"),
       ...breakpoints(theme("screens")),
     }),
     boxShadow: {
