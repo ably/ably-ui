@@ -5,9 +5,15 @@ const MeganavContentUseCases = ({ absUrl }) => (
   <section className="ui-meganav-content ui-grid-gap md:grid-cols-2 gap-y-0 md:gap-y-32">
     <div>
       <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry-use-cases">
-        By industry use case
+        By use case
       </h3>
       <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
+        <li>
+          <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Extend Kafka to the edge</p>
+            <p className="ui-meganav-media-copy">Enhance and reliably expand Kafka's event streaming capabilities beyond your private network.</p>
+          </a>
+        </li>
         <li>
           <a href={absUrl("/solutions/edtech")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">EdTech</p>
