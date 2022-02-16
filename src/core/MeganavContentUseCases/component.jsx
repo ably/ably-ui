@@ -11,7 +11,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
         <li>
           <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-meganav-media group">
             <p className="ui-meganav-media-heading">Extend Kafka to the edge</p>
-            <p className="ui-meganav-media-copy">Enhance and reliably expand Kafka's event streaming capabilities beyond your private network.</p>
+            <p className="ui-meganav-media-copy">Enhance and reliably expand Kafka&apos;s event streaming capabilities beyond your private network.</p>
           </a>
         </li>
         <li>
