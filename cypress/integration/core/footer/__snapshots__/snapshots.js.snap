@@ -56,6 +56,18 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
         <li class="p-menu-row-snug">
+          <a href="/solutions/asset-tracking" class="ui-footer-menu-row-link"
+            >Ably Asset Tracking</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/extend-kafka-to-the-edge"
+            class="ui-footer-menu-row-link"
+            >Extend Kafka to the edge</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
           <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
         </li>
         <li class="p-menu-row-snug">
@@ -345,6 +357,18 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
     <div class="col-span-full sm:col-span-3 md:col-span-1">
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
+        <li class="p-menu-row-snug">
+          <a class="ui-footer-menu-row-link" href="/solutions/asset-tracking"
+            >Ably Asset Tracking</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            class="ui-footer-menu-row-link"
+            href="/solutions/extend-kafka-to-the-edge"
+            >Extend Kafka to the edge</a
+          >
+        </li>
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/solutions/edtech">EdTech</a>
         </li>

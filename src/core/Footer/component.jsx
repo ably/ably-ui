@@ -55,6 +55,16 @@ export default function Footer({ paths, urlBase }) {
           <h2 className="ui-footer-col-title">Ably is for</h2>
           <ul>
             <li className="p-menu-row-snug">
+              <a href={absUrl("/solutions/asset-tracking")} className="ui-footer-menu-row-link">
+                Ably Asset Tracking
+              </a>
+            </li>
+            <li className="p-menu-row-snug">
+              <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-footer-menu-row-link">
+                Extend Kafka to the edge
+              </a>
+            </li>
+            <li className="p-menu-row-snug">
               <a href={absUrl("/solutions/edtech")} className="ui-footer-menu-row-link">
                 EdTech
               </a>
