@@ -47,8 +47,8 @@ rm ably-ui-$VERSION.gem
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
 
-echo "Waiting to make sure packages are available in registries"
-sleep 30
+echo "Waiting to make sure packages are available in registries ;("
+sleep 90
 
 echo "Update preview app version"
 cd preview
