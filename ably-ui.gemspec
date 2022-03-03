@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = Dir['lib/**/*'] + %w[Gemfile Gemfile.lock LICENSE README.md ably-ui.gemspec]
 
-  spec.add_dependency "view_component", '~> 2.33.0'
+  spec.add_dependency "view_component", '>= 2.33', '< 2.50'
 end
