@@ -113,9 +113,12 @@ const copyFonts = print(
       log("\x1b[32m%s\x1b[0m", "No fonts directory found, skipping"); // green
       return true;
     }
-
-    fs.rmdirSync(rubyPath, { recursive: true });
-    fs.rmdirSync(npmPath, { recursive: true });
+    if (fs.existsSync(rubyPath)) {
+      fs.rmdirSync(rubyPath, {recursive: true});
+    }
+    if (fs.existsSync(npmPath)) {
+      fs.rmdirSync(npmPath, {recursive: true});
+    }
 
     fs.mkdirSync(rubyPath);
     fs.mkdirSync(npmPath);
@@ -138,9 +141,12 @@ const copyImages = print(
       log("\x1b[32m%s\x1b[0m", "No images directory found, skipping"); // green
       return true;
     }
-
-    fs.rmdirSync(rubyPath, { recursive: true });
-    fs.rmdirSync(npmPath, { recursive: true });
+    if (fs.existsSync(rubyPath)) {
+      fs.rmdirSync(rubyPath, {recursive: true});
+    }
+    if (fs.existsSync(npmPath)) {
+      fs.rmdirSync(npmPath, {recursive: true});
+    }
 
     fs.mkdirSync(rubyPath);
     fs.mkdirSync(npmPath);
@@ -200,8 +206,9 @@ const sync = ({ verbose } = { verbose: false }) => {
 
   modules.forEach((mod) => {
     const rubyPath = rubyPathResolve(mod.directory);
-
-    fs.rmdirSync(rubyPath, { recursive: true });
+    if (fs.existsSync(rubyPath)) {
+      fs.rmdirSync(rubyPath, {recursive: true});
+    }
     fs.mkdirSync(rubyPath);
 
     copyRubyModuleConfig(mod);
