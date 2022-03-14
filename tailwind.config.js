@@ -81,6 +81,7 @@ module.exports = {
       "icon-twitter": "var(--icon-color-twitter)",
       "icon-glassdoor": "var(--icon-color-glassdoor)",
       "icon-github": "var(--icon-color-github)",
+      "icon-discord": "var(--icon-color-discord)",
     },
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
