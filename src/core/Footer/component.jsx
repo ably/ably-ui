@@ -268,7 +268,7 @@ export default function Footer({ paths, urlBase }) {
             <a className="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/">
               <Icon name="github" size="1.5rem" />
             </a>
-            <a className="h-24 pr-24 text-cool-black hover:text-icon-discord" href="https://discord.com/invite/wPnfgACt">
+            <a className="h-24 pr-24 text-cool-black hover:text-icon-discord" href="https://discord.gg/jwBPhEZ9g5">
               <Icon name="discord" size="1.5rem" />
             </a>
             <div className="border-l border-mid-grey h-40"></div>

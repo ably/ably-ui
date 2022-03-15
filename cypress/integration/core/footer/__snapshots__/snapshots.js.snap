@@ -264,7 +264,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             <use xlink:href="#sprite-github"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-discord"
-          href="https://discord.com/invite/wPnfgACt"
+          href="https://discord.gg/jwBPhEZ9g5"
           ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-discord"></use></svg
         ></a>
@@ -588,7 +588,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </a>
         <a
           class="h-24 pr-24 text-cool-black hover:text-icon-discord"
-          href="https://discord.com/invite/wPnfgACt"
+          href="https://discord.gg/jwBPhEZ9g5"
         >
           <svg class=" " style="width: 1.5rem; height: 1.5rem">
             <use xlink:href="#sprite-discord"></use>
