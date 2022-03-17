@@ -22,7 +22,7 @@ class ColoursListComponent < ViewComponent::Base
         group_name: "Neutrals",
         group_colours: [
           { bg: 'bg-light-grey', name: "Light Grey", hex: '#F5F5F6', rgb: '245, 245, 246' },
-          { bg: 'bg-mid-grey', name: "Mid Grey", hex: '#DBDBDC', rgb: '219, 219, 220' },
+          { bg: 'bg-mid-grey', name: "Mid Grey", hex: '#D9D9DA', rgb: '217, 217, 218' },
           { bg: 'bg-dark-grey', name: "Dark Grey", hex: '#76767C', rgb: '118, 118, 124' },
           { bg: 'bg-charcoal-grey', name: "Charcoal Grey", hex: '#292831', rgb: '41, 40, 49' }
         ]

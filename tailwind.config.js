@@ -143,6 +143,7 @@ module.exports = {
       container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
       "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
       input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", // color-gui-hover at 50%
+      quote: "0rem 1.5rem 2rem 0rem #0000000d",
       // opacity
     },
     letterSpacing: {

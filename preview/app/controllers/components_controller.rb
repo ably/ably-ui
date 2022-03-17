@@ -58,6 +58,8 @@ class ComponentsController < ApplicationController
       icon-gui-tick
       icon-gui-warning
       icon-gui-clock
+      icon-gui-arrow-bidirectional-vertical
+      icon-gui-arrow-bidirectional-horizontal
     ]
 
     display_icons = %w[
