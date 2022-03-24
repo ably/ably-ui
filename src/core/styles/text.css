@@ -102,8 +102,22 @@
     @apply list-disc ml-32 mb-24;
   }
 
+  .ui-ordered-list {
+    @apply text-p1 font-light text-cool-black;
+    @apply ml-32 mb-24 list-decimal;
+  }
+
+  .ui-unordered-list li > *:last-of-type:not(ul):not(ol),
+  .ui-ordered-list li > *:last-of-type:not(ul):not(ol) {
+    margin-bottom: 0;
+  }
+
   .ui-unordered-list ul {
     @apply ml-24 mt-16 list-circle;
+  }
+
+  .ui-ordered-list ol {
+    @apply ml-24 mt-16 list-decimal;
   }
 
   .ui-unordered-list ul ul {
@@ -125,11 +139,11 @@
 
   .ui-unordered-list-with-emphasis ul {
     margin-top: calc(var(--spacing-16) + var(--spacing-8));
-    @apply ml-24 list-disc;
+    @apply ml-24 list-circle;
   }
 
   .ui-unordered-list-with-emphasis ul ul {
-    @apply list-circle;
+    @apply list-square;
   }
 
   /* visited needs to come before :hover et all else it overrides them */
