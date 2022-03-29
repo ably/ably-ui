@@ -2,7 +2,7 @@ exports[`Code Snapshot Test > react > test case common to both #0`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="javascript"
-  ><code class="language-javascript ui-text-code1"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
+  ><code class="language-javascript ui-text-code"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
 <span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -16,7 +16,7 @@ exports[`Code Snapshot Test > react > test case common to both #1`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="swift"
-  ><code class="language-swift ui-text-code1"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
+  ><code class="language-swift ui-text-code"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
 <span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -30,7 +30,7 @@ exports[`Code Snapshot Test > react > test case common to both #2`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="java"
-  ><code class="language-java ui-text-code1">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
+  ><code class="language-java ui-text-code">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
 Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
 
 <span class="hljs-comment">/* Subscribe to messages on channel */</span>
@@ -50,7 +50,7 @@ exports[`Code Snapshot Test > view component > test case common to both #0`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="javascript"
-  ><code class="language-javascript ui-text-code1"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
+  ><code class="language-javascript ui-text-code"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
 <span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -64,7 +64,7 @@ exports[`Code Snapshot Test > view component > test case common to both #1`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="swift"
-  ><code class="language-swift ui-text-code1"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
+  ><code class="language-swift ui-text-code"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
 <span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -78,7 +78,7 @@ exports[`Code Snapshot Test > view component > test case common to both #2`] = `
 <div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="java"
-  ><code class="language-java ui-text-code1">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
+  ><code class="language-java ui-text-code">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
 Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
 
 <span class="hljs-comment">/* Subscribe to messages on channel */</span>

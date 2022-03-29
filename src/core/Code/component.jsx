@@ -4,7 +4,7 @@ import T from "prop-types";
 import "./component.css";
 import { highlight } from "./component.js";
 
-const Code = ({ language, snippet, textSize = "ui-text-code1", padding = "p-32", additionalCSS = "" }) => {
+const Code = ({ language, snippet, textSize = "ui-text-code", padding = "p-32", additionalCSS = "" }) => {
   const HTMLraw = highlight(language, `${snippet}`.trim());
   const className = `language-${language} ${textSize}`;
   return (
