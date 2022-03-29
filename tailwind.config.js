@@ -52,8 +52,7 @@ module.exports = {
       menu2: ["var(--fs-menu2)", "var(--lh-tight)"],
       menu3: ["var(--fs-menu3)", "var(--lh-snug)"],
       quote: ["var(--fs-quote)", "var(--lh-relaxed)"],
-      code1: ["var(--fs-code1)", "var(--lh-relaxed)"],
-      code2: ["var(--fs-code2)", "var(--lh-relaxed)"],
+      code: ["var(--fs-code)", "var(--lh-dense)"],
     },
     colors: {
       transparent: "transparent",
@@ -107,6 +106,7 @@ module.exports = {
       media: "var(--spacing-media)",
       input: "var(--spacing-input)",
       overline: "var(--spacing-overline)",
+      "inline-code": "var(--spacing-inline-code)",
       ...theme("spacing"),
     }),
     spacing: {

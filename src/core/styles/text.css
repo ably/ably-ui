@@ -89,12 +89,12 @@
     @apply text-menu3;
   }
 
-  .ui-text-code1 {
-    @apply font-mono font-normal text-code1;
+  .ui-text-code {
+    @apply font-mono font-semibold text-code;
   }
 
-  .ui-text-code2 {
-    @apply font-mono font-normal text-code2;
+  .ui-text-code-inline {
+    @apply font-mono font-semibold text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
   }
 
   .ui-unordered-list {
