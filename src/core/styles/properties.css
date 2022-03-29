@@ -96,8 +96,7 @@
     --fs-menu2: 1rem;
     --fs-menu3: 0.875rem;
     --fs-quote: 1.5rem;
-    --fs-code1: 1rem;
-    --fs-code2: 0.875rem;
+    --fs-code: 0.875rem;
 
     --lh-dense: 1;
     --lh-tight: 1.125;
@@ -149,6 +148,7 @@
     --spacing-chip-small: 0.5rem 0.75rem; /* 8px 12px */
     --spacing-chip: 0.75rem 1rem; /* 6px 8px */
     --spacing-chip-large: 1rem 1.25rem; /* 16px 20px */
+    --spacing-inline-code: 0.375rem 0.5rem; /* 6px 8px */
 
     /* In components, when looking at implementing viewport margin and spacing between elements,
        the values in the comments can be used as guide as they represent the grid the elements (should) sit on.
