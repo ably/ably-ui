@@ -44,33 +44,50 @@ class ComponentsController < ApplicationController
     template = "icon_#{framework}.html.erb"
     core_icons = %w[
       icon-gui-ably-badge
+      icon-gui-arrow-bidirectional-horizontal
+      icon-gui-arrow-bidirectional-vertical
+      icon-gui-arrow-down
+      icon-gui-arrow-left
+      icon-gui-arrow-right
+      icon-gui-arrow-up
       icon-gui-burger-menu
+      icon-gui-check-circled-fill
+      icon-gui-check-circled
+      icon-gui-checklist-checked
+      icon-gui-clock
       icon-gui-close
+      icon-gui-cross-circled-fill
+      icon-gui-cross-circled
+      icon-gui-dash-circled
       icon-gui-disclosure-arrow
+      icon-gui-document-generic
       icon-gui-enlarge
       icon-gui-external-link
       icon-gui-history
+      icon-gui-info
       icon-gui-link-arrow
+      icon-gui-live-chat
       icon-gui-minus
       icon-gui-plus
+      icon-gui-quote-marks-solid
       icon-gui-refresh
       icon-gui-search
       icon-gui-tick
       icon-gui-warning
-      icon-gui-clock
-      icon-gui-arrow-bidirectional-vertical
-      icon-gui-arrow-bidirectional-horizontal
     ]
 
     display_icons = %w[
       icon-display-48hrs
       icon-display-api-keys
+      icon-display-api
       icon-display-browser
       icon-display-calendar
       icon-display-call-mobile
       icon-display-cloud-servers
       icon-display-documentation
+      icon-display-gdpr
       icon-display-general-comms
+      icon-display-hipaa
       icon-display-it-support-access
       icon-display-it-support-helpdesk
       icon-display-laptop
@@ -79,13 +96,23 @@ class ComponentsController < ApplicationController
       icon-display-message
       icon-display-padlock-closed
       icon-display-platform
+      icon-display-play
+      icon-display-privacy-shield-framework
       icon-display-servers
       icon-display-shopping-cart
       icon-display-sla
+      icon-display-soc2-type2
       icon-display-tech-account-comms
     ]
 
-    social_icons = %w[linkedin twitter github glassdoor facebook]
+    social_icons = %w[
+      discord
+      facebook
+      github
+      glassdoor
+      linkedin
+      twitter
+    ]
 
     other_icons = %w[quote]
 
@@ -133,9 +160,9 @@ class ComponentsController < ApplicationController
   def meganav_react_props
     props = {
       paths: {
-        logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
-        icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        logo: helpers.asset_path('ably_ui/core/images/ably-logo'),
+        icon_sprites: helpers.asset_path('ably_ui/core/sprites'),
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack'),
         blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
         blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
         blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg')
@@ -162,7 +189,7 @@ class ComponentsController < ApplicationController
   def footer_react_props
     {
       paths: {
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack'),
         rocket_list:
           helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
         flexible_companies:
