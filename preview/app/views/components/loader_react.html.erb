@@ -1,0 +1,13 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Loader
+<% end %>
+
+<p>Standard <%= react_component('loader') %></p>
+<p>Changed ring color <%= react_component('loader', { ring_color: "text-light-grey" }) %></p>
+<p>Half size <%= react_component('loader', { size: "0.75rem" }) %></p>
+
+<% content_for :component do %>
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>

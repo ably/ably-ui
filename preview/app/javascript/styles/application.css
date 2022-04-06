@@ -62,6 +62,12 @@
     font-weight: 500;
     font-style: italic;
   }
+
+  @keyframes chunk-animation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @layer components {
