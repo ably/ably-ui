@@ -445,10 +445,10 @@ exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
 `;
 
 exports[`Code Snapshot Test > react > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="javascript"
-  ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
+  ><code class="language-javascript ui-text-code"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
 <span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -459,10 +459,10 @@ channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs
 `;
 
 exports[`Code Snapshot Test > react > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="swift"
-  ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
+  ><code class="language-swift ui-text-code"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
 <span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -473,10 +473,10 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span c
 `;
 
 exports[`Code Snapshot Test > react > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="java"
-  ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
+  ><code class="language-java ui-text-code">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
 Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
 
 <span class="hljs-comment">/* Subscribe to messages on channel */</span>
@@ -493,10 +493,10 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>, listener);</code>
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #0`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="javascript"
-  ><code class="font-mono language-javascript"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
+  ><code class="language-javascript ui-text-code"><span class="hljs-keyword">var</span> ably = <span class="hljs-keyword">new</span> Ably.Realtime(<span class="hljs-string">'1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'</span>);
 <span class="hljs-keyword">var</span> channel = ably.channels.get(<span class="hljs-string">'web-pal'</span>);
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -507,10 +507,10 @@ channel.subscribe(<span class="hljs-string">'greeting'</span>, <span class="hljs
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #1`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="swift"
-  ><code class="font-mono language-swift"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
+  ><code class="language-swift ui-text-code"><span class="hljs-keyword">let</span> ably <span class="hljs-operator">=</span> <span class="hljs-type">ARTRealtime</span>(key: <span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>)
 <span class="hljs-keyword">let</span> channel <span class="hljs-operator">=</span> ably.channels.get(<span class="hljs-string">"web-pal"</span>)
 
 <span class="hljs-comment">// Subscribe to messages on channel</span>
@@ -521,10 +521,10 @@ channel.subscribe(<span class="hljs-string">"greeting"</span>) { message <span c
 `;
 
 exports[`Code Snapshot Test > view component > test case common to both #2`] = `
-<div class="hljs p-32 overflow-auto" data-id="code">
+<div class="hljs overflow-auto p-32 " data-id="code">
   <pre
     lang="java"
-  ><code class="font-mono language-java">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
+  ><code class="language-java ui-text-code">AblyRealtime ably = <span class="hljs-keyword">new</span> AblyRealtime(<span class="hljs-string">"1WChTA.mc0Biw:kNfiYG4KiPgmHHgH"</span>);
 Channel channel = ably.channels.get(<span class="hljs-string">"web-pal"</span>);
 
 <span class="hljs-comment">/* Subscribe to messages on channel */</span>
@@ -754,6 +754,18 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
         <li class="p-menu-row-snug">
+          <a href="/solutions/asset-tracking" class="ui-footer-menu-row-link"
+            >Ably Asset Tracking</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            href="/solutions/extend-kafka-to-the-edge"
+            class="ui-footer-menu-row-link"
+            >Extend Kafka to the edge</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
           <a href="/solutions/edtech" class="ui-footer-menu-row-link">EdTech</a>
         </li>
         <li class="p-menu-row-snug">
@@ -806,16 +818,12 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a
-            href="/docs/quick-start-guide"
-            class="ui-footer-menu-row-link"
+          <a href="/docs/quick-start-guide" class="ui-footer-menu-row-link"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/docs/" class="ui-footer-menu-row-link"
-            >Documentation</a
-          >
+          <a href="/docs/" class="ui-footer-menu-row-link">Documentation</a>
         </li>
         <li class="p-menu-row-snug">
           <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
@@ -950,7 +958,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             <use xlink:href="#sprite-github"></use></svg></a
         ><a
           class="h-24 pr-24 text-cool-black hover:text-icon-discord"
-          href="https://discord.com/invite/wPnfgACt"
+          href="https://discord.gg/jwBPhEZ9g5"
           ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
             <use xlink:href="#sprite-discord"></use></svg
         ></a>
@@ -1049,6 +1057,18 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
         <li class="p-menu-row-snug">
+          <a class="ui-footer-menu-row-link" href="/solutions/asset-tracking"
+            >Ably Asset Tracking</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
+          <a
+            class="ui-footer-menu-row-link"
+            href="/solutions/extend-kafka-to-the-edge"
+            >Extend Kafka to the edge</a
+          >
+        </li>
+        <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/solutions/edtech">EdTech</a>
         </li>
         <li class="p-menu-row-snug">
@@ -1102,16 +1122,12 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a
-            class="ui-footer-menu-row-link"
-            href="/docs/quick-start-guide"
+          <a class="ui-footer-menu-row-link" href="/docs/quick-start-guide"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/docs"
-            >Documentation</a
-          >
+          <a class="ui-footer-menu-row-link" href="/docs">Documentation</a>
         </li>
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/tutorials">Tutorials</a>
@@ -1137,7 +1153,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           >
           <iframe
             class="w-24 h-24 mt-4"
-            src="https://status.ably.io/embed/icon"
+            src="https://status.ably.com/embed/icon"
             allowtransparency="true"
             frameborder="0"
             scrolling="no"
@@ -1258,6 +1274,14 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         >
           <svg class=" " style="width: 1.5rem; height: 1.5rem">
             <use xlink:href="#sprite-github"></use>
+          </svg>
+        </a>
+        <a
+          class="h-24 pr-24 text-cool-black hover:text-icon-discord"
+          href="https://discord.gg/jwBPhEZ9g5"
+        >
+          <svg class=" " style="width: 1.5rem; height: 1.5rem">
+            <use xlink:href="#sprite-discord"></use>
           </svg>
         </a>
         <div class="border-l border-mid-grey h-40"></div>
