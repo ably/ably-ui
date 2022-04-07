@@ -18,7 +18,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
         Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
       </p>
 
-      <FeaturedLink url={absUrl("/documentation")}>Visit Documentation</FeaturedLink>
+      <FeaturedLink url={absUrl("/docs")}>Visit Documentation</FeaturedLink>
     </div>
 
     <div>

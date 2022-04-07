@@ -116,12 +116,12 @@ export default function Footer({ paths, urlBase }) {
           <h2 className="ui-footer-col-title">Developers</h2>
           <ul>
             <li className="p-menu-row-snug">
-              <a href={absUrl("/documentation/quick-start-guide")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/docs/quick-start-guide")} className="ui-footer-menu-row-link">
                 Start in 5 minutes
               </a>
             </li>
             <li className="p-menu-row-snug">
-              <a href={absUrl("/documentation/")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/docs/")} className="ui-footer-menu-row-link">
                 Documentation
               </a>
             </li>
