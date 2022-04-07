@@ -131,13 +131,13 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <ul>
         <li class="p-menu-row-snug">
           <a
-            href="/documentation/quick-start-guide"
+            href="/docs/quick-start-guide"
             class="ui-footer-menu-row-link"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/documentation/" class="ui-footer-menu-row-link"
+          <a href="/docs/" class="ui-footer-menu-row-link"
             >Documentation</a
           >
         </li>
@@ -404,13 +404,13 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <ul>
         <li class="p-menu-row-snug">
           <a
-            href="/documentation/quick-start-guide"
+            href="/docs/quick-start-guide"
             class="ui-footer-menu-row-link"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/documentation/" class="ui-footer-menu-row-link"
+          <a href="/docs/" class="ui-footer-menu-row-link"
             >Documentation</a
           >
         </li>
