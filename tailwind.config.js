@@ -76,6 +76,7 @@ module.exports = {
       "gui-viewed": "var(--color-gui-viewed)",
       "gui-unavailable": "var(--color-gui-unavailable)",
       "gui-error": "var(--color-gui-error)",
+      "gui-success": "var(--color-gui-success)",
       "icon-linkedin": "var(--icon-color-linkedin)",
       "icon-twitter": "var(--icon-color-twitter)",
       "icon-glassdoor": "var(--icon-color-glassdoor)",

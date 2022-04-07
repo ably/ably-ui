@@ -6,6 +6,7 @@ module.exports = [
       "FeaturedLink",
       "SignOutLink",
       "Meganav",
+      "Loader",
       "Logo",
       "MeganavContentPlatform",
       "MeganavContentWhyAbly",
