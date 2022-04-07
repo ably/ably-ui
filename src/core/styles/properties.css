@@ -19,13 +19,13 @@
     --color-gui-viewed: #4887c2;
     --color-gui-unavailable: #a8a8a8;
     --color-gui-error: #fb0c0c;
+    --color-gui-success: #11cb24;
 
     /* code syntax: theme */
     --syntax-black: var(--color-cool-black);
     --syntax-dark-grey: var(--color-dark-grey);
     --syntax-mid-grey: var(--color-mid-grey);
     --syntax-light-grey: var(--color-light-grey);
-
     --syntax-orange: #e78c45;
     --syntax-yellow: #e7c547;
     --syntax-blue: #3490ec;
