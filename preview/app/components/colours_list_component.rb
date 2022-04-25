@@ -21,6 +21,7 @@ class ColoursListComponent < ViewComponent::Base
       {
         group_name: "Neutrals",
         group_colours: [
+          { bg: 'bg-extra-light-grey', name: "Extra Light Grey", hex: '#FAFAFB' },
           { bg: 'bg-light-grey', name: "Light Grey", hex: '#F5F5F6' },
           { bg: 'bg-mid-grey', name: "Mid Grey", hex: '#D9D9DA' },
           { bg: 'bg-dark-grey', name: "Dark Grey", hex: '#76767C' },

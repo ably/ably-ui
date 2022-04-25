@@ -8,6 +8,7 @@
     --color-zingy-green: #08ff13;
     --color-bright-red: #ff2739;
     --color-jazzy-pink: #ff17d2;
+    --color-extra-light-grey: #fafafb;
     --color-light-grey: #f5f5f6;
     --color-mid-grey: #d9d9da;
     --color-dark-grey: #76767c;
@@ -26,6 +27,7 @@
     --syntax-dark-grey: var(--color-dark-grey);
     --syntax-mid-grey: var(--color-mid-grey);
     --syntax-light-grey: var(--color-light-grey);
+    --syntax-extra-light-grey: var(--color-extra-light-grey);
     --syntax-orange: #e78c45;
     --syntax-yellow: #e7c547;
     --syntax-blue: #3490ec;
