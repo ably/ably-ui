@@ -384,15 +384,19 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 
 **To trigger a release:**
 
-- Merge your PR into `main`.
+- Make sure you have run pre-release script `./pre-release.sh` (This updates the gem and the npm package version for ably-ui in the following files `Gemfile`, `package.json`, `version.rb`).
+- Merge your PR into `main` after it has been approved.
 - On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
 - Create a new tag with the new version number for the release.
   - _Do not prefix the tag with a `v`_
 - Add a meaningful title for the Release.
 - Click on the Autogenerate release notes button.
 - Publish Release.
+- Check the Github `Actions` tab in the repo to make sure the release is green.
 
 This will release the packages, update library & preview app and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website.
+
+_Note: If the version number of the gem has been yanked you will need to increment the version number._
 
 ### Running tests
 
