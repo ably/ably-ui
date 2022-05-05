@@ -1,0 +1,85 @@
+name: Heroku Review App
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  heroku-review-app:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: "write"
+      contents: "read"
+    env:
+      HEROKU_PIPELINE_NAME: ably-ui
+      HEROKU_APP_NAME: ably-ui-pr-${{ github.event.number }}
+
+    steps:
+      - name: Install jq
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: sudo apt-get install -y jq
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: ${{ github.event.action == 'closed' && 1 || 0 }}
+          ref: ${{ github.event.action != 'closed' && github.head_ref || '' }}
+
+      - name: Login to Heroku
+        uses: ably-forks/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_email: heroku.service@ably.com
+          heroku_app_name: ${{ env.HEROKU_APP_NAME }}
+          justlogin: true
+
+      - name: Create Heroku app
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: heroku apps:create ${{ env.HEROKU_APP_NAME }} --team=ably --region eu
+
+      - name: Add Heroku app to pipeline
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: heroku pipelines:add ${{ env.HEROKU_PIPELINE_NAME}} --app=${{ env.HEROKU_APP_NAME }} --stage=review
+
+      - name: Configure environment variables on Heroku app
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: |
+          # Retrieve the review app configuration
+          PIPELINE_ID=$(curl -n https://api.heroku.com/pipelines/${{ env.HEROKU_PIPELINE_NAME }} \
+                             -H "Accept: application/vnd.heroku+json; version=3" | jq -r .id)
+          curl -n https://api.heroku.com/pipelines/$PIPELINE_ID/stage/review/config-vars \
+               -H "Accept: application/vnd.heroku+json; version=3" > pipeline.json
+          # Turn the review app config JSON into shell env formatted values
+          jq -r '. | to_entries[] | {key, "value": (.value | @sh)} | join("=")' < pipeline.json > .pipeline-env
+          # Fake these Heroku configs so we look like review apps
+          echo HEROKU_APP_NAME=${{ env.HEROKU_APP_NAME }} >> .pipeline-env
+          echo HEROKU_BRANCH_NAME=${{ github.head_ref }} >> .pipeline-env
+          echo HEROKU_PR_NUMBER=${{ github.event.number }} >> .pipeline-env
+          # Set the config values without echoing the output back to the function
+          cat .pipeline-env | tr '\n' ' ' | xargs heroku config:set --app=${{ env.HEROKU_APP_NAME }} > /dev/null
+      - name: Add the buildpacks
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        shell: bash
+        run: |
+          buildpacks=$(jq -r .buildpacks[].url app.json)
+          for buildpack in $buildpacks; do
+            echo "Adding '$buildpack' buildpack"
+            heroku buildpacks:add $buildpack --app=${{ env.HEROKU_APP_NAME }}
+          done
+      - name: Add Heroku remote
+        if: github.event.action != 'closed'
+        run: heroku git:remote --app=${{ env.HEROKU_APP_NAME }}
+
+      - name: Push to Heroku
+        if: github.event.action != 'closed'
+        run: git push heroku ${{ github.head_ref }}:main --force
+
+      - name: Add comment to PR
+        if: github.event.action == 'opened'
+        run: |
+          gh pr comment ${{ github.event.number }} --body '[Heroku app](https://dashboard.heroku.com/apps/${{ env.HEROKU_APP_NAME }}): https://${{ env.HEROKU_APP_NAME }}.herokuapp.com'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Destroy Heroku app
+        if: github.event.action == 'closed'
+        run: heroku apps:destroy --app=${{ env.HEROKU_APP_NAME }} --confirm=${{ env.HEROKU_APP_NAME }}
