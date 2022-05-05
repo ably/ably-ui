@@ -17,7 +17,7 @@ module.exports = {
   theme: {
     screens: {
       // CSS custom properties can't be used in media queries
-      xs: "375px",
+      xs: "428px",
       sm: "768px",
       md: "1040px",
       lg: "1280px",
