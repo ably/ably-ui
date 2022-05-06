@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
-      contents: write
+      contents: "read"
+      pull-requests: "write"
     steps:
       - uses: actions/checkout@v2
         with:
