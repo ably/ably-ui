@@ -47,4 +47,18 @@
   .ui-checkbox-input:checked + .ui-checkbox-styled svg {
     @apply block;
   }
+
+  .ui-textarea {
+    @apply font-sans font-light text-cool-black text-p1;
+    @apply p-input mb-16;
+    @apply bg-light-grey border-mid-grey transition-input border rounded block w-full;
+    @apply hover:bg-white hover:shadow-input hover:border-transparent;
+    @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
+  }
+
+  .ui-textarea::placeholder {
+    /* CSS vars don't work in ::placeholder in Webkit :( */
+    /* color: var(--text-dark-grey); */
+    color: #76767c;
+  }
 }
