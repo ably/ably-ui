@@ -71,12 +71,6 @@
 }
 
 @layer components {
-  .pi-inline-code {
-    font-size: 0.9375rem;
-    padding: 0 0.125rem;
-    @apply font-mono text-cool-black bg-cool-black text-white whitespace-nowrap;
-  }
-
   .pi-checkered-bg {
     --size: 0.25rem;
     --double: calc(var(--size) * 2);
