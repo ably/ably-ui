@@ -25,7 +25,7 @@
 
   .ui-text-h4 {
     @apply font-sans font-medium text-cool-black;
-    @apply text-h4;
+    @apply text-h4 uppercase;
     @apply tracking-widen-0.1;
   }
 
