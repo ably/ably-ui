@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ably-ui (7.7.0)
+    ably-ui (7.7.0.dev.250db1f)
       view_component (>= 2.33, < 2.50)
     actioncable (6.0.3.4)
       actionpack (= 6.0.3.4)
@@ -169,7 +169,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ably-ui (= 7.7.0)
+  ably-ui (= 7.7.0.dev.250db1f)
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
