@@ -30,17 +30,17 @@
   }
 
   .ui-text-p1 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p1;
   }
 
   .ui-text-p2 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p2;
   }
 
   .ui-text-p3 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p3;
   }
 
