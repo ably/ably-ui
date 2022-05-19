@@ -15,9 +15,10 @@
     --color-charcoal-grey: #292831;
     --color-gui-default: #0073e6;
     --color-gui-hover: #0867c4;
-    --color-gui-focus: #80b9f2;
+    --color-gui-focus: #0073e6;
+    --color-gui-focus-outline: #80b9f2;
     --color-gui-active: #074095;
-    --color-gui-viewed: #4887c2;
+    --color-gui-visited: #4887c2;
     --color-gui-unavailable: #a8a8a8;
     --color-gui-error: #fb0c0c;
     --color-gui-success: #11cb24;
