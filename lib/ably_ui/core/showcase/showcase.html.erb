@@ -1,0 +1,76 @@
+<section
+  aria-roledescription="carousel"
+  aria-label="Ably customers showcase"
+  aria-live="off"
+  class="font-sans antialiased rounded-sm shadow-container-subtle"
+  data-id="showcase"
+>
+  <div class="ui-showcase-overflow-container">
+    <ol class="ui-showcase-logo-wrapper" data-id="showcase-controls">
+      <% companies_data.each_with_index do |company, index| %>
+        <li class="ui-showcase-logo">
+          <%= tag.button class: ['focus:outline-gui-focus', 'border-none', 'p-0', 'transition-filter'],
+                         type: 'button',
+                         data: { id: 'showcase-control' },
+                         aria: { controls: @random_id } do %>
+            <%= image_tag company[:logo], alt: "#{company[:name]} logo", class: ['ui-showcase-logo-img', index === 0 ? 'filter-none' : 'filter-grayscale', 'hover:filter-none'], srcset: [["#{company[:logo2x]}", "2x"]] %>
+          <% end %>
+        </li>
+      <% end %>
+    </ol>
+
+    <div class="ui-showcase-index-bar">
+      <div data-id="showcase-index-bar" class="transform transition-transform w-1/<%= companies_data.size %> h-4 bg-active-orange relative"></div>
+    </div>
+  </div>
+
+  <div class="overflow-x-hidden">
+    <ol class="flex transform transition-transform" data-id="showcase-slides" id="<%= @random_id %>">
+      <% companies_data.each_with_index do |company, index| %>
+        <li
+          class="w-full flex-shrink-0 p-24 sm:p-32 xl:p-64 bg-white"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="<%= index + 1 %> of <%= companies_data.size %>"
+        >
+          <% if company[:layout] == "quotes" %>
+            <%= render(AblyUi::Core::Icon.new(name: "quote", size: "1.25rem", color: "text-cool-black")) %>
+
+            <p class="text-quote font-light mb-24"><%= company[:quote] %></p>
+
+            <div class="flex items-center">
+              <div class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48">
+                <%= image_tag company[:author][:thumbnail], alt: "Picture of #{company[:author][:name]}, #{company[:author][:title]}", class: "w-48 h-48 filter-grayscale" %>
+              </div>
+              <div>
+                <p class="text-p2 font-medium"><%= company[:author][:name] %></p>
+                <p class="text-p3 font-light"><%= company[:author][:title] %></p>
+              </div>
+            </div>
+          <% end %>
+
+          <% if company[:layout] == "casestudies" %>
+            <div class="flex justify-evenly text-cool-black full-width flex-col md:flex-row" data-id="showcase-casestudy">
+              <% company[:columns].each_with_index do |col, n| %>
+                <% if company[:columns].last == col %>
+                  <div class="flex-1 mt-40 sm:mt-0 <%= col[:classname] %>" data-id="casestudy-column">
+                    <p class="text-h4 pb-24"><%= col[:heading] %></p>
+                    <p class="text-p1 font-light"><%= col[:text] %></p>
+                    <%- if col[:button] %>
+                      <a class="ui-btn self-start p-btn mt-24" href="<%= col[:button][:href] %>"><%= col[:button][:label] %></a>
+                    <% end %>
+                  </div>
+                <% else %>
+                  <div class="flex-1 mt-40 sm:mt-0 mr-24 sm:mr-32 xl:mr-64 <%= col[:classname] %>" data-id="casestudy-column">
+                    <p class="text-title-xl font-extra-large"><%= col[:heading] %></p>
+                    <p class="text-p1 font-light mb-0 sm:mb-32"><%= col[:text] %></p>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ol>
+  </div>
+</section>

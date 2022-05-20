@@ -1,0 +1,14 @@
+@layer components {
+  .ui-contact-footer {
+    background-size: 100% 100%;
+    background-position: right center;
+    @apply w-full bg-gradient-active-orange;
+  }
+
+  .ui-contact-footer-box {
+    @apply p-24 sm:p-32 xl:p-40 bg-white flex flex-col justify-between rounded-sm;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9BYmx5VWkuQ29yZS5bbmFtZV0vLi9zcmMvY29yZS9Db250YWN0Rm9vdGVyL2NvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUNFLDBCQUEwQjtJQUMxQixpQ0FBaUM7SUFDakMsdUNBQXVDO0VBQ3pDOztFQUVBO0lBQ0UsNkVBQTZFO0VBQy9FO0FBQ0YiLCJmaWxlIjoiY29yZS9Db250YWN0Rm9vdGVyL2NvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAbGF5ZXIgY29tcG9uZW50cyB7XG4gIC51aS1jb250YWN0LWZvb3RlciB7XG4gICAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDEwMCU7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogcmlnaHQgY2VudGVyO1xuICAgIEBhcHBseSB3LWZ1bGwgYmctZ3JhZGllbnQtYWN0aXZlLW9yYW5nZTtcbiAgfVxuXG4gIC51aS1jb250YWN0LWZvb3Rlci1ib3gge1xuICAgIEBhcHBseSBwLTI0IHNtOnAtMzIgeGw6cC00MCBiZy13aGl0ZSBmbGV4IGZsZXgtY29sIGp1c3RpZnktYmV0d2VlbiByb3VuZGVkLXNtO1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9*/

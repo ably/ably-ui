@@ -1,0 +1,7 @@
+<%= button_tag(type: "button",
+               class: "block ml-24 mr-0 px-0 py-16 hover:text-gui-hover focus:text-gui-focus focus:outline-none",
+               data: { id: "meganav-control-mobile-dropdown" },
+               aria: { expanded: false, controls: "meganav-mobile-dropdown" }) do %>
+  <%= render(AblyUi::Core::Icon.new(name: "icon-gui-burger-menu", size: "1.5rem", color: theme(:mobile_menu_color), additional_css: "transition-colors", data: { id: "meganav-control-mobile-dropdown-menu" })) %>
+  <%= render(AblyUi::Core::Icon.new(name: "icon-gui-close", size: "1.5rem", color: theme(:mobile_menu_color), additional_css: "transition-colors hidden", data: { id: "meganav-control-mobile-dropdown-close" })) %>
+<% end %>
