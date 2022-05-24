@@ -190,15 +190,6 @@ const copyComponentData = print(
   }
 );
 
-const createGitignoreFiles = (mod) => {
-  printWrite(`> Creating .gitignore file for ${colorizeMod(mod.name)} ... `);
-
-  fs.writeFileSync(npmPathResolve(mod.directory, ".gitignore"), "*");
-  fs.writeFileSync(rubyPathResolve(mod.directory, ".gitignore", false), "*");
-
-  printDone();
-};
-
 const sync = ({ verbose } = { verbose: false }) => {
   VERBOSE_LOG = verbose;
 
@@ -216,7 +207,6 @@ const sync = ({ verbose } = { verbose: false }) => {
     copyFonts(mod);
     copyImages(mod);
     copyIconSprites(mod);
-    createGitignoreFiles(mod);
 
     mod.components.forEach((componentName) => {
       fs.mkdirSync(rubyPathResolve(mod.directory, componentName));
