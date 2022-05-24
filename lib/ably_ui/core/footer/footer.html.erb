@@ -1,0 +1,199 @@
+<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+  <div class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6">
+    <div class="col-span-full md:col-span-2">
+      <div class="flex flex-row p-menu-row-snug">
+        <%= image_tag(ably_stack_path, alt: "Ably homepage", class: "mr-24 -mt-16") %>
+        <h2 class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1">The Ably Platform</h2>
+      </div>
+
+      <div class="grid grid-cols-4">
+        <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
+          Easily power any realtime experience in your application via a simple API that handles everything realtime.
+        </p>
+      </div>
+
+      <ul class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1">
+        <li class="p-menu-row-snug">
+          <%= link_to 'Pub/sub messaging', abs_url("/pub-sub-messaging"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Push notifications', abs_url("/push-notifications"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Third-party integrations', abs_url("/integrations"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Multiple protocol messaging', abs_url("/protocols"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Streaming data sources', abs_url("/hub"), class: "ui-footer-menu-row-link" %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Ably is for</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Ably Asset Tracking', abs_url("/solutions/asset-tracking"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Extend Kafka to the edge', abs_url("/solutions/extend-kafka-to-the-edge"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'EdTech', abs_url("/solutions/edtech"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Automotive, Logistics, & Mobility', abs_url("/solutions/automotive-logistics-and-mobility"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'B2B Platforms', abs_url("/solutions/b2b-platforms"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Healthcare', abs_url("/solutions/healthcare"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Streaming data sources', abs_url("/hub"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'eCommerce & Retail', abs_url("/solutions/ecommerce-and-retail"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Sports & Media', abs_url("/solutions/sports-and-media"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Gaming', abs_url("/solutions/gaming"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'IoT & Connected Devices', abs_url("/solutions/iot-and-connected-devices"), class: "ui-footer-menu-row-link" %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">Developers</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Start in 5 minutes', abs_url("/docs/quick-start-guide"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Documentation', abs_url("/docs"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Tutorials', abs_url("/tutorials"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="https://changelog.ably.com/" class="ui-footer-menu-row-link">Changelog</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Support & FAQs', abs_url("/support"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'SDKs', abs_url("/download"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug flex items-center">
+          <a class="pr-8 ui-footer-menu-row-link" href="https://status.ably.com/">System status</a>
+          <iframe class="w-24 h-24 mt-4" src="https://status.ably.com/embed/icon" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">WHY ABLY</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Customers', abs_url("/customers"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Case Studies', abs_url("/case-studies"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Four Pillars of Dependability', abs_url("/four-pillars-of-dependability"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Compare our tech', abs_url("/compare"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Multi protocol support', abs_url("/protocols"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Third-party integrations', abs_url("/integrations"), class: "ui-footer-menu-row-link" %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-full sm:col-span-3 md:col-span-1">
+      <h2 class="ui-footer-col-title">ABOUT</h2>
+      <ul>
+        <li class="p-menu-row-snug">
+          <%= link_to 'About Ably', abs_url("/about"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Pricing', abs_url("/pricing"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Blog', abs_url("/blog"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Careers', abs_url("/careers"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Open protocol policy', abs_url("/open-policy"), class: "ui-footer-menu-row-link" %>
+        </li>
+        <li class="p-menu-row-snug">
+          <a href="https://www.notion.so/ably/Ably-Press-Center-551152f5be724d4495a7c2e29d9f51c7" target="_blank" rel="noopener" class="ui-footer-menu-row-link">Press & Media</a>
+        </li>
+        <li class="p-menu-row-snug">
+          <%= link_to 'Contact us', abs_url("/contact"), class: "ui-footer-menu-row-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-w-screen-xl ui-grid-px mx-auto">
+    <hr class="border-t border-mid-grey" />
+  </div>
+
+  <div class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
+    <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
+      <div class="inline-flex">
+        <%= link_to 'Cookies', abs_url("/privacy"), class: "ui-footer-link pr-24" %>
+        <%= link_to 'Legals', abs_url("/legals"), class: "ui-footer-link pr-24" %>
+        <%= link_to 'Data Protection', abs_url("/data-protection"), class: "ui-footer-link pr-24" %>
+        <%= link_to 'Privacy', abs_url("/privacy"), class: "ui-footer-link" %>
+      </div>
+
+      <div class="pt-32 flex items-center">
+        <a class="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime">
+          <%= render(AblyUi::Core::Icon.new(name: "twitter", size: "1.5rem")) %>
+        </a>
+        <a class="h-24 pr-24 text-cool-black hover:text-icon-linkedin" href="https://www.linkedin.com/company/ably-realtime">
+          <%= render(AblyUi::Core::Icon.new(name: "linkedin", size: "1.5rem")) %>
+        </a>
+        <a class="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/">
+          <%= render(AblyUi::Core::Icon.new(name: "github", size: "1.5rem")) %>
+        </a>
+        <a class="h-24 pr-24 text-cool-black hover:text-icon-discord" href="https://discord.gg/jwBPhEZ9g5">
+          <%= render(AblyUi::Core::Icon.new(name: "discord", size: "1.5rem")) %>
+        </a>
+        <div class="border-l border-mid-grey h-40"></div>
+        <a
+          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
+          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+        >
+          <%= render(AblyUi::Core::Icon.new(name: "glassdoor", size: "1.5rem")) %>
+        </a>
+        <div class="pl-16 text-menu3 font-light">
+          <strong class="block font-medium">We&apos;re hiring!</strong>
+          <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" class="ui-footer-link">Learn more</a>
+          at Glassdoor
+        </div>
+      </div>
+    </div>
+
+    <div class="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto">
+      <%= image_tag(rocket_list, alt: "Rocket List 2021", class: "mr-24 w-96 h-96") %>
+      <%= image_tag(flexible_companies, alt: "Flexible Companies 2021", class: "w-96 h-96") %>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,11 @@
+@layer components {
+  .ui-slider-marker {
+    font-size: 0.5rem;
+    top: -1px;
+
+    @apply leading-none px-4 relative;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9BYmx5VWkuQ29yZS5bbmFtZV0vLi9zcmMvY29yZS9TbGlkZXIvY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0UsaUJBQWlCO0lBQ2pCLFNBQVM7O0lBRVQsaUNBQWlDO0VBQ25DO0FBQ0YiLCJmaWxlIjoiY29yZS9TbGlkZXIvY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBsYXllciBjb21wb25lbnRzIHtcbiAgLnVpLXNsaWRlci1tYXJrZXIge1xuICAgIGZvbnQtc2l6ZTogMC41cmVtO1xuICAgIHRvcDogLTFweDtcblxuICAgIEBhcHBseSBsZWFkaW5nLW5vbmUgcHgtNCByZWxhdGl2ZTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ==*/

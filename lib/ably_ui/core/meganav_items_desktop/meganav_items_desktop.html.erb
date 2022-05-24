@@ -1,0 +1,16 @@
+<ul class="hidden md:flex" data-id="meganav-items-desktop">
+  <% panels.each do |panel| %>
+    <li class="ui-meganav-item">
+      <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
+        <%= panel[:label] %>
+      <% end %>
+
+      <%= content_tag :div, class: 'ui-meganav-panel invisible', data: { id: "meganav-panel" }, id: panel[:id] do %>
+        <%= render("AblyUi::Core::#{panel[:component]}".constantize.new(url_base: url_base)) %>
+      <% end %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to "Pricing", abs_url("/pricing"), data: { id: "meganav-link" }, class: ["ui-meganav-link", "h-64", "items-center", "flex", theme(:text_color)] %>
+  </li>
+</ul>

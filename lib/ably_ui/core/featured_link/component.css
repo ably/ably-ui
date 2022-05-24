@@ -1,0 +1,18 @@
+@layer components {
+  .ui-featured-link {
+    @apply font-sans font-medium block;
+    @apply text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus;
+  }
+
+  .ui-featured-link:hover svg {
+    @apply left-0;
+  }
+
+  .ui-featured-link-icon {
+    transition: left 100ms ease-in-out;
+    @apply align-middle ml-8 relative -top-1 -left-4;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9BYmx5VWkuQ29yZS5bbmFtZV0vLi9zcmMvY29yZS9GZWF0dXJlZExpbmsvY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0Usa0NBQWtDO0lBQ2xDLHlGQUF5RjtFQUMzRjs7RUFFQTtJQUNFLGFBQWE7RUFDZjs7RUFFQTtJQUNFLGtDQUFrQztJQUNsQyxnREFBZ0Q7RUFDbEQ7QUFDRiIsImZpbGUiOiJjb3JlL0ZlYXR1cmVkTGluay9jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGxheWVyIGNvbXBvbmVudHMge1xuICAudWktZmVhdHVyZWQtbGluayB7XG4gICAgQGFwcGx5IGZvbnQtc2FucyBmb250LW1lZGl1bSBibG9jaztcbiAgICBAYXBwbHkgdGV4dC1ndWktZGVmYXVsdCBob3Zlcjp0ZXh0LWd1aS1ob3ZlciBmb2N1czp0ZXh0LWd1aS1mb2N1cyBmb2N1czpvdXRsaW5lLWd1aS1mb2N1cztcbiAgfVxuXG4gIC51aS1mZWF0dXJlZC1saW5rOmhvdmVyIHN2ZyB7XG4gICAgQGFwcGx5IGxlZnQtMDtcbiAgfVxuXG4gIC51aS1mZWF0dXJlZC1saW5rLWljb24ge1xuICAgIHRyYW5zaXRpb246IGxlZnQgMTAwbXMgZWFzZS1pbi1vdXQ7XG4gICAgQGFwcGx5IGFsaWduLW1pZGRsZSBtbC04IHJlbGF0aXZlIC10b3AtMSAtbGVmdC00O1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9*/

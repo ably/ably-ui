@@ -1,0 +1,83 @@
+<section class="ui-meganav-content ui-grid-gap md:grid-cols-3">
+  <div>
+    <h3 class="ui-meganav-overline md:mb-8">Documentation</h3>
+    <div class="relative mb-16">
+      <%= tag.form class: "relative", action: abs_url("/search"), method: "get" do %>
+        <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-8 left-8 pt-1 mt-1")) %>
+        <input type="search" name="q" class="ui-input pl-48" placeholder="Search docs" />
+      <% end %>
+    </div>
+    <p class="text-p1 font-medium text-cool-black mb-20">
+      Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
+    </p>
+
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/docs"))) do %>Visit Documentation<% end %>
+  </div>
+
+  <div>
+    <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">Explore</h3>
+    <ul aria-labelledby="meganav-developers-panel-explore">
+      <li>
+        <%= link_to abs_url("/integrations"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Third-party integrations & plugins</p>
+          <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to abs_url("/protocols"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
+          <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to abs_url("/hub"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Streaming data sources</p>
+          <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
+         <% end %>
+      </li>
+      <li>
+        <%= link_to abs_url("/periodic-table-of-realtime"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">The Periodic Table of Realtime</p>
+          <p class="ui-meganav-media-copy">A compendium for all things realtime and event-driven.</p>
+         <% end %>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">Quick links</h3>
+    <ul aria-labelledby="meganav-developers-panel-quick-links">
+      <li>
+        <%= link_to abs_url("/download"), class: "group ui-meganav-media py-12" do %>
+          <p class="ui-meganav-media-heading">Download an SDK</p>
+        <% end %>
+      </li>
+
+      <li>
+        <a href="https://changelog.ably.com/" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">Platform changelog</p>
+        </a>
+      </li>
+
+      <li>
+        <%= link_to abs_url("/support"), class: "group ui-meganav-media py-12" do %>
+          <p class="ui-meganav-media-heading">Support & FAQs</p>
+        <% end %>
+      </li>
+
+      <li>
+        <a href="http://status.ably.com/" class="group ui-meganav-media py-12">
+          <p class="ui-meganav-media-heading">
+            Status<iframe
+              src="https://status.ably.com/embed/icon"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              class="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
+            ></iframe>
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
