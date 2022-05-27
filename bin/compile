@@ -25,10 +25,10 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
     rm -rf $BUILD_DIR/$PROJECT_PATH/*
 
     echo "       copy $BUILD_DIR one level up"
-    cp -R $BUILD_DIR/core ..
-    cp -R $BUILD_DIR/reset ..
-    cp -R $BUILD_DIR/tailwind-config.js ..
-    cp -R $BUILD_DIR/tailwind-extend.js ..
+    cp -R $BUILD_DIR/core/. ..
+    cp -R $BUILD_DIR/reset/. ..
+    cp -R $BUILD_DIR/tailwind.config.js ..
+    cp -R $BUILD_DIR/tailwind.extend.js ..
     cp -R $BUILD_DIR/package.json ..
 
 	 	echo "       cleaning build dir $BUILD_DIR"
