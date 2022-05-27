@@ -2,7 +2,9 @@
   Logo
 <% end %>
 
-<%= render(AblyUi::Core::Logo.new()) %>
+<%= render(ParameterTableComponent.new(component_parameters, framework)) %>
+
+<%= render(AblyUi::Core::Logo.new(href: '/')) %>
 
 <% content_for :component do %>
   <script type="text/javascript">

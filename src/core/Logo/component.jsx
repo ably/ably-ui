@@ -2,8 +2,8 @@ import React, { useMemo } from "react";
 import T from "prop-types";
 
 const Logo = ({ dataId, href = "/" }) => {
-  // This fixes a bug where if the logo is rendered more then once on the page, and one of the instance
-  // of it is hidden, the other instance will not show the ably shape from the logo.
+  // This fixes a bug where if the logo is rendered more than once on the page, and one of the instances
+  // if it is hidden, the other instance will not show the ably shape from the logo.
 
   // This is because the defs in this SVG reference ids that need to be unique ids. The browser discards the "newer"
   // linearGradients defined in the other logo, and inherits the `hidden` style from the first.

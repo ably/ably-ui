@@ -2,6 +2,8 @@
   Logo
 <% end %>
 
+ <%= render(ParameterTableComponent.new(component_parameters, framework)) %>
+
 <%= react_component('logo') %>
 
 <% content_for :component do %>
