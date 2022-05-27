@@ -81,7 +81,7 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
       {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
-        <Logo theme={theme} dataId="meganav-logo" href={urlBase} />
+        <Logo dataId="meganav-logo" href={urlBase} />
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} absUrl={absUrl} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}

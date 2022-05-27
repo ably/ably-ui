@@ -1,0 +1,11 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Logo
+<% end %>
+
+<%= react_component('logo') %>
+
+<% content_for :component do %>
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>
