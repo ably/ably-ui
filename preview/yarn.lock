@@ -2,9 +2,8 @@
 # yarn lockfile v1
 
 
-"@ably/ui@ably/ably-ui":
+"@ably/ui@..":
   version "7.8.0"
-  resolved "https://codeload.github.com/ably/ably-ui/tar.gz/abffd210ec0ff21453d8e6e1313ebdd718e10d0a"
   dependencies:
     array-flat-polyfill "^1.0.1"
     deepmerge "^4.2.2"
