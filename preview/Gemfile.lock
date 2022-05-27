@@ -1,8 +1,13 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: https://github.com/ably/ably-ui
+  revision: ba0f504e28a568dd0352118598b0010a87c443ec
   specs:
     ably-ui (7.8.0)
       view_component (>= 2.33, < 2.50)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     actioncable (6.0.3.4)
       actionpack (= 6.0.3.4)
       nio4r (~> 2.0)
@@ -169,7 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ably-ui (= 7.8.0)
+  ably-ui!
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
