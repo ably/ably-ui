@@ -160,9 +160,9 @@ class ComponentsController < ApplicationController
   def meganav_react_props
     props = {
       paths: {
-        logo: helpers.asset_path('ably_ui/core/images/ably-logo'),
-        icon_sprites: helpers.asset_path('ably_ui/core/sprites'),
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack'),
+        logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
+        icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
         blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
         blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
         blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg')
@@ -189,7 +189,7 @@ class ComponentsController < ApplicationController
   def footer_react_props
     {
       paths: {
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack'),
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
         rocket_list:
           helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
         flexible_companies:
