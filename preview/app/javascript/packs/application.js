@@ -11,6 +11,7 @@ import Icon from "@ably/ui/core/Icon";
 import FeaturedLink from "@ably/ui/core/FeaturedLink";
 import CustomerLogos from "@ably/ui/core/CustomerLogos";
 import Loader from "@ably/ui/core/Loader";
+import Logo from "@ably/ui/core/Logo";
 
 import {
   reactRenderer,
@@ -51,7 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     Icon,
     FeaturedLink,
     CustomerLogos,
-    Loader
+    Loader,
+    Logo
   });
 
   // Fetch additional data, trigger a re-render for components subscribed to store

@@ -1,0 +1,11 @@
+---
+- :name: href
+  :optional: "Yes"
+  :default: "/"
+  :type: String
+  :description: Target URL
+- :name: dataId
+  :optional: "Yes"
+  :default: ""
+  :type: String
+  :description: Identifier for DOM manipulation

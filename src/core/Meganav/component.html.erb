@@ -2,7 +2,7 @@
   <%= notice %>
 
   <div class="ui-meganav ui-grid-px">
-    <%= render(AblyUi::Core::Logo.new(theme_name: @theme_name, data_id: "meganav-logo", href: logo_link)) %>
+    <%= render(AblyUi::Core::Logo.new(data_id: "meganav-logo", href: logo_link)) %>
     <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name, url_base: url_base)) %>
 
     <% if @session_data[:signedIn] %>
