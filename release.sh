@@ -67,7 +67,7 @@ echo "Commit version publish and preview app update to $TAG"
 cd ..
 git add package.json lib/ably_ui/version.rb Gemfile.lock
 git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
-git commit -m "Commit verion bump & preview app update"
+git commit -m "Commit version bump & preview app update"
 
 echo "Push main to origin"
 git push origin main
