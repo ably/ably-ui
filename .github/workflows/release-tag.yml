@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: "main"
-          token: ${{ secrets.REGISTRY_TOKEN }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.0
