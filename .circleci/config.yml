@@ -24,7 +24,7 @@ executors:
       - PG_USER: ably_db_user
       - PG_PASSWORD: password
       - RAILS_ENV: test
-      - NODE_VERSION: 12.16.3
+      - NODE_VERSION: 18.3.0
       - YARN_VERSION: 1.22.10
 
 caches:
