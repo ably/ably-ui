@@ -70,6 +70,7 @@
     "js-cookie": "^2.2.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
+    "nanoid": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "redux": "^4.0.5",
