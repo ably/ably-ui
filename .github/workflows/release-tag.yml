@@ -7,8 +7,8 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
-      contents: "read"
+      packages: "write"
+      contents: "write"
       pull-requests: "write"
     steps:
       - uses: actions/checkout@v2
