@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "7.8.2",
+  "version": "7.8.2-dev.b40c1c7",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -70,6 +70,7 @@
     "js-cookie": "^2.2.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
+    "nanoid": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "redux": "^4.0.5",

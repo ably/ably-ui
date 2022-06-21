@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import T from "prop-types";
+import { nanoid } from "nanoid";
 
 const Logo = ({ dataId, href = "/" }) => {
   // This fixes a bug where if the logo is rendered more than once on the page, and one of the instances
@@ -7,8 +8,7 @@ const Logo = ({ dataId, href = "/" }) => {
 
   // This is because the defs in this SVG reference ids that need to be unique ids. The browser discards the "newer"
   // linearGradients defined in the other logo, and inherits the `hidden` style from the first.
-  const createID = () => `paint_gradient_${Date.now()}`;
-  const gradientIds = useMemo(() => [createID(), createID()], []);
+  const gradientIds = useMemo(() => [nanoid(), nanoid()], []);
 
   return (
     <a href={href} className="h-32">

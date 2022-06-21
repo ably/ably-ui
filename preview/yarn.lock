@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ui@7.8.2":
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-7.8.2.tgz#599c68a9a71dd4a584f383ed0c5c9752a33c9bd0"
-  integrity sha512-f+/GCaSewl+PoeS1FfPJI8sguoAlDka0Ga9xLCunXMax8jUpgNLn+fqVXkZF1kTQNbtKPrwHckDanXMMzk7onQ==
+"@ably/ui@7.8.2-dev.b40c1c7":
+  version "7.8.2-dev.b40c1c7"
+  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-7.8.2-dev.b40c1c7.tgz#35985522317d6d0873f7fb33a3a2cb6300172e27"
+  integrity sha512-IaFEoNhvVeMinFXJJ4+EVZyJYEcPPSHQCNL2AdJ4HVV5F+bk/zCR6/uahdernTb6zsSbfd+nyNrMoW+Rk3Fffg==
   dependencies:
     array-flat-polyfill "^1.0.1"
     deepmerge "^4.2.2"
@@ -14,6 +14,7 @@
     js-cookie "^2.2.1"
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
+    nanoid "^4.0.0"
     react "^17.0.1"
     react-dom "^17.0.1"
     redux "^4.0.5"
@@ -5040,6 +5041,11 @@ nanoid@^3.1.23:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
   integrity sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==
+
+nanoid@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.0.tgz#6e144dee117609232c3f415c34b0e550e64999a5"
+  integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
 nanomatch@^1.2.9:
   version "1.2.13"
