@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
-          ./release.sh "${GITHUB_REF/refs\/tags\//}"
+          ./scripts/release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
       - name: Create PR on Voltaire and Website
         env:

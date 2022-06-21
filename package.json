@@ -54,13 +54,15 @@
     "build": "node scripts/build.js",
     "build:verbose": "node scripts/build.js -v",
     "watch": "node scripts/build.js -w",
-    "dev": "./cleanstart.sh",
+    "dev": "./scripts/cleanstart.sh",
     "format:check": "yarn prettier -c *.js src src/**/*.jsx cypress",
     "format:write": "yarn prettier -w *.js src src/**/*.jsx cypress",
     "lint": "eslint *.js src src/**/*.jsx cypress",
     "cy:open": "cypress open",
     "cy:headless": "cypress run --quiet",
-    "update:all": "./scripts/update-dependents.sh"
+    "update:all": "./scripts/update-dependents.sh",
+    "pre-release": "./scripts/pre-release.sh",
+    "release": "./scripts/release.sh"
   },
   "dependencies": {
     "array-flat-polyfill": "^1.0.1",
