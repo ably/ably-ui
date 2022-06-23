@@ -10,6 +10,9 @@ jobs:
   open-prs:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: "main"
       - name: Create PR on Voltaire and Website
         env:
           REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
