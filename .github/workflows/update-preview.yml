@@ -27,6 +27,7 @@ jobs:
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
-          ./scripts/update-preview.sh "${git describe --abbrev=0}"
-          git push https://${{ secrets.REGISTRY_TOKEN }}@github.com/${{ secrets.REGISTRY_USERNAME }}/ably-ui.git
+          TAG=$(git describe --abbrev=0)
+          ./scripts/update-preview.sh $TAG
+          git push https://${{ secrets.REGISTRY_TOKEN }}@github.com/${{ secrets.REGISTRY_USERNAME }}/ably/ably-ui.git
         shell: bash
