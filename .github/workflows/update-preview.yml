@@ -1,0 +1,32 @@
+name: Update preview
+
+on:
+  workflow_run:
+    workflows: ["Release packages"]
+    types:
+      - completed
+
+jobs:
+  update_preview:
+    needs: release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: "write"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: "main"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.0
+          bundler-cache: true
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14.15.4"
+            - run: npm install -g yarn
+      - name: Update preview app
+        run: |
+          git config --global user.email "github@action.code"
+          git config --global user.name "Github Action"
+          ./scripts/update-preview.sh "${git describe --abbrev=0}"
+        shell: bash

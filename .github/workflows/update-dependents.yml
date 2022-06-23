@@ -1,0 +1,18 @@
+name: Update dependents
+
+on:
+  workflow_run:
+    workflows: ["Release packages"]
+    types:
+      - completed
+
+jobs:
+  open-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR on Voltaire and Website
+        env:
+          REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+          REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+        run: "./scripts/update-dependents.sh"
+        shell: bash

@@ -1,15 +1,14 @@
-name: Release Ably UI
+name: Release packages
+
 on:
   release:
     types: [published]
 
 jobs:
-  run-script:
+  release:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
-      contents: "read"
-      pull-requests: "write"
+      contents: "write"
     steps:
       - uses: actions/checkout@v2
         with:
@@ -22,10 +21,6 @@ jobs:
         with:
           node-version: "14.15.4"
       - run: npm install -g yarn
-      - name: Grant permissions to Scripts
-        run: |
-          chmod +x "release.sh"
-          chmod +x "./scripts/update-dependents.sh"
       - name: Release latest Ably UI version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -34,10 +29,4 @@ jobs:
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
           ./scripts/release.sh "${GITHUB_REF/refs\/tags\//}"
-        shell: bash
-      - name: Create PR on Voltaire and Website
-        env:
-          REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
-          REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-        run: "./scripts/update-dependents.sh"
         shell: bash
