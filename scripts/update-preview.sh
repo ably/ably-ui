@@ -23,6 +23,3 @@ echo "Commit preview app update to $VERSION"
 cd ..
 git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
 git commit -m "Update preview app to ably-ui $VERSION"
-
-echo "Push to origin"
-git push origin main

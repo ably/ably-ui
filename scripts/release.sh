@@ -49,6 +49,3 @@ yarn publish --no-git-tag-version --new-version $VERSION
 echo "Commit version publish"
 git add package.json lib/ably_ui/version.rb Gemfile.lock
 git commit -m "Commit version bump to $VERSION"
-
-echo "Push main to origin"
-git push origin main
