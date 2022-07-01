@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import T from "prop-types";
-import { nanoid } from "nanoid";
+import { nanoid } from "nanoid/non-secure";
 
 const Logo = ({ dataId, href = "/" }) => {
   // This fixes a bug where if the logo is rendered more than once on the page, and one of the instances
