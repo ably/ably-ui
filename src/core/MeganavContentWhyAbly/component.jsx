@@ -42,7 +42,7 @@ const MeganavContentWhyAbly = ({ absUrl }) => {
           </li>
 
           <li>
-            <a href={absUrl("/resources/datasheets")} className="group ui-meganav-media py-12">
+            <a href={absUrl("/resources")} className="group ui-meganav-media py-12">
               <p className="ui-meganav-media-heading">Resources</p>
             </a>
           </li>
