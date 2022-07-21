@@ -89,6 +89,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.7-x86_64-linux)
       racc (~> 1.4)
+    psych (3.3.2)
     puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -170,6 +171,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
+  psych (< 4)
   puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.4)
   responders
