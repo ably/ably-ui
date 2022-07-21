@@ -116,7 +116,7 @@ jobs:
   lint:
     executor:
       name: default
-      tag: 3.0.0
+      tag: 3.1.2
     steps:
       - checkout
       - yarn_install
@@ -124,7 +124,7 @@ jobs:
   format_check:
     executor:
       name: default
-      tag: 3.0.0
+      tag: 3.1.2
     steps:
       - checkout
       - yarn_install
@@ -132,7 +132,7 @@ jobs:
   cypress_tests:
     executor:
       name: default
-      tag: 3.0.0
+      tag: 3.1.2
     working_directory: ~/ably-ui/preview
     steps:
       - checkout
