@@ -2,6 +2,8 @@ import React from "react";
 import T from "prop-types";
 
 import SignOutLink from "../SignOutLink/component.jsx";
+import MeganavSearchSuggestions from "../MeganavSearchSuggestions/component.jsx";
+import Icon from "../Icon/component.jsx";
 
 import MeganavData from "../Meganav/component.json";
 import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.jsx";
@@ -33,7 +35,18 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
         <MeganavControlMobileDropdown theme={theme} />
 
         <div className="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
-          <div className="py-16 ui-grid-px bg-white">
+          <div className="pt-24 pb-16 ui-grid-px bg-white">
+            <form className="mb-16" action={absUrl("/search")} method="get">
+              <div className="relative w-full">
+                <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16" />
+                <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+              </div>
+            </form>
+
+            <div className="max-h-0 overflow-hidden transition-all" data-id="meganav-mobile-search-suggestions">
+              <MeganavSearchSuggestions absUrl={absUrl} displaySupportLink={false} />
+            </div>
+
             <ul className="mb-16">
               {MeganavData.panels.map((panel) => {
                 const PanelComponent = panels[panel.component];

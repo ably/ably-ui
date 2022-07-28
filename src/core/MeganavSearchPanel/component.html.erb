@@ -1,0 +1,20 @@
+<section class="ui-meganav-content grid-cols-12">
+  <div class="col-span-8">
+    <div class="mb-32">
+      <form class="flex items-start" action={absUrl("/search")} method="get">
+        <div class="relative w-full">
+          <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css:"absolute top-12 left-16")) %>
+          <input type="search" name="q" class="ui-input pl-48 h-48" placeholder="Search" />
+        </div>
+
+        <button type="submit" class="ui-btn-secondary ml-8 sm:ml-16 md:ml-24 xl:ml-32">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-span-12">
+    <%= render(AblyUi::Core::MeganavSearchSuggestions.new(url_base: url_base)) %>
+  </div>
+</section>

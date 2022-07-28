@@ -11,7 +11,18 @@
     <%= render(AblyUi::Core::MeganavControlMobileDropdown.new(theme_name: @theme_name)) %>
 
     <div class="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
-      <div class="py-16 ui-grid-px bg-white">
+      <div class="pt-24 pb-16 ui-grid-px bg-white">
+        <%= tag.form class: "mb-16", action: abs_url("/search"), method: "get" do %>
+          <div class="relative w-full">
+            <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-12 left-16")) %>
+            <input type="search" name="q" class="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+          </div>
+        <% end %>
+
+        <div class="max-h-0 overflow-hidden transition-all" data-id="meganav-mobile-search-suggestions">
+           <%= render(AblyUi::Core::MeganavSearchSuggestions.new(url_base: url_base, display_support_link: false)) %>
+        </div>
+
         <ul class="mb-16">
           <% panels.each do |panel| %>
             <li class="ui-meganav-mobile-item">

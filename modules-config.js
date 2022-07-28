@@ -34,6 +34,9 @@ module.exports = [
       "Slider",
       "CustomerLogos",
       "CompanyAutocomplete",
+      "MeganavSearch",
+      "MeganavSearchSuggestions",
+      "MeganavSearchPanel",
     ],
   },
   {

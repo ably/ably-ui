@@ -7,6 +7,8 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const dropdown = queryId("meganav-mobile-dropdown");
   const menuIcon = queryId("meganav-control-mobile-dropdown-menu");
   const closeIcon = queryId("meganav-control-mobile-dropdown-close");
+  const MeganavSearchSuggestionsToggle = queryId("meganav-mobile-search-input");
+  const MeganavSearchSuggestions = queryId("meganav-mobile-search-suggestions");
 
   const clickHandler = () => {
     const ariaExpanded = control.getAttribute("aria-expanded");
@@ -26,7 +28,27 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
     closeIcon.classList.toggle("hidden");
   };
 
+  const focusSuggestionsHandler = () => {
+    MeganavSearchSuggestions.classList.add("max-h-96");
+  };
+  const blurSuggestionsHandler = (event) => {
+    if (
+      event.relatedTarget === MeganavSearchSuggestions.querySelectorAll("a")[0]
+    ) {
+      return;
+    }
+    MeganavSearchSuggestions.classList.remove("max-h-96");
+  };
+
   control.addEventListener("click", clickHandler);
+  MeganavSearchSuggestionsToggle.addEventListener(
+    "focus",
+    focusSuggestionsHandler
+  );
+  MeganavSearchSuggestionsToggle.addEventListener(
+    "blur",
+    blurSuggestionsHandler
+  );
 
   return {
     teardown: () => {

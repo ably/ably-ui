@@ -5,7 +5,6 @@ import { connectState } from "../remote-data-store";
 import { selectSessionData } from "../remote-session-data";
 
 import Logo from "../Logo/component.jsx";
-import Icon from "../Icon/component.jsx";
 
 import MeganavScripts from "./component.js";
 import MeganavItemsDesktop from "../MeganavItemsDesktop/component.jsx";
@@ -19,6 +18,7 @@ import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
+import MeganavSearch from "../MeganavSearch/component.jsx";
 
 const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
   return sessionState.signedIn ? (
@@ -31,14 +31,12 @@ const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
         </a>
       </li>
       <li className="ui-meganav-item">
-        <a href={absUrl(loginLink)} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
+        <a href={absUrl(loginLink)} className={`ui-meganav-link mr-0 ${theme.textColor}`} data-id="meganav-link">
           Login
         </a>
       </li>
       <li className="ui-meganav-item">
-        <button className="relative h-24 w-24 ml-12 mr-24 p-0 block" data-id="meganav-link">
-          <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute -top-1 left-0" />
-        </button>
+        <MeganavSearch absUrl={absUrl} />
       </li>
       <li className="ui-meganav-item">
         <a href={absUrl("/sign-up")} data-id="meganav-sign-up-btn" className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>

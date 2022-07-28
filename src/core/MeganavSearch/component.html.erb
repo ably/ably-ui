@@ -1,0 +1,14 @@
+<button
+  type="button"
+  data-id="meganav-control"
+  class="h-64 w-24 px-24 pr-48 py-20"
+  aria-expanded="false"
+  aria-controls="panel-search"
+  aria-label="Show Search Panel"
+>
+  <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black")) %>
+</button>
+
+<div class="ui-meganav-panel invisible" id="panel-search" data-id="meganav-panel">
+  <%= render(AblyUi::Core::MeganavSearchPanel.new(url_base: url_base)) %>
+</div>
