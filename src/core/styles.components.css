@@ -24,21 +24,6 @@
     stroke: var(--color-dark-grey);
   }
 
-  /* Extend how tailwind does group hover for icons */
-  .group {
-    &:hover {
-      .group-hover\:icon-gui-hover {
-        stroke: var(--color-gui-hover);
-      }
-    }
-
-    &:focus {
-      .group-focus\:icon-gui-focus {
-        stroke: var(--color-gui-focus);
-      }
-    }
-  }
-
   .ui-version-tag {
     @apply inline-block absolute align-top uppercase font-bold whitespace-nowrap;
 
