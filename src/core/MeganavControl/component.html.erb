@@ -1,6 +1,6 @@
 <%= button_tag(type: "button",
-               class: ["ui-meganav-link", "h-64", "flex", "items-center", "group", theme(:text_color)],
+               class: ["ui-meganav-link", "h-64", "flex", "items-center", "group", theme(:text_color), additional_css],
                data: { id: "meganav-control" },
-               aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do -%>
+               aria: { expanded: false, controls: aria_controls, label: "Show #{content}" }) do -%>
   <%= content -%><%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black", additional_css: "transform rotate-90 group-hover:text-gui-hover group-focus:text-gui-focus")) %>
 <% end %>
