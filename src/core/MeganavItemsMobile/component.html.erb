@@ -16,6 +16,8 @@
           <div class="relative w-full">
             <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-12 left-16 hover:text-gui-hover")) %>
             <input type="search" name="q" class="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+
+            <%= render(AblyUi::Core::MeganavSearchAutocomplete.new) %>
           </div>
         <% end %>
 

@@ -40,3 +40,5 @@ gem 'ably-ui', '7.10.0.dev.45e131a', require: 'ably_ui'
 
 # https://stackoverflow.com/questions/71191685/visit-psych-nodes-alias-unknown-alias-default-psychbadalias
 gem 'psych', '< 4'
+
+gem 'dotenv-rails', groups: [:development, :test]

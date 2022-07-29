@@ -9,6 +9,7 @@ import MeganavData from "../Meganav/component.json";
 import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.jsx";
 import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.jsx";
 import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.jsx";
+import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component.jsx";
 
 const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, absUrl }) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
@@ -40,6 +41,8 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
               <div className="relative w-full">
                 <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16 hover:text-gui-hover" />
                 <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+
+                <MeganavSearchAutocomplete />
               </div>
             </form>
 

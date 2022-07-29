@@ -17,6 +17,7 @@ import MeganavControl from "../MeganavControl/component";
 import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component";
 import MobilePanelOpenClick from "../MeganavControlMobilePanelOpen/component";
 import MobilePanelCloseClick from "../MeganavControlMobilePanelClose/component";
+import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component";
 
 // Close menu when user clicks outside of viewport
 const windowOnBlur = (closeAll) => {
@@ -115,6 +116,7 @@ export default function Meganav({ themeName } = { themeName: null }) {
   const controls = MeganavControl();
   const panelOpenControls = MobilePanelOpenClick();
   const panelCloseControls = MobilePanelCloseClick();
+  const search = MeganavSearchAutocomplete();
 
   const mobileDropdownControl = MeganavControlMobileDropdown({
     clearPanels: () =>
@@ -127,6 +129,7 @@ export default function Meganav({ themeName } = { themeName: null }) {
       ...panelOpenControls,
       ...panelCloseControls,
       ...controls,
+      ...search,
     ].forEach((i) => i.clear());
 
   const teardowns = [
@@ -137,6 +140,7 @@ export default function Meganav({ themeName } = { themeName: null }) {
     ...controls,
     ...panelOpenControls,
     ...panelCloseControls,
+    ...search,
   ].map((i) => i.teardown);
 
   return () => teardowns.forEach((teardown) => teardown());

@@ -24,6 +24,8 @@ module Preview
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    config.add_search_api_key = ENV['ADDSEARCH_API_KEY']
+
     Dir[
       File.join(
         AblyUi::Integration.asset_paths,
