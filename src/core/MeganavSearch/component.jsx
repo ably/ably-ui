@@ -15,7 +15,7 @@ const MeganavSearch = ({ absUrl }) => {
         aria-controls="panel-search"
         aria-label={`Show Search Panel`}
       >
-        <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="" />
+        <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="hover:text-gui-hover" />
       </button>
 
       <div className="ui-meganav-panel invisible" id="panel-search" data-id="meganav-panel">

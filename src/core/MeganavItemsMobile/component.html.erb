@@ -14,7 +14,7 @@
       <div class="pt-24 pb-16 ui-grid-px bg-white">
         <%= tag.form class: "mb-16", action: abs_url("/search"), method: "get" do %>
           <div class="relative w-full">
-            <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-12 left-16")) %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-12 left-16 hover:text-gui-hover")) %>
             <input type="search" name="q" class="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
           </div>
         <% end %>

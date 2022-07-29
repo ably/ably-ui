@@ -38,7 +38,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
           <div className="pt-24 pb-16 ui-grid-px bg-white">
             <form className="mb-16" action={absUrl("/search")} method="get">
               <div className="relative w-full">
-                <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16" />
+                <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16 hover:text-gui-hover" />
                 <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
               </div>
             </form>
