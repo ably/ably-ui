@@ -3,6 +3,10 @@ import {
   PLATFORM_PANEL_OPEN_CONTROL,
   WHY_ABLY_PANEL,
   WHY_ABLY_PANEL_OPEN_CONTROL,
+  SEARCH_PANEL,
+  SEARCH_PANEL_OPEN_CONTROL,
+  SEARCH_PANEL_MOBILE_INPUT,
+  SEARCH_PANEL_INPUT,
   MOBILE_DROPDOWN,
   MOBILE_DROPDOWN_CONTROL,
   MOBILE_PLATFORM_PANEL,
@@ -53,6 +57,16 @@ describe("Opening panels on desktop", () => {
       cy.get(OUTSIDE_MEGANAV).trigger("click", { force: true });
       cy.get(PLATFORM_PANEL).should("not.be.visible");
     });
+
+    it("opens the search panel when a control is hovered over and closes it on leave", () => {
+      cy.get(SEARCH_PANEL).should("not.be.visible");
+
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("mouseenter");
+      cy.get(SEARCH_PANEL).should("be.visible");
+
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("mouseleave");
+      cy.get(SEARCH_PANEL).should("not.be.visible");
+    });
   };
 
   beforeEach("set viewport", () => {
@@ -96,6 +110,15 @@ describe("Opening panels on mobile", () => {
       cy.get(MOBILE_PLATFORM_PANEL).should("be.visible");
       cy.get(MOBILE_PLATFORM_PANEL_CLOSE_CONTROL).trigger("click");
       cy.get(MOBILE_PLATFORM_PANEL).should("not.be.visible");
+    });
+
+    it("shows the search input and suggestions", () => {
+      cy.get(MOBILE_DROPDOWN_CONTROL).trigger("click");
+      cy.get(MOBILE_DROPDOWN).should("be.visible");
+
+      cy.get(SEARCH_PANEL_MOBILE_INPUT).should("be.visible");
+      cy.get(SEARCH_PANEL_MOBILE_INPUT).trigger("focus");
+      cy.contains("Popular pages");
     });
   };
 
@@ -277,5 +300,73 @@ describe("Notice", () => {
     });
 
     sharedNonDefaultsSpecs("/components/meganav?framwork=vw");
+  });
+});
+
+describe("Search", () => {
+  describe("mobile", () => {
+    const sharedSpecs = () => {
+      it("shows suggestions dropdown", () => {
+        cy.get(MOBILE_DROPDOWN_CONTROL).trigger("click");
+        cy.get(SEARCH_PANEL_MOBILE_INPUT).trigger("focus");
+        cy.get(SEARCH_PANEL_MOBILE_INPUT).type("a");
+        cy.get("[data-id='meganav-search-autocomplete-list'] li")
+          .its("length")
+          .should("be.gte", 0);
+      });
+    };
+
+    beforeEach("set viewport", () => {
+      cy.viewport("iphone-8");
+    });
+
+    describe("react", () => {
+      beforeEach(() => {
+        cy.visit("/components/meganav");
+      });
+
+      sharedSpecs();
+    });
+
+    describe("vw", () => {
+      beforeEach(() => {
+        cy.visit("/components/meganav?framework=vw");
+      });
+
+      sharedSpecs();
+    });
+  });
+
+  describe("desktop", () => {
+    const sharedSpecs = () => {
+      it("shows suggestions dropdown", () => {
+        cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
+        cy.get(SEARCH_PANEL_INPUT).trigger("focus");
+        cy.get(SEARCH_PANEL_INPUT).type("a");
+        cy.get("[data-id='meganav-search-autocomplete-list'] li")
+          .its("length")
+          .should("be.gte", 0);
+      });
+    };
+
+    beforeEach("set viewport", () => {
+      cy.viewport("macbook-15");
+    });
+
+    describe("react", () => {
+      beforeEach(() => {
+        cy.visit("/components/meganav");
+      });
+
+      sharedSpecs();
+    });
+
+    describe("vw", () => {
+      beforeEach(() => {
+        cy.visit("/components/meganav?framework=vw");
+      });
+
+      sharedSpecs();
+    });
   });
 });
