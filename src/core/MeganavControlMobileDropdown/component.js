@@ -54,6 +54,14 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
     teardown: () => {
       control.removeEventListener("click", clickHandler);
       scrollLock.enablePageScroll();
+      meganavSearchSuggestionsToggle.removeEventListener(
+        "focus",
+        focusSuggestionsHandler
+      );
+      meganavSearchSuggestionsToggle.removeEventListener(
+        "blur",
+        blurSuggestionsHandler
+      );
     },
     clear: () => {
       dropdown.classList.replace("visible", "invisible");
@@ -61,6 +69,7 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
       menuIcon.classList.remove("hidden");
       closeIcon.classList.add("hidden");
       scrollLock.enablePageScroll();
+      meganavSearchSuggestions.classList.remove("max-h-96");
     },
   };
 };
