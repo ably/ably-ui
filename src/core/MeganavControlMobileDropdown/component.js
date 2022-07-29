@@ -7,8 +7,8 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const dropdown = queryId("meganav-mobile-dropdown");
   const menuIcon = queryId("meganav-control-mobile-dropdown-menu");
   const closeIcon = queryId("meganav-control-mobile-dropdown-close");
-  const MeganavSearchSuggestionsToggle = queryId("meganav-mobile-search-input");
-  const MeganavSearchSuggestions = queryId("meganav-mobile-search-suggestions");
+  const meganavSearchSuggestionsToggle = queryId("meganav-mobile-search-input");
+  const meganavSearchSuggestions = queryId("meganav-mobile-search-suggestions");
 
   const clickHandler = () => {
     const ariaExpanded = control.getAttribute("aria-expanded");
@@ -29,23 +29,23 @@ const MeganavControlMobileDropdown = ({ clearPanels }) => {
   };
 
   const focusSuggestionsHandler = () => {
-    MeganavSearchSuggestions.classList.add("max-h-96");
+    meganavSearchSuggestions.classList.add("max-h-96");
   };
   const blurSuggestionsHandler = (event) => {
     if (
-      event.relatedTarget === MeganavSearchSuggestions.querySelectorAll("a")[0]
+      event.relatedTarget === meganavSearchSuggestions.querySelectorAll("a")[0]
     ) {
       return;
     }
-    MeganavSearchSuggestions.classList.remove("max-h-96");
+    meganavSearchSuggestions.classList.remove("max-h-96");
   };
 
   control.addEventListener("click", clickHandler);
-  MeganavSearchSuggestionsToggle.addEventListener(
+  meganavSearchSuggestionsToggle.addEventListener(
     "focus",
     focusSuggestionsHandler
   );
-  MeganavSearchSuggestionsToggle.addEventListener(
+  meganavSearchSuggestionsToggle.addEventListener(
     "blur",
     blurSuggestionsHandler
   );
