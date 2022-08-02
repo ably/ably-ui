@@ -40,7 +40,21 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
             <form className="mb-16" action={absUrl("/search")} method="get">
               <div className="relative w-full">
                 <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16 hover:text-gui-hover" />
-                <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+                <button
+                  type="button"
+                  className="absolute top-12 right-16 p-0 focus:outline-gui-focus m-0 md:hidden invisible"
+                  data-id="meganav-search-input-clear"
+                >
+                  <Icon name="icon-gui-cross-circled-fill" color="text-dark-grey" size="1.5rem" additionalCSS="" />
+                </button>
+                <input
+                  type="search"
+                  name="q"
+                  className="ui-input px-48 h-48"
+                  style={{ maxWidth: "none" }}
+                  placeholder="Search"
+                  data-id="meganav-mobile-search-input"
+                />
 
                 <MeganavSearchAutocomplete />
               </div>

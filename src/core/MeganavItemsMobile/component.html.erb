@@ -15,7 +15,21 @@
         <%= tag.form class: "mb-16", action: abs_url("/search"), method: "get" do %>
           <div class="relative w-full">
             <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-12 left-16 hover:text-gui-hover")) %>
-            <input type="search" name="q" class="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-mobile-search-input" />
+            <button
+              type="button"
+              class="absolute top-12 right-16 p-0 focus:outline-gui-focus m-0 md:hidden invisible"
+              data-id="meganav-search-input-clear"
+            >
+              <%= render(AblyUi::Core::Icon.new(name: "icon-gui-cross-circled-fill", size: "1.5rem", color: "text-dark-grey")) %>
+            </button>
+            <input
+              type="search"
+              name="q"
+              class="ui-input px-48 h-48"
+              style={{ maxWidth: "none" }}
+              placeholder="Search"
+              data-id="meganav-mobile-search-input"
+            />
 
             <%= render(AblyUi::Core::MeganavSearchAutocomplete.new) %>
           </div>

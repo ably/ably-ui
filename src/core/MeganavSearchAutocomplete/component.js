@@ -1,7 +1,7 @@
 import { queryId } from "../dom-query";
 import AddSearchClient from "addsearch-js-client";
 
-const init = ({ input, container, listContainer, client }) => {
+const init = ({ input, container, listContainer, clear, client }) => {
   client.setAnalyticsTag("Meganav autocomplete");
   client.setThrottleTime(400);
 
@@ -10,9 +10,26 @@ const init = ({ input, container, listContainer, client }) => {
     listContainer.innerHTML = "";
   };
 
+  const toggleClearBtn = (query) => {
+    if ((query || "").length > 0 && clear) {
+      clear.classList.remove("invisible");
+    } else if (clear) {
+      clear.classList.add("invisible");
+    }
+  };
+
+  const markQueryInSuggestion = (suggestion, query) => {
+    return suggestion.value.replace(
+      query.toLowerCase(),
+      `<span class="font-light">${query}</span>`
+    );
+  };
+
   const renderResults =
     (query) =>
     (results = { suggestions: [] }) => {
+      toggleClearBtn(query);
+
       if (results.suggestions.length === 0) {
         clearResults();
         return;
@@ -30,13 +47,12 @@ const init = ({ input, container, listContainer, client }) => {
           "text-left",
           "rounded",
           "hover:text-gui-hover",
+          "focus:outline-gui-focus",
           "hover:bg-light-grey"
         );
 
-        button.innerHTML = suggestion.value.replace(
-          query,
-          `<span class="font-light">${query}</span>`
-        );
+        button.innerHTML = markQueryInSuggestion(suggestion, query);
+
 
         button.addEventListener("click", () => {
           window.location = `/search?q=${suggestion}`;
@@ -61,11 +77,27 @@ const init = ({ input, container, listContainer, client }) => {
     }
   };
 
+  let clearHandler;
+  if (clear) {
+    clearHandler = () => {
+      input.value = "";
+      clear.classList.add("invisible");
+      clearResults();
+    };
+    clear.addEventListener("click", clearHandler);
+  }
+
   input.addEventListener("keyup", keyupHandler);
 
   return {
-    teardown: () => input.removeEventListener("keyup", keyupHandler),
-    clear: () => clearResults(),
+    teardown: () => {
+      input.removeEventListener("keyup", keyupHandler);
+      if (clear) clear.removeEventListener("click", clearHandler);
+    },
+    clear: () => {
+      input.value = "";
+      clearResults();
+    },
   };
 };
 
@@ -89,7 +121,8 @@ export default () => {
         parent
       );
       const listContainer = queryId("meganav-search-autocomplete-list", parent);
+      const clear = queryId("meganav-search-input-clear", parent);
 
-      return init({ input, container, listContainer, client });
+      return init({ input, container, listContainer, client, clear });
     });
 };
