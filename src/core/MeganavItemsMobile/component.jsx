@@ -50,7 +50,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
               <MeganavSearchSuggestions absUrl={absUrl} displaySupportLink={false} />
             </div>
 
-            <ul className="mb-16">
+            <ul className="mb-16" data-id="meganav-mobile-panel-controls">
               {MeganavData.panels.map((panel) => {
                 const PanelComponent = panels[panel.component];
 

@@ -75,9 +75,11 @@ describe("Panels", () => {
             cy.get('[data-id="meganav-control-mobile-dropdown"]').trigger(
               "click"
             );
-            cy.get('[data-id="meganav-mobile-dropdown"]')
-              .contains(name)
-              .trigger("click");
+
+            cy.get('[data-id="meganav-mobile-panel-controls"]').within(() => {
+              cy.contains(name).trigger("click");
+            });
+            cy.get('[data-id="meganav-mobile-dropdown"]');
           },
           selector: `#${lowercaseName}-panel-mobile`,
           componentName: `${noSpacesName}PanelMobile`,
