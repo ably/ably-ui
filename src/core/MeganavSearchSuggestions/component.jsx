@@ -8,7 +8,7 @@ const MeganavSearchSuggestions = ({ absUrl, displaySupportLink }) => {
     <>
       <p className="ui-text-overline2 text-cool-black py-12">Popular pages</p>
 
-      <div className="flex justify-between items-center overflow-x-scroll">
+      <div className="flex justify-between items-center overflow-x-scroll md:overflow-auto">
         <ul className="flex">
           <li className="py-12 pr-8 flex-shrink-0">
             <a href={absUrl("/docs/how-ably-works")} className="ui-text-p2">
