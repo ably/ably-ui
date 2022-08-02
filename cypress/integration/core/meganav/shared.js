@@ -30,6 +30,8 @@ export const SEARCH_PANEL_OPEN_CONTROL =
 export const SEARCH_PANEL_INPUT = "[data-id='meganav-search-input']";
 export const SEARCH_PANEL_MOBILE_INPUT =
   "[data-id='meganav-mobile-search-input']";
+export const SEARCH_PANEL_MOBILE_CLEAR =
+  "[data-id='meganav-search-input-clear']";
 
 export const OUTSIDE_MEGANAV = "body";
 

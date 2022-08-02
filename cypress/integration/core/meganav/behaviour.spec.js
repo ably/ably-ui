@@ -7,6 +7,7 @@ import {
   SEARCH_PANEL_OPEN_CONTROL,
   SEARCH_PANEL_MOBILE_INPUT,
   SEARCH_PANEL_INPUT,
+  SEARCH_PANEL_MOBILE_CLEAR,
   MOBILE_DROPDOWN,
   MOBILE_DROPDOWN_CONTROL,
   MOBILE_PLATFORM_PANEL,
@@ -58,14 +59,34 @@ describe("Opening panels on desktop", () => {
       cy.get(PLATFORM_PANEL).should("not.be.visible");
     });
 
-    it("opens the search panel when a control is hovered over and closes it on leave", () => {
+    it("toggle the search panel when a control is clicked", () => {
       cy.get(SEARCH_PANEL).should("not.be.visible");
 
-      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("mouseenter");
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
       cy.get(SEARCH_PANEL).should("be.visible");
 
-      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("mouseleave");
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
       cy.get(SEARCH_PANEL).should("not.be.visible");
+    });
+
+    it("do not display other panels on hover when search panel is open", () => {
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
+      cy.get(SEARCH_PANEL).should("be.visible");
+
+      cy.get(PLATFORM_PANEL_OPEN_CONTROL).trigger("mouseenter");
+      cy.get(PLATFORM_PANEL).should("not.be.visible");
+    });
+
+    it("should focus on input when search panel is opened", () => {
+      cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
+      cy.get(SEARCH_PANEL).should("be.visible");
+      cy.get(SEARCH_PANEL_INPUT).then(($input) => {
+        const input = $input.get(0);
+
+        cy.focused().should(($focused) => {
+          expect($focused[0]).to.eql(input);
+        });
+      });
     });
   };
 
@@ -119,6 +140,21 @@ describe("Opening panels on mobile", () => {
       cy.get(SEARCH_PANEL_MOBILE_INPUT).should("be.visible");
       cy.get(SEARCH_PANEL_MOBILE_INPUT).trigger("focus");
       cy.contains("Popular pages");
+    });
+
+    it("shows the search input and the clear button after typing", () => {
+      cy.get(MOBILE_DROPDOWN_CONTROL).trigger("click");
+      cy.get(SEARCH_PANEL_MOBILE_CLEAR).should("not.be.visible");
+      cy.get(SEARCH_PANEL_MOBILE_INPUT).type("a");
+      cy.get(SEARCH_PANEL_MOBILE_CLEAR).should("be.visible");
+    });
+
+    it("should clear the input and not show clear after typing and clicking clear", () => {
+      cy.get(MOBILE_DROPDOWN_CONTROL).trigger("click");
+      cy.get(SEARCH_PANEL_MOBILE_INPUT).type("a");
+      cy.get(SEARCH_PANEL_MOBILE_CLEAR).trigger("click");
+      cy.get(SEARCH_PANEL_MOBILE_CLEAR).should("not.be.visible");
+      cy.get(SEARCH_PANEL_MOBILE_INPUT).should("not.have.value", "a");
     });
   };
 
