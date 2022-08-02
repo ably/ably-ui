@@ -25,6 +25,26 @@ const init = ({ input, container, listContainer, clear, client }) => {
     );
   };
 
+  const navigateToUrl = (q) => (window.location = `/search?q=${q}`);
+
+  const focusNext = (index) => {
+    const nextSuggestion = listContainer.querySelector(
+      `[data-suggestion-index="${index + 1}"]`
+    );
+    if (!nextSuggestion) return;
+    nextSuggestion.focus();
+  };
+
+  const focusPrevious = (index) => {
+    const previousIndex = index - 1;
+
+    const previousSuggestion = listContainer.querySelector(
+      `[data-suggestion-index="${previousIndex}"]`
+    );
+    if (!previousSuggestion) return;
+    previousSuggestion.focus();
+  };
+
   const renderResults =
     (query) =>
     (results = { suggestions: [] }) => {
@@ -35,7 +55,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
         return;
       }
 
-      const items = results.suggestions.map((suggestion) => {
+      const items = results.suggestions.map((suggestion, index) => {
         const li = document.createElement("li");
         const button = document.createElement("button");
 
@@ -53,9 +73,24 @@ const init = ({ input, container, listContainer, clear, client }) => {
 
         button.innerHTML = markQueryInSuggestion(suggestion, query);
 
+        button.dataset.suggestionIndex = index;
 
         button.addEventListener("click", () => {
-          window.location = `/search?q=${suggestion}`;
+          navigateToUrl(suggestion);
+        });
+
+        button.addEventListener("keydown", (e) => {
+          const key = e.key;
+
+          if (key === "ArrowDown") {
+            focusNext();
+          } else if (key === "ArrowUp" && index - 1 < 0) {
+            input.focus();
+          } else if (key === "ArrowUp" && index - 1 >= 0) {
+            focusPrevious();
+          } else if (key === "Enter" || key === "Space") {
+            navigateToUrl(suggestion);
+          }
         });
 
         li.appendChild(button);
@@ -69,6 +104,12 @@ const init = ({ input, container, listContainer, clear, client }) => {
 
   const keyupHandler = (e) => {
     const query = e.target.value;
+    const key = e.key;
+
+    if (key === "ArrowDown") {
+      focusNext(0);
+      return;
+    }
 
     if (!query) {
       clearResults();
