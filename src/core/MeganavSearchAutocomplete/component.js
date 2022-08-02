@@ -18,8 +18,8 @@ const init = ({ input, container, listContainer, clear, client }) => {
     }
   };
 
-  const markQueryInSuggestion = (suggestion, query) => {
-    return suggestion.value.replace(
+  const markQueryInSuggestion = (suggestionValue, query) => {
+    return suggestionValue.replace(
       query.toLowerCase(),
       `<span class="font-light">${query}</span>`
     );
@@ -58,6 +58,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
       const items = results.suggestions.map((suggestion, index) => {
         const li = document.createElement("li");
         const button = document.createElement("button");
+        button.type = "button";
 
         button.classList.add(
           "ui-text-menu2",
@@ -71,12 +72,12 @@ const init = ({ input, container, listContainer, clear, client }) => {
           "hover:bg-light-grey"
         );
 
-        button.innerHTML = markQueryInSuggestion(suggestion, query);
+        button.innerHTML = markQueryInSuggestion(suggestion.value, query);
 
         button.dataset.suggestionIndex = index;
 
         button.addEventListener("click", () => {
-          navigateToUrl(suggestion);
+          navigateToUrl(suggestion.value);
         });
 
         button.addEventListener("keydown", (e) => {
@@ -89,7 +90,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
           } else if (key === "ArrowUp" && index - 1 >= 0) {
             focusPrevious();
           } else if (key === "Enter" || key === "Space") {
-            navigateToUrl(suggestion);
+            navigateToUrl(suggestion.value);
           }
         });
 
