@@ -10,6 +10,7 @@ const MeganavSearch = ({ absUrl }) => {
       <button
         type="button"
         data-id="meganav-control"
+        data-control="search"
         className="h-64 w-24 px-24 pr-48 py-20"
         aria-expanded="false"
         aria-controls="panel-search"
