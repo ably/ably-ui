@@ -84,11 +84,11 @@ const init = ({ input, container, listContainer, clear, client }) => {
           const key = e.key;
 
           if (key === "ArrowDown") {
-            focusNext();
+            focusNext(index);
           } else if (key === "ArrowUp" && index - 1 < 0) {
             input.focus();
           } else if (key === "ArrowUp" && index - 1 >= 0) {
-            focusPrevious();
+            focusPrevious(index);
           } else if (key === "Enter" || key === "Space") {
             navigateToUrl(suggestion.value);
           }
