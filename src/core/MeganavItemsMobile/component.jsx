@@ -53,6 +53,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
                   className="ui-input px-48 h-48"
                   style={{ maxWidth: "none" }}
                   placeholder="Search"
+                  autoComplete="off"
                   data-id="meganav-mobile-search-input"
                 />
 

@@ -13,7 +13,7 @@ const MeganavSearchPanel = ({ absUrl }) => {
           <form className="flex items-start" action={absUrl("/search")} method="get">
             <div className="relative w-full">
               <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16" />
-              <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" data-id="meganav-search-input" />
+              <input type="search" name="q" className="ui-input pl-48 h-48" placeholder="Search" autoComplete="off" data-id="meganav-search-input" />
 
               <MeganavSearchAutocomplete />
             </div>
