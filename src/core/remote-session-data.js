@@ -11,7 +11,7 @@ const fetchSessionData = async (store, sessionUrl) => {
 
   try {
     if (!sessionUrl) {
-      console.warn(
+      console.log(
         `Skipping fetching session, invalid sessionUrl: "${sessionUrl}"`
       );
       sessionLoaded();

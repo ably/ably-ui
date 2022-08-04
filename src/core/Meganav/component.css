@@ -48,9 +48,13 @@
 
   .ui-meganav-link {
     @apply text-menu2 font-medium block;
-    @apply mx-8 lg:mx-12 px-0 py-20;
+    @apply mr-12 lg:mr-24 px-0 py-20;
     @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
     @apply transition-colors;
+  }
+
+  .ui-meganav-item {
+    flex: 1 0 auto;
   }
 
   .ui-meganav-mobile-link {

@@ -2,11 +2,14 @@ import React from "react";
 import T from "prop-types";
 
 import SignOutLink from "../SignOutLink/component.jsx";
+import MeganavSearchSuggestions from "../MeganavSearchSuggestions/component.jsx";
+import Icon from "../Icon/component.jsx";
 
 import MeganavData from "../Meganav/component.json";
 import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.jsx";
 import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.jsx";
 import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.jsx";
+import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component.jsx";
 
 const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, absUrl }) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
@@ -33,8 +36,36 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
         <MeganavControlMobileDropdown theme={theme} />
 
         <div className="ui-meganav-mobile-dropdown invisible" id="meganav-mobile-dropdown" data-id="meganav-mobile-dropdown">
-          <div className="py-16 ui-grid-px bg-white">
-            <ul className="mb-16">
+          <div className="pt-24 pb-16 ui-grid-px bg-white">
+            <form className="mb-16" action={absUrl("/search")} method="get">
+              <div className="relative w-full">
+                <Icon name="icon-gui-search" color="text-cool-black" size="1.5rem" additionalCSS="absolute top-12 left-16 hover:text-gui-hover" />
+                <button
+                  type="button"
+                  className="absolute top-12 right-16 p-0 focus:outline-gui-focus m-0 md:hidden invisible"
+                  data-id="meganav-search-input-clear"
+                >
+                  <Icon name="icon-gui-cross-circled-fill" color="text-dark-grey" size="1.5rem" additionalCSS="" />
+                </button>
+                <input
+                  type="search"
+                  name="q"
+                  className="ui-input px-48 h-48"
+                  style={{ maxWidth: "none" }}
+                  placeholder="Search"
+                  autoComplete="off"
+                  data-id="meganav-mobile-search-input"
+                />
+
+                <MeganavSearchAutocomplete />
+              </div>
+            </form>
+
+            <div className="max-h-0 overflow-hidden transition-all" data-id="meganav-mobile-search-suggestions">
+              <MeganavSearchSuggestions absUrl={absUrl} displaySupportLink={false} />
+            </div>
+
+            <ul className="mb-16" data-id="meganav-mobile-panel-controls">
               {MeganavData.panels.map((panel) => {
                 const PanelComponent = panels[panel.component];
 

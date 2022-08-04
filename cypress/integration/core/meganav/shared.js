@@ -24,6 +24,15 @@ export const MOBILE_PLATFORM_PANEL_OPEN_CONTROL =
 export const MOBILE_PLATFORM_PANEL_CLOSE_CONTROL =
   "[data-id='meganav-control-mobile-panel-close'][aria-controls='platform-panel-mobile']";
 
+export const SEARCH_PANEL = "#panel-search";
+export const SEARCH_PANEL_OPEN_CONTROL =
+  "[data-id='meganav-control'][aria-controls='panel-search']";
+export const SEARCH_PANEL_INPUT = "[data-id='meganav-search-input']";
+export const SEARCH_PANEL_MOBILE_INPUT =
+  "[data-id='meganav-mobile-search-input']";
+export const SEARCH_PANEL_MOBILE_CLEAR =
+  "[data-id='meganav-search-input-clear']";
+
 export const OUTSIDE_MEGANAV = "body";
 
 export const NOTICE = "[data-id='ui-notice']";

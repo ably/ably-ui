@@ -2,20 +2,25 @@
   <%= notice %>
 
   <div class="ui-meganav ui-grid-px">
-    <%= render(AblyUi::Core::Logo.new(data_id: "meganav-logo", href: logo_link)) %>
+    <div className="mr-24">
+      <%= render(AblyUi::Core::Logo.new(data_id: "meganav-logo", href: logo_link)) %>
+    </div>
     <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name, url_base: url_base)) %>
 
     <% if @session_data[:signedIn] %>
       <%= render(AblyUi::Core::MeganavItemsSignedIn.new(session_data: @session_data, theme_name: @theme_name, url_base: url_base)) %>
     <% else %>
       <ul class="hidden md:flex items-center">
-        <li>
+        <li class="ui-meganav-item">
           <%= link_to "Contact us", abs_url("/contact"), data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
         </li>
-        <li>
-          <%= link_to "Login", abs_url(login_link), data: { id: "meganav-link" }, class: ["ui-meganav-link", theme(:text_color)] %>
+        <li class="ui-meganav-item">
+          <%= link_to "Login", abs_url(login_link), data: { id: "meganav-link" }, class: ["ui-meganav-link", "mr-0", theme(:text_color)] %>
         </li>
-        <li class="ml-16">
+        <li class="ui-meganav-item">
+          <%= render(AblyUi::Core::MeganavSearch.new(url_base: url_base)) %>
+        </li>
+        <li class="ui-meganav-item">
           <%= link_to "Sign up free", abs_url("/sign-up"), data: { id: "meganav-sign-up-btn" }, class: ["ui-btn", "p-btn-small", theme(:button_background_color), theme(:button_text_color)] %>
         </li>
       </ul>

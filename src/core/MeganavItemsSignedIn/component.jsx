@@ -3,6 +3,7 @@ import T from "prop-types";
 
 import MeganavControl from "../MeganavControl/component.jsx";
 import SignOutLink from "../SignOutLink/component.jsx";
+import MeganavSearch from "../MeganavSearch/component.jsx";
 
 const truncate = (string, length) => {
   return string?.length && string.length > length ? `${string.slice(0, length - 1)}…` : string;
@@ -16,7 +17,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme, absUrl }) => {
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <MeganavControl ariaControls="account-panel" theme={theme}>
+        <MeganavControl ariaControls="account-panel" theme={theme} additionalCSS="mr-0">
           {accountName}
         </MeganavControl>
 
@@ -70,8 +71,12 @@ const MeganavItemsSignedIn = ({ sessionState, theme, absUrl }) => {
         </div>
       </li>
 
+      <li>
+        <MeganavSearch absUrl={absUrl} />
+      </li>
+
       {sessionState.account && (
-        <li className="ml-16">
+        <li>
           <a href={absUrl(sessionState.account.links.dashboard.href)} className="ui-btn-secondary p-btn-small">
             Dashboard
           </a>

@@ -18,23 +18,27 @@ import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
+import MeganavSearch from "../MeganavSearch/component.jsx";
 
 const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
   return sessionState.signedIn ? (
     <MeganavItemsSignedIn absUrl={absUrl} sessionState={sessionState} theme={theme} />
   ) : (
     <ul className="hidden md:flex items-center">
-      <li>
+      <li className="ui-meganav-item">
         <a href={absUrl("/contact")} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
           Contact us
         </a>
       </li>
-      <li>
-        <a href={absUrl(loginLink)} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
+      <li className="ui-meganav-item">
+        <a href={absUrl(loginLink)} className={`ui-meganav-link mr-0 ${theme.textColor}`} data-id="meganav-link">
           Login
         </a>
       </li>
-      <li className="ml-16">
+      <li className="ui-meganav-item">
+        <MeganavSearch absUrl={absUrl} />
+      </li>
+      <li className="ui-meganav-item">
         <a href={absUrl("/sign-up")} data-id="meganav-sign-up-btn" className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}>
           Sign up free
         </a>
@@ -81,7 +85,10 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
     <nav className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`} data-id="meganav" aria-label="Main">
       {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
-        <Logo dataId="meganav-logo" href={urlBase} />
+        <div className="mr-24">
+          <Logo dataId="meganav-logo" href={urlBase} />
+        </div>
+
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} absUrl={absUrl} />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}

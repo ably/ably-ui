@@ -3,7 +3,7 @@ import { isJsonResponse } from "./remote-data-util";
 const fetchBlogPosts = async (store, blogUrl) => {
   try {
     if (!blogUrl) {
-      console.warn(
+      console.log(
         `Skipping fetching blog posts, invalid blogUrl: "${blogUrl}"`
       );
       return;

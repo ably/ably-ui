@@ -1,4 +1,4 @@
-import { queryIdAll } from "../dom-query";
+import { queryId, queryIdAll } from "../dom-query";
 
 const MeganavControl = () => {
   const controls = Array.from(queryIdAll("meganav-control"));
@@ -12,11 +12,21 @@ const MeganavControl = () => {
       `(hover: hover) and (pointer: fine) and (min-width: ${mdBreakpoint})`
     ).matches;
 
+  const isSearchControl = (node) => node.dataset.control === "search";
+
+  const isSearchPanelOpen = () => {
+    const searchPanel = document.querySelector(
+      '[data-id="meganav-panel"]#panel-search'
+    );
+    if (!searchPanel) return;
+    return !searchPanel.classList.contains("invisible");
+  };
+
   const controlsHaveFocus = () =>
     controls.some((control) => control === document.activeElement);
 
   const hover = (control, panel, open) => {
-    if (hoverEnabled() && !controlsHaveFocus()) {
+    if (hoverEnabled() && !controlsHaveFocus() && !isSearchPanelOpen()) {
       const classes = ["invisible", "visible"];
       panel.classList.replace(...(open ? classes : classes.reverse()));
       control.setAttribute("aria-expanded", open);
@@ -40,12 +50,20 @@ const MeganavControl = () => {
 
     const ariaExpanded = control.getAttribute("aria-expanded");
 
-    if (ariaExpanded) {
-      control.setAttribute("aria-expanded", true);
-      panel.classList.replace("invisible", "visible");
-    } else {
+    if (ariaExpanded === "true") {
       control.setAttribute("aria-expanded", false);
       panel.classList.replace("visible", "invisible");
+    } else {
+      control.setAttribute("aria-expanded", true);
+      panel.classList.replace("invisible", "visible");
+    }
+
+    if (isSearchControl(control)) {
+      const searchInput = queryId("meganav-search-input", panel);
+      if (!searchInput) return;
+      searchInput.focus();
+    } else {
+      control.focus();
     }
   };
 
@@ -56,18 +74,25 @@ const MeganavControl = () => {
         `#${control.getAttribute("aria-controls")}`
       );
       const click = clickHandler(control, panel);
-      const mouseenter = mouseenterHandler(control, panel);
-      const mouseleave = mouseleaveHandler(control, panel);
-
-      item.addEventListener("mouseenter", mouseenter);
-      item.addEventListener("mouseleave", mouseleave);
       control.addEventListener("click", click);
+      let mouseenter, mouseleave;
+
+      if (!isSearchControl(control)) {
+        mouseenter = mouseenterHandler(control, panel);
+        mouseleave = mouseleaveHandler(control, panel);
+
+        item.addEventListener("mouseenter", mouseenter);
+        item.addEventListener("mouseleave", mouseleave);
+      }
 
       return [
         {
           teardown: () => {
-            item.removeEventListener("mouseenter", mouseenter);
-            item.removeEventListener("mouseleave", mouseleave);
+            if (mouseenter && mouseleave) {
+              item.removeEventListener("mouseenter", mouseenter);
+              item.removeEventListener("mouseleave", mouseleave);
+            }
+
             control.removeEventListener("click", click);
           },
           clear: () => {
