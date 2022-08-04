@@ -17,7 +17,7 @@ module.exports = {
   theme: {
     screens: {
       // CSS custom properties can't be used in media queries
-      xs: "375px",
+      xs: "428px",
       sm: "768px",
       md: "1040px",
       lg: "1280px",
@@ -74,7 +74,7 @@ module.exports = {
       "gui-hover": "var(--color-gui-hover)",
       "gui-focus": "var(--color-gui-focus)",
       "gui-active": "var(--color-gui-active)",
-      "gui-viewed": "var(--color-gui-viewed)",
+      "gui-visited": "var(--color-gui-visited)",
       "gui-unavailable": "var(--color-gui-unavailable)",
       "gui-error": "var(--color-gui-error)",
       "gui-success": "var(--color-gui-success)",
@@ -181,7 +181,8 @@ module.exports = {
         filter: "filter",
       },
       outline: {
-        "gui-focus": "4px solid var(--color-gui-focus)",
+        "gui-focus": "1.5px solid var(--color-gui-focus-outline)",
+        "gui-focus-neutral": "2px solid var(--color-white)",
       },
       width: {
         "extend-8": "calc(100% + var(--spacing-8))",
@@ -208,7 +209,14 @@ module.exports = {
   variants: {
     extend: {
       borderColor: ["hover", "focus", "active", "group-focus", "disabled"],
-      textColor: ["hover", "focus", "active", "group-focus", "disabled"],
+      textColor: [
+        "hover",
+        "focus",
+        "active",
+        "group-focus",
+        "disabled",
+        "visited",
+      ],
       display: ["group-focus"],
       backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
       backgroundImage: ["hover", "active", "focus"],

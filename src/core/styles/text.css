@@ -30,17 +30,17 @@
   }
 
   .ui-text-p1 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p1;
   }
 
   .ui-text-p2 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p2;
   }
 
   .ui-text-p3 {
-    @apply font-sans font-light text-cool-black;
+    @apply font-sans font-light text-charcoal-grey;
     @apply text-p3;
   }
 
@@ -146,21 +146,17 @@
     @apply list-square;
   }
 
-  /* visited needs to come before :hover et all else it overrides them */
-  .ui-link:visited {
-    @apply text-gui-viewed;
-  }
-
   .ui-link {
-    @apply hover:text-active-orange active:text-red-orange;
-    text-decoration-color: var(--color-active-orange);
-    text-underline-offset: 4px; /* px used here as behaves weird with rem's */
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.125rem;
+    @apply visited:text-gui-visited;
+    @apply hover:text-gui-hover active:text-gui-active disabled:text-gui-unavailable;
+    @apply focus:text-gui-focus focus:outline-gui-focus;
+    @apply underline;
   }
 
-  .ui-link:focus {
-    @apply focus:text-white focus:bg-active-orange focus:outline-none;
-    text-decoration: none;
+  .ui-link-neutral {
+    @apply visited:text-dark-grey;
+    @apply hover:text-dark-grey active:text-cool-black disabled:text-gui-unavailable;
+    @apply focus:text-gui-focus focus:outline-gui-focus-neutral;
+    @apply underline;
   }
 }

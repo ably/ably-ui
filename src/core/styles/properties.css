@@ -15,9 +15,10 @@
     --color-charcoal-grey: #292831;
     --color-gui-default: #0073e6;
     --color-gui-hover: #0867c4;
-    --color-gui-focus: #80b9f2;
+    --color-gui-focus: #0073e6;
+    --color-gui-focus-outline: #80b9f2;
     --color-gui-active: #074095;
-    --color-gui-viewed: #4887c2;
+    --color-gui-visited: #4887c2;
     --color-gui-unavailable: #a8a8a8;
     --color-gui-error: #fb0c0c;
     --color-gui-success: #11cb24;
@@ -155,7 +156,7 @@
     /* In components, when looking at implementing viewport margin and spacing between elements,
        the values in the comments can be used as guide as they represent the grid the elements (should) sit on.
        alternatively, look for ui-grid-* helpers. */
-    --bp-xs: 375px; /* gutters 8px, side-margin 24px */
+    --bp-xs: 428px; /* gutters 8px, side-margin 24px */
     --bp-sm: 768px; /* gutters 16px, side-margin 32px */
     --bp-md: 1040px; /* gutters 24px, side-margin 40px, meganav desktop */
     --bp-lg: 1280px; /* gutters 24px, side-margin 64px */
