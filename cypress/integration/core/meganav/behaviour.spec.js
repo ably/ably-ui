@@ -339,7 +339,7 @@ describe("Notice", () => {
   });
 });
 
-describe("Search", () => {
+describe.only("Search", () => {
   describe("mobile", () => {
     const sharedSpecs = () => {
       it("shows suggestions dropdown", () => {
@@ -349,6 +349,15 @@ describe("Search", () => {
         cy.get("[data-id='meganav-search-autocomplete-list'] li")
           .its("length")
           .should("be.gte", 0);
+      });
+
+      it("sets the correct url for the search form", () => {
+        cy.get(MOBILE_DROPDOWN_CONTROL).trigger("click");
+        cy.get(SEARCH_PANEL_MOBILE_INPUT)
+          .parent()
+          .parent() // form
+          .invoke("attr", "action")
+          .should("eq", "/search");
       });
     };
 
@@ -382,6 +391,15 @@ describe("Search", () => {
         cy.get("[data-id='meganav-search-autocomplete-list'] li")
           .its("length")
           .should("be.gte", 0);
+      });
+
+      it("sets the correct url for the search form", () => {
+        cy.get(SEARCH_PANEL_OPEN_CONTROL).trigger("click");
+        cy.get(SEARCH_PANEL_INPUT)
+          .parent()
+          .parent() // form
+          .invoke("attr", "action")
+          .should("eq", "/search");
       });
     };
 
