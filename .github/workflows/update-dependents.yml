@@ -15,7 +15,6 @@ jobs:
           ref: "main"
       - name: Create PR on Voltaire and Website
         env:
-          REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
           REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
         run: "./scripts/update-dependents.sh"
         shell: bash
