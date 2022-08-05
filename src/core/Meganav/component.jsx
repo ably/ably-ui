@@ -64,7 +64,7 @@ const panels = {
   MeganavContentDevelopers: MeganavContentDevelopers,
 };
 
-export default function Meganav({ paths, themeName = "white", notice, loginLink = "/login", urlBase }) {
+export default function Meganav({ paths, themeName = "white", notice, loginLink = "/login", urlBase, addSearchApiKey }) {
   const [sessionState, setSessionState] = useState(null);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
   }, []);
 
   useEffect(() => {
-    const teardown = MeganavScripts({ themeName });
+    const teardown = MeganavScripts({ themeName, addSearchApiKey });
     return () => teardown();
   }, [sessionState]);
 
@@ -119,4 +119,5 @@ Meganav.propTypes = {
   }),
   loginLink: T.string,
   urlBase: T.string,
+  addSearchApiKey: T.string,
 };

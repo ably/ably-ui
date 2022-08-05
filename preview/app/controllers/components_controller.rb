@@ -170,7 +170,8 @@ class ComponentsController < ApplicationController
       notice: {
         props: notice_props,
         config: notice_config
-      }
+      },
+      addSearchApiKey: Rails.application.config.add_search_api_key
     }
 
     props[:login_link] = '/custom-login-link' if custom_login_link?

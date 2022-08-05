@@ -113,11 +113,13 @@ const documentScroll = (themeName) => {
   };
 };
 
-export default function Meganav({ themeName } = { themeName: null }) {
+export default function Meganav(
+  { themeName, addSearchApiKey } = { themeName: null }
+) {
   const controls = MeganavControl();
   const panelOpenControls = MobilePanelOpenClick();
   const panelCloseControls = MobilePanelCloseClick();
-  const search = MeganavSearchAutocomplete();
+  const search = MeganavSearchAutocomplete(addSearchApiKey);
   const searchSuggestions = MeganavSearchSuggestions();
 
   const mobileDropdownControl = MeganavControlMobileDropdown({

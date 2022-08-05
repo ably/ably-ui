@@ -47,9 +47,16 @@ const init = ({ input, container, listContainer, clear, client }) => {
 
   const renderResults =
     (query) =>
-    (results = { suggestions: [] }) => {
+    (results = {}) => {
       toggleClearBtn(query);
 
+      // Prevent invalid access error when key is invalid
+      if (!Array.isArray(results.suggestions)) {
+        clearResults();
+        return;
+      }
+
+      // Prevent key error from invalid key
       if (results.suggestions.length === 0) {
         clearResults();
         return;
@@ -143,12 +150,12 @@ const init = ({ input, container, listContainer, clear, client }) => {
   };
 };
 
-export default () => {
-  const apiKey = document.body.dataset.addSearchApiKey;
+export default (apiKey) => {
   if (!apiKey) {
     console.log(`No AddSearch API key provided, skipping search suggestions.`);
     return [];
   }
+
   const client = new AddSearchClient(apiKey);
 
   return [
