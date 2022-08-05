@@ -18,7 +18,7 @@ const MeganavSearchPanel = ({ absUrl }) => {
               <MeganavSearchAutocomplete />
             </div>
 
-            <button type="submit" className="ui-btn-secondary ml-8 sm:ml-16 md:ml-24 xl:ml-32">
+            <button type="submit" className="ui-btn-secondary flex-shrink-0 ml-8 sm:ml-16 md:ml-24 xl:ml-32">
               Search
             </button>
           </form>
