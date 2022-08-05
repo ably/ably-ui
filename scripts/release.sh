@@ -45,7 +45,3 @@ rm ably-ui-$VERSION.gem
 
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
-
-echo "Commit version publish"
-git add package.json lib/ably_ui/version.rb Gemfile.lock
-git commit -m "Commit version bump to $VERSION"
