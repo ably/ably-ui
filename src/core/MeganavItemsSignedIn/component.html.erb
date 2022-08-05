@@ -43,10 +43,10 @@
 
   <li>
     <%= render(AblyUi::Core::MeganavSearch.new(url_base: url_base)) %>
-  <li>
+  </li>
 
   <% if account? %>
-    <li class="ml-16">
+    <li>
       <%= link_to "Dashboard", @session_data[:account][:links][:dashboard][:href], class: "ui-btn-secondary p-btn-small" %>
     </li>
   <% end %>
