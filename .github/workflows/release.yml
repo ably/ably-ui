@@ -24,10 +24,9 @@ jobs:
       - name: Release latest Ably UI version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          RUBYGEMS_API_KEY: "${{ secrets.RUBYGEMS_API_KEY }}"
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
           ./scripts/release.sh "${GITHUB_REF/refs\/tags\//}"
-          git push https://${{ secrets.REGISTRY_TOKEN }}@github.com/ably/ably-ui.git
         shell: bash
