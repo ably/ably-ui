@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: "main"
+          fetch-depth: 0
       - name: "Get latest tag"
         id: latesttag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
@@ -31,9 +32,9 @@ jobs:
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
-          ./scripts/update-versions.sh ${{ steps.previoustag.outputs.tag }}
+          ./scripts/update-versions.sh ${{ steps.latesttag.outputs.tag }}
         shell: bash
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: update-versions-to-${{ steps.previoustag.outputs.tag }}
+          branch: update-versions-to-${{ steps.latesttag.outputs.tag }}
