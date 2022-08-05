@@ -36,4 +36,4 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: update-versions-to-${{ ${{ steps.previoustag.outputs.tag }}}}
+          branch: update-versions-to-${{ steps.previoustag.outputs.tag }}
