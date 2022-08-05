@@ -9,7 +9,7 @@
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
-      AblyUi.Core.Meganav();
+      AblyUi.Core.Meganav({ addSearchApiKey: "<%= Rails.application.config.add_search_api_key %>" });
       AblyUi.Core.Notice({
         bannerContainer: document.querySelector('[data-id="ui-notice"]'),
         cookieId: '1',
