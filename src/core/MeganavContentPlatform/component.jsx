@@ -19,43 +19,48 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
     </div>
 
     <div>
-      <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-our-features">
-        Our features
+      <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-examples">
+        Examples
       </h3>
-      <ul aria-labelledby="meganav-platform-panel-list-our-features">
+      <ul aria-labelledby="meganav-platform-panel-list-examples">
         <li>
-          <a href={absUrl("/pub-sub-messaging")} className="group ui-meganav-media">
-            <p className="ui-meganav-media-heading">Publish/subscribe messaging</p>
-            <p className="ui-meganav-media-copy">Feature-rich pub/sub messaging to power any realtime requirement.</p>
+          <a href={absUrl("/examples/avatar-stack")} className="group ui-meganav-media">
+            <p className="ui-meganav-media-heading">Avatar Stack</p>
+            <p className="ui-meganav-media-copy">See who is connected in a digital space.</p>
           </a>
         </li>
         <li>
-          <a href={absUrl("/push-notifications")} className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Push notifications</p>
-            <p className="ui-meganav-media-copy">Deliver native notifications at scale with our unified API.</p>
+          <a href={absUrl("/examples/emoji-reactions")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Emoji Reactions</p>
+            <p className="ui-meganav-media-copy">React with an emoji to a message.</p>
           </a>
         </li>
         <li>
-          <a href={absUrl("/integrations")} className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Third-party integrations</p>
-            <p className="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
+          <a href={absUrl("/examples/activity-feed")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Activity Feed</p>
+            <p className="ui-meganav-media-copy">Display a list of user actions in realtime.</p>
           </a>
         </li>
         <li>
-          <a href={absUrl("/protocols")} className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Multi-protocol messaging</p>
-            <p className="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
+          <a href={absUrl("/examples/live-charts")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Live Charts</p>
+            <p className="ui-meganav-media-copy">Visualise live metrics and data in a chart.</p>
           </a>
         </li>
         <li>
-          <a href={absUrl("/hub")} className="ui-meganav-media group">
-            <p className="ui-meganav-media-heading">Streaming data sources</p>
-            <p className="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
+          <a href={absUrl("/examples/live-cursors")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Live Cursors</p>
+            <p className="ui-meganav-media-copy">Track all cursors in realtime.</p>
+          </a>
+        </li>
+        <li>
+          <a href={absUrl("/examples/typing-indicator")} className="ui-meganav-media group">
+            <p className="ui-meganav-media-heading">Typing Indicator</p>
+            <p className="ui-meganav-media-copy">See when a user is typing a message.</p>
           </a>
         </li>
       </ul>
-
-      <FeaturedLink url={absUrl("/platform")}>Explore all platform features</FeaturedLink>
+      <FeaturedLink url={absUrl("/examples")}>Explore all live examples</FeaturedLink>
     </div>
 
     <div>
