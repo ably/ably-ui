@@ -14,41 +14,47 @@
   </div>
 
   <div>
-    <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-features">Our features</h3>
-    <ul aria-labelledby="meganav-platform-panel-list-our-features">
+    <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-examples">Examples</h3>
+    <ul aria-labelledby="meganav-platform-panel-list-examples">
       <li>
-        <%= link_to abs_url("/pub-sub-messaging"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Publish/subscribe messaging</p>
-          <p class="ui-meganav-media-copy">Feature-rich pub/sub messaging to power any realtime requirement.</p>
+        <%= link_to abs_url("/examples/avatar-stack"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Avatar Stack</p>
+          <p class="ui-meganav-media-copy">See who is connected in a digital space.</p>
         <% end %>
       </li>
       <li>
-        <%= link_to abs_url("/push-notifications"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Push notifications</p>
-          <p class="ui-meganav-media-copy">Deliver native notifications at scale with our unified API.</p>
+        <%= link_to abs_url("/examples/emoji-reactions"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Emoji Reactions</p>
+          <p class="ui-meganav-media-copy">React with an emoji to a message.</p>
         <% end %>
       </li>
       <li>
-        <%= link_to abs_url("/integrations"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Third-party integrations</p>
-          <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
+        <%= link_to abs_url("/examples/activity-feed"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Activity Feed</p>
+          <p class="ui-meganav-media-copy">Display a list of user actions in realtime.</p>
         <% end %>
       </li>
       <li>
-        <%= link_to abs_url("/protocols"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
-          <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
+        <%= link_to abs_url("/examples/live-charts"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Live Charts</p>
+          <p class="ui-meganav-media-copy">Visualise live metrics and data in a chart.</p>
         <% end %>
       </li>
       <li>
-        <%= link_to abs_url("/hub"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Streaming data sources</p>
-          <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
+        <%= link_to abs_url("/examples/live-cursors"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Live Cursors</p>
+          <p class="ui-meganav-media-copy">Track all cursors in realtime.</p>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to abs_url("/examples/typing-indicator"), class: "ui-meganav-media group" do %>
+          <p class="ui-meganav-media-heading">Typing Indicator</p>
+          <p class="ui-meganav-media-copy">See when a user is typing a message.</p>
         <% end %>
       </li>
     </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore all platform features<% end %>
+    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"))) do %>Explore all live examples<% end %>
   </div>
 
   <div>
