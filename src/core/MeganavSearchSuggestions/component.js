@@ -18,15 +18,16 @@ const getDistance = (e, touchStartX) =>
 
 const withinBuffer = (distance) => Math.abs(distance) < DRAG_BUFFER;
 
+const getItemsTotalWidth = (nodes) =>
+  nodes
+    .map((item) => item.getBoundingClientRect().width)
+    .reduce((acc, val) => acc + val, 0);
+
 const MeganavSearchSuggestions = () => {
   const suggestionsToggle = queryId("meganav-mobile-search-input");
   const suggestions = queryId("meganav-mobile-search-suggestions");
   const list = suggestions.querySelector("ul");
-  const listItems = list.querySelectorAll("li");
-
-  const itemsTotalWidth = Array.from(listItems)
-    .map((item) => item.getBoundingClientRect().width)
-    .reduce((acc, val) => acc + val, 0);
+  const listItems = Array.from(list.querySelectorAll("li"));
 
   const dragLeft = (distance, threshold) => {
     const currentTranslateX = getTranslateX(list);
@@ -50,6 +51,7 @@ const MeganavSearchSuggestions = () => {
     const listWidth = list.getBoundingClientRect().width;
     const currentTranslateX = getTranslateX(list);
     const translateX = Math.round(currentTranslateX + distance);
+    const itemsTotalWidth = getItemsTotalWidth(listItems);
 
     if (dragRightBoundary(translateX, itemsTotalWidth, listWidth, threshold)) {
       return;
@@ -61,6 +63,7 @@ const MeganavSearchSuggestions = () => {
   const dragRightEnd = (distance, threshold) => {
     const listWidth = list.getBoundingClientRect().width;
     const currentTranslateX = getTranslateX(list);
+    const itemsTotalWidth = getItemsTotalWidth(listItems);
     let translateX = Math.round(currentTranslateX + distance);
 
     if (dragRightBoundary(translateX, itemsTotalWidth, listWidth, threshold)) {
@@ -99,11 +102,18 @@ const MeganavSearchSuggestions = () => {
     suggestions.classList.remove("max-h-96");
   };
 
+  const wheelHandler = (e) => {
+    const distance = e.deltaY * 4;
+    if (withinBuffer(distance)) return;
+    distance > 0 ? dragLeftEnd(distance, 24) : dragRightEnd(distance, 48);
+  };
+
   suggestionsToggle.addEventListener("focus", focusSuggestionsHandler);
   suggestionsToggle.addEventListener("blur", blurSuggestionsHandler);
   suggestions.addEventListener("touchstart", touchstartHandler);
   suggestions.addEventListener("touchmove", touchmoveHandler);
   suggestions.addEventListener("touchend", touchendHandler);
+  suggestions.addEventListener("wheel", wheelHandler);
 
   return {
     teardown: () => {
