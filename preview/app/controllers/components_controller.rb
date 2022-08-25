@@ -78,13 +78,19 @@ class ComponentsController < ApplicationController
 
     display_icons = %w[
       icon-display-48hrs
+      icon-display-about-ably-col
       icon-display-api
       icon-display-api-keys
       icon-display-browser
       icon-display-calendar
       icon-display-call-mobile
-      icon-display-chat-stack
+      icon-display-careers-col
+      icon-display-case-studies-col
+      icon-display-chat-stack-col
       icon-display-cloud-servers
+      icon-display-compare-tech-col
+      icon-display-customers-col
+      icon-display-docs-col
       icon-display-documentation
       icon-display-gdpr
       icon-display-general-comms
@@ -92,6 +98,7 @@ class ComponentsController < ApplicationController
       icon-display-it-support-access
       icon-display-it-support-helpdesk
       icon-display-laptop
+      icon-display-lightbulb-col
       icon-display-live-chat
       icon-display-map-pin
       icon-display-message
@@ -99,12 +106,16 @@ class ComponentsController < ApplicationController
       icon-display-platform
       icon-display-play
       icon-display-privacy-shield-framework
+      icon-display-quickstart-guides-col
+      icon-display-resources-col
+      icon-display-sdks-col
       icon-display-servers
       icon-display-shopping-cart
       icon-display-sla
       icon-display-soc2-type2
       icon-display-tech-account-comms
-      icon-display-virtual-events
+      icon-display-tutorials-demos-col
+      icon-display-virtual-events-col
     ]
 
     social_icons = %w[discord facebook github glassdoor linkedin twitter]
@@ -158,9 +169,7 @@ class ComponentsController < ApplicationController
         logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
         icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
-        blog_thumb1: helpers.asset_path('ably_ui/core/images/blog-thumb1.jpg'),
-        blog_thumb2: helpers.asset_path('ably_ui/core/images/blog-thumb2.jpg'),
-        blog_thumb3: helpers.asset_path('ably_ui/core/images/blog-thumb3.jpg')
+        aws_logo: helpers.asset_path('ably_ui/core/images/icon-tech-aws.svg')
       },
       notice: {
         props: notice_props,

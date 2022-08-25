@@ -14,7 +14,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
           <li>
             <a href={absUrl("/solutions/chat")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-chat-stack" size="2.5rem" />
+              <Icon name="icon-display-chat-stack-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Chat</p>
                 <p className="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale. </p>
@@ -23,7 +23,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
           </li>
           <li>
             <a href={absUrl("/solutions/virtual-events")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-virtual-events" size="2.5rem" />
+              <Icon name="icon-display-virtual-events-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Virtual Events</p>
                 <p className="ui-meganav-media-copy">Power engaging virtual events with realtime features.</p>
