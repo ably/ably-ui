@@ -29,9 +29,9 @@
     }
   },
   "panels": [
-    { "label": "Platform", "id": "platform-panel", "component": "MeganavContentPlatform" },
-    { "label": "Use Cases", "id": "use-cases-panel", "component": "MeganavContentUseCases" },
-    { "label": "Why Ably", "id": "why-ably-panel", "component": "MeganavContentWhyAbly" },
-    { "label": "Developers", "id": "developers-panel", "component": "MeganavContentDevelopers" }
+    { "label": "Platform", "shortLabel": "Platform", "id": "platform-panel", "component": "MeganavContentPlatform" },
+    { "label": "Use Cases & Solutions", "shortLabel": "Use Cases", "id": "use-cases-panel", "component": "MeganavContentUseCases" },
+    { "label": "Why Ably", "shortLabel": "Why Ably", "id": "why-ably-panel", "component": "MeganavContentWhyAbly" },
+    { "label": "Developers", "shortLabel": "Developers", "id": "developers-panel", "component": "MeganavContentDevelopers" }
   ]
 }

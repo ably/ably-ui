@@ -68,13 +68,14 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
             <ul className="mb-16" data-id="meganav-mobile-panel-controls">
               {MeganavData.panels.map((panel) => {
                 const PanelComponent = panels[panel.component];
+                const displayHr = ["why-ably-panel", "developers-panel"].includes(panel.id);
 
                 return (
                   <li className="ui-meganav-mobile-item" key={`${panel.id}-mobile`}>
                     <MeganavControlMobilePanelOpen ariaControls={`${panel.id}-mobile`}>{panel.label}</MeganavControlMobilePanelOpen>
 
                     <div className="ui-meganav-panel-mobile hidden" id={`${panel.id}-mobile`} data-scroll-lock-scrollable>
-                      <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} displayHr={panel.id !== "platform-panel"} />
+                      <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} displayHr={displayHr} />
                       <PanelComponent paths={paths} absUrl={absUrl} />
                     </div>
                   </li>

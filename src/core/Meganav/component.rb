@@ -30,21 +30,25 @@ module AblyUi
         [
           {
             label: 'Platform',
+            short_label: 'Platform',
             id: 'platform-panel',
             class: 'AblyUi::Core::MeganavContentPlatform'
           },
           {
-            label: 'Use Cases',
+            label: 'Use Cases & Solutions',
+            short_label: 'Use Cases',
             id: 'use-cases-panel',
             class: 'AblyUi::Core::MeganavContentUseCases'
           },
           {
             label: 'Why Ably',
+            short_label: 'Why Ably',
             id: 'why-ably-panel',
             class: 'AblyUi::Core::MeganavContentWhyAbly'
           },
           {
             label: 'Developers',
+            short_label: 'Developers',
             id: 'developers-panel',
             class: 'AblyUi::Core::MeganavContentDevelopers'
           }

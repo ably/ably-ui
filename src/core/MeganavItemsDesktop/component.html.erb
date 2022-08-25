@@ -2,7 +2,8 @@
   <% panels.each do |panel| %>
     <li class="ui-meganav-item">
       <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
-        <%= panel[:label] %>
+        <span class="hidden lg:inline"><%= panel[:label] %></span>
+        <span class="lg:hidden"><%= panel[:short_label] %></span>
       <% end %>
 
       <%= content_tag :div, class: 'ui-meganav-panel invisible', data: { id: "meganav-panel" }, id: panel[:id] do %>
