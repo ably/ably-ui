@@ -48,7 +48,7 @@
               <% end %>
 
               <%= content_tag(:div, class: "ui-meganav-panel-mobile hidden", id: "#{panel[:id]}-mobile", data: { scroll_lock_scrollable: true }) do %>
-                <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile")) %>
+                <%= render(AblyUi::Core::MeganavControlMobilePanelClose.new(aria_controls: "#{panel[:id]}-mobile", display_hr: panel[:id] != 'platform-panel')) %>
                 <%= render("AblyUi::Core::#{panel[:component]}".constantize.new(url_base: url_base)) %>
               <% end %>
             </li>

@@ -74,7 +74,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
                     <MeganavControlMobilePanelOpen ariaControls={`${panel.id}-mobile`}>{panel.label}</MeganavControlMobilePanelOpen>
 
                     <div className="ui-meganav-panel-mobile hidden" id={`${panel.id}-mobile`} data-scroll-lock-scrollable>
-                      <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} />
+                      <MeganavControlMobilePanelClose ariaControls={`${panel.id}-mobile`} displayHr={panel.id !== "platform-panel"} />
                       <PanelComponent paths={paths} absUrl={absUrl} />
                     </div>
                   </li>
