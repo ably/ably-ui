@@ -78,11 +78,12 @@ class ComponentsController < ApplicationController
 
     display_icons = %w[
       icon-display-48hrs
-      icon-display-api-keys
       icon-display-api
+      icon-display-api-keys
       icon-display-browser
       icon-display-calendar
       icon-display-call-mobile
+      icon-display-chat-stack
       icon-display-cloud-servers
       icon-display-documentation
       icon-display-gdpr
@@ -103,16 +104,10 @@ class ComponentsController < ApplicationController
       icon-display-sla
       icon-display-soc2-type2
       icon-display-tech-account-comms
+      icon-display-virtual-events
     ]
 
-    social_icons = %w[
-      discord
-      facebook
-      github
-      glassdoor
-      linkedin
-      twitter
-    ]
+    social_icons = %w[discord facebook github glassdoor linkedin twitter]
 
     other_icons = %w[quote]
 
