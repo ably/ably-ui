@@ -41,10 +41,10 @@ module AblyUi
             class: 'AblyUi::Core::MeganavContentUseCases'
           },
           {
-            label: 'Why Ably',
-            short_label: 'Why Ably',
-            id: 'why-ably-panel',
-            class: 'AblyUi::Core::MeganavContentWhyAbly'
+            label: 'Company',
+            short_label: 'Company',
+            id: 'company-panel',
+            class: 'AblyUi::Core::MeganavContentCompany'
           },
           {
             label: 'Developers',

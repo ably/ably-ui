@@ -9,7 +9,7 @@ module.exports = [
       "Loader",
       "Logo",
       "MeganavContentPlatform",
-      "MeganavContentWhyAbly",
+      "MeganavContentCompany",
       "MeganavContentDevelopers",
       "MeganavContentUseCases",
       "MeganavControlMobilePanelClose",

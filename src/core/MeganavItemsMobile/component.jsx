@@ -68,7 +68,7 @@ const MeganavItemsMobile = ({ panels, paths, sessionState, theme, loginLink, abs
             <ul className="mb-16" data-id="meganav-mobile-panel-controls">
               {MeganavData.panels.map((panel) => {
                 const PanelComponent = panels[panel.component];
-                const displayHr = ["why-ably-panel", "developers-panel"].includes(panel.id);
+                const displayHr = ["company-panel", "developers-panel"].includes(panel.id);
 
                 return (
                   <li className="ui-meganav-mobile-item" key={`${panel.id}-mobile`}>

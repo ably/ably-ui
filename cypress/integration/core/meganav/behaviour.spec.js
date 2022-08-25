@@ -1,8 +1,8 @@
 import {
   PLATFORM_PANEL,
   PLATFORM_PANEL_OPEN_CONTROL,
-  WHY_ABLY_PANEL,
-  WHY_ABLY_PANEL_OPEN_CONTROL,
+  COMPANY,
+  COMPANY_OPEN_CONTROL,
   SEARCH_PANEL,
   SEARCH_PANEL_OPEN_CONTROL,
   SEARCH_PANEL_MOBILE_INPUT,
@@ -42,10 +42,10 @@ describe("Opening panels on desktop", () => {
 
       cy.get(PLATFORM_PANEL_OPEN_CONTROL).trigger("click").focus();
       cy.get(PLATFORM_PANEL).should("be.visible");
-      cy.get(WHY_ABLY_PANEL).should("not.be.visible");
+      cy.get(COMPANY).should("not.be.visible");
 
-      cy.get(WHY_ABLY_PANEL_OPEN_CONTROL).trigger("mouseenter");
-      cy.get(WHY_ABLY_PANEL).should("not.be.visible");
+      cy.get(COMPANY_OPEN_CONTROL).trigger("mouseenter");
+      cy.get(COMPANY).should("not.be.visible");
     });
 
     it("closes all panels when clicked outside the nav", () => {

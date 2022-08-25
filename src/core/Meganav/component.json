@@ -31,7 +31,7 @@
   "panels": [
     { "label": "Platform", "shortLabel": "Platform", "id": "platform-panel", "component": "MeganavContentPlatform" },
     { "label": "Use Cases & Solutions", "shortLabel": "Use Cases", "id": "use-cases-panel", "component": "MeganavContentUseCases" },
-    { "label": "Why Ably", "shortLabel": "Why Ably", "id": "why-ably-panel", "component": "MeganavContentWhyAbly" },
+    { "label": "Company", "shortLabel": "Company", "id": "company-panel", "component": "MeganavContentCompany" },
     { "label": "Developers", "shortLabel": "Developers", "id": "developers-panel", "component": "MeganavContentDevelopers" }
   ]
 }

@@ -2,9 +2,9 @@ export const PLATFORM_PANEL = "#platform-panel";
 export const PLATFORM_PANEL_OPEN_CONTROL =
   "[data-id='meganav-control'][aria-controls='platform-panel']";
 
-export const WHY_ABLY_PANEL = "#why-ably-panel";
-export const WHY_ABLY_PANEL_OPEN_CONTROL =
-  "[data-id='meganav-control'][aria-controls='why-ably-panel']";
+export const COMPANY = "#company-panel";
+export const COMPANY_OPEN_CONTROL =
+  "[data-id='meganav-control'][aria-controls='company-panel']";
 
 export const USE_CASES_PANEL = "#use-cases-panel";
 export const USE_CASES_PANEL_OPEN_CONTROL =

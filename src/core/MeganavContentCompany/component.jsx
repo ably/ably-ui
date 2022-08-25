@@ -7,16 +7,16 @@ import ConnectStateWrapper from "../ConnectStateWrapper/component.jsx";
 
 import { selectRecentBlogPosts } from "../remote-blogs-posts";
 
-const MeganavContentWhyAbly = ({ absUrl }) => {
+const MeganavContentCompany = ({ absUrl }) => {
   const BlogPostsList = ConnectStateWrapper(MeganavBlogPostsList, { recentBlogPosts: selectRecentBlogPosts });
 
   return (
     <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
       <div>
-        <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-why-companies">
+        <h3 className="ui-meganav-overline" id="meganav-company-panel-list-why-companies">
           Why companies choose Ably
         </h3>
-        <ul aria-labelledby="meganav-why-ably-panel-list-why-companies">
+        <ul aria-labelledby="meganav-company-panel-list-why-companies">
           <li>
             <a href={absUrl("/customers")} className="group ui-meganav-media py-12">
               <p className="ui-meganav-media-heading">Customers</p>
@@ -50,10 +50,10 @@ const MeganavContentWhyAbly = ({ absUrl }) => {
       </div>
 
       <div>
-        <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-four-pillars">
+        <h3 className="ui-meganav-overline" id="meganav-company-panel-list-four-pillars">
           Four pillars of dependability
         </h3>
-        <ul className="mb-8" aria-labelledby="meganav-why-ably-panel-list-four-pillars">
+        <ul className="mb-8" aria-labelledby="meganav-company-panel-list-four-pillars">
           <li>
             <a href={absUrl("/four-pillars-of-dependability#performance")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">Predictable performance</p>
@@ -88,8 +88,8 @@ const MeganavContentWhyAbly = ({ absUrl }) => {
   );
 };
 
-MeganavContentWhyAbly.propTypes = {
+MeganavContentCompany.propTypes = {
   absUrl: T.func,
 };
 
-export default MeganavContentWhyAbly;
+export default MeganavContentCompany;

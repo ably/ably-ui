@@ -14,7 +14,7 @@ module AblyUi
       end
 
       def display_hr(panel_id)
-        %w[why-ably-panel developers-panel].include?(panel_id)
+        %w[company-panel developers-panel].include?(panel_id)
       end
     end
   end

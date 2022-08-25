@@ -2,8 +2,8 @@ import { fixSnapshotSpec } from "../../../support";
 import {
   PLATFORM_PANEL,
   PLATFORM_PANEL_OPEN_CONTROL,
-  WHY_ABLY_PANEL,
-  WHY_ABLY_PANEL_OPEN_CONTROL,
+  COMPANY,
+  COMPANY_OPEN_CONTROL,
   USE_CASES_PANEL,
   USE_CASES_PANEL_OPEN_CONTROL,
   DEVELOPERS_PANEL,
@@ -27,8 +27,8 @@ describe.skip("Content", () => {
 
   describe("Why Ably", () => {
     it("has the correct content", () => {
-      cy.get(WHY_ABLY_PANEL_OPEN_CONTROL).trigger("click");
-      cy.get(WHY_ABLY_PANEL).toMatchImageSnapshot();
+      cy.get(COMPANY_OPEN_CONTROL).trigger("click");
+      cy.get(COMPANY).toMatchImageSnapshot();
     });
   });
 

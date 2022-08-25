@@ -6,10 +6,10 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 const MeganavBlogPostsList = ({ recentBlogPosts, absUrl }) =>
   recentBlogPosts ? (
     <div>
-      <h3 className="ui-meganav-overline" id="meganav-why-ably-panel-list-blog">
+      <h3 className="ui-meganav-overline" id="meganav-company-panel-list-blog">
         Blog
       </h3>
-      <ul className="mb-8" aria-labelledby="meganav-why-ably-panel-list-blog">
+      <ul className="mb-8" aria-labelledby="meganav-company-panel-list-blog">
         {recentBlogPosts.map((post) => (
           <li key={post.link}>
             <a href={post.link} className="ui-meganav-media group">

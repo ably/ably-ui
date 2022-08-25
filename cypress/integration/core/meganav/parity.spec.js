@@ -117,12 +117,12 @@ describe("Panels", () => {
       cy.compareComponents(config("Developers", "mobile")));
   });
 
-  describe("WhyAblyPanel", () => {
+  describe("CompanyPanel", () => {
     it("looks the same on desktop", () =>
-      cy.compareComponents(config("Why Ably", "desktop")));
+      cy.compareComponents(config("Company", "desktop")));
 
     it("looks the same on mobile", () =>
-      cy.compareComponents(config("Why Ably", "mobile")));
+      cy.compareComponents(config("Company", "mobile")));
   });
 
   describe("UseCasesPanel", () => {
