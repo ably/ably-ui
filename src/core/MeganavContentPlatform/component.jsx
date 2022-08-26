@@ -12,19 +12,21 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
           <img src={paths.ablyStack} alt="Ably homepage" />
           <h3 className="ui-meganav-overline ml-24">The Ably Platform</h3>
         </div>
-        <p className="text-p2 font-medium text-cool-black mb-8" style={{ maxWidth: "330px" }}>
+        <p className="text-p2 font-medium text-cool-black mb-24" style={{ maxWidth: "330px" }}>
           Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
           realtime, and lets you focus on your code.
         </p>
 
-        <FeaturedLink url={absUrl("/platform")}>Explore how it works</FeaturedLink>
+        <FeaturedLink url={absUrl("/platform")} textSize="text-p2">
+          Explore how it works
+        </FeaturedLink>
       </div>
 
       <div className="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-examples">
           Our Examples
         </h3>
-        <ul aria-labelledby="meganav-platform-panel-list-examples">
+        <ul className="mb-16" aria-labelledby="meganav-platform-panel-list-examples">
           <li>
             <a href={absUrl("/examples/avatar-stack")} className="group ui-meganav-media">
               <p className="ui-meganav-media-heading">Avatar Stack</p>
@@ -62,14 +64,16 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
             </a>
           </li>
         </ul>
-        <FeaturedLink url={absUrl("/examples")}>Explore all live examples</FeaturedLink>
+        <FeaturedLink url={absUrl("/examples")} textSize="text-p3">
+          Explore all live examples
+        </FeaturedLink>
       </div>
 
       <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">
           Our technology
         </h3>
-        <ul className="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
+        <ul className="mb-16" aria-labelledby="meganav-platform-panel-list-our-technology">
           <li>
             <a href={absUrl("/four-pillars-of-dependability#performance")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">Predictable performance</p>
@@ -102,7 +106,9 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
           </li>
         </ul>
 
-        <FeaturedLink url={absUrl("/four-pillars-of-dependability")}>Explore Four Pillars of Dependability</FeaturedLink>
+        <FeaturedLink url={absUrl("/four-pillars-of-dependability")} textSize="text-p3">
+          Explore Four Pillars of Dependability
+        </FeaturedLink>
       </div>
     </section>
     <div className="ui-meganav-content-spacer"></div>

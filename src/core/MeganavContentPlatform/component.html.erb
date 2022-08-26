@@ -7,17 +7,17 @@
         <h3 class="ui-meganav-overline ml-24">The Ably Platform</h3>
       </div>
 
-      <p class="text-p2 font-medium text-cool-black mb-8" style="max-width: 330px">
+      <p class="text-p2 font-medium text-cool-black mb-24" style="max-width: 330px">
         Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
         realtime, and lets you focus on your code.
       </p>
 
-      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore how it works<% end %>
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"), text_size: 'text-p2')) do %>Explore how it works<% end %>
     </div>
 
     <div class="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
       <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-examples">Our Examples</h3>
-      <ul aria-labelledby="meganav-platform-panel-list-examples">
+      <ul class="mb-16" aria-labelledby="meganav-platform-panel-list-examples">
         <li>
           <%= link_to abs_url("/examples/avatar-stack"), class: "ui-meganav-media group" do %>
             <p class="ui-meganav-media-heading">Avatar Stack</p>
@@ -56,12 +56,12 @@
         </li>
       </ul>
 
-      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"))) do %>Explore all live examples<% end %>
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"), text_size: 'text-p3')) do %>Explore all live examples<% end %>
     </div>
 
     <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
       <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">Our technology</h3>
-      <ul class="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
+      <ul class="mb-16" aria-labelledby="meganav-platform-panel-list-our-technology">
         <li>
           <%= link_to abs_url("/four-pillars-of-dependability#performance"), class: "ui-meganav-media group" do %>
             <p class="ui-meganav-media-heading">Predictable performance</p>
@@ -94,7 +94,7 @@
         </li>
       </ul>
 
-      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"))) do %>Explore Four Pillars of Dependability<% end %>
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"), text_size: 'text-p3')) do %>Explore Four Pillars of Dependability<% end %>
     </div>
   </section>
   <div class="ui-meganav-content-spacer"></div>

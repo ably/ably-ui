@@ -20,7 +20,9 @@ const MeganavBlogPostsList = ({ recentBlogPosts, absUrl }) =>
         ))}
       </ul>
 
-      <FeaturedLink url={absUrl("/blog")}>More from our Blog</FeaturedLink>
+      <FeaturedLink url={absUrl("/blog")} textSize="text-p3">
+        More from our Blog
+      </FeaturedLink>
     </div>
   ) : null;
 
