@@ -6,7 +6,7 @@ import Icon from "../Icon/component.jsx";
 const MeganavContentDevelopers = ({ absUrl }) => (
   <div className="flex max-w-screen-xl mx-auto">
     <div className="ui-meganav-content-spacer"></div>
-    <section className="grid grid-cols-12 ui-grid-gap-x">
+    <section className="grid grid-cols-12 ui-grid-gap-x w-full">
       <div className="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
         <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
           Explore
