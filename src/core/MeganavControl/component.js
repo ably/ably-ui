@@ -30,6 +30,7 @@ const MeganavControl = () => {
       const classes = ["invisible", "visible"];
       panel.classList.replace(...(open ? classes : classes.reverse()));
       control.setAttribute("aria-expanded", open);
+      control.dataset.hover = open;
     }
   };
 
@@ -50,12 +51,19 @@ const MeganavControl = () => {
 
     const ariaExpanded = control.getAttribute("aria-expanded");
 
-    if (ariaExpanded === "true") {
+    // Prevent closing of the panel if it was already opened by hovering
+    const openedByHover = control.dataset.hover === "true";
+
+    if (ariaExpanded === "true" && !openedByHover) {
       control.setAttribute("aria-expanded", false);
       panel.classList.replace("visible", "invisible");
     } else {
       control.setAttribute("aria-expanded", true);
       panel.classList.replace("invisible", "visible");
+    }
+
+    if (openedByHover) {
+      control.dataset.hover = false;
     }
 
     if (isSearchControl(control)) {
