@@ -6,7 +6,7 @@
         <span class="lg:hidden"><%= panel[:short_label] %></span>
       <% end %>
 
-      <%= content_tag :div, class: 'ui-meganav-panel invisible', data: { id: "meganav-panel" }, id: panel[:id] do %>
+      <%= content_tag :div, class: "ui-meganav-panel invisible #{bg_css(panel[:id])}", data: { id: "meganav-panel" }, id: panel[:id] do %>
         <%= render("AblyUi::Core::#{panel[:component]}".constantize.new(url_base: url_base)) %>
       <% end %>
     </li>

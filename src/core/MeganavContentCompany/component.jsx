@@ -12,7 +12,7 @@ const MeganavContentCompany = ({ paths, absUrl }) => {
   const BlogPostsList = ConnectStateWrapper(MeganavBlogPostsList, { recentBlogPosts: selectRecentBlogPosts });
 
   return (
-    <div className="flex">
+    <div className="flex max-w-screen-xl mx-auto">
       <div className="ui-meganav-content-spacer"></div>
       <section className="grid grid-cols-12 ui-grid-gap-x">
         <div className="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">

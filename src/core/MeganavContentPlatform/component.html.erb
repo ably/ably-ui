@@ -1,7 +1,7 @@
-<div class="flex">
+<div class="flex max-w-screen-xl mx-auto">
   <div class="ui-meganav-content-spacer bg-extra-light-grey"></div>
   <section class="grid grid-cols-12 ui-grid-gap-x w-full">
-    <div class="col-span-full md:col-span-4 bg-extra-light-grey py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
+    <div class="col-span-full md:col-span-4 py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24 bg-extra-light-grey">
       <div class="flex mb-20">
         <%= image_tag(ably_stack_path, alt: "Ably homepage") %>
         <h3 class="ui-meganav-overline ml-24">The Ably Platform</h3>
@@ -15,7 +15,7 @@
       <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore how it works<% end %>
     </div>
 
-    <div class="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+    <div class="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
       <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-examples">Our Examples</h3>
       <ul aria-labelledby="meganav-platform-panel-list-examples">
         <li>
@@ -59,7 +59,7 @@
       <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"))) do %>Explore all live examples<% end %>
     </div>
 
-    <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+    <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
       <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">Our technology</h3>
       <ul class="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
         <li>

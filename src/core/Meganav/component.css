@@ -46,6 +46,10 @@
     @apply bg-white rounded-t-none;
   }
 
+  .ui-meganav-panel-split-bg {
+    background: linear-gradient(to right, #fafafb 33%, white 33%, white 100%);
+  }
+
   .ui-meganav-link {
     @apply text-menu2 font-medium block;
     @apply mr-12 lg:mr-24 px-0 py-20;

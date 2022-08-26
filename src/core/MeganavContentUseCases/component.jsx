@@ -4,10 +4,10 @@ import T from "prop-types";
 import Icon from "../Icon/component.jsx";
 
 const MeganavContentUseCases = ({ absUrl }) => (
-  <div className="flex">
+  <div className="flex max-w-screen-xl mx-auto">
     <div className="ui-meganav-content-spacer bg-extra-light-grey"></div>
     <section className="grid grid-cols-12 ui-grid-gap-x w-full">
-      <div className="col-span-full md:col-span-4 bg-extra-light-grey py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
+      <div className="col-span-full md:col-span-4 py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24 bg-extra-light-grey">
         <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-use-cases">
           Use cases
         </h3>
@@ -33,7 +33,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <div className="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry">
           Industry
         </h3>
@@ -95,7 +95,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-solutions">
           Solutions
         </h3>
