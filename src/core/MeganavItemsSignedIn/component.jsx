@@ -17,7 +17,7 @@ const MeganavItemsSignedIn = ({ sessionState, theme, absUrl }) => {
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <MeganavControl ariaControls="account-panel" theme={theme} additionalCSS="mr-0">
+        <MeganavControl ariaControls="account-panel" ariaLabel="Account" theme={theme} additionalCSS="mr-0">
           {accountName}
         </MeganavControl>
 

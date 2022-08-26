@@ -11,7 +11,7 @@ const MeganavDesktopItems = ({ panels, paths, theme, absUrl }) => (
 
       return (
         <li className="ui-meganav-item" key={panel.id}>
-          <MeganavControl theme={theme} ariaControls={panel.id}>
+          <MeganavControl theme={theme} ariaControls={panel.id} ariaLabel={panel.label}>
             <span className="hidden lg:inline">{panel.label}</span>
             <span className="lg:hidden">{panel.shortLabel}</span>
           </MeganavControl>

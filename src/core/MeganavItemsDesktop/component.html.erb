@@ -1,7 +1,7 @@
 <ul class="hidden md:flex" data-id="meganav-items-desktop">
   <% panels.each do |panel| %>
     <li class="ui-meganav-item">
-      <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], theme_name: @theme_name)) do %>
+      <%= render(AblyUi::Core::MeganavControl.new(aria_controls: panel[:id], aria_label: panel[:label], theme_name: @theme_name)) do %>
         <span class="hidden lg:inline"><%= panel[:label] %></span>
         <span class="lg:hidden"><%= panel[:short_label] %></span>
       <% end %>

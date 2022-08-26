@@ -1,6 +1,6 @@
 <ul class="hidden md:flex items-center">
   <li class="ui-meganav-item relative">
-    <%= render(AblyUi::Core::MeganavControl.new(aria_controls: "account-panel", theme_name: @theme_name, additional_css: "mr-0")) do %>
+    <%= render(AblyUi::Core::MeganavControl.new(aria_controls: "account-panel", aria_label: "Account", theme_name: @theme_name, additional_css: "mr-0")) do %>
       <%= account_name %>
     <% end %>
 
