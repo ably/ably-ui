@@ -5,7 +5,7 @@ import FeaturedLink from "../FeaturedLink/component.jsx";
 
 const MeganavBlogPostsList = ({ recentBlogPosts, absUrl }) =>
   recentBlogPosts ? (
-    <div>
+    <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
       <h3 className="ui-meganav-overline" id="meganav-company-panel-list-blog">
         Blog
       </h3>

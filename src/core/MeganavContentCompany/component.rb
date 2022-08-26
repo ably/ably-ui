@@ -2,6 +2,7 @@ module AblyUi
   module Core
     class MeganavContentCompany < ViewComponent::Base
       include Util
+      include SharedAssets
 
       attr_reader :url_base
 

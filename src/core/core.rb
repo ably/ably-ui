@@ -34,6 +34,10 @@ module AblyUi
         asset_path 'ably_ui/core/images/ably-stack.svg'
       end
 
+      def aws_logo_path
+        asset_path 'ably_ui/core/images/icon-tech-aws.svg'
+      end
+
       def rocket_list
         asset_path 'ably_ui/core/images/rocket-list-2021.png'
       end

@@ -1,95 +1,108 @@
 import React from "react";
 import T from "prop-types";
 
-import FeaturedLink from "../FeaturedLink/component.jsx";
 import MeganavBlogPostsList from "../MeganavBlogPostsList/component.jsx";
 import ConnectStateWrapper from "../ConnectStateWrapper/component.jsx";
 
 import { selectRecentBlogPosts } from "../remote-blogs-posts";
 
-const MeganavContentCompany = ({ absUrl }) => {
+import Icon from "../Icon/component.jsx";
+
+const MeganavContentCompany = ({ paths, absUrl }) => {
   const BlogPostsList = ConnectStateWrapper(MeganavBlogPostsList, { recentBlogPosts: selectRecentBlogPosts });
 
   return (
-    <section className="ui-meganav-content ui-grid-gap md:grid-cols-3">
-      <div>
-        <h3 className="ui-meganav-overline" id="meganav-company-panel-list-why-companies">
-          Why companies choose Ably
-        </h3>
-        <ul aria-labelledby="meganav-company-panel-list-why-companies">
-          <li>
-            <a href={absUrl("/customers")} className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Customers</p>
-            </a>
-          </li>
+    <div className="flex">
+      <div className="ui-meganav-content-spacer"></div>
+      <section className="grid grid-cols-12 ui-grid-gap-x">
+        <div className="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
+          <h3 className="ui-meganav-overline" id="meganav-company-panel-list-why-companies">
+            Why companies choose Ably
+          </h3>
+          <ul aria-labelledby="meganav-company-panel-list-why-companies">
+            <li>
+              <a href={absUrl("/customers")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-customers-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Customers</p>
+                  <p className="ui-meganav-media-copy">Ably supports customers across multiple industries.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={absUrl("/case-studies")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-case-studies-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Case studies</p>
+                  <p className="ui-meganav-media-copy">Discover how customers are benefitting from Ably.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={absUrl("/compare")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-compare-tech-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Compare our tech</p>
+                  <p className="ui-meganav-media-copy">Choose the right realtime service.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={absUrl("/aws")} className="ui-meganav-media-with-image group">
+                <img src={paths.awsLogo} alt="AWS logo" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Partners</p>
+                  <p className="ui-meganav-media-copy">Ably collaborates and integrates with AWS.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <li>
-            <a href={absUrl("/case-studies")} className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Case studies</p>
-            </a>
-          </li>
+        <div className="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+          <ul className="md:mt-40" aria-labelledby="meganav-company-panel-list-why-companies">
+            <li>
+              <a href={absUrl("/resources")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-resources-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Resources</p>
+                  <p className="ui-meganav-media-copy">Learn more about realtime with our handy resources.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={absUrl("/about")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-about-ably-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">About Ably</p>
+                  <p className="ui-meganav-media-copy">Find out more about Ably’s mission.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={absUrl("/careers")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-careers-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Careers</p>
+                  <p className="ui-meganav-media-copy">Discover our open roles and core Ably values.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <li>
-            <a href={absUrl("/compare")} className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Compare our tech</p>
-            </a>
-          </li>
-
-          <li>
-            <a href={absUrl("/aws")} className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Ably & AWS</p>
-            </a>
-          </li>
-
-          <li>
-            <a href={absUrl("/resources")} className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Resources</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="ui-meganav-overline" id="meganav-company-panel-list-four-pillars">
-          Four pillars of dependability
-        </h3>
-        <ul className="mb-8" aria-labelledby="meganav-company-panel-list-four-pillars">
-          <li>
-            <a href={absUrl("/four-pillars-of-dependability#performance")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Predictable performance</p>
-              <p className="ui-meganav-media-copy">A low-latency global edge network across 200+ PoPs.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/four-pillars-of-dependability#integrity")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
-              <p className="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/four-pillars-of-dependability#reliability")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Fault tolerant infrastructure</p>
-              <p className="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/four-pillars-of-dependability#availability")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">High scalability & availability</p>
-              <p className="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
-            </a>
-          </li>
-        </ul>
-
-        <FeaturedLink url={absUrl("/four-pillars-of-dependability")}>Explore our Four Pillars of Dependability</FeaturedLink>
-      </div>
-
-      <BlogPostsList absUrl={absUrl} />
-    </section>
+        <BlogPostsList absUrl={absUrl} />
+      </section>
+      <div className="ui-meganav-content-spacer"></div>
+    </div>
   );
 };
 
 MeganavContentCompany.propTypes = {
   absUrl: T.func,
+  paths: T.shape({
+    awsLogo: T.string,
+  }),
 };
 
 export default MeganavContentCompany;
