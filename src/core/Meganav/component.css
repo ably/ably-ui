@@ -46,6 +46,10 @@
     @apply bg-white rounded-t-none;
   }
 
+  .ui-meganav-panel-split-bg {
+    background: linear-gradient(to right, #fafafb 33%, white 33%, white 100%);
+  }
+
   .ui-meganav-link {
     @apply text-menu2 font-medium block;
     @apply mr-12 lg:mr-24 px-0 py-20;
@@ -74,6 +78,12 @@
     @apply px-24 md:px-32 lg:px-32 xl:px-64;
   }
 
+  /* This is implemented not as padding so we can change the color of just this space, while keeping the grid
+     as close to the designs as possible */
+  .ui-meganav-content-spacer {
+    @apply hidden md:block md:w-32 lg:w-32 xl:w-64 self-stretch flex-shrink-0 flex-grow-0;
+  }
+
   .ui-meganav-media {
     @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
   }
@@ -83,7 +93,7 @@
     grid-template-rows: min-content 1fr;
 
     @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
-    @apply grid gap-x-16;
+    @apply grid gap-x-8;
   }
 
   .ui-meganav-media-heading {

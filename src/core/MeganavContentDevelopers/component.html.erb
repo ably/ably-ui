@@ -1,83 +1,104 @@
-<section class="ui-meganav-content ui-grid-gap md:grid-cols-3">
-  <div>
-    <h3 class="ui-meganav-overline md:mb-8">Documentation</h3>
-    <div class="relative mb-16">
-      <%= tag.form class: "relative", action: abs_url("/search"), method: "get" do %>
-        <%= render(AblyUi::Core::Icon.new(name: "icon-gui-search", size: "1.5rem", color: "text-cool-black", additional_css: "absolute top-8 left-8 pt-1 mt-1")) %>
-        <input type="search" name="q" class="ui-input pl-48" placeholder="Search docs" />
-      <% end %>
+<div class="flex max-w-screen-xl mx-auto">
+  <div class="ui-meganav-content-spacer"></div>
+  <section class="grid grid-cols-12 ui-grid-gap-x w-full">
+    <div class="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
+      <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
+        Explore
+      </h3>
+      <ul aria-labelledby="meganav-developers-panel-explore">
+        <li>
+          <%= link_to abs_url("/docs"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-docs-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Documentation</p>
+              <p class="ui-meganav-media-copy">Technical guides to help you build with Ably.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/docs/key-concepts"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-lightbulb-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Concepts</p>
+              <p class="ui-meganav-media-copy">Read about core Ably platform concepts.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/docs/quick-start-guide"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-quickstart-guides-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Quickstart guides</p>
+              <p class="ui-meganav-media-copy">Documentation to help you get started quickly.</p>
+            </div>
+          <% end %>
+        </li>
+      </ul>
     </div>
-    <p class="text-p1 font-medium text-cool-black mb-20">
-      Docs, quick start guides, tutorials, and API reference to help you start building with Ably’s platform and APIs.
-    </p>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/docs"))) do %>Visit Documentation<% end %>
-  </div>
+    <div class="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <ul class="md:mt-40" aria-labelledby="meganav-developers-panel-explore">
+        <li>
+          <%= link_to abs_url("/download"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-sdks-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">SDKs</p>
+              <p class="ui-meganav-media-copy">Download an SDK to help you build realtime apps faster.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/tutorials"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-tutorials-demos-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Tutorials & Demos</p>
+              <p class="ui-meganav-media-copy">Get stuck in with our hands-on resources. </p>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
 
-  <div>
-    <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">Explore</h3>
-    <ul aria-labelledby="meganav-developers-panel-explore">
-      <li>
-        <%= link_to abs_url("/integrations"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Third-party integrations & plugins</p>
-          <p class="ui-meganav-media-copy">Integrate and extend Ably with cloud services like AWS Kinesis.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/protocols"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Multi-protocol messaging</p>
-          <p class="ui-meganav-media-copy">We support pub/sub over WebSockets, MQTT, SSE, and more.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/hub"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Streaming data sources</p>
-          <p class="ui-meganav-media-copy">Augment your apps with realtime updates like weather or transit.</p>
-         <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/periodic-table-of-realtime"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">The Periodic Table of Realtime</p>
-          <p class="ui-meganav-media-copy">A compendium for all things realtime and event-driven.</p>
-         <% end %>
-      </li>
-    </ul>
-  </div>
-
-  <div>
-    <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">Quick links</h3>
-    <ul aria-labelledby="meganav-developers-panel-quick-links">
-      <li>
-        <%= link_to abs_url("/download"), class: "group ui-meganav-media py-12" do %>
-          <p class="ui-meganav-media-heading">Download an SDK</p>
-        <% end %>
-      </li>
-
-      <li>
-        <a href="https://changelog.ably.com/" class="group ui-meganav-media py-12">
-          <p class="ui-meganav-media-heading">Platform changelog</p>
-        </a>
-      </li>
-
-      <li>
-        <%= link_to abs_url("/support"), class: "group ui-meganav-media py-12" do %>
-          <p class="ui-meganav-media-heading">Support & FAQs</p>
-        <% end %>
-      </li>
-
-      <li>
-        <a href="https://status.ably.com/" class="group ui-meganav-media py-12">
-          <p class="ui-meganav-media-heading">
-            Status<iframe
-              src="https://status.ably.com/embed/icon"
-              allowtransparency="true"
-              frameborder="0"
-              scrolling="no"
-              class="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
-            ></iframe>
-          </p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+    <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">
+        Quick links
+      </h3>
+      <ul aria-labelledby="meganav-developers-panel-quick-links">
+        <li>
+          <%= link_to "https://discord.gg/jwBPhEZ9g5", class: "group ui-meganav-media py-12" do %>
+            <p class="ui-meganav-media-heading">Discord</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://github.com/ably", class: "group ui-meganav-media py-12" do %>
+            <p class="ui-meganav-media-heading">Github</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://changelog.ably.com/", class: "group ui-meganav-media py-12" do %>
+            <p class="ui-meganav-media-heading">Changelog</p>
+          <% end %>
+        </li>
+        <li>
+          <a href="https://status.ably.com/" class="group ui-meganav-media py-12">
+            <p class="ui-meganav-media-heading">
+              Status<iframe
+                src="https://status.ably.com/embed/icon"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                class="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
+              ></iframe>
+            </p>
+          </a>
+        </li>
+        <li>
+          <%= link_to abs_url("/support"), class: "group ui-meganav-media py-12" do %>
+            <p class="ui-meganav-media-heading">Support & FAQs</p>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="ui-meganav-content-spacer"></div>
+</div>

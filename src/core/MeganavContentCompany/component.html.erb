@@ -1,0 +1,81 @@
+<div class="flex max-w-screen-xl mx-auto">
+  <div class="ui-meganav-content-spacer"></div>
+  <section class="grid grid-cols-12 ui-grid-gap-x w-full">
+    <div class="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
+      <h3 class="ui-meganav-overline" id="meganav-company-panel-list-why-companies">Why companies choose Ably</h3>
+      <ul aria-labelledby="meganav-company-panel-list-why-companies">
+        <li>
+          <%= link_to abs_url("/customers"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-customers-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Customers</p>
+              <p class="ui-meganav-media-copy">Ably supports customers across multiple industries.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/case-studies"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-case-studies-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Case studies</p>
+              <p class="ui-meganav-media-copy">Discover how customers are benefiting from Ably.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/compare"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-compare-tech-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Compare our tech</p>
+              <p class="ui-meganav-media-copy">Choose the right realtime service.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/aws"), class: "ui-meganav-media-with-image group" do %>
+            <%= image_tag(aws_logo_path, alt: "AWS logo") %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Partners</p>
+              <p class="ui-meganav-media-copy">Ably collaborates and integrates with AWS.</p>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <ul class="md:mt-40" aria-labelledby="meganav-company-panel-list-why-companies">
+        <li>
+          <%= link_to abs_url("/resources"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-resources-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Resources</p>
+              <p class="ui-meganav-media-copy">Learn more about realtime with our handy resources.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/about"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-about-ably-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">About Ably</p>
+              <p class="ui-meganav-media-copy">Find out more about Ably’s mission.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/careers"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-careers-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Careers</p>
+              <p class="ui-meganav-media-copy">Discover our open roles and core Ably values.</p>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
+    <%= render(AblyUi::Core::MeganavBlogPostsList.new(url_base: url_base)) %>
+  </section>
+  <div class="ui-meganav-content-spacer"></div>
+</div>

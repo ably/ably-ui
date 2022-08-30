@@ -26,8 +26,8 @@ const template = ({ link, title, pubDate }) => {
 export default () => {
   connectState(selectRecentBlogPosts, (recentBlogPosts) => {
     if (Array.isArray(recentBlogPosts) && recentBlogPosts.length > 0) {
-      const sections = queryIdAll("meganav-why-ably-panel-blog-section");
-      const containers = queryIdAll("meganav-why-ably-panel-recent-blog-posts");
+      const sections = queryIdAll("meganav-company-panel-blog-section");
+      const containers = queryIdAll("meganav-company-panel-recent-blog-posts");
 
       Array.from(containers).forEach((container) => {
         const fragment = document.createDocumentFragment();

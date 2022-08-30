@@ -1,97 +1,101 @@
-<section class="ui-meganav-content ui-grid-gap sm:grid-cols-2 md:grid-cols-3">
-  <div class="sm:col-span-full md:col-span-1">
-    <div class="flex mb-20">
-      <%= image_tag(ably_stack_path, alt: "Ably homepage") %>
-      <h3 class="ui-meganav-overline ml-24">The Ably Platform</h3>
+<div class="flex max-w-screen-xl mx-auto">
+  <div class="ui-meganav-content-spacer bg-extra-light-grey"></div>
+  <section class="grid grid-cols-12 ui-grid-gap-x w-full">
+    <div class="col-span-full md:col-span-4 py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24 bg-extra-light-grey">
+      <div class="flex mb-20">
+        <%= image_tag(ably_stack_path, alt: "Ably homepage") %>
+        <h3 class="ui-meganav-overline ml-24">The Ably Platform</h3>
+      </div>
+
+      <p class="text-p2 font-medium text-cool-black mb-24" style="max-width: 330px">
+        Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
+        realtime, and lets you focus on your code.
+      </p>
+
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"), text_size: 'text-p2')) do %>Explore how it works<% end %>
     </div>
 
-    <p class="text-p2 font-medium text-cool-black mb-8">
-      Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
-      realtime, and lets you focus on your code.
-    </p>
+    <div class="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
+      <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-examples">Our Examples</h3>
+      <ul class="mb-16" aria-labelledby="meganav-platform-panel-list-examples">
+        <li>
+          <%= link_to abs_url("/examples/avatar-stack"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Avatar Stack</p>
+            <p class="ui-meganav-media-copy">See who is connected in a digital space.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/examples/emoji-reactions"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Emoji Reactions</p>
+            <p class="ui-meganav-media-copy">React with an emoji to a message.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/examples/activity-feed"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Activity Feed</p>
+            <p class="ui-meganav-media-copy">Display a list of user actions in realtime.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/examples/live-charts"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Live Charts</p>
+            <p class="ui-meganav-media-copy">Visualise live metrics and data in a chart.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/examples/live-cursors"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Live Cursors</p>
+            <p class="ui-meganav-media-copy">Track all cursors in realtime.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/examples/typing-indicator"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Typing Indicator</p>
+            <p class="ui-meganav-media-copy">See when a user is typing a message.</p>
+          <% end %>
+        </li>
+      </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/platform"))) do %>Explore how it works<% end %>
-  </div>
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"), text_size: 'text-p3')) do %>Explore all live examples<% end %>
+    </div>
 
-  <div>
-    <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-examples">Examples</h3>
-    <ul aria-labelledby="meganav-platform-panel-list-examples">
-      <li>
-        <%= link_to abs_url("/examples/avatar-stack"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Avatar Stack</p>
-          <p class="ui-meganav-media-copy">See who is connected in a digital space.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/examples/emoji-reactions"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Emoji Reactions</p>
-          <p class="ui-meganav-media-copy">React with an emoji to a message.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/examples/activity-feed"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Activity Feed</p>
-          <p class="ui-meganav-media-copy">Display a list of user actions in realtime.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/examples/live-charts"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Live Charts</p>
-          <p class="ui-meganav-media-copy">Visualise live metrics and data in a chart.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/examples/live-cursors"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Live Cursors</p>
-          <p class="ui-meganav-media-copy">Track all cursors in realtime.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/examples/typing-indicator"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Typing Indicator</p>
-          <p class="ui-meganav-media-copy">See when a user is typing a message.</p>
-        <% end %>
-      </li>
-    </ul>
+    <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
+      <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">Our technology</h3>
+      <ul class="mb-16" aria-labelledby="meganav-platform-panel-list-our-technology">
+        <li>
+          <%= link_to abs_url("/four-pillars-of-dependability#performance"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Predictable performance</p>
+            <p class="ui-meganav-media-copy">A low-latency and high-throughput global network.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/four-pillars-of-dependability#integrity"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
+            <p class="ui-meganav-media-copy">Data is delivered - in order - even after disconnections.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/four-pillars-of-dependability#reliability"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
+            <p class="ui-meganav-media-copy">Redundancy is built in at global and regional levels.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/four-pillars-of-dependability#availability"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">High scalability & availability</p>
+            <p class="ui-meganav-media-copy">Built for scale with legitimate 99.999% uptime SLAs.</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/network"), class: "ui-meganav-media group" do %>
+            <p class="ui-meganav-media-heading">Global edge network</p>
+            <p class="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 205+ PoPs.</p>
+          <% end %>
+        </li>
+      </ul>
 
-    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/examples"))) do %>Explore all live examples<% end %>
-  </div>
-
-  <div>
-    <h3 class="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">Our technology</h3>
-    <ul class="mb-8" aria-labelledby="meganav-platform-panel-list-our-technology">
-      <li>
-        <%= link_to abs_url("/four-pillars-of-dependability#performance"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Predictable performance</p>
-          <p class="ui-meganav-media-copy">We provide predictability so you can be confident your realtime application will always perform as expected.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/four-pillars-of-dependability#integrity"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Guaranteed ordering & delivery</p>
-          <p class="ui-meganav-media-copy">We guarantee in-order data delivery, even after disconnections.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/four-pillars-of-dependability#reliability"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Fault tolerant infrastructure</p>
-          <p class="ui-meganav-media-copy">Redundant at regional and global levels with 99.999% uptime SLAs.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/four-pillars-of-dependability#availability"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">High scalability & availability</p>
-          <p class="ui-meganav-media-copy">Elastic, battle-tested global infrastructure for massive scale.</p>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to abs_url("/network"), class: "ui-meganav-media group" do %>
-          <p class="ui-meganav-media-heading">Global edge network</p>
-          <p class="ui-meganav-media-copy">An edge network of 15 core routing datacenters and 200+ PoPs.</p>
-        <% end %>
-      </li>
-    </ul>
-
-    <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"))) do %>Explore our technology<% end %>
-  </div>
-</section>
+      <%= render(AblyUi::Core::FeaturedLink.new(url: abs_url("/four-pillars-of-dependability"), text_size: 'text-p3')) do %>Explore Four Pillars of Dependability<% end %>
+    </div>
+  </section>
+  <div class="ui-meganav-content-spacer"></div>
+</div>

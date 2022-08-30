@@ -16,7 +16,7 @@ import _absUrl from "../url-base";
 
 import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
-import MeganavContentWhyAbly from "../MeganavContentWhyAbly/component.jsx";
+import MeganavContentCompany from "../MeganavContentCompany/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
 import MeganavSearch from "../MeganavSearch/component.jsx";
 
@@ -60,7 +60,7 @@ const SignInPlaceholder = () => <div />;
 const panels = {
   MeganavContentPlatform: MeganavContentPlatform,
   MeganavContentUseCases: MeganavContentUseCases,
-  MeganavContentWhyAbly: MeganavContentWhyAbly,
+  MeganavContentCompany: MeganavContentCompany,
   MeganavContentDevelopers: MeganavContentDevelopers,
 };
 

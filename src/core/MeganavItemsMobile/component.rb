@@ -12,6 +12,10 @@ module AblyUi
         @login_link = login_link
         @url_base = url_base
       end
+
+      def display_hr(panel_id)
+        %w[company-panel developers-panel].include?(panel_id)
+      end
     end
   end
 end
