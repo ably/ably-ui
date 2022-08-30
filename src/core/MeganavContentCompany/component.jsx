@@ -34,7 +34,7 @@ const MeganavContentCompany = ({ paths, absUrl }) => {
                 <Icon name="icon-display-case-studies-col" size="2.5rem" />
                 <div className="flex flex-col justify-center">
                   <p className="ui-meganav-media-heading">Case studies</p>
-                  <p className="ui-meganav-media-copy">Discover how customers are benefitting from Ably.</p>
+                  <p className="ui-meganav-media-copy">Discover how customers are benefiting from Ably.</p>
                 </div>
               </a>
             </li>

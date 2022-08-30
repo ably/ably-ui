@@ -35,7 +35,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               <Icon name="icon-display-quickstart-guides-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Quickstart guides</p>
-                <p className="ui-meganav-media-copy">Documentation to help you get up and running quickly.</p>
+                <p className="ui-meganav-media-copy">Documentation to help you get started quickly.</p>
               </div>
             </a>
           </li>
