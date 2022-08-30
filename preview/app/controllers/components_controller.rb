@@ -58,6 +58,7 @@ class ComponentsController < ApplicationController
       icon-gui-close
       icon-gui-cross-circled-fill
       icon-gui-cross-circled
+      icon-gui-copy
       icon-gui-dash-circled
       icon-gui-disclosure-arrow
       icon-gui-document-generic
