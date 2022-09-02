@@ -120,16 +120,12 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a
-            href="/docs/quick-start-guide"
-            class="ui-footer-menu-row-link"
+          <a href="/docs/quick-start-guide" class="ui-footer-menu-row-link"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/docs/" class="ui-footer-menu-row-link"
-            >Documentation</a
-          >
+          <a href="/docs/" class="ui-footer-menu-row-link">Documentation</a>
         </li>
         <li class="p-menu-row-snug">
           <a href="/tutorials" class="ui-footer-menu-row-link">Tutorials</a>
@@ -218,11 +214,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           >
         </li>
         <li class="p-menu-row-snug">
-          <a
-            href="https://www.notion.so/ably/Ably-Press-Center-551152f5be724d4495a7c2e29d9f51c7"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="ui-footer-menu-row-link"
+          <a href="/ably-press-center" class="ui-footer-menu-row-link"
             >Press &amp; Media</a
           >
         </li>
@@ -428,16 +420,12 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
-          <a
-            class="ui-footer-menu-row-link"
-            href="/docs/quick-start-guide"
+          <a class="ui-footer-menu-row-link" href="/docs/quick-start-guide"
             >Start in 5 minutes</a
           >
         </li>
         <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/docs"
-            >Documentation</a
-          >
+          <a class="ui-footer-menu-row-link" href="/docs">Documentation</a>
         </li>
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/tutorials">Tutorials</a>
