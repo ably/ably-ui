@@ -1,4 +1,4 @@
-exports[`Flash Snapshot Test > renders correcty #0`] = `
+exports[`Flash Snapshot Test > renders correctly #0`] = `
 <div class="ui-flash-message ui-grid-px " data-id="ui-flash">
   <div
     class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle"
@@ -21,7 +21,7 @@ exports[`Flash Snapshot Test > renders correcty #0`] = `
 </div>
 `;
 
-exports[`Flash Snapshot Test > renders correcty #1`] = `
+exports[`Flash Snapshot Test > renders correctly #1`] = `
 <div
   class="ui-flash-message ui-grid-px ui-flash-message-enter"
   data-id="ui-flash"
@@ -45,7 +45,7 @@ exports[`Flash Snapshot Test > renders correcty #1`] = `
 </div>
 `;
 
-exports[`Flash Snapshot Test > renders correcty #2`] = `
+exports[`Flash Snapshot Test > renders correctly #2`] = `
 <div
   class="ui-flash-message ui-grid-px ui-flash-message-enter"
   data-id="ui-flash"
@@ -69,7 +69,7 @@ exports[`Flash Snapshot Test > renders correcty #2`] = `
 </div>
 `;
 
-exports[`Flash Snapshot Test > renders correcty #3`] = `
+exports[`Flash Snapshot Test > renders correctly #3`] = `
 <div
   class="ui-flash-message ui-grid-px ui-flash-message-enter"
   data-id="ui-flash"
@@ -93,7 +93,7 @@ exports[`Flash Snapshot Test > renders correcty #3`] = `
 </div>
 `;
 
-exports[`Flash Snapshot Test > renders correcty #4`] = `
+exports[`Flash Snapshot Test > renders correctly #4`] = `
 <div
   class="ui-flash-message ui-grid-px ui-flash-message-enter"
   data-id="ui-flash"
