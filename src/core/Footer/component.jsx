@@ -219,7 +219,7 @@ export default function Footer({ paths, urlBase }) {
               </a>
             </li>
             <li className="p-menu-row-snug">
-              <a href={absUrl("/ably-press-center")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/press-center")} className="ui-footer-menu-row-link">
                 Press & Media
               </a>
             </li>

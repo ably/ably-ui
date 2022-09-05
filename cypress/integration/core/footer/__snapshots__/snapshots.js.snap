@@ -214,7 +214,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/ably-press-center" class="ui-footer-menu-row-link"
+          <a href="/press-center" class="ui-footer-menu-row-link"
             >Press &amp; Media</a
           >
         </li>
@@ -517,11 +517,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           >
         </li>
         <li class="p-menu-row-snug">
-          <a
-            href="https://www.notion.so/ably/Ably-Press-Center-551152f5be724d4495a7c2e29d9f51c7"
-            target="_blank"
-            rel="noopener"
-            class="ui-footer-menu-row-link"
+          <a class="ui-footer-menu-row-link" href="/press-center"
             >Press &amp; Media</a
           >
         </li>

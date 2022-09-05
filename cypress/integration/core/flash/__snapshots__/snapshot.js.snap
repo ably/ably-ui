@@ -1,8 +1,5 @@
 exports[`Flash Snapshot Test > renders correcty #0`] = `
-<div
-  class="ui-flash-message ui-grid-px ui-flash-message-enter"
-  data-id="ui-flash"
->
+<div class="ui-flash-message ui-grid-px " data-id="ui-flash">
   <div
     class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle"
   >
