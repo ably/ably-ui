@@ -8,7 +8,7 @@ describe("Flash Snapshot Test", () => {
     cy.viewport("macbook-16");
   });
 
-  it("renders correctly", () => {
+  it("renders correcty", () => {
     cy.get('[data-id="ui-flashes"]');
     const flashId = "[data-id='ui-flash']";
     cy.get(flashId).eq(0).toMatchSnapshot();
