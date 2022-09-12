@@ -167,5 +167,5 @@ BackendFlashes.propTypes = {
   flashes: T.arrayOf(T.arrayOf(T.string)),
 };
 
-export { reducerFlashes, FLASH_DATA_ID };
+export { reducerFlashes, FLASH_DATA_ID, Flashes };
 export default BackendFlashes;
