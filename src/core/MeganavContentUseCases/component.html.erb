@@ -7,6 +7,15 @@
         </h3>
       <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
         <li>
+          <%= link_to abs_url("/solutions/live-updates-results-metrics"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-live-updates-results-metrics-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Live updates, results & metrics</p>
+              <p class="ui-meganav-media-copy">Deliver live updates to keep users informed.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
           <%= link_to abs_url("/solutions/chat"), class: "ui-meganav-media-with-image group" do %>
             <%= render(AblyUi::Core::Icon.new(name: "icon-display-chat-stack-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
