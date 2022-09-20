@@ -39,6 +39,15 @@ const MeganavContentUseCases = ({ absUrl }) => (
               </div>
             </a>
           </li>
+          <li>
+            <a href={absUrl("/solutions/multi-user-virtual-spaces")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Multi-user virtual spaces</p>
+                <p className="ui-meganav-media-copy">Build live and interactive multi-user applications.</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
 

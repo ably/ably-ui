@@ -118,6 +118,7 @@ class ComponentsController < ApplicationController
       icon-display-tutorials-demos-col
       icon-display-virtual-events-col
       icon-live-updates-results-metrics-col
+      icon-multi-user-spaces-col
     ]
 
     social_icons = %w[discord facebook github glassdoor linkedin twitter]
