@@ -12,15 +12,15 @@ const MeganavContentUseCases = ({ absUrl }) => (
           Use cases
         </h3>
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
-        <li>
-          <a href={absUrl("/solutions/live-updates-results-metrics")} className="ui-meganav-media-with-image group">
-            <Icon name="icon-live-updates-results-metrics-col" size="2.5rem" />
-            <div className="flex flex-col justify-center">
-              <p className="ui-meganav-media-heading">Live updates, results & metrics</p>
-              <p className="ui-meganav-media-copy">Deliver live updates to keep users informed.</p>
-            </div>
-          </a>
-        </li>
+          <li>
+            <a href={absUrl("/solutions/live-updates-results-metrics")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-live-updates-results-metrics-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Live updates, results & metrics</p>
+                <p className="ui-meganav-media-copy">Deliver live updates to keep users informed.</p>
+              </div>
+            </a>
+          </li>
           <li>
             <a href={absUrl("/solutions/chat")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
