@@ -77,7 +77,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
           </li>
           <li>
             <a href="https://github.com/ably" className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Github</p>
+              <p className="ui-meganav-media-heading">GitHub</p>
             </a>
           </li>
           <li>
