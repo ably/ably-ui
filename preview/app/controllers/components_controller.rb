@@ -75,6 +75,7 @@ class ComponentsController < ApplicationController
       icon-gui-search
       icon-gui-tick
       icon-gui-warning
+      icon-gui-link
     ]
 
     display_icons = %w[
