@@ -1,10 +1,10 @@
 import React from "react";
 import T from "prop-types";
 
-const CustomerLogos = ({ companies }) => {
+const CustomerLogos = ({ companies, additionalCss }) => {
   return (
     <section className="w-full bg-white">
-      <ul className="py-64 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center">
+      <ul className={["py-64 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center", additionalCss].join(" ")}>
         {companies.map((company) => (
           <li key={company.label} className="flex-auto text-center sm:w-1/3 w-1/2">
             <img alt={company.label} src={company.logo} className="mx-auto" />
@@ -22,6 +22,7 @@ CustomerLogos.propTypes = {
       logo: T.string,
     })
   ),
+  additionalCss: T.string,
 };
 
 export default CustomerLogos;
