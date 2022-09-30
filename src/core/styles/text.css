@@ -147,16 +147,15 @@
   }
 
   .ui-link {
-    @apply visited:text-gui-visited;
+    @apply text-gui-default;
     @apply hover:text-gui-hover active:text-gui-active disabled:text-gui-unavailable;
-    @apply focus:text-gui-focus focus:outline-gui-focus;
-    @apply underline;
+    @apply focus:text-gui-default focus:outline-gui-focus;
+    @apply no-underline;
   }
 
   .ui-link-neutral {
-    @apply visited:text-dark-grey;
     @apply hover:text-dark-grey active:text-cool-black disabled:text-gui-unavailable;
-    @apply focus:text-gui-focus focus:outline-gui-focus-neutral;
+    @apply focus:text-charcoal-grey focus:outline-gui-focus-neutral;
     @apply underline;
   }
 }

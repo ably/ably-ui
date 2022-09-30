@@ -15,9 +15,12 @@ exports[`Flash Snapshot Test > renders correcty #0`] = `
     <p class="ui-flash-text text-cool-black">
       Congratulations! You've won the Oscar
     </p>
-    <button type="button" class="p-0 ml-auto self-start">
-      <svg class="h-24 w-24 transition-colors ui-icon-cool-black">
-        <use xlink:href="#sprite-close"></use>
+    <button type="button" class="p-0 ml-auto self-start focus:outline-none">
+      <svg
+        class="text-cool-black transition-colors"
+        style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
@@ -39,9 +42,12 @@ exports[`Flash Snapshot Test > renders correcty #1`] = `
       <use xlink:href="#sprite-icon-gui-ably-badge"></use>
     </svg>
     <p class="ui-flash-text text-cool-black">This is a notice</p>
-    <button type="button" class="p-0 ml-auto self-start">
-      <svg class="h-24 w-24 transition-colors ui-icon-cool-black">
-        <use xlink:href="#sprite-close"></use>
+    <button type="button" class="p-0 ml-auto self-start focus:outline-none">
+      <svg
+        class="text-cool-black transition-colors"
+        style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
@@ -63,9 +69,12 @@ exports[`Flash Snapshot Test > renders correcty #2`] = `
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
     <p class="ui-flash-text text-white">This is an error, very bad</p>
-    <button type="button" class="p-0 ml-auto self-start">
-      <svg class="h-24 w-24 transition-colors ui-icon-cool-black">
-        <use xlink:href="#sprite-close"></use>
+    <button type="button" class="p-0 ml-auto self-start focus:outline-none">
+      <svg
+        class="text-white transition-colors"
+        style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
@@ -87,9 +96,12 @@ exports[`Flash Snapshot Test > renders correcty #3`] = `
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
     <p class="ui-flash-text text-white">This is an alert</p>
-    <button type="button" class="p-0 ml-auto self-start">
-      <svg class="h-24 w-24 transition-colors ui-icon-cool-black">
-        <use xlink:href="#sprite-close"></use>
+    <button type="button" class="p-0 ml-auto self-start focus:outline-none">
+      <svg
+        class="text-white transition-colors"
+        style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
@@ -107,9 +119,9 @@ exports[`Flash Snapshot Test > renders correcty #4`] = `
     <p class="ui-flash-text text-cool-black">
       Some useful information, you are welcome
     </p>
-    <button type="button" class="p-0 ml-auto self-start">
-      <svg class="h-24 w-24 transition-colors ui-icon-cool-black">
-        <use xlink:href="#sprite-close"></use>
+    <button type="button" class="p-0 ml-auto self-start focus:outline-none">
+      <svg class=" transition-colors" style="width: 1.5rem; height: 1.5rem;">
+        <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
   </div>
