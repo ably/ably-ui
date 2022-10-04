@@ -1,7 +1,7 @@
 import React from "react";
 import T from "prop-types";
 
-const CustomerLogos = ({ companies, additionalCss }) => {
+const CustomerLogos = ({ companies, additionalCss = "" }) => {
   return (
     <section className="w-full bg-white">
       <ul className={`py-64 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center ${additionalCss}`}>
