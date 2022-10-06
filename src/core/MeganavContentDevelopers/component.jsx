@@ -62,6 +62,15 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               </div>
             </a>
           </li>
+          <li>
+            <a href={absUrl("/integrations")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-integrations-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Integrations</p>
+                <p className="ui-meganav-media-copy">Find out more about Ably integrations. </p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
 

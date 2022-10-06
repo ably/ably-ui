@@ -117,6 +117,7 @@ class ComponentsController < ApplicationController
       icon-display-soc2-type2
       icon-display-tech-account-comms
       icon-display-tutorials-demos-col
+      icon-display-integrations-col
       icon-display-virtual-events-col
       icon-live-updates-results-metrics-col
       icon-multi-user-spaces-col
