@@ -64,7 +64,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
           </li>
           <li>
             <a href={absUrl("/solutions/fintech")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Fintech</p>
+              <p className="ui-meganav-media-heading">FinTech</p>
               <p className="ui-meganav-media-copy">Deliver personalised financial data in realtime.</p>
             </a>
           </li>
