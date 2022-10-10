@@ -4,6 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
 
+const packageJson = require("./package.json");
+
+const externals = Object.keys(packageJson.dependencies);
+
 const modules = require("./modules-config");
 
 const cssRules = [
@@ -22,16 +26,15 @@ const jsRules = [
 ];
 
 const externalsConfig = {
-  externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-    },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-    },
-  },
+  externals: externals.reduce((acc, dependecy) => {
+    return {
+      [dependecy]: {
+        commonjs: dependecy,
+        commonjs2: dependecy,
+      },
+      ...acc,
+    };
+  }, {}),
 };
 
 const commonOutputConfig = {

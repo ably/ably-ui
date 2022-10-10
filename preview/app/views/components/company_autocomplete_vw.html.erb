@@ -7,14 +7,5 @@
 </div>
 
 <% content_for :component do %>
-  <%= javascript_include_tag 'ably_ui/core/company_autocomplete/component' %>
-
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-      const input = document.querySelector('input');
-      AblyUi.Core.CompanyAutocomplete(input, "/api/companies");
-
-      document.body.classList.add("bg-light-grey", "m-32");
-    });
-  </script>
+  <%= javascript_packs_with_chunks_tag 'company-autocomplete-vw' %>
 <% end %>
