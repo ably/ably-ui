@@ -38,6 +38,7 @@ module.exports = [
       "MeganavSearchSuggestions",
       "MeganavSearchPanel",
       "MeganavSearchAutocomplete",
+      "DropdownMenu",
     ],
   },
   {

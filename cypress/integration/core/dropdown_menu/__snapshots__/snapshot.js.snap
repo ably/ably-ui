@@ -1,0 +1,16 @@
+exports[`Flash Snapshot Test > renders correcty #0`] = `
+<div id="dropdown-menu" class="relative">
+  <button
+    id="menu-trigger"
+    class="text-h3 flex items-center p-8 ml-8 group hover:text-gui-hover hover:bg-light-grey active:text-gui-active focus:text-gui-focus focus:outline-none rounded-lg"
+  >
+    <span class="leading-normal">Dropdown Menu Trigger</span
+    ><svg
+      class="text-cool-black transform rotate-90 group-hover:text-gui-hover group-active:text-gui-active group-focus:text-gui-focus"
+      style="width: 1.25rem; height: 1.25rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-disclosure-arrow"></use>
+    </svg>
+  </button>
+</div>
+`;
