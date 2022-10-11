@@ -2,20 +2,19 @@
 # yarn lockfile v1
 
 
-"@ably/ui@8.7.0-dev.471ada5":
-  version "8.7.0-dev.471ada5"
-  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-8.7.0-dev.471ada5.tgz#256244c4404751899f4875b9332a3ce277c10792"
-  integrity sha512-UI5Z1bCvtiylMvI+vkRNHyi5erL05zjKFeS6tZfCSvyaXJUXxMEbns1g7S74Loodfy22jYVeZucHkSpvsHkRnQ==
+"@ably/ui@8.7.0-dev.6ce15a7":
+  version "8.7.0-dev.6ce15a7"
+  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-8.7.0-dev.6ce15a7.tgz#316edb58eb7dd94682d8903e29230a4842c1aceb"
+  integrity sha512-LzKbUbTTVT7pyP3F9D+u04UMtZthv7JlDp8kJGZyHz0tztsf2LCEb8R8tF7YBA23KT2twfkREDNlYFzv1L6YjQ==
   dependencies:
     addsearch-js-client "^0.7.0"
     array-flat-polyfill "^1.0.1"
-    deepmerge "^4.2.2"
     dompurify "^2.2.9"
     highlight.js "^10.7.2"
     js-cookie "^2.2.1"
-    lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
     nanoid "^4.0.0"
+    prop-types "^15.7.2"
     react "^17.0.1"
     react-dom "^17.0.1"
     redux "^4.0.5"
@@ -2768,11 +2767,6 @@ deep-equal@^1.0.1:
     object-is "^1.0.1"
     object-keys "^1.1.1"
     regexp.prototype.flags "^1.2.0"
-
-deepmerge@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
-  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
 default-gateway@^4.2.0:
   version "4.2.0"
