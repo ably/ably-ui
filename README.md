@@ -284,7 +284,7 @@ To deploy a review app with your in-progress code, you can use the `pre-release`
 
 ```bash
 # in root
-./pre-release
+scripts/pre-release.sh
 ```
 
 This will do a couple of things:

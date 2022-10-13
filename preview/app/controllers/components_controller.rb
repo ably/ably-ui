@@ -5,11 +5,11 @@ class ComponentsController < ApplicationController
 
     if template_exists?(template)
       render template,
-             locals: {
-               framework: framework,
-               component_parameters:
-                 component_parameters(component_name.underscore)
-             }
+              locals: {
+                framework: framework,
+                component_parameters:
+                  component_parameters(component_name.underscore)
+              }
     else
       render status: 404, plain: "#{template} not found"
     end
@@ -20,24 +20,24 @@ class ComponentsController < ApplicationController
     template = "meganav_#{framework}.html.erb"
 
     render template,
-           locals: {
-             props: meganav_props,
-             notice_props: notice_props,
-             notice_config: notice_config,
-             framework: framework,
-             component_parameters: component_parameters('meganav')
-           }
-  end
+            locals: {
+              props: meganav_props,
+              notice_props: notice_props,
+              notice_config: notice_config,
+              framework: framework,
+              component_parameters: component_parameters('meganav')
+            }
+    end
 
   def footer
     template = "footer_#{framework}.html.erb"
 
     render template,
-           locals: {
-             props: framework == 'react' ? footer_react_props : {},
-             framework: framework,
-             component_parameters: component_parameters('footer')
-           }
+            locals: {
+              props: framework == 'react' ? footer_react_props : {},
+              framework: framework,
+              component_parameters: component_parameters('footer')
+            }
   end
 
   def icon
@@ -128,14 +128,14 @@ class ComponentsController < ApplicationController
     other_icons = %w[quote]
 
     render template,
-           locals: {
-             core_icons: core_icons,
-             display_icons: display_icons,
-             social_icons: social_icons,
-             other_icons: other_icons,
-             framework: framework,
-             component_parameters: component_parameters('icon')
-           }
+            locals: {
+              core_icons: core_icons,
+              display_icons: display_icons,
+              social_icons: social_icons,
+              other_icons: other_icons,
+              framework: framework,
+              component_parameters: component_parameters('icon')
+            }
   end
 
   private
