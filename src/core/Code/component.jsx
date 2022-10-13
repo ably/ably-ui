@@ -1,12 +1,16 @@
 import React from "react";
 import T from "prop-types";
 
-import "./component.css";
-import { highlight } from "./component.js";
+import "../utils/syntax-highlighter.css";
+import { highlightSnippet, registerDefaultLanguages } from "../utils/syntax-highlighter";
+import languagesRegistry from "../utils/syntax-highlighter-registry";
+
+registerDefaultLanguages(languagesRegistry);
 
 const Code = ({ language, snippet, textSize = "ui-text-code", padding = "p-32", additionalCSS = "" }) => {
-  const HTMLraw = highlight(language, `${snippet}`.trim());
+  const HTMLraw = highlightSnippet(language, `${snippet}`.trim());
   const className = `language-${language} ${textSize}`;
+
   return (
     <div className={`hljs overflow-auto ${padding} ${additionalCSS}`} data-id="code">
       <pre lang={language}>
