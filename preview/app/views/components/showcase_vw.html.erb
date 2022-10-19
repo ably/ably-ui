@@ -41,18 +41,5 @@
 </div>
 
 <% content_for :component do %>
-  <%= javascript_include_tag 'ably_ui/core/showcase/component' %>
-
-  <script type="text/javascript">
-    document.body.classList.add("bg-light-grey", "m-32");
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const showcases = document.querySelectorAll('[data-id="showcase"]');
-
-      AblyUi.Core.Showcase(showcases[0], false);
-      AblyUi.Core.Showcase(showcases[1], true);
-      AblyUi.Core.Showcase(showcases[2], false);
-      AblyUi.Core.Showcase(showcases[3], true);
-    });
-  </script>
+  <%= javascript_packs_with_chunks_tag 'showcase-vw' %>
 <% end %>

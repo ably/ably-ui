@@ -3,6 +3,11 @@ const fs = require("fs");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
+const findImports = require("find-imports");
+
+const packageJson = require("./package.json");
+
+const externals = Object.keys(packageJson.dependencies);
 
 const modules = require("./modules-config");
 
@@ -21,17 +26,27 @@ const jsRules = [
   },
 ];
 
+const highlightJsImportPaths = findImports(
+  [
+    "./src/core/utils/syntax-highlighter.js",
+    "./src/core/utils/syntax-highlighter-registry.js",
+  ],
+  { flatten: true }
+);
+
 const externalsConfig = {
-  externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
+  externals: [...externals, ...highlightJsImportPaths].reduce(
+    (acc, dependency) => {
+      return {
+        [dependency]: {
+          commonjs: dependency,
+          commonjs2: dependency,
+        },
+        ...acc,
+      };
     },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-    },
-  },
+    {}
+  ),
 };
 
 const commonOutputConfig = {

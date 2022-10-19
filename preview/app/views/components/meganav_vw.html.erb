@@ -3,22 +3,5 @@
 <% end %>
 
 <% content_for :component do %>
-  <%= javascript_include_tag 'ably_ui/core/meganav/component' %>
-  <%= javascript_include_tag 'ably_ui/core/meganav_blog_posts_list/component' %>
-  <%= javascript_include_tag 'ably_ui/core/notice/component' %>
-
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-      AblyUi.Core.Meganav({ addSearchApiKey: "<%= Rails.application.config.add_search_api_key %>" });
-      AblyUi.Core.Notice({
-        bannerContainer: document.querySelector('[data-id="ui-notice"]'),
-        cookieId: '1',
-        noticeId: 'A',
-        options: {
-          collapse: <%= notice_config[:collapse] %>
-        }
-      });
-      AblyUi.Core.MeganavBlogPostsList();
-    });
-  </script>
+  <%= javascript_packs_with_chunks_tag 'meganav-vw' %>
 <% end %>

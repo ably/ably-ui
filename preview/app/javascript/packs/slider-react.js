@@ -4,6 +4,8 @@ import Slider from "@ably/ui/core/Slider";
 
 import { renderComponent } from "@ably/ui/core/scripts";
 
+document.body.classList.add("bg-light-grey", "m-32");
+
 document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line react/prop-types
   const Slide = ({ children }) => (

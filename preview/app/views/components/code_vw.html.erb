@@ -48,13 +48,5 @@ channel.subscribe("greeting", listener);
 })) %>
 
 <% content_for :component do %>
-  <%= javascript_include_tag 'ably_ui/core/code/component' %>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-      const blocks = document.querySelectorAll("[data-id=code]");
-      Array.from(blocks).forEach(AblyUi.Core.Code);
-
-      document.body.classList.add("bg-light-grey", "m-32");
-    });
-  </script>
+  <%= javascript_packs_with_chunks_tag 'code-vw' %>
 <% end %>
