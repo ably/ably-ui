@@ -123,7 +123,7 @@ class ComponentsController < ApplicationController
       icon-multi-user-spaces-col
     ]
 
-    social_icons = %w[discord facebook github glassdoor linkedin twitter google]
+    social_icons = %w[discord facebook github glassdoor linkedin twitter google stackoverflow youtube]
 
     other_icons = %w[quote]
 
