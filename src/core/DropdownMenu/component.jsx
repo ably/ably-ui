@@ -54,8 +54,6 @@ const Trigger = ({ children, additionalTriggerCSS = "" }) => {
   );
 };
 
-<DropdownMenu.Trigger className="list of names">Click me</DropdownMenu.Trigger>;
-
 Trigger.propTypes = {
   children: T.node,
   additionalTriggerCSS: T.string,
