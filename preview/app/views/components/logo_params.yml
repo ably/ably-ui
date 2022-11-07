@@ -1,11 +1,24 @@
 ---
 - :name: href
-  :optional: "Yes"
-  :default: "/"
+  :optional: "No"
   :type: String
   :description: Target URL
+- :name: logoUrl
+  :optional: "No"
+  :type: String
+  :description: Link to logo image
 - :name: dataId
   :optional: "Yes"
-  :default: ""
+  :default: '""'
   :type: String
   :description: Identifier for DOM manipulation
+- :name: additionalImgAttrs
+  :optional: "Yes"
+  :default: "{}"
+  :type: Object/Hash
+  :description: Additional attributes for the image DOM element
+- :name: additionalLinkAttrs
+  :optional: "Yes"
+  :default: "{}"
+  :type: Object/Hash
+  :description: Additional attributes for the link DOM element

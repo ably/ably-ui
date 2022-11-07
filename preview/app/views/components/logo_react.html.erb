@@ -4,7 +4,7 @@
 
  <%= render(ParameterTableComponent.new(component_parameters, framework)) %>
 
-<%= react_component('logo') %>
+<%= react_component('logo', { logo_url: asset_path('ably_ui/core/images/ably-logo.png') }) %>
 
 <% content_for :component do %>
   <script type="text/javascript">

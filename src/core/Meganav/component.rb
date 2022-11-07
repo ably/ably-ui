@@ -6,6 +6,7 @@ module AblyUi
     class Meganav < ViewComponent::Base
       include MeganavConfig
       include Util
+      include SharedAssets
       attr_reader :options, :login_link, :logo_link, :url_base
 
       renders_one :notice, AblyUi::Core::Notice

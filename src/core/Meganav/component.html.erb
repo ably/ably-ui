@@ -3,7 +3,7 @@
 
   <div class="ui-meganav ui-grid-px">
     <div className="mr-24">
-      <%= render(AblyUi::Core::Logo.new(data_id: "meganav-logo", href: logo_link)) %>
+      <%= render(AblyUi::Core::Logo.new(data_id: "meganav-logo", href: logo_link, logo_url: ably_logo)) %>
     </div>
     <%= render(AblyUi::Core::MeganavItemsDesktop.new(theme_name: @theme_name, url_base: url_base)) %>
 
