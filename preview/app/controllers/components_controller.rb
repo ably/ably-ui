@@ -171,7 +171,7 @@ class ComponentsController < ApplicationController
   def meganav_react_props
     props = {
       paths: {
-        logo: helpers.asset_path('ably_ui/core/images/ably-logo.svg'),
+        logo: helpers.asset_path('ably_ui/core/images/ably-logo.png'),
         icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
         aws_logo: helpers.asset_path('ably_ui/core/images/icon-tech-aws.svg')

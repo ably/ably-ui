@@ -39,8 +39,8 @@ describe("Flash", () => {
 
     cy.get(flashesId).within(() => {
       cy.get(flashId).filter(":visible").should("have.length", 2);
-      cy.get(flashId).eq(2).contains("This is an error, very bad");
-      cy.get(flashId).eq(3).contains("This is an alert");
+      cy.get(flashId).eq(0).contains("This is an error, very bad");
+      cy.get(flashId).eq(1).contains("This is an alert");
     });
   });
 });

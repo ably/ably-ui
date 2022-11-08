@@ -30,6 +30,10 @@ module AblyUi
     end
 
     module SharedAssets
+      def ably_logo
+        asset_path 'ably_ui/core/images/ably-logo.png'
+      end
+
       def ably_stack_path
         asset_path 'ably_ui/core/images/ably-stack.svg'
       end

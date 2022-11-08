@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import DOMPurify from "dompurify";
 import T from "prop-types";
+import { nanoid } from "nanoid/non-secure";
 
 import { getRemoteDataStore } from "../remote-data-store";
 import ConnectStateWrapper from "../ConnectStateWrapper/component.jsx";
@@ -50,29 +51,44 @@ const FLASH_TEXT_COLOR = {
 const AUTO_HIDE = ["success", "info", "notice"];
 const AUTO_HIDE_TIME = 8000;
 
-const Flash = ({ type, content }) => {
+const useAutoHide = (type, closeFlash) => {
+  const timeoutId = useRef(null);
+
+  useEffect(() => {
+    if (AUTO_HIDE.includes(type)) {
+      timeoutId.current = setTimeout(() => {
+        closeFlash();
+      }, AUTO_HIDE_TIME);
+    }
+
+    return () => {
+      if (timeoutId.current) {
+        clearTimeout(timeoutId.current);
+      }
+    };
+  }, []);
+};
+
+const Flash = ({ id, type, content, removeFlash }) => {
   const ref = useRef(null);
   const [closed, setClosed] = useState(false);
   const [flashHeight, setFlashHeight] = useState(0);
   const [triggerEntryAnimation, setTriggerEntryAnimation] = useState(false);
-
-  useEffect(() => setTriggerEntryAnimation(true), []);
-  useEffect(() => {
-    if (AUTO_HIDE.includes(type)) {
-      setTimeout(() => {
-        // closeFlash is idempotent, we can call it even if the flash has been already closed
-        closeFlash();
-      }, AUTO_HIDE_TIME);
-    }
-  }, [closed]);
 
   const closeFlash = () => {
     if (ref.current) {
       setFlashHeight(ref.current.getBoundingClientRect().height);
     }
 
-    setTimeout(() => setClosed(true), 0);
+    setClosed(true);
+
+    setTimeout(() => {
+      removeFlash(id);
+    }, 100);
   };
+
+  useEffect(() => setTriggerEntryAnimation(true), []);
+  useAutoHide(type, closeFlash);
 
   const animateEntry = triggerEntryAnimation && !closed;
 
@@ -123,13 +139,25 @@ Flash.propTypes = {
 };
 
 const Flashes = ({ flashes }) => {
-  const items = flashes?.items || [];
+  const [flashesWithIds, setFlashesWithIds] = useState([]);
+
+  const removeFlash = (flashId) => setFlashesWithIds((items) => items.filter((item) => item.id !== flashId));
+
+  useEffect(() => {
+    setFlashesWithIds((state) => {
+      return [...state, ...(flashes?.items || []).map((flash) => ({ ...flash, id: nanoid(), removed: false }))];
+    });
+  }, [flashes]);
+
+  console.log({ flashesWithIds });
 
   return (
     <div className="ui-flash" data-id={FLASH_DATA_ID}>
-      {items.map((flash) => (
-        <Flash key={flash.type} {...flash} />
-      ))}
+      {flashesWithIds
+        .filter((item) => !item.removed)
+        .map((flash) => (
+          <Flash removeFlash={removeFlash} key={flash.id} {...flash} />
+        ))}
     </div>
   );
 };

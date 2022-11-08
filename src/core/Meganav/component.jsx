@@ -86,7 +86,7 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
       {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
         <div className="mr-24">
-          <Logo dataId="meganav-logo" href={urlBase} />
+          <Logo dataId="meganav-logo" href={urlBase} logoUrl={paths.logo} />
         </div>
 
         <MeganavItemsDesktop panels={panels} paths={paths} theme={theme} absUrl={absUrl} />
