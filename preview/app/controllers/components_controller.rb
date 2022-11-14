@@ -76,6 +76,10 @@ class ComponentsController < ApplicationController
       icon-gui-tick
       icon-gui-warning
       icon-gui-link
+      icon-gui-filter-flow-step-1
+      icon-gui-filter-flow-step-2
+      icon-gui-filter-flow-step-3
+      icon-gui-resources
     ]
 
     display_icons = %w[
