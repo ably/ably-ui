@@ -22,20 +22,20 @@ const MeganavContentDevelopers = ({ absUrl }) => (
             </a>
           </li>
           <li>
-            <a href={absUrl("/docs/key-concepts")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-lightbulb-col" size="2.5rem" />
-              <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Concepts</p>
-                <p className="ui-meganav-media-copy">Read about core Ably platform concepts.</p>
-              </div>
-            </a>
-          </li>
-          <li>
             <a href={absUrl("/docs/quick-start-guide")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-quickstart-guides-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Quickstart guides</p>
                 <p className="ui-meganav-media-copy">Documentation to help you get started quickly.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/integrations")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-integrations-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Integrations</p>
+                <p className="ui-meganav-media-copy">Find out more about Ably integrations. </p>
               </div>
             </a>
           </li>
@@ -63,11 +63,11 @@ const MeganavContentDevelopers = ({ absUrl }) => (
             </a>
           </li>
           <li>
-            <a href={absUrl("/integrations")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-integrations-col" size="2.5rem" />
+            <a href={absUrl("/reference-guide-chat")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-chat-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Integrations</p>
-                <p className="ui-meganav-media-copy">Find out more about Ably integrations. </p>
+                <p className="ui-meganav-media-heading">Chat apps reference guide</p>
+                <p className="ui-meganav-media-copy">Learn how to build chat apps with Ably.</p>
               </div>
             </a>
           </li>
