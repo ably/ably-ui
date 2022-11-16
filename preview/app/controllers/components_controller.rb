@@ -118,6 +118,7 @@ class ComponentsController < ApplicationController
       icon-display-servers
       icon-display-shopping-cart
       icon-display-sla
+      icon-display-chat-col
       icon-display-soc2-type2
       icon-display-tech-account-comms
       icon-display-tutorials-demos-col
