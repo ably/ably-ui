@@ -149,8 +149,6 @@ const Flashes = ({ flashes }) => {
     });
   }, [flashes]);
 
-  console.log({ flashesWithIds });
-
   return (
     <div className="ui-flash" data-id={FLASH_DATA_ID}>
       {flashesWithIds
