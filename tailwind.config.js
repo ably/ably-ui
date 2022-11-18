@@ -131,6 +131,7 @@ module.exports = {
       80: "var(--spacing-80)",
       88: "var(--spacing-88)",
       96: "var(--spacing-96)",
+      128: "var(--spacing-128)",
       160: "var(--spacing-160)",
       256: "var(--spacing-256)",
     },
