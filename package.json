@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "8.7.0-dev.7021bee",
+  "version": "8.7.0-dev.d70b391",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
