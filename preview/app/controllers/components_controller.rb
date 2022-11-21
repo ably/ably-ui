@@ -52,6 +52,7 @@ class ComponentsController < ApplicationController
       icon-gui-arrow-up
       icon-gui-burger-menu
       icon-gui-check-circled-fill
+      icon-gui-check-circled-fill-black
       icon-gui-check-circled
       icon-gui-checklist-checked
       icon-gui-clock
