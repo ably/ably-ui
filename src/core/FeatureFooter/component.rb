@@ -13,7 +13,7 @@ module AblyUi
       def initialize(
         url_base: AblyUi::Core::Util::DEFAULT_URL_BASE,
         image_url: nil,
-        title: 'Talk to our technical team',
+        title: 'Talk to our technical dsfdsfdsfdsf',
         subtitle: "If you're having technical or account issues just get in touch.",
         live_chat_label: 'Start a live chat',
         live_chat_disabled_label: 'Live chat unavailable'
