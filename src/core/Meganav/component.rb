@@ -36,8 +36,8 @@ module AblyUi
             class: 'AblyUi::Core::MeganavContentPlatform'
           },
           {
-            label: 'Use Cases & Solutions',
-            short_label: 'Use Cases',
+            label: 'Solutions',
+            short_label: 'Solutions',
             id: 'use-cases-panel',
             class: 'AblyUi::Core::MeganavContentUseCases'
           },
