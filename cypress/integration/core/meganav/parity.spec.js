@@ -76,9 +76,10 @@ describe("Panels", () => {
               "click"
             );
 
-            cy.get('[data-id="meganav-mobile-panel-controls"]').within(() => {
-              cy.contains(name).trigger("click");
-            });
+            cy.get(
+              `[data-id="meganav-control-mobile-panel-open"][aria-controls="${lowercaseName}-panel-mobile"]`
+            ).trigger("click");
+
             cy.get('[data-id="meganav-mobile-dropdown"]');
           },
           selector: `#${lowercaseName}-panel-mobile`,
