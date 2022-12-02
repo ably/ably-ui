@@ -239,7 +239,14 @@ yarn link @ably/ui
 
 For `ruby`:
 
-In `preview/Gemfile` replace `source: "https://rubygems.pkg.github.com/ably"` with `path: '../'` and run:
+In `preview/Gemfile` replace the Ably UI gem version number with `path: '../'` like this:
+
+```bash
+# in preview
+gem 'ably-ui', path: '../', require: 'ably_ui'
+```
+
+and run:
 
 ```bash
 # in preview
