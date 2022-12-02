@@ -128,10 +128,10 @@ describe("Panels", () => {
 
   describe("UseCasesPanel", () => {
     it("looks the same on desktop", () =>
-      cy.compareComponents(config("Use Cases", "desktop")));
+      cy.compareComponents(config("Solutions", "desktop")));
 
     it("looks the same on mobile", () =>
-      cy.compareComponents(config("Use Cases", "mobile")));
+      cy.compareComponents(config("Solutions", "mobile")));
   });
 
   describe("AccountPanel", () => {
