@@ -1,3 +1,3 @@
 module AblyUi
-  VERSION = '8.7.0.dev.0ce5893'
+  VERSION = '8.7.0.dev.6c8bb4b'
 end
