@@ -206,10 +206,12 @@ class ComponentsController < ApplicationController
     {
       paths: {
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
-        rocket_list:
-          helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
-        flexible_companies:
-          helpers.asset_path('ably_ui/core/images/flexible-companies.png')
+        highest_performer:
+          helpers.asset_path('ably_ui/core/images/high-performer-2022.png'),
+        highest_user_adoption:
+          helpers.asset_path('ably_ui/core/images/highest-user-adoption-2022.png'),
+        users_love_us:
+          helpers.asset_path('ably_ui/core/images/users-love-us-2022.png'),
       }
     }
   end

@@ -10,19 +10,18 @@ export default function Footer({ paths, urlBase }) {
   return (
     <footer className="bg-light-grey font-sans antialiased" data-id="footer">
       <div className="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6">
-        <div className="col-span-full md:col-span-2">
+        <div className="col-span-full lg:col-span-2">
           <div className="flex flex-row p-menu-row-snug">
             <img className="mr-24 -mt-16" src={paths.ablyStack} alt="Ably homepage" />
             <h2 className="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1">The Ably Platform</h2>
           </div>
-
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4 lg:col-span-2">
             <p className="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
               Easily power any realtime experience in your application via a simple API that handles everything realtime.
             </p>
           </div>
 
-          <ul className="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1">
+          <ul className="grid xs:grid-cols-2 gap-x-8 md:gap-x-24 xl:gap-x-32 md:grid-cols-1">
             <li className="p-menu-row-snug">
               <a href={absUrl("/pub-sub-messaging")} className="ui-footer-menu-row-link">
                 Pub/sub messaging
@@ -51,7 +50,7 @@ export default function Footer({ paths, urlBase }) {
           </ul>
         </div>
 
-        <div className="col-span-full sm:col-span-3 md:col-span-1">
+        <div className="col-span-full xs:col-span-3 lg:col-span-1">
           <h2 className="ui-footer-col-title">Ably is for</h2>
           <ul>
             <li className="p-menu-row-snug">
@@ -112,7 +111,7 @@ export default function Footer({ paths, urlBase }) {
           </ul>
         </div>
 
-        <div className="col-span-full sm:col-span-3 md:col-span-1">
+        <div className="col-span-full xs:col-span-3 lg:col-span-1">
           <h2 className="ui-footer-col-title">Developers</h2>
           <ul>
             <li className="p-menu-row-snug">
@@ -149,12 +148,19 @@ export default function Footer({ paths, urlBase }) {
               <a className="pr-8 ui-footer-menu-row-link" href="https://status.ably.com/">
                 System status
               </a>
-              <iframe className="w-24 h-24 mt-4" src="https://status.ably.com/embed/icon" allowtransparency="true" frameBorder="0" scrolling="no"></iframe>
+              <iframe
+                className="w-24 h-24 mt-4"
+                src="https://status.ably.com/embed/icon"
+                allowtransparency="true"
+                frameBorder="0"
+                scrolling="no"
+                title="System Status"
+              ></iframe>
             </li>
           </ul>
         </div>
 
-        <div className="col-span-full sm:col-span-3 md:col-span-1">
+        <div className="col-span-full xs:col-span-3 lg:col-span-1">
           <h2 className="ui-footer-col-title">WHY ABLY</h2>
           <ul>
             <li className="p-menu-row-snug">
@@ -190,7 +196,7 @@ export default function Footer({ paths, urlBase }) {
           </ul>
         </div>
 
-        <div className="col-span-full sm:col-span-3 md:col-span-1">
+        <div className="col-span-full xs:col-span-3 lg:col-span-1">
           <h2 className="ui-footer-col-title">ABOUT</h2>
           <ul>
             <li className="p-menu-row-snug">
@@ -231,14 +237,86 @@ export default function Footer({ paths, urlBase }) {
           </ul>
         </div>
       </div>
+      <div className="max-w-screen-xl ui-grid-px mx-auto">
+        <hr className="border-t border-mid-grey" />
+      </div>
+      {/* Twitter + Glassdoor SM * above + Glassdoor XS  + Badges*/}
+      <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px sm:grid-cols-2">
+        <div className="">
+          <div className="flex flex-col lg:flex-row flex-auto ml-8 sm:col-span-1 lg:col-span-2">
+            <div className="">
+              <div className="flex items-center pb-24">
+                <a className="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime" title="Ably on Twitter">
+                  <Icon name="twitter" size="1.5rem" />
+                </a>
+                <a
+                  className="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
+                  href="https://www.linkedin.com/company/ably-realtime"
+                  title="Ably on LinkedIn"
+                >
+                  <Icon name="linkedin" size="1.5rem" />
+                </a>
+                <a className="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/" title="Ably on Github">
+                  <Icon name="github" size="1.5rem" />
+                </a>
+                <a className="h-24 pr-24 text-cool-black hover:text-icon-discord" href="https://discord.gg/jwBPhEZ9g5" title="Ably on Discord">
+                  <Icon name="discord" size="1.5rem" />
+                </a>
+              </div>
+            </div>
+            {/* GLASSDOOR on SM and Above */}
+            <div className="xs:hidden sm:block ui-footer-glassdoor">
+              <div className="flex sm:pt-24 lg:pt-0 sm:border-t sm:border-l-0 lg:border-t-0 lg:border-l sm:border-mid-grey sm:w-3/4 lg:w-full lg:pl-24">
+                <a
+                  href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+                  className="h-24 text-cool-black hover:text-icon-glassdoor"
+                  title="Ably reviews on glassdoor"
+                >
+                  <Icon name="glassdoor" size="1.5rem" />
+                </a>
+                <div className="pl-16 text-menu3 font-light">
+                  <strong className="block font-medium">We&apos;re hiring!</strong>
+                  <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
+                    Learn more at Glassdoor
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* GlassDoor on XS ONLY */}
+          <div className="xs:block sm:hidden">
+            <div className="border-t border-mid-grey w-full"></div>
+            <div className="flex py-24">
+              <a
+                className="h-24 pr-24 text-cool-black hover:text-icon-glassdoor"
+                href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+                title="Ably reviews on glassdoor"
+              >
+                <Icon name="glassdoor" size="1.5rem" />
+              </a>
+              <div className="text-menu3 font-light">
+                <strong className="block font-medium">We&apos;re hiring!</strong>
+                <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
+                  Learn more at Glassdoor
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-span-full sm:col-span-1 inline-flex sm:ml-auto">
+          <img className="mr-24 w-96 h-96" src={paths.highestUserAdoption} alt="Highest User Adoption 2022" />
+          <img className="mr-24 w-96 h-96" src={paths.usersLoveUs} alt="Users Love Us" />
+          <img className="mr-24 w-96 h-96" src={paths.highestPerformer} alt="High Performer 2022" />
+        </div>
+      </div>
 
       <div className="max-w-screen-xl ui-grid-px mx-auto">
         <hr className="border-t border-mid-grey" />
       </div>
-
-      <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2">
+      <div className="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px ">
         <div className="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-          <div className="inline-flex">
+          <div className="pl-16 ">
             <a href={absUrl("/privacy")} className="pr-24 ui-footer-link">
               Cookies
             </a>
@@ -252,40 +330,36 @@ export default function Footer({ paths, urlBase }) {
               Privacy
             </a>
           </div>
-
-          <div className="pt-32 flex items-center">
-            <a className="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime">
-              <Icon name="twitter" size="1.5rem" />
-            </a>
-            <a className="h-24 pr-24 text-cool-black hover:text-icon-linkedin" href="https://www.linkedin.com/company/ably-realtime">
-              <Icon name="linkedin" size="1.5rem" />
-            </a>
-            <a className="h-24 pr-24 text-cool-black hover:text-icon-github" href="https://github.com/ably/">
-              <Icon name="github" size="1.5rem" />
-            </a>
-            <a className="h-24 pr-24 text-cool-black hover:text-icon-discord" href="https://discord.gg/jwBPhEZ9g5">
-              <Icon name="discord" size="1.5rem" />
-            </a>
-            <div className="border-l border-mid-grey h-40"></div>
-            <a
-              className="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
-              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-            >
-              <Icon name="glassdoor" size="1.5rem" />
-            </a>
-            <div className="pl-16 text-menu3 font-light">
-              <strong className="block font-medium">We&apos;re hiring!</strong>
-              <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
-                Learn more
-              </a>
-              &nbsp;at Glassdoor
+        </div>
+        <div className="xs:grid xs:grid-cols-2 sm:grid-cols-4 xs:pl-16 md:pl-0 ">
+          <div className="flex mr-24">
+            <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12" />
+            <div>
+              <p className="ui-footer-compliance-text font-medium">SOC 2 Type 2</p>
+              <p className="ui-footer-compliance-text font-light mb-24">Certified</p>
             </div>
           </div>
-        </div>
-
-        <div className="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto">
-          <img className="mr-24 w-96 h-96" src={paths.rocketList} alt="Rocket List 2021" />
-          <img className="w-96 h-96" src={paths.flexibleCompanies} alt="Flexible Companies 2021" />
+          <div className="flex mr-24 sm:col-start-2">
+            <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12" />
+            <div>
+              <p className="ui-footer-compliance-text font-medium">HIPAA</p>
+              <p className="ui-footer-compliance-text font-light mb-24">Compliant</p>
+            </div>
+          </div>
+          <div className="flex mr-24 sm:col-start-3">
+            <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12" />
+            <div>
+              <p className="ui-footer-compliance-text font-medium">EU GDPR</p>
+              <p className="ui-footer-compliance-text font-light mb-24">Certified</p>
+            </div>
+          </div>
+          <div className="flex mr-24 sm:col-start-4">
+            <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12" />
+            <div>
+              <p className="ui-footer-compliance-text font-medium">256-bit AES</p>
+              <p className="ui-footer-compliance-text font-light mb-24">Encryption</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -295,8 +369,9 @@ export default function Footer({ paths, urlBase }) {
 Footer.propTypes = {
   paths: T.shape({
     ablyStack: T.string,
-    rocketList: T.string,
-    flexibleCompanies: T.string,
+    highestPerformer: T.string,
+    highestUserAdoption: T.string,
+    usersLoveUs: T.string,
   }),
   urlBase: T.string,
 };
