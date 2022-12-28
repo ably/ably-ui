@@ -53,7 +53,6 @@ module AblyUi
       def users_love_us
         asset_path 'ably_ui/core/images/users-love-us-2022.png'
       end
-
     end
 
     module Util
