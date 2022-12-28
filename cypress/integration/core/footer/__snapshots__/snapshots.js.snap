@@ -3,7 +3,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
   <div
     class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
   >
-    <div class="col-span-full md:col-span-2">
+    <div class="col-span-full lg:col-span-2">
       <div class="flex flex-row p-menu-row-snug">
         <img
           class="mr-24 -mt-16"
@@ -16,14 +16,14 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           The Ably Platform
         </h2>
       </div>
-      <div class="grid grid-cols-4">
+      <div class="grid grid-cols-4 lg:col-span-2">
         <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>
       </div>
       <ul
-        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
+        class="grid xs:grid-cols-2 gap-x-8 md:gap-x-24 xl:gap-x-32 md:grid-cols-1"
       >
         <li class="p-menu-row-snug">
           <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
@@ -52,7 +52,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         </li>
       </ul>
     </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -116,7 +116,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         </li>
       </ul>
     </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -154,11 +154,12 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             allowtransparency="true"
             frameborder="0"
             scrolling="no"
+            title="System Status"
           ></iframe>
         </li>
       </ul>
     </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -193,7 +194,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         </li>
       </ul>
     </div>
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">ABOUT</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -228,7 +229,105 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
     <hr class="border-t border-mid-grey" />
   </div>
   <div
-    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px sm:grid-cols-2"
+  >
+    <div class="">
+      <div
+        class="flex flex-col lg:flex-row flex-auto ml-8 sm:col-span-1 lg:col-span-2"
+      >
+        <div class="">
+          <div class="flex items-center pb-24">
+            <a
+              class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
+              href="https://twitter.com/ablyrealtime"
+              title="Ably on Twitter"
+              ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+                <use xlink:href="#sprite-twitter"></use></svg></a
+            ><a
+              class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
+              href="https://www.linkedin.com/company/ably-realtime"
+              title="Ably on LinkedIn"
+              ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+                <use xlink:href="#sprite-linkedin"></use></svg></a
+            ><a
+              class="h-24 pr-24 text-cool-black hover:text-icon-github"
+              href="https://github.com/ably/"
+              title="Ably on Github"
+              ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+                <use xlink:href="#sprite-github"></use></svg></a
+            ><a
+              class="h-24 pr-24 text-cool-black hover:text-icon-discord"
+              href="https://discord.gg/jwBPhEZ9g5"
+              title="Ably on Discord"
+              ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+                <use xlink:href="#sprite-discord"></use></svg
+            ></a>
+          </div>
+        </div>
+        <div class="xs:hidden sm:block ui-footer-glassdoor">
+          <div
+            class="flex sm:pt-24 lg:pt-0 sm:border-t sm:border-l-0 lg:border-t-0 lg:border-l sm:border-mid-grey sm:w-3/4 lg:w-full lg:pl-24"
+          >
+            <a
+              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+              class="h-24 text-cool-black hover:text-icon-glassdoor"
+              title="Ably reviews on glassdoor"
+              ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+                <use xlink:href="#sprite-glassdoor"></use></svg
+            ></a>
+            <div class="pl-16 text-menu3 font-light">
+              <strong class="block font-medium">We're hiring!</strong
+              ><a
+                href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+                class="ui-footer-link"
+                >Learn more at Glassdoor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="xs:block sm:hidden">
+        <div class="border-t border-mid-grey w-full"></div>
+        <div class="flex py-24">
+          <a
+            class="h-24 pr-24 text-cool-black hover:text-icon-glassdoor"
+            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+            title="Ably reviews on glassdoor"
+            ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
+              <use xlink:href="#sprite-glassdoor"></use></svg
+          ></a>
+          <div class="text-menu3 font-light">
+            <strong class="block font-medium">We're hiring!</strong
+            ><a
+              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+              class="ui-footer-link"
+              >Learn more at Glassdoor</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-full sm:col-span-1 inline-flex sm:ml-auto">
+      <img
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/highest-user-adoption-2022-b3cbeb5fa43cab3c21df256f644f88bf16b628b2ff4f04e54b5c9ef0260dd315.png"
+        alt="Highest User Adoption 2022"
+      /><img
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/users-love-us-2022-1c82775859c473f3e7a2faade55ffade3d9fd78d522f3e15ef2f4aa843f07ada.png"
+        alt="Users Love Us"
+      /><img
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/high-performer-2022-eae68980f68e8fc65a310e6ca80cee47c4e92e039bb2feb036f713ea9b9839b2.png"
+        alt="High Performer 2022"
+      />
+    </div>
+  </div>
+  <div class="max-w-screen-xl ui-grid-px mx-auto">
+    <hr class="border-t border-mid-grey" />
+  </div>
+  <div
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px "
   >
     <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
       <div class="inline-flex">
@@ -238,57 +337,56 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           >Data Protection</a
         ><a href="/privacy" class="ui-footer-link">Privacy</a>
       </div>
-      <div class="pt-32 flex items-center">
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
-          href="https://twitter.com/ablyrealtime"
-          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-            <use xlink:href="#sprite-twitter"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
-          href="https://www.linkedin.com/company/ably-realtime"
-          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-            <use xlink:href="#sprite-linkedin"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-github"
-          href="https://github.com/ably/"
-          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-            <use xlink:href="#sprite-github"></use></svg></a
-        ><a
-          class="h-24 pr-24 text-cool-black hover:text-icon-discord"
-          href="https://discord.gg/jwBPhEZ9g5"
-          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-            <use xlink:href="#sprite-discord"></use></svg
-        ></a>
-        <div class="border-l border-mid-grey h-40"></div>
-        <a
-          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
-          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-          ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-            <use xlink:href="#sprite-glassdoor"></use></svg
-        ></a>
-        <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">We're hiring!</strong
-          ><a
-            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-            class="ui-footer-link"
-            >Learn more</a
-          >&nbsp;at Glassdoor
+    </div>
+    <div class="xs:grid xs:grid-cols-2 sm:grid-cols-4 xs:pl-16 md:pl-0 ">
+      <div class="flex mr-24">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">SOC 2 Type 2</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
         </div>
       </div>
-    </div>
-    <div
-      class="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto"
-    >
-      <img
-        class="mr-24 w-96 h-96"
-        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
-        alt="Rocket List 2021"
-      /><img
-        class="w-96 h-96"
-        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
-        alt="Flexible Companies 2021"
-      />
+      <div class="flex mr-24 sm:col-start-2">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">HIPAA</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Compliant</p>
+        </div>
+      </div>
+      <div class="flex mr-24 sm:col-start-3">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">EU GDPR</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+        </div>
+      </div>
+      <div class="flex mr-24 sm:col-start-4">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">256-bit AES</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Encryption</p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
@@ -299,7 +397,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
   <div
     class="max-w-screen-xl mx-auto py-32 sm:py-40 lg:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
   >
-    <div class="col-span-full md:col-span-2">
+    <div class="col-span-full lg:col-span-2">
       <div class="flex flex-row p-menu-row-snug">
         <img
           alt="Ably homepage"
@@ -312,16 +410,14 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           The Ably Platform
         </h2>
       </div>
-
-      <div class="grid grid-cols-4">
+      <div class="grid grid-cols-4 lg:col-span-2">
         <p class="text-p3 py-16 font-medium p-menu-row-snug col-span-3">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>
       </div>
-
       <ul
-        class="grid gap-x-8 sm:gap-x-16 md:gap-x-24 xl:gap-x-32 sm:grid-cols-2 md:grid-cols-1"
+        class="grid xs:grid-cols-2 gap-x-8 md:gap-x-24 xl:gap-x-32 md:grid-cols-1"
       >
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/pub-sub-messaging"
@@ -350,8 +446,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </li>
       </ul>
     </div>
-
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">Ably is for</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -415,8 +510,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </li>
       </ul>
     </div>
-
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">Developers</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -459,8 +553,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </li>
       </ul>
     </div>
-
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">WHY ABLY</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -495,8 +588,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         </li>
       </ul>
     </div>
-
-    <div class="col-span-full sm:col-span-3 md:col-span-1">
+    <div class="col-span-full xs:col-span-3 lg:col-span-1">
       <h2 class="ui-footer-col-title">ABOUT</h2>
       <ul>
         <li class="p-menu-row-snug">
@@ -527,91 +619,188 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       </ul>
     </div>
   </div>
-
   <div class="max-w-screen-xl ui-grid-px mx-auto">
     <hr class="border-t border-mid-grey" />
   </div>
-
   <div
-    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px grid-cols-2"
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 grid ui-grid-gap ui-grid-px sm:grid-cols-2"
+  >
+    <div class="">
+      <div
+        class="flex flex-col lg:flex-row flex-auto ml-8 sm:col-span-1 lg:col-span-2"
+      >
+        <div class="">
+          <div class="flex items-center pb-24">
+            <a
+              class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
+              href="https://twitter.com/ablyrealtime"
+              title="Ably on Twitter"
+            >
+              <svg class=" " style="width: 1.5rem; height: 1.5rem">
+                <use xlink:href="#sprite-twitter"></use>
+              </svg>
+            </a>
+            <a
+              class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
+              href="https://www.linkedin.com/company/ably-realtime"
+              title="Ably on LinkedIn"
+            >
+              <svg class=" " style="width: 1.5rem; height: 1.5rem">
+                <use xlink:href="#sprite-linkedin"></use>
+              </svg>
+            </a>
+            <a
+              class="h-24 pr-24 text-cool-black hover:text-icon-github"
+              href="https://github.com/ably/"
+              title="Ably on Github"
+            >
+              <svg class=" " style="width: 1.5rem; height: 1.5rem">
+                <use xlink:href="#sprite-github"></use>
+              </svg>
+            </a>
+            <a
+              class="h-24 pr-24 text-cool-black hover:text-icon-discord"
+              href="https://discord.gg/jwBPhEZ9g5"
+              title="Ably on Discord"
+            >
+              <svg class=" " style="width: 1.5rem; height: 1.5rem">
+                <use xlink:href="#sprite-discord"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="xs:hidden sm:block ui-footer-glassdoor">
+          <div
+            class="flex sm:pt-24 lg:pt-0 sm:border-t sm:border-l-0 lg:border-t-0 lg:border-l sm:border-mid-grey sm:w-3/4 lg:w-full lg:pl-24"
+          >
+            <a
+              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+              class="h-24 text-cool-black hover:text-icon-glassdoor"
+              title="Ably reviews on glassdoor"
+            >
+              <svg class=" " style="width: 1.5rem; height: 1.5rem">
+                <use xlink:href="#sprite-glassdoor"></use>
+              </svg>
+            </a>
+            <div class="pl-16 text-menu3 font-light">
+              <strong class="block font-medium">We're hiring!</strong>
+              <a
+                href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+                class="ui-footer-link"
+              >
+                Learn more at Glassdoor
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="xs:block sm:hidden">
+        <div class="border-t border-mid-grey w-full"></div>
+        <div class="flex py-24">
+          <a
+            class="h-24 pr-24 text-cool-black hover:text-icon-glassdoor"
+            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+            title="Ably reviews on glassdoor"
+          >
+            <svg class=" " style="width: 1.5rem; height: 1.5rem">
+              <use xlink:href="#sprite-glassdoor"></use>
+            </svg>
+          </a>
+          <div class="text-menu3 font-light">
+            <strong class="block font-medium">We're hiring!</strong>
+            <a
+              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
+              class="ui-footer-link"
+            >
+              Learn more at Glassdoor
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-full sm:col-span-1 inline-flex sm:ml-auto">
+      <img
+        alt="Highest User Adoption 2022"
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/highest-user-adoption-2022-b3cbeb5fa43cab3c21df256f644f88bf16b628b2ff4f04e54b5c9ef0260dd315.png"
+      />
+      <img
+        alt="Users Love Us"
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/users-love-us-2022-1c82775859c473f3e7a2faade55ffade3d9fd78d522f3e15ef2f4aa843f07ada.png"
+      />
+      <img
+        alt="High Performer 2022"
+        class="mr-24 w-96 h-96"
+        src="/assets/ably_ui/core/images/high-performer-2022-eae68980f68e8fc65a310e6ca80cee47c4e92e039bb2feb036f713ea9b9839b2.png"
+      />
+    </div>
+  </div>
+  <div class="max-w-screen-xl ui-grid-px mx-auto">
+    <hr class="border-t border-mid-grey" />
+  </div>
+  <div
+    class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px "
   >
     <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
       <div class="inline-flex">
-        <a class="ui-footer-link pr-24" href="/privacy">Cookies</a>
-        <a class="ui-footer-link pr-24" href="/legals">Legals</a>
-        <a class="ui-footer-link pr-24" href="/data-protection"
+        <a class="pr-24 ui-footer-link" href="/privacy">Cookies</a>
+        <a class="pr-24 ui-footer-link" href="/legals">Legals</a>
+        <a class="pr-24 ui-footer-link" href="/data-protection"
           >Data Protection</a
         >
         <a class="ui-footer-link" href="/privacy">Privacy</a>
       </div>
-
-      <div class="pt-32 flex items-center">
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
-          href="https://twitter.com/ablyrealtime"
+    </div>
+    <div class="xs:grid xs:grid-cols-2 sm:grid-cols-4 xs:pl-16 md:pl-0 ">
+      <div class="flex mr-24">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem"
         >
-          <svg class=" " style="width: 1.5rem; height: 1.5rem">
-            <use xlink:href="#sprite-twitter"></use>
-          </svg>
-        </a>
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
-          href="https://www.linkedin.com/company/ably-realtime"
-        >
-          <svg class=" " style="width: 1.5rem; height: 1.5rem">
-            <use xlink:href="#sprite-linkedin"></use>
-          </svg>
-        </a>
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-github"
-          href="https://github.com/ably/"
-        >
-          <svg class=" " style="width: 1.5rem; height: 1.5rem">
-            <use xlink:href="#sprite-github"></use>
-          </svg>
-        </a>
-        <a
-          class="h-24 pr-24 text-cool-black hover:text-icon-discord"
-          href="https://discord.gg/jwBPhEZ9g5"
-        >
-          <svg class=" " style="width: 1.5rem; height: 1.5rem">
-            <use xlink:href="#sprite-discord"></use>
-          </svg>
-        </a>
-        <div class="border-l border-mid-grey h-40"></div>
-        <a
-          class="flex flex-row pl-24 text-cool-black hover:text-icon-glassdoor"
-          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-        >
-          <svg class=" " style="width: 1.5rem; height: 1.5rem">
-            <use xlink:href="#sprite-glassdoor"></use>
-          </svg>
-        </a>
-        <div class="pl-16 text-menu3 font-light">
-          <strong class="block font-medium">We're hiring!</strong>
-          <a
-            href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
-            class="ui-footer-link"
-            >Learn more</a
-          >
-          at Glassdoor
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">SOC 2 Type 2</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
         </div>
       </div>
-    </div>
-
-    <div
-      class="md:text-right col-span-full md:col-span-1 ml-8 inline-flex md:ml-auto"
-    >
-      <img
-        alt="Rocket List 2021"
-        class="mr-24 w-96 h-96"
-        src="/assets/ably_ui/core/images/rocket-list-2021-585749315fb7d34591caa21db10b0a2abc6bb38bbe32f9f350b5ae48a05c26dd.png"
-      />
-      <img
-        alt="Flexible Companies 2021"
-        class="w-96 h-96"
-        src="/assets/ably_ui/core/images/flexible-companies-dc4c35aaec0e576c23df2d8c684bf64739a0df9ed6410f84ea7ba61245ca4efc.png"
-      />
+      <div class="flex mr-24 sm:col-start-2">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">HIPAA</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Compliant</p>
+        </div>
+      </div>
+      <div class="flex mr-24 sm:col-start-3">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">EU GDPR</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+        </div>
+      </div>
+      <div class="flex mr-24 sm:col-start-4">
+        <svg
+          class="text-active-orange bg-white rounded-full mr-12"
+          style="width: 1.5rem; height: 1.5rem"
+        >
+          <use xlink:href="#sprite-icon-gui-tick"></use>
+        </svg>
+        <div>
+          <p class="ui-footer-compliance-text font-medium">256-bit AES</p>
+          <p class="ui-footer-compliance-text font-light mb-24">Encryption</p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

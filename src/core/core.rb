@@ -42,12 +42,16 @@ module AblyUi
         asset_path 'ably_ui/core/images/icon-tech-aws.svg'
       end
 
-      def rocket_list
-        asset_path 'ably_ui/core/images/rocket-list-2021.png'
+      def highest_performer
+        asset_path 'ably_ui/core/images/high-performer-2022.png'
       end
 
-      def flexible_companies
-        asset_path 'ably_ui/core/images/flexible-companies.png'
+      def highest_user_adoption
+        asset_path 'ably_ui/core/images/highest-user-adoption-2022.png'
+      end
+
+      def users_love_us
+        asset_path 'ably_ui/core/images/users-love-us-2022.png'
       end
     end
 

@@ -10,4 +10,14 @@
   .ui-footer-link {
     @apply text-gui-default hover:text-gui-hover hover:underline text-menu3 font-light;
   }
+
+  .ui-footer-compliance-text {
+    font-size: 12px;
+  }
+
+  @media screen {
+    .ui-footer-glassdoor {
+      display: none;
+    }
+  }
 }
