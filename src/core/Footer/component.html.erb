@@ -210,9 +210,9 @@
       </div>
     </div>
     <div class="col-span-full sm:col-span-1 inline-flex sm:ml-auto">
-      <%= image_tag(highest_user_adoption, alt: "Highest User Adoption 2022", class: "w-96 h-96") %>
-      <%= image_tag(users_love_us, alt: "Users Love Us", class: "w-96 h-96") %>
-      <%= image_tag(highest_performer, alt: "High Performer 2022", class: "w-96 h-96") %>
+      <%= image_tag(highest_user_adoption, alt: "Highest User Adoption 2022", class: "mr-24 w-96 h-96") %>
+      <%= image_tag(users_love_us, alt: "Users Love Us", class: "mr-24 w-96 h-96") %>
+      <%= image_tag(highest_performer, alt: "High Performer 2022", class: "mr-24 w-96 h-96") %>
     </div>
   </div>
   <div class="max-w-screen-xl ui-grid-px mx-auto">
@@ -220,10 +220,10 @@
   </div>
   <div class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px ">
     <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-      <div class="pl-16 ">
-        <%= link_to 'Cookies', abs_url("/privacy"), class: "ui-footer-link pr-24" %>
-        <%= link_to 'Legals', abs_url("/legals"), class: "ui-footer-link pr-24" %>
-        <%= link_to 'Data Protection', abs_url("/data-protection"), class: "ui-footer-link pr-24" %>
+      <div class="inline-flex">
+        <%= link_to 'Cookies', abs_url("/privacy"), class: "pr-24 ui-footer-link" %>
+        <%= link_to 'Legals', abs_url("/legals"), class: "pr-24 ui-footer-link" %>
+        <%= link_to 'Data Protection', abs_url("/data-protection"), class: "pr-24 ui-footer-link" %>
         <%= link_to 'Privacy', abs_url("/privacy"), class: "ui-footer-link" %>
       </div>
     </div>
