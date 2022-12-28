@@ -330,7 +330,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
     class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px "
   >
     <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-      <div class="pl-16 ">
+      <div class="inline-flex">
         <a href="/privacy" class="pr-24 ui-footer-link">Cookies</a
         ><a href="/legals" class="pr-24 ui-footer-link">Legals</a
         ><a href="/data-protection" class="pr-24 ui-footer-link"
@@ -721,17 +721,17 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
     <div class="col-span-full sm:col-span-1 inline-flex sm:ml-auto">
       <img
         alt="Highest User Adoption 2022"
-        class="w-96 h-96"
+        class="mr-24 w-96 h-96"
         src="/assets/ably_ui/core/images/highest-user-adoption-2022-b3cbeb5fa43cab3c21df256f644f88bf16b628b2ff4f04e54b5c9ef0260dd315.png"
       />
       <img
         alt="Users Love Us"
-        class="w-96 h-96"
+        class="mr-24 w-96 h-96"
         src="/assets/ably_ui/core/images/users-love-us-2022-1c82775859c473f3e7a2faade55ffade3d9fd78d522f3e15ef2f4aa843f07ada.png"
       />
       <img
         alt="High Performer 2022"
-        class="w-96 h-96"
+        class="mr-24 w-96 h-96"
         src="/assets/ably_ui/core/images/high-performer-2022-eae68980f68e8fc65a310e6ca80cee47c4e92e039bb2feb036f713ea9b9839b2.png"
       />
     </div>
@@ -743,10 +743,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
     class="max-w-screen-xl mx-auto py-24 md:py-40 lg:py-32 md:grid md:grid-cols-2 ui-grid-gap ui-grid-px "
   >
     <div class="flex flex-col flex-auto pb-40 ml-8 col-span-full md:col-span-1">
-      <div class="pl-16 ">
-        <a class="ui-footer-link pr-24" href="/privacy">Cookies</a>
-        <a class="ui-footer-link pr-24" href="/legals">Legals</a>
-        <a class="ui-footer-link pr-24" href="/data-protection"
+      <div class="inline-flex">
+        <a class="pr-24 ui-footer-link" href="/privacy">Cookies</a>
+        <a class="pr-24 ui-footer-link" href="/legals">Legals</a>
+        <a class="pr-24 ui-footer-link" href="/data-protection"
           >Data Protection</a
         >
         <a class="ui-footer-link" href="/privacy">Privacy</a>
