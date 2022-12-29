@@ -8,11 +8,21 @@
   }
 
   .ui-footer-link {
-    @apply text-gui-default hover:text-gui-hover hover:underline text-menu3 font-light;
+    @apply text-gui-default hover:text-gui-hover text-menu3 font-light;
   }
 
   .ui-footer-compliance-text {
     font-size: 12px;
+  }
+
+  .ui-footer-tick-icon {
+    min-width: 1.5rem;
+  }
+
+  @media (max-width: 1040px) {
+    .ui-footer-bottom-links {
+      @apply pb-40;
+    }
   }
 
   @media screen {
