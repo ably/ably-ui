@@ -294,10 +294,14 @@ To deploy a review app with your in-progress code, you can use the `pre-release`
 scripts/pre-release.sh
 ```
 
-This will do a couple of things:
+This script is a combination of two scripts:
 
-— update your local dependencies for ably-ui and run a production build
-— release a gem and a NPM package with the version built from your current SemVer but adding a pre-release tag based on a short SHA of your HEAD commit
+1. Pre-Release:
+
+- update your local dependencies for ably-ui and run a production build
+- release a gem and a NPM package with the version built from your current SemVer but adding a pre-release tag based on a short SHA of your HEAD commit
+
+2. Update Pre-Release Version:
 
 - update the preview app
 - commit all the above and push to origin

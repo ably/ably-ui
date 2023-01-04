@@ -63,35 +63,28 @@ rm ably-ui-$RUBY_VERSION.gem
 echo "> Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION
 
-echo "Waiting to make sure packages are available in registries ;("
-sleep 180
+echo "Waiting to make sure packages are available in registries ..."
+tries=0
+while [ $tries -lt 20 ]
+do
+  tries=$(( $tries + 1 ))
+  sleep 15
+  versions=$( gem search ably-ui --exact --prerelease --remote)
+  count=$(echo ${versions} | grep --count ${RUBY_VERSION} || true)
+  # Break if we have a match
+  if [ $count -eq 1 ]; then
+    # Work around bundler not finding gems immediately after being published
+    gem install ably-ui --version ${RUBY_VERSION}
+    break
+  fi
+  echo -n $tries
+done
+echo
 
-echo "> Update Gemfile.lock"
-bundle
+if [ $tries -eq 20 ]; then
+  echo "! Failed to find version ${RUBY_VERSION} in list of releases on Rubygems"
+  exit 1
+fi
 
-echo "> Update preview app version"
-cd preview
-
-echo "> Update Gemfile"
-# Using -i.bak is a cross-platform way of using sed
-# https://stackoverflow.com/a/22084103
-sed -i.bak "s/gem 'ably-ui', '.*', require/gem 'ably-ui', '${RUBY_VERSION}', require/" Gemfile
-rm Gemfile.bak
-
-echo "> Update ably-ui npm package in preview app"
-yarn upgrade @ably/ui@$VERSION
-
-echo "> Update Gemfile.lock"
-bundle lock  # don't change contents gem dir as it might be using local paths
-
-echo "> Commit version publish and preview app update to $TAG"
-cd ..
-git add package.json lib/ably_ui/version.rb Gemfile.lock
-git add preview/package.json preview/yarn.lock preview/Gemfile preview/Gemfile.lock
-git commit -m "Publish $TAG and update preview app"
-
-echo "> Tag commit with $TAG"
-git tag -a $TAG -m "$TAG"
-
-echo "> Push to repo"
-git push origin HEAD
+echo "Update Pre Release versions"
+./scripts/update-pre-release-versions.sh $ABLY_UI_VERSION $PACKAGE_SUFFIX
