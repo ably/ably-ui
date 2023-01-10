@@ -272,15 +272,10 @@ Then change back `path` to source `source` in the `Gemfile`. If you need to upda
 
 Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
-You will need to authenticate with [npmjs](https://docs.npmjs.com/creating-and-viewing-access-tokens) and [Ruby Gems](https://guides.rubygems.org/api-key-scopes/) to publish.
+You will need to authenticate with [Ruby Gems](https://guides.rubygems.org/api-key-scopes/) to publish.
 
 After the above, you should have:
 
-- NPM_TOKEN set in your environment
-- `.npmrc` file to read NPM_TOKEN from your environment like this:
-  ```
-  //registry.npmjs.org/:_authToken=${NPM_TOKEN}
-  ```
 - a `~/.gem/credentials` file that has your Rubygems API key:
   ```
   ---
