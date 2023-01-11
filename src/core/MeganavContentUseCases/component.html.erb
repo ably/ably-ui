@@ -7,15 +7,6 @@
         </h3>
       <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
         <li>
-          <%= link_to abs_url("/solutions/live-updates-results-metrics"), class: "ui-meganav-media-with-image group" do %>
-            <%= render(AblyUi::Core::Icon.new(name: "icon-live-updates-results-metrics-col", size: "2.5rem")) %>
-            <div class="flex flex-col justify-center">
-              <p class="ui-meganav-media-heading">Live updates, results & metrics</p>
-              <p class="ui-meganav-media-copy">Deliver live updates to keep users informed.</p>
-            </div>
-          <% end %>
-        </li>
-        <li>
           <%= link_to abs_url("/solutions/chat"), class: "ui-meganav-media-with-image group" do %>
             <%= render(AblyUi::Core::Icon.new(name: "icon-display-chat-stack-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
@@ -25,20 +16,29 @@
           <% end %>
         </li>
         <li>
-          <%= link_to abs_url("/solutions/virtual-events"), class: "ui-meganav-media-with-image group" do %>
-            <%= render(AblyUi::Core::Icon.new(name: "icon-display-virtual-events-col", size: "2.5rem")) %>
+          <%= link_to abs_url("/solutions/multiplayer-collaboration"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-multi-user-spaces-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
-              <p class="ui-meganav-media-heading">Virtual Events</p>
-              <p class="ui-meganav-media-copy">Power engaging virtual events with realtime features.</p>
+              <p class="ui-meganav-media-heading">Multiplayer Collaboration</p>
+              <p class="ui-meganav-media-copy">Bring collaborative multiplayer experiences to your users.</p>
             </div>
           <% end %>
         </li>
         <li>
-          <%= link_to abs_url("/solutions/multi-user-virtual-spaces"), class: "ui-meganav-media-with-image group" do %>
-            <%= render(AblyUi::Core::Icon.new(name: "icon-multi-user-spaces-col", size: "2.5rem")) %>
+          <%= link_to abs_url("/solutions/data-broadcast"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-live-updates-results-metrics-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
-              <p class="ui-meganav-media-heading">Multi-user virtual spaces</p>
-              <p class="ui-meganav-media-copy">Build live and interactive multi-user applications.</p>
+              <p class="ui-meganav-media-heading">Data Broadcast</p>
+              <p class="ui-meganav-media-copy">Broadcast realtime event data to millions of devices around the globe.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to abs_url("/solutions/data-synchronization"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-virtual-events", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Data Synchronization</p>
+              <p class="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
             </div>
           <% end %>
         </li>
