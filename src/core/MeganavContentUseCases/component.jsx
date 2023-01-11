@@ -13,15 +13,6 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </h3>
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
           <li>
-            <a href={absUrl("/solutions/live-updates-results-metrics")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-live-updates-results-metrics-col" size="2.5rem" />
-              <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Live updates, results & metrics</p>
-                <p className="ui-meganav-media-copy">Deliver live updates to keep users informed.</p>
-              </div>
-            </a>
-          </li>
-          <li>
             <a href={absUrl("/solutions/chat")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
@@ -31,20 +22,29 @@ const MeganavContentUseCases = ({ absUrl }) => (
             </a>
           </li>
           <li>
-            <a href={absUrl("/solutions/virtual-events")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-virtual-events-col" size="2.5rem" />
+            <a href={absUrl("/solutions/multiplayer-collaboration")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Virtual Events</p>
-                <p className="ui-meganav-media-copy">Power engaging virtual events with realtime features.</p>
+                <p className="ui-meganav-media-heading">Multiplayer Collaboration</p>
+                <p className="ui-meganav-media-copy">Bring collaborative multiplayer experiences to your users.</p>
               </div>
             </a>
           </li>
           <li>
-            <a href={absUrl("/solutions/multi-user-virtual-spaces")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
+            <a href={absUrl("/solutions/data-broadcast")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-live-updates-results-metrics-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Multi-user virtual spaces</p>
-                <p className="ui-meganav-media-copy">Build live and interactive multi-user applications.</p>
+                <p className="ui-meganav-media-heading">Data Broadcast</p>
+                <p className="ui-meganav-media-copy">Broadcast realtime event data to millions of devices around the globe.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/solutions/data-synchronization")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-virtual-events" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Data Synchronization</p>
+                <p className="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
               </div>
             </a>
           </li>
