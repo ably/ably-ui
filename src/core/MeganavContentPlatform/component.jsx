@@ -46,12 +46,6 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
             </a>
           </li>
           <li>
-            <a href={absUrl("/examples/live-charts")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Live Charts</p>
-              <p className="ui-meganav-media-copy">Visualise live metrics and data in a chart.</p>
-            </a>
-          </li>
-          <li>
             <a href={absUrl("/examples/live-cursors")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">Live Cursors</p>
               <p className="ui-meganav-media-copy">Track all cursors in realtime.</p>
@@ -61,6 +55,12 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
             <a href={absUrl("/examples/typing-indicator")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">Typing Indicator</p>
               <p className="ui-meganav-media-copy">See when a user is typing a message.</p>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/examples/chat-admin-privileges")} className="ui-meganav-media group">
+              <p className="ui-meganav-media-heading">Chat Admin Privileges</p>
+              <p className="ui-meganav-media-copy">Control who can take admin actions in a digital space.</p>
             </a>
           </li>
         </ul>
