@@ -9,7 +9,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
     <section className="grid grid-cols-12 ui-grid-gap-x w-full">
       <div className="col-span-full md:col-span-4 py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24 bg-extra-light-grey">
         <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-use-cases">
-          Use cases
+          Solutions
         </h3>
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
           <li>
@@ -45,6 +45,15 @@ const MeganavContentUseCases = ({ absUrl }) => (
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Data Synchronization</p>
                 <p className="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-tech-apachekafka" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Extend Kafka to the edge</p>
+                <p className="ui-meganav-media-copy">Reliably expand Kafka’s event streaming beyond your private network.</p>
               </div>
             </a>
           </li>
@@ -86,6 +95,14 @@ const MeganavContentUseCases = ({ absUrl }) => (
               <p className="ui-meganav-media-copy">Provide trustworthy, HIPAA-compliant realtime apps.</p>
             </a>
           </li>
+        </ul>
+      </div>
+
+      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
+        <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-solutions">
+          &nbsp;
+        </h3>
+        <ul aria-labelledby="meganav-use-cases-panel-solutions">
           <li>
             <a href={absUrl("/solutions/ecommerce-and-retail")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">eCommerce & Retail</p>
@@ -108,26 +125,6 @@ const MeganavContentUseCases = ({ absUrl }) => (
             <a href={absUrl("/solutions/iot-and-connected-devices")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">IoT & Connected Devices</p>
               <p className="ui-meganav-media-copy">Monitor and control global IoT deployments in realtime.</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
-        <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-solutions">
-          Solutions
-        </h3>
-        <ul aria-labelledby="meganav-use-cases-panel-solutions">
-          <li>
-            <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Extend Kafka to the edge</p>
-              <p className="ui-meganav-media-copy">Reliably expand Kafka’s event streaming beyond your private network.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/solutions/asset-tracking")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Asset Tracking</p>
-              <p className="ui-meganav-media-copy">Track assets in realtime with a solution optimised for last mile logistics.</p>
             </a>
           </li>
         </ul>
