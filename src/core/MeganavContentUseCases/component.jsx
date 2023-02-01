@@ -60,7 +60,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
+      <div className="col-span-full md:col-span-4 pt-24 pb-0 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-industry">
           Industry
         </h3>
@@ -98,11 +98,10 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
-        <h3 className="ui-meganav-overline" id="meganav-use-cases-panel-solutions">
-          &nbsp;
-        </h3>
-        <ul aria-labelledby="meganav-use-cases-panel-solutions">
+      <div className="col-span-full md:col-span-4 pt-0 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
+
+
+        <ul aria-labelledby="meganav-use-cases-panel-solutions" className="mt-0 md:mt-40">
           <li>
             <a href={absUrl("/solutions/ecommerce-and-retail")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">eCommerce & Retail</p>
