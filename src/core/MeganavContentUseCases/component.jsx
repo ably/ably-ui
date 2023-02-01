@@ -99,8 +99,6 @@ const MeganavContentUseCases = ({ absUrl }) => (
       </div>
 
       <div className="col-span-full md:col-span-4 pt-0 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
-
-
         <ul aria-labelledby="meganav-use-cases-panel-solutions" className="mt-0 md:mt-40">
           <li>
             <a href={absUrl("/solutions/ecommerce-and-retail")} className="ui-meganav-media group">
