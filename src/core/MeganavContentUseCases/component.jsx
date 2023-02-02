@@ -13,15 +13,6 @@ const MeganavContentUseCases = ({ absUrl }) => (
         </h3>
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
           <li>
-            <a href={absUrl("/push-notifications")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-push-notifications-col" size="2.5rem" />
-              <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Notifications</p>
-                <p className="ui-meganav-media-copy">Deliver cross-platform push notifications with a simple unified API.</p>
-              </div>
-            </a>
-          </li>
-          <li>
             <a href={absUrl("/solutions/chat")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
@@ -54,6 +45,15 @@ const MeganavContentUseCases = ({ absUrl }) => (
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Data Synchronization</p>
                 <p className="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/push-notifications")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-push-notifications-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Notifications</p>
+                <p className="ui-meganav-media-copy">Deliver cross-platform push notifications with a simple unified API.</p>
               </div>
             </a>
           </li>
