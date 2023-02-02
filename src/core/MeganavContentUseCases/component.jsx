@@ -17,7 +17,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Chat</p>
-                <p className="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale. </p>
+                <p className="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale.</p>
               </div>
             </a>
           </li>
@@ -32,7 +32,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
           </li>
           <li>
             <a href={absUrl("/solutions/data-broadcast")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-live-updates-results-metrics-col" size="2.5rem" />
+              <Icon name="icon-display-data-broadcast-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Data Broadcast</p>
                 <p className="ui-meganav-media-copy">Broadcast realtime event data to millions of devices around the globe.</p>
@@ -41,10 +41,19 @@ const MeganavContentUseCases = ({ absUrl }) => (
           </li>
           <li>
             <a href={absUrl("/solutions/data-synchronization")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-virtual-events" size="2.5rem" />
+              <Icon name="icon-display-data-synchronization-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Data Synchronization</p>
                 <p className="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href={absUrl("/push-notifications")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-push-notifications-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Notifications</p>
+                <p className="ui-meganav-media-copy">Deliver cross-platform push notifications with a simple unified API.</p>
               </div>
             </a>
           </li>
