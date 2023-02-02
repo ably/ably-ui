@@ -7,11 +7,20 @@
         </h3>
       <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
         <li>
+          <%= link_to abs_url("/push-notifications"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-push-notifications-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Notifications</p>
+              <p class="ui-meganav-media-copy">Deliver cross-platform push notifications with a simple unified API.</p>
+            </div>
+          <% end %>
+        </li>
+        <li>
           <%= link_to abs_url("/solutions/chat"), class: "ui-meganav-media-with-image group" do %>
             <%= render(AblyUi::Core::Icon.new(name: "icon-display-chat-stack-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
               <p class="ui-meganav-media-heading">Chat</p>
-              <p class="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale. </p>
+              <p class="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale.</p>
             </div>
           <% end %>
         </li>
@@ -26,7 +35,7 @@
         </li>
         <li>
           <%= link_to abs_url("/solutions/data-broadcast"), class: "ui-meganav-media-with-image group" do %>
-            <%= render(AblyUi::Core::Icon.new(name: "icon-live-updates-results-metrics-col", size: "2.5rem")) %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-data-broadcast-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
               <p class="ui-meganav-media-heading">Data Broadcast</p>
               <p class="ui-meganav-media-copy">Broadcast realtime event data to millions of devices around the globe.</p>
@@ -35,7 +44,7 @@
         </li>
         <li>
           <%= link_to abs_url("/solutions/data-synchronization"), class: "ui-meganav-media-with-image group" do %>
-            <%= render(AblyUi::Core::Icon.new(name: "icon-display-virtual-events", size: "2.5rem")) %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-display-data-synchronization-col", size: "2.5rem")) %>
             <div class="flex flex-col justify-center">
               <p class="ui-meganav-media-heading">Data Synchronization</p>
               <p class="ui-meganav-media-copy">Keep your frontend and backend in realtime sync, at global scale.</p>
