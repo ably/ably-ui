@@ -88,6 +88,15 @@ const MeganavContentCompany = ({ paths, absUrl }) => {
                 </div>
               </a>
             </li>
+            <li>
+              <a href={absUrl("/events")} className="ui-meganav-media-with-image group">
+                <Icon name="icon-display-events-col" size="2.5rem" />
+                <div className="flex flex-col justify-center">
+                  <p className="ui-meganav-media-heading">Events</p>
+                  <p className="ui-meganav-media-copy">Join Ably at upcoming events.</p>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
 
