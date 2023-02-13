@@ -16,7 +16,7 @@ const MeganavContentUseCases = ({ absUrl }) => (
             <a href={absUrl("/solutions/chat")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Chat</p>
+                <p className="ui-meganav-media-heading">Live Chat</p>
                 <p className="ui-meganav-media-copy">Deliver highly reliable chat experiences at scale.</p>
               </div>
             </a>
