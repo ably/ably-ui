@@ -47,6 +47,25 @@ listener = new MessageListener() {
 channel.subscribe("greeting", listener);
 })) %>
 
+
+<h1 class="text-h2 my-16">Kotlin</h1>
+
+<%= render(AblyUi::Core::Code.new(language: "kotlin",
+  snippet: %q{
+val exampleConstraints = DefaultResolutionConstraints(
+  DefaultResolutionSet( // this constructor provides one Resolution for all states
+      Resolution(
+          accuracy = Accuracy.BALANCED,
+          desiredInterval = 1000L,
+          minimumDisplacement = 1.0
+      )
+  ),
+  proximityThreshold = DefaultProximity(spatial = 1.0),
+  batteryLevelThreshold = 10.0f,
+  lowBatteryMultiplier = 2.0f
+)
+})) %>
+
 <% content_for :component do %>
   <%= javascript_packs_with_chunks_tag 'code-vw' %>
 <% end %>

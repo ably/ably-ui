@@ -50,10 +50,33 @@ listener = new MessageListener() {
 channel.subscribe("greeting", listener);
 }}) %>
 
+
+
+<h1 class="text-h2 my-16">Kotlin</h1>
+
+<%= react_component('code', {
+  language: "kotlin",
+  snippet: %q{
+val exampleConstraints = DefaultResolutionConstraints(
+  DefaultResolutionSet( // this constructor provides one Resolution for all states
+      Resolution(
+          accuracy = Accuracy.BALANCED,
+          desiredInterval = 1000L,
+          minimumDisplacement = 1.0
+      )
+  ),
+  proximityThreshold = DefaultProximity(spatial = 1.0),
+  batteryLevelThreshold = 10.0f,
+  lowBatteryMultiplier = 2.0f
+)
+}}) %>
+
 <% content_for :component do %>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("bg-light-grey", "m-32");
     });
   </script>
+
+
 <% end %>
