@@ -22,6 +22,7 @@ import php from "highlight.js/lib/languages/php";
 import python from "highlight.js/lib/languages/python";
 import ruby from "highlight.js/lib/languages/ruby";
 import swift from "highlight.js/lib/languages/swift";
+import kotlin from "highlight.js/lib/languages/kotlin";
 import sql from "highlight.js/lib/languages/sql";
 import xml from "highlight.js/lib/languages/xml";
 import yaml from "highlight.js/lib/languages/yaml";
@@ -44,6 +45,7 @@ const registry = [
   { label: "C++", key: "cpp", module: cpp },
   { label: "Dart", key: "dart", module: dart },
   { label: "Swift", key: "swift", module: swift },
+  { label: "Kotlin", key: "kotlin", module: kotlin },
   { label: "Objective C", key: "objectivec", module: objectivec },
   { label: "Node.js", key: "javascript", module: javascript },
   { label: "JSON", key: "json", module: json },

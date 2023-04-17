@@ -43,6 +43,11 @@ const languageToHighlightKey = (lang) => {
       id = "typescript";
       break;
 
+    case "kotlin":
+    case "kt":
+      id = "kotlin";
+      break;
+
     case "shell":
     case "fh":
     case "sh":
