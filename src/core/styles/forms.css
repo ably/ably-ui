@@ -41,7 +41,7 @@
   }
 
   .ui-checkbox-input:checked + .ui-checkbox-styled {
-    @apply bg-active-orange border-dark-grey border;
+    @apply bg-active-orange border-none;
   }
 
   .ui-checkbox-input:checked + .ui-checkbox-styled svg {
