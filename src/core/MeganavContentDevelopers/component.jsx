@@ -108,6 +108,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               <p className="ui-meganav-media-heading">
                 Status
                 <iframe
+                  title="Ably status"
                   src="https://status.ably.com/embed/icon"
                   allowtransparency="true"
                   frameBorder="0"
@@ -130,7 +131,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
 );
 
 MeganavContentDevelopers.propTypes = {
-  absUrl: T.func
+  absUrl: T.func,
 };
 
 export default MeganavContentDevelopers;
