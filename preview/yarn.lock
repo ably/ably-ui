@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ui@8.7.0-dev.a0d338f":
-  version "8.7.0-dev.a0d338f"
-  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-8.7.0-dev.a0d338f.tgz#e56e1bfcc38597416b972b581a26812c40b825ad"
-  integrity sha512-IFkjYZgGYbl2PgJWWLoMDU5rPUmfZyLkBBjqOw1LlpS+fb8BaSfCILW/9a56101TTzEQvmjhaAhTuBHCI7wEKQ==
+"@ably/ui@8.7.0-dev.35edbd4":
+  version "8.7.0-dev.35edbd4"
+  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-8.7.0-dev.35edbd4.tgz#18f0f156493dafdf4816c8f24ea9e6fe5c75b97c"
+  integrity sha512-LQCdob5I0te/xi5Jcx9p8MdJuwRMcAeCLeenwSpu8Zardr40SO89n1U6NwsFvMOvJcoTKPsE077RJ96/za768A==
   dependencies:
     addsearch-js-client "^0.7.0"
     array-flat-polyfill "^1.0.1"
