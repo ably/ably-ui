@@ -58,7 +58,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               <Icon name="icon-display-tutorials-demos-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Tutorials & Demos</p>
-                <p className="ui-meganav-media-copy">Get stuck in with our hands-on resources. </p>
+                <p className="ui-meganav-media-copy">Get stuck in with our hands-on resources.</p>
               </div>
             </a>
           </li>
@@ -76,7 +76,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">Multiplayer reference guide</p>
-                <p className="ui-meganav-media-copy">Learn about the core Ably concepts for Multiplayer collaboration.</p>
+                <p className="ui-meganav-media-copy">Learn how to build collaborative features with Ably.</p>
               </div>
             </a>
           </li>
