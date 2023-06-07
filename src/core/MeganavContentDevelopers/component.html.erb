@@ -35,7 +35,6 @@
         </li>
       </ul>
     </div>
-
     <div class="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
       <ul class="md:mt-40" aria-labelledby="meganav-developers-panel-explore">
         <li>
@@ -65,9 +64,17 @@
             </div>
           <% end %>
         </li>
+        <li>
+          <%= link_to abs_url("/reference-guide-multiplayer"), class: "ui-meganav-media-with-image group" do %>
+            <%= render(AblyUi::Core::Icon.new(name: "icon-multi-user-spaces-col", size: "2.5rem")) %>
+            <div class="flex flex-col justify-center">
+              <p class="ui-meganav-media-heading">Multiplayer reference guide</p>
+              <p class="ui-meganav-media-copy">Learn about the core Ably concepts for Multiplayer collaboration.</p>
+            </div>
+          <% end %>
+        </li>
       </ul>
     </div>
-
     <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
       <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">
         Quick links

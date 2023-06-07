@@ -71,6 +71,15 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               </div>
             </a>
           </li>
+          <li>
+            <a href={absUrl("/reference-guide-multiplayer")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Multiplayer reference guide</p>
+                <p className="ui-meganav-media-copy">Learn about the core Ably concepts for Multiplayer collaboration.</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -121,7 +130,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
 );
 
 MeganavContentDevelopers.propTypes = {
-  absUrl: T.func,
+  absUrl: T.func
 };
 
 export default MeganavContentDevelopers;
