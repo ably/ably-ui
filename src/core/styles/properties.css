@@ -74,34 +74,39 @@
       var(--color-jazzy-pink) 100%
     );
 
-    --fs-title-xl: 4rem;
-    --fs-title: 3.5rem;
-    --fs-title-xs: 3rem;
-    --fs-h1-xl: 3.5rem;
-    --fs-h1: 3rem;
-    --fs-h1-xs: 2.625rem;
-    --fs-h2-xl: 2.5rem;
+    --fs-title-xl: 3rem;
+    --fs-title: 2.75rem;
+    --fs-title-xs: 2.5rem;
+    --fs-h1-xl: 2.5rem;
+    --fs-h1: 2.25rem;
+    --fs-h1-xs: 2rem;
+
+    --fs-h2-xl: 2.125rem;
     --fs-h2: 2rem;
-    --fs-h2-xs: 1.875rem;
+    --fs-h2-xs: 1.75rem;
+
     --fs-h3: 1.5rem;
-    --fs-h4: 1.125rem;
-    --fs-p1: 1.125rem;
-    --fs-p2: 1rem;
+    --fs-h4: 1.25rem;
+    --fs-h5: 1rem;
+
+    --fs-p1: 1rem;
+    --fs-p2: 0.938rem;
     --fs-p3: 0.875rem;
     --fs-standfirst-xl: 2.25rem;
     --fs-standfirst: 1.5rem;
-    --fs-sub-header: 1.5rem;
-    --fs-sub-header-xs: 1.125rem;
+    --fs-sub-header: 1.125rem;
+    --fs-sub-header-xs: 1.063rem;
     --fs-overline1: 1rem;
     --fs-overline2: 0.875rem;
-    --fs-btn1: 1.125rem;
-    --fs-btn2: 1rem;
+    --fs-btn1: 1rem;
+    --fs-btn2: 0.938rem;
     --fs-btn3: 0.875rem;
-    --fs-menu1: 1.125rem;
-    --fs-menu2: 1rem;
+    --fs-menu1: 1rem;
+    --fs-menu2: 0.938rem;
     --fs-menu3: 0.875rem;
-    --fs-quote: 1.5rem;
-    --fs-code: 0.875rem;
+    --fs-quote: 1.25rem;
+    --fs-code: 0.938rem;
+    --fs-code2: 0.813rem;
 
     --lh-dense: 1;
     --lh-tight: 1.125;
@@ -115,7 +120,9 @@
     --ls-tighten-0_01: -0.01em;
     --ls-tighten-0_005: -0.005em;
     --ls-tighten-0_0025: -0.0025em;
+    --ls-tighten-0_0015: -0.0015em;
     --ls-widen-0_1: 0.1em;
+    --ls-widen-0_16: 0.16em;
     --ls-widen-0_15: 0.15em;
 
     --spacing-0: 0px;
@@ -130,6 +137,7 @@
     --spacing-20: 1.25rem;
     --spacing-24: 1.5rem;
     --spacing-32: 2rem;
+    --spacing-36: 2.25rem;
     --spacing-40: 2.5rem;
     --spacing-48: 3rem;
     --spacing-64: 4rem;

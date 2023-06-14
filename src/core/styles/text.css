@@ -1,46 +1,52 @@
 @layer components {
   .ui-text-title {
-    @apply font-sans font-medium text-cool-black;
+    @apply font-sans font-extrabold text-cool-black;
     @apply text-title-xs xs:text-title xl:text-title-xl;
-    @apply tracking-tighten-0.01 xs:tracking-tighten-0.015 xl:tracking-tighten-0.02;
+    @apply tracking-tighten-0.015 xs:tracking-tighten-0.02 xl:tracking-tighten-0.02;
   }
 
   .ui-text-h1 {
-    @apply font-sans font-medium text-cool-black;
+    @apply font-sans font-extrabold text-cool-black;
     @apply text-h1-xs xs:text-h1 xl:text-h1-xl;
-    @apply tracking-tighten-0.01;
+    @apply tracking-tighten-0.0125 xs:tracking-tighten-0.015;
   }
 
   .ui-text-h2 {
-    @apply font-sans font-medium text-cool-black;
+    @apply font-sans font-extrabold text-cool-black;
     @apply text-h2-xs xs:text-h2 xl:text-h2-xl;
-    @apply tracking-tighten-0.005;
+    @apply tracking-tighten-0.015 xs:tracking-tighten-0.01;
   }
 
   .ui-text-h3 {
-    @apply font-sans font-medium text-cool-black;
+    @apply font-sans font-extrabold text-cool-black;
     @apply text-h3;
-    @apply tracking-tighten-0.0025;
+    @apply tracking-tighten-0.005;
   }
 
   .ui-text-h4 {
-    @apply font-sans font-medium text-cool-black;
+    @apply font-sans font-extrabold text-cool-black;
     @apply text-h4;
-    @apply tracking-widen-0.1;
+    @apply tracking-tighten-0.0015;
+  }
+
+  .ui-text-h5 {
+    @apply font-sans font-extrabold text-cool-black;
+    @apply text-h5;
+    @apply tracking-tighten-0.0025;
   }
 
   .ui-text-p1 {
-    @apply font-sans font-light text-charcoal-grey;
+    @apply font-sans font-medium text-charcoal-grey;
     @apply text-p1;
   }
 
   .ui-text-p2 {
-    @apply font-sans font-light text-charcoal-grey;
+    @apply font-sans font-medium text-charcoal-grey;
     @apply text-p2;
   }
 
   .ui-text-p3 {
-    @apply font-sans font-light text-charcoal-grey;
+    @apply font-sans font-medium text-charcoal-grey;
     @apply text-p3;
   }
 
@@ -51,59 +57,62 @@
   }
 
   .ui-text-quote {
-    @apply font-sans font-light text-cool-black;
-    @apply text-quote;
-    @apply tracking-tighten-0.025;
+    @apply font-sans font-normal text-cool-black;
+    @apply text-quote leading-normal;
+    @apply tracking-tighten-0.0015;
   }
 
   .ui-text-sub-header {
-    @apply font-sans font-light text-dark-grey;
-    @apply text-sub-header-xs xs:text-sub-header;
-    @apply tracking-tighten-0.025;
+    @apply font-sans font-semibold text-neutral-800;
+    @apply text-sub-header-xs xs:text-sub-header leading-normal;
   }
 
   .ui-text-overline1 {
-    @apply font-sans font-medium text-dark-grey uppercase;
-    @apply text-overline1;
-    @apply tracking-widen-0.15;
+    @apply font-mono font-medium text-active-orange uppercase;
+    @apply text-overline1 leading-normal;
+    @apply tracking-widen-0.16;
   }
 
   .ui-text-overline2 {
-    @apply font-sans font-medium text-dark-grey uppercase;
-    @apply text-overline2;
-    @apply tracking-widen-0.1;
+    @apply font-mono font-medium text-active-orange uppercase;
+    @apply text-overline2 leading-normal;
+    @apply tracking-widen-0.16;
   }
 
   .ui-text-menu1 {
-    @apply font-sans font-light text-cool-black;
-    @apply text-menu1;
+    @apply font-sans font-medium text-cool-black;
+    @apply text-menu1 leading-snug;
   }
 
   .ui-text-menu2 {
-    @apply font-sans font-light text-cool-black;
-    @apply text-menu2;
+    @apply font-sans font-medium text-cool-black;
+    @apply text-menu2 leading-snug;
   }
 
   .ui-text-menu3 {
-    @apply font-sans font-light text-cool-black;
-    @apply text-menu3;
+    @apply font-sans font-medium text-cool-black;
+    @apply text-menu3 leading-snug;
   }
 
   .ui-text-code {
-    @apply font-mono font-semibold text-code;
+    @apply font-mono font-medium text-code;
+  }
+
+  .ui-text-code2 {
+    @apply font-mono font-medium text-code2;
   }
 
   .ui-text-code-inline {
-    @apply font-mono font-semibold text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
+    @apply font-mono font-medium text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
   }
 
   .ui-unordered-list {
-    @apply text-p1 font-light text-cool-black;
+    @apply text-p1 font-medium text-cool-black;
     @apply list-disc ml-32 mb-24;
   }
 
   .ui-ordered-list {
-    @apply text-p1 font-light text-cool-black;
+    @apply text-p1 font-medium text-charcoal-grey;
     @apply ml-32 mb-24 list-decimal;
   }
 
@@ -124,8 +133,15 @@
     @apply list-square;
   }
 
+  .ui-ordered-list li,
+  .ui-unordered-list li {
+    @apply font-medium font-sans tracking-widen-0;
+    line-height: var(--lh-extra-relaxed);
+  }
+
+
   .ui-unordered-list-with-emphasis {
-    @apply text-p1 font-light text-cool-black;
+    @apply text-p1 font-medium text-cool-black;
     @apply list-disc ml-32 mt-32 -mb-12;
   }
 
