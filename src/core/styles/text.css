@@ -139,7 +139,6 @@
     line-height: var(--lh-extra-relaxed);
   }
 
-
   .ui-unordered-list-with-emphasis {
     @apply text-p1 font-medium text-cool-black;
     @apply list-disc ml-32 mt-32 -mb-12;

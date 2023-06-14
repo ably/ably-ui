@@ -1,34 +1,132 @@
 @layer base {
   :root {
-    --color-cool-black: #03020d;
-    --color-active-orange: #ff5416;
-    --color-red-orange: #e40000;
-    --color-white: #ffffff;
-    --color-electric-cyan: #4af7ff;
-    --color-zingy-green: #08ff13;
-    --color-bright-red: #ff2739;
-    --color-jazzy-pink: #ff17d2;
-    --color-extra-light-grey: #fafafb;
-    --color-light-grey: #f5f5f6;
-    --color-mid-grey: #d9d9da;
-    --color-dark-grey: #76767c;
-    --color-charcoal-grey: #292831;
-    --color-gui-default: #0073e6;
-    --color-gui-hover: #0867c4;
-    --color-gui-focus: #0073e6;
-    --color-gui-focus-outline: #80b9f2;
-    --color-gui-active: #074095;
-    --color-gui-visited: #4887c2;
+    /* Neutral colors */
+    --color-neutral-000: #ffffff;
+    --color-neutral-100: #f8fafc;
+    --color-neutral-200: #f4f8fb;
+    --color-neutral-300: #edf1f7;
+    --color-neutral-400: #e2e7ef;
+    --color-neutral-500: #c6ced9;
+    --color-neutral-600: #adb6c2;
+    --color-neutral-700: #89929f;
+    --color-neutral-800: #667085;
+    --color-neutral-900: #39414e;
+    --color-neutral-1000: #2b303b;
+    --color-neutral-1100: #202531;
+    --color-neutral-1200: #141924;
+    --color-neutral-1300: #03020d;
+
+    /* Ably orange */
+    --color-orange-100: #fff5f1;
+    --color-orange-200: #ffe3d8;
+    --color-orange-300: #ffc4ae;
+    --color-orange-400: #ff9c79;
+    --color-orange-500: #ff723f;
+    --color-orange-600: #ff5416;
+    --color-orange-700: #ff2739;
+    --color-orange-800: #e40000;
+    --color-orange-900: #b82202;
+    --color-orange-1000: #751500;
+    --color-orange-1100: #2a0b00;
+
+    /* Secondary colours */
+    --color-yellow-100: #fffbef;
+    --color-yellow-200: #fff0ba;
+    --color-yellow-300: #ffe27c;
+    --color-yellow-400: #ffd43d;
+    --color-yellow-500: #f8c100;
+    --color-yellow-600: #e8a700;
+    --color-yellow-700: #ac8600;
+    --color-yellow-800: #654f00;
+    --color-yellow-900: #291c01;
+    --color-green-100: #f1fff1;
+    --color-green-200: #b8ffbb;
+    --color-green-300: #80ff85;
+    --color-green-400: #08ff13;
+    --color-green-500: #00e80b;
+    --color-green-600: #00c008;
+    --color-green-700: #008e06;
+    --color-green-800: #005303;
+    --color-green-900: #002a02;
+    --color-blue-100: #f1fbff;
+    --color-blue-200: #b8eaff;
+    --color-blue-300: #80d9ff;
+    --color-blue-400: #4ad4ff;
+    --color-blue-500: #2cc0ff;
+    --color-blue-600: #00a5ec;
+    --color-blue-700: #0284cd;
+    --color-blue-800: #004b75;
+    --color-blue-900: #001b2a;
+    --color-violet-100: #f7f2fe;
+    --color-violet-200: #d8bcfb;
+    --color-violet-300: #b986f8;
+    --color-violet-400: #9951f5;
+    --color-violet-500: #7a1bf2;
+    --color-violet-600: #5f0bc9;
+    --color-violet-700: #460894;
+    --color-violet-800: #2d055e;
+    --color-violet-900: #130228;
+    --color-pink-100: #fff1fc;
+    --color-pink-200: #ffb8f1;
+    --color-pink-300: #ff80e6;
+    --color-pink-400: #ff47db;
+    --color-pink-500: #ff17d2;
+    --color-pink-600: #d400ab;
+    --color-pink-700: #9c007e;
+    --color-pink-800: #630050;
+    --color-pink-900: #2a0022;
+
+    /* GUI colours */
+    /* Note: The ‘Light and ‘Dark’ refers to the colour of the background on which the colour is used. */
+    --color-gui-blue-default-light: #006edc;
+    --color-gui-blue-hover-light: #0862b9;
+    --color-gui-blue-active-light: #074095;
+    --color-gui-blue-default-dark: #4da6ff;
+    --color-gui-blue-hover-dark: #2894ff;
+    --color-gui-blue-active-dark: #0080ff;
+    --color-gui-blue-focus: #80b9f2;
     --color-gui-unavailable: #a8a8a8;
-    --color-gui-error: #fb0c0c;
-    --color-gui-success: #11cb24;
+    --color-gui-success-green: #11cb24;
+    --color-gui-error-red: #fb0c0c;
+    --color-gui-focus: #80b9f2;
+    --color-gui-focus-outline: #80b9f2;
+    --color-gui-visited: #4887c2;
+
+    /* Colours replaced by neutral colours */
+    --color-white: var(--color-neutral-000);
+    --color-extra-light-grey: var(--color-neutral-100);
+    --color-light-grey: var(--color-neutral-200);
+    --color-mid-grey: var(--color-neutral-500);
+    --color-dark-grey: var(--color-neutral-800);
+    --color-charcoal-grey: var(--color-neutral-1000);
+    --color-cool-black: var(--color-neutral-1300);
+
+    /* Colours replaced by orange colours */
+    --color-active-orange: var(--color-orange-600);
+    --color-bright-red: var(--color-orange-700);
+    --color-red-orange: var(--color-orange-800);
+
+    /* Colours replaced by secondary colours */
+    --color-electric-cyan: var(--color-blue-400);
+    --color-zingy-green: var(--color-green-400);
+    --color-jazzy-pink: var(--color-pink-500);
+
+    /* Colours replaced by GUI colours */
+    --color-gui-default: var(--color-gui-blue-default-light);
+    --color-gui-hover: var(--color-gui-blue-hover-light);
+    --color-gui-active: var(--color-gui-blue-active-light);
+    --color-gui-error: var(--color-gui-error-red);
+    --color-gui-success: var(--color-gui-success-green);
+    --color-gui-default-dark: var(--color-gui-blue-default-dark);
+    --color-gui-hover-dark: var(--color-gui-blue-hover-dark);
+    --color-gui-active-dark: var(--color-gui-blue-active-dark);
 
     /* code syntax: theme */
-    --syntax-black: var(--color-cool-black);
-    --syntax-dark-grey: var(--color-dark-grey);
-    --syntax-mid-grey: var(--color-mid-grey);
-    --syntax-light-grey: var(--color-light-grey);
-    --syntax-extra-light-grey: var(--color-extra-light-grey);
+    --syntax-black: var(--color-neutral-1300);
+    --syntax-dark-grey: var(--color-neutral-800);
+    --syntax-mid-grey: var(--color-neutral-500);
+    --syntax-light-grey: var(--color-neutral-200);
+    --syntax-extra-light-grey: var(--color-neutral-100);
     --syntax-orange: #e78c45;
     --syntax-yellow: #e7c547;
     --syntax-blue: #3490ec;
