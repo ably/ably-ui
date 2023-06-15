@@ -209,8 +209,10 @@
     --lh-dense: 1;
     --lh-tight: 1.125;
     --lh-snug: 1.15;
+    --lh-min-normal: 1.2;
     --lh-normal: 1.25;
     --lh-relaxed: 1.45;
+    --lh-extra-relaxed: 1.6;
 
     --ls-tighten-0_025: -0.025em;
     --ls-tighten-0_02: -0.02em;
