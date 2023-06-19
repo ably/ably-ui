@@ -8,15 +8,15 @@ export default function Footer({ paths, urlBase }) {
   const absUrl = (path) => _absUrl(path, urlBase);
 
   return (
-    <footer className="bg-light-grey font-sans antialiased" data-id="footer">
+    <footer className="bg-light-grey font-sans antialiased leading-normal" data-id="footer">
       <div className="max-w-screen-xl mx-auto py-32 sm:py-40 md:py-64 ui-grid-gap ui-grid-px grid grid-cols-6">
         <div className="col-span-full md:col-span-2">
           <div className="flex flex-row p-menu-row-snug">
             <img className="mr-24 -mt-16" src={paths.ablyStack} alt="Ably homepage" />
-            <h2 className="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1">The Ably Platform</h2>
+            <h2 className="text-overline2 font-mono font-bold col-span-full uppercase tracking-widen-0.16">The Ably Platform</h2>
           </div>
           <div className="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-            <p className="text-p3 py-16 font-medium p-menu-row-snug">
+            <p className="font-sans text-p3 py-16 font-bold p-menu-row-snug">
               Easily power any realtime experience in your application via a simple API that handles everything realtime.
             </p>
           </div>
@@ -141,7 +141,7 @@ export default function Footer({ paths, urlBase }) {
               <iframe
                 className="w-20 h-20 mb-2"
                 src="https://status.ably.com/embed/icon"
-                allowtransparency="true"
+                allowTransparency={true}
                 frameBorder="0"
                 scrolling="no"
                 title="System Status"
@@ -264,7 +264,7 @@ export default function Footer({ paths, urlBase }) {
                 >
                   <Icon name="glassdoor" size="1.5rem" />
                 </a>
-                <div className="pl-16 text-menu3 font-light">
+                <div className="pl-16 text-menu3 font-sans font-medium">
                   <strong className="block font-medium">We&apos;re hiring!</strong>
                   <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
                     Learn more at Glassdoor
@@ -284,7 +284,7 @@ export default function Footer({ paths, urlBase }) {
               >
                 <Icon name="glassdoor" size="1.5rem" />
               </a>
-              <div className="text-menu3 font-light">
+              <div className="text-menu3 font-sans font-medium">
                 <strong className="block font-medium">We&apos;re hiring!</strong>
                 <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="ui-footer-link">
                   Learn more at Glassdoor
@@ -326,29 +326,29 @@ export default function Footer({ paths, urlBase }) {
           <div className="flex mr-24">
             <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12 ui-footer-tick-icon" />
             <div>
-              <p className="ui-footer-compliance-text font-medium whitespace-nowrap">SOC 2 Type 2</p>
-              <p className="ui-footer-compliance-text font-light mb-24">Certified</p>
+              <p className="ui-footer-compliance-text font-bold whitespace-nowrap">SOC 2 Type 2</p>
+              <p className="ui-footer-compliance-text font-medium mb-24">Certified</p>
             </div>
           </div>
           <div className="flex mr-24 md:col-start-2">
             <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12 ui-footer-tick-icon" />
             <div>
-              <p className="ui-footer-compliance-text font-medium whitespace-nowrap">HIPAA</p>
-              <p className="ui-footer-compliance-text font-light mb-24">Compliant</p>
+              <p className="ui-footer-compliance-text font-bold whitespace-nowrap">HIPAA</p>
+              <p className="ui-footer-compliance-text font-medium mb-24">Compliant</p>
             </div>
           </div>
           <div className="flex mr-24 md:col-start-3">
             <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12  ui-footer-tick-icon" />
             <div>
-              <p className="ui-footer-compliance-text font-medium whitespace-nowrap">EU GDPR</p>
-              <p className="ui-footer-compliance-text font-light mb-24">Certified</p>
+              <p className="ui-footer-compliance-text font-bold whitespace-nowrap">EU GDPR</p>
+              <p className="ui-footer-compliance-text font-medium mb-24">Certified</p>
             </div>
           </div>
           <div className="flex mr-24 md:col-start-4">
             <Icon name="icon-gui-tick" color="text-active-orange" size="1.5rem" additionalCSS="bg-white rounded-full mr-12  ui-footer-tick-icon" />
             <div>
-              <p className="ui-footer-compliance-text font-medium whitespace-nowrap">256-bit AES</p>
-              <p className="ui-footer-compliance-text font-light mb-24">Encryption</p>
+              <p className="ui-footer-compliance-text font-bold whitespace-nowrap">256-bit AES</p>
+              <p className="ui-footer-compliance-text font-medium mb-24">Encryption</p>
             </div>
           </div>
         </div>

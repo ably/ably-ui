@@ -1,6 +1,6 @@
 @layer components {
   .ui-featured-link {
-    @apply font-sans font-medium block;
+    @apply font-sans font-bold block;
     @apply text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus;
   }
 

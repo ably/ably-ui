@@ -105,8 +105,8 @@ exports[`Notice > react > renders correctly by default #0`] = `
   style="display: none;"
 >
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <a href="/" class="font-light w-full pr-8 text-p3 self-center"
-      ><strong class="font-medium whitespace-nowrap pr-4"
+    <a href="/" class="font-medium w-full pr-8 text-p3 self-center"
+      ><strong class="font-bold whitespace-nowrap pr-4"
         >Something something</strong
       ><span class="pr-4"
         >Lorem ipsum dolor sit amet, in nonumes delectus nominati eam, novum
@@ -135,8 +135,8 @@ exports[`Notice > vw > renders correctly by default #0`] = `
   style="display: none;"
 >
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <a class="font-light w-full pr-8 text-p3 self-center" href="/">
-      <strong class="font-medium whitespace-nowrap pr-4"
+    <a class="font-medium w-full pr-8 text-p3 self-center" href="/">
+      <strong class="font-bold whitespace-nowrap pr-4"
         >Something something</strong
       >
       <span class="pr-4"

@@ -1,14 +1,14 @@
 @layer components {
   .ui-footer-col-title {
-    @apply text-overline2 p-menu-row-title font-normal uppercase tracking-widen-0.1;
+    @apply font-mono text-overline2 p-menu-row-title font-medium uppercase tracking-widen-0.16;
   }
 
   .ui-footer-menu-row-link {
-    @apply text-menu3 text-cool-black font-light hover:text-gui-hover block;
+    @apply text-menu3 text-cool-black font-sans font-medium hover:text-gui-hover block;
   }
 
   .ui-footer-link {
-    @apply text-gui-default hover:text-gui-hover text-menu3 font-light;
+    @apply text-gui-default hover:text-gui-hover text-menu3 font-sans font-medium;
   }
 
   .ui-footer-compliance-text {

@@ -1,5 +1,8 @@
 exports[`Footer Snapshot Test > react > test case common to both #0`] = `
-<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+<footer
+  class="bg-light-grey font-sans antialiased leading-normal"
+  data-id="footer"
+>
   <div
     class="max-w-screen-xl mx-auto py-32 sm:py-40 md:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
   >
@@ -11,13 +14,13 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           alt="Ably homepage"
         />
         <h2
-          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
+          class="text-overline2 font-mono font-bold col-span-full uppercase tracking-widen-0.16"
         >
           The Ably Platform
         </h2>
       </div>
       <div class="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-        <p class="text-p3 py-16 font-medium p-menu-row-snug">
+        <p class="font-sans text-p3 py-16 font-bold p-menu-row-snug">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>
@@ -139,7 +142,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           ><iframe
             class="w-20 h-20 mb-2"
             src="https://status.ably.com/embed/icon"
-            allowtransparency="true"
             frameborder="0"
             scrolling="no"
             title="System Status"
@@ -263,7 +265,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
               ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
                 <use xlink:href="#sprite-glassdoor"></use></svg
             ></a>
-            <div class="pl-16 text-menu3 font-light">
+            <div class="pl-16 text-menu3 font-sans font-medium">
               <strong class="block font-medium">We're hiring!</strong
               ><a
                 href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
@@ -284,7 +286,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
               <use xlink:href="#sprite-glassdoor"></use></svg
           ></a>
-          <div class="text-menu3 font-light">
+          <div class="text-menu3 font-sans font-medium">
             <strong class="block font-medium">We're hiring!</strong
             ><a
               href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
@@ -345,10 +347,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             SOC 2 Type 2
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-2">
@@ -359,10 +361,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             HIPAA
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Compliant</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Compliant</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-3">
@@ -373,10 +375,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             EU GDPR
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-4">
@@ -387,10 +389,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             256-bit AES
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Encryption</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Encryption</p>
         </div>
       </div>
     </div>
@@ -399,7 +401,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
 `;
 
 exports[`Footer Snapshot Test > view component > test case common to both #0`] = `
-<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+<footer
+  class="bg-light-grey font-sans antialiased leading-normal"
+  data-id="footer"
+>
   <div
     class="max-w-screen-xl mx-auto py-32 sm:py-40 md:py-64 ui-grid-gap ui-grid-px grid grid-cols-6"
   >
@@ -411,13 +416,13 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
         />
         <h2
-          class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1"
+          class="text-overline2 col-span-full font-mono font-bold uppercase tracking-widen-0.16"
         >
           The Ably Platform
         </h2>
       </div>
       <div class="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-        <p class="text-p3 py-16 font-medium p-menu-row-snug">
+        <p class="font-sans text-p3 py-16 font-bold p-menu-row-snug">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>
@@ -676,7 +681,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
                 <use xlink:href="#sprite-glassdoor"></use>
               </svg>
             </a>
-            <div class="pl-16 text-menu3 font-light">
+            <div class="pl-16 text-menu3 font-sans font-medium">
               <strong class="block font-medium">We're hiring!</strong>
               <a
                 href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
@@ -700,7 +705,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
               <use xlink:href="#sprite-glassdoor"></use>
             </svg>
           </a>
-          <div class="text-menu3 font-light">
+          <div class="text-menu3 font-sans font-medium">
             <strong class="block font-medium">We're hiring!</strong>
             <a
               href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
@@ -766,10 +771,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             SOC 2 Type 2
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-2">
@@ -780,10 +785,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             HIPAA
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Compliant</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Compliant</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-3">
@@ -794,10 +799,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             EU GDPR
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-4">
@@ -808,10 +813,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           <use xlink:href="#sprite-icon-gui-tick"></use>
         </svg>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">
             256-bit AES
           </p>
-          <p class="ui-footer-compliance-text font-light mb-24">Encryption</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Encryption</p>
         </div>
       </div>
     </div>

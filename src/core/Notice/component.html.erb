@@ -1,8 +1,8 @@
 <%# Note the style attribute is used for entry animation %>
 <%= tag.div class: "ui-announcement #{bg_color} #{text_color}", data: { id: "ui-notice" }, style: "max-height: 0; overflow: hidden" do %>
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <%= content_wrapper class: "font-light w-full pr-8 text-p3 self-center" do %>
-      <strong class="font-medium whitespace-nowrap pr-4"><%= @contents[:title] %></strong>
+    <%= content_wrapper class: "font-medium w-full pr-8 text-p3 self-center" do %>
+      <strong class="font-bold whitespace-nowrap pr-4"><%= @contents[:title] %></strong>
       <span class="pr-4"><%= @contents[:body_text] %></span>
       <span class="underline cursor-pointer whitespace-nowrap"><%= @contents[:button_label] %></span>
     <% end %>
