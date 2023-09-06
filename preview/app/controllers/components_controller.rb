@@ -5,11 +5,11 @@ class ComponentsController < ApplicationController
 
     if template_exists?(template)
       render template,
-              locals: {
-                framework: framework,
-                component_parameters:
-                  component_parameters(component_name.underscore)
-              }
+             locals: {
+               framework: framework,
+               component_parameters:
+                 component_parameters(component_name.underscore)
+             }
     else
       render status: 404, plain: "#{template} not found"
     end
@@ -20,24 +20,24 @@ class ComponentsController < ApplicationController
     template = "meganav_#{framework}.html.erb"
 
     render template,
-            locals: {
-              props: meganav_props,
-              notice_props: notice_props,
-              notice_config: notice_config,
-              framework: framework,
-              component_parameters: component_parameters('meganav')
-            }
-    end
+           locals: {
+             props: meganav_props,
+             notice_props: notice_props,
+             notice_config: notice_config,
+             framework: framework,
+             component_parameters: component_parameters('meganav')
+           }
+  end
 
   def footer
     template = "footer_#{framework}.html.erb"
 
     render template,
-            locals: {
-              props: framework == 'react' ? footer_react_props : {},
-              framework: framework,
-              component_parameters: component_parameters('footer')
-            }
+           locals: {
+             props: framework == 'react' ? footer_react_props : {},
+             framework: framework,
+             component_parameters: component_parameters('footer')
+           }
   end
 
   def icon
@@ -88,6 +88,7 @@ class ComponentsController < ApplicationController
       icon-display-about-ably-col
       icon-display-api
       icon-display-api-keys
+      icon-display-asset-tracking-col
       icon-display-browser
       icon-display-calendar
       icon-display-call-mobile
@@ -99,6 +100,7 @@ class ComponentsController < ApplicationController
       icon-display-customers-col
       icon-display-docs-col
       icon-display-documentation
+      icon-display-examples-col
       icon-display-gdpr
       icon-display-general-comms
       icon-display-hipaa
@@ -129,19 +131,29 @@ class ComponentsController < ApplicationController
       icon-multi-user-spaces-col
     ]
 
-    social_icons = %w[discord facebook github glassdoor linkedin twitter google stackoverflow youtube]
+    social_icons = %w[
+      discord
+      facebook
+      github
+      glassdoor
+      linkedin
+      twitter
+      google
+      stackoverflow
+      youtube
+    ]
 
     other_icons = %w[quote]
 
     render template,
-            locals: {
-              core_icons: core_icons,
-              display_icons: display_icons,
-              social_icons: social_icons,
-              other_icons: other_icons,
-              framework: framework,
-              component_parameters: component_parameters('icon')
-            }
+           locals: {
+             core_icons: core_icons,
+             display_icons: display_icons,
+             social_icons: social_icons,
+             other_icons: other_icons,
+             framework: framework,
+             component_parameters: component_parameters('icon')
+           }
   end
 
   private
@@ -209,9 +221,11 @@ class ComponentsController < ApplicationController
         highest_performer:
           helpers.asset_path('ably_ui/core/images/high-performer-2022.png'),
         highest_user_adoption:
-          helpers.asset_path('ably_ui/core/images/highest-user-adoption-2022.png'),
+          helpers.asset_path(
+            'ably_ui/core/images/highest-user-adoption-2022.png'
+          ),
         users_love_us:
-          helpers.asset_path('ably_ui/core/images/users-love-us-2022.png'),
+          helpers.asset_path('ably_ui/core/images/users-love-us-2022.png')
       }
     }
   end

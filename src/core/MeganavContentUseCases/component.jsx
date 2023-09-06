@@ -58,11 +58,11 @@ const MeganavContentUseCases = ({ absUrl }) => (
             </a>
           </li>
           <li>
-            <a href={absUrl("/solutions/extend-kafka-to-the-edge")} className="ui-meganav-media-with-image group">
-              <Icon name="icon-display-kafka-at-the-edge-col" size="2.5rem" />
+            <a href={absUrl("/solutions/asset-tracking")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-asset-tracking-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
-                <p className="ui-meganav-media-heading">Extend Kafka to the edge</p>
-                <p className="ui-meganav-media-copy">Reliably expand Kafka’s event streaming beyond your private network.</p>
+                <p className="ui-meganav-media-heading">Asset Tracking (Beta)</p>
+                <p className="ui-meganav-media-copy">Track assets in realtime with a solution optimised for last mile logistics.</p>
               </div>
             </a>
           </li>

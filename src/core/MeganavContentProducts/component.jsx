@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import FeaturedLink from "../FeaturedLink/component.jsx";
 
-const MeganavContentPlatform = ({ paths, absUrl }) => (
+const MeganavContentProducts = ({ paths, absUrl }) => (
   <div className="flex max-w-screen-xl mx-auto">
     <div className="ui-meganav-content-spacer bg-extra-light-grey"></div>
     <section className="grid grid-cols-12 ui-grid-gap-x w-full">
@@ -23,57 +23,36 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
       </div>
 
       <div className="col-span-full md:col-span-4 pt-24 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
-        <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-examples">
-          Our Examples
+        <h3 className="ui-meganav-overline" id="meganav-products-panel-list-examples">
+          Products
         </h3>
-        <ul className="mb-16" aria-labelledby="meganav-platform-panel-list-examples">
+        <ul className="mb-16" aria-labelledby="meganav-products-panel-list-examples">
           <li>
-            <a href={absUrl("/examples/avatar-stack")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">Avatar Stack</p>
-              <p className="ui-meganav-media-copy">See who is connected in a digital space.</p>
+            <a href={absUrl("/solutions/channels")} className="group ui-meganav-media">
+              <p className="ui-meganav-media-heading">Pub/Sub Channels</p>
+              <p className="ui-meganav-media-copy">Build infinitely scalable realtime applications.</p>
             </a>
           </li>
           <li>
-            <a href={absUrl("/examples/emoji-reactions")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Emoji Reactions</p>
-              <p className="ui-meganav-media-copy">React with an emoji to a message.</p>
+            <a href={absUrl("/spaces")} className="group ui-meganav-media">
+              <p className="ui-meganav-media-heading">Spaces (Beta)</p>
+              <p className="ui-meganav-media-copy">Create multi-user collaborative environments.</p>
             </a>
           </li>
           <li>
-            <a href={absUrl("/examples/activity-feed")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Activity Feed</p>
-              <p className="ui-meganav-media-copy">Display a list of user actions in realtime.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/examples/live-cursors")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Live Cursors</p>
-              <p className="ui-meganav-media-copy">Track all cursors in realtime.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/examples/typing-indicator")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Typing Indicator</p>
-              <p className="ui-meganav-media-copy">See when a user is typing a message.</p>
-            </a>
-          </li>
-          <li>
-            <a href={absUrl("/examples/chat-admin-privileges")} className="ui-meganav-media group">
-              <p className="ui-meganav-media-heading">Chat Admin Privileges</p>
-              <p className="ui-meganav-media-copy">Control who can take admin actions in a digital space.</p>
+            <a href={absUrl("/livesync")} className="group ui-meganav-media">
+              <p className="ui-meganav-media-heading">LiveSync (Pre release)</p>
+              <p className="ui-meganav-media-copy">Keep clients in sync with any relational database.</p>
             </a>
           </li>
         </ul>
-        <FeaturedLink url={absUrl("/examples")} textSize="text-p3">
-          Explore all live examples
-        </FeaturedLink>
       </div>
 
       <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
-        <h3 className="ui-meganav-overline" id="meganav-platform-panel-list-our-technology">
+        <h3 className="ui-meganav-overline" id="meganav-products-panel-list-our-technology">
           Our technology
         </h3>
-        <ul className="mb-16" aria-labelledby="meganav-platform-panel-list-our-technology">
+        <ul className="mb-16" aria-labelledby="meganav-products-panel-list-our-technology">
           <li>
             <a href={absUrl("/four-pillars-of-dependability#performance")} className="ui-meganav-media group">
               <p className="ui-meganav-media-heading">Predictable performance</p>
@@ -115,7 +94,7 @@ const MeganavContentPlatform = ({ paths, absUrl }) => (
   </div>
 );
 
-MeganavContentPlatform.propTypes = {
+MeganavContentProducts.propTypes = {
   paths: T.shape({
     ablyStack: T.string,
     iconSprites: T.string,
@@ -123,4 +102,4 @@ MeganavContentPlatform.propTypes = {
   absUrl: T.func,
 };
 
-export default MeganavContentPlatform;
+export default MeganavContentProducts;

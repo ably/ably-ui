@@ -12,7 +12,7 @@ module AblyUi
       end
 
       def bg_css(panel_id)
-        if %w[platform-panel use-cases-panel].include?(panel_id)
+        if %w[products-panel use-cases-panel].include?(panel_id)
           'ui-meganav-panel-split-bg'
         else
           ''
