@@ -1,6 +1,6 @@
-export const PLATFORM_PANEL = "#platform-panel";
+export const PLATFORM_PANEL = "#products-panel";
 export const PLATFORM_PANEL_OPEN_CONTROL =
-  "[data-id='meganav-control'][aria-controls='platform-panel']";
+  "[data-id='meganav-control'][aria-controls='products-panel']";
 
 export const COMPANY = "#company-panel";
 export const COMPANY_OPEN_CONTROL =
@@ -18,11 +18,11 @@ export const MOBILE_DROPDOWN = "#meganav-mobile-dropdown";
 export const MOBILE_DROPDOWN_CONTROL =
   "[data-id='meganav-control-mobile-dropdown']";
 
-export const MOBILE_PLATFORM_PANEL = "#platform-panel-mobile";
+export const MOBILE_PLATFORM_PANEL = "#products-panel-mobile";
 export const MOBILE_PLATFORM_PANEL_OPEN_CONTROL =
-  "[data-id='meganav-control-mobile-panel-open'][aria-controls='platform-panel-mobile']";
+  "[data-id='meganav-control-mobile-panel-open'][aria-controls='products-panel-mobile']";
 export const MOBILE_PLATFORM_PANEL_CLOSE_CONTROL =
-  "[data-id='meganav-control-mobile-panel-close'][aria-controls='platform-panel-mobile']";
+  "[data-id='meganav-control-mobile-panel-close'][aria-controls='products-panel-mobile']";
 
 export const SEARCH_PANEL = "#panel-search";
 export const SEARCH_PANEL_OPEN_CONTROL =

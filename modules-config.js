@@ -8,7 +8,7 @@ module.exports = [
       "Meganav",
       "Loader",
       "Logo",
-      "MeganavContentPlatform",
+      "MeganavContentProducts",
       "MeganavContentCompany",
       "MeganavContentDevelopers",
       "MeganavContentUseCases",

@@ -30,10 +30,10 @@ module AblyUi
       def panels
         [
           {
-            label: 'Platform',
-            short_label: 'Platform',
-            id: 'platform-panel',
-            class: 'AblyUi::Core::MeganavContentPlatform'
+            label: 'Products',
+            short_label: 'Products',
+            id: 'products-panel',
+            class: 'AblyUi::Core::MeganavContentProducts'
           },
           {
             label: 'Solutions',

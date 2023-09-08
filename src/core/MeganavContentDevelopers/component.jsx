@@ -39,6 +39,15 @@ const MeganavContentDevelopers = ({ absUrl }) => (
               </div>
             </a>
           </li>
+          <li>
+            <a href={absUrl("/examples")} className="ui-meganav-media-with-image group">
+              <Icon name="icon-display-examples-col" size="2.5rem" />
+              <div className="flex flex-col justify-center">
+                <p className="ui-meganav-media-heading">Live examples</p>
+                <p className="ui-meganav-media-copy">Discover our features and their use cases.</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
 

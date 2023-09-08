@@ -14,7 +14,7 @@ import Notice from "../Notice/component.jsx";
 import MeganavData from "./component.json";
 import _absUrl from "../url-base";
 
-import MeganavContentPlatform from "../MeganavContentPlatform/component.jsx";
+import MeganavContentProducts from "../MeganavContentProducts/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentCompany from "../MeganavContentCompany/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
@@ -58,7 +58,7 @@ SignIn.propTypes = {
 const SignInPlaceholder = () => <div />;
 
 const panels = {
-  MeganavContentPlatform: MeganavContentPlatform,
+  MeganavContentProducts: MeganavContentProducts,
   MeganavContentUseCases: MeganavContentUseCases,
   MeganavContentCompany: MeganavContentCompany,
   MeganavContentDevelopers: MeganavContentDevelopers,

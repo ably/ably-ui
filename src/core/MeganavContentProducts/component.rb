@@ -1,6 +1,6 @@
 module AblyUi
   module Core
-    class MeganavContentPlatform < ViewComponent::Base
+    class MeganavContentProducts < ViewComponent::Base
       include SharedAssets
       include Util
 
