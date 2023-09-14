@@ -42,11 +42,6 @@ export default function Footer({ paths, urlBase }) {
                 Multiple protocol messaging
               </a>
             </li>
-            <li className="p-menu-row-snug">
-              <a href={absUrl("/hub")} className="ui-footer-menu-row-link">
-                Streaming data sources
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -81,11 +76,6 @@ export default function Footer({ paths, urlBase }) {
             <li className="p-menu-row-snug">
               <a href={absUrl("/solutions/healthcare")} className="ui-footer-menu-row-link">
                 Healthcare
-              </a>
-            </li>
-            <li className="p-menu-row-snug">
-              <a href={absUrl("/hub")} className="ui-footer-menu-row-link">
-                Streaming data sources
               </a>
             </li>
             <li className="p-menu-row-snug">
