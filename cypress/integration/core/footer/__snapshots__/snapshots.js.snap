@@ -43,11 +43,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             >Multiple protocol messaging</a
           >
         </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
-          >
-        </li>
       </ul>
     </div>
     <div class="col-span-full xs:col-span-3 md:col-span-1">
@@ -83,11 +78,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         <li class="p-menu-row-snug">
           <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
             >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
           >
         </li>
         <li class="p-menu-row-snug">
@@ -449,11 +439,6 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
             >Multiple protocol messaging</a
           >
         </li>
-        <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/hub"
-            >Streaming data sources</a
-          >
-        </li>
       </ul>
     </div>
     <div class="col-span-full xs:col-span-3 md:col-span-1">
@@ -489,11 +474,6 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/solutions/healthcare"
             >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/hub"
-            >Streaming data sources</a
           >
         </li>
         <li class="p-menu-row-snug">

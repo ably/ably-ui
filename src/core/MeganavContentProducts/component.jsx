@@ -50,7 +50,7 @@ const MeganavContentProducts = ({ paths, absUrl }) => (
 
       <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0 bg-white">
         <h3 className="ui-meganav-overline" id="meganav-products-panel-list-our-technology">
-          Our technology
+          Technology
         </h3>
         <ul className="mb-16" aria-labelledby="meganav-products-panel-list-our-technology">
           <li>
