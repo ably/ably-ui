@@ -104,10 +104,10 @@ describe("Panels", () => {
 
   describe("PlatformPanel", () => {
     it("looks the same on desktop", () =>
-      cy.compareComponents(config("Platform", "desktop")));
+      cy.compareComponents(config("Products", "desktop")));
 
     it("looks the same on mobile", () =>
-      cy.compareComponents(config("Platform", "mobile")));
+      cy.compareComponents(config("Products", "mobile")));
   });
 
   describe("DevelopersPanel", () => {

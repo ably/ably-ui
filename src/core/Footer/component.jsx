@@ -23,7 +23,7 @@ export default function Footer({ paths, urlBase }) {
 
           <ul className="grid grid-cols-1">
             <li className="p-menu-row-snug">
-              <a href={absUrl("/pub-sub-messaging")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/solutions/channels")} className="ui-footer-menu-row-link">
                 Pub/sub messaging
               </a>
             </li>
@@ -40,11 +40,6 @@ export default function Footer({ paths, urlBase }) {
             <li className="p-menu-row-snug">
               <a href={absUrl("/protocols")} className="ui-footer-menu-row-link">
                 Multiple protocol messaging
-              </a>
-            </li>
-            <li className="p-menu-row-snug">
-              <a href={absUrl("/hub")} className="ui-footer-menu-row-link">
-                Streaming data sources
               </a>
             </li>
           </ul>
@@ -81,11 +76,6 @@ export default function Footer({ paths, urlBase }) {
             <li className="p-menu-row-snug">
               <a href={absUrl("/solutions/healthcare")} className="ui-footer-menu-row-link">
                 Healthcare
-              </a>
-            </li>
-            <li className="p-menu-row-snug">
-              <a href={absUrl("/hub")} className="ui-footer-menu-row-link">
-                Streaming data sources
               </a>
             </li>
             <li className="p-menu-row-snug">

@@ -24,7 +24,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       </div>
       <ul class="grid grid-cols-1">
         <li class="p-menu-row-snug">
-          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
+          <a href="/solutions/channels" class="ui-footer-menu-row-link"
             >Pub/sub messaging</a
           >
         </li>
@@ -41,11 +41,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         <li class="p-menu-row-snug">
           <a href="/protocols" class="ui-footer-menu-row-link"
             >Multiple protocol messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
           >
         </li>
       </ul>
@@ -83,11 +78,6 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
         <li class="p-menu-row-snug">
           <a href="/solutions/healthcare" class="ui-footer-menu-row-link"
             >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a href="/hub" class="ui-footer-menu-row-link"
-            >Streaming data sources</a
           >
         </li>
         <li class="p-menu-row-snug">
@@ -430,7 +420,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       </div>
       <ul class="grid grid-cols-1">
         <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/pub-sub-messaging"
+          <a class="ui-footer-menu-row-link" href="/solutions/channels"
             >Pub/sub messaging</a
           >
         </li>
@@ -447,11 +437,6 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/protocols"
             >Multiple protocol messaging</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/hub"
-            >Streaming data sources</a
           >
         </li>
       </ul>
@@ -489,11 +474,6 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
         <li class="p-menu-row-snug">
           <a class="ui-footer-menu-row-link" href="/solutions/healthcare"
             >Healthcare</a
-          >
-        </li>
-        <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/hub"
-            >Streaming data sources</a
           >
         </li>
         <li class="p-menu-row-snug">
