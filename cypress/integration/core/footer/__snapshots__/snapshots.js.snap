@@ -24,7 +24,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
       </div>
       <ul class="grid grid-cols-1">
         <li class="p-menu-row-snug">
-          <a href="/pub-sub-messaging" class="ui-footer-menu-row-link"
+          <a href="/solutions/channels" class="ui-footer-menu-row-link"
             >Pub/sub messaging</a
           >
         </li>
@@ -420,7 +420,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       </div>
       <ul class="grid grid-cols-1">
         <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/pub-sub-messaging"
+          <a class="ui-footer-menu-row-link" href="/solutions/channels"
             >Pub/sub messaging</a
           >
         </li>

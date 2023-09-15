@@ -23,7 +23,7 @@ export default function Footer({ paths, urlBase }) {
 
           <ul className="grid grid-cols-1">
             <li className="p-menu-row-snug">
-              <a href={absUrl("/pub-sub-messaging")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/solutions/channels")} className="ui-footer-menu-row-link">
                 Pub/sub messaging
               </a>
             </li>
