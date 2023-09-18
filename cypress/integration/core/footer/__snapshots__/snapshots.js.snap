@@ -228,9 +228,9 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
             <a
               class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
               href="https://twitter.com/ablyrealtime"
-              title="Ably on Twitter"
+              title="Ably on X"
               ><svg class=" " style="width: 1.5rem; height: 1.5rem;">
-                <use xlink:href="#sprite-twitter"></use></svg></a
+                <use xlink:href="#sprite-icon-social-x"></use></svg></a
             ><a
               class="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
               href="https://www.linkedin.com/company/ably-realtime"
@@ -624,10 +624,10 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
             <a
               class="h-24 pr-24 text-cool-black hover:text-icon-twitter"
               href="https://twitter.com/ablyrealtime"
-              title="Ably on Twitter"
+              title="Ably on X"
             >
               <svg class=" " style="width: 1.5rem; height: 1.5rem">
-                <use xlink:href="#sprite-twitter"></use>
+                <use xlink:href="#sprite-icon-social-x"></use>
               </svg>
             </a>
             <a
