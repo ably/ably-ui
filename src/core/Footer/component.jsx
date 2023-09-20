@@ -236,8 +236,8 @@ export default function Footer({ paths, urlBase }) {
           <div className="flex flex-col md:flex-row flex-auto ml-8 sm:col-span-1 md:col-span-2">
             <div className="">
               <div className="flex pb-24">
-                <a className="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime" title="Ably on Twitter">
-                  <Icon name="twitter" size="1.5rem" />
+                <a className="h-24 pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime" title="Ably on X">
+                  <Icon name="icon-social-x" size="1.5rem" />
                 </a>
                 <a
                   className="h-24 pr-24 text-cool-black hover:text-icon-linkedin"
