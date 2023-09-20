@@ -300,16 +300,20 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
     >
       <img
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/highest-user-adoption-2022-b3cbeb5fa43cab3c21df256f644f88bf16b628b2ff4f04e54b5c9ef0260dd315.png"
-        alt="Highest User Adoption 2022"
+        src="/assets/ably_ui/core/images/highest-user-adoption-2023-4b17ebf975a5cccd153773f2c6c335939aadcd1a1be6747acdcdd9726df20e1e.svg"
+        alt="Highest User Adoption 2023"
       /><img
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/users-love-us-2022-1c82775859c473f3e7a2faade55ffade3d9fd78d522f3e15ef2f4aa843f07ada.png"
-        alt="Users Love Us"
+        src="/assets/ably_ui/core/images/best-support-2023-7fe905c7403b48f0807a804039cfd29249c6940c26f9f252622539eeb41b4fdb.svg"
+        alt="Best Support 2023"
       /><img
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/high-performer-2022-eae68980f68e8fc65a310e6ca80cee47c4e92e039bb2feb036f713ea9b9839b2.png"
-        alt="High Performer 2022"
+        src="/assets/ably_ui/core/images/fastest-implementation-2023-be57cbfe8710c1410123b3cb0d8d53af6686bc474ec67ad27a3a2a5487491963.svg"
+        alt="Fastest Implementation 2023"
+      /><img
+        class="mr-24 h-80"
+        src="/assets/ably_ui/core/images/high-performer-2023-ac10f9d55cb30665367332a487471b78a3643aadb04cea0324bfb81542ed0291.svg"
+        alt="High Performer 2023"
       />
     </div>
   </div>
@@ -712,19 +716,24 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
       class="col-span-full sm:col-span-1 inline-flex sm:ml-auto sm:items-center"
     >
       <img
-        alt="Highest User Adoption 2022"
+        alt="Highest User Adoption 2023"
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/highest-user-adoption-2022-b3cbeb5fa43cab3c21df256f644f88bf16b628b2ff4f04e54b5c9ef0260dd315.png"
+        src="/assets/ably_ui/core/images/highest-user-adoption-2023-4b17ebf975a5cccd153773f2c6c335939aadcd1a1be6747acdcdd9726df20e1e.svg"
       />
       <img
-        alt="Users Love Us"
+        alt="Best Support 2023"
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/users-love-us-2022-1c82775859c473f3e7a2faade55ffade3d9fd78d522f3e15ef2f4aa843f07ada.png"
+        src="/assets/ably_ui/core/images/best-support-2023-7fe905c7403b48f0807a804039cfd29249c6940c26f9f252622539eeb41b4fdb.svg"
       />
       <img
-        alt="High Performer 2022"
+        alt="Fastest Implementation 2023"
         class="mr-24 h-80"
-        src="/assets/ably_ui/core/images/high-performer-2022-eae68980f68e8fc65a310e6ca80cee47c4e92e039bb2feb036f713ea9b9839b2.png"
+        src="/assets/ably_ui/core/images/fastest-implementation-2023-be57cbfe8710c1410123b3cb0d8d53af6686bc474ec67ad27a3a2a5487491963.svg"
+      />
+      <img
+        alt="High Performer 2023"
+        class="mr-24 h-80"
+        src="/assets/ably_ui/core/images/high-performer-2023-ac10f9d55cb30665367332a487471b78a3643aadb04cea0324bfb81542ed0291.svg"
       />
     </div>
   </div>
