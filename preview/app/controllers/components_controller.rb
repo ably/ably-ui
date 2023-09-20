@@ -219,13 +219,15 @@ class ComponentsController < ApplicationController
       paths: {
         ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
         highest_performer:
-          helpers.asset_path('ably_ui/core/images/high-performer-2022.png'),
+          helpers.asset_path('ably_ui/core/images/high-performer-2023.svg'),
+        best_support:
+          helpers.asset_path('ably_ui/core/images/best-support-2023.svg'),
+        fastest_implementation:
+          helpers.asset_path('ably_ui/core/images/fastest-implementation-2023.svg'),
         highest_user_adoption:
           helpers.asset_path(
-            'ably_ui/core/images/highest-user-adoption-2022.png'
-          ),
-        users_love_us:
-          helpers.asset_path('ably_ui/core/images/users-love-us-2022.png')
+            'ably_ui/core/images/highest-user-adoption-2023.svg'
+          )
       }
     }
   end

@@ -43,15 +43,19 @@ module AblyUi
       end
 
       def highest_performer
-        asset_path 'ably_ui/core/images/high-performer-2022.png'
+        asset_path 'ably_ui/core/images/high-performer-2023.svg'
       end
 
       def highest_user_adoption
-        asset_path 'ably_ui/core/images/highest-user-adoption-2022.png'
+        asset_path 'ably_ui/core/images/highest-user-adoption-2023.svg'
       end
 
-      def users_love_us
-        asset_path 'ably_ui/core/images/users-love-us-2022.png'
+      def best_support
+        asset_path 'ably_ui/core/images/best-support-2023.svg'
+      end
+
+      def fastest_implementation
+        asset_path 'ably_ui/core/images/fastest-implementation-2023.svg'
       end
     end
 

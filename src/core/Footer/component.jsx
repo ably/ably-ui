@@ -295,9 +295,10 @@ export default function Footer({ paths, urlBase }) {
         </div>
 
         <div className="col-span-full sm:col-span-1 inline-flex sm:ml-auto sm:items-center">
-          <img className="mr-24 h-80" src={paths.highestUserAdoption} alt="Highest User Adoption 2022" />
-          <img className="mr-24 h-80" src={paths.usersLoveUs} alt="Users Love Us" />
-          <img className="mr-24 h-80" src={paths.highestPerformer} alt="High Performer 2022" />
+          <img className="mr-24 h-80" src={paths.highestUserAdoption} alt="Highest User Adoption 2023" />
+          <img className="mr-24 h-80" src={paths.bestSupport} alt="Best Support 2023" />
+          <img className="mr-24 h-80" src={paths.fastestImplementation} alt="Fastest Implementation 2023" />
+          <img className="mr-24 h-80" src={paths.highestPerformer} alt="High Performer 2023" />
         </div>
       </div>
 
@@ -361,7 +362,8 @@ Footer.propTypes = {
     ablyStack: T.string,
     highestPerformer: T.string,
     highestUserAdoption: T.string,
-    usersLoveUs: T.string,
+    bestSupport: T.string,
+    fastestImplementation: T.string,
   }),
   urlBase: T.string,
 };
