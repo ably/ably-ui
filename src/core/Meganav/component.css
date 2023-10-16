@@ -7,13 +7,13 @@
     z-index: var(--stacking-context-page-meganav);
 
     @apply fixed top-0 w-full;
-    @apply antialiased font-sans transition-colors;
+    @apply font-sans antialiased transition-colors;
   }
 
   .ui-meganav {
     height: var(--ui-meganav-height);
 
-    @apply flex justify-between items-center max-w-screen-xl mx-auto;
+    @apply flex items-center justify-between max-w-screen-xl mx-auto;
   }
 
   .ui-meganav-panel,
@@ -22,7 +22,7 @@
     z-index: var(--stacking-context-meganav-dropdown);
 
     @apply absolute left-0 right-0;
-    @apply border-mid-grey border-t shadow-container;
+    @apply border-t border-mid-grey shadow-container;
   }
 
   .ui-meganav-panel {
@@ -35,9 +35,9 @@
     /* Prevents momentum-based scrolling https://devdocs.io/css/-webkit-overflow-scrolling */
     -webkit-overflow-scrolling: auto;
 
-    @apply bg-white pt-16 border-0;
-    @apply border-mid-grey border-t shadow-container;
-    @apply fixed top-64 left-0 right-0 overflow-y-auto;
+    @apply pt-16 bg-white border-0;
+    @apply border-t border-mid-grey shadow-container;
+    @apply fixed left-0 right-0 overflow-y-auto top-64;
   }
 
   .ui-meganav-panel-account {
@@ -51,8 +51,8 @@
   }
 
   .ui-meganav-link {
-    @apply text-menu2 font-medium block;
-    @apply mr-12 lg:mr-24 px-0 py-20;
+    @apply block font-medium text-menu2;
+    @apply px-0 py-20 mr-12 lg:mr-24;
     @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
     @apply transition-colors;
   }
@@ -62,18 +62,18 @@
   }
 
   .ui-meganav-mobile-link {
-    @apply p-menu-row relative -left-8 w-extend-8;
-    @apply text-menu2 font-medium block text-cool-black text-left;
+    @apply relative p-menu-row -left-8 w-extend-8;
+    @apply block font-medium text-left text-menu2 text-cool-black;
     @apply flex items-center;
     @apply focus:text-gui-focus focus:outline-none;
   }
 
   .ui-meganav-account-link {
-    @apply block px-8 py-8 hover:bg-light-grey hover:text-gui-hover rounded relative -left-8 text-menu3 w-extend-8 font-light;
+    @apply relative block px-8 py-8 font-light rounded hover:bg-light-grey hover:text-gui-hover -left-8 text-menu3 w-extend-8;
   }
 
   .ui-meganav-content {
-    @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
+    @apply max-w-screen-xl py-24 mx-auto lg:py-32;
     @apply grid grid-cols-1;
     @apply px-24 md:px-32 lg:px-32 xl:px-64;
   }
@@ -81,27 +81,27 @@
   /* This is implemented not as padding so we can change the color of just this space, while keeping the grid
      as close to the designs as possible */
   .ui-meganav-content-spacer {
-    @apply hidden md:block md:w-32 lg:w-32 xl:w-64 self-stretch flex-shrink-0 flex-grow-0;
+    @apply self-stretch flex-grow-0 flex-shrink-0 hidden md:block md:w-32 lg:w-32 xl:w-64;
   }
 
   .ui-meganav-media {
-    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
+    @apply relative block px-8 py-8 rounded hover:bg-light-grey -left-8 w-extend-8;
   }
 
   .ui-meganav-media-with-image {
     grid-template-columns: max-content 1fr;
     grid-template-rows: min-content 1fr;
 
-    @apply block px-8 py-8 hover:bg-light-grey rounded relative -left-8 w-extend-8;
+    @apply relative block px-8 py-8 rounded hover:bg-light-grey -left-8 w-extend-8;
     @apply grid gap-x-16;
   }
 
   .ui-meganav-media-heading {
-    @apply text-menu3 text-cool-black font-medium group-hover:text-gui-hover group-focus:text-gui-focus;
+    @apply font-medium text-menu3 text-cool-black group-hover:text-gui-hover group-focus:text-gui-focus;
   }
 
   .ui-meganav-media-copy {
-    @apply text-p3 text-dark-grey font-light;
+    @apply font-light text-p3 text-dark-grey;
   }
 
   .ui-meganav-overline {
@@ -111,4 +111,28 @@
   .ui-meganav-hr {
     @apply my-0 text-mid-grey;
   }
+}
+
+.HW_badge {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 14px !important;
+  top: 2px !important;
+  left: 20px !important;
+  transition: none !important;
+}
+
+.HW_animated {
+  animation: none !important;
+}
+
+.invisible .HW_badge {
+  visibility: hidden !important;
+}
+
+.invisible .HW_frame {
+  visibility: hidden !important;
 }
