@@ -206,7 +206,13 @@ HeadwayWidget.propTypes = {
       readMore: PropTypes.string,
       footer: PropTypes.string,
     }),
+    trigger: PropTypes.string,
   }),
+
+  component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  children: PropTypes.node,
+  trigger: PropTypes.string,
+  styles: PropTypes.object,
 };
 
 HeadwayWidget.defaultProps = {
@@ -217,6 +223,12 @@ HeadwayWidget.defaultProps = {
   styles: {},
   translations: {},
   options: {},
+};
+
+HeadwayWidgetTrigger.propTypes = {
+  widgetId: PropTypes.string.isRequired,
+  component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  children: PropTypes.node,
 };
 
 export { HeadwayWidgetTrigger };
