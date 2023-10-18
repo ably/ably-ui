@@ -84,16 +84,11 @@ const HeadwayWidget = ({
     };
   }, [account, trigger, handleWidgetReady, handleShowWidget, handleShowDetails, handleReadMore, handleHideWidget, badgePosition, widgetPosition, translations]);
 
-  console.log(window.Headway);
-
   useEffect(() => {
-    console.log("test");
     let destroy;
     if (window.Headway) {
-      console.log("destroy");
       destroy = initHeadway();
     } else {
-      console.log("else");
       const head = document.getElementsByTagName("head")[0];
       const script = document.createElement("script");
       script.type = "text/javascript";
@@ -107,7 +102,7 @@ const HeadwayWidget = ({
       destroy = () => {
         p.then((d) => d());
       };
-      script.src = "https://cdn.headwayapp.co/widget.js"; // "https://cdn.headwaystaging.com/widget.js"; //;
+      script.src = "https://cdn.headwayapp.co/widget.js";
       head.appendChild(script);
     }
     return destroy;

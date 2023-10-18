@@ -131,8 +131,19 @@
 
 .invisible .HW_badge {
   visibility: hidden !important;
+  display: none !important;
 }
 
 .invisible .HW_frame {
   visibility: hidden !important;
+  display: none !important;
+}
+
+.HW_badge_cont.HW_visible {
+  display: block !important;
+}
+
+.HW_badge_cont {
+  visibility: unset !important;
+  display: none !important;
 }
