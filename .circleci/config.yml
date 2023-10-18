@@ -14,13 +14,12 @@ executors:
         default: latest
     docker:
       - image: cimg/ruby:<< parameters.tag >>-browsers
-      - image: circleci/postgres:12
+      - image: cimg/postgres:14.9
         environment:
           POSTGRES_USER: ably_db_user
           POSTGRES_PASSWORD: password
-      - image: circleci/redis:6
     environment:
-      - BUNDLER_VERSION: 2.2.11
+      - BUNDLER_VERSION: 2.3.8
       - BUNDLE_JOBS: 4
       - BUNDLE_PATH: vendor/bundle
       - BUNDLE_RETRY: 3
