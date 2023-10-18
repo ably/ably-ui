@@ -250,6 +250,7 @@ module.exports = {
       "tighten-0.005": "var(--ls-tighten-0_005)",
       "tighten-0.0025": "var(--ls-tighten-0_0025)",
       "tighten-0.0015": "var(--ls-tighten-0_0015)",
+      "widen-0": 0,
       "widen-0.1": "var(--ls-widen-0_1)",
       "widen-0.15": "var(--ls-widen-0_15)",
       "widen-0.16": "var(--ls-widen-0_16)",

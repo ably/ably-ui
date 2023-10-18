@@ -168,7 +168,7 @@
 
     --gradient-hot-pink: linear-gradient(
       80.2deg,
-      var(--color-bright-red) 0%,
+      var(--color-orange-700) 0%,
       var(--color-jazzy-pink) 100%
     );
 

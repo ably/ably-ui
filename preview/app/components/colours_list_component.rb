@@ -25,21 +25,27 @@ class ColoursListComponent < ViewComponent::Base
           { bg: 'bg-light-grey', name: "Light Grey", hex: '#F4F8FB' },
           { bg: 'bg-mid-grey', name: "Mid Grey", hex: '#C6CED9' },
           { bg: 'bg-dark-grey', name: "Dark Grey", hex: '#667085' },
-          { bg: 'bg-charcoal-grey', name: "Charcoal Grey", hex: '#2B303B' }
+          { bg: 'bg-charcoal-grey', name: "Charcoal Grey", hex: '#2B303B' },
+          { bg: 'bg-neutral-500', name: "Neutral 500", hex: '#C6CED9' },
+          { bg: 'bg-neutral-900', name: "Neutral 900", hex: '#39414E' }
         ]
       },
       {
         group_name: "GUI",
         group_colours: [
+          { bg: 'bg-gui-default', name: "Default (Light)", hex: '#006EDC' },
+          { bg: 'bg-gui-hover', name: "Hover (Light)", hex: '#0862B9' },
+          { bg: 'bg-gui-active', name: "Active (Light)", hex: '#074095' },
+          { bg: 'bg-gui-default-dark', name: "Default (Dark)", hex: '#4DA6FF' },
+          { bg: 'bg-gui-hover-dark', name: "Hover (Dark)", hex: '#2894FF' },
+          { bg: 'bg-gui-active-dark', name: "Active (Dark)", hex: '#0080FF' },
+          { bg: 'bg-gui-visited', name: "Visited", hex: '#4887c2' },
+          { bg: 'bg-gui-focus', name: "Focus", hex: '#80B9F2' },
+          { bg: 'bg-gui-focus-outline', name: "Focus Outline", hex: '#80B9F2' },
+          { bg: 'bg-gui-unavailable', name: "Unavailable", hex: '#a8a8a8' },
           { bg: 'bg-gui-success', name: "Success", hex: '#11CB24' },
           { bg: 'bg-gui-error', name: "Error", hex: '#FB0C0C' },
-          { bg: 'bg-gui-default', name: "Default", hex: '#006EDC' },
-          { bg: 'bg-gui-hover', name: "Hover", hex: '#0862B9' },
-          { bg: 'bg-gui-focus', name: "Focus", hex: '#80B9F2' },
-          { bg: 'bg-gui-focus-outline', name: "Focus Outline", hex: '#80b9f2' },
-          { bg: 'bg-gui-active', name: "Active", hex: '#074095' },
-          { bg: 'bg-gui-visited', name: "Visited", hex: '#4887c2' },
-          { bg: 'bg-gui-unavailable', name: "Unavailable", hex: '#a8a8a8' }
+
         ]
       }
     ]

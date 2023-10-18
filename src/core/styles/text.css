@@ -108,12 +108,12 @@
 
   .ui-unordered-list {
     @apply text-p1 font-medium text-cool-black;
-    @apply list-disc ml-32 mb-24;
+    @apply list-disc ml-32 my-16;
   }
 
   .ui-ordered-list {
     @apply text-p1 font-medium text-charcoal-grey;
-    @apply ml-32 mb-24 list-decimal;
+    @apply ml-32 my-16 list-decimal;
   }
 
   .ui-unordered-list li > *:last-of-type:not(ul):not(ol),
@@ -130,7 +130,11 @@
   }
 
   .ui-unordered-list ul ul {
-    @apply list-square;
+    @apply list-square my-8;
+  }
+
+  .ui-unordered-list ul ul {
+    @apply my-8;
   }
 
   .ui-ordered-list li,
