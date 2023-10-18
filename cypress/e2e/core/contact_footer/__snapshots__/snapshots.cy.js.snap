@@ -11,18 +11,6 @@ exports[`Chat button state > react > the button is inactive without Hubspot widg
 </button>
 `;
 
-exports[`Chat button state > react > the button is inactive without Hubspot widget #1`] = `
-<button
-  type="button"
-  class="ui-btn-secondary p-btn-small mt-16 opacity-30"
-  data-unavailable="Live chat unavailable"
-  data-id="open-chat-widget"
-  disabled="true"
->
-  Live chat unavailable
-</button>
-`;
-
 exports[`Chat button state > vw > the button is inactive without Hubspot widget #0`] = `
 <button
   type="button"
