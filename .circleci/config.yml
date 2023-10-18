@@ -1,5 +1,9 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.4.4
+  node: circleci/node@5.1.0
+
 executors:
   default:
     description: Image for running rails with cypress
@@ -10,13 +14,12 @@ executors:
         default: latest
     docker:
       - image: cimg/ruby:<< parameters.tag >>-browsers
-      - image: circleci/postgres:12
+      - image: cimg/postgres:14.9
         environment:
           POSTGRES_USER: ably_db_user
           POSTGRES_PASSWORD: password
-      - image: circleci/redis:6
     environment:
-      - BUNDLER_VERSION: 2.2.11
+      - BUNDLER_VERSION: 2.3.8
       - BUNDLE_JOBS: 4
       - BUNDLE_PATH: vendor/bundle
       - BUNDLE_RETRY: 3
@@ -24,7 +27,7 @@ executors:
       - PG_USER: ably_db_user
       - PG_PASSWORD: password
       - RAILS_ENV: test
-      - NODE_VERSION: 14.15.4
+      - NODE_VERSION: 16.17.0
       - YARN_VERSION: 1.22.10
 
 caches:
@@ -32,6 +35,10 @@ caches:
   - &yarn_cache ably-ui-preview-yarn-v1-{{ checksum "yarn.lock" }}-{{ checksum "preview/yarn.lock" }}
 
 commands:
+  install_browser:
+    description: Install browser
+    steps:
+      - browser-tools/install-chrome
   save_bundle_cache:
     description: Save bundle cache
     steps:
@@ -136,6 +143,7 @@ jobs:
     working_directory: ~/ably-ui/preview
     steps:
       - checkout
+      - install_browser
       - bundle_install
       - yarn_install
       - precompile_assets
@@ -151,6 +159,7 @@ jobs:
           name: Executes Cypress end-to-end tests
           command: |
             yarn cypress run \
+              --browser chrome \
               --reporter junit \
               --reporter-options "mochaFile=test-results/cypress-[hash].xml,toConsole=true"
       - store_test_results:
