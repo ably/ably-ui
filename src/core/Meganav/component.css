@@ -123,6 +123,7 @@
   top: 2px !important;
   left: 20px !important;
   transition: none !important;
+  pointer-events: none !important; 
 }
 
 .HW_animated {
@@ -146,4 +147,9 @@
 .HW_badge_cont {
   visibility: unset !important;
   display: none !important;
+  pointer-events: none !important; 
+}
+
+[class^="HW_widget_component_widget-"] {
+  pointer-events: none !important; 
 }

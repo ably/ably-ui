@@ -108,7 +108,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
             </a>
           </li>
           <li>
-            <a href="https://changelog.ably.com/" className="py-12 group ui-meganav-media">
+            <a href="https://changelog.ably.com/" className="py-12 group ui-meganav-media" rel="noopener noreferrer" target="_blank">
               <span className="ui-meganav-media-heading">Changelog</span>
               <span className="headwayPortal"></span>
             </a>

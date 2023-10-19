@@ -20,8 +20,7 @@ import MeganavContentProducts from "../MeganavContentProducts/component.jsx";
 import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavSearch from "../MeganavSearch/component.jsx";
 
-import { createPortal } from "react-dom";
-import HeadwayWidget from "../HeadwayWidget/HeadwayWidget.jsx";
+import MeganavHeadwayPortal from "./MeganavHeadwayPortal.jsx";
 
 const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
   return sessionState.signedIn ? (
@@ -81,13 +80,6 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
     return () => teardown();
   }, [sessionState]);
 
-  const [headwayPortalNodes, setHeadwayPortalNodes] = useState([]);
-
-  useEffect(() => {
-    // Query all the elements with the .headwayPortal class
-    setHeadwayPortalNodes(Array.from(document.querySelectorAll(".headwayPortal")));
-  }, []);
-
   const theme = MeganavData.themes[themeName];
   const absUrl = (path) => _absUrl(path, urlBase);
 
@@ -106,9 +98,7 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
 
         <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} loginLink={loginLink} absUrl={absUrl} />
 
-        {headwayPortalNodes.map((node, index) => {
-          return createPortal(<HeadwayWidget account={"yZ1rmJ"} badgePosition={"center-right"} id={`widget-${index}`} />, node, `headway-${index}`);
-        })}
+        <MeganavHeadwayPortal />
       </div>
     </nav>
   );
