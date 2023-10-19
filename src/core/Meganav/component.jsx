@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
 import T from "prop-types";
+import React, { useEffect, useState } from "react";
 
 import { connectState } from "../remote-data-store";
 import { selectSessionData } from "../remote-session-data";
 
 import Logo from "../Logo/component.jsx";
 
-import MeganavScripts from "./component.js";
 import MeganavItemsDesktop from "../MeganavItemsDesktop/component.jsx";
-import MeganavItemsSignedIn from "../MeganavItemsSignedIn/component.jsx";
 import MeganavItemsMobile from "../MeganavItemsMobile/component.jsx";
+import MeganavItemsSignedIn from "../MeganavItemsSignedIn/component.jsx";
 import Notice from "../Notice/component.jsx";
-import MeganavData from "./component.json";
 import _absUrl from "../url-base";
+import MeganavScripts from "./component.js";
+import MeganavData from "./component.json";
 
-import MeganavContentProducts from "../MeganavContentProducts/component.jsx";
-import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavContentCompany from "../MeganavContentCompany/component.jsx";
 import MeganavContentDevelopers from "../MeganavContentDevelopers/component.jsx";
+import MeganavContentProducts from "../MeganavContentProducts/component.jsx";
+import MeganavContentUseCases from "../MeganavContentUseCases/component.jsx";
 import MeganavSearch from "../MeganavSearch/component.jsx";
+
+import { createPortal } from "react-dom";
+import HeadwayWidget from "../HeadwayWidget/HeadwayWidget.jsx";
 
 const SignIn = ({ sessionState, theme, loginLink, absUrl }) => {
   return sessionState.signedIn ? (
     <MeganavItemsSignedIn absUrl={absUrl} sessionState={sessionState} theme={theme} />
   ) : (
-    <ul className="hidden md:flex items-center">
+    <ul className="items-center hidden md:flex">
       <li className="ui-meganav-item">
         <a href={absUrl("/contact")} className={`ui-meganav-link ${theme.textColor}`} data-id="meganav-link">
           Contact us
@@ -58,10 +61,10 @@ SignIn.propTypes = {
 const SignInPlaceholder = () => <div />;
 
 const panels = {
-  MeganavContentProducts: MeganavContentProducts,
-  MeganavContentUseCases: MeganavContentUseCases,
-  MeganavContentCompany: MeganavContentCompany,
-  MeganavContentDevelopers: MeganavContentDevelopers,
+  MeganavContentProducts,
+  MeganavContentUseCases,
+  MeganavContentCompany,
+  MeganavContentDevelopers,
 };
 
 export default function Meganav({ paths, themeName = "white", notice, loginLink = "/login", urlBase, addSearchApiKey }) {
@@ -77,6 +80,13 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
     const teardown = MeganavScripts({ themeName, addSearchApiKey });
     return () => teardown();
   }, [sessionState]);
+
+  const [headwayPortalNodes, setHeadwayPortalNodes] = useState([]);
+
+  useEffect(() => {
+    // Query all the elements with the .headwayPortal class
+    setHeadwayPortalNodes(Array.from(document.querySelectorAll(".headwayPortal")));
+  }, []);
 
   const theme = MeganavData.themes[themeName];
   const absUrl = (path) => _absUrl(path, urlBase);
@@ -95,6 +105,10 @@ export default function Meganav({ paths, themeName = "white", notice, loginLink 
         {sessionState ? <SignIn sessionState={sessionState} theme={theme} loginLink={loginLink} absUrl={absUrl} /> : <SignInPlaceholder />}
 
         <MeganavItemsMobile panels={panels} sessionState={sessionState || {}} paths={paths} theme={theme} loginLink={loginLink} absUrl={absUrl} />
+
+        {headwayPortalNodes.map((node, index) => {
+          return createPortal(<HeadwayWidget account={"yZ1rmJ"} badgePosition={"center-right"} id={`widget-${index}`} />, node, `headway-${index}`);
+        })}
       </div>
     </nav>
   );

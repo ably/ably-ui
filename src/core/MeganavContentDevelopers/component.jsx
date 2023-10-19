@@ -1,7 +1,6 @@
 import T from "prop-types";
 import React from "react";
 
-import HeadwayWidget from "../HeadwayWidget/HeadwayWidget.jsx";
 import Icon from "../Icon/component.jsx";
 
 const MeganavContentDevelopers = ({ absUrl }) => (
@@ -111,7 +110,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
           <li>
             <a href="https://changelog.ably.com/" className="py-12 group ui-meganav-media">
               <span className="ui-meganav-media-heading">Changelog</span>
-              <HeadwayWidget account={"yZ1rmJ"} badgePosition={"center-right"} />
+              <span className="headwayPortal"></span>
             </a>
           </li>
           <li>
