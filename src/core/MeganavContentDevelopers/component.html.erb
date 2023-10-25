@@ -101,8 +101,11 @@
         </li>
         <li>
           <%= link_to "https://changelog.ably.com/", class: "py-12 group ui-meganav-media", target: "_blank", rel: "noopener noreferrer" do %>
-            <p class="ui-meganav-media-heading">Changelog</p>
-            <span className="headwayPortal"></span>
+            <span class="ui-meganav-media-heading">Changelog</span>
+            <span class="headwayPortal">
+              <!-- This imitates how the React component is initialized -->
+              <div class="HW_widget_component_widget-0" style="position: relative; display: inline-block;"></div>
+            </span>
           <% end %>
         </li>
         <li>

@@ -1,6 +1,7 @@
 import Meganav from "@ably/ui/core/Meganav/component";
 import Notice from "@ably/ui/core/Notice/component";
 import MeganavBlogPostsList from "@ably/ui/core/MeganavBlogPostsList/component";
+import MeganavContentDevelopers from "@ably/ui/core/MeganavContentDevelopers/component";
 
 document.addEventListener("DOMContentLoaded", () => {
   const queryString = window.location.search;
@@ -22,4 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   MeganavBlogPostsList();
+
+  MeganavContentDevelopers();
 });
