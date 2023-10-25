@@ -1,14 +1,14 @@
-import React from "react";
 import T from "prop-types";
+import React from "react";
 
 import Icon from "../Icon/component.jsx";
 
 const MeganavContentDevelopers = ({ absUrl }) => (
   <div className="flex max-w-screen-xl mx-auto">
     <div className="ui-meganav-content-spacer"></div>
-    <section className="grid grid-cols-12 ui-grid-gap-x w-full">
-      <div className="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
-        <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
+    <section className="grid w-full grid-cols-12 ui-grid-gap-x">
+      <div className="px-24 pt-24 col-span-full md:col-span-4 md:py-24 lg:py-32 sm:px-32 md:pl-0 md:pr-24">
+        <h3 className="uppercase ui-meganav-overline" id="meganav-developers-panel-explore">
           Explore
         </h3>
         <ul aria-labelledby="meganav-developers-panel-explore">
@@ -51,7 +51,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <div className="px-24 pb-8 col-span-full md:col-span-4 md:py-24 lg:py-32 sm:px-32 md:px-0">
         <ul className="md:mt-40" aria-labelledby="meganav-developers-panel-explore">
           <li>
             <a href={absUrl("/download")} className="ui-meganav-media-with-image group">
@@ -92,28 +92,29 @@ const MeganavContentDevelopers = ({ absUrl }) => (
         </ul>
       </div>
 
-      <div className="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
-        <h3 className="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">
+      <div className="px-24 pt-8 pb-24 col-span-full md:col-span-4 md:py-24 lg:py-32 sm:px-32 md:px-0">
+        <h3 className="uppercase ui-meganav-overline" id="meganav-developers-panel-quick-links">
           Quick links
         </h3>
         <ul aria-labelledby="meganav-developers-panel-quick-links">
           <li>
-            <a href="https://discord.gg/jwBPhEZ9g5" className="group ui-meganav-media py-12">
+            <a href="https://discord.gg/jwBPhEZ9g5" className="py-12 group ui-meganav-media">
               <p className="ui-meganav-media-heading">Discord</p>
             </a>
           </li>
           <li>
-            <a href="https://github.com/ably" className="group ui-meganav-media py-12">
+            <a href="https://github.com/ably" className="py-12 group ui-meganav-media">
               <p className="ui-meganav-media-heading">GitHub</p>
             </a>
           </li>
           <li>
-            <a href="https://changelog.ably.com/" className="group ui-meganav-media py-12">
-              <p className="ui-meganav-media-heading">Changelog</p>
+            <a href="https://changelog.ably.com/" className="py-12 group ui-meganav-media" rel="noopener noreferrer" target="_blank">
+              <span className="ui-meganav-media-heading">Changelog</span>
+              <span className="headwayPortal"></span>
             </a>
           </li>
           <li>
-            <a href="https://status.ably.com/" className="group ui-meganav-media py-12">
+            <a href="https://status.ably.com/" className="py-12 group ui-meganav-media">
               <p className="ui-meganav-media-heading">
                 Status
                 <iframe
@@ -122,13 +123,13 @@ const MeganavContentDevelopers = ({ absUrl }) => (
                   allowtransparency="true"
                   frameBorder="0"
                   scrolling="no"
-                  className="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
+                  className="w-24 h-24 ml-4 align-middle border-none pointer-events-none"
                 ></iframe>
               </p>
             </a>
           </li>
           <li>
-            <a href={absUrl("/support")} className="group ui-meganav-media py-12">
+            <a href={absUrl("/support")} className="py-12 group ui-meganav-media">
               <p className="ui-meganav-media-heading">Support & FAQs</p>
             </a>
           </li>
