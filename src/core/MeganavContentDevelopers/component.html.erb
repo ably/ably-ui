@@ -1,8 +1,8 @@
 <div class="flex max-w-screen-xl mx-auto">
   <div class="ui-meganav-content-spacer"></div>
-  <section class="grid grid-cols-12 ui-grid-gap-x w-full">
-    <div class="col-span-full md:col-span-4 pt-24 md:py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24">
-      <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-explore">
+  <section class="grid w-full grid-cols-12 ui-grid-gap-x">
+    <div class="px-24 pt-24 col-span-full md:col-span-4 md:py-24 lg:py-32 sm:px-32 md:pl-0 md:pr-24">
+      <h3 class="uppercase ui-meganav-overline" id="meganav-developers-panel-explore">
         Explore
       </h3>
       <ul aria-labelledby="meganav-developers-panel-explore">
@@ -44,7 +44,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+    <div class="px-24 pb-8 col-span-full md:col-span-4 md:py-24 lg:py-32 sm:px-32 md:px-0">
       <ul class="md:mt-40" aria-labelledby="meganav-developers-panel-explore">
         <li>
           <%= link_to abs_url("/download"), class: "ui-meganav-media-with-image group" do %>
@@ -84,13 +84,13 @@
         </li>
       </ul>
     </div>
-    <div class="col-span-full md:col-span-4 pt-8 pb-24 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
-      <h3 class="ui-meganav-overline uppercase" id="meganav-developers-panel-quick-links">
+    <div class="px-24 pt-8 pb-24 col-span-full md:col-span-4 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
+      <h3 class="uppercase ui-meganav-overline" id="meganav-developers-panel-quick-links">
         Quick links
       </h3>
       <ul aria-labelledby="meganav-developers-panel-quick-links">
         <li>
-          <%= link_to "https://discord.gg/jwBPhEZ9g5", class: "group ui-meganav-media py-12" do %>
+          <%= link_to "https://discord.gg/jwBPhEZ9g5", class: "py-12 group ui-meganav-media" do %>
             <p class="ui-meganav-media-heading">Discord</p>
           <% end %>
         </li>
@@ -100,25 +100,26 @@
           <% end %>
         </li>
         <li>
-          <%= link_to "https://changelog.ably.com/", class: "group ui-meganav-media py-12" do %>
+          <%= link_to "https://changelog.ably.com/", class: "py-12 group ui-meganav-media", target: "_blank", rel: "noopener noreferrer" do %>
             <p class="ui-meganav-media-heading">Changelog</p>
+            <span className="headwayPortal"></span>
           <% end %>
         </li>
         <li>
-          <a href="https://status.ably.com/" class="group ui-meganav-media py-12">
+          <a href="https://status.ably.com/" class="py-12 group ui-meganav-media">
             <p class="ui-meganav-media-heading">
               Status<iframe
                 src="https://status.ably.com/embed/icon"
                 allowtransparency="true"
                 frameborder="0"
                 scrolling="no"
-                class="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
+                class="w-24 h-24 ml-4 align-middle border-none pointer-events-none"
               ></iframe>
             </p>
           </a>
         </li>
         <li>
-          <%= link_to abs_url("/support"), class: "group ui-meganav-media py-12" do %>
+          <%= link_to abs_url("/support"), class: "py-12 group ui-meganav-media" do %>
             <p class="ui-meganav-media-heading">Support & FAQs</p>
           <% end %>
         </li>
