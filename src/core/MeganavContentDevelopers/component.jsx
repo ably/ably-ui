@@ -54,7 +54,7 @@ const MeganavContentDevelopers = ({ absUrl }) => (
       <div className="col-span-full md:col-span-4 pb-8 md:py-24 lg:py-32 px-24 sm:px-32 md:px-0">
         <ul className="md:mt-40" aria-labelledby="meganav-developers-panel-explore">
           <li>
-            <a href={absUrl("/download")} className="ui-meganav-media-with-image group">
+            <a href={absUrl("/docs/sdks")} className="ui-meganav-media-with-image group">
               <Icon name="icon-display-sdks-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">SDKs</p>

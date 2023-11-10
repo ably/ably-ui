@@ -130,7 +130,7 @@ export default function Footer({ paths, urlBase }) {
               </a>
             </li>
             <li className="p-menu-row-snug">
-              <a href={absUrl("/download")} className="ui-footer-menu-row-link">
+              <a href={absUrl("/docs/sdks")} className="ui-footer-menu-row-link">
                 SDKs
               </a>
             </li>
