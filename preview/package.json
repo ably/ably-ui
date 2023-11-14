@@ -15,7 +15,7 @@
     "tailwindcss-filters": "^3.0.0"
   },
   "engines": {
-    "node": "^14.15.4",
+    "node": "^16.14.2",
     "yarn": "^1.22.4"
   },
   "version": "0.1.0",
