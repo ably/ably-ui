@@ -7,7 +7,6 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "node-sass": "^7.0.0",
     "postcss": "^7",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -16,7 +15,7 @@
     "tailwindcss-filters": "^3.0.0"
   },
   "engines": {
-    "node": "^16.14.2",
+    "node": "^14.15.4",
     "yarn": "^1.22.4"
   },
   "version": "0.1.0",
@@ -24,8 +23,5 @@
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9",
     "webpack-dev-server": "^3.11.0"
-  },
-  "resolutions": {
-    "node-sass": "^6.0.1"
   }
 }
