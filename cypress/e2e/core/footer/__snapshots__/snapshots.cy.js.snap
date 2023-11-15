@@ -129,7 +129,7 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           >
         </li>
         <li class="p-menu-row-snug">
-          <a href="/download" class="ui-footer-menu-row-link">SDKs</a>
+          <a href="/docs/sdks" class="ui-footer-menu-row-link">SDKs</a>
         </li>
         <li class="p-menu-row-snug flex items-center -mt-4">
           <a
@@ -529,7 +529,7 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           >
         </li>
         <li class="p-menu-row-snug">
-          <a class="ui-footer-menu-row-link" href="/download">SDKs</a>
+          <a class="ui-footer-menu-row-link" href="/docs/sdks">SDKs</a>
         </li>
         <li class="p-menu-row-snug flex items-center -mt-4">
           <a
