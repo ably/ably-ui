@@ -31,6 +31,13 @@ VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 RUBY_VERSION=$ABLY_UI_VERSION.dev.$PACKAGE_SUFFIX
 TAG=v$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 
+echo "> Creating env vars, run below in bash in case you need to re-run the script:"
+echo "export VERSION=$VERSION"
+echo "export RUBY_VERSION=$RUBY_VERSION"
+echo "export TAG=$TAG"
+echo "export ABLY_UI_VERSION=$ABLY_UI_VERSION"
+echo "export PACKAGE_SUFFIX=$PACKAGE_SUFFIX"
+
 if git rev-parse "${TAG}" >/dev/null 2>&1; then
   echo $0: "Error: ${TAG} already exists"
   exit 1
