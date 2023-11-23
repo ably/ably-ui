@@ -3,14 +3,35 @@ import T from "prop-types";
 
 import Icon from "../Icon/component.jsx";
 
-const FeaturedLink = ({ url, textSize = "text-menu3", iconColor = "text-cool-black", flush = false, children }) => (
+const FeaturedLink = ({ url, textSize = "text-p2", iconColor = "text-cool-black", flush = false, reverse = false, additionalCSS = "", children }) => (
   <a
     href={url}
-    className={`ui-featured-link ${textSize} ${flush ? "" : "py-8"} `}
+    className={`font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ${textSize} ${
+      flush ? "" : "py-8"
+    } ${additionalCSS}`}
     style={{ "--featured-link-icon-size": `var(${textSize.replace("text", "--fs")})` }}
   >
-    {children}
-    <Icon name="icon-gui-link-arrow" size={`calc(var(--featured-link-icon-size) * 1.25)`} color={iconColor} additionalCSS="ui-featured-link-icon" />
+    {reverse ? (
+      <>
+        <Icon
+          name="icon-gui-link-arrow"
+          size={`calc(var(--featured-link-icon-size) * 1.25)`}
+          color={iconColor}
+          additionalCSS="align-middle mr-8 relative -top-1 -right-4 transition-all group-hover:right-0 transform rotate-180"
+        />
+        {children}
+      </>
+    ) : (
+      <>
+        {children}
+        <Icon
+          name="icon-gui-link-arrow"
+          size={`calc(var(--featured-link-icon-size) * 1.25)`}
+          color={iconColor}
+          additionalCSS="align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+        />
+      </>
+    )}
   </a>
 );
 
@@ -20,6 +41,8 @@ FeaturedLink.propTypes = {
   textSize: T.string,
   iconColor: T.string,
   flush: T.bool,
+  reverse: T.bool,
+  additionalCSS: T.string,
 };
 
 export default FeaturedLink;

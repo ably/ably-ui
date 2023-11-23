@@ -1,6 +1,15 @@
-<%= link_to(@url, class: "ui-featured-link #{@text_size} #{@flush ? '' : 'py-8'}  #{@additional_css}", style: "--featured-link-icon-size: var(#{@text_size.gsub("text", "--fs")})") do %>
-  <%= content -%><%= render(AblyUi::Core::Icon.new(name: "icon-gui-link-arrow",
-                                                   size: "calc(var(--featured-link-icon-size) * 1.25)",
-                                                   color: @icon_color,
-                                                   additional_css: "ui-featured-link-icon")) %>
+<%= link_to(@url, class: "font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group #{@text_size} #{@flush ? '' : 'py-8'}  #{@additional_css}", style: "--featured-link-icon-size: var(#{@text_size.gsub("text", "--fs")})") do %>
+  <% if @reverse %>
+    <%= render(AblyUi::Core::Icon.new(name: "icon-gui-link-arrow",
+                                      size: "calc(var(--featured-link-icon-size) * 1.25)",
+                                      color: @icon_color,
+                                      additional_css: "align-middle mr-8 relative -top-1 -right-4 transition-all group-hover:right-0 transform rotate-180")) %>
+    <%= content -%>
+  <% else %>
+    <%= content -%><%= render(AblyUi::Core::Icon.new(name: "icon-gui-link-arrow",
+                                                     size: "calc(var(--featured-link-icon-size) * 1.25)",
+                                                     color: @icon_color,
+                                                     additional_css: "align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0")) %>
+  <% end %>
+
 <% end %>

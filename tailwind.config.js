@@ -353,6 +353,7 @@ module.exports = {
       backgroundImage: ["hover", "active", "focus"],
       filter: ["hover"],
       cursor: ["disabled"],
+      inset: ["group-hover"],
     },
   },
   corePlugins: {
