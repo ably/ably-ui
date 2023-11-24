@@ -1,12 +1,8 @@
-PATH
-  remote: ..
-  specs:
-    ably-ui (11.7.1)
-      view_component (>= 2.33, < 2.50)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    ably-ui (11.7.1.dev.13caf30)
+      view_component (>= 2.33, < 2.50)
     actioncable (6.0.5.1)
       actionpack (= 6.0.5.1)
       nio4r (~> 2.0)
@@ -180,7 +176,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ably-ui (= 11.7.1)
+  ably-ui (= 11.7.1.dev.13caf30)
   bootsnap (>= 1.4.2)
   byebug
   dotenv-rails
