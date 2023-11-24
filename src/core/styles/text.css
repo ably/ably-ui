@@ -177,4 +177,8 @@
     @apply focus:text-charcoal-grey focus:outline-gui-focus-neutral;
     @apply underline;
   }
+
+  .ui-figcaption {
+    @apply font-mono text-p3 text-neutral-800;
+  }
 }
