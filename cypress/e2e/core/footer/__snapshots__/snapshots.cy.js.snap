@@ -13,14 +13,10 @@ exports[`Footer Snapshot Test > react > test case common to both #0`] = `
           src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
           alt="Ably homepage"
         />
-        <h2
-          class="text-overline2 font-mono font-bold col-span-full uppercase tracking-widen-0.16"
-        >
-          The Ably Platform
-        </h2>
+        <h2 class="ui-text-overline2 col-span-full">The Ably Platform</h2>
       </div>
       <div class="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-        <p class="font-sans text-p3 py-16 font-bold p-menu-row-snug">
+        <p class="ui-text-p3 font-bold py-16 p-menu-row-snug">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>
@@ -416,13 +412,13 @@ exports[`Footer Snapshot Test > view component > test case common to both #0`] =
           src="/assets/ably_ui/core/images/ably-stack-f942defb86ef288e999c451c1f7e34fbbe59b7200d738c080e15a9f8716bbdad.svg"
         />
         <h2
-          class="text-overline2 col-span-full font-mono font-bold uppercase tracking-widen-0.16"
+          class="ui-text-overline2 col-span-full font-mono uppercase tracking-widen-0.16"
         >
           The Ably Platform
         </h2>
       </div>
       <div class="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-        <p class="font-sans text-p3 py-16 font-bold p-menu-row-snug">
+        <p class="ui-text-p3 font-bold py-16 p-menu-row-snug">
           Easily power any realtime experience in your application via a simple
           API that handles everything realtime.
         </p>

@@ -422,7 +422,7 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
     <div class="ui-uptime-link-back">
       <a
         href="//status.ably.com"
-        class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group text-p2 py-8 "
+        class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 "
         style="--featured-link-icon-size: var(--fs-p2);"
         >More on our status site<svg
           class="text-white align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
@@ -437,7 +437,7 @@ exports[`Uptime Snapshot Test > react > test case common to both #0`] = `
 
 exports[`Uptime Snapshot Test > react > test case common to both #1`] = `
 <div
-  class="flex sm:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 text-cool-black"
+  class="flex sm:flex-row justify-center items-center p-24 border rounded ui-text-p2 text-cool-black"
   data-id="uptime-error"
 >
   Sorry, we can’t retrieve uptime data right now.

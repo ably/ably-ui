@@ -105,7 +105,7 @@ exports[`Notice > react > renders correctly by default #0`] = `
   style="display: none;"
 >
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <a href="/" class="font-medium w-full pr-8 text-p3 self-center"
+    <a href="/" class="w-full pr-8 ui-text-p3 self-center"
       ><strong class="font-bold whitespace-nowrap pr-4"
         >Something something</strong
       ><span class="pr-4"
@@ -120,7 +120,7 @@ exports[`Notice > react > renders correctly by default #0`] = `
       type="button"
       class="ml-auto h-20 w-20 border-none bg-none self-baseline"
     >
-      <svg class="text-white " style="width: 1.25rem; height: 1.25rem;">
+      <svg class="text-cool-black " style="width: 1.25rem; height: 1.25rem;">
         <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
@@ -135,7 +135,7 @@ exports[`Notice > vw > renders correctly by default #0`] = `
   style="display: none;"
 >
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <a class="font-medium w-full pr-8 text-p3 self-center" href="/">
+    <a class="w-full pr-8 ui-text-p3 self-center" href="/">
       <strong class="font-bold whitespace-nowrap pr-4"
         >Something something</strong
       >
@@ -152,7 +152,7 @@ exports[`Notice > vw > renders correctly by default #0`] = `
       type="button"
       class="h-20 w-20 mt-4 ml-auto border-none bg-none self-baseline"
     >
-      <svg class="text-white " style="width: 1.25rem; height: 1.25rem">
+      <svg class="text-cool-black " style="width: 1.25rem; height: 1.25rem">
         <use xlink:href="#sprite-icon-gui-close"></use>
       </svg>
     </button>
