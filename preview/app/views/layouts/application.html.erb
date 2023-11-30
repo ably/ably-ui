@@ -7,7 +7,7 @@
     <%= csp_meta_tag %>
     <%= stylesheet_packs_with_chunks_tag 'application'  %>
   </head>
-  <body data-add-search-api-key="<%= Rails.application.config.add_search_api_key %>">
+  <body class="font-sans antialiased" data-add-search-api-key="<%= Rails.application.config.add_search_api_key %>">
     <%= yield %>
     <%= javascript_packs_with_chunks_tag 'application' %>
 

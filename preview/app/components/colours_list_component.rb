@@ -39,7 +39,7 @@ class ColoursListComponent < ViewComponent::Base
           { bg: 'bg-gui-default-dark', name: "Default (Dark)", hex: '#4DA6FF' },
           { bg: 'bg-gui-hover-dark', name: "Hover (Dark)", hex: '#2894FF' },
           { bg: 'bg-gui-active-dark', name: "Active (Dark)", hex: '#0080FF' },
-          { bg: 'bg-gui-visited', name: "Visited", hex: '#4887c2' },
+          { bg: 'bg-gui-blue-visited', name: "Visited", hex: '#4887c2' },
           { bg: 'bg-gui-focus', name: "Focus", hex: '#80B9F2' },
           { bg: 'bg-gui-focus-outline', name: "Focus Outline", hex: '#80B9F2' },
           { bg: 'bg-gui-unavailable', name: "Unavailable", hex: '#a8a8a8' },
