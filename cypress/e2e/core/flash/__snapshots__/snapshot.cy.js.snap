@@ -12,7 +12,7 @@ exports[`Flash Snapshot Test > renders correcty #0`] = `
     >
       <use xlink:href="#sprite-icon-gui-tick"></use>
     </svg>
-    <p class="ui-flash-text text-cool-black">
+    <p class="ui-text-p1 mr-16 text-cool-black">
       Congratulations! You've won the Oscar
     </p>
     <button type="button" class="p-0 ml-auto self-start focus:outline-none">
@@ -41,7 +41,7 @@ exports[`Flash Snapshot Test > renders correcty #1`] = `
     >
       <use xlink:href="#sprite-icon-gui-ably-badge"></use>
     </svg>
-    <p class="ui-flash-text text-cool-black">This is a notice</p>
+    <p class="ui-text-p1 mr-16 text-cool-black">This is a notice</p>
     <button type="button" class="p-0 ml-auto self-start focus:outline-none">
       <svg
         class="text-cool-black transition-colors"
@@ -68,7 +68,7 @@ exports[`Flash Snapshot Test > renders correcty #2`] = `
     >
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
-    <p class="ui-flash-text text-white">This is an error, very bad</p>
+    <p class="ui-text-p1 mr-16 text-white">This is an error, very bad</p>
     <button type="button" class="p-0 ml-auto self-start focus:outline-none">
       <svg
         class="text-white transition-colors"
@@ -95,7 +95,7 @@ exports[`Flash Snapshot Test > renders correcty #3`] = `
     >
       <use xlink:href="#sprite-icon-gui-warning"></use>
     </svg>
-    <p class="ui-flash-text text-white">This is an alert</p>
+    <p class="ui-text-p1 mr-16 text-white">This is an alert</p>
     <button type="button" class="p-0 ml-auto self-start focus:outline-none">
       <svg
         class="text-white transition-colors"
@@ -116,7 +116,7 @@ exports[`Flash Snapshot Test > renders correcty #4`] = `
   <div
     class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle"
   >
-    <p class="ui-flash-text text-cool-black">
+    <p class="ui-text-p1 mr-16 text-cool-black">
       Some useful information, you are welcome
     </p>
     <button type="button" class="p-0 ml-auto self-start focus:outline-none">

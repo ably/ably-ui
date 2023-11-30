@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // eslint-disable-next-line react/prop-types
   const Slide = ({ children }) => (
     <div className="h-full p-24 bg-white rounded">
-      <p className="text-p2 text-center">{children}</p>
+      <p className="ui-text-p2 text-center">{children}</p>
     </div>
   );
 

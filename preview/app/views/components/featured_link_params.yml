@@ -6,7 +6,7 @@
   :description: Passed to the href in the anchor.
 - :name: text_size
   :optional: "Yes"
-  :default: "text-menu3"
+  :default: "text-p2"
   :type: String
   :description: Text size of the link.
 - :name: icon_color
@@ -22,3 +22,8 @@
   :default: "false"
   :type: Boolean
   :description: If true, removes the default vertical padding.
+- :name: reverse
+  :optional: "Yes"
+  :default: "false"
+  :type: Boolean
+  :description: If true, the arrow is positioned on the left side of the text

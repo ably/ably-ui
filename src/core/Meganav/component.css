@@ -51,7 +51,7 @@
   }
 
   .ui-meganav-link {
-    @apply text-menu2 font-medium block;
+    @apply text-menu2 font-bold block font-sans;
     @apply mr-12 lg:mr-24 px-0 py-20;
     @apply hover:text-gui-hover focus:text-gui-focus focus:outline-none;
     @apply transition-colors;
@@ -63,13 +63,13 @@
 
   .ui-meganav-mobile-link {
     @apply p-menu-row relative -left-8 w-extend-8;
-    @apply text-menu2 font-medium block text-cool-black text-left;
+    @apply text-menu2  font-bold font-mono font-medium block text-cool-black text-left;
     @apply flex items-center;
     @apply focus:text-gui-focus focus:outline-none;
   }
 
   .ui-meganav-account-link {
-    @apply block px-8 py-8 hover:bg-light-grey hover:text-gui-hover rounded relative -left-8 text-menu3 w-extend-8 font-light;
+    @apply block px-8 py-8 hover:bg-light-grey hover:text-gui-hover rounded relative -left-8 text-menu3 w-extend-8 font-bold font-mono;
   }
 
   .ui-meganav-content {
@@ -97,15 +97,15 @@
   }
 
   .ui-meganav-media-heading {
-    @apply text-menu3 text-cool-black font-medium group-hover:text-gui-hover group-focus:text-gui-focus;
+    @apply text-menu3 text-cool-black font-bold font-sans group-hover:text-gui-hover group-focus:text-gui-focus leading-normal;
   }
 
   .ui-meganav-media-copy {
-    @apply text-p3 text-dark-grey font-light;
+    @apply text-p3 font-sans font-medium text-dark-grey leading-normal;
   }
 
   .ui-meganav-overline {
-    @apply text-overline2 text-cool-black uppercase font-medium tracking-widen-0.15 p-overline;
+    @apply text-overline2 text-cool-black uppercase font-medium font-mono tracking-widen-0.16 p-overline;
   }
 
   .ui-meganav-hr {

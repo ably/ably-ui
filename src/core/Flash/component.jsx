@@ -125,7 +125,7 @@ const Flash = ({ id, type, content, removeFlash }) => {
     <div className={`ui-flash-message ui-grid-px ${animateEntry ? "ui-flash-message-enter" : ""}`} style={style} ref={ref} data-id="ui-flash">
       <div className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}>
         {withIcons[type] && <Icon name={withIcons[type]} color={iconColor[type]} size="1.5rem" additionalCSS="mr-16 self-baseline" />}
-        <p className={`ui-flash-text ${FLASH_TEXT_COLOR[type]}`} dangerouslySetInnerHTML={{ __html: safeContent }} />
+        <p className={`ui-text-p1 mr-16 ${FLASH_TEXT_COLOR[type]}`} dangerouslySetInnerHTML={{ __html: safeContent }} />
         <button type="button" className="p-0 ml-auto self-start focus:outline-none" onClick={closeFlash}>
           <Icon name="icon-gui-close" color={iconColor[type]} size="1.5rem" additionalCSS="transition-colors" />
         </button>

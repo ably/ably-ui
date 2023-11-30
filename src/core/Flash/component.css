@@ -13,10 +13,6 @@
     transform: translateY(-200%) rotateX(-90deg);
   }
 
-  .ui-flash-text {
-    @apply mr-16 text-p1;
-  }
-
   /* dynamic content inside flash, can't add classes */
   .ui-flash-text a {
     @apply underline;

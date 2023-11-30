@@ -2,7 +2,7 @@
   Code Component
 <% end %>
 
-<h1 class="text-h2 my-16">JavaScript</h1>
+<h1 class="ui-text-h2 my-16">JavaScript</h1>
 
 <%= render(AblyUi::Core::Code.new(language: "javascript",
   snippet: %q{
@@ -15,7 +15,7 @@ channel.subscribe('greeting', function(message) {
 });
 })) %>
 
-<h1 class="text-h2 my-16">iOS Swift</h1>
+<h1 class="ui-text-h2 my-16">iOS Swift</h1>
 
 <%= render(AblyUi::Core::Code.new(language: "swift",
   snippet: %q{
@@ -28,7 +28,7 @@ channel.subscribe("greeting") { message in
 }
 })) %>
 
-<h1 class="text-h2 my-16">Java</h1>
+<h1 class="ui-text-h2 my-16">Java</h1>
 
 <%= render(AblyUi::Core::Code.new(language: "java",
   snippet: %q{
@@ -48,7 +48,7 @@ channel.subscribe("greeting", listener);
 })) %>
 
 
-<h1 class="text-h2 my-16">Kotlin</h1>
+<h1 class="ui-text-h2 my-16">Kotlin</h1>
 
 <%= render(AblyUi::Core::Code.new(language: "kotlin",
   snippet: %q{

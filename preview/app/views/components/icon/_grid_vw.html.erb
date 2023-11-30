@@ -1,7 +1,7 @@
 <div class="grid grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
   <% icons.each do |icon_name| %>
     <div class="border p-16">
-      <code class="font-mono text-p2 mb-8 block"><%= icon_name %></code>
+      <code class="ui-code mb-8 block"><%= icon_name %></code>
       <div class="border inline-flex flex-0">
         <div class="flex pi-checkered-bg">
           <%= render(AblyUi::Core::Icon.new(name: icon_name, size: size, additional_css: "hover:text-active-orange")) %>

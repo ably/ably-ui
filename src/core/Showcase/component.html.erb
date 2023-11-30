@@ -36,15 +36,15 @@
           <% if company[:layout] == "quotes" %>
             <%= render(AblyUi::Core::Icon.new(name: "quote", size: "1.25rem", color: "text-cool-black")) %>
 
-            <p class="text-quote font-light mb-24"><%= company[:quote] %></p>
+            <p class="ui-text-quote mb-24"><%= company[:quote] %></p>
 
             <div class="flex items-center">
               <div class="flex-shrink-0 flex-grow-0 mr-16 overflow-hidden rounded-full flex align-center justify-center w-48 h-48">
                 <%= image_tag company[:author][:thumbnail], alt: "Picture of #{company[:author][:name]}, #{company[:author][:title]}", class: "w-48 h-48 filter-grayscale" %>
               </div>
               <div>
-                <p class="text-p2 font-medium"><%= company[:author][:name] %></p>
-                <p class="text-p3 font-light"><%= company[:author][:title] %></p>
+                <p class="ui-text-p2"><%= company[:author][:name] %></p>
+                <p class="ui-text-p3"><%= company[:author][:title] %></p>
               </div>
             </div>
           <% end %>
@@ -54,16 +54,16 @@
               <% company[:columns].each_with_index do |col, n| %>
                 <% if company[:columns].last == col %>
                   <div class="flex-1 mt-40 sm:mt-0 <%= col[:classname] %>" data-id="casestudy-column">
-                    <p class="text-h4 pb-24"><%= col[:heading] %></p>
-                    <p class="text-p1 font-light"><%= col[:text] %></p>
+                    <p class="ui-text-h4 pb-24"><%= col[:heading] %></p>
+                    <p class="ui-text-p1"><%= col[:text] %></p>
                     <%- if col[:button] %>
                       <a class="ui-btn self-start p-btn mt-24" href="<%= col[:button][:href] %>"><%= col[:button][:label] %></a>
                     <% end %>
                   </div>
                 <% else %>
                   <div class="flex-1 mt-40 sm:mt-0 mr-24 sm:mr-32 xl:mr-64 <%= col[:classname] %>" data-id="casestudy-column">
-                    <p class="text-title-xl font-extra-large"><%= col[:heading] %></p>
-                    <p class="text-p1 font-light mb-0 sm:mb-32"><%= col[:text] %></p>
+                    <p class="ui-text-title-xl"><%= col[:heading] %></p>
+                    <p class="ui-text-p1 mb-0 sm:mb-32"><%= col[:text] %></p>
                   </div>
                 <% end %>
               <% end %>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import T from "prop-types";
 
-const contentWrapperClasses = "font-light w-full pr-8 text-p3 self-center";
+const contentWrapperClasses = "w-full pr-8 ui-text-p3 self-center";
 
 import NoticeScripts from "./component.js";
 import Icon from "../Icon/component.jsx";
@@ -38,14 +38,14 @@ const Notice = ({ buttonLink, buttonLabel, bodyText, title, config, closeBtn, bg
     <div className={wrapperClasses} data-id="ui-notice" style={{ maxHeight: 0, overflow: "hidden" }}>
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink}>
-          <strong className="font-medium whitespace-nowrap pr-4">{title}</strong>
+          <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
           <span className="pr-4">{bodyText}</span>
           {buttonLabel && <span className="underline cursor-pointer whitespace-nowrap">{buttonLabel}</span>}
         </ContentWrapper>
 
         {closeBtn && (
           <button type="button" className="ml-auto h-20 w-20 border-none bg-none self-baseline">
-            <Icon name="icon-gui-close" size="1.25rem" color="text-white" />
+            <Icon name="icon-gui-close" size="1.25rem" color="text-cool-black" />
           </button>
         )}
       </div>

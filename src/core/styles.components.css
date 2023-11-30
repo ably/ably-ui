@@ -5,7 +5,7 @@
 
 @layer components {
   .ui-input {
-    @apply text-p2 font-light bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-input;
+    @apply text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-input;
     @apply hover:bg-white hover:shadow-input hover:border-transparent;
     @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
     @apply max-w-screen-sm;

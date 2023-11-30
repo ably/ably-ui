@@ -1,10 +1,10 @@
 @layer components {
   .ui-checkbox-p1 {
-    @apply flex items-start mb-16 font-sans;
+    @apply flex items-start mb-16 font-sans font-medium;
   }
 
   .ui-checkbox-p2 {
-    @apply flex items-start mb-12 font-sans;
+    @apply flex items-start mb-12 font-sans font-medium;
   }
 
   .ui-checkbox-input {
@@ -23,12 +23,12 @@
 
   .ui-checkbox-label-p1 {
     @apply select-none;
-    @apply text-p1 font-light text-cool-black;
+    @apply text-p1 font-medium text-cool-black;
   }
 
   .ui-checkbox-label-p2 {
     @apply select-none;
-    @apply text-p2 font-light text-cool-black;
+    @apply text-p2 font-medium text-cool-black;
   }
 
   .ui-checkbox-input:disabled + .ui-checkbox-styled {
@@ -49,7 +49,7 @@
   }
 
   .ui-textarea {
-    @apply font-sans font-light text-cool-black text-p1;
+    @apply font-sans font-medium text-cool-black text-p1;
     @apply p-input mb-16;
     @apply bg-light-grey border-mid-grey transition-input border rounded block w-full;
     @apply hover:bg-white hover:shadow-input hover:border-transparent;

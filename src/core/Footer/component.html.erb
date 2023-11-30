@@ -1,12 +1,12 @@
-<footer class="bg-light-grey font-sans antialiased" data-id="footer">
+<footer class="bg-light-grey font-sans antialiased leading-normal" data-id="footer">
   <div class="max-w-screen-xl mx-auto py-32 sm:py-40 md:py-64 ui-grid-gap ui-grid-px grid grid-cols-6">
     <div class="col-span-full md:col-span-2">
       <div class="flex flex-row p-menu-row-snug">
         <%= image_tag(ably_stack_path, alt: "Ably homepage", class: "mr-24 -mt-16") %>
-        <h2 class="text-overline2 col-span-full font-medium uppercase tracking-widen-0.1">The Ably Platform</h2>
+        <h2 class="ui-text-overline2 col-span-full font-mono uppercase tracking-widen-0.16">The Ably Platform</h2>
       </div>
       <div class="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-        <p class="text-p3 py-16 font-medium p-menu-row-snug">
+        <p class="ui-text-p3 font-bold py-16 p-menu-row-snug">
           Easily power any realtime experience in your application via a simple API that handles everything realtime.
         </p>
       </div>
@@ -174,7 +174,7 @@
                 >
               <%= render(AblyUi::Core::Icon.new(name: "glassdoor", size: "1.5rem")) %>
             </a>
-            <div class="pl-16 text-menu3 font-light">
+            <div class="pl-16 text-menu3 font-sans font-medium">
               <strong class="block font-medium">We&apos;re hiring!</strong>
               <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" class="ui-footer-link">
                 Learn more at Glassdoor
@@ -194,7 +194,7 @@
               >
             <%= render(AblyUi::Core::Icon.new(name: "glassdoor", size: "1.5rem")) %>
           </a>
-          <div class="text-menu3 font-light">
+          <div class="text-menu3 font-sans font-medium">
             <strong class="block font-medium">We&apos;re hiring!</strong>
             <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" class="ui-footer-link">
               Learn more at Glassdoor
@@ -226,29 +226,29 @@
       <div class="flex mr-24">
         <%= render(AblyUi::Core::Icon.new(name: "icon-gui-tick", color: "text-active-orange", size: "1.5rem", additional_css:"bg-white rounded-full mr-12 ui-footer-tick-icon")) %>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">SOC 2 Type 2</p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">SOC 2 Type 2</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-2">
         <%= render(AblyUi::Core::Icon.new(name: "icon-gui-tick", color: "text-active-orange", size: "1.5rem", additional_css:"bg-white rounded-full mr-12 ui-footer-tick-icon")) %>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">HIPAA</p>
-          <p class="ui-footer-compliance-text font-light mb-24">Compliant</p>
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">HIPAA</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Compliant</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-3">
         <%= render(AblyUi::Core::Icon.new(name: "icon-gui-tick", color: "text-active-orange", size: "1.5rem", additional_css:"bg-white rounded-full mr-12 ui-footer-tick-icon")) %>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">EU GDPR</p>
-          <p class="ui-footer-compliance-text font-light mb-24">Certified</p>
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">EU GDPR</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Certified</p>
         </div>
       </div>
       <div class="flex mr-24 md:col-start-4">
         <%= render(AblyUi::Core::Icon.new(name: "icon-gui-tick", color: "text-active-orange", size: "1.5rem", additional_css:"bg-white rounded-full mr-12 ui-footer-tick-icon")) %>
         <div>
-          <p class="ui-footer-compliance-text font-medium whitespace-nowrap">256-bit AES</p>
-          <p class="ui-footer-compliance-text font-light mb-24">Encryption</p>
+          <p class="ui-footer-compliance-text font-bold whitespace-nowrap">256-bit AES</p>
+          <p class="ui-footer-compliance-text font-medium mb-24">Encryption</p>
         </div>
       </div>
     </div>

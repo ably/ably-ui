@@ -139,10 +139,7 @@ export default function Uptime({ serverUrl, linkTo = null, theme = "light" }) {
 
   if (data && data.error) {
     return (
-      <div
-        className={`flex sm:flex-row justify-center items-center p-24 border rounded font-sans font-light text-p2 ${themes[theme].text}`}
-        data-id="uptime-error"
-      >
+      <div className={`flex sm:flex-row justify-center items-center p-24 border rounded ui-text-p2 ${themes[theme].text}`} data-id="uptime-error">
         Sorry, we can’t retrieve uptime data right now.
       </div>
     );

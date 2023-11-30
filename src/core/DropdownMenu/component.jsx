@@ -92,7 +92,7 @@ const Link = ({ url, title, subtitle, iconName, children }) => {
         {title}
         {iconName ? <Icon name={iconName} size="1rem" color="text-cool-black" additionalCSS="align-middle ml-8 relative -top-1 -left-4" /> : null}
       </p>
-      {subtitle ? <p className="text-p3 mb-16 text-dark-grey">{subtitle}</p> : null}
+      {subtitle ? <p className="ui-text-p3 mb-16">{subtitle}</p> : null}
       {children}
     </a>
   );

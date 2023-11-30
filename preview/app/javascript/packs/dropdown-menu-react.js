@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const DropdownMenuPreview = () => {
     return (
       <DropdownMenu>
-        <DropdownMenu.Trigger additionalTriggerCSS="text-h3">
+        <DropdownMenu.Trigger additionalTriggerCSS="ui-text-h3">
           Dropdown Menu Trigger
         </DropdownMenu.Trigger>
         <DropdownMenu.Content anchorPosition="left">
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle="This is using the inbuilt component which takes props for title, subtitle, icon name & children."
             iconName="icon-gui-link-arrow"
           >
-            <p className="text-p3">I am a child! 🐣</p>
+            <p className="ui-text-p3">I am a child! 🐣</p>
           </DropdownMenu.Link>
           <DropdownMenu.Link
             url="https://ably.com/"

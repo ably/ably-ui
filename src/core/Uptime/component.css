@@ -86,7 +86,7 @@
   .ui-uptime-key {
     @apply block mt-16 mr-20 bg-transparent;
     @apply sm:inline-block sm:mt-0;
-    @apply font-light text-p2 text-white block sm:inline-flex items-center;
+    @apply font-medium text-p2 text-white block sm:inline-flex items-center;
   }
 
   .ui-uptime-key:first-child {
