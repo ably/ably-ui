@@ -12,7 +12,7 @@ const MeganavContentProducts = ({ paths, absUrl }) => (
           <img src={paths.ablyStack} alt="Ably homepage" />
           <h3 className="ui-meganav-overline ml-24">The Ably Platform</h3>
         </div>
-        <p className="text-p2 font-bold text-cool-black mb-24 leading-normal" style={{ maxWidth: "330px" }}>
+        <p className="ui-text-p2 font-bold mb-24" style={{ maxWidth: "330px" }}>
           Easily power any realtime experience in your application. No complex infrastructure to manage or provision. Just a simple API that handles everything
           realtime, and lets you focus on your code.
         </p>

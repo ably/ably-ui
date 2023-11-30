@@ -95,25 +95,32 @@
   }
 
   .ui-text-code {
-    @apply font-mono font-medium text-code;
+    @apply font-mono font-normal text-code;
   }
 
   .ui-text-code2 {
-    @apply font-mono font-medium text-code2;
+    @apply font-mono font-normal text-code2;
   }
 
   .ui-text-code-inline {
-    @apply font-mono font-medium text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
+    @apply font-mono font-normal text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
   }
 
   .ui-unordered-list {
-    @apply text-p1 font-medium text-cool-black;
-    @apply list-disc ml-32 my-16;
+    @apply text-p1 font-medium text-charcoal-grey;
+    @apply ml-32 my-16;
+    @apply list-disc;
   }
 
   .ui-ordered-list {
     @apply text-p1 font-medium text-charcoal-grey;
-    @apply ml-32 my-16 list-decimal;
+    @apply ml-32 my-16;
+    @apply list-decimal;
+  }
+
+  .ui-ordered-list li,
+  .ui-unordered-list li {
+    @apply mb-8;
   }
 
   .ui-unordered-list li > *:last-of-type:not(ul):not(ol),
@@ -122,11 +129,11 @@
   }
 
   .ui-unordered-list ul {
-    @apply ml-24 mt-16 list-circle;
+    @apply ml-24 my-8 list-circle;
   }
 
   .ui-ordered-list ol {
-    @apply ml-24 mt-16 list-decimal;
+    @apply ml-24 my-16 list-decimal;
   }
 
   .ui-unordered-list ul ul {
@@ -135,34 +142,6 @@
 
   .ui-unordered-list ul ul {
     @apply my-8;
-  }
-
-  .ui-ordered-list li,
-  .ui-unordered-list li {
-    @apply font-medium font-sans tracking-widen-0;
-    line-height: var(--lh-extra-relaxed);
-  }
-
-  .ui-unordered-list-with-emphasis {
-    @apply text-p1 font-medium text-cool-black;
-    @apply list-disc ml-32 mt-32 -mb-12;
-  }
-
-  .ui-unordered-list-with-emphasis li div {
-    @apply relative -top-12;
-  }
-
-  .ui-unordered-list-with-emphasis li div > strong {
-    @apply block;
-  }
-
-  .ui-unordered-list-with-emphasis ul {
-    margin-top: calc(var(--spacing-16) + var(--spacing-8));
-    @apply ml-24 list-circle;
-  }
-
-  .ui-unordered-list-with-emphasis ul ul {
-    @apply list-square;
   }
 
   .ui-link {

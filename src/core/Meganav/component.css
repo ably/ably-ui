@@ -105,7 +105,7 @@
   }
 
   .ui-meganav-overline {
-    @apply text-overline2 text-cool-black uppercase font-bold font-mono tracking-widen-0.16 p-overline;
+    @apply text-overline2 text-cool-black uppercase font-medium font-mono tracking-widen-0.16 p-overline;
   }
 
   .ui-meganav-hr {

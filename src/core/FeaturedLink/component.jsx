@@ -6,7 +6,7 @@ import Icon from "../Icon/component.jsx";
 const FeaturedLink = ({ url, textSize = "text-p2", iconColor = "text-cool-black", flush = false, reverse = false, additionalCSS = "", children }) => (
   <a
     href={url}
-    className={`font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ${textSize} ${
+    className={`font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-${textSize} ${
       flush ? "" : "py-8"
     } ${additionalCSS}`}
     style={{ "--featured-link-icon-size": `var(${textSize.replace("text", "--fs")})` }}

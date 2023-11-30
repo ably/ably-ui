@@ -13,10 +13,10 @@ export default function Footer({ paths, urlBase }) {
         <div className="col-span-full md:col-span-2">
           <div className="flex flex-row p-menu-row-snug">
             <img className="mr-24 -mt-16" src={paths.ablyStack} alt="Ably homepage" />
-            <h2 className="text-overline2 font-mono font-bold col-span-full uppercase tracking-widen-0.16">The Ably Platform</h2>
+            <h2 className="ui-text-overline2 col-span-full">The Ably Platform</h2>
           </div>
           <div className="md:col-span-4 md:w-3/4 xs:w-3/5 w-full">
-            <p className="font-sans text-p3 py-16 font-bold p-menu-row-snug">
+            <p className="ui-text-p3 font-bold py-16 p-menu-row-snug">
               Easily power any realtime experience in your application via a simple API that handles everything realtime.
             </p>
           </div>

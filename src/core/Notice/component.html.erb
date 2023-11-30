@@ -1,7 +1,7 @@
 <%# Note the style attribute is used for entry animation %>
 <%= tag.div class: "ui-announcement #{bg_color} #{text_color}", data: { id: "ui-notice" }, style: "max-height: 0; overflow: hidden" do %>
   <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-    <%= content_wrapper class: "font-medium w-full pr-8 text-p3 self-center" do %>
+    <%= content_wrapper class: "w-full pr-8 ui-text-p3 self-center" do %>
       <strong class="font-bold whitespace-nowrap pr-4"><%= @contents[:title] %></strong>
       <span class="pr-4"><%= @contents[:body_text] %></span>
       <span class="underline cursor-pointer whitespace-nowrap"><%= @contents[:button_label] %></span>
@@ -9,7 +9,7 @@
 
     <% if close_btn? %>
       <%= button_tag type: 'button', class: 'h-20 w-20 mt-4 ml-auto border-none bg-none self-baseline' do %>
-        <%= render(AblyUi::Core::Icon.new(name: "icon-gui-close", size: "1.25rem", color: "text-white")) %>
+        <%= render(AblyUi::Core::Icon.new(name: "icon-gui-close", size: "1.25rem", color: "text-cool-black")) %>
       <% end %>
     <% end %>
   </div>
