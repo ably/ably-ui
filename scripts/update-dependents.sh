@@ -20,6 +20,7 @@ if [ -z "$WEBSITE_RESULT" ]; then
 else
   echo "Failed to trigger workflow:"
   echo $WEBSITE_RESULT
+  exit 1
 fi
 
 echo ""
@@ -37,4 +38,5 @@ if [ -z "$VOLTAIRE_RESULT" ]; then
 else
   echo "Failed to trigger workflow:"
   echo $VOLTAIRE_RESULT
+  exit 1
 fi

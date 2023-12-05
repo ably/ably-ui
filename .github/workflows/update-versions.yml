@@ -27,10 +27,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16.17.0
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm install -g yarn
       - name: Update preview app
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           git config --global user.email "github@action.code"
           git config --global user.name "Github Action"
@@ -40,3 +40,8 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           branch: update-versions-to-${{ steps.latesttag.outputs.tag }}
+          title: Update @ably/ui version in repo to ${{ steps.latesttag.outputs.tag }}
+          body: "Update files that are not updated during the release process. 
+            Sometimes published packages are not available immediately so we open this PR for convenience."
+          # This is doesn't work due to what seems a permission issue https://github.com/peter-evans/create-pull-request/issues/155
+          # team-reviewers: "team-website"
