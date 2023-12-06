@@ -15,10 +15,7 @@ const ablyUItailwindConfig = (extend) => {
 
   const configWithPlugin = {
     ...ablyUIConfig,
-    purge: {
-      content: addPurgeContentPaths(),
-      options: ablyUIConfig.purge.options,
-    },
+    content: addPurgeContentPaths(),
   };
 
   return extend(configWithPlugin);
