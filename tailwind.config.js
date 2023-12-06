@@ -310,7 +310,6 @@ module.exports = {
       },
       outline: {
         "gui-focus": "1.5px solid var(--color-gui-focus-outline)",
-        "gui-focus-neutral": "2px solid var(--color-neutral-000)",
       },
       width: {
         "extend-8": "calc(100% + var(--spacing-8))",

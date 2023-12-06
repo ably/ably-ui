@@ -153,8 +153,13 @@
 
   .ui-link-neutral {
     @apply hover:text-dark-grey active:text-cool-black disabled:text-gui-unavailable;
-    @apply focus:text-charcoal-grey focus:outline-gui-focus-neutral;
+    @apply focus:text-charcoal-grey;
     @apply underline;
+  }
+
+  /* focus:outline-gui-focus-neutral does not get created under Tailwind 3.3.5, not sure why */
+  .ui-link-neutral:focus {
+    outline: 2px solid var(--color-neutral-000);
   }
 
   .ui-figcaption {
