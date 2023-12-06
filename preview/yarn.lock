@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ably/ui@12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-12.0.0.tgz#505dd874f561628d48cdc2173965d9aff383e788"
-  integrity sha512-voNWC6KYZQQRRDPpx0stHY7bzRN0hzn2sBsYsIDa9PvNptY7zRuSSv/0SqH9kMqf4AQKd/OFbQ7LZHG33HHQsg==
+"@ably/ui@12.0.0-dev.9a060af":
+  version "12.0.0-dev.9a060af"
+  resolved "https://registry.yarnpkg.com/@ably/ui/-/ui-12.0.0-dev.9a060af.tgz#d68ead704fb2543c4be6ac875ab5d460a9e044db"
+  integrity sha512-2mO5YseFruwABEEHQQQreizJN3FuJ33OLNIfIMVn0J+aNkZLqQTB0iOYCU9+8AbUoS2Co/2dfCAG3vx5vOX5jA==
   dependencies:
     "@mrtkrcm/cypress-plugin-snapshots" "https://github.com/mrtkrcm/cypress-plugin-snapshots#v1.13.0"
     addsearch-js-client "^0.7.0"
