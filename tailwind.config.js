@@ -299,10 +299,6 @@ module.exports = {
       full: "9999px",
       DEFAULT: "0.375rem",
     },
-    filter: {
-      none: "none",
-      grayscale: "grayscale(1)",
-    },
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
@@ -360,5 +356,5 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  plugins: [require("tailwindcss-filters")],
+  plugins: [],
 };
