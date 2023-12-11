@@ -6,7 +6,7 @@ import "./component.css";
 const SLIDE_SHOW_INTERVAL = 5000;
 
 const updateLogoOpacity = (logos, currentIndex) => {
-  const visible = ["filter-grayscale", "filter-none"];
+  const visible = ["grayscale", "grayscale-0"];
   const opaque = [...visible].reverse();
   logos.forEach((logo, i) => {
     logo.classList.replace(...(i === currentIndex ? visible : opaque));

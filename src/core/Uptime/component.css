@@ -30,8 +30,7 @@
   }
 
   .ui-uptime-day:hover {
-    filter: brightness(1.2);
-    @apply z-10;
+    @apply z-10 brightness-125;
   }
 
   .ui-uptime-day:hover span {

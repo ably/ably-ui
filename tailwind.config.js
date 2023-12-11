@@ -1,19 +1,20 @@
 module.exports = {
-  purge: {
-    content: [
-      "./src/**/*.html.erb",
-      "./src/**/*.jsx",
-      "./src/**/*.js",
-      "./src/**/*.json",
-    ],
-    options: {
-      safelist: {
-        standard: ["w-1/2", "w-1/3", "w-1/4", "w-1/5", "w-1/6"],
-        greedy: [/^hljs.*/, /^ui-.*/],
-      },
-    },
-  },
-  darkMode: false,
+  content: [
+    "./src/**/*.html.erb",
+    "./src/**/*.jsx",
+    "./src/**/*.js",
+    "./src/**/*.json",
+    "./src/**/*.css",
+  ],
+  safelist: [
+    "w-1/2",
+    "w-1/3",
+    "w-1/4",
+    "w-1/5",
+    "w-1/6",
+    { pattern: /^hljs.*/ },
+    { pattern: /^ui-.*/ },
+  ],
   theme: {
     screens: {
       // CSS custom properties can't be used in media queries
@@ -299,10 +300,6 @@ module.exports = {
       full: "9999px",
       DEFAULT: "0.375rem",
     },
-    filter: {
-      none: "none",
-      grayscale: "grayscale(1)",
-    },
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
@@ -314,7 +311,6 @@ module.exports = {
       },
       outline: {
         "gui-focus": "1.5px solid var(--color-gui-focus-outline)",
-        "gui-focus-neutral": "2px solid var(--color-neutral-000)",
       },
       width: {
         "extend-8": "calc(100% + var(--spacing-8))",
@@ -360,5 +356,5 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  plugins: [require("tailwindcss-filters")],
+  plugins: [],
 };

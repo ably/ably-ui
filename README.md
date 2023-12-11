@@ -80,7 +80,6 @@ Currently, AblyUI CSS is built to work with TailwindCSS. To integrate it into yo
          1. Add postCSS import with `npm install postcss-import`
    1. Further to the instructions, if installation is hanging for over 5 minutes or otherwise problematic, try installing the libraries one at a time
    1. Make sure you are installing v2 with `npm install -D tailwindcss@2.X`
-   1. Make sure that tailwindcss-filters is also set to v2 in your package.json: otherwise `npm install -D tailwindcss-filters@2.X`
 3. Make sure you are using the format `@import 'tailwindcss/base';...` in your `global.css` file rather than the `@tailwind/base` format from Tailwind v3
 4. Add the following to your `tailwind.config.js`. Note how different config properties are always extended by the `ablyUIConfig`:
 
