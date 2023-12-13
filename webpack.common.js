@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
 const findImports = require("find-imports");
 
@@ -79,9 +78,6 @@ const modulesConfig = modules.map((mod) => ({
     }),
     new MiniCssExtractPlugin({
       filename: `${mod.directory}/styles.css`,
-    }),
-    new ExtraWatchWebpackPlugin({
-      files: ["src/**/*.erb", "src/**/*.rb"],
     }),
   ],
 }));

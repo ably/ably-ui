@@ -1,5 +1,3 @@
-**_Note:_** some features are still in development and their documentation might be incomplete. Lookout for the ⚠️ icon.
-
 # ably-ui
 
 `ably-ui` is the of home of the Ably design system library ([https://ably-ui.herokuapp.com/](https://ably-ui.herokuapp.com/)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.

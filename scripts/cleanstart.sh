@@ -17,11 +17,8 @@ clear;
 
 if [[ $UPDATE == "--update-deps" ]]; then
   # Ensure recently added components are up-to-date
-  echo "Update yarn and gems for new modules"
+  echo "Update yarn for new modules"
   yarn --frozen-lockfile
-  bundle config set --local frozen true
-  bundle
-  bundle config set --local frozen false
 fi
 
 echo "Creating webpack build assets"
