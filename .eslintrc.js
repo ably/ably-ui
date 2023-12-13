@@ -10,6 +10,7 @@ module.exports = {
     "plugin:react/recommended",
     "prettier",
     "plugin:cypress/recommended",
+    "plugin:storybook/recommended"
   ],
   parserOptions: {
     ecmaFeatures: {
