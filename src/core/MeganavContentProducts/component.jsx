@@ -41,7 +41,7 @@ const MeganavContentProducts = ({ paths, absUrl }) => (
           </li>
           <li>
             <a href={absUrl("/livesync")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">LiveSync (Pre release)</p>
+              <p className="ui-meganav-media-heading">LiveSync (Early access)</p>
               <p className="ui-meganav-media-copy">Keep clients in sync with any relational database.</p>
             </a>
           </li>
