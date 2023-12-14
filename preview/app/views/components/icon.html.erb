@@ -1,0 +1,24 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Icon
+<% end %>
+
+<%= render partial: 'components/icon/arguments', locals: { component_parameters: component_parameters } %>
+
+<h2 class="ui-text-h2 mb-32">GUI Icons</h2>
+<%= render partial: 'components/icon/grid', locals: { icons: core_icons, size: "1.25rem" } %>
+
+<h2 class="ui-text-h2 mb-32">Display Icons</h2>
+<%= render partial: 'components/icon/grid', locals: { icons: display_icons, size: "2.5rem" } %>
+
+<h2 class="ui-text-h2 mb-32">Social Icons</h2>
+<%= render partial: 'components/icon/grid', locals: { icons: social_icons, size: "1.5rem" } %>
+
+
+<h2 class="ui-text-h2 mb-32">Other</h2>
+<%= render partial: 'components/icon/grid', locals: { icons: other_icons, size: "1.5rem" } %>
+
+<% content_for :component do %>
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>

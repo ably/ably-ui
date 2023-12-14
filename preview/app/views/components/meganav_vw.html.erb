@@ -1,7 +1,0 @@
-<%= render(AblyUi::Core::Meganav.new(**props)) do |c| %>
-  <%= c.notice(notice_props) %>
-<% end %>
-
-<% content_for :component do %>
-  <%= javascript_packs_with_chunks_tag 'meganav-vw' %>
-<% end %>

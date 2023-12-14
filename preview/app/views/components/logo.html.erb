@@ -2,9 +2,9 @@
   Logo
 <% end %>
 
-<%= render(ParameterTableComponent.new(component_parameters, framework)) %>
+ <%= render(ParameterTableComponent.new(component_parameters)) %>
 
-<%= render(AblyUi::Core::Logo.new(href: '/', logo_url: asset_path('ably_ui/core/images/ably-logo.png'))) %>
+<%= react_component('logo', { logo_url: asset_path('ably-logo.png') }) %>
 
 <% content_for :component do %>
   <script type="text/javascript">

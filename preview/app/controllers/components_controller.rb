@@ -1,12 +1,11 @@
 class ComponentsController < ApplicationController
   def show
     component_name = params[:component_name]
-    template = "components/#{component_name.underscore}_#{framework}.html.erb"
+    template = "components/#{component_name.underscore}.html.erb"
 
     if template_exists?(template)
       render template,
              locals: {
-               framework: framework,
                component_parameters:
                  component_parameters(component_name.underscore)
              }
@@ -17,31 +16,29 @@ class ComponentsController < ApplicationController
 
   def meganav
     session[:signed_in] = signed_in?
-    template = "meganav_#{framework}.html.erb"
+    template = "meganav.html.erb"
 
     render template,
            locals: {
-             props: meganav_props,
+             props: meganav_react_props,
              notice_props: notice_props,
              notice_config: notice_config,
-             framework: framework,
              component_parameters: component_parameters('meganav')
            }
   end
 
   def footer
-    template = "footer_#{framework}.html.erb"
+    template = "footer.html.erb"
 
     render template,
            locals: {
-             props: framework == 'react' ? footer_react_props : {},
-             framework: framework,
+             props: footer_react_props,
              component_parameters: component_parameters('footer')
            }
   end
 
   def icon
-    template = "icon_#{framework}.html.erb"
+    template = "icon.html.erb"
     core_icons = %w[
       icon-gui-ably-badge
       icon-gui-arrow-bidirectional-horizontal
@@ -151,7 +148,6 @@ class ComponentsController < ApplicationController
              display_icons: display_icons,
              social_icons: social_icons,
              other_icons: other_icons,
-             framework: framework,
              component_parameters: component_parameters('icon')
            }
   end
@@ -182,17 +178,12 @@ class ComponentsController < ApplicationController
     { cookie_id: '2', notice_id: 'B', collapse: notice_collapse }
   end
 
-  def meganav_props
-    framework == 'react' ? meganav_react_props : meganav_vw_props
-  end
-
   def meganav_react_props
     props = {
       paths: {
-        logo: helpers.asset_path('ably_ui/core/images/ably-logo.png'),
-        icon_sprites: helpers.asset_path('ably_ui/core/sprites.svg'),
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
-        aws_logo: helpers.asset_path('ably_ui/core/images/icon-tech-aws.svg')
+        logo: helpers.asset_path('ably-logo.png'),
+        ably_stack: helpers.asset_path('ably-stack.svg'),
+        aws_logo: helpers.asset_path('icon-tech-aws.svg')
       },
       notice: {
         props: notice_props,
@@ -206,34 +197,22 @@ class ComponentsController < ApplicationController
     props
   end
 
-  def meganav_vw_props
-    props = {}
-    props[:session_data] = helpers.session_data if signed_in?
-    props[:login_link] = '/custom-login-link' if custom_login_link?
-    props[:url_base] = 'https://pages.ably.com' if custom_url_base?
-    props
-  end
-
   def footer_react_props
     {
       paths: {
-        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        ably_stack: helpers.asset_path('ably-stack.svg'),
         highest_performer:
-          helpers.asset_path('ably_ui/core/images/high-performer-2023.svg'),
+          helpers.asset_path('high-performer-2023.svg'),
         best_support:
-          helpers.asset_path('ably_ui/core/images/best-support-2023.svg'),
+          helpers.asset_path('best-support-2023.svg'),
         fastest_implementation:
-          helpers.asset_path('ably_ui/core/images/fastest-implementation-2023.svg'),
+          helpers.asset_path('fastest-implementation-2023.svg'),
         highest_user_adoption:
           helpers.asset_path(
-            'ably_ui/core/images/highest-user-adoption-2023.svg'
+            'highest-user-adoption-2023.svg'
           )
       }
     }
-  end
-
-  def framework
-    params['framework'].nil? ? 'react' : 'vw'
   end
 
   def signed_in?
