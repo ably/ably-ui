@@ -1,10 +1,9 @@
 describe("Company Autocomplete", () => {
-  const url = "/components/company-autocomplete?framework=vw";
   const CONTAINER_SELECTOR = "[data-id=company-autocomplete-dropdown]";
   const ITEMS_SELECTOR = `${CONTAINER_SELECTOR} button`;
 
   beforeEach(() => {
-    cy.visit(url);
+    cy.visit("/components/company-autocomplete");
   });
 
   it("shows the drop down when you start typing", () => {

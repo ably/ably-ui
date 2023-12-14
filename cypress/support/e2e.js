@@ -14,7 +14,6 @@
 // ***********************************************************
 
 import "@mrtkrcm/cypress-plugin-snapshots/commands";
-import "./commands";
 
 // Cypress has a bug that breaks snapshot tests when running the whole suite
 // Follow https://github.com/cypress-io/cypress/issues/3090
