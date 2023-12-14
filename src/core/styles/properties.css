@@ -134,11 +134,6 @@
     --syntax-red: #d54e53;
     --syntax-lilac: #bb87d3;
 
-    /* uptime status colors */
-    --uptime-color-up: #39b54a;
-    --uptime-color-trouble: #e87623;
-    --uptime-color-down: #e6242c;
-
     /* flat colors for social icons */
     --icon-color-linkedin: #1269bf;
     --icon-color-twitter: #2caae1;
@@ -279,7 +274,5 @@
 
     /* Expose component values for cross-component usage */
     --ui-meganav-height: 4rem;
-    --ui-showcase-client-logo-min-width: 8.75rem; /* 140px at 16px base*/
-    --ui-showcase-client-logo-max-width: 15rem; /* 240px at 16px base*/
   }
 }

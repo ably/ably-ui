@@ -11,7 +11,6 @@ Rails
 
     get '/api/me', to: 'api/user_session#me'
     get '/api/blog', to: 'api/blog#recent_blog_posts'
-    get '/api/uptime', to: 'api/uptime#uptime_json'
     get '/api/companies', to: 'api/company_data#companies'
 
     root 'pages#index'
