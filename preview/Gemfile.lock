@@ -153,8 +153,9 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
-    view_component (2.33.0)
-      activesupport (>= 5.0.0, < 7.0)
+    view_component (2.49.1)
+      activesupport (>= 5.0.0, < 8.0)
+      method_source (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -189,7 +190,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
-  view_component (~> 2.33.0)
+  view_component (~> 2.49.1)
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 
