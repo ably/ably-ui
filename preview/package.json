@@ -2,7 +2,7 @@
   "name": "preview",
   "private": true,
   "dependencies": {
-    "@ably/ui": "13.1.0",
+    "@ably/ui": "13.2.2",
     "@babel/preset-react": "^7.12.5",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.4",
