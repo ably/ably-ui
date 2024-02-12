@@ -37,7 +37,7 @@ gem 'view_component', '~> 2.33.0', require: 'view_component/engine'
 
 gem 'responders'
 
-gem 'ably-ui', '13.2.2', require: 'ably_ui'
+gem 'ably-ui', '13.2.2.dev.78815ed', require: 'ably_ui'
 
 # https://stackoverflow.com/questions/71191685/visit-psych-nodes-alias-unknown-alias-default-psychbadalias
 gem 'psych', '< 4'
