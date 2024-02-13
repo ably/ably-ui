@@ -30,6 +30,7 @@ const FeaturedLink = ({
   reverse = false,
   additionalCSS = "",
   newWindow = false,
+  onClick = undefined,
   children,
 }) => {
   const targetAndRel = buildTargetAndRel(url, newWindow);
@@ -42,6 +43,7 @@ const FeaturedLink = ({
       } ${additionalCSS}`}
       style={{ "--featured-link-icon-size": `var(${textSize.replace("text", "--fs")})` }}
       {...targetAndRel}
+      onClick={onClick}
     >
       {reverse ? (
         <>
@@ -77,6 +79,7 @@ FeaturedLink.propTypes = {
   reverse: T.bool,
   additionalCSS: T.string,
   newWindow: T.bool,
+  onClick: T.func,
 };
 
 export default FeaturedLink;
