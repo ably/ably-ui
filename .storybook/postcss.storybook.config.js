@@ -4,6 +4,6 @@ module.exports = {
     "postcss-custom-properties",
     "postcss-calc",
     "autoprefixer",
-    "tailwindcss"
+    "tailwindcss",
   ],
 };
