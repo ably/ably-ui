@@ -1,6 +1,5 @@
 module.exports = {
   content: [
-    "./src/**/*.html.erb",
     "./src/**/*.jsx",
     "./src/**/*.js",
     "./src/**/*.json",

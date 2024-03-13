@@ -1,0 +1,44 @@
+<%= render(TitleComponent.new(react: true, vw: true)) do %>
+  Customer logos
+<% end %>
+
+<%
+  companies = [
+          {
+            label: 'Hubspot',
+            logo:
+              asset_path('cust-logo-hubspot-mono-pos.svg')
+          },
+          {
+            label: 'Webflow',
+            logo: asset_path('cust-logo-webflow-col-pos.svg')
+          },
+          {
+            label: 'Mentimeter',
+            logo:
+              asset_path('cust-logo-mentimeter-mono-pos.svg')
+          },
+          {
+            label: 'Toyota',
+            logo:
+              asset_path('cust-logo-toyota-mono-pos.svg')
+          },
+          {
+            label: 'Split',
+            logo: asset_path('cust-logo-split-mono-pos.svg')
+          },
+          {
+            label: 'Australian Open',
+            logo:
+              asset_path('cust-logo-ausopen-mono-pos.svg')
+          }
+        ]
+%>
+
+<%= react_component('customerLogos', companies: companies) %>
+
+<% content_for :component do %>
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>

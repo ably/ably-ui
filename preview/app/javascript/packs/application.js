@@ -4,7 +4,6 @@ import Meganav from "@ably/ui/core/Meganav";
 import Footer from "@ably/ui/core/Footer";
 import ContactFooter from "@ably/ui/core/ContactFooter";
 import Code from "@ably/ui/core/Code";
-import Uptime from "@ably/ui/core/Uptime";
 import CookieMessage from "@ably/ui/core/CookieMessage";
 import Flash, { reducerFlashes } from "@ably/ui/core/Flash";
 import Icon from "@ably/ui/core/Icon";
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     Meganav,
     Footer,
     Code,
-    Uptime,
     ContactFooter,
     Flash,
     CookieMessage,

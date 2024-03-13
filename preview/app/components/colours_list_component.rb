@@ -45,7 +45,6 @@ class ColoursListComponent < ViewComponent::Base
           { bg: 'bg-gui-unavailable', name: "Unavailable", hex: '#a8a8a8' },
           { bg: 'bg-gui-success', name: "Success", hex: '#11CB24' },
           { bg: 'bg-gui-error', name: "Error", hex: '#FB0C0C' },
-
         ]
       }
     ]

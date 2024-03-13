@@ -1,17 +1,12 @@
 .babelrc
 .bundle
-.bundle
 .DS_Store
 .editorconfig
 .eslintrc.js
 .pretterrc.json
 .prettierignore
-*.html.rb
-*.rb
 ably-ui-*.gem
 ably-ui.gemspec
-Gemfile
-Gemfile.lock
 lib
 modules-config.js
 node_modules

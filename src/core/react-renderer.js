@@ -1,9 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
-const renderComponent = (Component, props, node) =>
+const renderComponent = (Component, props, node) => {
+  const root = createRoot(node);
   // eslint-disable-next-line react/no-render-return-value
-  ReactDOM.render(<Component {...props} />, node);
+  root.render(<Component {...props} />);
+};
 
 export { renderComponent };
 
@@ -19,7 +21,8 @@ export default function reactRenderer(components) {
     const propsJson = node.getAttribute("data-react-props");
     const props = propsJson && JSON.parse(propsJson || {});
 
-    ReactDOM.render(<Constructor {...props} />, node);
+    const root = createRoot(node);
+    root.render(<Constructor {...props} />);
 
     node.removeAttribute("data-react");
     node.removeAttribute("data-react-props");

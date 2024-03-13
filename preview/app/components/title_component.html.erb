@@ -1,18 +1,7 @@
   <div class="mb-32">
     <a href="/" class="ui-text-p2 ui-link mb-32 block">
-      <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1rem", additional_css: "align-middle transform rotate-180 mr-4")) %>
       Back
     </a>
 
     <h1 class="ui-text-title mb-16"><%= content %></h1>
-
-    <p class="ui-text-p1 flex items-center">Available for:
-      <%= render(ActiveLinkComponent.new(to: url_for, classes: "ml-8 flex items-center opacity-50", active_classes: "opacity-100")) do %>
-        <%= image_tag "react.png", alt: "React framework logo", class: "ml-auto w-16 h-16" %>
-      <% end if react_available? %>
-
-      <%= render(ActiveLinkComponent.new(to: "#{url_for}?framework=vw", classes: "flex items-center opacity-50", active_classes: "opacity-100")) do %>
-        <%= image_tag "ruby.png", alt: "Ruby programming language logo", class: "ml-8 w-16 h-16" %>
-      <% end if vw_available? %>
-    </p>
   </div>

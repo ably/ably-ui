@@ -26,19 +26,7 @@ module Preview
 
     config.add_search_api_key = ENV['ADDSEARCH_API_KEY']
 
-    Dir[
-      File.join(
-        AblyUi::Integration.asset_paths,
-        'ably_ui',
-        '**',
-        'component.js'
-      )
-    ].each { |path| config.assets.precompile << path }
-
     # Ably UI specific config
-    config.assets.paths << AblyUi::Integration.asset_paths
     config.assets.precompile << %w[*.eot *.otf *.woff *.woff2]
-    config.assets.precompile << AblyUi::Integration.precompile_images_paths
-    config.assets.precompile << AblyUi::Integration.icon_sprites_paths
   end
 end

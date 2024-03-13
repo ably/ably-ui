@@ -1,7 +1,0 @@
-<%= button_tag(type: "button",
-               class: "ui-meganav-mobile-link",
-               data: { id: "meganav-control-mobile-panel-open" },
-               aria: { expanded: false, controls: @aria_controls, label: "Show #{content}" }) do %>
-  <%= content %>
-  <%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1.5rem", color: "text-cool-black", additional_css: "relative -top-1 ml-auto float-right")) %>
-<% end %>

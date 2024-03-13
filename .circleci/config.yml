@@ -31,7 +31,7 @@ executors:
       - YARN_VERSION: 1.22.10
 
 caches:
-  - &bundle_cache ably-ui-preview-bundle-v1-{{ checksum "Gemfile.lock" }}-{{ checksum "preview/Gemfile.lock" }}
+  - &bundle_cache ably-ui-preview-bundle-v1-{{ checksum "preview/Gemfile.lock" }}
   - &yarn_cache ably-ui-preview-yarn-v1-{{ checksum "yarn.lock" }}-{{ checksum "preview/yarn.lock" }}
 
 commands:
@@ -77,7 +77,6 @@ commands:
     steps:
       - restore_bundle_cache
       - install_bundler
-      - run: bundle install --path vendor/bundle
       - run: |
           cd preview
           bundle config set --local path 'vendor/bundle'

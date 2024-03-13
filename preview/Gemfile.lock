@@ -1,8 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ably-ui (13.2.2.dev.78815ed)
-      view_component (>= 2.33, < 2.50)
     actioncable (6.0.5.1)
       actionpack (= 6.0.5.1)
       nio4r (~> 2.0)
@@ -172,11 +170,11 @@ GEM
 PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
+  arm64-darwin-23
   x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
-  ably-ui (= 13.2.2.dev.78815ed)
   bootsnap (>= 1.4.2)
   byebug
   dotenv-rails

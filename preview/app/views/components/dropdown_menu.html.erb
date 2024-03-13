@@ -1,0 +1,138 @@
+<%= render(TitleComponent.new(react: true, vw: false)) do %>
+  Dropdown Menu
+<% end %>
+
+<table class="divide-y divide-light-grey font-sans font-light mb-32 max-w-screen-lg">
+  <thead class="bg-mid-grey">
+		<tr>
+			<th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-mono bg-active-orange text-cool-black uppercase">Menu.Trigger</th>
+		</tr>
+    <tr>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Parameter</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Optional</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Default</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Type</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">children</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">Node</td>
+        <td class="p-8 border ui-text-p2 text-left">Any nodes can be passed here. Normally used with <span class="p-4 bg-active-orange text-cool-black">Menu.Content</span></td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">additionalTriggerCSS</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">Any additional styles</td>
+      </tr>
+  </tbody>
+</table>
+
+<table class="divide-y divide-light-grey font-sans font-light mb-32 max-w-screen-lg">
+  <thead class="bg-mid-grey">
+		<tr>
+			<th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-mono bg-active-orange text-cool-black uppercase">Menu.Content</th>
+		</tr>
+    <tr>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Parameter</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Optional</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Default</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Type</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">children</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">Node</td>
+        <td class="p-8 border ui-text-p2 text-left">Any nodes can be passed here. Normally used with <span class="p-4 bg-active-orange text-cool-black">Menu.Link</span></td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">anchorPosition</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">right</td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">Location of the dropdown menu content container.</td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">additionalContentCSS</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">Any additional styles</td>
+      </tr>
+  </tbody>
+
+  </tbody>
+</table>
+
+<table class="divide-y divide-light-grey font-sans font-light mb-32 max-w-screen-lg">
+  <thead class="bg-mid-grey">
+		<tr>
+			<th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-mono bg-active-orange text-cool-black uppercase">Menu.Link</th>
+		</tr>
+    <tr>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Parameter</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Optional</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Default</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Type</th>
+      <th scope="col" class="p-8 align-middle text-left text-overline2 leading-none font-medium text-cool-black uppercase">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">url</td>
+        <td class="p-8 border ui-text-p2">No</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">url for link</td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">title</td>
+        <td class="p-8 border ui-text-p2">No</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">Title for link</td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">subtitle</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">A subtitle or description for the link</td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">iconName</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">String</td>
+        <td class="p-8 border ui-text-p2 text-left">An optional Icon can be added to the end of the link title.</td>
+      </tr>
+      <tr>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap">children</td>
+        <td class="p-8 border ui-text-p2">Yes</td>
+        <td class="p-8 border ui-text-p2 whitespace-nowrap"></td>
+        <td class="p-8 border ui-text-p2">Node</td>
+        <td class="p-8 border ui-text-p2 text-left">Any nodes can be passed here.</td>
+      </tr>
+</table>
+
+<div id="dropdown-menu-container">
+</div>
+
+<% content_for :component do %>
+  <%= javascript_packs_with_chunks_tag 'dropdown-menu' %>
+
+  <script type="text/javascript">
+    document.body.classList.add("bg-light-grey", "m-32");
+  </script>
+<% end %>
