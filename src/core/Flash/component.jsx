@@ -3,9 +3,10 @@ import DOMPurify from "dompurify";
 import T from "prop-types";
 import { nanoid } from "nanoid/non-secure";
 
-import { getRemoteDataStore } from "../remote-data-store";
+import { getRemoteDataStore } from "../remote-data-store.js";
 import ConnectStateWrapper from "../ConnectStateWrapper/component.jsx";
 import Icon from "../Icon/component.jsx";
+import "./component.css";
 
 const REDUCER_KEY = "flashes";
 const FLASH_DATA_ID = "ui-flashes";

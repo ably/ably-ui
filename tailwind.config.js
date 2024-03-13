@@ -6,7 +6,6 @@ module.exports = {
     "w-1/4",
     "w-1/5",
     "w-1/6",
-    { pattern: /^hljs.*/ },
     { pattern: /^ui-.*/ },
   ],
   theme: {

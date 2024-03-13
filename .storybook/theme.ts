@@ -6,7 +6,7 @@ const brandImage =
 export default create({
   base: "light",
   brandTitle: "Ably UI",
-  brandUrl: "https://ably.com",
   brandImage,
   brandTarget: "_self",
+  fontBase: '"Manrope", "Open Sans", sans-serif',
 });

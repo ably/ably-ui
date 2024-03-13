@@ -11,6 +11,6 @@
     "jsx": "react",
     "allowJs": true
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "global.d.ts"],
+  "include": ["./**/*.{ts,tsx}", "./global.d.ts"],
   "exclude": ["node_modules/**/*"]
 }

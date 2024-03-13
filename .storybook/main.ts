@@ -3,10 +3,21 @@ const path = require("path");
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  staticDirs: ["../public"],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {
+      builder: {
+        useSWC: true,
+      },
+    },
+  },
+  core: {
+    disableTelemetry: true,
+  },
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "@storybook/addon-styling-webpack",
     {
@@ -42,19 +53,8 @@ const config = {
       },
     },
   ],
-  framework: {
-    name: "@storybook/react-webpack5",
-    options: {
-      builder: {
-        useSWC: true,
-      },
-    },
-  },
   docs: {
     autodocs: "tag",
-  },
-  core: {
-    disableTelemetry: true,
   },
 };
 export default config;

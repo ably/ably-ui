@@ -1,0 +1,62 @@
+import { Meta, Unstyled } from "@storybook/blocks";
+import Icon from "../core/Icon/component.jsx";
+
+<Meta title="Brand/Chips" />
+
+<Unstyled>
+  <h1 className="ui-text-h1 mb-32">Chips</h1>
+  <p className="ui-text-p1 mb-32">Different size chips can be achieved by using padding and text utilities, see examples
+    below.</p>
+  <div>
+    <div className="inline-block mr-16">
+      <h3 className="ui-text-h3 mb-24">On light background</h3>
+      <div className="mb-40 p-12 border rounded inline-block">
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip p-chip-xsmall">Default</button>
+          <button type="button" className="ui-chip p-chip-xsmall" data-selected>Selected</button>
+          <button type="button" className="ui-chip p-chip-xsmall" disabled>Unavailable</button>
+        </div>
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip p-chip-small">Default</button>
+          <button type="button" className="ui-chip p-chip-small" data-selected>Selected</button>
+          <button type="button" className="ui-chip p-chip-small" disabled>Unavailable</button>
+        </div>
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip">Default</button>
+          <button type="button" className="ui-chip" data-selected>Selected</button>
+          <button type="button" className="ui-chip" disabled>Unavailable</button>
+        </div>
+        <div className="flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip p-chip-large text-btn-2">Default</button>
+          <button type="button" className="ui-chip p-chip-large text-btn-2" data-selected>Selected</button>
+          <button type="button" className="ui-chip p-chip-large text-btn-2" disabled>Unavailable</button>
+        </div>
+      </div>
+    </div>
+    <div className="inline-block">
+      <h3 className="ui-text-h3 mb-24">On dark background</h3>
+      <div className="bg-cool-black mb-40 p-12 border rounded inline-block">
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip-alt p-chip-xsmall">Default</button>
+          <button type="button" className="ui-chip-alt p-chip-xsmall" data-selected>Selected</button>
+          <button type="button" className="ui-chip-alt p-chip-xsmall" disabled>Unavailable</button>
+        </div>
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip-alt p-chip-small">Default</button>
+          <button type="button" className="ui-chip-alt p-chip-small" data-selected>Selected</button>
+          <button type="button" className="ui-chip-alt p-chip-small" disabled>Unavailable</button>
+        </div>
+        <div className="mb-12 mr-16 flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip-alt">Default</button>
+          <button type="button" className="ui-chip-alt" data-selected>Selected</button>
+          <button type="button" className="ui-chip-alt" disabled>Unavailable</button>
+        </div>
+        <div className="flex flex-wrap items-start gap-12">
+          <button type="button" className="ui-chip-alt p-chip-large text-btn-2">Default</button>
+          <button type="button" className="ui-chip-alt p-chip-large text-btn-2" data-selected>Selected</button>
+          <button type="button" className="ui-chip-alt p-chip-large text-btn-2" disabled>Unavailable</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</Unstyled>
