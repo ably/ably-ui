@@ -33,7 +33,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Rails shared components framework
-gem 'view_component', '~> 2.33.0', require: 'view_component/engine'
+gem 'view_component', '~> 2.83.0', require: 'view_component/engine'
 
 gem 'responders'
 
