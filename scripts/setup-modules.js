@@ -25,7 +25,6 @@ const srcPathResolve = (moduleDir, component = "") =>
 const npmPathResolve = (moduleDir, component = "") =>
   path.join(moduleDir, component);
 
-
 const print =
   (msg, exec) =>
   (...args) => {
@@ -50,7 +49,7 @@ const copyFonts = print(
     }
 
     if (fs.existsSync(npmPath)) {
-      fs.rmdirSync(npmPath, {recursive: true});
+      fs.rmdirSync(npmPath, { recursive: true });
     }
 
     fs.mkdirSync(npmPath);
@@ -73,7 +72,7 @@ const copyImages = print(
     }
 
     if (fs.existsSync(npmPath)) {
-      fs.rmdirSync(npmPath, {recursive: true});
+      fs.rmdirSync(npmPath, { recursive: true });
     }
 
     fs.mkdirSync(npmPath);

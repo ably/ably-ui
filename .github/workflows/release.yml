@@ -4,6 +4,11 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -30,3 +35,27 @@ jobs:
           git config --global user.name "Github Action"
           ./scripts/release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
+  deploy-storybook:
+    name: Deploy to Storybook
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - run: ls -l
+      - name: Build
+        shell: bash
+        run: |
+          echo "::group::Build"
+          yarn install
+          yarn build-storybook
+          echo "::endgroup::"
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: preview
+      - id: deploy
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

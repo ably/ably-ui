@@ -1,176 +1,26 @@
-version: 2.1
-
-orbs:
-  browser-tools: circleci/browser-tools@1.4.4
-  node: circleci/node@5.1.0
-
-executors:
-  default:
-    description: Image for running rails with cypress
-    parameters:
-      tag:
-        description: The circleci/ruby Docker image version tag
-        type: string
-        default: latest
-    docker:
-      - image: cimg/ruby:<< parameters.tag >>-browsers
-      - image: cimg/postgres:14.9
-        environment:
-          POSTGRES_USER: ably_db_user
-          POSTGRES_PASSWORD: password
-    environment:
-      - BUNDLER_VERSION: 2.3.8
-      - BUNDLE_JOBS: 4
-      - BUNDLE_PATH: vendor/bundle
-      - BUNDLE_RETRY: 3
-      - PGHOST: 127.0.0.1
-      - PG_USER: ably_db_user
-      - PG_PASSWORD: password
-      - RAILS_ENV: test
-      - NODE_VERSION: 16.17.0
-      - YARN_VERSION: 1.22.10
-
-caches:
-  - &bundle_cache ably-ui-preview-bundle-v1-{{ checksum "preview/Gemfile.lock" }}
-  - &yarn_cache ably-ui-preview-yarn-v1-{{ checksum "yarn.lock" }}-{{ checksum "preview/yarn.lock" }}
-
-commands:
-  install_browser:
-    description: Install browser
-    steps:
-      - browser-tools/install-chrome
-  save_bundle_cache:
-    description: Save bundle cache
-    steps:
-      - save_cache:
-          key: *bundle_cache
-          paths:
-            - vendor/bundle
-            - preview/vendor/bundle
-  restore_bundle_cache:
-    description: Restore bundler cache
-    steps:
-      - restore_cache:
-          keys:
-            - *bundle_cache
-  save_yarn_cache:
-    description: Save yarn cache
-    steps:
-      - save_cache:
-          key: *yarn_cache
-          paths:
-            - node_modules
-            - preview/node_modules
-            - ~/.cache
-  restore_yarn_cache:
-    description: Restore yarn cache
-    steps:
-      - restore_cache:
-          keys:
-            - *yarn_cache
-  install_bundler:
-    description: Install bundler
-    steps:
-      - run: gem install bundler --version $BUNDLER_VERSION
-  bundle_install:
-    description: Install gems
-    steps:
-      - restore_bundle_cache
-      - install_bundler
-      - run: |
-          cd preview
-          bundle config set --local path 'vendor/bundle'
-          bundle install
-      - save_bundle_cache
-  yarn_install:
-    description: Install javascript packages
-    steps:
-      - restore_yarn_cache
-      - run: yarn --frozen-lockfile
-      - save_yarn_cache
-  start_server:
-    description: Run rails server in background
-    steps:
-      - run:
-          command: cd preview && bin/rails server -e test -p 5000
-          background: true
-  precompile_assets:
-    description: Compile assets for rails app
-    steps:
-      - run: |
-          cd preview
-          RAILS_ENV=test bin/rails assets:precompile assets:clean
-  lint:
-    description: Run eslint on library
-    steps:
-      - run:
-          command: |
-            mkdir -p ~/reports
-            yarn lint --format junit --output-file ~/reports/eslint.xml
-          when: always
-      - store_test_results:
-          path: ~/reports
-      - store_artifacts:
-          path: ~/reports
-
-  format_check:
-    description: Run prettier on library
-    steps:
-      - run: yarn format:check
-
-jobs:
-  lint:
-    executor:
-      name: default
-      tag: 3.1.2
-    steps:
-      - checkout
-      - yarn_install
-      - lint
-  format_check:
-    executor:
-      name: default
-      tag: 3.1.2
-    steps:
-      - checkout
-      - yarn_install
-      - format_check
-  cypress_tests:
-    executor:
-      name: default
-      tag: 3.1.2
-    working_directory: ~/ably-ui/preview
-    steps:
-      - checkout
-      - install_browser
-      - bundle_install
-      - yarn_install
-      - precompile_assets
-      - start_server
-      - run:
-          name: Wait for server
-          command: |
-            until $(curl --retry 10 --output /dev/null --silent --head --fail http://127.0.0.1:5000/); do
-                printf '.'
-                sleep 5
-            done
-      - run:
-          name: Executes Cypress end-to-end tests
-          command: |
-            yarn cypress run \
-              --browser chrome \
-              --reporter junit \
-              --reporter-options "mochaFile=test-results/cypress-[hash].xml,toConsole=true"
-      - store_test_results:
-          path: test-results
-      - store_artifacts:
-          path: cypress/videos
-      - store_artifacts:
-          path: cypress/screenshots
+# Temporary stub to allow CircleCi to pass until it is able to be disabled for ably-ui
 
 workflows:
+  version: 2
   build:
     jobs:
       - cypress_tests
       - lint
       - format_check
+
+jobs: # do nothing
+  lint:
+    docker:
+      - image: cimg/base:2022.06-22.04
+    resource_class: small
+    run: echo noop
+  cypress_tests:
+    docker:
+      - image: cimg/base:2022.06-22.04
+    resource_class: small
+    run: echo noop
+  format_check:
+    docker:
+      - image: cimg/base:2022.06-22.04
+    resource_class: small
+    run: echo noop

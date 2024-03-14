@@ -77,7 +77,7 @@
     "pre-release": "./scripts/pre-release.sh",
     "release": "./scripts/release.sh",
     "storybook": "storybook dev -p 6006 --no-version-updates",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o preview"
   },
   "dependencies": {
     "@mrtkrcm/cypress-plugin-snapshots": "https://github.com/mrtkrcm/cypress-plugin-snapshots#v1.13.0",

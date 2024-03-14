@@ -1,0 +1,42 @@
+name: Run linters
+
+on:
+  push:
+    branches-ignore:
+      - "gh-pages"
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn
+      - name: Lint
+        uses: wearerequired/lint-action@v2
+        with:
+          eslint: true
+          eslint_dir: src
+          eslint_extensions: js,ts,jsx,tsx
+          eslint_auto_fix: false
+          prettier: true
+          prettier_dir: src
+          prettier_extensions: js,ts,jsx,tsx
+          prettier_auto_fix: false
+      # Cypress disabled until tests rewritten to use new SB paths
+      # - name: Cypress
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     start: yarn start
