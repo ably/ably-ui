@@ -1,8 +1,6 @@
 .bundle
 .DS_Store
-ably-ui-*.gem
 node_modules
-vendor
 cypress/screenshots
 cypress/videos
 server_killer.rb

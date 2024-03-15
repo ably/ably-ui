@@ -18,13 +18,13 @@ In some cases, this is impractical. Some components will be more specialized and
 
 ### Library structure
 
-The library is built out of modules, assets, JavaScript & ruby modules and components. A module is a container for all of those.
+The library is built out of modules, assets, and JavaScript components. A module is a container for all of those.
 
-For example, the `core` module provides the most general elements one can build the “chrome” of a web-based interface — typography, colours, spacing (i.e., containers) etc. The components within the module support our most common needs to build that “chrome”, like navigation elements, footer, hero sections, code samples etc. Assets, JavaScript & ruby modules are all shared between the components in the module.
+For example, the `core` module provides the most general elements one can build the “chrome” of a web-based interface — typography, colours, spacing (i.e., containers) etc. The components within the module support our most common needs to build that “chrome”, like navigation elements, footer, hero sections, code samples etc. Assets, and JavaScript are all shared between the components in the module.
 
 Components do not require assets directly — instead, it's up to the consumer to load the assets and pass them to the components. This ensures flexibility in terms of URLs.
 
-Each module, apart from components, exposes a `scripts.js`, `styles.css` and `MODULE_NAME.rb` files. `scripts.js` contains helper functions, `MODULE_NAME.rb` contains modules that components can include. `styles.css` contains CSS that does not belong to any module in particular.
+Each module, apart from components, exposes a `scripts.js` and `styles.css`. `scripts.js` contains helper functions. `styles.css` contains CSS that does not belong to any module in particular.
 
 ### Installation
 
@@ -37,7 +37,7 @@ npm install @ably/ui
 
 # or
 
-yarn add @ably/ui
+yarn add @ably/ui # Preferred
 ```
 
 To attach the imported JavaScript from the `Core` module to the `window` object:
@@ -119,24 +119,6 @@ Note that depending on the component, you might still need to include CSS & JS f
 import Meganav from "@ably/ui/core/Meganav";
 ```
 
-#### Importing ViewComponent (Rails) components
-
-To use `ably-ui` with [Ruby on Rails](https://rubyonrails.org/) add the `ably-ui` gem to your `Gemfile`:
-
-```ruby
-gem 'ably-ui',
-    '1.0.0',
-    require: 'ably_ui'
-```
-
-Components are exposed as [View Components](https://github.com/github/view_component) and should be available in any view:
-
-```erb
-<%= render(AblyUi::Core::Meganav.new) %>
-```
-
-Note that this loads neither CSS nor JS — these need to still be loaded by a bundler like webpack.
-
 ## Usage
 
 ### Icons
@@ -184,12 +166,6 @@ See https://ably-ui.herokuapp.com/components/icon for more details.
 
 Font assets are not included automagically but are part of the repo, together with an example of font-face file; see `src/core/fonts` for examples. Make sure to include the licence file declaration on usage.
 
-See `preview/app/javascript/styles/application.css` for an example when using webpacker/rails.
-
-#### Rails
-
-Because the gem directories are on the asset path (see [Importing ViewComponent (Rails) components](#user-content-importing-viewcomponent-rails-components) section), they will work with standard asset helpers (i.e., `asset_path`).
-
 ### Accessibility
 
 An important part of ably-ui is ensuring the produced UI is accessible to as wide range of users as possible. All components should adhere to at least AA accessibility standards. In most cases, this can be accomplished by following a few simple rules:
@@ -203,73 +179,19 @@ An important part of ably-ui is ensuring the produced UI is accessible to as wid
 
 ## Development
 
-The repository includes a “preview” app, which is serves both as a showcase and development environment.
+To visualise the assets in `ably-ui`, there is a Storybook instance, which serves as both a showcase and a development environment.
 
-To use, first make sure you install dependencies both for the library and the “preview” app:
+Firstly, ensure you have all of the required project dependencies by running `yarn` in the project root.
 
-```bash
-yarn && bundle
-cd preview
-yarn && bundle
-```
+Then, to run Storybook, run `yarn storybook` in the project root - it should open automatically in your browser.
 
-Then, from the root of the repository, run:
-
-```bash
-yarn dev
-```
-
-This will run the app and use the published versions of the `ably-ui`, specified in `preview/Gemfile` and `preview/package.json` NPM package.
-
-### Using the local ably-ui in the preview app
-
-It's possible to use the local version of ably-ui in the “preview” app. Enabling this, requires separate steps for the `npm` and `ruby` packages.
-
-For `npm`:
-
-```bash
-# in the root directory
-yarn link
-# in the "preview" directory
-yarn link @ably/ui
-```
-
-For `ruby`:
-
-In `preview/Gemfile` replace the Ably UI gem version number with `path: '../'` like this:
-
-```bash
-# in preview
-gem 'ably-ui', path: '../', require: 'ably_ui'
-```
-
-and run:
-
-```bash
-# in preview
-bundle --no-cache
-```
-
-Why not `bundle config set local.ably-ui ../`? Because that feature is built around the local gem being a separate repo, and works poorly with our config.
-
-A caveat of this approach is that the change `preview/Gemfile` should not be committed, as it will cause the remote app to not build.
-
-### Using a deployed package of ably-ui in the preview app
-
-If at anytime you don't want to use the local NPM package and/or gems any more, you can do:
-
-```bash
-# in "preview" directory
-yarn unlink @ably/ui
-```
-
-Then change back `path` to source `source` in the `Gemfile`. If you need to update `Gemfile.lock` without installing gems, you can run `bundle lock`.
+To build Storybook as if it was a statically built site (i.e. what it looks like when deployed), run `yarn build-storybook` from the project root, go to the generated directory with `cd preview`, and then run `npx http-server` (accepting the prompt to install that package if you haven't done already). The built site will be available at the listed local URL.
 
 #### Publishing pre-release packages for review apps
 
 Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
 
-You will need to authenticate with [npmjs](https://docs.npmjs.com/creating-and-viewing-access-tokens) and [Ruby Gems](https://guides.rubygems.org/api-key-scopes/) to publish.
+You will need to authenticate with [npmjs](https://docs.npmjs.com/creating-and-viewing-access-tokens) to publish.
 
 After the above, you should have:
 
@@ -277,11 +199,6 @@ After the above, you should have:
 - `.npmrc` file to read NPM_TOKEN from your environment like this:
   ```
   //registry.npmjs.org/:_authToken=${NPM_TOKEN}
-  ```
-- a `~/.gem/credentials` file that has your Rubygems API key:
-  ```
-  ---
-  :rubygems_api_key: REPLACE_THIS_WITH_YOUR_OWN_API_KEY
   ```
 
 To deploy a review app with your in-progress code, you can use the `pre-release` script:
@@ -316,7 +233,6 @@ All components live in `src` and follow a directory and filename convention:
   - component directory (TitleCase)
     - `component.js` - this is the entry file for a component and is the only required file
     - `components.css` - additional CSS
-    - for ruby components, you need `component.rb` and `component.html.erb`
     - for react, `components.jsx`
 
 For example:
@@ -326,8 +242,6 @@ For example:
   - script.js
   - styles.css
   - Accordion
-    - component.rb
-    - component.html.erb
     - component.js
     - component.css
     - component.jsx
@@ -343,50 +257,19 @@ If using positioning any other than static, be mindful of creating stacking cont
 
 By default, [Prettier](https://prettier.io/) & [ESLint](https://eslint.org/) will handle most of the frontend files. You can use them through your editor (which should pick up the relevant config files) or on the command line (see `scripts` in package.json).
 
-Neither handles `erb` and `rb` files. The only config for those files is at the moment in `editorconfig`.
-
-#### Note
-
-Until we have set up formatting scripts for `erb` it's worth setting up [htmlbeautifier](https://github.com/threedaymonk/htmlbeautifier) for your editor (for example with https://github.com/aliariff/vscode-erb-beautify if you use VS Code) and tracking [this issue in Prettier](https://github.com/prettier/plugin-ruby/issues/371), as Prettier is much faster and hopefully will get support for `erb`.
-
 ### Adding a new component
 
 #### To add a new component:
 
-1. Add it in `modules-config.js`
-2. Create a folder in `src`, in the module of your choice. The folder name should be TitleCase.
-3. Add a `component.js`
+1. Create a folder in `src`, in the module of your choice (i.e. `core`). The folder name should be TitleCase.
+2. Add a `component.js`
 
-- if the component has custom CSS, add a `component.css` file as well. Add `@layer components {}` to its contents. Import the CSS file in `component.js`
+- if the component has custom CSS, add a `component.css` file as well. Import the CSS file in `component.js`
 - if you need a VW component, add `component.rb` and `component.html.erb`
-- if you need a React component, add a `components.jsx`
 
-#### To see this component in the preview app:
+#### To see this component in Storybook:
 
-##### For React components:
-
-1. Import the file into `preview/app/javascript/packs/application.js` and add as input to the `reactRenderer`
-2. If it contains custom CSS, import it into `preview/app/javascript/styles/application.css`
-3. Add a template in `preview/app/views/components`, with a `_react` suffix, i.e. `my_component_react.html.erb`
-
-##### For VW components:
-
-1. You will need to restart the server for Rails to load the component (this will also need to happen after any changes to `component.rb`)
-1. If it contains custom CSS, import it into `preview/app/javascript/styles/application.css`
-1. Add a template in `preview/app/views/components`, with a `_vw` suffix, i.e. `my_component_vw.html.erb`
-1. If the component has any JavaScript, import it in the view (`preview/app/views/components/my_component_vw.html.erb`) and initialize:
-
-```rb
-<% content_for :component do %>
-  <%= javascript_include_tag 'ably_ui/core/my_component/component' %>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.querySelector("[data-id=my_component]");
-      AblyUI.Core.MyComponent(container);
-    });
-  </script>
-<% end %>
-```
+Create a `[COMPONENT_NAME].stories.tsx` file alongside your `component` assets, following the examples of other Storybook stories, or their online documentation for guidance. When running Storybook, the story should be picked up and rendered in place automatically.
 
 ### Publishing
 
@@ -400,7 +283,7 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 
 **To trigger a release:**
 
-- Make sure you have run pre-release script `./pre-release.sh` (This updates the gem and the npm package version for ably-ui in the following files `Gemfile`, `package.json`, `version.rb`).
+- Make sure you have run pre-release script `./pre-release.sh` (This updates the npm package version for ably-ui in the following files `Gemfile`, `package.json`).
 - Merge your PR into `main` after it has been approved.
 - On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
 - Create a new tag with the new version number for the release.
@@ -409,6 +292,7 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 - Click on the Autogenerate release notes button.
 - Publish Release.
 - Check the Github `Actions` tab in the repo to make sure the release is green.
+- Upon successful release, a compiled version of the Storybook site will be deployed to Github Pages.
 
 This will release the packages, update library & preview app and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website.
 
