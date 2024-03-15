@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 16.17.0
       - run: npm install -g yarn
-      - name: Update preview app
+      - name: Update versions
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |

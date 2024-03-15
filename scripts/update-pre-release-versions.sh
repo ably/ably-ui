@@ -16,17 +16,9 @@ fi
 VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 TAG=v$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 
-echo "> Update preview app version"
-cd preview
-
-echo "> Update @ably/ui npm package in preview app"
-yarn upgrade @ably/ui@$VERSION
-
-echo "> Commit version publish and preview app update to $TAG"
-cd ..
+echo "> Commit version and publish update to $TAG"
 git add package.json yarn.lock
-git add preview/package.json preview/yarn.lock
-git commit -m "Publish $TAG and update preview app"
+git commit -m "Publish $TAG"
 
 echo "> Tag commit with $TAG"
 git tag --annotate $TAG --message "$TAG" --force

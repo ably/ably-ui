@@ -1,0 +1,14 @@
+{
+  "dest": "dist/core",
+  "mode": {
+    "symbol": {
+      "inline": true,
+      "sprite": "../sprites"
+    }
+  },
+  "shape": {
+    "id": {
+      "generator": "sprite-%s"
+    }
+  }
+}
