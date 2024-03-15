@@ -12,4 +12,4 @@ preview
 release-canditate.sh
 release.sh
 scripts
-webpack.config.js
+vite.config.js
