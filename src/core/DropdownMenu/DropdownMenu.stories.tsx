@@ -32,6 +32,7 @@ export const Default: Story = {
         <a
           href="https://ably.com/docs"
           target="_blank"
+          rel="noreferrer"
           className="group block p-8 hover:bg-light-grey hover:text-cool-black rounded"
         >
           <p className="ui-featured-link group-hover:text-gui-hover font-light text-cool-black">

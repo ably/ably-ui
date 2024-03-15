@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Slider from "./component.jsx";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   tags: ["autodocs"],
 };
 
-const Slide = ({ children }) => (
+const Slide = ({ children }: { children: ReactNode }) => (
   <div className="h-full p-24 bg-white rounded">
     <p className="ui-text-p2 text-center">{children}</p>
   </div>

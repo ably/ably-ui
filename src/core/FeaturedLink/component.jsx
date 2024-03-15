@@ -72,34 +72,34 @@ const FeaturedLink = ({
 
 FeaturedLink.propTypes = {
   /**
-    * Passed to the href in the anchor.
-    */
+   * Passed to the href in the anchor.
+   */
   url: T.string,
   /**
-    * Text size of the link.
-    */
+   * Text size of the link.
+   */
   children: T.node,
   /**
-    * Passed to the href in the anchor.
-    */
+   * Passed to the href in the anchor.
+   */
   textSize: T.string,
   /**
-    * Color of the icon. Depends on icons being drawn with strokes and the currentColor
-    * property being applied to all svgs. Use tailwind color classes (i.e.
-    * text-white).
-    */
+   * Color of the icon. Depends on icons being drawn with strokes and the currentColor
+   * property being applied to all svgs. Use tailwind color classes (i.e.
+   * text-white).
+   */
   iconColor: T.string,
   /**
-    * If true, removes the default vertical padding.
-    */
+   * If true, removes the default vertical padding.
+   */
   flush: T.bool,
   /**
-    * If true, the arrow is positioned on the left side of the text.
-    */
+   * If true, the arrow is positioned on the left side of the text.
+   */
   reverse: T.bool,
   /**
-    * Additional classes to be added to the link.
-    */
+   * Additional classes to be added to the link.
+   */
   additionalCSS: T.string,
   newWindow: T.bool,
   onClick: T.func,
