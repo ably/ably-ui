@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { rest } from "msw";
 
-import Meganav from "../../../src/core/Meganav/component.jsx";
+import Meganav from "./component.jsx";
 import loadIcons from "../icons.js";
 import logo from "../images/ably-logo.png";
 import ablyStack from "../images/ably-stack.svg";

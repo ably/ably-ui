@@ -1,8 +1,4 @@
-import type { StoryObj } from "@storybook/react";
-
 import Code from "./component.jsx";
-
-type Story = StoryObj<typeof Code>;
 
 export default {
   title: "Components/Code",
@@ -10,7 +6,7 @@ export default {
   tags: ["autodocs"],
 };
 
-export const Javascript: Story = {
+export const Javascript = {
   args: {
     language: "javascript",
     snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
@@ -23,7 +19,7 @@ channel.subscribe('greeting', function(message) {
   },
 };
 
-export const Swift: Story = {
+export const Swift = {
   args: {
     language: "swift",
     snippet: `let ably = ARTRealtime(key: "1WChTA.mc0Biw:kNfiYG4KiPgmHHgH")
@@ -36,7 +32,7 @@ channel.subscribe("greeting") { message in
   },
 };
 
-export const Java: Story = {
+export const Java = {
   args: {
     language: "java",
     snippet: `AblyRealtime ably = new AblyRealtime("1WChTA.mc0Biw:kNfiYG4KiPgmHHgH");
@@ -55,7 +51,7 @@ channel.subscribe("greeting", listener);`,
   },
 };
 
-export const Kotlin: Story = {
+export const Kotlin = {
   args: {
     language: "kotlin",
     snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');

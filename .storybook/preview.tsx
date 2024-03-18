@@ -1,11 +1,9 @@
 import React from "react";
 import { DocsContainer } from "@storybook/blocks";
-import { rest } from "msw";
 import { initialize, mswDecorator } from "msw-storybook-addon";
 
 import "./styles.css";
 import theme from "./theme";
-import "../src/core/utils/syntax-highlighter";
 import loadIcons from "../src/core/icons";
 
 const docsContainer = ({ children, context, ...props }) => {

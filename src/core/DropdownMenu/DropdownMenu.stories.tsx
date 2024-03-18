@@ -1,16 +1,13 @@
 import React from "react";
 import Icon from "../Icon/component.jsx";
 import DropdownMenu from "./component.jsx";
-import { StoryObj } from "@storybook/react";
 
 export default {
   title: "Components/Dropdown Menu",
   component: DropdownMenu,
 };
 
-type Story = StoryObj<typeof DropdownMenu>;
-
-export const Default: Story = {
+export const Default = {
   render: () => (
     <DropdownMenu>
       <DropdownMenu.Trigger additionalTriggerCSS="ui-text-h3">
