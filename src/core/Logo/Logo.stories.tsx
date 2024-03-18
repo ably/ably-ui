@@ -1,5 +1,5 @@
 import Logo from "./component.jsx";
-import logoUrl from "../../core/images/ably-logo.png";
+import logoUrl from "../images/ably-logo.png";
 
 export default {
   title: "Components/Logo",

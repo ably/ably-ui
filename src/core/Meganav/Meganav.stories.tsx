@@ -3,9 +3,9 @@ import { rest } from "msw";
 
 import Meganav from "../../../src/core/Meganav/component.jsx";
 import loadIcons from "../icons.js";
-import logo from "../../core/images/ably-logo.png";
-import ablyStack from "../../core/images/ably-stack.svg";
-import awsLogo from "../../core/images/icon-tech-aws.svg";
+import logo from "../images/ably-logo.png";
+import ablyStack from "../images/ably-stack.svg";
+import awsLogo from "../images/icon-tech-aws.svg";
 
 import {
   attachStoreToWindow,

@@ -1,64 +1,62 @@
-@layer components {
-  .ui-checkbox-p1 {
-    @apply flex items-start mb-16 font-sans font-medium;
-  }
+.ui-checkbox-p1 {
+  @apply flex items-start mb-16 font-sans font-medium;
+}
 
-  .ui-checkbox-p2 {
-    @apply flex items-start mb-12 font-sans font-medium;
-  }
+.ui-checkbox-p2 {
+  @apply flex items-start mb-12 font-sans font-medium;
+}
 
-  .ui-checkbox-input {
-    @apply opacity-0 absolute h-20 w-20;
-  }
+.ui-checkbox-input {
+  @apply opacity-0 absolute h-20 w-20;
+}
 
-  .ui-checkbox-styled {
-    @apply w-20 h-20 mr-16;
-    @apply bg-white flex flex-shrink-0 justify-center items-center;
-    @apply border border-dark-grey rounded-md focus-within:border-active-orange;
-  }
+.ui-checkbox-styled {
+  @apply w-20 h-20 mr-16;
+  @apply bg-white flex flex-shrink-0 justify-center items-center;
+  @apply border border-dark-grey rounded-md focus-within:border-active-orange;
+}
 
-  .ui-checkbox-styled-tick {
-    @apply hidden text-white;
-  }
+.ui-checkbox-styled-tick {
+  @apply hidden text-white;
+}
 
-  .ui-checkbox-label-p1 {
-    @apply select-none;
-    @apply text-p1 font-medium text-cool-black;
-  }
+.ui-checkbox-label-p1 {
+  @apply select-none;
+  @apply text-p1 font-medium text-cool-black;
+}
 
-  .ui-checkbox-label-p2 {
-    @apply select-none;
-    @apply text-p2 font-medium text-cool-black;
-  }
+.ui-checkbox-label-p2 {
+  @apply select-none;
+  @apply text-p2 font-medium text-cool-black;
+}
 
-  .ui-checkbox-input:disabled + .ui-checkbox-styled {
-    @apply bg-gui-unavailable border;
-  }
+.ui-checkbox-input:disabled + .ui-checkbox-styled {
+  @apply bg-gui-unavailable border;
+}
 
-  .ui-checkbox-input:focus + .ui-checkbox-styled {
-    border-width: 0.125rem;
-    @apply border-gui-focus;
-  }
+.ui-checkbox-input:focus + .ui-checkbox-styled {
+  border-width: 0.125rem;
+  @apply border-gui-focus;
+}
 
-  .ui-checkbox-input:checked + .ui-checkbox-styled {
-    @apply bg-active-orange border-dark-grey border;
-  }
+.ui-checkbox-input:checked + .ui-checkbox-styled {
+  @apply bg-active-orange border-dark-grey border;
+}
 
-  .ui-checkbox-input:checked + .ui-checkbox-styled svg {
-    @apply block;
-  }
+.ui-checkbox-input:checked + .ui-checkbox-styled svg {
+  @apply block;
+}
 
-  .ui-textarea {
-    @apply font-sans font-medium text-cool-black text-p1;
-    @apply p-input mb-16;
-    @apply bg-light-grey border-mid-grey transition-input border rounded block w-full;
-    @apply hover:bg-white hover:shadow-input hover:border-transparent;
-    @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
-  }
+.ui-textarea {
+  @apply font-sans font-medium text-cool-black text-p1;
+  @apply p-input mb-16;
+  @apply bg-light-grey border-mid-grey transition-input border rounded block w-full;
+  @apply hover:bg-white hover:shadow-input hover:border-transparent;
+  @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
+}
 
-  .ui-textarea::placeholder {
-    /* CSS vars don't work in ::placeholder in Webkit :( */
-    /* color: var(--text-dark-grey); */
-    color: #76767c;
-  }
+.ui-textarea::placeholder {
+  /* CSS vars don't work in ::placeholder in Webkit :( */
+  /* color: var(--text-dark-grey); */
+  color: #76767c;
 }

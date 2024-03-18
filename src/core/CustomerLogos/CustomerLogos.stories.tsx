@@ -1,4 +1,4 @@
-import CustomerLogos from "../../core/CustomerLogos/component.jsx";
+import CustomerLogos from "../CustomerLogos/component.jsx";
 
 import hubspot from "../images/cust-logo-hubspot-mono-pos.svg";
 import webflow from "../images/cust-logo-webflow-col-pos.svg";

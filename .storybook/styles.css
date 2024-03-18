@@ -2,12 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "../core/fonts/jetBrains-mono.css";
-@import "../core/fonts/manrope.css";
-
-@import "../reset/styles.css";
-@import "../core/styles.css";
+@import "../src/core/fonts/jetBrains-mono.css";
+@import "../src/core/fonts/manrope.css";
+@import "../src/core/styles.css";
+@import "../src/reset/styles.css";
+@import "../src/core/utils/syntax-highlighter.css";
 
 @import "./application.css";
-
-@import "../src/core/utils/syntax-highlighter.css";

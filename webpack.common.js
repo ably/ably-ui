@@ -75,6 +75,10 @@ const modulesConfig = modules.map((mod) => ({
       import: `./src/${mod.directory}/scripts.js`,
       filename: `${mod.directory}/scripts.js`,
     },
+    [`${mod.name}-svg`]: {
+      import: `./src/${mod.directory}/sprites.svg`,
+      filename: `${mod.directory}/sprites.svg`,
+    },
   },
   output: {
     ...commonOutputConfig,
@@ -83,7 +87,7 @@ const modulesConfig = modules.map((mod) => ({
   plugins: [
     new SVGSpritemapPlugin(`src/${mod.directory}/icons/*.svg`, {
       output: {
-        filename: `${mod.directory}/sprites.svg`,
+        filename: `src/${mod.directory}/sprites.svg`,
         svgo: false,
       },
     }),

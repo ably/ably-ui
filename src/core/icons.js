@@ -1,6 +1,6 @@
-import { loadSprites } from "../../core/scripts";
+import { loadSprites } from "./scripts";
 
-import sprites from "../../core/sprites.svg";
+import sprites from "./sprites.svg";
 
 const loadIcons = () => loadSprites(sprites);
 
