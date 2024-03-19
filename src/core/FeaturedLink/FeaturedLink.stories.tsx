@@ -1,4 +1,4 @@
-import FeaturedLink from "./component.jsx";
+import FeaturedLink from "./component.tsx";
 
 export default {
   title: "Components/Featured Link",

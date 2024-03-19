@@ -6,7 +6,7 @@ const ablyUiConfigPath = path.dirname(require.resolve("./tailwind.config.js"));
 const ablyUItailwindConfig = (extend) => {
   // Create absolute paths to templates in AblyUI
   const addPurgeContentPaths = () => {
-    const paths = ["*.html.erb", "*.jsx", "*.js", "*.json"].map((fileGlob) =>
+    const paths = ["*.html.erb", "*", "*.js", "*.json"].map((fileGlob) =>
       path.join(ablyUiConfigPath, "src", "**", fileGlob)
     );
 

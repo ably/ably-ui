@@ -1,5 +1,5 @@
 import React from "react";
-import Flash, { reducerFlashes } from "./component.jsx";
+import Flash, { reducerFlashes } from "./component.tsx";
 
 import {
   attachStoreToWindow,

@@ -3,7 +3,7 @@ import Cookie from "js-cookie";
 import throttle from "lodash.throttle";
 
 import { queryId } from "../dom-query";
-import { FLASH_DATA_ID } from "../Flash/component.jsx";
+import { FLASH_DATA_ID } from "../Flash/component.tsx";
 
 const COOKIE_EXPIRY = 90;
 const COLLAPSE_TRIGGER_DISTANCE = 5;

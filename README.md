@@ -233,7 +233,7 @@ All components live in `src` and follow a directory and filename convention:
   - component directory (TitleCase)
     - `component.js` - this is the entry file for a component and is the only required file
     - `components.css` - additional CSS
-    - for react, `components.jsx`
+    - for react, `components.tsx`
 
 For example:
 
@@ -244,7 +244,7 @@ For example:
   - Accordion
     - component.js
     - component.css
-    - component.jsx
+    - component.tsx
 ```
 
 #### CSS

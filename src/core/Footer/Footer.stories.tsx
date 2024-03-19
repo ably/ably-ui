@@ -1,4 +1,4 @@
-import Footer from "./component.jsx";
+import Footer from "./component.tsx";
 
 import ablyStack from "../images/ably-stack.svg";
 import highestPerformer from "../images/high-performer-2023.svg";

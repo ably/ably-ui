@@ -1,4 +1,4 @@
-import Loader from "./component.jsx";
+import Loader from "./component.tsx";
 
 export default {
   title: "Components/Loader",
