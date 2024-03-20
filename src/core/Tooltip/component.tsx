@@ -31,7 +31,7 @@ const Tooltip = ({ children }: PropsWithChildren) => {
       <button
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
-        className="ml-8 p-0 relative top-1"
+        className="ml-8 p-0 relative top-1 focus:outline-none"
         type="button"
         ref={reference}
         aria-describedby="tooltip"
