@@ -1,6 +1,5 @@
 vendor
 ./core
 ./reset
-./preview/public
-./preview/tmp
+preview
 node_modules

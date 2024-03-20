@@ -1,28 +1,21 @@
-Jira Ticket Link / Motivation
-----
+## Jira Ticket Link / Motivation
 
 <!-- The link should contain motivation for the changes. If it does not, provide the motivation / context here. -->
 
-
-Summary of changes
-----
+## Summary of changes
 
 <!-- Commits should already be describing what you are trying to achieve. If needed, use this space to explain how they connect to achieve criteria from the Motivation. Otherwise, uncomment the below: -->
 <!-- See commits for details. -->
 
-How do you manually test this?
-----
+## How do you manually test this?
 
 <!-- Provide steps necessary to test these changes locally and/or on a review app. Include links, ENV vars, feature flags to be set and any other necessary setup. -->
 
-Reviewer Tasks (optional)
-----
+## Reviewer Tasks (optional)
 
 <!-- If there is something specific you need reviewers to have a look at, something that might not be immediately clear, use this section to guide them along. -->
 
-
-Merge/Deploy Checklist
-----
+## Merge/Deploy Checklist
 
 <!-- Committer checklist  -->
 
@@ -31,8 +24,7 @@ Merge/Deploy Checklist
 - [ ] Commits have clear descriptions of their changes
 - [ ] Checked for any performance regressions
 
-Frontend Checklist
-----
+## Frontend Checklist
 
 <!-- Committer frontend changes checklist  -->
 

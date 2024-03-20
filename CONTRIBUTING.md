@@ -15,7 +15,6 @@ Please refer to the [README](./README.md#development) for instructions on how to
 ## Testing
 
 This repo uses a combination of Jest and Cypress for testing.
-For a component that has both a React and Ruby please ensure there is a parity test, the easiest way to create that is to copy an existing one as an example.
 
 Please refer to the [README](./README.md#running-tests) for further details.
 

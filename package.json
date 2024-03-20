@@ -20,7 +20,6 @@
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
-    "@prettier/plugin-ruby": "^1.5.2",
     "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-interactions": "^7.6.4",
     "@storybook/addon-links": "^7.6.4",
@@ -67,7 +66,6 @@
     "build": "node scripts/build.js",
     "build:verbose": "node scripts/build.js -v",
     "watch": "node scripts/build.js -w",
-    "dev": "./scripts/cleanstart.sh",
     "format:check": "yarn prettier -c *.{js,ts} src/**/*.{js,jsx,ts,tsx} cypress",
     "format:write": "yarn prettier -w *.{js,ts} src/**/*.{js,jsx,ts,tsx} cypress",
     "lint": "eslint *.{js,ts} src/**/*.{js,jsx,ts,tsx} cypress",
@@ -77,7 +75,7 @@
     "pre-release": "./scripts/pre-release.sh",
     "release": "./scripts/release.sh",
     "storybook": "storybook dev -p 6006 --no-version-updates",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o preview"
   },
   "dependencies": {
     "@mrtkrcm/cypress-plugin-snapshots": "https://github.com/mrtkrcm/cypress-plugin-snapshots#v1.13.0",
