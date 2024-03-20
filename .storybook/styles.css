@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../src/core/fonts/jetBrains-mono.css";
+@import "../src/core/fonts/manrope.css";
+@import "../src/core/styles.css";
+@import "../src/reset/styles.css";
+
+@import "./application.css";

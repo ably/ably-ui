@@ -25,6 +25,17 @@ const jsRules = [
   },
 ];
 
+const imgRules = [
+  {
+    test: /\.(png|jpe?g|gif)$/i,
+    use: [
+      {
+        loader: "file-loader",
+      },
+    ],
+  },
+];
+
 const highlightJsImportPaths = findImports(
   [
     "./src/core/utils/syntax-highlighter.js",
@@ -57,12 +68,16 @@ const commonOutputConfig = {
 const modulesConfig = modules.map((mod) => ({
   ...externalsConfig,
   module: {
-    rules: [...cssRules, ...jsRules],
+    rules: [...cssRules, ...jsRules, ...imgRules],
   },
   entry: {
     [mod.name]: {
       import: `./src/${mod.directory}/scripts.js`,
       filename: `${mod.directory}/scripts.js`,
+    },
+    [`${mod.name}-svg`]: {
+      import: `./src/${mod.directory}/sprites.svg`,
+      filename: `${mod.directory}/sprites.svg`,
     },
   },
   output: {
@@ -72,7 +87,7 @@ const modulesConfig = modules.map((mod) => ({
   plugins: [
     new SVGSpritemapPlugin(`src/${mod.directory}/icons/*.svg`, {
       output: {
-        filename: `${mod.directory}/sprites.svg`,
+        filename: `src/${mod.directory}/sprites.svg`,
         svgo: false,
       },
     }),
@@ -85,7 +100,7 @@ const modulesConfig = modules.map((mod) => ({
 const componentsConfig = modules.map((mod) => ({
   ...externalsConfig,
   module: {
-    rules: [...cssRules, ...jsRules],
+    rules: [...cssRules, ...jsRules, ...imgRules],
   },
   entry: mod.components.reduce(
     (acc, componentName) => ({
@@ -112,7 +127,11 @@ const componentsConfig = modules.map((mod) => ({
 const reactConfig = modules.map((mod) => ({
   ...externalsConfig,
   module: {
-    rules: [{ test: /\.css$/i, loader: "null-loader" }, ...jsRules],
+    rules: [
+      { test: /\.css$/i, loader: "null-loader" },
+      ...jsRules,
+      ...imgRules,
+    ],
   },
   entry: mod.components.reduce((acc, componentName) => {
     const path = `./src/${mod.directory}/${componentName}/component.jsx`;

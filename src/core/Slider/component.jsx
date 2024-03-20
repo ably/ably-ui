@@ -3,7 +3,7 @@ import T from "prop-types";
 
 import Icon from "../Icon/component.jsx";
 
-import SliderScripts from "./component";
+import SliderScripts from "./component.js";
 
 const Slider = ({
   slides = [],

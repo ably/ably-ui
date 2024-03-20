@@ -3,6 +3,7 @@ import T from "prop-types";
 
 import Icon from "../Icon/component.jsx";
 import _absUrl from "../url-base";
+import "./component.css";
 
 export default function Footer({ paths, urlBase }) {
   const absUrl = (path) => _absUrl(path, urlBase);
@@ -141,7 +142,7 @@ export default function Footer({ paths, urlBase }) {
               <iframe
                 className="w-20 h-20 mb-2"
                 src="https://status.ably.com/embed/icon"
-                allowTransparency={true}
+                allowtransparency="true"
                 frameBorder="0"
                 scrolling="no"
                 title="System Status"

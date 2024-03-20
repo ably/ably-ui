@@ -1,8 +1,6 @@
-@layer components {
-  .ui-slider-marker {
-    font-size: 0.5rem;
-    top: -1px;
+.ui-slider-marker {
+  font-size: 0.5rem;
+  top: -1px;
 
-    @apply leading-none px-4 relative;
-  }
+  @apply leading-none px-4 relative;
 }

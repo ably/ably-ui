@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+.pi-checkered-bg {
+  --size: 0.25rem;
+  --double: calc(var(--size) * 2);
+  --bg: #eee;
+  --fg: #ddd;
+  background: linear-gradient(
+      45deg,
+      var(--fg) 25%,
+      transparent 25.1%,
+      transparent 74.9%,
+      var(--fg) 75%
+    ),
+    linear-gradient(
+      45deg,
+      var(--fg) 25%,
+      transparent 25.1%,
+      transparent 74.9%,
+      var(--fg) 75%
+    ),
+    var(--bg);
+  background-repeat: repeat, repeat;
+  background-position: 0 0, var(--size) var(--size);
+  background-size: var(--double) var(--double), var(--double) var(--double);
+}
