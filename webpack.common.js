@@ -19,7 +19,7 @@ const cssRules = [
 
 const jsRules = [
   {
-    test: /\.(js|jsx)$/,
+    test: /\.(js)$/,
     exclude: /node_modules/,
     use: ["babel-loader"],
   },
@@ -134,15 +134,15 @@ const reactConfig = modules.map((mod) => ({
     ],
   },
   entry: mod.components.reduce((acc, componentName) => {
-    const path = `./src/${mod.directory}/${componentName}/component.jsx`;
+    const path = `./src/${mod.directory}/${componentName}/component`;
 
     // react versions of components are optional
     if (!fs.existsSync(path)) return acc;
 
     return {
       [componentName]: {
-        import: `./src/${mod.directory}/${componentName}/component.jsx`,
-        filename: `${mod.directory}/${componentName}.jsx`,
+        import: `./src/${mod.directory}/${componentName}/component`,
+        filename: `${mod.directory}/${componentName}`,
       },
       ...acc,
     };

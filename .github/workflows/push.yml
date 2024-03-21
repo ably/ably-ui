@@ -29,11 +29,11 @@ jobs:
         with:
           eslint: true
           eslint_dir: src
-          eslint_extensions: js,ts,jsx,tsx
+          eslint_extensions: js,ts,tsx
           eslint_auto_fix: false
           prettier: true
           prettier_dir: src
-          prettier_extensions: js,ts,jsx,tsx
+          prettier_extensions: js,ts,tsx
           prettier_auto_fix: false
       # Cypress disabled until tests rewritten to use new SB paths
       # - name: Cypress

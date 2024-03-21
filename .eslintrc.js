@@ -5,27 +5,13 @@ module.exports = {
     node: true,
     "cypress/globals": true,
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier",
-    "plugin:cypress/recommended",
-    "plugin:storybook/recommended",
-  ],
+  extends: ["eslint:recommended", "prettier", "plugin:cypress/recommended"],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "cypress"],
+  plugins: ["cypress"],
   rules: {},
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],

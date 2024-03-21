@@ -13,8 +13,8 @@ max_line_length = 80
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{css,html,js,jsx,json,rb,erb}]
+[*.{css,html,js,json,rb,erb}]
 charset = utf-8
 
-[*.{html,jsx,erb,json}]
+[*.{html,erb,json}]
 max_line_length = 160

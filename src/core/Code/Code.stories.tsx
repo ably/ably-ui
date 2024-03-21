@@ -1,4 +1,4 @@
-import Code from "./component.jsx";
+import Code from "./component.tsx";
 
 export default {
   title: "Components/Code",
