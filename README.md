@@ -127,14 +127,8 @@ Putting SVG files inside a`src/MODULE_NAME/icons` folder will add them to a per-
 
 Usage with the `Icon` React component:
 
-```jsx
+```tsx
 <Icon name="icon-display-live-chat" size="3rem" additionalCSS="block mb-16" />
-```
-
-Usage with `Icon` VW component:
-
-```rb
-<%= render(AblyUi::Core::Icon.new(name: "icon-gui-disclosure-arrow", size: "1rem", additional_css: "align-middle transform rotate-180 mr-4")) %>
 ```
 
 Usage without a component:
@@ -148,7 +142,7 @@ Usage without a component:
 
 Usage without a component, in React, with hover states. Note the [group](https://tailwindcss.com/docs/hover-focus-and-other-states#group-hover) class:
 
-```jsx
+```tsx
 <a
   href="{url}"
   className="text-gui-default hover:text-gui-hover focus:text-gui-focus group"
@@ -189,7 +183,7 @@ To build Storybook as if it was a statically built site (i.e. what it looks like
 
 #### Publishing pre-release packages for review apps
 
-Make sure you commit & push your work and remove the [development-specific config](#using-the-development-build-of-ably-ui-in-the-preview-app) before doing this.
+Make sure you commit & push your work before doing this.
 
 You will need to authenticate with [npmjs](https://docs.npmjs.com/creating-and-viewing-access-tokens) to publish.
 
@@ -213,11 +207,10 @@ This script is a combination of two scripts:
 1. Pre-Release:
 
 - update your local dependencies for ably-ui and run a production build
-- release a gem and a NPM package with the version built from your current SemVer but adding a pre-release tag based on a short SHA of your HEAD commit
+- release an NPM package with the version built from your current SemVer but adding a pre-release tag based on a short SHA of your HEAD commit
 
 2. Update Pre-Release Version:
 
-- update the preview app
 - commit all the above and push to origin
 
 This will trigger a build of the review app.
@@ -262,10 +255,10 @@ By default, [Prettier](https://prettier.io/) & [ESLint](https://eslint.org/) wil
 #### To add a new component:
 
 1. Create a folder in `src`, in the module of your choice (i.e. `core`). The folder name should be TitleCase.
-2. Add a `component.js`
+2. Add a `component.tsx`
 
-- if the component has custom CSS, add a `component.css` file as well. Import the CSS file in `component.js`
-- if you need a VW component, add `component.rb` and `component.html.erb`
+- also add an empty `component.js` file (current legacy requirement)
+- if the component has custom CSS, add a `component.css` file as well.
 
 #### To see this component in Storybook:
 
@@ -277,13 +270,13 @@ We use [Semantic Versioning 2.0.0](https://semver.org/) to version different lib
 
 Packages are published to the [GitHub private registry](https://github.com/features/packages).
 
-Publishing is done by tagging a release in GitHub. This triggers a GitHub action that pushes to the private NPM and gem registries as well as publishing new artefacts in the CDN, with the version taken from the tag of the GitHub release. ⚠️
+Publishing is done by tagging a release in GitHub. This triggers a GitHub action that pushes to the private NPM registry as well as publishing new artefacts in the CDN, with the version taken from the tag of the GitHub release.
 
 This will trigger GitHub actions in supported apps (currently [Voltaire](http://github.com/ably/voltaire) & [Website](http://github.com/ably/website)) to create a PR with an ably-ui version update.
 
 **To trigger a release:**
 
-- Make sure you have run pre-release script `./pre-release.sh` (This updates the npm package version for ably-ui in the following files `Gemfile`, `package.json`).
+- Make sure you have run pre-release script `./pre-release.sh` (This updates the npm package version for ably-ui in `package.json`).
 - Merge your PR into `main` after it has been approved.
 - On the Github [Ably-UI](http://github.com/ably/ably-ui) repo, [create a new release](https://github.com/ably/ably-ui/releases/new) tag.
 - Create a new tag with the new version number for the release.
@@ -294,9 +287,7 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 - Check the Github `Actions` tab in the repo to make sure the release is green.
 - Upon successful release, a compiled version of the Storybook site will be deployed to Github Pages.
 
-This will release the packages, update library & preview app and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website.
-
-_Note: If the version number of the gem has been yanked you will need to increment the version number._
+This will release the packages and update library and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website. It will also deploy a new Storybook site to [https://ably.github.io/ably-ui/](https://ably.github.io/ably-ui/).
 
 ### Running tests
 

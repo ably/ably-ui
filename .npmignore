@@ -1,4 +1,3 @@
-.babelrc
 .bundle
 .DS_Store
 .editorconfig
@@ -6,10 +5,10 @@
 .pretterrc.json
 .prettierignore
 lib
-modules-config.js
 node_modules
 preview
-release-canditate.sh
 release.sh
 scripts
-webpack.config.js
+dist
+.swcrc
+.svgrc
