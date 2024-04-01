@@ -1,108 +1,189 @@
-import React, { CSSProperties, ReactNode, useEffect, useRef } from "react";
-
-import Icon from "./Icon";
-import SliderScripts from "./Slider/component.js";
+import React, { useState, useEffect, useRef, ReactNode } from "react";
+import Icon from "../core/Icon.tsx";
 import "./Slider/component.css";
 
-type SliderProps = {
-  slides?: ReactNode[];
-  classes?: string;
-  slideClasses?: string;
-  slideMinWidth?: string;
-  slideMaxWidth?: string;
-  mqEnableThreshold?: () => boolean;
+interface SliderProps {
+  children: ReactNode[];
+  options?: {
+    interval?: number;
+    controlPosition?: "inline" | "floating";
+    intervalIndicator?: boolean;
+  };
+}
 
-  container?: HTMLDivElement | null;
+interface SliderIndicatorProps {
+  numSlides: number;
+  activeIndex: number;
+  interval: number;
+  intervalIndicator?: boolean;
+  isInline?: boolean;
+}
+
+const SlideIndicator = ({
+  numSlides,
+  activeIndex,
+  interval,
+  intervalIndicator,
+  isInline,
+}: SliderIndicatorProps) => {
+  return (
+    <ul
+      className={`flex gap-4 left-1/2 ${
+        isInline ? "bottom-0" : "absolute -bottom-40 transform -translate-x-1/2"
+      }`}
+    >
+      {Array.from({ length: numSlides }, (_, i) =>
+        intervalIndicator ? (
+          <li
+            key={i}
+            className="relative w-40 h-4 mx-1 rounded-full bg-neutral-500"
+          >
+            {i === activeIndex && (
+              <li
+                className="absolute inset-0 rounded-full bg-active-orange"
+                style={{
+                  animation: `fillAnimation ${interval}ms linear`,
+                }}
+              ></li>
+            )}
+          </li>
+        ) : (
+          <li key={i}>
+            <span
+              className={`ui-slider-marker ${
+                i === activeIndex ? "text-active-orange" : "text-cool-black"
+              }`}
+              data-id="slider-marker"
+            >
+              &#x2b24;
+            </span>
+          </li>
+        )
+      )}
+    </ul>
+  );
 };
 
-const Slider = ({
-  slides = [],
-  classes = "",
-  slideClasses = "",
-  slideMinWidth = "16.875rem",
-  slideMaxWidth = "1fr",
-  mqEnableThreshold = () => true,
-  ...props
-}: SliderProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+const Slider = ({ children, options }: SliderProps) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const isInline = options?.controlPosition === "inline";
+
+  const next = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
+    resetInterval();
+  };
+
+  const prev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : children.length - 1
+    );
+    resetInterval();
+  };
+
+  const resetInterval = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(next, options?.interval ?? 10000);
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      next();
+    }
+    if (touchStartX - touchEndX < -50) {
+      prev();
+    }
+  };
 
   useEffect(() => {
-    SliderScripts({
-      container: containerRef.current,
-      mqEnableThreshold,
-    });
-  }, []);
-
-  if (slides.length === 0) return;
+    resetInterval();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [children.length, options?.interval]);
 
   return (
     <div
-      className="w-full overflow-x-hidden"
-      data-id="slider"
-      style={
-        {
-          "--dynamic-grid-columns-count": slides.length,
-          "--dynamic-grid-column-min-width": slideMinWidth,
-          "--dynamic-grid-column-max-width": slideMaxWidth,
-        } as CSSProperties
-      }
-      ref={containerRef}
+      className="relative"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
-      <ol
-        className={`grid ui-grid-gap grid-cols-dynamic transform transition-transform ${classes}`}
-        data-id="slider-strip"
-        {...props}
-      >
-        {slides.map((slide, i) => (
-          <li key={i} className={slideClasses} data-id="slider-slide">
-            {slide}
-          </li>
-        ))}
-      </ol>
+      <div className="overflow-hidden w-full py-40">
+        <div
+          className="flex items-center transition-transform ease-in-out duration-500"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {children.map((child, index) => (
+            <div
+              key={index}
+              className="w-full flex-shrink-0 flex justify-center sm:px-60 transition-opacity ease-in delay-500 duration-500"
+              style={{
+                opacity: activeIndex === index ? 1 : 0.1,
+              }}
+            >
+              {child}
+            </div>
+          ))}
+        </div>
+      </div>
 
       <div
-        className="justify-center items-center my-24 hidden"
-        data-id="slider-controls"
+        className={`flex items-center pointer-events-none ${
+          isInline
+            ? "ui-standard-container justify-center gap-24"
+            : "sm:flex sm:absolute inset-0 justify-between"
+        }`}
       >
         <button
-          type="button"
-          className="p-0 w-24 h-24 flex items-center focus:outline-gui-focus"
-          data-id="slider-previous"
+          className={`${
+            isInline ? "w-32 h-32" : "hidden sm:flex w-48 h-48"
+          } pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left`}
+          onClick={prev}
         >
-          <Icon
-            name="icon-gui-disclosure-arrow"
-            size="1.5rem"
-            color="text-cool-black"
-            additionalCSS="transform rotate-180"
-            data-id="meganav-control-mobile-dropdown-menu"
-          />
+          <div className="ui-icon-cta-holder flex gap-4">
+            <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+              <Icon name="icon-gui-arrow-left" size="1.5rem" />
+            </div>
+            <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+              <Icon name="icon-gui-arrow-left" size="1.5rem" />
+            </div>
+          </div>
         </button>
 
-        <ul className="flex justify-center items-center mx-32 relative h-24">
-          {slides.map((_, i) => (
-            <li key={i}>
-              <span
-                className="ui-slider-marker text-cool-black"
-                data-id="slider-marker"
-              >
-                &#x2b24;
-              </span>{" "}
-              {/* ⬤ */}
-            </li>
-          ))}
-        </ul>
+        <SlideIndicator
+          numSlides={children.length}
+          activeIndex={activeIndex}
+          interval={options?.interval ?? 10000}
+          intervalIndicator={options?.intervalIndicator}
+          isInline={isInline}
+        />
 
         <button
-          type="button"
-          className="p-0 w-24 h-24 flex items-center focus:outline-gui-focus"
-          data-id="slider-next"
+          className={`${
+            isInline ? "w-32 h-32" : "hidden sm:flex w-48 h-48"
+          } pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right`}
+          onClick={next}
         >
-          <Icon
-            name="icon-gui-disclosure-arrow"
-            size="1.5rem"
-            color="text-cool-black"
-            data-id="meganav-control-mobile-dropdown-menu"
-          />
+          <div className="ui-icon-cta-holder flex gap-4">
+            <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+              <Icon name="icon-gui-arrow-right" size="1.5rem" />
+            </div>
+            <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
+              <Icon name="icon-gui-arrow-right" size="1.5rem" />
+            </div>
+          </div>
         </button>
       </div>
     </div>
