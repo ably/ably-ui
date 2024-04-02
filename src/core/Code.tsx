@@ -1,11 +1,11 @@
 import React from "react";
 
-import "../utils/syntax-highlighter.css";
+import "./utils/syntax-highlighter.css";
 import {
   highlightSnippet,
   registerDefaultLanguages,
-} from "../utils/syntax-highlighter";
-import languagesRegistry from "../utils/syntax-highlighter-registry";
+} from "./utils/syntax-highlighter";
+import languagesRegistry from "./utils/syntax-highlighter-registry";
 
 registerDefaultLanguages(languagesRegistry);
 

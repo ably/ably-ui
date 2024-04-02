@@ -1,7 +1,7 @@
 import React from "react";
 
-import Icon from "../Icon/component.tsx";
-import { MeganavTheme } from "../Meganav/component.tsx";
+import Icon from "./Icon";
+import { MeganavTheme } from "./Meganav";
 
 const MeganavControlMobileDropdown = ({ theme }: { theme: MeganavTheme }) => (
   <button

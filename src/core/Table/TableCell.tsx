@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import Icon from "../Icon/component.tsx";
+import Icon from "../Icon";
 
 type TableCellProps = {
   isRowHeader?: boolean;

@@ -1,6 +1,5 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
-import Icon from "../Icon/component.tsx";
-
+import Icon from "./Icon";
 const Tooltip = ({ children }: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });

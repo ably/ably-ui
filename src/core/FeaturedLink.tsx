@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from "react";
 
-import Icon from "../Icon/component.tsx";
+import Icon from "./Icon";
 
 type FeaturedLinkProps = {
   url: string;

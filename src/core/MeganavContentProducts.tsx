@@ -1,7 +1,7 @@
 import React from "react";
 
-import FeaturedLink from "../FeaturedLink/component.tsx";
-import { AbsUrl } from "../Meganav/component.tsx";
+import FeaturedLink from "./FeaturedLink";
+import { AbsUrl } from "./Meganav";
 
 type MeganavContentProductsProps = {
   paths: {

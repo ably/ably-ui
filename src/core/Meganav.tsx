@@ -1,24 +1,22 @@
 import React, { ReactNode, useEffect, useState } from "react";
 
-import { connectState } from "../remote-data-store.js";
-import { selectSessionData } from "../remote-session-data.js";
+import { connectState } from "./remote-data-store.js";
+import { selectSessionData } from "./remote-session-data.js";
 
-import Logo from "../Logo/component.tsx";
-import "./component.css";
-
-import MeganavScripts from "./component.js";
-import MeganavItemsDesktop from "../MeganavItemsDesktop/component.tsx";
-import MeganavItemsSignedIn from "../MeganavItemsSignedIn/component.tsx";
-import MeganavItemsMobile from "../MeganavItemsMobile/component.tsx";
-import Notice from "../Notice/component.tsx";
-import MeganavData from "./component.json";
-import _absUrl from "../url-base.js";
-
-import MeganavContentProducts from "../MeganavContentProducts/component.tsx";
-import MeganavContentUseCases from "../MeganavContentUseCases/component.tsx";
-import MeganavContentCompany from "../MeganavContentCompany/component.tsx";
-import MeganavContentDevelopers from "../MeganavContentDevelopers/component.tsx";
-import MeganavSearch from "../MeganavSearch/component.tsx";
+import Logo from "./Logo";
+import "./Meganav/component.css";
+import MeganavData from "./Meganav/component.json";
+import MeganavScripts from "./Meganav/component.js";
+import MeganavItemsDesktop from "./MeganavItemsDesktop";
+import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
+import MeganavItemsMobile from "./MeganavItemsMobile";
+import Notice from "./Notice";
+import _absUrl from "./url-base.js";
+import MeganavContentProducts from "./MeganavContentProducts";
+import MeganavContentUseCases from "./MeganavContentUseCases";
+import MeganavContentCompany from "./MeganavContentCompany";
+import MeganavContentDevelopers from "./MeganavContentDevelopers";
+import MeganavSearch from "./MeganavSearch";
 
 export type MeganavTheme = {
   backgroundColor?: string;

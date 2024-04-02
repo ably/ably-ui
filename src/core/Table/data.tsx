@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 
-import Tooltip from "../../Tooltip/component";
-import { Supported, Unsupported } from "../TableCell";
-import Table from "..";
+import Tooltip from "../Tooltip";
+import { Supported, Unsupported } from "./TableCell";
+import Table from "../Table";
 
 const testRow = (index) => ({
   label: `Label ${index + 1}`,

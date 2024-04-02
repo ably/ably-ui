@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion, { AccordionProps } from "./component.tsx";
+import Accordion, { AccordionProps } from "../Accordion";
 
 export default {
   title: "Components/Accordion",

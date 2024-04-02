@@ -1,9 +1,8 @@
 import React, { ReactNode, useEffect } from "react";
 
-import NoticeScripts from "./component.js";
-import "./component.css";
-import Icon from "../Icon/component.tsx";
-
+import NoticeScripts from "./Notice/component.js";
+import "./Notice/component.css";
+import Icon from "./Icon";
 type ContentWrapperProps = {
   buttonLink: string;
   children: ReactNode;

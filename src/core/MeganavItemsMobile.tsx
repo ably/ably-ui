@@ -1,19 +1,19 @@
 import React from "react";
 
-import SignOutLink from "../SignOutLink/component.tsx";
-import MeganavSearchSuggestions from "../MeganavSearchSuggestions/component.tsx";
-import Icon from "../Icon/component.tsx";
-import MeganavData from "../Meganav/component.json";
-import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.tsx";
-import MeganavControlMobilePanelClose from "../MeganavControlMobilePanelClose/component.tsx";
-import MeganavControlMobilePanelOpen from "../MeganavControlMobilePanelOpen/component.tsx";
-import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component.tsx";
+import SignOutLink from "./SignOutLink";
+import MeganavSearchSuggestions from "./MeganavSearchSuggestions";
+import Icon from "./Icon";
+import MeganavData from "./Meganav/component.json";
+import MeganavControlMobileDropdown from "./MeganavControlMobileDropdown";
+import MeganavControlMobilePanelClose from "./MeganavControlMobilePanelClose";
+import MeganavControlMobilePanelOpen from "./MeganavControlMobilePanelOpen";
+import MeganavSearchAutocomplete from "./MeganavSearchAutocomplete";
 import {
   AbsUrl,
   MeganavPanels,
   MeganavSessionState,
   MeganavTheme,
-} from "../Meganav/component.tsx";
+} from "./Meganav";
 
 type MeganavItemsMobileProps = {
   panels: MeganavPanels;

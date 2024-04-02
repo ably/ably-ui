@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import DOMPurify from "dompurify";
 import { nanoid } from "nanoid/non-secure";
 
-import { getRemoteDataStore } from "../remote-data-store.js";
-import ConnectStateWrapper from "../ConnectStateWrapper/component.tsx";
-import Icon from "../Icon/component.tsx";
-import "./component.css";
+import { getRemoteDataStore } from "./remote-data-store.js";
+import ConnectStateWrapper from "./ConnectStateWrapper.tsx";
+import Icon from "./Icon";
+import "./Flash/component.css";
 
 type FlashProps = {
   id: string;

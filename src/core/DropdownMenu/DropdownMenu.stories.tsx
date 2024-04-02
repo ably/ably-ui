@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../Icon/component.tsx";
-import DropdownMenu from "./component.tsx";
+import Icon from "../Icon";
+import DropdownMenu from "../DropdownMenu";
 
 export default {
   title: "Components/Dropdown Menu",

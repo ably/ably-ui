@@ -1,8 +1,8 @@
 import React, { CSSProperties, ReactNode, useEffect, useRef } from "react";
 
-import Icon from "../Icon/component.tsx";
-import SliderScripts from "./component.js";
-import "./component.css";
+import Icon from "./Icon";
+import SliderScripts from "./Slider/component.js";
+import "./Slider/component.css";
 
 type SliderProps = {
   slides?: ReactNode[];

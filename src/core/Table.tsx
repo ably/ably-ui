@@ -1,5 +1,5 @@
-import { Table, TableRowHeader, TableHeader, TableBody } from "./Table";
-import { TableRow } from "./TableRow";
+import { Table, TableRowHeader, TableHeader, TableBody } from "./Table/Table";
+import { TableRow } from "./Table/TableRow";
 import {
   TableCell,
   LabelCell,
@@ -7,7 +7,7 @@ import {
   CtaCell,
   Supported,
   Unsupported,
-} from "./TableCell";
+} from "./Table/TableCell";
 
 export default {
   Root: Table,

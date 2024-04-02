@@ -1,8 +1,8 @@
 import React from "react";
 
-import Icon from "../Icon/component.tsx";
-import MeganavSearchPanel from "../MeganavSearchPanel/component.tsx";
-import { AbsUrl } from "../Meganav/component.tsx";
+import Icon from "./Icon";
+import MeganavSearchPanel from "./MeganavSearchPanel";
+import { AbsUrl } from "./Meganav";
 
 const MeganavSearch = ({ absUrl }: { absUrl: AbsUrl }) => (
   <>

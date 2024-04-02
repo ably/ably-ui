@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { connectState, getRemoteDataStore } from "../remote-data-store";
+import { connectState, getRemoteDataStore } from "./remote-data-store";
 
 /*
   Connect a react component to a global store.

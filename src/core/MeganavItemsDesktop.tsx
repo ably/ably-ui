@@ -1,8 +1,8 @@
 import React from "react";
 
-import MeganavData from "../Meganav/component.json";
-import MeganavControl from "../MeganavControl/component.tsx";
-import { AbsUrl, MeganavPanels, MeganavTheme } from "../Meganav/component.tsx";
+import MeganavData from "./Meganav/component.json";
+import MeganavControl from "./MeganavControl";
+import { AbsUrl, MeganavPanels, MeganavTheme } from "./Meganav";
 
 type MeganavDesktopItems = {
   panels: MeganavPanels;

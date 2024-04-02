@@ -1,10 +1,10 @@
 import React from "react";
 
-import MeganavBlogPostsList from "../MeganavBlogPostsList/component.tsx";
-import ConnectStateWrapper from "../ConnectStateWrapper/component.tsx";
-import { selectRecentBlogPosts } from "../remote-blogs-posts.js";
-import Icon from "../Icon/component.tsx";
-import { AbsUrl } from "../Meganav/component.tsx";
+import MeganavBlogPostsList from "./MeganavBlogPostsList";
+import ConnectStateWrapper from "./ConnectStateWrapper";
+import { selectRecentBlogPosts } from "./remote-blogs-posts.js";
+import Icon from "./Icon";
+import { AbsUrl } from "./Meganav";
 
 type MeganavContentCompanyProps = {
   absUrl: AbsUrl;

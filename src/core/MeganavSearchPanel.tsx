@@ -1,9 +1,9 @@
 import React from "react";
 
-import Icon from "../Icon/component.tsx";
-import MeganavSearchSuggestions from "../MeganavSearchSuggestions/component.tsx";
-import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component.tsx";
-import { AbsUrl } from "../Meganav/component.tsx";
+import Icon from "./Icon";
+import MeganavSearchSuggestions from "./MeganavSearchSuggestions";
+import MeganavSearchAutocomplete from "./MeganavSearchAutocomplete";
+import { AbsUrl } from "./Meganav";
 
 const MeganavSearchPanel = ({ absUrl }: { absUrl: AbsUrl }) => (
   <section className="ui-meganav-content grid-cols-12">

@@ -1,5 +1,5 @@
 import React, { useState, ReactNode, JSX } from "react";
-import Icon from "../Icon/component.tsx";
+import Icon from "./Icon";
 
 type AccordionData = {
   name: string;

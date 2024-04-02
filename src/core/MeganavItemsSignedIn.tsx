@@ -1,13 +1,9 @@
 import React from "react";
 
-import MeganavControl from "../MeganavControl/component.tsx";
-import SignOutLink from "../SignOutLink/component.tsx";
-import MeganavSearch from "../MeganavSearch/component.tsx";
-import {
-  AbsUrl,
-  MeganavSessionState,
-  MeganavTheme,
-} from "../Meganav/component.tsx";
+import MeganavControl from "./MeganavControl";
+import SignOutLink from "./SignOutLink";
+import MeganavSearch from "./MeganavSearch";
+import { AbsUrl, MeganavSessionState, MeganavTheme } from "./Meganav";
 
 type MeganavItemsSignedIn = {
   sessionState: MeganavSessionState;

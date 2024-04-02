@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import Icon from "../Icon/component.tsx";
-import _absUrl from "../url-base.js";
-import toggleChatWidget from "../hubspot-chat-toggle";
-import "./component.css";
+import Icon from "./Icon";
+import _absUrl from "./url-base.js";
+import toggleChatWidget from "./hubspot-chat-toggle";
+import "./ContactFooter/component.css";
 
 type ContactFooterProps = {
   urlBase: string;

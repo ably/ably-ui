@@ -7,7 +7,7 @@ import React, {
   ReactNode,
   Dispatch,
 } from "react";
-import Icon from "../Icon/component.tsx";
+import Icon from "./Icon";
 
 const DropdownMenuContext = createContext<{
   isOpen: boolean;
