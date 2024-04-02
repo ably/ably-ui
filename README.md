@@ -224,9 +224,10 @@ All components live in `src` and follow a directory and filename convention:
 - module directory (TitleCase)
   - module asset files: `scripts.js` for JavaScript and `styles.css` for CSS
   - component directory (TitleCase)
-    - `component.js` - this is the entry file for a component and is the only required file
-    - `components.css` - additional CSS
-    - for react, `components.tsx`
+    - `component.js` - supporting/legacy JS script
+    - `component.css` - additional CSS
+    - `[ComponentName].stories.tsx` - if React, a Storybook presentation file
+  - if React, `[ComponentName].tsx` at a sibling level to the component directory
 
 For example:
 
@@ -237,7 +238,8 @@ For example:
   - Accordion
     - component.js
     - component.css
-    - component.tsx
+    - Accordion.stories.tsx
+  - Accordion.tsx
 ```
 
 #### CSS
@@ -254,15 +256,11 @@ By default, [Prettier](https://prettier.io/) & [ESLint](https://eslint.org/) wil
 
 #### To add a new component:
 
-1. Create a folder in `src`, in the module of your choice (i.e. `core`). The folder name should be TitleCase.
-2. Add a `component.tsx`
-
-- also add an empty `component.js` file (current legacy requirement)
-- if the component has custom CSS, add a `component.css` file as well.
+Add a `[ComponentName].tsx` file in `src`, in the module of your choice (most likely `core`). Any supporting files, i.e. stylesheets, should be placed in a directory with the same name of the component.
 
 #### To see this component in Storybook:
 
-Create a `[COMPONENT_NAME].stories.tsx` file alongside your `component` assets, following the examples of other Storybook stories, or their online documentation for guidance. When running Storybook, the story should be picked up and rendered in place automatically.
+Create a `[ComponentName].stories.tsx` file alongside your `component` assets, following the examples of other Storybook stories, or their online documentation for guidance. When running Storybook, the story should be picked up and rendered in place automatically.
 
 ### Publishing
 
