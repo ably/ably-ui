@@ -47,7 +47,7 @@
     "vite": "^4.5.2"
   },
   "scripts": {
-    "build:prebuild": "rm -r core reset",
+    "build:prebuild": "rm -rf core reset",
     "build:swc": "swc src/core src/reset -d dist --copy-files --include-dotfiles --strip-leading-paths",
     "build:sprites": "svg-sprite -C .svgrc src/core/icons/*.svg",
     "build:cleanup": "mv dist/* . && rm -r dist",
