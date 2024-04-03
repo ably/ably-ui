@@ -1,0 +1,13 @@
+{
+  "jsc": {
+    "target": "es2018",
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": false
+    }
+  },
+  "exclude": [".stories.tsx"],
+  "minify": true
+}

@@ -5,4 +5,7 @@ cypress/screenshots
 cypress/videos
 server_killer.rb
 yarn-error.log
-preview
+/dist
+/preview
+/core
+/reset

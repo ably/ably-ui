@@ -10,7 +10,7 @@ echo "Install packages, making sure they are up to date"
 yarn --frozen-lockfile
 
 echo "Build library"
-NODE_ENV=production node scripts/build.js
+NODE_ENV=production yarn build
 
 echo "Publish the npm package to the registry"
 yarn publish --no-git-tag-version --new-version $VERSION

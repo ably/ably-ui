@@ -1,4 +1,4 @@
-import CookieMessage from "./component.tsx";
+import CookieMessage from "../CookieMessage";
 
 export default {
   title: "Components/Cookie Message",

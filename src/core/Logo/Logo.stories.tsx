@@ -1,4 +1,4 @@
-import Logo from "./component.tsx";
+import Logo from "../Logo";
 import logoUrl from "../images/ably-logo.png";
 
 export default {

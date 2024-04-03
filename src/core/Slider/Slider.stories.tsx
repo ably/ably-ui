@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Slider from "./component.tsx";
+import Slider from "../Slider";
 
 export default {
   title: "Components/Slider",

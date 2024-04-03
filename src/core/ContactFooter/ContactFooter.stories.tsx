@@ -1,4 +1,4 @@
-import ContactFooter from "./component.tsx";
+import ContactFooter from "../ContactFooter";
 
 export default {
   title: "Components/Contact Footer",
