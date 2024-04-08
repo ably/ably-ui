@@ -1,28 +1,57 @@
-import React, { PropsWithChildren, ReactElement, cloneElement } from "react";
+import React, {
+  PropsWithChildren,
+  ReactElement,
+  TableHTMLAttributes,
+  cloneElement,
+} from "react";
 
 type TableProps = {
   id?: string;
 };
 
-export const Table = ({ id, children }: PropsWithChildren<TableProps>) => (
-  <table id={id} className="ui-standard-container mb-4 sm:table-fixed">
+export const Table = ({
+  id,
+  children,
+  ...rest
+}: PropsWithChildren<TableProps & TableHTMLAttributes<HTMLTableElement>>) => (
+  <table
+    id={id}
+    {...rest}
+    className={`ui-standard-container mb-4 sm:table-fixed ${
+      rest?.className ?? ""
+    }`}
+  >
     {children}
   </table>
 );
 
-export const TableBody = ({ children }: PropsWithChildren) => (
-  <tbody>{children}</tbody>
+export const TableBody = ({
+  children,
+  ...rest
+}: PropsWithChildren<TableHTMLAttributes<HTMLTableSectionElement>>) => (
+  <tbody {...rest}>{children}</tbody>
 );
 
-export const TableHeader = ({ children }: PropsWithChildren) => (
-  <thead className="sticky bg-white z-10 top-0" key="sticky-block">
+export const TableHeader = ({
+  children,
+  ...rest
+}: PropsWithChildren<TableHTMLAttributes<HTMLTableSectionElement>>) => (
+  <thead
+    {...rest}
+    className={`sticky bg-white z-10 top-0 ${rest?.className ?? ""}`}
+  >
     {cloneElement(children as ReactElement, { isHeader: true })}
   </thead>
 );
 
-export const TableRowHeader = ({ children }: PropsWithChildren) => (
+export const TableRowHeader = ({
+  children,
+  ...rest
+}: PropsWithChildren<TableHTMLAttributes<HTMLTableRowElement>>) => (
   <tr
-    className="-ml-24 mt-8 sm:ml-0 sm:mt-0 ui-text-overline1 !text-cool-black  bg-light-grey sm:sticky z-10"
+    className={`-ml-24 mt-8 sm:ml-0 sm:mt-0 bg-light-grey sm:sticky z-10 ${
+      rest?.className ?? ""
+    }`}
     style={{ top: "4rem" }}
   >
     {cloneElement(children as ReactElement, { isRowHeader: true })}
