@@ -7,6 +7,7 @@ import {
   CtaCell,
   Supported,
   Unsupported,
+  Partial,
 } from "./Table/TableCell";
 
 export default {
@@ -21,4 +22,5 @@ export default {
   Header: TableHeader,
   Supported,
   Unsupported,
+  Partial,
 };

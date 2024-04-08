@@ -25,6 +25,15 @@ const Unsupported = () => (
   />
 );
 
+const Partial = () => (
+  <Icon
+    name="icon-gui-partial"
+    size="1.5rem"
+    additionalCSS="flex-grow-0 flex-shrink-0"
+    data-testid="partial-icon"
+  />
+);
+
 const LabelCell = ({
   children,
   ...rest
@@ -89,4 +98,12 @@ const CtaCell = ({
   </td>
 );
 
-export { TableCell, LabelCell, HeaderCell, CtaCell, Supported, Unsupported };
+export {
+  TableCell,
+  LabelCell,
+  HeaderCell,
+  CtaCell,
+  Supported,
+  Unsupported,
+  Partial,
+};
