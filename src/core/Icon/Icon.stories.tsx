@@ -38,6 +38,7 @@ const coreIcons = [
   "icon-gui-link-arrow",
   "icon-gui-live-chat",
   "icon-gui-minus",
+  "icon-gui-partial",
   "icon-gui-plus",
   "icon-gui-quote-marks-solid",
   "icon-gui-refresh",
