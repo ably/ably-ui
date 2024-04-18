@@ -80,7 +80,7 @@ const AccordionRow = ({
         onClick={handleSetIndex}
         className={`flex w-full px-0 focus:outline-none py-20`}
       >
-        <span className="ui-text-p1 font-bold text-left mr-8">{name}</span>
+        <span className="ui-text-p1 !font-bold text-left mr-8">{name}</span>
         <span className="ml-auto">{active ? iconActive : iconInactive}</span>
       </button>
 
