@@ -39,12 +39,12 @@ const SlideIndicator = ({
             className="relative w-40 h-4 mx-1 rounded-full bg-neutral-500"
           >
             {i === activeIndex && (
-              <li
+              <span
                 className="absolute inset-0 rounded-full bg-active-orange"
                 style={{
                   animation: `fillAnimation ${interval}ms linear`,
                 }}
-              ></li>
+              ></span>
             )}
           </li>
         ) : (
