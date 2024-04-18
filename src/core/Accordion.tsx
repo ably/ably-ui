@@ -7,14 +7,14 @@ type AccordionData = {
 };
 
 type AccordionRowProps = {
-  bottomBorder: boolean;
-  topBorder: boolean;
+  bottomBorder?: boolean;
+  topBorder?: boolean;
   active: boolean;
   last: boolean;
   name: string;
   index;
   children: ReactNode;
-  arrowIcon: boolean;
+  arrowIcon?: boolean;
   setActiveIndex: (index: number) => void;
 };
 
@@ -105,7 +105,7 @@ const Accordion = ({
   arrowIcon,
   autoClose,
 }: AccordionProps) => {
-  const [activeIndexes, setActiveIndexes] = useState([]);
+  const [activeIndexes, setActiveIndexes] = useState<number[]>([]);
 
   const handleSetIndex = (index: number) => {
     const currentIndexIsActive = activeIndexes.includes(index);
