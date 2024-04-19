@@ -2,10 +2,14 @@ import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
 
 type ExpanderProps = {
   height?: number;
+  className?: string;
+  fadeClassName?: string;
 };
 
 const Expander = ({
   height = 200,
+  className,
+  fadeClassName,
   children,
 }: PropsWithChildren<ExpanderProps>) => {
   const innerRef = useRef<HTMLDivElement>(null);
@@ -22,10 +26,14 @@ const Expander = ({
     <>
       <div
         style={{ height: expanded ? contentHeight : height }}
-        className="overflow-hidden transition-all relative"
+        className={`overflow-hidden transition-all relative ${className ?? ""}`}
       >
         {showControls && !expanded && (
-          <div className="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0"></div>
+          <div
+            className={`h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ${
+              fadeClassName ?? ""
+            }`}
+          ></div>
         )}
         <div ref={innerRef}>{children}</div>
       </div>
