@@ -120,7 +120,7 @@ const Slider = ({ children, options }: SliderProps) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-hidden w-full py-40">
+      <div className="overflow-y-visible overflow-x-clip w-full py-40">
         <div
           className="flex items-center transition-transform ease-in-out duration-500"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
