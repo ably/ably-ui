@@ -1,6 +1,6 @@
 import React from "react";
-import Slider from "../Slider.tsx";
-import Icon from "../Icon.tsx";
+import Slider from "../Slider";
+import Icon from "../Icon";
 
 const Slide = ({ name }: { name: string }) => (
   <div className="relative ">

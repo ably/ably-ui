@@ -7,14 +7,14 @@ type AccordionData = {
 };
 
 type AccordionRowProps = {
-  bottomBorder: boolean;
-  topBorder: boolean;
+  bottomBorder?: boolean;
+  topBorder?: boolean;
   active: boolean;
   last: boolean;
   name: string;
   index;
   children: ReactNode;
-  arrowIcon: boolean;
+  arrowIcon?: boolean;
   setActiveIndex: (index: number) => void;
 };
 
@@ -80,7 +80,7 @@ const AccordionRow = ({
         onClick={handleSetIndex}
         className={`flex w-full px-0 focus:outline-none py-20`}
       >
-        <span className="ui-text-p1 font-bold text-left mr-8">{name}</span>
+        <span className="ui-text-p1 !font-bold text-left mr-8">{name}</span>
         <span className="ml-auto">{active ? iconActive : iconInactive}</span>
       </button>
 
@@ -105,7 +105,7 @@ const Accordion = ({
   arrowIcon,
   autoClose,
 }: AccordionProps) => {
-  const [activeIndexes, setActiveIndexes] = useState([]);
+  const [activeIndexes, setActiveIndexes] = useState<number[]>([]);
 
   const handleSetIndex = (index: number) => {
     const currentIndexIsActive = activeIndexes.includes(index);

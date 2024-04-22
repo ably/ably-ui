@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, ReactNode } from "react";
-import Icon from "../core/Icon.tsx";
+import Icon from "./Icon";
 import "./Slider/component.css";
 
 interface SliderProps {
@@ -39,12 +39,12 @@ const SlideIndicator = ({
             className="relative w-40 h-4 mx-1 rounded-full bg-neutral-500"
           >
             {i === activeIndex && (
-              <li
+              <span
                 className="absolute inset-0 rounded-full bg-active-orange"
                 style={{
                   animation: `fillAnimation ${interval}ms linear`,
                 }}
-              ></li>
+              ></span>
             )}
           </li>
         ) : (
@@ -120,7 +120,7 @@ const Slider = ({ children, options }: SliderProps) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-hidden w-full py-40">
+      <div className="overflow-y-visible overflow-x-clip w-full py-40">
         <div
           className="flex items-center transition-transform ease-in-out duration-500"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
