@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./utils/syntax-highlighter.css";
 import {
   highlightSnippet,
   registerDefaultLanguages,
