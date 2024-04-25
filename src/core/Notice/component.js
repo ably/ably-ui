@@ -1,4 +1,3 @@
-import "./component.css";
 import Cookie from "js-cookie";
 import throttle from "lodash.throttle";
 

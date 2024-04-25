@@ -3,31 +3,33 @@
 @import "./styles/text.css";
 @import "./styles/forms.css";
 
-.ui-input {
-  @apply text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-input;
-  @apply hover:bg-white hover:shadow-input hover:border-transparent;
-  @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
-  @apply max-w-screen-sm;
-}
+@layer components {
+  .ui-input {
+    @apply text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-input;
+    @apply hover:bg-white hover:shadow-input hover:border-transparent;
+    @apply focus:bg-white focus:shadow-input focus:border-transparent focus:outline-gui-focus;
+    @apply max-w-screen-sm;
+  }
 
-/* Basis for icon component */
-.ui-icon-cool-black {
-  stroke: var(--color-cool-black);
-}
+  /* Basis for icon component */
+  .ui-icon-cool-black {
+    stroke: var(--color-cool-black);
+  }
 
-.ui-icon-white {
-  stroke: var(--color-white);
-}
+  .ui-icon-white {
+    stroke: var(--color-white);
+  }
 
-.ui-icon-dark-grey {
-  stroke: var(--color-dark-grey);
-}
+  .ui-icon-dark-grey {
+    stroke: var(--color-dark-grey);
+  }
 
-.ui-version-tag {
-  @apply inline-block absolute align-top uppercase font-bold whitespace-nowrap;
+  .ui-version-tag {
+    @apply inline-block absolute align-top uppercase font-bold whitespace-nowrap;
 
-  position: relative;
-  vertical-align: super;
-  margin-left: 3px;
-  font-size: 8px;
+    position: relative;
+    vertical-align: super;
+    margin-left: 3px;
+    font-size: 8px;
+  }
 }

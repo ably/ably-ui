@@ -1,7 +1,5 @@
 import throttle from "lodash.throttle";
 
-import "./component.css";
-
 // Glossary:
 // item - is the element which contains both the control and the panel - these are adjacent
 // control - interactive element that controls showing and hiding of dropdown or panel

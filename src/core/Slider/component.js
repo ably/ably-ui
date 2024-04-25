@@ -1,5 +1,3 @@
-import "./component.css";
-
 import throttle from "lodash.throttle";
 
 import { queryId, queryIdAll } from "../dom-query";

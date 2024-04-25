@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, ReactNode } from "react";
 import Icon from "./Icon";
-import "./Slider/component.css";
 
 interface SliderProps {
   children: ReactNode[];

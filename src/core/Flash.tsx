@@ -5,7 +5,6 @@ import { nanoid } from "nanoid/non-secure";
 import { getRemoteDataStore } from "./remote-data-store.js";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import Icon from "./Icon";
-import "./Flash/component.css";
 
 type FlashProps = {
   id: string;
