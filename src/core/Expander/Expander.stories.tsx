@@ -130,3 +130,23 @@ export const OverriddenStyles = {
     },
   },
 };
+
+export const Bypassed = {
+  render: () => (
+    <Expander
+      className="bg-neutral-400 p-16 rounded-lg"
+      fadeClassName="from-neutral-800"
+      height={0}
+    >
+      {longContentInner}
+    </Expander>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "A set height of 0, which means that no expansion behaviour is applied.",
+      },
+    },
+  },
+};

@@ -20,12 +20,12 @@ const Expander = ({
     setContentHeight(innerRef.current?.clientHeight ?? height);
   }, [height, expanded]);
 
-  const showControls = contentHeight > height;
+  const showControls = height > 0 && contentHeight > height;
 
   return (
     <>
       <div
-        style={{ height: expanded ? contentHeight : height }}
+        style={{ ...(height && { height: expanded ? contentHeight : height }) }}
         className={`overflow-hidden transition-all relative ${className ?? ""}`}
       >
         {showControls && !expanded && (
