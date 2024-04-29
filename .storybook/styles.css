@@ -5,6 +5,14 @@
 @import "../src/core/fonts/jetBrains-mono.css";
 @import "../src/core/fonts/manrope.css";
 @import "../src/core/styles.css";
+@import "../src/core/ContactFooter/component.css";
+@import "../src/core/CookieMessage/component.css";
+@import "../src/core/Flash/component.css";
+@import "../src/core/Footer/component.css";
+@import "../src/core/Meganav/component.css";
+@import "../src/core/Notice/component.css";
+@import "../src/core/Slider/component.css";
+@import "../src/core/utils/syntax-highlighter.css";
 @import "../src/reset/styles.css";
 
 @import "./application.css";

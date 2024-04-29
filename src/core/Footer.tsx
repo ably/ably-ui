@@ -2,7 +2,6 @@ import React from "react";
 
 import Icon from "./Icon";
 import _absUrl from "./url-base.js";
-import "./Footer/component.css";
 
 type FooterProps = {
   paths: {

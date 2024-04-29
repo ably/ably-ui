@@ -1,7 +1,6 @@
 import React, { ReactNode, useEffect } from "react";
 
 import NoticeScripts from "./Notice/component.js";
-import "./Notice/component.css";
 import Icon from "./Icon";
 type ContentWrapperProps = {
   buttonLink: string;

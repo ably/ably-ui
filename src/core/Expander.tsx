@@ -1,31 +1,40 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
 
 type ExpanderProps = {
-  height?: number;
+  heightThreshold?: number;
   className?: string;
   fadeClassName?: string;
 };
 
 const Expander = ({
-  height = 200,
+  heightThreshold = 200,
   className,
   fadeClassName,
   children,
 }: PropsWithChildren<ExpanderProps>) => {
   const innerRef = useRef<HTMLDivElement>(null);
-  const [contentHeight, setContentHeight] = useState(height);
+  const [showControls, setShowControls] = useState(false);
+  const [height, setHeight] = useState<number | "auto">(heightThreshold);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    setContentHeight(innerRef.current?.clientHeight ?? height);
-  }, [height, expanded]);
+    const contentHeight = innerRef.current?.clientHeight ?? heightThreshold;
 
-  const showControls = contentHeight > height;
+    if (contentHeight < heightThreshold) {
+      setHeight("auto");
+    } else if (expanded) {
+      setHeight(contentHeight);
+    } else {
+      setHeight(heightThreshold);
+    }
+
+    setShowControls(contentHeight >= heightThreshold);
+  }, [heightThreshold, expanded]);
 
   return (
     <>
       <div
-        style={{ height: expanded ? contentHeight : height }}
+        style={{ height }}
         className={`overflow-hidden transition-all relative ${className ?? ""}`}
       >
         {showControls && !expanded && (

@@ -39,7 +39,7 @@ const LabelCell = ({
   ...rest
 }: PropsWithChildren<React.TdHTMLAttributes<HTMLTableCellElement>>) => {
   const classes = `
-    ui-text-p1 !font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell ${
+    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell ${
       rest?.className ?? ""
     }
   `;

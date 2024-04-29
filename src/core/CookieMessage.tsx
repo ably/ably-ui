@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Cookie from "js-cookie";
 
-import "./CookieMessage/component.css";
 import _absUrl from "./url-base";
 
 const COOKIE_EXPIRY = 365;
