@@ -1,38 +1,8 @@
 import React, { PropsWithChildren } from "react";
-import Icon from "../Icon";
 
 type TableCellProps = {
   isRowHeader?: boolean;
 } & React.TdHTMLAttributes<HTMLTableCellElement>;
-
-const Supported = () => (
-  <Icon
-    name="icon-gui-check-circled-fill"
-    size="1.5rem"
-    color="text-gui-success"
-    additionalCSS="flex-grow-0 flex-shrink-0"
-    data-testid="supported-icon"
-  />
-);
-
-const Unsupported = () => (
-  <Icon
-    name="icon-gui-cross-circled-fill"
-    size="1.5rem"
-    color="text-gui-error"
-    additionalCSS="flex-grow-0 flex-shrink-0"
-    data-testid="unsupported-icon"
-  />
-);
-
-const Partial = () => (
-  <Icon
-    name="icon-gui-partial"
-    size="1.5rem"
-    additionalCSS="flex-grow-0 flex-shrink-0"
-    data-testid="partial-icon"
-  />
-);
 
 const LabelCell = ({
   children,
@@ -98,12 +68,4 @@ const CtaCell = ({
   </td>
 );
 
-export {
-  TableCell,
-  LabelCell,
-  HeaderCell,
-  CtaCell,
-  Supported,
-  Unsupported,
-  Partial,
-};
+export { TableCell, LabelCell, HeaderCell, CtaCell };

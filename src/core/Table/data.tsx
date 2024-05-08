@@ -1,8 +1,28 @@
 import React, { Fragment } from "react";
 
 import Tooltip from "../Tooltip";
-import { Supported, Unsupported } from "./TableCell";
 import Table from "../Table";
+import Icon from "../Icon";
+
+const Supported = () => (
+  <Icon
+    name="icon-gui-check-circled-fill"
+    size="1.5rem"
+    color="text-gui-success"
+    additionalCSS="flex-grow-0 flex-shrink-0"
+    data-testid="supported-icon"
+  />
+);
+
+const Unsupported = () => (
+  <Icon
+    name="icon-gui-cross-circled-fill"
+    size="1.5rem"
+    color="text-gui-error"
+    additionalCSS="flex-grow-0 flex-shrink-0"
+    data-testid="unsupported-icon"
+  />
+);
 
 const testRow = (index) => ({
   label: `Label ${index + 1}`,
