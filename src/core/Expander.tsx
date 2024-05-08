@@ -51,7 +51,7 @@ const Expander = ({
           onClick={() => setExpanded(!expanded)}
           onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
           tabIndex={0}
-          className="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light active:text-gui-blue-active-light focus:text-gui-blue-focus"
+          className="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light"
         >
           {expanded ? "View less -" : "View all +"}
         </div>
