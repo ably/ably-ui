@@ -18,6 +18,8 @@ interface SliderIndicatorProps {
   isInline?: boolean;
 }
 
+const SLIDE_TRANSITION_LENGTH = 500;
+
 const SlideIndicator = ({
   numSlides,
   activeIndex,
@@ -28,7 +30,7 @@ const SlideIndicator = ({
   return (
     <ul
       className={`flex gap-4 left-1/2 ${
-        isInline ? "bottom-0" : "absolute -bottom-40 transform -translate-x-1/2"
+        isInline ? "bottom-0" : "absolute bottom-0 transform -translate-x-1/2"
       }`}
     >
       {Array.from({ length: numSlides }, (_, i) =>
@@ -63,16 +65,27 @@ const SlideIndicator = ({
   );
 };
 
+const setupSlides = (children: ReactNode[], activeIndex: number) => [
+  children[activeIndex === 0 ? children.length - 1 : activeIndex - 1],
+  children[activeIndex],
+  children[activeIndex === children.length - 1 ? 0 : activeIndex + 1],
+];
+
 const Slider = ({ children, options }: SliderProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
+  const [slides, setSlides] = useState<ReactNode[]>(
+    setupSlides(children, activeIndex)
+  );
+  const [translationCoefficient, setTranslationCoefficient] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const isInline = options?.controlPosition === "inline";
 
   const next = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
+    setTranslationCoefficient(1);
     resetInterval();
   };
 
@@ -80,6 +93,7 @@ const Slider = ({ children, options }: SliderProps) => {
     setActiveIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : children.length - 1
     );
+    setTranslationCoefficient(-1);
     resetInterval();
   };
 
@@ -112,6 +126,13 @@ const Slider = ({ children, options }: SliderProps) => {
     };
   }, [children.length, options?.interval]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setSlides(setupSlides(children, activeIndex));
+      setTranslationCoefficient(0);
+    }, SLIDE_TRANSITION_LENGTH);
+  }, [activeIndex]);
+
   return (
     <div
       className="relative"
@@ -121,16 +142,19 @@ const Slider = ({ children, options }: SliderProps) => {
     >
       <div className="overflow-y-visible overflow-x-clip w-full py-40">
         <div
-          className="flex items-center transition-transform ease-in-out duration-500"
-          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+          className={`flex items-center ${
+            translationCoefficient !== 0
+              ? `transition-transform ease-in-out duration-${SLIDE_TRANSITION_LENGTH}`
+              : ""
+          } `}
+          style={{
+            transform: `translateX(-${(translationCoefficient + 1) * 100}%)`,
+          }}
         >
-          {children.map((child, index) => (
+          {slides.map((child, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 flex justify-center sm:px-60 transition-opacity ease-in delay-500 duration-500"
-              style={{
-                opacity: activeIndex === index ? 1 : 0.1,
-              }}
+              className="w-full flex-shrink-0 flex justify-center sm:px-60"
             >
               {child}
             </div>
@@ -141,7 +165,7 @@ const Slider = ({ children, options }: SliderProps) => {
       <div
         className={`flex items-center pointer-events-none ${
           isInline
-            ? "ui-standard-container justify-center gap-24"
+            ? "ui-standard-container justify-center gap-24 -mt-16"
             : "sm:flex sm:absolute inset-0 justify-between"
         }`}
       >
