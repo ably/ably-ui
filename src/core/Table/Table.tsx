@@ -52,7 +52,6 @@ export const TableRowHeader = ({
     className={`-ml-24 mt-8 sm:ml-0 sm:mt-0 bg-light-grey sm:sticky z-10 ${
       rest?.className ?? ""
     }`}
-    style={{ top: "4rem" }}
   >
     {cloneElement(children as ReactElement, { isRowHeader: true })}
   </tr>
