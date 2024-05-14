@@ -25,6 +25,7 @@ export type AccordionProps = {
   bottomBorder?: boolean;
   id?: string;
   autoClose?: boolean;
+  className?: string;
 };
 
 const AccordionRow = ({
@@ -104,6 +105,7 @@ const Accordion = ({
   bottomBorder,
   arrowIcon,
   autoClose,
+  className,
 }: AccordionProps) => {
   const [activeIndexes, setActiveIndexes] = useState<number[]>([]);
 
@@ -122,7 +124,7 @@ const Accordion = ({
   };
 
   return (
-    <div className="ui-grid-mx max-w-screen-sm sm:mx-auto" id={id}>
+    <div className={className} id={id}>
       {data.map((item, currentIndex) => {
         return (
           <AccordionRow
