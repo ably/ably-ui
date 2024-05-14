@@ -18,7 +18,7 @@ interface SliderIndicatorProps {
   isInline?: boolean;
 }
 
-const SLIDE_TRANSITION_LENGTH = 500;
+const SLIDE_TRANSITION_LENGTH = 300;
 
 const SlideIndicator = ({
   numSlides,
@@ -80,21 +80,28 @@ const Slider = ({ children, options }: SliderProps) => {
   );
   const [translationCoefficient, setTranslationCoefficient] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const [slideLock, setSlideLock] = useState(false);
 
   const isInline = options?.controlPosition === "inline";
 
   const next = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
-    setTranslationCoefficient(1);
-    resetInterval();
+    if (!slideLock) {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
+      setTranslationCoefficient(1);
+      resetInterval();
+      setSlideLock(true);
+    }
   };
 
   const prev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : children.length - 1
-    );
-    setTranslationCoefficient(-1);
-    resetInterval();
+    if (!slideLock) {
+      setActiveIndex((prevIndex) =>
+        prevIndex > 0 ? prevIndex - 1 : children.length - 1
+      );
+      setTranslationCoefficient(-1);
+      resetInterval();
+      setSlideLock(true);
+    }
   };
 
   const resetInterval = () => {
@@ -130,6 +137,7 @@ const Slider = ({ children, options }: SliderProps) => {
     setTimeout(() => {
       setSlides(setupSlides(children, activeIndex));
       setTranslationCoefficient(0);
+      setSlideLock(false);
     }, SLIDE_TRANSITION_LENGTH);
   }, [activeIndex]);
 
