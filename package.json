@@ -61,7 +61,7 @@
     "release": "./scripts/release.sh",
     "start": "vite --port 5000",
     "storybook": "yarn build && storybook dev -p 6006 --no-version-updates",
-    "build-storybook": "storybook build -o preview"
+    "build-storybook": "yarn build && storybook build -o preview"
   },
   "dependencies": {
     "addsearch-js-client": "^0.7.0",
