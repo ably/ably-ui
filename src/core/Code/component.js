@@ -1,5 +1,3 @@
-import "./component.css";
-
 // Note: importing syntax-highlighter here means the component.js file will include
 // all the language dependecies, creating a large a bundle. Prefer using the highlighter serverside.
 import {
