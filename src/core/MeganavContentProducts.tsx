@@ -66,11 +66,9 @@ const MeganavContentProducts = ({
           </li>
           <li>
             <a href={absUrl("/livesync")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">
-                LiveSync (Early access)
-              </p>
+              <p className="ui-meganav-media-heading">LiveSync (Alpha)</p>
               <p className="ui-meganav-media-copy">
-                Keep clients in sync with any relational database.
+                Seamlessly sync database changes with frontend clients at scale.
               </p>
             </a>
           </li>
