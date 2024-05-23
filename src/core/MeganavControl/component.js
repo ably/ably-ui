@@ -4,19 +4,19 @@ const MeganavControl = () => {
   const controls = Array.from(queryIdAll("meganav-control"));
   const panels = Array.from(queryIdAll("meganav-panel"));
   const mdBreakpoint = getComputedStyle(
-    document.documentElement
+    document.documentElement,
   ).getPropertyValue("--bp-md");
 
   const hoverEnabled = () =>
     window.matchMedia(
-      `(hover: hover) and (pointer: fine) and (min-width: ${mdBreakpoint})`
+      `(hover: hover) and (pointer: fine) and (min-width: ${mdBreakpoint})`,
     ).matches;
 
   const isSearchControl = (node) => node.dataset.control === "search";
 
   const isSearchPanelOpen = () => {
     const searchPanel = document.querySelector(
-      '[data-id="meganav-panel"]#panel-search'
+      '[data-id="meganav-panel"]#panel-search',
     );
     if (!searchPanel) return;
     return !searchPanel.classList.contains("invisible");
@@ -42,11 +42,12 @@ const MeganavControl = () => {
 
   const clickHandler = (control, panel) => () => {
     controls.forEach(
-      (node) => node !== control && node.setAttribute("aria-expanded", false)
+      (node) => node !== control && node.setAttribute("aria-expanded", false),
     );
 
     panels.forEach(
-      (node) => node !== panel && node.classList.replace("visible", "invisible")
+      (node) =>
+        node !== panel && node.classList.replace("visible", "invisible"),
     );
 
     const ariaExpanded = control.getAttribute("aria-expanded");
@@ -79,7 +80,7 @@ const MeganavControl = () => {
     .map((control) => {
       const item = control.parentNode;
       const panel = document.querySelector(
-        `#${control.getAttribute("aria-controls")}`
+        `#${control.getAttribute("aria-controls")}`,
       );
       const click = clickHandler(control, panel);
       control.addEventListener("click", click);

@@ -3,18 +3,18 @@ import { remsToPixelValue } from "../css";
 
 export default () => {
   const closeControls = Array.from(
-    queryIdAll("meganav-control-mobile-panel-close")
+    queryIdAll("meganav-control-mobile-panel-close"),
   );
   const openControls = Array.from(
-    queryIdAll("meganav-control-mobile-panel-open")
+    queryIdAll("meganav-control-mobile-panel-open"),
   );
   const dropdown = queryId("meganav-mobile-dropdown");
 
   // Height is defined in rem's so to get the pixel value we need to find the fontSize on root
   const meganavHeight = remsToPixelValue(
     getComputedStyle(document.documentElement).getPropertyValue(
-      "--ui-meganav-height"
-    )
+      "--ui-meganav-height",
+    ),
   );
 
   const clickHandler = (btn, closeBtn, panel) => () => {
@@ -36,10 +36,11 @@ export default () => {
   return openControls.map((btn) => {
     const closeBtn = closeControls.find(
       (node) =>
-        node.getAttribute("aria-controls") === btn.getAttribute("aria-controls")
+        node.getAttribute("aria-controls") ===
+        btn.getAttribute("aria-controls"),
     );
     const panel = document.querySelector(
-      `#${btn.getAttribute("aria-controls")}`
+      `#${btn.getAttribute("aria-controls")}`,
     );
     const handler = clickHandler(btn, closeBtn, panel);
 

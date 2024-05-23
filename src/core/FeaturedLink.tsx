@@ -58,7 +58,7 @@ const FeaturedLink = ({
         {
           "--featured-link-icon-size": `var(${textSize.replace(
             "text",
-            "--fs"
+            "--fs",
           )})`,
         } as CSSProperties
       }

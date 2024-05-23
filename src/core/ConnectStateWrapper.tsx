@@ -22,7 +22,7 @@ const ConnectStateWrapper = (Component, selectors) => {
     const store = getRemoteDataStore();
     const resolvedState = Object.keys(selectors).reduce(
       (acc, key) => ({ ...acc, [key]: selectors[key](store) }),
-      {}
+      {},
     );
 
     // Set initial state

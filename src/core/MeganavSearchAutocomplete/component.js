@@ -21,7 +21,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
   const markQueryInSuggestion = (suggestionValue, query) => {
     return suggestionValue.replace(
       query.toLowerCase(),
-      `<span class="font-light">${query}</span>`
+      `<span class="font-light">${query}</span>`,
     );
   };
 
@@ -29,7 +29,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
 
   const focusNext = (index) => {
     const nextSuggestion = listContainer.querySelector(
-      `[data-suggestion-index="${index + 1}"]`
+      `[data-suggestion-index="${index + 1}"]`,
     );
     if (!nextSuggestion) return;
     nextSuggestion.focus();
@@ -39,7 +39,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
     const previousIndex = index - 1;
 
     const previousSuggestion = listContainer.querySelector(
-      `[data-suggestion-index="${previousIndex}"]`
+      `[data-suggestion-index="${previousIndex}"]`,
     );
     if (!previousSuggestion) return;
     previousSuggestion.focus();
@@ -76,7 +76,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
           "rounded",
           "hover:text-gui-hover",
           "focus:outline-gui-focus",
-          "hover:bg-light-grey"
+          "hover:bg-light-grey",
         );
 
         button.innerHTML = markQueryInSuggestion(suggestion.value, query);
@@ -167,7 +167,7 @@ export default (apiKey) => {
       const parent = input.parentNode;
       const container = queryId(
         "meganav-search-autocomplete-container",
-        parent
+        parent,
       );
       const listContainer = queryId("meganav-search-autocomplete-list", parent);
       const clear = queryId("meganav-search-input-clear", parent);

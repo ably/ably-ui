@@ -24,7 +24,7 @@ const MeganavItemsSignedIn = ({
 }: MeganavItemsSignedIn) => {
   const links = sessionState.account
     ? Object.keys(sessionState.account.links).map(
-        (key) => sessionState.account.links[key]
+        (key) => sessionState.account.links[key],
       )
     : [];
   const accountName = truncate(sessionState.accountName, 20);

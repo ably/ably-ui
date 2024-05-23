@@ -21,6 +21,10 @@
     ),
     var(--bg);
   background-repeat: repeat, repeat;
-  background-position: 0 0, var(--size) var(--size);
-  background-size: var(--double) var(--double), var(--double) var(--double);
+  background-position:
+    0 0,
+    var(--size) var(--size);
+  background-size:
+    var(--double) var(--double),
+    var(--double) var(--double);
 }

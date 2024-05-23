@@ -84,7 +84,7 @@ const setupCloseBtn = (
   bannerContainer,
   cookieId,
   noticeId,
-  collapseUnmountListeners
+  collapseUnmountListeners,
 ) => {
   const closeBtn = bannerContainer.querySelector("button");
 
@@ -117,7 +117,7 @@ const Notice = ({ bannerContainer, cookieId, noticeId, options }) => {
 
   if (!bannerContainer) {
     console.warn(
-      "A Notice component was initited but no notice container was found."
+      "A Notice component was initited but no notice container was found.",
     );
     return () => {};
   }
@@ -137,7 +137,7 @@ const Notice = ({ bannerContainer, cookieId, noticeId, options }) => {
     bannerContainer,
     cookieId,
     noticeId,
-    collapseUnmountListeners
+    collapseUnmountListeners,
   );
 
   const resizeUnmountListener = resizeHandler(bannerContainer);
