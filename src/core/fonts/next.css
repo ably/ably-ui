@@ -21,7 +21,8 @@
 @font-face {
   font-family: "NEXT Book";
   src: url("NEXT-Book-Light.eot");
-  src: url("NEXT-Book-Light.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("NEXT-Book-Light.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Light.woff2") format("woff2"),
     url("NEXT-Book-Light.woff") format("woff");
   font-weight: 300;
@@ -31,7 +32,8 @@
 @font-face {
   font-family: "NEXT Book";
   src: url("NEXT-Book-Light-Italic.eot");
-  src: url("NEXT-Book-Light-Italic.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("NEXT-Book-Light-Italic.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Light-Italic.woff2") format("woff2"),
     url("NEXT-Book-Light-Italic.woff") format("woff");
   font-weight: 300;
@@ -41,7 +43,8 @@
 @font-face {
   font-family: "NEXT Book";
   src: url("NEXT-Book-Medium.eot");
-  src: url("NEXT-Book-Medium.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("NEXT-Book-Medium.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Medium.woff2") format("woff2"),
     url("NEXT-Book-Medium.woff") format("woff");
   font-weight: 500;
@@ -51,7 +54,8 @@
 @font-face {
   font-family: "NEXT Book";
   src: url("NEXT-Book-Medium-Italic.eot");
-  src: url("NEXT-Book-Medium-Italic.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("NEXT-Book-Medium-Italic.eot?#iefix") format("embedded-opentype"),
     url("NEXT-Book-Medium-Italic.woff2") format("woff2"),
     url("NEXT-Book-Medium-Italic.woff") format("woff");
   font-weight: 500;

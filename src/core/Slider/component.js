@@ -31,12 +31,12 @@ const init = (slidesContainer) => {
 
   const updateSlide = (index) =>
     (transformContainer.style.transform = `translateX(${calculateTransform(
-      index
+      index,
     )}px)`);
 
   const updateMarkers = (index) => {
     slideMarkers.forEach((marker) =>
-      marker.classList.remove("text-active-orange")
+      marker.classList.remove("text-active-orange"),
     );
     slideMarkers[index].classList.remove("text-cool-black");
     slideMarkers[index].classList.add("text-active-orange");
@@ -98,7 +98,7 @@ const Slider = ({ container, mqEnableThreshold }) => {
       } else {
         unmount();
       }
-    }, 100)
+    }, 100),
   );
 };
 

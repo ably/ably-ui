@@ -7,7 +7,7 @@ const ablyUItailwindConfig = (extend) => {
   // Create absolute paths to templates in AblyUI
   const addPurgeContentPaths = () => {
     const paths = ["*.html.erb", "*", "*.js", "*.json"].map((fileGlob) =>
-      path.join(ablyUiConfigPath, "src", "**", fileGlob)
+      path.join(ablyUiConfigPath, "src", "**", fileGlob),
     );
 
     return paths;

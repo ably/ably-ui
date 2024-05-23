@@ -4,7 +4,7 @@ import { connectState } from "../remote-data-store";
 
 const template = ({ link, title, pubDate }) => {
   const [li, a, heading, copy] = ["li", "a", "p", "p"].map((el) =>
-    document.createElement(el)
+    document.createElement(el),
   );
 
   a.href = link;
@@ -36,7 +36,7 @@ export default () => {
       });
 
       Array.from(sections).forEach((section) =>
-        section.classList.remove("hidden")
+        section.classList.remove("hidden"),
       );
     }
   });

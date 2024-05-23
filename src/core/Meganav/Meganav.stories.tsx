@@ -46,7 +46,7 @@ export default {
               link: "https://ably.com/blog/beam-optimization-mqtt",
               pubDate: "Jul 17, 2020",
             },
-          ])
+          ]),
         );
       }),
     ],
@@ -57,7 +57,7 @@ attachStoreToWindow(
   createRemoteDataStore({
     ...reducerBlogPosts,
     ...reducerSessionData,
-  })
+  }),
 );
 
 const Page = () => {

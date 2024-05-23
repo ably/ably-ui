@@ -12,7 +12,7 @@ const fetchSessionData = async (store, sessionUrl) => {
   try {
     if (!sessionUrl) {
       console.log(
-        `Skipping fetching session, invalid sessionUrl: "${sessionUrl}"`
+        `Skipping fetching session, invalid sessionUrl: "${sessionUrl}"`,
       );
       sessionLoaded();
       return;

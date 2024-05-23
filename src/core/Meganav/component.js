@@ -46,10 +46,10 @@ const documentScroll = (themeName) => {
   const meganav = queryId("meganav");
   const navItems = queryIdAll("meganav-link");
   const controlMobileDropdownMenu = queryId(
-    "meganav-control-mobile-dropdown-menu"
+    "meganav-control-mobile-dropdown-menu",
   );
   const controlMobileDropdownClose = queryId(
-    "meganav-control-mobile-dropdown-close"
+    "meganav-control-mobile-dropdown-close",
   );
   const controls = queryIdAll("meganav-control");
   const signUpBtn = queryId("meganav-sign-up-btn");
@@ -90,7 +90,7 @@ const documentScroll = (themeName) => {
       invertMobleDropdownColor(true);
 
       invertTextCollection.forEach((n) =>
-        n.classList.replace("text-white", "text-cool-black")
+        n.classList.replace("text-white", "text-cool-black"),
       );
     } else {
       meganav.classList.replace("bg-white", "bg-transparent");
@@ -98,7 +98,7 @@ const documentScroll = (themeName) => {
       invertMobleDropdownColor(false);
 
       invertTextCollection.forEach((n) =>
-        n.classList.replace("text-cool-black", "text-white")
+        n.classList.replace("text-cool-black", "text-white"),
       );
     }
   }, 150);
@@ -111,7 +111,7 @@ const documentScroll = (themeName) => {
 };
 
 export default function Meganav(
-  { themeName, addSearchApiKey } = { themeName: null }
+  { themeName, addSearchApiKey } = { themeName: null },
 ) {
   const controls = MeganavControl();
   const panelOpenControls = MobilePanelOpenClick();

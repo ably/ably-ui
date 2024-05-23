@@ -118,7 +118,7 @@ const Accordion = ({
       setActiveIndexes(
         currentIndexIsActive
           ? activeIndexes.filter((i) => i !== index)
-          : [...activeIndexes, index]
+          : [...activeIndexes, index],
       );
     }
   };

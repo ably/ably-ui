@@ -2,10 +2,10 @@ import { queryIdAll } from "../dom-query";
 
 export default () => {
   const closeControls = Array.from(
-    queryIdAll("meganav-control-mobile-panel-close")
+    queryIdAll("meganav-control-mobile-panel-close"),
   );
   const openControls = Array.from(
-    queryIdAll("meganav-control-mobile-panel-open")
+    queryIdAll("meganav-control-mobile-panel-open"),
   );
 
   const clickHandler = (btn, openBtn, panel) => () => {
@@ -18,10 +18,11 @@ export default () => {
   return closeControls.map((btn) => {
     const openBtn = openControls.find(
       (open) =>
-        open.getAttribute("aria-controls") === btn.getAttribute("aria-controls")
+        open.getAttribute("aria-controls") ===
+        btn.getAttribute("aria-controls"),
     );
     const panel = document.querySelector(
-      `#${btn.getAttribute("aria-controls")}`
+      `#${btn.getAttribute("aria-controls")}`,
     );
     const handler = clickHandler(btn, openBtn, panel);
 

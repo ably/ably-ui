@@ -4,7 +4,7 @@ const fetchBlogPosts = async (store, blogUrl) => {
   try {
     if (!blogUrl) {
       console.log(
-        `Skipping fetching blog posts, invalid blogUrl: "${blogUrl}"`
+        `Skipping fetching blog posts, invalid blogUrl: "${blogUrl}"`,
       );
       return;
     }

@@ -59,7 +59,7 @@ const SlideIndicator = ({
               &#x2b24;
             </span>
           </li>
-        )
+        ),
       )}
     </ul>
   );
@@ -76,7 +76,7 @@ const Slider = ({ children, options }: SliderProps) => {
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
   const [slides, setSlides] = useState<ReactNode[]>(
-    setupSlides(children, activeIndex)
+    setupSlides(children, activeIndex),
   );
   const [translationCoefficient, setTranslationCoefficient] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -96,7 +96,7 @@ const Slider = ({ children, options }: SliderProps) => {
   const prev = () => {
     if (!slideLock) {
       setActiveIndex((prevIndex) =>
-        prevIndex > 0 ? prevIndex - 1 : children.length - 1
+        prevIndex > 0 ? prevIndex - 1 : children.length - 1,
       );
       setTranslationCoefficient(-1);
       resetInterval();
