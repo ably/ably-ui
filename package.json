@@ -65,7 +65,7 @@
     "build-storybook": "yarn build && storybook build -o preview"
   },
   "dependencies": {
-    "addsearch-js-client": "^0.7.0",
+    "addsearch-js-client": "^0.8.11",
     "array-flat-polyfill": "^1.0.1",
     "dompurify": "^3.1.4",
     "highlight.js": "^11.9.0",
