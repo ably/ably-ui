@@ -66,7 +66,7 @@
   "dependencies": {
     "addsearch-js-client": "^0.7.0",
     "array-flat-polyfill": "^1.0.1",
-    "dompurify": "^2.2.9",
+    "dompurify": "^3.1.4",
     "highlight.js": "^11.9.0",
     "highlightjs-curl": "^1.3.0",
     "js-cookie": "^2.2.1",
