@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { rest } from "msw";
+import { http, HttpResponse } from "msw";
 
 import Meganav from "../Meganav";
 import loadIcons from "../icons.js";
@@ -23,13 +23,13 @@ export default {
   component: Meganav,
   parameters: {
     layout: "fullscreen",
-    msw: [
-      rest.get("/api/me", (_req, res, ctx) => {
-        return res(ctx.json({}));
-      }),
-      rest.get("/api/blog", (_req, res, ctx) => {
-        return res(
-          ctx.json([
+    msw: {
+      handlers: [
+        http.get("/api/me", () => {
+          return HttpResponse.json({});
+        }),
+        http.get("/api/blog", () => {
+          return HttpResponse.json([
             {
               title: "Achieving exactly-once delivery with Ably",
               link: "https://ably.com/blog/achieving-exactly-once-message-processing-with-ably",
@@ -46,10 +46,10 @@ export default {
               link: "https://ably.com/blog/beam-optimization-mqtt",
               pubDate: "Jul 17, 2020",
             },
-          ]),
-        );
-      }),
-    ],
+          ]);
+        }),
+      ],
+    },
   },
 };
 

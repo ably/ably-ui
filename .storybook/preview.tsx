@@ -1,6 +1,6 @@
 import React from "react";
 import { DocsContainer } from "@storybook/blocks";
-import { initialize, mswDecorator } from "msw-storybook-addon";
+import { initialize, mswLoader } from "msw-storybook-addon";
 
 import "./styles.css";
 import theme from "./theme";
@@ -22,7 +22,6 @@ initialize({
 
 const preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -34,13 +33,8 @@ const preview = {
       container: docsContainer,
     },
   },
-  decorators: [
-    mswDecorator,
-    (Story) => {
-      loadIcons();
-      return Story();
-    },
-  ],
+  loaders: [mswLoader],
+  tags: ["autodocs"],
 };
 
 export default preview;

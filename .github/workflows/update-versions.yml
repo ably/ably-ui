@@ -20,9 +20,9 @@ jobs:
       - name: "Get latest tag"
         id: latesttag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16.17.0
+          node-version: 20
       - run: npm install -g yarn
       - name: Update versions
         env:
