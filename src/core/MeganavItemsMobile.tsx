@@ -37,7 +37,7 @@ const MeganavItemsMobile = ({
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
   return (
-    <ul className="flex md:hidden" data-id="meganav-items-mobile">
+    <ul className="flex md:hidden items-center" data-id="meganav-items-mobile">
       <li>
         {sessionState?.signedIn && sessionState?.logOut ? (
           <SignOutLink absUrl={absUrl} {...sessionState.logOut}>
