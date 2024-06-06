@@ -31,7 +31,7 @@ jobs:
           ./scripts/release.sh "${GITHUB_REF/refs\/tags\//}"
         shell: bash
   deploy-storybook:
-    name: Deploy to Storybook
+    name: Deploy Storybook to GH Pages
     runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -39,14 +39,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: ls -l
       - name: Build
-        shell: bash
-        run: |
-          echo "::group::Build"
-          yarn install
-          yarn build-storybook
-          echo "::endgroup::"
+        run: yarn && yarn build-storybook
       - name: Upload
         uses: actions/upload-pages-artifact@v3.0.1
         with:
