@@ -289,20 +289,8 @@ This will release the packages and update library and create & push the commit &
 
 ### Running tests
 
-The repo includes [Cypress](https://www.cypress.io/) for snapshot, screenshot, parity and behaviour testing. Cypress runs against the "preview" server (e.g. the same server used for development).
+`ably-ui` uses Storybook's `test-runner`, which on push automatically turns all stories into executable tests, underpinned by Jest and Playright. This means that we don't have to explicitly write tests for stories, though we have the ability to write [https://storybook.js.org/docs/writing-stories/play-function](play functions), which allow us to test more detailed interactions. More information on the capabilities of `test-runner` can be found [https://storybook.js.org/docs/writing-tests/test-runner](here).
 
-**Snapshot testing** takes saves the DOM and compares it between runs - updating of snapshots can be done in the Cypress UI.
+You can run the tests by either running a dev instance of Storybook locally and then running `yarn test-storybook`, or by pushing a branch to GitHub.
 
-**Screenshot testing** takes a screenshot of a component and compares it between runs. Diffs are located in `cypress/screenshots`. To update a screenshot, delete it.
-
-**Parity testing** checks VW/React components; screenshots are taken of both versions and fail if they are different.
-
-**Behaviour testing** clicks around the DOM and checks for singular elements on the page to be updated.
-
-To run integration tests (using [Cypress](https://www.cypress.io/)), you'll need to have the "preview app" running on port 5000, then run:
-
-```bash
-yarn cy:open
-```
-
-This will open the UI for Cypress, from which you can run the tests. Screenshots are saved in `cypress/screenshots`.
+A related quirk to mention here is that the SWC config has been renamed to `.swc` (away from the default `.swcrc`), as `test-runner` also uses SWC and its config conflicted with ours.
