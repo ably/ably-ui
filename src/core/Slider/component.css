@@ -23,10 +23,10 @@
 
   @screen sm {
     .ui-icon-cta-left:hover .ui-icon-cta-holder {
-      transform: translateX(-120%);
+      transform: translateX(-100%);
     }
     .ui-icon-cta-right .ui-icon-cta-holder {
-      transform: translateX(-120%);
+      transform: translateX(-100%);
     }
     .ui-icon-cta-right:hover .ui-icon-cta-holder {
       transform: translateX(0%);

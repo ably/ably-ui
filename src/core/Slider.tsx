@@ -183,7 +183,7 @@ const Slider = ({ children, options }: SliderProps) => {
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left`}
           onClick={prev}
         >
-          <div className="ui-icon-cta-holder flex gap-4">
+          <div className="ui-icon-cta-holder flex w-48">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
               <Icon name="icon-gui-arrow-left" size="1.5rem" />
             </div>
@@ -207,7 +207,7 @@ const Slider = ({ children, options }: SliderProps) => {
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right`}
           onClick={next}
         >
-          <div className="ui-icon-cta-holder flex gap-4">
+          <div className="ui-icon-cta-holder flex w-48">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
               <Icon name="icon-gui-arrow-right" size="1.5rem" />
             </div>
