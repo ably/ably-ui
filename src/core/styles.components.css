@@ -38,6 +38,6 @@
   }
 
   .ui-divider-spacing {
-    @apply py-40 sm:py-48 md:py-64;
+    @apply my-20 sm:my-24 md:my-32;
   }
 }
