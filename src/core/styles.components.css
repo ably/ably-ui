@@ -33,11 +33,11 @@
     font-size: 8px;
   }
 
-  .ui-spacing {
+  .ui-section-spacing {
     @apply py-80 sm:py-96 md:py-128;
   }
 
-  hr.ui-spacing {
+  .ui-divider-spacing {
     @apply py-40 sm:py-48 md:py-64;
   }
 }
