@@ -42,7 +42,7 @@
     "storybook": "^8.1.4",
     "svg-sprite": "^2.0.4",
     "tailwindcss": "^3.3.6",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "vite": "^5.2.12"
   },
   "scripts": {
