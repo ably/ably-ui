@@ -32,4 +32,12 @@
     margin-left: 3px;
     font-size: 8px;
   }
+
+  .ui-section-spacing {
+    @apply py-80 sm:py-96 md:py-128;
+  }
+
+  .ui-divider-spacing {
+    @apply my-20 sm:my-24 md:my-32;
+  }
 }
