@@ -12,12 +12,6 @@ If anything in this guide or in this codebase doesn't make sense to you, please 
 
 Please refer to the [README](./README.md#development) for instructions on how to set this up.
 
-## Testing
-
-This repo uses a combination of Jest and Cypress for testing.
-
-Please refer to the [README](./README.md#running-tests) for further details.
-
 ## Contributing
 
 1. Fork the [repo](https://github.com/ably/ably-ui/).

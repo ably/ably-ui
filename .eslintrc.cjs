@@ -3,14 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    "cypress/globals": true,
   },
-  extends: ["eslint:recommended", "prettier", "plugin:cypress/recommended"],
+  extends: ["eslint:recommended", "prettier"],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["cypress"],
   rules: {},
   overrides: [
     {
@@ -18,7 +16,6 @@ module.exports = {
       extends: [
         "plugin:react/recommended",
         "prettier",
-        "plugin:cypress/recommended",
         "plugin:storybook/recommended",
         "plugin:@typescript-eslint/recommended",
       ],

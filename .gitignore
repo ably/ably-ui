@@ -1,8 +1,6 @@
 .bundle
 .DS_Store
 node_modules
-cypress/screenshots
-cypress/videos
 server_killer.rb
 yarn-error.log
 /dist
