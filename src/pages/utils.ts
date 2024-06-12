@@ -68,3 +68,13 @@ export const formsHtml = `
   <label for="checkbox-example" class="ui-checkbox-label-p1">Yes</label>
 </div>
 `;
+
+export const togglesHtml = `
+<div className="flex items-center gap-24 mb-16">
+  <label className="ui-toggle">
+    <input type="checkbox" />
+    <span className="ui-toggle-slider"></span>
+  </label>
+  Default
+</div>
+`;

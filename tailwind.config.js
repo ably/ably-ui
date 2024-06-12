@@ -271,6 +271,9 @@ module.exports = {
       quote: "0rem 1.5rem 2rem 0rem #0000000d",
       // opacity
     },
+    dropShadow: {
+      toggle: ["0 4px 4px rgba(0,0,0,0.25)", "0 4px 8px rgba(0,0,0,0.15)"],
+    },
     letterSpacing: {
       "tighten-0.025": "var(--ls-tighten-0_025)",
       "tighten-0.02": "var(--ls-tighten-0_02)",
