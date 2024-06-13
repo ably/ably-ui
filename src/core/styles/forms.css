@@ -31,10 +31,6 @@
     @apply text-p2 font-medium text-cool-black;
   }
 
-  .ui-checkbox-input:disabled + .ui-checkbox-styled {
-    @apply bg-gui-unavailable border;
-  }
-
   .ui-checkbox-input:focus + .ui-checkbox-styled {
     border-width: 0.125rem;
     @apply border-gui-focus;
@@ -46,6 +42,10 @@
 
   .ui-checkbox-input:checked + .ui-checkbox-styled svg {
     @apply block;
+  }
+
+  .ui-checkbox-input:disabled + .ui-checkbox-styled {
+    @apply bg-gui-unavailable border;
   }
 
   .ui-textarea {

@@ -82,7 +82,7 @@ import Icon from "../core/Icon";
     <h4 className="ui-text-h3 mb-16">
       Checkboxes with P2 size text and tighter spacing
     </h4>
-    <div className="flex items-start mb-12">
+    <div className="ui-checkbox-p2">
       <input
         data-ui-checkbox-native=""
         type="checkbox"
@@ -108,7 +108,7 @@ import Icon from "../core/Icon";
         this privacy policy.
       </label>
     </div>
-    <div className="flex items-start mb-12">
+    <div className="ui-checkbox-p2">
       <input
         data-ui-checkbox-native=""
         type="checkbox"
@@ -147,6 +147,52 @@ import Icon from "../core/Icon";
       </div>
       <label htmlFor="checkbox-example-6" className="ui-checkbox-label-p2">
         This option is not available
+      </label>
+    </div>
+  </div>
+  <div className="mb-40">
+    <h4 className="ui-text-h3 mb-16">Disabled checkboxes</h4>
+    <div className="ui-checkbox-p2">
+      <input
+        data-ui-checkbox-native=""
+        type="checkbox"
+        id="checkbox-example-7"
+        name="checkbox-example-7"
+        value="yes"
+        className="ui-checkbox-input"
+        disabled
+      />
+      <div data-ui-checkbox-styled="" className="ui-checkbox-styled">
+        <Icon
+          name="icon-gui-tick"
+          size="1rem"
+          additionalCSS="ui-checkbox-styled-tick"
+        />
+      </div>
+      <label htmlFor="checkbox-example-7" className="ui-checkbox-label-p2">
+        Disabled checkbox
+      </label>
+    </div>
+    <div className="ui-checkbox-p2">
+      <input
+        data-ui-checkbox-native=""
+        type="checkbox"
+        id="checkbox-example-8"
+        name="checkbox-example-8"
+        value="yes"
+        className="ui-checkbox-input"
+        checked
+        disabled
+      />
+      <div data-ui-checkbox-styled="" className="ui-checkbox-styled">
+        <Icon
+          name="icon-gui-tick"
+          size="1rem"
+          additionalCSS="ui-checkbox-styled-tick"
+        />
+      </div>
+      <label htmlFor="checkbox-example-8" className="ui-checkbox-label-p2">
+        Disabled checkbox with a checked state
       </label>
     </div>
   </div>
