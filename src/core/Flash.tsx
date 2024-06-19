@@ -184,7 +184,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
     setFlashesWithIds((state) => {
       return [
         ...state,
-        ...(flashes?.items).map((flash) => ({
+        ...(flashes?.items ?? []).map((flash) => ({
           ...flash,
           id: nanoid(),
           removed: false,
