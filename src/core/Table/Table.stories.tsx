@@ -1,7 +1,7 @@
 import { PricingPageTable } from "./data";
 
 export default {
-  title: "Components/Table",
+  title: "JS Components/Table",
   component: PricingPageTable,
   tags: ["autodocs"],
   parameters: {

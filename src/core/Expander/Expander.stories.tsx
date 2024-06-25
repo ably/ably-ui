@@ -2,7 +2,7 @@ import React from "react";
 import Expander from "../Expander";
 
 export default {
-  title: "Components/Expander",
+  title: "JS Components/Expander",
   component: Expander,
   tags: ["autodocs"],
   args: {

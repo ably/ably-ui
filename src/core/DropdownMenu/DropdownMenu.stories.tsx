@@ -3,7 +3,7 @@ import Icon from "../Icon";
 import DropdownMenu from "../DropdownMenu";
 
 export default {
-  title: "Components/Dropdown Menu",
+  title: "JS Components/Dropdown Menu",
   component: DropdownMenu,
 };
 
