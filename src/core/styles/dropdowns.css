@@ -1,0 +1,45 @@
+@layer components {
+  .ui-dropdown-base {
+    @apply rounded-lg border border-neutral-500 pl-16 pr-[56px] appearance-none select-none focus:outline-gui-focus focus:outline-4 text-p2 flex font-medium bg-transparent;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNjY3MDg1IiBkPSJNMTIuOTA0NiAxMkw5LjAwNjcxIDE2LjMzMUwxMC40OTMzIDE3LjY2OUwxNC45OTMzIDEyLjY2OUwxNC45OTMzIDExLjMzMUwxMC40OTMzIDYuMzMxMDVMOS4wMDY3MSA3LjY2ODk4TDEyLjkwNDYgMTJaIiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAxMiAxMikiLz4KPC9zdmc+Cg==");
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+  }
+
+  .ui-dropdown-base option:disabled {
+    @apply text-neutral-800;
+  }
+
+  .ui-dropdown {
+    @apply ui-dropdown-base py-12;
+  }
+
+  .ui-dropdown-small {
+    @apply ui-dropdown-base py-[10px] text-[14px];
+  }
+
+  /* Special wrapper styles for overriding default Select2 functionality */
+  .ui-dropdown-select2-wrapper .select2 {
+    @apply !w-full;
+  }
+
+  .ui-dropdown-select2-wrapper .select2-selection {
+    @apply ui-dropdown-small;
+  }
+
+  .ui-dropdown-select2-wrapper .select2-selection--single {
+    @apply !h-auto;
+  }
+
+  .ui-dropdown-select2-wrapper .select2-selection__rendered {
+    @apply !leading-relaxed !px-0;
+  }
+
+  .ui-dropdown-select2-wrapper .select2-selection__arrow {
+    @apply hidden;
+  }
+
+  .ui-dropdown-dark {
+    @apply text-white;
+  }
+}
