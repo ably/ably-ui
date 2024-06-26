@@ -3349,9 +3349,9 @@
     file-system-cache "2.3.0"
 
 "@swc/cli@^0.3.10":
-  version "0.3.10"
-  resolved "https://registry.yarnpkg.com/@swc/cli/-/cli-0.3.10.tgz#ab84894e54762e1fafc51b1e66a75ad3319a479a"
-  integrity sha512-YWfYo9kXdbmIuGwIPth9geKgb0KssCMTdZa44zAN5KoqcuCP2rTW9s60heQDSRNpbtCmUr7BKF1VivsoHXrvrQ==
+  version "0.3.14"
+  resolved "https://registry.yarnpkg.com/@swc/cli/-/cli-0.3.14.tgz#c0d56e55e5eb4918937b8d0fa82e5834c21c4cce"
+  integrity sha512-0vGqD6FSW67PaZUZABkA+ADKsX7OUY/PwNEz1SbQdCvVk/e4Z36Gwh7mFVBQH9RIsMonTyhV1RHkwkGnEfR3zQ==
   dependencies:
     "@mole-inc/bin-wrapper" "^8.0.1"
     "@swc/counter" "^0.1.3"
