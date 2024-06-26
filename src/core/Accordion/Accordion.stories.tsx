@@ -2,7 +2,7 @@ import React from "react";
 import Accordion, { AccordionProps } from "../Accordion";
 
 export default {
-  title: "Components/Accordion",
+  title: "JS Components/Accordion",
   component: Accordion,
   args: {
     data: [

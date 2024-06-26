@@ -1,7 +1,7 @@
 import FeaturedLink from "../FeaturedLink";
 
 export default {
-  title: "Components/Featured Link",
+  title: "JS Components/Featured Link",
   component: FeaturedLink,
   parameters: {
     layout: "centered",

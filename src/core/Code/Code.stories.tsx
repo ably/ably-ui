@@ -1,7 +1,7 @@
 import Code from "../Code";
 
 export default {
-  title: "Components/Code",
+  title: "JS Components/Code",
   component: Code,
   tags: ["autodocs"],
 };

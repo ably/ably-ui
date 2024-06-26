@@ -54,7 +54,7 @@ const slides = [
 ];
 
 export default {
-  title: "Components/Slider",
+  title: "JS Components/Slider",
   component: Slider,
   args: {
     children: slides,

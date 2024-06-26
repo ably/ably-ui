@@ -3,6 +3,7 @@
 @import "./styles/text.css";
 @import "./styles/forms.css";
 @import "./styles/toggles.css";
+@import "./styles/dropdowns.css";
 
 @layer components {
   .ui-input {

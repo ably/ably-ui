@@ -8,7 +8,7 @@ import split from "../images/cust-logo-split-mono-pos.svg";
 import australian from "../images/cust-logo-ausopen-mono-pos.svg";
 
 export default {
-  title: "Components/Customer Logos",
+  title: "JS Components/Customer Logos",
   component: CustomerLogos,
   args: {
     companies: [

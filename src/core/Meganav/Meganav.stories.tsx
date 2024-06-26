@@ -19,7 +19,7 @@ import {
 } from "../remote-session-data.js";
 
 export default {
-  title: "Components/Meganav",
+  title: "JS Components/Meganav",
   component: Meganav,
   parameters: {
     layout: "fullscreen",

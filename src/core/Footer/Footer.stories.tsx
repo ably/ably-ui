@@ -7,7 +7,7 @@ import fastestImplementation from "../images/fastest-implementation-2023.svg";
 import highestUserAdoption from "../images/highest-user-adoption-2023.svg";
 
 export default {
-  title: "Components/Footer",
+  title: "JS Components/Footer",
   component: Footer,
   parameters: {
     layout: "fullscreen",
