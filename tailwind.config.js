@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,json,css,ts,tsx,mdx}"],
+  content: ["./src/**/*.{js,ts,tsx,mdx}"],
   safelist: [
     "w-1/2",
     "w-1/3",

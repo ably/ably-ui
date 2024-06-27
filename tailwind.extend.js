@@ -3,22 +3,17 @@ const path = require("path");
 
 const ablyUiConfigPath = path.dirname(require.resolve("./tailwind.config.js"));
 
-const ablyUItailwindConfig = (extend) => {
-  // Create absolute paths to templates in AblyUI
-  const addPurgeContentPaths = () => {
-    const paths = ["*.html.erb", "*", "*.js", "*.json"].map((fileGlob) =>
-      path.join(ablyUiConfigPath, "src", "**", fileGlob),
-    );
-
-    return paths;
-  };
-
+const ablyUITailwindConfig = (extend) => {
+  // Create absolute paths to built assets (core, reset) in AblyUI, set as content source
   const configWithPlugin = {
     ...ablyUIConfig,
-    content: addPurgeContentPaths(),
+    content: [
+      path.join(ablyUiConfigPath, "core", "**", "*.js"),
+      path.join(ablyUiConfigPath, "reset", "**", "*.js"),
+    ],
   };
 
   return extend(configWithPlugin);
 };
 
-module.exports = ablyUItailwindConfig;
+module.exports = ablyUITailwindConfig;
