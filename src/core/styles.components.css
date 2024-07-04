@@ -36,7 +36,11 @@
   }
 
   .ui-section-spacing {
-    @apply py-80 sm:py-96 md:py-128;
+    @apply my-80 sm:my-96 md:my-128;
+  }
+
+  .ui-content-spacing {
+    @apply my-40 sm:my-48 md:my-64;
   }
 
   .ui-divider-spacing {
