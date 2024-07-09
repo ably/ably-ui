@@ -1,7 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import DOMPurify from "dompurify";
-import { nanoid } from "nanoid/non-secure";
-
 import { getRemoteDataStore } from "./remote-data-store.js";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import Icon from "./Icon";
@@ -186,7 +184,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
         ...state,
         ...(flashes?.items ?? []).map((flash) => ({
           ...flash,
-          id: nanoid(),
+          id: Math.random().toString(36).slice(2),
           removed: false,
         })),
       ];
