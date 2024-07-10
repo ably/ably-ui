@@ -121,4 +121,19 @@
   .ui-chip-alt[data-selected]:focus {
     @apply bg-gui-active text-white;
   }
+
+  .ui-btn.ui-btn-disabled,
+  .ui-btn-invert.ui-btn-disabled,
+  .ui-chip.ui-btn-disabled,
+  .ui-chip-alt.ui-btn-disabled {
+    @apply text-mid-grey bg-gui-unavailable cursor-not-allowed pointer-events-none select-none;
+  }
+
+  .ui-btn-secondary.ui-btn-disabled {
+    @apply text-gui-unavailable border-gui-unavailable bg-white cursor-not-allowed pointer-events-none select-none;
+  }
+
+  .ui-btn-secondary-invert.ui-btn-disabled {
+    @apply text-gui-unavailable border-gui-unavailable cursor-not-allowed pointer-events-none select-none;
+  }
 }
