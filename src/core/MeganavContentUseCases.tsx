@@ -203,7 +203,7 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
               className="ui-meganav-media group"
             >
               <p className="ui-meganav-media-heading">
-                Sports, Media & Audience Engagement
+                Sports, Media & Fan Engagement
               </p>
               <p className="ui-meganav-media-copy">
                 Deliver engaging global realtime experiences.
