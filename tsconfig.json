@@ -8,7 +8,8 @@
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true
+    "allowJs": true,
+    "jsx": "react-jsx"
   },
   "include": ["./**/*.{ts,tsx}", "./global.d.ts"],
   "exclude": ["node_modules/**/*", "public"]
