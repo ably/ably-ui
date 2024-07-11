@@ -1,16 +1,13 @@
-import { Meta, Unstyled } from "@storybook/blocks";
-import Icon from "../core/Icon";
+import React from "react";
+import Icon from "../Icon";
 
-<Meta title="Brand/Buttons" />
+export default {
+  title: "CSS/Button",
+};
 
-<Unstyled>
-  <h2 className="ui-text-h1 mb-32">Buttons</h2>
-  <div className="flex flex-wrap">
-    <p className="ui-text-p1 mb-32">Different size buttons can be achieved by using padding and text utilities, see
-      examples below.</p>
-
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16">
-      <h3 className="ui-text-h3">Standard</h3>
+export const Standard = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn">
         Primary button
       </button>
@@ -30,9 +27,12 @@ import Icon from "../core/Icon";
         Unavailable secondary button
       </button>
     </div>
+  ),
+};
 
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16 bg-cool-black">
-      <h3 className="ui-text-h3 text-white">Inverted</h3>
+export const Inverted = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn-invert">
         Primary button
       </button>
@@ -46,9 +46,12 @@ import Icon from "../core/Icon";
         Unavailable secondary button
       </button>
     </div>
+  ),
+};
 
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16">
-      <h3 className="ui-text-h3">With icons</h3>
+export const WithIcons = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn">
         <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
         Primary button with icon
@@ -74,28 +77,58 @@ import Icon from "../core/Icon";
         Unavailable secondary button with icon
       </button>
     </div>
+  ),
+};
 
-  </div>
+export const LinkStyledAsButton = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
+      <a href="#" role="button" className="ui-btn">
+        Link
+      </a>
+      <a href="#" role="button" className="ui-btn ui-btn-disabled">
+        Disabled link
+      </a>
+    </div>
+  ),
+};
 
-  <div className="flex flex-wrap">
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16">
-      <h3 className="ui-text-h3">Extra small</h3>
-      <button type="button" className="ui-btn p-btn-xsmall text-btn4">Primary button</button>
+export const ExtraSmall = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn p-btn-xsmall text-btn4">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon-xsmall" />
+        Primary button
+      </button>
+      <button type="button" className="ui-btn p-btn-xsmall text-btn4">
+        <Icon
+          name="icon-gui-search"
+          size="1rem"
+          additionalCSS="ui-btn-icon-xsmall"
+        />
         Primary button with icon
       </button>
-      <button type="button" className="ui-btn-alt p-btn-xsmall text-btn4">Primary button alternative</button>
-      <button type="button" className="ui-btn-secondary p-btn-xsmall text-btn4">Secondary button</button>
+      <button type="button" className="ui-btn-alt p-btn-xsmall text-btn4">
+        Primary button alternative
+      </button>
+      <button type="button" className="ui-btn-secondary p-btn-xsmall text-btn4">
+        Secondary button
+      </button>
     </div>
+  ),
+};
 
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16">
-      <h3 className="ui-text-h3">Small</h3>
+export const Small = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn p-btn-small text-btn3">
         Primary button
       </button>
       <button type="button" className="ui-btn p-btn-small text-btn3">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon-small" />
+        <Icon
+          name="icon-gui-search"
+          size="1rem"
+          additionalCSS="ui-btn-icon-small"
+        />
         Primary button with icon
       </button>
       <button type="button" className="ui-btn-alt p-btn-small text-btn3">
@@ -105,17 +138,25 @@ import Icon from "../core/Icon";
         Secondary button
       </button>
     </div>
+  ),
+};
 
-    <div className="p-16 mb-16 mr-16 border rounded grid justify-items-start auto-rows-min gap-16">
-      <h3 className="ui-text-h3">Large</h3>
-      <button type="button" className="ui-btn p-btn-large text-btn1">Primary button</button>
+export const Large = {
+  render: () => (
+    <div className="flex flex-col gap-16 max-w-[300px]">
+      <button type="button" className="ui-btn p-btn-large text-btn1">
+        Primary button
+      </button>
       <button type="button" className="ui-btn p-btn-large text-btn1">
         <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
         Primary button with icon
       </button>
-      <button type="button" className="ui-btn-alt p-btn-large text-btn1">Primary button alternative</button>
-      <button type="button" className="ui-btn-secondary p-btn-large text-btn1">Secondary button</button>
+      <button type="button" className="ui-btn-alt p-btn-large text-btn1">
+        Primary button alternative
+      </button>
+      <button type="button" className="ui-btn-secondary p-btn-large text-btn1">
+        Secondary button
+      </button>
     </div>
-
-  </div>
-</Unstyled>
+  ),
+};
