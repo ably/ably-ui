@@ -72,6 +72,17 @@ const MeganavContentProducts = ({
               </p>
             </a>
           </li>
+          <li>
+            <a
+              href={absUrl("/solutions/chat")}
+              className="group ui-meganav-media"
+            >
+              <p className="ui-meganav-media-heading">Chat (Beta)</p>
+              <p className="ui-meganav-media-copy">
+                Deliver highly reliable chat experiences at scale.
+              </p>
+            </a>
+          </li>
         </ul>
       </div>
 
