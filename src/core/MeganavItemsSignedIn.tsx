@@ -1,6 +1,4 @@
 import React from "react";
-
-import MeganavControl from "./MeganavControl";
 import MeganavSearch from "./MeganavSearch";
 import { AbsUrl, MeganavSessionState, MeganavTheme } from "./Meganav";
 
@@ -10,7 +8,7 @@ type MeganavItemsSignedIn = {
   absUrl: AbsUrl;
 };
 
-const truncate = (string, length) => {
+const truncate = (string: string, length: number) => {
   return string?.length && string.length > length
     ? `${string.slice(0, length - 1)}…`
     : string;
@@ -18,7 +16,6 @@ const truncate = (string, length) => {
 
 const MeganavItemsSignedIn = ({
   sessionState,
-  theme,
   absUrl,
 }: MeganavItemsSignedIn) => {
   const accountName = truncate(sessionState.accountName, 20);
@@ -26,14 +23,9 @@ const MeganavItemsSignedIn = ({
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <MeganavControl
-          ariaControls="account-panel"
-          ariaLabel="Account"
-          theme={theme}
-          additionalCSS="mr-0"
-        >
+        <span className="ui-meganav-link h-64 hover:text-cool-black">
           {accountName}
-        </MeganavControl>
+        </span>
       </li>
 
       <li>
