@@ -183,7 +183,7 @@ const MeganavContentDevelopers = ({ absUrl }: { absUrl: AbsUrl }) => (
                 Status
                 <iframe
                   title="Ably status"
-                  src="https://status.ably.com/embed/icon"
+                  src="https://ably.com/status/embed/icon"
                   style={{ backgroundColor: "transparent" }}
                   frameBorder="0"
                   scrolling="no"

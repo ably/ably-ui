@@ -217,7 +217,7 @@ const Footer = ({ paths, urlBase }: FooterProps) => {
               </a>
               <iframe
                 className="w-20 h-20 mb-2"
-                src="https://status.ably.com/embed/icon"
+                src="https://ably.com/status/embed/icon"
                 style={{ backgroundColor: "transparent" }}
                 frameBorder="0"
                 scrolling="no"
