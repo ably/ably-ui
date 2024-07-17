@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { http, HttpResponse } from "msw";
-
 import Meganav from "../Meganav";
 import loadIcons from "../icons.js";
 import logo from "../images/ably-logo.png";
@@ -26,7 +25,18 @@ export default {
     msw: {
       handlers: [
         http.get("/api/me", () => {
-          return HttpResponse.json({});
+          return HttpResponse.json({
+            accountName: "Account Name",
+            signedIn: true,
+            account: {
+              links: {
+                dashboard: {
+                  text: "Dashboard",
+                  href: "/accounts/1",
+                },
+              },
+            },
+          });
         }),
         http.get("/api/blog", () => {
           return HttpResponse.json([
@@ -66,7 +76,7 @@ const Page = () => {
 
     const store = getRemoteDataStore();
 
-    fetchSessionData(store, "/api/me");
+    fetchSessionData(store, "");
     fetchBlogPosts(store, "/api/blog");
   }, []);
 
@@ -83,4 +93,27 @@ const Page = () => {
 
 export const Default = {
   render: () => <Page />,
+};
+
+const PageSignedIn = () => {
+  useEffect(() => {
+    loadIcons();
+    const store = getRemoteDataStore();
+    fetchSessionData(store, "/api/me");
+    fetchBlogPosts(store, "/api/blog");
+  }, []);
+
+  return (
+    <Meganav
+      paths={{
+        logo,
+        ablyStack,
+        awsLogo,
+      }}
+    />
+  );
+};
+
+export const SignedIn = {
+  render: () => <PageSignedIn />,
 };

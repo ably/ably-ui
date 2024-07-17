@@ -23,7 +23,7 @@ const MeganavItemsSignedIn = ({
   return (
     <ul className="hidden md:flex items-center">
       <li className="ui-meganav-item relative">
-        <span className="ui-meganav-link h-64 hover:text-cool-black">
+        <span className="ui-meganav-link h-64 hover:text-cool-black mr-0">
           {accountName}
         </span>
       </li>
