@@ -16,6 +16,7 @@ type MeganavDesktopItems = {
   };
   theme: MeganavTheme;
   absUrl: AbsUrl;
+  statusUrl: string;
 };
 
 const MeganavDesktopItems = ({
@@ -23,6 +24,7 @@ const MeganavDesktopItems = ({
   paths,
   theme,
   absUrl,
+  statusUrl,
 }: MeganavDesktopItems) => (
   <ul className="hidden md:flex" data-id="meganav-items-desktop">
     {MeganavData.panels.map((panel) => {
@@ -47,7 +49,11 @@ const MeganavDesktopItems = ({
             id={panel.id}
             data-id="meganav-panel"
           >
-            <PanelComponent paths={paths} absUrl={absUrl} />
+            <PanelComponent
+              paths={paths}
+              absUrl={absUrl}
+              statusUrl={statusUrl}
+            />
           </div>
         </li>
       );
