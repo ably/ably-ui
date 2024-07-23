@@ -18,6 +18,12 @@ const docsContainer = ({ children, context, ...props }) => {
 
 initialize({
   onUnhandledRequest: "bypass",
+  serviceWorker: {
+    url:
+      location.hostname === "ably.github.io"
+        ? "/ably-ui/mockServiceWorker.js"
+        : "/mockServiceWorker.js",
+  },
 });
 
 const preview = {
