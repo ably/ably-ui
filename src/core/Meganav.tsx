@@ -30,7 +30,7 @@ export type MeganavTheme = {
 export type AbsUrl = (path: string) => string;
 
 export type MeganavPanels = {
-  [index: string]: ({ paths, absUrl }) => ReactNode;
+  [index: string]: ({ paths, absUrl, statusUrl }) => ReactNode;
 };
 
 export type MeganavSessionState = {
@@ -94,6 +94,7 @@ type MeganavProps = {
   loginLink?: string;
   urlBase?: string;
   addSearchApiKey: string;
+  statusUrl: string;
 };
 
 const SignIn = ({ sessionState, theme, loginLink, absUrl }: SignInProps) => {
@@ -155,6 +156,7 @@ const Meganav = ({
   loginLink = "/login",
   urlBase,
   addSearchApiKey,
+  statusUrl,
 }: MeganavProps) => {
   const [sessionState, setSessionState] = useState<MeganavSessionState>();
 
@@ -195,6 +197,7 @@ const Meganav = ({
           paths={paths}
           theme={theme}
           absUrl={absUrl}
+          statusUrl={statusUrl}
         />
 
         {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
@@ -216,6 +219,7 @@ const Meganav = ({
           theme={theme}
           loginLink={loginLink}
           absUrl={absUrl}
+          statusUrl={statusUrl}
         />
       </div>
     </nav>

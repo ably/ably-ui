@@ -2,6 +2,7 @@ import React from "react";
 
 import Icon from "./Icon";
 import _absUrl from "./url-base.js";
+import Status from "./Status.js";
 
 type FooterProps = {
   paths: {
@@ -12,10 +13,13 @@ type FooterProps = {
     fastestImplementation: string;
   };
   urlBase: string;
+  statusUrl: string;
 };
 
-const Footer = ({ paths, urlBase }: FooterProps) => {
+const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
   const absUrl = (path) => _absUrl(path, urlBase);
+
+  // create a react hook that calls the statusUrl and returns the status of the system every minute
 
   return (
     <footer
@@ -215,14 +219,7 @@ const Footer = ({ paths, urlBase }: FooterProps) => {
               >
                 System status
               </a>
-              <iframe
-                className="w-20 h-20 mb-2"
-                src="https://status.ably.com/embed/icon"
-                style={{ backgroundColor: "transparent" }}
-                frameBorder="0"
-                scrolling="no"
-                title="System Status"
-              ></iframe>
+              <Status statusUrl={statusUrl} />
             </li>
           </ul>
         </div>

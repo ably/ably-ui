@@ -24,6 +24,7 @@ type MeganavItemsMobileProps = {
   theme: MeganavTheme;
   loginLink: string;
   absUrl: AbsUrl;
+  statusUrl: string;
 };
 
 const MeganavItemsMobile = ({
@@ -33,6 +34,7 @@ const MeganavItemsMobile = ({
   theme,
   loginLink,
   absUrl,
+  statusUrl,
 }: MeganavItemsMobileProps) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
@@ -144,7 +146,11 @@ const MeganavItemsMobile = ({
                         ariaControls={`${panel.id}-mobile`}
                         displayHr={displayHr}
                       />
-                      <PanelComponent paths={paths} absUrl={absUrl} />
+                      <PanelComponent
+                        paths={paths}
+                        absUrl={absUrl}
+                        statusUrl={statusUrl}
+                      />
                     </div>
                   </li>
                 );

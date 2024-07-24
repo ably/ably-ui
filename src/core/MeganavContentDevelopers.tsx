@@ -2,8 +2,15 @@ import React from "react";
 
 import Icon from "./Icon";
 import { AbsUrl } from "./Meganav";
+import Status from "./Status";
 
-const MeganavContentDevelopers = ({ absUrl }: { absUrl: AbsUrl }) => (
+const MeganavContentDevelopers = ({
+  absUrl,
+  statusUrl,
+}: {
+  absUrl: AbsUrl;
+  statusUrl: string;
+}) => (
   <div className="flex max-w-screen-xl mx-auto">
     <div className="ui-meganav-content-spacer"></div>
     <section className="grid grid-cols-12 ui-grid-gap-x w-full">
@@ -181,14 +188,10 @@ const MeganavContentDevelopers = ({ absUrl }: { absUrl: AbsUrl }) => (
             >
               <p className="ui-meganav-media-heading">
                 Status
-                <iframe
-                  title="Ably status"
-                  src="https://status.ably.com/embed/icon"
-                  style={{ backgroundColor: "transparent" }}
-                  frameBorder="0"
-                  scrolling="no"
-                  className="w-24 h-24 ml-4 border-none pointer-events-none align-middle"
-                ></iframe>
+                <Status
+                  statusUrl={statusUrl}
+                  additionalCSS="ml-4 align-middle"
+                />
               </p>
             </a>
           </li>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { http, HttpResponse } from "msw";
+import { delay, http, HttpResponse } from "msw";
 import Meganav from "../Meganav";
 import loadIcons from "../icons.js";
 import logo from "../images/ably-logo.png";
@@ -16,6 +16,8 @@ import {
   reducerSessionData,
   fetchSessionData,
 } from "../remote-session-data.js";
+
+const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
   title: "JS Components/Meganav",
@@ -58,6 +60,15 @@ export default {
             },
           ]);
         }),
+        http.get(statusUrl, async () => {
+          await delay();
+
+          return HttpResponse.json({
+            status: {
+              indicator: "none",
+            },
+          });
+        }),
       ],
     },
   },
@@ -87,6 +98,7 @@ const Page = () => {
         ablyStack,
         awsLogo,
       }}
+      statusUrl={statusUrl}
     />
   );
 };
@@ -110,6 +122,7 @@ const PageSignedIn = () => {
         ablyStack,
         awsLogo,
       }}
+      statusUrl={statusUrl}
     />
   );
 };
