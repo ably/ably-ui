@@ -171,6 +171,15 @@ const techIcons = [
   "icon-tech-zapier",
 ];
 
+const productIcons = [
+  "icon-product-asset-tracking",
+  "icon-product-chat",
+  "icon-product-liveobjects",
+  "icon-product-livesync",
+  "icon-product-pubsub",
+  "icon-product-spaces",
+];
+
 const renderIcons = (iconSet: string[]) => {
   loadIcons();
 
@@ -212,6 +221,10 @@ export const SocialIcons = {
 
 export const TechIcons = {
   render: () => renderIcons(techIcons),
+};
+
+export const ProductIcons = {
+  render: () => renderIcons(productIcons),
 };
 
 export const Other = {
