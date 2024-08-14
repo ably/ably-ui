@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS/Button ExtraSmall smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn p-btn-xsmall text-btn4"
+  >
+    Primary button
+  </button>
+  <button type="button"
+          class="ui-btn p-btn-xsmall text-btn4"
+  >
+    <svg class=" ui-btn-icon-xsmall"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Primary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn-alt p-btn-xsmall text-btn4"
+  >
+    Primary button alternative
+  </button>
+  <button type="button"
+          class="ui-btn-secondary p-btn-xsmall text-btn4"
+  >
+    Secondary button
+  </button>
+</div>
+`;
+
+exports[`CSS/Button Inverted smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn-invert"
+  >
+    Primary button
+  </button>
+  <button type="button"
+          class="ui-btn-secondary-invert"
+  >
+    Secondary button
+  </button>
+  <button type="button"
+          class="ui-btn-invert"
+          disabled
+  >
+    Unavailable primary button
+  </button>
+  <button type="button"
+          class="ui-btn-secondary-invert"
+          disabled
+  >
+    Unavailable secondary button
+  </button>
+</div>
+`;
+
+exports[`CSS/Button Large smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn p-btn-large text-btn1"
+  >
+    Primary button
+  </button>
+  <button type="button"
+          class="ui-btn p-btn-large text-btn1"
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Primary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn-alt p-btn-large text-btn1"
+  >
+    Primary button alternative
+  </button>
+  <button type="button"
+          class="ui-btn-secondary p-btn-large text-btn1"
+  >
+    Secondary button
+  </button>
+</div>
+`;
+
+exports[`CSS/Button LinkStyledAsButton smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <a href="#"
+     role="button"
+     class="ui-btn"
+  >
+    Link
+  </a>
+  <a href="#"
+     role="button"
+     class="ui-btn ui-btn-disabled"
+  >
+    Disabled link
+  </a>
+</div>
+`;
+
+exports[`CSS/Button Small smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn p-btn-small text-btn3"
+  >
+    Primary button
+  </button>
+  <button type="button"
+          class="ui-btn p-btn-small text-btn3"
+  >
+    <svg class=" ui-btn-icon-small"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Primary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn-alt p-btn-small text-btn3"
+  >
+    Primary button alternative
+  </button>
+  <button type="button"
+          class="ui-btn-secondary p-btn-small text-btn3"
+  >
+    Secondary button
+  </button>
+</div>
+`;
+
+exports[`CSS/Button Standard smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn"
+  >
+    Primary button
+  </button>
+  <button type="button"
+          class="ui-btn-alt"
+  >
+    Primary button alternative
+  </button>
+  <button type="button"
+          class="ui-btn-secondary"
+  >
+    Secondary button
+  </button>
+  <button type="button"
+          class="ui-btn"
+          disabled
+  >
+    Unavailable primary button
+  </button>
+  <button type="button"
+          class="ui-btn-alt"
+          disabled
+  >
+    Unavailable primary button alternative
+  </button>
+  <button type="button"
+          class="ui-btn-secondary"
+          disabled
+  >
+    Unavailable secondary button
+  </button>
+</div>
+`;
+
+exports[`CSS/Button WithIcons smoke-test 1`] = `
+<div class="flex flex-col gap-16 max-w-[300px]">
+  <button type="button"
+          class="ui-btn"
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Primary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn-alt"
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Primary button alternative with icon
+  </button>
+  <button type="button"
+          class="ui-btn-secondary"
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Secondary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn"
+          disabled
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Unavailable primary button with icon
+  </button>
+  <button type="button"
+          class="ui-btn-alt"
+          disabled
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Unavailable primary button alternative with icon
+  </button>
+  <button type="button"
+          class="ui-btn-secondary"
+          disabled
+  >
+    <svg class=" ui-btn-icon"
+         style="width: 1rem; height: 1rem;"
+    >
+      <use xlink:href="#sprite-icon-gui-search">
+      </use>
+    </svg>
+    Unavailable secondary button with icon
+  </button>
+</div>
+`;

@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
+<div id="id-accordion">
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 1
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 1
+    </section>
+  </div>
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 2
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 2
+    </section>
+  </div>
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 3
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 3
+    </section>
+  </div>
+  <div class="border-mid-grey  ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 4
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 4
+    </section>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion Default smoke-test 1`] = `
+<div id="id-accordion">
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 1
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 1
+    </section>
+  </div>
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 2
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 2
+    </section>
+  </div>
+  <div class="border-mid-grey border-b ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 3
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 3
+    </section>
+  </div>
+  <div class="border-mid-grey  ">
+    <button type="button"
+            class="flex w-full px-0 focus:outline-none py-20"
+    >
+      <span class="ui-text-p1 font-bold text-left mr-8">
+        Item 4
+      </span>
+      <span class="ml-auto">
+        <svg class="text-dark-grey "
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <section class="ui-text-p2 transition-all overflow-hidden"
+             style="max-height: 0px; padding-bottom: 0px;"
+    >
+      Content 4
+    </section>
+  </div>
+</div>
+`;

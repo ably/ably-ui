@@ -1,0 +1,2326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-48hrs
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-48hrs">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-ably-channels
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-ably-channels">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-about-ably-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-about-ably-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-api-keys
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-api-keys">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-api
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-api">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-architectural-guidance
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-architectural-guidance">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-asset-tracking-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-asset-tracking-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-authentication
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-authentication">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-avatar-stack
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-avatar-stack">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-browser
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-browser">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-calendar
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-calendar">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-call-mobile
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-call-mobile">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-careers-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-careers-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-case-studies-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-case-studies-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-chat-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-chat-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-chat-stack-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-chat-stack-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-cloud-servers
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-cloud-servers">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-compare-tech-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-compare-tech-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-connection-state-&amp;-recovery
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-connection-state-&amp;-recovery">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-consumer-groups
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-consumer-groups">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-custom-cname
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-custom-cname">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-customers-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-customers-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-dedicated-cluster
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-dedicated-cluster">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-deltas
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-deltas">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-docs-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-docs-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-documentation
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-documentation">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-dynamic-channel-groups
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-dynamic-channel-groups">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-edge-network
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-edge-network">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-elasticity
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-elasticity">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-exactly-once-delivery
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-exactly-once-delivery">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-examples-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-examples-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-fan-out
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-fan-out">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-firehose
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-firehose">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-gdpr
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-gdpr">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-general-comms
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-general-comms">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-granular-permissions
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-granular-permissions">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-hipaa-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-hipaa-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-hipaa
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-hipaa">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-history
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-history">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-integrations-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-integrations-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-it-support-access
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-it-support-access">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-it-support-helpdesk
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-it-support-helpdesk">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-laptop
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-laptop">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-lightbulb-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-lightbulb-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-live-chat
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-live-chat">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-map-pin
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-map-pin">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-message-batching
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-message-batching">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-message-persistence
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-message-persistence">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-message-queues
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-message-queues">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-message
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-message">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-observe-analytics
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-observe-analytics">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-padlock-closed
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-padlock-closed">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-platform
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-platform">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-play
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-play">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-premium-support
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-premium-support">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-privacy-shield-framework
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-privacy-shield-framework">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-push-notifications
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-push-notifications">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-quickstart-guides-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-quickstart-guides-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-resources-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-resources-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-rewind
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-rewind">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-sdks-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-sdks-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-send-received-messages
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-send-received-messages">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-servers
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-servers">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-shopping-cart
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-shopping-cart">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-sla
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-sla">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-soc2-type2-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-soc2-type2-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-soc2-type2
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-soc2-type2">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-subscription-filters
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-subscription-filters">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-system-metadata
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-system-metadata">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-tech-account-comms
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-tech-account-comms">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-tutorials-demos-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-tutorials-demos-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-virtual-events-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-virtual-events-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-live-updates-results-metrics-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-live-updates-results-metrics-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-multi-user-spaces-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-multi-user-spaces-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-ably-badge
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-ably-badge">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-bidirectional-horizontal
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-bidirectional-horizontal">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-bidirectional-vertical
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-bidirectional-vertical">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-down
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-down">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-left
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-left">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-right
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-arrow-up
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-arrow-up">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-burger-menu
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-burger-menu">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-check-circled-fill
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-check-circled-fill">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-check-circled-fill-black
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-check-circled-fill-black">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-check-circled
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-check-circled">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-checklist-checked
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-checklist-checked">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-clock
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-clock">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-close
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-close">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-cross-circled-fill
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-cross-circled-fill">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-cross-circled
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-cross-circled">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-copy
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-copy">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-dash-circled
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-dash-circled">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-disclosure-arrow
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-disclosure-arrow">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-document-generic
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-document-generic">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-enlarge
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-enlarge">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-external-link
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-external-link">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-history
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-history">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-info
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-info">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-link-arrow
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-link-arrow">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-live-chat
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-live-chat">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-minus
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-minus">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-partial
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-partial">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-plus
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-quote-marks-solid
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-quote-marks-solid">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-refresh
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-refresh">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-search
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-tick
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-warning
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-warning">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-link
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-link">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-filter-flow-step-1
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-filter-flow-step-1">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-filter-flow-step-2
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-filter-flow-step-2">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-filter-flow-step-3
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-filter-flow-step-3">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-resources
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-resources">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Icon Other smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      quote
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-quote">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-asset-tracking
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-asset-tracking">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-chat
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-chat">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-liveobjects
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-liveobjects">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-livesync
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-livesync">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-pubsub
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-pubsub">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-spaces
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-spaces">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      discord
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-discord">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      facebook
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-facebook">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      github
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-github">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      glassdoor
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-glassdoor">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      linkedin
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-linkedin">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      twitter
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-twitter">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      google
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-google">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      stackoverflow
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-stackoverflow">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      youtube
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-youtube">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Icon TechIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-amqp10
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-amqp10">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-apache-kafka
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-apache-kafka">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-apachepulsar
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-apachepulsar">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-awskinesis
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-awskinesis">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-awslambda
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-awslambda">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-awssqs
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-awssqs">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-azureservicebus
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-azureservicebus">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-cloudflareworkers
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-cloudflareworkers">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-csharp
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-csharp">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-flutter
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-flutter">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-gcloudfunctions
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-gcloudfunctions">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-go
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-go">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-ifttt
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-ifttt">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-java
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-java">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-javascript
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-net
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-net">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-objectivec
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-objectivec">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-php
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-php">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-python
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-python">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-react
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-react">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-ruby
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-ruby">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-swift
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-swift">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-terraform
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-terraform">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-tech-zapier
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-tech-zapier">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

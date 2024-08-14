@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Status Critical smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status Loading smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status Major smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status Minor smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status None smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status Operational smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;
+
+exports[`JS Components/Status Unknown smoke-test 1`] = `
+<a href="https://status.ably.com"
+   class="inline-block undefined"
+   target="_blank"
+   rel="noreferrer"
+>
+  <span class="flex items-center h-[1.5rem] p-[0.25rem]">
+    <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+    </span>
+  </span>
+</a>
+`;

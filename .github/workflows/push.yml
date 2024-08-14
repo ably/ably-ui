@@ -1,4 +1,4 @@
-name: Run linters
+name: Lint and test
 
 on:
   push:
@@ -10,8 +10,8 @@ on:
       - main
 
 jobs:
-  run-linters:
-    name: Run linters
+  run-linters-and-tests:
+    name: Run linters and tests
     runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: yarn
+        run: yarn && npx playwright install --with-deps
       - name: Lint
         uses: wearerequired/lint-action@v2
         with:
@@ -35,8 +35,5 @@ jobs:
           prettier_dir: src
           prettier_extensions: js,ts,tsx
           prettier_auto_fix: false
-      # Cypress disabled until tests rewritten to use new SB paths
-      # - name: Cypress
-      #   uses: cypress-io/github-action@v6
-      #   with:
-      #     start: yarn start
+      - name: Run Storybook test-runner
+        run: yarn test
