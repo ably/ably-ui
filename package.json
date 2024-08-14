@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "14.3.0",
+  "version": "14.3.1",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset",
-    "build:swc": "swc src/core src/reset -d dist --quiet --copy-files --include-dotfiles --strip-leading-paths --config-file .swc",
+    "build:swc": "swc src/core src/reset -d dist --quiet --copy-files --include-dotfiles --strip-leading-paths --config-file .swc --ignore **/*.stories.tsx,**/*.snap" ,
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build": "yarn build:prebuild && yarn build:swc && node sprites.js && yarn build:cleanup",
     "watch": "yarn build:swc -w",
@@ -57,7 +57,9 @@
     "start": "vite --port 5000",
     "storybook": "yarn build && storybook dev -p 6006",
     "build-storybook": "yarn build && storybook build --quiet -o preview",
-    "test-storybook:ci": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npx http-server preview --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\""
+    "test": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && npx http-server preview --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
+    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && npx http-server preview --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook -u\""
+
   },
   "dependencies": {
     "addsearch-js-client": "^0.8.11",

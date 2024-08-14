@@ -13,14 +13,6 @@ export default {
   tags: ["!autodocs"],
 };
 
-export const Live = {
-  render: () => (
-    <p className="ui-text-p1 inline-block align-middle">
-      System status <Status statusUrl={statusUrl} />
-    </p>
-  ),
-};
-
 export const Loading = {
   parameters: {
     msw: {

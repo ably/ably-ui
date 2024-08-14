@@ -5,9 +5,8 @@
       "syntax": "typescript",
       "tsx": true,
       "decorators": false,
-      "dynamicImport": false
-    }
+      "dynamicImport": false,
+    },
   },
   "minify": true,
-  "exclude": ["stories.tsx"]
 }

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Cookie Message Default smoke-test 1`] = `
+<div class="ui-cookie-message">
+  <p class="ui-text-p2 pr-32">
+    <a href="/privacy"
+       class="underline"
+    >
+      How we use cookies
+    </a>
+    to improve your experience.
+  </p>
+  <button class="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap">
+    Accept and close
+  </button>
+</div>
+`;

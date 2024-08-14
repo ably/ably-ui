@@ -10,8 +10,8 @@ on:
       - main
 
 jobs:
-  run-linters:
-    name: Run linters
+  run-linters-and-tests:
+    name: Run linters and tests
     runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -36,4 +36,4 @@ jobs:
           prettier_extensions: js,ts,tsx
           prettier_auto_fix: false
       - name: Run Storybook test-runner
-        run: yarn build-storybook && yarn test-storybook:ci
+        run: yarn test

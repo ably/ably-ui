@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Featured Link Default smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 "
+   style="--featured-link-icon-size: var(--fs-p2);"
+>
+  Featured link
+  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+</a>
+`;
+
+exports[`JS Components/Featured Link Large smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p1 py-8 "
+   style="--featured-link-icon-size: var(--fs-p1);"
+>
+  Featured link
+  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+</a>
+`;
+
+exports[`JS Components/Featured Link Pink smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-pink-800"
+   style="--featured-link-icon-size: var(--fs-p2);"
+>
+  Featured link
+  <svg class="text-pink-500 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+</a>
+`;
+
+exports[`JS Components/Featured Link Reverse smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 "
+   style="--featured-link-icon-size: var(--fs-p2);"
+>
+  <svg class="text-cool-black align-middle mr-8 relative -top-1 -right-4 transition-all group-hover:right-0 transform rotate-180"
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+  Featured link
+</a>
+`;
+
+exports[`JS Components/Featured Link Small smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p3 py-8 "
+   style="--featured-link-icon-size: var(--fs-p3);"
+>
+  Featured link
+  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+</a>
+`;

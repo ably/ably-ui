@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Logo Default smoke-test 1`] = `
+<a href="/"
+   class="block"
+   style="height: 2.125rem;"
+>
+  <img src="http://127.0.0.1:6006/assets/ably-logo-Dx5aPNGi.png"
+       width="108px"
+       alt="Ably logo"
+  >
+</a>
+`;

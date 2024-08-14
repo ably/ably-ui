@@ -2,9 +2,6 @@ import React, { useEffect } from "react";
 import { delay, http, HttpResponse } from "msw";
 import Meganav from "../Meganav";
 import loadIcons from "../icons.js";
-import logo from "../images/ably-logo.png";
-import ablyStack from "../images/ably-stack.svg";
-import awsLogo from "../images/icon-tech-aws.svg";
 
 import {
   attachStoreToWindow,
@@ -94,10 +91,15 @@ const Page = () => {
   return (
     <Meganav
       paths={{
-        logo,
-        ablyStack,
-        awsLogo,
+        logo: "#",
+        ablyStack: "#",
+        iconSprites: "#",
+        blogThumb1: "#",
+        blogThumb2: "#",
+        blogThumb3: "#",
       }}
+      themeName="white"
+      addSearchApiKey="#"
       statusUrl={statusUrl}
     />
   );
@@ -118,11 +120,16 @@ const PageSignedIn = () => {
   return (
     <Meganav
       paths={{
-        logo,
-        ablyStack,
-        awsLogo,
+        logo: "#",
+        ablyStack: "#",
+        iconSprites: "#",
+        blogThumb1: "#",
+        blogThumb2: "#",
+        blogThumb3: "#",
       }}
       statusUrl={statusUrl}
+      themeName="white"
+      addSearchApiKey="#"
     />
   );
 };

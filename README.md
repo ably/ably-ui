@@ -291,6 +291,8 @@ This will release the packages and update library and create & push the commit &
 
 `ably-ui` uses Storybook's `test-runner`, which on push automatically turns all stories into executable tests, underpinned by Jest and Playright. This means that we don't have to explicitly write tests for stories, though we have the ability to write [https://storybook.js.org/docs/writing-stories/play-function](play functions), which allow us to test more detailed interactions. More information on the capabilities of `test-runner` can be found [https://storybook.js.org/docs/writing-tests/test-runner](here).
 
-You can run the tests by either running a dev instance of Storybook locally and then running `yarn test-storybook`, or by pushing a branch to GitHub.
+Snapshots are also assessed via `test-runner`. To generate new snapshots, run `yarn test:update-snapshots`.
+
+You can run the tests by either running a dev instance of Storybook locally and then running `yarn test`, or by pushing a branch to GitHub.
 
 A related quirk to mention here is that the SWC config has been renamed to `.swc` (away from the default `.swcrc`), as `test-runner` also uses SWC and its config conflicted with ours.
