@@ -4272,9 +4272,9 @@ address@^1.0.1:
   integrity sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==
 
 addsearch-js-client@^0.8.11:
-  version "0.8.12"
-  resolved "https://registry.yarnpkg.com/addsearch-js-client/-/addsearch-js-client-0.8.12.tgz#181ce0c37a4e0e8826eebf88bc844098ddefe7ee"
-  integrity sha512-cc0BD/Zy/V/ENgKlXXO99pS0fafO7nBxYhk6lWcboHESf0OPn4a+M25CroRj9elacQmSGHLqMSAvpt7Wus4+3g==
+  version "0.8.13"
+  resolved "https://registry.yarnpkg.com/addsearch-js-client/-/addsearch-js-client-0.8.13.tgz#4cb96d858a08fff1e2e99d5fe93b660f4d0b23ec"
+  integrity sha512-xeNV7rwKxAwBrtWXpdUKEYP1HtCyFoHj0sZGhH+dl7DSpLClsUTbv+gtLBtg/qQrZOkxIcCMTMIOi/pzPpguJw==
   dependencies:
     axios "^1.7.2"
     es6-promise "^4.2.8"
