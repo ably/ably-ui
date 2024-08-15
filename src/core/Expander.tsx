@@ -4,12 +4,18 @@ type ExpanderProps = {
   heightThreshold?: number;
   className?: string;
   fadeClassName?: string;
+  controlsClassName?: string;
+  controlsOpenedLabel?: string;
+  controlsClosedLabel?: string;
 };
 
 const Expander = ({
   heightThreshold = 200,
   className,
   fadeClassName,
+  controlsClassName,
+  controlsOpenedLabel,
+  controlsClosedLabel,
   children,
 }: PropsWithChildren<ExpanderProps>) => {
   const innerRef = useRef<HTMLDivElement>(null);
@@ -51,9 +57,11 @@ const Expander = ({
           onClick={() => setExpanded(!expanded)}
           onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
           tabIndex={0}
-          className="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light"
+          className={`mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
         >
-          {expanded ? "View less -" : "View all +"}
+          {expanded
+            ? (controlsOpenedLabel ?? "View less -")
+            : (controlsClosedLabel ?? "View all +")}
         </div>
       )}
     </>

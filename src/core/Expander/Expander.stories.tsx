@@ -112,7 +112,7 @@ export const ShortContent = {
   },
 };
 
-export const OverriddenStyles = {
+export const OverriddenContentStyles = {
   render: () => (
     <Expander
       className="bg-neutral-400 p-16 rounded-lg"
@@ -126,6 +126,26 @@ export const OverriddenStyles = {
       description: {
         story:
           "A larger amount of content, with overridden styles for the content wrapper and fader.",
+      },
+    },
+  },
+};
+
+export const OverriddenControls = {
+  render: () => (
+    <Expander
+      controlsClassName="ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
+      controlsOpenedLabel="Away with you, knave."
+      controlsClosedLabel="Give me more!"
+    >
+      {longContentInner}
+    </Expander>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "An expander with overridden styles and labels for the controls.",
       },
     },
   },
