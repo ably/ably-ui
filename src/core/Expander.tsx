@@ -41,6 +41,7 @@ const Expander = ({
     <>
       <div
         style={{ height }}
+        data-testid="expander-container"
         className={`overflow-hidden transition-all relative ${className ?? ""}`}
       >
         {showControls && !expanded && (
@@ -57,6 +58,7 @@ const Expander = ({
           onClick={() => setExpanded(!expanded)}
           onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
           tabIndex={0}
+          data-testid="expander-controls"
           className={`mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
         >
           {expanded

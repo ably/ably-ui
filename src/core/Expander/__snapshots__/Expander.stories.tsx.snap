@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JS Components/Expander LongContent smoke-test 1`] = `
-<div class="overflow-hidden transition-all relative "
+<div data-testid="expander-container"
+     class="overflow-hidden transition-all relative "
      style="height: 200px;"
 >
   <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ">
@@ -97,6 +98,7 @@ exports[`JS Components/Expander LongContent smoke-test 1`] = `
   </div>
 </div>
 <div tabindex="0"
+     data-testid="expander-controls"
      class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
 >
   View all +
@@ -104,7 +106,8 @@ exports[`JS Components/Expander LongContent smoke-test 1`] = `
 `;
 
 exports[`JS Components/Expander OverriddenContentStyles smoke-test 1`] = `
-<div class="overflow-hidden transition-all relative bg-neutral-400 p-16 rounded-lg"
+<div data-testid="expander-container"
+     class="overflow-hidden transition-all relative bg-neutral-400 p-16 rounded-lg"
      style="height: 200px;"
 >
   <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 from-neutral-800">
@@ -200,18 +203,18 @@ exports[`JS Components/Expander OverriddenContentStyles smoke-test 1`] = `
   </div>
 </div>
 <div tabindex="0"
+     data-testid="expander-controls"
      class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
 >
   View all +
 </div>
 `;
 
-exports[`JS Components/Expander OverriddenControls smoke-test 1`] = `
-<div class="overflow-hidden transition-all relative "
-     style="height: 200px;"
+exports[`JS Components/Expander OverriddenControls play-test 1`] = `
+<div data-testid="expander-container"
+     class="overflow-hidden transition-all relative "
+     style="height: 664px;"
 >
-  <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ">
-  </div>
   <div>
     <div>
       <p>
@@ -303,14 +306,16 @@ exports[`JS Components/Expander OverriddenControls smoke-test 1`] = `
   </div>
 </div>
 <div tabindex="0"
+     data-testid="expander-controls"
      class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
 >
-  Give me more!
+  Away with you, knave.
 </div>
 `;
 
 exports[`JS Components/Expander ShortContent smoke-test 1`] = `
-<div class="overflow-hidden transition-all relative "
+<div data-testid="expander-container"
+     class="overflow-hidden transition-all relative "
      style="height: auto;"
 >
   <div>

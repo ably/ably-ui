@@ -1,4 +1,5 @@
 import React from "react";
+import { userEvent, within, expect, waitFor } from "@storybook/test";
 import Expander from "../Expander";
 
 export default {
@@ -141,6 +142,29 @@ export const OverriddenControls = {
       {longContentInner}
     </Expander>
   ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await expect(canvas.getByTestId("expander-container")).toHaveStyle({
+      height: "200px",
+    });
+
+    await waitFor(() =>
+      expect(canvas.getByTestId("expander-controls")).toBeInTheDocument(),
+    );
+
+    await userEvent.click(canvas.getByTestId("expander-controls"));
+
+    await expect(canvas.getByTestId("expander-controls")).toHaveTextContent(
+      "Away with you, knave.",
+    );
+
+    await waitFor(() =>
+      expect(canvas.getByTestId("expander-container")).toHaveStyle({
+        height: "664px",
+      }),
+    );
+  },
   parameters: {
     docs: {
       description: {
