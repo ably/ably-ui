@@ -17,13 +17,13 @@ exports[`JS Components/Customer Logos Default smoke-test 1`] = `
     </li>
     <li class="flex-auto text-center sm:w-1/3 w-1/2">
       <img alt="Mentimeter"
-           src="http://127.0.0.1:6006/assets/cust-logo-mentimeter-mono-pos-Bhmht6S_.svg"
+           src="http://127.0.0.1:6007/assets/cust-logo-mentimeter-mono-pos-Bhmht6S_.svg"
            class="mx-auto"
       >
     </li>
     <li class="flex-auto text-center sm:w-1/3 w-1/2">
       <img alt="Toyota"
-           src="http://127.0.0.1:6006/assets/cust-logo-toyota-mono-pos-CFVGfjvJ.svg"
+           src="http://127.0.0.1:6007/assets/cust-logo-toyota-mono-pos-CFVGfjvJ.svg"
            class="mx-auto"
       >
     </li>
@@ -35,7 +35,7 @@ exports[`JS Components/Customer Logos Default smoke-test 1`] = `
     </li>
     <li class="flex-auto text-center sm:w-1/3 w-1/2">
       <img alt="Australian Open"
-           src="http://127.0.0.1:6006/assets/cust-logo-ausopen-mono-pos-aZQqJWfJ.svg"
+           src="http://127.0.0.1:6007/assets/cust-logo-ausopen-mono-pos-aZQqJWfJ.svg"
            class="mx-auto"
       >
     </li>

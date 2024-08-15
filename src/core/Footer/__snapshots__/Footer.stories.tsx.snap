@@ -410,19 +410,19 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
     </div>
     <div class="col-span-full sm:col-span-1 inline-flex sm:ml-auto sm:items-center">
       <img class="mr-24 h-80"
-           src="http://127.0.0.1:6006/assets/highest-user-adoption-2023-D6lON9TF.svg"
+           src="http://127.0.0.1:6007/assets/highest-user-adoption-2023-D6lON9TF.svg"
            alt="Highest User Adoption 2023"
       >
       <img class="mr-24 h-80"
-           src="http://127.0.0.1:6006/assets/best-support-2023-C-fc97F0.svg"
+           src="http://127.0.0.1:6007/assets/best-support-2023-C-fc97F0.svg"
            alt="Best Support 2023"
       >
       <img class="mr-24 h-80"
-           src="http://127.0.0.1:6006/assets/fastest-implementation-2023-BoLWiJWL.svg"
+           src="http://127.0.0.1:6007/assets/fastest-implementation-2023-BoLWiJWL.svg"
            alt="Fastest Implementation 2023"
       >
       <img class="mr-24 h-80"
-           src="http://127.0.0.1:6006/assets/high-performer-2023-Cc0scMyo.svg"
+           src="http://127.0.0.1:6007/assets/high-performer-2023-Cc0scMyo.svg"
            alt="High Performer 2023"
       >
     </div>

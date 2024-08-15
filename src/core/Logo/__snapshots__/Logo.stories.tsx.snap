@@ -5,7 +5,7 @@ exports[`JS Components/Logo Default smoke-test 1`] = `
    class="block"
    style="height: 2.125rem;"
 >
-  <img src="http://127.0.0.1:6006/assets/ably-logo-Dx5aPNGi.png"
+  <img src="http://127.0.0.1:6007/assets/ably-logo-Dx5aPNGi.png"
        width="108px"
        alt="Ably logo"
   >
