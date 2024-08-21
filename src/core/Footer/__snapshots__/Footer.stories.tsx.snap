@@ -22,7 +22,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
       </div>
       <ul class="grid grid-cols-1">
         <li class="p-menu-row-snug">
-          <a href="/solutions/channels"
+          <a href="/pubsub"
              class="ui-footer-menu-row-link"
           >
             Pub/sub messaging

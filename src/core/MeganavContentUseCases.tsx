@@ -17,7 +17,7 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
           <li>
             <a
-              href={absUrl("/solutions/chat")}
+              href={absUrl("/chat")}
               className="ui-meganav-media-with-image group"
             >
               <Icon name="icon-display-chat-stack-col" size="2.5rem" />
