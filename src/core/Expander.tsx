@@ -1,4 +1,5 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
+import throttle from "lodash.throttle";
 
 type ExpanderProps = {
   heightThreshold?: number;
@@ -20,11 +21,14 @@ const Expander = ({
 }: PropsWithChildren<ExpanderProps>) => {
   const innerRef = useRef<HTMLDivElement>(null);
   const [showControls, setShowControls] = useState(false);
+  const [contentHeight, setContentHeight] = useState<number>(heightThreshold);
   const [height, setHeight] = useState<number | "auto">(heightThreshold);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    const contentHeight = innerRef.current?.clientHeight ?? heightThreshold;
+    if (innerRef.current) {
+      setContentHeight(innerRef.current.clientHeight);
+    }
 
     if (contentHeight < heightThreshold) {
       setHeight("auto");
@@ -35,7 +39,20 @@ const Expander = ({
     }
 
     setShowControls(contentHeight >= heightThreshold);
-  }, [heightThreshold, expanded]);
+  }, [contentHeight, heightThreshold, expanded]);
+
+  useEffect(() => {
+    const onResize = throttle(() => {
+      if (innerRef.current) {
+        setContentHeight(innerRef.current.clientHeight);
+      }
+    }, 250);
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   return (
     <>
