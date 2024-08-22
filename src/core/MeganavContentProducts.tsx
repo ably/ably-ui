@@ -46,10 +46,7 @@ const MeganavContentProducts = ({
           aria-labelledby="meganav-products-panel-list-examples"
         >
           <li>
-            <a
-              href={absUrl("/solutions/channels")}
-              className="group ui-meganav-media"
-            >
+            <a href={absUrl("/pubsub")} className="group ui-meganav-media">
               <p className="ui-meganav-media-heading">Pub/Sub Channels</p>
               <p className="ui-meganav-media-copy">
                 Build infinitely scalable realtime applications.
@@ -73,10 +70,7 @@ const MeganavContentProducts = ({
             </a>
           </li>
           <li>
-            <a
-              href={absUrl("/solutions/chat")}
-              className="group ui-meganav-media"
-            >
+            <a href={absUrl("/chat")} className="group ui-meganav-media">
               <p className="ui-meganav-media-heading">Chat (Beta)</p>
               <p className="ui-meganav-media-copy">
                 Deliver highly reliable chat experiences at scale.

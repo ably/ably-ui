@@ -87,7 +87,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                     aria-labelledby="meganav-products-panel-list-examples"
                 >
                   <li>
-                    <a href="/solutions/channels"
+                    <a href="/pubsub"
                        class="group ui-meganav-media"
                     >
                       <p class="ui-meganav-media-heading">
@@ -123,7 +123,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                     </a>
                   </li>
                   <li>
-                    <a href="/solutions/chat"
+                    <a href="/chat"
                        class="group ui-meganav-media"
                     >
                       <p class="ui-meganav-media-heading">
@@ -262,7 +262,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                 </h3>
                 <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
                   <li>
-                    <a href="/solutions/chat"
+                    <a href="/chat"
                        class="ui-meganav-media-with-image group"
                     >
                       <svg class=" "
@@ -1393,7 +1393,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                             aria-labelledby="meganav-products-panel-list-examples"
                         >
                           <li>
-                            <a href="/solutions/channels"
+                            <a href="/pubsub"
                                class="group ui-meganav-media"
                             >
                               <p class="ui-meganav-media-heading">
@@ -1429,7 +1429,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                             </a>
                           </li>
                           <li>
-                            <a href="/solutions/chat"
+                            <a href="/chat"
                                class="group ui-meganav-media"
                             >
                               <p class="ui-meganav-media-heading">
@@ -1580,7 +1580,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                         </h3>
                         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
                           <li>
-                            <a href="/solutions/chat"
+                            <a href="/chat"
                                class="ui-meganav-media-with-image group"
                             >
                               <svg class=" "
@@ -2510,7 +2510,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                     aria-labelledby="meganav-products-panel-list-examples"
                 >
                   <li>
-                    <a href="/solutions/channels"
+                    <a href="/pubsub"
                        class="group ui-meganav-media"
                     >
                       <p class="ui-meganav-media-heading">
@@ -2546,7 +2546,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                     </a>
                   </li>
                   <li>
-                    <a href="/solutions/chat"
+                    <a href="/chat"
                        class="group ui-meganav-media"
                     >
                       <p class="ui-meganav-media-heading">
@@ -2685,7 +2685,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                 </h3>
                 <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
                   <li>
-                    <a href="/solutions/chat"
+                    <a href="/chat"
                        class="ui-meganav-media-with-image group"
                     >
                       <svg class=" "
@@ -3804,7 +3804,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                             aria-labelledby="meganav-products-panel-list-examples"
                         >
                           <li>
-                            <a href="/solutions/channels"
+                            <a href="/pubsub"
                                class="group ui-meganav-media"
                             >
                               <p class="ui-meganav-media-heading">
@@ -3840,7 +3840,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                             </a>
                           </li>
                           <li>
-                            <a href="/solutions/chat"
+                            <a href="/chat"
                                class="group ui-meganav-media"
                             >
                               <p class="ui-meganav-media-heading">
@@ -3991,7 +3991,7 @@ exports[`JS Components/Meganav SignedIn smoke-test 1`] = `
                         </h3>
                         <ul aria-labelledby="meganav-use-cases-panel-industry-use-cases">
                           <li>
-                            <a href="/solutions/chat"
+                            <a href="/chat"
                                class="ui-meganav-media-with-image group"
                             >
                               <svg class=" "
