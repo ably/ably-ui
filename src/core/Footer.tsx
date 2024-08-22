@@ -17,7 +17,7 @@ type FooterProps = {
 };
 
 const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
-  const absUrl = (path) => _absUrl(path, urlBase);
+  const absUrl = (path: string) => _absUrl(path, urlBase);
 
   // create a react hook that calls the statusUrl and returns the status of the system every minute
 

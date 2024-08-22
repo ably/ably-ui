@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, ReactNode, useRef } from "react";
+import React, { MouseEvent, MouseEventHandler, ReactNode, useRef } from "react";
 import { AbsUrl } from "./Meganav";
 
 type SignOutLinkProps = {
@@ -26,7 +26,7 @@ const SignOutLink = ({
 }: SignOutLinkProps) => {
   const formRef = useRef<HTMLFormElement>(null);
 
-  const onClick = (e) => {
+  const onClick = (e: MouseEvent) => {
     formRef.current?.submit();
     e.preventDefault();
   };

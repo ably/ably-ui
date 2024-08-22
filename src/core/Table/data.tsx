@@ -24,7 +24,7 @@ const Unsupported = () => (
   />
 );
 
-const testRow = (index) => ({
+const testRow = (index: number) => ({
   label: `Label ${index + 1}`,
   cells: [
     { label: "text", content: "Cell content", column: "Free" },

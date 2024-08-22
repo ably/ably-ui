@@ -1,16 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "commonjs",
-    "lib": ["ES2018"],
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "lib": ["ES2018"],
+    "module": "commonjs",
+    "outDir": "types",
+    "paths": {
+      "@ably/ui/*": ["./types/*"]
+    },
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2018",
+    "resolveJsonModule": true
   },
-  "include": ["./**/*.{ts,tsx}", "./global.d.ts"],
-  "exclude": ["node_modules/**/*", "public"]
+  "include": ["src/**/*.tsx"],
+  "exclude": ["node_modules/**/*", "public", "preview", "src/**/*.stories.tsx", "src/core/react-renderer.tsx"]
 }

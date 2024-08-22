@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, ReactNode } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  ReactNode,
+  TouchEvent,
+} from "react";
 import Icon from "./Icon";
 
 interface SliderProps {
@@ -109,11 +115,11 @@ const Slider = ({ children, options }: SliderProps) => {
     timerRef.current = setInterval(next, options?.interval ?? 10000);
   };
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: TouchEvent) => {
     setTouchEndX(e.touches[0].clientX);
   };
 

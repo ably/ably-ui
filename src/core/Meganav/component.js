@@ -110,9 +110,7 @@ const documentScroll = (themeName) => {
   };
 };
 
-export default function Meganav(
-  { themeName, addSearchApiKey } = { themeName: null },
-) {
+export default function Meganav({ themeName, addSearchApiKey }) {
   const controls = MeganavControl();
   const panelOpenControls = MobilePanelOpenClick();
   const panelCloseControls = MobilePanelCloseClick();
@@ -135,7 +133,7 @@ export default function Meganav(
     ].forEach((i) => i.clear());
 
   const teardowns = [
-    documentScroll(themeName),
+    documentScroll(themeName ?? null),
     documentClick(closeAll),
     windowOnBlur(closeAll),
     mobileDropdownControl,

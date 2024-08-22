@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const indicatorClass = (indicator: string) => {
+const indicatorClass = (indicator?: string) => {
   switch (indicator) {
     case "none":
       return "bg-green-500";
@@ -24,10 +24,12 @@ const Status = ({
   statusUrl: string;
   additionalCSS?: string;
 }) => {
-  const [data, setData] = useState<string | null>(null);
+  const [data, setData] = useState<{ status: { indicator: string } } | null>(
+    null,
+  );
 
   useEffect(() => {
-    let interval;
+    let interval: NodeJS.Timeout;
 
     if (statusUrl !== "") {
       const fetchData = async () => {

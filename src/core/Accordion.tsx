@@ -12,7 +12,7 @@ type AccordionRowProps = {
   active: boolean;
   last: boolean;
   name: string;
-  index;
+  index: number;
   children: ReactNode;
   arrowIcon?: boolean;
   setActiveIndex: (index: number) => void;
