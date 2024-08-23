@@ -11,15 +11,14 @@ import MeganavSearchAutocomplete from "./MeganavSearchAutocomplete";
 import {
   AbsUrl,
   MeganavPanels,
+  MeganavPaths,
   MeganavSessionState,
   MeganavTheme,
 } from "./Meganav";
 
 type MeganavItemsMobileProps = {
   panels: MeganavPanels;
-  paths?: {
-    iconSprites: string;
-  };
+  paths?: MeganavPaths;
   sessionState?: MeganavSessionState;
   theme: MeganavTheme;
   loginLink: string;

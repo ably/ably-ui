@@ -4,10 +4,12 @@ import { getRemoteDataStore } from "./remote-data-store.js";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import Icon from "./Icon";
 
+type FlashPropsType = "error" | "success" | "notice" | "info" | "alert";
+
 type FlashProps = {
   id: string;
   removed: boolean;
-  type: "error" | "success" | "notice" | "info" | "alert";
+  type: FlashPropsType;
   content: string;
   removeFlash: (id: string) => void;
 };
@@ -26,7 +28,12 @@ const FLASH_DATA_ID = "ui-flashes";
 const initialState = { items: [] };
 
 const reducerFlashes = {
-  [REDUCER_KEY]: (state = initialState, action) => {
+  [REDUCER_KEY]: (
+    state: {
+      items: FlashProps[];
+    } = initialState,
+    action: { type: string; payload: FlashProps | FlashProps[] },
+  ) => {
     switch (action.type) {
       case "flash/push": {
         const flashes = Array.isArray(action.payload)
@@ -40,7 +47,10 @@ const reducerFlashes = {
   },
 };
 
-const selectFlashes = (store) => store.getState()[REDUCER_KEY];
+// Not cool but redux isn't a long term plan here
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const selectFlashes = (store: any): { items: FlashProps[] } =>
+  store.getState()[REDUCER_KEY];
 
 const FLASH_BG_COLOR = {
   error: "bg-gui-error",
@@ -61,7 +71,7 @@ const FLASH_TEXT_COLOR = {
 const AUTO_HIDE = ["success", "info", "notice"];
 const AUTO_HIDE_TIME = 8000;
 
-const useAutoHide = (type, closeFlash) => {
+const useAutoHide = (type: string, closeFlash: () => void) => {
   const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -117,18 +127,20 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
     ALLOWED_ATTR: ["href", "data-method", "rel"],
   });
 
-  const withIcons = {
+  const withIcons: Record<FlashPropsType, string> = {
     notice: "icon-gui-ably-badge",
     success: "icon-gui-tick",
     error: "icon-gui-warning",
     alert: "icon-gui-warning",
+    info: "",
   };
 
-  const iconColor = {
+  const iconColor: Record<FlashPropsType, string> = {
     notice: "text-cool-black",
     success: "text-cool-black",
     error: "text-white",
     alert: "text-white",
+    info: "",
   };
 
   return (
@@ -175,7 +187,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
 const Flashes = ({ flashes }: FlashesProps) => {
   const [flashesWithIds, setFlashesWithIds] = useState<FlashProps[]>([]);
 
-  const removeFlash = (flashId) =>
+  const removeFlash = (flashId: string) =>
     setFlashesWithIds((items) => items.filter((item) => item.id !== flashId));
 
   useEffect(() => {

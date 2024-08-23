@@ -12,10 +12,12 @@ import { connectState, getRemoteDataStore } from "./remote-data-store";
   - initial state is set in useEffect so the wrapped component needs to handle it's props set to undefined initially
 */
 
-const ConnectStateWrapper = (Component, selectors) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ConnectStateWrapper = (Component: any, selectors: any) => {
   const [state, setState] = useState({});
 
-  const setStateForKey = (key) => (storeState) =>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const setStateForKey = (key: string) => (storeState: any) =>
     setState(() => ({ [key]: storeState }));
 
   useEffect(() => {
@@ -35,7 +37,8 @@ const ConnectStateWrapper = (Component, selectors) => {
     });
   }, []);
 
-  const WrappedComponent = (props) => <Component {...props} {...state} />;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const WrappedComponent = (props: any) => <Component {...props} {...state} />;
 
   return WrappedComponent;
 };

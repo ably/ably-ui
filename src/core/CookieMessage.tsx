@@ -26,7 +26,7 @@ const CookieMessage = ({ cookieId, urlBase }: CookieMessageProps) => {
     setTimeout(() => setHideCookieMessage(true), 500);
   };
 
-  const absUrl = (path) => _absUrl(path, urlBase);
+  const absUrl = (path: string) => _absUrl(path, urlBase);
 
   // Presume the message is hidden by default
   if (hideCookieMessage) return null;

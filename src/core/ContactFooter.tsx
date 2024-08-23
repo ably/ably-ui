@@ -10,7 +10,7 @@ type ContactFooterProps = {
 
 const ContactFooter = ({ urlBase }: ContactFooterProps) => {
   useEffect(() => toggleChatWidget({ dataId: "contact-footer" }), []);
-  const absUrl = (path) => _absUrl(path, urlBase);
+  const absUrl = (path: string) => _absUrl(path, urlBase);
 
   return (
     <div

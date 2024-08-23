@@ -1,10 +1,11 @@
 .bundle
 .DS_Store
 node_modules
-server_killer.rb
 yarn-error.log
 /dist
 /preview
 /core
 /reset
 .idea/*
+types
+index.d.ts

@@ -29,8 +29,26 @@ export type MeganavTheme = {
 
 export type AbsUrl = (path: string) => string;
 
+export type MeganavPaths = {
+  logo: string;
+  iconSprites: string;
+  ablyStack: string;
+  blogThumb1: string;
+  blogThumb2: string;
+  blogThumb3: string;
+  awsLogo?: string;
+};
+
 export type MeganavPanels = {
-  [index: string]: ({ paths, absUrl, statusUrl }) => ReactNode;
+  [index: string]: ({
+    paths,
+    absUrl,
+    statusUrl,
+  }: {
+    paths?: MeganavPaths;
+    absUrl: (path: string) => string;
+    statusUrl: string;
+  }) => ReactNode;
 };
 
 export type MeganavSessionState = {
@@ -67,15 +85,7 @@ type SignInProps = {
 };
 
 type MeganavProps = {
-  paths?: {
-    logo: string;
-    iconSprites: string;
-    ablyStack: string;
-    blogThumb1: string;
-    blogThumb2: string;
-    blogThumb3: string;
-  };
-
+  paths?: MeganavPaths;
   themeName: "white" | "black" | "transparentToWhite";
   notice?: {
     props: {
@@ -168,13 +178,11 @@ const Meganav = ({
 
   useEffect(() => {
     const teardown = MeganavScripts({ themeName, addSearchApiKey });
-    // TODO(jamiehenson): update this when JS assets are converted to TS
-    // @ts-expect-error: teardown parsed as Element from JS file, cannot be coerced into Function form
     return () => teardown();
   }, [sessionState]);
 
   const theme = MeganavData.themes[themeName];
-  const absUrl = (path) => _absUrl(path, urlBase);
+  const absUrl = (path: string) => _absUrl(path, urlBase);
 
   return (
     <nav

@@ -2,18 +2,11 @@ import React from "react";
 
 import MeganavData from "./Meganav/component.json";
 import MeganavControl from "./MeganavControl";
-import { AbsUrl, MeganavPanels, MeganavTheme } from "./Meganav";
+import { AbsUrl, MeganavPanels, MeganavPaths, MeganavTheme } from "./Meganav";
 
 type MeganavDesktopItems = {
   panels: MeganavPanels;
-  paths?: {
-    logo: string;
-    iconSprites: string;
-    ablyStack: string;
-    blogThumb1: string;
-    blogThumb2: string;
-    blogThumb3: string;
-  };
+  paths?: MeganavPaths;
   theme: MeganavTheme;
   absUrl: AbsUrl;
   statusUrl: string;

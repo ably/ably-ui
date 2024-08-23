@@ -19,7 +19,7 @@ type TargetProps = { target?: string; rel?: string };
 // When generating links with target=_blank, we only add `noreferrer` to
 // links that don't start with `/`, so we can continue tracking referrers
 // across our own domains
-const buildTargetAndRel = (url, newWindow) => {
+const buildTargetAndRel = (url: string, newWindow: boolean) => {
   const props: TargetProps = {};
 
   if (newWindow) {

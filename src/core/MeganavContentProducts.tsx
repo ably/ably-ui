@@ -1,13 +1,10 @@
 import React from "react";
 
 import FeaturedLink from "./FeaturedLink";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl, MeganavPaths } from "./Meganav";
 
 type MeganavContentProductsProps = {
-  paths: {
-    ablyStack: string;
-    iconSprites: string;
-  };
+  paths?: MeganavPaths;
   absUrl: AbsUrl;
 };
 
@@ -20,7 +17,7 @@ const MeganavContentProducts = ({
     <section className="grid grid-cols-12 ui-grid-gap-x w-full">
       <div className="col-span-full md:col-span-4 py-24 lg:py-32 px-24 sm:px-32 md:pl-0 md:pr-24 bg-extra-light-grey">
         <div className="flex mb-20">
-          <img src={paths.ablyStack} alt="Ably homepage" />
+          {paths && <img src={paths?.ablyStack} alt="Ably homepage" />}
           <h3 className="ui-meganav-overline ml-24">The Ably Platform</h3>
         </div>
         <p className="ui-text-p2 font-bold mb-24" style={{ maxWidth: "330px" }}>

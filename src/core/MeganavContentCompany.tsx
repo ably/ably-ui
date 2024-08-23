@@ -4,13 +4,11 @@ import MeganavBlogPostsList from "./MeganavBlogPostsList";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import { selectRecentBlogPosts } from "./remote-blogs-posts.js";
 import Icon from "./Icon";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl, MeganavPaths } from "./Meganav";
 
 type MeganavContentCompanyProps = {
   absUrl: AbsUrl;
-  paths: {
-    awsLogo: string;
-  };
+  paths?: MeganavPaths;
 };
 
 const MeganavContentCompany = ({
@@ -80,7 +78,7 @@ const MeganavContentCompany = ({
                 href={absUrl("/aws")}
                 className="ui-meganav-media-with-image group"
               >
-                <img src={paths.awsLogo} alt="AWS logo" />
+                {paths && <img src={paths.awsLogo} alt="AWS logo" />}
                 <div className="flex flex-col justify-center">
                   <p className="ui-meganav-media-heading">Partners</p>
                   <p className="ui-meganav-media-copy">

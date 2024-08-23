@@ -45,8 +45,8 @@ const DropdownMenu = ({ children }: DropdownMenuProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const clickHandler = (e) => {
-      if (ref.current?.contains(e.target)) return;
+    const clickHandler = (e: MouseEvent) => {
+      if (ref.current?.contains(e.target as Node)) return;
       setOpen(false);
     };
 

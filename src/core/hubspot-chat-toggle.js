@@ -26,8 +26,8 @@ function disableBtn(el, text) {
 const WAIT_BETWEEN_RETRIES_MS = 100;
 let MAX_RETRY_COUNT = 30;
 
-export default function toggleChatWidget(params = {}) {
-  const { dataId } = params;
+export default function toggleChatWidget(params) {
+  const { dataId } = params ?? {};
   const container = queryId(dataId);
   const chatButton = queryId("open-chat-widget", container);
   const textEnabled = chatButton.dataset.enabledLabel;
