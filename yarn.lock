@@ -3506,11 +3506,12 @@ acorn@^8.9.0:
   integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==
 
 addsearch-js-client@^0.8.11:
-  version "0.8.13"
-  resolved "https://registry.npmjs.org/addsearch-js-client/-/addsearch-js-client-0.8.13.tgz"
-  integrity sha512-xeNV7rwKxAwBrtWXpdUKEYP1HtCyFoHj0sZGhH+dl7DSpLClsUTbv+gtLBtg/qQrZOkxIcCMTMIOi/pzPpguJw==
+  version "0.8.14"
+  resolved "https://registry.yarnpkg.com/addsearch-js-client/-/addsearch-js-client-0.8.14.tgz#d43498898c3aad57e9d9ed43e2c847cd86aaaff1"
+  integrity sha512-mHGrDp0qCpM8JXndH28OMXqDjlfwvSQ1RwL7KuGxDK+CVaJEVfXbJy9DYlPJJqc4ytQ72JRFh0qpon440XYzyA==
   dependencies:
     axios "^1.7.2"
+    buffer "^6.0.3"
     es6-promise "^4.2.8"
     js-base64 "^3.6.0"
     uuid "^9.0.0"
@@ -4013,6 +4014,14 @@ buffer@^5.5.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
 
 bytes@3.1.2:
   version "3.1.2"
