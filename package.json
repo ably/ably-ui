@@ -40,7 +40,7 @@
     "eslint": "^8.57.0",
     "http-server": "14.1.1",
     "msw-storybook-addon": "^2.0.2",
-    "msw": "2.3.5",
+    "msw": "2.4.1",
     "prettier": "^3.2.5",
     "storybook": "^8.2.9",
     "svg-sprite": "^2.0.4",
