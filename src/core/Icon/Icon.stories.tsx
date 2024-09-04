@@ -230,3 +230,29 @@ export const ProductIcons = {
 export const Other = {
   render: () => renderIcons(otherIcons),
 };
+
+export const IconWithSecondaryColor = {
+  render: () => (
+    <div className="flex items-center justify-center p-16 gap-24">
+      <Icon
+        name="icon-gui-check-circled-fill"
+        color="text-active-orange"
+        size="1.5rem"
+      />
+      <Icon
+        name="icon-gui-check-circled-fill"
+        color="text-active-orange"
+        secondaryColor="text-neutral-1300"
+        size="1.5rem"
+      />
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "By setting the `secondaryColor` prop, you can change the color of the icon's secondary elements, if supported in the underlying SVG. You can set either a CSS variable directly, or use a Tailwind class.\n\nThe right-hand icon here (`icon-gui-check-circled-fill`) has this property applied, resulting in it having a dark checkmark.\n\nTo add support to an existing SVG, replace a `fill` attribute value with `var(--ui-icon-secondary-color)`.",
+      },
+    },
+  },
+};
