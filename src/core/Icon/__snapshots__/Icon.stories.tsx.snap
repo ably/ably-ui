@@ -1244,7 +1244,7 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
-             style="width: 1.5rem; height: 1.5rem;"
+             style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
         >
           <use xlink:href="#sprite-icon-gui-check-circled-fill">
           </use>
@@ -1702,6 +1702,23 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`JS Components/Icon IconWithSecondaryColor smoke-test 1`] = `
+<div class="flex items-center justify-center p-16 gap-24">
+  <svg class="text-active-orange "
+       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
+  >
+    <use xlink:href="#sprite-icon-gui-check-circled-fill">
+    </use>
+  </svg>
+  <svg class="text-active-orange "
+       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-neutral-1300);"
+  >
+    <use xlink:href="#sprite-icon-gui-check-circled-fill">
+    </use>
+  </svg>
 </div>
 `;
 
