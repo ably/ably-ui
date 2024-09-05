@@ -1,45 +1,9 @@
-<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.922852" width="47" height="47" rx="11.5" fill="url(#paint0_linear_3711_3755)"/>
-<rect x="0.5" y="0.922852" width="47" height="47" rx="11.5" stroke="url(#paint1_linear_3711_3755)"/>
-<g clip-path="url(#clip0_3711_3755)">
-<ellipse cx="24" cy="34.756" rx="14.6667" ry="5.66667" fill="url(#paint2_radial_3711_3755)"/>
-<ellipse cx="24" cy="34.0895" rx="9.33333" ry="3.66667" fill="url(#paint3_radial_3711_3755)"/>
-<g filter="url(#filter0_b_3711_3755)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M34.6667 18.87C34.6667 13.1032 29.888 8.42285 24 8.42285C18.1121 8.42285 13.3334 13.1032 13.3334 18.87C13.3334 21.3707 14.3515 23.8198 15.7499 26.0218C17.9018 29.4081 20.9597 33.1411 22.7962 34.6634C23.4936 35.2315 24.5047 35.2315 25.2022 34.6634C27.0386 33.1411 30.0965 29.4081 32.2484 26.0218C33.6486 23.8198 34.6667 21.3707 34.6667 18.87ZM24 23.4229C26.3932 23.4229 28.3333 21.4828 28.3333 19.0895C28.3333 16.6963 26.3932 14.7562 24 14.7562C21.6068 14.7562 19.6667 16.6963 19.6667 19.0895C19.6667 21.4828 21.6068 23.4229 24 23.4229Z" fill="url(#paint4_linear_3711_3755)"/>
-</g>
-</g>
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7099 24.8795C18.4143 21.864 23.375 15.7778 23.375 11.7084C23.375 6.5307 19.1777 2.33337 14 2.33337C8.82233 2.33337 4.625 6.5307 4.625 11.7084C4.625 15.7778 9.5857 21.864 12.2901 24.8795C13.214 25.9098 14.786 25.9098 15.7099 24.8795ZM14 15.4583C16.0711 15.4583 17.75 13.7794 17.75 11.7083C17.75 9.63727 16.0711 7.95833 14 7.95833C11.9289 7.95833 10.25 9.63727 10.25 11.7083C10.25 13.7794 11.9289 15.4583 14 15.4583Z" fill="url(#paint0_linear_4274_7)"/>
 <defs>
-<filter id="filter0_b_3711_3755" x="10.3334" y="5.42285" width="27.3334" height="32.6665" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.5"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3711_3755"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3711_3755" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_3711_3755" x1="7.07692" y1="3.49977" x2="42.7692" y2="45.6536" gradientUnits="userSpaceOnUse">
-<stop stop-color="#202531" stop-opacity="0.75"/>
-<stop offset="1" stop-color="#03020D"/>
+<linearGradient id="paint0_linear_4274_7" x1="14" y1="2.33337" x2="14" y2="25.6523" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B986F8"/>
+<stop offset="1" stop-color="#9951F5"/>
 </linearGradient>
-<linearGradient id="paint1_linear_3711_3755" x1="24" y1="0.422852" x2="24" y2="48.4229" gradientUnits="userSpaceOnUse">
-<stop stop-color="#39414E"/>
-<stop offset="1" stop-color="#39414E" stop-opacity="0"/>
-</linearGradient>
-<radialGradient id="paint2_radial_3711_3755" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 33.8116) rotate(90) scale(6.61111 17.1111)">
-<stop stop-color="#9951F5" stop-opacity="0"/>
-<stop offset="0.64" stop-color="#9951F5" stop-opacity="0.25"/>
-<stop offset="1" stop-color="#9951F5" stop-opacity="0.65"/>
-</radialGradient>
-<radialGradient id="paint3_radial_3711_3755" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 33.4784) rotate(90) scale(4.27778 10.8889)">
-<stop stop-color="#9951F5" stop-opacity="0"/>
-<stop offset="0.64" stop-color="#9951F5" stop-opacity="0.25"/>
-<stop offset="1" stop-color="#9951F5" stop-opacity="0.74902"/>
-</radialGradient>
-<linearGradient id="paint4_linear_3711_3755" x1="31.5556" y1="8.42285" x2="26.8005" y2="35.9476" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF5416"/>
-<stop offset="0.63" stop-color="#FF5416" stop-opacity="0.65"/>
-<stop offset="1" stop-color="#FF5416" stop-opacity="0.25"/>
-</linearGradient>
-<clipPath id="clip0_3711_3755">
-<rect width="32" height="32" fill="white" transform="translate(8 8.42285)"/>
-</clipPath>
 </defs>
 </svg>
