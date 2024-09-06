@@ -1,8 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`JS Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-test 1`] = `
+<div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 bg-pink-800 hover:bg-pink-600 cursor-pointer">
+  <div class="flex gap-12">
+    <svg class=" "
+         style="width: 48px; height: 48px;"
+    >
+      <use xlink:href="#sprite-icon-product-pubsub-encapsulated">
+      </use>
+    </svg>
+    <div class="flex flex-col justify-center ">
+      <p class="ui-text-p3 text-neutral-500 font-medium">
+        Ably
+      </p>
+      <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        PubSub
+      </p>
+    </div>
+  </div>
+  <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    Low-level APIs to build any realtime experience
+  </p>
+</div>
+`;
+
 exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-32">
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -23,7 +47,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
       Low-level APIs to build any realtime experience
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -44,7 +68,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -65,7 +89,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
       Create collaborative environments in a few lines of code
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -86,7 +110,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
       Sync database changes with frontend clients
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -107,7 +131,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
       Simple APIs to build realtime tracking applications
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <div class="flex flex-row items-center gap-4 ">
         <p class="ui-text-p2 text-neutral-500 font-medium">
@@ -132,7 +156,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
 
 exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
 <div class="grid grid-cols-3 gap-32">
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -165,7 +189,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -186,7 +210,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -219,7 +243,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -240,7 +264,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       Sync database changes with frontend clients
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300 ">
     <div class="flex gap-12">
       <svg class=" "
            style="width: 48px; height: 48px;"
@@ -273,7 +297,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <div class="flex flex-row items-center gap-4 ">
         <p class="ui-text-p2 text-neutral-500 font-medium">

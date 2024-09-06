@@ -1,7 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`JS Components/Code CodeWithLines smoke-test 1`] = `
+<div class="hljs overflow-auto flex p-32 "
+     data-id="code"
+>
+  <div>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      1
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      2
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      3
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      4
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      5
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      6
+    </p>
+    <p class="mr-24 font-mono text-neutral-800 ">
+      7
+    </p>
+  </div>
+  <pre lang="javascript">
+    <code class="language-javascript ui-text-code">
+      <span class="hljs-keyword">
+        var
+      </span>
+      ably =
+      <span class="hljs-keyword">
+        new
+      </span>
+      <span class="hljs-title class_">
+        Ably
+      </span>
+      .
+      <span class="hljs-title class_">
+        Realtime
+      </span>
+      (
+      <span class="hljs-string">
+        '1WChTA.mc0Biw:kNfiYG4KiPgmHHgH'
+      </span>
+      );
+      <span class="hljs-keyword">
+        var
+      </span>
+      channel = ably.
+      <span class="hljs-property">
+        channels
+      </span>
+      .
+      <span class="hljs-title function_">
+        get
+      </span>
+      (
+      <span class="hljs-string">
+        'web-pal'
+      </span>
+      );
+      <span class="hljs-comment">
+        // Subscribe to messages on channel
+      </span>
+      channel.
+      <span class="hljs-title function_">
+        subscribe
+      </span>
+      (
+      <span class="hljs-string">
+        'greeting'
+      </span>
+      ,
+      <span class="hljs-keyword">
+        function
+      </span>
+      (
+      <span class="hljs-params">
+        message
+      </span>
+      ) {
+      <span class="hljs-title function_">
+        alert
+      </span>
+      (message.
+      <span class="hljs-property">
+        data
+      </span>
+      );
+});
+    </code>
+  </pre>
+</div>
+`;
+
 exports[`JS Components/Code Java smoke-test 1`] = `
-<div class="hljs overflow-auto p-32 "
+<div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
   <pre lang="java">
@@ -82,7 +180,7 @@ channel.subscribe(
 `;
 
 exports[`JS Components/Code Javascript smoke-test 1`] = `
-<div class="hljs overflow-auto p-32 "
+<div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
   <pre lang="javascript">
@@ -157,7 +255,7 @@ exports[`JS Components/Code Javascript smoke-test 1`] = `
 `;
 
 exports[`JS Components/Code Kotlin smoke-test 1`] = `
-<div class="hljs overflow-auto p-32 "
+<div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
   <pre lang="kotlin">
@@ -212,7 +310,7 @@ exports[`JS Components/Code Kotlin smoke-test 1`] = `
 `;
 
 exports[`JS Components/Code Swift smoke-test 1`] = `
-<div class="hljs overflow-auto p-32 "
+<div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
   <pre lang="swift">
