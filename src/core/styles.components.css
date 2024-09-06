@@ -1,9 +1,10 @@
 @import "./styles/buttons.css";
-@import "./styles/layout.css";
-@import "./styles/text.css";
-@import "./styles/forms.css";
-@import "./styles/toggles.css";
 @import "./styles/dropdowns.css";
+@import "./styles/forms.css";
+@import "./styles/layout.css";
+@import "./styles/shadows.css";
+@import "./styles/text.css";
+@import "./styles/toggles.css";
 
 @layer components {
   .ui-input {

@@ -18,4 +18,12 @@
   .ui-grid-mx {
     @apply mx-24 sm:mx-32 md:mx-40 lg:mx-64;
   }
+
+  .ui-full-borderless-container-override {
+    @apply w-[10000px] ml-[calc(50%-5000px)];
+  }
+
+  .ui-full-container-override {
+    @apply ml-[calc(-50vw+50%)] !px-0 w-screen;
+  }
 }

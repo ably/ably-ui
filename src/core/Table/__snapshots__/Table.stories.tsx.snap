@@ -102,7 +102,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -182,7 +182,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -262,7 +262,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -342,7 +342,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -422,7 +422,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -513,7 +513,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -593,7 +593,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -673,7 +673,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -753,7 +753,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -833,7 +833,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -924,7 +924,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -1004,7 +1004,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -1084,7 +1084,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -1164,7 +1164,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
@@ -1244,7 +1244,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
             <span class="sm:order-0">
               <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
-                   style="width: 1.5rem; height: 1.5rem;"
+                   style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
               >
                 <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>

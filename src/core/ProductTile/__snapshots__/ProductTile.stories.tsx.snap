@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-32">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-pubsub-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          PubSub
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Low-level APIs to build any realtime experience
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-chat-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          Chat
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Rapidly build chat features and roll-out at scale
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-spaces-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          Spaces
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Create collaborative environments in a few lines of code
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-livesync-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          LiveSync
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Sync database changes with frontend clients
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-asset-tracking-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          Asset Tracking
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Simple APIs to build realtime tracking applications
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <div class="flex flex-row items-center gap-4 ">
+        <p class="ui-text-p2 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold ">
+          LiveObjects
+        </p>
+      </div>
+    </div>
+    <div class="-mt-8">
+      <div class="table-cell bg-neutral-1000 rounded-full px-6 py-2 text-neutral-600 tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+        COMING SOON
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Sync application state across multiple devices
+    </p>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
+<div class="grid grid-cols-3 gap-32">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-pubsub-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-800 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+          PubSub
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+      Low-level APIs to build any realtime experience
+    </p>
+    <a href="/docs/products/channels"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 ui-btn-secondary w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       style="--featured-link-icon-size: var(--fs-p2);"
+    >
+      View docs
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+           style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+      >
+        <use xlink:href="#sprite-icon-gui-link-arrow">
+        </use>
+      </svg>
+    </a>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-chat-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          Chat
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Rapidly build chat features and roll-out at scale
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-spaces-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-800 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+          Spaces
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+      Create collaborative environments in a few lines of code
+    </p>
+    <a href="/docs/products/spaces"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 ui-btn-secondary w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       style="--featured-link-icon-size: var(--fs-p2);"
+    >
+      Explore
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+           style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+      >
+        <use xlink:href="#sprite-icon-gui-link-arrow">
+        </use>
+      </svg>
+    </a>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-livesync-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+          LiveSync
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Sync database changes with frontend clients
+    </p>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-300">
+    <div class="flex gap-12">
+      <svg class=" "
+           style="width: 48px; height: 48px;"
+      >
+        <use xlink:href="#sprite-icon-product-asset-tracking-encapsulated">
+        </use>
+      </svg>
+      <div class="flex flex-col justify-center ">
+        <p class="ui-text-p3 text-neutral-800 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+          Asset Tracking
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+      Simple APIs to build realtime tracking applications
+    </p>
+    <a href="/docs/products/asset-tracking"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 ui-btn-secondary w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       style="--featured-link-icon-size: var(--fs-p2);"
+    >
+      Explore
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+           style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+      >
+        <use xlink:href="#sprite-icon-gui-link-arrow">
+        </use>
+      </svg>
+    </a>
+  </div>
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100">
+    <div class="flex gap-12">
+      <div class="flex flex-row items-center gap-4 ">
+        <p class="ui-text-p2 text-neutral-500 font-medium">
+          Ably
+        </p>
+        <p class="ui-text-p2 text-neutral-300 font-bold ">
+          LiveObjects
+        </p>
+      </div>
+    </div>
+    <div class="-mt-8">
+      <div class="table-cell bg-neutral-1000 rounded-full px-6 py-2 text-neutral-600 tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+        COMING SOON
+      </div>
+    </div>
+    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+      Sync application state across multiple devices
+    </p>
+  </div>
+</div>
+`;

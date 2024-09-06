@@ -1,0 +1,31 @@
+name: Review
+
+on:
+  pull_request:
+    types: [labeled]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy-storybook:
+    if: ${{ github.event.label.name == 'review' }}
+    name: Deploy Storybook to GH Pages
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        run: yarn && yarn build-storybook
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: preview
+      - id: deploy
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
