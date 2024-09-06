@@ -47,3 +47,22 @@ export const SelectedProductTiles = {
     },
   },
 };
+
+export const ProductTileWithOverriddenStylesAndClick = {
+  render: () => (
+    <ProductTile
+      key="pubsub"
+      name="pubsub"
+      className="bg-pink-800 hover:bg-pink-600 cursor-pointer"
+      onClick={() => alert("yo congrats on the click")}
+    />
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "`className` is overridden to change the background color and cursor. `onClick` is also overridden to show an alert on click.",
+      },
+    },
+  },
+};

@@ -7,14 +7,23 @@ type ProductTileProps = {
   name: ProductName;
   selected?: boolean;
   currentPage?: boolean;
+  className?: string;
+  onClick?: () => void;
 };
 
-const ProductTile = ({ name, selected, currentPage }: ProductTileProps) => {
+const ProductTile = ({
+  name,
+  selected,
+  currentPage,
+  className,
+  onClick,
+}: ProductTileProps) => {
   const { icon, label, description, link, unavailable } = products[name] ?? {};
 
   return (
     <div
-      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${selected ? "bg-neutral-300" : "bg-neutral-1200 hover:bg-neutral-1100"}`}
+      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${selected ? "bg-neutral-300" : "bg-neutral-1200 hover:bg-neutral-1100"} ${className ?? ""}`}
+      onClick={onClick}
     >
       <div className="flex gap-12">
         {icon ? <Icon name={icon} size="48" /> : null}
