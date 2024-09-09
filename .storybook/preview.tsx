@@ -38,6 +38,12 @@ const preview = {
       theme,
       container: docsContainer,
     },
+    options: {
+      storySort: {
+        method: "alphabetical",
+        order: ["CSS", "JS Components", "Brand"],
+      },
+    },
   },
   loaders: [mswLoader],
   tags: ["autodocs"],

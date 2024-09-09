@@ -10,7 +10,7 @@ type IconProps = {
 };
 
 const convertTailwindClassToVar = (className: string) =>
-  className.replace(/text-([a-z0-9-]+)/gi, "var(--color-$1)");
+  className.replace(/(text|bg)-([a-z0-9-]+)/gi, "var(--color-$2)");
 
 const Icon = ({
   name,

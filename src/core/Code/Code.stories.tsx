@@ -69,3 +69,17 @@ val exampleConstraints = DefaultResolutionConstraints(
 )`,
   },
 };
+
+export const CodeWithLines = {
+  args: {
+    showLines: true,
+    language: "javascript",
+    snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
+var channel = ably.channels.get('web-pal');
+    
+// Subscribe to messages on channel
+channel.subscribe('greeting', function(message) {
+  alert(message.data);
+});`,
+  },
+};

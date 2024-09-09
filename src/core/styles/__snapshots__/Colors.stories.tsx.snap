@@ -1,0 +1,1266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS/Colors GUIColors smoke-test 1`] = `
+<div class="flex flex-wrap gap-24">
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-default-light h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-default-light
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #006edc
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 110, 220)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-hover-light h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-hover-light
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #0862b9
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(8, 98, 185)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-active-light h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-active-light
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #074095
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(7, 64, 149)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-default-dark h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-default-dark
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #4da6ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(77, 166, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-hover-dark h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-hover-dark
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2894ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(40, 148, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-active-dark h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-active-dark
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #0080ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 128, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-blue-focus h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-blue-focus
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #80b9f2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(128, 185, 242)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-unavailable h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-unavailable
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #a8a8a8
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(168, 168, 168)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-success-green h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-success-green
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #11cb24
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(17, 203, 36)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-error-red h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-error-red
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #fb0c0c
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(251, 12, 12)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-focus h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-focus
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #80b9f2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(128, 185, 242)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-focus-outline h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-focus-outline
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #80b9f2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(128, 185, 242)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-gui-visited h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        gui-visited
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #4887c2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(72, 135, 194)
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CSS/Colors NeutralColors smoke-test 1`] = `
+<div class="flex flex-wrap gap-24">
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-000 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-000
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffffff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 255, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f8fafc
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(248, 250, 252)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f4f8fb
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(244, 248, 251)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #edf1f7
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(237, 241, 247)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #e2e7ef
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(226, 231, 239)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #c6ced9
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(198, 206, 217)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #adb6c2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(173, 182, 194)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #89929f
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(137, 146, 159)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #667085
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(102, 112, 133)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #39414e
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(57, 65, 78)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-1000 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-1000
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2b303b
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(43, 48, 59)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-1100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-1100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #202531
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(32, 37, 49)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-1200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-1200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #141924
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(20, 25, 36)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-neutral-1300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        neutral-1300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #03020d
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(3, 2, 13)
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CSS/Colors OrangeColors smoke-test 1`] = `
+<div class="flex flex-wrap gap-24">
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #fff5f1
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 245, 241)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffe3d8
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 227, 216)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffc4ae
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 196, 174)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff9c79
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 156, 121)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff723f
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 114, 63)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff5416
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 84, 22)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff2739
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 39, 57)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #e40000
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(228, 0, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #b82202
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(184, 34, 2)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-1000 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-1000
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #751500
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(117, 21, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-orange-1100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        orange-1100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2a0b00
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(42, 11, 0)
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
+<div class="flex flex-wrap gap-24">
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #fffbef
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 251, 239)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #fff0ba
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 240, 186)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffe27c
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 226, 124)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffd43d
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 212, 61)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f8c100
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(248, 193, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #e8a700
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(232, 167, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ac8600
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(172, 134, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #654f00
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(101, 79, 0)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-yellow-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        yellow-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #291c01
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(41, 28, 1)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f1fff1
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(241, 255, 241)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #b8ffbb
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(184, 255, 187)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #80ff85
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(128, 255, 133)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #08ff13
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(8, 255, 19)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #00e80b
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 232, 11)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #00c008
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 192, 8)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #008e06
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 142, 6)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #005303
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 83, 3)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-green-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        green-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #002a02
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 42, 2)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f1fbff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(241, 251, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #b8eaff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(184, 234, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #80d9ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(128, 217, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #4ad4ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(74, 212, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2cc0ff
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(44, 192, 255)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #00a5ec
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 165, 236)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #0284cd
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(2, 132, 205)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #004b75
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 75, 117)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-blue-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        blue-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #001b2a
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(0, 27, 42)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #f7f2fe
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(247, 242, 254)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #d8bcfb
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(216, 188, 251)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #b986f8
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(185, 134, 248)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #9951f5
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(153, 81, 245)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #7a1bf2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(122, 27, 242)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #5f0bc9
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(95, 11, 201)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #460894
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(70, 8, 148)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2d055e
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(45, 5, 94)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-violet-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        violet-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #130228
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(19, 2, 40)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-100 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-100
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #fff1fc
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 241, 252)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-200 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-200
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ffb8f1
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 184, 241)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-300 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-300
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff80e6
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 128, 230)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-400 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-400
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff47db
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 71, 219)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-500 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-500
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #ff17d2
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(255, 23, 210)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-600 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-600
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #d400ab
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(212, 0, 171)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-700 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-700
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #9c007e
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(156, 0, 126)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-800 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-800
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #630050
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(99, 0, 80)
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+    <div class="bg-pink-900 h-[100px] rounded-t-lg">
+    </div>
+    <div class="p-12 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1">
+        pink-900
+      </p>
+      <p class="ui-text-p3 font-normal text-neutral-800">
+        #2a0022
+      </p>
+      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        rgb(42, 0, 34)
+      </p>
+    </div>
+  </div>
+</div>
+`;
