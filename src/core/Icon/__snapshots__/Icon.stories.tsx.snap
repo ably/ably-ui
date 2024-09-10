@@ -439,6 +439,21 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-display-events-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-events-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-display-exactly-once-delivery
     </code>
     <div class="border inline-flex flex-0">
@@ -507,6 +522,51 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-display-gdpr">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-push-notifications-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-push-notifications-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-data-broadcast-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-data-broadcast-col">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-data-synchronization-col
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-data-synchronization-col">
           </use>
         </svg>
       </div>
@@ -1244,7 +1304,7 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
-             style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
+             style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
         >
           <use xlink:href="#sprite-icon-gui-check-circled-fill">
           </use>
@@ -1708,7 +1768,7 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
 exports[`JS Components/Icon IconWithSecondaryColor smoke-test 1`] = `
 <div class="flex items-center justify-center p-16 gap-24">
   <svg class="text-active-orange "
-       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: white;"
+       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
   >
     <use xlink:href="#sprite-icon-gui-check-circled-fill">
     </use>
@@ -1834,6 +1894,96 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-pubsub-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-pubsub-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-chat-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-chat-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-spaces-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-spaces-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-livesync-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-livesync-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-asset-tracking-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-asset-tracking-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-liveobjects-encapsulated
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-liveobjects-encapsulated">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -1841,14 +1991,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      discord
+      icon-social-discord
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-discord">
+          <use xlink:href="#sprite-icon-social-discord">
           </use>
         </svg>
       </div>
@@ -1856,14 +2006,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      facebook
+      icon-social-facebook
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-facebook">
+          <use xlink:href="#sprite-icon-social-facebook">
           </use>
         </svg>
       </div>
@@ -1871,14 +2021,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      github
+      icon-social-github
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-github">
+          <use xlink:href="#sprite-icon-social-github">
           </use>
         </svg>
       </div>
@@ -1886,14 +2036,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      glassdoor
+      icon-social-glassdoor
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-glassdoor">
+          <use xlink:href="#sprite-icon-social-glassdoor">
           </use>
         </svg>
       </div>
@@ -1901,14 +2051,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      linkedin
+      icon-social-linkedin
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-linkedin">
+          <use xlink:href="#sprite-icon-social-linkedin">
           </use>
         </svg>
       </div>
@@ -1916,14 +2066,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      twitter
+      icon-social-twitter
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-twitter">
+          <use xlink:href="#sprite-icon-social-twitter">
           </use>
         </svg>
       </div>
@@ -1931,14 +2081,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      google
+      icon-social-google
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-google">
+          <use xlink:href="#sprite-icon-social-google">
           </use>
         </svg>
       </div>
@@ -1946,14 +2096,14 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      stackoverflow
+      icon-social-stackoverflow
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-stackoverflow">
+          <use xlink:href="#sprite-icon-social-stackoverflow">
           </use>
         </svg>
       </div>
@@ -1961,14 +2111,29 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
-      youtube
+      icon-social-youtube
     </code>
     <div class="border inline-flex flex-0">
       <div class="flex pi-checkered-bg">
         <svg class="text-cool-black hover:text-active-orange"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-youtube">
+          <use xlink:href="#sprite-icon-social-youtube">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-social-x
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-social-x">
           </use>
         </svg>
       </div>

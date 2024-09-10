@@ -114,12 +114,6 @@ exports[`JS Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class=" transition-colors"
-             style="width: 1.5rem; height: 1.5rem;"
-        >
-          <use xlink:href="#sprite-icon-gui-close">
-          </use>
-        </svg>
       </button>
     </div>
   </div>

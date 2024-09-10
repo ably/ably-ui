@@ -16,14 +16,15 @@ import MeganavContentUseCases from "./MeganavContentUseCases";
 import MeganavContentCompany from "./MeganavContentCompany";
 import MeganavContentDevelopers from "./MeganavContentDevelopers";
 import MeganavSearch from "./MeganavSearch";
+import { ColorClass } from "./styles/colors/types";
 
 export type MeganavTheme = {
-  backgroundColor?: string;
-  textColor?: string;
-  buttonBackgroundColor?: string;
-  buttonTextColor?: string;
-  mobileMenuColor?: string;
-  logoTextColor?: string;
+  backgroundColor?: ColorClass;
+  textColor?: ColorClass;
+  buttonBackgroundColor?: ColorClass;
+  buttonTextColor?: ColorClass;
+  mobileMenuColor: ColorClass;
+  logoTextColor?: ColorClass;
   barShadow?: string;
 };
 
@@ -181,7 +182,7 @@ const Meganav = ({
     return () => teardown();
   }, [sessionState]);
 
-  const theme = MeganavData.themes[themeName];
+  const theme = MeganavData.themes[themeName] as MeganavTheme;
   const absUrl = (path: string) => _absUrl(path, urlBase);
 
   return (

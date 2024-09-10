@@ -326,7 +326,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
               <svg class=" "
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-linkedin">
+                <use xlink:href="#sprite-icon-social-linkedin">
                 </use>
               </svg>
             </a>
@@ -337,7 +337,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
               <svg class=" "
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-github">
+                <use xlink:href="#sprite-icon-social-github">
                 </use>
               </svg>
             </a>
@@ -348,7 +348,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
               <svg class=" "
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-discord">
+                <use xlink:href="#sprite-icon-social-discord">
                 </use>
               </svg>
             </a>
@@ -363,7 +363,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
               <svg class=" "
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-glassdoor">
+                <use xlink:href="#sprite-icon-social-glassdoor">
                 </use>
               </svg>
             </a>
@@ -391,7 +391,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
             <svg class=" "
                  style="width: 1.5rem; height: 1.5rem;"
             >
-              <use xlink:href="#sprite-glassdoor">
+              <use xlink:href="#sprite-icon-social-glassdoor">
               </use>
             </svg>
           </a>
