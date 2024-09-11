@@ -11,11 +11,12 @@ const colorSet = (colors) =>
       key={color}
       className="rounded-lg w-128 ui-shadow-lg-soft flex flex-col"
     >
-      <div className={`${color} h-[100px] rounded-t-lg`} />
+      <div
+        className={`h-[100px] rounded-t-lg`}
+        style={{ backgroundColor: `var(--color-${color})` }}
+      />
       <div className="p-12 flex flex-col flex-1">
-        <p className="ui-text-p2 font-semibold flex-1">
-          {color.replace("bg-", "")}
-        </p>
+        <p className="ui-text-p2 font-semibold flex-1">{color}</p>
         <p className="ui-text-p3 font-normal text-neutral-800">
           {varToValues(color)[0]}
         </p>
@@ -29,7 +30,7 @@ const colorSet = (colors) =>
 const varToValues = (color: string) => {
   // Convert the computed color value in the page to a hex string
   const hex = getComputedStyle(document.body).getPropertyValue(
-    color.replace("bg-", "--color-"),
+    `--color-${color}`,
   );
 
   // Parse the hex string into its RGB components

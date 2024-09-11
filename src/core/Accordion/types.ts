@@ -25,7 +25,7 @@ export type AccordionTheme = (typeof accordionThemes)[number];
 
 export type AccordionThemeColors = {
   bg: ColorClass;
-  hoverBg: ColorClass;
+  hoverBg: string;
   text: ColorClass;
   toggleIconColor: ColorClass;
   selectableBg?: ColorClass;

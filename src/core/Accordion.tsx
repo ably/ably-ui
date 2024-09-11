@@ -34,7 +34,7 @@ export type AccordionProps = {
 const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
   dark: {
     bg: "bg-neutral-1200",
-    hoverBg: "bg-neutral-1100",
+    hoverBg: "hover:bg-neutral-1100",
     text: "text-white",
     toggleIconColor: "text-orange-600",
     selectableBg: "bg-neutral-300",
@@ -42,7 +42,7 @@ const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
   },
   light: {
     bg: "bg-neutral-200",
-    hoverBg: "bg-neutral-300",
+    hoverBg: "hover:bg-neutral-300",
     text: "text-neutral-1300",
     toggleIconColor: "text-neutral-1000",
     selectableBg: "bg-neutral-1200",
@@ -50,7 +50,7 @@ const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
   },
   transparent: {
     bg: "bg-white",
-    hoverBg: "bg-white",
+    hoverBg: "hover:bg-white",
     text: "text-neutral-1000",
     toggleIconColor: "text-dark-grey",
   },
@@ -92,7 +92,7 @@ const AccordionRow = ({
     themeClasses[theme];
 
   const bgClasses: string =
-    (selectable && open && selectableBg) || `${bg} hover:${hoverBg}`;
+    (selectable && open && selectableBg) || `${bg} ${hoverBg}`;
 
   const textClass: ColorClass = (selectable && open && selectableText) || text;
 
