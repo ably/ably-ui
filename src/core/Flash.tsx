@@ -3,6 +3,8 @@ import DOMPurify from "dompurify";
 import { getRemoteDataStore } from "./remote-data-store.js";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import Icon from "./Icon";
+import { ColorClass } from "./styles/colors/types";
+import { IconName } from "./Icon/types";
 
 type FlashPropsType = "error" | "success" | "notice" | "info" | "alert";
 
@@ -127,7 +129,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
     ALLOWED_ATTR: ["href", "data-method", "rel"],
   });
 
-  const withIcons: Record<FlashPropsType, string> = {
+  const withIcons: Record<FlashPropsType, IconName | ""> = {
     notice: "icon-gui-ably-badge",
     success: "icon-gui-tick",
     error: "icon-gui-warning",
@@ -135,7 +137,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
     info: "",
   };
 
-  const iconColor: Record<FlashPropsType, string> = {
+  const iconColor: Record<FlashPropsType, ColorClass | ""> = {
     notice: "text-cool-black",
     success: "text-cool-black",
     error: "text-white",
@@ -155,7 +157,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
       <div
         className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}
       >
-        {withIcons[type] && (
+        {withIcons[type] && iconColor[type] && (
           <Icon
             name={withIcons[type]}
             color={iconColor[type]}
@@ -172,12 +174,14 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
           className="p-0 ml-auto self-start focus:outline-none"
           onClick={closeFlash}
         >
-          <Icon
-            name="icon-gui-close"
-            color={iconColor[type]}
-            size="1.5rem"
-            additionalCSS="transition-colors"
-          />
+          {iconColor[type] && (
+            <Icon
+              name="icon-gui-close"
+              color={iconColor[type]}
+              size="1.5rem"
+              additionalCSS="transition-colors"
+            />
+          )}
         </button>
       </div>
     </div>

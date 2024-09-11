@@ -1,3 +1,5 @@
+import { IconName } from "../Icon/types";
+
 export type ProductName =
   | "pubsub"
   | "chat"
@@ -12,7 +14,7 @@ type Products = Record<
     label: string;
     description: string;
     link?: string;
-    icon?: string;
+    icon?: IconName;
     unavailable?: boolean;
   }
 >;

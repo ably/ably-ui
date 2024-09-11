@@ -8,6 +8,7 @@ import React, {
   Dispatch,
 } from "react";
 import Icon from "./Icon";
+import { IconName } from "./Icon/types";
 
 const DropdownMenuContext = createContext<{
   isOpen: boolean;
@@ -36,7 +37,7 @@ type LinkProps = {
   url: string;
   title: string;
   subtitle: string;
-  iconName: string;
+  iconName: IconName;
   children: ReactNode;
 };
 

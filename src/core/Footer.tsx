@@ -340,21 +340,21 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
                   href="https://www.linkedin.com/company/ably-realtime"
                   title="Ably on LinkedIn"
                 >
-                  <Icon name="linkedin" size="1.5rem" />
+                  <Icon name="icon-social-linkedin" size="1.5rem" />
                 </a>
                 <a
                   className="h-24 pr-24 text-cool-black hover:text-icon-github"
                   href="https://github.com/ably/"
                   title="Ably on Github"
                 >
-                  <Icon name="github" size="1.5rem" />
+                  <Icon name="icon-social-github" size="1.5rem" />
                 </a>
                 <a
                   className="h-24 pr-24 text-cool-black hover:text-icon-discord"
                   href="https://discord.gg/jwBPhEZ9g5"
                   title="Ably on Discord"
                 >
-                  <Icon name="discord" size="1.5rem" />
+                  <Icon name="icon-social-discord" size="1.5rem" />
                 </a>
               </div>
             </div>
@@ -366,7 +366,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
                   className="h-24 text-cool-black hover:text-icon-glassdoor"
                   title="Ably reviews on glassdoor"
                 >
-                  <Icon name="glassdoor" size="1.5rem" />
+                  <Icon name="icon-social-glassdoor" size="1.5rem" />
                 </a>
                 <div className="pl-16 text-menu3 font-sans font-medium">
                   <strong className="block font-medium">
@@ -391,7 +391,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
                 href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
                 title="Ably reviews on glassdoor"
               >
-                <Icon name="glassdoor" size="1.5rem" />
+                <Icon name="icon-social-glassdoor" size="1.5rem" />
               </a>
               <div className="text-menu3 font-sans font-medium">
                 <strong className="block font-medium">

@@ -1,11 +1,13 @@
 import React, { CSSProperties } from "react";
 import { defaultIconSecondaryColor } from "./Icon/secondary-colors";
+import { IconName } from "./Icon/types";
+import { ColorClass } from "./styles/colors/types";
 
 type IconProps = {
-  name: string;
+  name: IconName;
   size?: string;
-  color?: string;
-  secondaryColor?: string;
+  color?: ColorClass;
+  secondaryColor?: ColorClass;
   additionalCSS?: string;
 };
 
@@ -15,13 +17,13 @@ const convertTailwindClassToVar = (className: string) =>
 const Icon = ({
   name,
   size = "0.75rem",
-  color = "",
+  color,
   secondaryColor = defaultIconSecondaryColor(name),
   additionalCSS = "",
   ...additionalAttributes
 }: IconProps) => (
   <svg
-    className={`${color} ${additionalCSS}`}
+    className={`${color ?? ""} ${additionalCSS}`}
     style={
       {
         width: size,
