@@ -304,6 +304,21 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-display-custom
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-custom">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-display-custom-cname
     </code>
     <div class="border inline-flex flex-0">
@@ -642,6 +657,21 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-display-history">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-display-integrations
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-display-integrations">
           </use>
         </svg>
       </div>
