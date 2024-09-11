@@ -61,4 +61,63 @@
     /* color: var(--text-dark-grey); */
     color: #76767c;
   }
+
+  .ui-toggle {
+    @apply h-32 w-[56px] rounded-full relative inline-block;
+  }
+
+  .ui-toggle:has(:disabled) {
+    @apply pointer-events-none;
+  }
+
+  .ui-toggle input {
+    @apply w-0 h-0 opacity-0;
+  }
+
+  .ui-toggle-slider {
+    @apply absolute cursor-pointer inset-0 transition-all bg-neutral-600 rounded-full;
+  }
+
+  .ui-toggle-slider:before {
+    @apply absolute h-[28px] w-[28px] left-2 bottom-2 bg-white rounded-full transition-transform drop-shadow-toggle;
+    content: "";
+  }
+
+  .ui-toggle input:checked + .ui-toggle-slider {
+    @apply bg-orange-600;
+  }
+
+  .ui-toggle input:disabled + .ui-toggle-slider {
+    @apply bg-gui-unavailable;
+  }
+
+  .ui-toggle input:checked + .ui-toggle-slider:before {
+    @apply translate-x-24;
+  }
+
+  .ui-toggle input:disabled + .ui-toggle-slider:before {
+    @apply bg-neutral-500;
+  }
+
+  .ui-input {
+    @apply ui-text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-colors placeholder-neutral-800;
+    @apply hover:border-neutral-800 focus:bg-white focus:outline-gui-focus;
+    @apply max-w-screen-sm;
+  }
+
+  .ui-input-dark {
+    @apply bg-neutral-1200 hover:bg-neutral-1200 focus:bg-neutral-1000 text-neutral-300;
+  }
+
+  .ui-input:disabled {
+    @apply bg-gui-unavailable placeholder-neutral-500 text-neutral-500;
+  }
+
+  .ui-input-dark:disabled {
+    @apply text-neutral-800 placeholder-neutral-800;
+  }
+
+  .ui-input {
+    @apply invalid:border-gui-error-red;
+  }
 }
