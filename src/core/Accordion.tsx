@@ -1,124 +1,159 @@
-import React, { useState, ReactNode, JSX } from "react";
+import React, { useState, ReactNode, useRef, useEffect } from "react";
 import Icon from "./Icon";
-
-type AccordionData = {
-  name: string;
-  content: ReactNode;
-};
+import throttle from "lodash.throttle";
+import type { IconName } from "./Icon/types";
+import type { ColorClass } from "./styles/colors/types";
+import type {
+  AccordionData,
+  AccordionIcons,
+  AccordionOptions,
+  AccordionTheme,
+  AccordionThemeColors,
+} from "./Accordion/types";
 
 type AccordionRowProps = {
-  bottomBorder?: boolean;
-  topBorder?: boolean;
-  active: boolean;
-  last: boolean;
-  name: string;
-  index: number;
   children: ReactNode;
-  arrowIcon?: boolean;
-  setActiveIndex: (index: number) => void;
+  name: string;
+  onClick: () => void;
+  open: boolean;
+  rowIcon?: IconName;
+  theme: AccordionTheme;
+  toggleIcons: AccordionIcons;
+  options?: AccordionOptions;
 };
 
 export type AccordionProps = {
-  data: AccordionData[];
-  arrowIcon?: boolean;
-  topBorder?: boolean;
-  bottomBorder?: boolean;
-  id?: string;
-  autoClose?: boolean;
   className?: string;
+  data: AccordionData[];
+  icons?: AccordionIcons;
+  id?: string;
+  theme?: AccordionTheme;
+  options?: AccordionOptions;
 };
+
+const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
+  dark: {
+    bg: "bg-neutral-1200",
+    hoverBg: "hover:bg-neutral-1100",
+    text: "text-white",
+    toggleIconColor: "text-orange-600",
+    selectableBg: "bg-neutral-300",
+    selectableText: "text-neutral-1300",
+  },
+  light: {
+    bg: "bg-neutral-200",
+    hoverBg: "hover:bg-neutral-300",
+    text: "text-neutral-1300",
+    toggleIconColor: "text-neutral-1000",
+    selectableBg: "bg-neutral-1200",
+    selectableText: "text-white",
+  },
+  transparent: {
+    bg: "bg-white",
+    hoverBg: "hover:bg-white",
+    text: "text-neutral-1000",
+    toggleIconColor: "text-dark-grey",
+  },
+};
+
+const isNonTransparentTheme = (theme: AccordionTheme) =>
+  theme !== "transparent";
 
 const AccordionRow = ({
   name,
   children,
-  index,
-  setActiveIndex,
-  active,
-  topBorder,
-  bottomBorder,
-  last,
-  arrowIcon,
+  onClick,
+  open,
+  rowIcon,
+  options,
+  toggleIcons,
+  theme,
 }: AccordionRowProps) => {
-  let iconActive: JSX.Element, iconInactive: JSX.Element;
-  const handleSetIndex = () => {
-    setActiveIndex(index);
-  };
+  const rowRef = useRef<HTMLDivElement>(null);
 
-  if (arrowIcon) {
-    iconActive = (
-      <Icon
-        name="icon-gui-disclosure-arrow"
-        color="text-dark-grey"
-        size="1.5rem"
-        additionalCSS="-rotate-90"
-      />
-    );
-    iconInactive = (
-      <Icon
-        name="icon-gui-disclosure-arrow"
-        color="text-dark-grey"
-        size="1.5rem"
-        additionalCSS="rotate-90"
-      />
-    );
-  } else {
-    iconActive = (
-      <Icon name="icon-gui-minus" color="text-dark-grey" size="1.5rem" />
-    );
-    iconInactive = (
-      <Icon name="icon-gui-plus" color="text-dark-grey" size="1.5rem" />
-    );
-  }
+  const [contentHeight, setContentHeight] = useState<number>(0);
+
+  useEffect(() => {
+    const handleHeight = throttle(() => {
+      if (rowRef.current) {
+        setContentHeight(rowRef.current.scrollHeight + 16);
+      }
+    }, 250);
+
+    handleHeight();
+
+    window.addEventListener("resize", handleHeight);
+    return () => window.removeEventListener("resize", handleHeight);
+  }, []);
+
+  const { selectable, sticky } = options || {};
+
+  const { text, bg, hoverBg, toggleIconColor, selectableBg, selectableText } =
+    themeClasses[theme];
+
+  const bgClasses: string =
+    (selectable && open && selectableBg) || `${bg} ${hoverBg}`;
+
+  const textClass: ColorClass = (selectable && open && selectableText) || text;
 
   return (
     <div
-      className={`border-mid-grey ${last && !bottomBorder ? "" : "border-b"} ${
-        topBorder ? "border-t" : ""
-      }`}
+      className={`border-mid-grey border-b last:border-none ${isNonTransparentTheme(theme) ? "border-none" : ""}`}
     >
       <button
         type="button"
-        onClick={handleSetIndex}
-        className={`flex w-full px-0 focus:outline-none py-20`}
+        onClick={onClick}
+        className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16" : ""} transition-colors ${bgClasses} ${textClass}`}
       >
-        <span className="ui-text-p1 font-bold text-left mr-8">{name}</span>
-        <span className="ml-auto">{active ? iconActive : iconInactive}</span>
+        {rowIcon ? <Icon name={rowIcon} color={textClass} size="32" /> : null}
+        <span>{name}</span>
+        {!selectable ? (
+          <span className="flex-1 justify-end flex items-center">
+            <Icon
+              name={open ? toggleIcons.open.name : toggleIcons.closed.name}
+              color={toggleIconColor}
+              size="16"
+            />{" "}
+          </span>
+        ) : null}
       </button>
-
-      <section
-        className="ui-text-p2 transition-all overflow-hidden"
-        style={{
-          maxHeight: active ? "500px" : "0",
-          paddingBottom: active ? "1.5rem" : "0",
-        }}
+      <div
+        className={`ui-text-p2 transition-[max-height] duration-500 overflow-hidden ${isNonTransparentTheme(theme) ? "pt-16 px-16" : "px-0"}`}
+        style={{ maxHeight: open ? contentHeight : 0 }}
+        ref={rowRef}
       >
-        {children}
-      </section>
+        <div className="pb-16">{children}</div>
+      </div>
     </div>
   );
 };
 
 const Accordion = ({
   data,
+  theme = "transparent",
   id = "id-accordion",
-  topBorder,
-  bottomBorder,
-  arrowIcon,
-  autoClose,
-  className,
+  className = "",
+  icons = {
+    closed: { name: "icon-gui-plus" },
+    open: { name: "icon-gui-minus" },
+  },
+  options,
 }: AccordionProps) => {
-  const [activeIndexes, setActiveIndexes] = useState<number[]>([]);
+  const { defaultOpenIndexes, autoClose } = options || {};
+  const [openIndexes, setOpenIndexes] = useState<number[]>(
+    defaultOpenIndexes ?? [],
+  );
 
   const handleSetIndex = (index: number) => {
-    const currentIndexIsActive = activeIndexes.includes(index);
+    const currentIndexIsOpen = openIndexes.includes(index);
 
     if (autoClose) {
-      setActiveIndexes(currentIndexIsActive ? [] : [index]);
+      setOpenIndexes(currentIndexIsOpen ? [] : [index]);
     } else {
-      setActiveIndexes(
-        currentIndexIsActive
-          ? activeIndexes.filter((i) => i !== index)
-          : [...activeIndexes, index],
+      setOpenIndexes(
+        currentIndexIsOpen
+          ? openIndexes.filter((i) => i !== index)
+          : [...openIndexes, index],
       );
     }
   };
@@ -130,13 +165,12 @@ const Accordion = ({
           <AccordionRow
             key={item.name}
             name={item.name}
-            arrowIcon={arrowIcon}
-            index={currentIndex}
-            last={data.length === currentIndex + 1}
-            topBorder={topBorder && currentIndex === 0}
-            bottomBorder={bottomBorder && data.length === currentIndex + 1}
-            active={activeIndexes.includes(currentIndex)}
-            setActiveIndex={handleSetIndex}
+            rowIcon={item.icon}
+            open={openIndexes.includes(currentIndex)}
+            onClick={() => handleSetIndex(currentIndex)}
+            toggleIcons={icons}
+            theme={theme}
+            options={options}
           >
             {item.content}
           </AccordionRow>

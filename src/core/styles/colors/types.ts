@@ -126,6 +126,7 @@ const aliasedColors = [
   "gui-default-dark",
   "gui-hover-dark",
   "gui-active-dark",
+  "transparent",
 ] as const;
 
 export const colorNames = {

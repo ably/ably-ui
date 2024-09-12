@@ -1,187 +1,2792 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
-<div id="id-accordion">
-  <div class="border-mid-grey border-b ">
-    <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+<div class="grid sm:grid-cols-3 gap-16 w-full">
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      dark
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
-        Item 1
-      </span>
-      <span class="ml-auto">
-        <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
-          <use xlink:href="#sprite-icon-gui-plus">
-          </use>
-        </svg>
-      </span>
-    </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
-    >
-      Content 1
-    </section>
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="border-mid-grey border-b ">
-    <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      light
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
-        Item 2
-      </span>
-      <span class="ml-auto">
-        <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
-          <use xlink:href="#sprite-icon-gui-plus">
-          </use>
-        </svg>
-      </span>
-    </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
-    >
-      Content 2
-    </section>
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="border-mid-grey border-b ">
-    <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      transparent
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
-        Item 3
-      </span>
-      <span class="ml-auto">
-        <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
         >
-          <use xlink:href="#sprite-icon-gui-plus">
-          </use>
-        </svg>
-      </span>
-    </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
-    >
-      Content 3
-    </section>
-  </div>
-  <div class="border-mid-grey  ">
-    <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
-    >
-      <span class="ui-text-p1 font-bold text-left mr-8">
-        Item 4
-      </span>
-      <span class="ml-auto">
-        <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
         >
-          <use xlink:href="#sprite-icon-gui-plus">
-          </use>
-        </svg>
-      </span>
-    </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
-    >
-      Content 4
-    </section>
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`JS Components/Accordion Default smoke-test 1`] = `
-<div id="id-accordion">
-  <div class="border-mid-grey border-b ">
-    <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+<div class="grid sm:grid-cols-3 gap-16 w-full">
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      dark
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      light
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      transparent
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion LongContent smoke-test 1`] = `
+<div class
+     id="id-accordion"
+>
+  <div class="border-mid-grey border-b last:border-none ">
+    <button type="button"
+            class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+    >
+      <span>
         Item 1
       </span>
-      <span class="ml-auto">
+      <span class="flex-1 justify-end flex items-center">
         <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+             style="width: 16px; height: 16px;"
         >
           <use xlink:href="#sprite-icon-gui-plus">
           </use>
         </svg>
       </span>
     </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+         style="max-height: 0px;"
     >
-      Content 1
-    </section>
+      <div class="pb-16">
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="border-mid-grey border-b ">
+  <div class="border-mid-grey border-b last:border-none ">
     <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+            class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
+      <span>
         Item 2
       </span>
-      <span class="ml-auto">
+      <span class="flex-1 justify-end flex items-center">
         <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+             style="width: 16px; height: 16px;"
         >
           <use xlink:href="#sprite-icon-gui-plus">
           </use>
         </svg>
       </span>
     </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+         style="max-height: 0px;"
     >
-      Content 2
-    </section>
+      <div class="pb-16">
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="border-mid-grey border-b ">
+  <div class="border-mid-grey border-b last:border-none ">
     <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+            class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
+      <span>
         Item 3
       </span>
-      <span class="ml-auto">
+      <span class="flex-1 justify-end flex items-center">
         <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+             style="width: 16px; height: 16px;"
         >
           <use xlink:href="#sprite-icon-gui-plus">
           </use>
         </svg>
       </span>
     </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+         style="max-height: 0px;"
     >
-      Content 3
-    </section>
+      <div class="pb-16">
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="border-mid-grey  ">
+  <div class="border-mid-grey border-b last:border-none ">
     <button type="button"
-            class="flex w-full px-0 focus:outline-none py-20"
+            class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
     >
-      <span class="ui-text-p1 font-bold text-left mr-8">
+      <span>
         Item 4
       </span>
-      <span class="ml-auto">
+      <span class="flex-1 justify-end flex items-center">
         <svg class="text-dark-grey "
-             style="width: 1.5rem; height: 1.5rem;"
+             style="width: 16px; height: 16px;"
         >
           <use xlink:href="#sprite-icon-gui-plus">
           </use>
         </svg>
       </span>
     </button>
-    <section class="ui-text-p2 transition-all overflow-hidden"
-             style="max-height: 0px; padding-bottom: 0px;"
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+         style="max-height: 0px;"
     >
-      Content 4
-    </section>
+      <div class="pb-16">
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="border-mid-grey border-b last:border-none ">
+    <button type="button"
+            class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+    >
+      <span>
+        Item 5
+      </span>
+      <span class="flex-1 justify-end flex items-center">
+        <svg class="text-dark-grey "
+             style="width: 16px; height: 16px;"
+        >
+          <use xlink:href="#sprite-icon-gui-plus">
+          </use>
+        </svg>
+      </span>
+    </button>
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+         style="max-height: 0px;"
+    >
+      <div class="pb-16">
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+        <p class="mb-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-16 w-full">
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      dark
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      light
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      transparent
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
+<div class="h-[400px]">
+  <div class="grid sm:grid-cols-3 gap-16 w-full">
+    <div>
+      <p class="ui-text-p3 mb-16 text-center font-mono">
+        dark
+      </p>
+      <div class="flex-1"
+           id="id-accordion"
+      >
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+          >
+            <span>
+              Item 1
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-orange-600 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+          >
+            <span>
+              Item 2
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-orange-600 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+          >
+            <span>
+              Item 3
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-orange-600 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+          >
+            <span>
+              Item 4
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-orange-600 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+          >
+            <span>
+              Item 5
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-orange-600 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-plus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 0px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="ui-text-p3 mb-16 text-center font-mono">
+        light
+      </p>
+      <div class="flex-1"
+           id="id-accordion"
+      >
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+          >
+            <span>
+              Item 1
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-neutral-1000 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+          >
+            <span>
+              Item 2
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-neutral-1000 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+          >
+            <span>
+              Item 3
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-neutral-1000 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+          >
+            <span>
+              Item 4
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-neutral-1000 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 448px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none border-none">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+          >
+            <span>
+              Item 5
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-neutral-1000 "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-plus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+               style="max-height: 0px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="ui-text-p3 mb-16 text-center font-mono">
+        transparent
+      </p>
+      <div class="flex-1"
+           id="id-accordion"
+      >
+        <div class="border-mid-grey border-b last:border-none ">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+          >
+            <span>
+              Item 1
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-dark-grey "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+               style="max-height: 384px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none ">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+          >
+            <span>
+              Item 2
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-dark-grey "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+               style="max-height: 384px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none ">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+          >
+            <span>
+              Item 3
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-dark-grey "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+               style="max-height: 384px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none ">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+          >
+            <span>
+              Item 4
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-dark-grey "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-minus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+               style="max-height: 384px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-mid-grey border-b last:border-none ">
+          <button type="button"
+                  class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+          >
+            <span>
+              Item 5
+            </span>
+            <span class="flex-1 justify-end flex items-center">
+              <svg class="text-dark-grey "
+                   style="width: 16px; height: 16px;"
+              >
+                <use xlink:href="#sprite-icon-gui-plus">
+                </use>
+              </svg>
+            </span>
+          </button>
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+               style="max-height: 0px;"
+          >
+            <div class="pb-16">
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-16 w-full">
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      dark
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-minus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 448px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      light
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-minus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 448px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      transparent
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-minus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 384px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-16 w-full">
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      dark
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
+        >
+          <svg class="text-white "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-orange-600 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      light
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none border-none">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
+        >
+          <svg class="text-neutral-1300 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-neutral-1000 "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16 px-16"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="ui-text-p3 mb-16 text-center font-mono">
+      transparent
+    </p>
+    <div class="flex-1"
+         id="id-accordion"
+    >
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 1
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 2
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 3
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 4
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-mid-grey border-b last:border-none ">
+        <button type="button"
+                class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12  transition-colors bg-white hover:bg-white text-neutral-1000"
+        >
+          <svg class="text-neutral-1000 "
+               style="width: 32px; height: 32px;"
+          >
+            <use xlink:href="#sprite-icon-gui-document-generic">
+            </use>
+          </svg>
+          <span>
+            Item 5
+          </span>
+          <span class="flex-1 justify-end flex items-center">
+            <svg class="text-dark-grey "
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-plus">
+              </use>
+            </svg>
+          </span>
+        </button>
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden px-0"
+             style="max-height: 0px;"
+        >
+          <div class="pb-16">
+            <p class="mb-16">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
