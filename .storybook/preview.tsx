@@ -6,6 +6,7 @@ import "./styles.css";
 import { themes } from "@storybook/theming";
 import theme, { brandImage, brandImageDark } from "./theme";
 import loadIcons from "../src/core/icons";
+import { Preview } from "@storybook/react";
 
 const docsContainer = ({ children, context, ...props }) => {
   loadIcons();
@@ -27,7 +28,7 @@ initialize({
   },
 });
 
-const preview = {
+const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
