@@ -314,8 +314,10 @@ exports[`CSS/Forms Toggles smoke-test 1`] = `
   </div>
   <div class="flex gap-16 items-center">
     <label class="ui-toggle">
-      <input type="checkbox">
-      <span class="ui-toggle-slider bg-neutral-800">
+      <input type="checkbox"
+             class="peer"
+      >
+      <span class="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800">
       </span>
     </label>
     <p>

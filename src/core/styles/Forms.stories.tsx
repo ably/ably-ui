@@ -223,8 +223,8 @@ export const Toggles = {
       </div>
       <div className="flex gap-16 items-center">
         <label className="ui-toggle">
-          <input type="checkbox" />
-          <span className="ui-toggle-slider bg-neutral-800" />
+          <input type="checkbox" className="peer" />
+          <span className="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800" />
         </label>
         <p>Custom color</p>
       </div>
