@@ -8,6 +8,8 @@ module.exports = {
     "w-1/6",
     { pattern: /^hljs.*/ },
     { pattern: /^ui-.*/ },
+    { pattern: /^text-.*/ },
+    { pattern: /^bg-.*/ },
   ],
   theme: {
     screens: {
@@ -52,6 +54,7 @@ module.exports = {
       code2: ["var(--fs-code2)", "var(--lh-dense)"],
     },
     colors: {
+      "neutral-000": "var(--color-neutral-000)",
       "neutral-100": "var(--color-neutral-100)",
       "neutral-200": "var(--color-neutral-200)",
       "neutral-300": "var(--color-neutral-300)",

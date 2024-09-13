@@ -29,6 +29,12 @@ initialize({
 });
 
 const preview: Preview = {
+  decorators: [
+    (Story) => {
+      loadIcons();
+      return <Story />;
+    },
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -43,7 +49,7 @@ const preview: Preview = {
     options: {
       storySort: {
         method: "alphabetical",
-        order: ["CSS", "JS Components", "Brand"],
+        order: ["CSS", "Features", "JS Components", "Brand"],
       },
     },
     darkMode: {
