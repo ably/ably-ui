@@ -7,6 +7,8 @@ export type ColorName =
 
 type ColorClassPrefixes = "bg" | "text";
 
+export type Theme = "light" | "dark";
+
 export type ColorClass = `${ColorClassPrefixes}-${ColorName}`;
 
 const neutralColors = [
