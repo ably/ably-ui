@@ -1,0 +1,328 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS/Forms Checkboxes smoke-test 1`] = `
+<div class="grid sm:grid-cols-2 gap-16">
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Default
+    </p>
+    <div class="ui-checkbox-p1">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-1"
+             name="checkbox-example-1"
+             class="ui-checkbox-input"
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class=" ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-1"
+             class="ui-checkbox-label-p1"
+      >
+        Subscribe to the Ably newsletter
+      </label>
+    </div>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Disabled
+    </p>
+    <div class="ui-checkbox-p1">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-2"
+             name="checkbox-example-2"
+             class="ui-checkbox-input"
+             disabled
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class=" ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-2"
+             class="ui-checkbox-label-p2"
+      >
+        Subscribe to the Ably newsletter
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CSS/Forms Dropdowns smoke-test 1`] = `
+<div class="grid sm:grid-cols-2 gap-16">
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Default
+    </p>
+    <select class="ui-dropdown">
+      <option value="select"
+              disabled
+              selected
+      >
+        Select language
+      </option>
+      <option value="javascript">
+        Javascript
+      </option>
+      <option value="ruby">
+        Ruby
+      </option>
+      <option value="python">
+        Python
+      </option>
+      <option value="java">
+        Java
+      </option>
+    </select>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Small
+    </p>
+    <select class="ui-dropdown-small">
+      <option value="select"
+              disabled
+              selected
+      >
+        Select language
+      </option>
+      <option value="javascript">
+        Javascript
+      </option>
+      <option value="ruby">
+        Ruby
+      </option>
+      <option value="python">
+        Python
+      </option>
+      <option value="java">
+        Java
+      </option>
+    </select>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Disabled
+    </p>
+    <select class="ui-dropdown"
+            disabled
+    >
+      <option value="select"
+              disabled
+              selected
+      >
+        Select language
+      </option>
+      <option value="javascript">
+        Javascript
+      </option>
+      <option value="ruby">
+        Ruby
+      </option>
+      <option value="python">
+        Python
+      </option>
+      <option value="java">
+        Java
+      </option>
+    </select>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Synthetic
+    </p>
+    <div class="ui-dropdown max-w-256"
+         tabindex="0"
+    >
+      Select language
+    </div>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Dark mode
+    </p>
+    <div class="bg-neutral-1300 p-24">
+      <select class="ui-dropdown ui-dropdown-dark">
+        <option value="select"
+                disabled
+                selected
+        >
+          Select language
+        </option>
+        <option value="javascript">
+          Javascript
+        </option>
+        <option value="ruby">
+          Ruby
+        </option>
+        <option value="python">
+          Python
+        </option>
+        <option value="java">
+          Java
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CSS/Forms Inputs smoke-test 1`] = `
+<div class="grid sm:grid-cols-2 gap-16">
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Default
+    </p>
+    <input type="search"
+           class="ui-input"
+           placeholder="Light mode input"
+           autocomplete="off"
+    >
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Default (dark)
+    </p>
+    <input type="search"
+           class="ui-input ui-input-dark"
+           placeholder="Dark mode input"
+           autocomplete="off"
+    >
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Disabled
+    </p>
+    <input type="search"
+           class="ui-input disabled"
+           placeholder="Light mode input"
+           autocomplete="off"
+           disabled
+    >
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Disabled (dark)
+    </p>
+    <input type="search"
+           class="ui-input ui-input-dark"
+           placeholder="Dark mode input"
+           autocomplete="off"
+           disabled
+    >
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Invalid
+    </p>
+    <input type="search"
+           class="ui-input disabled"
+           placeholder="Light mode input"
+           autocomplete="off"
+           required
+    >
+    <p class="ui-text-p3 text-gui-error-red mt-8">
+      Oof, what an input
+    </p>
+  </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      Invalid (dark)
+    </p>
+    <input type="search"
+           class="ui-input ui-input-dark"
+           placeholder="Dark mode input"
+           autocomplete="off"
+           required
+    >
+    <p class="ui-text-p3 text-gui-error-red mt-8">
+      Oof, what an input
+    </p>
+  </div>
+</div>
+`;
+
+exports[`CSS/Forms Textareas smoke-test 1`] = `
+<div class="mb-40">
+  <label class="ui-text-p1 block"
+         for="example-text-area"
+  >
+  </label>
+  <textarea id="example-text-area"
+            class="ui-textarea"
+            rows="2"
+            placeholder="The <textarea> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form."
+  >
+  </textarea>
+  <p class="ui-text-p3 text-dark-grey">
+    Example of additional text beneath the textarea.
+  </p>
+</div>
+`;
+
+exports[`CSS/Forms Toggles smoke-test 1`] = `
+<div class="grid sm:grid-cols-2 gap-16">
+  <div class="flex gap-16 items-center">
+    <label class="ui-toggle">
+      <input type="checkbox">
+      <span class="ui-toggle-slider">
+      </span>
+    </label>
+    <p>
+      Default
+    </p>
+  </div>
+  <div class="flex gap-16 items-center">
+    <label class="ui-toggle">
+      <input type="checkbox"
+             checked
+      >
+      <span class="ui-toggle-slider">
+      </span>
+    </label>
+    <p>
+      Pre-checked
+    </p>
+  </div>
+  <div class="flex gap-16 items-center">
+    <label class="ui-toggle">
+      <input type="checkbox"
+             disabled
+      >
+      <span class="ui-toggle-slider">
+      </span>
+    </label>
+    <p>
+      Disabled
+    </p>
+  </div>
+  <div class="flex gap-16 items-center">
+    <label class="ui-toggle">
+      <input type="checkbox"
+             class="peer"
+      >
+      <span class="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800">
+      </span>
+    </label>
+    <p>
+      Custom color
+    </p>
+  </div>
+</div>
+`;

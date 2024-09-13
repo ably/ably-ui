@@ -5,25 +5,25 @@ exports[`JS Components/Code CodeWithLines smoke-test 1`] = `
      data-id="code"
 >
   <div>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       1
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       2
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       3
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       4
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       5
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       6
     </p>
-    <p class="mr-24 font-mono text-neutral-800 ">
+    <p class="mr-24 font-mono text-right text-neutral-800 ">
       7
     </p>
   </div>

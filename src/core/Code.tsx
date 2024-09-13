@@ -40,7 +40,7 @@ const Code = ({
         <div>
           {[...Array(lineCount)].map((_, i) => (
             <p
-              className={`mr-24 font-mono text-neutral-800 ${lineCSS ?? ""}`}
+              className={`mr-24 font-mono text-right text-neutral-800 ${lineCSS ?? ""}`}
               key={i}
             >
               {i + 1}

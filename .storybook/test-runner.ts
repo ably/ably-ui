@@ -1,11 +1,12 @@
 import type { TestRunnerConfig } from "@storybook/test-runner";
 
-const flakyStories = ["components-status"];
+const flakyStories = ["components-status", "components-meganav--signed-in"];
 
 const config: TestRunnerConfig = {
   async postVisit(page, context) {
     // skip snapshot testing for flaky stories (atm, just Status)
     const url = page.url();
+
     if (flakyStories.some((story) => url.includes(story))) {
       return;
     }

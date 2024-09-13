@@ -2422,6 +2422,11 @@
     recast "^0.23.5"
     tiny-invariant "^1.3.1"
 
+"@storybook/components@^8.0.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-8.3.0.tgz#45c39e5b6768efafe8e7dfd946c01617da59ae1a"
+  integrity sha512-SO/iTkmWp3aYCIy8DEhRMoOn6K7lcKTPNC/YjTvOFFzwq/CLq86WNqz6aX+wV5n6MvWTs7evSwMoz7lp4Lc4sw==
+
 "@storybook/components@^8.2.9":
   version "8.2.9"
   resolved "https://registry.npmjs.org/@storybook/components/-/components-8.2.9.tgz"
@@ -2469,6 +2474,11 @@
   dependencies:
     "@storybook/csf" "^0.1.7"
     ts-dedent "^2.0.0"
+
+"@storybook/core-events@^8.0.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-8.3.0.tgz#ef0cde01417478837e17e84ed53eda35237fe810"
+  integrity sha512-otjtIFMp0pZitxZIadA9ELRKHc2g4bPwakD0bEBXImyolTHyh/jI4YINSIO9KJHWP6FSEFBUM/cY8jbickqffQ==
 
 "@storybook/core@8.2.9":
   version "8.2.9"
@@ -2541,6 +2551,11 @@
     "@storybook/global" "^5.0.0"
     "@vitest/utils" "^1.3.1"
     util "^0.12.4"
+
+"@storybook/manager-api@^8.0.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.3.0.tgz#0c3e33e3091be2122670b61ba601893c19d5dd47"
+  integrity sha512-5WBLEFHpe4H+9vZZLjNh7msIkyl9MPt4/C2nI+MXKZyU55xBBgiAy4fcD9aj02PcbhyR4JhLqbqmdeBe5Xafeg==
 
 "@storybook/manager-api@^8.2.9":
   version "8.2.9"
@@ -2665,6 +2680,11 @@
     "@vitest/expect" "1.6.0"
     "@vitest/spy" "1.6.0"
     util "^0.12.4"
+
+"@storybook/theming@^8.0.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-8.3.0.tgz#96edd021c1cffd030974747a5a645bc9ef0f8dbd"
+  integrity sha512-lJCarAzswZvUgBt/o1LMJp+07Io5G2VI1+Fw+bgn+92kRD8otCFwuMZIy0u7cEjHiEGqGnpzThlIki6vFjEXeA==
 
 "@storybook/theming@^8.2.9":
   version "8.2.9"
@@ -9194,6 +9214,20 @@ statuses@2.0.1, statuses@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
+
+storybook-dark-mode@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-4.0.2.tgz#2536d1a229ac050172d37aa50bd9f6f7cdad0425"
+  integrity sha512-zjcwwQ01R5t1VsakA6alc2JDIRVtavryW8J3E3eKLDIlAMcvsgtpxlelWkZs2cuNspk6Z10XzhQVrUWtYc3F0w==
+  dependencies:
+    "@storybook/components" "^8.0.0"
+    "@storybook/core-events" "^8.0.0"
+    "@storybook/global" "^5.0.0"
+    "@storybook/icons" "^1.2.5"
+    "@storybook/manager-api" "^8.0.0"
+    "@storybook/theming" "^8.0.0"
+    fast-deep-equal "^3.1.3"
+    memoizerific "^1.11.3"
 
 storybook@^8.2.9:
   version "8.2.9"
