@@ -181,7 +181,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       View docs
-      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
            style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
       >
         <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -235,7 +235,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore
-      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
            style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
       >
         <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -289,7 +289,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore
-      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+      <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
            style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
       >
         <use xlink:href="#sprite-icon-gui-link-arrow">

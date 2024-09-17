@@ -8,8 +8,11 @@ module.exports = {
     "w-1/6",
     { pattern: /^hljs.*/ },
     { pattern: /^ui-.*/ },
-    { pattern: /^text-.*/ },
-    { pattern: /^bg-.*/ },
+    {
+      pattern:
+        /^(text|bg|from|to)-(neutral|orange|yellow|green|blue|violet|pink)-[\d]{1,2}00.*/,
+      variants: ["hover", "focus"],
+    },
   ],
   theme: {
     screens: {
@@ -287,19 +290,14 @@ module.exports = {
       "widen-0.15": "var(--ls-widen-0_15)",
       "widen-0.16": "var(--ls-widen-0_16)",
     },
-    borderRadius: {
-      none: "0",
-      sm: "0.125rem",
-      md: "0.1875rem",
-      lg: "0.5rem",
-      xl: "0.75rem",
-      full: "9999px",
-      DEFAULT: "0.375rem",
-    },
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
         "gradient-hot-pink": "var(--gradient-hot-pink)",
+      },
+      borderRadius: {
+        md: "0.1875rem",
+        DEFAULT: "0.375rem",
       },
       transitionProperty: {
         input: "background-color, box-shadow",

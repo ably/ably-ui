@@ -69,7 +69,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                    style="--featured-link-icon-size: var(--fs-p2);"
                 >
                   Explore how it works
-                  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                   >
                     <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -211,7 +211,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                    style="--featured-link-icon-size: var(--fs-p3);"
                 >
                   Explore Four Pillars of Dependability
-                  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                   >
                     <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -762,7 +762,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                    style="--featured-link-icon-size: var(--fs-p3);"
                 >
                   More from our Blog
-                  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                   >
                     <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1174,7 +1174,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                    style="--featured-link-icon-size: var(--fs-p2);"
                 >
                   Support
-                  <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                   >
                     <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1375,7 +1375,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                            style="--featured-link-icon-size: var(--fs-p2);"
                         >
                           Explore how it works
-                          <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                          <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                                style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                           >
                             <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1517,7 +1517,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                            style="--featured-link-icon-size: var(--fs-p3);"
                         >
                           Explore Four Pillars of Dependability
-                          <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                          <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                                style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                           >
                             <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -2093,7 +2093,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                            style="--featured-link-icon-size: var(--fs-p3);"
                         >
                           More from our Blog
-                          <svg class="text-cool-black align-middle ml-8 relative -top-1 -left-4 transition-all group-hover:left-0"
+                          <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                                style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                           >
                             <use xlink:href="#sprite-icon-gui-link-arrow">

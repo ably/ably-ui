@@ -5,11 +5,14 @@ export type ColorName =
   | (typeof guiColors)[number]
   | (typeof aliasedColors)[number];
 
-type ColorClassPrefixes = "bg" | "text";
+type ColorClassVariants = "" | "hover:" | "focus:";
+
+type ColorClassPrefixes = "bg" | "text" | "from" | "to";
 
 export type Theme = "light" | "dark";
 
-export type ColorClass = `${ColorClassPrefixes}-${ColorName}`;
+export type ColorClass =
+  `${ColorClassVariants}${ColorClassPrefixes}-${ColorName}`;
 
 const neutralColors = [
   "neutral-000",
