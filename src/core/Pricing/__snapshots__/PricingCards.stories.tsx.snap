@@ -287,7 +287,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
 `;
 
 exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
-<div class="p-32">
+<div class=" p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
       <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
@@ -1057,7 +1057,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
 `;
 
 exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
-<div class="p-32">
+<div class=" p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
       <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">

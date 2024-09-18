@@ -1,5 +1,5 @@
 import React from "react";
-import PricingCards from "./PricingCards";
+import PricingCards, { PricingCardsProps } from "./PricingCards";
 import { consumptionData, planData } from "./data";
 
 export default {
@@ -16,38 +16,26 @@ export default {
   },
 };
 
+const Template = ({ data, theme = "dark", delimiter }: PricingCardsProps) => (
+  <div className={`${theme === "dark" ? "bg-neutral-1300" : ""} p-32`}>
+    <PricingCards data={data} theme={theme} delimiter={delimiter} />
+  </div>
+);
+
 export const PlansDarkMode = {
-  render: () => (
-    <div className="bg-neutral-1300 p-32">
-      <PricingCards data={planData} />
-    </div>
-  ),
+  render: () => <Template data={planData} />,
 };
 
 export const PlansLightMode = {
-  render: () => (
-    <div className="p-32">
-      <PricingCards data={planData} theme="light" />
-    </div>
-  ),
+  render: () => <Template data={planData} theme="light" />,
 };
 
 export const ConsumptionDarkMode = {
-  render: () => (
-    <div className="bg-neutral-1300 p-32">
-      <PricingCards data={consumptionData} delimiter="icon-gui-plus" />
-    </div>
-  ),
+  render: () => <Template data={consumptionData} delimiter="icon-gui-plus" />,
 };
 
 export const ConsumptionLightMode = {
   render: () => (
-    <div className="p-32">
-      <PricingCards
-        data={consumptionData}
-        theme="light"
-        delimiter="icon-gui-plus"
-      />
-    </div>
+    <Template data={consumptionData} theme="light" delimiter="icon-gui-plus" />
   ),
 };

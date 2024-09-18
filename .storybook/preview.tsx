@@ -8,16 +8,6 @@ import theme, { brandImage, brandImageDark } from "./theme";
 import loadIcons from "../src/core/icons";
 import { Preview } from "@storybook/react";
 
-const docsContainer = ({ children, context, ...props }) => {
-  loadIcons();
-
-  return (
-    <DocsContainer context={context} {...props}>
-      {children}
-    </DocsContainer>
-  );
-};
-
 initialize({
   onUnhandledRequest: "bypass",
   serviceWorker: {
@@ -44,7 +34,6 @@ const preview: Preview = {
     },
     docs: {
       theme,
-      container: docsContainer,
     },
     options: {
       storySort: {

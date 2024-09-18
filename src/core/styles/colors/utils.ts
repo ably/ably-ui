@@ -1,7 +1,7 @@
 import { ColorClass, colorNames, Theme } from "./types";
 
 export const convertTailwindClassToVar = (className: string) =>
-  className.replace(/(text|bg)-([a-z0-9-]+)/gi, "var(--color-$2)");
+  className.replace(/(text|bg|from|to)-([a-z0-9-]+)/gi, "var(--color-$2)");
 
 const calculatePaletteRange = (
   acc: { max: number; min: number },

@@ -6,7 +6,7 @@ import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
 import { IconName } from "../Icon/types";
 
-type PricingCardsProps = {
+export type PricingCardsProps = {
   data: PricingDataFeature[];
   theme?: Theme;
   delimiter?: IconName;
@@ -45,7 +45,6 @@ const PricingCards = ({
           <Fragment key={title.content}>
             {delimiterColumn(index)}
             <div
-              key={title.content}
               className={`flex flex-1 p-1 bg-gradient-to-b ${t("from-neutral-1100")} ${t("to-neutral-1100")} rounded-2xl min-w-[272px]`}
             >
               <div
@@ -72,7 +71,7 @@ const PricingCards = ({
                     <p
                       className={`ui-text-title font-medium tracking-tight leading-none ${t("text-neutral-000")}`}
                     >
-                      {isNaN(Number(price.amount)) ? "" : "$"}
+                      {Number.isNaN(Number(price.amount)) ? "" : "$"}
                       {price.amount}
                     </p>
                     <div className={t("text-neutral-000")}>{price.content}</div>

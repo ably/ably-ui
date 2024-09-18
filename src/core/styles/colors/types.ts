@@ -5,7 +5,12 @@ export type ColorName =
   | (typeof guiColors)[number]
   | (typeof aliasedColors)[number];
 
-type ColorClassVariants = "" | "hover:" | "focus:";
+type ColorClassVariants =
+  | ""
+  | "hover:"
+  | "focus:"
+  | "group-hover:"
+  | "group-focus:";
 
 type ColorClassPrefixes = "bg" | "text" | "from" | "to";
 
