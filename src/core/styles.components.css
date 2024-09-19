@@ -39,4 +39,8 @@
   .ui-divider-spacing {
     @apply my-20 sm:my-24 md:my-32;
   }
+
+  .ui-container-padding {
+    @apply px-24 py-40 sm:px-40 sm:py-48 md:p-64;
+  }
 }
