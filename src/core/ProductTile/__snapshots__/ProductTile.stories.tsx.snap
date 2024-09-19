@@ -224,12 +224,12 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
           PubSub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-600 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
       Low-level APIs to build any realtime experience
     </p>
     <a href="/docs/products/channels"
@@ -294,12 +294,12 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-600 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
       Create collaborative environments in a few lines of code
     </p>
     <a href="/docs/products/spaces"
@@ -364,12 +364,12 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-600 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
       Simple APIs to build realtime tracking applications
     </p>
     <a href="/docs/products/asset-tracking"
