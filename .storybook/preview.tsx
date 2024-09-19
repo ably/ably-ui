@@ -8,16 +8,6 @@ import theme, { brandImage, brandImageDark } from "./theme";
 import loadIcons from "../src/core/icons";
 import { Preview } from "@storybook/react";
 
-const docsContainer = ({ children, context, ...props }) => {
-  loadIcons();
-
-  return (
-    <DocsContainer context={context} {...props}>
-      {children}
-    </DocsContainer>
-  );
-};
-
 initialize({
   onUnhandledRequest: "bypass",
   serviceWorker: {
@@ -29,6 +19,12 @@ initialize({
 });
 
 const preview: Preview = {
+  decorators: [
+    (Story) => {
+      loadIcons();
+      return <Story />;
+    },
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -38,12 +34,11 @@ const preview: Preview = {
     },
     docs: {
       theme,
-      container: docsContainer,
     },
     options: {
       storySort: {
         method: "alphabetical",
-        order: ["CSS", "JS Components", "Brand"],
+        order: ["CSS", "Features", "JS Components", "Brand"],
       },
     },
     darkMode: {

@@ -2,6 +2,7 @@ import React, { CSSProperties } from "react";
 import { defaultIconSecondaryColor } from "./Icon/secondary-colors";
 import { IconName } from "./Icon/types";
 import { ColorClass } from "./styles/colors/types";
+import { convertTailwindClassToVar } from "./styles/colors/utils";
 
 type IconProps = {
   name: IconName;
@@ -10,9 +11,6 @@ type IconProps = {
   secondaryColor?: ColorClass;
   additionalCSS?: string;
 };
-
-const convertTailwindClassToVar = (className: string) =>
-  className.replace(/(text|bg)-([a-z0-9-]+)/gi, "var(--color-$2)");
 
 const Icon = ({
   name,
