@@ -10,15 +10,15 @@ exports[`JS Components/Product Tile ProductTileWithOverriddenStylesAndClick smok
       </use>
     </svg>
     <div class="flex flex-col justify-center ">
-      <p class="ui-text-p3 text-neutral-500 font-medium">
+      <p class="ui-text-p3 text-neutral-300 font-medium">
         Ably
       </p>
-      <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+      <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
         PubSub
       </p>
     </div>
   </div>
-  <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+  <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
     Low-level APIs to build any realtime experience
   </p>
 </div>
@@ -35,15 +35,15 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           PubSub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Low-level APIs to build any realtime experience
     </p>
   </div>
@@ -56,15 +56,15 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
@@ -77,15 +77,15 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Create collaborative environments in a few lines of code
     </p>
   </div>
@@ -98,15 +98,15 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Sync database changes with frontend clients
     </p>
   </div>
@@ -119,25 +119,25 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Simple APIs to build realtime tracking applications
     </p>
   </div>
   <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <div class="flex flex-row items-center gap-4 ">
-        <p class="ui-text-p2 text-neutral-500 font-medium">
+        <p class="ui-text-p2 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold ">
+        <p class="ui-text-p2 text-neutral-000 font-bold ">
           LiveObjects
         </p>
       </div>
@@ -147,7 +147,7 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
         COMING SOON
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Sync application state across multiple devices
     </p>
   </div>
@@ -165,7 +165,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-800 font-medium">
+        <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
         <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
@@ -198,15 +198,15 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
@@ -219,7 +219,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-800 font-medium">
+        <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
         <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
@@ -252,15 +252,15 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-500 font-medium">
+        <p class="ui-text-p3 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Sync database changes with frontend clients
     </p>
   </div>
@@ -273,7 +273,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         </use>
       </svg>
       <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-800 font-medium">
+        <p class="ui-text-p3 text-neutral-1000 font-medium">
           Ably
         </p>
         <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
@@ -300,10 +300,10 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
   <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
     <div class="flex gap-12">
       <div class="flex flex-row items-center gap-4 ">
-        <p class="ui-text-p2 text-neutral-500 font-medium">
+        <p class="ui-text-p2 text-neutral-300 font-medium">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-300 font-bold ">
+        <p class="ui-text-p2 text-neutral-000 font-bold ">
           LiveObjects
         </p>
       </div>
@@ -313,7 +313,7 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
         COMING SOON
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-700 font-medium leading-snug">
+    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
       Sync application state across multiple devices
     </p>
   </div>

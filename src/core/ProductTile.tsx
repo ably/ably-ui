@@ -1,7 +1,9 @@
 import React from "react";
-import Icon from "./Icon";
+import EncapsulatedIcon from "./Icon/EncapsulatedIcon";
 import FeaturedLink from "./FeaturedLink";
 import { ProductName, products } from "./ProductTile/data";
+import { ColorClass } from "./styles/colors/types";
+import { determineThemeColor } from "./styles/colors/utils";
 
 type ProductTileProps = {
   name: ProductName;
@@ -20,23 +22,28 @@ const ProductTile = ({
 }: ProductTileProps) => {
   const { icon, label, description, link, unavailable } = products[name] ?? {};
 
+  const t = (color: ColorClass) =>
+    determineThemeColor("dark", selected ? "light" : "dark", color);
+
   return (
     <div
-      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${selected ? "bg-neutral-300" : "bg-neutral-1200 hover:bg-neutral-1100"} ${className ?? ""}`}
+      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${t("bg-neutral-1200")} ${selected ? "" : "hover:bg-neutral-1100"} ${className ?? ""}`}
       onClick={onClick}
     >
-      <div className="flex gap-12">
-        {icon ? <Icon name={icon} size="48" /> : null}
+      <div className="flex gap-12 items-center">
+        {icon ? (
+          <EncapsulatedIcon name={icon} theme={selected ? "light" : "dark"} />
+        ) : null}
         <div
           className={`flex ${unavailable ? "flex-row items-center gap-4" : "flex-col justify-center"} `}
         >
           <p
-            className={`${unavailable ? "ui-text-p2" : "ui-text-p3"} ${selected ? "text-neutral-800" : "text-neutral-500"} font-medium`}
+            className={`${unavailable ? "ui-text-p2" : "ui-text-p3"} ${t("text-neutral-300")} font-medium`}
           >
             Ably{" "}
           </p>
           <p
-            className={`ui-text-p2 ${selected ? "text-neutral-1300" : "text-neutral-300"} font-bold ${unavailable ? "" : "mt-[-3px]"}`}
+            className={`ui-text-p2 ${t("text-neutral-000")} font-bold ${unavailable ? "" : "mt-[-3px]"}`}
           >
             {label}
           </p>
@@ -44,21 +51,19 @@ const ProductTile = ({
       </div>
       {unavailable ? (
         <div className="-mt-8">
-          <div className="table-cell bg-neutral-1000 rounded-full px-6 py-2 text-neutral-600 tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+          <div className="table-cell font-sans bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
             COMING SOON
           </div>
         </div>
       ) : null}
       <p
-        className={`ui-text-p3 ${selected ? "text-neutral-1000" : "text-neutral-700"} font-medium leading-snug`}
+        className={`ui-text-p3 ${selected ? "text-neutral-1000" : "text-neutral-500"} font-medium leading-snug`}
       >
         {description}
       </p>
       {selected && link ? (
         <FeaturedLink
-          additionalCSS={`ui-btn-secondary w-full hover:text-neutral-1300 mt-8 text-center inline-block ${
-            selected ? "text-neutral-1300" : "text-white"
-          }`}
+          additionalCSS={`ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block ${t("text-neutral-000")}`}
           iconColor="text-orange-600"
           url={link}
         >
