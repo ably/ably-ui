@@ -11,7 +11,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -34,7 +34,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -57,7 +57,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -80,7 +80,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -103,7 +103,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -126,7 +126,7 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -1966,7 +1966,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -1989,7 +1989,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -2012,7 +2012,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -2035,7 +2035,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -2058,7 +2058,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
@@ -2081,7 +2081,7 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
         <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
              style="width: 40px; height: 40px;"
         >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200"
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
                style="height: 38px;"
           >
             <svg class=" "
