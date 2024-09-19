@@ -1,7 +1,9 @@
 import React from "react";
 import Icon from "../Icon";
+import EncapsulatedIcon from "./EncapsulatedIcon";
 import loadIcons from "../icons";
 import { IconName, iconNames } from "./types";
+import { Theme } from "../styles/colors/types";
 
 export default {
   title: "JS Components/Icon",
@@ -12,7 +14,11 @@ export default {
   tags: ["autodocs"],
 };
 
-const renderIcons = (iconSet: IconName[]) => {
+const renderIcons = (
+  iconSet: IconName[],
+  encapsulated?: boolean,
+  theme?: Theme,
+) => {
   loadIcons();
 
   return (
@@ -25,12 +31,16 @@ const renderIcons = (iconSet: IconName[]) => {
           <code className="ui-text-code mb-8 block">{icon}</code>
           <div className="border inline-flex flex-0">
             <div className="flex pi-checkered-bg">
-              <Icon
-                name={icon}
-                additionalCSS="hover:text-active-orange"
-                color="text-cool-black"
-                size="1.5rem"
-              />
+              {encapsulated ? (
+                <EncapsulatedIcon name={icon} theme={theme ?? "dark"} />
+              ) : (
+                <Icon
+                  name={icon}
+                  additionalCSS="hover:text-active-orange"
+                  color="text-cool-black"
+                  size="1.5rem"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -87,4 +97,12 @@ export const IconWithSecondaryColor = {
       },
     },
   },
+};
+
+export const DarkEncapsulatedIcons = {
+  render: () => renderIcons([...iconNames.product], true),
+};
+
+export const LightEncapsulatedIcons = {
+  render: () => renderIcons([...iconNames.product], true, "light"),
 };
