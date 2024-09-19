@@ -180,12 +180,6 @@ const productIcons = [
   "icon-product-livesync",
   "icon-product-pubsub",
   "icon-product-spaces",
-  "icon-product-pubsub-encapsulated",
-  "icon-product-chat-encapsulated",
-  "icon-product-spaces-encapsulated",
-  "icon-product-livesync-encapsulated",
-  "icon-product-asset-tracking-encapsulated",
-  "icon-product-liveobjects-encapsulated",
 ] as const;
 
 export const iconNames = {

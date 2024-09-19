@@ -4,7 +4,7 @@ import { IconName } from "./Icon/types";
 import { ColorClass } from "./styles/colors/types";
 import { convertTailwindClassToVar } from "./styles/colors/utils";
 
-type IconProps = {
+export type IconProps = {
   name: IconName;
   size?: string;
   color?: ColorClass;
