@@ -1,4 +1,10 @@
-import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
+import React, {
+  PropsWithChildren,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import throttle from "lodash.throttle";
 
 type ExpanderProps = {
@@ -6,8 +12,8 @@ type ExpanderProps = {
   className?: string;
   fadeClassName?: string;
   controlsClassName?: string;
-  controlsOpenedLabel?: string;
-  controlsClosedLabel?: string;
+  controlsOpenedLabel?: string | ReactNode;
+  controlsClosedLabel?: string | ReactNode;
 };
 
 const Expander = ({
