@@ -49,15 +49,23 @@ const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
     selectableText: "text-white",
   },
   transparent: {
-    bg: "bg-white",
-    hoverBg: "hover:bg-white",
+    bg: "bg-transparent",
+    hoverBg: "hover:bg-transparent",
     text: "text-neutral-1000",
     toggleIconColor: "text-dark-grey",
+    border: "border-neutral-500 border-b last:border-none",
+  },
+  darkTransparent: {
+    bg: "bg-transparent",
+    hoverBg: "hover:bg-transparent",
+    text: "text-neutral-000",
+    toggleIconColor: "text-orange-600",
+    border: "border-neutral-900 border-b last:border-none",
   },
 };
 
 const isNonTransparentTheme = (theme: AccordionTheme) =>
-  theme !== "transparent";
+  !["transparent", "darkTransparent"].includes(theme);
 
 const AccordionRow = ({
   name,
@@ -88,8 +96,15 @@ const AccordionRow = ({
 
   const { selectable, sticky } = options || {};
 
-  const { text, bg, hoverBg, toggleIconColor, selectableBg, selectableText } =
-    themeClasses[theme];
+  const {
+    text,
+    bg,
+    hoverBg,
+    toggleIconColor,
+    selectableBg,
+    selectableText,
+    border,
+  } = themeClasses[theme];
 
   const bgClasses: string =
     (selectable && open && selectableBg) || `${bg} ${hoverBg}`;
@@ -97,9 +112,7 @@ const AccordionRow = ({
   const textClass: ColorClass = (selectable && open && selectableText) || text;
 
   return (
-    <div
-      className={`border-mid-grey border-b last:border-none ${isNonTransparentTheme(theme) ? "border-none" : ""}`}
-    >
+    <div className={`${border ?? ""}`}>
       <button
         type="button"
         onClick={onClick}

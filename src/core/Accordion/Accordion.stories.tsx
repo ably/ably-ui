@@ -43,9 +43,12 @@ const longData = data.map((datum) => ({
 }));
 
 const AccordionPresentation = ({ data, options }: AccordionProps) => (
-  <div className="grid sm:grid-cols-3 gap-16 w-full">
+  <div className="grid sm:grid-cols-2 gap-16 w-full">
     {accordionThemes.map((theme) => (
-      <div key={theme}>
+      <div
+        key={theme}
+        className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
+      >
         <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
         <Accordion
           data={data}

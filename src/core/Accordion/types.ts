@@ -19,7 +19,12 @@ export type AccordionIcons = {
   };
 };
 
-export const accordionThemes = ["dark", "light", "transparent"] as const;
+export const accordionThemes = [
+  "dark",
+  "light",
+  "transparent",
+  "darkTransparent",
+] as const;
 
 export type AccordionTheme = (typeof accordionThemes)[number];
 
@@ -30,6 +35,7 @@ export type AccordionThemeColors = {
   toggleIconColor: ColorClass;
   selectableBg?: ColorClass;
   selectableText?: ColorClass;
+  border?: string;
 };
 
 export type AccordionOptions = {
