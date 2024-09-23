@@ -135,7 +135,7 @@ const AccordionRow = ({
         ) : null}
       </button>
       <div
-        className={`ui-text-p2 transition-[max-height] duration-500 overflow-hidden ${isNonTransparentTheme(theme) ? "pt-16" : ""}`}
+        className={`ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden ${isNonTransparentTheme(theme) ? "pt-16" : ""}`}
         style={{ maxHeight: open ? contentHeight : 0 }}
         ref={rowRef}
       >

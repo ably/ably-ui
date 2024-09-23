@@ -25,7 +25,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -51,7 +51,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -77,7 +77,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -103,7 +103,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -129,7 +129,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -164,7 +164,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -190,7 +190,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -216,7 +216,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -242,7 +242,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -268,7 +268,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -303,7 +303,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -329,7 +329,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -355,7 +355,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -381,7 +381,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -407,7 +407,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -442,7 +442,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -468,7 +468,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -494,7 +494,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -520,7 +520,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -546,7 +546,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -586,7 +586,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -612,7 +612,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -638,7 +638,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -664,7 +664,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -690,7 +690,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -725,7 +725,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -751,7 +751,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -777,7 +777,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -803,7 +803,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -829,7 +829,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -864,7 +864,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -890,7 +890,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -916,7 +916,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -942,7 +942,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -968,7 +968,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1003,7 +1003,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1029,7 +1029,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1055,7 +1055,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1081,7 +1081,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1107,7 +1107,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1142,7 +1142,7 @@ exports[`JS Components/Accordion LongContent smoke-test 1`] = `
         </svg>
       </span>
     </button>
-    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
          style="max-height: 0px;"
     >
       <div class="pb-16">
@@ -1180,7 +1180,7 @@ exports[`JS Components/Accordion LongContent smoke-test 1`] = `
         </svg>
       </span>
     </button>
-    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
          style="max-height: 0px;"
     >
       <div class="pb-16">
@@ -1218,7 +1218,7 @@ exports[`JS Components/Accordion LongContent smoke-test 1`] = `
         </svg>
       </span>
     </button>
-    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
          style="max-height: 0px;"
     >
       <div class="pb-16">
@@ -1256,7 +1256,7 @@ exports[`JS Components/Accordion LongContent smoke-test 1`] = `
         </svg>
       </span>
     </button>
-    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
          style="max-height: 0px;"
     >
       <div class="pb-16">
@@ -1294,7 +1294,7 @@ exports[`JS Components/Accordion LongContent smoke-test 1`] = `
         </svg>
       </span>
     </button>
-    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+    <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
          style="max-height: 0px;"
     >
       <div class="pb-16">
@@ -1342,7 +1342,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 1
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1366,7 +1366,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 2
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1390,7 +1390,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 3
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1414,7 +1414,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 4
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1438,7 +1438,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 5
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1471,7 +1471,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 1
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1495,7 +1495,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 2
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1519,7 +1519,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 3
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1543,7 +1543,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 4
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1567,7 +1567,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 5
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1600,7 +1600,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 1
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1624,7 +1624,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 2
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1648,7 +1648,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 3
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1672,7 +1672,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 4
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1696,7 +1696,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 5
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1729,7 +1729,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 1
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1753,7 +1753,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 2
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1777,7 +1777,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 3
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1801,7 +1801,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 4
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1825,7 +1825,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
             Item 5
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -1866,7 +1866,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -1892,7 +1892,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -1918,7 +1918,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -1944,7 +1944,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -1970,7 +1970,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 0px;"
           >
             <div class="pb-16">
@@ -2005,7 +2005,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -2031,7 +2031,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -2057,7 +2057,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -2083,7 +2083,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 304px;"
           >
             <div class="pb-16">
@@ -2109,7 +2109,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
                style="max-height: 0px;"
           >
             <div class="pb-16">
@@ -2144,7 +2144,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2170,7 +2170,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2196,7 +2196,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2222,7 +2222,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2248,7 +2248,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 0px;"
           >
             <div class="pb-16">
@@ -2283,7 +2283,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2309,7 +2309,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2335,7 +2335,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2361,7 +2361,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 288px;"
           >
             <div class="pb-16">
@@ -2387,7 +2387,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
               </svg>
             </span>
           </button>
-          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+          <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
                style="max-height: 0px;"
           >
             <div class="pb-16">
@@ -2428,7 +2428,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2454,7 +2454,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 304px;"
         >
           <div class="pb-16">
@@ -2480,7 +2480,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2506,7 +2506,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2532,7 +2532,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2567,7 +2567,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2593,7 +2593,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 304px;"
         >
           <div class="pb-16">
@@ -2619,7 +2619,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2645,7 +2645,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2671,7 +2671,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2706,7 +2706,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2732,7 +2732,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 288px;"
         >
           <div class="pb-16">
@@ -2758,7 +2758,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2784,7 +2784,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2810,7 +2810,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2845,7 +2845,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2871,7 +2871,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 288px;"
         >
           <div class="pb-16">
@@ -2897,7 +2897,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2923,7 +2923,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2949,7 +2949,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -2989,7 +2989,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3015,7 +3015,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3041,7 +3041,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3067,7 +3067,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3093,7 +3093,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3128,7 +3128,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3154,7 +3154,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3180,7 +3180,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3206,7 +3206,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3232,7 +3232,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3267,7 +3267,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3293,7 +3293,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3319,7 +3319,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3345,7 +3345,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3371,7 +3371,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3406,7 +3406,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3432,7 +3432,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3458,7 +3458,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3484,7 +3484,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3510,7 +3510,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3556,7 +3556,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3588,7 +3588,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3620,7 +3620,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3652,7 +3652,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3684,7 +3684,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3725,7 +3725,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3757,7 +3757,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3789,7 +3789,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3821,7 +3821,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3853,7 +3853,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden pt-16"
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden pt-16"
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3894,7 +3894,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3926,7 +3926,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3958,7 +3958,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -3990,7 +3990,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4022,7 +4022,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4063,7 +4063,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4095,7 +4095,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4127,7 +4127,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4159,7 +4159,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
@@ -4191,7 +4191,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
             </svg>
           </span>
         </button>
-        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-hidden "
+        <div class="ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden "
              style="max-height: 0px;"
         >
           <div class="pb-16">
