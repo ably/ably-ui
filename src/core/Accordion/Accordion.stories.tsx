@@ -3,20 +3,16 @@ import Accordion, { AccordionProps } from "../Accordion";
 import { IconName } from "../Icon/types";
 import { accordionThemes } from "./types";
 
-const lorem = (
-  <p className="mb-16">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque
-    congue risus id lobortis. Vivamus blandit dolor at ultricies cursus.
-    Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec
-    feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod.
-    Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor
-    finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis
-    malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi
-    viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam
-    purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar
-    eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis
-    rhoncus ligula. Pellentesque sit amet odio velit.
-  </p>
+const loremText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.";
+
+const lorem = <p className="mb-16">{loremText}</p>;
+
+const textarea = (
+  <textarea
+    className="w-full h-256 bg-neutral-700 p-16 rounded-xl leading-relaxed"
+    defaultValue={loremText}
+  />
 );
 
 const data = [...Array(5)].map((_, i) => ({
@@ -27,6 +23,11 @@ const data = [...Array(5)].map((_, i) => ({
 const dataWithIcons = data.map((datum) => ({
   ...datum,
   icon: "icon-gui-document-generic" as IconName,
+}));
+
+const dataWithTextarea = data.map((datum) => ({
+  ...datum,
+  content: textarea,
 }));
 
 const longData = data.map((datum) => ({
@@ -153,5 +154,20 @@ export const WithRowIcons = {
 export const LongContent = {
   args: {
     data: longData,
+  },
+};
+
+export const WithResizableInnerContent = {
+  render: () =>
+    AccordionPresentation({
+      data: dataWithTextarea,
+    }),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Try resizing content within the Accordion entries - the container should respond to the new height accordingly",
+      },
+    },
   },
 };

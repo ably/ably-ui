@@ -1,6 +1,5 @@
 import React, { useState, ReactNode, useRef, useEffect } from "react";
 import Icon from "./Icon";
-import throttle from "lodash.throttle";
 import type { IconName } from "./Icon/types";
 import type { ColorClass } from "./styles/colors/types";
 import type {
@@ -82,16 +81,21 @@ const AccordionRow = ({
   const [contentHeight, setContentHeight] = useState<number>(0);
 
   useEffect(() => {
-    const handleHeight = throttle(() => {
+    const resizeObserver = new ResizeObserver(() => {
       if (rowRef.current) {
         setContentHeight(rowRef.current.scrollHeight + 16);
       }
-    }, 250);
+    });
 
-    handleHeight();
+    if (rowRef.current) {
+      resizeObserver.observe(rowRef.current);
+    }
 
-    window.addEventListener("resize", handleHeight);
-    return () => window.removeEventListener("resize", handleHeight);
+    return () => {
+      if (rowRef.current) {
+        resizeObserver.unobserve(rowRef.current);
+      }
+    };
   }, []);
 
   const { selectable, sticky } = options || {};
@@ -131,7 +135,7 @@ const AccordionRow = ({
         ) : null}
       </button>
       <div
-        className={`ui-text-p2 transition-[max-height] duration-500 overflow-hidden ${isNonTransparentTheme(theme) ? "pt-16 px-16" : "px-0"}`}
+        className={`ui-text-p2 transition-[max-height] duration-500 overflow-hidden ${isNonTransparentTheme(theme) ? "pt-16" : ""}`}
         style={{ maxHeight: open ? contentHeight : 0 }}
         ref={rowRef}
       >
