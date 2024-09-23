@@ -1,91 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
-<div class="bg-neutral-1300 p-32">
+<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-000">
-                Messages
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-700">
-                Messages contain the data that a client is communicating, such as the contents of a chat message.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $2.5
-              </p>
-              <div class="text-neutral-000">
-                per million
-              </div>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Messages
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+              Messages contain the data that a client is communicating, such as the contents of a chat message.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $2.5
+            </p>
+            <div class="text-neutral-000">
+              per million
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-300 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    First 50 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $2.50
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 450 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $2.25
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 4.5 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 30 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.40
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Over 50 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.25
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 50 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $2.50
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 450 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $2.25
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4.5 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 30 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.40
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 50 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.25
+                </span>
               </div>
             </div>
           </div>
@@ -99,88 +99,88 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-000">
-                Channels
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-700">
-                Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $1
-              </p>
-              <div class="text-neutral-000">
-                per million mins
-              </div>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Channels
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+              Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $1
+            </p>
+            <div class="text-neutral-000">
+              per million mins
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-300 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    First 10 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.00
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 90 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 900 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.85
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 4 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.75
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 10 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Over 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.60
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.60
+                </span>
               </div>
             </div>
           </div>
@@ -194,88 +194,88 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-000">
-                Connections
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-700">
-                Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $1
-              </p>
-              <div class="text-neutral-000">
-                per million mins
-              </div>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Connections
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $1
+            </p>
+            <div class="text-neutral-000">
+              per million mins
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-300 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    First 10 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $1.00
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 90 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 900 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.85
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 4 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.75
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Next 10 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-300 ">
-                    Over 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-300 text-right">
-                    $0.60
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.60
+                </span>
               </div>
             </div>
           </div>
@@ -290,88 +290,88 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
 <div class=" p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-1300">
-                Messages
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-600">
-                Messages contain the data that a client is communicating, such as the contents of a chat message.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $2.5
-              </p>
-              <div class="text-neutral-1300">
-                per million
-              </div>
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-1300">
+              Messages
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Messages contain the data that a client is communicating, such as the contents of a chat message.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $2.5
+            </p>
+            <div class="text-neutral-1300">
+              per million
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-1000 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    First 50 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $2.50
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 450 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $2.25
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 4.5 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 30 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.40
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Over 50 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.25
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-1000 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  First 50 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $2.50
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 450 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $2.25
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 4.5 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 30 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.40
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Over 50 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.25
+                </span>
               </div>
             </div>
           </div>
@@ -385,88 +385,88 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-1300">
-                Channels
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-600">
-                Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $1
-              </p>
-              <div class="text-neutral-1300">
-                per million mins
-              </div>
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-1300">
+              Channels
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $1
+            </p>
+            <div class="text-neutral-1300">
+              per million mins
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-1000 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    First 10 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.00
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 90 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 900 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.85
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 4 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.75
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 10 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Over 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.60
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-1000 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.60
+                </span>
               </div>
             </div>
           </div>
@@ -480,88 +480,88 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25  transition-colors group @[520px]:flex-row @[920px]:flex-col">
-          <div class="flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
-            <div>
-              <p class="mb-12 ui-text-h3 text-neutral-1300">
-                Connections
-              </p>
-              <p class="ui-text-p1 ui-text-p3 text-neutral-600">
-                Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
-              </p>
-            </div>
-            <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $1
-              </p>
-              <div class="text-neutral-1300">
-                per million mins
-              </div>
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-1300">
+              Connections
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $1
+            </p>
+            <div class="text-neutral-1300">
+              per million mins
             </div>
           </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Volume discounts
-              </p>
-              <div class>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
-                  <span class="ui-text-p3 font-bold text-neutral-1000 ">
-                    Consumption
-                  </span>
-                  <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
-                    $/million msgs
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    First 10 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $1.00
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 90 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.95
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 900 million msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.85
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 4 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.75
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Next 10 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.65
-                  </span>
-                </div>
-                <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
-                  <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                    Over 15 billion msgs
-                  </span>
-                  <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
-                    $0.60
-                  </span>
-                </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-1000 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-1000 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
+                  $0.60
+                </span>
               </div>
             </div>
           </div>
@@ -573,33 +573,98 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
 `;
 
 exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
-<div class="bg-neutral-1300 p-32">
+<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25 hover:bg-neutral-1200 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-700">
-                Free
-              </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-                Build a proof of concept.
-              </p>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-700">
+              Free
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-500">
+              Build a proof of concept.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $0
+            </p>
+            <div class="text-neutral-000">
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $0
-              </p>
-              <div class="text-neutral-000">
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Start for free
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  200 concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  200 concurrent connections
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-neutral-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Community &amp; email support (best effort)
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-neutral-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  No commitment
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Start for free
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -607,107 +672,112 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    200 concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    200 concurrent connections
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-neutral-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Community &amp; email support (best effort)
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-neutral-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    No commitment
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25 hover:bg-neutral-1200 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-000">
-                Standard
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-000">
+              Standard
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-500">
+              Roll-out into production.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $29
+            </p>
+            <div class="text-neutral-000">
+              <p class="ui-text-p3 font-medium"
+                 style="color: currentcolor;"
+              >
+                /month
               </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-                Roll-out into production.
+              <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+                + consumption
               </p>
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $29
-              </p>
-              <div class="text-neutral-000">
-                <p class="ui-text-p3 font-medium"
-                   style="color: currentcolor;"
-                >
-                  /month
-                </p>
-                <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
-                  + consumption
-                </p>
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Get started
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  10k concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  10k concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  2.5k messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-800 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  1 day email support SLA
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-800 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Uptime SLO
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Get started
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -715,112 +785,123 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    10k concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    10k concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    2.5k messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-800 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    1 day email support SLA
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-800 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Uptime SLO
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25 hover:bg-neutral-1200 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-000">
-                Pro
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-000">
+              Pro
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-500">
+              Scale with confidence.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $399
+            </p>
+            <div class="text-neutral-000">
+              <p class="ui-text-p3 font-medium"
+                 style="color: currentcolor;"
+              >
+                /month
               </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-                Scale with confidence.
+              <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+                + consumption
               </p>
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                $399
-              </p>
-              <div class="text-neutral-000">
-                <p class="ui-text-p3 font-medium"
-                   style="color: currentcolor;"
-                >
-                  /month
-                </p>
-                <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
-                  + consumption
-                </p>
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Get started
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  50k concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  50k concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  10k messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-800 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  4 hour email support SLA
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-800 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Datadog (lite)
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-800 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Uptime SLO
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Get started
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -828,115 +909,137 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    50k concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    50k concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    10k messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-800 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    4 hour email support SLA
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-800 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Datadog (lite)
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-800 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-400);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Uptime SLO
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-1100 to-neutral-1100 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-1300 bg-opacity-25 hover:bg-neutral-1200 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-orange-600">
-                Enterprise
-              </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-                Deliver without limits.
-              </p>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-orange-600">
+              Enterprise
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-500">
+              Deliver without limits.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              Custom
+            </p>
+            <div class="text-neutral-000">
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-                Custom
-              </p>
-              <div class="text-neutral-000">
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Contact us
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  Unlimited concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  Unlimited concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  Unlimited messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  24/7 mission critical support
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  99.999% uptime SLAs
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Committed use discounts
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  Datadog
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-1000 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
+                  CNAME, SSO, &amp; more
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Contact us
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -944,109 +1047,6 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    Unlimited concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    Unlimited concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
-                    Unlimited messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    24/7 mission critical support
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    99.999% uptime SLAs
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Committed use discounts
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    Datadog
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-1000 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                    CNAME, SSO, &amp; more
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -1060,30 +1060,95 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
 <div class=" p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25 hover:bg-neutral-100 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-600">
-                Free
-              </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-                Build a proof of concept.
-              </p>
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-600">
+              Free
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-800">
+              Build a proof of concept.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $0
+            </p>
+            <div class="text-neutral-1300">
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $0
-              </p>
-              <div class="text-neutral-1300">
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Start for free
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  200 concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  200 concurrent connections
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-neutral-300 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-700);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Community &amp; email support (best effort)
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-neutral-300 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-700);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  No commitment
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Start for free
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -1091,107 +1156,112 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    200 concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    200 concurrent connections
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-neutral-300 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-700);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Community &amp; email support (best effort)
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-neutral-300 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-neutral-700);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    No commitment
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25 hover:bg-neutral-100 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-1300">
-                Standard
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-1300">
+              Standard
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-800">
+              Roll-out into production.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $29
+            </p>
+            <div class="text-neutral-1300">
+              <p class="ui-text-p3 font-medium"
+                 style="color: currentcolor;"
+              >
+                /month
               </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-                Roll-out into production.
+              <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+                + consumption
               </p>
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $29
-              </p>
-              <div class="text-neutral-1300">
-                <p class="ui-text-p3 font-medium"
-                   style="color: currentcolor;"
-                >
-                  /month
-                </p>
-                <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
-                  + consumption
-                </p>
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Get started
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  10k concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  10k concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  2.5k messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  1 day email support SLA
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Uptime SLO
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Get started
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -1199,112 +1269,123 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    10k concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    10k concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    2.5k messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    1 day email support SLA
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Uptime SLO
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25 hover:bg-neutral-100 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-1300">
-                Pro
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-neutral-1300">
+              Pro
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-800">
+              Scale with confidence.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              $399
+            </p>
+            <div class="text-neutral-1300">
+              <p class="ui-text-p3 font-medium"
+                 style="color: currentcolor;"
+              >
+                /month
               </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-                Scale with confidence.
+              <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+                + consumption
               </p>
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                $399
-              </p>
-              <div class="text-neutral-1300">
-                <p class="ui-text-p3 font-medium"
-                   style="color: currentcolor;"
-                >
-                  /month
-                </p>
-                <p class="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
-                  + consumption
-                </p>
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Get started
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  50k concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  50k concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  10k messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  4 hour email support SLA
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Datadog (lite)
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-blue-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Uptime SLO
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Get started
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -1312,115 +1393,137 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    50k concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    50k concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    10k messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    4 hour email support SLA
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Datadog (lite)
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-blue-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-blue-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Uptime SLO
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-1 p-1 bg-gradient-to-b from-neutral-200 to-neutral-200 rounded-2xl min-w-[272px]">
-        <div class="flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl bg-neutral-000 bg-opacity-25 hover:bg-neutral-100 hover:bg-opacity-100 transition-colors group ">
-          <div class="flex flex-col gap-24 ">
-            <div>
-              <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-orange-600">
-                Enterprise
-              </p>
-              <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-                Deliver without limits.
-              </p>
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 ">
+          <div>
+            <p class="mb-12 font-mono text-p3 uppercase font-extrabold tracking-[0.16em] text-orange-600">
+              Enterprise
+            </p>
+            <p class="ui-text-p1 ui-text-p1 text-neutral-800">
+              Deliver without limits.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 ">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
+              Custom
+            </p>
+            <div class="text-neutral-1300">
             </div>
-            <div class="flex items-end gap-8 ">
-              <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-                Custom
-              </p>
-              <div class="text-neutral-1300">
+          </div>
+          <div class="group">
+            <a href="#"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+               style="--featured-link-icon-size: var(--fs-p2);"
+            >
+              Contact us
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                   style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+              >
+                <use xlink:href="#sprite-icon-gui-link-arrow">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Capacity
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  Unlimited concurrent channels
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  Unlimited concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  Unlimited messages/second
+                </div>
               </div>
             </div>
-            <div class="group">
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Includes
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  24/7 mission critical support
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  99.999% uptime SLAs
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Committed use discounts
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  Datadog
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <svg class="text-orange-200 mt-2"
+                     style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
+                >
+                  <use xlink:href="#sprite-icon-gui-check-circled-fill">
+                  </use>
+                </svg>
+                <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
+                  CNAME, SSO, &amp; more
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center h-40">
+              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
+                •••
+              </div>
               <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
-                Contact us
+                See all features
                 <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
@@ -1428,109 +1531,6 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                   </use>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col gap-24">
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Capacity
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    Unlimited concurrent channels
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    Unlimited concurrent connections
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
-                    Unlimited messages/second
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-12">
-              <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-                Includes
-              </p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    24/7 mission critical support
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    99.999% uptime SLAs
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Committed use discounts
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    Datadog
-                  </div>
-                </div>
-                <div class="flex gap-8 items-start">
-                  <svg class="text-orange-200 mt-2"
-                       style="width: 16px; height: 16px; --ui-icon-secondary-color: var(--color-orange-600);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-                    </use>
-                  </svg>
-                  <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                    CNAME, SSO, &amp; more
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center h-40">
-                <div class="hidden sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                  •••
-                </div>
-                <a href="#"
-                   class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
-                   style="--featured-link-icon-size: var(--fs-p2);"
-                >
-                  See all features
-                  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
-                       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
-                  >
-                    <use xlink:href="#sprite-icon-gui-link-arrow">
-                    </use>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>

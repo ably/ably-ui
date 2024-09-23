@@ -309,7 +309,15 @@ exports[`JS Components/Expander OverriddenControls play-test 1`] = `
      data-testid="expander-controls"
      class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
 >
-  Away with you, knave.
+  <span class="flex items-center gap-8">
+    Away with you, knave.
+    <svg class="text-pink-500 "
+         style="width: 24px; height: 24px;"
+    >
+      <use xlink:href="#sprite-icon-gui-warning">
+      </use>
+    </svg>
+  </span>
 </div>
 `;
 
