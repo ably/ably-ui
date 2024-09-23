@@ -11,7 +11,7 @@ module.exports = {
     {
       pattern:
         /^(text|bg|from|to)-(neutral|orange|yellow|green|blue|violet|pink)-[\d]{1,2}00.*/,
-      variants: ["hover", "focus"],
+      variants: ["hover", "focus", "group-hover"],
     },
   ],
   theme: {

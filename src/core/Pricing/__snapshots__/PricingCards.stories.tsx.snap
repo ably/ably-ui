@@ -4,8 +4,8 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
 <div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -99,8 +99,8 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -194,8 +194,8 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -290,8 +290,8 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
 <div class=" p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -385,8 +385,8 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -480,8 +480,8 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
           <div>
@@ -576,8 +576,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
 <div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -676,8 +676,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -789,8 +789,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -913,8 +913,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300 group-hover:bg-neutral-1200 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -1060,8 +1060,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
 <div class=" p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000 group-hover:bg-neutral-100 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -1160,8 +1160,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000 group-hover:bg-neutral-100 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -1273,8 +1273,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000 group-hover:bg-neutral-100 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>
@@ -1397,8 +1397,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px]">
-        <div class="absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 group-hover:bg-neutral-1200  transition-[colors,opacity] opacity-25 group-hover:opacity-100">
+      <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000 group-hover:bg-neutral-100 group-hover:opacity-100 transition-[colors,opacity] opacity-25 blur-md">
         </div>
         <div class="relative z-10 flex flex-col gap-24 ">
           <div>

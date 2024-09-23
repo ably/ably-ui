@@ -45,10 +45,10 @@ const PricingCards = ({
           <Fragment key={title.content}>
             {delimiterColumn(index)}
             <div
-              className={`relative border ${t("border-neutral-1100")} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px]`}
+              className={`relative border ${t("border-neutral-1100")} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] overflow-hidden`}
             >
               <div
-                className={`absolute z-0 top-0 left-0 w-full h-full rounded-2xl ${t("bg-neutral-1300")} ${cta ? `${t("group-hover:bg-neutral-1200")} ` : ""} transition-[colors,opacity] opacity-25 group-hover:opacity-100`}
+                className={`absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl ${t("bg-neutral-1300")} ${cta ? `${t("group-hover:bg-neutral-1200")} group-hover:opacity-100` : ""} transition-[colors,opacity] opacity-25 blur-md`}
               ></div>
               <div
                 className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px}:flex-none" : ""}`}
