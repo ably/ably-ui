@@ -9,7 +9,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -35,7 +35,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -61,7 +61,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -87,7 +87,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -113,7 +113,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -148,7 +148,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -174,7 +174,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -200,7 +200,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -226,7 +226,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -252,7 +252,7 @@ exports[`JS Components/Accordion AutoClose smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -570,7 +570,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -596,7 +596,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -622,7 +622,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -648,7 +648,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -674,7 +674,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -709,7 +709,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -735,7 +735,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -761,7 +761,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -787,7 +787,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -813,7 +813,7 @@ exports[`JS Components/Accordion Default smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1328,7 +1328,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -1352,7 +1352,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -1376,7 +1376,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -1400,7 +1400,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -1424,7 +1424,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -1457,7 +1457,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1481,7 +1481,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1505,7 +1505,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1529,7 +1529,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1553,7 +1553,7 @@ exports[`JS Components/Accordion SelectableHeaders smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -1850,7 +1850,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
       <div class="flex-1"
            id="id-accordion"
       >
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
           >
@@ -1876,7 +1876,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
           >
@@ -1902,7 +1902,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
           >
@@ -1928,7 +1928,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
           >
@@ -1954,7 +1954,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
           >
@@ -1989,7 +1989,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
       <div class="flex-1"
            id="id-accordion"
       >
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
           >
@@ -2015,7 +2015,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
           >
@@ -2041,7 +2041,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
           >
@@ -2067,7 +2067,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
           >
@@ -2093,7 +2093,7 @@ exports[`JS Components/Accordion StickyHeaders smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <div class="undefined">
+        <div class>
           <button type="button"
                   class="flex w-full sticky top-0 focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
           >
@@ -2412,7 +2412,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2438,7 +2438,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2464,7 +2464,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2490,7 +2490,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2516,7 +2516,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2551,7 +2551,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -2577,7 +2577,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -2603,7 +2603,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -2629,7 +2629,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -2655,7 +2655,7 @@ exports[`JS Components/Accordion WithDefaultOpenSections smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -2973,7 +2973,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -2999,7 +2999,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3025,7 +3025,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3051,7 +3051,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3077,7 +3077,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3112,7 +3112,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3138,7 +3138,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3164,7 +3164,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3190,7 +3190,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3216,7 +3216,7 @@ exports[`JS Components/Accordion WithResizableInnerContent smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3534,7 +3534,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3566,7 +3566,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3598,7 +3598,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3630,7 +3630,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3662,7 +3662,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-1200 hover:bg-neutral-1100 text-white"
         >
@@ -3703,7 +3703,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
     <div class="flex-1"
          id="id-accordion"
     >
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3735,7 +3735,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3767,7 +3767,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3799,7 +3799,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
@@ -3831,7 +3831,7 @@ exports[`JS Components/Accordion WithRowIcons smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="undefined">
+      <div class>
         <button type="button"
                 class="flex w-full  focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 px-16 transition-colors bg-neutral-200 hover:bg-neutral-300 text-neutral-1300"
         >
