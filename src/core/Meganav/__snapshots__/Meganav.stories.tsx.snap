@@ -1026,7 +1026,7 @@ exports[`JS Components/Meganav Default smoke-test 1`] = `
                            rel="noreferrer"
                         >
                           <span class="flex items-center h-[1.5rem] p-[0.25rem]">
-                            <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
+                            <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full  bg-green-500">
                             </span>
                           </span>
                         </a>

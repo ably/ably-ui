@@ -7,7 +7,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Messages
@@ -102,7 +102,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Channels
@@ -197,7 +197,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Connections
@@ -293,7 +293,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
       <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Messages
@@ -388,7 +388,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
       <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Channels
@@ -483,7 +483,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
       <div class="relative border border-neutral-200 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
         <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-000  transition-[colors,opacity] opacity-25">
         </div>
-        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px}:flex-none">
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
           <div>
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Connections

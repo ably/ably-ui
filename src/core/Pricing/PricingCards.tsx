@@ -51,7 +51,7 @@ const PricingCards = ({
                 className={`absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl ${t("bg-neutral-1300")} ${cta ? `${t("group-hover:bg-neutral-1200")} group-hover:opacity-100` : ""} transition-[colors,opacity] opacity-25`}
               ></div>
               <div
-                className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px}:flex-none" : ""}`}
+                className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px]:flex-none" : ""}`}
               >
                 <div>
                   <p
