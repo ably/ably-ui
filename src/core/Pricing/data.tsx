@@ -14,7 +14,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-500",
     },
     price: { amount: 0 },
-    cta: { text: "Start for free", url: "#" },
+    cta: { text: "Start for free", url: "https://ably.com/sign-up" },
     sections: [
       {
         title: "Capacity",
@@ -29,7 +29,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -61,7 +61,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "#" },
+    cta: { text: "Get started", url: "https://ably.com/users/paid_sign_up" },
     sections: [
       {
         title: "Capacity",
@@ -80,7 +80,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -92,7 +92,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-000",
     },
     description: {
-      content: "Scale with confidence.",
+      content: "Scale business critical workloads.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
@@ -112,7 +112,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "#" },
+    cta: { text: "Get started", url: "https://ably.com/users/paid_sign_up" },
     sections: [
       {
         title: "Capacity",
@@ -131,7 +131,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -144,12 +144,16 @@ export const planData: PricingDataFeature[] = [
       color: "text-orange-600",
     },
     description: {
-      content: "Deliver without limits.",
+      content: "Serious workloads without limits.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
     price: { amount: "Custom" },
-    cta: { text: "Contact us", url: "#", className: "ui-btn-alt text-white" },
+    cta: {
+      text: "Contact us",
+      url: "#pricing-enterprise",
+      className: "ui-btn-alt text-white",
+    },
     sections: [
       {
         title: "Capacity",
@@ -174,7 +178,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
