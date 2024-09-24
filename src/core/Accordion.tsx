@@ -1,6 +1,5 @@
 import React, { useState, ReactNode, useRef, useEffect } from "react";
 import Icon from "./Icon";
-import throttle from "lodash.throttle";
 import type { IconName } from "./Icon/types";
 import type { ColorClass } from "./styles/colors/types";
 import type {
@@ -49,15 +48,23 @@ const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
     selectableText: "text-white",
   },
   transparent: {
-    bg: "bg-white",
-    hoverBg: "hover:bg-white",
+    bg: "bg-transparent",
+    hoverBg: "hover:bg-transparent",
     text: "text-neutral-1000",
     toggleIconColor: "text-dark-grey",
+    border: "border-neutral-500 border-b last:border-none",
+  },
+  darkTransparent: {
+    bg: "bg-transparent",
+    hoverBg: "hover:bg-transparent",
+    text: "text-neutral-000",
+    toggleIconColor: "text-orange-600",
+    border: "border-neutral-900 border-b last:border-none",
   },
 };
 
 const isNonTransparentTheme = (theme: AccordionTheme) =>
-  theme !== "transparent";
+  !["transparent", "darkTransparent"].includes(theme);
 
 const AccordionRow = ({
   name,
@@ -74,22 +81,34 @@ const AccordionRow = ({
   const [contentHeight, setContentHeight] = useState<number>(0);
 
   useEffect(() => {
-    const handleHeight = throttle(() => {
+    const resizeObserver = new ResizeObserver(() => {
       if (rowRef.current) {
         setContentHeight(rowRef.current.scrollHeight + 16);
       }
-    }, 250);
+    });
 
-    handleHeight();
+    if (rowRef.current) {
+      resizeObserver.observe(rowRef.current);
+    }
 
-    window.addEventListener("resize", handleHeight);
-    return () => window.removeEventListener("resize", handleHeight);
+    return () => {
+      if (rowRef.current) {
+        resizeObserver.unobserve(rowRef.current);
+      }
+    };
   }, []);
 
   const { selectable, sticky } = options || {};
 
-  const { text, bg, hoverBg, toggleIconColor, selectableBg, selectableText } =
-    themeClasses[theme];
+  const {
+    text,
+    bg,
+    hoverBg,
+    toggleIconColor,
+    selectableBg,
+    selectableText,
+    border,
+  } = themeClasses[theme];
 
   const bgClasses: string =
     (selectable && open && selectableBg) || `${bg} ${hoverBg}`;
@@ -97,9 +116,7 @@ const AccordionRow = ({
   const textClass: ColorClass = (selectable && open && selectableText) || text;
 
   return (
-    <div
-      className={`border-mid-grey border-b last:border-none ${isNonTransparentTheme(theme) ? "border-none" : ""}`}
-    >
+    <div className={`${border ?? ""}`}>
       <button
         type="button"
         onClick={onClick}
@@ -118,7 +135,7 @@ const AccordionRow = ({
         ) : null}
       </button>
       <div
-        className={`ui-text-p2 transition-[max-height] duration-500 overflow-hidden ${isNonTransparentTheme(theme) ? "pt-16 px-16" : "px-0"}`}
+        className={`ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden ${isNonTransparentTheme(theme) ? "pt-16" : ""}`}
         style={{ maxHeight: open ? contentHeight : 0 }}
         ref={rowRef}
       >

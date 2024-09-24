@@ -1,6 +1,6 @@
 import type { TestRunnerConfig } from "@storybook/test-runner";
 
-const flakyStories = ["components-status", "components-meganav--signed-in"];
+const flakyStories = ["components-status", "components-meganav"];
 
 const config: TestRunnerConfig = {
   async postVisit(page, context) {

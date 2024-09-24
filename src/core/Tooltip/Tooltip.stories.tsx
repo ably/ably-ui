@@ -6,22 +6,37 @@ export default {
   component: Tooltip,
   tags: ["autodocs"],
   args: {
-    children: "Example content",
+    children:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 };
 
 export const Central = {
   render: (args) => (
-    <div className="w-256 h-256 flex items-center justify-center m-24 border">
-      <Tooltip>{args.children}</Tooltip>
+    <div className="grid grid-cols-2 gap-16 w-[600px]">
+      <div className="font-mono text-center">dark</div>
+      <div className="font-mono text-center">light</div>
+      <div className="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
+        <Tooltip>{args.children}</Tooltip>
+      </div>
+      <div className="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
+        <Tooltip theme="light">{args.children}</Tooltip>
+      </div>
     </div>
   ),
 };
 
 export const LeftBound = {
   render: (args) => (
-    <div className="w-256 h-256 flex items-center m-24 border">
-      <Tooltip>{args.children}</Tooltip>
+    <div className="grid grid-cols-2 gap-16 w-[600px]">
+      <div className="font-mono text-center">dark</div>
+      <div className="font-mono text-center">light</div>
+      <div className="w-256 h-256 bg-neutral-1300 flex items-center m-24 border mx-auto rounded-lg">
+        <Tooltip>{args.children}</Tooltip>
+      </div>
+      <div className="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
+        <Tooltip theme="light">{args.children}</Tooltip>
+      </div>
     </div>
   ),
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { userEvent, within, expect, waitFor } from "@storybook/test";
 import Expander from "../Expander";
+import Icon from "../Icon";
 
 export default {
   title: "JS Components/Expander",
@@ -136,7 +137,12 @@ export const OverriddenControls = {
   render: () => (
     <Expander
       controlsClassName="ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
-      controlsOpenedLabel="Away with you, knave."
+      controlsOpenedLabel={
+        <span className="flex items-center gap-8">
+          Away with you, knave.{" "}
+          <Icon color="text-pink-500" size="24" name="icon-gui-warning" />
+        </span>
+      }
       controlsClosedLabel="Give me more!"
     >
       {longContentInner}

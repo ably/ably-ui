@@ -68,7 +68,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -148,7 +148,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -228,7 +228,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -308,7 +308,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -388,7 +388,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -479,7 +479,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -559,7 +559,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -639,7 +639,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -719,7 +719,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -799,7 +799,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -890,7 +890,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -970,7 +970,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -1050,7 +1050,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -1130,7 +1130,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">
@@ -1210,7 +1210,7 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="ml-8 p-0 relative top-1 focus:outline-none "
             >
-              <svg class=" "
+              <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-info">

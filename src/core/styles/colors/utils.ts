@@ -26,8 +26,10 @@ export const determineThemeColor = (
   } else {
     const splitColor = color.split("-");
 
-    if (splitColor.length === 3) {
-      const [property, palette, variant] = splitColor;
+    if (splitColor.length >= 3) {
+      const property = splitColor.slice(0, splitColor.length - 2).join("-");
+      const palette = splitColor[splitColor.length - 2];
+      const variant = splitColor[splitColor.length - 1];
 
       const paletteColors = Object.keys(colorNames).includes(palette)
         ? colorNames[palette as keyof typeof colorNames]

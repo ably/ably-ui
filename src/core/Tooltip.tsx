@@ -2,41 +2,77 @@ import React, {
   ButtonHTMLAttributes,
   HTMLAttributes,
   PropsWithChildren,
-  useEffect,
+  ReactNode,
+  useLayoutEffect,
   useRef,
   useState,
 } from "react";
+import { createPortal } from "react-dom";
 import Icon from "./Icon";
+import { ColorClass, Theme } from "./styles/colors/types";
+import { determineThemeColor } from "./styles/colors/utils";
 
 type TooltipProps = {
+  triggerElement?: ReactNode;
   triggerProps?: ButtonHTMLAttributes<HTMLButtonElement>;
   tooltipProps?: HTMLAttributes<HTMLDivElement>;
+  theme?: Theme;
 } & HTMLAttributes<HTMLDivElement>;
 
 const Tooltip = ({
   children,
+  triggerElement,
   triggerProps,
   tooltipProps,
+  theme = "dark",
   ...rest
 }: PropsWithChildren<TooltipProps>) => {
   const [open, setOpen] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const offset = 8;
   const reference = useRef<HTMLButtonElement>(null);
   const floating = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  const t = (color: ColorClass) => determineThemeColor("light", theme, color);
+
+  useLayoutEffect(() => {
     if (open) {
       const floatingRect = floating.current?.getBoundingClientRect();
       const referenceRect = reference.current?.getBoundingClientRect();
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
 
       if (floatingRect && referenceRect) {
-        setPosition({
-          x:
-            Math.min(floatingRect.width / 2, floatingRect.left) -
-            referenceRect.width / 2,
-          y: Math.min(floatingRect.height, floatingRect.top) + offset,
-        });
+        let x =
+          referenceRect.left +
+          referenceRect.width / 2 -
+          floatingRect.width / 2 +
+          window.scrollX;
+        let y =
+          referenceRect.top - floatingRect.height - offset + window.scrollY;
+
+        // Adjust if tooltip goes off the right edge
+        if (x + floatingRect.width > viewportWidth + window.scrollX) {
+          x = viewportWidth + window.scrollX - floatingRect.width - offset;
+        }
+
+        // Adjust if tooltip goes off the left edge
+        if (x < window.scrollX) {
+          x = window.scrollX + offset;
+        }
+
+        // Adjust if tooltip goes off the top edge
+        if (y < window.scrollY) {
+          y = referenceRect.bottom + offset + window.scrollY;
+        }
+
+        // Adjust if tooltip goes off the bottom edge
+        if (y + floatingRect.height > viewportHeight + window.scrollY) {
+          y = referenceRect.top - floatingRect.height - offset + window.scrollY;
+        }
+
+        setPosition({ x, y });
       }
     } else {
       setPosition({ x: 0, y: 0 });
@@ -52,7 +88,13 @@ const Tooltip = ({
     >
       <button
         onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
+        onMouseLeave={() => {
+          setFadeOut(true);
+          setTimeout(() => {
+            setOpen(false);
+            setFadeOut(false);
+          }, 250);
+        }}
         type="button"
         ref={reference}
         aria-describedby="tooltip"
@@ -61,26 +103,36 @@ const Tooltip = ({
           triggerProps?.className ?? ""
         }`}
       >
-        <Icon name="icon-gui-info" size="1rem" />
+        {triggerElement ?? (
+          <Icon
+            name="icon-gui-info"
+            color={`${t("text-neutral-800")}`}
+            size="1rem"
+          />
+        )}
       </button>
 
-      {open ? (
-        <div
-          role="tooltip"
-          ref={floating}
-          style={{
-            top: -position.y,
-            left: -position.x,
-            boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.2)",
-          }}
-          {...tooltipProps}
-          className={`bg-light-grey p-12 rounded pointer-events-none absolute z-20 ${
-            tooltipProps?.className ?? ""
-          }`}
-        >
-          <div className="w-256">{children}</div>
-        </div>
-      ) : null}
+      {open
+        ? createPortal(
+            <div
+              role="tooltip"
+              ref={floating}
+              style={{
+                top: position.y,
+                left: position.x,
+                zIndex: 1000,
+                boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.2)",
+              }}
+              {...tooltipProps}
+              className={`${t("bg-neutral-1000")} ${t("text-neutral-200")} ui-text-p3 font-medium p-16 rounded-lg pointer-events-none absolute ${
+                tooltipProps?.className ?? ""
+              } ${fadeOut ? "animate-[tooltipExit_0.25s_ease-in-out]" : "animate-[tooltipEntry_0.25s_ease-in-out]"}`}
+            >
+              <div className="max-w-[240px] w-auto">{children}</div>
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   );
 };

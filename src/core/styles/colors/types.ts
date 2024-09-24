@@ -12,7 +12,7 @@ type ColorClassVariants =
   | "group-hover:"
   | "group-focus:";
 
-type ColorClassPrefixes = "bg" | "text" | "from" | "to";
+type ColorClassPrefixes = "bg" | "text" | "from" | "to" | "border";
 
 export type Theme = "light" | "dark";
 
