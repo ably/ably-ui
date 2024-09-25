@@ -12,7 +12,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Messages
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Messages contain the data that a client is communicating, such as the contents of a chat message.
             </p>
           </div>
@@ -107,7 +107,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Channels
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
             </p>
           </div>
@@ -202,7 +202,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Connections
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
             </p>
           </div>
@@ -298,7 +298,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Messages
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Messages contain the data that a client is communicating, such as the contents of a chat message.
             </p>
           </div>
@@ -393,7 +393,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Channels
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
             </p>
           </div>
@@ -488,7 +488,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Connections
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
             </p>
           </div>
@@ -584,7 +584,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Messages
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Messages contain the data that a client is communicating, such as the contents of a chat message.
             </p>
           </div>
@@ -673,7 +673,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Channels
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
             </p>
           </div>
@@ -762,7 +762,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Connections
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
             </p>
           </div>
@@ -871,7 +871,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/sign-up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
@@ -977,8 +977,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+            <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1090,7 +1089,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1205,7 +1204,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="#pricing-enterprise"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us
@@ -1351,7 +1350,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/sign-up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
@@ -1457,8 +1456,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+            <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1570,7 +1568,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1685,7 +1683,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="#pricing-enterprise"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us

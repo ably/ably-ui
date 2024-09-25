@@ -61,7 +61,11 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "/users/paid_sign_up" },
+    cta: {
+      text: "Get started",
+      url: "/users/paid_sign_up",
+      onClick: () => alert("hello mate"),
+    },
     sections: [
       {
         title: "Capacity",
@@ -224,7 +228,7 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Clients publish and receive messages on channels (also know as topics). We only charge for active channels.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
     price: { amount: "$1.00", content: "per million mins" },
     sections: [
@@ -252,7 +256,7 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
     price: { amount: "$1.00", content: "per million mins" },
     sections: [
