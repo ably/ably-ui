@@ -196,7 +196,7 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Messages contain the data that a client is communicating, such as the contents of a chat message.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
     price: { amount: "$2.50", content: "per million" },
     sections: [

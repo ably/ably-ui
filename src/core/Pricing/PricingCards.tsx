@@ -9,7 +9,7 @@ import { IconName } from "../Icon/types";
 export type PricingCardsProps = {
   data: PricingDataFeature[];
   theme?: Theme;
-  delimiter?: IconName;
+  delimiter?: IconName | "blank";
 };
 
 const onCtaClick = (id: string) => {
@@ -33,12 +33,16 @@ const PricingCards = ({
 
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (
-      <div className="flex items-center justify-center w-full m-8 @[920px]:w-20">
-        <Icon
-          name={delimiter}
-          size="20"
-          additionalCSS={t("text-neutral-500")}
-        />
+      <div
+        className={`flex items-center justify-center w-full @[920px]:w-20 ${delimiter !== "blank" ? "m-8" : ""}`}
+      >
+        {delimiter !== "blank" ? (
+          <Icon
+            name={delimiter}
+            size="20"
+            additionalCSS={t("text-neutral-500")}
+          />
+        ) : null}
       </div>
     ) : null;
 

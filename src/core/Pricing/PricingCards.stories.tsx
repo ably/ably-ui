@@ -41,3 +41,7 @@ export const ConsumptionLightMode = {
     <Template data={consumptionData} theme="light" delimiter="icon-gui-plus" />
   ),
 };
+
+export const ConsumptionNoDelimiter = {
+  render: () => <Template data={consumptionData} delimiter="blank" />,
+};
