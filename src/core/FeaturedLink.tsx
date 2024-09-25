@@ -51,7 +51,7 @@ const FeaturedLink = ({
 
   return (
     <a
-      href={url}
+      {...(onClick ? {} : { href: url })}
       className={`font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-${textSize} ${
         flush ? "" : "py-8"
       } ${additionalCSS}`}

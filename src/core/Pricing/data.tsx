@@ -14,7 +14,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-500",
     },
     price: { amount: 0 },
-    cta: { text: "Start for free", url: "https://ably.com/sign-up" },
+    cta: { text: "Start for free", url: "/sign-up" },
     sections: [
       {
         title: "Capacity",
@@ -61,7 +61,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "https://ably.com/users/paid_sign_up" },
+    cta: { text: "Get started", url: "/users/paid_sign_up" },
     sections: [
       {
         title: "Capacity",
@@ -112,7 +112,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "https://ably.com/users/paid_sign_up" },
+    cta: { text: "Get started", url: "/users/paid_sign_up" },
     sections: [
       {
         title: "Capacity",

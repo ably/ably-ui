@@ -596,7 +596,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/sign-up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -660,8 +660,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -704,7 +703,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/users/paid_sign_up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -773,8 +772,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -798,7 +796,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               Pro
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-              Scale with confidence.
+              Scale business critical workloads.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -817,7 +815,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/users/paid_sign_up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -897,8 +895,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -922,7 +919,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               Enterprise
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-              Deliver without limits.
+              Serious workloads without limits.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -933,7 +930,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="#pricing-enterprise"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1035,8 +1032,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1080,7 +1076,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/sign-up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1144,8 +1140,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1188,7 +1183,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/users/paid_sign_up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1257,8 +1252,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1282,7 +1276,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               Pro
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-              Scale with confidence.
+              Scale business critical workloads.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -1301,7 +1295,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="https://ably.com/users/paid_sign_up"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1381,8 +1375,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1406,7 +1399,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               Enterprise
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-              Deliver without limits.
+              Serious workloads without limits.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -1417,7 +1410,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
+            <a href="#pricing-enterprise"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1519,8 +1512,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
