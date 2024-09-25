@@ -6,7 +6,13 @@ type PricingDataHeader = {
   className?: string;
   color?: ColorClass;
 };
-type PricingDataFeatureCta = { text: string; url: string; className?: string };
+type PricingDataFeatureCta = {
+  text: string;
+  url: string;
+  className?: string;
+  disabled?: boolean;
+  onClick?: () => void;
+};
 
 export type PricingDataFeature = {
   title: PricingDataHeader;

@@ -41,3 +41,9 @@ export const Pink = {
     additionalCSS: "text-pink-800",
   },
 };
+
+export const Disabled = {
+  args: {
+    disabled: true,
+  },
+};

@@ -13,6 +13,7 @@ type FeaturedLinkProps = {
   additionalCSS?: string;
   newWindow?: boolean;
   onClick?: () => void;
+  disabled?: boolean;
 };
 
 type TargetProps = { target?: string; rel?: string };
@@ -46,13 +47,14 @@ const FeaturedLink = ({
   newWindow = false,
   onClick = undefined,
   children,
+  disabled = false,
 }: FeaturedLinkProps) => {
   const targetAndRel = buildTargetAndRel(url, newWindow);
 
   return (
     <a
       {...(onClick ? {} : { href: url })}
-      className={`font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-${textSize} ${
+      className={`font-sans font-bold block ${disabled ? "text-gui-unavailable pointer-events-none" : "text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus"} group ui-${textSize} ${
         flush ? "" : "py-8"
       } ${additionalCSS}`}
       style={
@@ -72,7 +74,7 @@ const FeaturedLink = ({
             name="icon-gui-link-arrow"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
-            additionalCSS="align-middle mr-8 relative -top-1 -right-4 transition-[right] group-hover:right-0 transform rotate-180"
+            additionalCSS={`align-middle mr-8 relative -top-1 -right-4 transition-[right] ${disabled ? "" : "group-hover:right-0"} transform rotate-180`}
           />
           {children}
         </>
@@ -83,7 +85,7 @@ const FeaturedLink = ({
             name="icon-gui-link-arrow"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
-            additionalCSS="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+            additionalCSS={`align-middle ml-8 relative -top-1 -left-4 transition-[left] ${disabled ? "" : "group-hover:left-0"}`}
           />
         </>
       )}

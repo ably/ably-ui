@@ -92,6 +92,8 @@ const PricingCards = ({
                     <FeaturedLink
                       additionalCSS={`text-center ui-btn ${t("bg-neutral-000")} ${t("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""}`}
                       url={cta.url}
+                      onClick={cta.onClick}
+                      disabled={cta.disabled}
                     >
                       {cta.text}
                     </FeaturedLink>

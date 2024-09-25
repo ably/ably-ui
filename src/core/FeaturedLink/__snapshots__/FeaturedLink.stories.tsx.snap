@@ -15,6 +15,21 @@ exports[`JS Components/Featured Link Default smoke-test 1`] = `
 </a>
 `;
 
+exports[`JS Components/Featured Link Disabled smoke-test 1`] = `
+<a href="#"
+   class="font-sans font-bold block text-gui-unavailable pointer-events-none group ui-text-p2 py-8 "
+   style="--featured-link-icon-size: var(--fs-p2);"
+>
+  Featured link
+  <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] "
+       style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
+  >
+    <use xlink:href="#sprite-icon-gui-link-arrow">
+    </use>
+  </svg>
+</a>
+`;
+
 exports[`JS Components/Featured Link Large smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p1 py-8 "
