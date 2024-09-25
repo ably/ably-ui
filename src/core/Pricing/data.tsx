@@ -13,7 +13,7 @@ export const planData: PricingDataFeature[] = [
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
-    price: { amount: 0 },
+    price: { amount: "$0" },
     cta: { text: "Start for free", url: "/sign-up" },
     sections: [
       {
@@ -46,7 +46,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-500",
     },
     price: {
-      amount: 29,
+      amount: "$29",
       content: (
         <>
           <p
@@ -97,7 +97,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-500",
     },
     price: {
-      amount: 399,
+      amount: "$399",
       content: (
         <>
           <p
@@ -198,7 +198,7 @@ export const consumptionData: PricingDataFeature[] = [
       className: "ui-text-p3",
       color: "text-neutral-700",
     },
-    price: { amount: 2.5, content: "per million" },
+    price: { amount: "$2.50", content: "per million" },
     sections: [
       {
         title: "Volume discounts",
@@ -226,7 +226,7 @@ export const consumptionData: PricingDataFeature[] = [
       className: "ui-text-p3",
       color: "text-neutral-700",
     },
-    price: { amount: 1, content: "per million mins" },
+    price: { amount: "$1.00", content: "per million mins" },
     sections: [
       {
         title: "Volume discounts",
@@ -254,7 +254,7 @@ export const consumptionData: PricingDataFeature[] = [
       className: "ui-text-p3",
       color: "text-neutral-700",
     },
-    price: { amount: 1, content: "per million mins" },
+    price: { amount: "$1.00", content: "per million mins" },
     sections: [
       {
         title: "Volume discounts",

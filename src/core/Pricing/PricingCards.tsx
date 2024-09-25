@@ -82,7 +82,6 @@ const PricingCards = ({
                   <p
                     className={`ui-text-title font-medium tracking-tight leading-none ${t("text-neutral-000")}`}
                   >
-                    {Number.isNaN(Number(price.amount)) ? "" : "$"}
                     {price.amount}
                   </p>
                   <div className={t("text-neutral-000")}>{price.content}</div>

@@ -17,7 +17,7 @@ type PricingDataFeatureCta = {
 export type PricingDataFeature = {
   title: PricingDataHeader;
   description: PricingDataHeader;
-  price: { amount: number | string; content?: ReactNode };
+  price: { amount: string; content?: ReactNode };
   cta?: PricingDataFeatureCta;
   sections: {
     title: string;
