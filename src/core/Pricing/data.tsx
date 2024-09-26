@@ -64,7 +64,6 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up",
-      onClick: () => alert("hello mate"),
     },
     sections: [
       {

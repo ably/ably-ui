@@ -934,7 +934,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -977,7 +978,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+            <a href="/users/paid_sign_up"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1045,7 +1047,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1168,7 +1171,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1305,7 +1309,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1413,7 +1418,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1456,7 +1462,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+            <a href="/users/paid_sign_up"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1524,7 +1531,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1647,7 +1655,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1784,7 +1793,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features

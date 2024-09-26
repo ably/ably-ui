@@ -14,15 +14,17 @@ type PricingDataFeatureCta = {
   onClick?: () => void;
 };
 
+export type PricingDataFeatureSection = {
+  title: string;
+  items: string[] | string[][];
+  listItemColors?: { foreground: ColorClass; background: ColorClass };
+  cta?: PricingDataFeatureCta;
+};
+
 export type PricingDataFeature = {
   title: PricingDataHeader;
   description: PricingDataHeader;
   price: { amount: string; content?: ReactNode };
   cta?: PricingDataFeatureCta;
-  sections: {
-    title: string;
-    items: string[] | string[][];
-    listItemColors?: { foreground: ColorClass; background: ColorClass };
-    cta?: PricingDataFeatureCta;
-  }[];
+  sections: PricingDataFeatureSection[];
 };

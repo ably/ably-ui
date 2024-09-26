@@ -12,17 +12,6 @@ export type PricingCardsProps = {
   delimiter?: IconName | "blank";
 };
 
-const onCtaClick = (id: string) => {
-  const element = document.getElementById(id.split("#")[1]);
-
-  if (element) {
-    window.scrollTo({
-      top: element.getBoundingClientRect().top + window.scrollY - 96,
-      behavior: "smooth",
-    });
-  }
-};
-
 const PricingCards = ({
   data,
   theme = "dark",
@@ -155,9 +144,9 @@ const PricingCards = ({
                           •••
                         </div>
                         <FeaturedLink
-                          url="#"
+                          url={cta.url}
                           additionalCSS={`sm:hidden group-hover:block font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} transition-colors cursor-pointer`}
-                          onClick={() => onCtaClick(cta.url)}
+                          onClick={cta.onClick}
                         >
                           {cta.text}
                         </FeaturedLink>
