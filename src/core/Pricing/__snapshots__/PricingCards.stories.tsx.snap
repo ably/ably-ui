@@ -978,7 +978,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
+            <a href="/users/paid_sign_up?package=standard"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1091,7 +1091,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
+            <a href="/users/paid_sign_up?package=pro"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1462,7 +1462,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
+            <a href="/users/paid_sign_up?package=standard"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
@@ -1575,7 +1575,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="/users/paid_sign_up"
+            <a href="/users/paid_sign_up?package=pro"
                class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >

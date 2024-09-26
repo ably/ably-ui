@@ -63,7 +63,7 @@ export const planData: PricingDataFeature[] = [
     },
     cta: {
       text: "Get started",
-      url: "/users/paid_sign_up",
+      url: "/users/paid_sign_up?package=standard",
     },
     sections: [
       {
@@ -115,7 +115,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "/users/paid_sign_up" },
+    cta: { text: "Get started", url: "/users/paid_sign_up?package=pro" },
     sections: [
       {
         title: "Capacity",
