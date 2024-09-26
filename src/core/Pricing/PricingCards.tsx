@@ -77,7 +77,9 @@ const PricingCards = ({
                   >
                     {price.amount}
                   </p>
-                  <div className={t("text-neutral-000")}>{price.content}</div>
+                  <div className={`ui-text-p3 ${t("text-neutral-000")}`}>
+                    {price.content}
+                  </div>
                 </div>
                 {cta ? (
                   <div className="group">
@@ -139,7 +141,7 @@ const PricingCards = ({
                     {cta ? (
                       <div className="flex items-center h-40">
                         <div
-                          className={`hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 ${t("text-neutral-800")}`}
+                          className={`hidden sm:block sm:group-hover:hidden leading-6 tracking-widen-0.15 font-light text-p3 ${t("text-neutral-800")}`}
                         >
                           •••
                         </div>
