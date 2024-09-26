@@ -13,8 +13,8 @@ export const planData: PricingDataFeature[] = [
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
-    price: { amount: 0 },
-    cta: { text: "Start for free", url: "#" },
+    price: { amount: "$0" },
+    cta: { text: "Start for free", url: "/sign-up" },
     sections: [
       {
         title: "Capacity",
@@ -29,7 +29,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -46,7 +46,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-500",
     },
     price: {
-      amount: 29,
+      amount: "$29",
       content: (
         <>
           <p
@@ -61,7 +61,10 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "#" },
+    cta: {
+      text: "Get started",
+      url: "/users/paid_sign_up?package=standard",
+    },
     sections: [
       {
         title: "Capacity",
@@ -80,7 +83,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -92,12 +95,12 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-000",
     },
     description: {
-      content: "Scale with confidence.",
+      content: "Scale business critical workloads.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
     price: {
-      amount: 399,
+      amount: "$399",
       content: (
         <>
           <p
@@ -112,7 +115,7 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "#" },
+    cta: { text: "Get started", url: "/users/paid_sign_up?package=pro" },
     sections: [
       {
         title: "Capacity",
@@ -131,7 +134,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -144,12 +147,16 @@ export const planData: PricingDataFeature[] = [
       color: "text-orange-600",
     },
     description: {
-      content: "Deliver without limits.",
+      content: "Serious workloads without limits.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
     price: { amount: "Custom" },
-    cta: { text: "Contact us", url: "#", className: "ui-btn-alt text-white" },
+    cta: {
+      text: "Contact us",
+      url: "#pricing-enterprise",
+      className: "ui-btn-alt text-white",
+    },
     sections: [
       {
         title: "Capacity",
@@ -174,7 +181,7 @@ export const planData: PricingDataFeature[] = [
         },
         cta: {
           text: "See all features",
-          url: "#",
+          url: "#pricing-table",
         },
       },
     ],
@@ -192,9 +199,9 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Messages contain the data that a client is communicating, such as the contents of a chat message.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
-    price: { amount: 2.5, content: "per million" },
+    price: { amount: "$2.50", content: "per million" },
     sections: [
       {
         title: "Volume discounts",
@@ -220,9 +227,9 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Clients publish and receive messages on channels (also know as topics). We only charge for active channels.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
-    price: { amount: 1, content: "per million mins" },
+    price: { amount: "$1.00", content: "per million mins" },
     sections: [
       {
         title: "Volume discounts",
@@ -248,9 +255,9 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.",
       className: "ui-text-p3",
-      color: "text-neutral-700",
+      color: "text-neutral-600",
     },
-    price: { amount: 1, content: "per million mins" },
+    price: { amount: "$1.00", content: "per million mins" },
     sections: [
       {
         title: "Volume discounts",

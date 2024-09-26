@@ -6,17 +6,25 @@ type PricingDataHeader = {
   className?: string;
   color?: ColorClass;
 };
-type PricingDataFeatureCta = { text: string; url: string; className?: string };
+type PricingDataFeatureCta = {
+  text: string;
+  url: string;
+  className?: string;
+  disabled?: boolean;
+  onClick?: () => void;
+};
+
+export type PricingDataFeatureSection = {
+  title: string;
+  items: string[] | string[][];
+  listItemColors?: { foreground: ColorClass; background: ColorClass };
+  cta?: PricingDataFeatureCta;
+};
 
 export type PricingDataFeature = {
   title: PricingDataHeader;
   description: PricingDataHeader;
-  price: { amount: number | string; content?: ReactNode };
+  price: { amount: string; content?: ReactNode };
   cta?: PricingDataFeatureCta;
-  sections: {
-    title: string;
-    items: string[] | string[][];
-    listItemColors?: { foreground: ColorClass; background: ColorClass };
-    cta?: PricingDataFeatureCta;
-  }[];
+  sections: PricingDataFeatureSection[];
 };

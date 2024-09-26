@@ -9,7 +9,7 @@ import { IconName } from "../Icon/types";
 export type PricingCardsProps = {
   data: PricingDataFeature[];
   theme?: Theme;
-  delimiter?: IconName;
+  delimiter?: IconName | "blank";
 };
 
 const PricingCards = ({
@@ -22,12 +22,16 @@ const PricingCards = ({
 
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (
-      <div className="flex items-center justify-center w-full m-8 @[920px]:w-20">
-        <Icon
-          name={delimiter}
-          size="20"
-          additionalCSS={t("text-neutral-500")}
-        />
+      <div
+        className={`flex items-center justify-center w-full @[920px]:w-20 ${delimiter !== "blank" ? "m-8" : ""}`}
+      >
+        {delimiter !== "blank" ? (
+          <Icon
+            name={delimiter}
+            size="20"
+            additionalCSS={t("text-neutral-500")}
+          />
+        ) : null}
       </div>
     ) : null;
 
@@ -71,7 +75,6 @@ const PricingCards = ({
                   <p
                     className={`ui-text-title font-medium tracking-tight leading-none ${t("text-neutral-000")}`}
                   >
-                    {Number.isNaN(Number(price.amount)) ? "" : "$"}
                     {price.amount}
                   </p>
                   <div className={t("text-neutral-000")}>{price.content}</div>
@@ -79,8 +82,10 @@ const PricingCards = ({
                 {cta ? (
                   <div className="group">
                     <FeaturedLink
-                      additionalCSS={`text-center ui-btn ${t("bg-neutral-000")} ${t("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""}`}
+                      additionalCSS={`text-center ui-btn ${t("bg-neutral-000")} ${t("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""} cursor-pointer`}
                       url={cta.url}
+                      onClick={cta.onClick}
+                      disabled={cta.disabled}
                     >
                       {cta.text}
                     </FeaturedLink>
@@ -139,8 +144,9 @@ const PricingCards = ({
                           •••
                         </div>
                         <FeaturedLink
-                          url={cta.url ?? "#"}
-                          additionalCSS={`sm:hidden group-hover:block font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} transition-colors`}
+                          url={cta.url}
+                          additionalCSS={`sm:hidden group-hover:block font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} transition-colors cursor-pointer`}
+                          onClick={cta.onClick}
                         >
                           {cta.text}
                         </FeaturedLink>

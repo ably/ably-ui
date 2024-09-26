@@ -12,13 +12,13 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Messages
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Messages contain the data that a client is communicating, such as the contents of a chat message.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-              $2.5
+              $2.50
             </p>
             <div class="text-neutral-000">
               per million
@@ -91,7 +91,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center w-full m-8 @[920px]:w-20">
+      <div class="flex items-center justify-center w-full @[920px]:w-20 m-8">
         <svg class=" text-neutral-500"
              style="width: 20px; height: 20px;"
         >
@@ -107,13 +107,13 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Channels
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-              $1
+              $1.00
             </p>
             <div class="text-neutral-000">
               per million mins
@@ -186,7 +186,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center w-full m-8 @[920px]:w-20">
+      <div class="flex items-center justify-center w-full @[920px]:w-20 m-8">
         <svg class=" text-neutral-500"
              style="width: 20px; height: 20px;"
         >
@@ -202,13 +202,13 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-000">
               Connections
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
               Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
-              $1
+              $1.00
             </p>
             <div class="text-neutral-000">
               per million mins
@@ -298,13 +298,13 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Messages
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Messages contain the data that a client is communicating, such as the contents of a chat message.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-              $2.5
+              $2.50
             </p>
             <div class="text-neutral-1300">
               per million
@@ -377,7 +377,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center w-full m-8 @[920px]:w-20">
+      <div class="flex items-center justify-center w-full @[920px]:w-20 m-8">
         <svg class=" text-neutral-800"
              style="width: 20px; height: 20px;"
         >
@@ -393,13 +393,13 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Channels
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-              $1
+              $1.00
             </p>
             <div class="text-neutral-1300">
               per million mins
@@ -472,7 +472,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center w-full m-8 @[920px]:w-20">
+      <div class="flex items-center justify-center w-full @[920px]:w-20 m-8">
         <svg class=" text-neutral-800"
              style="width: 20px; height: 20px;"
         >
@@ -488,13 +488,13 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="mb-12 ui-text-h3 text-neutral-1300">
               Connections
             </p>
-            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+            <p class="ui-text-p1 ui-text-p3 text-neutral-700">
               Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
-              $1
+              $1.00
             </p>
             <div class="text-neutral-1300">
               per million mins
@@ -572,6 +572,280 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
 </div>
 `;
 
+exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
+<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
+  <div class="@container flex justify-center">
+    <div class="flex flex-col items-center @[920px]:flex-row gap-8">
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Messages
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Messages contain the data that a client is communicating, such as the contents of a chat message.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $2.50
+            </p>
+            <div class="text-neutral-000">
+              per million
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 50 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $2.50
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 450 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $2.25
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4.5 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 30 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.40
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 50 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.25
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full @[920px]:w-20 ">
+      </div>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Channels
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Clients publish and receive messages on channels (also know as topics). We only charge for active channels.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $1.00
+            </p>
+            <div class="text-neutral-000">
+              per million mins
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.60
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full @[920px]:w-20 ">
+      </div>
+      <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
+        <div class="absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl bg-neutral-1300  transition-[colors,opacity] opacity-25">
+        </div>
+        <div class="relative z-10 flex flex-col gap-24 @[520px]:flex-1 @[920px]:flex-none">
+          <div>
+            <p class="mb-12 ui-text-h3 text-neutral-000">
+              Connections
+            </p>
+            <p class="ui-text-p1 ui-text-p3 text-neutral-600">
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+            </p>
+          </div>
+          <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
+            <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
+              $1.00
+            </p>
+            <div class="text-neutral-000">
+              per million mins
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-24 relative z-10">
+          <div class="flex flex-col gap-12">
+            <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+              Volume discounts
+            </p>
+            <div class>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-8 ">
+                <span class="ui-text-p3 font-bold text-neutral-300 ">
+                  Consumption
+                </span>
+                <span class="ui-text-p3 font-bold text-neutral-300 text-right">
+                  $/million msgs
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  First 10 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $1.00
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 90 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.95
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 900 million msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.85
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 4 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.75
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Next 10 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.65
+                </span>
+              </div>
+              <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
+                <span class="ui-text-p3 font-medium text-neutral-300 ">
+                  Over 15 billion msgs
+                </span>
+                <span class="ui-text-p3 font-medium text-neutral-300 text-right">
+                  $0.60
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
 <div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
   <div class="@container flex justify-center">
@@ -596,8 +870,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/sign-up"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
@@ -660,8 +934,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -704,8 +978,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/users/paid_sign_up?package=standard"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -773,8 +1047,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -798,7 +1072,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               Pro
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-              Scale with confidence.
+              Scale business critical workloads.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -817,8 +1091,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/users/paid_sign_up?package=pro"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -897,8 +1171,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -922,7 +1196,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               Enterprise
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-500">
-              Deliver without limits.
+              Serious workloads without limits.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -933,8 +1207,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+            <a href="#pricing-enterprise"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us
@@ -1035,8 +1309,8 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1080,8 +1354,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/sign-up"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
@@ -1144,8 +1418,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1188,8 +1462,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/users/paid_sign_up?package=standard"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1257,8 +1531,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1282,7 +1556,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               Pro
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-              Scale with confidence.
+              Scale business critical workloads.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -1301,8 +1575,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 "
+            <a href="/users/paid_sign_up?package=pro"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
@@ -1381,8 +1655,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
@@ -1406,7 +1680,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               Enterprise
             </p>
             <p class="ui-text-p1 ui-text-p1 text-neutral-800">
-              Deliver without limits.
+              Serious workloads without limits.
             </p>
           </div>
           <div class="flex items-end gap-8 ">
@@ -1417,8 +1691,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             </div>
           </div>
           <div class="group">
-            <a href="#"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white"
+            <a href="#pricing-enterprise"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us
@@ -1519,8 +1793,8 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
                 •••
               </div>
-              <a href="#"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors"
+              <a href="#pricing-table"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
