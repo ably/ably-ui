@@ -82,7 +82,7 @@ const Expander = ({
           onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
           tabIndex={0}
           data-testid="expander-controls"
-          className={`mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
+          className={`${heightThreshold === 0 && !expanded ? "" : "mt-16"} cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
         >
           {expanded
             ? (controlsOpenedLabel ?? "View less -")
