@@ -142,7 +142,7 @@ const PricingCards = ({
                       <div className="relative flex items-center h-40">
                         <FeaturedLink
                           url={cta.url}
-                          additionalCSS={`absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")}`}
+                          additionalCSS={`absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} cursor-pointer`}
                           onClick={cta.onClick}
                           iconColor={t(
                             listItemColors?.foreground ?? "text-white",
