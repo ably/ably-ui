@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
-<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
+<div class="bg-gradient-to-r from-blue-800 to-pink-800 p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
@@ -20,7 +20,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $2.50
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million
             </div>
           </div>
@@ -115,7 +115,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $1.00
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million mins
             </div>
           </div>
@@ -131,12 +131,12 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $1.00
@@ -144,7 +144,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.95
@@ -152,7 +152,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.85
@@ -160,7 +160,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.75
@@ -168,7 +168,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.65
@@ -176,7 +176,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.60
@@ -203,14 +203,14 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               Connections
             </p>
             <p class="ui-text-p1 ui-text-p3 text-neutral-600">
-              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $1.00
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million mins
             </div>
           </div>
@@ -226,12 +226,12 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $1.00
@@ -239,7 +239,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.95
@@ -247,7 +247,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.85
@@ -255,7 +255,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.75
@@ -263,7 +263,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.65
@@ -271,7 +271,7 @@ exports[`Features/Pricing Cards ConsumptionDarkMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.60
@@ -306,7 +306,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $2.50
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
               per million
             </div>
           </div>
@@ -401,7 +401,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $1.00
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
               per million mins
             </div>
           </div>
@@ -417,12 +417,12 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $1.00
@@ -430,7 +430,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.95
@@ -438,7 +438,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.85
@@ -446,7 +446,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.75
@@ -454,7 +454,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.65
@@ -462,7 +462,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.60
@@ -489,14 +489,14 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               Connections
             </p>
             <p class="ui-text-p1 ui-text-p3 text-neutral-700">
-              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $1.00
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
               per million mins
             </div>
           </div>
@@ -512,12 +512,12 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-1000 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $1.00
@@ -525,7 +525,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.95
@@ -533,7 +533,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.85
@@ -541,7 +541,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.75
@@ -549,7 +549,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.65
@@ -557,7 +557,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-100 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-1000 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-1000 text-right">
                   $0.60
@@ -573,7 +573,7 @@ exports[`Features/Pricing Cards ConsumptionLightMode smoke-test 1`] = `
 `;
 
 exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
-<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
+<div class="bg-gradient-to-r from-blue-800 to-pink-800 p-32">
   <div class="@container flex justify-center">
     <div class="flex flex-col items-center @[920px]:flex-row gap-8">
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group @[520px]:flex-row @[920px]:flex-col min-w-[272px] overflow-hidden backdrop-blur">
@@ -592,7 +592,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $2.50
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million
             </div>
           </div>
@@ -681,7 +681,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $1.00
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million mins
             </div>
           </div>
@@ -697,12 +697,12 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $1.00
@@ -710,7 +710,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.95
@@ -718,7 +718,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.85
@@ -726,7 +726,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.75
@@ -734,7 +734,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.65
@@ -742,7 +742,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.60
@@ -763,14 +763,14 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               Connections
             </p>
             <p class="ui-text-p1 ui-text-p3 text-neutral-600">
-              Clients establish and maintain a connection to the Ably service, typically over WebSockets.  We only charge for active connections.
+              Clients establish and maintain a connection to the Ably service, typically over WebSockets.
             </p>
           </div>
           <div class="flex items-end gap-8 @[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end">
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $1.00
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               per million mins
             </div>
           </div>
@@ -786,12 +786,12 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
                   Consumption
                 </span>
                 <span class="ui-text-p3 font-bold text-neutral-300 text-right">
-                  $/million msgs
+                  $/million mins
                 </span>
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  First 10 million msgs
+                  First 10 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $1.00
@@ -799,7 +799,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 90 million msgs
+                  Next 90 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.95
@@ -807,7 +807,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 900 million msgs
+                  Next 900 million mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.85
@@ -815,7 +815,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 4 billion msgs
+                  Next 4 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.75
@@ -823,7 +823,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 ">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Next 10 billion msgs
+                  Next 10 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.65
@@ -831,7 +831,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
               </div>
               <div class="flex justify-between gap-16 px-8 -mx-8 py-4 bg-blue-900 rounded-md">
                 <span class="ui-text-p3 font-medium text-neutral-300 ">
-                  Over 15 billion msgs
+                  Over 15 billion mins
                 </span>
                 <span class="ui-text-p3 font-medium text-neutral-300 text-right">
                   $0.60
@@ -847,7 +847,7 @@ exports[`Features/Pricing Cards ConsumptionNoDelimiter smoke-test 1`] = `
 `;
 
 exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
-<div class="bg-gradient-to-r from-blue-500 to-pink-500 p-32">
+<div class="bg-gradient-to-r from-blue-800 to-pink-800 p-32">
   <div class="@container flex justify-center">
     <div class="grid @[552px]:grid-cols-2 @[1104px]:grid-cols-4 gap-8">
       <div class="relative border border-neutral-1100 flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group  min-w-[272px] overflow-hidden backdrop-blur">
@@ -866,16 +866,16 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $0
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
             </div>
           </div>
           <div class="group">
             <a href="/sign-up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -887,7 +887,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -898,6 +898,16 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
               <div class="flex gap-8 items-start">
                 <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
                   200 concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  500 messages/second
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-300">
+                  6M messages/month
                 </div>
               </div>
             </div>
@@ -930,22 +940,22 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-neutral-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-800">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -966,7 +976,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $29
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               <p class="ui-text-p3 font-medium"
                  style="color: currentcolor;"
               >
@@ -979,11 +989,11 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up?package=standard"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -995,7 +1005,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1043,22 +1053,22 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-blue-400 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-800">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1079,7 +1089,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               $399
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
               <p class="ui-text-p3 font-medium"
                  style="color: currentcolor;"
               >
@@ -1092,11 +1102,11 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up?package=pro"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1108,7 +1118,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1141,7 +1151,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                   </use>
                 </svg>
                 <div class="flex-1 ui-text-p3 font-medium text-neutral-300">
-                  4 hour email support SLA
+                  2 hour support SLA
                 </div>
               </div>
               <div class="flex gap-8 items-start">
@@ -1167,22 +1177,22 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-blue-400 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-800">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1203,16 +1213,16 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-000">
               Custom
             </p>
-            <div class="text-neutral-000">
+            <div class="ui-text-p3 text-neutral-000">
             </div>
           </div>
           <div class="group">
-            <a href="#pricing-enterprise"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
+            <a href="/contact"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-000 text-neutral-1300 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1224,7 +1234,7 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1305,22 +1315,22 @@ exports[`Features/Pricing Cards PlansDarkMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-800">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-500 hover:text-neutral-000"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-800">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1350,16 +1360,16 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $0
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
             </div>
           </div>
           <div class="group">
             <a href="/sign-up"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Start for free
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1371,7 +1381,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1382,6 +1392,16 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
               <div class="flex gap-8 items-start">
                 <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
                   200 concurrent connections
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  500 messages/second
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="flex-1 ui-text-p2 font-medium text-neutral-1000">
+                  6M messages/month
                 </div>
               </div>
             </div>
@@ -1414,22 +1434,22 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-neutral-700 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1450,7 +1470,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $29
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
               <p class="ui-text-p3 font-medium"
                  style="color: currentcolor;"
               >
@@ -1463,11 +1483,11 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up?package=standard"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1479,7 +1499,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1527,22 +1547,22 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-blue-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1563,7 +1583,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               $399
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
               <p class="ui-text-p3 font-medium"
                  style="color: currentcolor;"
               >
@@ -1576,11 +1596,11 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
           </div>
           <div class="group">
             <a href="/users/paid_sign_up?package=pro"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12  cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Get started
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1592,7 +1612,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1625,7 +1645,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                   </use>
                 </svg>
                 <div class="flex-1 ui-text-p3 font-medium text-neutral-1000">
-                  4 hour email support SLA
+                  2 hour support SLA
                 </div>
               </div>
               <div class="flex gap-8 items-start">
@@ -1651,22 +1671,22 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-blue-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500">
+                •••
+              </div>
             </div>
           </div>
         </div>
@@ -1687,16 +1707,16 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
             <p class="ui-text-title font-medium tracking-tight leading-none text-neutral-1300">
               Custom
             </p>
-            <div class="text-neutral-1300">
+            <div class="ui-text-p3 text-neutral-1300">
             </div>
           </div>
           <div class="group">
-            <a href="#pricing-enterprise"
-               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
+            <a href="/contact"
+               class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-center ui-btn bg-neutral-1300 text-neutral-000 hover:text-neutral-000 px-24 !py-12 ui-btn-alt text-white cursor-pointer"
                style="--featured-link-icon-size: var(--fs-p2);"
             >
               Contact us
-              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+              <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                    style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
               >
                 <use xlink:href="#sprite-icon-gui-link-arrow">
@@ -1708,7 +1728,7 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
         <div class="flex-1 flex flex-col gap-24 relative z-10">
           <div class="flex flex-col gap-12">
             <p class="text-neutral-800 font-mono uppercase text-overline2 tracking-[0.16em]">
-              Capacity
+              Limits
             </p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-8 items-start">
@@ -1789,22 +1809,22 @@ exports[`Features/Pricing Cards PlansLightMode smoke-test 1`] = `
                 </div>
               </div>
             </div>
-            <div class="flex items-center h-40">
-              <div class="hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 text-neutral-500">
-                •••
-              </div>
+            <div class="relative flex items-center h-40">
               <a href="#pricing-table"
-                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group ui-text-p2 py-8 sm:hidden group-hover:block font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300 transition-colors cursor-pointer"
+                 class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 text-neutral-800 hover:text-neutral-1300"
                  style="--featured-link-icon-size: var(--fs-p2);"
               >
                 See all features
-                <svg class=" align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover:left-0"
+                <svg class="text-orange-600 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
                      style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
                 >
                   <use xlink:href="#sprite-icon-gui-link-arrow">
                   </use>
                 </svg>
               </a>
+              <div class="absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500">
+                •••
+              </div>
             </div>
           </div>
         </div>
