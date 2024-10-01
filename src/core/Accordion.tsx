@@ -120,7 +120,7 @@ const AccordionRow = ({
       <button
         type="button"
         onClick={onClick}
-        className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16" : ""} transition-colors ${bgClasses} ${textClass}`}
+        className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16 mb-16" : ""} transition-colors ${bgClasses} ${textClass}`}
       >
         {rowIcon ? <Icon name={rowIcon} color={textClass} size="32" /> : null}
         <span>{name}</span>
@@ -135,7 +135,7 @@ const AccordionRow = ({
         ) : null}
       </button>
       <div
-        className={`ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden ${isNonTransparentTheme(theme) ? "pt-16" : ""}`}
+        className={`ui-text-p2 transition-[max-height] duration-500 overflow-y-hidden`}
         style={{ maxHeight: open ? contentHeight : 0 }}
         ref={rowRef}
       >

@@ -3,9 +3,11 @@ import React, {
   HTMLAttributes,
   PropsWithChildren,
   ReactNode,
-  useLayoutEffect,
   useRef,
   useState,
+  MouseEvent,
+  RefObject,
+  useEffect,
 } from "react";
 import { createPortal } from "react-dom";
 import Icon from "./Icon";
@@ -17,6 +19,7 @@ type TooltipProps = {
   triggerProps?: ButtonHTMLAttributes<HTMLButtonElement>;
   tooltipProps?: HTMLAttributes<HTMLDivElement>;
   theme?: Theme;
+  interactive?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
 const Tooltip = ({
@@ -25,6 +28,7 @@ const Tooltip = ({
   triggerProps,
   tooltipProps,
   theme = "dark",
+  interactive = false,
   ...rest
 }: PropsWithChildren<TooltipProps>) => {
   const [open, setOpen] = useState(false);
@@ -33,10 +37,11 @@ const Tooltip = ({
   const offset = 8;
   const reference = useRef<HTMLButtonElement>(null);
   const floating = useRef<HTMLDivElement>(null);
+  const fadeOutTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const t = (color: ColorClass) => determineThemeColor("light", theme, color);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (open) {
       const floatingRect = floating.current?.getBoundingClientRect();
       const referenceRect = reference.current?.getBoundingClientRect();
@@ -77,7 +82,34 @@ const Tooltip = ({
     } else {
       setPosition({ x: 0, y: 0 });
     }
+
+    return () => {
+      if (fadeOutTimeoutRef.current !== null) {
+        clearTimeout(fadeOutTimeoutRef.current);
+      }
+    };
   }, [open]);
+
+  const initiateFadeOut = () => {
+    setFadeOut(true);
+    fadeOutTimeoutRef.current = setTimeout(() => {
+      setOpen(false);
+      setFadeOut(false);
+    }, 250);
+  };
+
+  const cursorHeadsNorth = (
+    event: MouseEvent,
+    ref: RefObject<HTMLButtonElement>,
+  ) => {
+    if (ref.current) {
+      const { clientX, clientY } = event;
+      const { x, y, width } = ref.current.getBoundingClientRect();
+      return clientX >= x && clientX <= x + width && clientY < y;
+    }
+
+    return false;
+  };
 
   return (
     <div
@@ -88,12 +120,10 @@ const Tooltip = ({
     >
       <button
         onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => {
-          setFadeOut(true);
-          setTimeout(() => {
-            setOpen(false);
-            setFadeOut(false);
-          }, 250);
+        onMouseLeave={(event) => {
+          if (!interactive || !cursorHeadsNorth(event, reference)) {
+            initiateFadeOut();
+          }
         }}
         type="button"
         ref={reference}
@@ -117,6 +147,7 @@ const Tooltip = ({
             <div
               role="tooltip"
               ref={floating}
+              onMouseLeave={initiateFadeOut}
               style={{
                 top: position.y,
                 left: position.x,
@@ -124,7 +155,7 @@ const Tooltip = ({
                 boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.2)",
               }}
               {...tooltipProps}
-              className={`${t("bg-neutral-1000")} ${t("text-neutral-200")} ui-text-p3 font-medium p-16 rounded-lg pointer-events-none absolute ${
+              className={`${t("bg-neutral-1000")} ${t("text-neutral-200")} ui-text-p3 font-medium p-16 ${interactive ? "" : "pointer-events-none"} rounded-lg absolute ${
                 tooltipProps?.className ?? ""
               } ${fadeOut ? "animate-[tooltipExit_0.25s_ease-in-out]" : "animate-[tooltipEntry_0.25s_ease-in-out]"}`}
             >

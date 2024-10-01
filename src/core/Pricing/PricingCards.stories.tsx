@@ -18,7 +18,7 @@ export default {
 
 const Template = ({ data, theme = "dark", delimiter }: PricingCardsProps) => (
   <div
-    className={`${theme === "dark" ? "bg-gradient-to-r from-blue-500 to-pink-500" : ""} p-32`}
+    className={`${theme === "dark" ? "bg-gradient-to-r from-blue-800 to-pink-800" : ""} p-32`}
   >
     <PricingCards data={data} theme={theme} delimiter={delimiter} />
   </div>

@@ -6,6 +6,7 @@ type PricingDataHeader = {
   className?: string;
   color?: ColorClass;
 };
+
 type PricingDataFeatureCta = {
   text: string;
   url: string;

@@ -77,7 +77,9 @@ const PricingCards = ({
                   >
                     {price.amount}
                   </p>
-                  <div className={t("text-neutral-000")}>{price.content}</div>
+                  <div className={`ui-text-p3 ${t("text-neutral-000")}`}>
+                    {price.content}
+                  </div>
                 </div>
                 {cta ? (
                   <div className="group">
@@ -137,19 +139,22 @@ const PricingCards = ({
                       )}
                     </div>
                     {cta ? (
-                      <div className="flex items-center h-40">
-                        <div
-                          className={`hidden sm:block sm:group-hover:hidden leading-6 font-extralight text-p3 ${t("text-neutral-800")}`}
-                        >
-                          •••
-                        </div>
+                      <div className="relative flex items-center h-40">
                         <FeaturedLink
                           url={cta.url}
-                          additionalCSS={`sm:hidden group-hover:block font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} transition-colors cursor-pointer`}
+                          additionalCSS={`absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} cursor-pointer`}
                           onClick={cta.onClick}
+                          iconColor={t(
+                            listItemColors?.foreground ?? "text-white",
+                          )}
                         >
                           {cta.text}
                         </FeaturedLink>
+                        <div
+                          className={`absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${t("text-neutral-800")}`}
+                        >
+                          •••
+                        </div>
                       </div>
                     ) : null}
                   </div>

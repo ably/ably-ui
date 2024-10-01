@@ -180,3 +180,18 @@ export const OverriddenControls = {
     },
   },
 };
+
+export const ZeroHeightContent = {
+  render: () => (
+    <Expander fadeClassName="from-transparent" heightThreshold={0}>
+      {longContentInner}
+    </Expander>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story: "A fully collapsed body of content.",
+      },
+    },
+  },
+};
