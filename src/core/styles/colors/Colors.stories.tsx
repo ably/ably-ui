@@ -1,19 +1,21 @@
 import React from "react";
 import { colorNames } from "./types";
+import { determineThemeColor } from "./utils";
+import Icon from "../../Icon";
 
 export default {
   title: "CSS/Colors",
 };
 
-const colorSet = (colors) =>
+const colorSet = (colors, useClass = "") =>
   colors.map((color) => (
     <div
       key={color}
       className="rounded-lg w-128 ui-shadow-lg-soft flex flex-col"
     >
       <div
-        className={`h-[100px] rounded-t-lg`}
-        style={{ backgroundColor: `var(--color-${color})` }}
+        className={`h-[100px] rounded-t-lg ${useClass}`}
+        style={{ backgroundColor: useClass ? `` : `var(--color-${color})` }}
       />
       <div className="p-12 flex flex-col flex-1">
         <p className="ui-text-p2 font-semibold flex-1">{color}</p>
@@ -96,6 +98,31 @@ export const GUIColors = {
       description: {
         story:
           "Example usage: `.text-gui-blue-default`, `.bg-gui-blue-default`",
+      },
+    },
+  },
+};
+
+export const DynamicTheming = {
+  render: () => (
+    <div className="flex items-center">
+      <div className="flex flex-wrap gap-24">
+        {colorSet(["orange-300"], "bg-orange-300")}
+      </div>
+      <Icon name="icon-gui-arrow-right" size="48" additionalCSS="m-16"></Icon>
+      <div className="flex flex-wrap gap-24">
+        {colorSet(
+          ["orange-900"],
+          determineThemeColor("dark", "light", "bg-orange-300"),
+        )}
+      </div>
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "We can generate alternatives for a color based on the theme. Example usage: `determineThemeColor('dark', 'light', 'bg-orange-300')` - this takes a base theme of 'dark', a target theme of 'light', and the colour to convert.",
       },
     },
   },
