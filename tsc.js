@@ -65,5 +65,5 @@ dtsFiles.forEach((file) => {
 });
 
 console.log(
-  `tsc 🤝 index.d.ts file has been generated with ${dtsFiles.length} exports.`,
+  `🔬 index.d.ts file has been generated with ${dtsFiles.length} exports.`,
 );

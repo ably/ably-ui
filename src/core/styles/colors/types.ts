@@ -5,21 +5,26 @@ export type ColorName =
   | (typeof guiColors)[number]
   | (typeof aliasedColors)[number];
 
-type ColorClassVariants =
-  | ""
-  | "hover:"
-  | "focus:"
-  | "group-hover:"
-  | "group-focus:";
+export const variants = [
+  "",
+  "hover:",
+  "focus:",
+  "group-hover:",
+  "group-focus:",
+] as const;
 
-type ColorClassPrefixes = "bg" | "text" | "from" | "to" | "border";
+type ColorClassVariants = (typeof variants)[number];
+
+export const prefixes = ["text", "bg", "from", "to", "border"] as const;
+
+type ColorClassPrefixes = (typeof prefixes)[number];
 
 export type Theme = "light" | "dark";
 
 export type ColorClass =
   `${ColorClassVariants}${ColorClassPrefixes}-${ColorName}`;
 
-const neutralColors = [
+export const neutralColors = [
   "neutral-000",
   "neutral-100",
   "neutral-200",
@@ -36,7 +41,7 @@ const neutralColors = [
   "neutral-1300",
 ] as const;
 
-const orangeColors = [
+export const orangeColors = [
   "orange-100",
   "orange-200",
   "orange-300",
@@ -50,7 +55,7 @@ const orangeColors = [
   "orange-1100",
 ] as const;
 
-const secondaryColors = [
+export const yellowColors = [
   "yellow-100",
   "yellow-200",
   "yellow-300",
@@ -60,6 +65,9 @@ const secondaryColors = [
   "yellow-700",
   "yellow-800",
   "yellow-900",
+] as const;
+
+export const greenColors = [
   "green-100",
   "green-200",
   "green-300",
@@ -69,6 +77,9 @@ const secondaryColors = [
   "green-700",
   "green-800",
   "green-900",
+] as const;
+
+export const blueColors = [
   "blue-100",
   "blue-200",
   "blue-300",
@@ -78,6 +89,9 @@ const secondaryColors = [
   "blue-700",
   "blue-800",
   "blue-900",
+] as const;
+
+export const violetColors = [
   "violet-100",
   "violet-200",
   "violet-300",
@@ -87,6 +101,9 @@ const secondaryColors = [
   "violet-700",
   "violet-800",
   "violet-900",
+] as const;
+
+export const pinkColors = [
   "pink-100",
   "pink-200",
   "pink-300",
@@ -96,6 +113,14 @@ const secondaryColors = [
   "pink-700",
   "pink-800",
   "pink-900",
+] as const;
+
+const secondaryColors = [
+  ...yellowColors,
+  ...greenColors,
+  ...blueColors,
+  ...violetColors,
+  ...pinkColors,
 ] as const;
 
 const guiColors = [
@@ -145,3 +170,18 @@ export const colorNames = {
   secondary: secondaryColors,
   gui: guiColors,
 };
+
+export const numericalColors = [
+  neutralColors,
+  orangeColors,
+  yellowColors,
+  greenColors,
+  blueColors,
+  violetColors,
+  pinkColors,
+];
+
+export type ComputedColors = Record<
+  ColorClass,
+  Partial<Record<Theme, ColorClass>>
+>;
