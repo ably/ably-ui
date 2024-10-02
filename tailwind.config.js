@@ -1,19 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,tsx,mdx,stories.tsx}"],
-  safelist: [
-    "w-1/2",
-    "w-1/3",
-    "w-1/4",
-    "w-1/5",
-    "w-1/6",
-    { pattern: /^hljs.*/ },
-    { pattern: /^ui-.*/ },
-    {
-      pattern:
-        /^(text|bg|from|to)-(neutral|orange|yellow|green|blue|violet|pink)-[\d]{1,2}00.*/,
-      variants: ["hover", "focus", "group-hover"],
-    },
-  ],
+  safelist: [{ pattern: /^hljs.*/ }],
   theme: {
     screens: {
       // CSS custom properties can't be used in media queries
