@@ -61,10 +61,29 @@ const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
     toggleIconColor: "text-orange-600",
     border: "border-neutral-900 border-b last:border-none",
   },
+  static: {
+    bg: "bg-neutral-200",
+    hoverBg: "hover:bg-neutral-200",
+    text: "text-neutral-1300",
+    toggleIconColor: "text-neutral-200",
+    selectableBg: "bg-neutral-1200",
+    selectableText: "text-white",
+  },
+  darkStatic: {
+    bg: "bg-neutral-1200",
+    hoverBg: "hover:bg-neutral-1200",
+    text: "text-white",
+    toggleIconColor: "text-neutral-1200",
+    selectableBg: "bg-neutral-1200",
+    selectableText: "text-neutral-1300",
+  },
 };
 
 const isNonTransparentTheme = (theme: AccordionTheme) =>
   !["transparent", "darkTransparent"].includes(theme);
+
+const isStaticTheme = (theme: AccordionTheme) =>
+  ["static", "darkStatic"].includes(theme);
 
 const AccordionRow = ({
   name,
@@ -119,8 +138,8 @@ const AccordionRow = ({
     <div className={`${border ?? ""}`}>
       <button
         type="button"
-        onClick={onClick}
-        className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16 mb-16" : ""} transition-colors ${bgClasses} ${textClass}`}
+        {...(!isStaticTheme(theme) ? { onClick } : {})}
+        className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16 mb-16" : ""} ${isStaticTheme(theme) ? "pointer-events-none" : ""} transition-colors ${bgClasses} ${textClass}`}
       >
         {rowIcon ? <Icon name={rowIcon} color={textClass} size="32" /> : null}
         <span>{name}</span>
@@ -156,7 +175,7 @@ const Accordion = ({
   },
   options,
 }: AccordionProps) => {
-  const { defaultOpenIndexes, autoClose } = options || {};
+  const { defaultOpenIndexes, autoClose, fullyOpen } = options || {};
   const [openIndexes, setOpenIndexes] = useState<number[]>(
     defaultOpenIndexes ?? [],
   );
@@ -183,7 +202,7 @@ const Accordion = ({
             key={item.name}
             name={item.name}
             rowIcon={item.icon}
-            open={openIndexes.includes(currentIndex)}
+            open={fullyOpen ?? openIndexes.includes(currentIndex)}
             onClick={() => handleSetIndex(currentIndex)}
             toggleIcons={icons}
             theme={theme}
