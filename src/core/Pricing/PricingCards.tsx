@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import type { PricingDataFeature } from "./types";
 import { determineThemeColor } from "../styles/colors/utils";
 import { ColorClass, Theme } from "../styles/colors/types";
 import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
 import { IconName } from "../Icon/types";
+import throttle from "lodash.throttle";
 
 export type PricingCardsProps = {
   data: PricingDataFeature[];
@@ -17,6 +18,32 @@ const PricingCards = ({
   theme = "dark",
   delimiter,
 }: PricingCardsProps) => {
+  const descriptionsRef = useRef<(HTMLSpanElement | null)[]>([]);
+  const [descriptionHeight, setDescriptionHeight] = useState<number>(0);
+
+  const determineMaxDescriptionHeight = throttle(() => {
+    if (descriptionsRef.current.length) {
+      setDescriptionHeight(
+        Math.max(
+          ...descriptionsRef.current.map(
+            (description) => description?.getBoundingClientRect().height ?? 0,
+          ),
+        ),
+      );
+    }
+  }, 100);
+
+  useEffect(() => {
+    determineMaxDescriptionHeight();
+
+    window.addEventListener("resize", determineMaxDescriptionHeight);
+
+    return () => {
+      window.removeEventListener("resize", determineMaxDescriptionHeight);
+      determineMaxDescriptionHeight.cancel();
+    };
+  }, []);
+
   // work out a dynamic theme colouring, using dark theme colouring as the base
   const t = (color: ColorClass) => determineThemeColor("dark", theme, color);
 
@@ -40,130 +67,158 @@ const PricingCards = ({
     delimited: "flex flex-col items-center @[920px]:flex-row",
   };
 
+  const borderClasses = (color?: "neutral" | "blue" | "orange") => {
+    const classes: Record<string, { border: ColorClass; bg: ColorClass }> = {
+      neutral: { border: "border-neutral-700", bg: "bg-neutral-700" },
+      blue: { border: "border-blue-600", bg: "bg-blue-600" },
+      orange: { border: "border-orange-600", bg: "bg-orange-600" },
+    };
+
+    if (color && classes[color]) {
+      return classes[color];
+    }
+  };
+
   return (
     <div className="@container flex justify-center">
       <div
         className={`${delimiter ? gridRules.delimited : gridRules.nonDelimited} gap-8`}
       >
-        {data.map(({ title, description, price, cta, sections }, index) => (
-          <Fragment key={title.content}>
-            {delimiterColumn(index)}
-            <div
-              className={`relative border ${t("border-neutral-1100")} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] overflow-hidden backdrop-blur`}
-            >
+        {data.map(
+          ({ title, description, price, cta, sections, border }, index) => (
+            <Fragment key={title.content}>
+              {delimiterColumn(index)}
               <div
-                className={`absolute z-0 -top-32 -left-32 w-[calc(100%+64px)] h-[calc(100%+64px)] rounded-2xl ${t("bg-neutral-1300")} ${cta ? `${t("group-hover:bg-neutral-1200")} group-hover:opacity-100` : ""} transition-[colors,opacity] opacity-25`}
-              ></div>
-              <div
-                className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px]:flex-none" : ""}`}
+                className={`relative border ${t(borderClasses(border?.color)?.border ?? "border-neutral-1100")} ${border?.style ?? ""} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] backdrop-blur`}
               >
-                <div>
-                  <p
-                    className={`mb-12 ${title.className ?? ""} ${t(title.color ?? "text-neutral-000")}`}
+                {border ? (
+                  <div
+                    className={`flex items-center absolute z-10 -top-12 self-center font-semibold uppercase font-sans text-white ${borderClasses(border?.color)?.border} ${borderClasses(border?.color)?.bg} h-24 text-[11px] px-[10px] py-2 rounded-2xl select-none tracking-widen-0.1`}
                   >
-                    {title.content}
-                  </p>
-                  <p
-                    className={`ui-text-p1 ${description.className ?? ""} ${t(description.color ?? "text-neutral-000")}`}
-                  >
-                    {description.content}
-                  </p>
-                </div>
-                <div
-                  className={`flex items-end gap-8 ${delimiter ? "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end" : ""}`}
-                >
-                  <p
-                    className={`ui-text-title font-medium tracking-tight leading-none ${t("text-neutral-000")}`}
-                  >
-                    {price.amount}
-                  </p>
-                  <div className={`ui-text-p3 ${t("text-neutral-000")}`}>
-                    {price.content}
-                  </div>
-                </div>
-                {cta ? (
-                  <div className="group">
-                    <FeaturedLink
-                      additionalCSS={`text-center ui-btn ${t("bg-neutral-000")} ${t("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""} cursor-pointer`}
-                      url={cta.url}
-                      onClick={cta.onClick}
-                      disabled={cta.disabled}
-                    >
-                      {cta.text}
-                    </FeaturedLink>
+                    {border.text}
                   </div>
                 ) : null}
-              </div>
-              <div className="flex-1 flex flex-col gap-24 relative z-10">
-                {sections.map(({ title, items, listItemColors, cta }) => (
-                  <div key={title} className="flex flex-col gap-12">
+                <div
+                  className={`absolute z-0 top-0 left-0 w-full h-full rounded-2xl ${t("bg-neutral-1300")} ${!delimiter ? `${t("group-hover:bg-neutral-1200")} group-hover:opacity-100` : ""} transition-[colors,opacity] opacity-25`}
+                ></div>
+                <div
+                  className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px]:flex-none" : ""}`}
+                >
+                  <div>
                     <p
-                      className={`${t("text-neutral-500")} font-mono uppercase text-overline2 tracking-[0.16em]`}
+                      className={`mb-12 ${title.className ?? ""} ${t(title.color ?? "text-neutral-000")}`}
                     >
-                      {title}
+                      {title.content}
                     </p>
-                    <div className={delimiter ? "" : "flex flex-col gap-4"}>
-                      {items.map((item, index) =>
-                        Array.isArray(item) ? (
-                          <div
-                            key={item[0]}
-                            className={`flex justify-between gap-16 px-8 -mx-8 ${index === 0 ? "py-8" : "py-4"} ${index > 0 && index % 2 === 0 ? `${t("bg-blue-900")} rounded-md` : ""}`}
-                          >
-                            {item.map((subItem, subIndex) => (
-                              <span
-                                key={subItem}
-                                className={`ui-text-p3 ${index === 0 ? "font-bold" : "font-medium"} ${t("text-neutral-300")} ${subIndex % 2 === 1 ? "text-right" : ""}`}
-                              >
-                                {subItem}
-                              </span>
-                            ))}
-                          </div>
-                        ) : (
-                          <div key={item} className="flex gap-8 items-start">
-                            {listItemColors ? (
-                              <Icon
-                                name="icon-gui-check-circled-fill"
-                                color={t(listItemColors.background)}
-                                secondaryColor={t(listItemColors.foreground)}
-                                size="16"
-                                additionalCSS="mt-2"
-                              />
-                            ) : null}
-                            <div
-                              className={`flex-1 ${listItemColors ? "ui-text-p3" : "ui-text-p2"} font-medium ${t("text-neutral-300")}`}
-                            >
-                              {item}
-                            </div>
-                          </div>
-                        ),
-                      )}
-                    </div>
-                    {cta ? (
-                      <div className="relative flex items-center h-40">
-                        <FeaturedLink
-                          url={cta.url}
-                          additionalCSS={`absolute sm:-translate-x-96 sm:opacity-0 sm:group-hover:translate-x-0 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} cursor-pointer`}
-                          onClick={cta.onClick}
-                          iconColor={t(
-                            listItemColors?.foreground ?? "text-white",
-                          )}
-                        >
-                          {cta.text}
-                        </FeaturedLink>
-                        <div
-                          className={`absolute sm:translate-x-0 sm:opacity-100 sm:group-hover:translate-x-96 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${t("text-neutral-800")}`}
-                        >
-                          •••
-                        </div>
-                      </div>
-                    ) : null}
+                    <p
+                      className={`ui-text-p1 ${description.className ?? ""} ${t(description.color ?? "text-neutral-000")} min-h-20`}
+                      style={{ height: descriptionHeight }}
+                    >
+                      <span ref={(el) => (descriptionsRef.current[index] = el)}>
+                        {description.content}
+                      </span>
+                    </p>
                   </div>
-                ))}
+                  <div
+                    className={`flex items-end gap-8 ${delimiter ? "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end" : ""}`}
+                  >
+                    <p
+                      className={`ui-text-title font-medium tracking-tight leading-none ${t("text-neutral-000")}`}
+                    >
+                      {price.amount}
+                    </p>
+                    <div className={`ui-text-p3 ${t("text-neutral-000")}`}>
+                      {price.content}
+                    </div>
+                  </div>
+                  {cta ? (
+                    <div className="group">
+                      <FeaturedLink
+                        additionalCSS={`text-center ui-btn ${t("bg-neutral-000")} ${t("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""} cursor-pointer`}
+                        url={cta.url}
+                        onClick={cta.onClick}
+                        disabled={cta.disabled}
+                      >
+                        {cta.text}
+                      </FeaturedLink>
+                    </div>
+                  ) : delimiter ? null : (
+                    <div className="flex items-center justify-center h-48 w-full">
+                      <hr className={`${t("border-neutral-800")} w-64`} />
+                    </div>
+                  )}
+                </div>
+                <div className="flex-1 flex flex-col gap-24 relative z-10">
+                  {sections.map(({ title, items, listItemColors, cta }) => (
+                    <div key={title} className="flex flex-col gap-12">
+                      <p
+                        className={`${t("text-neutral-500")} font-mono uppercase text-overline2 tracking-[0.16em]`}
+                      >
+                        {title}
+                      </p>
+                      <div className={delimiter ? "" : "flex flex-col gap-4"}>
+                        {items.map((item, index) =>
+                          Array.isArray(item) ? (
+                            <div
+                              key={item[0]}
+                              className={`flex justify-between gap-16 px-8 -mx-8 ${index === 0 ? "py-8" : "py-4"} ${index > 0 && index % 2 === 0 ? `${t("bg-blue-900")} rounded-md` : ""}`}
+                            >
+                              {item.map((subItem, subIndex) => (
+                                <span
+                                  key={subItem}
+                                  className={`ui-text-p3 ${index === 0 ? "font-bold" : "font-medium"} ${t("text-neutral-300")} ${subIndex % 2 === 1 ? "text-right" : ""}`}
+                                >
+                                  {subItem}
+                                </span>
+                              ))}
+                            </div>
+                          ) : (
+                            <div key={item} className="flex gap-8 items-start">
+                              {listItemColors ? (
+                                <Icon
+                                  name="icon-gui-check-circled-fill"
+                                  color={t(listItemColors.background)}
+                                  secondaryColor={t(listItemColors.foreground)}
+                                  size="16"
+                                  additionalCSS="mt-2"
+                                />
+                              ) : null}
+                              <div
+                                className={`flex-1 ${listItemColors ? "ui-text-p3" : "ui-text-p2"} font-medium ${t("text-neutral-300")}`}
+                              >
+                                {item}
+                              </div>
+                            </div>
+                          ),
+                        )}
+                      </div>
+                      {cta ? (
+                        <div className="relative -mx-24 flex items-center h-40 overflow-x-hidden">
+                          <FeaturedLink
+                            url={cta.url}
+                            additionalCSS={`absolute sm:-translate-x-120 sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${t("text-neutral-500")} hover:${t("text-neutral-000")} cursor-pointer`}
+                            onClick={cta.onClick}
+                            iconColor={t(
+                              listItemColors?.foreground ?? "text-white",
+                            )}
+                          >
+                            {cta.text}
+                          </FeaturedLink>
+                          <div
+                            className={`absolute sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-120 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${t("text-neutral-800")}`}
+                          >
+                            •••
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            {delimiterColumn(index)}
-          </Fragment>
-        ))}
+              {delimiterColumn(index)}
+            </Fragment>
+          ),
+        )}
       </div>
     </div>
   );

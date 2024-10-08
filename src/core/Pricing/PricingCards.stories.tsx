@@ -1,6 +1,7 @@
 import React from "react";
 import PricingCards, { PricingCardsProps } from "./PricingCards";
 import { consumptionData, planData } from "./data";
+import { PricingDataFeatureBorder } from "./types";
 
 export default {
   title: "Features/Pricing Cards",
@@ -16,32 +17,78 @@ export default {
   },
 };
 
-const Template = ({ data, theme = "dark", delimiter }: PricingCardsProps) => (
-  <div
-    className={`${theme === "dark" ? "bg-gradient-to-r from-blue-800 to-pink-800" : ""} p-32`}
-  >
-    <PricingCards data={data} theme={theme} delimiter={delimiter} />
-  </div>
+const Template = ({ data, delimiter }: PricingCardsProps) => (
+  <>
+    <div className="bg-gradient-to-r from-blue-800 to-pink-800 p-32">
+      <PricingCards data={data} theme="dark" delimiter={delimiter} />
+    </div>
+    <div className="p-32">
+      <PricingCards data={data} theme="light" delimiter={delimiter} />
+    </div>
+  </>
 );
 
-export const PlansDarkMode = {
+export const Plans = {
   render: () => <Template data={planData} />,
 };
 
-export const PlansLightMode = {
-  render: () => <Template data={planData} theme="light" />,
-};
-
-export const ConsumptionDarkMode = {
+export const Consumption = {
   render: () => <Template data={consumptionData} delimiter="icon-gui-plus" />,
-};
-
-export const ConsumptionLightMode = {
-  render: () => (
-    <Template data={consumptionData} theme="light" delimiter="icon-gui-plus" />
-  ),
 };
 
 export const ConsumptionNoDelimiter = {
   render: () => <Template data={consumptionData} delimiter="blank" />,
+};
+
+const planBorders: (PricingDataFeatureBorder | undefined)[] = [
+  {
+    color: "neutral",
+    style: "border-dashed",
+    text: "Dashed border",
+  },
+  {
+    color: "blue",
+    style: "border-solid",
+    text: "Solid border",
+  },
+  undefined,
+  {
+    color: "orange",
+    style: "border-dotted",
+    text: "Dotted border",
+  },
+];
+
+const planDataWithBorder = planData.map((plan, index) => ({
+  ...plan,
+  border: planBorders[index],
+}));
+
+export const BorderedPlans = {
+  render: () => <Template data={planDataWithBorder} />,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Supplying a `border` prop to the data object (typed as `PricingDataFeature`) will render a border around the card. The border can be solid, dashed, or dotted, and can be neutral, blue, or orange with the supplied text. Example (shown for the first data object below): `{color: 'neutral', style: 'border-dashed', text: 'Dashed border'}`",
+      },
+    },
+  },
+};
+
+const planDataWithoutCta = planData.map((plan, index) => ({
+  ...plan,
+  cta: index === 1 ? undefined : plan.cta,
+}));
+
+export const PlansWithCtaPlaceholder = {
+  render: () => <Template data={planDataWithoutCta} />,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Supplying a `cta` prop with a `null` value will render a disabled CTA.",
+      },
+    },
+  },
 };
