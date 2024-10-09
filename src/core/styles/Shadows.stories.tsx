@@ -4,16 +4,38 @@ export default {
   title: "CSS/Shadows",
 };
 
-const sizes = ["xs", "sm", "md", "lg", "xl"];
+const shadowClasses = {
+  soft: [
+    "ui-shadow-xs-soft",
+    "ui-shadow-sm-soft",
+    "ui-shadow-md-soft",
+    "ui-shadow-lg-soft",
+    "ui-shadow-xl-soft",
+  ],
+  medium: [
+    "ui-shadow-xs-medium",
+    "ui-shadow-sm-medium",
+    "ui-shadow-md-medium",
+    "ui-shadow-lg-medium",
+    "ui-shadow-xl-medium",
+  ],
+  strong: [
+    "ui-shadow-xs-strong",
+    "ui-shadow-sm-strong",
+    "ui-shadow-md-strong",
+    "ui-shadow-lg-strong",
+    "ui-shadow-xl-strong",
+  ],
+};
 
 const shadowRow = (weight: "soft" | "medium" | "strong") => (
   <div className="flex gap-32">
-    {sizes.map((size) => (
+    {shadowClasses[weight].map((shadowClass) => (
       <div
-        key={size}
-        className={`${weight === "strong" ? "bg-neutral-1100 text-white" : "bg-white"} rounded-lg w-64 h-64 ui-shadow-${size}-${weight} flex items-center justify-center ui-text-p1`}
+        key={shadowClass}
+        className={`${weight === "strong" ? "bg-neutral-1100 text-white" : "bg-white"} rounded-lg w-64 h-64 ${shadowClass} flex items-center justify-center ui-text-p1`}
       >
-        {size}
+        {shadowClass.split("-")[2]}
       </div>
     ))}
   </div>
