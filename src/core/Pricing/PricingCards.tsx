@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
+import throttle from "lodash.throttle";
 import type { PricingDataFeature } from "./types";
 import { determineThemeColor } from "../styles/colors/utils";
 import { ColorClass, Theme } from "../styles/colors/types";
 import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
 import { IconName } from "../Icon/types";
-import throttle from "lodash.throttle";
+import Tooltip from "../Tooltip";
 
 export type PricingCardsProps = {
   data: PricingDataFeature[];
@@ -105,11 +106,21 @@ const PricingCards = ({
                   className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px]:flex-none" : ""}`}
                 >
                   <div>
-                    <p
-                      className={`mb-12 ${title.className ?? ""} ${t(title.color ?? "text-neutral-000")}`}
-                    >
-                      {title.content}
-                    </p>
+                    <div className="flex items-center mb-12">
+                      <p
+                        className={`${title.className ?? ""} ${t(title.color ?? "text-neutral-000")}`}
+                      >
+                        {title.content}
+                      </p>
+                      {title.tooltip ? (
+                        <Tooltip
+                          theme={theme}
+                          interactive={typeof title.tooltip !== "string"}
+                        >
+                          {title.tooltip}
+                        </Tooltip>
+                      ) : null}
+                    </div>
                     <p
                       className={`ui-text-p1 ${description.className ?? ""} ${t(description.color ?? "text-neutral-000")} min-h-20`}
                       style={{ height: descriptionHeight }}

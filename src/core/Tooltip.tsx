@@ -33,7 +33,7 @@ const Tooltip = ({
 }: PropsWithChildren<TooltipProps>) => {
   const [open, setOpen] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 0, orientation: "top" });
   const offset = 8;
   const reference = useRef<HTMLButtonElement>(null);
   const floating = useRef<HTMLDivElement>(null);
@@ -47,6 +47,7 @@ const Tooltip = ({
       const referenceRect = reference.current?.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
+      let orientation = "top";
 
       if (floatingRect && referenceRect) {
         let x =
@@ -60,16 +61,19 @@ const Tooltip = ({
         // Adjust if tooltip goes off the right edge
         if (x + floatingRect.width > viewportWidth + window.scrollX) {
           x = viewportWidth + window.scrollX - floatingRect.width - offset;
+          orientation = "left";
         }
 
         // Adjust if tooltip goes off the left edge
         if (x < window.scrollX) {
           x = window.scrollX + offset;
+          orientation = "right";
         }
 
         // Adjust if tooltip goes off the top edge
         if (y < window.scrollY) {
           y = referenceRect.bottom + offset + window.scrollY;
+          orientation = "bottom";
         }
 
         // Adjust if tooltip goes off the bottom edge
@@ -77,10 +81,10 @@ const Tooltip = ({
           y = referenceRect.top - floatingRect.height - offset + window.scrollY;
         }
 
-        setPosition({ x, y });
+        setPosition({ x, y, orientation });
       }
     } else {
-      setPosition({ x: 0, y: 0 });
+      setPosition({ x: 0, y: 0, orientation: "top" });
     }
 
     return () => {
@@ -98,30 +102,54 @@ const Tooltip = ({
     }, 250);
   };
 
-  const cursorHeadsNorth = (
+  const cursorTowardsTooltip = (
     event: MouseEvent,
     ref: RefObject<HTMLButtonElement>,
   ) => {
-    if (ref.current) {
-      const { clientX, clientY } = event;
-      const { x, y, width } = ref.current.getBoundingClientRect();
-      return clientX >= x && clientX <= x + width && clientY < y;
+    if (!ref.current) {
+      return false;
     }
 
-    return false;
+    const { clientX, clientY } = event;
+    const { x, y, width, height } = ref.current.getBoundingClientRect();
+    const { orientation } = position;
+
+    switch (orientation) {
+      case "top":
+        return clientX >= x && clientX <= x + width && clientY < y;
+      case "left":
+        return clientY >= y && clientY <= y + height && clientX < x;
+      case "right":
+        return clientY >= y && clientY <= y + height && clientX > x + width;
+      case "bottom":
+        return clientX >= x && clientX <= x + width && clientY > y + height;
+      default:
+        return false;
+    }
+  };
+
+  const fadeOutIfNotWithinTrigger = (event: MouseEvent) => {
+    if (!reference.current) return;
+
+    const { clientX, clientY } = event;
+    const { x, y, width, height } = reference.current.getBoundingClientRect();
+    const withinBounds =
+      clientX >= x &&
+      clientX <= x + width &&
+      clientY >= y &&
+      clientY <= y + height;
+
+    if (!withinBounds) {
+      initiateFadeOut();
+    }
   };
 
   return (
-    <div
-      {...rest}
-      className={`relative inline-block align-top h-16 ${
-        rest?.className ?? ""
-      }`}
-    >
+    <div {...rest} className={`inline-flex ml-8 ${rest?.className ?? ""}`}>
       <button
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={(event) => {
-          if (!interactive || !cursorHeadsNorth(event, reference)) {
+          if (!interactive || !cursorTowardsTooltip(event, reference)) {
             initiateFadeOut();
           }
         }}
@@ -129,7 +157,7 @@ const Tooltip = ({
         ref={reference}
         aria-describedby="tooltip"
         {...triggerProps}
-        className={`ml-8 p-0 relative top-1 focus:outline-none ${
+        className={`p-0 relative focus:outline-none h-[1rem] ${
           triggerProps?.className ?? ""
         }`}
       >
@@ -147,7 +175,9 @@ const Tooltip = ({
             <div
               role="tooltip"
               ref={floating}
-              onMouseLeave={initiateFadeOut}
+              onMouseLeave={(event) =>
+                setTimeout(() => fadeOutIfNotWithinTrigger(event), 250)
+              }
               style={{
                 top: position.y,
                 left: position.x,

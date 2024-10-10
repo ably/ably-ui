@@ -227,6 +227,16 @@ export const consumptionData: PricingDataFeature[] = [
       content: "Channels",
       className: "ui-text-h3",
       color: "text-neutral-000",
+      tooltip: (
+        <p>
+          Ably aggregates all its data into named units of distribution,
+          referred to as “channels”. These are used to transmit from one device
+          to another.{" "}
+          <a href="/docs/channels" className="ui-link">
+            Find out more.
+          </a>
+        </p>
+      ),
     },
     description: {
       content:
@@ -255,6 +265,15 @@ export const consumptionData: PricingDataFeature[] = [
       content: "Connections",
       className: "ui-text-h3",
       color: "text-neutral-000",
+      tooltip: (
+        <p>
+          Clients establish and maintain a connection to the Ably service using
+          the most efficient transport available, typically WebSockets.{" "}
+          <a href="/docs/connect" className="ui-link">
+            Find out more.
+          </a>
+        </p>
+      ),
     },
     description: {
       content:
