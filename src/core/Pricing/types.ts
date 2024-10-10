@@ -5,6 +5,7 @@ type PricingDataHeader = {
   content: string;
   className?: string;
   color?: ColorClass;
+  tooltip?: string | ReactNode;
 };
 
 type PricingDataFeatureCta = {

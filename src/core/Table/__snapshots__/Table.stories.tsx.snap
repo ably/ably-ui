@@ -63,10 +63,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -143,10 +143,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -223,10 +223,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -303,10 +303,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -383,10 +383,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -474,10 +474,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -554,10 +554,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -634,10 +634,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -714,10 +714,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -794,10 +794,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -885,10 +885,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -965,10 +965,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -1045,10 +1045,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -1125,10 +1125,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"
@@ -1205,10 +1205,10 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="relative inline-block align-top h-16 ">
+          <div class="inline-flex ml-8 ">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="ml-8 p-0 relative top-1 focus:outline-none "
+                    class="p-0 relative focus:outline-none h-[1rem] "
             >
               <svg class="text-neutral-500 "
                    style="width: 1rem; height: 1rem;"

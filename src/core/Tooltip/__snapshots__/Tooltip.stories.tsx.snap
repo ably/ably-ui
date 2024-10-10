@@ -9,10 +9,10 @@ exports[`JS Components/Tooltip Central smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-500 "
              style="width: 1rem; height: 1rem;"
@@ -24,10 +24,10 @@ exports[`JS Components/Tooltip Central smoke-test 1`] = `
     </div>
   </div>
   <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-800 "
              style="width: 1rem; height: 1rem;"
@@ -50,10 +50,10 @@ exports[`JS Components/Tooltip Interactive smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-500 "
              style="width: 1rem; height: 1rem;"
@@ -65,10 +65,10 @@ exports[`JS Components/Tooltip Interactive smoke-test 1`] = `
     </div>
   </div>
   <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-800 "
              style="width: 1rem; height: 1rem;"
@@ -91,10 +91,10 @@ exports[`JS Components/Tooltip LeftBound smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-500 "
              style="width: 1rem; height: 1rem;"
@@ -106,10 +106,10 @@ exports[`JS Components/Tooltip LeftBound smoke-test 1`] = `
     </div>
   </div>
   <div class="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
-    <div class="relative inline-block align-top h-16 ">
+    <div class="inline-flex ml-8 ">
       <button type="button"
               aria-describedby="tooltip"
-              class="ml-8 p-0 relative top-1 focus:outline-none "
+              class="p-0 relative focus:outline-none h-[1rem] "
       >
         <svg class="text-neutral-800 "
              style="width: 1rem; height: 1rem;"
