@@ -22,10 +22,17 @@ export type PricingDataFeatureSection = {
   cta?: PricingDataFeatureCta;
 };
 
+export type PricingDataFeatureBorder = {
+  text: string;
+  style: "border-solid" | "border-dashed" | "border-dotted";
+  color: "neutral" | "blue" | "orange";
+};
+
 export type PricingDataFeature = {
   title: PricingDataHeader;
   description: PricingDataHeader;
   price: { amount: string; content?: ReactNode };
   cta?: PricingDataFeatureCta;
   sections: PricingDataFeatureSection[];
+  border?: PricingDataFeatureBorder;
 };

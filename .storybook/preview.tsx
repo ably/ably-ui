@@ -6,7 +6,6 @@ import "./styles.css";
 import { themes } from "@storybook/theming";
 import theme, { brandImage, brandImageDark } from "./theme";
 import loadIcons from "../src/core/icons";
-import { Preview } from "@storybook/react";
 
 initialize({
   onUnhandledRequest: "bypass",
@@ -18,7 +17,7 @@ initialize({
   },
 });
 
-const preview: Preview = {
+const preview = {
   decorators: [
     (Story) => {
       loadIcons();

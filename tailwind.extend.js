@@ -8,8 +8,8 @@ const ablyUITailwindConfig = (extend) => {
   const configWithPlugin = {
     ...ablyUIConfig,
     content: [
-      path.join(ablyUiConfigPath, "core", "**", "*.js"),
-      path.join(ablyUiConfigPath, "reset", "**", "*.js"),
+      path.join(ablyUiConfigPath, "core", "**", "*.{js,json}"),
+      path.join(ablyUiConfigPath, "reset", "**", "*.{js,json}"),
     ],
   };
 

@@ -45,20 +45,22 @@ const longData = data.map((datum) => ({
 
 const AccordionPresentation = ({ data, options }: AccordionProps) => (
   <div className="grid sm:grid-cols-2 gap-16 w-full">
-    {accordionThemes.map((theme) => (
-      <div
-        key={theme}
-        className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
-      >
-        <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
-        <Accordion
-          data={data}
-          options={options}
-          theme={theme}
-          className="flex-1"
-        />
-      </div>
-    ))}
+    {accordionThemes
+      .filter((theme) => !theme.toLowerCase().includes("static"))
+      .map((theme) => (
+        <div
+          key={theme}
+          className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
+        >
+          <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
+          <Accordion
+            data={data}
+            options={options}
+            theme={theme}
+            className="flex-1"
+          />
+        </div>
+      ))}
   </div>
 );
 
@@ -167,6 +169,37 @@ export const WithResizableInnerContent = {
       description: {
         story:
           "Try resizing content within the Accordion entries - the container should respond to the new height accordingly",
+      },
+    },
+  },
+};
+
+export const StaticAndFullyOpen = {
+  render: () => (
+    <div className="grid sm:grid-cols-2 gap-16 w-full">
+      {accordionThemes
+        .filter((theme) => theme.toLowerCase().includes("static"))
+        .map((theme) => (
+          <div
+            key={theme}
+            className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
+          >
+            <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
+            <Accordion
+              data={data}
+              options={{ fullyOpen: true }}
+              theme={theme}
+              className="flex-1"
+            />
+          </div>
+        ))}
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Setting `fullyOpen` on options will set all sections to be open by default. This is useful for static themes (usable with the `static` and `darkStatic` theme values).",
       },
     },
   },

@@ -24,6 +24,8 @@ export const accordionThemes = [
   "light",
   "transparent",
   "darkTransparent",
+  "static",
+  "darkStatic",
 ] as const;
 
 export type AccordionTheme = (typeof accordionThemes)[number];
@@ -43,4 +45,5 @@ export type AccordionOptions = {
   selectable?: boolean;
   sticky?: boolean;
   defaultOpenIndexes?: number[];
+  fullyOpen?: boolean;
 };
