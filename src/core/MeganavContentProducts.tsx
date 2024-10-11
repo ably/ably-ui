@@ -44,7 +44,7 @@ const MeganavContentProducts = ({
         >
           <li>
             <a href={absUrl("/pubsub")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">Pub/Sub Channels</p>
+              <p className="ui-meganav-media-heading">Pub/Sub</p>
               <p className="ui-meganav-media-copy">
                 Build infinitely scalable realtime applications.
               </p>

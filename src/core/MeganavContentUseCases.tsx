@@ -123,12 +123,25 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
         <ul aria-labelledby="meganav-use-cases-panel-industry">
           <li>
             <a
-              href={absUrl("/solutions/edtech")}
+              href={absUrl("/solutions/sports-and-media")}
               className="ui-meganav-media group"
             >
-              <p className="ui-meganav-media-heading">EdTech</p>
+              <p className="ui-meganav-media-heading">
+                Sports, Media & Fan Engagement
+              </p>
               <p className="ui-meganav-media-copy">
-                Deliver interactive learning experiences.
+                Deliver engaging global realtime experiences.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href={absUrl("/solutions/b2b-platforms")}
+              className="ui-meganav-media group"
+            >
+              <p className="ui-meganav-media-heading">B2B Platforms</p>
+              <p className="ui-meganav-media-copy">
+                Empower your customers with realtime solutions.
               </p>
             </a>
           </li>
@@ -145,25 +158,12 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
           </li>
           <li>
             <a
-              href={absUrl("/solutions/automotive-logistics-and-mobility")}
+              href={absUrl("/solutions/edtech")}
               className="ui-meganav-media group"
             >
-              <p className="ui-meganav-media-heading">
-                Automotive, Logistics, & Mobility
-              </p>
+              <p className="ui-meganav-media-heading">EdTech</p>
               <p className="ui-meganav-media-copy">
-                Power diagnostics, order tracking and more.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
-              href={absUrl("/solutions/b2b-platforms")}
-              className="ui-meganav-media group"
-            >
-              <p className="ui-meganav-media-heading">B2B Platforms</p>
-              <p className="ui-meganav-media-copy">
-                Empower your customers with realtime solutions.
+                Deliver interactive learning experiences.
               </p>
             </a>
           </li>
@@ -188,36 +188,36 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
         >
           <li>
             <a
-              href={absUrl("/solutions/ecommerce-and-retail")}
-              className="ui-meganav-media group"
-            >
-              <p className="ui-meganav-media-heading">eCommerce & Retail</p>
-              <p className="ui-meganav-media-copy">
-                Enrich customer experiences with realtime updates.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
-              href={absUrl("/solutions/sports-and-media")}
-              className="ui-meganav-media group"
-            >
-              <p className="ui-meganav-media-heading">
-                Sports, Media & Fan Engagement
-              </p>
-              <p className="ui-meganav-media-copy">
-                Deliver engaging global realtime experiences.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
               href={absUrl("/solutions/gaming")}
               className="ui-meganav-media group"
             >
               <p className="ui-meganav-media-heading">Gaming</p>
               <p className="ui-meganav-media-copy">
                 Power ultra fast and reliable gaming experiences.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href={absUrl("/solutions/automotive-logistics-and-mobility")}
+              className="ui-meganav-media group"
+            >
+              <p className="ui-meganav-media-heading">
+                Automotive, Logistics, & Mobility
+              </p>
+              <p className="ui-meganav-media-copy">
+                Power diagnostics, order tracking and more.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href={absUrl("/solutions/ecommerce-and-retail")}
+              className="ui-meganav-media group"
+            >
+              <p className="ui-meganav-media-heading">eCommerce & Retail</p>
+              <p className="ui-meganav-media-copy">
+                Enrich customer experiences with realtime updates.
               </p>
             </a>
           </li>
