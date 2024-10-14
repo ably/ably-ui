@@ -137,3 +137,33 @@ const PageSignedIn = () => {
 export const SignedIn = {
   render: () => <PageSignedIn />,
 };
+
+const SignedInWithDataSearchId = () => {
+  useEffect(() => {
+    loadIcons();
+    const store = getRemoteDataStore();
+    fetchSessionData(store, "/api/me");
+    fetchBlogPosts(store, "/api/blog");
+  }, []);
+
+  return (
+    <Meganav
+      paths={{
+        logo: "#",
+        ablyStack: "#",
+        iconSprites: "#",
+        blogThumb1: "#",
+        blogThumb2: "#",
+        blogThumb3: "#",
+      }}
+      statusUrl={statusUrl}
+      themeName="white"
+      addSearchApiKey="#"
+      searchDataId="inkeep-search"
+    />
+  );
+};
+
+export const DataSearchId = {
+  render: () => <SignedInWithDataSearchId />,
+};
