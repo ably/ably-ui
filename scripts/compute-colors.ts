@@ -1,72 +1,83 @@
 import fs from "fs";
 import path from "path";
-import {
-  numericalColors,
-  variants,
-  prefixes,
-  Theme,
-  ComputedColors,
-} from "../src/core/styles/colors/types";
+import { invertTailwindClassVariant } from "../src/core/styles/colors/utils";
+import { colors, prefixes, variants } from "../src/core/styles/colors/types";
 
-const computeColors = (base: Theme) => {
-  if (base !== "dark" && base !== "light") {
-    throw new Error(`Invalid base theme: ${base}. Expected "dark" or "light".`);
-  }
+const directoryPath = path.join(__dirname, "../src");
+const outputPath = path.join(
+  __dirname,
+  "../src/core/styles/colors",
+  "computed-colors.json",
+);
 
-  const colors = {} as ComputedColors;
+const joinedVariants = variants.join("|");
+const joinedPrefixes = prefixes.join("|");
+const joinedColors = colors.join("|");
+const regex = new RegExp(
+  `themeColor\\("((${joinedVariants}${joinedPrefixes})-(${joinedColors})-(000|[1-9]00|1[0-3]00))"\\)`,
+  "g",
+);
 
-  variants.forEach((variant) =>
-    prefixes.forEach((property) =>
-      numericalColors.forEach((colorSet) =>
-        colorSet.map((color, index) => {
-          if (base === "dark") {
-            colors[`${variant}${property}-${colorSet[index]}`] = {
-              light: `${variant}${property}-${colorSet[colorSet.length - index - 1]}`,
-            };
-          } else if (base === "light") {
-            colors[`${variant}${property}-${colorSet[index]}`] = {
-              dark: `${variant}${property}-${colorSet[colorSet.length - index - 1]}`,
-            };
+const findStringInFiles = (dir: string) => {
+  const results: string[] = [];
+
+  const readDirectory = (dir: string) => {
+    let files: string[];
+    try {
+      files = fs.readdirSync(dir);
+    } catch (error) {
+      console.error(`Error reading directory ${dir}:`, error);
+      return;
+    }
+
+    files.forEach((file) => {
+      const filePath = path.join(dir, file);
+      let stat;
+      try {
+        stat = fs.statSync(filePath);
+      } catch (error) {
+        console.error(`Error accessing ${filePath}:`, error);
+        return;
+      }
+
+      if (stat.isDirectory()) {
+        readDirectory(filePath);
+      } else if (filePath.endsWith(".tsx")) {
+        let content = "";
+        try {
+          content = fs.readFileSync(filePath, "utf-8");
+          const matches = [...content.matchAll(regex)].map((match) => match[1]);
+
+          if (matches.length > 0) {
+            results.push(...matches);
           }
-        }),
-      ),
-    ),
-  );
+        } catch (error) {
+          console.error(`Error reading file ${filePath}:`, error);
+          return;
+        }
+      }
+    });
+  };
 
-  return colors;
+  readDirectory(dir);
+  return Array.from(new Set(results)).sort();
 };
 
-const darkOutputPath = path.join(
-  __dirname,
-  "../src/core/styles/colors",
-  "computed-colors-dark.json",
-);
-const lightOutputPath = path.join(
-  __dirname,
-  "../src/core/styles/colors",
-  "computed-colors-light.json",
+const matches = findStringInFiles(directoryPath);
+
+const flippedMatches = matches.map((match) =>
+  invertTailwindClassVariant(match),
 );
 
-async function writeComputedColors() {
-  try {
-    await Promise.all([
-      fs.promises.writeFile(
-        darkOutputPath,
-        JSON.stringify(computeColors("dark"), null, 2),
-        "utf-8",
-      ),
-      fs.promises.writeFile(
-        lightOutputPath,
-        JSON.stringify(computeColors("light"), null, 2),
-        "utf-8",
-      ),
-    ]);
-    console.log(
-      `🎨 Tailwind theme classes have been computed and written to JSON files.`,
-    );
-  } catch {
-    console.error(`Error persisting computed colors.`);
+try {
+  const outputDir = path.dirname(outputPath);
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
   }
+  fs.writeFileSync(outputPath, JSON.stringify(flippedMatches));
+  console.log(
+    `🎨 Tailwind theme classes have been computed and written to JSON files.`,
+  );
+} catch (error) {
+  console.error(`Error persisting computed colors:`, error);
 }
-
-writeComputedColors();

@@ -1,7 +1,7 @@
 import React from "react";
-import { colorNames } from "./types";
-import { determineThemeColor } from "./utils";
+import { colorRoles } from "./types";
 import Icon from "../../Icon";
+import useTheming from "../../hooks/useTheming";
 
 export default {
   title: "CSS/Colors",
@@ -47,7 +47,7 @@ const varToValues = (color: string) => {
 export const NeutralColors = {
   render: () => (
     <div className="flex flex-wrap gap-24">
-      {colorSet([...colorNames.neutral])}
+      {colorSet([...colorRoles.neutral])}
     </div>
   ),
   parameters: {
@@ -62,7 +62,7 @@ export const NeutralColors = {
 export const OrangeColors = {
   render: () => (
     <div className="flex flex-wrap gap-24">
-      {colorSet([...colorNames.orange])}
+      {colorSet([...colorRoles.orange])}
     </div>
   ),
   parameters: {
@@ -77,7 +77,7 @@ export const OrangeColors = {
 export const SecondaryColors = {
   render: () => (
     <div className="flex flex-wrap gap-24">
-      {colorSet([...colorNames.secondary])}
+      {colorSet([...colorRoles.secondary])}
     </div>
   ),
   parameters: {
@@ -91,7 +91,7 @@ export const SecondaryColors = {
 
 export const GUIColors = {
   render: () => (
-    <div className="flex flex-wrap gap-24">{colorSet([...colorNames.gui])}</div>
+    <div className="flex flex-wrap gap-24">{colorSet([...colorRoles.gui])}</div>
   ),
   parameters: {
     docs: {
@@ -104,25 +104,29 @@ export const GUIColors = {
 };
 
 export const DynamicTheming = {
-  render: () => (
-    <div className="flex items-center">
-      <div className="flex flex-wrap gap-24">
-        {colorSet(["orange-300"], "bg-orange-300")}
+  render: () => {
+    const { themeColor } = useTheming({
+      baseTheme: "dark",
+      theme: "light",
+    });
+
+    return (
+      <div className="flex items-center">
+        <div className="flex flex-wrap gap-24">
+          {colorSet(["orange-300"], "bg-orange-300")}
+        </div>
+        <Icon name="icon-gui-arrow-right" size="48" additionalCSS="m-16"></Icon>
+        <div className="flex flex-wrap gap-24">
+          {colorSet(["orange-900"], themeColor("bg-orange-300"))}
+        </div>
       </div>
-      <Icon name="icon-gui-arrow-right" size="48" additionalCSS="m-16"></Icon>
-      <div className="flex flex-wrap gap-24">
-        {colorSet(
-          ["orange-900"],
-          determineThemeColor("dark", "light", "bg-orange-300"),
-        )}
-      </div>
-    </div>
-  ),
+    );
+  },
   parameters: {
     docs: {
       description: {
         story:
-          "We can generate alternatives for a color based on the theme. Example usage: `determineThemeColor('dark', 'light', 'bg-orange-300')` - this takes a base theme of 'dark', a target theme of 'light', and the colour to convert.",
+          "We can generate alternatives for a color based on the theme. To do this, pull in the `useTheming` hook and access the `themeColor` function - passing in `baseTheme` and `theme` when you call the hook to provide the context for `themeColor`. Then, wrap any Tailwind color class in `themeColor` to conditionally generate the alternative color, if the target theme differs from the base theme. Any new classes will be generated and fed into Tailwind at build time.",
       },
     },
   },

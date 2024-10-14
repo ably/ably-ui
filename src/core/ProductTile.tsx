@@ -2,8 +2,7 @@ import React from "react";
 import EncapsulatedIcon from "./Icon/EncapsulatedIcon";
 import FeaturedLink from "./FeaturedLink";
 import { ProductName, products } from "./ProductTile/data";
-import { ColorClass } from "./styles/colors/types";
-import { determineThemeColor } from "./styles/colors/utils";
+import useTheming from "./hooks/useTheming";
 
 type ProductTileProps = {
   name: ProductName;
@@ -20,14 +19,15 @@ const ProductTile = ({
   className,
   onClick,
 }: ProductTileProps) => {
+  const { themeColor } = useTheming({
+    baseTheme: "dark",
+    theme: selected ? "light" : "dark",
+  });
   const { icon, label, description, link, unavailable } = products[name] ?? {};
-
-  const t = (color: ColorClass) =>
-    determineThemeColor("dark", selected ? "light" : "dark", color);
 
   return (
     <div
-      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${t("bg-neutral-1200")} ${selected ? "" : "hover:bg-neutral-1100"} ${className ?? ""}`}
+      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${themeColor("bg-neutral-1200")} ${selected ? "" : "hover:bg-neutral-1100"} ${className ?? ""}`}
       onClick={onClick}
     >
       <div className="flex gap-12 items-center">
@@ -38,12 +38,12 @@ const ProductTile = ({
           className={`flex ${unavailable ? "flex-row items-center gap-4" : "flex-col justify-center"} `}
         >
           <p
-            className={`${unavailable ? "ui-text-p2" : "ui-text-p3"} ${t("text-neutral-300")} font-medium`}
+            className={`${unavailable ? "ui-text-p2" : "ui-text-p3"} ${themeColor("text-neutral-300")} font-medium`}
           >
             Ably{" "}
           </p>
           <p
-            className={`ui-text-p2 ${t("text-neutral-000")} font-bold ${unavailable ? "" : "mt-[-3px]"}`}
+            className={`ui-text-p2 ${themeColor("text-neutral-000")} font-bold ${unavailable ? "" : "mt-[-3px]"}`}
           >
             {label}
           </p>
@@ -63,7 +63,7 @@ const ProductTile = ({
       </p>
       {selected && link ? (
         <FeaturedLink
-          additionalCSS={`ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block ${t("text-neutral-000")}`}
+          additionalCSS={`ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block ${themeColor("text-neutral-000")}`}
           iconColor="text-orange-600"
           url={link}
         >

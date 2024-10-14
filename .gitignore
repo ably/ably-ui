@@ -9,5 +9,5 @@ yarn-error.log
 .idea/*
 types
 index.d.ts
-computed-colors-*.json
 computed-icons.ts
+computed-colors.json
