@@ -21,8 +21,8 @@ export const planData: PricingDataFeature[] = [
         items: [
           "200 concurrent channels",
           "200 concurrent connections",
-          "500 messages/second",
-          "6M messages/month",
+          "500 messages / second",
+          "6M messages / month",
         ],
       },
       {
@@ -58,7 +58,7 @@ export const planData: PricingDataFeature[] = [
             className="ui-text-p3 font-medium"
             style={{ color: "currentColor" }}
           >
-            /month
+            / month
           </p>
           <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
             + consumption
@@ -76,7 +76,7 @@ export const planData: PricingDataFeature[] = [
         items: [
           "10k concurrent channels",
           "10k concurrent connections",
-          "2.5k messages/second",
+          "2.5k messages / second",
         ],
       },
       {
@@ -100,7 +100,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-000",
     },
     description: {
-      content: "Scale business critical workloads.",
+      content: "Scale with confidence.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
@@ -112,7 +112,7 @@ export const planData: PricingDataFeature[] = [
             className="ui-text-p3 font-medium"
             style={{ color: "currentColor" }}
           >
-            /month
+            / month
           </p>
           <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
             + consumption
@@ -127,7 +127,7 @@ export const planData: PricingDataFeature[] = [
         items: [
           "50k concurrent channels",
           "50k concurrent connections",
-          "10k messages/second",
+          "10k messages / second",
         ],
       },
       {
@@ -152,7 +152,7 @@ export const planData: PricingDataFeature[] = [
       color: "text-orange-600",
     },
     description: {
-      content: "Serious workloads without limits.",
+      content: "Deliver without limits.",
       className: "ui-text-p1",
       color: "text-neutral-500",
     },
@@ -164,11 +164,11 @@ export const planData: PricingDataFeature[] = [
     },
     sections: [
       {
-        title: "Limits",
+        title: "Unlimited",
         items: [
-          "Unlimited concurrent channels",
-          "Unlimited concurrent connections",
-          "Unlimited messages/second",
+          "Concurrent channels",
+          "Concurrent connections",
+          "Messages / second",
         ],
       },
       {
@@ -206,12 +206,12 @@ export const consumptionData: PricingDataFeature[] = [
       className: "ui-text-p3",
       color: "text-neutral-600",
     },
-    price: { amount: "$2.50", content: "per million" },
+    price: { amount: "$2.50", content: "/ million" },
     sections: [
       {
         title: "Volume discounts",
         items: [
-          ["Consumption", "$/million msgs"],
+          ["Consumption", "$ / million msgs"],
           ["First 50 million msgs", "$2.50"],
           ["Next 450 million msgs", "$2.25"],
           ["Next 4.5 billion msgs", "$1.95"],
@@ -229,27 +229,24 @@ export const consumptionData: PricingDataFeature[] = [
       color: "text-neutral-000",
       tooltip: (
         <p>
-          Ably aggregates all its data into named units of distribution,
-          referred to as “channels”. These are used to transmit from one device
-          to another.{" "}
-          <a href="/docs/channels" className="ui-link">
-            Find out more.
-          </a>
+          We charge you for the amount of time a channel is active in our
+          network by the minute. For example, if ten channels are in use for 45
+          minutes, you will be charged a total of 450 channel minutes.
         </p>
       ),
     },
     description: {
       content:
-        "Clients publish and receive messages on channels (also know as topics). We only charge for active channels.",
+        "Channels are used to route messages from publishers to subscribers. Channels are billed by the minute when actively being used by a connected client.",
       className: "ui-text-p3",
       color: "text-neutral-600",
     },
-    price: { amount: "$1.00", content: "per million mins" },
+    price: { amount: "$1.00", content: "/ million mins" },
     sections: [
       {
         title: "Volume discounts",
         items: [
-          ["Consumption", "$/million mins"],
+          ["Consumption", "$ / million mins"],
           ["First 10 million mins", "$1.00"],
           ["Next 90 million mins", "$0.95"],
           ["Next 900 million mins", "$0.85"],
@@ -267,11 +264,9 @@ export const consumptionData: PricingDataFeature[] = [
       color: "text-neutral-000",
       tooltip: (
         <p>
-          Clients establish and maintain a connection to the Ably service using
-          the most efficient transport available, typically WebSockets.{" "}
-          <a href="/docs/connect" className="ui-link">
-            Find out more.
-          </a>
+          We charge you for the amount of time devices are connected to our
+          network by the minute. For example, if ten devices are each connected
+          for 45 minutes, you will be charged a total of 450 connection minutes.
         </p>
       ),
     },
@@ -281,12 +276,12 @@ export const consumptionData: PricingDataFeature[] = [
       className: "ui-text-p3",
       color: "text-neutral-600",
     },
-    price: { amount: "$1.00", content: "per million mins" },
+    price: { amount: "$1.00", content: "/ million mins" },
     sections: [
       {
         title: "Volume discounts",
         items: [
-          ["Consumption", "$/million mins"],
+          ["Consumption", "$ / million mins"],
           ["First 10 million mins", "$1.00"],
           ["Next 90 million mins", "$0.95"],
           ["Next 900 million mins", "$0.85"],
