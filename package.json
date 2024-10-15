@@ -31,6 +31,7 @@
     "@types/js-cookie": "^3.0.6",
     "@types/lodash.throttle": "^4.1.9",
     "@types/react-dom": "^18.3.0",
+    "@types/svg-sprite": "^0.0.39",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -52,12 +53,13 @@
     "vite": "^5.2.12"
   },
   "scripts": {
-    "build:prebuild": "rm -rf core reset",
+    "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
     "build:swc": "swc src/core src/reset -d dist --copy-files --include-dotfiles --strip-leading-paths --config-file .swc --ignore **/*.stories.tsx,**/*.snap",
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build:colors": "ts-node scripts/compute-colors.ts",
-    "build": "yarn build:prebuild && yarn build:colors && yarn build:swc && node sprites.js && yarn build:tsc && yarn build:cleanup",
+    "build:sprites": "ts-node scripts/generate-sprites.ts",
+    "build": "yarn build:prebuild && yarn build:colors && yarn build:sprites && yarn build:swc && yarn build:tsc && yarn build:cleanup",
     "watch": "yarn build:swc -w",
     "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx}",
     "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx}",

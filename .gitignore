@@ -10,3 +10,4 @@ yarn-error.log
 types
 index.d.ts
 computed-colors-*.json
+computed-icons.ts

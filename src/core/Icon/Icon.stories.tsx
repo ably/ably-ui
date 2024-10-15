@@ -50,7 +50,7 @@ const renderIcons = (
 };
 
 export const GUIIcons = {
-  render: () => renderIcons([...iconNames.core]),
+  render: () => renderIcons([...iconNames.gui]),
 };
 
 export const DisplayIcons = {
@@ -69,7 +69,7 @@ export const ProductIcons = {
   render: () => renderIcons([...iconNames.product]),
 };
 
-export const Other = {
+export const OtherIcons = {
   render: () => renderIcons([...iconNames.other]),
 };
 
