@@ -81,7 +81,12 @@ const PricingCards = ({
   };
 
   return (
-    <div className="@container flex justify-center">
+    <div
+      className="@container flex justify-center"
+      data-testid={
+        delimiter ? "delimited-pricing-card-group" : "pricing-card-group"
+      }
+    >
       <div
         className={`${delimiter ? gridRules.delimited : gridRules.nonDelimited} gap-8`}
       >
@@ -91,6 +96,9 @@ const PricingCards = ({
               {delimiterColumn(index)}
               <div
                 className={`relative border ${t(borderClasses(border?.color)?.border ?? "border-neutral-1100")} ${border?.style ?? ""} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] backdrop-blur`}
+                data-testid={
+                  delimiter ? "delimited-pricing-card" : "pricing-card"
+                }
               >
                 {border ? (
                   <div
