@@ -135,7 +135,7 @@ const MeganavContentDevelopers = ({
               href={absUrl("/reference-guide-multiplayer")}
               className="ui-meganav-media-with-image group"
             >
-              <Icon name="icon-multi-user-spaces-col" size="2.5rem" />
+              <Icon name="icon-display-multi-user-spaces-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">
                   Multiplayer reference guide
