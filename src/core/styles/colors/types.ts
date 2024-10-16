@@ -19,6 +19,18 @@ export const prefixes = ["text", "bg", "from", "to", "border"] as const;
 
 type ColorClassPrefixes = (typeof prefixes)[number];
 
+export const colors = [
+  "neutral",
+  "orange",
+  "blue",
+  "yellow",
+  "green",
+  "violet",
+  "pink",
+] as const;
+
+export type ColorClassColorGroups = (typeof colors)[number];
+
 export type Theme = "light" | "dark";
 
 export type ColorClass =
@@ -164,24 +176,19 @@ const aliasedColors = [
   "transparent",
 ] as const;
 
-export const colorNames = {
+export const colorRoles = {
   neutral: neutralColors,
   orange: orangeColors,
   secondary: secondaryColors,
   gui: guiColors,
 };
 
-export const numericalColors = [
-  neutralColors,
-  orangeColors,
-  yellowColors,
-  greenColors,
-  blueColors,
-  violetColors,
-  pinkColors,
-];
-
-export type ComputedColors = Record<
-  ColorClass,
-  Partial<Record<Theme, ColorClass>>
->;
+export const colorGroupLengths = {
+  neutral: neutralColors.length,
+  orange: orangeColors.length,
+  blue: blueColors.length,
+  yellow: yellowColors.length,
+  green: greenColors.length,
+  violet: violetColors.length,
+  pink: pinkColors.length,
+};
