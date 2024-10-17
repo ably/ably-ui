@@ -83,6 +83,7 @@ type SignInProps = {
   theme: MeganavTheme;
   loginLink: string;
   absUrl: AbsUrl;
+  searchDataId?: string;
 };
 
 type MeganavProps = {
@@ -106,14 +107,22 @@ type MeganavProps = {
   urlBase?: string;
   addSearchApiKey: string;
   statusUrl: string;
+  searchDataId?: string;
 };
 
-const SignIn = ({ sessionState, theme, loginLink, absUrl }: SignInProps) => {
+const SignIn = ({
+  sessionState,
+  theme,
+  loginLink,
+  absUrl,
+  searchDataId,
+}: SignInProps) => {
   return sessionState.signedIn ? (
     <MeganavItemsSignedIn
       absUrl={absUrl}
       sessionState={sessionState}
       theme={theme}
+      searchDataId={searchDataId}
     />
   ) : (
     <ul className="hidden md:flex items-center">
@@ -136,7 +145,7 @@ const SignIn = ({ sessionState, theme, loginLink, absUrl }: SignInProps) => {
         </a>
       </li>
       <li className="ui-meganav-item">
-        <MeganavSearch absUrl={absUrl} />
+        <MeganavSearch absUrl={absUrl} dataId={searchDataId} />
       </li>
       <li className="ui-meganav-item">
         <a
@@ -168,6 +177,7 @@ const Meganav = ({
   urlBase,
   addSearchApiKey,
   statusUrl,
+  searchDataId,
 }: MeganavProps) => {
   const [sessionState, setSessionState] = useState<MeganavSessionState>();
 
@@ -216,6 +226,7 @@ const Meganav = ({
             theme={theme}
             loginLink={loginLink}
             absUrl={absUrl}
+            searchDataId={searchDataId}
           />
         ) : (
           <SignInPlaceholder />
@@ -229,6 +240,7 @@ const Meganav = ({
           loginLink={loginLink}
           absUrl={absUrl}
           statusUrl={statusUrl}
+          searchDataId={searchDataId}
         />
       </div>
     </nav>

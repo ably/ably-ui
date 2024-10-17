@@ -108,8 +108,8 @@ const MeganavSearchSuggestions = () => {
     distance > 0 ? dragLeftEnd(distance, 24) : dragRightEnd(distance, 48);
   };
 
-  suggestionsToggle.addEventListener("focus", focusSuggestionsHandler);
-  suggestionsToggle.addEventListener("blur", blurSuggestionsHandler);
+  suggestionsToggle?.addEventListener("focus", focusSuggestionsHandler);
+  suggestionsToggle?.addEventListener("blur", blurSuggestionsHandler);
   suggestions.addEventListener("touchstart", touchstartHandler);
   suggestions.addEventListener("touchmove", touchmoveHandler);
   suggestions.addEventListener("touchend", touchendHandler);
@@ -117,8 +117,8 @@ const MeganavSearchSuggestions = () => {
 
   return {
     teardown: () => {
-      suggestionsToggle.removeEventListener("focus", focusSuggestionsHandler);
-      suggestionsToggle.removeEventListener("blur", blurSuggestionsHandler);
+      suggestionsToggle?.removeEventListener("focus", focusSuggestionsHandler);
+      suggestionsToggle?.removeEventListener("blur", blurSuggestionsHandler);
       suggestions.removeEventListener("touchstart", touchstartHandler);
       suggestions.removeEventListener("touchmove", touchmoveHandler);
       suggestions.removeEventListener("touchend", touchendHandler);

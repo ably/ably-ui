@@ -6,6 +6,7 @@ type MeganavItemsSignedIn = {
   sessionState: MeganavSessionState;
   theme: MeganavTheme;
   absUrl: AbsUrl;
+  searchDataId?: string;
 };
 
 const truncate = (string: string, length: number) => {
@@ -17,6 +18,7 @@ const truncate = (string: string, length: number) => {
 const MeganavItemsSignedIn = ({
   sessionState,
   absUrl,
+  searchDataId,
 }: MeganavItemsSignedIn) => {
   const accountName = truncate(sessionState.accountName, 20);
 
@@ -29,7 +31,7 @@ const MeganavItemsSignedIn = ({
       </li>
 
       <li>
-        <MeganavSearch absUrl={absUrl} />
+        <MeganavSearch absUrl={absUrl} dataId={searchDataId} />
       </li>
 
       {sessionState.account && (
