@@ -43,6 +43,11 @@ const longData = data.map((datum) => ({
   ),
 }));
 
+const dataWithCustomClickable = data.map((datum) => ({
+  ...datum,
+  onClick: () => alert("Custom onClick"),
+}));
+
 const AccordionPresentation = ({ data, options }: AccordionProps) => (
   <div className="grid sm:grid-cols-2 gap-16 w-full">
     {accordionThemes
@@ -200,6 +205,21 @@ export const StaticAndFullyOpen = {
       description: {
         story:
           "Setting `fullyOpen` on options will set all sections to be open by default. This is useful for static themes (usable with the `static` and `darkStatic` theme values).",
+      },
+    },
+  },
+};
+
+export const CustomClickableButton = {
+  render: () =>
+    AccordionPresentation({
+      data: dataWithCustomClickable,
+    }),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Supplying an `onClick` function to a section adds a clickable function. This can be useful for custom actions.",
       },
     },
   },

@@ -6,6 +6,7 @@ export type AccordionData = {
   name: string;
   icon?: IconName;
   content: ReactNode;
+  onClick?: () => void;
 };
 
 export type AccordionIcons = {
