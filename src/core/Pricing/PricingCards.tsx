@@ -8,6 +8,20 @@ import { IconName } from "../Icon/types";
 import Tooltip from "../Tooltip";
 import useTheming from "../hooks/useTheming";
 
+/**
+  Pricing hack to get all the themes loaded
+
+  themeColor("text-orange-600")
+  themeColor("text-orange-1000")
+  themeColor("text-neutral-000")
+  themeColor("text-neutral-500")
+  themeColor("text-neutral-600")
+  themeColor("text-neutral-700")
+  themeColor("text-neutral-1000")
+  themeColor("text-blue-400")
+  themeColor("text-blue-800")
+ */
+
 export type PricingCardsProps = {
   data: PricingDataFeature[];
   theme?: Theme;
@@ -72,9 +86,18 @@ const PricingCards = ({
 
   const borderClasses = (color?: "neutral" | "blue" | "orange") => {
     const classes: Record<string, { border: ColorClass; bg: ColorClass }> = {
-      neutral: { border: "border-neutral-700", bg: "bg-neutral-700" },
-      blue: { border: "border-blue-600", bg: "bg-blue-600" },
-      orange: { border: "border-orange-600", bg: "bg-orange-600" },
+      neutral: {
+        border: themeColor("border-neutral-700"),
+        bg: themeColor("bg-neutral-700"),
+      },
+      blue: {
+        border: themeColor("border-blue-600"),
+        bg: themeColor("bg-blue-600"),
+      },
+      orange: {
+        border: themeColor("border-orange-600"),
+        bg: themeColor("bg-orange-600"),
+      },
     };
 
     if (color && classes[color]) {
@@ -97,7 +120,7 @@ const PricingCards = ({
             <Fragment key={title.content}>
               {delimiterColumn(index)}
               <div
-                className={`relative border ${themeColor(borderClasses(border?.color)?.border ?? "border-neutral-1100")} ${border?.style ?? ""} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] backdrop-blur`}
+                className={`relative border ${borderClasses(border?.color)?.border ?? themeColor("border-neutral-1100")} ${border?.style ?? ""} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] backdrop-blur`}
                 data-testid={
                   delimiter ? "delimited-pricing-card" : "pricing-card"
                 }
@@ -226,7 +249,7 @@ const PricingCards = ({
                             additionalCSS={`absolute sm:-translate-x-120 sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${themeColor("text-neutral-500")} hover:${themeColor("text-neutral-000")} cursor-pointer`}
                             onClick={cta.onClick}
                             iconColor={themeColor(
-                              listItemColors?.foreground ?? "text-white",
+                              listItemColors?.foreground ?? "text-neutral-000",
                             )}
                           >
                             {cta.text}

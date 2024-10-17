@@ -13,10 +13,8 @@ const outputPath = path.join(
 const joinedVariants = variants.join("|");
 const joinedPrefixes = prefixes.join("|");
 const joinedColors = colors.join("|");
-const regex = new RegExp(
-  `themeColor\\("((${joinedVariants}${joinedPrefixes})-(${joinedColors})-(000|[1-9]00|1[0-3]00))"\\)`,
-  "g",
-);
+const pattern = `themeColor\\("((?:${joinedVariants}-)(${joinedPrefixes})-(${joinedColors})-(000|[1-9]00|1[0-3]00))"\\)`;
+const regex = new RegExp(pattern, "g");
 
 const findStringInFiles = (dir: string) => {
   const results: string[] = [];
