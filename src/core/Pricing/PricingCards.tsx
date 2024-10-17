@@ -155,7 +155,7 @@ const PricingCards = ({
                       ) : null}
                     </div>
                     <p
-                      className={`ui-text-p1 ${description.className ?? ""} ${themeColor(description.color ?? "text-neutral-000")} min-h-20`}
+                      className={`ui-text-p1 ${description.className ?? ""} ${themeColor(description.color ?? "text-neutral-000")} min-h-[20px]`}
                       style={{ height: descriptionHeight }}
                     >
                       <span ref={(el) => (descriptionsRef.current[index] = el)}>
@@ -246,7 +246,7 @@ const PricingCards = ({
                         <div className="relative -mx-24 flex items-center h-40 overflow-x-hidden">
                           <FeaturedLink
                             url={cta.url}
-                            additionalCSS={`absolute sm:-translate-x-120 sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${themeColor("text-neutral-500")} hover:${themeColor("text-neutral-000")} cursor-pointer`}
+                            additionalCSS={`absolute translate-x-24 sm:-translate-x-[120px] sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${themeColor("text-neutral-500")} hover:${themeColor("text-neutral-000")} cursor-pointer`}
                             onClick={cta.onClick}
                             iconColor={themeColor(
                               listItemColors?.foreground ?? "text-neutral-000",
@@ -255,7 +255,7 @@ const PricingCards = ({
                             {cta.text}
                           </FeaturedLink>
                           <div
-                            className={`absolute sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-120 sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${themeColor("text-neutral-800")}`}
+                            className={`absolute hidden sm:block sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-[120px] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${themeColor("text-neutral-800")}`}
                           >
                             •••
                           </div>
