@@ -24,6 +24,7 @@ type MeganavItemsMobileProps = {
   loginLink: string;
   absUrl: AbsUrl;
   statusUrl: string;
+  searchDataId?: string;
 };
 
 const MeganavItemsMobile = ({
@@ -34,6 +35,7 @@ const MeganavItemsMobile = ({
   loginLink,
   absUrl,
   statusUrl,
+  searchDataId,
 }: MeganavItemsMobileProps) => {
   const classNames = `ui-meganav-link ${theme.textColor}`;
 
@@ -100,7 +102,7 @@ const MeganavItemsMobile = ({
                   style={{ maxWidth: "none" }}
                   placeholder="Search"
                   autoComplete="off"
-                  data-id="meganav-mobile-search-input"
+                  data-id={searchDataId ?? "meganav-mobile-search-input"}
                 />
 
                 <MeganavSearchAutocomplete />

@@ -4,11 +4,17 @@ import Icon from "./Icon";
 import MeganavSearchPanel from "./MeganavSearchPanel";
 import { AbsUrl } from "./Meganav";
 
-const MeganavSearch = ({ absUrl }: { absUrl: AbsUrl }) => (
+const MeganavSearch = ({
+  absUrl,
+  dataId = "meganav-control",
+}: {
+  absUrl: AbsUrl;
+  dataId?: string;
+}) => (
   <>
     <button
       type="button"
-      data-id="meganav-control"
+      data-id={dataId}
       data-control="search"
       className="h-64 w-24 px-24 pr-48 py-20 group focus:outline-none"
       aria-expanded="false"
