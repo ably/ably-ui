@@ -205,7 +205,7 @@ const Accordion = ({
             open={fullyOpen ?? openIndexes.includes(currentIndex)}
             onClick={() => {
               handleSetIndex(currentIndex);
-              item.onClick?.();
+              item.onClick?.(currentIndex);
             }}
             toggleIcons={icons}
             theme={theme}
