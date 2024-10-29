@@ -72,7 +72,7 @@ const PricingCards = ({
         {delimiter !== "blank" ? (
           <Icon
             name={delimiter}
-            size="20"
+            size="20px"
             additionalCSS={themeColor("text-neutral-500")}
           />
         ) : null}
@@ -229,7 +229,7 @@ const PricingCards = ({
                                   secondaryColor={themeColor(
                                     listItemColors.foreground,
                                   )}
-                                  size="16"
+                                  size="16px"
                                   additionalCSS="mt-2"
                                 />
                               ) : null}

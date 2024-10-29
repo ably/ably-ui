@@ -141,14 +141,14 @@ const AccordionRow = ({
         {...(!isStaticTheme(theme) ? { onClick } : {})}
         className={`flex w-full ${sticky ? "sticky top-0" : ""} focus:outline-none py-16 rounded-lg ui-text-p1 font-bold text-left items-center gap-12 ${isNonTransparentTheme(theme) ? "px-16 mb-16" : ""} ${isStaticTheme(theme) ? "pointer-events-none" : ""} transition-colors ${bgClasses} ${textClass}`}
       >
-        {rowIcon ? <Icon name={rowIcon} color={textClass} size="32" /> : null}
+        {rowIcon ? <Icon name={rowIcon} color={textClass} size="32px" /> : null}
         <span>{name}</span>
         {!selectable ? (
           <span className="flex-1 justify-end flex items-center">
             <Icon
               name={open ? toggleIcons.open.name : toggleIcons.closed.name}
               color={toggleIconColor}
-              size="16"
+              size="16px"
             />{" "}
           </span>
         ) : null}
