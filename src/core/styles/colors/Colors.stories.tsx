@@ -115,7 +115,11 @@ export const DynamicTheming = {
         <div className="flex flex-wrap gap-24">
           {colorSet(["orange-300"], "bg-orange-300")}
         </div>
-        <Icon name="icon-gui-arrow-right" size="48" additionalCSS="m-16"></Icon>
+        <Icon
+          name="icon-gui-arrow-right"
+          size="48px"
+          additionalCSS="m-16"
+        ></Icon>
         <div className="flex flex-wrap gap-24">
           {colorSet(["orange-900"], themeColor("bg-orange-300"))}
         </div>
