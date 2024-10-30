@@ -1,12 +1,12 @@
 import React, { CSSProperties } from "react";
 import { defaultIconSecondaryColor } from "./Icon/secondary-colors";
-import { IconName } from "./Icon/types";
+import { IconName, IconSize } from "./Icon/types";
 import { ColorClass } from "./styles/colors/types";
 import { convertTailwindClassToVar } from "./styles/colors/utils";
 
 export type IconProps = {
   name: IconName;
-  size?: string;
+  size?: IconSize;
   color?: ColorClass;
   secondaryColor?: ColorClass;
   additionalCSS?: string;
