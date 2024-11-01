@@ -16,3 +16,9 @@ export type IconName =
   | (typeof iconNames.other)[number]
   | (typeof iconNames.tech)[number]
   | (typeof iconNames.product)[number];
+
+export type IconSize =
+  | `${number}px`
+  | `${number}em`
+  | `${number}rem`
+  | `calc(${string})`;
