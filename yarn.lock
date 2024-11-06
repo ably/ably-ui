@@ -6393,9 +6393,9 @@ ms@^2.1.1:
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 msw-storybook-addon@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/msw-storybook-addon/-/msw-storybook-addon-2.0.3.tgz"
-  integrity sha512-CzHmGO32JeOPnyUnRWnB0PFTXCY1HKfHiEB/6fYoUYiFm2NYosLjzs9aBd3XJUryYEN0avJqMNh7nCRDxE5JjQ==
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/msw-storybook-addon/-/msw-storybook-addon-2.0.4.tgz#ff1f583c95aef5f8c2014299f235e13cdd34dc1b"
+  integrity sha512-rstO8+r01sRMg6PPP7OxM8LG5/6r4+wmp2uapHeHvm9TQQRHvpPXOU/Y9/Somysz8Oi4Ea1aummXH3JlnP2LIA==
   dependencies:
     is-node-process "^1.0.1"
 
