@@ -1,11 +1,30 @@
 import { ReactNode } from "react";
-import { IconName } from "../Icon/types";
+import { IconName, IconSize } from "../Icon/types";
 import { ColorClass } from "../styles/colors/types";
 
+/**
+ * Represents the data structure for an Accordion component.
+ */
 export type AccordionData = {
+  /**
+   * The name of the accordion item.
+   */
   name: string;
+
+  /**
+   * The optional icon name to be displayed alongside the accordion item.
+   */
   icon?: IconName;
+
+  /**
+   * The content to be displayed when the accordion item is expanded.
+   */
   content: ReactNode;
+
+  /**
+   * Optional click handler function that is called when the accordion item is clicked.
+   * @param index - The index of the clicked accordion item.
+   */
   onClick?: (index: number) => void;
 };
 
@@ -31,20 +50,113 @@ export const accordionThemes = [
 
 export type AccordionTheme = (typeof accordionThemes)[number];
 
+/**
+ * Represents the theme colors for an accordion component.
+ */
 export type AccordionThemeColors = {
+  /**
+   * Background color class for the accordion.
+   */
   bg: ColorClass;
+
+  /**
+   * Background color when the accordion item is hovered.
+   */
   hoverBg: string;
+
+  /**
+   * Text color class for the accordion.
+   */
   text: ColorClass;
+
+  /**
+   * Color class for the toggle icon of the accordion.
+   */
   toggleIconColor: ColorClass;
+
+  /**
+   * Optional background color class for selectable accordion items.
+   */
   selectableBg?: ColorClass;
+
+  /**
+   * Optional text color class for selectable accordion items.
+   */
   selectableText?: ColorClass;
+
+  /**
+   * Optional border color for the accordion.
+   */
   border?: string;
 };
 
+/**
+ * Options for configuring the Accordion component.
+ */
 export type AccordionOptions = {
+  /**
+   * If true, only one accordion item can be open at a time.
+   * @default false
+   */
   autoClose?: boolean;
+
+  /**
+   * If true, accordion items can be selected.
+   * @default false
+   */
   selectable?: boolean;
+
+  /**
+   * If true, the accordion header will stick to the top when scrolling.
+   * @default false
+   */
   sticky?: boolean;
+
+  /**
+   * An array of indexes indicating which accordion items should be open by default.
+   * @default []
+   */
   defaultOpenIndexes?: number[];
+
+  /**
+   * If true, all accordion items will be fully open.
+   * @default false
+   */
   fullyOpen?: boolean;
+
+  /**
+   * Custom CSS class to apply to the accordion header.
+   * @default ""
+   */
+  headerCSS?: string;
+
+  /**
+   * If true, borders between accordion items will be hidden.
+   * @default false
+   */
+  hideBorders?: boolean;
+
+  /**
+   * Size of the row icon.
+   * @default "32px"
+   */
+  rowIconSize?: IconSize;
+
+  /**
+   * Size of the accordion icon.
+   * @default "16px"
+   */
+  iconSize?: IconSize;
+
+  /**
+   * Custom CSS classes to apply to the selected accordion header.
+   * @default ""
+   */
+  selectedHeaderCSS?: string;
+
+  /**
+   * Custom CSS classes to apply to the accordion content.
+   * @default ""
+   */
+  contentCSS?: string;
 };
