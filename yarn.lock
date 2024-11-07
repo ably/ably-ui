@@ -6399,10 +6399,10 @@ msw-storybook-addon@^2.0.2:
   dependencies:
     is-node-process "^1.0.1"
 
-msw@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/msw/-/msw-2.6.0.tgz#ab50752feb5c63de90d70e8165746e2ea84580dd"
-  integrity sha512-n3tx2w0MZ3H4pxY0ozrQ4sNPzK/dGtlr2cIIyuEsgq2Bhy4wvcW6ZH2w/gXM9+MEUY6HC1fWhqtcXDxVZr5Jxw==
+msw@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/msw/-/msw-2.6.1.tgz#a4815f4b5549a43e09d85d8a6d220f1243d02064"
+  integrity sha512-1MfqQlKLRWfhnzvPYwsCNE30pNrtoSBb65I/sB99eyRB0RONw//v9vjntygmbG7F5Ni/m9tOPv+flghGKCgy6Q==
   dependencies:
     "@bundled-es-modules/cookie" "^2.0.0"
     "@bundled-es-modules/statuses" "^1.0.1"
