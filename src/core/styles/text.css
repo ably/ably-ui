@@ -165,4 +165,20 @@
   .ui-figcaption {
     @apply font-mono text-p3 text-neutral-800;
   }
+
+  .ui-menu-label-1 {
+    @apply font-sans text-neutral-1000 text-p1 font-medium leading-snug;
+  }
+
+  .ui-menu-label-2 {
+    @apply font-sans text-neutral-1000 text-p2 font-medium leading-snug;
+  }
+
+  .ui-menu-label-3 {
+    @apply font-sans text-neutral-1000 text-p3 font-medium leading-snug;
+  }
+
+  .ui-menu-label-4 {
+    @apply font-sans text-neutral-1000 text-p4 font-medium leading-snug;
+  }
 }

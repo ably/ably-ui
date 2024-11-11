@@ -26,6 +26,7 @@ module.exports = {
       p1: ["var(--fs-p1)", "var(--lh-extra-relaxed)"],
       p2: ["var(--fs-p2)", "var(--lh-extra-relaxed)"],
       p3: ["var(--fs-p3)", "var(--lh-extra-relaxed)"],
+      p4: ["var(--fs-p4)", "var(--lh-extra-relaxed)"],
       standfirst: ["var(--fs-standfirst)"],
       "standfirst-xl": ["var(--fs-standfirst-xl)"],
       "sub-header": ["var(--fs-sub-header)"],
