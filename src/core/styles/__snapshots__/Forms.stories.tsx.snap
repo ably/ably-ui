@@ -255,6 +255,21 @@ exports[`CSS/Forms Inputs smoke-test 1`] = `
       Oof, what an input
     </p>
   </div>
+  <div>
+    <p class="mb-16 text-neutral-800">
+      With character insert
+    </p>
+    <div class="relative">
+      <div class="h-32 w-32 absolute left-8 top-8 flex items-center justify-center select-none cursor-default">
+        $
+      </div>
+      <input type="search"
+             class="ui-input pl-40"
+             placeholder="With icon"
+             autocomplete="off"
+      >
+    </div>
+  </div>
 </div>
 `;
 

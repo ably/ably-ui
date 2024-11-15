@@ -80,6 +80,20 @@ export const Inputs = {
         />
         <p className="ui-text-p3 text-gui-error-red mt-8">Oof, what an input</p>
       </div>
+      <div>
+        <p className="mb-16 text-neutral-800">With character insert</p>
+        <div className="relative">
+          <div className="h-32 w-32 absolute left-8 top-8 flex items-center justify-center select-none cursor-default">
+            $
+          </div>
+          <input
+            type="search"
+            className="ui-input pl-40"
+            placeholder="With icon"
+            autoComplete="off"
+          />
+        </div>
+      </div>
     </div>
   ),
 };
