@@ -2863,9 +2863,9 @@ acorn@^8.9.0:
   integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==
 
 addsearch-js-client@^0.8.11:
-  version "0.8.14"
-  resolved "https://registry.npmjs.org/addsearch-js-client/-/addsearch-js-client-0.8.14.tgz"
-  integrity sha512-mHGrDp0qCpM8JXndH28OMXqDjlfwvSQ1RwL7KuGxDK+CVaJEVfXbJy9DYlPJJqc4ytQ72JRFh0qpon440XYzyA==
+  version "0.8.16"
+  resolved "https://registry.yarnpkg.com/addsearch-js-client/-/addsearch-js-client-0.8.16.tgz#fbeab419fb7fcd2983b2e71e24e7c8794f4fe41f"
+  integrity sha512-qX766xINtktzOMG4Xin611PedIltbO0ijLvn9dLcfsaA251C4+10k/tQkqHG6wxUL+z1S1+gbLb1Saxy1jqK3A==
   dependencies:
     axios "^1.7.2"
     buffer "^6.0.3"
