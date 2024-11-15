@@ -26,6 +26,7 @@ module.exports = {
       p1: ["var(--fs-p1)", "var(--lh-extra-relaxed)"],
       p2: ["var(--fs-p2)", "var(--lh-extra-relaxed)"],
       p3: ["var(--fs-p3)", "var(--lh-extra-relaxed)"],
+      p4: ["var(--fs-p4)", "var(--lh-extra-relaxed)"],
       standfirst: ["var(--fs-standfirst)"],
       "standfirst-xl": ["var(--fs-standfirst-xl)"],
       "sub-header": ["var(--fs-sub-header)"],
@@ -315,6 +316,18 @@ module.exports = {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
     listStyleType: {

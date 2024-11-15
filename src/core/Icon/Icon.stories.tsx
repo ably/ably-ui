@@ -69,6 +69,14 @@ export const ProductIcons = {
   render: () => renderIcons([...iconNames.product]),
 };
 
+export const DarkEncapsulatedIcons = {
+  render: () => renderIcons([...iconNames.product], true),
+};
+
+export const LightEncapsulatedIcons = {
+  render: () => renderIcons([...iconNames.product], true, "light"),
+};
+
 export const OtherIcons = {
   render: () => renderIcons([...iconNames.other]),
 };
@@ -97,12 +105,4 @@ export const IconWithSecondaryColor = {
       },
     },
   },
-};
-
-export const DarkEncapsulatedIcons = {
-  render: () => renderIcons([...iconNames.product], true),
-};
-
-export const LightEncapsulatedIcons = {
-  render: () => renderIcons([...iconNames.product], true, "light"),
 };

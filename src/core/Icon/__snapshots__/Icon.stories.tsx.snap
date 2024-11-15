@@ -4,6 +4,29 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-asset-tracking-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-asset-tracking-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-asset-tracking
     </code>
     <div class="border inline-flex flex-0">
@@ -18,6 +41,29 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
                  style="width: 28px; height: 28px;"
             >
               <use xlink:href="#sprite-icon-product-asset-tracking">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-chat-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-chat-mono">
               </use>
             </svg>
           </div>
@@ -73,6 +119,29 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-livesync-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-livesync-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-livesync
     </code>
     <div class="border inline-flex flex-0">
@@ -96,6 +165,52 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-platform-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-platform-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-pubsub-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-pubsub-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-pubsub
     </code>
     <div class="border inline-flex flex-0">
@@ -110,6 +225,29 @@ exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
                  style="width: 28px; height: 28px;"
             >
               <use xlink:href="#sprite-icon-product-pubsub">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-spaces-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-spaces-mono">
               </use>
             </svg>
           </div>
@@ -1667,6 +1805,36 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-gui-chevron-down
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-chevron-down">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-chevron-up
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-chevron-up">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-gui-clock
     </code>
     <div class="border inline-flex flex-0">
@@ -1855,6 +2023,21 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-filter-flow-step-3">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-gui-hand
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-hand">
           </use>
         </svg>
       </div>
@@ -2094,6 +2277,29 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-asset-tracking-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-asset-tracking-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-asset-tracking
     </code>
     <div class="border inline-flex flex-0">
@@ -2108,6 +2314,29 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
                  style="width: 28px; height: 28px;"
             >
               <use xlink:href="#sprite-icon-product-asset-tracking">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-chat-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-chat-mono">
               </use>
             </svg>
           </div>
@@ -2163,6 +2392,29 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-livesync-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-livesync-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-livesync
     </code>
     <div class="border inline-flex flex-0">
@@ -2186,6 +2438,52 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-platform-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-platform-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-pubsub-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-pubsub-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-pubsub
     </code>
     <div class="border inline-flex flex-0">
@@ -2200,6 +2498,29 @@ exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
                  style="width: 28px; height: 28px;"
             >
               <use xlink:href="#sprite-icon-product-pubsub">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-spaces-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+               style="height: 38px;"
+          >
+            <svg class=" "
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-spaces-mono">
               </use>
             </svg>
           </div>
@@ -2257,6 +2578,21 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-asset-tracking-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-asset-tracking-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-asset-tracking
     </code>
     <div class="border inline-flex flex-0">
@@ -2265,6 +2601,21 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-product-asset-tracking">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-chat-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-chat-mono">
           </use>
         </svg>
       </div>
@@ -2302,6 +2653,21 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-livesync-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-livesync-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-livesync
     </code>
     <div class="border inline-flex flex-0">
@@ -2317,6 +2683,36 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
     <code class="ui-text-code mb-8 block">
+      icon-product-platform-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-platform-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-pubsub-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-pubsub-mono">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
       icon-product-pubsub
     </code>
     <div class="border inline-flex flex-0">
@@ -2325,6 +2721,21 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-product-pubsub">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
+    <code class="ui-text-code mb-8 block">
+      icon-product-spaces-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-product-spaces-mono">
           </use>
         </svg>
       </div>

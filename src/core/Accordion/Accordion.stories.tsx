@@ -57,7 +57,11 @@ const AccordionPresentation = ({ data, options }: AccordionProps) => (
           key={theme}
           className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
         >
-          <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
+          <p
+            className={`ui-text-p3 mb-16 text-center font-mono ${theme.includes("dark") ? "text-neutral-000" : ""}`}
+          >
+            {theme}
+          </p>
           <Accordion
             data={data}
             options={options}
@@ -220,6 +224,28 @@ export const WithCustomOnClick = {
       description: {
         story:
           "When you set an onClick entry, it will be called when the section is clicked. It will add an additional action to be performed apart from the open/close behavior.",
+      },
+    },
+  },
+};
+
+export const WithCustomElementCSS = {
+  render: () =>
+    AccordionPresentation({
+      data: dataWithIcons,
+      options: {
+        selectedHeaderCSS: "bg-green-400 hover:bg-blue-600",
+        contentCSS: "bg-yellow-200",
+        headerCSS: "bg-pink-400 hover:bg-pink-600 h-40",
+        iconSize: "40px",
+        rowIconSize: "12px",
+      },
+    }),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "By modifying `headerCSS`, `selectedHeaderCSS`, `contentCSS`, `iconSize`, and `rowIconSize` in `options`, you can customize the styling of the header, row expansion icons (i.e. the plus and minus), and the icons on the left of the row. What's below is hideous, but you get the gist.",
       },
     },
   },
