@@ -64,6 +64,12 @@ dtsFiles.forEach((file) => {
   );
 });
 
+const additionalModules = ["@ably/ui/core/scripts"];
+
+additionalModules.forEach((module) => {
+  fs.appendFileSync(indexPath, `declare module '${module}';\n\n`, "utf8");
+});
+
 console.log(
   `🔬 index.d.ts file has been generated with ${dtsFiles.length} exports.`,
 );
