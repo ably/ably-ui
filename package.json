@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "14.8.0",
+  "version": "14.9.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -59,9 +59,8 @@
     "build:swc": "swc src/core src/reset -d dist --copy-files --include-dotfiles --strip-leading-paths --config-file .swc --ignore **/*.stories.tsx,**/*.snap",
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
-    "build:colors": "ts-node scripts/compute-colors.ts",
     "build:sprites": "ts-node scripts/generate-sprites.ts",
-    "build": "yarn build:prebuild && yarn build:colors && yarn build:sprites && yarn build:swc && yarn build:tsc && yarn build:cleanup",
+    "build": "yarn build:prebuild && yarn build:sprites && yarn build:swc && yarn build:tsc && yarn build:cleanup",
     "watch": "yarn build:swc -w",
     "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx}",
     "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx}",
