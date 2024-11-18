@@ -1,11 +1,8 @@
 import React from "react";
 import Icon, { IconProps } from "../Icon";
-import useTheming from "../hooks/useTheming";
-import { Theme } from "../styles/colors/types";
 import { IconSize } from "./types";
 
 type EncapsulatedIconProps = {
-  theme?: Theme;
   className?: string;
   innerClassName?: string;
   iconSize?: IconSize;
@@ -15,17 +12,12 @@ const ICON_SIZE_REDUCTION = 12;
 const ICON_HEIGHT_REDUCTION = 2;
 
 const EncapsulatedIcon = ({
-  theme = "dark",
   size = "40px",
   iconSize,
   className,
   innerClassName,
   ...iconProps
 }: EncapsulatedIconProps) => {
-  const { themeColor } = useTheming({
-    baseTheme: "dark",
-    theme,
-  });
   let computedIconSize = size,
     computedIconHeight = size;
 
@@ -43,11 +35,11 @@ const EncapsulatedIcon = ({
 
   return (
     <div
-      className={`p-1 rounded-lg ${theme === "light" ? "bg-gradient-to-t" : "bg-gradient-to-b"} ${themeColor("from-neutral-900")} ${className ?? ""}`}
+      className={`p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b ${className ?? "from-neutral-400 dark:from-neutral-900"}`}
       style={{ width: size, height: size }}
     >
       <div
-        className={`flex items-center justify-center rounded-lg ${themeColor("bg-neutral-1100")} ${innerClassName ?? ""}`}
+        className={`flex items-center justify-center rounded-lg ${innerClassName ?? "bg-neutral-200 dark:bg-neutral-1100"}`}
         style={{ height: computedIconHeight }}
       >
         <Icon size={computedIconSize} {...iconProps} />

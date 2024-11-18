@@ -53,7 +53,7 @@ export const ProductTileWithOverriddenStylesAndClick = {
     <ProductTile
       key="pubsub"
       name="pubsub"
-      className="bg-pink-800 hover:bg-pink-600 cursor-pointer"
+      className="bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer"
       onClick={() => alert("yo congrats on the click")}
     />
   ),

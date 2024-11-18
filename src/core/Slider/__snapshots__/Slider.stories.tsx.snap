@@ -44,7 +44,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -97,7 +97,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -150,7 +150,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -171,7 +171,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
     <button class="hidden sm:flex w-48 h-48 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -179,7 +179,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -205,7 +205,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
     <button class="hidden sm:flex w-48 h-48 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -213,7 +213,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -270,7 +270,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -323,7 +323,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -376,7 +376,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -397,7 +397,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
     <button class="w-32 h-32 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -405,7 +405,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -431,7 +431,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
     <button class="w-32 h-32 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -439,7 +439,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -496,7 +496,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -549,7 +549,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -602,7 +602,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class=" ml-4"
+                <svg class="ml-4"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -623,7 +623,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
     <button class="hidden sm:flex w-48 h-48 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -631,7 +631,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-left">
@@ -673,7 +673,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
     <button class="hidden sm:flex w-48 h-48 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-48">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">
@@ -681,7 +681,7 @@ exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class=" "
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-right">

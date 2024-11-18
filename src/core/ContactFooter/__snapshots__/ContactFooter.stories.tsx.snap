@@ -6,7 +6,7 @@ exports[`JS Components/Contact Footer Default smoke-test 1`] = `
 >
   <div class="w-full bp-lg max-w-screen-xl mx-auto py-64 grid grid-cols-1 md:grid-cols-3 ui-grid-gap ui-grid-px">
     <div class="ui-contact-footer-box">
-      <svg class=" block mb-16"
+      <svg class="block mb-16"
            style="width: 3rem; height: 3rem;"
       >
         <use xlink:href="#sprite-icon-display-live-chat">
@@ -31,7 +31,7 @@ exports[`JS Components/Contact Footer Default smoke-test 1`] = `
       </button>
     </div>
     <div class="ui-contact-footer-box">
-      <svg class=" block mb-16"
+      <svg class="block mb-16"
            style="width: 3rem; height: 3rem;"
       >
         <use xlink:href="#sprite-icon-display-call-mobile">
@@ -58,7 +58,7 @@ exports[`JS Components/Contact Footer Default smoke-test 1`] = `
       </div>
     </div>
     <div class="ui-contact-footer-box">
-      <svg class=" block mb-16"
+      <svg class="block mb-16"
            style="width: 3rem; height: 3rem;"
       >
         <use xlink:href="#sprite-icon-display-tech-account-comms">

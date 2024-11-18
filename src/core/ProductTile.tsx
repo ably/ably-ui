@@ -1,8 +1,8 @@
 import React from "react";
+import clsx from "clsx";
 import EncapsulatedIcon from "./Icon/EncapsulatedIcon";
 import FeaturedLink from "./FeaturedLink";
 import { ProductName, products } from "./ProductTile/data";
-import useTheming from "./hooks/useTheming";
 
 type ProductTileProps = {
   name: ProductName;
@@ -19,31 +19,62 @@ const ProductTile = ({
   className,
   onClick,
 }: ProductTileProps) => {
-  const { themeColor } = useTheming({
-    baseTheme: "dark",
-    theme: selected ? "light" : "dark",
-  });
   const { icon, label, description, link, unavailable } = products[name] ?? {};
 
   return (
     <div
-      className={`rounded-lg p-12 flex flex-col gap-8 transition-colors ${themeColor("bg-neutral-1200")} ${selected ? "" : "hover:bg-neutral-1100"} ${className ?? ""}`}
+      className={clsx(
+        "rounded-lg p-12 flex flex-col gap-8 transition-colors",
+        { "bg-neutral-1200 dark:bg-neutral-100": selected },
+        {
+          "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100":
+            !selected,
+        },
+        { [`${className}`]: className },
+      )}
       onClick={onClick}
     >
       <div className="flex gap-12 items-center">
         {icon ? (
-          <EncapsulatedIcon name={icon} theme={selected ? "light" : "dark"} />
+          <EncapsulatedIcon
+            name={icon}
+            className={
+              selected
+                ? "from-neutral-900 dark:from-neutral-400"
+                : "from-neutral-400 dark:from-neutral-900"
+            }
+            innerClassName={
+              selected
+                ? "bg-neutral-1100 dark:bg-neutral-200"
+                : "bg-neutral-200 dark:bg-neutral-1100"
+            }
+          />
         ) : null}
         <div
-          className={`flex ${unavailable ? "flex-row items-center gap-4" : "flex-col justify-center"} `}
+          className={clsx(
+            "flex",
+            { "flex-row items-center gap-4": unavailable },
+            { "flex-col justify-center": !unavailable },
+          )}
         >
           <p
-            className={`${unavailable ? "ui-text-p2" : "ui-text-p3"} ${themeColor("text-neutral-300")} font-medium`}
+            className={clsx(
+              "font-medium",
+              { "text-neutral-300 dark:text-neutral-1000": selected },
+              { "text-neutral-1000 dark:text-neutral-300": !selected },
+              { "ui-text-p2": unavailable },
+              { "ui-text-p3": !unavailable },
+            )}
           >
             Ably{" "}
           </p>
           <p
-            className={`ui-text-p2 ${themeColor("text-neutral-000")} font-bold ${unavailable ? "" : "mt-[-3px]"}`}
+            className={clsx(
+              "ui-text-p2 font-bold",
+              { "text-neutral-000 dark:text-neutral-1300": selected },
+              { "text-neutral-1300 dark:text-neutral-000": !selected },
+              { "mt-[-3px]": !unavailable },
+            )}
           >
             {label}
           </p>
@@ -51,19 +82,23 @@ const ProductTile = ({
       </div>
       {unavailable ? (
         <div className="-mt-8">
-          <div className="table-cell font-sans bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+          <div className="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
             COMING SOON
           </div>
         </div>
       ) : null}
       <p
-        className={`ui-text-p3 ${selected ? "text-neutral-1000" : "text-neutral-500"} font-medium leading-snug`}
+        className={clsx(
+          "ui-text-p3 font-medium leading-snug",
+          { "text-neutral-300 dark:text-neutral-1000": selected },
+          { "text-neutral-800 dark:text-neutral-500": !selected },
+        )}
       >
         {description}
       </p>
       {selected && link ? (
         <FeaturedLink
-          additionalCSS={`ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block ${themeColor("text-neutral-000")}`}
+          additionalCSS="ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
           iconColor="text-orange-600"
           url={link}
         >

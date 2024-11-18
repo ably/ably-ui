@@ -34,27 +34,27 @@
   @apply bg-neutral-1300;
 }
 
-.sb-show-main.dark .sb-bar,
-.sb-show-main.dark .sb-anchor > p > code {
+.ui-theme-dark .sb-bar,
+.ui-theme-dark .sb-anchor > p > code {
   @apply bg-neutral-1200;
 }
 
-.sb-show-main.dark .docblock-code-toggle {
+.ui-theme-dark .docblock-code-toggle {
   @apply bg-neutral-1200 text-neutral-000;
 }
 
-.sb-show-main.dark .sbdocs h1,
-.sb-show-main.dark .sb-anchor > h3,
-.sb-show-main.dark .sb-anchor > p,
-.sb-show-main.dark .sb-anchor > p > code {
+.ui-theme-dark .sbdocs-content > *,
+.ui-theme-dark .sb-anchor > h3,
+.ui-theme-dark .sb-anchor > p,
+.ui-theme-dark .sb-anchor > p > code {
   @apply text-neutral-000;
 }
 
-.sb-show-main.dark .sbdocs td,
-.sb-show-main.dark .sbdocs th {
+.ui-theme-dark .sbdocs td,
+.ui-theme-dark .sbdocs th {
   @apply text-neutral-200;
 }
 
-.sb-show-main.dark .sbdocs td {
-  @apply bg-neutral-1100 text-neutral-200;
+.ui-theme-dark .sbdocs td {
+  @apply !bg-neutral-1100 text-neutral-200;
 }
