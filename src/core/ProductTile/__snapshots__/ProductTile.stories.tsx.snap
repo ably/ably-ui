@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JS Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-test 1`] = `
-<div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 bg-pink-800 hover:bg-pink-600 cursor-pointer">
+<div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer">
   <div class="flex gap-12 items-center">
-    <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+    <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
          style="width: 40px; height: 40px;"
     >
-      <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+      <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
            style="height: 38px;"
       >
-        <svg class=" "
+        <svg class
              style="width: 28px; height: 28px;"
         >
           <use xlink:href="#sprite-icon-product-pubsub">
@@ -17,16 +17,16 @@ exports[`JS Components/Product Tile ProductTileWithOverriddenStylesAndClick smok
         </svg>
       </div>
     </div>
-    <div class="flex flex-col justify-center ">
-      <p class="ui-text-p3 text-neutral-300 font-medium">
+    <div class="flex flex-col justify-center">
+      <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
         Ably
       </p>
-      <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+      <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
         PubSub
       </p>
     </div>
   </div>
-  <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+  <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
     Low-level APIs to build any realtime experience
   </p>
 </div>
@@ -34,15 +34,15 @@ exports[`JS Components/Product Tile ProductTileWithOverriddenStylesAndClick smok
 
 exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-32">
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-pubsub">
@@ -50,28 +50,28 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           PubSub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Low-level APIs to build any realtime experience
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-chat">
@@ -79,28 +79,28 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-spaces">
@@ -108,28 +108,28 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Create collaborative environments in a few lines of code
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-livesync">
@@ -137,28 +137,28 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Sync database changes with frontend clients
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-asset-tracking">
@@ -166,36 +166,36 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Simple APIs to build realtime tracking applications
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="flex flex-row items-center gap-4 ">
-        <p class="ui-text-p2 text-neutral-300 font-medium">
+      <div class="flex flex-row items-center gap-4">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p2">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold ">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000">
           LiveObjects
         </p>
       </div>
     </div>
     <div class="-mt-8">
-      <div class="table-cell font-sans bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+      <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
         COMING SOON
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Sync application state across multiple devices
     </p>
   </div>
@@ -204,15 +204,15 @@ exports[`JS Components/Product Tile ProductTiles smoke-test 1`] = `
 
 exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
 <div class="grid grid-cols-3 gap-32">
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100  ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 dark:bg-neutral-100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-900 dark:from-neutral-400"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 dark:bg-neutral-200"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-pubsub">
@@ -220,20 +220,20 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-1000 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-300 dark:text-neutral-1000 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-000 dark:text-neutral-1300 mt-[-3px]">
           PubSub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-300 dark:text-neutral-1000">
       Low-level APIs to build any realtime experience
     </p>
     <a href="/docs/products/channels"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       View docs
@@ -245,15 +245,15 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-chat">
@@ -261,28 +261,28 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100  ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 dark:bg-neutral-100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-900 dark:from-neutral-400"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 dark:bg-neutral-200"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-spaces">
@@ -290,20 +290,20 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-1000 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-300 dark:text-neutral-1000 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-000 dark:text-neutral-1300 mt-[-3px]">
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-300 dark:text-neutral-1000">
       Create collaborative environments in a few lines of code
     </p>
     <a href="/docs/products/spaces"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore
@@ -315,15 +315,15 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-livesync">
@@ -331,28 +331,28 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-300 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]">
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Sync database changes with frontend clients
     </p>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100  ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 dark:bg-neutral-100">
     <div class="flex gap-12 items-center">
-      <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
+      <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-900 dark:from-neutral-400"
            style="width: 40px; height: 40px;"
       >
-        <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
+        <div class="flex items-center justify-center rounded-lg bg-neutral-1100 dark:bg-neutral-200"
              style="height: 38px;"
         >
-          <svg class=" "
+          <svg class
                style="width: 28px; height: 28px;"
           >
             <use xlink:href="#sprite-icon-product-asset-tracking">
@@ -360,20 +360,20 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="flex flex-col justify-center ">
-        <p class="ui-text-p3 text-neutral-1000 font-medium">
+      <div class="flex flex-col justify-center">
+        <p class="font-medium text-neutral-300 dark:text-neutral-1000 ui-text-p3">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-1300 font-bold mt-[-3px]">
+        <p class="ui-text-p2 font-bold text-neutral-000 dark:text-neutral-1300 mt-[-3px]">
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-1000 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-300 dark:text-neutral-1000">
       Simple APIs to build realtime tracking applications
     </p>
     <a href="/docs/products/asset-tracking"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-1300"
+       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore
@@ -385,23 +385,23 @@ exports[`JS Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       </svg>
     </a>
   </div>
-  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-1200 hover:bg-neutral-1100 ">
+  <div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100">
     <div class="flex gap-12 items-center">
-      <div class="flex flex-row items-center gap-4 ">
-        <p class="ui-text-p2 text-neutral-300 font-medium">
+      <div class="flex flex-row items-center gap-4">
+        <p class="font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p2">
           Ably
         </p>
-        <p class="ui-text-p2 text-neutral-000 font-bold ">
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000">
           LiveObjects
         </p>
       </div>
     </div>
     <div class="-mt-8">
-      <div class="table-cell font-sans bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
+      <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
         COMING SOON
       </div>
     </div>
-    <p class="ui-text-p3 text-neutral-500 font-medium leading-snug">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500">
       Sync application state across multiple devices
     </p>
   </div>

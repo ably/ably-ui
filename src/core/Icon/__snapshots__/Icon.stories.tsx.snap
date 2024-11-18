@@ -1,290 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Icon DarkEncapsulatedIcons smoke-test 1`] = `
-<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-asset-tracking-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-asset-tracking
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-asset-tracking">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-chat-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-chat-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-chat
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-chat">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-liveobjects
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-liveobjects">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-livesync-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-livesync-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-livesync
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-livesync">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-platform-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-platform-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-pubsub-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-pubsub-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-pubsub
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-pubsub">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-spaces-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-spaces-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-spaces
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-b from-neutral-900 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-1100 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-spaces">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-48hrs
     </code>
     <div class="border inline-flex flex-0">
@@ -298,8 +17,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-ably-channels
     </code>
     <div class="border inline-flex flex-0">
@@ -313,8 +32,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-about-ably-col
     </code>
     <div class="border inline-flex flex-0">
@@ -328,8 +47,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-api-keys
     </code>
     <div class="border inline-flex flex-0">
@@ -343,8 +62,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-api
     </code>
     <div class="border inline-flex flex-0">
@@ -358,8 +77,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-architectural-guidance
     </code>
     <div class="border inline-flex flex-0">
@@ -373,8 +92,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-asset-tracking-col
     </code>
     <div class="border inline-flex flex-0">
@@ -388,8 +107,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-authentication
     </code>
     <div class="border inline-flex flex-0">
@@ -403,8 +122,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-avatar-stack
     </code>
     <div class="border inline-flex flex-0">
@@ -418,8 +137,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-browser
     </code>
     <div class="border inline-flex flex-0">
@@ -433,8 +152,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-calendar
     </code>
     <div class="border inline-flex flex-0">
@@ -448,8 +167,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-call-mobile
     </code>
     <div class="border inline-flex flex-0">
@@ -463,8 +182,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-careers-col
     </code>
     <div class="border inline-flex flex-0">
@@ -478,8 +197,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-case-studies-col
     </code>
     <div class="border inline-flex flex-0">
@@ -493,8 +212,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-chat-col
     </code>
     <div class="border inline-flex flex-0">
@@ -508,8 +227,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-chat-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -523,8 +242,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-chat-stack-col
     </code>
     <div class="border inline-flex flex-0">
@@ -538,8 +257,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-chat-stack
     </code>
     <div class="border inline-flex flex-0">
@@ -553,8 +272,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-cloud-servers
     </code>
     <div class="border inline-flex flex-0">
@@ -568,8 +287,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-compare-tech-col
     </code>
     <div class="border inline-flex flex-0">
@@ -583,8 +302,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-connection-state-recovery
     </code>
     <div class="border inline-flex flex-0">
@@ -598,8 +317,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-consumer-groups
     </code>
     <div class="border inline-flex flex-0">
@@ -613,8 +332,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-custom-cname
     </code>
     <div class="border inline-flex flex-0">
@@ -628,8 +347,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-custom
     </code>
     <div class="border inline-flex flex-0">
@@ -643,8 +362,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-customers-col
     </code>
     <div class="border inline-flex flex-0">
@@ -658,8 +377,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-data-broadcast-col
     </code>
     <div class="border inline-flex flex-0">
@@ -673,8 +392,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-data-broadcast-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -688,8 +407,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-data-synchronization-col
     </code>
     <div class="border inline-flex flex-0">
@@ -703,8 +422,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-dedicated-cluster
     </code>
     <div class="border inline-flex flex-0">
@@ -718,8 +437,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-deltas
     </code>
     <div class="border inline-flex flex-0">
@@ -733,8 +452,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-docs-col
     </code>
     <div class="border inline-flex flex-0">
@@ -748,8 +467,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-documentation
     </code>
     <div class="border inline-flex flex-0">
@@ -763,8 +482,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-dynamic-channel-groups
     </code>
     <div class="border inline-flex flex-0">
@@ -778,8 +497,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-edge-network
     </code>
     <div class="border inline-flex flex-0">
@@ -793,8 +512,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-elasticity
     </code>
     <div class="border inline-flex flex-0">
@@ -808,8 +527,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-equalisers-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -823,8 +542,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-events-col
     </code>
     <div class="border inline-flex flex-0">
@@ -838,8 +557,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-exactly-once-delivery
     </code>
     <div class="border inline-flex flex-0">
@@ -853,8 +572,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-examples-col
     </code>
     <div class="border inline-flex flex-0">
@@ -868,8 +587,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-fan-out
     </code>
     <div class="border inline-flex flex-0">
@@ -883,8 +602,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-firehose
     </code>
     <div class="border inline-flex flex-0">
@@ -898,8 +617,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-gdpr
     </code>
     <div class="border inline-flex flex-0">
@@ -913,8 +632,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-general-comms
     </code>
     <div class="border inline-flex flex-0">
@@ -928,8 +647,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-granular-permissions
     </code>
     <div class="border inline-flex flex-0">
@@ -943,8 +662,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-hipaa-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -958,8 +677,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-hipaa
     </code>
     <div class="border inline-flex flex-0">
@@ -973,8 +692,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-history
     </code>
     <div class="border inline-flex flex-0">
@@ -988,8 +707,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-integrations-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1003,8 +722,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-integrations
     </code>
     <div class="border inline-flex flex-0">
@@ -1018,8 +737,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-it-support-access
     </code>
     <div class="border inline-flex flex-0">
@@ -1033,8 +752,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-it-support-helpdesk
     </code>
     <div class="border inline-flex flex-0">
@@ -1048,8 +767,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-kafka-at-the-edge-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1063,8 +782,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-laptop
     </code>
     <div class="border inline-flex flex-0">
@@ -1078,8 +797,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-lightbulb-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1093,8 +812,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-live-chat
     </code>
     <div class="border inline-flex flex-0">
@@ -1108,8 +827,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-live-updates-results-metrics-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1123,8 +842,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-map-pin
     </code>
     <div class="border inline-flex flex-0">
@@ -1138,8 +857,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-message-batching
     </code>
     <div class="border inline-flex flex-0">
@@ -1153,8 +872,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-message-persistence
     </code>
     <div class="border inline-flex flex-0">
@@ -1168,8 +887,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-message-queues
     </code>
     <div class="border inline-flex flex-0">
@@ -1183,8 +902,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-message
     </code>
     <div class="border inline-flex flex-0">
@@ -1198,8 +917,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-multi-user-spaces-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1213,8 +932,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-observe-analytics
     </code>
     <div class="border inline-flex flex-0">
@@ -1228,8 +947,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-padlock-closed
     </code>
     <div class="border inline-flex flex-0">
@@ -1243,8 +962,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-platform
     </code>
     <div class="border inline-flex flex-0">
@@ -1258,8 +977,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-play
     </code>
     <div class="border inline-flex flex-0">
@@ -1273,8 +992,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-premium-support
     </code>
     <div class="border inline-flex flex-0">
@@ -1288,8 +1007,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-privacy-shield-framework
     </code>
     <div class="border inline-flex flex-0">
@@ -1303,8 +1022,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-private-link
     </code>
     <div class="border inline-flex flex-0">
@@ -1318,8 +1037,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-push-notifications-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1333,8 +1052,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-push-notifications-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -1348,8 +1067,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-push-notifications
     </code>
     <div class="border inline-flex flex-0">
@@ -1363,8 +1082,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-quickstart-guides-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1378,8 +1097,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-resources-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1393,8 +1112,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-rewind
     </code>
     <div class="border inline-flex flex-0">
@@ -1408,8 +1127,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-sdks-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1423,8 +1142,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-send-received-messages
     </code>
     <div class="border inline-flex flex-0">
@@ -1438,8 +1157,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-servers
     </code>
     <div class="border inline-flex flex-0">
@@ -1453,8 +1172,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-shopping-cart
     </code>
     <div class="border inline-flex flex-0">
@@ -1468,8 +1187,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-sla
     </code>
     <div class="border inline-flex flex-0">
@@ -1483,8 +1202,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-soc2-type2-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -1498,8 +1217,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-soc2-type2
     </code>
     <div class="border inline-flex flex-0">
@@ -1513,8 +1232,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-subscription-filters
     </code>
     <div class="border inline-flex flex-0">
@@ -1528,8 +1247,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-support-chat-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -1543,8 +1262,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-system-metadata
     </code>
     <div class="border inline-flex flex-0">
@@ -1558,8 +1277,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-tech-account-comms
     </code>
     <div class="border inline-flex flex-0">
@@ -1573,8 +1292,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-tutorials-demos-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1588,8 +1307,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-virtual-events-col
     </code>
     <div class="border inline-flex flex-0">
@@ -1603,8 +1322,8 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-display-virtual-events
     </code>
     <div class="border inline-flex flex-0">
@@ -1621,10 +1340,291 @@ exports[`JS Components/Icon DisplayIcons smoke-test 1`] = `
 </div>
 `;
 
+exports[`JS Components/Icon EncapsulatedIcons smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-asset-tracking-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-asset-tracking-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-asset-tracking
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-asset-tracking">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-chat-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-chat-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-chat
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-chat">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-liveobjects
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-liveobjects">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-livesync-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-livesync-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-livesync
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-livesync">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-platform-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-platform-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-pubsub-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-pubsub-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-pubsub
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-pubsub">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-spaces-mono
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-spaces-mono">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-product-spaces
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
+             style="width: 40px; height: 40px;"
+        >
+          <div class="flex items-center justify-center rounded-lg bg-neutral-200 dark:bg-neutral-1100"
+               style="height: 38px;"
+          >
+            <svg class
+                 style="width: 28px; height: 28px;"
+            >
+              <use xlink:href="#sprite-icon-product-spaces">
+              </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-ably-badge
     </code>
     <div class="border inline-flex flex-0">
@@ -1638,8 +1638,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-bidirectional-horizontal
     </code>
     <div class="border inline-flex flex-0">
@@ -1653,8 +1653,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-bidirectional-vertical
     </code>
     <div class="border inline-flex flex-0">
@@ -1668,8 +1668,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-down
     </code>
     <div class="border inline-flex flex-0">
@@ -1683,8 +1683,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-left
     </code>
     <div class="border inline-flex flex-0">
@@ -1698,8 +1698,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-right
     </code>
     <div class="border inline-flex flex-0">
@@ -1713,8 +1713,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-up
     </code>
     <div class="border inline-flex flex-0">
@@ -1728,8 +1728,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-burger-menu
     </code>
     <div class="border inline-flex flex-0">
@@ -1743,8 +1743,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-check-circled-fill-black
     </code>
     <div class="border inline-flex flex-0">
@@ -1758,8 +1758,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-check-circled-fill
     </code>
     <div class="border inline-flex flex-0">
@@ -1773,8 +1773,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-check-circled
     </code>
     <div class="border inline-flex flex-0">
@@ -1788,8 +1788,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-checklist-checked
     </code>
     <div class="border inline-flex flex-0">
@@ -1803,8 +1803,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-chevron-down
     </code>
     <div class="border inline-flex flex-0">
@@ -1818,8 +1818,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-chevron-up
     </code>
     <div class="border inline-flex flex-0">
@@ -1833,8 +1833,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-clock
     </code>
     <div class="border inline-flex flex-0">
@@ -1848,8 +1848,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-close
     </code>
     <div class="border inline-flex flex-0">
@@ -1863,8 +1863,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-copy
     </code>
     <div class="border inline-flex flex-0">
@@ -1878,8 +1878,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-cross-circled-fill
     </code>
     <div class="border inline-flex flex-0">
@@ -1893,8 +1893,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-cross-circled
     </code>
     <div class="border inline-flex flex-0">
@@ -1908,8 +1908,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-dash-circled
     </code>
     <div class="border inline-flex flex-0">
@@ -1923,8 +1923,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-disclosure-arrow
     </code>
     <div class="border inline-flex flex-0">
@@ -1938,8 +1938,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-document-generic
     </code>
     <div class="border inline-flex flex-0">
@@ -1953,8 +1953,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-enlarge
     </code>
     <div class="border inline-flex flex-0">
@@ -1968,8 +1968,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-external-link
     </code>
     <div class="border inline-flex flex-0">
@@ -1983,8 +1983,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-filter-flow-step-1
     </code>
     <div class="border inline-flex flex-0">
@@ -1998,8 +1998,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-filter-flow-step-2
     </code>
     <div class="border inline-flex flex-0">
@@ -2013,8 +2013,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-filter-flow-step-3
     </code>
     <div class="border inline-flex flex-0">
@@ -2028,8 +2028,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-hand
     </code>
     <div class="border inline-flex flex-0">
@@ -2043,8 +2043,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-history
     </code>
     <div class="border inline-flex flex-0">
@@ -2058,8 +2058,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-info
     </code>
     <div class="border inline-flex flex-0">
@@ -2073,8 +2073,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-link-arrow
     </code>
     <div class="border inline-flex flex-0">
@@ -2088,8 +2088,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-link
     </code>
     <div class="border inline-flex flex-0">
@@ -2103,8 +2103,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-live-chat
     </code>
     <div class="border inline-flex flex-0">
@@ -2118,8 +2118,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-minus
     </code>
     <div class="border inline-flex flex-0">
@@ -2133,8 +2133,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-partial
     </code>
     <div class="border inline-flex flex-0">
@@ -2148,8 +2148,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-plus
     </code>
     <div class="border inline-flex flex-0">
@@ -2163,8 +2163,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-quote-marks-solid
     </code>
     <div class="border inline-flex flex-0">
@@ -2178,8 +2178,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-refresh
     </code>
     <div class="border inline-flex flex-0">
@@ -2193,8 +2193,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-resources
     </code>
     <div class="border inline-flex flex-0">
@@ -2208,8 +2208,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-search
     </code>
     <div class="border inline-flex flex-0">
@@ -2223,8 +2223,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-tick
     </code>
     <div class="border inline-flex flex-0">
@@ -2238,8 +2238,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-warning-fill
     </code>
     <div class="border inline-flex flex-0">
@@ -2253,8 +2253,8 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-warning
     </code>
     <div class="border inline-flex flex-0">
@@ -2273,306 +2273,53 @@ exports[`JS Components/Icon GUIIcons smoke-test 1`] = `
 
 exports[`JS Components/Icon IconWithSecondaryColor smoke-test 1`] = `
 <div class="flex items-center justify-center p-16 gap-24">
-  <svg class="text-active-orange "
-       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
-  >
-    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-    </use>
-  </svg>
-  <svg class="text-active-orange "
-       style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-neutral-1300);"
-  >
-    <use xlink:href="#sprite-icon-gui-check-circled-fill">
-    </use>
-  </svg>
-</div>
-`;
-
-exports[`JS Components/Icon LightEncapsulatedIcons smoke-test 1`] = `
-<div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-asset-tracking-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="flex gap-24">
+    <h4 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+      Non-themed:
+    </h4>
+    <svg class="text-orange-600"
+         style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
+    >
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
+      </use>
+    </svg>
+    <svg class="text-orange-600"
+         style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-neutral-1300);"
+    >
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
+      </use>
+    </svg>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-asset-tracking
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-asset-tracking">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-chat-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-chat-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-chat
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-chat">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-liveobjects
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-liveobjects">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-livesync-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-livesync-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-livesync
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-livesync">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-platform-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-platform-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-pubsub-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-pubsub-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-pubsub
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-pubsub">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-spaces-mono
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-spaces-mono">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
-      icon-product-spaces
-    </code>
-    <div class="border inline-flex flex-0">
-      <div class="flex pi-checkered-bg">
-        <div class="p-1 rounded-lg bg-gradient-to-t from-neutral-400 "
-             style="width: 40px; height: 40px;"
-        >
-          <div class="flex items-center justify-center rounded-lg bg-neutral-200 "
-               style="height: 38px;"
-          >
-            <svg class=" "
-                 style="width: 28px; height: 28px;"
-            >
-              <use xlink:href="#sprite-icon-product-spaces">
-              </use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="flex gap-24">
+    <h4 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+      Themed:
+    </h4>
+    <svg class="text-orange-600"
+         style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
+    >
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
+      </use>
+    </svg>
+    <svg class="text-orange-200 dark:text-orange-1000 hidden dark:block"
+         style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-orange-600);"
+    >
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
+      </use>
+    </svg>
+    <svg class="text-orange-200 dark:text-orange-1000 dark:hidden"
+         style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-orange-600);"
+    >
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
+      </use>
+    </svg>
   </div>
 </div>
 `;
 
 exports[`JS Components/Icon OtherIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-other-quote
     </code>
     <div class="border inline-flex flex-0">
@@ -2591,8 +2338,8 @@ exports[`JS Components/Icon OtherIcons smoke-test 1`] = `
 
 exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-asset-tracking-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2606,8 +2353,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-asset-tracking
     </code>
     <div class="border inline-flex flex-0">
@@ -2621,8 +2368,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-chat-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2636,8 +2383,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-chat
     </code>
     <div class="border inline-flex flex-0">
@@ -2651,8 +2398,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-liveobjects
     </code>
     <div class="border inline-flex flex-0">
@@ -2666,8 +2413,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-livesync-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2681,8 +2428,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-livesync
     </code>
     <div class="border inline-flex flex-0">
@@ -2696,8 +2443,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-platform-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2711,8 +2458,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-pubsub-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2726,8 +2473,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-pubsub
     </code>
     <div class="border inline-flex flex-0">
@@ -2741,8 +2488,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-spaces-mono
     </code>
     <div class="border inline-flex flex-0">
@@ -2756,8 +2503,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-product-spaces
     </code>
     <div class="border inline-flex flex-0">
@@ -2776,8 +2523,8 @@ exports[`JS Components/Icon ProductIcons smoke-test 1`] = `
 
 exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-discord
     </code>
     <div class="border inline-flex flex-0">
@@ -2791,8 +2538,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-facebook
     </code>
     <div class="border inline-flex flex-0">
@@ -2806,8 +2553,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-github
     </code>
     <div class="border inline-flex flex-0">
@@ -2821,8 +2568,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-glassdoor
     </code>
     <div class="border inline-flex flex-0">
@@ -2836,8 +2583,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-google
     </code>
     <div class="border inline-flex flex-0">
@@ -2851,8 +2598,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-linkedin
     </code>
     <div class="border inline-flex flex-0">
@@ -2866,8 +2613,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-stackoverflow
     </code>
     <div class="border inline-flex flex-0">
@@ -2881,8 +2628,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-twitter
     </code>
     <div class="border inline-flex flex-0">
@@ -2896,8 +2643,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-x
     </code>
     <div class="border inline-flex flex-0">
@@ -2911,8 +2658,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-social-youtube
     </code>
     <div class="border inline-flex flex-0">
@@ -2931,8 +2678,8 @@ exports[`JS Components/Icon SocialIcons smoke-test 1`] = `
 
 exports[`JS Components/Icon TechIcons smoke-test 1`] = `
 <div class="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-amqp10
     </code>
     <div class="border inline-flex flex-0">
@@ -2946,8 +2693,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-apache-kafka
     </code>
     <div class="border inline-flex flex-0">
@@ -2961,8 +2708,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-apachepulsar
     </code>
     <div class="border inline-flex flex-0">
@@ -2976,8 +2723,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-awskinesis
     </code>
     <div class="border inline-flex flex-0">
@@ -2991,8 +2738,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-awslambda
     </code>
     <div class="border inline-flex flex-0">
@@ -3006,8 +2753,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-awssqs
     </code>
     <div class="border inline-flex flex-0">
@@ -3021,8 +2768,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-azureservicebus
     </code>
     <div class="border inline-flex flex-0">
@@ -3036,8 +2783,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-cloudflareworkers
     </code>
     <div class="border inline-flex flex-0">
@@ -3051,8 +2798,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-csharp
     </code>
     <div class="border inline-flex flex-0">
@@ -3066,8 +2813,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-flutter
     </code>
     <div class="border inline-flex flex-0">
@@ -3081,8 +2828,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-gcloudfunctions
     </code>
     <div class="border inline-flex flex-0">
@@ -3096,8 +2843,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-go
     </code>
     <div class="border inline-flex flex-0">
@@ -3111,8 +2858,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-ifttt
     </code>
     <div class="border inline-flex flex-0">
@@ -3126,8 +2873,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-java
     </code>
     <div class="border inline-flex flex-0">
@@ -3141,8 +2888,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-javascript
     </code>
     <div class="border inline-flex flex-0">
@@ -3156,8 +2903,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-net
     </code>
     <div class="border inline-flex flex-0">
@@ -3171,8 +2918,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-objectivec
     </code>
     <div class="border inline-flex flex-0">
@@ -3186,8 +2933,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-php
     </code>
     <div class="border inline-flex flex-0">
@@ -3201,8 +2948,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-python
     </code>
     <div class="border inline-flex flex-0">
@@ -3216,8 +2963,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-react
     </code>
     <div class="border inline-flex flex-0">
@@ -3231,8 +2978,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-ruby
     </code>
     <div class="border inline-flex flex-0">
@@ -3246,8 +2993,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-swift
     </code>
     <div class="border inline-flex flex-0">
@@ -3261,8 +3008,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-terraform
     </code>
     <div class="border inline-flex flex-0">
@@ -3276,8 +3023,8 @@ exports[`JS Components/Icon TechIcons smoke-test 1`] = `
       </div>
     </div>
   </div>
-  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12">
-    <code class="ui-text-code mb-8 block">
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-tech-zapier
     </code>
     <div class="border inline-flex flex-0">

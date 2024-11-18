@@ -312,7 +312,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
                href="https://twitter.com/ablyrealtime"
                title="Ably on X"
             >
-              <svg class=" "
+              <svg class
                    style="width: 1.5rem; height: 1.5rem;"
               >
                 <use xlink:href="#sprite-icon-social-x">
@@ -323,7 +323,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
                href="https://www.linkedin.com/company/ably-realtime"
                title="Ably on LinkedIn"
             >
-              <svg class=" "
+              <svg class
                    style="width: 1.5rem; height: 1.5rem;"
               >
                 <use xlink:href="#sprite-icon-social-linkedin">
@@ -334,7 +334,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
                href="https://github.com/ably/"
                title="Ably on Github"
             >
-              <svg class=" "
+              <svg class
                    style="width: 1.5rem; height: 1.5rem;"
               >
                 <use xlink:href="#sprite-icon-social-github">
@@ -345,7 +345,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
                href="https://discord.gg/jwBPhEZ9g5"
                title="Ably on Discord"
             >
-              <svg class=" "
+              <svg class
                    style="width: 1.5rem; height: 1.5rem;"
               >
                 <use xlink:href="#sprite-icon-social-discord">
@@ -360,7 +360,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
                class="h-24 text-cool-black hover:text-icon-glassdoor"
                title="Ably reviews on glassdoor"
             >
-              <svg class=" "
+              <svg class
                    style="width: 1.5rem; height: 1.5rem;"
               >
                 <use xlink:href="#sprite-icon-social-glassdoor">
@@ -388,7 +388,7 @@ exports[`JS Components/Footer Default smoke-test 1`] = `
              href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm"
              title="Ably reviews on glassdoor"
           >
-            <svg class=" "
+            <svg class
                  style="width: 1.5rem; height: 1.5rem;"
             >
               <use xlink:href="#sprite-icon-social-glassdoor">

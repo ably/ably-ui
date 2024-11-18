@@ -1,13 +1,13 @@
 import React, { CSSProperties, ReactNode } from "react";
 
 import Icon from "./Icon";
-import { ColorClass } from "./styles/colors/types";
+import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 
 type FeaturedLinkProps = {
   url: string;
   children: ReactNode;
   textSize?: string;
-  iconColor?: ColorClass;
+  iconColor?: ColorClass | ColorThemeSet;
   flush?: boolean;
   reverse?: boolean;
   additionalCSS?: string;

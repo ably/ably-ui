@@ -1,38 +1,18 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 import throttle from "lodash.throttle";
 import type { PricingDataFeature } from "./types";
-import { ColorClass, Theme } from "../styles/colors/types";
 import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
 import { IconName } from "../Icon/types";
 import Tooltip from "../Tooltip";
-import useTheming from "../hooks/useTheming";
-
-/**
-  Pricing hack to get all the themes loaded
-
-  themeColor("text-orange-600")
-  themeColor("text-orange-1000")
-  themeColor("text-neutral-000")
-  themeColor("text-neutral-500")
-  themeColor("text-neutral-600")
-  themeColor("text-neutral-700")
-  themeColor("text-neutral-1000")
-  themeColor("text-blue-400")
-  themeColor("text-blue-800")
- */
 
 export type PricingCardsProps = {
   data: PricingDataFeature[];
-  theme?: Theme;
   delimiter?: IconName | "blank";
 };
 
-const PricingCards = ({
-  data,
-  theme = "dark",
-  delimiter,
-}: PricingCardsProps) => {
+const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
   const descriptionsRef = useRef<(HTMLSpanElement | null)[]>([]);
   const [descriptionHeight, setDescriptionHeight] = useState<number>(0);
 
@@ -59,21 +39,19 @@ const PricingCards = ({
     };
   }, []);
 
-  const { themeColor } = useTheming({
-    baseTheme: "dark",
-    theme,
-  });
-
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (
       <div
-        className={`flex items-center justify-center w-full @[920px]:w-20 ${delimiter !== "blank" ? "m-8" : ""}`}
+        className={clsx(
+          "flex items-center justify-center w-full @[920px]:w-20",
+          { "m-8": delimiter !== "blank" },
+        )}
       >
         {delimiter !== "blank" ? (
           <Icon
             name={delimiter}
             size="20px"
-            additionalCSS={themeColor("text-neutral-500")}
+            additionalCSS={"text-neutral-800 dark:text-neutral-500"}
           />
         ) : null}
       </div>
@@ -85,18 +63,24 @@ const PricingCards = ({
   };
 
   const borderClasses = (color?: "neutral" | "blue" | "orange") => {
-    const classes: Record<string, { border: ColorClass; bg: ColorClass }> = {
+    const classes: Record<
+      string,
+      {
+        border: string;
+        bg: string;
+      }
+    > = {
       neutral: {
-        border: themeColor("border-neutral-700"),
-        bg: themeColor("bg-neutral-700"),
+        border: "border-neutral-600 dark:border-neutral-700",
+        bg: "border-neutral-600 dark:bg-neutral-700",
       },
       blue: {
-        border: themeColor("border-blue-600"),
-        bg: themeColor("bg-blue-600"),
+        border: "border-blue-400 dark:border-blue-600",
+        bg: "bg-blue-400 dark:bg-blue-600",
       },
       orange: {
-        border: themeColor("border-orange-600"),
-        bg: themeColor("bg-orange-600"),
+        border: "border-orange-600 dark:border-orange-600",
+        bg: "bg-orange-600 dark:bg-orange-600",
       },
     };
 
@@ -113,41 +97,59 @@ const PricingCards = ({
       }
     >
       <div
-        className={`${delimiter ? gridRules.delimited : gridRules.nonDelimited} gap-8`}
+        className={clsx(
+          "gap-8",
+          delimiter ? gridRules.delimited : gridRules.nonDelimited,
+        )}
       >
         {data.map(
           ({ title, description, price, cta, sections, border }, index) => (
             <Fragment key={title.content}>
               {delimiterColumn(index)}
               <div
-                className={`relative border ${borderClasses(border?.color)?.border ?? themeColor("border-neutral-1100")} ${border?.style ?? ""} flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group ${delimiter ? "@[520px]:flex-row @[920px]:flex-col" : ""} min-w-[272px] backdrop-blur`}
+                className={clsx(
+                  "relative border flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group min-w-[272px] backdrop-blur",
+                  borderClasses(border?.color)?.border ??
+                    "border-neutral-200 dark:border-neutral-1100",
+                  border?.style,
+                  { "@[520px]:flex-row @[920px]:flex-col": delimiter },
+                )}
                 data-testid={
                   delimiter ? "delimited-pricing-card" : "pricing-card"
                 }
               >
                 {border ? (
                   <div
-                    className={`flex items-center absolute z-10 -top-12 self-center font-semibold uppercase font-sans text-white ${borderClasses(border?.color)?.border} ${borderClasses(border?.color)?.bg} h-24 text-[11px] px-[10px] py-2 rounded-2xl select-none tracking-widen-0.1`}
+                    className={clsx(
+                      "flex items-center absolute z-10 -top-12 self-center font-semibold uppercase text-neutral-000 font-sans h-24 text-[11px] px-[10px] py-2 rounded-2xl select-none tracking-widen-0.1",
+                      borderClasses(border?.color)?.border,
+                      borderClasses(border?.color)?.bg,
+                    )}
                   >
                     {border.text}
                   </div>
                 ) : null}
                 <div
-                  className={`absolute z-0 top-0 left-0 w-full h-full rounded-2xl ${themeColor("bg-neutral-1300")} ${!delimiter ? `${themeColor("group-hover:bg-neutral-1200")} group-hover:opacity-100` : ""} transition-[colors,opacity] opacity-25`}
+                  className={clsx(
+                    "absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 dark:bg-neutral-1300 transition-[colors,opacity] opacity-25",
+                    {
+                      "group-hover:bg-neutral-100 dark:group-hover:bg-neutral-1200 group-hover:opacity-100":
+                        !delimiter,
+                    },
+                  )}
                 ></div>
                 <div
-                  className={`relative z-10 flex flex-col gap-24 ${delimiter ? "@[520px]:flex-1 @[920px]:flex-none" : ""}`}
+                  className={clsx(`relative z-10 flex flex-col gap-24`, {
+                    "@[520px]:flex-1 @[920px]:flex-none": delimiter,
+                  })}
                 >
                   <div>
                     <div className="flex items-center mb-12">
-                      <p
-                        className={`${title.className ?? ""} ${themeColor(title.color ?? "text-neutral-000")}`}
-                      >
+                      <p className={clsx(title.className, title.color)}>
                         {title.content}
                       </p>
                       {title.tooltip ? (
                         <Tooltip
-                          theme={theme}
                           interactive={typeof title.tooltip !== "string"}
                         >
                           {title.tooltip}
@@ -155,7 +157,11 @@ const PricingCards = ({
                       ) : null}
                     </div>
                     <p
-                      className={`ui-text-p1 ${description.className ?? ""} ${themeColor(description.color ?? "text-neutral-000")} min-h-[20px]`}
+                      className={clsx(
+                        "ui-text-p1 min-h-[20px]",
+                        description.className,
+                        description.color,
+                      )}
                       style={{ height: descriptionHeight }}
                     >
                       <span ref={(el) => (descriptionsRef.current[index] = el)}>
@@ -164,23 +170,26 @@ const PricingCards = ({
                     </p>
                   </div>
                   <div
-                    className={`flex items-end gap-8 ${delimiter ? "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end" : ""}`}
+                    className={clsx("flex items-end gap-8", {
+                      "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end":
+                        delimiter,
+                    })}
                   >
-                    <p
-                      className={`ui-text-title font-medium tracking-tight leading-none ${themeColor("text-neutral-000")}`}
-                    >
+                    <p className="ui-text-title font-medium tracking-tight leading-none text-neutral-1300 dark:text-neutral-000">
                       {price.amount}
                     </p>
-                    <div
-                      className={`ui-text-p3 ${themeColor("text-neutral-000")}`}
-                    >
+                    <div className="ui-text-p3 text-neutral-1300 dark:text-neutral-000">
                       {price.content}
                     </div>
                   </div>
                   {cta ? (
                     <div className="group">
                       <FeaturedLink
-                        additionalCSS={`text-center ui-btn ${themeColor("bg-neutral-000")} ${themeColor("text-neutral-1300")} hover:text-neutral-000 px-24 !py-12 ${cta.className ?? ""} cursor-pointer`}
+                        additionalCSS={clsx(
+                          "text-center px-24 !py-12 hover:text-neutral-000 cursor-pointer",
+                          cta.className ??
+                            "ui-btn bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300",
+                        )}
                         url={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
@@ -190,31 +199,40 @@ const PricingCards = ({
                     </div>
                   ) : delimiter ? null : (
                     <div className="flex items-center justify-center h-48 w-full">
-                      <hr
-                        className={`${themeColor("border-neutral-800")} w-64`}
-                      />
+                      <hr className="border-neutral-500 dark:border-neutral-800 w-64" />
                     </div>
                   )}
                 </div>
                 <div className="flex-1 flex flex-col gap-24 relative z-10">
                   {sections.map(({ title, items, listItemColors, cta }) => (
                     <div key={title} className="flex flex-col gap-12">
-                      <p
-                        className={`${themeColor("text-neutral-500")} font-mono uppercase text-overline2 tracking-[0.16em]`}
-                      >
+                      <p className="text-neutral-800 dark:text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
                         {title}
                       </p>
-                      <div className={delimiter ? "" : "flex flex-col gap-4"}>
+                      <div
+                        className={clsx({ "flex flex-col gap-4": !delimiter })}
+                      >
                         {items.map((item, index) =>
                           Array.isArray(item) ? (
                             <div
                               key={item[0]}
-                              className={`flex justify-between gap-16 px-8 -mx-8 ${index === 0 ? "py-8" : "py-4"} ${index > 0 && index % 2 === 0 ? `${themeColor("bg-blue-900")} rounded-md` : ""}`}
+                              className={clsx(
+                                "flex justify-between gap-16 px-8 -mx-8",
+                                index === 0 ? "py-8" : "py-4",
+                                index > 0 && index % 2 === 0
+                                  ? "bg-blue-100 dark:bg-blue-900 rounded-md"
+                                  : "",
+                              )}
                             >
                               {item.map((subItem, subIndex) => (
                                 <span
                                   key={subItem}
-                                  className={`ui-text-p3 ${index === 0 ? "font-bold" : "font-medium"} ${themeColor("text-neutral-300")} ${subIndex % 2 === 1 ? "text-right" : ""}`}
+                                  className={clsx(
+                                    "ui-text-p3",
+                                    index === 0 ? "font-bold" : "font-medium",
+                                    "text-neutral-1000 dark:text-neutral-300",
+                                    subIndex % 2 === 1 ? "text-right" : "",
+                                  )}
                                 >
                                   {subItem}
                                 </span>
@@ -225,16 +243,17 @@ const PricingCards = ({
                               {listItemColors ? (
                                 <Icon
                                   name="icon-gui-check-circled-fill"
-                                  color={themeColor(listItemColors.background)}
-                                  secondaryColor={themeColor(
-                                    listItemColors.foreground,
-                                  )}
+                                  color={listItemColors.background}
+                                  secondaryColor={listItemColors.foreground}
                                   size="16px"
                                   additionalCSS="mt-2"
                                 />
                               ) : null}
                               <div
-                                className={`flex-1 ${listItemColors ? "ui-text-p3" : "ui-text-p2"} font-medium ${themeColor("text-neutral-300")}`}
+                                className={clsx(
+                                  `flex-1 font-medium text-neutral-1000 dark:text-neutral-300`,
+                                  listItemColors ? "ui-text-p3" : "ui-text-p2",
+                                )}
                               >
                                 {item}
                               </div>
@@ -246,17 +265,13 @@ const PricingCards = ({
                         <div className="relative -mx-24 flex items-center h-40 overflow-x-hidden">
                           <FeaturedLink
                             url={cta.url}
-                            additionalCSS={`absolute translate-x-24 sm:-translate-x-[120px] sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 ${themeColor("text-neutral-500")} hover:${themeColor("text-neutral-000")} cursor-pointer`}
+                            additionalCSS="absolute translate-x-24 sm:-translate-x-[120px] sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 dark:text-neutral-500 dark:hover:text-neutral-000 cursor-pointer"
                             onClick={cta.onClick}
-                            iconColor={themeColor(
-                              listItemColors?.foreground ?? "text-neutral-000",
-                            )}
+                            iconColor={listItemColors?.foreground}
                           >
                             {cta.text}
                           </FeaturedLink>
-                          <div
-                            className={`absolute hidden sm:block sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-[120px] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 ${themeColor("text-neutral-800")}`}
-                          >
+                          <div className="absolute hidden sm:block sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-[120px] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500 dark:text-neutral-800">
                             •••
                           </div>
                         </div>

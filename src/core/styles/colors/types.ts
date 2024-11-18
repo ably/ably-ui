@@ -5,13 +5,7 @@ export type ColorName =
   | (typeof guiColors)[number]
   | (typeof aliasedColors)[number];
 
-export const variants = [
-  "",
-  "hover:",
-  "focus:",
-  "group-hover:",
-  "group-focus:",
-] as const;
+export const variants = ["", "dark:"] as const;
 
 type ColorClassVariants = (typeof variants)[number];
 
@@ -35,6 +29,8 @@ export type Theme = "light" | "dark";
 
 export type ColorClass =
   `${ColorClassVariants}${ColorClassPrefixes}-${ColorName}`;
+
+export type ColorThemeSet = `${string} dark:${string}`;
 
 export const neutralColors = [
   "neutral-000",

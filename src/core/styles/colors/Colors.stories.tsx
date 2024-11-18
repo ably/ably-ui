@@ -1,7 +1,5 @@
 import React from "react";
 import { colorRoles } from "./types";
-import Icon from "../../Icon";
-import useTheming from "../../hooks/useTheming";
 
 export default {
   title: "CSS/Colors",
@@ -18,11 +16,13 @@ const colorSet = (colors, useClass = "") =>
         style={{ backgroundColor: useClass ? `` : `var(--color-${color})` }}
       />
       <div className="p-12 flex flex-col flex-1">
-        <p className="ui-text-p2 font-semibold flex-1">{color}</p>
-        <p className="ui-text-p3 font-normal text-neutral-800">
+        <p className="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+          {color}
+        </p>
+        <p className="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
           {varToValues(color)[0]}
         </p>
-        <p className="ui-text-p3 text-[12px] font-normal text-neutral-800">
+        <p className="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
           {varToValues(color)[1]}
         </p>
       </div>
@@ -98,39 +98,6 @@ export const GUIColors = {
       description: {
         story:
           "Example usage: `.text-gui-blue-default`, `.bg-gui-blue-default`",
-      },
-    },
-  },
-};
-
-export const DynamicTheming = {
-  render: () => {
-    const { themeColor } = useTheming({
-      baseTheme: "dark",
-      theme: "light",
-    });
-
-    return (
-      <div className="flex items-center">
-        <div className="flex flex-wrap gap-24">
-          {colorSet(["orange-300"], "bg-orange-300")}
-        </div>
-        <Icon
-          name="icon-gui-arrow-right"
-          size="48px"
-          additionalCSS="m-16"
-        ></Icon>
-        <div className="flex flex-wrap gap-24">
-          {colorSet(["orange-900"], themeColor("bg-orange-300"))}
-        </div>
-      </div>
-    );
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          "We can generate alternatives for a color based on the theme. To do this, pull in the `useTheming` hook and access the `themeColor` function - passing in `baseTheme` and `theme` when you call the hook to provide the context for `themeColor`. Then, wrap any Tailwind color class in `themeColor` to conditionally generate the alternative color, if the target theme differs from the base theme. Any new classes will be generated and fed into Tailwind at build time.",
       },
     },
   },
