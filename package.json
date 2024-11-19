@@ -15,6 +15,9 @@
     "index.d.ts"
   ],
   "types": "index.d.ts",
+  "msw": {
+    "workerDirectory": "./public"
+  },
   "devDependencies": {
     "@storybook/addon-a11y": "^8.4.0",
     "@storybook/addon-essentials": "^8.4.0",
