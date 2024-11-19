@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,ts,tsx,mdx,stories.tsx,json}"],
+  content: ["./src/**/*.{js,ts,tsx,stories.tsx,json}"],
   safelist: [{ pattern: /^hljs.*/ }],
   theme: {
     screens: {
