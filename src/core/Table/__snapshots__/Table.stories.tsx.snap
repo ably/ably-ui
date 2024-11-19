@@ -63,19 +63,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -143,19 +142,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -223,19 +221,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -303,19 +300,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -383,19 +379,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -474,19 +469,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -554,19 +548,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -634,19 +627,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -714,19 +706,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -794,19 +785,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -885,19 +875,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -965,19 +954,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -1045,19 +1033,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -1125,19 +1112,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell
@@ -1205,19 +1191,18 @@ exports[`JS Components/Table PricingPage smoke-test 1`] = `
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8 ">
-            <button type="button"
-                    aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
-            >
-              <svg class="text-neutral-800 dark:text-neutral-500"
-                   style="width: 1rem; height: 1rem;"
-              >
-                <use xlink:href="#sprite-icon-gui-info">
-                </use>
-              </svg>
-            </button>
-          </div>
+          <button data-state="closed">
+            <div class="inline-flex ml-8 ">
+              <button>
+                <svg class="text-neutral-800 dark:text-neutral-500"
+                     style="width: 1rem; height: 1rem;"
+                >
+                  <use xlink:href="#sprite-icon-gui-info">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </button>
         </td>
         <td class="
         border-light-grey sm:p-24 leading-none flex sm:table-cell

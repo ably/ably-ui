@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JS Components/Tooltip Central smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
-  <div class="font-mono text-center">
-    dark
-  </div>
-  <div class="font-mono text-center">
-    light
-  </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
+<div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
+  <button data-state="closed">
     <div class="inline-flex ml-8 ">
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
+      <button>
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
@@ -22,41 +13,15 @@ exports[`JS Components/Tooltip Central smoke-test 1`] = `
         </svg>
       </button>
     </div>
-  </div>
-  <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div theme="light"
-         class="inline-flex ml-8 "
-    >
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
-        <svg class="text-neutral-800 dark:text-neutral-500"
-             style="width: 1rem; height: 1rem;"
-        >
-          <use xlink:href="#sprite-icon-gui-info">
-          </use>
-        </svg>
-      </button>
-    </div>
-  </div>
+  </button>
 </div>
 `;
 
 exports[`JS Components/Tooltip Interactive smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
-  <div class="font-mono text-center">
-    dark
-  </div>
-  <div class="font-mono text-center">
-    light
-  </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
+<div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
+  <button data-state="closed">
     <div class="inline-flex ml-8 ">
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
+      <button>
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
@@ -65,41 +30,15 @@ exports[`JS Components/Tooltip Interactive smoke-test 1`] = `
         </svg>
       </button>
     </div>
-  </div>
-  <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div theme="light"
-         class="inline-flex ml-8 "
-    >
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
-        <svg class="text-neutral-800 dark:text-neutral-500"
-             style="width: 1rem; height: 1rem;"
-        >
-          <use xlink:href="#sprite-icon-gui-info">
-          </use>
-        </svg>
-      </button>
-    </div>
-  </div>
+  </button>
 </div>
 `;
 
 exports[`JS Components/Tooltip LeftBound smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
-  <div class="font-mono text-center">
-    dark
-  </div>
-  <div class="font-mono text-center">
-    light
-  </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center m-24 border mx-auto rounded-lg">
+<div class="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
+  <button data-state="closed">
     <div class="inline-flex ml-8 ">
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
+      <button>
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
@@ -108,23 +47,6 @@ exports[`JS Components/Tooltip LeftBound smoke-test 1`] = `
         </svg>
       </button>
     </div>
-  </div>
-  <div class="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
-    <div theme="light"
-         class="inline-flex ml-8 "
-    >
-      <button type="button"
-              aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] "
-      >
-        <svg class="text-neutral-800 dark:text-neutral-500"
-             style="width: 1rem; height: 1rem;"
-        >
-          <use xlink:href="#sprite-icon-gui-info">
-          </use>
-        </svg>
-      </button>
-    </div>
-  </div>
+  </button>
 </div>
 `;

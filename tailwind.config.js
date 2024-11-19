@@ -309,11 +309,11 @@ module.exports = {
         8: "8",
       },
       keyframes: {
-        tooltipEntry: {
+        "tooltip-entry": {
           "0%": { transform: "translateY(8px)", opacity: 0 },
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
-        tooltipExit: {
+        "tooltip-exit": {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
@@ -329,6 +329,8 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "tooltip-entry": "tooltip-entry 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+        "tooltip-exit": "tooltip-exit 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
     listStyleType: {
