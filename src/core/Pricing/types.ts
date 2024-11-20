@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import { ColorClass } from "../styles/colors/types";
+import { ColorClass, ColorThemeSet } from "../styles/colors/types";
 
 type PricingDataHeader = {
   content: string;
   className?: string;
-  color?: ColorClass;
+  color?: ColorClass | ColorThemeSet;
   tooltip?: string | ReactNode;
 };
 
@@ -19,7 +19,7 @@ type PricingDataFeatureCta = {
 export type PricingDataFeatureSection = {
   title: string;
   items: string[] | string[][];
-  listItemColors?: { foreground: ColorClass; background: ColorClass };
+  listItemColors?: { foreground: ColorThemeSet; background: ColorThemeSet };
   cta?: PricingDataFeatureCta;
 };
 

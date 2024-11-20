@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,tsx,stories.tsx,json}"],
   safelist: [{ pattern: /^hljs.*/ }],
+  darkMode: ["selector", ".ui-theme-dark"],
   theme: {
     screens: {
       // CSS custom properties can't be used in media queries

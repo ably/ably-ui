@@ -11,14 +11,11 @@ import React, {
 } from "react";
 import { createPortal } from "react-dom";
 import Icon from "./Icon";
-import useTheming from "./hooks/useTheming";
-import { Theme } from "./styles/colors/types";
 
 type TooltipProps = {
   triggerElement?: ReactNode;
   triggerProps?: ButtonHTMLAttributes<HTMLButtonElement>;
   tooltipProps?: HTMLAttributes<HTMLDivElement>;
-  theme?: Theme;
   interactive?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
@@ -27,7 +24,6 @@ const Tooltip = ({
   triggerElement,
   triggerProps,
   tooltipProps,
-  theme = "dark",
   interactive = false,
   ...rest
 }: PropsWithChildren<TooltipProps>) => {
@@ -38,10 +34,6 @@ const Tooltip = ({
   const reference = useRef<HTMLButtonElement>(null);
   const floating = useRef<HTMLDivElement>(null);
   const fadeOutTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const { themeColor } = useTheming({
-    baseTheme: "light",
-    theme,
-  });
 
   useEffect(() => {
     if (open) {
@@ -166,7 +158,7 @@ const Tooltip = ({
         {triggerElement ?? (
           <Icon
             name="icon-gui-info"
-            color={`${themeColor("text-neutral-800")}`}
+            color="text-neutral-800 dark:text-neutral-500"
             size="1rem"
           />
         )}
@@ -187,7 +179,7 @@ const Tooltip = ({
                 boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.2)",
               }}
               {...tooltipProps}
-              className={`${themeColor("bg-neutral-1000")} ${themeColor("text-neutral-200")} ui-text-p3 font-medium p-16 ${interactive ? "" : "pointer-events-none"} rounded-lg absolute ${
+              className={`bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-16 ${interactive ? "" : "pointer-events-none"} rounded-lg absolute ${
                 tooltipProps?.className ?? ""
               } ${fadeOut ? "animate-[tooltipExit_0.25s_ease-in-out]" : "animate-[tooltipEntry_0.25s_ease-in-out]"}`}
             >

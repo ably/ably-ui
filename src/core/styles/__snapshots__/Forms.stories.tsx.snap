@@ -17,7 +17,7 @@ exports[`CSS/Forms Checkboxes smoke-test 1`] = `
       <div data-ui-checkbox-styled
            class="ui-checkbox-styled"
       >
-        <svg class=" ui-checkbox-styled-tick"
+        <svg class="ui-checkbox-styled-tick"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-tick">
@@ -47,7 +47,7 @@ exports[`CSS/Forms Checkboxes smoke-test 1`] = `
       <div data-ui-checkbox-styled
            class="ui-checkbox-styled"
       >
-        <svg class=" ui-checkbox-styled-tick"
+        <svg class="ui-checkbox-styled-tick"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-tick">
