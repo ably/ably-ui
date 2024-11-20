@@ -1,72 +1,169 @@
 import React from "react";
+import clsx from "clsx";
+import Button, { ButtonType, iconModifierClasses } from "../Button";
+import Tooltip from "../Tooltip";
 
 export default {
-  title: "CSS/Button",
-};
-
-const buttons = {
-  priority: {
-    default: "ui-button-priority",
-    iconLeft: "",
-  },
+  title: "Components/Button",
+  component: Button,
+  tags: ["autodocs"],
 };
 
 const sizes = [
-  { label: "Large", symbol: "lg" },
-  { label: "Regular", symbol: "" },
-  { label: "Small", symbol: "sm" },
-  { label: "Extra small", symbol: "xs" },
+  {
+    label: "Large",
+    key: "lg",
+    className: {
+      priority: "ui-button-priority-lg",
+      primary: "ui-button-primary-lg",
+      secondary: "ui-button-secondary-lg",
+    },
+  },
+  {
+    label: "Regular",
+    className: {
+      priority: "ui-button-priority",
+      primary: "ui-button-primary",
+      secondary: "ui-button-secondary",
+    },
+  },
+  {
+    label: "Small",
+    key: "sm",
+    className: {
+      priority: "ui-button-priority-sm",
+      primary: "ui-button-primary-sm",
+      secondary: "ui-button-secondary-sm",
+    },
+  },
+  {
+    label: "Extra small",
+    key: "xs",
+    className: {
+      priority: "ui-button-priority-xs",
+      primary: "ui-button-primary-xs",
+      secondary: "ui-button-secondary-xs",
+    },
+  },
 ];
 
-type ButtonSetType = "priority" | "primary" | "secondary";
-
-const buttonSet = (type: ButtonSetType) => (
-  <div className="grid sm:grid-cols-3 gap-16">
-    {Array(3)
+const buttonSet = (type: ButtonType) => (
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-16">
+    {Array(4)
       .fill(0)
       .map((_, index) => (
-        <div
-          key={`button-variant-${index}`}
-          className="flex flex-col gap-16 max-w-[300px]"
-        >
+        <div key={`button-variant-${index}`} className="flex flex-col gap-16">
           {sizes.map((size, sizeIndex) => (
-            <button
-              type="button"
+            <Tooltip
               key={`button-size-${sizeIndex}`}
-              className={`ui-button-${type}-${size}`}
+              triggerProps={{ className: "h-[60px]" }}
+              triggerElement={
+                <button
+                  type="button"
+                  className={clsx(
+                    size.className[type],
+                    {
+                      [iconModifierClasses[size.key ?? "md"].left]: index === 1,
+                    },
+                    {
+                      [iconModifierClasses[size.key ?? "md"].right]:
+                        index === 2,
+                    },
+                  )}
+                  disabled={index === 3}
+                >
+                  {index === 1 ? (
+                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
+                      <use xlinkHref="#sprite-icon-gui-search"></use>
+                    </svg>
+                  ) : null}
+                  {size.label}
+                  {index === 2 ? (
+                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
+                      <use xlinkHref="#sprite-icon-gui-arrow-right"></use>
+                    </svg>
+                  ) : null}
+                </button>
+              }
             >
-              {index === 1 ? (
-                <svg
-                  className="text-cool-black hover:text-active-orange"
-                  style={{ width: "1.5rem", height: "1.5rem" }}
-                >
-                  <use xlinkHref="#sprite-icon-gui-search"></use>
-                </svg>
-              ) : null}
-              {size.label}
-              {index === 2 ? (
-                <svg
-                  className="text-cool-black hover:text-active-orange"
-                  style={{ width: "1.5rem", height: "1.5rem" }}
-                >
-                  <use xlinkHref="#sprite-icon-gui-arrow-right"></use>
-                </svg>
-              ) : null}
-            </button>
+              {clsx(
+                size.className[type],
+                {
+                  [iconModifierClasses[size.key ?? "md"].left]: index === 1,
+                },
+                {
+                  [iconModifierClasses[size.key ?? "md"].right]: index === 2,
+                },
+              )}
+            </Tooltip>
           ))}
         </div>
       ))}
   </div>
 );
 
-export const HighPriority = {
+export const ReactComponent = {
+  render: () => (
+    <div className="grid sm:grid-cols-3 gap-16">
+      <div>
+        <Button variant="priority" size="lg">
+          Hello React!
+        </Button>
+      </div>
+      <div>
+        <Button variant="primary" leftIcon="icon-gui-search">
+          Hello React!
+        </Button>
+      </div>
+      <div>
+        <Button variant="secondary" size="xs" rightIcon="icon-gui-arrow-right">
+          Hello React!
+        </Button>
+      </div>
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Buttons are available as a React component. The `variant` prop can be set to `priority`, `primary`, or `secondary`. The `size` prop can be set to `lg`, `sm`, or `xs`, or left undefined.\n\nIcons can be added to the left or right of the button text by setting the `leftIcon` or `rightIcon` prop to a valid icon name.",
+      },
+    },
+  },
+};
+
+export const Priority = {
   render: () => buttonSet("priority"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Priority buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-priority`, `ui-button-priority-lg`, `ui-button-priority-sm`, `ui-button-priority-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };
 
 export const Primary = {
   render: () => buttonSet("primary"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Primary buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-primary`, `ui-button-primary-lg`, `ui-button-primary-sm`, `ui-button-primary-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };
 
 export const Secondary = {
   render: () => buttonSet("secondary"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Secondary buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-secondary`, `ui-button-secondary-lg`, `ui-button-secondary-sm`, `ui-button-secondary-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };

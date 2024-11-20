@@ -1,0 +1,109 @@
+@layer components {
+  .ui-button-base {
+    @apply inline-flex rounded justify-center items-center gap-12 text-neutral-000 transition-colors focus:outline-4 focus:outline-gui-blue-focus disabled:cursor-not-allowed;
+  }
+
+  .ui-button-lg-base {
+    @apply ui-button-base ui-gui-button1 h-[56px] px-[28px] py-[17px] gap-12 [&>svg]:!w-24 [&>svg]:!h-24;
+  }
+
+  .ui-button-md-base {
+    @apply ui-button-base ui-gui-button2 h-[48px] px-24 py-[13.5px] gap-[10px] [&>svg]:!w-24 [&>svg]:!h-24;
+  }
+
+  .ui-button-sm-base {
+    @apply ui-button-base ui-gui-button3 h-[40px] px-20 py-[10px] gap-8 [&>svg]:!w-20 [&>svg]:!h-20;
+  }
+
+  .ui-button-xs-base {
+    @apply ui-button-base ui-gui-button4 h-[36px] px-12 py-[9px] gap-6 [&>svg]:!w-16 [&>svg]:!h-16;
+  }
+
+  .ui-button-disabled-base {
+    @apply disabled:bg-gui-unavailable dark:disabled:bg-gui-unavailable-dark disabled:text-gui-unavailable-dark dark:disabled:text-gui-unavailable disabled:hover:bg-gui-unavailable dark:disabled:hover:bg-gui-unavailable-dark;
+  }
+
+  .ui-button-priority-base {
+    @apply bg-gradient-active-orange hover:bg-gradient-to-r hover:from-orange-800 hover:to-orange-800 active:bg-gradient-to-r active:from-orange-800 active:to-orange-800 disabled:bg-none ui-button-disabled-base;
+  }
+
+  .ui-button-primary-base {
+    @apply bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300 hover:bg-neutral-1200 dark:hover:bg-neutral-100 active:bg-neutral-1100 dark:active:bg-neutral-200 ui-button-disabled-base;
+  }
+
+  .ui-button-secondary-base {
+    @apply text-neutral-1300 dark:text-neutral-000 border border-neutral-600 dark:border-neutral-700 hover:border-neutral-700 dark:hover:border-neutral-600 active:border-neutral-400 dark:active:border-neutral-800 active:text-neutral-1000 dark:active:text-neutral-300 disabled:border-gui-unavailable dark:disabled:border-gui-unavailable-dark disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark;
+  }
+
+  .ui-button-priority-lg {
+    @apply ui-button-lg-base ui-button-priority-base;
+  }
+
+  .ui-button-priority {
+    @apply ui-button-md-base ui-button-priority-base;
+  }
+
+  .ui-button-priority-sm {
+    @apply ui-button-sm-base ui-button-priority-base;
+  }
+
+  .ui-button-priority-xs {
+    @apply ui-button-xs-base ui-button-priority-base;
+  }
+
+  .ui-button-primary-lg {
+    @apply ui-button-lg-base ui-button-primary-base;
+  }
+
+  .ui-button-primary {
+    @apply ui-button-md-base ui-button-primary-base;
+  }
+
+  .ui-button-primary-sm {
+    @apply ui-button-sm-base ui-button-primary-base;
+  }
+
+  .ui-button-primary-xs {
+    @apply ui-button-xs-base ui-button-primary-base;
+  }
+
+  .ui-button-secondary-lg {
+    @apply ui-button-lg-base ui-button-secondary-base;
+  }
+
+  .ui-button-secondary {
+    @apply ui-button-md-base ui-button-secondary-base;
+  }
+
+  .ui-button-secondary-sm {
+    @apply ui-button-sm-base ui-button-secondary-base;
+  }
+
+  .ui-button-secondary-xs {
+    @apply ui-button-xs-base ui-button-secondary-base;
+  }
+
+  .ui-button-lg-left-icon {
+    @apply pl-24;
+  }
+
+  .ui-button-left-icon {
+    @apply pl-20;
+  }
+
+  .ui-button-sm-left-icon {
+    @apply pl-[18px];
+  }
+
+  .ui-button-lg-right-icon {
+    @apply pr-24;
+  }
+
+  .ui-button-right-icon {
+    @apply pr-20;
+  }
+
+  .ui-button-sm-right-icon {
+    @apply pr-[18px];
+  }
+}

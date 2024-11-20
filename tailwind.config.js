@@ -128,6 +128,7 @@ module.exports = {
       "gui-blue-focus": "var(--color-gui-blue-focus)",
       "gui-blue-visited": "var(--color-gui-blue-focus)",
       "gui-unavailable": "var(--color-gui-unavailable)",
+      "gui-unavailable-dark": "var(--color-gui-unavailable-dark)",
       "gui-success-green": "var(--color-gui-success-green)",
       "gui-error-red": "var(--color-gui-error-red)",
       "gui-focus": "var(--color-gui-focus)",
