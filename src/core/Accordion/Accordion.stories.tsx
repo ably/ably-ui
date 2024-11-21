@@ -100,7 +100,7 @@ export const SelectableHeaders = {
   render: () =>
     AccordionPresentation({
       data: dataWithIcons,
-      options: { selectable: true },
+      options: { selectable: true, defaultOpenIndexes: [0] },
     }),
   parameters: {
     docs: {
