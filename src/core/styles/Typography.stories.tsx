@@ -54,7 +54,7 @@ const fontCell = (style) => (
   <div
     key={style.label}
     className={clsx(
-      "rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
+      "rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
       style.className,
     )}
   >
