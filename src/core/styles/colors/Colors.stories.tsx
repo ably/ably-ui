@@ -2,7 +2,7 @@ import React from "react";
 import { colorRoles } from "./types";
 
 export default {
-  title: "CSS/Colors",
+  title: "Styles/Colors",
 };
 
 const colorSet = (colors, useClass = "") =>

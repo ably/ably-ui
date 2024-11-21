@@ -5,7 +5,7 @@ import loadIcons from "../icons";
 import { IconName, iconNames } from "./types";
 
 export default {
-  title: "JS Components/Icon",
+  title: "Components/Icon",
   component: Icon,
   parameters: {
     layout: "fullscreen",

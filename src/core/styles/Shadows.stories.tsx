@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "CSS/Shadows",
+  title: "Styles/Shadows",
 };
 
 const shadowClasses = {

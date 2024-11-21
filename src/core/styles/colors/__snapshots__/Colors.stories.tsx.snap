@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Colors GUIColors smoke-test 1`] = `
+exports[`Styles/Colors GUIColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-24">
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-default-light);"
     >
@@ -19,7 +19,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-hover-light);"
     >
@@ -36,7 +36,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-active-light);"
     >
@@ -53,7 +53,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-default-dark);"
     >
@@ -70,7 +70,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-hover-dark);"
     >
@@ -87,7 +87,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-active-dark);"
     >
@@ -104,7 +104,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-blue-focus);"
     >
@@ -121,7 +121,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-unavailable);"
     >
@@ -138,7 +138,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-success-green);"
     >
@@ -155,7 +155,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-error-red);"
     >
@@ -172,7 +172,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-focus);"
     >
@@ -189,7 +189,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-focus-outline);"
     >
@@ -206,7 +206,7 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-gui-visited);"
     >
@@ -226,9 +226,9 @@ exports[`CSS/Colors GUIColors smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Colors NeutralColors smoke-test 1`] = `
+exports[`Styles/Colors NeutralColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-24">
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-000);"
     >
@@ -245,7 +245,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-100);"
     >
@@ -262,7 +262,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-200);"
     >
@@ -279,7 +279,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-300);"
     >
@@ -296,7 +296,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-400);"
     >
@@ -313,7 +313,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-500);"
     >
@@ -330,7 +330,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-600);"
     >
@@ -347,7 +347,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-700);"
     >
@@ -364,7 +364,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-800);"
     >
@@ -381,7 +381,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-900);"
     >
@@ -398,7 +398,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-1000);"
     >
@@ -415,7 +415,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-1100);"
     >
@@ -432,7 +432,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-1200);"
     >
@@ -449,7 +449,7 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-neutral-1300);"
     >
@@ -469,9 +469,9 @@ exports[`CSS/Colors NeutralColors smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Colors OrangeColors smoke-test 1`] = `
+exports[`Styles/Colors OrangeColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-24">
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-100);"
     >
@@ -488,7 +488,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-200);"
     >
@@ -505,7 +505,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-300);"
     >
@@ -522,7 +522,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-400);"
     >
@@ -539,7 +539,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-500);"
     >
@@ -556,7 +556,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-600);"
     >
@@ -573,7 +573,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-700);"
     >
@@ -590,7 +590,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-800);"
     >
@@ -607,7 +607,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-900);"
     >
@@ -624,7 +624,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-1000);"
     >
@@ -641,7 +641,7 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-orange-1100);"
     >
@@ -661,9 +661,9 @@ exports[`CSS/Colors OrangeColors smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
+exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-24">
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-100);"
     >
@@ -680,7 +680,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-200);"
     >
@@ -697,7 +697,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-300);"
     >
@@ -714,7 +714,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-400);"
     >
@@ -731,7 +731,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-500);"
     >
@@ -748,7 +748,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-600);"
     >
@@ -765,7 +765,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-700);"
     >
@@ -782,7 +782,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-800);"
     >
@@ -799,7 +799,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-yellow-900);"
     >
@@ -816,7 +816,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-100);"
     >
@@ -833,7 +833,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-200);"
     >
@@ -850,7 +850,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-300);"
     >
@@ -867,7 +867,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-400);"
     >
@@ -884,7 +884,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-500);"
     >
@@ -901,7 +901,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-600);"
     >
@@ -918,7 +918,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-700);"
     >
@@ -935,7 +935,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-800);"
     >
@@ -952,7 +952,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-green-900);"
     >
@@ -969,7 +969,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-100);"
     >
@@ -986,7 +986,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-200);"
     >
@@ -1003,7 +1003,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-300);"
     >
@@ -1020,7 +1020,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-400);"
     >
@@ -1037,7 +1037,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-500);"
     >
@@ -1054,7 +1054,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-600);"
     >
@@ -1071,7 +1071,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-700);"
     >
@@ -1088,7 +1088,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-800);"
     >
@@ -1105,7 +1105,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-blue-900);"
     >
@@ -1122,7 +1122,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-100);"
     >
@@ -1139,7 +1139,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-200);"
     >
@@ -1156,7 +1156,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-300);"
     >
@@ -1173,7 +1173,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-400);"
     >
@@ -1190,7 +1190,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-500);"
     >
@@ -1207,7 +1207,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-600);"
     >
@@ -1224,7 +1224,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-700);"
     >
@@ -1241,7 +1241,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-800);"
     >
@@ -1258,7 +1258,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-violet-900);"
     >
@@ -1275,7 +1275,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-100);"
     >
@@ -1292,7 +1292,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-200);"
     >
@@ -1309,7 +1309,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-300);"
     >
@@ -1326,7 +1326,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-400);"
     >
@@ -1343,7 +1343,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-500);"
     >
@@ -1360,7 +1360,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-600);"
     >
@@ -1377,7 +1377,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-700);"
     >
@@ -1394,7 +1394,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-800);"
     >
@@ -1411,7 +1411,7 @@ exports[`CSS/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-128 ui-shadow-lg-soft flex flex-col">
+  <div class="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
     <div class="h-[100px] rounded-t-lg "
          style="background-color: var(--color-pink-900);"
     >

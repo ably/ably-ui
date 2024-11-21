@@ -37,7 +37,7 @@ const preview = {
     options: {
       storySort: {
         method: "alphabetical",
-        order: ["CSS", "Features", "JS Components", "Brand"],
+        order: ["Features", "Components", "Styles"],
       },
     },
     darkMode: {
@@ -52,8 +52,8 @@ const preview = {
         brandImage: brandImage,
       },
       stylePreview: true,
-      darkClass: ["ui-theme-dark"],
-      lightClass: ["ui-theme-light"],
+      darkClass: "ui-theme-dark",
+      lightClass: "ui-theme-light",
     },
   },
   loaders: [mswLoader],

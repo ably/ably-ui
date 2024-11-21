@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../Icon";
 
 export default {
-  title: "CSS/Button (legacy)",
+  title: "Styles/Button (legacy)",
 };
 
 export const Standard = {

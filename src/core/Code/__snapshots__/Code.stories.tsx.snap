@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Code CodeWithLines smoke-test 1`] = `
+exports[`Components/Code CodeWithLines smoke-test 1`] = `
 <div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
@@ -98,7 +98,7 @@ exports[`JS Components/Code CodeWithLines smoke-test 1`] = `
 </div>
 `;
 
-exports[`JS Components/Code Java smoke-test 1`] = `
+exports[`Components/Code Java smoke-test 1`] = `
 <div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
@@ -179,7 +179,7 @@ channel.subscribe(
 </div>
 `;
 
-exports[`JS Components/Code Javascript smoke-test 1`] = `
+exports[`Components/Code Javascript smoke-test 1`] = `
 <div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
@@ -254,7 +254,7 @@ exports[`JS Components/Code Javascript smoke-test 1`] = `
 </div>
 `;
 
-exports[`JS Components/Code Kotlin smoke-test 1`] = `
+exports[`Components/Code Kotlin smoke-test 1`] = `
 <div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >
@@ -309,7 +309,7 @@ exports[`JS Components/Code Kotlin smoke-test 1`] = `
 </div>
 `;
 
-exports[`JS Components/Code Swift smoke-test 1`] = `
+exports[`Components/Code Swift smoke-test 1`] = `
 <div class="hljs overflow-auto flex p-32 "
      data-id="code"
 >

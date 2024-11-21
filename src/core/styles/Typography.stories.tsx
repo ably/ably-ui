@@ -2,7 +2,7 @@ import clsx from "clsx";
 import React from "react";
 
 export default {
-  title: "CSS/Typography",
+  title: "Styles/Typography",
 };
 
 const styles = {

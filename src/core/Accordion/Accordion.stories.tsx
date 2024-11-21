@@ -74,7 +74,7 @@ const AccordionPresentation = ({ data, options }: AccordionProps) => (
 );
 
 export default {
-  title: "JS Components/Accordion",
+  title: "Components/Accordion",
   component: Accordion,
 };
 

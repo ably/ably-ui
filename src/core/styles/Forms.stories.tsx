@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../Icon";
 
 export default {
-  title: "CSS/Forms",
+  title: "Styles/Forms",
 };
 
 const exampleOptionFields = (

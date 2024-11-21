@@ -3,7 +3,7 @@ import ProductTile from "../ProductTile";
 import { ProductName, products } from "../ProductTile/data";
 
 export default {
-  title: "JS Components/Product Tile",
+  title: "Components/Product Tile",
   component: ProductTile,
   tags: ["autodocs"],
 };

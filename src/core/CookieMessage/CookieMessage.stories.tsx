@@ -1,7 +1,7 @@
 import CookieMessage from "../CookieMessage";
 
 export default {
-  title: "JS Components/Cookie Message",
+  title: "Components/Cookie Message",
   component: CookieMessage,
   args: {
     cookieId: "cookie-namespace",

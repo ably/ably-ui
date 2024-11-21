@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
+exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
 <div class="relative">
   <div class="overflow-y-visible overflow-x-clip w-full py-40">
     <div class="flex items-center  "
@@ -226,7 +226,7 @@ exports[`JS Components/Slider FloatingControlPosition smoke-test 1`] = `
 </div>
 `;
 
-exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
+exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
 <div class="relative">
   <div class="overflow-y-visible overflow-x-clip w-full py-40">
     <div class="flex items-center  "
@@ -452,7 +452,7 @@ exports[`JS Components/Slider InlineControlPosition smoke-test 1`] = `
 </div>
 `;
 
-exports[`JS Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
+exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
 <div class="relative">
   <div class="overflow-y-visible overflow-x-clip w-full py-40">
     <div class="flex items-center  "
