@@ -223,7 +223,7 @@ export const Toggles = {
       </div>
       <div className="flex gap-16 items-center">
         <label className="ui-toggle">
-          <input type="checkbox" checked />
+          <input type="checkbox" defaultChecked />
           <span className="ui-toggle-slider" />
         </label>
         <p>Pre-checked</p>

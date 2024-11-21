@@ -147,7 +147,18 @@ const Accordion = ({
   options,
   ...props
 }: AccordionProps) => {
-  const [openRowValues, setOpenRowValues] = useState<string | string[]>([]);
+  const openIndexes = useMemo(() => {
+    const indexValues = data.map((_, i) => `accordion-item-${i}`);
+    return options?.fullyOpen
+      ? indexValues
+      : indexValues.filter((_, index) =>
+          options?.defaultOpenIndexes?.includes(index),
+        );
+  }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
+
+  const [openRowValues, setOpenRowValues] = useState<string | string[]>(
+    openIndexes,
+  );
   const innerAccordion = data.map((item, index) => (
     <AccordionRow
       key={item.name}
@@ -165,15 +176,6 @@ const Accordion = ({
       {item.content}
     </AccordionRow>
   ));
-
-  const openIndexes = useMemo(() => {
-    const indexValues = data.map((_, i) => `accordion-item-${i}`);
-    return options?.fullyOpen
-      ? indexValues
-      : indexValues.filter((_, index) =>
-          options?.defaultOpenIndexes?.includes(index),
-        );
-  }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
 
   return (
     <div {...props}>
