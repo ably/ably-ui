@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Typography Code smoke-test 1`] = `
+exports[`Styles/Typography Code smoke-test 1`] = `
 <div class="grid grid-cols-2 gap-16">
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-code">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-code">
     <div>
       Code 1
     </div>
@@ -10,7 +10,7 @@ exports[`CSS/Typography Code smoke-test 1`] = `
       .ui-text-code
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-code2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-code2">
     <div>
       Code 2
     </div>
@@ -21,9 +21,9 @@ exports[`CSS/Typography Code smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Typography Decorative smoke-test 1`] = `
+exports[`Styles/Typography Decorative smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-16">
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header">
     <div>
       Sub-header
     </div>
@@ -31,7 +31,7 @@ exports[`CSS/Typography Decorative smoke-test 1`] = `
       .ui-text-sub-header
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header text-sub-header-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header text-sub-header-xs">
     <div>
       Sub-header XS
     </div>
@@ -39,7 +39,7 @@ exports[`CSS/Typography Decorative smoke-test 1`] = `
       .ui-text-sub-header.text-sub-header-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-overline1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-overline1">
     <div>
       Overline 1
     </div>
@@ -47,7 +47,7 @@ exports[`CSS/Typography Decorative smoke-test 1`] = `
       .ui-text-overline1
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-overline2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-overline2">
     <div>
       Overline 2
     </div>
@@ -58,73 +58,73 @@ exports[`CSS/Typography Decorative smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Typography GUI smoke-test 1`] = `
+exports[`Styles/Typography GUI smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-16">
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-button1">
     <div>
       Button label 1
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button1
+      .ui-gui-button1
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-button2">
     <div>
       Button label 2
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button2
+      .ui-gui-button2
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button3">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-button3">
     <div>
       Button label 3
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button3
+      .ui-gui-button3
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button4">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-button4">
     <div>
       Button label 4
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button4
+      .ui-gui-button4
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-menu1">
     <div>
       Menu label 1
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu1
+      .ui-gui-menu1
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-menu2">
     <div>
       Menu label 2
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu2
+      .ui-gui-menu2
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu3">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-menu3">
     <div>
       Menu label 3
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu3
+      .ui-gui-menu3
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu4">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-gui-menu4">
     <div>
       Menu label 4
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu4
+      .ui-gui-menu4
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text">
     <div>
       Link
     </div>
@@ -135,7 +135,7 @@ exports[`CSS/Typography GUI smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Typography Links smoke-test 1`] = `
+exports[`Styles/Typography Links smoke-test 1`] = `
 <h3 class="ui-text-h2 mb-24">
   Links
 </h3>
@@ -179,7 +179,7 @@ exports[`CSS/Typography Links smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Typography Lists smoke-test 1`] = `
+exports[`Styles/Typography Lists smoke-test 1`] = `
 <h3 class="ui-text-h2 mb-24">
   Lists
 </h3>
@@ -252,9 +252,9 @@ exports[`CSS/Typography Lists smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Typography Primary smoke-test 1`] = `
+exports[`Styles/Typography Primary smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-16">
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xl">
     <div>
       Title XL
     </div>
@@ -262,7 +262,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-title.text-title-xl
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title">
     <div>
       Title
     </div>
@@ -270,7 +270,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-title
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xs">
     <div>
       Title XS
     </div>
@@ -278,7 +278,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-title.text-title-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xl">
     <div>
       h1 XL
     </div>
@@ -286,7 +286,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h1.text-h1-xl
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1">
     <div>
       h1
     </div>
@@ -294,7 +294,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h1
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xs">
     <div>
       h1 XS
     </div>
@@ -302,7 +302,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h1.text-h1-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xl">
     <div>
       h2 XL
     </div>
@@ -310,7 +310,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h2.text-h2-xl
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2">
     <div>
       h2
     </div>
@@ -318,7 +318,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h2
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xs">
     <div>
       h2 XS
     </div>
@@ -326,7 +326,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h2.text-h2-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h3">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h3">
     <div>
       h3
     </div>
@@ -334,7 +334,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h3
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h4">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h4">
     <div>
       h4
     </div>
@@ -342,7 +342,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h4
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h5">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h5">
     <div>
       h5
     </div>
@@ -350,7 +350,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-h5
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p1">
     <div>
       p1
     </div>
@@ -358,7 +358,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-p1
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p2">
     <div>
       p2
     </div>
@@ -366,7 +366,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-p2
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p3">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p3">
     <div>
       p3
     </div>
@@ -374,7 +374,7 @@ exports[`CSS/Typography Primary smoke-test 1`] = `
       .ui-text-p3
     </code>
   </div>
-  <div class="rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p4">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-p4">
     <div>
       p4
     </div>

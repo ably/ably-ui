@@ -17,7 +17,7 @@ import {
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "JS Components/Meganav",
+  title: "Components/Meganav",
   component: Meganav,
   parameters: {
     layout: "fullscreen",

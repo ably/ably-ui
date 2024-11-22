@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Contact Footer Default smoke-test 1`] = `
+exports[`Components/Contact Footer Default smoke-test 1`] = `
 <div class="ui-contact-footer font-sans antialiased"
      data-id="contact-footer"
 >

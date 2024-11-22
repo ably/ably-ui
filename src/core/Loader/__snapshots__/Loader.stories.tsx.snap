@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Loader ChangedRingColor smoke-test 1`] = `
+exports[`Components/Loader ChangedRingColor smoke-test 1`] = `
 <svg class="text-light-grey "
      height="24"
      viewbox="0 0 24 24"
@@ -34,7 +34,7 @@ exports[`JS Components/Loader ChangedRingColor smoke-test 1`] = `
 </svg>
 `;
 
-exports[`JS Components/Loader Default smoke-test 1`] = `
+exports[`Components/Loader Default smoke-test 1`] = `
 <svg class="text-dark-grey "
      height="24"
      viewbox="0 0 24 24"
@@ -68,7 +68,7 @@ exports[`JS Components/Loader Default smoke-test 1`] = `
 </svg>
 `;
 
-exports[`JS Components/Loader HalfSize smoke-test 1`] = `
+exports[`Components/Loader HalfSize smoke-test 1`] = `
 <svg class="text-dark-grey "
      height="24"
      viewbox="0 0 24 24"

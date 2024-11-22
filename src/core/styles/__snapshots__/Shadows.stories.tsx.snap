@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Shadows Medium smoke-test 1`] = `
+exports[`Styles/Shadows Medium smoke-test 1`] = `
 <div class="flex gap-32">
   <div class="bg-white rounded-lg w-64 h-64 ui-shadow-xs-medium flex items-center justify-center ui-text-p1">
     xs
@@ -20,7 +20,7 @@ exports[`CSS/Shadows Medium smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Shadows Soft smoke-test 1`] = `
+exports[`Styles/Shadows Soft smoke-test 1`] = `
 <div class="flex gap-32">
   <div class="bg-white rounded-lg w-64 h-64 ui-shadow-xs-soft flex items-center justify-center ui-text-p1">
     xs
@@ -40,7 +40,7 @@ exports[`CSS/Shadows Soft smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Shadows Strong smoke-test 1`] = `
+exports[`Styles/Shadows Strong smoke-test 1`] = `
 <div class="flex gap-32">
   <div class="bg-neutral-1100 text-white rounded-lg w-64 h-64 ui-shadow-xs-strong flex items-center justify-center ui-text-p1">
     xs

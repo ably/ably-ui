@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Cookie Message Default smoke-test 1`] = `
+exports[`Components/Cookie Message Default smoke-test 1`] = `
 <div class="ui-cookie-message">
   <p class="ui-text-p2 pr-32">
     <a href="/privacy"

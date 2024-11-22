@@ -2,14 +2,14 @@ import React from "react";
 import { colorRoles } from "./types";
 
 export default {
-  title: "CSS/Colors",
+  title: "Styles/Colors",
 };
 
 const colorSet = (colors, useClass = "") =>
   colors.map((color) => (
     <div
       key={color}
-      className="rounded-lg w-128 ui-shadow-lg-soft flex flex-col"
+      className="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col"
     >
       <div
         className={`h-[100px] rounded-t-lg ${useClass}`}

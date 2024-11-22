@@ -11,7 +11,7 @@ import highestUserAdoption from "../images/highest-user-adoption-2023.svg";
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "JS Components/Footer",
+  title: "Components/Footer",
   component: Footer,
   parameters: {
     layout: "fullscreen",

@@ -46,13 +46,14 @@
 .ui-theme-dark .sbdocs-content > *,
 .ui-theme-dark .sb-anchor > h3,
 .ui-theme-dark .sb-anchor > p,
+.ui-theme-dark .sb-anchor > div > p,
 .ui-theme-dark .sb-anchor > p > code {
   @apply text-neutral-000;
 }
 
 .ui-theme-dark .sbdocs td,
 .ui-theme-dark .sbdocs th {
-  @apply text-neutral-200;
+  @apply !text-neutral-200;
 }
 
 .ui-theme-dark .sbdocs td {

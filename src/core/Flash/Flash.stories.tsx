@@ -9,7 +9,7 @@ import { reducerBlogPosts } from "../remote-blogs-posts.js";
 import { reducerSessionData } from "../remote-session-data.js";
 
 export default {
-  title: "JS Components/Flash",
+  title: "Components/Flash",
   component: Flash,
   args: {
     flashes: [

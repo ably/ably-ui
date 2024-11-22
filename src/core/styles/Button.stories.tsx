@@ -1,162 +1,169 @@
 import React from "react";
-import Icon from "../Icon";
+import clsx from "clsx";
+import Button, { ButtonType, iconModifierClasses } from "../Button";
+import Tooltip from "../Tooltip";
 
 export default {
-  title: "CSS/Button",
+  title: "Components/Button",
+  component: Button,
+  tags: ["autodocs"],
 };
 
-export const Standard = {
+const sizes = [
+  {
+    label: "Large",
+    key: "lg",
+    className: {
+      priority: "ui-button-priority-lg",
+      primary: "ui-button-primary-lg",
+      secondary: "ui-button-secondary-lg",
+    },
+  },
+  {
+    label: "Regular",
+    className: {
+      priority: "ui-button-priority",
+      primary: "ui-button-primary",
+      secondary: "ui-button-secondary",
+    },
+  },
+  {
+    label: "Small",
+    key: "sm",
+    className: {
+      priority: "ui-button-priority-sm",
+      primary: "ui-button-primary-sm",
+      secondary: "ui-button-secondary-sm",
+    },
+  },
+  {
+    label: "Extra small",
+    key: "xs",
+    className: {
+      priority: "ui-button-priority-xs",
+      primary: "ui-button-primary-xs",
+      secondary: "ui-button-secondary-xs",
+    },
+  },
+];
+
+const buttonSet = (type: ButtonType) => (
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-16">
+    {Array(4)
+      .fill(0)
+      .map((_, index) => (
+        <div key={`button-variant-${index}`} className="flex flex-col gap-16">
+          {sizes.map((size, sizeIndex) => (
+            <Tooltip
+              key={`button-size-${sizeIndex}`}
+              triggerProps={{ className: "h-[60px]" }}
+              triggerElement={
+                <button
+                  type="button"
+                  className={clsx(
+                    size.className[type],
+                    {
+                      [iconModifierClasses[size.key ?? "md"].left]: index === 1,
+                    },
+                    {
+                      [iconModifierClasses[size.key ?? "md"].right]:
+                        index === 2,
+                    },
+                  )}
+                  disabled={index === 3}
+                >
+                  {index === 1 ? (
+                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
+                      <use xlinkHref="#sprite-icon-gui-search"></use>
+                    </svg>
+                  ) : null}
+                  {size.label}
+                  {index === 2 ? (
+                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
+                      <use xlinkHref="#sprite-icon-gui-arrow-right"></use>
+                    </svg>
+                  ) : null}
+                </button>
+              }
+            >
+              {clsx(
+                size.className[type],
+                {
+                  [iconModifierClasses[size.key ?? "md"].left]: index === 1,
+                },
+                {
+                  [iconModifierClasses[size.key ?? "md"].right]: index === 2,
+                },
+              )}
+            </Tooltip>
+          ))}
+        </div>
+      ))}
+  </div>
+);
+
+export const ReactComponent = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn">
-        Primary button
-      </button>
-      <button type="button" className="ui-btn-alt">
-        Primary button alternative
-      </button>
-      <button type="button" className="ui-btn-secondary">
-        Secondary button
-      </button>
-      <button type="button" className="ui-btn" disabled>
-        Unavailable primary button
-      </button>
-      <button type="button" className="ui-btn-alt" disabled>
-        Unavailable primary button alternative
-      </button>
-      <button type="button" className="ui-btn-secondary" disabled>
-        Unavailable secondary button
-      </button>
+    <div className="grid sm:grid-cols-3 gap-16">
+      <div>
+        <Button variant="priority" size="lg">
+          Hello React!
+        </Button>
+      </div>
+      <div>
+        <Button variant="primary" leftIcon="icon-gui-search">
+          Hello React!
+        </Button>
+      </div>
+      <div>
+        <Button variant="secondary" size="xs" rightIcon="icon-gui-arrow-right">
+          Hello React!
+        </Button>
+      </div>
     </div>
   ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Buttons are available as a React component. The `variant` prop can be set to `priority`, `primary`, or `secondary`. The `size` prop can be set to `lg`, `sm`, or `xs`, or left undefined.\n\nIcons can be added to the left or right of the button text by setting the `leftIcon` or `rightIcon` prop to a valid icon name.",
+      },
+    },
+  },
 };
 
-export const Inverted = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn-invert">
-        Primary button
-      </button>
-      <button type="button" className="ui-btn-secondary-invert">
-        Secondary button
-      </button>
-      <button type="button" className="ui-btn-invert" disabled>
-        Unavailable primary button
-      </button>
-      <button type="button" className="ui-btn-secondary-invert" disabled>
-        Unavailable secondary button
-      </button>
-    </div>
-  ),
+export const Priority = {
+  render: () => buttonSet("priority"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Priority buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-priority`, `ui-button-priority-lg`, `ui-button-priority-sm`, `ui-button-priority-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };
 
-export const WithIcons = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Primary button with icon
-      </button>
-      <button type="button" className="ui-btn-alt">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Primary button alternative with icon
-      </button>
-      <button type="button" className="ui-btn-secondary">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Secondary button with icon
-      </button>
-      <button type="button" className="ui-btn" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Unavailable primary button with icon
-      </button>
-      <button type="button" className="ui-btn-alt" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Unavailable primary button alternative with icon
-      </button>
-      <button type="button" className="ui-btn-secondary" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Unavailable secondary button with icon
-      </button>
-    </div>
-  ),
+export const Primary = {
+  render: () => buttonSet("primary"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Primary buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-primary`, `ui-button-primary-lg`, `ui-button-primary-sm`, `ui-button-primary-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };
 
-export const LinkStyledAsButton = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <a href="#" role="button" className="ui-btn">
-        Link
-      </a>
-      <a href="#" role="button" className="ui-btn ui-btn-disabled">
-        Disabled link
-      </a>
-    </div>
-  ),
-};
-
-export const ExtraSmall = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-xsmall text-btn4">
-        Primary button
-      </button>
-      <button type="button" className="ui-btn p-btn-xsmall text-btn4">
-        <Icon
-          name="icon-gui-search"
-          size="1rem"
-          additionalCSS="ui-btn-icon-xsmall"
-        />
-        Primary button with icon
-      </button>
-      <button type="button" className="ui-btn-alt p-btn-xsmall text-btn4">
-        Primary button alternative
-      </button>
-      <button type="button" className="ui-btn-secondary p-btn-xsmall text-btn4">
-        Secondary button
-      </button>
-    </div>
-  ),
-};
-
-export const Small = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-small text-btn3">
-        Primary button
-      </button>
-      <button type="button" className="ui-btn p-btn-small text-btn3">
-        <Icon
-          name="icon-gui-search"
-          size="1rem"
-          additionalCSS="ui-btn-icon-small"
-        />
-        Primary button with icon
-      </button>
-      <button type="button" className="ui-btn-alt p-btn-small text-btn3">
-        Primary button alternative
-      </button>
-      <button type="button" className="ui-btn-secondary p-btn-small text-btn3">
-        Secondary button
-      </button>
-    </div>
-  ),
-};
-
-export const Large = {
-  render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-large text-btn1">
-        Primary button
-      </button>
-      <button type="button" className="ui-btn p-btn-large text-btn1">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
-        Primary button with icon
-      </button>
-      <button type="button" className="ui-btn-alt p-btn-large text-btn1">
-        Primary button alternative
-      </button>
-      <button type="button" className="ui-btn-secondary p-btn-large text-btn1">
-        Secondary button
-      </button>
-    </div>
-  ),
+export const Secondary = {
+  render: () => buttonSet("secondary"),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Secondary buttons are available as separate CSS classes for use cases outside of React. Classes: `ui-button-secondary`, `ui-button-secondary-lg`, `ui-button-secondary-sm`, `ui-button-secondary-xs`. Hover over the icons to see the active classes.\n\nIcons can be set by placing an SVG element inside the button (view the HTML tab in the individual story view for more comprehensive code examples). Adding either `ui-button-{SIZE}-left-icon` or `ui-button-{SIZE}-right-icon` to the button element will adjust the padding to accommodate the icon.",
+      },
+    },
+  },
 };

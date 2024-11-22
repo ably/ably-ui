@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Footer Default smoke-test 1`] = `
+exports[`Components/Footer Default smoke-test 1`] = `
 <footer class="bg-light-grey font-sans antialiased leading-normal"
         data-id="footer"
 >

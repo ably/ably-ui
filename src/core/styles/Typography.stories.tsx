@@ -2,7 +2,7 @@ import clsx from "clsx";
 import React from "react";
 
 export default {
-  title: "CSS/Typography",
+  title: "Styles/Typography",
 };
 
 const styles = {
@@ -34,14 +34,14 @@ const styles = {
     { label: "Overline 2", className: "ui-text-overline2" },
   ],
   gui: [
-    { label: "Button label 1", className: "ui-text-button1" },
-    { label: "Button label 2", className: "ui-text-button2" },
-    { label: "Button label 3", className: "ui-text-button3" },
-    { label: "Button label 4", className: "ui-text-button4" },
-    { label: "Menu label 1", className: "ui-text-menu1" },
-    { label: "Menu label 2", className: "ui-text-menu2" },
-    { label: "Menu label 3", className: "ui-text-menu3" },
-    { label: "Menu label 4", className: "ui-text-menu4" },
+    { label: "Button label 1", className: "ui-gui-button1" },
+    { label: "Button label 2", className: "ui-gui-button2" },
+    { label: "Button label 3", className: "ui-gui-button3" },
+    { label: "Button label 4", className: "ui-gui-button4" },
+    { label: "Menu label 1", className: "ui-gui-menu1" },
+    { label: "Menu label 2", className: "ui-gui-menu2" },
+    { label: "Menu label 3", className: "ui-gui-menu3" },
+    { label: "Menu label 4", className: "ui-gui-menu4" },
     { label: "Link", className: "ui-text" },
   ],
   code: [
@@ -54,7 +54,7 @@ const fontCell = (style) => (
   <div
     key={style.label}
     className={clsx(
-      "rounded-lg p-16 ui-shadow-lg-soft flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
+      "rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
       style.className,
     )}
   >

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Featured Link Default smoke-test 1`] = `
+exports[`Components/Featured Link Default smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 "
    style="--featured-link-icon-size: var(--fs-p2);"
@@ -15,7 +15,7 @@ exports[`JS Components/Featured Link Default smoke-test 1`] = `
 </a>
 `;
 
-exports[`JS Components/Featured Link Disabled smoke-test 1`] = `
+exports[`Components/Featured Link Disabled smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-unavailable pointer-events-none group/featured-link ui-text-p2 py-8 "
    style="--featured-link-icon-size: var(--fs-p2);"
@@ -30,7 +30,7 @@ exports[`JS Components/Featured Link Disabled smoke-test 1`] = `
 </a>
 `;
 
-exports[`JS Components/Featured Link Large smoke-test 1`] = `
+exports[`Components/Featured Link Large smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p1 py-8 "
    style="--featured-link-icon-size: var(--fs-p1);"
@@ -45,7 +45,7 @@ exports[`JS Components/Featured Link Large smoke-test 1`] = `
 </a>
 `;
 
-exports[`JS Components/Featured Link Pink smoke-test 1`] = `
+exports[`Components/Featured Link Pink smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 text-pink-800"
    style="--featured-link-icon-size: var(--fs-p2);"
@@ -60,7 +60,7 @@ exports[`JS Components/Featured Link Pink smoke-test 1`] = `
 </a>
 `;
 
-exports[`JS Components/Featured Link Reverse smoke-test 1`] = `
+exports[`Components/Featured Link Reverse smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 "
    style="--featured-link-icon-size: var(--fs-p2);"
@@ -75,7 +75,7 @@ exports[`JS Components/Featured Link Reverse smoke-test 1`] = `
 </a>
 `;
 
-exports[`JS Components/Featured Link Small smoke-test 1`] = `
+exports[`Components/Featured Link Small smoke-test 1`] = `
 <a href="#"
    class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p3 py-8 "
    style="--featured-link-icon-size: var(--fs-p3);"

@@ -1,7 +1,7 @@
 import Loader from "../Loader";
 
 export default {
-  title: "JS Components/Loader",
+  title: "Components/Loader",
   component: Loader,
   tags: ["autodocs"],
 };

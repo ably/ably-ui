@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Table PricingPage smoke-test 1`] = `
+exports[`Components/Table PricingPage smoke-test 1`] = `
 <div class="ui-standard-container">
   <h2 class="ui-text-h2 text-center m-32">
     Pricing Page Table

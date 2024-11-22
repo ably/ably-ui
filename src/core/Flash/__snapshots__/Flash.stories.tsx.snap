@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JS Components/Flash Default smoke-test 1`] = `
+exports[`Components/Flash Default smoke-test 1`] = `
 <div class="ui-flash"
      data-id="ui-flashes"
 >

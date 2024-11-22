@@ -1,9 +1,11 @@
 @import "./styles/buttons.css";
+@import "./styles/legacy-buttons.css";
 @import "./styles/dropdowns.css";
 @import "./styles/forms.css";
 @import "./styles/layout.css";
 @import "./styles/shadows.css";
 @import "./styles/text.css";
+@import "./styles/gui.css";
 
 @layer components {
   /* Basis for icon component */

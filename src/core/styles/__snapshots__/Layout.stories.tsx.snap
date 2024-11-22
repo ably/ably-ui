@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Layout FullBorderlessContainerOverride smoke-test 1`] = `
+exports[`Styles/Layout FullBorderlessContainerOverride smoke-test 1`] = `
 <div class="overflow-x-hidden">
   <div class="ui-standard-container mb-32">
     <div class="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-32 ui-full-borderless-container-override text-white">
@@ -71,7 +71,7 @@ exports[`CSS/Layout FullBorderlessContainerOverride smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Layout FullContainerOverride smoke-test 1`] = `
+exports[`Styles/Layout FullContainerOverride smoke-test 1`] = `
 <div class="overflow-x-hidden">
   <div class="ui-standard-container mb-32">
     <div class="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-32 ui-full-container-override text-white">
@@ -142,7 +142,7 @@ exports[`CSS/Layout FullContainerOverride smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Layout GridGap smoke-test 1`] = `
+exports[`Styles/Layout GridGap smoke-test 1`] = `
 <div class="ui-standard-container mb-32">
   <div class="bg-mid-grey align-center p-32">
     <div class="grid grid-cols-4 ui-grid-gap">
@@ -163,7 +163,7 @@ exports[`CSS/Layout GridGap smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Layout GridMX smoke-test 1`] = `
+exports[`Styles/Layout GridMX smoke-test 1`] = `
 <div class="ui-standard-container mb-32">
   <div class="bg-mid-grey align-center p-32">
     <div class="ui-grid-mx">
@@ -175,7 +175,7 @@ exports[`CSS/Layout GridMX smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Layout GridPX smoke-test 1`] = `
+exports[`Styles/Layout GridPX smoke-test 1`] = `
 <div class="ui-standard-container mb-32">
   <div class="bg-mid-grey align-center p-32">
     <div class="ui-grid-px">
@@ -187,7 +187,7 @@ exports[`CSS/Layout GridPX smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Layout StandardContainer smoke-test 1`] = `
+exports[`Styles/Layout StandardContainer smoke-test 1`] = `
 <div class="ui-standard-container mb-32">
   <div class="bg-mid-grey align-center p-32">
     <p class="ui-text-h3 text-center">

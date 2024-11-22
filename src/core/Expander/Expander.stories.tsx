@@ -4,7 +4,7 @@ import Expander from "../Expander";
 import Icon from "../Icon";
 
 export default {
-  title: "JS Components/Expander",
+  title: "Components/Expander",
   component: Expander,
   tags: ["autodocs"],
   args: {

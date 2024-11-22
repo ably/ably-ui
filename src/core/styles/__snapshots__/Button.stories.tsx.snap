@@ -1,250 +1,756 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Button ExtraSmall smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn p-btn-xsmall text-btn4"
-  >
-    Primary button
-  </button>
-  <button type="button"
-          class="ui-btn p-btn-xsmall text-btn4"
-  >
-    <svg class="ui-btn-icon-xsmall"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Primary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn-alt p-btn-xsmall text-btn4"
-  >
-    Primary button alternative
-  </button>
-  <button type="button"
-          class="ui-btn-secondary p-btn-xsmall text-btn4"
-  >
-    Secondary button
-  </button>
+exports[`Components/Button Primary smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-lg"
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary"
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-sm"
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-xs"
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-lg ui-button-lg-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary ui-button-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-sm ui-button-sm-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-xs"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-lg ui-button-lg-right-icon"
+      >
+        Large
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary ui-button-right-icon"
+      >
+        Regular
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-sm ui-button-sm-right-icon"
+      >
+        Small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-xs"
+      >
+        Extra small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-lg"
+              disabled
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary"
+              disabled
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-sm"
+              disabled
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-primary-xs"
+              disabled
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`CSS/Button Inverted smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn-invert"
-  >
-    Primary button
-  </button>
-  <button type="button"
-          class="ui-btn-secondary-invert"
-  >
-    Secondary button
-  </button>
-  <button type="button"
-          class="ui-btn-invert"
-          disabled
-  >
-    Unavailable primary button
-  </button>
-  <button type="button"
-          class="ui-btn-secondary-invert"
-          disabled
-  >
-    Unavailable secondary button
-  </button>
+exports[`Components/Button Priority smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-lg"
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority"
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-sm"
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-xs"
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-lg ui-button-lg-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority ui-button-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-sm ui-button-sm-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-xs"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-lg ui-button-lg-right-icon"
+      >
+        Large
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority ui-button-right-icon"
+      >
+        Regular
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-sm ui-button-sm-right-icon"
+      >
+        Small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-xs"
+      >
+        Extra small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-lg"
+              disabled
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority"
+              disabled
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-sm"
+              disabled
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-priority-xs"
+              disabled
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`CSS/Button Large smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn p-btn-large text-btn1"
-  >
-    Primary button
-  </button>
-  <button type="button"
-          class="ui-btn p-btn-large text-btn1"
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Primary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn-alt p-btn-large text-btn1"
-  >
-    Primary button alternative
-  </button>
-  <button type="button"
-          class="ui-btn-secondary p-btn-large text-btn1"
-  >
-    Secondary button
-  </button>
+exports[`Components/Button ReactComponent smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-16">
+  <div>
+    <button class="ui-button-priority-lg">
+      Hello React!
+    </button>
+  </div>
+  <div>
+    <button class="ui-button-primary ui-button-left-icon">
+      <svg class
+           style="width: 0.75rem; height: 0.75rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-search">
+        </use>
+      </svg>
+      Hello React!
+    </button>
+  </div>
+  <div>
+    <button class="ui-button-secondary-xs">
+      Hello React!
+      <svg class
+           style="width: 0.75rem; height: 0.75rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-arrow-right">
+        </use>
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
-exports[`CSS/Button LinkStyledAsButton smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <a href="#"
-     role="button"
-     class="ui-btn"
-  >
-    Link
-  </a>
-  <a href="#"
-     role="button"
-     class="ui-btn ui-btn-disabled"
-  >
-    Disabled link
-  </a>
-</div>
-`;
-
-exports[`CSS/Button Small smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn p-btn-small text-btn3"
-  >
-    Primary button
-  </button>
-  <button type="button"
-          class="ui-btn p-btn-small text-btn3"
-  >
-    <svg class="ui-btn-icon-small"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Primary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn-alt p-btn-small text-btn3"
-  >
-    Primary button alternative
-  </button>
-  <button type="button"
-          class="ui-btn-secondary p-btn-small text-btn3"
-  >
-    Secondary button
-  </button>
-</div>
-`;
-
-exports[`CSS/Button Standard smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn"
-  >
-    Primary button
-  </button>
-  <button type="button"
-          class="ui-btn-alt"
-  >
-    Primary button alternative
-  </button>
-  <button type="button"
-          class="ui-btn-secondary"
-  >
-    Secondary button
-  </button>
-  <button type="button"
-          class="ui-btn"
-          disabled
-  >
-    Unavailable primary button
-  </button>
-  <button type="button"
-          class="ui-btn-alt"
-          disabled
-  >
-    Unavailable primary button alternative
-  </button>
-  <button type="button"
-          class="ui-btn-secondary"
-          disabled
-  >
-    Unavailable secondary button
-  </button>
-</div>
-`;
-
-exports[`CSS/Button WithIcons smoke-test 1`] = `
-<div class="flex flex-col gap-16 max-w-[300px]">
-  <button type="button"
-          class="ui-btn"
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Primary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn-alt"
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Primary button alternative with icon
-  </button>
-  <button type="button"
-          class="ui-btn-secondary"
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Secondary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn"
-          disabled
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Unavailable primary button with icon
-  </button>
-  <button type="button"
-          class="ui-btn-alt"
-          disabled
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Unavailable primary button alternative with icon
-  </button>
-  <button type="button"
-          class="ui-btn-secondary"
-          disabled
-  >
-    <svg class="ui-btn-icon"
-         style="width: 1rem; height: 1rem;"
-    >
-      <use xlink:href="#sprite-icon-gui-search">
-      </use>
-    </svg>
-    Unavailable secondary button with icon
-  </button>
+exports[`Components/Button Secondary smoke-test 1`] = `
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-lg"
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary"
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-sm"
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-xs"
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-lg ui-button-lg-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary ui-button-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-sm ui-button-sm-left-icon"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-xs"
+      >
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-search">
+          </use>
+        </svg>
+        Extra small
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-lg ui-button-lg-right-icon"
+      >
+        Large
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary ui-button-right-icon"
+      >
+        Regular
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-sm ui-button-sm-right-icon"
+      >
+        Small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-xs"
+      >
+        Extra small
+        <svg style="width: 1.5rem; height: 1.5rem;">
+          <use xlink:href="#sprite-icon-gui-arrow-right">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-16">
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-lg"
+              disabled
+      >
+        Large
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary"
+              disabled
+      >
+        Regular
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-sm"
+              disabled
+      >
+        Small
+      </button>
+    </div>
+    <div class="inline-flex ml-8 ">
+      <button type="button"
+              aria-describedby="tooltip"
+              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+      >
+      </button>
+      <button type="button"
+              class="ui-button-secondary-xs"
+              disabled
+      >
+        Extra small
+      </button>
+    </div>
+  </div>
 </div>
 `;

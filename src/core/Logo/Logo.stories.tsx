@@ -2,7 +2,7 @@ import Logo from "../Logo";
 import logoUrl from "../images/ably-logo.png";
 
 export default {
-  title: "JS Components/Logo",
+  title: "Components/Logo",
   component: Logo,
   args: {
     logoUrl,

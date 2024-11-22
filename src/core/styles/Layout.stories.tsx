@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-  title: "CSS/Layout",
+  title: "Styles/Layout",
 };
 
 export const StandardContainer = {

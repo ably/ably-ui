@@ -2,7 +2,7 @@ import React from "react";
 import Tooltip from "../Tooltip";
 
 export default {
-  title: "JS Components/Tooltip",
+  title: "Components/Tooltip",
   component: Tooltip,
   tags: ["autodocs"],
   args: {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CSS/Forms Checkboxes smoke-test 1`] = `
+exports[`Styles/Forms Checkboxes smoke-test 1`] = `
 <div class="grid sm:grid-cols-2 gap-16">
   <div>
     <p class="mb-16 text-neutral-800">
@@ -64,7 +64,7 @@ exports[`CSS/Forms Checkboxes smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Forms Dropdowns smoke-test 1`] = `
+exports[`Styles/Forms Dropdowns smoke-test 1`] = `
 <div class="grid sm:grid-cols-2 gap-16">
   <div>
     <p class="mb-16 text-neutral-800">
@@ -183,7 +183,7 @@ exports[`CSS/Forms Dropdowns smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Forms Inputs smoke-test 1`] = `
+exports[`Styles/Forms Inputs smoke-test 1`] = `
 <div class="grid sm:grid-cols-2 gap-16">
   <div>
     <p class="mb-16 text-neutral-800">
@@ -273,7 +273,7 @@ exports[`CSS/Forms Inputs smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Forms Textareas smoke-test 1`] = `
+exports[`Styles/Forms Textareas smoke-test 1`] = `
 <div class="mb-40">
   <label class="ui-text-p1 block"
          for="example-text-area"
@@ -291,7 +291,7 @@ exports[`CSS/Forms Textareas smoke-test 1`] = `
 </div>
 `;
 
-exports[`CSS/Forms Toggles smoke-test 1`] = `
+exports[`Styles/Forms Toggles smoke-test 1`] = `
 <div class="grid sm:grid-cols-2 gap-16">
   <div class="flex gap-16 items-center">
     <label class="ui-toggle">

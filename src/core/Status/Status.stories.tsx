@@ -5,7 +5,7 @@ import Status from "../Status";
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "JS Components/Status",
+  title: "Components/Status",
   component: Status,
   args: {
     statusUrl,
