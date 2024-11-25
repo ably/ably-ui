@@ -2,7 +2,7 @@ import React from "react";
 
 import Icon from "./Icon";
 import _absUrl from "./url-base.js";
-import Status from "./Status.js";
+import { StatusIcon } from "./Status";
 
 type FooterProps = {
   paths: {
@@ -209,14 +209,16 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
                 SDKs
               </a>
             </li>
-            <li className="p-menu-row-snug flex items-center -mt-4">
+            <li className="p-menu-row-snug">
               <a
-                className="pr-8 ui-footer-menu-row-link"
+                className="ui-footer-menu-row-link flex items-center gap-4"
                 href="https://status.ably.com/"
+                target="_blank"
+                rel="noreferrer"
               >
                 System status
+                <StatusIcon statusUrl={statusUrl} />
               </a>
-              <Status statusUrl={statusUrl} />
             </li>
           </ul>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 import Icon from "./Icon";
 import { AbsUrl } from "./Meganav";
-import Status from "./Status";
+import { StatusIcon } from "./Status";
 
 const MeganavContentDevelopers = ({
   absUrl,
@@ -186,12 +186,9 @@ const MeganavContentDevelopers = ({
               href="https://status.ably.com/"
               className="group ui-meganav-media py-12"
             >
-              <p className="ui-meganav-media-heading">
+              <p className="ui-meganav-media-heading flex items-center gap-4">
                 Status
-                <Status
-                  statusUrl={statusUrl}
-                  additionalCSS="ml-4 align-middle"
-                />
+                <StatusIcon statusUrl={statusUrl} />
               </p>
             </a>
           </li>

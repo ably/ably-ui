@@ -1,4 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useSWR from "swr";
+import clsx from "clsx";
+
+// Our SWR fetcher function
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const indicatorClass = (indicator?: string) => {
   switch (indicator) {
@@ -17,41 +22,37 @@ const indicatorClass = (indicator?: string) => {
   }
 };
 
+export const StatusIcon = ({
+  statusUrl,
+  refreshInterval = 1000 * 60,
+}: {
+  statusUrl: string;
+  refreshInterval?: number;
+}) => {
+  const { data, error, isLoading } = useSWR(statusUrl, fetcher, {
+    refreshInterval,
+  });
+
+  return (
+    <span
+      className={clsx(
+        "inline-flex h-[1rem] aspect-square m-[0.25rem] rounded-full",
+        indicatorClass(data?.status?.indicator),
+        { "animate-pulse": isLoading || error },
+      )}
+    ></span>
+  );
+};
+
 const Status = ({
   statusUrl,
   additionalCSS,
+  refreshInterval = 1000 * 60,
 }: {
   statusUrl: string;
   additionalCSS?: string;
+  refreshInterval?: number;
 }) => {
-  const [data, setData] = useState<{ status: { indicator: string } } | null>(
-    null,
-  );
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-
-    if (statusUrl !== "") {
-      const fetchData = async () => {
-        try {
-          const response = await fetch(statusUrl);
-          const jsonData = await response.json();
-          setData(jsonData);
-        } catch (error) {
-          console.error("Error fetching status data:", error);
-        }
-      };
-
-      fetchData();
-
-      interval = setInterval(fetchData, 60000); // Fetch data every minute
-    }
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [statusUrl]);
-
   return (
     <a
       href="https://status.ably.com"
@@ -59,11 +60,10 @@ const Status = ({
       target="_blank"
       rel="noreferrer"
     >
-      <span className="flex items-center h-[1.5rem] p-[0.25rem]">
-        <span
-          className={`w-[1rem] h-[1rem] leading-[1rem] rounded-full ${!data ? "animate-pulse" : ""} ${indicatorClass(data?.status?.indicator)}`}
-        ></span>
-      </span>
+      <StatusIcon
+        statusUrl={statusUrl}
+        refreshInterval={refreshInterval ?? 1000 * 60}
+      />
     </a>
   );
 };
