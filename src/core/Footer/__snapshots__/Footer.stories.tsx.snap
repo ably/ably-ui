@@ -175,20 +175,14 @@ exports[`Components/Footer Default smoke-test 1`] = `
             SDKs
           </a>
         </li>
-        <li class="p-menu-row-snug flex items-center -mt-4">
-          <a class="pr-8 ui-footer-menu-row-link"
+        <li class="p-menu-row-snug">
+          <a class="ui-footer-menu-row-link flex items-center gap-4"
              href="https://status.ably.com/"
-          >
-            System status
-          </a>
-          <a href="https://status.ably.com"
-             class="inline-block undefined"
              target="_blank"
              rel="noreferrer"
           >
-            <span class="flex items-center h-[1.5rem] p-[0.25rem]">
-              <span class="w-[1rem] h-[1rem] leading-[1rem] rounded-full animate-pulse bg-neutral-500">
-              </span>
+            System status
+            <span class="inline-flex h-[1rem] aspect-square m-[0.25rem] rounded-full bg-neutral-500 animate-pulse">
             </span>
           </a>
         </li>
