@@ -80,18 +80,42 @@
   }
 
   .ui-text-menu1 {
-    @apply font-sans font-medium text-cool-black;
-    @apply text-menu1 leading-snug;
+    @apply font-sans text-neutral-900 text-menu1 font-semibold leading-snug;
   }
 
   .ui-text-menu2 {
-    @apply font-sans font-medium text-cool-black;
-    @apply text-menu2 leading-snug;
+    @apply font-sans text-neutral-900 text-menu2 font-semibold leading-snug;
   }
 
   .ui-text-menu3 {
-    @apply font-sans font-medium text-cool-black;
-    @apply text-menu3 leading-snug;
+    @apply font-sans text-neutral-900 text-menu3 font-semibold leading-snug;
+  }
+
+  .ui-text-menu4 {
+    @apply font-sans text-neutral-900 text-menu4 font-semibold leading-snug;
+  }
+
+  .ui-theme-dark .ui-text-menu1,
+  .ui-theme-dark .ui-text-menu2,
+  .ui-theme-dark .ui-text-menu3,
+  .ui-theme-dark .ui-text-menu4 {
+    @apply text-neutral-300;
+  }
+
+  .ui-text-button1 {
+    @apply font-sans text-btn1 font-bold leading-snug;
+  }
+
+  .ui-text-button2 {
+    @apply font-sans text-btn2 font-bold leading-snug;
+  }
+
+  .ui-text-button3 {
+    @apply font-sans text-btn3 font-bold leading-snug;
+  }
+
+  .ui-text-button4 {
+    @apply font-sans text-btn4 font-bold leading-snug;
   }
 
   .ui-text-code {

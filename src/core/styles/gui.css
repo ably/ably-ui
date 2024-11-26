@@ -1,33 +1,33 @@
 @layer components {
-  .ui-gui-menu1 {
+  .ui-text-menu1 {
     @apply font-sans text-neutral-1000 text-p1 font-medium leading-snug;
   }
 
-  .ui-gui-menu2 {
+  .ui-text-menu2 {
     @apply font-sans text-neutral-1000 text-p2 font-medium leading-snug;
   }
 
-  .ui-gui-menu3 {
+  .ui-text-menu3 {
     @apply font-sans text-neutral-1000 text-p3 font-medium leading-snug;
   }
 
-  .ui-gui-menu4 {
+  .ui-text-menu4 {
     @apply font-sans text-neutral-1000 text-p4 font-medium leading-snug;
   }
 
-  .ui-gui-button1 {
+  .ui-text-button1 {
     @apply font-sans text-p1 font-bold leading-snug;
   }
 
-  .ui-gui-button2 {
+  .ui-text-button2 {
     @apply font-sans text-p2 font-bold leading-snug;
   }
 
-  .ui-gui-button3 {
+  .ui-text-button3 {
     @apply font-sans text-p3 font-bold leading-snug;
   }
 
-  .ui-gui-button4 {
+  .ui-text-button4 {
     @apply font-sans text-p4 font-bold leading-snug;
   }
 }
