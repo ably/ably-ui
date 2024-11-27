@@ -36,18 +36,19 @@
   }
 
   .ui-text-p1 {
-    @apply font-sans font-medium text-charcoal-grey;
-    @apply text-p1;
+    @apply font-sans font-medium text-charcoal-grey text-p1;
   }
 
   .ui-text-p2 {
-    @apply font-sans font-medium text-charcoal-grey;
-    @apply text-p2;
+    @apply font-sans font-medium text-charcoal-grey text-p2;
   }
 
   .ui-text-p3 {
-    @apply font-sans font-medium text-charcoal-grey;
-    @apply text-p3;
+    @apply font-sans font-medium text-charcoal-grey text-p3;
+  }
+
+  .ui-text-p4 {
+    @apply font-sans font-medium text-charcoal-grey text-p4;
   }
 
   .ui-text-standfirst {
@@ -127,7 +128,11 @@
   }
 
   .ui-text-code-inline {
-    @apply font-mono font-normal text-code text-charcoal-grey bg-light-grey p-inline-code rounded-sm mx-1;
+    @apply inline-flex font-mono px-[3px] py-4 text-code text-neutral-1000 font-medium bg-neutral-200 border border-neutral-400 rounded-md;
+  }
+
+  .dark .ui-text-code-inline {
+    @apply text-neutral-300 bg-neutral-1000 border-neutral-900;
   }
 
   .ui-unordered-list {

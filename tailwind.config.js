@@ -220,7 +220,6 @@ module.exports = {
       media: "var(--spacing-media)",
       input: "var(--spacing-input)",
       overline: "var(--spacing-overline)",
-      "inline-code": "var(--spacing-inline-code)",
       ...theme("spacing"),
     }),
     spacing: {

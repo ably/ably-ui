@@ -14,7 +14,12 @@
   .ui-checkbox-styled {
     @apply w-20 h-20 mr-16;
     @apply bg-white flex flex-shrink-0 justify-center items-center;
-    @apply border border-dark-grey rounded-md focus-within:border-active-orange;
+    @apply border border-neutral-500 rounded-md focus-within:border-active-orange;
+  }
+
+  .ui-theme-dark .ui-checkbox-styled,
+  .ui-theme-dark .ui-checkbox-input:focus + .ui-checkbox-styled {
+    @apply border-neutral-900;
   }
 
   .ui-checkbox-styled-tick {
@@ -45,7 +50,11 @@
   }
 
   .ui-checkbox-input:disabled + .ui-checkbox-styled {
-    @apply bg-gui-unavailable border;
+    @apply bg-neutral-400 border;
+  }
+
+  .ui-theme-dark .ui-checkbox-input:checked + .ui-checkbox-styled {
+    @apply bg-neutral-1000 border-gui-unavailable-dark;
   }
 
   .ui-textarea {
@@ -100,24 +109,20 @@
   }
 
   .ui-input {
-    @apply ui-text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-colors placeholder-neutral-800;
-    @apply hover:border-neutral-800 focus:bg-white focus:outline-gui-focus;
-    @apply max-w-screen-sm;
+    @apply ui-text-p2 font-medium bg-neutral-100 rounded p-input w-full leading-none appearance-none border border-neutral-400 transition-colors placeholder-neutral-600;
+    @apply hover:border-neutral-700 focus:bg-white focus:outline-gui-focus;
+    @apply max-w-screen-sm invalid:border-gui-error-red;
   }
 
-  .ui-input-dark {
-    @apply bg-neutral-1200 hover:bg-neutral-1200 focus:bg-neutral-1000 text-neutral-300;
+  .ui-theme-dark .ui-input {
+    @apply bg-neutral-1200 hover:bg-neutral-1000 focus:bg-neutral-1000 text-neutral-300 border-neutral-900 placeholder-neutral-700;
   }
 
   .ui-input:disabled {
     @apply bg-gui-unavailable placeholder-neutral-500 text-neutral-500;
   }
 
-  .ui-input-dark:disabled {
-    @apply text-neutral-800 placeholder-neutral-800;
-  }
-
-  .ui-input {
-    @apply invalid:border-gui-error-red;
+  .ui-theme-dark .ui-input:disabled {
+    @apply bg-gui-unavailable-dark text-neutral-800 placeholder-neutral-800;
   }
 }
