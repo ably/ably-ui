@@ -2,11 +2,11 @@
 
 exports[`Styles/Forms Checkboxes smoke-test 1`] = `
 <div class="grid sm:grid-cols-2 gap-16">
-  <div>
+  <div class="flex flex-col gap-8">
     <p class="mb-16 text-neutral-800">
       Default
     </p>
-    <div class="ui-checkbox-p1">
+    <div class="ui-checkbox-p1 flex items-center">
       <input data-ui-checkbox-native
              type="checkbox"
              id="checkbox-example-1"
@@ -27,19 +27,67 @@ exports[`Styles/Forms Checkboxes smoke-test 1`] = `
       <label for="checkbox-example-1"
              class="ui-checkbox-label-p1"
       >
-        Subscribe to the Ably newsletter
+        Option 1
       </label>
     </div>
-  </div>
-  <div>
-    <p class="mb-16 text-neutral-800">
-      Disabled
-    </p>
-    <div class="ui-checkbox-p1">
+    <div class="ui-checkbox-p1 flex items-center">
       <input data-ui-checkbox-native
              type="checkbox"
              id="checkbox-example-2"
              name="checkbox-example-2"
+             class="ui-checkbox-input"
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class="ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-2"
+             class="ui-checkbox-label-p1"
+      >
+        Option 2
+      </label>
+    </div>
+    <div class="ui-checkbox-p1 flex items-center">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-3"
+             name="checkbox-example-3"
+             class="ui-checkbox-input"
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class="ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-3"
+             class="ui-checkbox-label-p1"
+      >
+        Option 3
+      </label>
+    </div>
+  </div>
+  <div class="flex flex-col gap-8">
+    <p class="mb-16 text-neutral-800">
+      Disabled
+    </p>
+    <div class="ui-checkbox-p1 flex items-center">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-4"
+             name="checkbox-example-4"
              class="ui-checkbox-input"
              disabled
              value="yes"
@@ -54,10 +102,60 @@ exports[`Styles/Forms Checkboxes smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <label for="checkbox-example-2"
-             class="ui-checkbox-label-p2"
+      <label for="checkbox-example-4"
+             class="ui-checkbox-label-p1"
       >
-        Subscribe to the Ably newsletter
+        Option 4
+      </label>
+    </div>
+    <div class="ui-checkbox-p1 flex items-center">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-5"
+             name="checkbox-example-5"
+             class="ui-checkbox-input"
+             disabled
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class="ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-5"
+             class="ui-checkbox-label-p1"
+      >
+        Option 5
+      </label>
+    </div>
+    <div class="ui-checkbox-p1 flex items-center">
+      <input data-ui-checkbox-native
+             type="checkbox"
+             id="checkbox-example-6"
+             name="checkbox-example-6"
+             class="ui-checkbox-input"
+             disabled
+             value="yes"
+      >
+      <div data-ui-checkbox-styled
+           class="ui-checkbox-styled"
+      >
+        <svg class="ui-checkbox-styled-tick"
+             style="width: 1rem; height: 1rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-tick">
+          </use>
+        </svg>
+      </div>
+      <label for="checkbox-example-6"
+             class="ui-checkbox-label-p1"
+      >
+        Option 6
       </label>
     </div>
   </div>
@@ -153,33 +251,6 @@ exports[`Styles/Forms Dropdowns smoke-test 1`] = `
       Select language
     </div>
   </div>
-  <div>
-    <p class="mb-16 text-neutral-800">
-      Dark mode
-    </p>
-    <div class="bg-neutral-1300 p-24">
-      <select class="ui-dropdown ui-dropdown-dark">
-        <option value="select"
-                disabled
-                selected
-        >
-          Select language
-        </option>
-        <option value="javascript">
-          Javascript
-        </option>
-        <option value="ruby">
-          Ruby
-        </option>
-        <option value="python">
-          Python
-        </option>
-        <option value="java">
-          Java
-        </option>
-      </select>
-    </div>
-  </div>
 </div>
 `;
 
@@ -197,32 +268,11 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
   </div>
   <div>
     <p class="mb-16 text-neutral-800">
-      Default (dark)
-    </p>
-    <input type="search"
-           class="ui-input ui-input-dark"
-           placeholder="Dark mode input"
-           autocomplete="off"
-    >
-  </div>
-  <div>
-    <p class="mb-16 text-neutral-800">
       Disabled
     </p>
     <input type="search"
            class="ui-input disabled"
            placeholder="Light mode input"
-           autocomplete="off"
-           disabled
-    >
-  </div>
-  <div>
-    <p class="mb-16 text-neutral-800">
-      Disabled (dark)
-    </p>
-    <input type="search"
-           class="ui-input ui-input-dark"
-           placeholder="Dark mode input"
            autocomplete="off"
            disabled
     >
@@ -243,20 +293,6 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
   </div>
   <div>
     <p class="mb-16 text-neutral-800">
-      Invalid (dark)
-    </p>
-    <input type="search"
-           class="ui-input ui-input-dark"
-           placeholder="Dark mode input"
-           autocomplete="off"
-           required
-    >
-    <p class="ui-text-p3 text-gui-error-red mt-8">
-      Oof, what an input
-    </p>
-  </div>
-  <div>
-    <p class="mb-16 text-neutral-800">
       With character insert
     </p>
     <div class="relative">
@@ -268,6 +304,108 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
              placeholder="With icon"
              autocomplete="off"
       >
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Styles/Forms RadioButtons smoke-test 1`] = `
+<div class="grid sm:grid-cols-2 gap-16">
+  <div class="flex flex-col gap-8">
+    <p class="mb-16 text-neutral-800">
+      Default
+    </p>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-1"
+             name="radio-example"
+             class="ui-radio"
+             value="option-1"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-1"
+      >
+        Option 1
+      </label>
+    </div>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-2"
+             name="radio-example"
+             class="ui-radio"
+             value="option-2"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-2"
+      >
+        Option 2
+      </label>
+    </div>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-3"
+             name="radio-example"
+             class="ui-radio"
+             value="option-3"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-3"
+      >
+        Option 3
+      </label>
+    </div>
+  </div>
+  <div class="flex flex-col gap-8">
+    <p class="mb-16 text-neutral-800">
+      Disabled
+    </p>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-4"
+             name="radio-example"
+             class="ui-radio"
+             disabled
+             value="option-4"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-4"
+      >
+        Option 4
+      </label>
+    </div>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-5"
+             name="radio-example"
+             class="ui-radio"
+             disabled
+             value="option-5"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-5"
+      >
+        Option 5
+      </label>
+    </div>
+    <div class="flex items-center gap-8">
+      <input data-ui-radio-native
+             type="radio"
+             id="radio-example-6"
+             name="radio-example"
+             class="ui-radio"
+             disabled
+             value="option-6"
+      >
+      <label class="text-neutral-1300 dark:text-neutral-000"
+             for="radio-example-6"
+      >
+        Option 6
+      </label>
     </div>
   </div>
 </div>

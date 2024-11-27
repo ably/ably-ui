@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../Icon";
+import { Checkbox, RadioButton } from "./forms/story-components";
 
 export default {
   title: "Styles/Forms",
@@ -30,15 +30,6 @@ export const Inputs = {
         />
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Default (dark)</p>
-        <input
-          type="search"
-          className="ui-input ui-input-dark"
-          placeholder="Dark mode input"
-          autoComplete="off"
-        />
-      </div>
-      <div>
         <p className="mb-16 text-neutral-800">Disabled</p>
         <input
           type="search"
@@ -49,32 +40,11 @@ export const Inputs = {
         />
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Disabled (dark)</p>
-        <input
-          type="search"
-          className="ui-input ui-input-dark"
-          placeholder="Dark mode input"
-          autoComplete="off"
-          disabled
-        />
-      </div>
-      <div>
         <p className="mb-16 text-neutral-800">Invalid</p>
         <input
           type="search"
           className="ui-input disabled"
           placeholder="Light mode input"
-          autoComplete="off"
-          required
-        />
-        <p className="ui-text-p3 text-gui-error-red mt-8">Oof, what an input</p>
-      </div>
-      <div>
-        <p className="mb-16 text-neutral-800">Invalid (dark)</p>
-        <input
-          type="search"
-          className="ui-input ui-input-dark"
-          placeholder="Dark mode input"
           autoComplete="off"
           required
         />
@@ -125,17 +95,6 @@ export const Dropdowns = {
           Select language
         </div>
       </div>
-      <div>
-        <p className="mb-16 text-neutral-800">Dark mode</p>
-        <div className="bg-neutral-1300 p-24">
-          <select
-            className="ui-dropdown ui-dropdown-dark"
-            defaultValue="select"
-          >
-            {exampleOptionFields}
-          </select>
-        </div>
-      </div>
     </div>
   ),
 };
@@ -143,53 +102,41 @@ export const Dropdowns = {
 export const Checkboxes = {
   render: () => (
     <div className="grid sm:grid-cols-2 gap-16">
-      <div>
-        <p className="mb-16 text-neutral-800">Default</p>
-        <div className="ui-checkbox-p1">
-          <input
-            data-ui-checkbox-native=""
-            type="checkbox"
-            id="checkbox-example-1"
-            name="checkbox-example-1"
-            value="yes"
-            className="ui-checkbox-input"
-          />
-          <div data-ui-checkbox-styled="" className="ui-checkbox-styled">
-            <Icon
-              name="icon-gui-tick"
-              size="1rem"
-              additionalCSS="ui-checkbox-styled-tick"
-            />
-          </div>
-          <label htmlFor="checkbox-example-1" className="ui-checkbox-label-p1">
-            Subscribe to the Ably newsletter
-          </label>
+      {["Default", "Disabled"].map((label, groupIndex) => (
+        <div key={label} className="flex flex-col gap-8">
+          <p className="mb-16 text-neutral-800">{label}</p>
+          {Array(3)
+            .fill(0)
+            .map((_, i) => (
+              <Checkbox
+                key={i}
+                index={i + groupIndex * 3 + 1}
+                disabled={groupIndex === 1}
+              />
+            ))}
         </div>
-      </div>
-      <div>
-        <p className="mb-16 text-neutral-800">Disabled</p>
-        <div className="ui-checkbox-p1">
-          <input
-            data-ui-checkbox-native=""
-            type="checkbox"
-            id="checkbox-example-2"
-            name="checkbox-example-2"
-            value="yes"
-            className="ui-checkbox-input"
-            disabled
-          />
-          <div data-ui-checkbox-styled="" className="ui-checkbox-styled">
-            <Icon
-              name="icon-gui-tick"
-              size="1rem"
-              additionalCSS="ui-checkbox-styled-tick"
-            />
-          </div>
-          <label htmlFor="checkbox-example-2" className="ui-checkbox-label-p2">
-            Subscribe to the Ably newsletter
-          </label>
+      ))}
+    </div>
+  ),
+};
+
+export const RadioButtons = {
+  render: () => (
+    <div className="grid sm:grid-cols-2 gap-16">
+      {["Default", "Disabled"].map((label, groupIndex) => (
+        <div key={label} className="flex flex-col gap-8">
+          <p className="mb-16 text-neutral-800">{label}</p>
+          {Array(3)
+            .fill(0)
+            .map((_, i) => (
+              <RadioButton
+                key={i}
+                index={i + groupIndex * 3 + 1}
+                disabled={groupIndex === 1}
+              />
+            ))}
         </div>
-      </div>
+      ))}
     </div>
   ),
 };

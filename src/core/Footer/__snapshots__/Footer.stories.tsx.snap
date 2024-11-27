@@ -182,7 +182,7 @@ exports[`Components/Footer Default smoke-test 1`] = `
              rel="noreferrer"
           >
             System status
-            <span class="inline-flex h-[1rem] aspect-square m-[0.25rem] rounded-full bg-neutral-500 animate-pulse">
+            <span class="inline-flex h-[1rem] aspect-square m-[0.25rem] rounded-full bg-green-500">
             </span>
           </a>
         </li>
