@@ -5,6 +5,7 @@ const flakyStories = [
   "components-meganav",
   "components-accordion",
   "components-footer",
+  "components-tab-menu",
   "features-pricing-cards",
 ];
 
