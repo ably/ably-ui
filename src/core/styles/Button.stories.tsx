@@ -1,7 +1,7 @@
 import React from "react";
-import clsx from "clsx";
 import Button, { ButtonType, iconModifierClasses } from "../Button";
 import Tooltip from "../Tooltip";
+import cn from "../utils/cn";
 
 export default {
   title: "Components/Button",
@@ -60,7 +60,7 @@ const buttonSet = (type: ButtonType) => (
               triggerElement={
                 <button
                   type="button"
-                  className={clsx(
+                  className={cn(
                     size.className[type],
                     {
                       [iconModifierClasses[size.key ?? "md"].left]: index === 1,
@@ -86,7 +86,7 @@ const buttonSet = (type: ButtonType) => (
                 </button>
               }
             >
-              {clsx(
+              {cn(
                 size.className[type],
                 {
                   [iconModifierClasses[size.key ?? "md"].left]: index === 1,

@@ -31,7 +31,7 @@ exports[`Styles/Typography Decorative smoke-test 1`] = `
       .ui-text-sub-header
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header text-sub-header-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-sub-header text-sub-header-xs">
     <div>
       Sub-header XS
     </div>
@@ -254,7 +254,7 @@ exports[`Styles/Typography Lists smoke-test 1`] = `
 
 exports[`Styles/Typography Primary smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-16">
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xl">
     <div>
       Title XL
     </div>
@@ -270,7 +270,7 @@ exports[`Styles/Typography Primary smoke-test 1`] = `
       .ui-text-title
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-title text-title-xs">
     <div>
       Title XS
     </div>
@@ -278,7 +278,7 @@ exports[`Styles/Typography Primary smoke-test 1`] = `
       .ui-text-title.text-title-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xl">
     <div>
       h1 XL
     </div>
@@ -294,7 +294,7 @@ exports[`Styles/Typography Primary smoke-test 1`] = `
       .ui-text-h1
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h1 text-h1-xs">
     <div>
       h1 XS
     </div>
@@ -302,7 +302,7 @@ exports[`Styles/Typography Primary smoke-test 1`] = `
       .ui-text-h1.text-h1-xs
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xl">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xl">
     <div>
       h2 XL
     </div>
@@ -318,7 +318,7 @@ exports[`Styles/Typography Primary smoke-test 1`] = `
       .ui-text-h2
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xs">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-h2 text-h2-xs">
     <div>
       h2 XS
     </div>

@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import React from "react";
+import cn from "../utils/cn";
 
 export default {
   title: "Styles/Typography",
@@ -53,7 +53,7 @@ const styles = {
 const fontCell = (style) => (
   <div
     key={style.label}
-    className={clsx(
+    className={cn(
       "rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
       style.className,
     )}

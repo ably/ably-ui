@@ -1,11 +1,11 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import clsx from "clsx";
 import throttle from "lodash.throttle";
 import type { PricingDataFeature } from "./types";
 import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
 import { IconName } from "../Icon/types";
 import Tooltip from "../Tooltip";
+import cn from "../utils/cn";
 
 export type PricingCardsProps = {
   data: PricingDataFeature[];
@@ -42,10 +42,9 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (
       <div
-        className={clsx(
-          "flex items-center justify-center w-full @[920px]:w-20",
-          { "m-8": delimiter !== "blank" },
-        )}
+        className={cn("flex items-center justify-center w-full @[920px]:w-20", {
+          "m-8": delimiter !== "blank",
+        })}
       >
         {delimiter !== "blank" ? (
           <Icon
@@ -97,7 +96,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
       }
     >
       <div
-        className={clsx(
+        className={cn(
           "gap-8",
           delimiter ? gridRules.delimited : gridRules.nonDelimited,
         )}
@@ -107,7 +106,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
             <Fragment key={title.content}>
               {delimiterColumn(index)}
               <div
-                className={clsx(
+                className={cn(
                   "relative border flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group min-w-[272px] backdrop-blur",
                   borderClasses(border?.color)?.border ??
                     "border-neutral-200 dark:border-neutral-1100",
@@ -120,7 +119,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
               >
                 {border ? (
                   <div
-                    className={clsx(
+                    className={cn(
                       "flex items-center absolute z-10 -top-12 self-center font-semibold uppercase text-neutral-000 font-sans h-24 text-[11px] px-[10px] py-2 rounded-2xl select-none tracking-widen-0.1",
                       borderClasses(border?.color)?.border,
                       borderClasses(border?.color)?.bg,
@@ -130,7 +129,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   </div>
                 ) : null}
                 <div
-                  className={clsx(
+                  className={cn(
                     "absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 dark:bg-neutral-1300 transition-[colors,opacity] opacity-25",
                     {
                       "group-hover:bg-neutral-100 dark:group-hover:bg-neutral-1200 group-hover:opacity-100":
@@ -139,13 +138,13 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   )}
                 ></div>
                 <div
-                  className={clsx(`relative z-10 flex flex-col gap-24`, {
+                  className={cn(`relative z-10 flex flex-col gap-24`, {
                     "@[520px]:flex-1 @[920px]:flex-none": delimiter,
                   })}
                 >
                   <div>
                     <div className="flex items-center mb-12">
-                      <p className={clsx(title.className, title.color)}>
+                      <p className={cn(title.className, title.color)}>
                         {title.content}
                       </p>
                       {title.tooltip ? (
@@ -157,7 +156,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                       ) : null}
                     </div>
                     <p
-                      className={clsx(
+                      className={cn(
                         "ui-text-p1 min-h-[20px]",
                         description.className,
                         description.color,
@@ -170,7 +169,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     </p>
                   </div>
                   <div
-                    className={clsx("flex items-end gap-8", {
+                    className={cn("flex items-end gap-8", {
                       "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end":
                         delimiter,
                     })}
@@ -185,7 +184,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   {cta ? (
                     <div className="group">
                       <FeaturedLink
-                        additionalCSS={clsx(
+                        additionalCSS={cn(
                           "text-center px-24 !py-12 hover:text-neutral-000 cursor-pointer",
                           cta.className ??
                             "ui-btn bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300",
@@ -210,13 +209,13 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         {title}
                       </p>
                       <div
-                        className={clsx({ "flex flex-col gap-4": !delimiter })}
+                        className={cn({ "flex flex-col gap-4": !delimiter })}
                       >
                         {items.map((item, index) =>
                           Array.isArray(item) ? (
                             <div
                               key={item[0]}
-                              className={clsx(
+                              className={cn(
                                 "flex justify-between gap-16 px-8 -mx-8",
                                 index === 0 ? "py-8" : "py-4",
                                 index > 0 && index % 2 === 0
@@ -227,7 +226,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                               {item.map((subItem, subIndex) => (
                                 <span
                                   key={subItem}
-                                  className={clsx(
+                                  className={cn(
                                     "ui-text-p3",
                                     index === 0 ? "font-bold" : "font-medium",
                                     "text-neutral-1000 dark:text-neutral-300",
@@ -250,7 +249,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                                 />
                               ) : null}
                               <div
-                                className={clsx(
+                                className={cn(
                                   `flex-1 font-medium text-neutral-1000 dark:text-neutral-300`,
                                   listItemColors ? "ui-text-p3" : "ui-text-p2",
                                 )}

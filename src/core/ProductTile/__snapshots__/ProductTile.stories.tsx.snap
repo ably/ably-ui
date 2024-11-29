@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-test 1`] = `
-<div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer">
+<div class="rounded-lg p-12 flex flex-col gap-8 transition-colors bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer">
   <div class="flex gap-12 items-center">
     <div class="p-1 rounded-lg bg-gradient-to-t dark:bg-gradient-to-b from-neutral-400 dark:from-neutral-900"
          style="width: 40px; height: 40px;"

@@ -1,6 +1,6 @@
 import * as Switch from "@radix-ui/react-switch";
-import clsx from "clsx";
 import React from "react";
+import cn from "./utils/cn";
 
 type ToggleProps = {
   id: string;
@@ -12,7 +12,7 @@ const Toggle: React.FC<ToggleProps> = ({ id, label, className, ...props }) => {
   return (
     <div className="flex items-center">
       <Switch.Root
-        className={clsx(
+        className={cn(
           "p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-gui-focus",
           className,
         )}

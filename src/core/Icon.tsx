@@ -1,10 +1,10 @@
 import React, { CSSProperties, useCallback } from "react";
-import clsx from "clsx";
 
 import { defaultIconSecondaryColor } from "./Icon/secondary-colors";
 import { IconName, IconSize } from "./Icon/types";
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import { convertTailwindClassToVar } from "./styles/colors/utils";
+import cn from "./utils/cn";
 
 export type IconProps = {
   name: IconName;
@@ -39,7 +39,7 @@ const Icon = ({
 
       return (
         <svg
-          className={clsx(
+          className={cn(
             { [`${color}`]: color },
             { [`${additionalCSS}`]: additionalCSS },
             {
