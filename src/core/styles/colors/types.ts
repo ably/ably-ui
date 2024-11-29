@@ -147,7 +147,7 @@ const guiColors = [
   "gui-visited",
 ] as const;
 
-const aliasedColors = [
+export const aliasedColors = [
   "white",
   "extra-light-grey",
   "light-grey",

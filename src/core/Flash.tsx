@@ -105,7 +105,9 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
     setClosed(true);
 
     setTimeout(() => {
-      id && removeFlash(id);
+      if (id) {
+        removeFlash(id);
+      }
     }, 100);
   };
 

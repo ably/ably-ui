@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import TabMenu, { TabMenuProps } from "../TabMenu";
 import cn from "../utils/cn";
@@ -14,7 +14,7 @@ const Template: StoryFn<TabMenuProps> = (args) => (
   </div>
 );
 
-const ExampleContent = ({ children }) => (
+const ExampleContent = ({ children }: PropsWithChildren) => (
   <div className="p-8 border border-neutral-200 mt-16 rounded-lg">
     {children}
   </div>
@@ -26,14 +26,14 @@ export const Default = Template.bind({});
 Default.args = {
   tabs: ["Long Tab 1", "Long Long Tab 2", "Tab 3"],
   contents: [
-    <ExampleContent>
+    <ExampleContent key="content-1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </ExampleContent>,
-    <ExampleContent>
+    <ExampleContent key="content-2">
       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
       cubilia curae;
     </ExampleContent>,
-    <ExampleContent>
+    <ExampleContent key="content-3">
       Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
     </ExampleContent>,
   ],
