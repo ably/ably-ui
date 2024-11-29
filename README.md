@@ -37,7 +37,8 @@ npm install @ably/ui
 
 # or
 
-yarn add @ably/ui # Preferred
+yarn add @ably/ui
+pnpm add @ably/ui # Preferred
 ```
 
 To attach the imported JavaScript from the `Core` module to the `window` object:
@@ -175,11 +176,11 @@ An important part of ably-ui is ensuring the produced UI is accessible to as wid
 
 To visualise the assets in `ably-ui`, there is a Storybook instance, which serves as both a showcase and a development environment.
 
-Firstly, ensure you have all of the required project dependencies by running `yarn` in the project root.
+Firstly, ensure you have all of the required project dependencies by running `pnpm i` in the project root.
 
-Then, to run Storybook, run `yarn storybook` in the project root - it should open automatically in your browser.
+Then, to run Storybook, run `pnpm storybook` in the project root - it should open automatically in your browser.
 
-To build Storybook as if it was a statically built site (i.e. what it looks like when deployed), run `yarn build-storybook` from the project root, go to the generated directory with `cd preview`, and then run `npx http-server` (accepting the prompt to install that package if you haven't done already). The built site will be available at the listed local URL.
+To build Storybook as if it was a statically built site (i.e. what it looks like when deployed), run `pnpm build-storybook` from the project root, go to the generated directory with `cd preview`, and then run `npx http-server` (accepting the prompt to install that package if you haven't done already). The built site will be available at the listed local URL.
 
 #### Publishing pre-release packages for review apps
 
@@ -291,8 +292,8 @@ This will release the packages and update library and create & push the commit &
 
 `ably-ui` uses Storybook's `test-runner`, which on push automatically turns all stories into executable tests, underpinned by Jest and Playright. This means that we don't have to explicitly write tests for stories, though we have the ability to write [https://storybook.js.org/docs/writing-stories/play-function](play functions), which allow us to test more detailed interactions. More information on the capabilities of `test-runner` can be found [https://storybook.js.org/docs/writing-tests/test-runner](here).
 
-Snapshots are also assessed via `test-runner`. To generate new snapshots, run `yarn test:update-snapshots`.
+Snapshots are also assessed via `test-runner`. To generate new snapshots, run `pnpm test:update-snapshots`.
 
-You can run the tests by either running a dev instance of Storybook locally and then running `yarn test`, or by pushing a branch to GitHub.
+You can run the tests by either running a dev instance of Storybook locally and then running `pnpm test`, or by pushing a branch to GitHub.
 
 A related quirk to mention here is that the SWC config has been renamed to `.swc` (away from the default `.swcrc`), as `test-runner` also uses SWC and its config conflicted with ours.

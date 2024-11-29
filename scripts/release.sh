@@ -7,10 +7,10 @@ env
 VERSION=$1
 
 echo "Install packages, making sure they are up to date"
-yarn --frozen-lockfile
+pnpm i --frozen-lockfile
 
 echo "Build library"
-NODE_ENV=production yarn build
+NODE_ENV=production pnpm build
 
 echo "Publish the npm package to the registry"
-yarn publish --no-git-tag-version --new-version $VERSION
+pnpm publish --no-git-tag-version --new-version $VERSION
