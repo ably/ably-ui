@@ -55,7 +55,7 @@
     "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.2",
     "typescript": "5.7.2",
-    "vite": "^5.2.12"
+    "vite": "^6.0.0"
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
