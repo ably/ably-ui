@@ -5,7 +5,6 @@ import {
   AccordionTrigger,
   Accordion as RadixAccordion,
 } from "@radix-ui/react-accordion";
-import clsx from "clsx";
 
 import Icon from "./Icon";
 import type { IconName } from "./Icon/types";
@@ -20,6 +19,7 @@ import {
   isNonTransparentTheme,
   isStaticTheme,
 } from "./Accordion/utils";
+import cn from "./utils/cn";
 
 type AccordionRowProps = {
   children: ReactNode;
@@ -85,13 +85,13 @@ const AccordionRow = ({
   return (
     <AccordionItem
       value={rowKey}
-      className={clsx({
+      className={cn({
         [`${border}`]: border && !options?.hideBorders,
       })}
     >
       <AccordionTrigger
         onClick={onClick}
-        className={clsx({
+        className={cn({
           "flex w-full group/accordion-trigger py-16 ui-text-p1 font-bold text-left items-center gap-12 transition-colors":
             true,
           "px-16 mb-16 rounded-lg": isNonTransparentTheme(theme),
@@ -125,7 +125,7 @@ const AccordionRow = ({
         ) : null}
       </AccordionTrigger>
       <AccordionContent
-        className={clsx({
+        className={cn({
           "ui-text-p2 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down":
             true,
           [options?.contentCSS ?? ""]: options?.contentCSS,

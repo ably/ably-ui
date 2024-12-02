@@ -1,6 +1,6 @@
 import React from "react";
 import useSWR from "swr";
-import clsx from "clsx";
+import cn from "./utils/cn";
 
 // Our SWR fetcher function
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -35,7 +35,7 @@ export const StatusIcon = ({
 
   return (
     <span
-      className={clsx(
+      className={cn(
         "inline-flex h-[1rem] aspect-square m-[0.25rem] rounded-full",
         indicatorClass(data?.status?.indicator),
         { "animate-pulse": isLoading || error },

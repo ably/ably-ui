@@ -21,7 +21,7 @@ exports[`Components/Featured Link Disabled smoke-test 1`] = `
    style="--featured-link-icon-size: var(--fs-p2);"
 >
   Featured link
-  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] "
+  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left]"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-link-arrow">

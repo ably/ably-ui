@@ -1,8 +1,8 @@
 import React from "react";
-import clsx from "clsx";
 import EncapsulatedIcon from "./Icon/EncapsulatedIcon";
 import FeaturedLink from "./FeaturedLink";
 import { ProductName, products } from "./ProductTile/data";
+import cn from "./utils/cn";
 
 type ProductTileProps = {
   name: ProductName;
@@ -23,7 +23,7 @@ const ProductTile = ({
 
   return (
     <div
-      className={clsx(
+      className={cn(
         "rounded-lg p-12 flex flex-col gap-8 transition-colors",
         { "bg-neutral-1200 dark:bg-neutral-100": selected },
         {
@@ -51,14 +51,14 @@ const ProductTile = ({
           />
         ) : null}
         <div
-          className={clsx(
+          className={cn(
             "flex",
             { "flex-row items-center gap-4": unavailable },
             { "flex-col justify-center": !unavailable },
           )}
         >
           <p
-            className={clsx(
+            className={cn(
               "font-medium",
               { "text-neutral-300 dark:text-neutral-1000": selected },
               { "text-neutral-1000 dark:text-neutral-300": !selected },
@@ -69,7 +69,7 @@ const ProductTile = ({
             Ably{" "}
           </p>
           <p
-            className={clsx(
+            className={cn(
               "ui-text-p2 font-bold",
               { "text-neutral-000 dark:text-neutral-1300": selected },
               { "text-neutral-1300 dark:text-neutral-000": !selected },
@@ -88,7 +88,7 @@ const ProductTile = ({
         </div>
       ) : null}
       <p
-        className={clsx(
+        className={cn(
           "ui-text-p3 font-medium leading-snug",
           { "text-neutral-300 dark:text-neutral-1000": selected },
           { "text-neutral-800 dark:text-neutral-500": !selected },

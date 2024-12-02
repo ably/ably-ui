@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { IconName } from "./Icon/types";
 import Icon from "./Icon";
-import clsx from "clsx";
+import cn from "./utils/cn";
 
 export type ButtonType = "priority" | "primary" | "secondary";
 
@@ -73,7 +73,7 @@ const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
 }) => {
   return (
     <button
-      className={clsx(
+      className={cn(
         buttonClasses[variant][size ?? "md"],
         { [iconModifierClasses[size ?? "md"].left]: leftIcon },
         { [iconModifierClasses[size ?? "md"].right]: rightIcon },
