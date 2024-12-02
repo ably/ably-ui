@@ -6,6 +6,11 @@ PACKAGE_SUFFIX="${2}"
 # See https://coderwall.com/p/fkfaqq/safer-bash-scripts-with-set-euxo-pipefail
 set -euo pipefail
 
+if ! command -v pnpm >/dev/null 2>&1; then
+  echo "Error: pnpm is required but not installed. Please install pnpm first."
+  exit 1
+fi
+
 if [ -z $ABLY_UI_VERSION ] || [ -z $PACKAGE_SUFFIX ]; then
 	echo $0: "Error: Missing Ably UI Version OR Package Suffix"
 	echo $0: "Usage: update-pre-release-versions.sh ABLY_UI_VERSION PACKAGE_SUFFIX"
@@ -17,7 +22,7 @@ VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 TAG=v$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 
 echo "> Commit version and publish update to $TAG"
-git add package.json yarn.lock
+git add package.json pnpm-lock.yaml
 git commit -m "Publish $TAG"
 
 echo "> Tag commit with $TAG"
