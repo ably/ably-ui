@@ -196,9 +196,11 @@
     --fs-btn1: 1rem;
     --fs-btn2: 0.938rem;
     --fs-btn3: 0.875rem;
+    --fs-btn4: 0.813rem;
     --fs-menu1: 1rem;
     --fs-menu2: 0.938rem;
     --fs-menu3: 0.875rem;
+    --fs-menu4: 0.813rem;
     --fs-quote: 1.25rem;
     --fs-code: 0.813rem;
     --fs-code2: 0.688rem;
@@ -256,7 +258,6 @@
     --spacing-media: 0.5rem; /* 8px */
     --spacing-input: 0.8125rem 1rem 0.75rem; /* 13px 16px 12px */
     --spacing-overline: 0.6875rem 0; /* 11px 0 */
-    --spacing-inline-code: 0.375rem 0.5rem; /* 6px 8px */
 
     /* In components, when looking at implementing viewport margin and spacing between elements,
        the values in the comments can be used as guide as they represent the grid the elements (should) sit on.

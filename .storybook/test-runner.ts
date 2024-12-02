@@ -4,6 +4,7 @@ const flakyStories = [
   "components-status",
   "components-meganav",
   "components-accordion",
+  "components-footer",
   "features-pricing-cards",
 ];
 

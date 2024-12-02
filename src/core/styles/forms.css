@@ -14,7 +14,12 @@
   .ui-checkbox-styled {
     @apply w-20 h-20 mr-16;
     @apply bg-white flex flex-shrink-0 justify-center items-center;
-    @apply border border-dark-grey rounded-md focus-within:border-active-orange;
+    @apply border border-neutral-500 rounded-md focus-within:border-active-orange;
+  }
+
+  .ui-theme-dark .ui-checkbox-styled,
+  .ui-theme-dark .ui-checkbox-input:focus + .ui-checkbox-styled {
+    @apply bg-neutral-1300 border-neutral-900;
   }
 
   .ui-checkbox-styled-tick {
@@ -23,12 +28,17 @@
 
   .ui-checkbox-label-p1 {
     @apply select-none;
-    @apply text-p1 font-medium text-cool-black;
+    @apply text-p1 font-medium text-neutral-1300;
   }
 
   .ui-checkbox-label-p2 {
     @apply select-none;
-    @apply text-p2 font-medium text-cool-black;
+    @apply text-p2 font-medium text-neutral-1300;
+  }
+
+  .ui-theme-dark .ui-checkbox-label-p1,
+  .ui-theme-dark .ui-checkbox-label-p2 {
+    @apply text-neutral-000;
   }
 
   .ui-checkbox-input:focus + .ui-checkbox-styled {
@@ -45,7 +55,15 @@
   }
 
   .ui-checkbox-input:disabled + .ui-checkbox-styled {
-    @apply bg-gui-unavailable border;
+    @apply bg-neutral-300;
+  }
+
+  .ui-theme-dark .ui-checkbox-input:disabled + .ui-checkbox-styled {
+    @apply bg-neutral-1000 border border-gui-unavailable-dark;
+  }
+
+  .ui-theme-dark .ui-checkbox-input:checked + .ui-checkbox-styled {
+    @apply bg-active-orange border-gui-unavailable-dark;
   }
 
   .ui-textarea {
@@ -78,6 +96,10 @@
     @apply absolute cursor-pointer inset-0 transition-all bg-neutral-600 rounded-full;
   }
 
+  .ui-theme-dark .ui-toggle-slider {
+    @apply bg-neutral-700;
+  }
+
   .ui-toggle-slider:before {
     @apply absolute h-[28px] w-[28px] left-2 bottom-2 bg-white rounded-full transition-transform drop-shadow-toggle;
     content: "";
@@ -100,24 +122,40 @@
   }
 
   .ui-input {
-    @apply ui-text-p2 font-medium bg-light-grey rounded p-input w-full leading-none appearance-none border border-mid-grey transition-colors placeholder-neutral-800;
-    @apply hover:border-neutral-800 focus:bg-white focus:outline-gui-focus;
-    @apply max-w-screen-sm;
+    @apply ui-text-p2 font-medium bg-neutral-100 rounded p-input w-full leading-none appearance-none border border-neutral-400 transition-colors placeholder-neutral-600;
+    @apply hover:border-neutral-700 focus:bg-white focus:outline-gui-focus focus:outline-offset-0 focus:outline-4;
+    @apply max-w-screen-sm invalid:border-gui-error-red;
   }
 
-  .ui-input-dark {
-    @apply bg-neutral-1200 hover:bg-neutral-1200 focus:bg-neutral-1000 text-neutral-300;
+  .ui-theme-dark .ui-input {
+    @apply bg-neutral-1200 hover:bg-neutral-1000 focus:bg-neutral-1000 text-neutral-300 border-neutral-900 placeholder-neutral-700 invalid:border-gui-error-red;
   }
 
   .ui-input:disabled {
     @apply bg-gui-unavailable placeholder-neutral-500 text-neutral-500;
   }
 
-  .ui-input-dark:disabled {
-    @apply text-neutral-800 placeholder-neutral-800;
+  .ui-theme-dark .ui-input:disabled {
+    @apply bg-gui-unavailable-dark text-neutral-800 placeholder-neutral-800;
   }
 
-  .ui-input {
-    @apply invalid:border-gui-error-red;
+  .ui-radio {
+    @apply border border-neutral-600 w-20 h-20 appearance-none cursor-pointer rounded-full focus:outline-gui-blue-focus focus:outline-4;
+  }
+
+  .ui-radio:checked {
+    @apply bg-orange-600 border-orange-600 border;
+  }
+
+  .ui-radio:checked::after {
+    @apply content-[''] mt-[5px] w-8 h-8 block bg-white rounded-full m-auto;
+  }
+
+  .ui-radio:disabled {
+    @apply bg-neutral-300;
+  }
+
+  .ui-theme-dark .ui-radio:disabled {
+    @apply bg-neutral-1000;
   }
 }

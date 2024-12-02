@@ -4,19 +4,19 @@
   }
 
   .ui-button-lg-base {
-    @apply ui-button-base ui-gui-button1 h-[56px] px-[28px] py-[17px] gap-12 [&>svg]:!w-24 [&>svg]:!h-24;
+    @apply ui-button-base ui-text-button1 h-[56px] px-[28px] py-[17px] gap-12 [&>svg]:!w-24 [&>svg]:!h-24;
   }
 
   .ui-button-md-base {
-    @apply ui-button-base ui-gui-button2 h-[48px] px-24 py-[13.5px] gap-[10px] [&>svg]:!w-24 [&>svg]:!h-24;
+    @apply ui-button-base ui-text-button2 h-[48px] px-24 py-[13.5px] gap-[10px] [&>svg]:!w-24 [&>svg]:!h-24;
   }
 
   .ui-button-sm-base {
-    @apply ui-button-base ui-gui-button3 h-[40px] px-20 py-[10px] gap-8 [&>svg]:!w-20 [&>svg]:!h-20;
+    @apply ui-button-base ui-text-button3 h-[40px] px-20 py-[10px] gap-8 [&>svg]:!w-20 [&>svg]:!h-20;
   }
 
   .ui-button-xs-base {
-    @apply ui-button-base ui-gui-button4 h-[36px] px-12 py-[9px] gap-6 [&>svg]:!w-16 [&>svg]:!h-16;
+    @apply ui-button-base ui-text-button4 h-[36px] px-12 py-[9px] gap-6 [&>svg]:!w-16 [&>svg]:!h-16;
   }
 
   .ui-button-disabled-base {
@@ -36,19 +36,19 @@
   }
 
   .ui-button-primary-base {
-    @apply bg-neutral-1300 text-neutral-000 hover:bg-neutral-1200 active:bg-neutral-1100 ui-button-disabled-base;
+    @apply bg-neutral-1300 text-neutral-000 hover:bg-neutral-1100 active:bg-neutral-1200 ui-button-disabled-base;
   }
 
   .ui-theme-dark .ui-button-primary-base {
-    @apply bg-neutral-000 text-neutral-1300 hover:bg-neutral-100 active:bg-neutral-200 ui-button-disabled-base-dark;
+    @apply bg-neutral-000 text-neutral-1300 hover:bg-neutral-200 active:bg-neutral-100 ui-button-disabled-base-dark;
   }
 
   .ui-button-secondary-base {
-    @apply text-neutral-1300 border border-neutral-600 hover:border-neutral-700 active:border-neutral-400 active:text-neutral-1000 disabled:border-gui-unavailable disabled:text-gui-unavailable;
+    @apply text-neutral-1300 hover:text-neutral-1100 active:text-neutral-1200 border border-neutral-600 hover:border-neutral-800 active:border-neutral-700 disabled:border-gui-unavailable disabled:text-gui-unavailable;
   }
 
   .ui-theme-dark .ui-button-secondary-base {
-    @apply text-neutral-000 border-neutral-700 hover:border-neutral-600 active:border-neutral-800 active:text-neutral-300 disabled:border-gui-unavailable-dark disabled:text-gui-unavailable-dark;
+    @apply text-neutral-000 hover:text-neutral-200 active:text-neutral-100 border-neutral-700 hover:border-neutral-500 active:border-neutral-600 disabled:border-gui-unavailable-dark disabled:text-gui-unavailable-dark;
   }
 
   .ui-button-priority-lg {
