@@ -176,19 +176,14 @@
   .ui-link {
     @apply text-gui-default;
     @apply hover:text-gui-hover active:text-gui-active disabled:text-gui-unavailable;
-    @apply focus:text-gui-default focus:outline-gui-focus;
+    @apply focus:text-gui-default focus:outline-none focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-focus;
     @apply no-underline;
   }
 
   .ui-link-neutral {
     @apply hover:text-dark-grey active:text-cool-black disabled:text-gui-unavailable;
-    @apply focus:text-charcoal-grey;
+    @apply focus:text-charcoal-grey focus:outline-none focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-focus;
     @apply underline;
-  }
-
-  /* focus:outline-gui-focus-neutral does not get created under Tailwind 3.3.5, not sure why */
-  .ui-link-neutral:focus {
-    outline: 2px solid var(--color-neutral-000);
   }
 
   .ui-figcaption {

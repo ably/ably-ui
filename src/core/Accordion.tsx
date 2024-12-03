@@ -92,12 +92,14 @@ const AccordionRow = ({
       <AccordionTrigger
         onClick={onClick}
         className={cn({
-          "flex w-full group/accordion-trigger py-16 ui-text-p1 font-bold text-left items-center gap-12 transition-colors":
+          "flex w-full group/accordion-trigger py-16 ui-text-p1 font-bold text-left items-center gap-12 transition-colors focus:outline-none":
             true,
           "px-16 mb-16 rounded-lg": isNonTransparentTheme(theme),
           "rounded-none": !isNonTransparentTheme(theme),
-          "pointer-events-none focus:outline-none": isStaticTheme(theme),
-          "focus:outline-gui-blue-focus": !isStaticTheme(theme),
+          "pointer-events-none focus-visible:outline-none":
+            isStaticTheme(theme),
+          "focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-blue-focus":
+            !isStaticTheme(theme),
           "sticky top-0": sticky,
           [`${bg} ${hoverBg} ${text}`]: !(selectable && isOpen),
           [`${selectableBg} ${selectableText}`]: selectable && isOpen,
