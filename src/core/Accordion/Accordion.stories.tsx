@@ -6,7 +6,9 @@ import { accordionThemes } from "./types";
 const loremText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.";
 
-const lorem = <p className="mb-16">{loremText}</p>;
+const lorem = (
+  <p className="mb-16 text-neutral-1300 dark:text-neutral-000">{loremText}</p>
+);
 
 const textarea = (
   <textarea
@@ -53,12 +55,11 @@ const AccordionPresentation = ({ data, options }: AccordionProps) => (
     {accordionThemes
       .filter((theme) => !theme.toLowerCase().includes("static"))
       .map((theme) => (
-        <div
-          key={theme}
-          className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
-        >
+        <div key={theme} className={"p-16 rounded-lg"}>
           <p
-            className={`ui-text-p3 mb-16 text-center font-mono ${theme.includes("dark") ? "text-neutral-000" : ""}`}
+            className={
+              "ui-text-p3 mb-16 text-center text-neutral-1300 dark:text-neutral-000 font-mono"
+            }
           >
             {theme}
           </p>
@@ -208,7 +209,7 @@ export const StaticAndFullyOpen = {
     docs: {
       description: {
         story:
-          "Setting `fullyOpen` on options will set all sections to be open by default. This is useful for static themes (usable with the `static` and `darkStatic` theme values).",
+          "Setting `fullyOpen` on options will set all sections to be open by default. This is useful for static themes (usable with the `static` theme).",
       },
     },
   },

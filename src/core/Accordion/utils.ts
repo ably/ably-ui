@@ -1,56 +1,33 @@
 import { AccordionTheme, AccordionThemeColors } from "./types";
 
 export const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
-  dark: {
-    bg: "bg-neutral-1200",
-    hoverBg: "hover:bg-neutral-1100",
-    text: "text-white",
-    toggleIconColor: "text-orange-600",
-    selectableBg: "bg-neutral-300",
-    selectableText: "text-neutral-1300",
-  },
-  light: {
-    bg: "bg-neutral-200",
-    hoverBg: "hover:bg-neutral-300",
-    text: "text-neutral-1300",
-    toggleIconColor: "text-neutral-1000",
-    selectableBg: "bg-neutral-1200",
-    selectableText: "text-white",
+  default: {
+    bg: "bg-neutral-200 dark:bg-neutral-1100",
+    hoverBg: "hover:bg-neutral-300 dark:hover:bg-neutral-1100",
+    text: "text-neutral-1300 dark:text-white",
+    toggleIconColor: "text-neutral-1000 dark:text-orange-600",
+    selectableBg: "bg-neutral-1200 dark:bg-neutral-300",
+    selectableText: "text-neutral-000 dark:text-neutral-1300",
   },
   transparent: {
-    bg: "bg-transparent",
-    hoverBg: "hover:bg-transparent",
-    text: "text-neutral-1000",
-    toggleIconColor: "text-dark-grey",
-    border: "border-neutral-500 border-b last:border-none",
-  },
-  darkTransparent: {
-    bg: "bg-transparent",
-    hoverBg: "hover:bg-transparent",
-    text: "text-neutral-000",
-    toggleIconColor: "text-orange-600",
-    border: "border-neutral-900 border-b last:border-none",
+    bg: "bg-transparent dark:bg-transparent",
+    hoverBg: "hover:bg-transparent dark:hover:bg-transparent",
+    text: "text-neutral-1000 dark:text-neutral-000",
+    toggleIconColor: "text-dark-grey dark:text-orange-600",
+    border:
+      "border-neutral-500 border-b last:border-none dark:border-neutral-900",
   },
   static: {
-    bg: "bg-neutral-200",
-    hoverBg: "hover:bg-neutral-200",
-    text: "text-neutral-1300",
-    toggleIconColor: "text-neutral-200",
-    selectableBg: "bg-neutral-1200",
-    selectableText: "text-white",
-  },
-  darkStatic: {
-    bg: "bg-neutral-1200",
-    hoverBg: "hover:bg-neutral-1200",
-    text: "text-white",
-    toggleIconColor: "text-neutral-1200",
-    selectableBg: "bg-neutral-1200",
-    selectableText: "text-neutral-1300",
+    bg: "bg-neutral-200 dark:bg-neutral-1200",
+    hoverBg: "hover:bg-neutral-200 dark:hover:bg-neutral-1200",
+    text: "text-neutral-1300 dark:text-white",
+    toggleIconColor: "text-neutral-200 dark:text-neutral-1200",
+    selectableBg: "bg-neutral-1200 dark:bg-neutral-1200",
+    selectableText: "text-white dark:text-neutral-1300",
   },
 };
 
 export const isNonTransparentTheme = (theme: AccordionTheme) =>
-  !["transparent", "darkTransparent"].includes(theme);
+  theme !== "transparent";
 
-export const isStaticTheme = (theme: AccordionTheme) =>
-  ["static", "darkStatic"].includes(theme);
+export const isStaticTheme = (theme: AccordionTheme) => theme === "static";
