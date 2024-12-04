@@ -1,6 +1,6 @@
 @layer components {
   .ui-button-base {
-    @apply inline-flex rounded justify-center items-center gap-12 text-neutral-000 transition-colors focus:outline-4 focus:outline-gui-blue-focus disabled:cursor-not-allowed;
+    @apply inline-flex rounded justify-center items-center gap-12 text-neutral-000 transition-colors focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-blue-focus disabled:cursor-not-allowed;
   }
 
   .ui-button-lg-base {

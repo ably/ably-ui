@@ -233,7 +233,7 @@ exports[`Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       Low-level APIs to build any realtime experience
     </p>
     <a href="/docs/products/channels"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
+       class="font-sans font-bold group/featured-link focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       View docs
@@ -303,7 +303,7 @@ exports[`Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       Create collaborative environments in a few lines of code
     </p>
     <a href="/docs/products/spaces"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
+       class="font-sans font-bold group/featured-link focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore
@@ -373,7 +373,7 @@ exports[`Components/Product Tile SelectedProductTiles smoke-test 1`] = `
       Simple APIs to build realtime tracking applications
     </p>
     <a href="/docs/products/asset-tracking"
-       class="font-sans font-bold block text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus group/featured-link ui-text-p2 py-8 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
+       class="font-sans font-bold group/featured-link focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2 ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
        style="--featured-link-icon-size: var(--fs-p2);"
     >
       Explore

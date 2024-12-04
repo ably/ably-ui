@@ -13,7 +13,7 @@ const Toggle: React.FC<ToggleProps> = ({ id, label, className, ...props }) => {
     <div className="flex items-center">
       <Switch.Root
         className={cn(
-          "p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-gui-focus",
+          "p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-focus",
           className,
         )}
         id={id}

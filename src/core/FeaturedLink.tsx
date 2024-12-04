@@ -2,6 +2,7 @@ import React, { CSSProperties, ReactNode } from "react";
 
 import Icon from "./Icon";
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
+import cn from "./utils/cn";
 
 type FeaturedLinkProps = {
   url: string;
@@ -54,9 +55,17 @@ const FeaturedLink = ({
   return (
     <a
       {...(onClick ? {} : { href: url })}
-      className={`font-sans font-bold block ${disabled ? "text-gui-unavailable pointer-events-none" : "text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-gui-focus"} group/featured-link ui-${textSize} ${
-        flush ? "" : "py-8"
-      } ${additionalCSS}`}
+      className={cn(
+        "font-sans font-bold block group/featured-link",
+        { "text-gui-unavailable pointer-events-none": disabled },
+        {
+          "text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus":
+            !disabled,
+        },
+        { "py-8": !flush },
+        `ui-${textSize}`,
+        additionalCSS,
+      )}
       style={
         {
           "--featured-link-icon-size": `var(${textSize.replace(
@@ -74,7 +83,10 @@ const FeaturedLink = ({
             name="icon-gui-link-arrow"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
-            additionalCSS={`align-middle mr-8 relative -top-1 -right-4 transition-[right] ${disabled ? "" : "group-hover/featured-link:right-0"} transform rotate-180`}
+            additionalCSS={cn(
+              "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180",
+              { "group-hover/featured-link:right-0": !disabled },
+            )}
           />
           {children}
         </>
@@ -85,7 +97,10 @@ const FeaturedLink = ({
             name="icon-gui-link-arrow"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
-            additionalCSS={`align-middle ml-8 relative -top-1 -left-4 transition-[left] ${disabled ? "" : "group-hover/featured-link:left-0"}`}
+            additionalCSS={cn(
+              "align-middle ml-8 relative -top-1 -left-4 transition-[left]",
+              { "group-hover/featured-link:left-0": !disabled },
+            )}
           />
         </>
       )}

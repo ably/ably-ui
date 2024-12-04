@@ -85,7 +85,7 @@ const MeganavItemsMobile = ({
                 />
                 <button
                   type="button"
-                  className="absolute top-12 right-16 p-0 focus:outline-gui-focus m-0 md:hidden invisible"
+                  className="absolute top-12 right-16 p-0 focus:outline-none focus-visible:outline-gui-focus m-0 md:hidden invisible"
                   data-id="meganav-search-input-clear"
                 >
                   <Icon
