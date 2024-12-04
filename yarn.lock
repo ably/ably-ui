@@ -1759,9 +1759,9 @@
     "@storybook/theming" "^8.4.0"
 
 "@storybook/test-runner@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.20.0.tgz#076bdc77cd2fa85c5a9e8332c0d27213fdb1b27f"
-  integrity sha512-0cSNW61/XYg8jtcRlk8qc5fJa8qKSq7tvSpvikwS7zcXkKgfu6fbGX56ErxnvidmyCyXjMe/j0UHzLACzc2nTg==
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.20.1.tgz#e2efa6266d512312a6b810db376da2919008cccd"
+  integrity sha512-3WU/th/uncIR6vpQDK9hKjiZjmczsluoLbgkRV7ufxY9IgHCGcbIjvT5EPS+XZIaOrNGjaPsyB5cE1okKn9iSA==
   dependencies:
     "@babel/core" "^7.22.5"
     "@babel/generator" "^7.22.5"
