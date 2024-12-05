@@ -24,3 +24,8 @@ Disabled.args = {
   checked: false,
   disabled: true,
 };
+
+export const Small = Template.bind({});
+Small.args = {
+  size: "small",
+};

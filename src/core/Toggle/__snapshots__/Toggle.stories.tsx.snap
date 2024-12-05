@@ -7,10 +7,10 @@ exports[`Components/Toggle Checked smoke-test 1`] = `
           aria-checked="true"
           data-state="checked"
           value="on"
-          class="p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus-base"
+          class="p-0 bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-focus w-[56px] h-32"
   >
     <span data-state="checked"
-          class="block h-[28px] w-[28px] bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle translate-x-2 data-[state=checked]:translate-x-[26px] transition-transform"
+          class="block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform h-[28px] w-[28px] translate-x-2  data-[state=checked]:translate-x-[26px]"
     >
     </span>
   </button>
@@ -24,10 +24,10 @@ exports[`Components/Toggle Default smoke-test 1`] = `
           aria-checked="false"
           data-state="unchecked"
           value="on"
-          class="p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus-base"
+          class="p-0 bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-focus w-[56px] h-32"
   >
     <span data-state="unchecked"
-          class="block h-[28px] w-[28px] bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle translate-x-2 data-[state=checked]:translate-x-[26px] transition-transform"
+          class="block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform h-[28px] w-[28px] translate-x-2  data-[state=checked]:translate-x-[26px]"
     >
     </span>
   </button>
@@ -43,11 +43,28 @@ exports[`Components/Toggle Disabled smoke-test 1`] = `
           data-disabled
           disabled
           value="on"
-          class="p-0 h-32 w-[56px] bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus-base"
+          class="p-0 bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-focus w-[56px] h-32"
   >
     <span data-state="unchecked"
           data-disabled
-          class="block h-[28px] w-[28px] bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle translate-x-2 data-[state=checked]:translate-x-[26px] transition-transform"
+          class="block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform h-[28px] w-[28px] translate-x-2  data-[state=checked]:translate-x-[26px]"
+    >
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Components/Toggle Small smoke-test 1`] = `
+<div class="flex items-center">
+  <button type="button"
+          role="switch"
+          aria-checked="false"
+          data-state="unchecked"
+          value="on"
+          class="p-0 bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-gui-focus w-[42px] h-[24px]"
+  >
+    <span data-state="unchecked"
+          class="block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform w-[21px] h-[21px] translate-x-1 data-[state=checked]:translate-x-[20px]"
     >
     </span>
   </button>
