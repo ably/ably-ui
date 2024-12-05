@@ -98,8 +98,7 @@ const AccordionRow = ({
           "rounded-none": !isNonTransparentTheme(theme),
           "pointer-events-none focus-visible:outline-none":
             isStaticTheme(theme),
-          "focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-blue-focus":
-            !isStaticTheme(theme),
+          "focus-base": !isStaticTheme(theme),
           "sticky top-0": sticky,
           [`${bg} ${hoverBg} ${text}`]: !(selectable && isOpen),
           [`${selectableBg} ${selectableText}`]: selectable && isOpen,
