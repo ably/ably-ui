@@ -17,7 +17,7 @@ const Toggle: React.FC<ToggleProps> = ({
   className,
   ...props
 }) => {
-  const rootSize = size === "sm" ? "w-[42px] h-[24]" : "w-[56px] h-32";
+  const rootSize = size === "sm" ? "w-[42px] h-24" : "w-[56px] h-32";
   const thumbSize =
     size === "sm"
       ? "w-[21px] h-[21px] translate-x-1 data-[state=checked]:translate-x-[20px]"
