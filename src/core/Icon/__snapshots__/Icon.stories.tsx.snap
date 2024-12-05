@@ -1640,6 +1640,36 @@ exports[`Components/Icon GUIIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
     <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-gui-account
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-account">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-gui-app
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-app">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-arrow-bidirectional-horizontal
     </code>
     <div class="border inline-flex flex-0">
@@ -2158,6 +2188,21 @@ exports[`Components/Icon GUIIcons smoke-test 1`] = `
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-minus">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-gui-organization
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-organization">
           </use>
         </svg>
       </div>
