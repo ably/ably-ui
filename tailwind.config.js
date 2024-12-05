@@ -279,6 +279,7 @@ module.exports = {
       "widen-0.1": "var(--ls-widen-0_1)",
       "widen-0.15": "var(--ls-widen-0_15)",
       "widen-0.16": "var(--ls-widen-0_16)",
+      "widen-0.04": "var(--ls-widen-0_04)",
     },
     extend: {
       backgroundImage: {
