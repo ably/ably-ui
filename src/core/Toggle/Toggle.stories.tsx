@@ -15,17 +15,12 @@ Default.args = {};
 
 export const Checked = Template.bind({});
 Checked.args = {
-  checked: true,
+  defaultChecked: true,
   disabled: false,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  checked: false,
+  defaultChecked: false,
   disabled: true,
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
 };

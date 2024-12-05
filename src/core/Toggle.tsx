@@ -4,23 +4,24 @@ import cn from "./utils/cn";
 
 type ToggleProps = {
   id: string;
-  size?: string;
+  size?: "sm" | "lg";
   label?: string;
   className?: string;
+  onCheckedChange?: (checked: boolean) => void;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Toggle: React.FC<ToggleProps> = ({
   id,
-  size,
+  size = "lg",
   label,
   className,
   ...props
 }) => {
-  const rootSize = size === "small" ? "w-[42px] h-[24px]" : "w-[56px] h-32";
+  const rootSize = size === "sm" ? "w-[42px] h-[24]" : "w-[56px] h-32";
   const thumbSize =
-    size === "small"
+    size === "sm"
       ? "w-[21px] h-[21px] translate-x-1 data-[state=checked]:translate-x-[20px]"
-      : "h-[28px] w-[28px] translate-x-2  data-[state=checked]:translate-x-[26px]";
+      : "h-[28px] w-[28px] translate-x-2 data-[state=checked]:translate-x-[26px]";
 
   return (
     <div className="flex items-center">
@@ -35,7 +36,10 @@ const Toggle: React.FC<ToggleProps> = ({
         {...props}
       >
         <Switch.Thumb
-          className={`block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform ${thumbSize}`}
+          className={cn(
+            `block bg-white data-[disabled]:bg-neutral-500 rounded-full drop-shadow-toggle transition-transform`,
+            thumbSize,
+          )}
         />
       </Switch.Root>
       {label ? (
