@@ -28,7 +28,6 @@ const Toggle: React.FC<ToggleProps> = ({
       <Switch.Root
         className={cn(
           "p-0 bg-neutral-600 rounded-full relative inline-block transition-colors data-[disabled]:bg-gui-unavailable data-[disabled]:cursor-not-allowed data-[state=checked]:bg-orange-600 focus-base",
-
           className,
           rootSize,
         )}
