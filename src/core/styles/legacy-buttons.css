@@ -3,7 +3,7 @@
     @apply text-white bg-cool-black text-btn2 font-sans font-bold inline-block rounded p-btn;
     @apply hover:text-white hover:bg-neutral-1100;
     @apply active:text-white active:bg-neutral-1200;
-    @apply focus:text-white focus:bg-cool-black focus:outline-offset-0 focus:outline-none focus-visible:outline-4 focus-visible:outline-gui-focus;
+    @apply focus:text-white focus:bg-cool-black focus-base;
     @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
     @apply inline-flex items-center justify-center;
@@ -25,7 +25,7 @@
     background-position: 0% 0%;
 
     @apply text-white text-btn2 font-sans font-bold inline-block rounded p-btn;
-    @apply focus:outline-offset-0 focus:outline-none focus-visible:outline-4 focus-visible:outline-gui-focus;
+    @apply focus-base;
     @apply inline-flex items-center justify-center;
   }
 
@@ -43,7 +43,7 @@
     @apply text-cool-black bg-white text-btn2 font-sans font-bold inline-block rounded p-btn;
     @apply hover:text-white hover:bg-active-orange;
     @apply active:text-white active:bg-red-orange;
-    @apply focus:text-white focus:bg-cool-black focus:outline-offset-0 focus:outline-none focus-visible:outline-4 focus-visible:outline-gui-focus;
+    @apply focus:text-white focus:bg-cool-black focus-base;
     @apply disabled:text-mid-grey disabled:bg-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
     @apply inline-flex items-center justify-center;
@@ -53,7 +53,7 @@
     @apply text-cool-black bg-white text-btn2 font-sans font-bold inline-block border-btn border-cool-black rounded p-btn;
     @apply hover:text-cool-black hover:border-active-orange hover:bg-white;
     @apply active:border-red-orange active:bg-white;
-    @apply focus:border-cool-black focus:bg-white focus:outline-offset-0 focus:outline-none focus-visible:outline-4 focus-visible:outline-gui-focus;
+    @apply focus:border-cool-black focus:bg-white focus-base;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:bg-white disabled:cursor-not-allowed;
     @apply transition-colors;
     @apply inline-flex items-center justify-center;
@@ -63,7 +63,7 @@
     @apply text-white bg-cool-black text-btn2 font-sans font-bold inline-block border-btn border-mid-grey rounded p-btn;
     @apply hover:text-white hover:border-active-orange;
     @apply active:border-red-orange;
-    @apply focus:outline-offset-0 focus:outline-none focus-visible:outline-4 focus-visible:outline-gui-focus;
+    @apply focus-base;
     @apply disabled:text-gui-unavailable disabled:border-gui-unavailable disabled:cursor-not-allowed;
     @apply transition-colors;
     @apply inline-flex items-center justify-center;

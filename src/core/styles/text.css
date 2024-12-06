@@ -176,13 +176,13 @@
   .ui-link {
     @apply text-gui-default;
     @apply hover:text-gui-hover active:text-gui-active disabled:text-gui-unavailable;
-    @apply focus:text-gui-default focus:outline-none focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-focus;
+    @apply focus:text-gui-default focus-base;
     @apply no-underline;
   }
 
   .ui-link-neutral {
     @apply hover:text-dark-grey active:text-cool-black disabled:text-gui-unavailable;
-    @apply focus:text-charcoal-grey focus:outline-none focus-visible:outline-4 focus-visible:outline-offset-0 focus-visible:outline-gui-focus;
+    @apply focus:text-charcoal-grey focus-base;
     @apply underline;
   }
 
