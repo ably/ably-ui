@@ -340,10 +340,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-600
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #adb6c2
+        #a7b1be
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(173, 182, 194)
+        rgb(167, 177, 190)
       </p>
     </div>
   </div>
@@ -357,10 +357,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-700
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #89929f
+        #8992a4
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(137, 146, 159)
+        rgb(137, 146, 164)
       </p>
     </div>
   </div>
@@ -374,10 +374,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-800
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #667085
+        #687288
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(102, 112, 133)
+        rgb(104, 114, 136)
       </p>
     </div>
   </div>
@@ -391,10 +391,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-900
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #39414e
+        #5b5a72
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(57, 65, 78)
+        rgb(91, 90, 114)
       </p>
     </div>
   </div>
@@ -408,10 +408,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-1000
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #2b303b
+        #434356
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(43, 48, 59)
+        rgb(67, 67, 86)
       </p>
     </div>
   </div>
@@ -425,10 +425,10 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
         neutral-1100
       </p>
       <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
-        #202531
+        #2c3344
       </p>
       <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
-        rgb(32, 37, 49)
+        rgb(44, 51, 68)
       </p>
     </div>
   </div>
