@@ -160,7 +160,6 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Contact us",
       url: "/contact",
-      className: "ui-btn-alt text-neutral-000",
     },
     sections: [
       {
