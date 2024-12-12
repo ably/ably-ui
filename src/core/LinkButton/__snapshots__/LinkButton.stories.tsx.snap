@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Link Button Default smoke-test 1`] = `
+<a class="ui-button-primary"
+   role="button"
+   href="#"
+>
+  Default Link Button
+</a>
+`;
+
+exports[`Components/Link Button Disabled smoke-test 1`] = `
+<a class="ui-button-primary ui-button-disabled dark:ui-button-disabled-dark"
+   role="button"
+   aria-disabled="true"
+   href="#"
+>
+  Disabled Link Button
+</a>
+`;
+
+exports[`Components/Link Button External smoke-test 1`] = `
+<a class="ui-button-primary"
+   role="button"
+   href="https://www.ably.com"
+   target="_blank"
+   rel="noopener noreferrer"
+>
+  External Link Button
+</a>
+`;

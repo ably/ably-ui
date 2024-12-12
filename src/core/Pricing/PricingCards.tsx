@@ -3,6 +3,7 @@ import throttle from "lodash.throttle";
 import type { PricingDataFeature } from "./types";
 import Icon from "../Icon";
 import FeaturedLink from "../FeaturedLink";
+import LinkButton from "../LinkButton";
 import { IconName } from "../Icon/types";
 import Tooltip from "../Tooltip";
 import cn from "../utils/cn";
@@ -183,18 +184,17 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   </div>
                   {cta ? (
                     <div className="group">
-                      <FeaturedLink
-                        additionalCSS={cn(
-                          "text-center px-24 !py-12 hover:text-neutral-000 cursor-pointer",
-                          cta.className ??
-                            "ui-btn bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300",
-                        )}
-                        url={cta.url}
+                      <LinkButton
+                        className={cn("w-full", cta.className)}
+                        variant={
+                          cta.url === "/contact" ? "priority" : "primary"
+                        }
+                        href={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
                       >
                         {cta.text}
-                      </FeaturedLink>
+                      </LinkButton>
                     </div>
                   ) : delimiter ? null : (
                     <div className="flex items-center justify-center h-48 w-full">

@@ -1,6 +1,6 @@
 @layer components {
   .ui-button-base {
-    @apply inline-flex rounded justify-center items-center gap-12 text-neutral-000 transition-colors focus-base disabled:cursor-not-allowed;
+    @apply inline-flex rounded justify-center items-center gap-12 text-neutral-000 transition-colors focus-base;
   }
 
   .ui-button-lg-base {
@@ -20,11 +20,11 @@
   }
 
   .ui-button-disabled-base {
-    @apply disabled:bg-gui-unavailable disabled:text-gui-unavailable-dark disabled:hover:bg-gui-unavailable;
+    @apply disabled:cursor-not-allowed disabled:bg-gui-unavailable disabled:text-gui-unavailable-dark disabled:hover:bg-gui-unavailable;
   }
 
   .ui-button-disabled-base-dark {
-    @apply disabled:bg-gui-unavailable-dark disabled:text-gui-unavailable disabled:hover:bg-gui-unavailable-dark;
+    @apply disabled:cursor-not-allowed disabled:bg-gui-unavailable-dark disabled:text-gui-unavailable disabled:hover:bg-gui-unavailable-dark;
   }
 
   .ui-button-priority-base {
@@ -121,5 +121,13 @@
 
   .ui-button-sm-right-icon {
     @apply pr-[18px];
+  }
+
+  .ui-button-disabled {
+    @apply select-none pointer-events-none bg-gui-unavailable text-gui-unavailable-dark hover:bg-gui-unavailable;
+  }
+
+  .ui-theme-dark .ui-button-disabled {
+    @apply select-none pointer-events-none bg-gui-unavailable-dark text-gui-unavailable hover:bg-gui-unavailable-dark;
   }
 }

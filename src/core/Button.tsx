@@ -7,7 +7,7 @@ export type ButtonType = "priority" | "primary" | "secondary";
 
 type ButtonSize = "lg" | "md" | "sm" | "xs";
 
-type ButtonProps = {
+export type ButtonPropsBase = {
   /**
    * The type of button: priority, primary, or secondary.
    */
@@ -28,7 +28,10 @@ type ButtonProps = {
    * Optional classes to add to the button element.
    */
   className?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+};
+
+type ButtonProps = ButtonPropsBase &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 // got to go the long way round because of ol' mate Taily Waily
 const buttonClasses: Record<ButtonType, Record<ButtonSize, string>> = {
@@ -62,6 +65,32 @@ export const iconModifierClasses: Record<
   xs: { left: "", right: "" },
 };
 
+export const commonButtonProps = (props: ButtonPropsBase) => {
+  const { variant = "primary", size, leftIcon, rightIcon, className } = props;
+
+  return {
+    className: cn(
+      buttonClasses[variant][size ?? "md"],
+      { [iconModifierClasses[size ?? "md"].left]: leftIcon },
+      { [iconModifierClasses[size ?? "md"].right]: rightIcon },
+      className,
+    ),
+  };
+};
+
+export const commonButtonInterior = (
+  props: PropsWithChildren<ButtonPropsBase>,
+) => {
+  const { leftIcon, rightIcon, children } = props;
+  return (
+    <>
+      {leftIcon ? <Icon name={leftIcon} /> : null}
+      {children}
+      {rightIcon ? <Icon name={rightIcon} /> : null}
+    </>
+  );
+};
+
 const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
   variant = "primary",
   size,
@@ -73,17 +102,10 @@ const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
 }) => {
   return (
     <button
-      className={cn(
-        buttonClasses[variant][size ?? "md"],
-        { [iconModifierClasses[size ?? "md"].left]: leftIcon },
-        { [iconModifierClasses[size ?? "md"].right]: rightIcon },
-        className,
-      )}
-      {...rest}
+      {...commonButtonProps({ variant, size, leftIcon, rightIcon, className })}
+      {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
-      {leftIcon ? <Icon name={leftIcon} /> : null}
-      {children}
-      {rightIcon ? <Icon name={rightIcon} /> : null}
+      {commonButtonInterior({ leftIcon, rightIcon, children })}
     </button>
   );
 };
