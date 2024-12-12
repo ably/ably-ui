@@ -28,11 +28,11 @@
   }
 
   .ui-button-priority-base {
-    @apply bg-gradient-active-orange hover:bg-gradient-to-r hover:from-orange-800 hover:to-orange-800 active:bg-gradient-to-r active:from-orange-800 active:to-orange-800 disabled:bg-none ui-button-disabled-base;
+    @apply bg-gradient-priority-button bg-[size:200%] bg-left hover:bg-right active:bg-right transition-[background-position] disabled:bg-none ui-button-disabled-base;
   }
 
   .ui-theme-dark .ui-button-priority-base {
-    @apply bg-gradient-active-orange hover:bg-gradient-to-r hover:from-orange-800 hover:to-orange-800 active:bg-gradient-to-r active:from-orange-800 active:to-orange-800 disabled:bg-none ui-button-disabled-base-dark;
+    @apply bg-gradient-priority-button bg-[size:200%] bg-left hover:bg-right active:bg-right transition-[background-position] disabled:bg-none ui-button-disabled-base-dark;
   }
 
   .ui-button-primary-base {

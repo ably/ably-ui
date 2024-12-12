@@ -285,6 +285,7 @@ module.exports = {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
         "gradient-hot-pink": "var(--gradient-hot-pink)",
+        "gradient-priority-button": "var(--gradient-priority-button)",
       },
       borderRadius: {
         md: "0.1875rem",
