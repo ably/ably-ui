@@ -132,7 +132,7 @@ export const planData: PricingDataFeature[] = [
       },
       {
         title: "Includes",
-        items: ["2 hour support SLA", "Uptime SLO"],
+        items: ["2 hour support SLA", "Datadog (lite)", "Uptime SLO"],
         listItemColors: {
           foreground: "text-blue-600 dark:text-blue-400",
           background: "text-blue-200 dark:text-blue-800",
