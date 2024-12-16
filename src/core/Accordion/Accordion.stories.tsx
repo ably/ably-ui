@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useState } from "react";
 import Accordion, { AccordionProps } from "../Accordion";
 import { IconName } from "../Icon/types";
 import { accordionThemes } from "./types";
@@ -133,16 +133,39 @@ export const StickyHeaders = {
 };
 
 export const WithDefaultOpenSections = {
-  render: () =>
-    AccordionPresentation({
-      data: data,
-      options: { defaultOpenIndexes: [1] },
-    }),
+  render: () => {
+    const [openIndexes, setOpenIndexes] = useState([1]);
+
+    const randomizeOpenIndexes = () => {
+      const randomIndexes = Array.from(
+        { length: Math.floor(Math.random() * 3) + 1 },
+        () => Math.floor(Math.random() * 5),
+      );
+      setOpenIndexes(randomIndexes);
+    };
+
+    return (
+      <div>
+        {AccordionPresentation({
+          data: data,
+          options: { defaultOpenIndexes: openIndexes },
+        })}{" "}
+        <button onClick={randomizeOpenIndexes} className="ui-button-primary-xs">
+          Randomize default open sections: (currently:{" "}
+          {Array.from(new Set(openIndexes))
+            .map((index) => index + 1)
+            .sort()
+            .join(", ")}
+          )
+        </button>
+      </div>
+    );
+  },
   parameters: {
     docs: {
       description: {
         story:
-          "The sections that correspond to the supplied indexes will be open by default. (e.g. `[1]` will open the second section). Set with `defaultOpenIndexes` on `options`.",
+          "The sections that correspond to the supplied indexes will be open by default. (e.g. `[1]` will open the second section). Set with `defaultOpenIndexes` on `options`. To demonstrate, use the button to randomize the open sections.",
       },
     },
   },

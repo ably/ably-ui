@@ -1,4 +1,10 @@
-import React, { ReactNode, useMemo, useState } from "react";
+import React, {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import {
   AccordionContent,
   AccordionItem,
@@ -55,6 +61,8 @@ export type AccordionProps = {
   options?: AccordionOptions;
 } & React.HTMLAttributes<HTMLDivElement>;
 
+const rowKey = (index: number) => `accordion-item-${index}`;
+
 const AccordionRow = ({
   name,
   children,
@@ -67,8 +75,8 @@ const AccordionRow = ({
   openRowValues,
 }: AccordionRowProps) => {
   const { selectable, sticky } = options || {};
-  const rowKey = `accordion-item-${index}`;
-  const isOpen = openRowValues.includes(rowKey);
+  const indexRowKey = rowKey(index);
+  const isOpen = openRowValues.includes(indexRowKey);
 
   const {
     text,
@@ -84,7 +92,7 @@ const AccordionRow = ({
 
   return (
     <AccordionItem
-      value={rowKey}
+      value={indexRowKey}
       className={cn({
         [`${border}`]: border && !options?.hideBorders,
       })}
@@ -161,9 +169,29 @@ const Accordion = ({
     data.length,
   ]);
 
-  const [openRowValues, setOpenRowValues] = useState<string | string[]>(
-    openIndexes,
+  useEffect(() => {
+    setOpenRowValues(openIndexes);
+  }, [openIndexes]);
+
+  const [openRowValues, setOpenRowValues] = useState<string[]>(
+    () => openIndexes,
   );
+
+  const newOpenRowValues = useCallback(
+    (values: string[], key: string) => {
+      // With auto-close mode, we only deal with one open row at a time
+      if (options?.autoClose) {
+        return [key];
+      }
+
+      // Otherwise, toggle the presence of the clicked row in the open indexes array
+      return values.includes(key)
+        ? values.filter((value) => value !== key)
+        : [...values, key].sort();
+    },
+    [options?.autoClose],
+  );
+
   const innerAccordion = data.map((item, index) => (
     <AccordionRow
       key={item.name}
@@ -174,6 +202,9 @@ const Accordion = ({
       options={options}
       index={index}
       onClick={() => {
+        setOpenRowValues((prevValues) =>
+          newOpenRowValues(prevValues, rowKey(index)),
+        );
         item.onClick?.(index);
       }}
       openRowValues={openRowValues}
@@ -188,15 +219,15 @@ const Accordion = ({
         <RadixAccordion
           type="single"
           collapsible
-          defaultValue={openIndexes[0]}
-          onValueChange={(values) => setOpenRowValues(values)}
+          value={openRowValues[0]}
+          onValueChange={(values) => setOpenRowValues([values])}
         >
           {innerAccordion}
         </RadixAccordion>
       ) : (
         <RadixAccordion
           type="multiple"
-          defaultValue={openIndexes}
+          value={openRowValues}
           onValueChange={(values) => setOpenRowValues(values)}
         >
           {innerAccordion}
