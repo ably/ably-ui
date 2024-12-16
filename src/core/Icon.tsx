@@ -69,7 +69,7 @@ const Icon = ({
       size,
       color,
       additionalCSS,
-      additionalAttributes,
+      JSON.stringify(additionalAttributes),
       lightSecondaryColor,
       darkSecondaryColor,
     ],

@@ -155,7 +155,11 @@ const Accordion = ({
       : indexValues.filter((_, index) =>
           options?.defaultOpenIndexes?.includes(index),
         );
-  }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
+  }, [
+    JSON.stringify(options?.defaultOpenIndexes),
+    options?.fullyOpen,
+    data.length,
+  ]);
 
   const [openRowValues, setOpenRowValues] = useState<string | string[]>(
     openIndexes,
