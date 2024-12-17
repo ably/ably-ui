@@ -58,6 +58,8 @@ export type TabMenuProps = {
   };
 };
 
+const DEFAULT_TAILWIND_ANIMATION_DURATION = 150;
+
 const TabMenu: React.FC<TabMenuProps> = ({
   tabs = [],
   contents = [],
@@ -68,13 +70,22 @@ const TabMenu: React.FC<TabMenuProps> = ({
   const {
     defaultTabIndex = 0,
     underline = true,
-    animated = true,
+    animated: animatedOption = true,
     flexibleTabWidth = false,
     flexibleTabHeight = false,
   } = options ?? {};
 
   const listRef = React.useRef<HTMLDivElement>(null);
+  const [animated, setAnimated] = React.useState(false);
   const [highlight, setHighlight] = React.useState({ offset: 0, width: 0 });
+
+  useEffect(() => {
+    if (animatedOption && highlight.width > 0) {
+      setTimeout(() => {
+        setAnimated(true);
+      }, DEFAULT_TAILWIND_ANIMATION_DURATION);
+    }
+  }, [animatedOption, highlight.width]);
 
   useEffect(() => {
     const handleResize = throttle(() => {
