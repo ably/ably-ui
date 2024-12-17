@@ -28,6 +28,16 @@ export type TabMenuProps = {
   tabClassName?: string;
 
   /**
+   * An optional class name to apply to the Tabs.Root element.
+   */
+  rootClassName?: string;
+
+  /**
+   * An optional class name to apply to the Tabs.Content element.
+   */
+  contentClassName?: string;
+
+  /**
    * Optional configuration options for the TabMenu.
    */
   options?: {
@@ -58,23 +68,36 @@ export type TabMenuProps = {
   };
 };
 
+const DEFAULT_TAILWIND_ANIMATION_DURATION = 150;
+
 const TabMenu: React.FC<TabMenuProps> = ({
   tabs = [],
   contents = [],
   tabOnClick,
   tabClassName,
+  rootClassName,
+  contentClassName,
   options,
 }) => {
   const {
     defaultTabIndex = 0,
     underline = true,
-    animated = true,
+    animated: animatedOption = true,
     flexibleTabWidth = false,
     flexibleTabHeight = false,
   } = options ?? {};
 
   const listRef = React.useRef<HTMLDivElement>(null);
+  const [animated, setAnimated] = React.useState(false);
   const [highlight, setHighlight] = React.useState({ offset: 0, width: 0 });
+
+  useEffect(() => {
+    if (animatedOption && highlight.width > 0) {
+      setTimeout(() => {
+        setAnimated(true);
+      }, DEFAULT_TAILWIND_ANIMATION_DURATION);
+    }
+  }, [animatedOption, highlight.width]);
 
   useEffect(() => {
     const handleResize = throttle(() => {
@@ -118,7 +141,7 @@ const TabMenu: React.FC<TabMenuProps> = ({
   return (
     <Tabs.Root
       defaultValue={`tab-${defaultTabIndex}`}
-      className={cn({ "h-full": flexibleTabHeight })}
+      className={cn({ "h-full": flexibleTabHeight }, rootClassName)}
     >
       <Tabs.List
         ref={listRef}
@@ -159,7 +182,11 @@ const TabMenu: React.FC<TabMenuProps> = ({
         ></div>
       </Tabs.List>
       {contents.map((content, index) => (
-        <Tabs.Content key={`tab-${index}`} value={`tab-${index}`}>
+        <Tabs.Content
+          key={`tab-${index}`}
+          value={`tab-${index}`}
+          className={contentClassName}
+        >
           {content}
         </Tabs.Content>
       ))}
