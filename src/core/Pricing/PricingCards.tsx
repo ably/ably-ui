@@ -192,6 +192,8 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         href={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
+                        rightIcon="icon-gui-arrow-right"
+                        iconColor={cta.iconColor}
                       >
                         {cta.text}
                       </LinkButton>

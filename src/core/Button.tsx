@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import { IconName } from "./Icon/types";
 import Icon from "./Icon";
 import cn from "./utils/cn";
+import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 
 export type ButtonType = "priority" | "primary" | "secondary";
 
@@ -28,6 +29,10 @@ export type ButtonPropsBase = {
    * Optional classes to add to the button element.
    */
   className?: string;
+  /**
+   * Optional color to apply to the icon on either left and/or right side of the button.
+   */
+  iconColor?: ColorClass | ColorThemeSet;
 };
 
 type ButtonProps = ButtonPropsBase &
@@ -81,12 +86,12 @@ export const commonButtonProps = (props: ButtonPropsBase) => {
 export const commonButtonInterior = (
   props: PropsWithChildren<ButtonPropsBase>,
 ) => {
-  const { leftIcon, rightIcon, children } = props;
+  const { leftIcon, rightIcon, iconColor, children } = props;
   return (
     <>
-      {leftIcon ? <Icon name={leftIcon} /> : null}
+      {leftIcon ? <Icon name={leftIcon} additionalCSS={iconColor} /> : null}
       {children}
-      {rightIcon ? <Icon name={rightIcon} /> : null}
+      {rightIcon ? <Icon name={rightIcon} additionalCSS={iconColor} /> : null}
     </>
   );
 };
@@ -98,6 +103,7 @@ const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
   rightIcon,
   children,
   className,
+  iconColor,
   ...rest
 }) => {
   return (
@@ -105,7 +111,7 @@ const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
       {...commonButtonProps({ variant, size, leftIcon, rightIcon, className })}
       {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
-      {commonButtonInterior({ leftIcon, rightIcon, children })}
+      {commonButtonInterior({ leftIcon, rightIcon, iconColor, children })}
     </button>
   );
 };
