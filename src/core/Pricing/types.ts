@@ -14,6 +14,7 @@ type PricingDataFeatureCta = {
   className?: string;
   disabled?: boolean;
   onClick?: () => void;
+  iconColor?: ColorClass | ColorThemeSet;
 };
 
 export type PricingDataFeatureSection = {
