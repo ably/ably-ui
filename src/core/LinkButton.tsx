@@ -5,10 +5,12 @@ import {
   commonButtonProps,
 } from "./Button";
 import cn from "./utils/cn";
+import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 
 export type LinkButtonProps = ButtonPropsBase & {
   disabled?: boolean;
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+  iconColor?: ColorClass | ColorThemeSet;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const LinkButton: React.FC<LinkButtonProps> = ({
@@ -20,6 +22,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   className,
   disabled,
   onClick,
+  iconColor,
   ...rest
 }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -46,7 +49,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       onClick={handleClick}
       {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
     >
-      {commonButtonInterior({ leftIcon, rightIcon, children })}
+      {commonButtonInterior({ leftIcon, rightIcon, iconColor, children })}
     </a>
   );
 };

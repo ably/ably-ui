@@ -14,7 +14,11 @@ export const planData: PricingDataFeature[] = [
       color: "text-neutral-800 dark:text-neutral-500",
     },
     price: { amount: "$0" },
-    cta: { text: "Start for free", url: "/sign-up" },
+    cta: {
+      text: "Start for free",
+      url: "/sign-up",
+      iconColor: "text-neutral-700 dark:text-neutral-600",
+    },
     sections: [
       {
         title: "Limits",
@@ -69,6 +73,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=standard",
+      iconColor: "text-blue-600 dark:text-blue-400",
     },
     sections: [
       {
@@ -120,7 +125,11 @@ export const planData: PricingDataFeature[] = [
         </>
       ),
     },
-    cta: { text: "Get started", url: "/users/paid_sign_up?package=pro" },
+    cta: {
+      text: "Get started",
+      url: "/users/paid_sign_up?package=pro",
+      iconColor: "text-blue-600 dark:text-blue-400",
+    },
     sections: [
       {
         title: "Limits",
