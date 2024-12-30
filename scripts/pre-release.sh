@@ -48,7 +48,7 @@ echo "> Build library"
 NODE_ENV=production yarn build
 
 echo "> Publish the npm package to the registry"
-yarn publish --no-git-tag-version --new-version $VERSION
+yarn publish --no-git-tag-version --new-version $VERSION --tag dev
 
 echo "Update Pre Release versions"
 ./scripts/update-pre-release-versions.sh $ABLY_UI_VERSION $PACKAGE_SUFFIX
