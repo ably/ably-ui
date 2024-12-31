@@ -4,6 +4,7 @@ import svgSprite from "svg-sprite";
 
 // Configuration for svg-sprite
 const config = {
+  // log: "info",
   dest: "dist/core",
   mode: {
     symbol: {
@@ -17,14 +18,15 @@ const config = {
     },
   },
   svg: {
+    namespaceClassnames: false, // preserve classnames, useful for Heroicons
     transform: [
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      function (svg: any) {
+      function (svg: string) {
         let globalDefs = "";
 
         return svg
           .replace(/<defs>(.+?)<\/defs>/g, (_match: string, def: string) => {
             globalDefs += def;
+            return "";
           })
           .replace("<symbol", `<defs>${globalDefs}</defs><symbol`);
       },
@@ -76,9 +78,9 @@ sprite.compile((err, result) => {
   } else {
     try {
       // Write the compiled sprite to the destination directory
-      fs.mkdirSync(path.resolve(__dirname, "dist/core"), { recursive: true });
+      fs.mkdirSync(path.resolve(__dirname, "../dist/core"), { recursive: true });
       fs.writeFileSync(
-        path.resolve(__dirname, "dist", result.symbol.sprite.path),
+        path.resolve(__dirname, "../dist", result.symbol.sprite.path),
         result.symbol.sprite.contents,
       );
 
