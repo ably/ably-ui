@@ -1758,10 +1758,10 @@
     "@storybook/react-dom-shim" "8.4.0"
     "@storybook/theming" "^8.4.0"
 
-"@storybook/test-runner@^0.20.0":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.20.1.tgz#e2efa6266d512312a6b810db376da2919008cccd"
-  integrity sha512-3WU/th/uncIR6vpQDK9hKjiZjmczsluoLbgkRV7ufxY9IgHCGcbIjvT5EPS+XZIaOrNGjaPsyB5cE1okKn9iSA==
+"@storybook/test-runner@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.21.0.tgz#31e7a6878e15a3f4d5555c57a135dd4d13fce9c4"
+  integrity sha512-aG2QvKXSIjMN1CA9PJK/esnidZWgt1gAkfo9Kqf8+NqBSsmP/2GyL5vxu1lkRFO/4qCv5JenNZ5Uj6ie4b2oag==
   dependencies:
     "@babel/core" "^7.22.5"
     "@babel/generator" "^7.22.5"
