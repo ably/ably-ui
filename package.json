@@ -47,6 +47,7 @@
     "http-server": "14.1.1",
     "msw": "2.6.1",
     "msw-storybook-addon": "^2.0.2",
+    "playwright": "^1.49.1",
     "prettier": "^3.2.5",
     "react-syntax-highlighter": "^15.6.1",
     "storybook": "^8.4.0",
