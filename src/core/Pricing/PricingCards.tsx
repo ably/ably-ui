@@ -72,7 +72,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
     > = {
       neutral: {
         border: "border-neutral-600 dark:border-neutral-700",
-        bg: "border-neutral-600 dark:bg-neutral-700",
+        bg: "bg-neutral-600 dark:bg-neutral-700",
       },
       blue: {
         border: "border-blue-400 dark:border-blue-600",
