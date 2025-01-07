@@ -2368,6 +2368,21 @@ exports[`Components/Icon GUIIcons smoke-test 1`] = `
   </div>
   <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
     <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
+      icon-gui-user-circle
+    </code>
+    <div class="border inline-flex flex-0">
+      <div class="flex pi-checkered-bg">
+        <svg class="text-cool-black hover:text-active-orange"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-user-circle">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg">
+    <code class="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
       icon-gui-warning-fill
     </code>
     <div class="border inline-flex flex-0">
