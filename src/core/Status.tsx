@@ -1,6 +1,17 @@
 import React from "react";
 import useSWR from "swr";
 import cn from "./utils/cn";
+import Icon from "./Icon";
+
+type StatusProps = {
+  statusUrl: string;
+  additionalCSS?: string;
+  refreshInterval?: number;
+  showDescription?: boolean;
+};
+
+export const StatusUrl =
+  "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 // Our SWR fetcher function
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -25,10 +36,7 @@ const indicatorClass = (indicator?: string) => {
 export const StatusIcon = ({
   statusUrl,
   refreshInterval = 1000 * 60,
-}: {
-  statusUrl: string;
-  refreshInterval?: number;
-}) => {
+}: StatusProps) => {
   const { data, error, isLoading } = useSWR(statusUrl, fetcher, {
     refreshInterval,
   });
@@ -45,18 +53,22 @@ export const StatusIcon = ({
 };
 
 const Status = ({
-  statusUrl,
+  statusUrl = StatusUrl,
   additionalCSS,
   refreshInterval = 1000 * 60,
-}: {
-  statusUrl: string;
-  additionalCSS?: string;
-  refreshInterval?: number;
-}) => {
+  showDescription = false,
+}: StatusProps) => {
+  const { data } = useSWR(statusUrl, fetcher, {
+    refreshInterval,
+  });
+
   return (
     <a
       href="https://status.ably.com"
-      className={`inline-block ${additionalCSS}`}
+      className={cn(
+        "inline-flex group/status items-center gap-8",
+        additionalCSS,
+      )}
       target="_blank"
       rel="noreferrer"
     >
@@ -64,6 +76,12 @@ const Status = ({
         statusUrl={statusUrl}
         refreshInterval={refreshInterval ?? 1000 * 60}
       />
+      {showDescription && data?.status?.description && (
+        <div className="flex gap-8 ui-text-menu4 font-medium text-neutral-900 group-hover/status:text-neutral-1300 dark:text-neutral-400 dark:group-hover/status:text-neutral-000 transition-colors">
+          <span>{data.status.description}</span>
+          <Icon name="icon-gui-external-link" size="16px" />
+        </div>
+      )}
     </a>
   );
 };
