@@ -17,7 +17,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Start for free",
       url: "/sign-up",
-      iconColor: "text-neutral-700 dark:text-neutral-600",
+      iconColor: "text-neutral-600 dark:text-neutral-700",
     },
     sections: [
       {
