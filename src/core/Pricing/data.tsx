@@ -17,7 +17,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Start for free",
       url: "/sign-up",
-      iconColor: "text-neutral-700 dark:text-neutral-600",
+      iconColor: "text-neutral-600 dark:text-neutral-700",
     },
     sections: [
       {
@@ -73,7 +73,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=standard",
-      iconColor: "text-blue-600 dark:text-blue-400",
+      iconColor: "text-gui-blue-default-dark dark:text-gui-blue-default-light",
     },
     sections: [
       {
@@ -128,7 +128,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=pro",
-      iconColor: "text-blue-600 dark:text-blue-400",
+      iconColor: "text-gui-blue-default-dark dark:text-gui-blue-default-light",
     },
     sections: [
       {
