@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "15.1.15",
+  "version": "15.2.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -44,6 +44,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-storybook": "^0.11.0",
+    "heroicons": "^2.2.0",
     "http-server": "14.1.1",
     "msw": "2.6.1",
     "msw-storybook-addon": "^2.0.2",

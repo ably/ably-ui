@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import Icon from "../Icon";
+import Button from "../Button";
 import EncapsulatedIcon from "./EncapsulatedIcon";
 import loadIcons from "../icons";
-import { IconName, iconNames } from "./types";
+import { IconName, iconNames, IconSize } from "./types";
 
 export default {
   title: "Components/Icon",
@@ -13,35 +14,104 @@ export default {
   tags: ["autodocs"],
 };
 
+const iconVariants = [
+  "all",
+  "legacy",
+  "outline",
+  "solid",
+  "mini",
+  "micro",
+] as const;
+type IconVariant = (typeof iconVariants)[number];
+
+const iconVariantSize = (variant: IconVariant): string => {
+  switch (variant) {
+    case "all":
+      return "mixed";
+    case "legacy":
+    case "outline":
+    case "solid":
+      return "24px";
+    case "mini":
+      return "20px";
+    case "micro":
+      return "16px";
+    default:
+      return "24px";
+  }
+};
+
+const getIconSize = (icon: string): IconSize => {
+  if (icon.includes("-mini")) {
+    return "20px";
+  } else if (icon.includes("-micro")) {
+    return "16px";
+  } else {
+    return "24px";
+  }
+};
+
 const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
-  loadIcons();
+  if (!document.querySelector(".ably-sprites")) {
+    loadIcons();
+  }
+  const [shownVariant, setShownVariant] = useState<IconVariant>("all");
+
+  const filteredIcons = useMemo(
+    () =>
+      iconSet.filter(
+        (icon) =>
+          shownVariant === "all" ||
+          (shownVariant === "legacy" &&
+            !iconVariants.some((variant) => icon.endsWith(`-${variant}`))) ||
+          icon.includes(`-${shownVariant}`),
+      ),
+    [iconSet, shownVariant],
+  );
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 ui-grid-gap max-w-screen-lg mb-64">
-      {iconSet.map((icon) => (
-        <div
-          className="border p-16 flex flex-col sm:flex-row items-center justify-between gap-12 rounded-lg"
-          key={icon}
-        >
-          <code className="ui-text-code text-neutral-1300 dark:text-neutral-000 mb-8 block">
-            {icon}
-          </code>
-          <div className="border inline-flex flex-0">
-            <div className="flex pi-checkered-bg">
-              {encapsulated ? (
-                <EncapsulatedIcon name={icon} />
-              ) : (
-                <Icon
-                  name={icon}
-                  additionalCSS="hover:text-active-orange"
-                  color="text-cool-black"
-                  size="1.5rem"
-                />
-              )}
-            </div>
-          </div>
+    <div>
+      {iconSet.some((icon) => icon.includes("-gui-")) && (
+        <div className="flex items-center pt-16 gap-8 px-16 flex-wrap">
+          <span className="ui-text-p1">Filter icons:</span>
+          {iconVariants.map((variant) => (
+            <Button
+              key={variant}
+              size="xs"
+              disabled={shownVariant === variant}
+              onClick={() => setShownVariant(variant)}
+            >
+              {variant} ({iconVariantSize(variant)})
+            </Button>
+          ))}
         </div>
-      ))}
+      )}
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-16 max-w-screen-lg mb-64 p-16">
+        {filteredIcons.map((icon) => (
+          <div
+            className="border p-16 flex flex-col items-center justify-between gap-12 rounded-lg"
+            key={icon}
+          >
+            <div className="border inline-flex flex-0">
+              <div className="flex pi-checkered-bg">
+                {encapsulated ? (
+                  <EncapsulatedIcon name={icon} />
+                ) : (
+                  <Icon
+                    name={icon}
+                    additionalCSS="hover:text-active-orange"
+                    color="text-cool-black"
+                    size={getIconSize(icon)}
+                  />
+                )}
+              </div>
+            </div>
+            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex items-center flex-1">
+              {icon}
+            </code>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

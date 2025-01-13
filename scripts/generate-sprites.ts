@@ -14,7 +14,12 @@ const config = {
   },
   shape: {
     id: {
-      generator: "sprite-%s",
+      generator: (filename: string) => {
+        const nameWithoutExtension = filename.replace(".svg", "");
+        return nameWithoutExtension.startsWith("icon-")
+          ? `sprite-${nameWithoutExtension}`
+          : `hero-sprite-icon-gui-${nameWithoutExtension}`;
+      },
     },
   },
   svg: {
@@ -22,13 +27,35 @@ const config = {
     transform: [
       function (svg: string) {
         let globalDefs = "";
+        const idMap: Record<string, number> = {};
 
-        return svg
-          .replace(/<defs>(.+?)<\/defs>/g, (_match: string, def: string) => {
-            globalDefs += def;
-            return "";
-          })
-          .replace("<symbol", `<defs>${globalDefs}</defs><symbol`);
+        return (
+          svg
+            // Extract and remove global defs, add to cumulative string
+            .replace(/<defs>(.+?)<\/defs>/g, (_match: string, def: string) => {
+              globalDefs += def;
+              return "";
+            })
+            // If the id has been marked with 'hero' then we append the correct variant suffix depending on
+            // how many times we've seen the id before (since each HeroIcon variant has the same file name per icon)
+            .replace(/id="hero-([^"]+)"/g, (match: string, id: string) => {
+              // console.log(match, id);
+              if (idMap[id] === 1) {
+                idMap[id]++;
+                return `id="${id}-solid"`;
+              } else if (idMap[id] === 2) {
+                idMap[id]++;
+                return `id="${id}-mini"`;
+              } else if (idMap[id] === 3) {
+                idMap[id]++;
+                return `id="${id}-micro"`;
+              } else {
+                idMap[id] = 1;
+                return `id="${id}-outline"`;
+              }
+            })
+            .replace("<symbol", `<defs>${globalDefs}</defs><symbol`)
+        );
       },
     ],
   },
@@ -37,39 +64,73 @@ const config = {
 // Create a new SVG sprite instance
 const sprite = new svgSprite(config);
 
-// Directory where your individual SVG files are located
-const svgDir = path.resolve(__dirname, "../src/core/icons");
+// Directories where your individual SVG files are located.
+// Given that icons are only added to the manifest later if their name is unique, the order of directories
+// means that custom icons are prioritised over HeroIcons
+const svgDirs = [
+  path.resolve(__dirname, "../src/core/icons"),
+  path.resolve(__dirname, "../node_modules/heroicons/24/outline"),
+  path.resolve(__dirname, "../node_modules/heroicons/24/solid"),
+  path.resolve(__dirname, "../node_modules/heroicons/20/solid"),
+  path.resolve(__dirname, "../node_modules/heroicons/16/solid"),
+];
 
 // Object to store the grouped filenames
 const iconGroups: Record<string, string[]> = {};
 
-// Read all SVG files from the directory and add them to the sprite
-fs.readdirSync(svgDir).forEach((file) => {
-  if (file.endsWith(".svg")) {
-    try {
-      // Extract the key from the filename
-      const match = file.match(/^icon-([^-]+)/);
-      if (match) {
-        const key = match[1];
+// Function to read and add SVG files from a directory
+const processSvgDir = (dir: string) => {
+  fs.readdirSync(dir).forEach((file) => {
+    if (file.endsWith(".svg")) {
+      try {
+        // Extract the key from the filename
+        let key: string;
+        let fileNameWithoutExtension: string;
+
+        if (dir.includes("heroicons")) {
+          key = "gui";
+
+          if (dir.includes("24/solid")) {
+            fileNameWithoutExtension = `icon-gui-${file.replace(".svg", "")}-solid`;
+          } else if (dir.includes("20/solid")) {
+            fileNameWithoutExtension = `icon-gui-${file.replace(".svg", "")}-mini`;
+          } else if (dir.includes("16/solid")) {
+            fileNameWithoutExtension = `icon-gui-${file.replace(".svg", "")}-micro`;
+          } else {
+            fileNameWithoutExtension = `icon-gui-${file.replace(".svg", "")}-outline`;
+          }
+        } else {
+          const match = file.match(/^icon-([^-]+)/);
+          if (match) {
+            key = match[1];
+            fileNameWithoutExtension = file.replace(".svg", "");
+          } else {
+            return; // Skip files that don't match the pattern
+          }
+        }
+
         if (!iconGroups[key]) {
           iconGroups[key] = [];
         }
 
-        // Remove the .svg extension before adding to the group
-        const fileNameWithoutExtension = file.replace(".svg", "");
-        iconGroups[key].push(fileNameWithoutExtension);
-      }
+        if (!iconGroups[key].includes(fileNameWithoutExtension)) {
+          iconGroups[key].push(fileNameWithoutExtension);
+        }
 
-      sprite.add(
-        path.resolve(svgDir, file),
-        null,
-        fs.readFileSync(path.resolve(svgDir, file), "utf-8"),
-      );
-    } catch (error) {
-      console.error(`Error processing file ${file}:`, error);
+        sprite.add(
+          path.resolve(dir, file),
+          null,
+          fs.readFileSync(path.resolve(dir, file), "utf-8"),
+        );
+      } catch (error) {
+        console.error(`Error processing file ${file}:`, error);
+      }
     }
-  }
-});
+  });
+};
+
+// Process each directory
+svgDirs.forEach(processSvgDir);
 
 // Compile the sprite
 sprite.compile((err, result) => {
@@ -78,7 +139,9 @@ sprite.compile((err, result) => {
   } else {
     try {
       // Write the compiled sprite to the destination directory
-      fs.mkdirSync(path.resolve(__dirname, "../dist/core"), { recursive: true });
+      fs.mkdirSync(path.resolve(__dirname, "../dist/core"), {
+        recursive: true,
+      });
       fs.writeFileSync(
         path.resolve(__dirname, "../dist", result.symbol.sprite.path),
         result.symbol.sprite.contents,
@@ -90,8 +153,17 @@ sprite.compile((err, result) => {
         "../src/core/Icon/computed-icons.ts",
       );
 
+      // Sort iconGroups
+      const sortedIconGroups = Object.keys(iconGroups).reduce(
+        (acc, key) => {
+          acc[key] = iconGroups[key].sort();
+          return acc;
+        },
+        {} as Record<string, string[]>,
+      );
+
       const generatedIconGroups =
-        `// AUTOGENERATED BY build:sprites - DO NOT EDIT\n\nexport const computedIcons = ${JSON.stringify(iconGroups, null, 2)}`.replace(
+        `// AUTOGENERATED BY build:sprites - DO NOT EDIT\n\nexport const computedIcons = ${JSON.stringify(sortedIconGroups, null, 2)}`.replace(
           /]/g,
           "] as const",
         );
