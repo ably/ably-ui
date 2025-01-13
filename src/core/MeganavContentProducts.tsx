@@ -52,7 +52,7 @@ const MeganavContentProducts = ({
           </li>
           <li>
             <a href={absUrl("/spaces")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">Spaces (Beta)</p>
+              <p className="ui-meganav-media-heading">Spaces</p>
               <p className="ui-meganav-media-copy">
                 Create multi-user collaborative environments.
               </p>
@@ -60,7 +60,7 @@ const MeganavContentProducts = ({
           </li>
           <li>
             <a href={absUrl("/livesync")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">LiveSync (Alpha)</p>
+              <p className="ui-meganav-media-heading">LiveSync</p>
               <p className="ui-meganav-media-copy">
                 Seamlessly sync database changes with frontend clients at scale.
               </p>
@@ -68,7 +68,7 @@ const MeganavContentProducts = ({
           </li>
           <li>
             <a href={absUrl("/chat")} className="group ui-meganav-media">
-              <p className="ui-meganav-media-heading">Chat (Beta)</p>
+              <p className="ui-meganav-media-heading">Chat</p>
               <p className="ui-meganav-media-copy">
                 Deliver highly reliable chat experiences at scale.
               </p>

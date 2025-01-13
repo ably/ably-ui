@@ -101,7 +101,7 @@ const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
               <Icon name="icon-display-asset-tracking-col" size="2.5rem" />
               <div className="flex flex-col justify-center">
                 <p className="ui-meganav-media-heading">
-                  Asset Tracking (Beta)
+                  Asset Tracking
                 </p>
                 <p className="ui-meganav-media-copy">
                   Track assets in realtime with a solution optimised for last
