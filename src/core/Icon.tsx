@@ -12,6 +12,7 @@ export type IconProps = {
   color?: ColorClass | ColorThemeSet;
   secondaryColor?: ColorClass | ColorThemeSet;
   additionalCSS?: string;
+  variant?: "outline" | "solid" | "micro" | "mini";
 };
 
 const Icon = ({
@@ -20,11 +21,15 @@ const Icon = ({
   color,
   secondaryColor,
   additionalCSS = "",
+  variant,
   ...additionalAttributes
 }: IconProps) => {
   const [lightSecondaryColor, darkSecondaryColor] = (
     secondaryColor ?? ""
   ).split(" dark:") as [ColorClass, ColorClass | undefined];
+
+  const iconName =
+    variant && !name.endsWith(`-${variant}`) ? `${name}-${variant}` : name;
 
   const iconSvg = useCallback(
     (secondaryColor?: ColorClass, isDark?: boolean, isThemed?: boolean) => {
@@ -60,12 +65,12 @@ const Icon = ({
           }
           {...additionalAttributes}
         >
-          <use xlinkHref={`#sprite-${name}`} />
+          <use xlinkHref={`#sprite-${iconName}`} />
         </svg>
       );
     },
     [
-      name,
+      iconName,
       size,
       color,
       additionalCSS,
