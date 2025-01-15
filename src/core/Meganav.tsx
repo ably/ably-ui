@@ -34,9 +34,6 @@ export type MeganavPaths = {
   logo?: string;
   iconSprites: string;
   ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
   awsLogo?: string;
 };
 
