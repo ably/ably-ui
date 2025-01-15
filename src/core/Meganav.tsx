@@ -35,9 +35,6 @@ export type MeganavPaths = {
   logo?: string;
   iconSprites: string;
   ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
   awsLogo?: string;
 };
 
@@ -98,7 +95,7 @@ export type NoticeApiProps = {
 
 type MeganavProps = {
   paths?: MeganavPaths;
-  themeName: "white" | "black" | "transparentToWhite";
+  themeName?: "white" | "black" | "transparentToWhite";
   notice?: NoticeApiProps;
   loginLink?: string;
   urlBase?: string;
