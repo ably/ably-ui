@@ -11,7 +11,7 @@ type ContentWrapperProps = {
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
 // Plan is to TS-ify the JS assets too, so this can be rectified then. The NoticeScripts-oriented props are
 // the ones after the line break.
-type NoticeProps = {
+export type NoticeProps = {
   buttonLink?: string;
   buttonLabel?: string;
   bodyText?: string;
@@ -45,7 +45,7 @@ const ContentWrapper = ({ buttonLink, children }: ContentWrapperProps) =>
 const Notice = ({
   buttonLink,
   buttonLabel,
-  bodyText,
+  bodyText = "",
   title,
   config,
   closeBtn,
