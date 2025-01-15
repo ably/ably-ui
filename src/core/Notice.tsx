@@ -7,6 +7,7 @@ type ContentWrapperProps = {
   buttonLink: string;
   children: ReactNode;
 };
+import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
@@ -71,6 +72,8 @@ const Notice = ({
     ALLOWED_ATTR: ["href", "data-method", "rel"],
   });
 
+  const contentRef = useRailsUjsLinks();
+
   return (
     <div
       className={wrapperClasses}
@@ -81,6 +84,7 @@ const Notice = ({
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
           <span
+            ref={contentRef}
             className="pr-4"
             dangerouslySetInnerHTML={{
               __html: safeContent,
