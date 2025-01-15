@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect } from "react";
+import DOMPurify from "dompurify";
 
 import NoticeScripts from "./Notice/component.js";
 import Icon from "./Icon";
@@ -65,6 +66,11 @@ const Notice = ({
 
   const wrapperClasses = ["ui-announcement", bgColor, textColor].join(" ");
 
+  const safeContent = DOMPurify.sanitize(bodyText, {
+    ALLOWED_TAGS: ["a"],
+    ALLOWED_ATTR: ["href", "data-method", "rel"],
+  });
+
   return (
     <div
       className={wrapperClasses}
@@ -74,7 +80,12 @@ const Notice = ({
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
-          <span className="pr-4">{bodyText}</span>
+          <span
+            className="pr-4"
+            dangerouslySetInnerHTML={{
+              __html: safeContent,
+            }}
+          ></span>
           {buttonLabel && (
             <span className="underline cursor-pointer whitespace-nowrap">
               {buttonLabel}
