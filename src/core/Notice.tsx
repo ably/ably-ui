@@ -57,7 +57,7 @@ const ContentWrapper = ({
 const Notice = ({
   buttonLink,
   buttonLabel,
-  bodyText,
+  bodyText = "",
   title,
   config,
   closeBtn,
