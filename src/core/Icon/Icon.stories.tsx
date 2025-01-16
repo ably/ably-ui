@@ -99,7 +99,7 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
                 ) : (
                   <Icon
                     name={icon}
-                    additionalCSS="hover:text-active-orange"
+                    additionalCSS="hover:text-active-orange transition-colors"
                     color="text-cool-black"
                     size={getIconSize(icon)}
                   />
