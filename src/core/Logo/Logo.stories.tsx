@@ -1,12 +1,42 @@
+import React from "react";
 import Logo from "../Logo";
-import logoUrl from "../images/ably-logo.png";
 
 export default {
   title: "Components/Logo",
   component: Logo,
-  args: {
-    logoUrl,
-  },
 };
 
-export const Default = {};
+const LogoSet = (variant, orientation) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+    <div className="text-center ui-text-code2 order-1">light</div>
+    <div className="text-center ui-text-code2 order-3 sm:order-2">dark</div>
+    <Logo
+      variant={variant}
+      orientation={orientation}
+      theme="light"
+      additionalLinkAttrs={{
+        className: "text-center p-8 bg-neutral-000 rounded order-2 sm:order-3",
+      }}
+    />
+    <Logo
+      variant={variant}
+      orientation={orientation}
+      theme="dark"
+      additionalLinkAttrs={{
+        className: "text-center p-8 bg-neutral-1300 rounded order-4",
+      }}
+    />
+  </div>
+);
+
+export const Default = {
+  render: () => LogoSet("default", "default"),
+};
+
+export const Mono = {
+  render: () => LogoSet("mono", "default"),
+};
+
+export const Stacked = {
+  render: () => LogoSet("default", "stacked"),
+};
