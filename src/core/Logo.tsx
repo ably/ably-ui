@@ -1,8 +1,10 @@
 import React from "react";
+import LogoAsset from "./images/ably-logo.svg";
 
 type LogoProps = {
-  dataId: string;
-  logoUrl: string;
+  dataId?: string;
+  logoUrl?: string;
+  logoAlt?: string;
   href?: string;
   additionalImgAttrs?: object;
   additionalLinkAttrs?: object;
@@ -11,6 +13,7 @@ type LogoProps = {
 const Logo = ({
   dataId,
   logoUrl,
+  logoAlt,
   href = "/",
   additionalImgAttrs,
   additionalLinkAttrs,
@@ -22,7 +25,12 @@ const Logo = ({
     style={{ height: "2.125rem" }}
     {...additionalLinkAttrs}
   >
-    <img src={logoUrl} width="108px" alt="Ably logo" {...additionalImgAttrs} />
+    <img
+      src={logoUrl ?? LogoAsset}
+      width="108px"
+      alt={logoAlt ?? "Ably logo"}
+      {...additionalImgAttrs}
+    />
   </a>
 );
 
