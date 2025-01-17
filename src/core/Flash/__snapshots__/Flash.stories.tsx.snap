@@ -11,7 +11,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <svg class="text-cool-black mr-16 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-tick">
+        <use xlink:href="#sprite-icon-gui-check-outline">
         </use>
       </svg>
       <p class="ui-text-p1 mr-16 text-cool-black">
@@ -23,7 +23,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
         <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-close">
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
           </use>
         </svg>
       </button>
@@ -48,7 +48,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
         <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-close">
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
           </use>
         </svg>
       </button>
@@ -61,7 +61,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <svg class="text-white mr-16 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-warning">
+        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
         </use>
       </svg>
       <p class="ui-text-p1 mr-16 text-white">
@@ -73,7 +73,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
         <svg class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-close">
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
           </use>
         </svg>
       </button>
@@ -86,7 +86,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <svg class="text-white mr-16 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-warning">
+        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
         </use>
       </svg>
       <p class="ui-text-p1 mr-16 text-white">
@@ -98,7 +98,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
         <svg class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-close">
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
           </use>
         </svg>
       </button>

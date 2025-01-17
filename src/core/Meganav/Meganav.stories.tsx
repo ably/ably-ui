@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { delay, http, HttpResponse } from "msw";
 import Meganav from "../Meganav";
-import loadIcons from "../icons.js";
 
 import {
   attachStoreToWindow,
@@ -80,8 +79,6 @@ attachStoreToWindow(
 
 const Page = () => {
   useEffect(() => {
-    loadIcons();
-
     const store = getRemoteDataStore();
 
     fetchSessionData(store, "");
@@ -111,7 +108,6 @@ export const Default = {
 
 const PageSignedIn = () => {
   useEffect(() => {
-    loadIcons();
     const store = getRemoteDataStore();
     fetchSessionData(store, "/api/me");
     fetchBlogPosts(store, "/api/blog");
@@ -140,7 +136,6 @@ export const SignedIn = {
 
 const SignedInWithDataSearchId = () => {
   useEffect(() => {
-    loadIcons();
     const store = getRemoteDataStore();
     fetchSessionData(store, "/api/me");
     fetchBlogPosts(store, "/api/blog");

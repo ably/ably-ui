@@ -1,6 +1,6 @@
 import React, { CSSProperties, useCallback } from "react";
 
-import { defaultIconSecondaryColor } from "./Icon/secondary-colors";
+import { defaultIconSecondaryColor, guiIconAliases } from "./Icon/utils";
 import { IconName, IconSize } from "./Icon/types";
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import { convertTailwindClassToVar } from "./styles/colors/utils";
@@ -28,8 +28,11 @@ const Icon = ({
     secondaryColor ?? ""
   ).split(" dark:") as [ColorClass, ColorClass | undefined];
 
+  const processedName = guiIconAliases[name] ?? name;
   const iconName =
-    variant && !name.endsWith(`-${variant}`) ? `${name}-${variant}` : name;
+    variant && !processedName.endsWith(`-${variant}`)
+      ? `${processedName}-${variant}`
+      : processedName;
 
   const iconSvg = useCallback(
     (secondaryColor?: ColorClass, isDark?: boolean, isThemed?: boolean) => {
