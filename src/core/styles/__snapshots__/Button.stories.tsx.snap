@@ -494,7 +494,7 @@ exports[`Components/Button ReactComponent smoke-test 1`] = `
       <svg class
            style="width: 0.75rem; height: 0.75rem;"
       >
-        <use xlink:href="#sprite-icon-gui-search">
+        <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
         </use>
       </svg>
       Hello React!
@@ -506,7 +506,7 @@ exports[`Components/Button ReactComponent smoke-test 1`] = `
       <svg class
            style="width: 0.75rem; height: 0.75rem;"
       >
-        <use xlink:href="#sprite-icon-gui-arrow-right">
+        <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
         </use>
       </svg>
     </button>

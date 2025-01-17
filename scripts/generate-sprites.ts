@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import svgSprite from "svg-sprite";
+import { guiIconAliases } from "../src/core/Icon/utils";
 
 // Configuration for svg-sprite
 const config = {
@@ -39,7 +40,6 @@ const config = {
             // If the id has been marked with 'hero' then we append the correct variant suffix depending on
             // how many times we've seen the id before (since each HeroIcon variant has the same file name per icon)
             .replace(/id="hero-([^"]+)"/g, (match: string, id: string) => {
-              // console.log(match, id);
               if (idMap[id] === 1) {
                 idMap[id]++;
                 return `id="${id}-solid"`;
@@ -65,21 +65,25 @@ const config = {
 const sprite = new svgSprite(config);
 
 // Directories where your individual SVG files are located.
-// Given that icons are only added to the manifest later if their name is unique, the order of directories
-// means that custom icons are prioritised over HeroIcons
 const svgDirs = [
-  path.resolve(__dirname, "../src/core/icons"),
-  path.resolve(__dirname, "../node_modules/heroicons/24/outline"),
-  path.resolve(__dirname, "../node_modules/heroicons/24/solid"),
-  path.resolve(__dirname, "../node_modules/heroicons/20/solid"),
-  path.resolve(__dirname, "../node_modules/heroicons/16/solid"),
+  "../src/core/icons/display",
+  "../src/core/icons/gui",
+  "../src/core/icons/product",
+  "../src/core/icons/social",
+  "../src/core/icons/tech",
+  "../node_modules/heroicons/24/outline",
+  "../node_modules/heroicons/24/solid",
+  "../node_modules/heroicons/20/solid",
+  "../node_modules/heroicons/16/solid",
 ];
 
 // Object to store the grouped filenames
 const iconGroups: Record<string, string[]> = {};
 
 // Function to read and add SVG files from a directory
-const processSvgDir = (dir: string) => {
+const processSvgDir = (dirString: string) => {
+  const dir = path.resolve(__dirname, dirString);
+
   fs.readdirSync(dir).forEach((file) => {
     if (file.endsWith(".svg")) {
       try {
@@ -127,6 +131,15 @@ const processSvgDir = (dir: string) => {
       }
     }
   });
+
+  // Add the legacy gui icon aliases to the manifest of valid icon names
+  if (dirString.includes("icons/gui")) {
+    Object.keys(guiIconAliases).forEach((alias) => {
+      if (!iconGroups["gui"].includes(alias)) {
+        iconGroups["gui"].push(alias);
+      }
+    });
+  }
 };
 
 // Process each directory

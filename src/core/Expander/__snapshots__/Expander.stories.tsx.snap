@@ -314,7 +314,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
     <svg class="text-pink-500"
          style="width: 24px; height: 24px;"
     >
-      <use xlink:href="#sprite-icon-gui-warning">
+      <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
       </use>
     </svg>
   </span>
