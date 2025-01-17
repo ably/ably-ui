@@ -17,7 +17,7 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>
@@ -34,7 +34,7 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>
@@ -60,7 +60,7 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>
@@ -77,7 +77,7 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>
@@ -103,7 +103,7 @@ exports[`Components/Tooltip LeftBound smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>
@@ -120,7 +120,7 @@ exports[`Components/Tooltip LeftBound smoke-test 1`] = `
         <svg class="text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
-          <use xlink:href="#sprite-icon-gui-info">
+          <use xlink:href="#sprite-icon-gui-information-circle-outline">
           </use>
         </svg>
       </button>

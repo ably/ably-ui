@@ -1,5 +1,4 @@
 import React from "react";
-import { DocsContainer } from "@storybook/blocks";
 import { initialize, mswLoader } from "msw-storybook-addon";
 
 import "./styles.css";
