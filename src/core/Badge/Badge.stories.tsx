@@ -39,7 +39,7 @@ WithBeforeIcon.parameters = {
 export const WithAfterIcon = Template.bind({});
 WithAfterIcon.args = {
   children: "BADGE",
-  iconAfter: "icon-gui-chevron-down",
+  iconAfter: "icon-gui-chevron-down-outline",
 };
 WithAfterIcon.parameters = {
   docs: {
