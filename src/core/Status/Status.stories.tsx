@@ -1,7 +1,7 @@
 import React from "react";
 import { delay, http, HttpResponse } from "msw";
 import { SWRConfig } from "swr";
-import Status, { StatusUrl } from "../Status";
+import Status, { StatusUrl, StatusType, statusTypes } from "../Status";
 
 export default {
   title: "Components/Status",
@@ -12,11 +12,13 @@ export default {
   tags: ["!autodocs"],
 };
 
-const withEmptySWRCache = (component: JSX.Element) => (
-  <SWRConfig value={{ provider: () => new Map() }}>{component}</SWRConfig>
+const withEmptySWRCache = (component: JSX.Element, key?: StatusType) => (
+  <SWRConfig key={key} value={{ provider: () => new Map() }}>
+    {component}
+  </SWRConfig>
 );
 
-const getStatusDescription = (indicator: string): string => {
+const getStatusDescription = (indicator: StatusType): string => {
   switch (indicator) {
     case "none":
     case "operational":
@@ -68,65 +70,52 @@ export const Error = {
     withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
 };
 
-const mockParametersWithStatus = (indicator: string) => {
-  return {
-    msw: {
-      handlers: {
-        status: http.get(StatusUrl, async () => {
-          await delay();
+const mockAllStatuses = () => ({
+  msw: {
+    handlers: [
+      http.get(StatusUrl, async ({ request }) => {
+        const url = new URL(request.url);
+        const indicator = url.searchParams.get("indicator");
 
-          return HttpResponse.json({
-            status: {
-              indicator,
-              description: getStatusDescription(indicator),
-            },
-          });
-        }),
-      },
-    },
-  };
-};
+        await delay();
+        return HttpResponse.json({
+          status: {
+            indicator,
+            description: getStatusDescription(
+              indicator ? (indicator as StatusType) : "unknown",
+            ),
+          },
+        });
+      }),
+    ],
+  },
+});
 
-export const None = {
-  parameters: mockParametersWithStatus("none"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
-};
+const StatusStory = ({
+  showDescription = false,
+}: {
+  showDescription?: boolean;
+}) => (
+  <div className="flex flex-col gap-8">
+    {statusTypes.map((indicator) =>
+      withEmptySWRCache(
+        <Status
+          statusUrl={`${StatusUrl}?indicator=${indicator}`}
+          refreshInterval={0}
+          showDescription={showDescription}
+        />,
+        indicator,
+      ),
+    )}
+  </div>
+);
 
-export const Operational = {
-  parameters: mockParametersWithStatus("operational"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
-};
-
-export const Minor = {
-  parameters: mockParametersWithStatus("minor"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
-};
-
-export const Major = {
-  parameters: mockParametersWithStatus("major"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
-};
-
-export const Critical = {
-  parameters: mockParametersWithStatus("critical"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
-};
-
-export const Unknown = {
-  parameters: mockParametersWithStatus("unknown"),
-  render: () =>
-    withEmptySWRCache(<Status statusUrl={StatusUrl} refreshInterval={0} />),
+export const Default = {
+  parameters: mockAllStatuses(),
+  render: () => <StatusStory />,
 };
 
 export const WithDescription = {
-  parameters: mockParametersWithStatus("operational"),
-  render: () =>
-    withEmptySWRCache(
-      <Status statusUrl={StatusUrl} refreshInterval={0} showDescription />,
-    ),
+  parameters: mockAllStatuses(),
+  render: () => <StatusStory showDescription />,
 };
