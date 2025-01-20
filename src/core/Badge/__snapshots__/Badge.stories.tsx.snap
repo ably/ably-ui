@@ -13,7 +13,7 @@ exports[`Components/Badge Disabled smoke-test 1`] = `
   <svg class="text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
-    <use xlink:href="#sprite-icon-gui-check-circled">
+    <use xlink:href="#sprite-icon-gui-check-circle-outline">
     </use>
   </svg>
   <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
@@ -48,7 +48,7 @@ exports[`Components/Badge WithAfterIcon smoke-test 1`] = `
   <svg class="text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
-    <use xlink:href="#sprite-icon-gui-chevron-down">
+    <use xlink:href="#sprite-icon-gui-chevron-down-outline">
     </use>
   </svg>
 </div>
@@ -73,7 +73,7 @@ exports[`Components/Badge WithLargeIconSize smoke-test 1`] = `
   <svg class="text-neutral-900 dark:text-neutral-400"
        style="width: 16px; height: 16px;"
   >
-    <use xlink:href="#sprite-icon-gui-check-circled">
+    <use xlink:href="#sprite-icon-gui-check-circle-outline">
     </use>
   </svg>
   <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">

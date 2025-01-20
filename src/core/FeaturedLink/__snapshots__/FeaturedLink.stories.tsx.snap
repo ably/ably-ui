@@ -9,7 +9,7 @@ exports[`Components/Featured Link Default smoke-test 1`] = `
   <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
 </a>
@@ -24,7 +24,7 @@ exports[`Components/Featured Link Disabled smoke-test 1`] = `
   <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left]"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
 </a>
@@ -39,7 +39,7 @@ exports[`Components/Featured Link Large smoke-test 1`] = `
   <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
 </a>
@@ -54,7 +54,7 @@ exports[`Components/Featured Link Pink smoke-test 1`] = `
   <svg class="text-pink-500 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
 </a>
@@ -68,7 +68,7 @@ exports[`Components/Featured Link Reverse smoke-test 1`] = `
   <svg class="align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180 group-hover/featured-link:right-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
   Featured link
@@ -84,7 +84,7 @@ exports[`Components/Featured Link Small smoke-test 1`] = `
   <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
-    <use xlink:href="#sprite-icon-gui-link-arrow">
+    <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
     </use>
   </svg>
 </a>

@@ -2,8 +2,8 @@ import React, { useState, useMemo } from "react";
 import Icon from "../Icon";
 import Button from "../Button";
 import EncapsulatedIcon from "./EncapsulatedIcon";
-import loadIcons from "../icons";
 import { IconName, iconNames, IconSize } from "./types";
+import { guiIconAliases } from "./utils";
 
 export default {
   title: "Components/Icon",
@@ -11,23 +11,14 @@ export default {
   parameters: {
     layout: "fullscreen",
   },
-  tags: ["autodocs"],
+  tags: ["!autodocs"],
 };
 
-const iconVariants = [
-  "all",
-  "legacy",
-  "outline",
-  "solid",
-  "mini",
-  "micro",
-] as const;
+const iconVariants = ["outline", "solid", "mini", "micro", "legacy"] as const;
 type IconVariant = (typeof iconVariants)[number];
 
 const iconVariantSize = (variant: IconVariant): string => {
   switch (variant) {
-    case "all":
-      return "mixed";
     case "legacy":
     case "outline":
     case "solid":
@@ -52,20 +43,20 @@ const getIconSize = (icon: string): IconSize => {
 };
 
 const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
-  if (!document.querySelector(".ably-sprites")) {
-    loadIcons();
-  }
-  const [shownVariant, setShownVariant] = useState<IconVariant>("all");
+  const [shownVariant, setShownVariant] = useState<IconVariant>("outline");
 
   const filteredIcons = useMemo(
     () =>
-      iconSet.filter(
-        (icon) =>
-          shownVariant === "all" ||
-          (shownVariant === "legacy" &&
-            !iconVariants.some((variant) => icon.endsWith(`-${variant}`))) ||
-          icon.includes(`-${shownVariant}`),
-      ),
+      iconSet.some((icon) => icon.includes("icon-gui-"))
+        ? iconSet.filter(
+            (icon) =>
+              (shownVariant === "legacy" &&
+                !iconVariants.some((variant) =>
+                  icon.endsWith(`-${variant}`),
+                )) ||
+              icon.includes(`-${shownVariant}`),
+          )
+        : iconSet,
     [iconSet, shownVariant],
   );
 
@@ -99,15 +90,18 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
                 ) : (
                   <Icon
                     name={icon}
-                    additionalCSS="hover:text-active-orange"
+                    additionalCSS="hover:text-active-orange transition-colors"
                     color="text-cool-black"
                     size={getIconSize(icon)}
                   />
                 )}
               </div>
             </div>
-            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex items-center flex-1">
-              {icon}
+            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center flex-1 gap-16">
+              <p>{icon}</p>
+              {Object.keys(guiIconAliases).includes(icon) ? (
+                <p className="italic">(alias of: {guiIconAliases[icon]})</p>
+              ) : null}
             </code>
           </div>
         ))}
@@ -138,10 +132,6 @@ export const ProductIcons = {
 
 export const EncapsulatedIcons = {
   render: () => renderIcons([...iconNames.product], true),
-};
-
-export const OtherIcons = {
-  render: () => renderIcons([...iconNames.other]),
 };
 
 export const IconWithSecondaryColor = {
