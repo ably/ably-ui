@@ -21,7 +21,6 @@ export const guiIconAliases: Record<string, string> = {
   "icon-gui-burger-menu": "icon-gui-bars-3-outline",
   "icon-gui-calendar": "icon-gui-calendar-days-outline",
   "icon-gui-check": "icon-gui-check-outline",
-  "icon-gui-check-circled-fill": "icon-gui-check-circle-solid",
   "icon-gui-check-circled": "icon-gui-check-circle-outline",
   "icon-gui-clock": "icon-gui-clock-outline",
   "icon-gui-close": "icon-gui-x-mark-outline",

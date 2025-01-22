@@ -1,7 +1,6 @@
 import path from "path";
 import fs from "fs";
 import svgSprite from "svg-sprite";
-import { guiIconAliases } from "../src/core/Icon/utils";
 
 // Configuration for svg-sprite
 const config = {
@@ -131,15 +130,6 @@ const processSvgDir = (dirString: string) => {
       }
     }
   });
-
-  // Add the legacy gui icon aliases to the manifest of valid icon names
-  if (dirString.includes("icons/gui")) {
-    Object.keys(guiIconAliases).forEach((alias) => {
-      if (!iconGroups["gui"].includes(alias)) {
-        iconGroups["gui"].push(alias);
-      }
-    });
-  }
 };
 
 // Process each directory
