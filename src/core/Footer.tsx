@@ -460,7 +460,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
         <div className="xs:grid xs:grid-cols-2 sm:grid-cols-4 xs:pl-16 sm:pl-8 md:justify-items-end">
           <div className="flex mr-24">
             <Icon
-              name="icon-gui-tick"
+              name="icon-gui-check-outline"
               color="text-active-orange"
               size="1.5rem"
               additionalCSS="bg-white rounded-full mr-12 ui-footer-tick-icon"
@@ -476,7 +476,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
           </div>
           <div className="flex mr-24 md:col-start-2">
             <Icon
-              name="icon-gui-tick"
+              name="icon-gui-check-outline"
               color="text-active-orange"
               size="1.5rem"
               additionalCSS="bg-white rounded-full mr-12 ui-footer-tick-icon"
@@ -492,7 +492,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
           </div>
           <div className="flex mr-24 md:col-start-3">
             <Icon
-              name="icon-gui-tick"
+              name="icon-gui-check-outline"
               color="text-active-orange"
               size="1.5rem"
               additionalCSS="bg-white rounded-full mr-12  ui-footer-tick-icon"
@@ -508,7 +508,7 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
           </div>
           <div className="flex mr-24 md:col-start-4">
             <Icon
-              name="icon-gui-tick"
+              name="icon-gui-check-outline"
               color="text-active-orange"
               size="1.5rem"
               additionalCSS="bg-white rounded-full mr-12  ui-footer-tick-icon"

@@ -157,7 +157,7 @@ const Tooltip = ({
       >
         {triggerElement ?? (
           <Icon
-            name="icon-gui-info"
+            name="icon-gui-information-circle-micro"
             color="text-neutral-800 dark:text-neutral-500"
             size="1rem"
           />

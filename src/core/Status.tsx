@@ -92,7 +92,7 @@ const Status = ({
             {data.status.description.charAt(0).toUpperCase() +
               data.status.description.slice(1).toLowerCase()}
           </span>
-          <Icon name="icon-gui-external-link" size="16px" />
+          <Icon name="icon-gui-arrow-top-right-on-square-outline" size="16px" />
         </div>
       )}
     </a>

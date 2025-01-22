@@ -33,7 +33,7 @@ const Slide = ({ name }: { name: string }) => (
         <a href="/case-study" className="ui-btn self-start">
           Read case study
           <Icon
-            name="icon-gui-arrow-right"
+            name="icon-gui-arrow-long-right-outline"
             size="1.25rem"
             additionalCSS="ml-4"
           />

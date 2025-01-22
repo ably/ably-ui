@@ -63,7 +63,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-lg ui-button-lg-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Large
@@ -79,7 +79,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary ui-button-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Regular
@@ -95,7 +95,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-sm ui-button-sm-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Small
@@ -111,7 +111,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-xs"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Extra small
@@ -130,7 +130,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
       >
         Large
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -146,7 +146,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
       >
         Regular
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -162,7 +162,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
       >
         Small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -178,7 +178,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
       >
         Extra small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -304,7 +304,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-lg ui-button-lg-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Large
@@ -320,7 +320,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority ui-button-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Regular
@@ -336,7 +336,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-sm ui-button-sm-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Small
@@ -352,7 +352,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-xs"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Extra small
@@ -371,7 +371,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
       >
         Large
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -387,7 +387,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
       >
         Regular
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -403,7 +403,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
       >
         Small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -419,7 +419,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
       >
         Extra small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -577,7 +577,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-lg ui-button-lg-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Large
@@ -593,7 +593,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary ui-button-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Regular
@@ -609,7 +609,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-sm ui-button-sm-left-icon"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Small
@@ -625,7 +625,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-xs"
       >
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-search">
+          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
           </use>
         </svg>
         Extra small
@@ -644,7 +644,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       >
         Large
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -660,7 +660,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       >
         Regular
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -676,7 +676,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       >
         Small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>
@@ -692,7 +692,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       >
         Extra small
         <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-right">
+          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
           </use>
         </svg>
       </button>

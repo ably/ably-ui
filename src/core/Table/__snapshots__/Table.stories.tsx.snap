@@ -71,7 +71,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -104,7 +104,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -151,7 +151,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -184,7 +184,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -231,7 +231,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -264,7 +264,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -311,7 +311,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -344,7 +344,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -391,7 +391,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -424,7 +424,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -482,7 +482,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -515,7 +515,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -562,7 +562,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -595,7 +595,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -642,7 +642,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -675,7 +675,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -722,7 +722,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -755,7 +755,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -802,7 +802,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -835,7 +835,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -893,7 +893,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -926,7 +926,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -973,7 +973,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -1006,7 +1006,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -1053,7 +1053,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -1086,7 +1086,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -1133,7 +1133,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -1166,7 +1166,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>
@@ -1213,7 +1213,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-outline">
+                <use xlink:href="#sprite-icon-gui-information-circle-micro">
                 </use>
               </svg>
             </button>
@@ -1246,7 +1246,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
+                <use xlink:href="#sprite-icon-gui-check-circled-fill">
                 </use>
               </svg>
             </span>

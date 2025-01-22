@@ -142,8 +142,8 @@ const Accordion = ({
   data,
   theme = "transparent",
   icons = {
-    closed: { name: "icon-gui-plus" },
-    open: { name: "icon-gui-minus" },
+    closed: { name: "icon-gui-plus-outline" },
+    open: { name: "icon-gui-minus-outline" },
   },
   options,
   ...props

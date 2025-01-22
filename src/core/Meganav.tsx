@@ -31,7 +31,7 @@ export type MeganavTheme = {
 export type AbsUrl = (path: string) => string;
 
 export type MeganavPaths = {
-  logo: string;
+  logo?: string;
   iconSprites: string;
   ablyStack: string;
   blogThumb1: string;
@@ -204,11 +204,7 @@ const Meganav = ({
       {notice && <Notice {...notice.props} config={notice.config} />}
       <div className="ui-meganav ui-grid-px">
         <div className="mr-24">
-          <Logo
-            dataId="meganav-logo"
-            href={urlBase}
-            logoUrl={paths?.logo ?? ""}
-          />
+          <Logo dataId="meganav-logo" href={urlBase} logoUrl={paths?.logo} />
         </div>
 
         <MeganavItemsDesktop

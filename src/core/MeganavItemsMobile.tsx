@@ -78,7 +78,7 @@ const MeganavItemsMobile = ({
             <form className="mb-16" action={absUrl("/search")} method="get">
               <div className="relative w-full">
                 <Icon
-                  name="icon-gui-search"
+                  name="icon-gui-magnifying-glass-outline"
                   color="text-cool-black"
                   size="1.5rem"
                   additionalCSS="absolute top-12 left-16 hover:text-gui-hover"
@@ -89,7 +89,7 @@ const MeganavItemsMobile = ({
                   data-id="meganav-search-input-clear"
                 >
                   <Icon
-                    name="icon-gui-cross-circled-fill"
+                    name="icon-gui-x-circle-solid"
                     color="text-dark-grey"
                     size="1.5rem"
                     additionalCSS=""

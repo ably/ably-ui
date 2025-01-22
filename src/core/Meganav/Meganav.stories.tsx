@@ -88,7 +88,6 @@ const Page = () => {
   return (
     <Meganav
       paths={{
-        logo: "#",
         ablyStack: "#",
         iconSprites: "#",
         blogThumb1: "#",
@@ -116,7 +115,6 @@ const PageSignedIn = () => {
   return (
     <Meganav
       paths={{
-        logo: "#",
         ablyStack: "#",
         iconSprites: "#",
         blogThumb1: "#",
@@ -144,7 +142,6 @@ const SignedInWithDataSearchId = () => {
   return (
     <Meganav
       paths={{
-        logo: "#",
         ablyStack: "#",
         iconSprites: "#",
         blogThumb1: "#",

@@ -80,7 +80,7 @@ const FeaturedLink = ({
       {reverse ? (
         <>
           <Icon
-            name="icon-gui-link-arrow"
+            name="icon-gui-arrow-long-right-outline"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(
@@ -94,7 +94,7 @@ const FeaturedLink = ({
         <>
           {children}
           <Icon
-            name="icon-gui-link-arrow"
+            name="icon-gui-arrow-long-right-outline"
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(

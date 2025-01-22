@@ -22,7 +22,7 @@ const MeganavSearch = ({
       aria-label={`Show Search Panel`}
     >
       <Icon
-        name="icon-gui-search"
+        name="icon-gui-magnifying-glass-outline"
         color="text-cool-black"
         size="1.5rem"
         additionalCSS="group-hover:text-gui-hover group-focus:text-gui-focus"

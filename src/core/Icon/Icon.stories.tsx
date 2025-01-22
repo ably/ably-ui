@@ -3,7 +3,6 @@ import Icon from "../Icon";
 import Button from "../Button";
 import EncapsulatedIcon from "./EncapsulatedIcon";
 import { IconName, iconNames, IconSize } from "./types";
-import { guiIconAliases } from "./utils";
 
 export default {
   title: "Components/Icon",
@@ -99,9 +98,6 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
             </div>
             <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center flex-1 gap-16">
               <p>{icon}</p>
-              {Object.keys(guiIconAliases).includes(icon) ? (
-                <p className="italic">(alias of: {guiIconAliases[icon]})</p>
-              ) : null}
             </code>
           </div>
         ))}

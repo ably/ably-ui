@@ -20,7 +20,7 @@ const MeganavControlMobilePanelOpen = ({
   >
     {children}
     <Icon
-      name="icon-gui-disclosure-arrow"
+      name="icon-gui-chevron-right-micro"
       color="text-cool-black"
       size="1.5rem"
       additionalCSS="relative -top-1 ml-auto float-right"

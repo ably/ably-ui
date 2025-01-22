@@ -7448,13 +7448,13 @@ exports[`Components/Icon IconWithSecondaryColor smoke-test 1`] = `
     <svg class="text-orange-600"
          style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
     >
-      <use xlink:href="#sprite-icon-gui-check-circle-solid">
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
       </use>
     </svg>
     <svg class="text-orange-600"
          style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-neutral-1300);"
     >
-      <use xlink:href="#sprite-icon-gui-check-circle-solid">
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
       </use>
     </svg>
   </div>
@@ -7465,19 +7465,19 @@ exports[`Components/Icon IconWithSecondaryColor smoke-test 1`] = `
     <svg class="text-orange-600"
          style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-white);"
     >
-      <use xlink:href="#sprite-icon-gui-check-circle-solid">
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
       </use>
     </svg>
     <svg class="text-orange-200 dark:text-orange-1000 hidden dark:block"
          style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-orange-600);"
     >
-      <use xlink:href="#sprite-icon-gui-check-circle-solid">
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
       </use>
     </svg>
     <svg class="text-orange-200 dark:text-orange-1000 dark:hidden"
          style="width: 1.5rem; height: 1.5rem; --ui-icon-secondary-color: var(--color-orange-600);"
     >
-      <use xlink:href="#sprite-icon-gui-check-circle-solid">
+      <use xlink:href="#sprite-icon-gui-check-circled-fill">
       </use>
     </svg>
   </div>

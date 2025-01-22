@@ -24,7 +24,7 @@ const data = [...Array(5)].map((_, i) => ({
 
 const dataWithIcons = data.map((datum) => ({
   ...datum,
-  icon: "icon-gui-document-generic" as IconName,
+  icon: "icon-gui-document-outline" as IconName,
 }));
 
 const dataWithTextarea = data.map((datum) => ({
