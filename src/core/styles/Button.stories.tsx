@@ -74,13 +74,13 @@ const buttonSet = (type: ButtonType) => (
                 >
                   {index === 1 ? (
                     <svg style={{ width: "1.5rem", height: "1.5rem" }}>
-                      <use xlinkHref="#sprite-icon-gui-search"></use>
+                      <use xlinkHref="#sprite-icon-gui-magnifying-glass-outline"></use>
                     </svg>
                   ) : null}
                   {size.label}
                   {index === 2 ? (
                     <svg style={{ width: "1.5rem", height: "1.5rem" }}>
-                      <use xlinkHref="#sprite-icon-gui-arrow-right"></use>
+                      <use xlinkHref="#sprite-icon-gui-arrow-long-right-outline"></use>
                     </svg>
                   ) : null}
                 </button>
@@ -111,12 +111,16 @@ export const ReactComponent = {
         </Button>
       </div>
       <div>
-        <Button variant="primary" leftIcon="icon-gui-search">
+        <Button variant="primary" leftIcon="icon-gui-magnifying-glass-outline">
           Hello React!
         </Button>
       </div>
       <div>
-        <Button variant="secondary" size="xs" rightIcon="icon-gui-arrow-right">
+        <Button
+          variant="secondary"
+          size="xs"
+          rightIcon="icon-gui-arrow-long-right-outline"
+        >
           Hello React!
         </Button>
       </div>

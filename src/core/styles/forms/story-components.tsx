@@ -19,7 +19,7 @@ export const Checkbox = ({ index, disabled }: FormElementProps) => (
     />
     <div data-ui-checkbox-styled="" className="ui-checkbox-styled">
       <Icon
-        name="icon-gui-tick"
+        name="icon-gui-check-micro"
         size="1rem"
         additionalCSS="ui-checkbox-styled-tick"
       />

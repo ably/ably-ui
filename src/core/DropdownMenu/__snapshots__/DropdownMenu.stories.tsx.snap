@@ -10,10 +10,10 @@ exports[`Components/Dropdown Menu Default smoke-test 1`] = `
     <span class="leading-normal">
       Dropdown Menu Trigger
     </span>
-    <svg class="text-cool-black transform rotate-90 group-hover:text-gui-hover group-active:text-gui-active group-focus:text-gui-focus"
+    <svg class="text-cool-black group-hover:text-gui-hover group-active:text-gui-active group-focus:text-gui-focus"
          style="width: 1.25rem; height: 1.25rem;"
     >
-      <use xlink:href="#sprite-icon-gui-chevron-right-outline">
+      <use xlink:href="#sprite-icon-gui-chevron-down-micro">
       </use>
     </svg>
   </button>

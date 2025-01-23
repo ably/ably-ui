@@ -140,7 +140,11 @@ export const OverriddenControls = {
       controlsOpenedLabel={
         <span className="flex items-center gap-8">
           Away with you, knave.{" "}
-          <Icon color="text-pink-500" size="24px" name="icon-gui-warning" />
+          <Icon
+            color="text-pink-500"
+            size="24px"
+            name="icon-gui-exclamation-triangle-outline"
+          />
         </span>
       }
       controlsClosedLabel="Give me more!"

@@ -191,10 +191,10 @@ const Slider = ({ children, options }: SliderProps) => {
         >
           <div className="ui-icon-cta-holder flex w-48">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-              <Icon name="icon-gui-arrow-left" size="1.5rem" />
+              <Icon name="icon-gui-arrow-long-left-outline" size="1.5rem" />
             </div>
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-              <Icon name="icon-gui-arrow-left" size="1.5rem" />
+              <Icon name="icon-gui-arrow-long-left-outline" size="1.5rem" />
             </div>
           </div>
         </button>
@@ -215,10 +215,10 @@ const Slider = ({ children, options }: SliderProps) => {
         >
           <div className="ui-icon-cta-holder flex w-48">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-              <Icon name="icon-gui-arrow-right" size="1.5rem" />
+              <Icon name="icon-gui-arrow-long-right-outline" size="1.5rem" />
             </div>
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
-              <Icon name="icon-gui-arrow-right" size="1.5rem" />
+              <Icon name="icon-gui-arrow-long-right-outline" size="1.5rem" />
             </div>
           </div>
         </button>

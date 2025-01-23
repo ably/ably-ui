@@ -88,7 +88,7 @@ const Notice = ({
             className="ml-auto h-20 w-20 border-none bg-none self-baseline"
           >
             <Icon
-              name="icon-gui-close"
+              name="icon-gui-x-mark-outline"
               size="1.25rem"
               color="text-cool-black"
             />

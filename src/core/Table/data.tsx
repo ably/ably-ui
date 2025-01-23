@@ -16,7 +16,7 @@ const Supported = () => (
 
 const Unsupported = () => (
   <Icon
-    name="icon-gui-cross-circled-fill"
+    name="icon-gui-x-circle-solid"
     size="1.5rem"
     color="text-gui-error"
     additionalCSS="flex-grow-0 flex-shrink-0"

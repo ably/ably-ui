@@ -20,10 +20,10 @@ const MeganavControlMobilePanelClose = ({
       aria-label="Hide panel"
     >
       <Icon
-        name="icon-gui-disclosure-arrow"
+        name="icon-gui-chevron-left-micro"
         color="text-cool-black"
         size="1.5rem"
-        additionalCSS="relative -top-1 transform rotate-180"
+        additionalCSS="relative -top-1"
       />
       Back
     </button>

@@ -16,7 +16,7 @@ const MeganavSearchPanel = ({ absUrl }: { absUrl: AbsUrl }) => (
         >
           <div className="relative w-full">
             <Icon
-              name="icon-gui-search"
+              name="icon-gui-magnifying-glass-outline"
               color="text-cool-black"
               size="1.5rem"
               additionalCSS="absolute top-12 left-16"

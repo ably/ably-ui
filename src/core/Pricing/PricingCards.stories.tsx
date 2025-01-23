@@ -28,7 +28,9 @@ export const Plans = {
 };
 
 export const Consumption = {
-  render: () => <Template data={consumptionData} delimiter="icon-gui-plus" />,
+  render: () => (
+    <Template data={consumptionData} delimiter="icon-gui-plus-outline" />
+  ),
 };
 
 export const ConsumptionNoDelimiter = {

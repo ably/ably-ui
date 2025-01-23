@@ -28,10 +28,10 @@ const MeganavControl = ({
   >
     {children}
     <Icon
-      name="icon-gui-disclosure-arrow"
+      name="icon-gui-chevron-down-micro"
       color="text-cool-black"
       size="1.5rem"
-      additionalCSS="transform rotate-90 group-hover:text-gui-hover group-focus:text-gui-focus"
+      additionalCSS="group-hover:text-gui-hover group-focus:text-gui-focus"
     />
   </button>
 );

@@ -192,7 +192,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         href={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
-                        rightIcon="icon-gui-arrow-right"
+                        rightIcon="icon-gui-arrow-long-right-outline"
                         iconColor={cta.iconColor}
                       >
                         {cta.text}

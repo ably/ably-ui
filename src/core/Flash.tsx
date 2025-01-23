@@ -133,9 +133,9 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
 
   const withIcons: Record<FlashPropsType, IconName | ""> = {
     notice: "icon-gui-ably-badge",
-    success: "icon-gui-tick",
-    error: "icon-gui-warning",
-    alert: "icon-gui-warning",
+    success: "icon-gui-check-outline",
+    error: "icon-gui-exclamation-triangle-outline",
+    alert: "icon-gui-exclamation-triangle-outline",
     info: "",
   };
 
@@ -178,7 +178,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
         >
           {iconColor[type] && (
             <Icon
-              name="icon-gui-close"
+              name="icon-gui-x-mark-outline"
               color={iconColor[type]}
               size="1.5rem"
               additionalCSS="transition-colors"

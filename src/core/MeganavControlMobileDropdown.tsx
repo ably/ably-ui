@@ -12,14 +12,14 @@ const MeganavControlMobileDropdown = ({ theme }: { theme: MeganavTheme }) => (
     aria-controls="meganav-mobile-dropdown"
   >
     <Icon
-      name="icon-gui-burger-menu"
+      name="icon-gui-bars-3-outline"
       size="1.5rem"
       color={theme.mobileMenuColor}
       additionalCSS="transition-colors"
       data-id="meganav-control-mobile-dropdown-menu"
     />
     <Icon
-      name="icon-gui-close"
+      name="icon-gui-x-mark-outline"
       size="1.5rem"
       color={theme.mobileMenuColor}
       additionalCSS="transition-colors hidden"

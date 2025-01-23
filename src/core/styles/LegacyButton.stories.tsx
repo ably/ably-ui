@@ -53,27 +53,51 @@ export const WithIcons = {
   render: () => (
     <div className="flex flex-col gap-16 max-w-[300px]">
       <button type="button" className="ui-btn">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Primary button with icon
       </button>
       <button type="button" className="ui-btn-alt">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Primary button alternative with icon
       </button>
       <button type="button" className="ui-btn-secondary">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Secondary button with icon
       </button>
       <button type="button" className="ui-btn" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Unavailable primary button with icon
       </button>
       <button type="button" className="ui-btn-alt" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Unavailable primary button alternative with icon
       </button>
       <button type="button" className="ui-btn-secondary" disabled>
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Unavailable secondary button with icon
       </button>
     </div>
@@ -101,7 +125,7 @@ export const ExtraSmall = {
       </button>
       <button type="button" className="ui-btn p-btn-xsmall text-btn4">
         <Icon
-          name="icon-gui-search"
+          name="icon-gui-magnifying-glass-micro"
           size="1rem"
           additionalCSS="ui-btn-icon-xsmall"
         />
@@ -125,7 +149,7 @@ export const Small = {
       </button>
       <button type="button" className="ui-btn p-btn-small text-btn3">
         <Icon
-          name="icon-gui-search"
+          name="icon-gui-magnifying-glass-micro"
           size="1rem"
           additionalCSS="ui-btn-icon-small"
         />
@@ -148,7 +172,11 @@ export const Large = {
         Primary button
       </button>
       <button type="button" className="ui-btn p-btn-large text-btn1">
-        <Icon name="icon-gui-search" size="1rem" additionalCSS="ui-btn-icon" />
+        <Icon
+          name="icon-gui-magnifying-glass-micro"
+          size="1rem"
+          additionalCSS="ui-btn-icon"
+        />
         Primary button with icon
       </button>
       <button type="button" className="ui-btn-alt p-btn-large text-btn1">
