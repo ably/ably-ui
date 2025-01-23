@@ -46,6 +46,7 @@ export const HeaderLinks: React.FC<
           href={sessionState.account.links?.dashboard.href}
           variant="secondary"
           className="md:ui-button-secondary-xs"
+          aria-label="Access your dashboard"
         >
           Dashboard
         </LinkButton>

@@ -88,3 +88,52 @@ LoggedIn.args = {
     signedIn: true,
   },
 };
+
+export const WithThemedScrollpoints = {
+  render: () => (
+    <div className="h-[3000px] -m-16">
+      <Header
+        {...WithButtonNav.args}
+        themedScrollpoints={[
+          {
+            id: "header-zone",
+            className: "ui-theme-light !bg-transparent !border-none",
+          },
+          {
+            id: "light-zone",
+            className: "ui-theme-light",
+          },
+          {
+            id: "dark-zone",
+            className: "ui-theme-dark",
+          },
+        ]}
+      />
+      <div
+        id="header-zone"
+        className="w-full bg-gradient-to-r from-neutral-000 to-orange-600 h-128 flex justify-center"
+      >
+        <p className="ui-text-p2 text-neutral-1300 flex gap-4 items-center p-64">
+          I&apos;m transparent! (scroll down{" "}
+          <Icon name="icon-gui-arrow-down-outline" />)
+        </p>
+      </div>
+      <div
+        id="light-zone"
+        className="w-full h-[800px] bg-neutral-000 flex justify-center"
+      >
+        <p className="ui-text-p2 text-neutral-1300 p-64">
+          I&apos;m light themed!
+        </p>
+      </div>
+      <div
+        id="dark-zone"
+        className="w-full h-full bg-neutral-1300 flex justify-center"
+      >
+        <p className="ui-text-p2 text-neutral-000 p-64">
+          I&apos;m dark themed!
+        </p>
+      </div>
+    </div>
+  ),
+};

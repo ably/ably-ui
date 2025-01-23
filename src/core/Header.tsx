@@ -8,6 +8,12 @@ import {
   HEADER_HEIGHT,
 } from "./utils/heights";
 import { HeaderLinks } from "./Header/HeaderLinks";
+import throttle from "lodash.throttle";
+
+export type ThemedScrollpoint = {
+  id: string;
+  className: string;
+};
 
 export type HeaderProps = {
   searchBar?: ReactNode;
@@ -30,6 +36,7 @@ export type HeaderProps = {
       };
     };
   };
+  themedScrollpoints?: ThemedScrollpoint[];
 };
 
 const Header: React.FC<HeaderProps> = ({
@@ -40,17 +47,11 @@ const Header: React.FC<HeaderProps> = ({
   nav,
   mobileNav,
   sessionState,
+  themedScrollpoints = [],
 }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
   const menuRef = useRef<HTMLDivElement>(null);
-
-  // a temporary thing to test out containerised layout
-  const [withContainer, setWithContainer] = useState(false);
-  useEffect(() => {
-    setWithContainer(
-      localStorage.getItem("ably-docs-with-container") === "true",
-    );
-  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -76,25 +77,51 @@ const Header: React.FC<HeaderProps> = ({
     };
   }, [showMenu]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      for (const scrollpoint of themedScrollpoints) {
+        const element = document.getElementById(scrollpoint.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
+            setScrollpointClasses(scrollpoint.className);
+            return;
+          }
+        }
+      }
+    };
+
+    const throttledHandleScroll = throttle(handleScroll, 150);
+
+    handleScroll();
+
+    window.addEventListener("scroll", throttledHandleScroll);
+    return () => window.removeEventListener("scroll", throttledHandleScroll);
+  }, [themedScrollpoints]);
+
   return (
     <>
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300",
-          { "px-24 md:px-64": !withContainer },
+          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 transition-colors px-24 md:px-64",
+          scrollpointClasses,
         )}
         style={{ height: HEADER_HEIGHT }}
       >
-        <div
-          className={cn("flex items-center h-full", {
-            "ui-standard-container mx-auto": withContainer,
-          })}
-        >
+        <div className="flex items-center h-full">
           <Logo
             href={logoHref}
+            theme="light"
             additionalLinkAttrs={{
-              className: "flex h-full focus-base rounded mr-32",
+              className: "flex dark:hidden h-full focus-base rounded mr-32",
+            }}
+          />
+          <Logo
+            href={logoHref}
+            theme="dark"
+            additionalLinkAttrs={{
+              className: "hidden dark:flex h-full focus-base rounded mr-32",
             }}
           />
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
@@ -112,6 +139,7 @@ const Header: React.FC<HeaderProps> = ({
                     ? "icon-gui-x-mark-outline"
                     : "icon-gui-bars-3-outline"
                 }
+                additionalCSS="text-neutral-1300 dark:text-neutral-000"
                 size="1.5rem"
               />
             </button>
@@ -147,7 +175,10 @@ const Header: React.FC<HeaderProps> = ({
             role="navigation"
           >
             {mobileNav}
-            <HeaderLinks />
+            <HeaderLinks
+              headerLinks={headerLinks}
+              sessionState={sessionState}
+            />
           </div>
         </>
       ) : null}
