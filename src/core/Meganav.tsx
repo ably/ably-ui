@@ -10,6 +10,7 @@ import MeganavItemsDesktop from "./MeganavItemsDesktop";
 import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
 import MeganavItemsMobile from "./MeganavItemsMobile";
 import Notice from "./Notice";
+import type { NoticeProps } from "./Notice";
 import _absUrl from "./url-base.js";
 import MeganavContentProducts from "./MeganavContentProducts";
 import MeganavContentUseCases from "./MeganavContentUseCases";
@@ -32,11 +33,7 @@ export type AbsUrl = (path: string) => string;
 
 export type MeganavPaths = {
   logo: string;
-  iconSprites: string;
   ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
   awsLogo?: string;
 };
 
@@ -86,23 +83,19 @@ type SignInProps = {
   searchDataId?: string;
 };
 
+export type NoticeApiProps = {
+  props: NoticeProps;
+  config: {
+    cookieId: string;
+    noticeId: string;
+    collapse: boolean;
+  };
+};
+
 type MeganavProps = {
   paths?: MeganavPaths;
-  themeName: "white" | "black" | "transparentToWhite";
-  notice?: {
-    props: {
-      title: string;
-      bodyText: string;
-      buttonLink: string;
-      buttonLabel: string;
-      closeBtn: boolean;
-    };
-    config: {
-      cookieId: string;
-      noticeId: string;
-      collapse: boolean;
-    };
-  };
+  themeName?: "white" | "black" | "transparentToWhite";
+  notice?: NoticeApiProps;
   loginLink?: string;
   urlBase?: string;
   addSearchApiKey: string;
