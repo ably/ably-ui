@@ -328,6 +328,10 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        fadeInTenPercent: {
+          from: { opacity: 0 },
+          to: { opacity: 0.1 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
