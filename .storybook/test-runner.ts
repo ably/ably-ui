@@ -6,6 +6,7 @@ const flakyStories = [
   "components-accordion",
   "components-footer",
   "components-tab-menu",
+  "components-header",
   "features-pricing-cards",
 ];
 
