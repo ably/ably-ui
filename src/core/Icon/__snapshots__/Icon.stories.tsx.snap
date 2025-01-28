@@ -7891,6 +7891,40 @@ exports[`Components/Icon SocialIcons smoke-test 1`] = `
           <svg class="text-cool-black hover:text-active-orange transition-colors"
                style="width: 24px; height: 24px;"
           >
+            <use xlink:href="#sprite-icon-social-google">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center flex-1 gap-16">
+        <p>
+          icon-social-google
+        </p>
+      </code>
+    </div>
+    <div class="border p-16 flex flex-col items-center justify-between gap-12 rounded-lg">
+      <div class="border inline-flex flex-0">
+        <div class="flex pi-checkered-bg">
+          <svg class="text-cool-black hover:text-active-orange transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-social-google-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center flex-1 gap-16">
+        <p>
+          icon-social-google-mono
+        </p>
+      </code>
+    </div>
+    <div class="border p-16 flex flex-col items-center justify-between gap-12 rounded-lg">
+      <div class="border inline-flex flex-0">
+        <div class="flex pi-checkered-bg">
+          <svg class="text-cool-black hover:text-active-orange transition-colors"
+               style="width: 24px; height: 24px;"
+          >
             <use xlink:href="#sprite-icon-social-linkedin">
             </use>
           </svg>
