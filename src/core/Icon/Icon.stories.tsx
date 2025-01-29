@@ -63,7 +63,9 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
     <div>
       {iconSet.some((icon) => icon.includes("-gui-")) && (
         <div className="flex items-center pt-16 gap-8 px-16 flex-wrap">
-          <span className="ui-text-p1">Filter icons:</span>
+          <span className="ui-text-p1 text-neutral-1300 dark:text-neutral-000">
+            Filter icons:
+          </span>
           {iconVariants.map((variant) => (
             <Button
               key={variant}
@@ -79,24 +81,24 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-16 max-w-screen-lg mb-64 p-16">
         {filteredIcons.map((icon) => (
           <div
-            className="border p-16 flex flex-col items-center justify-between gap-12 rounded-lg"
+            className="border p-8 flex flex-col items-center justify-between gap-12 rounded"
             key={icon}
           >
-            <div className="border inline-flex flex-0">
-              <div className="flex pi-checkered-bg">
+            <div className="inline-flex">
+              <div className="flex">
                 {encapsulated ? (
                   <EncapsulatedIcon name={icon} />
                 ) : (
                   <Icon
                     name={icon}
-                    additionalCSS="hover:text-active-orange transition-colors"
+                    additionalCSS="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
                     color="text-cool-black"
                     size={getIconSize(icon)}
                   />
                 )}
               </div>
             </div>
-            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center flex-1 gap-16">
+            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
               <p>{icon}</p>
             </code>
           </div>
