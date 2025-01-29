@@ -1,16 +1,63 @@
 import React from "react";
-import EncapsulatedIcon from "./Icon/EncapsulatedIcon";
-import FeaturedLink from "./FeaturedLink";
-import { ProductName, products } from "./ProductTile/data";
 import cn from "./utils/cn";
+import { IconSize } from "./Icon/types";
+import LinkButton from "./LinkButton";
+import { ProductName, products } from "./ProductTile/data";
+import ProductIcon from "./ProductTile/ProductIcon";
+import ProductLabel from "./ProductTile/ProductLabel";
+import ProductDescription from "./ProductTile/ProductDescription";
 
-type ProductTileProps = {
+/**
+ * Props for the ProductTile component.
+ */
+export type ProductTileProps = {
+  /**
+   * The name of the product.
+   */
   name: ProductName;
+
+  /**
+   * Indicates if the product tile is selected. If `undefined`, the product tile is not selectable.
+   * @default false
+   */
   selected?: boolean;
+
+  /**
+   * Indicates if the product tile is on the "current" page. Changes CTA copy.
+   * @default false
+   */
   currentPage?: boolean;
+
+  /**
+   * Additional CSS class names to apply to the product tile outer container.
+   */
   className?: string;
+
+  /**
+   * Callback function to handle click events on the product tile.
+   */
   onClick?: () => void;
+
+  /**
+   * Indicates if the product description should be shown.
+   * @default true
+   */
+  showDescription?: boolean;
+
+  /**
+   * Indicates if the product label should be shown.
+   * @default true
+   */
+  showLabel?: boolean;
+
+  /**
+   * The size of the product icon.
+   * @default "40px"
+   */
+  size?: IconSize;
 };
+
+const CONTAINER_GAP_RATIO = 3;
 
 const ProductTile = ({
   name,
@@ -18,92 +65,75 @@ const ProductTile = ({
   currentPage,
   className,
   onClick,
+  showDescription = true,
+  showLabel = true,
+  size = "40px",
 }: ProductTileProps) => {
   const { icon, label, description, link, unavailable } = products[name] ?? {};
+  const numericalSize = parseInt(size, 10);
+  const containerPresent = showDescription || showLabel;
 
   return (
     <div
       className={cn(
-        "rounded-lg p-12 flex flex-col gap-8 transition-colors",
-        { "bg-neutral-1200 dark:bg-neutral-100": selected },
+        "transition-colors group/product-tile",
+        { "flex flex-col p-12 rounded-lg gap-8": containerPresent },
+        { "bg-neutral-1300 dark:bg-neutral-000": selected },
         {
-          "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100":
-            !selected,
+          "bg-neutral-000 dark:bg-neutral-1300": !selected,
         },
+        {
+          "hover:bg-neutral-100 dark:hover:bg-neutral-1200":
+            selected === false && !unavailable,
+        },
+        { "cursor-pointer": selected !== undefined && !unavailable },
+        { "pointer-events-none": unavailable },
         { [`${className}`]: className },
       )}
+      aria-hidden={unavailable}
       onClick={onClick}
     >
-      <div className="flex gap-12 items-center">
-        {icon ? (
-          <EncapsulatedIcon
-            name={icon}
-            className={
-              selected
-                ? "from-neutral-900 dark:from-neutral-400"
-                : "from-neutral-400 dark:from-neutral-900"
-            }
-            innerClassName={
-              selected
-                ? "bg-neutral-1100 dark:bg-neutral-200"
-                : "bg-neutral-200 dark:bg-neutral-1100"
-            }
-          />
-        ) : null}
-        <div
-          className={cn(
-            "flex",
-            { "flex-row items-center gap-4": unavailable },
-            { "flex-col justify-center": !unavailable },
-          )}
-        >
-          <p
-            className={cn(
-              "font-medium",
-              { "text-neutral-300 dark:text-neutral-1000": selected },
-              { "text-neutral-1000 dark:text-neutral-300": !selected },
-              { "ui-text-p2": unavailable },
-              { "ui-text-p3": !unavailable },
-            )}
-          >
-            Ably{" "}
-          </p>
-          <p
-            className={cn(
-              "ui-text-p2 font-bold",
-              { "text-neutral-000 dark:text-neutral-1300": selected },
-              { "text-neutral-1300 dark:text-neutral-000": !selected },
-              { "mt-[-3px]": !unavailable },
-            )}
-          >
-            {label}
-          </p>
-        </div>
-      </div>
-      {unavailable ? (
-        <div className="-mt-8">
-          <div className="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-tighten-0.015 font-bold text-[8px] leading-snug">
-            COMING SOON
-          </div>
-        </div>
-      ) : null}
-      <p
+      <div
         className={cn(
-          "ui-text-p3 font-medium leading-snug",
-          { "text-neutral-300 dark:text-neutral-1000": selected },
-          { "text-neutral-800 dark:text-neutral-500": !selected },
+          "items-center",
+          { flex: containerPresent },
+          { "inline-flex": !containerPresent },
         )}
+        style={{
+          gap: containerPresent ? numericalSize / CONTAINER_GAP_RATIO : 0,
+        }}
       >
-        {description}
-      </p>
+        <ProductIcon
+          size={numericalSize}
+          name={icon}
+          selected={selected}
+          unavailable={!!unavailable}
+        />
+        <ProductLabel
+          label={label}
+          selected={selected}
+          unavailable={!!unavailable}
+          numericalSize={numericalSize}
+          showLabel={showLabel}
+        />
+      </div>
+      <ProductDescription
+        description={description}
+        selected={selected}
+        unavailable={!!unavailable}
+        showDescription={showDescription}
+      />
       {selected && link ? (
-        <FeaturedLink
-          additionalCSS="ui-btn-secondary bg-transparent hover:bg-transparent w-full hover:text-neutral-1300 mt-8 text-center inline-block text-neutral-000 dark:text-neutral-1300"
+        <LinkButton
+          variant="secondary"
+          size="xs"
+          className="mt-8 !text-neutral-000 dark:!text-neutral-1300"
+          rightIcon="icon-gui-arrow-right-micro"
           iconColor="text-orange-600"
-          url={link}
+          href={link}
         >
           {currentPage ? "View docs" : "Explore"}
-        </FeaturedLink>
+        </LinkButton>
       ) : null}
     </div>
   );

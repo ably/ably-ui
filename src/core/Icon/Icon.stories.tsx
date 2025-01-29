@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from "react";
 import Icon from "../Icon";
 import Button from "../Button";
-import EncapsulatedIcon from "./EncapsulatedIcon";
 import { IconName, iconNames, IconSize } from "./types";
 
 export default {
@@ -41,7 +40,7 @@ const getIconSize = (icon: string): IconSize => {
   }
 };
 
-const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
+const renderIcons = (iconSet: IconName[]) => {
   const [shownVariant, setShownVariant] = useState<IconVariant>("outline");
 
   const filteredIcons = useMemo(
@@ -86,16 +85,12 @@ const renderIcons = (iconSet: IconName[], encapsulated?: boolean) => {
           >
             <div className="inline-flex">
               <div className="flex">
-                {encapsulated ? (
-                  <EncapsulatedIcon name={icon} />
-                ) : (
-                  <Icon
-                    name={icon}
-                    additionalCSS="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
-                    color="text-cool-black"
-                    size={getIconSize(icon)}
-                  />
-                )}
+                <Icon
+                  name={icon}
+                  additionalCSS="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+                  color="text-cool-black"
+                  size={getIconSize(icon)}
+                />
               </div>
             </div>
             <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
@@ -126,10 +121,6 @@ export const TechIcons = {
 
 export const ProductIcons = {
   render: () => renderIcons([...iconNames.product]),
-};
-
-export const EncapsulatedIcons = {
-  render: () => renderIcons([...iconNames.product], true),
 };
 
 export const IconWithSecondaryColor = {
