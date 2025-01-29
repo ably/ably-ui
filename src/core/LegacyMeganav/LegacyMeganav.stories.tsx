@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { delay, http, HttpResponse } from "msw";
-import Meganav from "../Meganav";
+
 
 import {
   attachStoreToWindow,
@@ -12,11 +12,12 @@ import {
   reducerSessionData,
   fetchSessionData,
 } from "../remote-session-data.js";
+import Meganav from "../LegacyMeganav";
 
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "Components/Meganav",
+  title: "Components/Meganav (legacy)",
   component: Meganav,
   parameters: {
     layout: "fullscreen",

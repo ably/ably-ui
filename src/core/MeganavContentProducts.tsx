@@ -1,7 +1,7 @@
 import React from "react";
 
 import FeaturedLink from "./FeaturedLink";
-import { AbsUrl, MeganavPaths } from "./Meganav";
+import { AbsUrl, MeganavPaths } from "./LegacyMeganav";
 
 type MeganavContentProductsProps = {
   paths?: MeganavPaths;
