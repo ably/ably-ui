@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 import Icon from "./Icon";
-import { MeganavTheme } from "./Meganav";
+import { MeganavTheme } from "./LegacyMeganav";
 
 type MeganavControlProps = {
   ariaControls: string;
