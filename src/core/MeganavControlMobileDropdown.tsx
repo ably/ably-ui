@@ -1,7 +1,7 @@
 import React from "react";
 
 import Icon from "./Icon";
-import { MeganavTheme } from "./Meganav";
+import { MeganavTheme } from "./LegacyMeganav";
 
 const MeganavControlMobileDropdown = ({ theme }: { theme: MeganavTheme }) => (
   <button

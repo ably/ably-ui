@@ -3,7 +3,7 @@ import React from "react";
 import Icon from "./Icon";
 import MeganavSearchSuggestions from "./MeganavSearchSuggestions";
 import MeganavSearchAutocomplete from "./MeganavSearchAutocomplete";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl } from "./LegacyMeganav";
 
 const MeganavSearchPanel = ({ absUrl }: { absUrl: AbsUrl }) => (
   <section className="ui-meganav-content grid-cols-12">

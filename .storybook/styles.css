@@ -9,7 +9,7 @@
 @import "../src/core/CookieMessage/component.css";
 @import "../src/core/Flash/component.css";
 @import "../src/core/Footer/component.css";
-@import "../src/core/Meganav/component.css";
+@import "../src/core/LegacyMeganav/component.css";
 @import "../src/core/Notice/component.css";
 @import "../src/core/Slider/component.css";
 @import "../src/core/utils/syntax-highlighter.css";

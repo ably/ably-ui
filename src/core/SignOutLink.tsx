@@ -1,5 +1,5 @@
 import React, { MouseEvent, MouseEventHandler, ReactNode, useRef } from "react";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl } from "./LegacyMeganav";
 
 type SignOutLinkProps = {
   token: string;

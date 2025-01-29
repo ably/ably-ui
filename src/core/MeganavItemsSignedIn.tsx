@@ -1,6 +1,6 @@
 import React from "react";
 import MeganavSearch from "./MeganavSearch";
-import { AbsUrl, MeganavSessionState, MeganavTheme } from "./Meganav";
+import { AbsUrl, MeganavSessionState, MeganavTheme } from "./LegacyMeganav";
 
 type MeganavItemsSignedIn = {
   sessionState: MeganavSessionState;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Icon from "./Icon";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl } from "./LegacyMeganav";
 
 const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
   <div className="flex max-w-screen-xl mx-auto">

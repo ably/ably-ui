@@ -3,7 +3,7 @@ import React from "react";
 import SignOutLink from "./SignOutLink";
 import MeganavSearchSuggestions from "./MeganavSearchSuggestions";
 import Icon from "./Icon";
-import MeganavData from "./Meganav/component.json";
+import MeganavData from "./LegacyMeganav/component.json";
 import MeganavControlMobileDropdown from "./MeganavControlMobileDropdown";
 import MeganavControlMobilePanelClose from "./MeganavControlMobilePanelClose";
 import MeganavControlMobilePanelOpen from "./MeganavControlMobilePanelOpen";
@@ -14,7 +14,7 @@ import {
   MeganavPaths,
   MeganavSessionState,
   MeganavTheme,
-} from "./Meganav";
+} from "./LegacyMeganav";
 
 type MeganavItemsMobileProps = {
   panels: MeganavPanels;

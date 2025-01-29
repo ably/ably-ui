@@ -4,7 +4,7 @@ import MeganavBlogPostsList from "./MeganavBlogPostsList";
 import ConnectStateWrapper from "./ConnectStateWrapper";
 import { selectRecentBlogPosts } from "./remote-blogs-posts.js";
 import Icon from "./Icon";
-import { AbsUrl, MeganavPaths } from "./Meganav";
+import { AbsUrl, MeganavPaths } from "./LegacyMeganav";
 
 type MeganavContentCompanyProps = {
   absUrl: AbsUrl;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import FeaturedLink from "./FeaturedLink";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl } from "./LegacyMeganav";
 
 type MeganavSearchSuggestionsProps = {
   absUrl: AbsUrl;
