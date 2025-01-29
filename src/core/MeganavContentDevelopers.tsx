@@ -1,7 +1,7 @@
 import React from "react";
 
 import Icon from "./Icon";
-import { AbsUrl } from "./Meganav";
+import { AbsUrl } from "./LegacyMeganav";
 import { StatusIcon } from "./Status";
 
 const MeganavContentDevelopers = ({
