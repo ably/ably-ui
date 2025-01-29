@@ -4,8 +4,8 @@ import { connectState } from "./remote-data-store.js";
 import { selectSessionData } from "./remote-session-data.js";
 
 import Logo from "./Logo";
-import MeganavData from "./Meganav/component.json";
-import MeganavScripts from "./Meganav/component.js";
+import MeganavData from "./LegacyMeganav/component.json";
+import MeganavScripts from "./LegacyMeganav/component.js";
 import MeganavItemsDesktop from "./MeganavItemsDesktop";
 import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
 import MeganavItemsMobile from "./MeganavItemsMobile";
