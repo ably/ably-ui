@@ -55,7 +55,7 @@ const Meganav = () => {
           </div>
         }
         mobileNav={<Accordion className="p-16" data={headerNav} />}
-        searchBar={
+        searchButton={
           <button
             type="button"
             data-id="dataID"
