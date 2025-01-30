@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, ReactNode } from "react";
+import React, { useState, useEffect, useRef, ReactNode, useMemo } from "react";
 import Icon from "./Icon";
 import cn from "./utils/cn";
 import Logo from "./Logo";
@@ -15,28 +15,97 @@ export type ThemedScrollpoint = {
   className: string;
 };
 
+/**
+ * Props for the Header component.
+ */
 export type HeaderProps = {
+  /**
+   * Optional search bar element.
+   */
   searchBar?: ReactNode;
+
+  /**
+   * Optional search button element.
+   */
   searchButton?: ReactNode;
+
+  /**
+   * URL for the logo link.
+   */
   logoHref?: string;
+
+  /**
+   * Array of header links.
+   */
   headerLinks?: {
+    /**
+     * URL for the link.
+     */
     href: string;
+
+    /**
+     * Label for the link.
+     */
     label: string;
+
+    /**
+     * Indicates if the link should open in a new tab.
+     */
     external?: boolean;
   }[];
+
+  /**
+   * Optional desktop navigation element.
+   */
   nav?: ReactNode;
+
+  /**
+   * Optional mobile navigation element.
+   */
   mobileNav?: ReactNode;
+
+  /**
+   * State of the user session.
+   */
   sessionState?: {
+    /**
+     * Indicates if the user is signed in.
+     */
     signedIn: boolean;
+
+    /**
+     * Account information.
+     */
     account: {
+      /**
+       * Links related to the account.
+       */
       links: {
+        /**
+         * Dashboard link information.
+         */
         dashboard: {
+          /**
+           * URL for the dashboard link.
+           */
           href: string;
         };
       };
     };
   };
+
+  /**
+   * Array of themed scrollpoints. The header will change its appearance based on the scrollpoint in view.
+   */
   themedScrollpoints?: ThemedScrollpoint[];
+
+  /**
+   * Visibility setting for the search button.
+   * - "all": Visible on all devices.
+   * - "desktop": Visible only on desktop devices.
+   * - "mobile": Visible only on mobile devices.
+   */
+  searchButtonVisibility?: "all" | "desktop" | "mobile";
 };
 
 const Header: React.FC<HeaderProps> = ({
@@ -48,6 +117,7 @@ const Header: React.FC<HeaderProps> = ({
   mobileNav,
   sessionState,
   themedScrollpoints = [],
+  searchButtonVisibility = "all",
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
@@ -99,6 +169,16 @@ const Header: React.FC<HeaderProps> = ({
     return () => window.removeEventListener("scroll", throttledHandleScroll);
   }, [themedScrollpoints]);
 
+  const wrappedSearchButton = useMemo(
+    () =>
+      searchButton ? (
+        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center p-6">
+          {searchButton}
+        </div>
+      ) : null,
+    [searchButton],
+  );
+
   return (
     <>
       <header
@@ -125,7 +205,7 @@ const Header: React.FC<HeaderProps> = ({
             }}
           />
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
-            {searchButton}
+            {searchButtonVisibility !== "desktop" ? wrappedSearchButton : null}
             <button
               className="cursor-pointer focus-base rounded flex items-center"
               onClick={() => setShowMenu(!showMenu)}
@@ -150,6 +230,8 @@ const Header: React.FC<HeaderProps> = ({
             <HeaderLinks
               headerLinks={headerLinks}
               sessionState={sessionState}
+              searchButton={wrappedSearchButton}
+              searchButtonVisibility={searchButtonVisibility}
             />
           </div>
         </div>

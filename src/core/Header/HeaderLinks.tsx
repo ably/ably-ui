@@ -16,20 +16,28 @@ const testSessionState = {
 };
 
 export const HeaderLinks: React.FC<
-  Pick<HeaderProps, "sessionState" | "headerLinks">
-> = ({ sessionState = testSessionState, headerLinks }) => {
+  Pick<
+    HeaderProps,
+    "sessionState" | "headerLinks" | "searchButtonVisibility" | "searchButton"
+  >
+> = ({
+  sessionState = testSessionState,
+  headerLinks,
+  searchButtonVisibility,
+  searchButton,
+}) => {
   const signedIn = sessionState.signedIn;
   const headerLinkClasses =
     "ui-text-menu2 md:ui-text-menu3 !font-bold py-16 text-neutral-1300 dark:text-neutral-000 md:text-neutral-1000 dark:md:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-1300 dark:active:text-neutral-000 transition-colors";
 
   return (
-    <div className="flex md:items-center flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 p-12">
+    <div className="flex md:items-center flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 p-12 gap-12">
       {headerLinks?.map(({ href, label, external }) => (
         <a
           key={href}
           className={cn(
             headerLinkClasses,
-            "flex items-center gap-4 md:mr-16 mt-8 md:mt-0",
+            "flex items-center gap-4 mt-8 md:mt-0",
           )}
           href={href}
           target={external ? "_blank" : undefined}
@@ -41,6 +49,7 @@ export const HeaderLinks: React.FC<
           )}
         </a>
       ))}
+      {searchButtonVisibility !== "mobile" ? searchButton : null}
       {signedIn && sessionState.account ? (
         <LinkButton
           href={sessionState.account.links?.dashboard.href}
@@ -51,11 +60,11 @@ export const HeaderLinks: React.FC<
           Dashboard
         </LinkButton>
       ) : (
-        <div className="flex">
+        <div className="flex gap-12">
           <LinkButton
             href="/login"
             variant="secondary"
-            className="mr-12 flex-1 md:flex-none md:ui-button-secondary-xs"
+            className="flex-1 md:flex-none md:ui-button-secondary-xs"
           >
             Login
           </LinkButton>
