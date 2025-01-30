@@ -9,7 +9,6 @@ import Icon from "../Icon";
 export default {
   title: "Components/Header",
   component: Header,
-  tags: ["!autodocs"],
 } as Meta;
 
 const Template: StoryFn<HeaderProps> = (args) => <Header {...args} />;
@@ -57,6 +56,7 @@ WithTabMenuNav.args = {
 
 export const WithButtonNav = Template.bind({});
 WithButtonNav.args = {
+  ...baseArgs,
   nav: (
     <div className="flex gap-8">
       {["Products", "Solutions", "Company", "Pricing", "Docs"].map((link) => (
