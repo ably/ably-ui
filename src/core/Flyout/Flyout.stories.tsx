@@ -3,6 +3,7 @@ import Flyout from "../Flyout";
 import ProductTile from "../ProductTile";
 import FeaturedLink from "../FeaturedLink";
 import { ProductName, products } from "../ProductTile/data";
+import { ProductsGrid } from "../Meganav/Meganav";
 
 export default {
   title: "Components/Flyout",
@@ -19,24 +20,6 @@ const platforms = [
 
 const panelClassName =
   "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
-
-const ProductsGrid = () => {
-  const [selectedProduct, setSelectedProduct] = useState<ProductName | null>(
-    null,
-  );
-  return (
-    <div className="grid grid-cols-2">
-      {Object.keys(products).map((product) => (
-        <ProductTile
-          name={product as ProductName}
-          key={product}
-          selected={selectedProduct === product}
-          onClick={() => setSelectedProduct(product as ProductName)}
-        />
-      ))}
-    </div>
-  );
-};
 
 const Panels = ({
   panelLeft,
