@@ -9,40 +9,28 @@ export default {
 };
 
 export const ProductTiles = {
-  render: () => (
-    <div className="grid sm:grid-cols-3 gap-32">
-      {Object.keys(products).map((product) => (
-        <ProductTile key={product} name={product as ProductName} />
-      ))}
-    </div>
-  ),
-  parameters: {
-    docs: {
-      description: {
-        story: "Example usage: `<ProductTile name='pubsub' />`",
-      },
-    },
-  },
-};
+  render: () => {
+    const [selectedProduct, setSelectedProduct] =
+      React.useState<ProductName | null>(null);
 
-export const SelectedProductTiles = {
-  render: () => (
-    <div className="grid grid-cols-3 gap-32">
-      {Object.keys(products).map((product, index) => (
-        <ProductTile
-          key={product}
-          name={product as ProductName}
-          selected={index % 2 === 0}
-          currentPage={index === 0}
-        />
-      ))}
-    </div>
-  ),
+    return (
+      <div className="grid sm:grid-cols-3 gap-32">
+        {Object.keys(products).map((product) => (
+          <ProductTile
+            key={product}
+            name={product as ProductName}
+            selected={selectedProduct === product}
+            onClick={() => setSelectedProduct(product as ProductName)}
+          />
+        ))}
+      </div>
+    );
+  },
   parameters: {
     docs: {
       description: {
         story:
-          "Demonstration of the odd tiles being 'selected'. The first tile is also marked as the `currentPage` (to simulate being on the Pubsub page), which alters the language of the CTA.",
+          "Example usage: `<ProductTile name='pubsub' />`. Click on a tile to select it.",
       },
     },
   },
@@ -62,6 +50,77 @@ export const ProductTileWithOverriddenStylesAndClick = {
       description: {
         story:
           "`className` is overridden to change the background color and cursor. `onClick` is also overridden to show an alert on click.",
+      },
+    },
+  },
+};
+
+export const ProductTilesWithoutDescriptionsOrLabels = {
+  render: () => (
+    <div className="grid sm:grid-cols-3 gap-32 justify-center">
+      {Object.keys(products).map((product) => (
+        <ProductTile
+          key={product}
+          name={product as ProductName}
+          showDescription={false}
+          showLabel={false}
+        />
+      ))}
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Example usage: `<ProductTile name='pubsub' showDescription={false} showLabel={false} />`",
+      },
+    },
+  },
+};
+
+export const LargerProductTile = {
+  render: () => (
+    <ProductTile
+      key="pubsub"
+      name="pubsub"
+      size="144px"
+      showDescription={false}
+    />
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "The proportions of the label, description, and inter-component padding are dependent on the ident's set size. Here is an example of a larger product tile set to 144px.",
+      },
+    },
+  },
+};
+
+export const ProductTileWithFilledIcons = {
+  render: () => {
+    const [selectedProduct, setSelectedProduct] =
+      React.useState<ProductName | null>(null);
+
+    return (
+      <div className="grid sm:grid-cols-3 gap-32">
+        {Object.keys(products).map((product) => (
+          <ProductTile
+            key={product}
+            name={product as ProductName}
+            selected={selectedProduct === product}
+            onClick={() => setSelectedProduct(product as ProductName)}
+            animateIcons={true}
+          />
+        ))}
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Example usage: `<ProductTile name='pubsub' animateIcons={true} />`. This story demonstrates the product tile with 'animated' icons. For now they are just icon swaps, but the stretch goal is to have full animations.",
       },
     },
   },
