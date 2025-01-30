@@ -120,8 +120,18 @@ const Header: React.FC<HeaderProps> = ({
   searchButtonVisibility = "all",
 }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [fadingOut, setFadingOut] = useState(false);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const closeMenu = () => {
+    setFadingOut(true);
+
+    setTimeout(() => {
+      setShowMenu(false);
+      setFadingOut(false);
+    }, 150);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -239,9 +249,17 @@ const Header: React.FC<HeaderProps> = ({
       {showMenu ? (
         <>
           <div
-            className="fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300 animate-[fadeInTenPercent_150ms_ease-in-out_forwards]"
-            onClick={() => setShowMenu(!showMenu)}
-            onKeyDown={(e) => e.key === "Escape" && setShowMenu(false)}
+            className={cn(
+              "fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300",
+              {
+                "animate-[fade-in-ten-percent_150ms_ease-in-out_forwards]":
+                  !fadingOut,
+                "animate-[fade-out-ten-percent_150ms_ease-in-out_forwards]":
+                  fadingOut,
+              },
+            )}
+            onClick={closeMenu}
+            onKeyDown={(e) => e.key === "Escape" && closeMenu()}
             role="presentation"
           />
           <div
