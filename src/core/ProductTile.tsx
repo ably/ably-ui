@@ -55,6 +55,12 @@ export type ProductTileProps = {
    * @default "40px"
    */
   size?: IconSize;
+
+  /**
+   * Indicates if the product icons should be animated.
+   * @default false
+   */
+  animateIcons?: boolean;
 };
 
 const CONTAINER_GAP_RATIO = 3;
@@ -68,8 +74,10 @@ const ProductTile = ({
   showDescription = true,
   showLabel = true,
   size = "40px",
+  animateIcons = false,
 }: ProductTileProps) => {
-  const { icon, label, description, link, unavailable } = products[name] ?? {};
+  const { icon, hoverIcon, label, description, link, unavailable } =
+    products[name] ?? {};
   const numericalSize = parseInt(size, 10);
   const containerPresent = showDescription || showLabel;
 
@@ -106,6 +114,7 @@ const ProductTile = ({
         <ProductIcon
           size={numericalSize}
           name={icon}
+          hoverName={animateIcons ? hoverIcon : undefined}
           selected={selected}
           unavailable={!!unavailable}
         />

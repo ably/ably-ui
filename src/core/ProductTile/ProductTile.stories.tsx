@@ -96,3 +96,32 @@ export const LargerProductTile = {
     },
   },
 };
+
+export const ProductTileWithFilledIcons = {
+  render: () => {
+    const [selectedProduct, setSelectedProduct] =
+      React.useState<ProductName | null>(null);
+
+    return (
+      <div className="grid sm:grid-cols-3 gap-32">
+        {Object.keys(products).map((product) => (
+          <ProductTile
+            key={product}
+            name={product as ProductName}
+            selected={selectedProduct === product}
+            onClick={() => setSelectedProduct(product as ProductName)}
+            animateIcons={true}
+          />
+        ))}
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Example usage: `<ProductTile name='pubsub' animateIcons={true} />`. This story demonstrates the product tile with 'animated' icons. For now they are just icon swaps, but the stretch goal is to have full animations.",
+      },
+    },
+  },
+};

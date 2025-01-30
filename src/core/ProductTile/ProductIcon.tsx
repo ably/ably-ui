@@ -5,6 +5,7 @@ import cn from "../utils/cn";
 
 type ProductIconProps = {
   name?: IconName;
+  hoverName?: IconName;
   selected?: boolean;
   size: number;
   unavailable: boolean;
@@ -12,6 +13,7 @@ type ProductIconProps = {
 
 const ProductIcon = ({
   name,
+  hoverName,
   selected,
   size,
   unavailable,
@@ -47,7 +49,17 @@ const ProductIcon = ({
         })}
         style={{ height: innerSize, borderRadius: size / 4 }}
       >
-        {/* The product icon itself */}
+        {/* The product icons themselves */}
+        {hoverName ? (
+          <Icon
+            name={hoverName}
+            size={`${iconSize}px`}
+            additionalCSS={cn({
+              "hidden group-hover/product-tile:flex": !selected,
+              flex: selected,
+            })}
+          />
+        ) : null}
         <Icon
           name={name}
           size={`${iconSize}px`}
@@ -57,6 +69,8 @@ const ProductIcon = ({
               !selected && !unavailable,
             "text-neutral-700 dark:text-neutral-600": selected && unavailable,
             "text-neutral-600 dark:text-neutral-700": !selected && unavailable,
+            "flex group-hover/product-tile:hidden": hoverName && !selected,
+            hidden: hoverName && selected,
           })}
         />
       </div>
