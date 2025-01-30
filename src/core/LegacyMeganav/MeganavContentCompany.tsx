@@ -1,9 +1,9 @@
 import React from "react";
 
 import MeganavBlogPostsList from "./MeganavBlogPostsList";
-import ConnectStateWrapper from "./ConnectStateWrapper";
-import { selectRecentBlogPosts } from "./remote-blogs-posts.js";
-import Icon from "./Icon";
+import ConnectStateWrapper from "../ConnectStateWrapper";
+import { selectRecentBlogPosts } from "../remote-blogs-posts.js";
+import Icon from "../Icon";
 import { AbsUrl, MeganavPaths } from "./LegacyMeganav";
 
 type MeganavContentCompanyProps = {

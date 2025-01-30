@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Flyout from "../Flyout";
-import ProductTile from "../ProductTile";
+
 import FeaturedLink from "../FeaturedLink";
 import { ProductName, products } from "../ProductTile/data";
+import ProductTile from "../ProductTile";
 
 export default {
   title: "Components/Flyout",
@@ -19,24 +20,6 @@ const platforms = [
 
 const panelClassName =
   "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
-
-const ProductsGrid = () => {
-  const [selectedProduct, setSelectedProduct] = useState<ProductName | null>(
-    null,
-  );
-  return (
-    <div className="grid grid-cols-2">
-      {Object.keys(products).map((product) => (
-        <ProductTile
-          name={product as ProductName}
-          key={product}
-          selected={selectedProduct === product}
-          onClick={() => setSelectedProduct(product as ProductName)}
-        />
-      ))}
-    </div>
-  );
-};
 
 const Panels = ({
   panelLeft,
@@ -84,14 +67,29 @@ const DefaultPanelLeft = ({ title, desc }: { title: string; desc: string }) => (
 );
 
 const menuItems = [
-  { label: "Home", content: null, link: "" },
+  { name: "Home", link: "" },
   {
-    label: "Products",
-    content: <Panels panelLeft={<ProductsGrid />} platforms={platforms} />,
+    name: "Products",
+    content: (
+      <Panels
+        panelLeft={
+          <div className="grid grid-cols-2">
+            {Object.keys(products).map((product) => (
+              <ProductTile
+                name={product as ProductName}
+                key={product}
+                animateIcons={true}
+              />
+            ))}
+          </div>
+        }
+        platforms={platforms}
+      />
+    ),
     panelClassName: panelClassName,
   },
   {
-    label: "Solutions",
+    name: "Solutions",
     content: (
       <Panels
         panelLeft={
@@ -106,7 +104,7 @@ const menuItems = [
     panelClassName: panelClassName,
   },
   {
-    label: "Company",
+    name: "Company",
     content: (
       <Panels
         panelLeft={
@@ -120,15 +118,15 @@ const menuItems = [
     ),
     panelClassName: panelClassName,
   },
-  { label: "Pricing", content: null, link: "/pricing" },
-  { label: "Docs", content: null, link: "/docs" },
+  { name: "Pricing", link: "/pricing" },
+  { name: "Docs", link: "/docs" },
 ];
 
 const FlyoutStory = () => {
   return (
     <Flyout
       menuItems={menuItems}
-      className="justify-center relative z-40 ui-standard-container"
+      className="justify-center relative z-40"
       flyOutClassName="flex w-full justify-center"
       viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8"
       hasAnimation={true}
@@ -138,31 +136,4 @@ const FlyoutStory = () => {
 
 export const Default = {
   render: () => <FlyoutStory />,
-};
-
-export const StandardContainer = {
-  render: () => (
-    <section>
-      <div className="ui-standard-container relative z-0">
-        <FlyoutStory />
-        <div className="w-full h-[150px] bg-orange-400 flex justify-center items-center">
-          Content 1
-        </div>
-        <div className="w-full h-[150px] bg-yellow-300 flex justify-center items-center">
-          Content 2
-        </div>
-        <div className="w-full h-[150px] bg-neutral-1300 flex justify-center items-center text-neutral-000">
-          Content 3
-        </div>
-      </div>
-    </section>
-  ),
-  parameters: {
-    docs: {
-      description: {
-        story:
-          "The Flyout component is positioned within a standard container and content and Animation is enabled",
-      },
-    },
-  },
 };

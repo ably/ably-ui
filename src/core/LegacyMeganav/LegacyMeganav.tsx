@@ -1,22 +1,20 @@
 import React, { ReactNode, useEffect, useState } from "react";
-
-import { connectState } from "./remote-data-store.js";
-import { selectSessionData } from "./remote-session-data.js";
-
-import Logo from "./Logo";
-import MeganavData from "./LegacyMeganav/component.json";
-import MeganavScripts from "./LegacyMeganav/component.js";
+import { connectState } from "../remote-data-store.js";
+import { selectSessionData } from "../remote-session-data.js";
+import Logo from "../Logo";
+import MeganavData from "./component.json";
+import MeganavScripts from "./component.js";
 import MeganavItemsDesktop from "./MeganavItemsDesktop";
 import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
 import MeganavItemsMobile from "./MeganavItemsMobile";
-import Notice from "./Notice";
-import _absUrl from "./url-base.js";
+import Notice from "../Notice";
+import _absUrl from "../url-base.js";
 import MeganavContentProducts from "./MeganavContentProducts";
 import MeganavContentUseCases from "./MeganavContentUseCases";
 import MeganavContentCompany from "./MeganavContentCompany";
 import MeganavContentDevelopers from "./MeganavContentDevelopers";
 import MeganavSearch from "./MeganavSearch";
-import { ColorClass } from "./styles/colors/types";
+import { ColorClass } from "../styles/colors/types";
 
 export type MeganavTheme = {
   backgroundColor?: ColorClass;
@@ -177,7 +175,7 @@ const panels = {
   MeganavContentDevelopers,
 };
 
-const Meganav = ({
+const LegacyMeganav = ({
   paths,
   themeName = "white",
   notice,
@@ -251,4 +249,4 @@ const Meganav = ({
   );
 };
 
-export default Meganav;
+export default LegacyMeganav;

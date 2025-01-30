@@ -15,6 +15,10 @@ type FeaturedLinkProps = {
   newWindow?: boolean;
   onClick?: () => void;
   disabled?: boolean;
+  /**
+   * Optional class name for group hover state.
+   */
+  groupHoverClassName?: string;
 };
 
 type TargetProps = { target?: string; rel?: string };
@@ -49,6 +53,7 @@ const FeaturedLink = ({
   onClick = undefined,
   children,
   disabled = false,
+  groupHoverClassName = "",
 }: FeaturedLinkProps) => {
   const targetAndRel = buildTargetAndRel(url, newWindow);
 
@@ -86,6 +91,7 @@ const FeaturedLink = ({
             additionalCSS={cn(
               "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180",
               { "group-hover/featured-link:right-0": !disabled },
+              groupHoverClassName,
             )}
           />
           {children}
@@ -99,7 +105,10 @@ const FeaturedLink = ({
             color={iconColor}
             additionalCSS={cn(
               "align-middle ml-8 relative -top-1 -left-4 transition-[left]",
-              { "group-hover/featured-link:left-0": !disabled },
+              {
+                "group-hover/featured-link:left-0": !disabled,
+              },
+              groupHoverClassName,
             )}
           />
         </>

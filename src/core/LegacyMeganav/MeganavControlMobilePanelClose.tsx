@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "./Icon";
+import Icon from "../Icon";
 type MeganavControlMobilePanelCloseProps = {
   ariaControls: string;
   displayHr?: boolean;

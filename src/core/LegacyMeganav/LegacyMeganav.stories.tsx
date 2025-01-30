@@ -11,13 +11,13 @@ import {
   reducerSessionData,
   fetchSessionData,
 } from "../remote-session-data.js";
-import Meganav from "../LegacyMeganav";
+import LegacyMeganav from "./LegacyMeganav";
 
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "Components/Meganav (legacy)",
-  component: Meganav,
+  title: "Components/LegacyMeganav",
+  component: LegacyMeganav,
   parameters: {
     layout: "fullscreen",
     msw: {
@@ -86,7 +86,7 @@ const Page = () => {
   }, []);
 
   return (
-    <Meganav
+    <LegacyMeganav
       paths={{
         ablyStack: "#",
         iconSprites: "#",
@@ -113,7 +113,7 @@ const PageSignedIn = () => {
   }, []);
 
   return (
-    <Meganav
+    <LegacyMeganav
       paths={{
         ablyStack: "#",
         iconSprites: "#",
@@ -140,7 +140,7 @@ const SignedInWithDataSearchId = () => {
   }, []);
 
   return (
-    <Meganav
+    <LegacyMeganav
       paths={{
         ablyStack: "#",
         iconSprites: "#",
@@ -192,7 +192,7 @@ const PageWithNotice = () => {
   };
 
   return (
-    <Meganav
+    <LegacyMeganav
       paths={{
         ablyStack: "#",
         iconSprites: "#",

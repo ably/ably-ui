@@ -1,8 +1,8 @@
 import React from "react";
 
-import Icon from "./Icon";
+import Icon from "../Icon";
 import { AbsUrl } from "./LegacyMeganav";
-import { StatusIcon } from "./Status";
+import { StatusIcon } from "../Status";
 
 const MeganavContentDevelopers = ({
   absUrl,

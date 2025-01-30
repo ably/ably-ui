@@ -67,14 +67,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Pub/Sub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs to build any realtime experience
     </p>
   </div>
@@ -108,14 +108,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
@@ -149,14 +149,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Create collaborative environments in a few lines of code
     </p>
   </div>
@@ -190,14 +190,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync database changes with frontend clients
     </p>
   </div>
@@ -231,14 +231,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Simple APIs to build realtime tracking applications
     </p>
   </div>
@@ -283,7 +283,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across multiple devices
     </p>
   </div>
@@ -322,7 +322,7 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       </p>
     </div>
   </div>
-  <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+  <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
     Low-level APIs to build any realtime experience
   </p>
 </div>
@@ -354,14 +354,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Pub/Sub
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs to build any realtime experience
     </p>
   </div>
@@ -389,14 +389,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Chat
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
@@ -424,14 +424,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Spaces
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Create collaborative environments in a few lines of code
     </p>
   </div>
@@ -459,14 +459,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           LiveSync
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync database changes with frontend clients
     </p>
   </div>
@@ -494,14 +494,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </p>
-        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 mt-[-3px]"
+        <p class="ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
            style="font-size: 15.3846px;"
         >
           Asset Tracking
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Simple APIs to build realtime tracking applications
     </p>
   </div>
@@ -540,7 +540,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across multiple devices
     </p>
   </div>
@@ -707,7 +707,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs to build any realtime experience
     </p>
   </div>
@@ -742,7 +742,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Rapidly build chat features and roll-out at scale
     </p>
   </div>
@@ -777,7 +777,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Create collaborative environments in a few lines of code
     </p>
   </div>
@@ -812,7 +812,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync database changes with frontend clients
     </p>
   </div>
@@ -847,7 +847,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Simple APIs to build realtime tracking applications
     </p>
   </div>
@@ -886,7 +886,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </p>
       </div>
     </div>
-    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across multiple devices
     </p>
   </div>

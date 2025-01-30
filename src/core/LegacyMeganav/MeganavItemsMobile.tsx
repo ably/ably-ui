@@ -2,8 +2,8 @@ import React from "react";
 
 import SignOutLink from "./SignOutLink";
 import MeganavSearchSuggestions from "./MeganavSearchSuggestions";
-import Icon from "./Icon";
-import MeganavData from "./LegacyMeganav/component.json";
+import Icon from "../Icon";
+import MeganavData from "./component.json";
 import MeganavControlMobileDropdown from "./MeganavControlMobileDropdown";
 import MeganavControlMobilePanelClose from "./MeganavControlMobilePanelClose";
 import MeganavControlMobilePanelOpen from "./MeganavControlMobilePanelOpen";
