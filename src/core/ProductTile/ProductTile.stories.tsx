@@ -30,7 +30,27 @@ export const ProductTiles = {
     docs: {
       description: {
         story:
-          "Example usage: `<ProductTile name='pubsub' />`. Click on a tile to select it.",
+          "Example usage: `<ProductTile name='pubsub' selected={...} />`. Click on a tile to select it (`selected` must be controlled for selection to be enabled).",
+      },
+    },
+  },
+};
+
+export const StaticProductTiles = {
+  render: () => {
+    return (
+      <div className="grid sm:grid-cols-3 gap-32">
+        {Object.keys(products).map((product) => (
+          <ProductTile key={product} name={product as ProductName} />
+        ))}
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "When `selected` is not controlled, the tiles are not selectable and show default styling.",
       },
     },
   },
