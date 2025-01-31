@@ -2,7 +2,12 @@ import React from "react";
 
 import MeganavData from "./LegacyMeganav/component.json";
 import MeganavControl from "./MeganavControl";
-import { AbsUrl, MeganavPanels, MeganavPaths, MeganavTheme } from "./LegacyMeganav";
+import {
+  AbsUrl,
+  MeganavPanels,
+  MeganavPaths,
+  MeganavTheme,
+} from "./LegacyMeganav";
 
 type MeganavDesktopItems = {
   panels: MeganavPanels;

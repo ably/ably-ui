@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Meganav from "../Meganav";
+import Meganav from "./Meganav";
 
 
 export default {

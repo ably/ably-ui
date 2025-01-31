@@ -1,28 +1,15 @@
 import ProductTile from "../ProductTile";
+import { ProductName, products } from "../ProductTile/data";
+import React from "react";
 
 export const headerNav = [
   {
     name: "Products",
     content: (
       <div className="grid grid-cols-2 w-full">
-        <ProductTile className="bg-neutral-000" name="pubsub" key="pubsub" />
-        <ProductTile className="bg-neutral-000" name="chat" key="chat" />
-        <ProductTile
-          className="bg-neutral-000"
-          name="assetTracking"
-          key="assetTracking"
-        />
-        <ProductTile className="bg-neutral-000" name="spaces" key="spaces" />
-        <ProductTile
-          className="bg-neutral-000"
-          name="liveSync"
-          key="liveSync"
-        />
-        <ProductTile
-          className="bg-neutral-000"
-          name="liveObjects"
-          key="liveObjects"
-        />
+        {Object.keys(products).map((product) => (
+          <ProductTile key={product} name={product as ProductName} />
+        ))}
       </div>
     ),
     link: "",

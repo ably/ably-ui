@@ -1,9 +1,8 @@
-import Header from "./Header";
+import Header from "../Header";
 import React from "react";
-import Icon from "./Icon";
-import Accordion from "./Accordion";
-import { headerNav } from "./Meganav/data";
-import Tooltip from "./Tooltip";
+import Icon from "../Icon";
+import Accordion from "../Accordion";
+import { headerNav } from "./data";
 
 const Meganav = () => {
   return (
@@ -25,33 +24,15 @@ const Meganav = () => {
         ]}
         nav={
           <div className="flex">
-            {headerNav.map(({ name, link, content }) =>
-              link != "" ? (
-                <a
-                  href={link}
-                  className="ui-text-menu3 text-neutral-1000 font-bold px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300"
-                  key={link}
-                >
-                  {name}
-                </a>
-              ) : (
-                <Tooltip
-                  key={name}
-                  interactive
-                  className="ml-0!"
-                  triggerProps={{
-                    className:
-                      "!h-auto px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300 ui-text-menu3 text-neutral-1000 font-bold",
-                  }}
-                  triggerElement={name}
-                  tooltipProps={{
-                    className: "mt-12 !bg-neutral-000",
-                  }}
-                >
-                  {content}
-                </Tooltip>
-              ),
-            )}
+            {headerNav.map(({ name, link }) => (
+              <a
+                href={link}
+                className="ui-text-menu3 text-neutral-1000 font-bold px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300"
+                key={link}
+              >
+                {name}
+              </a>
+            ))}
           </div>
         }
         mobileNav={<Accordion className="p-16" data={headerNav} />}
