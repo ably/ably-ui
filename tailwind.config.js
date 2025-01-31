@@ -332,10 +332,20 @@ module.exports = {
           from: { opacity: 0 },
           to: { opacity: 0.1 },
         },
+        "scale-in": {
+          from: { opacity: "0", transform: "rotateX(-10deg) scale(0.9)" },
+          to: { opacity: "1", transform: "rotateX(0deg) scale(1)" },
+        },
+        "scale-out": {
+          from: { opacity: "1", transform: "rotateX(0deg) scale(1)" },
+          to: { opacity: "0", transform: "rotateX(-10deg) scale(0.95)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scale-in": "scale-in 200ms ease",
+        "scale-out": "scale-out 200ms ease",
       },
     },
     listStyleType: {
