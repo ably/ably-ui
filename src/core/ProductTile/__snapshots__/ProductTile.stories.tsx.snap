@@ -20,7 +20,7 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
       </div>
     </div>
     <div class="flex flex-col justify-center">
-      <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+      <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
          style="font-size: 36px; letter-spacing: 0.06em;"
       >
         Ably
@@ -62,7 +62,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -103,7 +103,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -144,7 +144,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -185,7 +185,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -226,7 +226,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -270,7 +270,9 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       </div>
       <div class="flex flex-col justify-center">
         <div>
-          <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-widen-0.04 font-bold text-[8px] leading-snug">
+          <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
+               style="font-size: 6px; padding: 2.5px 5px;"
+          >
             COMING SOON
           </div>
         </div>
@@ -308,7 +310,7 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       </div>
     </div>
     <div class="flex flex-col justify-center">
-      <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+      <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
          style="font-size: 10px; letter-spacing: 0.06em;"
       >
         Ably
@@ -347,7 +349,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -382,7 +384,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -417,7 +419,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -452,7 +454,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -487,7 +489,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </div>
       </div>
       <div class="flex flex-col justify-center">
-        <p class="font-bold uppercase ui-text-p2 text-neutral-700 dark:text-neutral-500"
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
            style="font-size: 10px; letter-spacing: 0.06em;"
         >
           Ably
@@ -525,7 +527,9 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       </div>
       <div class="flex flex-col justify-center">
         <div>
-          <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full px-6 py-2 text-gui-unavailable tracking-widen-0.04 font-bold text-[8px] leading-snug">
+          <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
+               style="font-size: 6px; padding: 2.5px 5px;"
+          >
             COMING SOON
           </div>
         </div>
@@ -666,6 +670,225 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
+<div class="grid sm:grid-cols-3 gap-32">
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-pubsub-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+           style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
+        </p>
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+           style="font-size: 15.3846px;"
+        >
+          Pub/Sub
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Low-level APIs to build any realtime experience
+    </p>
+  </div>
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-chat-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+           style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
+        </p>
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+           style="font-size: 15.3846px;"
+        >
+          Chat
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Rapidly build chat features and roll-out at scale
+    </p>
+  </div>
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-spaces-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+           style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
+        </p>
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+           style="font-size: 15.3846px;"
+        >
+          Spaces
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Create collaborative environments in a few lines of code
+    </p>
+  </div>
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-livesync-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+           style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
+        </p>
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+           style="font-size: 15.3846px;"
+        >
+          LiveSync
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Sync database changes with frontend clients
+    </p>
+  </div>
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-asset-tracking-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+           style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
+        </p>
+        <p class="ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+           style="font-size: 15.3846px;"
+        >
+          Asset Tracking
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Simple APIs to build realtime tracking applications
+    </p>
+  </div>
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 pointer-events-none"
+       aria-hidden="true"
+  >
+    <div class="items-center flex"
+         style="gap: 13.3333px;"
+    >
+      <div class="p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+           style="width: 40px; height: 40px; border-radius: 10px;"
+      >
+        <div class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+             style="height: 38px; border-radius: 10px;"
+        >
+          <svg class="text-neutral-600 dark:text-neutral-700"
+               style="width: 26.6667px; height: 26.6667px;"
+          >
+            <use xlink:href="#sprite-icon-product-liveobjects-mono">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <div>
+          <div class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
+               style="font-size: 6px; padding: 2.5px 5px;"
+          >
+            COMING SOON
+          </div>
+        </div>
+        <p class="ui-text-p2 font-bold text-neutral-700 dark:text-neutral-600"
+           style="font-size: 15.3846px;"
+        >
+          LiveObjects
+        </p>
+      </div>
+    </div>
+    <p class="ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600">
+      Sync application state across multiple devices
+    </p>
   </div>
 </div>
 `;
