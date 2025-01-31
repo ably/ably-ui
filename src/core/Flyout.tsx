@@ -10,10 +10,12 @@ import {
 } from "@radix-ui/react-navigation-menu";
 import cn from "./utils/cn";
 
-const NavigationMenuDemo = ({
+const Flyout = ({
   menuItems,
-  navMenuStyling,
-  flyOutStyling,
+  className,
+  flyOutClassName,
+  menuLinkClassName,
+  viewPortClassName,
 }: {
   menuItems: {
     label: string;
@@ -21,64 +23,62 @@ const NavigationMenuDemo = ({
     link?: string;
     panelStyling?: string;
   }[];
-  navMenuStyling?: string;
-  flyOutStyling?: string;
+  className?: string;
+  flyOutClassName?: string;
+  menuLinkClassName?: string;
+  viewPortClassName?: string;
 }) => {
-  const menuLinkStyles =
-    "ui-text-menu3 text-neutral-1000 font-bold px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300 cursor-pointer flex items-center";
-  const viewPortStyling =
-    "relative overflow-hidden w-full h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn sm:w-[var(--radix-navigation-menu-viewport-width)]";
-  const boxShadowViewport =
-    "shadow-[0_201px_56px_0_rgba(20,25,36,0),0_129px_51px_0_rgba(20,25,36,0.02),0_72px_43px_0_rgba(20,25,36,0.06),0_32px_32px_0_rgba(20,25,36,0.10),0_8px_18px_0_rgba(20,25,36,0.12)]";
+  const DEFAULT_MENU_LINK_STYLING =
+    "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
+  const DEFAULT_VIEWPORT_STYLING =
+    "relative overflow-hidden w-full h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] transition-[width,_height] duration-300 data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in sm:w-[var(--radix-navigation-menu-viewport-width)]";
 
   return (
-    <NavigationMenu className={cn(navMenuStyling, "flex w-full relative")}>
+    <NavigationMenu className={cn(className, "flex w-full relative")}>
       <NavigationMenuList className="flex list-none center">
-        {menuItems.map((menuItem) => (
-          <NavigationMenuItem key={menuItem.label}>
-            {menuItem.content ? (
-              <>
-                <NavigationMenuTrigger
-                  className={cn(
-                    menuLinkStyles,
-                    "group outline-none focus:outline-none select-none flex items-center justify-between",
-                  )}
-                >
-                  {menuItem.label}
-                </NavigationMenuTrigger>
-                <NavigationMenuContent
-                  className={cn(
-                    menuItem.panelStyling,
-                    "absolute left-0 top-0 p-24 z-10",
-                  )}
-                >
-                  {menuItem.content}
-                </NavigationMenuContent>
-              </>
-            ) : (
-              <NavigationMenuLink>
-                <a href={menuItem.link} className={menuLinkStyles}>
-                  {menuItem.label}
-                </a>
-              </NavigationMenuLink>
-            )}
-          </NavigationMenuItem>
-        ))}
+        {menuItems.map(({ label, content, link, panelStyling }) =>
+          content ? (
+            <NavigationMenuItem key={label}>
+              <NavigationMenuTrigger
+                className={cn(
+                  "group outline-none focus:outline-none select-none cursor-pointer",
+                  DEFAULT_MENU_LINK_STYLING,
+                  menuLinkClassName,
+                )}
+              >
+                {label}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent
+                className={cn(
+                  "absolute inset-x-0 top-0 p-24 z-10",
+                  panelStyling,
+                )}
+              >
+                {content}
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          ) : (
+            <NavigationMenuLink key={label}>
+              <a
+                href={link}
+                className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
+              >
+                {label}
+              </a>
+            </NavigationMenuLink>
+          ),
+        )}
       </NavigationMenuList>
 
       <div
-        className={cn("absolute left-0 top-full flex w-full", flyOutStyling)}
+        className={cn("absolute left-0 top-full flex w-full", flyOutClassName)}
       >
         <NavigationMenuViewport
-          className={cn(
-            viewPortStyling,
-            boxShadowViewport,
-            "border border-neutral-000 rounded-2xl mt-8",
-          )}
+          className={cn(DEFAULT_VIEWPORT_STYLING, viewPortClassName)}
         />
       </div>
     </NavigationMenu>
   );
 };
 
-export default NavigationMenuDemo;
+export default Flyout;
