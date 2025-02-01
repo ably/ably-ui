@@ -1,245 +1,80 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import Header from "./Header";
+import React from "react";
+import Icon from "./Icon";
+import Accordion from "./Accordion";
+import { headerNav } from "./Meganav/data";
+import Tooltip from "./Tooltip";
 
-import { connectState } from "./remote-data-store.js";
-import { selectSessionData } from "./remote-session-data.js";
-
-import Logo from "./Logo";
-import MeganavData from "./Meganav/component.json";
-import MeganavScripts from "./Meganav/component.js";
-import MeganavItemsDesktop from "./MeganavItemsDesktop";
-import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
-import MeganavItemsMobile from "./MeganavItemsMobile";
-import Notice from "./Notice";
-import _absUrl from "./url-base.js";
-import MeganavContentProducts from "./MeganavContentProducts";
-import MeganavContentUseCases from "./MeganavContentUseCases";
-import MeganavContentCompany from "./MeganavContentCompany";
-import MeganavContentDevelopers from "./MeganavContentDevelopers";
-import MeganavSearch from "./MeganavSearch";
-import { ColorClass } from "./styles/colors/types";
-
-export type MeganavTheme = {
-  backgroundColor?: ColorClass;
-  textColor?: ColorClass;
-  buttonBackgroundColor?: ColorClass;
-  buttonTextColor?: ColorClass;
-  mobileMenuColor: ColorClass;
-  logoTextColor?: ColorClass;
-  barShadow?: string;
-};
-
-export type AbsUrl = (path: string) => string;
-
-export type MeganavPaths = {
-  logo?: string;
-  iconSprites: string;
-  ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
-  awsLogo?: string;
-};
-
-export type MeganavPanels = {
-  [index: string]: ({
-    paths,
-    absUrl,
-    statusUrl,
-  }: {
-    paths?: MeganavPaths;
-    absUrl: (path: string) => string;
-    statusUrl: string;
-  }) => ReactNode;
-};
-
-export type MeganavSessionState = {
-  signedIn: boolean;
-  logOut: {
-    token: string;
-    href: string;
-    text: string;
-  };
-  accountName: string;
-  preferredEmail: string;
-  account: {
-    links: {
-      dashboard: {
-        href: string;
-      };
-    };
-  };
-  mySettings: {
-    text: string;
-    href: string;
-  };
-  myAccessTokens: {
-    text: string;
-    href: string;
-  };
-};
-
-type SignInProps = {
-  sessionState: MeganavSessionState;
-  theme: MeganavTheme;
-  loginLink: string;
-  absUrl: AbsUrl;
-  searchDataId?: string;
-};
-
-type MeganavProps = {
-  paths?: MeganavPaths;
-  themeName: "white" | "black" | "transparentToWhite";
-  notice?: {
-    props: {
-      title: string;
-      bodyText: string;
-      buttonLink: string;
-      buttonLabel: string;
-      closeBtn: boolean;
-    };
-    config: {
-      cookieId: string;
-      noticeId: string;
-      collapse: boolean;
-    };
-  };
-  loginLink?: string;
-  urlBase?: string;
-  addSearchApiKey: string;
-  statusUrl: string;
-  searchDataId?: string;
-};
-
-const SignIn = ({
-  sessionState,
-  theme,
-  loginLink,
-  absUrl,
-  searchDataId,
-}: SignInProps) => {
-  return sessionState.signedIn ? (
-    <MeganavItemsSignedIn
-      absUrl={absUrl}
-      sessionState={sessionState}
-      theme={theme}
-      searchDataId={searchDataId}
-    />
-  ) : (
-    <ul className="hidden md:flex items-center">
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl("/contact")}
-          className={`ui-meganav-link ${theme.textColor}`}
-          data-id="meganav-link"
-        >
-          Contact us
-        </a>
-      </li>
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl(loginLink)}
-          className={`ui-meganav-link mr-0 ${theme.textColor}`}
-          data-id="meganav-link"
-        >
-          Login
-        </a>
-      </li>
-      <li className="ui-meganav-item">
-        <MeganavSearch absUrl={absUrl} dataId={searchDataId} />
-      </li>
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl("/sign-up")}
-          data-id="meganav-sign-up-btn"
-          className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}
-        >
-          Sign up free
-        </a>
-      </li>
-    </ul>
-  );
-};
-
-const SignInPlaceholder = () => <div />;
-
-const panels = {
-  MeganavContentProducts,
-  MeganavContentUseCases,
-  MeganavContentCompany,
-  MeganavContentDevelopers,
-};
-
-const Meganav = ({
-  paths,
-  themeName = "white",
-  notice,
-  loginLink = "/login",
-  urlBase,
-  addSearchApiKey,
-  statusUrl,
-  searchDataId,
-}: MeganavProps) => {
-  const [sessionState, setSessionState] = useState<MeganavSessionState>();
-
-  useEffect(() => {
-    // Note if state is never updated, sessionState stays null and never removes the placeholder.
-    // This makes SSR consistent (ie. we always show the placeholder)
-    connectState(selectSessionData, setSessionState);
-  }, []);
-
-  useEffect(() => {
-    const teardown = MeganavScripts({ themeName, addSearchApiKey });
-    return () => teardown();
-  }, [sessionState]);
-
-  const theme = MeganavData.themes[themeName] as MeganavTheme;
-  const absUrl = (path: string) => _absUrl(path, urlBase);
-
+const Meganav = () => {
   return (
-    <nav
-      className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`}
-      data-id="meganav"
-      aria-label="Main"
-    >
-      {notice && <Notice {...notice.props} config={notice.config} />}
-      <div className="ui-meganav ui-grid-px">
-        <div className="mr-24">
-          <Logo dataId="meganav-logo" href={urlBase} logoUrl={paths?.logo} />
-        </div>
-
-        <MeganavItemsDesktop
-          panels={panels}
-          paths={paths}
-          theme={theme}
-          absUrl={absUrl}
-          statusUrl={statusUrl}
-        />
-
-        {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
-        {sessionState ? (
-          <SignIn
-            sessionState={sessionState}
-            theme={theme}
-            loginLink={loginLink}
-            absUrl={absUrl}
-            searchDataId={searchDataId}
-          />
-        ) : (
-          <SignInPlaceholder />
-        )}
-
-        <MeganavItemsMobile
-          panels={panels}
-          sessionState={sessionState}
-          paths={paths}
-          theme={theme}
-          loginLink={loginLink}
-          absUrl={absUrl}
-          statusUrl={statusUrl}
-          searchDataId={searchDataId}
-        />
-      </div>
-    </nav>
+    <div className="h-[3000px] -m-16">
+      <Header
+        themedScrollpoints={[
+          {
+            id: "header-zone",
+            className: "ui-theme-light !bg-transparent !border-none",
+          },
+          {
+            id: "light-zone",
+            className: "ui-theme-light",
+          },
+          {
+            id: "dark-zone",
+            className: "ui-theme-dark",
+          },
+        ]}
+        nav={
+          <div className="flex">
+            {headerNav.map(({ name, link, content }) =>
+              link != "" ? (
+                <a
+                  href={link}
+                  className="ui-text-menu3 text-neutral-1000 font-bold px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300"
+                  key={link}
+                >
+                  {name}
+                </a>
+              ) : (
+                <Tooltip
+                  key={name}
+                  interactive
+                  className="ml-0!"
+                  triggerProps={{
+                    className:
+                      "!h-auto px-12 py-8 hover:bg-neutral-100 hover:text-neutral-1300 ui-text-menu3 text-neutral-1000 font-bold",
+                  }}
+                  triggerElement={name}
+                  tooltipProps={{
+                    className: "mt-12 !bg-neutral-000",
+                  }}
+                >
+                  {content}
+                </Tooltip>
+              ),
+            )}
+          </div>
+        }
+        mobileNav={<Accordion className="p-16" data={headerNav} />}
+        searchButton={
+          <button
+            type="button"
+            data-id="dataID"
+            data-control="search"
+            className="h-24 w-24 group focus:outline-none"
+            aria-expanded="false"
+            aria-controls="panel-search"
+            aria-label={`Show Search Panel`}
+          >
+            <Icon
+              name="icon-gui-magnifying-glass-outline"
+              color="text-neutral-1300"
+              size="24px"
+            />
+          </button>
+        }
+        headerLinks={[{ href: "/contact", label: "Help" }]}
+      />
+    </div>
   );
 };
 
