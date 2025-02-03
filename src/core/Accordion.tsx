@@ -1,4 +1,4 @@
-import React, { ReactNode, useMemo, useState } from "react";
+import React, { ReactNode, useMemo, useState, forwardRef } from "react";
 import {
   AccordionContent,
   AccordionItem,
@@ -138,68 +138,75 @@ const AccordionRow = ({
   );
 };
 
-const Accordion = ({
-  data,
-  theme = "transparent",
-  icons = {
-    closed: { name: "icon-gui-plus-outline" },
-    open: { name: "icon-gui-minus-outline" },
+const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
+  (
+    {
+      data,
+      theme = "transparent",
+      icons = {
+        closed: { name: "icon-gui-plus-outline" },
+        open: { name: "icon-gui-minus-outline" },
+      },
+      options,
+      ...props
+    },
+    ref,
+  ) => {
+    const openIndexes = useMemo(() => {
+      const indexValues = data.map((_, i) => `accordion-item-${i}`);
+      return options?.fullyOpen
+        ? indexValues
+        : indexValues.filter((_, index) =>
+            options?.defaultOpenIndexes?.includes(index),
+          );
+    }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
+
+    const [openRowValues, setOpenRowValues] = useState<string | string[]>(
+      openIndexes,
+    );
+    const innerAccordion = data.map((item, index) => (
+      <AccordionRow
+        key={item.name}
+        name={item.name}
+        rowIcon={item.icon}
+        toggleIcons={icons}
+        theme={theme}
+        options={options}
+        index={index}
+        onClick={() => {
+          item.onClick?.(index);
+        }}
+        openRowValues={openRowValues}
+      >
+        {item.content}
+      </AccordionRow>
+    ));
+
+    return (
+      <div ref={ref} {...props}>
+        {options?.autoClose ? (
+          <RadixAccordion
+            type="single"
+            collapsible
+            defaultValue={openIndexes[0]}
+            onValueChange={(values) => setOpenRowValues(values)}
+          >
+            {innerAccordion}
+          </RadixAccordion>
+        ) : (
+          <RadixAccordion
+            type="multiple"
+            defaultValue={openIndexes}
+            onValueChange={(values) => setOpenRowValues(values)}
+          >
+            {innerAccordion}
+          </RadixAccordion>
+        )}
+      </div>
+    );
   },
-  options,
-  ...props
-}: AccordionProps) => {
-  const openIndexes = useMemo(() => {
-    const indexValues = data.map((_, i) => `accordion-item-${i}`);
-    return options?.fullyOpen
-      ? indexValues
-      : indexValues.filter((_, index) =>
-          options?.defaultOpenIndexes?.includes(index),
-        );
-  }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
+);
 
-  const [openRowValues, setOpenRowValues] = useState<string | string[]>(
-    openIndexes,
-  );
-  const innerAccordion = data.map((item, index) => (
-    <AccordionRow
-      key={item.name}
-      name={item.name}
-      rowIcon={item.icon}
-      toggleIcons={icons}
-      theme={theme}
-      options={options}
-      index={index}
-      onClick={() => {
-        item.onClick?.(index);
-      }}
-      openRowValues={openRowValues}
-    >
-      {item.content}
-    </AccordionRow>
-  ));
-
-  return (
-    <div {...props}>
-      {options?.autoClose ? (
-        <RadixAccordion
-          type="single"
-          collapsible
-          defaultValue={openIndexes[0]}
-          onValueChange={(values) => setOpenRowValues(values)}
-        >
-          {innerAccordion}
-        </RadixAccordion>
-      ) : (
-        <RadixAccordion
-          type="multiple"
-          defaultValue={openIndexes}
-          onValueChange={(values) => setOpenRowValues(values)}
-        >
-          {innerAccordion}
-        </RadixAccordion>
-      )}
-    </div>
-  );
-};
+Accordion.displayName = "Accordion";
 
 export default Accordion;
