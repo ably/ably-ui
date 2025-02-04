@@ -83,7 +83,7 @@
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-switch": "^1.1.1",
     "@radix-ui/react-tabs": "^1.1.1",
-    "addsearch-js-client": "^0.8.11",
+    "addsearch-js-client": "^1.0.1",
     "array-flat-polyfill": "^1.0.1",
     "clsx": "^2.1.1",
     "dompurify": "^3.1.4",
