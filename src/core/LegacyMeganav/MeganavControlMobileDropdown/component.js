@@ -1,6 +1,6 @@
 import scrollLock from "scroll-lock";
 
-import { queryId } from "../dom-query";
+import { queryId } from "../../dom-query";
 
 const MeganavControlMobileDropdown = ({ clearPanels }) => {
   const control = queryId("meganav-control-mobile-dropdown");
