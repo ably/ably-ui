@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Flyout Default smoke-test 1`] = `
+<nav aria-label="Main"
+     data-orientation="horizontal"
+     dir="ltr"
+     class="justify-center relative z-40 ui-standard-container flex w-full"
+>
+  <div style="position: relative;">
+    <ul data-orientation="horizontal"
+        class="flex list-none center"
+        dir="ltr"
+    >
+      <a data-radix-collection-item>
+        <a href
+           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+        >
+          Home
+        </a>
+      </a>
+      <li>
+        <button id="radix-:r0:-trigger-radix-:r1:"
+                data-state="closed"
+                aria-expanded="false"
+                aria-controls="radix-:r0:-content-radix-:r1:"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                data-radix-collection-item
+        >
+          Products
+        </button>
+      </li>
+      <li>
+        <button id="radix-:r0:-trigger-radix-:r2:"
+                data-state="closed"
+                aria-expanded="false"
+                aria-controls="radix-:r0:-content-radix-:r2:"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                data-radix-collection-item
+        >
+          Solutions
+        </button>
+      </li>
+      <li>
+        <button id="radix-:r0:-trigger-radix-:r3:"
+                data-state="closed"
+                aria-expanded="false"
+                aria-controls="radix-:r0:-content-radix-:r3:"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                data-radix-collection-item
+        >
+          Company
+        </button>
+      </li>
+      <a data-radix-collection-item>
+        <a href="/pricing"
+           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+        >
+          Pricing
+        </a>
+      </a>
+      <a data-radix-collection-item>
+        <a href="/docs"
+           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+        >
+          Docs
+        </a>
+      </a>
+    </ul>
+  </div>
+  <div class="absolute left-0 top-full flex w-full justify-center">
+  </div>
+</nav>
+`;
+
+exports[`Components/Flyout StandardContainer smoke-test 1`] = `
+<section>
+  <div class="ui-standard-container relative z-0">
+    <nav aria-label="Main"
+         data-orientation="horizontal"
+         dir="ltr"
+         class="justify-center relative z-40 ui-standard-container flex w-full"
+    >
+      <div style="position: relative;">
+        <ul data-orientation="horizontal"
+            class="flex list-none center"
+            dir="ltr"
+        >
+          <a data-radix-collection-item>
+            <a href
+               class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+            >
+              Home
+            </a>
+          </a>
+          <li>
+            <button id="radix-:r4:-trigger-radix-:r5:"
+                    data-state="closed"
+                    aria-expanded="false"
+                    aria-controls="radix-:r4:-content-radix-:r5:"
+                    class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                    data-radix-collection-item
+            >
+              Products
+            </button>
+          </li>
+          <li>
+            <button id="radix-:r4:-trigger-radix-:r6:"
+                    data-state="closed"
+                    aria-expanded="false"
+                    aria-controls="radix-:r4:-content-radix-:r6:"
+                    class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                    data-radix-collection-item
+            >
+              Solutions
+            </button>
+          </li>
+          <li>
+            <button id="radix-:r4:-trigger-radix-:r7:"
+                    data-state="closed"
+                    aria-expanded="false"
+                    aria-controls="radix-:r4:-content-radix-:r7:"
+                    class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                    data-radix-collection-item
+            >
+              Company
+            </button>
+          </li>
+          <a data-radix-collection-item>
+            <a href="/pricing"
+               class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+            >
+              Pricing
+            </a>
+          </a>
+          <a data-radix-collection-item>
+            <a href="/docs"
+               class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+            >
+              Docs
+            </a>
+          </a>
+        </ul>
+      </div>
+      <div class="absolute left-0 top-full flex w-full justify-center">
+      </div>
+    </nav>
+    <div class="w-full h-[150px] bg-orange-400 flex justify-center items-center">
+      Content 1
+    </div>
+    <div class="w-full h-[150px] bg-yellow-300 flex justify-center items-center">
+      Content 2
+    </div>
+    <div class="w-full h-[150px] bg-neutral-1300 flex justify-center items-center text-neutral-000">
+      Content 3
+    </div>
+  </div>
+</section>
+`;

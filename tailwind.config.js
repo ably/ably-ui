@@ -328,14 +328,48 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        fadeInTenPercent: {
+        "fade-in-ten-percent": {
           from: { opacity: 0 },
           to: { opacity: 0.1 },
+        },
+        "fade-out-ten-percent": {
+          from: { opacity: 0.1 },
+          to: { opacity: 0 },
+        },
+        "scale-in": {
+          from: { opacity: "0", transform: "rotateX(-10deg) scale(0.9)" },
+          to: { opacity: "1", transform: "rotateX(0deg) scale(1)" },
+        },
+        "scale-out": {
+          from: { opacity: "1", transform: "rotateX(0deg) scale(1)" },
+          to: { opacity: "0", transform: "rotateX(-10deg) scale(0.95)" },
+        },
+        "enter-from-right": {
+          from: { opacity: "0", transform: "translateX(200px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "enter-from-left": {
+          from: { opacity: "0", transform: "translateX(-200px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "exit-to-right": {
+          from: { opacity: "1", transform: "translateX(0)" },
+          to: { opacity: "0", transform: "translateX(200px)" },
+        },
+        "exit-to-left": {
+          from: { opacity: "1", transform: "translateX(0)" },
+          to: { opacity: "0", transform: "translateX(-200px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scale-in": "scale-in 200ms ease",
+        "scale-out": "scale-out 200ms ease",
+        "enter-from-left": "enter-from-left 250ms ease",
+        "enter-from-right": "enter-from-right 250ms ease",
+        "exit-to-left": "exit-to-left 250ms ease",
+        "exit-to-right": "exit-to-right 250ms ease",
       },
     },
     listStyleType: {
