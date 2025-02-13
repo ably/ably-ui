@@ -1,4 +1,4 @@
-import { queryId } from "../dom-query";
+import { queryId } from "../../dom-query";
 
 const DRAG_BUFFER = 5;
 

@@ -1,5 +1,5 @@
-import { queryId, queryIdAll } from "../dom-query";
-import { remsToPixelValue } from "../css";
+import { queryId, queryIdAll } from "../../dom-query";
+import { remsToPixelValue } from "../../css";
 
 export default () => {
   const closeControls = Array.from(

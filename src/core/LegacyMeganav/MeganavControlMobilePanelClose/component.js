@@ -1,4 +1,4 @@
-import { queryIdAll } from "../dom-query";
+import { queryIdAll } from "../../dom-query";
 
 export default () => {
   const closeControls = Array.from(

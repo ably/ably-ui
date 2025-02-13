@@ -10,12 +10,12 @@ import throttle from "lodash.throttle";
 
 import { queryId, queryIdAll } from "../dom-query";
 
-import MeganavControl from "../MeganavControl/component.js";
-import MeganavControlMobileDropdown from "../MeganavControlMobileDropdown/component.js";
-import MobilePanelOpenClick from "../MeganavControlMobilePanelOpen/component.js";
-import MobilePanelCloseClick from "../MeganavControlMobilePanelClose/component.js";
-import MeganavSearchAutocomplete from "../MeganavSearchAutocomplete/component.js";
-import MeganavSearchSuggestions from "../MeganavSearchSuggestions/component.js";
+import MeganavControl from "./MeganavControl/component.js";
+import MeganavControlMobileDropdown from "./MeganavControlMobileDropdown/component.js";
+import MobilePanelOpenClick from "./MeganavControlMobilePanelOpen/component.js";
+import MobilePanelCloseClick from "./MeganavControlMobilePanelClose/component.js";
+import MeganavSearchAutocomplete from "./MeganavSearchAutocomplete/component.js";
+import MeganavSearchSuggestions from "./MeganavSearchSuggestions/component.js";
 
 // Close menu when user clicks outside of viewport
 const windowOnBlur = (closeAll) => {

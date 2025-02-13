@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { delay, http, HttpResponse } from "msw";
 
-
 import {
   attachStoreToWindow,
   createRemoteDataStore,
