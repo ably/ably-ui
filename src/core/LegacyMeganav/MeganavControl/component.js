@@ -1,4 +1,4 @@
-import { queryId, queryIdAll } from "../dom-query";
+import { queryId, queryIdAll } from "../../dom-query";
 
 const MeganavControl = () => {
   const controls = Array.from(queryIdAll("meganav-control"));

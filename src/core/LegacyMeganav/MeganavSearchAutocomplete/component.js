@@ -1,4 +1,4 @@
-import { queryId } from "../dom-query";
+import { queryId } from "../../dom-query";
 import AddSearchClient from "addsearch-js-client";
 
 const init = ({ input, container, listContainer, clear, client }) => {
