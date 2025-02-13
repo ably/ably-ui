@@ -1,161 +1,86 @@
-import React, { useEffect } from "react";
-import { delay, http, HttpResponse } from "msw";
-import Meganav from "../Meganav";
+import React, { useState } from "react";
+import { Meta } from "@storybook/react";
+import Meganav from "./Meganav";
+import { MeganavPanelHighlight, MeganavPanel } from "./MeganavPanel";
+import ProductTile from "../ProductTile";
+import { ProductName, products } from "../ProductTile/data";
+import { productsMenu, solutionsHighlight, solutionsMenu } from "./data";
 
-import {
-  attachStoreToWindow,
-  createRemoteDataStore,
-  getRemoteDataStore,
-} from "../remote-data-store.js";
-import { reducerBlogPosts, fetchBlogPosts } from "../remote-blogs-posts.js";
-import {
-  reducerSessionData,
-  fetchSessionData,
-} from "../remote-session-data.js";
-
-const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
+const ProductsGrid = () => {
+  const [selectedProduct, setSelectedProduct] = useState<ProductName | null>(
+    null,
+  );
+  return (
+    <>
+      {Object.keys(products).map((product) => (
+        <ProductTile
+          name={product as ProductName}
+          key={product}
+          selected={selectedProduct === product}
+          onClick={() => setSelectedProduct(product as ProductName)}
+        />
+      ))}
+    </>
+  );
+};
 
 export default {
   title: "Components/Meganav",
   component: Meganav,
-  parameters: {
-    layout: "fullscreen",
-    msw: {
-      handlers: [
-        http.get("/api/me", () => {
-          return HttpResponse.json({
-            accountName: "Account Name",
-            signedIn: true,
-            account: {
-              links: {
-                dashboard: {
-                  text: "Dashboard",
-                  href: "/accounts/1",
-                },
-              },
-            },
-          });
-        }),
-        http.get("/api/blog", () => {
-          return HttpResponse.json([
-            {
-              title: "Achieving exactly-once delivery with Ably",
-              link: "https://ably.com/blog/achieving-exactly-once-message-processing-with-ably",
-              pubDate: "Nov 17, 2020",
-            },
-            {
-              title:
-                "Why Ably integrates with functions instead of delivering them",
-              link: "https://ably.com/blog/why-we-dont-offer-functions",
-              pubDate: "Jul 28, 2020",
-            },
-            {
-              title: "Adventures in BEAM optimization with our MQTT adapter",
-              link: "https://ably.com/blog/beam-optimization-mqtt",
-              pubDate: "Jul 17, 2020",
-            },
-          ]);
-        }),
-        http.get(statusUrl, async () => {
-          await delay();
+  tags: ["autodocs"],
+} as Meta;
 
-          return HttpResponse.json({
-            status: {
-              indicator: "none",
-            },
-          });
-        }),
-      ],
+export const Default = {
+  render: () => {
+    return <Meganav />;
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
     },
   },
 };
 
-attachStoreToWindow(
-  createRemoteDataStore({
-    ...reducerBlogPosts,
-    ...reducerSessionData,
-  }),
-);
-
-const Page = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-
-    fetchSessionData(store, "");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      themeName="white"
-      addSearchApiKey="#"
-      statusUrl={statusUrl}
-    />
-  );
+export const ProductsPanel = {
+  render: () => {
+    return (
+      <div className="w-[816px]">
+        <MeganavPanel
+          panelLeft={<ProductsGrid />}
+          panelRightItems={productsMenu}
+          panelRightHeading="platform"
+        />
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
 };
 
-export const Default = {
-  render: () => <Page />,
-};
-
-const PageSignedIn = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-    fetchSessionData(store, "/api/me");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      statusUrl={statusUrl}
-      themeName="white"
-      addSearchApiKey="#"
-    />
-  );
-};
-
-export const SignedIn = {
-  render: () => <PageSignedIn />,
-};
-
-const SignedInWithDataSearchId = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-    fetchSessionData(store, "/api/me");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      statusUrl={statusUrl}
-      themeName="white"
-      addSearchApiKey="#"
-      searchDataId="inkeep-search"
-    />
-  );
-};
-
-export const DataSearchId = {
-  render: () => <SignedInWithDataSearchId />,
+export const SolutionsPanel = {
+  render: () => {
+    return (
+      <div className="w-[816px] bg-neutral-100 dark:bg-neutral-1200 relative z-10">
+        <MeganavPanel
+          panelLeft={<MeganavPanelHighlight content={solutionsHighlight} />}
+          panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 p-24"
+          panelRightItems={solutionsMenu}
+        />
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
 };
