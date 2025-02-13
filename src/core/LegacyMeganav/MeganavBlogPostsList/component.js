@@ -1,6 +1,6 @@
-import { queryIdAll } from "../dom-query";
-import { selectRecentBlogPosts } from "../remote-blogs-posts";
-import { connectState } from "../remote-data-store";
+import { queryIdAll } from "../../dom-query";
+import { selectRecentBlogPosts } from "../../remote-blogs-posts";
+import { connectState } from "../../remote-data-store";
 
 const template = ({ link, title, pubDate }) => {
   const [li, a, heading, copy] = ["li", "a", "p", "p"].map((el) =>
