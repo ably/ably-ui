@@ -21,16 +21,13 @@ export const MeganavPanel = ({
   <div className="flex flex-row gap-x-24 bg-neutral-000">
     <div
       className={cn(
-        "flex-6 grid grid-cols-2 justify-items-end relative z-10",
+        "flex-[7] flex-shrink-0 grid grid-cols-2",
         panelLeftClassName,
       )}
     >
       {panelLeft}
-      <div className="absolute -bottom-[100px] -right-[100px] z-0">
-        <div className="w-[200px] h-[200px] opacity-50 bg-[#ff5416] rounded-full blur-[200px] overflow-hidden"></div>
-      </div>
     </div>
-    <div className="flex-4 pt-12 relative z-20">
+    <div className="flex-[3] flex-shrink-0 pt-12">
       {panelRightHeading && (
         <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 pb-6">
           platform
@@ -48,6 +45,9 @@ export const MeganavPanel = ({
         </li>
       ))}
       {panelRightBottom && <div>panelRightBottom</div>}
+      <div className="absolute -bottom-[100px] -right-[100px] z-0">
+        <div className="w-[200px] h-[200px] opacity-50 bg-[#ff5416] rounded-full blur-[200px] overflow-hidden"></div>
+      </div>
     </div>
   </div>
 );
@@ -58,7 +58,7 @@ export const MeganavPanelHighlight = ({
   content: FlyoutPanelHighlight;
 }) => (
   <>
-    <div className="w-full z-10 relative">
+    <div className="w-full p-24">
       <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
         {content.heading}
       </h4>
@@ -67,11 +67,19 @@ export const MeganavPanelHighlight = ({
       </p>
       <FeaturedLink
         url={content.url}
-        additionalCSS="text-neutral-1300 dark:text-neutral-000"
+        additionalCSS="text-neutral-1300 dark:text-neutral-000 mt-16 ui-text-p3"
         iconColor="text-orange-600"
       >
         {content.labelLink}
       </FeaturedLink>
+    </div>
+    <div className="flex justify-end">
+      <img
+        src={content.image}
+        loading="lazy"
+        alt={content.heading}
+        className="w-full"
+      />
     </div>
   </>
 );

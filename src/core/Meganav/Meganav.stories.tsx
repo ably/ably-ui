@@ -1,28 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Meta } from "@storybook/react";
-import Meganav from "./Meganav";
-import { MeganavPanelHighlight, MeganavPanel } from "./MeganavPanel";
-import ProductTile from "../ProductTile";
-import { ProductName, products } from "../ProductTile/data";
+import Meganav, { ProductsGrid } from "./Meganav";
+import { MeganavPanel, MeganavPanelHighlight } from "./MeganavPanel";
 import { productsMenu, solutionsHighlight, solutionsMenu } from "./data";
-
-const ProductsGrid = () => {
-  const [selectedProduct, setSelectedProduct] = useState<ProductName | null>(
-    null,
-  );
-  return (
-    <>
-      {Object.keys(products).map((product) => (
-        <ProductTile
-          name={product as ProductName}
-          key={product}
-          selected={selectedProduct === product}
-          onClick={() => setSelectedProduct(product as ProductName)}
-        />
-      ))}
-    </>
-  );
-};
 
 export default {
   title: "Components/Meganav",
@@ -43,36 +23,25 @@ export const Default = {
   },
 };
 
-export const ProductsPanel = {
+export const MeganavPanels = {
   render: () => {
     return (
-      <div className="w-[816px]">
-        <MeganavPanel
-          panelLeft={<ProductsGrid />}
-          panelRightItems={productsMenu}
-          panelRightHeading="platform"
-        />
-      </div>
-    );
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: "",
-      },
-    },
-  },
-};
+      <div className="flex flex-row flex-wrap gap-y-64 justify-start ui-standard-container">
+        <div className="w-[65%] ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl p-24 bg-neutral-000">
+          <MeganavPanel
+            panelLeft={<ProductsGrid />}
+            panelRightItems={productsMenu}
+            panelRightHeading="platform"
+          />
+        </div>
 
-export const SolutionsPanel = {
-  render: () => {
-    return (
-      <div className="w-[816px] bg-neutral-100 dark:bg-neutral-1200 relative z-10">
-        <MeganavPanel
-          panelLeft={<MeganavPanelHighlight content={solutionsHighlight} />}
-          panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 p-24"
-          panelRightItems={solutionsMenu}
-        />
+        <div className="w-[65%] ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl p-24 bg-neutral-000">
+          <MeganavPanel
+            panelLeft={<MeganavPanelHighlight content={solutionsHighlight} />}
+            panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 py-24 pl-24"
+            panelRightItems={solutionsMenu}
+          />
+        </div>
       </div>
     );
   },

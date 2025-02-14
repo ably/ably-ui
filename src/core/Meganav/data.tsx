@@ -2,6 +2,8 @@ import ProductTile from "../ProductTile";
 import { ProductName, products } from "../ProductTile/data";
 import React from "react";
 import { IconName } from "../Icon/types";
+import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
+import CompanyNavImage from "./images/company-nav-image.png";
 
 export type FlyoutPanelList = {
   label: string;
@@ -63,7 +65,7 @@ export const solutionsHighlight: FlyoutPanelHighlight = {
   content: "Capture the attention of millions of fans during live events.",
   labelLink: "Learn more",
   url: "/fan-engagement",
-  image: "",
+  image: FanEngagementNavImage,
 };
 
 export const solutionsMenu: FlyoutPanelList[] = [
@@ -95,7 +97,7 @@ export const companyHighlight: FlyoutPanelHighlight = {
     "Hear from our founders about Ably’s ambitious plans to become the world’s definitive realtime platform.",
   labelLink: "About Ably",
   url: "/about",
-  image: "",
+  image: CompanyNavImage,
 };
 
 export const companyMenu: FlyoutPanelList[] = [
