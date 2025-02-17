@@ -6,7 +6,7 @@ import Icon from "../Icon";
 
 const Supported = () => (
   <Icon
-    name="icon-gui-check-circled-fill"
+    name="icon-gui-check-circle-solid"
     size="1.5rem"
     color="text-gui-success"
     additionalCSS="flex-grow-0 flex-shrink-0"
