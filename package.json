@@ -76,8 +76,8 @@
     "start": "vite --port 5000",
     "storybook": "yarn build && storybook dev -p 6006",
     "build-storybook": "yarn build && storybook build --quiet -o preview",
-    "test": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --test && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook --url http://127.0.0.1:6007\"",
-    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --test && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook -u --url http://127.0.0.1:6007\""
+    "test": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook --url http://127.0.0.1:6007\"",
+    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook -u --url http://127.0.0.1:6007\""
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.1",
