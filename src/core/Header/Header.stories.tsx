@@ -137,3 +137,11 @@ export const WithThemedScrollpoints = {
     </div>
   ),
 };
+
+export const WithSearchBar = Template.bind({});
+WithSearchBar.args = {
+  ...baseArgs,
+  searchBar: (
+    <input type="text" placeholder="Search" className="ui-input w-256" />
+  ),
+};
