@@ -9,6 +9,7 @@ import {
 } from "./utils/heights";
 import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
+import { Theme } from "./styles/colors/types";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -203,20 +204,19 @@ const Header: React.FC<HeaderProps> = ({
       >
         <div className="flex items-center h-full">
           <nav className="flex flex-1 h-full items-center">
-            <Logo
-              href={logoHref}
-              theme="light"
-              additionalLinkAttrs={{
-                className: "flex dark:hidden h-full focus-base rounded mr-32",
-              }}
-            />
-            <Logo
-              href={logoHref}
-              theme="dark"
-              additionalLinkAttrs={{
-                className: "hidden dark:flex h-full focus-base rounded mr-32",
-              }}
-            />
+            {(["light", "dark"] as Theme[]).map((theme) => (
+              <Logo
+                key={theme}
+                href={logoHref}
+                theme={theme}
+                additionalLinkAttrs={{
+                  className: cn("h-full focus-base rounded mr-32 w-[108px]", {
+                    "flex dark:hidden": theme === "light",
+                    "hidden dark:flex": theme === "dark",
+                  }),
+                }}
+              />
+            ))}
             <div className={FLEXIBLE_DESKTOP_CLASSES}>{nav}</div>
           </nav>
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
