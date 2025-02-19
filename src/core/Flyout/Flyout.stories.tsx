@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Flyout from "../Flyout";
-import ProductTile from "../ProductTile";
+
 import FeaturedLink from "../FeaturedLink";
 import { ProductName, products } from "../ProductTile/data";
-import { ProductsGrid } from "../Meganav/Meganav";
+import ProductTile from "../ProductTile";
 
 export default {
   title: "Components/Flyout",
@@ -67,14 +67,29 @@ const DefaultPanelLeft = ({ title, desc }: { title: string; desc: string }) => (
 );
 
 const menuItems = [
-  { label: "Home", content: null, link: "" },
+  { name: "Home", link: "" },
   {
-    label: "Products",
-    content: <Panels panelLeft={<ProductsGrid />} platforms={platforms} />,
+    name: "Products",
+    content: (
+      <Panels
+        panelLeft={
+          <div className="grid grid-cols-2">
+            {Object.keys(products).map((product) => (
+              <ProductTile
+                name={product as ProductName}
+                key={product}
+                animateIcons={true}
+              />
+            ))}
+          </div>
+        }
+        platforms={platforms}
+      />
+    ),
     panelClassName: panelClassName,
   },
   {
-    label: "Solutions",
+    name: "Solutions",
     content: (
       <Panels
         panelLeft={
@@ -89,7 +104,7 @@ const menuItems = [
     panelClassName: panelClassName,
   },
   {
-    label: "Company",
+    name: "Company",
     content: (
       <Panels
         panelLeft={
@@ -103,8 +118,8 @@ const menuItems = [
     ),
     panelClassName: panelClassName,
   },
-  { label: "Pricing", content: null, link: "/pricing" },
-  { label: "Docs", content: null, link: "/docs" },
+  { name: "Pricing", link: "/pricing" },
+  { name: "Docs", link: "/docs" },
 ];
 
 const FlyoutStory = () => {
