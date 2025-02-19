@@ -1,3 +1,5 @@
+/* global __ENABLE_FETCH_WITH_CREDENTIALS__ */
+
 // Fetches current users session data
 // Assumes an authenticated session, so will only work when used on ably.com/ably.io
 
@@ -18,7 +20,18 @@ const fetchSessionData = async (store, sessionUrl) => {
       return;
     }
 
-    const res = await fetch(sessionUrl, { cache: "no-cache" });
+    const options = {
+      headers: {
+        accept: "application/json",
+      },
+      cache: "no-cache",
+    };
+
+    if (__ENABLE_FETCH_WITH_CREDENTIALS__) {
+      options.credentials = "include";
+    }
+
+    const res = await fetch(sessionUrl, options);
     const jsonResponse = isJsonResponse(res.headers.get("content-type"));
 
     if (!jsonResponse) {
