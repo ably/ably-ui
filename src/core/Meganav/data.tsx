@@ -23,6 +23,14 @@ export type FlyoutPanelHighlight = {
   image: string;
 };
 
+export type MenuItem = {
+  name: string;
+  link?: string;
+  isHiddenMobile?: boolean;
+  content?: React.ReactNode;
+  panelClassName?: string;
+};
+
 const panelClassName =
   "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
 
@@ -97,6 +105,12 @@ const companyHighlight: FlyoutPanelHighlight = {
 
 const companyMenu: FlyoutPanelList[] = [
   {
+    label: "About Ably",
+    icon: "icon-gui-ably-badge",
+    link: "/about",
+    isMobile: true,
+  },
+  {
     label: "Customer stories",
     icon: "icon-gui-star-outline",
     link: "/",
@@ -133,8 +147,13 @@ const ablyAwards = [
   },
 ];
 
-export const menuItemsForHeader = [
-  { name: "Home", content: null, link: "/", isHiddenMobile: true },
+export const menuItemLinks = [
+  { name: "Pricing", link: "/pricing", isHiddenMobile: true },
+  { name: "Docs", link: "/docs", isHiddenMobile: true },
+];
+
+export const menuItemsForHeader: MenuItem[] = [
+  { name: "Home", link: "/", isHiddenMobile: true },
   {
     name: "Products",
     content: (
@@ -184,6 +203,5 @@ export const menuItemsForHeader = [
     ),
     panelClassName,
   },
-  { name: "Pricing", link: "/pricing", isHiddenMobile: true },
-  { name: "Docs", link: "/docs", isHiddenMobile: true },
+  ...menuItemLinks,
 ];
