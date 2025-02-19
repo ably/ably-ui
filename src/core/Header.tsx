@@ -9,6 +9,7 @@ import {
 } from "./utils/heights";
 import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
+import { Theme } from "./styles/colors/types";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -108,6 +109,8 @@ export type HeaderProps = {
   searchButtonVisibility?: "all" | "desktop" | "mobile";
 };
 
+const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
+
 const Header: React.FC<HeaderProps> = ({
   searchBar,
   searchButton,
@@ -200,20 +203,22 @@ const Header: React.FC<HeaderProps> = ({
         style={{ height: HEADER_HEIGHT }}
       >
         <div className="flex items-center h-full">
-          <Logo
-            href={logoHref}
-            theme="light"
-            additionalLinkAttrs={{
-              className: "flex dark:hidden h-full focus-base rounded mr-32",
-            }}
-          />
-          <Logo
-            href={logoHref}
-            theme="dark"
-            additionalLinkAttrs={{
-              className: "hidden dark:flex h-full focus-base rounded mr-32",
-            }}
-          />
+          <nav className="flex flex-1 h-full items-center">
+            {(["light", "dark"] as Theme[]).map((theme) => (
+              <Logo
+                key={theme}
+                href={logoHref}
+                theme={theme}
+                additionalLinkAttrs={{
+                  className: cn("h-full focus-base rounded mr-32 w-[108px]", {
+                    "flex dark:hidden": theme === "light",
+                    "hidden dark:flex": theme === "dark",
+                  }),
+                }}
+              />
+            ))}
+            <div className={FLEXIBLE_DESKTOP_CLASSES}>{nav}</div>
+          </nav>
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
             {searchButtonVisibility !== "desktop" ? wrappedSearchButton : null}
             <button
@@ -234,16 +239,18 @@ const Header: React.FC<HeaderProps> = ({
               />
             </button>
           </div>
-          <div className="hidden md:flex flex-1 items-center h-full">
-            {nav}
-            <div className="flex-1 flex justify-center px-16">{searchBar}</div>
-            <HeaderLinks
-              headerLinks={headerLinks}
-              sessionState={sessionState}
-              searchButton={wrappedSearchButton}
-              searchButtonVisibility={searchButtonVisibility}
-            />
-          </div>
+          {searchBar ? (
+            <div className={cn(FLEXIBLE_DESKTOP_CLASSES, "justify-center")}>
+              {searchBar}
+            </div>
+          ) : null}
+          <HeaderLinks
+            className={FLEXIBLE_DESKTOP_CLASSES}
+            headerLinks={headerLinks}
+            sessionState={sessionState}
+            searchButton={wrappedSearchButton}
+            searchButtonVisibility={searchButtonVisibility}
+          />
         </div>
       </header>
       {showMenu ? (

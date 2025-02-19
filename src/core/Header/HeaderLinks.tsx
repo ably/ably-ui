@@ -19,19 +19,27 @@ export const HeaderLinks: React.FC<
   Pick<
     HeaderProps,
     "sessionState" | "headerLinks" | "searchButtonVisibility" | "searchButton"
-  >
+  > & {
+    className?: string;
+  }
 > = ({
   sessionState = testSessionState,
   headerLinks,
   searchButtonVisibility,
   searchButton,
+  className,
 }) => {
   const signedIn = sessionState.signedIn;
   const headerLinkClasses =
     "ui-text-menu2 md:ui-text-menu3 !font-bold py-16 text-neutral-1300 dark:text-neutral-000 md:text-neutral-1000 dark:md:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-1300 dark:active:text-neutral-000 transition-colors";
 
   return (
-    <div className="flex md:items-center flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 p-12 gap-12">
+    <nav
+      className={cn(
+        "flex md:flex-1 md:items-center md:justify-end flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 p-12 md:p-0 gap-12",
+        className,
+      )}
+    >
       {headerLinks?.map(({ href, label, external }) => (
         <a
           key={href}
@@ -77,6 +85,6 @@ export const HeaderLinks: React.FC<
           </LinkButton>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
