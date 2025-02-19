@@ -1,97 +1,14 @@
+import React from "react";
 import Header from "../Header";
-import React, { useState } from "react";
 import Icon from "../Icon";
-import Accordion from "../Accordion";
-import {
-  ablyAwards,
-  companyHighlight,
-  companyMenu,
-  headerNav,
-  productsMenu,
-  solutionsHighlight,
-  solutionsMenu,
-} from "./data";
 import Flyout from "../Flyout";
-import { ProductName, products } from "../ProductTile/data";
-import ProductTile from "../ProductTile";
-import { MeganavPanel, MeganavPanelHighlight } from "./MeganavPanel";
-import Status, { StatusUrl } from "../Status";
-
-export const ProductsGrid = () => {
-  const [selectedProduct, setSelectedProduct] = useState<ProductName | null>(
-    null,
-  );
-  return (
-    <>
-      {Object.keys(products).map((product) => (
-        <ProductTile
-          name={product as ProductName}
-          key={product}
-          selected={selectedProduct === product}
-          onClick={() => setSelectedProduct(product as ProductName)}
-          animateIcons={true}
-        />
-      ))}
-    </>
-  );
-};
+import { menuItemsForHeader } from "./data";
+import { MeganavMobile } from "./MeganavMobile";
 
 const Meganav = () => {
-  const panelClassName =
-    "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
-  const menuItems = [
-    { label: "Home", content: null, link: "" },
-    {
-      label: "Products",
-      content: (
-        <MeganavPanel
-          panelLeft={<ProductsGrid />}
-          panelRightItems={productsMenu}
-          panelRightHeading="platform"
-          panelRightBottom={<Status statusUrl={StatusUrl} showDescription />}
-        />
-      ),
-      panelClassName: panelClassName,
-    },
-    {
-      label: "Solutions",
-      content: (
-        <MeganavPanel
-          panelLeft={<MeganavPanelHighlight content={solutionsHighlight} />}
-          panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200"
-          panelRightItems={solutionsMenu}
-        />
-      ),
-      panelClassName: panelClassName,
-    },
-    {
-      label: "Company",
-      content: (
-        <MeganavPanel
-          panelLeft={<MeganavPanelHighlight content={companyHighlight} />}
-          panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200"
-          panelRightItems={companyMenu}
-          panelRightBottom={
-            <div className="flex flex-1 gap-x-8">
-              {ablyAwards &&
-                ablyAwards.map((award) => (
-                  <img
-                    key={award.desc}
-                    src={award.image}
-                    alt={award.desc}
-                    width="57"
-                    height="64"
-                  />
-                ))}
-            </div>
-          }
-        />
-      ),
-      panelClassName: panelClassName,
-    },
-    { label: "Pricing", content: null, link: "/pricing" },
-    { label: "Docs", content: null, link: "/docs" },
-  ];
+  const mobileNavItems = menuItemsForHeader
+    .filter((item) => !item.isHiddenMobile)
+    .map(({ name, link, content }) => ({ name, link, content }));
 
   return (
     <Header
@@ -111,14 +28,14 @@ const Meganav = () => {
       ]}
       nav={
         <Flyout
-          menuItems={menuItems}
+          menuItems={menuItemsForHeader}
           className="justify-center relative z-40 ui-standard-container"
           flyOutClassName="flex justify-center"
-          viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8"
+          viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-20"
           hasAnimation={true}
         />
       }
-      mobileNav={<Accordion className="p-16" data={headerNav} />}
+      mobileNav={<MeganavMobile mobileNavItems={mobileNavItems} />}
       searchButton={
         <button
           type="button"

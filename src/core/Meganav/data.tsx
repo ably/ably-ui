@@ -1,7 +1,7 @@
-import ProductTile from "../ProductTile";
-import { ProductName, products } from "../ProductTile/data";
 import React from "react";
 import { IconName } from "../Icon/types";
+import { MeganavPanel } from "./MeganavPanel";
+import Status, { StatusUrl } from "../Status";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
 import CompanyNavImage from "./images/company-nav-image.png";
 import AblyAwardBestSupport from "../images/award/ably-award-best-support-2024.svg";
@@ -12,6 +12,7 @@ export type FlyoutPanelList = {
   label: string;
   icon: IconName;
   link: string;
+  isMobile?: boolean;
 };
 
 export type FlyoutPanelHighlight = {
@@ -22,25 +23,10 @@ export type FlyoutPanelHighlight = {
   image: string;
 };
 
-export const headerNav = [
-  {
-    name: "Products",
-    content: (
-      <div className="grid grid-cols-2 w-full">
-        {Object.keys(products).map((product) => (
-          <ProductTile key={product} name={product as ProductName} />
-        ))}
-      </div>
-    ),
-    link: "",
-  },
-  { name: "Solutions", content: "Solutions content", link: "" },
-  { name: "Company", content: "Company content", link: "" },
-  { name: "Pricing", content: "Pricing content", link: "" },
-  { name: "Docs", content: "", link: "/docs" },
-];
+const panelClassName =
+  "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
 
-export const productsMenu: FlyoutPanelList[] = [
+const productsMenu: FlyoutPanelList[] = [
   {
     label: "Infrastructure",
     icon: "icon-gui-globe-alt-outline",
@@ -63,7 +49,7 @@ export const productsMenu: FlyoutPanelList[] = [
   },
 ];
 
-export const solutionsHighlight: FlyoutPanelHighlight = {
+const solutionsHighlight: FlyoutPanelHighlight = {
   heading: "Fan Engagement",
   content: "Capture the attention of millions of fans during live events.",
   labelLink: "Learn more",
@@ -71,7 +57,13 @@ export const solutionsHighlight: FlyoutPanelHighlight = {
   image: FanEngagementNavImage,
 };
 
-export const solutionsMenu: FlyoutPanelList[] = [
+const solutionsMenu: FlyoutPanelList[] = [
+  {
+    label: "Fan Engagement",
+    icon: "icon-gui-hand-thumb-up-outline",
+    link: "/fan-engagement",
+    isMobile: true,
+  },
   {
     label: "Biztech",
     icon: "icon-gui-building-office-outline",
@@ -94,7 +86,7 @@ export const solutionsMenu: FlyoutPanelList[] = [
   },
 ];
 
-export const companyHighlight: FlyoutPanelHighlight = {
+const companyHighlight: FlyoutPanelHighlight = {
   heading: "Leading the realtime revolution",
   content:
     "Hear from our founders about Ably’s ambitious plans to become the world’s definitive realtime platform.",
@@ -103,7 +95,7 @@ export const companyHighlight: FlyoutPanelHighlight = {
   image: CompanyNavImage,
 };
 
-export const companyMenu: FlyoutPanelList[] = [
+const companyMenu: FlyoutPanelList[] = [
   {
     label: "Customer stories",
     icon: "icon-gui-star-outline",
@@ -126,7 +118,7 @@ export const companyMenu: FlyoutPanelList[] = [
   },
 ];
 
-export const ablyAwards = [
+const ablyAwards = [
   {
     image: AblyAwardBestSupport,
     desc: "G2 Award Best Support Spring 2024",
@@ -139,4 +131,59 @@ export const ablyAwards = [
     image: AblyAwardHighestUserAdoption,
     desc: "G2 Award Highest User Adoption Spring 2024",
   },
+];
+
+export const menuItemsForHeader = [
+  { name: "Home", content: null, link: "/", isHiddenMobile: true },
+  {
+    name: "Products",
+    content: (
+      <MeganavPanel
+        displayProductTile={true}
+        panelLeftClassName="grid"
+        panelRightItems={productsMenu}
+        panelRightHeading="platform"
+        panelRightBottom={<Status statusUrl={StatusUrl} showDescription />}
+      />
+    ),
+    panelClassName,
+  },
+  {
+    name: "Solutions",
+    content: (
+      <MeganavPanel
+        panelLeft={solutionsHighlight}
+        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid"
+        panelRightItems={solutionsMenu}
+      />
+    ),
+    panelClassName,
+  },
+  {
+    name: "Company",
+    content: (
+      <MeganavPanel
+        panelLeft={companyHighlight}
+        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid"
+        panelRightItems={companyMenu}
+        panelRightBottom={
+          <div className="flex flex-1 gap-x-8">
+            {ablyAwards &&
+              ablyAwards.map((award) => (
+                <img
+                  key={award.desc}
+                  src={award.image}
+                  alt={award.desc}
+                  width="57"
+                  height="64"
+                />
+              ))}
+          </div>
+        }
+      />
+    ),
+    panelClassName,
+  },
+  { name: "Pricing", link: "/pricing", isHiddenMobile: true },
+  { name: "Docs", link: "/docs", isHiddenMobile: true },
 ];
