@@ -63,7 +63,7 @@
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
-    "build:swc": "swc src/core src/reset -d dist --copy-files --include-dotfiles --strip-leading-paths --config-file .swc --ignore **/*.stories.tsx,**/*.snap",
+    "build:swc": "ts-node swc.config.ts",
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build:sprites": "ts-node scripts/generate-sprites.ts",
