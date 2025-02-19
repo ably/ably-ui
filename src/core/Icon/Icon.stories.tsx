@@ -123,43 +123,22 @@ export const ProductIcons = {
   render: () => renderIcons([...iconNames.product]),
 };
 
-export const IconWithSecondaryColor = {
+export const Awards = {
   render: () => (
     <div className="flex items-center justify-center p-16 gap-24">
       <div className="flex gap-24">
         <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Non-themed:
+          AWards
         </h4>
         <Icon
           name="icon-gui-check-circled-fill"
           color="text-orange-600"
-          size="1.5rem"
-        />
-        <Icon
-          name="icon-gui-check-circled-fill"
-          color="text-orange-600"
-          secondaryColor="text-neutral-1300"
-          size="1.5rem"
-        />
-      </div>
-      <div className="flex gap-24">
-        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Themed:
-        </h4>
-        <Icon
-          name="icon-gui-check-circled-fill"
-          color="text-orange-600"
-          size="1.5rem"
-        />
-        <Icon
-          name="icon-gui-check-circled-fill"
-          color="text-orange-200 dark:text-orange-1000"
-          secondaryColor="text-orange-600 dark:text-orange-600"
           size="1.5rem"
         />
       </div>
     </div>
   ),
+
   parameters: {
     docs: {
       description: {

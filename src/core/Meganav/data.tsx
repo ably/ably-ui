@@ -4,6 +4,9 @@ import React from "react";
 import { IconName } from "../Icon/types";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
 import CompanyNavImage from "./images/company-nav-image.png";
+import AblyAwardBestSupport from "../images/award/ably-award-best-support-2024.svg";
+import AblyAwardHighPerformer from "../images/award/ably-award-high-performer-2024.svg";
+import AblyAwardHighestUserAdoption from "../images/award/ably-award-highest-user-adoption-2024.svg";
 
 export type FlyoutPanelList = {
   label: string;
@@ -120,5 +123,20 @@ export const companyMenu: FlyoutPanelList[] = [
     label: "Contact us",
     icon: "icon-gui-chat-bubble-bottom-center-text-outline",
     link: "/contact",
+  },
+];
+
+export const ablyAwards = [
+  {
+    image: AblyAwardBestSupport,
+    desc: "G2 Award Best Support Spring 2024",
+  },
+  {
+    image: AblyAwardHighPerformer,
+    desc: "G2 Award High Performer Spring 2024",
+  },
+  {
+    image: AblyAwardHighestUserAdoption,
+    desc: "G2 Award Highest User Adoption Spring 2024",
   },
 ];
