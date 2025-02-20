@@ -111,6 +111,11 @@ export type HeaderProps = {
 
 const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
 
+/**
+ * Maximum width before the menu expanded into full width
+ */
+const MAX_MOBILE_MENU_WIDTH = "560px";
+
 const Header: React.FC<HeaderProps> = ({
   searchBar,
   searchButton,
@@ -271,8 +276,9 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden left-0 right-0 mx-12 bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
             style={{
+              maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(
                 HEADER_HEIGHT,
                 HEADER_BOTTOM_MARGIN,
