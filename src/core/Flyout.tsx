@@ -20,9 +20,9 @@ type FlyoutProps = {
    */
   menuItems: {
     /**
-     * Label for the menu item.
+     * name for the menu item.
      */
-    label: string;
+    name: string;
     /**
      * Optional content to be displayed in the flyout panel.
      */
@@ -113,9 +113,9 @@ const Flyout = ({
         delayDuration={0}
       >
         <NavigationMenuList className="flex list-none center">
-          {menuItems.map(({ label, content, link, panelClassName }) =>
+          {menuItems.map(({ name, content, link, panelClassName }) =>
             content ? (
-              <NavigationMenuItem key={label}>
+              <NavigationMenuItem key={name}>
                 <NavigationMenuTrigger
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
@@ -123,7 +123,7 @@ const Flyout = ({
                     menuLinkClassName,
                   )}
                 >
-                  {label}
+                  {name}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent
                   className={cn(
@@ -136,12 +136,12 @@ const Flyout = ({
                 </NavigationMenuContent>
               </NavigationMenuItem>
             ) : (
-              <NavigationMenuLink key={label}>
+              <NavigationMenuLink key={name}>
                 <a
                   href={link}
                   className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
                 >
-                  {label}
+                  {name}
                 </a>
               </NavigationMenuLink>
             ),
