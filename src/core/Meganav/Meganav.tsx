@@ -1,30 +1,44 @@
-import React, { useRef } from "react";
+import React from "react";
 import Header, { HeaderSessionState } from "../Header";
 import Icon from "../Icon";
 import Flyout from "../Flyout";
 import { menuItemsForHeader } from "./data";
 import { MeganavMobile } from "./MeganavMobile";
-import Notice, { NoticeProps } from "../Notice";
+import Notice from "../Notice";
+
+export type MeganavNoticeBannerProps = {
+  props: {
+    title: string;
+    bodyText: string;
+    buttonLink: string;
+    buttonLabel: string;
+    closeBtn: boolean;
+  };
+  config: {
+    cookieId: string;
+    noticeId: string | number;
+    options: {
+      collapse: boolean;
+    };
+  };
+};
 
 export type MeganavProps = {
   sessionState: HeaderSessionState;
   searchDataId: string;
-  notice: NoticeProps;
+  notice?: MeganavNoticeBannerProps;
 };
 
 const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
   const mobileNavItems = menuItemsForHeader
     .filter((item) => !item.isHiddenMobile)
     .map(({ name, link, content }) => ({ name, link, content }));
-  const noticeRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="fixed inset-0 w-full z-50">
-      {notice && <Notice {...notice} config={notice.config} ref={noticeRef} />}
+    <div className="absolute inset-0 w-full z-50 ">
+      {notice && <Notice {...notice.props} config={notice.config} />}
       <Header
         headerClassName="max-w-screen-xl mx-auto ui-grid-px"
-        notice={notice}
-        noticeRef={noticeRef}
         nav={
           <Flyout
             menuItems={menuItemsForHeader}
