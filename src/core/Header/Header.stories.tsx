@@ -22,13 +22,11 @@ const baseArgs: HeaderProps = {
   searchButton: <Icon name="icon-gui-magnifying-glass-outline" size="1.5rem" />,
   sessionState: {
     signedIn: false,
-    account: {
-      links: {
-        dashboard: {
-          href: "/dashboard",
-        },
-      },
+    logOut: {
+      token: "0000",
+      href: "accounts/sign_out",
     },
+    accountName: "Discovery Education Corporation",
   },
 };
 

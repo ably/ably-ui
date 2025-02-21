@@ -17,6 +17,36 @@ export type ThemedScrollpoint = {
 };
 
 /**
+ * Represents the state of the user session in the header.
+ */
+export type HeaderSessionState = {
+  /**
+   * Indicates if the user is signed in.
+   */
+  signedIn: boolean;
+
+  /**
+   * Information required to log out the user.
+   */
+  logOut: {
+    /**
+     * Token used for logging out.
+     */
+    token: string;
+
+    /**
+     * URL to log out the user.
+     */
+    href: string;
+  };
+
+  /**
+   * Name of the user's account.
+   */
+  accountName: string;
+};
+
+/**
  * Props for the Header component.
  */
 export type HeaderProps = {
@@ -68,32 +98,7 @@ export type HeaderProps = {
   /**
    * State of the user session.
    */
-  sessionState?: {
-    /**
-     * Indicates if the user is signed in.
-     */
-    signedIn: boolean;
-
-    /**
-     * Account information.
-     */
-    account: {
-      /**
-       * Links related to the account.
-       */
-      links: {
-        /**
-         * Dashboard link information.
-         */
-        dashboard: {
-          /**
-           * URL for the dashboard link.
-           */
-          href: string;
-        };
-      };
-    };
-  };
+  sessionState?: HeaderSessionState;
 
   /**
    * Array of themed scrollpoints. The header will change its appearance based on the scrollpoint in view.
@@ -202,7 +207,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 transition-colors px-24 md:px-64",
+          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
         )}
         style={{ height: HEADER_HEIGHT }}
