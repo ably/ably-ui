@@ -1,4 +1,5 @@
-import React, { forwardRef, ReactNode, useEffect } from "react";
+import React, { ReactNode, useEffect } from "react";
+
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import Icon from "./Icon";
 import cn from "./utils/cn.js";
@@ -53,72 +54,59 @@ const ContentWrapper = ({
     <div className={cn(contentWrapperClasses, textColor)}>{children}</div>
   );
 
-const Notice = forwardRef<HTMLDivElement, NoticeProps>(
-  (
-    {
-      buttonLink,
-      buttonLabel,
-      bodyText,
-      title,
-      config,
-      closeBtn,
-      bgColor = "bg-orange-100",
-      textColor = defaultTextColor,
-    },
-    ref,
-  ) => {
-    useEffect(() => {
-      NoticeScripts({
-        bannerContainer: document.querySelector('[data-id="ui-notice"]'),
-        cookieId: config?.cookieId,
-        noticeId: config?.noticeId,
-        options: {
-          collapse: config?.options?.collapse || false,
-        },
-      });
-    }, []);
+const Notice = ({
+  buttonLink,
+  buttonLabel,
+  bodyText,
+  title,
+  config,
+  closeBtn,
+  bgColor = "bg-orange-100",
+  textColor = defaultTextColor,
+}: NoticeProps) => {
+  useEffect(() => {
+    NoticeScripts({
+      bannerContainer: document.querySelector('[data-id="ui-notice"]'),
+      cookieId: config?.cookieId,
+      noticeId: config?.noticeId,
+      options: {
+        collapse: config?.options?.collapse || false,
+      },
+    });
+  }, []);
 
-    return (
-      <div
-        ref={ref}
-        className={cn(
-          "ui-announcement",
-          bgColor,
-          textColor,
-          "z-40 relative w-full",
-        )}
-        data-id="ui-notice"
-        style={{ maxHeight: 0, overflow: "hidden" }}
-      >
-        <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
-          <ContentWrapper buttonLink={buttonLink ?? "#"}>
-            <strong className="font-bold whitespace-nowrap pr-4">
-              {title}
-            </strong>
-            <span className="pr-4">{bodyText}</span>
-            {buttonLabel && (
-              <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light">
-                {buttonLabel}
-              </span>
-            )}
-          </ContentWrapper>
-
-          {closeBtn && (
-            <button
-              type="button"
-              className="ml-auto h-20 w-20 border-none bg-none self-baseline"
-            >
-              <Icon
-                name="icon-gui-x-mark-outline"
-                size="1.25rem"
-                color={textColor}
-              />
-            </button>
+  return (
+    <div
+      className={cn("ui-announcement", bgColor, textColor)}
+      data-id="ui-notice"
+      style={{ maxHeight: 0, overflow: "hidden" }}
+    >
+      <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+        <ContentWrapper buttonLink={buttonLink ?? "#"}>
+          <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
+          <span className="pr-4">{bodyText}</span>
+          {buttonLabel && (
+            <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light">
+              {buttonLabel}
+            </span>
           )}
-        </div>
+        </ContentWrapper>
+
+        {closeBtn && (
+          <button
+            type="button"
+            className="ml-auto h-20 w-20 border-none bg-none self-baseline"
+          >
+            <Icon
+              name="icon-gui-x-mark-outline"
+              size="1.25rem"
+              color={textColor}
+            />
+          </button>
+        )}
       </div>
-    );
-  },
-);
+    </div>
+  );
+};
 
 export default Notice;

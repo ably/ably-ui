@@ -59,7 +59,7 @@ export const SignedIn = {
 export const WithNotice = {
   render: () => {
     return (
-      <div className="h-[1500px]">
+      <div>
         <Meganav
           sessionState={{
             signedIn: false,
@@ -68,23 +68,26 @@ export const WithNotice = {
           }}
           searchDataId="inkeep-search"
           notice={{
-            buttonLink: "https://ably.com",
-            buttonLabel: "Read the announcement",
-            bodyText:
-              "Reduce the costs of high-scale, high-frequency messaging.",
-            title: "📣 Introducing server-side batching",
-            closeBtn: true,
-            config: {
-              options: {
-                collapse: true,
-              },
-              noticeId: "notice",
-              cookieId: "notice-cookie",
+            props: {
+              title: "📣 Introducing server-side batching",
+              bodyText:
+                "Reduce the costs of high-scale, high-frequency messaging.",
+              buttonLink: "/learn-more",
+              buttonLabel: "Read the announcement",
+              closeBtn: true,
             },
-            bgColor: "bg-orange-100",
-            textColor: "text-neutral-1300",
+            config: {
+              cookieId: "dummyCookieId",
+              noticeId: "dummyNoticeId",
+              options: {
+                collapse: false,
+              },
+            },
           }}
         />
+        <div className="h-[500px] bg-neutral-000"></div>
+        <div className="h-[500px] bg-neutral-700"></div>
+        <div className="h-[500px] bg-neutral-200"></div>
       </div>
     );
   },
