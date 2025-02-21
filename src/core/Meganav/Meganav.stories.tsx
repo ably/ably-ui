@@ -10,7 +10,26 @@ export default {
 
 export const Default = {
   render: () => {
-    return <Meganav />;
+    return (
+      <div>
+        <Meganav signedIn={false} />
+        <div className="mt-64 ui-standard-container flex justify-end text-neutral-1000 relative z-0">
+          I am a header
+        </div>
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
+};
+export const SignedIn = {
+  render: () => {
+    return <Meganav signedIn={true} />;
   },
   parameters: {
     docs: {
