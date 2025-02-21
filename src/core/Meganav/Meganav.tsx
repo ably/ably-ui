@@ -55,11 +55,16 @@ const Meganav = () => {
       }
       headerLinks={[{ href: "/contact", label: "Help" }]}
       sessionState={{
-        signedIn: false,
+        signedIn: true,
+        isDropDownAccountLinks: true,
         account: {
+          companyName: "Acme Inc.",
           links: {
             dashboard: {
               href: "/dashboard",
+            },
+            upgrade: {
+              href: "/upgrade",
             },
           },
         },
