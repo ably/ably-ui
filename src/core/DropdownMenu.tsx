@@ -9,6 +9,7 @@ import React, {
 } from "react";
 import Icon from "./Icon";
 import { IconName } from "./Icon/types";
+import cn from "./utils/cn";
 
 const DropdownMenuContext = createContext<{
   isOpen: boolean;
@@ -19,26 +20,49 @@ const DropdownMenuContext = createContext<{
 });
 
 type DropdownMenuProps = {
+  /**
+   * The content to be displayed within the dropdown menu.
+   */
   children: ReactNode;
 };
 
 type TriggerProps = {
+  /**
+   * The content to be displayed within the trigger element.
+   */
   children: ReactNode;
-  additionalTriggerCSS?: string;
+  /**
+   * Additional class names to apply to the trigger element.
+   */
+  triggerClassNames?: string;
+  /**
+   * A description for the trigger element, used for accessibility purposes.
+   */
+  description?: string;
 };
 
 type ContentProps = {
+  /**
+   * The content to be displayed within the dropdown menu.
+   */
   children: ReactNode;
+  /**
+   * The position of the dropdown menu relative to the trigger element.
+   * Defaults to "right".
+   */
   anchorPosition?: string;
-  additionalContentCSS?: string;
+  /**
+   * Additional class names to apply to the content container.
+   */
+  contentClassNames?: string;
 };
 
 type LinkProps = {
   url: string;
   title: string;
-  subtitle: string;
-  iconName: IconName;
-  children: ReactNode;
+  subtitle?: string;
+  iconName?: IconName;
+  children?: ReactNode;
 };
 
 const DropdownMenu = ({ children }: DropdownMenuProps) => {
@@ -50,12 +74,8 @@ const DropdownMenu = ({ children }: DropdownMenuProps) => {
       if (ref.current?.contains(e.target as Node)) return;
       setOpen(false);
     };
-
     document.addEventListener("click", clickHandler);
-
-    return () => {
-      document.removeEventListener("click", clickHandler);
-    };
+    return () => document.removeEventListener("click", clickHandler);
   }, []);
 
   return (
@@ -67,21 +87,31 @@ const DropdownMenu = ({ children }: DropdownMenuProps) => {
   );
 };
 
-const Trigger = ({ children, additionalTriggerCSS = "" }: TriggerProps) => {
+const Trigger = ({
+  children,
+  triggerClassNames = "",
+  description,
+}: TriggerProps) => {
   const { isOpen, setOpen } = useContext(DropdownMenuContext);
 
   return (
     <button
       id="menu-trigger"
+      aria-label={description}
+      role="button"
       onClick={() => setOpen(!isOpen)}
-      className={`${additionalTriggerCSS} flex items-center p-8 ml-8 group hover:text-gui-hover hover:bg-light-grey active:text-gui-active focus:text-gui-focus focus:outline-none rounded-lg`}
+      className={cn(
+        "flex items-center ui-text-button3 text-neutral-1000 dark:text-neutral-300 focus:outline-none",
+        triggerClassNames,
+      )}
     >
-      <span className="leading-normal">{children}</span>
+      {children}
       <Icon
-        name="icon-gui-chevron-down-micro"
-        color="text-cool-black"
+        name={
+          isOpen ? "icon-gui-chevron-up-mini" : "icon-gui-chevron-down-mini"
+        }
         size="1.25rem"
-        additionalCSS="group-hover:text-gui-hover group-active:text-gui-active group-focus:text-gui-focus"
+        additionalCSS="text-neutral-1300 dark:text-neutral-000"
       />
     </button>
   );
@@ -90,7 +120,7 @@ const Trigger = ({ children, additionalTriggerCSS = "" }: TriggerProps) => {
 const Content = ({
   children,
   anchorPosition = "right",
-  additionalContentCSS,
+  contentClassNames,
 }: ContentProps) => {
   const { isOpen } = useContext(DropdownMenuContext);
 
@@ -98,14 +128,15 @@ const Content = ({
     return null;
   }
 
-  const anchorPositionClasses =
-    anchorPosition === "right" ? "right-0" : "left-0";
-
   return (
     <div
       id="menu-content"
-      className={`${additionalContentCSS} absolute p-8 z-10 border border-mid-grey bg-white rounded shadow-container ${anchorPositionClasses}`}
-      style={{ minWidth: 275, top: 44 }}
+      role="menu"
+      className={cn(
+        "flex flex-col absolute z-10 border border-neutral-400 dark:border-neutral-900 bg-neutral-000 dark:bg-neutral-1300 rounded-lg ui-shadow-md-soft",
+        anchorPosition === "right" ? "right-0" : "left-0",
+        contentClassNames,
+      )}
     >
       {children}
     </div>
@@ -116,7 +147,8 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
   return (
     <a
       href={url}
-      className="menu-link group block p-8 hover:bg-light-grey hover:text-cool-black rounded"
+      className="menu-link group block p-8 rounded-lg
+      hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000"
     >
       <p className="mb-4">
         {title}
@@ -124,8 +156,7 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
           <Icon
             name={iconName}
             size="1rem"
-            color="text-cool-black"
-            additionalCSS="align-middle ml-8 relative -top-1 -left-4"
+            additionalCSS="align-middle ml-8 relative -top-1 -left-4 text-neutral-1300 dark:text-neutral-000"
           />
         ) : null}
       </p>
@@ -138,4 +169,5 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
 DropdownMenu.Trigger = Trigger;
 DropdownMenu.Content = Content;
 DropdownMenu.Link = Link;
+
 export default DropdownMenu;
