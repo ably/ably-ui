@@ -75,9 +75,18 @@ export type HeaderProps = {
     signedIn: boolean;
 
     /**
+     * Indicates if the account dashboard links should be displayed as a dropdown menu.
+     */
+    isDropDownAccountLinks?: boolean;
+
+    /**
      * Account information.
      */
     account: {
+      /**
+       * Name of the company associated with the account
+       */
+      companyName: string;
       /**
        * Links related to the account.
        */
@@ -88,6 +97,15 @@ export type HeaderProps = {
         dashboard: {
           /**
            * URL for the dashboard link.
+           */
+          href: string;
+        };
+        /**
+         * Upgrade link information.
+         */
+        upgrade: {
+          /**
+           * URL for the upgrade link.
            */
           href: string;
         };
