@@ -20,6 +20,9 @@
     "target": "ES2018",
     "resolveJsonModule": true
   },
+  "ts-node": {
+    "swc": true
+  },
   "include": ["src/**/*.tsx", "custom.d.ts"],
   "exclude": ["node_modules/**/*", "public", "preview", "src/**/*.stories.tsx", "src/core/react-renderer.tsx"]
 }
