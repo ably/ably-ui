@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "15.4.2",
+  "version": "15.5.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -46,9 +46,11 @@
     "eslint-plugin-storybook": "^0.11.3",
     "heroicons": "^2.2.0",
     "http-server": "14.1.1",
+    "mixpanel-browser": "^2.60.0",
     "msw": "2.7.1",
     "msw-storybook-addon": "^2.0.2",
     "playwright": "^1.49.1",
+    "posthog-js": "^1.217.4",
     "prettier": "^3.2.5",
     "react-syntax-highlighter": "^15.6.1",
     "storybook": "^8.5.6",
@@ -61,7 +63,7 @@
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
-    "build:swc": "swc src/core src/reset -d dist --copy-files --include-dotfiles --strip-leading-paths --config-file .swc --ignore **/*.stories.tsx,**/*.snap",
+    "build:swc": "ts-node swc.config.ts",
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build:sprites": "ts-node scripts/generate-sprites.ts",
@@ -98,6 +100,10 @@
     "scroll-lock": "^2.1.4",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.5.5"
+  },
+  "peerDependencies": {
+    "mixpanel-browser": "^2.60.0 || <3",
+    "posthog-js": "^1.217.4 || <2"
   },
   "bugs": {
     "url": "https://github.com/ably/ably-ui/issues"

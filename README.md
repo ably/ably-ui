@@ -181,7 +181,29 @@ Then, to run Storybook, run `yarn storybook` in the project root - it should ope
 
 To build Storybook as if it was a statically built site (i.e. what it looks like when deployed), run `yarn build-storybook` from the project root, go to the generated directory with `cd preview`, and then run `npx http-server` (accepting the prompt to install that package if you haven't done already). The built site will be available at the listed local URL.
 
-#### Publishing pre-release packages for review apps
+### SWC compile flags
+
+We have a dynamic SWC configuration which allows us to support compile-time feature flags in the library. This allows us to change the behaviour of certain code paths during compilation time (not runtime), which is mostly useful in development mode.
+
+For example, there could be a flag somewhere in our code that logs additional debug information in development that is useless in a released version. It could look like this:
+
+~~~ts
+// Example usage in api-client.ts
+declare const __DEBUG_MODE__: boolean;
+
+const api = createApiClient();
+if (__DEBUG_MODE__) {
+  console.log('Debug mode enabled');
+}
+~~~
+
+The flag can be added to the list in `swc.config.ts`, and enabled with an environment variable:
+
+~~~
+$ DEBUG_MODE=true yarn build
+~~~
+
+### Publishing pre-release packages for review apps
 
 Make sure you commit & push your work before doing this.
 
@@ -295,4 +317,3 @@ Snapshots are also assessed via `test-runner`. To generate new snapshots, run `y
 
 You can run the tests by either running a dev instance of Storybook locally and then running `yarn test`, or by pushing a branch to GitHub.
 
-A related quirk to mention here is that the SWC config has been renamed to `.swc` (away from the default `.swcrc`), as `test-runner` also uses SWC and its config conflicted with ours.
