@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect } from "react";
+import DOMPurify from "dompurify";
 
 import NoticeScripts from "./Notice/component.js";
 import Icon from "./Icon";
@@ -6,12 +7,13 @@ type ContentWrapperProps = {
   buttonLink: string;
   children: ReactNode;
 };
+import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
 // Plan is to TS-ify the JS assets too, so this can be rectified then. The NoticeScripts-oriented props are
 // the ones after the line break.
-type NoticeProps = {
+export type NoticeProps = {
   buttonLink?: string;
   buttonLabel?: string;
   bodyText?: string;
@@ -45,7 +47,7 @@ const ContentWrapper = ({ buttonLink, children }: ContentWrapperProps) =>
 const Notice = ({
   buttonLink,
   buttonLabel,
-  bodyText,
+  bodyText = "",
   title,
   config,
   closeBtn,
@@ -65,6 +67,13 @@ const Notice = ({
 
   const wrapperClasses = ["ui-announcement", bgColor, textColor].join(" ");
 
+  const safeContent = DOMPurify.sanitize(bodyText, {
+    ALLOWED_TAGS: ["a"],
+    ALLOWED_ATTR: ["href", "data-method", "rel"],
+  });
+
+  const contentRef = useRailsUjsLinks();
+
   return (
     <div
       className={wrapperClasses}
@@ -74,7 +83,13 @@ const Notice = ({
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
-          <span className="pr-4">{bodyText}</span>
+          <span
+            ref={contentRef}
+            className="pr-4"
+            dangerouslySetInnerHTML={{
+              __html: safeContent,
+            }}
+          ></span>
           {buttonLabel && (
             <span className="underline cursor-pointer whitespace-nowrap">
               {buttonLabel}
