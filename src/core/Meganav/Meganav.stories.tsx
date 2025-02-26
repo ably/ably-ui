@@ -10,7 +10,19 @@ export default {
 
 export const Default = {
   render: () => {
-    return <Meganav />;
+    return <Meganav signedIn={false} />;
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
+};
+export const SignedIn = {
+  render: () => {
+    return <Meganav signedIn={true} />;
   },
   parameters: {
     docs: {

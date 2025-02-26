@@ -3,7 +3,7 @@ import { IconName } from "../Icon/types";
 import { MeganavPanel } from "./MeganavPanel";
 import Status, { StatusUrl } from "../Status";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
-import CompanyNavImage from "./images/company-nav-image.png";
+import CompanyNavImage from "./images/founders-nav-image.png";
 import AblyAwardBestSupport from "../images/award/ably-award-best-support-2024.svg";
 import AblyAwardHighPerformer from "../images/award/ably-award-high-performer-2024.svg";
 import AblyAwardHighestUserAdoption from "../images/award/ably-award-highest-user-adoption-2024.svg";
@@ -31,8 +31,7 @@ export type MenuItem = {
   panelClassName?: string;
 };
 
-const panelClassName =
-  "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
+const panelClassName = "w-full sm:w-[815px]";
 
 const productsMenu: FlyoutPanelList[] = [
   {
