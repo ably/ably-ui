@@ -33,6 +33,8 @@ jobs:
   deploy-storybook:
     name: Deploy Storybook to GH Pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
