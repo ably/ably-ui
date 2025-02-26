@@ -10,11 +10,12 @@ export const MeganavMobile = ({
   mobileNavItems: AccordionData[];
 }) => {
   const menuItemClassname =
-    "text-[18px] py-12 font-bold text-neutral-1000 dark:text-neutral-000 pl-0";
+    "text-[18px] py-12 font-bold text-neutral-1000 dark:text-neutral-000";
   return (
-    <div className="p-16 overflow-y-auto">
+    <>
       <Accordion
         theme={"transparent"}
+        className="overflow-y-auto px-16 pt-16"
         data={mobileNavItems}
         icons={{
           closed: { name: "icon-gui-chevron-down-solid" },
@@ -23,24 +24,27 @@ export const MeganavMobile = ({
         options={{
           autoClose: true,
           hideBorders: true,
-          headerCSS: menuItemClassname,
+          headerCSS: `px-0 ${menuItemClassname}`,
           contentCSS: "px-0",
           selectedHeaderCSS: "text-neutral-1300 dark:text-neutral-000",
         }}
       />
-      {menuItemLinks &&
-        menuItemLinks.map((link) => (
-          <a
-            href={link.link}
-            key={link.name}
-            className={cn(
-              "w-full block ui-text-p1 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100",
-              menuItemClassname,
-            )}
-          >
-            {link.name}
-          </a>
-        ))}
-    </div>
+      {menuItemLinks && (
+        <div className="">
+          {menuItemLinks.map((link) => (
+            <a
+              href={link.link}
+              key={link.name}
+              className={cn(
+                "px-16 w-full block ui-text-p1 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100",
+                menuItemClassname,
+              )}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+      )}
+    </>
   );
 };
