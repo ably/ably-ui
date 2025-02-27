@@ -22,18 +22,11 @@ const baseArgs: HeaderProps = {
   searchButton: <Icon name="icon-gui-magnifying-glass-outline" size="1.5rem" />,
   sessionState: {
     signedIn: false,
-    isDropDownAccountLinks: false,
-    account: {
-      companyName: "Ably",
-      links: {
-        dashboard: {
-          href: "/dashboard",
-        },
-        upgrade: {
-          href: "/upgrade",
-        },
-      },
+    logOut: {
+      token: "0000",
+      href: "accounts/sign_out",
     },
+    accountName: "Discovery Education Corporation",
   },
 };
 
@@ -91,16 +84,6 @@ LoggedIn.args = {
   sessionState: {
     ...baseArgs.sessionState,
     signedIn: true,
-  },
-};
-
-export const LoggedInWithDropDown = Template.bind({});
-LoggedInWithDropDown.args = {
-  ...WithButtonNav.args,
-  sessionState: {
-    ...baseArgs.sessionState,
-    signedIn: true,
-    isDropDownAccountLinks: true,
   },
 };
 

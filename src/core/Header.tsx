@@ -73,44 +73,24 @@ export type HeaderProps = {
      * Indicates if the user is signed in.
      */
     signedIn: boolean;
-
     /**
-     * Indicates if the account dashboard links should be displayed as a dropdown menu.
+     * Information for logging out.
      */
-    isDropDownAccountLinks?: boolean;
+    logOut: {
+      /**
+       * Token for the logout process.
+       */
+      token: string;
 
-    /**
-     * Account information.
-     */
-    account: {
       /**
-       * Name of the company associated with the account
+       * URL for the logout process.
        */
-      companyName: string;
-      /**
-       * Links related to the account.
-       */
-      links: {
-        /**
-         * Dashboard link information.
-         */
-        dashboard: {
-          /**
-           * URL for the dashboard link.
-           */
-          href: string;
-        };
-        /**
-         * Upgrade link information.
-         */
-        upgrade: {
-          /**
-           * URL for the upgrade link.
-           */
-          href: string;
-        };
-      };
+      href: string;
     };
+    /**
+     * Name of the user's account.
+     */
+    accountName: string;
   };
 
   /**

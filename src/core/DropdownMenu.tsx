@@ -101,14 +101,14 @@ const Trigger = ({
       role="button"
       onClick={() => setOpen(!isOpen)}
       className={cn(
-        "flex items-center p-8 ml-8 ui-text-button3 text-neutral-1000 dark:text-neutral-300 focus:outline-none",
+        "flex items-center ui-text-button3 text-neutral-1000 dark:text-neutral-300 focus:outline-none",
         triggerClassNames,
       )}
     >
-      <span className="leading-normal">{children}</span>
+      {children}
       <Icon
         name={
-          !isOpen ? "icon-gui-chevron-down-micro" : "icon-gui-chevron-up-micro"
+          isOpen ? "icon-gui-chevron-up-mini" : "icon-gui-chevron-down-mini"
         }
         size="1.25rem"
         additionalCSS="text-neutral-1300 dark:text-neutral-000"
@@ -128,17 +128,14 @@ const Content = ({
     return null;
   }
 
-  const anchorPositionClasses =
-    anchorPosition === "right" ? "right-0" : "left-0";
-
   return (
     <div
       id="menu-content"
       role="menu"
       className={cn(
-        "absolute z-10 border border-neutral-400 dark:border-neutral-900 rounded-lg shadow-container bg-neutral-000 dark:bg-neutral-1300 min-w-[275px] top-[44]",
+        "flex flex-col absolute z-10 border border-neutral-400 dark:border-neutral-900 bg-neutral-000 dark:bg-neutral-1300 rounded-lg ui-shadow-md-soft",
+        anchorPosition === "right" ? "right-0" : "left-0",
         contentClassNames,
-        anchorPositionClasses,
       )}
     >
       {children}
@@ -150,7 +147,7 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
   return (
     <a
       href={url}
-      className="menu-link group block p-8 rounded
+      className="menu-link group block p-8 rounded-lg
       hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000"
     >
       <p className="mb-4">
