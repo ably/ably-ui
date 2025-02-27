@@ -14,6 +14,8 @@ jobs:
     if: ${{ github.event.label.name == 'review' }}
     name: Deploy Storybook to GH Pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
