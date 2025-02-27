@@ -1,161 +1,41 @@
-import React, { useEffect } from "react";
-import { delay, http, HttpResponse } from "msw";
-import Meganav from "../Meganav";
-
-import {
-  attachStoreToWindow,
-  createRemoteDataStore,
-  getRemoteDataStore,
-} from "../remote-data-store.js";
-import { reducerBlogPosts, fetchBlogPosts } from "../remote-blogs-posts.js";
-import {
-  reducerSessionData,
-  fetchSessionData,
-} from "../remote-session-data.js";
-
-const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
+import React from "react";
+import { Meta } from "@storybook/react";
+import Meganav from "./Meganav";
 
 export default {
   title: "Components/Meganav",
   component: Meganav,
-  parameters: {
-    layout: "fullscreen",
-    msw: {
-      handlers: [
-        http.get("/api/me", () => {
-          return HttpResponse.json({
-            accountName: "Account Name",
-            signedIn: true,
-            account: {
-              links: {
-                dashboard: {
-                  text: "Dashboard",
-                  href: "/accounts/1",
-                },
-              },
-            },
-          });
-        }),
-        http.get("/api/blog", () => {
-          return HttpResponse.json([
-            {
-              title: "Achieving exactly-once delivery with Ably",
-              link: "https://ably.com/blog/achieving-exactly-once-message-processing-with-ably",
-              pubDate: "Nov 17, 2020",
-            },
-            {
-              title:
-                "Why Ably integrates with functions instead of delivering them",
-              link: "https://ably.com/blog/why-we-dont-offer-functions",
-              pubDate: "Jul 28, 2020",
-            },
-            {
-              title: "Adventures in BEAM optimization with our MQTT adapter",
-              link: "https://ably.com/blog/beam-optimization-mqtt",
-              pubDate: "Jul 17, 2020",
-            },
-          ]);
-        }),
-        http.get(statusUrl, async () => {
-          await delay();
+  tags: ["autodocs"],
+} as Meta;
 
-          return HttpResponse.json({
-            status: {
-              indicator: "none",
-            },
-          });
-        }),
-      ],
+export const Default = {
+  render: () => {
+    return (
+      <div>
+        <Meganav signedIn={false} />
+        <div className="mt-64 ui-standard-container flex justify-end text-neutral-1000 relative z-0">
+          I am a header
+        </div>
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
     },
   },
 };
-
-attachStoreToWindow(
-  createRemoteDataStore({
-    ...reducerBlogPosts,
-    ...reducerSessionData,
-  }),
-);
-
-const Page = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-
-    fetchSessionData(store, "");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      themeName="white"
-      addSearchApiKey="#"
-      statusUrl={statusUrl}
-    />
-  );
-};
-
-export const Default = {
-  render: () => <Page />,
-};
-
-const PageSignedIn = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-    fetchSessionData(store, "/api/me");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      statusUrl={statusUrl}
-      themeName="white"
-      addSearchApiKey="#"
-    />
-  );
-};
-
 export const SignedIn = {
-  render: () => <PageSignedIn />,
-};
-
-const SignedInWithDataSearchId = () => {
-  useEffect(() => {
-    const store = getRemoteDataStore();
-    fetchSessionData(store, "/api/me");
-    fetchBlogPosts(store, "/api/blog");
-  }, []);
-
-  return (
-    <Meganav
-      paths={{
-        ablyStack: "#",
-        iconSprites: "#",
-        blogThumb1: "#",
-        blogThumb2: "#",
-        blogThumb3: "#",
-      }}
-      statusUrl={statusUrl}
-      themeName="white"
-      addSearchApiKey="#"
-      searchDataId="inkeep-search"
-    />
-  );
-};
-
-export const DataSearchId = {
-  render: () => <SignedInWithDataSearchId />,
+  render: () => {
+    return <Meganav signedIn={true} />;
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
 };
