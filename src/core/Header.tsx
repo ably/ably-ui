@@ -73,26 +73,24 @@ export type HeaderProps = {
      * Indicates if the user is signed in.
      */
     signedIn: boolean;
-
     /**
-     * Account information.
+     * Information for logging out.
      */
-    account: {
+    logOut: {
       /**
-       * Links related to the account.
+       * Token for the logout process.
        */
-      links: {
-        /**
-         * Dashboard link information.
-         */
-        dashboard: {
-          /**
-           * URL for the dashboard link.
-           */
-          href: string;
-        };
-      };
+      token: string;
+
+      /**
+       * URL for the logout process.
+       */
+      href: string;
     };
+    /**
+     * Name of the user's account.
+     */
+    accountName: string;
   };
 
   /**
