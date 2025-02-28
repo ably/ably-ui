@@ -12,7 +12,7 @@ export const Default = {
   render: () => {
     return (
       <div>
-        <Meganav signedIn={false} />
+        <Meganav signedIn={false} searchDataId="inkeep-search" />
         <div className="mt-64 ui-standard-container flex justify-end text-neutral-1000 relative z-0">
           I am a header
         </div>
@@ -29,7 +29,7 @@ export const Default = {
 };
 export const SignedIn = {
   render: () => {
-    return <Meganav signedIn={true} />;
+    return <Meganav signedIn={true} searchDataId="inkeep-search" />;
   },
   parameters: {
     docs: {
