@@ -14,7 +14,7 @@ export const MeganavMobile = ({
   return (
     <>
       <Accordion
-        theme={"transparent"}
+        theme="transparent"
         className="overflow-y-auto px-16 pt-16"
         data={mobileNavItems}
         icons={{
@@ -30,15 +30,12 @@ export const MeganavMobile = ({
         }}
       />
       {menuItemLinks && (
-        <div className="">
+        <div className="mb-12">
           {menuItemLinks.map((link) => (
             <a
               href={link.link}
               key={link.name}
-              className={cn(
-                "px-16 w-full block ui-text-p1 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100",
-                menuItemClassname,
-              )}
+              className={cn("px-16 w-full block ui-text-p1", menuItemClassname)}
             >
               {link.name}
             </a>
