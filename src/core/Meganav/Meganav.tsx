@@ -5,27 +5,19 @@ import Flyout from "../Flyout";
 import { menuItemsForHeader } from "./data";
 import { MeganavMobile } from "./MeganavMobile";
 
-const Meganav = ({ signedIn }: { signedIn: boolean }) => {
+export type MeganvProps = {
+  /* temporary prop to show the signed in state */
+  signedIn: boolean;
+  searchDataId: string;
+};
+
+const Meganav = ({ signedIn, searchDataId }: MeganvProps) => {
   const mobileNavItems = menuItemsForHeader
     .filter((item) => !item.isHiddenMobile)
     .map(({ name, link, content }) => ({ name, link, content }));
 
   return (
     <Header
-      themedScrollpoints={[
-        {
-          id: "header-zone",
-          className: "ui-theme-light !bg-transparent !border-none",
-        },
-        {
-          id: "light-zone",
-          className: "ui-theme-light",
-        },
-        {
-          id: "dark-zone",
-          className: "ui-theme-dark",
-        },
-      ]}
       nav={
         <Flyout
           menuItems={menuItemsForHeader}
@@ -39,12 +31,12 @@ const Meganav = ({ signedIn }: { signedIn: boolean }) => {
       searchButton={
         <button
           type="button"
-          data-id="dataID"
           data-control="search"
-          className="h-24 w-24 group focus:outline-none"
+          data-id={searchDataId}
+          className="cursor-pointer h-24 w-24 group focus:outline-none"
           aria-expanded="false"
           aria-controls="panel-search"
-          aria-label={`Show Search Panel`}
+          aria-label="Ask AI"
         >
           <Icon
             name="icon-gui-magnifying-glass-outline"
