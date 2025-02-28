@@ -10,7 +10,7 @@ export default {
 export const Default = {
   render: () => (
     <DropdownMenu>
-      <DropdownMenu.Trigger additionalTriggerCSS="ui-text-h3">
+      <DropdownMenu.Trigger triggerClassNames="ui-text-h3">
         Dropdown Menu Trigger
       </DropdownMenu.Trigger>
       <DropdownMenu.Content anchorPosition="left">
@@ -20,7 +20,9 @@ export const Default = {
           subtitle="This is using the inbuilt component which takes props for title, subtitle, icon name & children."
           iconName="icon-gui-arrow-long-right-outline"
         >
-          <p className="ui-text-p3">I am a child! 🐣</p>
+          <p className="ui-text-p3 text-neutral-1000 dark:text-neutral-300">
+            I am a child! 🐣
+          </p>
         </DropdownMenu.Link>
         <DropdownMenu.Link
           url="https://ably.com/"
@@ -30,14 +32,14 @@ export const Default = {
           href="https://ably.com/docs"
           target="_blank"
           rel="noreferrer"
-          className="group block p-8 hover:bg-light-grey hover:text-cool-black rounded"
+          className="group block p-8 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 rounded-lg"
         >
-          <p className="ui-featured-link group-hover:text-gui-hover font-light text-cool-black">
+          <p className="ui-featured-link group-hover:text-gui-hover font-light text-neutral-1300 dark:text-neutral-000">
             Using plain HTML
             <Icon
               name="icon-gui-arrow-long-right-micro"
               size="1rem"
-              color="text-cool-black"
+              color="text-neutral-1300 dark:text-neutral-000"
               additionalCSS="ui-featured-link-icon group-hover:text-gui-hover group-active:text-gui-active group-focus:text-gui-focus"
             />
           </p>
