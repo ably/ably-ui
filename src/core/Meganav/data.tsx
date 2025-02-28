@@ -4,9 +4,9 @@ import { MeganavPanel } from "./MeganavPanel";
 import Status, { StatusUrl } from "../Status";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
 import CompanyNavImage from "./images/founders-nav-image.png";
-import AblyAwardBestSupport from "../images/award/ably-award-best-support-2024.svg";
-import AblyAwardHighPerformer from "../images/award/ably-award-high-performer-2024.svg";
-import AblyAwardHighestUserAdoption from "../images/award/ably-award-highest-user-adoption-2024.svg";
+import BestRequirementsWinter2025 from "../images/award/g2-best-meets-requirements-2025.png";
+import BestSupportWinter2025 from "../images/award/g2-best-support-2025.png";
+import HighPerformerWinter2025 from "../images/award/g2-high-performer-2025.png";
 
 export type FlyoutPanelList = {
   label: string;
@@ -133,16 +133,16 @@ const companyMenu: FlyoutPanelList[] = [
 
 const ablyAwards = [
   {
-    image: AblyAwardBestSupport,
-    desc: "G2 Award Best Support Spring 2024",
+    image: BestRequirementsWinter2025,
+    desc: "G2 Best Reqiurements Winter 2025",
   },
   {
-    image: AblyAwardHighPerformer,
-    desc: "G2 Award High Performer Spring 2024",
+    image: BestSupportWinter2025,
+    desc: "G2 Best Support Winter 2025",
   },
   {
-    image: AblyAwardHighestUserAdoption,
-    desc: "G2 Award Highest User Adoption Spring 2024",
+    image: HighPerformerWinter2025,
+    desc: "G2 High Performer Winter 2025",
   },
 ];
 
