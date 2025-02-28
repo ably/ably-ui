@@ -1,17 +1,16 @@
 import React from "react";
-import Header from "../Header";
+import Header, { HeaderSessionState } from "../Header";
 import Icon from "../Icon";
 import Flyout from "../Flyout";
 import { menuItemsForHeader } from "./data";
 import { MeganavMobile } from "./MeganavMobile";
 
-export type MeganvProps = {
-  /* temporary prop to show the signed in state */
-  signedIn: boolean;
+export type MeganavProps = {
+  sessionState: HeaderSessionState;
   searchDataId: string;
 };
 
-const Meganav = ({ signedIn, searchDataId }: MeganvProps) => {
+const Meganav = ({ sessionState, searchDataId }: MeganavProps) => {
   const mobileNavItems = menuItemsForHeader
     .filter((item) => !item.isHiddenMobile)
     .map(({ name, link, content }) => ({ name, link, content }));
@@ -46,21 +45,7 @@ const Meganav = ({ signedIn, searchDataId }: MeganvProps) => {
         </button>
       }
       headerLinks={[{ href: "/contact", label: "Help" }]}
-      sessionState={{
-        signedIn: signedIn,
-        isDropDownAccountLinks: true,
-        account: {
-          companyName: "Acme Inc.",
-          links: {
-            dashboard: {
-              href: "/dashboard",
-            },
-            upgrade: {
-              href: "/upgrade",
-            },
-          },
-        },
-      }}
+      sessionState={sessionState}
     />
   );
 };

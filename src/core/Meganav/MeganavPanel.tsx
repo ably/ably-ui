@@ -63,7 +63,7 @@ export const MeganavPanel = ({
                   <img
                     src={panelLeft.image}
                     alt={panelLeft.heading}
-                    className="w-full z-10"
+                    className="w-full z-10 rounded-lg"
                   />
                 </div>
               </>
