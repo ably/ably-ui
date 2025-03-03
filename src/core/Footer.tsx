@@ -7,10 +7,10 @@ import { StatusIcon } from "./Status";
 type FooterProps = {
   paths: {
     ablyStack: string;
-    highestPerformer: string;
-    highestUserAdoption: string;
     bestSupport: string;
-    fastestImplementation: string;
+    highPerformer: string;
+    usersMostLikely: string;
+    bestMeetsRequirements: string;
   };
   urlBase: string;
   statusUrl: string;
@@ -413,23 +413,23 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
         <div className="col-span-full sm:col-span-1 inline-flex sm:ml-auto sm:items-center">
           <img
             className="mr-24 h-80"
-            src={paths.highestUserAdoption}
-            alt="Highest User Adoption 2023"
-          />
-          <img
-            className="mr-24 h-80"
             src={paths.bestSupport}
-            alt="Best Support 2023"
+            alt="Best Support 2025"
           />
           <img
             className="mr-24 h-80"
-            src={paths.fastestImplementation}
-            alt="Fastest Implementation 2023"
+            src={paths.highPerformer}
+            alt="High Performer 2025"
           />
           <img
             className="mr-24 h-80"
-            src={paths.highestPerformer}
-            alt="High Performer 2023"
+            src={paths.usersMostLikely}
+            alt="Users Most Likely To Recommend 2025"
+          />
+          <img
+            className="mr-24 h-80"
+            src={paths.bestMeetsRequirements}
+            alt="Best Meets Requirements 2025"
           />
         </div>
       </div>

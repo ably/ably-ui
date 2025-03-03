@@ -3,10 +3,10 @@ import { delay, http, HttpResponse } from "msw";
 import Footer from "../Footer";
 
 import ablyStack from "../images/ably-stack.svg";
-import highestPerformer from "../images/high-performer-2023.svg";
-import bestSupport from "../images/best-support-2023.svg";
-import fastestImplementation from "../images/fastest-implementation-2023.svg";
-import highestUserAdoption from "../images/highest-user-adoption-2023.svg";
+import bestSupport from "../images/g2-best-support-2025.svg";
+import highPerformer from "../images/g2-high-performer-2025.svg";
+import usersMostLikely from "../images/g2-users-most-likely-to-recommend-2025.svg";
+import bestMeetsRequirements from "../images/g2-best-meets-requirements-2025.svg";
 
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
@@ -32,10 +32,10 @@ export default {
   args: {
     paths: {
       ablyStack,
-      highestPerformer,
       bestSupport,
-      fastestImplementation,
-      highestUserAdoption,
+      highPerformer,
+      usersMostLikely,
+      bestMeetsRequirements,
     },
     statusUrl: statusUrl,
   },
