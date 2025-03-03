@@ -159,3 +159,54 @@ const SignedInWithDataSearchId = () => {
 export const DataSearchId = {
   render: () => <SignedInWithDataSearchId />,
 };
+
+const PageWithNotice = () => {
+  useEffect(() => {
+    const store = getRemoteDataStore();
+    fetchSessionData(store, "");
+    fetchBlogPosts(store, "/api/blog");
+  }, []);
+
+  // This is lifted from an API response and just tweaked to fit the props
+  const response = {
+    "props": {
+      "id": 206,
+      "title": "📣 Introducing server-side batching:",
+      "bodyText": "Reduce the costs of high-scale, high-frequency messaging.",
+      "buttonLabel": "Read the announcement",
+      "buttonLink": "https://hubs.ly/Q0358S5G0",
+      "newTag": false,
+      "imageUrl": "https://ik.imagekit.io/ably/s3/banners/images/000/000/206/original/ably-logo-col-vert-rgb.png?1738658965",
+      "styleModifier": "lighter",
+      "closeBtn": true,
+      "collapse": true
+    },
+    "config": {
+      "cookieId": "bnr.x",
+      "noticeId": 206,
+      "options": {
+        "collapse": true
+      }
+    }
+  };
+
+  return (
+    <Meganav
+      paths={{
+        ablyStack: "#",
+        iconSprites: "#",
+        blogThumb1: "#",
+        blogThumb2: "#",
+        blogThumb3: "#",
+      }}
+      statusUrl={statusUrl}
+      themeName="white"
+      addSearchApiKey="#"
+      notice={response}
+    />
+  );
+};
+
+export const WithNotice = {
+  render: () => <PageWithNotice />,
+};
