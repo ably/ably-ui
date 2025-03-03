@@ -15,15 +15,17 @@ type ContentWrapperProps = {
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
 // Plan is to TS-ify the JS assets too, so this can be rectified then. The NoticeScripts-oriented props are
 // the ones after the line break.
-type NoticeProps = {
+export type NoticeProps = {
   buttonLink?: string;
   buttonLabel?: string;
   bodyText?: string;
   title?: string;
   closeBtn?: boolean;
   config?: {
-    collapse: boolean;
-    noticeId: string;
+    options: {
+      collapse: boolean;
+    };
+    noticeId: string | number;
     cookieId: string;
   };
   bgColor?: string;
@@ -68,7 +70,7 @@ const Notice = ({
       cookieId: config?.cookieId,
       noticeId: config?.noticeId,
       options: {
-        collapse: config?.collapse || false,
+        collapse: config?.options?.collapse || false,
       },
     });
   }, []);
