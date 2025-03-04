@@ -86,23 +86,31 @@ type SignInProps = {
   searchDataId?: string;
 };
 
-type MeganavProps = {
-  paths?: MeganavPaths;
-  themeName: "white" | "black" | "transparentToWhite";
-  notice?: {
-    props: {
-      title: string;
-      bodyText: string;
-      buttonLink: string;
-      buttonLabel: string;
-      closeBtn: boolean;
-    };
-    config: {
-      cookieId: string;
-      noticeId: string;
+// This type is based on the API response from the notice API and the data
+// passed into the Meganav component, which then turns it into something
+// the Notice component can use. The type is exported for the benefit of
+// Voltaire
+export type MeganavNoticeProps = {
+  props: {
+    title: string;
+    bodyText: string;
+    buttonLink: string;
+    buttonLabel: string;
+    closeBtn: boolean;
+  };
+  config: {
+    cookieId: string;
+    noticeId: string | number;
+    options: {
       collapse: boolean;
     };
   };
+};
+
+type MeganavProps = {
+  paths?: MeganavPaths;
+  themeName: "white" | "black" | "transparentToWhite";
+  notice?: MeganavNoticeProps;
   loginLink?: string;
   urlBase?: string;
   addSearchApiKey: string;

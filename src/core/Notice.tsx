@@ -1,29 +1,35 @@
 import React, { ReactNode, useEffect } from "react";
 
-import NoticeScripts from "./Notice/component.js";
+import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import Icon from "./Icon";
+import cn from "./utils/cn.js";
+import NoticeScripts from "./Notice/component.js";
+
 type ContentWrapperProps = {
   buttonLink: string;
   children: ReactNode;
+  textColor?: ColorClass | ColorThemeSet;
 };
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
 // Plan is to TS-ify the JS assets too, so this can be rectified then. The NoticeScripts-oriented props are
 // the ones after the line break.
-type NoticeProps = {
+export type NoticeProps = {
   buttonLink?: string;
   buttonLabel?: string;
   bodyText?: string;
   title?: string;
   closeBtn?: boolean;
   config?: {
-    collapse: boolean;
-    noticeId: string;
+    options: {
+      collapse: boolean;
+    };
+    noticeId: string | number;
     cookieId: string;
   };
   bgColor?: string;
-  textColor?: string;
+  textColor?: ColorClass | ColorThemeSet;
 
   bannerContainer?: Element | null;
   cookieId?: string;
@@ -31,15 +37,21 @@ type NoticeProps = {
   options?: { collapse: boolean };
 };
 
-const contentWrapperClasses = "w-full pr-8 ui-text-p3 self-center";
+const defaultTextColor = "text-neutral-1300";
 
-const ContentWrapper = ({ buttonLink, children }: ContentWrapperProps) =>
+const contentWrapperClasses = "w-full pr-8 ui-text-p4 self-center";
+
+const ContentWrapper = ({
+  buttonLink,
+  textColor = defaultTextColor,
+  children,
+}: ContentWrapperProps) =>
   buttonLink ? (
-    <a href={buttonLink} className={contentWrapperClasses}>
+    <a href={buttonLink} className={cn(contentWrapperClasses, textColor)}>
       {children}
     </a>
   ) : (
-    <div className={contentWrapperClasses}>{children}</div>
+    <div className={cn(contentWrapperClasses, textColor)}>{children}</div>
   );
 
 const Notice = ({
@@ -49,8 +61,8 @@ const Notice = ({
   title,
   config,
   closeBtn,
-  bgColor = "bg-gradient-active-orange",
-  textColor = "text-white",
+  bgColor = "bg-orange-100",
+  textColor = defaultTextColor,
 }: NoticeProps) => {
   useEffect(() => {
     NoticeScripts({
@@ -58,16 +70,14 @@ const Notice = ({
       cookieId: config?.cookieId,
       noticeId: config?.noticeId,
       options: {
-        collapse: config?.collapse || false,
+        collapse: config?.options?.collapse || false,
       },
     });
   }, []);
 
-  const wrapperClasses = ["ui-announcement", bgColor, textColor].join(" ");
-
   return (
     <div
-      className={wrapperClasses}
+      className={cn("ui-announcement", bgColor, textColor)}
       data-id="ui-notice"
       style={{ maxHeight: 0, overflow: "hidden" }}
     >
@@ -76,7 +86,7 @@ const Notice = ({
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
           <span className="pr-4">{bodyText}</span>
           {buttonLabel && (
-            <span className="underline cursor-pointer whitespace-nowrap">
+            <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light">
               {buttonLabel}
             </span>
           )}
@@ -90,7 +100,7 @@ const Notice = ({
             <Icon
               name="icon-gui-x-mark-outline"
               size="1.25rem"
-              color="text-cool-black"
+              color={textColor}
             />
           </button>
         )}
