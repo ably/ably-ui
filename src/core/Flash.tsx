@@ -17,7 +17,7 @@ type FlashProps = {
 };
 
 type FlashesProps = {
-  flashes: { items: FlashProps[] };
+  flashes: { items: Pick<FlashProps, "type" | "content">[] };
 };
 
 type BackendFlashesProps = {
@@ -204,6 +204,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
           ...flash,
           id: Math.random().toString(36).slice(2),
           removed: false,
+          removeFlash,
         })),
       ];
     });
@@ -214,7 +215,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
       {flashesWithIds
         .filter((item) => !item.removed)
         .map((flash) => (
-          <Flash key={flash.id} {...flash} removeFlash={removeFlash} />
+          <Flash key={flash.id} {...flash} />
         ))}
     </div>
   );
