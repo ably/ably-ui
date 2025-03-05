@@ -10,14 +10,13 @@ const config: StorybookConfig = {
     disableTelemetry: true,
   },
   addons: [
-    "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/addon-a11y",
     "storybook-dark-mode",
     "@whitespace/storybook-addon-html",
   ],
-  docs: {},
+  docs: {
+    autodocs: true
+  },
   typescript: {
     reactDocgen: "react-docgen-typescript",
   },
