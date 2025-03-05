@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect } from "react";
+import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import Icon from "./Icon";
@@ -10,6 +11,7 @@ type ContentWrapperProps = {
   children: ReactNode;
   textColor?: ColorClass | ColorThemeSet;
 };
+import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
@@ -57,7 +59,7 @@ const ContentWrapper = ({
 const Notice = ({
   buttonLink,
   buttonLabel,
-  bodyText,
+  bodyText = "",
   title,
   config,
   closeBtn,
@@ -75,6 +77,13 @@ const Notice = ({
     });
   }, []);
 
+  const safeContent = DOMPurify.sanitize(bodyText, {
+    ALLOWED_TAGS: ["a"],
+    ALLOWED_ATTR: ["href", "data-method", "rel"],
+  });
+
+  const contentRef = useRailsUjsLinks();
+
   return (
     <div
       className={cn("ui-announcement", bgColor, textColor)}
@@ -84,7 +93,13 @@ const Notice = ({
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
-          <span className="pr-4">{bodyText}</span>
+          <span
+            ref={contentRef}
+            className="pr-4"
+            dangerouslySetInnerHTML={{
+              __html: safeContent,
+            }}
+          ></span>
           {buttonLabel && (
             <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light">
               {buttonLabel}
