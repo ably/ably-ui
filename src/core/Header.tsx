@@ -10,6 +10,7 @@ import {
 import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
 import { Theme } from "./styles/colors/types";
+import { NoticeProps } from "./Notice";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -112,6 +113,14 @@ export type HeaderProps = {
    * - "mobile": Visible only on mobile devices.
    */
   searchButtonVisibility?: "all" | "desktop" | "mobile";
+  /**
+   Props for the notice component to be displayed in the header.
+   */
+  notice: NoticeProps;
+  /**
+   Reference to the notice DOM element for handling visibility and overflow.
+   */
+  noticeRef: React.RefObject<HTMLDivElement>;
 };
 
 const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
@@ -131,10 +140,13 @@ const Header: React.FC<HeaderProps> = ({
   sessionState,
   themedScrollpoints = [],
   searchButtonVisibility = "all",
+  notice,
+  noticeRef,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
+  const [bannerVisible, setBannerVisible] = useState(true);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const closeMenu = () => {
@@ -152,10 +164,18 @@ const Header: React.FC<HeaderProps> = ({
         setShowMenu(false);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (
+      noticeRef?.current &&
+      getComputedStyle(noticeRef?.current).overflow === "hidden"
+    ) {
+      setBannerVisible(false);
+    }
+  }, [noticeRef]);
 
   useEffect(() => {
     if (showMenu) {
@@ -182,6 +202,15 @@ const Header: React.FC<HeaderProps> = ({
           }
         }
       }
+      if (window.scrollY > 20) {
+        setBannerVisible(false);
+      } else {
+        if (
+          !noticeRef?.current ||
+          noticeRef?.current?.style?.overflow !== "hidden"
+        )
+          setBannerVisible(true);
+      }
     };
 
     const throttledHandleScroll = throttle(handleScroll, 150);
@@ -207,8 +236,13 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64 ",
           scrollpointClasses,
+          {
+            "md:top-0 transition-all duration-300": !notice && !bannerVisible,
+            "md:top-[54px] transition-all duration-300":
+              notice && bannerVisible,
+          },
         )}
         style={{ height: HEADER_HEIGHT }}
       >

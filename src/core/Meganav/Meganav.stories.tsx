@@ -55,3 +55,44 @@ export const SignedIn = {
     },
   },
 };
+
+export const WithNotice = {
+  render: () => {
+    return (
+      <div className="h-[1500px]">
+        <Meganav
+          sessionState={{
+            signedIn: false,
+            logOut: { token: "", href: "" },
+            accountName: "",
+          }}
+          searchDataId="inkeep-search"
+          notice={{
+            buttonLink: "https://ably.com",
+            buttonLabel: "Read the announcement",
+            bodyText:
+              "Reduce the costs of high-scale, high-frequency messaging.",
+            title: "📣 Introducing server-side batching",
+            closeBtn: true,
+            config: {
+              options: {
+                collapse: true,
+              },
+              noticeId: "notice",
+              cookieId: "notice-cookie",
+            },
+            bgColor: "bg-orange-100",
+            textColor: "text-neutral-1300",
+          }}
+        />
+      </div>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
+};
