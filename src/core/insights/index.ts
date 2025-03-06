@@ -1,3 +1,4 @@
+import * as datalayer from "./datalayer";
 import * as mixpanel from "./mixpanel";
 import * as posthog from "./posthog";
 import { InsightsIdentity } from "./types";
@@ -41,6 +42,14 @@ export const initInsights = ({
   } catch (e) {
     if (debugMode) {
       console.error("Failed to initialize Posthog", e);
+    }
+  }
+
+  try {
+    datalayer.initDatalayer();
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to initialize Datalayer", e);
     }
   }
 };
@@ -130,6 +139,14 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
   } catch (e) {
     if (debugMode) {
       console.error("Failed to track event in Posthog", e);
+    }
+  }
+
+  try {
+    datalayer.track(event, properties);
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to track event in Datalayer", e);
     }
   }
 };
