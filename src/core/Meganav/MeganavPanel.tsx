@@ -77,28 +77,27 @@ export const MeganavPanel = ({
             </p>
           )}
 
-          {panelRightItems &&
-            panelRightItems.map((item) => (
-              <li
-                className={cn(
-                  "list-none py-[10px] md:py-8 my-0 flex gap-x-[10px] hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100",
-                  item.isMobile ? "md:hidden" : "md:flex",
-                )}
-                key={item.label}
+          {panelRightItems.map((item) => (
+            <li
+              className={cn(
+                "list-none py-12 my-0 flex gap-x-[10px] group hover:cursor-pointer",
+                item.isMobile ? "md:hidden" : "md:flex",
+              )}
+              key={item.label}
+            >
+              <Icon
+                name={item.icon}
+                size="1.25rem"
+                additionalCSS="text-neutral-1000 dark:text-neutral-300"
+              />
+              <a
+                className="ui-text-menu2 md:ui-text-menu3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
+                href={item.link}
               >
-                <Icon
-                  name={item.icon}
-                  size="1.25rem"
-                  additionalCSS="text-neutral-1000 dark:text-neutral-300"
-                />
-                <a
-                  className="ui-text-menu2 md:ui-text-menu3 font-semibold text-neutral-1000 dark:text-neutral-300"
-                  href={item.link}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
         {panelRightBottom && (
           <div className="items-end mt-16 md:mt-0">{panelRightBottom}</div>
