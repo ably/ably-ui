@@ -6,6 +6,7 @@ export type InsightsConfig = {
   debug: boolean;
   mixpanelToken: string;
   mixpanelAutoCapture: boolean;
+  mixpanelRecordSessionsPercent: number;
   posthogApiKey: string;
   posthogApiHost: string;
 };
@@ -15,6 +16,7 @@ let debugMode = false;
 export const initInsights = ({
   mixpanelToken,
   mixpanelAutoCapture,
+  mixpanelRecordSessionsPercent = 1,
   posthogApiKey,
   posthogApiHost,
   debug = false,
@@ -22,7 +24,12 @@ export const initInsights = ({
   debugMode = !!debug;
 
   try {
-    mixpanel.initMixpanel(mixpanelToken, mixpanelAutoCapture, debugMode);
+    mixpanel.initMixpanel(
+      mixpanelToken,
+      mixpanelAutoCapture,
+      debugMode,
+      mixpanelRecordSessionsPercent,
+    );
   } catch (e) {
     if (debugMode) {
       console.error("Failed to initialize Mixpanel", e);
@@ -123,6 +130,42 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
   } catch (e) {
     if (debugMode) {
       console.error("Failed to track event in Posthog", e);
+    }
+  }
+};
+
+export const startSessionRecording = () => {
+  try {
+    mixpanel.startSessionRecording();
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to start session recording in Mixpanel", e);
+    }
+  }
+
+  try {
+    posthog.startSessionRecording();
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to start session recording in Posthog", e);
+    }
+  }
+};
+
+export const stopSessionRecording = () => {
+  try {
+    mixpanel.stopSessionRecording();
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to stop session recording in Mixpanel", e);
+    }
+  }
+
+  try {
+    posthog.stopSessionRecording();
+  } catch (e) {
+    if (debugMode) {
+      console.error("Failed to stop session recording in Posthog", e);
     }
   }
 };

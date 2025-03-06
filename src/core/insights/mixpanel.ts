@@ -6,6 +6,7 @@ export const initMixpanel = (
   token: string,
   autoCapture: boolean = false,
   debug: boolean = false,
+  recordSessionsPercent = 1,
 ) => {
   const blockSelectors = ["[ph-no-capture]", '[data-sl="mask"]'];
   if (!token) {
@@ -22,6 +23,7 @@ export const initMixpanel = (
         }
       : false,
     track_pageview: false, // We'll track page views manually
+    record_sessions_percent: recordSessionsPercent,
   });
 };
 
@@ -64,3 +66,7 @@ export const identify = ({
 export const trackPageView = mixpanel.track_pageview;
 
 export const track = mixpanel.track;
+
+export const startSessionRecording = mixpanel.start_session_recording;
+
+export const stopSessionRecording = mixpanel.stop_session_recording;
