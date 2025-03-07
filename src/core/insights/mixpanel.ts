@@ -48,18 +48,18 @@ export const identify = ({
     return;
   }
 
-  mixpanel.identify(userId);
+  mixpanel.identify(userId.toString());
 
   if (email || name) {
     mixpanel.people.set({ $email: email, $name: name });
   }
 
   if (accountId) {
-    mixpanel.people.union({ account_id: [accountId] });
+    mixpanel.people.union({ accounts: [accountId.toString()] });
   }
 
   if (organisationId) {
-    mixpanel.people.set({ organisation_id: [organisationId] });
+    mixpanel.people.set({ organization_id: [organisationId.toString()] });
   }
 };
 
