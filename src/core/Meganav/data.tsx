@@ -134,7 +134,7 @@ const companyMenu: FlyoutPanelList[] = [
 const ablyAwards = [
   {
     image: BestRequirementsWinter2025,
-    desc: "G2 Best Reqiurements Winter 2025",
+    desc: "G2 Best Requirements Winter 2025",
   },
   {
     image: BestSupportWinter2025,
@@ -186,16 +186,15 @@ export const menuItemsForHeader: MenuItem[] = [
         panelRightItems={companyMenu}
         panelRightBottom={
           <div className="flex-1 gap-x-8 hidden md:flex">
-            {ablyAwards &&
-              ablyAwards.map((award) => (
-                <img
-                  key={award.desc}
-                  src={award.image}
-                  alt={award.desc}
-                  width="57"
-                  height="64"
-                />
-              ))}
+            {ablyAwards.map((award) => (
+              <img
+                key={award.desc}
+                src={award.image}
+                alt={award.desc}
+                width="57"
+                height="64"
+              />
+            ))}
           </div>
         }
       />
