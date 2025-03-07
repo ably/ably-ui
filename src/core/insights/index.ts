@@ -2,6 +2,7 @@ import * as datalayer from "./datalayer";
 import * as mixpanel from "./mixpanel";
 import * as posthog from "./posthog";
 import { InsightsIdentity } from "./types";
+import * as logger from "./logger";
 
 export type InsightsConfig = {
   debug: boolean;
@@ -24,6 +25,10 @@ export const initInsights = ({
 }: InsightsConfig) => {
   debugMode = !!debug;
 
+  if (debugMode) {
+    logger.debug("Initializing insights");
+  }
+
   try {
     mixpanel.initMixpanel(
       mixpanelToken,
@@ -33,7 +38,7 @@ export const initInsights = ({
     );
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to initialize Mixpanel", e);
+      logger.error("Failed to initialize Mixpanel", e);
     }
   }
 
@@ -41,7 +46,7 @@ export const initInsights = ({
     posthog.initPosthog(posthogApiKey, posthogApiHost);
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to initialize Posthog", e);
+      logger.error("Failed to initialize Posthog", e);
     }
   }
 
@@ -49,28 +54,32 @@ export const initInsights = ({
     datalayer.initDatalayer();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to initialize Datalayer", e);
+      logger.error("Failed to initialize Datalayer", e);
     }
   }
 };
 
 export const enableDebugMode = () => {
   debugMode = true;
+  logger.debug("Enabling debug mode");
+
   try {
     mixpanel.enableDebugMode();
     posthog.enableDebugMode();
   } catch (e) {
-    console.error("Failed to enable debug mode", e);
+    logger.error("Failed to enable debug mode", e);
   }
 };
 
 export const disableDebugMode = () => {
   debugMode = false;
+  logger.debug("Disabling debug mode");
+
   try {
     mixpanel.disableDebugMode();
     posthog.disableDebugMode();
   } catch (e) {
-    console.error("Failed to disable debug mode", e);
+    logger.error("Failed to disable debug mode", e);
   }
 };
 
@@ -85,16 +94,20 @@ export const identify = ({
   // let null/undefined/blank strings through on that one
   if (!userId) {
     if (debugMode) {
-      console.warn("User ID not provided, skipping identify");
+      logger.warn("User ID not provided, skipping identify");
     }
     return;
+  }
+
+  if (debugMode) {
+    logger.info("Identifying user", { userId, accountId, organisationId, email, name });
   }
 
   try {
     mixpanel.identify({ userId, accountId, organisationId, email, name });
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to identify user in Mixpanel", e);
+      logger.error("Failed to identify user in Mixpanel", e);
     }
   }
 
@@ -102,17 +115,21 @@ export const identify = ({
     posthog.identify({ userId, accountId, organisationId, email, name });
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to identify user in Posthog", e);
+      logger.error("Failed to identify user in Posthog", e);
     }
   }
 };
 
 export const trackPageView = () => {
+  if (debugMode) {
+    logger.info("Tracking page view");
+  }
+
   try {
     mixpanel.trackPageView();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to track page view in Mixpanel", e);
+      logger.error("Failed to track page view in Mixpanel", e);
     }
   }
 
@@ -120,17 +137,21 @@ export const trackPageView = () => {
     posthog.trackPageView();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to track page view in Posthog", e);
+      logger.error("Failed to track page view in Posthog", e);
     }
   }
 };
 
 export const track = (event: string, properties?: Record<string, unknown>) => {
+  if (debugMode) {
+    logger.info("Tracking event", { event, properties });
+  }
+
   try {
     mixpanel.track(event, properties);
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to track event in Mixpanel", e);
+      logger.error("Failed to track event in Mixpanel", e);
     }
   }
 
@@ -138,7 +159,7 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
     posthog.track(event, properties);
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to track event in Posthog", e);
+      logger.error("Failed to track event in Posthog", e);
     }
   }
 
@@ -146,17 +167,21 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
     datalayer.track(event, properties);
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to track event in Datalayer", e);
+      logger.error("Failed to track event in Datalayer", e);
     }
   }
 };
 
 export const startSessionRecording = () => {
+  if (debugMode) {
+    logger.info("Starting session recording");
+  }
+
   try {
     mixpanel.startSessionRecording();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to start session recording in Mixpanel", e);
+      logger.error("Failed to start session recording in Mixpanel", e);
     }
   }
 
@@ -164,17 +189,21 @@ export const startSessionRecording = () => {
     posthog.startSessionRecording();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to start session recording in Posthog", e);
+      logger.error("Failed to start session recording in Posthog", e);
     }
   }
 };
 
 export const stopSessionRecording = () => {
+  if (debugMode) {
+    logger.info("Stopping session recording");
+  }
+
   try {
     mixpanel.stopSessionRecording();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to stop session recording in Mixpanel", e);
+      logger.error("Failed to stop session recording in Mixpanel", e);
     }
   }
 
@@ -182,7 +211,7 @@ export const stopSessionRecording = () => {
     posthog.stopSessionRecording();
   } catch (e) {
     if (debugMode) {
-      console.error("Failed to stop session recording in Posthog", e);
+      logger.error("Failed to stop session recording in Posthog", e);
     }
   }
 };
