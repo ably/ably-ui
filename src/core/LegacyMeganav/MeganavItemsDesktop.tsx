@@ -1,6 +1,6 @@
 import React from "react";
 
-import MeganavData from "./LegacyMeganav/component.json";
+import MeganavData from "./component.json";
 import MeganavControl from "./MeganavControl";
 import {
   AbsUrl,

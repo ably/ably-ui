@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-import Icon from "./Icon";
+import Icon from "../Icon";
 type MeganavControlMobilePanelOpenProps = {
   ariaControls: string;
   children: ReactNode;
