@@ -148,7 +148,7 @@ const Flyout = ({
           )}
         </NavigationMenuList>
 
-        <div className={cn("absolute left-0 top-full", flyOutClassName)}>
+        <div className={cn("absolute top-full", flyOutClassName)}>
           <NavigationMenuViewport
             className={cn(DEFAULT_VIEWPORT_STYLING, viewPortClassName)}
           />

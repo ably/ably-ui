@@ -44,7 +44,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
             menuItems={menuItemsForHeader}
             className="justify-left z-40"
             flyOutClassName="flex justify-left"
-            viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 ml-128 bg-neutral-000 dark:bg-neutral-1300"
+            viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 bg-neutral-000 dark:bg-neutral-1300"
             hasAnimation={true}
           />
         }
