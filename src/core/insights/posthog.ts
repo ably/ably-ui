@@ -53,6 +53,10 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
   posthog.capture(event, properties);
 };
 
-export const startSessionRecording = posthog.startSessionRecording;
+export const startSessionRecording = () => {
+  posthog.startSessionRecording();
+};
 
-export const stopSessionRecording = posthog.stopSessionRecording;
+export const stopSessionRecording = () => {
+  posthog.stopSessionRecording();
+};

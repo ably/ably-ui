@@ -89,8 +89,14 @@ export const trackPageView = () => {
   });
 };
 
-export const track = mixpanel.track;
+export const track = (event: string, properties?: Record<string, unknown>) => {
+  mixpanel.track(event, properties);
+};
 
-export const startSessionRecording = mixpanel.start_session_recording;
+export const startSessionRecording = () => {
+  mixpanel.start_session_recording();
+};
 
-export const stopSessionRecording = mixpanel.stop_session_recording;
+export const stopSessionRecording = () => {
+  mixpanel.stop_session_recording();
+};
