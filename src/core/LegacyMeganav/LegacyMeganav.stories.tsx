@@ -11,7 +11,7 @@ import {
   reducerSessionData,
   fetchSessionData,
 } from "../remote-session-data.js";
-import LegacyMeganav from "../LegacyMeganav";
+import LegacyMeganav from "./LegacyMeganav";
 
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 

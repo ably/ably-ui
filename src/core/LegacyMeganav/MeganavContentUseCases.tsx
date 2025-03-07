@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "./Icon";
+import Icon from "../Icon";
 import { AbsUrl } from "./LegacyMeganav";
 
 const MeganavContentUseCases = ({ absUrl }: { absUrl: AbsUrl }) => (
