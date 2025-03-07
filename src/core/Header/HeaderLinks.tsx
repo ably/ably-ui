@@ -17,10 +17,12 @@ const testSessionState = {
 export const HeaderLinks: React.FC<
   Pick<
     HeaderProps,
-    "sessionState" | "headerLinks" | "searchButtonVisibility" | "searchButton"
-  > & {
-    className?: string;
-  }
+    | "sessionState"
+    | "headerLinks"
+    | "searchButtonVisibility"
+    | "searchButton"
+    | "className"
+  >
 > = ({
   sessionState = testSessionState,
   headerLinks,

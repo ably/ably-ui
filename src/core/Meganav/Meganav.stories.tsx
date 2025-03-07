@@ -20,18 +20,8 @@ export const Default = {
           }}
           searchDataId="inkeep-search"
         />
-        <div className="mt-64 ui-standard-container flex justify-end text-neutral-1000 relative z-0">
-          I am a header
-        </div>
       </div>
     );
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: "",
-      },
-    },
   },
 };
 export const SignedIn = {
@@ -46,13 +36,6 @@ export const SignedIn = {
         searchDataId="inkeep-search"
       />
     );
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: "",
-      },
-    },
   },
 };
 
@@ -90,12 +73,5 @@ export const WithNotice = {
         <div className="h-[500px] bg-neutral-200"></div>
       </div>
     );
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: "",
-      },
-    },
   },
 };

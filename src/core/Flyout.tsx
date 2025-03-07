@@ -20,7 +20,7 @@ type FlyoutProps = {
    */
   menuItems: {
     /**
-     * name for the menu item.
+     * Name for the menu item.
      */
     name: string;
     /**

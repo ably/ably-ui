@@ -51,7 +51,10 @@ export type HeaderSessionState = {
  * Props for the Header component.
  */
 export type HeaderProps = {
-  headerClassName?: string;
+  /**
+   * Optional classnames to add to the header
+   */
+  className?: string;
   /**
    * Optional search bar element.
    */
@@ -124,7 +127,7 @@ const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
 const MAX_MOBILE_MENU_WIDTH = "560px";
 
 const Header: React.FC<HeaderProps> = ({
-  headerClassName,
+  className,
   searchBar,
   searchButton,
   logoHref,
@@ -185,11 +188,7 @@ const Header: React.FC<HeaderProps> = ({
           }
         }
       }
-      if (window.scrollY > COLLAPSE_TRIGGER_DISTANCE) {
-        setBannerVisible(false);
-      } else {
-        setBannerVisible(true);
-      }
+      setBannerVisible(window.scrollY <= COLLAPSE_TRIGGER_DISTANCE);
     };
 
     const throttledHandleScroll = throttle(handleScroll, 150);
@@ -224,7 +223,7 @@ const Header: React.FC<HeaderProps> = ({
         )}
         style={{ height: HEADER_HEIGHT }}
       >
-        <div className={cn("flex items-center h-full", headerClassName)}>
+        <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">
             {(["light", "dark"] as Theme[]).map((theme) => (
               <Logo

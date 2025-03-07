@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Header, { HeaderSessionState } from "../Header";
 import Icon from "../Icon";
 import Flyout from "../Flyout";
@@ -30,15 +30,19 @@ export type MeganavProps = {
 };
 
 const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
-  const mobileNavItems = menuItemsForHeader
-    .filter((item) => !item.isHiddenMobile)
-    .map(({ name, link, content }) => ({ name, link, content }));
+  const mobileNavItems = useMemo(
+    () =>
+      menuItemsForHeader
+        .filter((item) => !item.isHiddenMobile)
+        .map(({ name, link, content }) => ({ name, link, content })),
+    [],
+  );
 
   return (
     <div className="absolute inset-0 w-full z-50 ">
       {notice && <Notice {...notice.props} config={notice.config} />}
       <Header
-        headerClassName="max-w-screen-xl mx-auto ui-grid-px"
+        className="max-w-screen-xl mx-auto ui-grid-px"
         nav={
           <Flyout
             menuItems={menuItemsForHeader}
@@ -61,7 +65,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
           >
             <Icon
               name="icon-gui-magnifying-glass-outline"
-              color="text-neutral-1300"
+              color="text-neutral-1300 dark:text-neutral-000"
               size="24px"
             />
           </button>

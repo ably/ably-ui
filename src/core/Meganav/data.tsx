@@ -4,9 +4,9 @@ import { MeganavPanel } from "./MeganavPanel";
 import Status, { StatusUrl } from "../Status";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
 import CompanyNavImage from "./images/founders-nav-image.png";
-import BestRequirementsWinter2025 from "../images/award/g2-best-meets-requirements-2025.png";
-import BestSupportWinter2025 from "../images/award/g2-best-support-2025.png";
-import HighPerformerWinter2025 from "../images/award/g2-high-performer-2025.png";
+import BestRequirementsWinter2025 from "../images/g2-best-meets-requirements-2025.svg";
+import BestSupportWinter2025 from "../images/g2-best-support-2025.svg";
+import HighPerformerWinter2025 from "../images/g2-high-performer-2025.svg";
 
 export type FlyoutPanelList = {
   label: string;
@@ -112,12 +112,12 @@ const companyMenu: FlyoutPanelList[] = [
   {
     label: "Customer stories",
     icon: "icon-gui-star-outline",
-    link: "/",
+    link: "/case-studies",
   },
   {
     label: "Careers",
     icon: "icon-gui-briefcase-outline",
-    link: "/case-studies",
+    link: "/careers",
   },
   {
     label: "Blog",
