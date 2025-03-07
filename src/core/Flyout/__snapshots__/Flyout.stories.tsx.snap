@@ -67,7 +67,7 @@ exports[`Components/Flyout Default smoke-test 1`] = `
       </a>
     </ul>
   </div>
-  <div class="absolute left-0 top-full flex w-full justify-center">
+  <div class="absolute top-full flex w-full justify-center">
   </div>
 </nav>
 `;
