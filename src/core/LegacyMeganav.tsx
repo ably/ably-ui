@@ -177,7 +177,7 @@ const panels = {
   MeganavContentDevelopers,
 };
 
-const Meganav = ({
+const LegacyMeganav = ({
   paths,
   themeName = "white",
   notice,
@@ -251,4 +251,4 @@ const Meganav = ({
   );
 };
 
-export default Meganav;
+export default LegacyMeganav;
