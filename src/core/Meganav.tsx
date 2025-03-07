@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
-import Header, { HeaderSessionState } from "../Header";
-import Icon from "../Icon";
-import Flyout from "../Flyout";
-import { menuItemsForHeader } from "./data";
-import { MeganavMobile } from "./MeganavMobile";
-import Notice from "../Notice";
+import Header, { HeaderSessionState } from "./Header";
+import Icon from "./Icon";
+import Flyout from "./Flyout";
+import { menuItemsForHeader } from "./Meganav/data";
+import { MeganavMobile } from "./Meganav/MeganavMobile";
+import Notice from "./Notice";
 
 export type MeganavNoticeBannerProps = {
   props: {
