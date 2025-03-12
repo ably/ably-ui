@@ -39,7 +39,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
   );
 
   return (
-    <div className="absolute inset-0 w-full z-50 ">
+    <div className="absolute inset-0 w-full z-50" data-testid="meganav">
       {notice && <Notice {...notice.props} config={notice.config} />}
       <Header
         className="max-w-screen-xl mx-auto ui-grid-px"
@@ -70,7 +70,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
             />
           </button>
         }
-        headerLinks={[{ href: "/contact", label: "Help" }]}
+        headerLinks={[{ href: "/contact", label: "Contact us" }]}
         sessionState={sessionState}
       />
     </div>
