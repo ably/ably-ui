@@ -72,17 +72,17 @@ const solutionsMenu: FlyoutPanelList[] = [
     isMobile: true,
   },
   {
-    label: "Biztech",
+    label: "BizTech",
     icon: "icon-gui-building-office-outline",
     link: "/solutions/ecommerce-and-retail",
   },
   {
-    label: "Fintech",
+    label: "FinTech",
     icon: "icon-gui-currency-dollar-outline",
     link: "/solutions/fintech",
   },
   {
-    label: "Healthcare",
+    label: "HealthTech",
     icon: "icon-gui-heart-outline",
     link: "/solutions/healthcare",
   },
@@ -124,11 +124,6 @@ const companyMenu: FlyoutPanelList[] = [
     icon: "icon-gui-light-bulb-outline",
     link: "/blog",
   },
-  {
-    label: "Contact us",
-    icon: "icon-gui-chat-bubble-bottom-center-text-outline",
-    link: "/contact",
-  },
 ];
 
 const ablyAwards = [
@@ -152,7 +147,6 @@ export const menuItemLinks = [
 ];
 
 export const menuItemsForHeader: MenuItem[] = [
-  { name: "Home", link: "/", isHiddenMobile: true },
   {
     name: "Products",
     content: (

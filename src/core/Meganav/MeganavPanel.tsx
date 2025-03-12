@@ -30,7 +30,14 @@ export const MeganavPanel = ({
         )}
       >
         {displayProductTile
-          ? Object.keys(products).map((product) => (
+          ? [
+              "pubsub",
+              "spaces",
+              "chat",
+              "liveSync",
+              "assetTracking",
+              "liveObjects",
+            ].map((product) => (
               <ProductTile
                 name={product as ProductName}
                 key={product}
@@ -73,7 +80,7 @@ export const MeganavPanel = ({
         <ul>
           {panelRightHeading && (
             <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 my-12">
-              platform
+              {panelRightHeading}
             </p>
           )}
 
