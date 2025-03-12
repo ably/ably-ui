@@ -6,6 +6,7 @@ export const initMixpanel = (
   token: string,
   autoCapture: boolean = false,
   debug: boolean = false,
+  recordSessionsPercent = 1,
 ) => {
   const blockSelectors = ["[ph-no-capture]", '[data-sl="mask"]'];
   if (!token) {
@@ -19,9 +20,12 @@ export const initMixpanel = (
     autocapture: autoCapture
       ? {
           block_selectors: blockSelectors,
+          capture_text_content: true,
         }
       : false,
     track_pageview: false, // We'll track page views manually
+    record_sessions_percent: recordSessionsPercent,
+    record_mask_text_selector: null, // Prevents all text from being masked - we have other masking configured/enabled
   });
 };
 
@@ -46,21 +50,53 @@ export const identify = ({
     return;
   }
 
-  mixpanel.identify(userId);
+  mixpanel.identify(userId.toString());
 
   if (email || name) {
     mixpanel.people.set({ $email: email, $name: name });
   }
 
   if (accountId) {
-    mixpanel.people.union({ account_id: [accountId] });
+    mixpanel.people.union({ accounts: [accountId.toString()] });
   }
 
   if (organisationId) {
-    mixpanel.people.set({ organisation_id: [organisationId] });
+    mixpanel.people.set({ organization_id: [organisationId.toString()] });
   }
 };
 
-export const trackPageView = mixpanel.track_pageview;
+// Simple function to replace all digits in a URL path with {redacted},
+// purely to make reporting based on aggregates easier
+const redactUrlSegments = () => {
+  const pathSegments = window.location.pathname.split("/");
 
-export const track = mixpanel.track;
+  const redactedSegments = pathSegments.map((segment) => {
+    // Check if the segment contains only digits
+    return /^\d+$/.test(segment) ? "{redacted}" : segment;
+  });
+
+  // Join the segments back together
+  const url = new URL(window.location.href);
+  url.pathname = redactedSegments.join("/");
+
+  return decodeURI(url.toString()).toLowerCase();
+};
+
+export const trackPageView = () => {
+  // Add the redacted URL to the page view event for reporting
+  mixpanel.track_pageview({
+    redacted_path: redactUrlSegments(),
+  });
+};
+
+export const track = (event: string, properties?: Record<string, unknown>) => {
+  mixpanel.track(event, properties);
+};
+
+export const startSessionRecording = () => {
+  mixpanel.start_session_recording();
+};
+
+export const stopSessionRecording = () => {
+  mixpanel.stop_session_recording();
+};
