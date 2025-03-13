@@ -1,10 +1,11 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import Header, { HeaderSessionState } from "./Header";
 import Icon from "./Icon";
 import Flyout from "./Flyout";
 import { menuItemsForHeader } from "./Meganav/data";
 import { MeganavMobile } from "./Meganav/MeganavMobile";
 import Notice from "./Notice";
+import { HEADER_HEIGHT } from "./utils/heights";
 
 export type MeganavNoticeBannerProps = {
   props: {
@@ -30,6 +31,7 @@ export type MeganavProps = {
 };
 
 const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
+  const [noticeHeight, setNoticeHeight] = React.useState(0);
   const mobileNavItems = useMemo(
     () =>
       menuItemsForHeader
@@ -38,9 +40,21 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
     [],
   );
 
+  useEffect(() => {
+    const noticeElement = document.querySelector('[data-id="ui-notice"]');
+    if (noticeElement) {
+      setNoticeHeight(noticeElement.getBoundingClientRect().height);
+    }
+  }, []);
+
   return (
     <>
-      <div className="absolute inset-0 w-full z-50" data-testid="meganav">
+      <div
+        className="absolute inset-0 w-full z-50"
+        id="meganav"
+        data-testid="meganav"
+        style={{ height: HEADER_HEIGHT + noticeHeight }}
+      >
         {notice && <Notice {...notice.props} config={notice.config} />}
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
@@ -73,9 +87,30 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
           }
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
           sessionState={sessionState}
+          themedScrollpoints={[
+            {
+              id: "meganav",
+              className: "ui-theme-light !bg-transparent !border-none",
+            },
+            {
+              id: "main",
+              className: "ui-theme-light",
+            },
+            {
+              id: "main-theme-light",
+              className: "ui-theme-light",
+            },
+            {
+              id: "main-theme-dark",
+              className: "ui-theme-dark",
+            },
+            {
+              id: "footer-theme-light",
+              className: "ui-theme-light",
+            },
+          ]}
         />
       </div>
-      <div id="meganav" className="h-64"></div>
     </>
   );
 };
