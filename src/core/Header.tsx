@@ -178,18 +178,17 @@ const Header: React.FC<HeaderProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
+      setBannerVisible(window.scrollY <= COLLAPSE_TRIGGER_DISTANCE);
       for (const scrollpoint of themedScrollpoints) {
         const element = document.getElementById(scrollpoint.id);
         if (element) {
           const rect = element.getBoundingClientRect();
-
           if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
             setScrollpointClasses(scrollpoint.className);
             return;
           }
         }
       }
-      setBannerVisible(window.scrollY <= COLLAPSE_TRIGGER_DISTANCE);
     };
 
     const throttledHandleScroll = throttle(handleScroll, 150);

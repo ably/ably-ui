@@ -59,7 +59,7 @@ type FlyoutProps = {
 };
 
 const DEFAULT_MENU_LINK_STYLING =
-  "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
+  "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
 const DEFAULT_VIEWPORT_STYLING =
   "relative overflow-hidden w-full h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] transition-[width,_height] duration-300 data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in sm:w-[var(--radix-navigation-menu-viewport-width)]";
 const PANEL_ANIMATION =
@@ -119,6 +119,7 @@ const Flyout = ({
                 <NavigationMenuTrigger
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
+                    "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
                     DEFAULT_MENU_LINK_STYLING,
                     menuLinkClassName,
                   )}
@@ -136,13 +137,12 @@ const Flyout = ({
                 </NavigationMenuContent>
               </NavigationMenuItem>
             ) : (
-              <NavigationMenuLink key={name}>
-                <a
-                  href={link}
-                  className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
-                >
-                  {name}
-                </a>
+              <NavigationMenuLink
+                key={name}
+                href={link}
+                className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
+              >
+                {name}
               </NavigationMenuLink>
             ),
           )}
@@ -156,7 +156,7 @@ const Flyout = ({
       </NavigationMenu>
       {isOpen ? (
         <FlyOverlay
-          className="bg-neutral-1300 opacity-10 z-20 h-screen"
+          className="bg-neutral-1300 opacity-10 z-20 h-screen mix-blend-multiply"
           fadingOut={fadingOut}
         />
       ) : null}
