@@ -165,7 +165,7 @@ export const menuItemsForHeader: MenuItem[] = [
     content: (
       <MeganavPanel
         panelLeft={solutionsHighlight}
-        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid rounded-lg border-neutral-300 dark:border-neutral-1000"
+        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid rounded-lg border-neutral-300 dark:border-neutral-1000 hover:border-neutral-500 dark:hover:border-neutral-700 cursor-pointer"
         panelRightItems={solutionsMenu}
       />
     ),
@@ -176,7 +176,7 @@ export const menuItemsForHeader: MenuItem[] = [
     content: (
       <MeganavPanel
         panelLeft={companyHighlight}
-        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid rounded-lg border-neutral-300 dark:border-neutral-1000"
+        panelLeftClassName="bg-neutral-100 dark:bg-neutral-1200 hidden md:grid rounded-lg border-neutral-300 dark:border-neutral-1000 hover:border-neutral-500 dark:hover:border-neutral-700 cursor-pointer"
         panelRightItems={companyMenu}
         panelRightBottom={
           <div className="flex-1 gap-x-8 hidden md:flex">

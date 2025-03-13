@@ -39,41 +39,44 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
   );
 
   return (
-    <div className="absolute inset-0 w-full z-50" data-testid="meganav">
-      {notice && <Notice {...notice.props} config={notice.config} />}
-      <Header
-        className="max-w-screen-xl mx-auto ui-grid-px"
-        nav={
-          <Flyout
-            menuItems={menuItemsForHeader}
-            className="justify-left z-40"
-            flyOutClassName="flex justify-left"
-            viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 bg-neutral-000 dark:bg-neutral-1300"
-            hasAnimation={true}
-          />
-        }
-        mobileNav={<MeganavMobile mobileNavItems={mobileNavItems} />}
-        searchButton={
-          <button
-            type="button"
-            data-control="search"
-            data-id={searchDataId}
-            className="cursor-pointer h-24 w-24 group focus:outline-none"
-            aria-expanded="false"
-            aria-controls="panel-search"
-            aria-label="Ask AI"
-          >
-            <Icon
-              name="icon-gui-magnifying-glass-outline"
-              color="text-neutral-1300 dark:text-neutral-000"
-              size="24px"
+    <>
+      <div className="absolute inset-0 w-full z-50" data-testid="meganav">
+        {notice && <Notice {...notice.props} config={notice.config} />}
+        <Header
+          className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
+          nav={
+            <Flyout
+              menuItems={menuItemsForHeader}
+              className="justify-left z-40"
+              flyOutClassName="flex justify-left"
+              viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 bg-neutral-000 dark:bg-neutral-1300"
+              hasAnimation={true}
             />
-          </button>
-        }
-        headerLinks={[{ href: "/contact", label: "Contact us" }]}
-        sessionState={sessionState}
-      />
-    </div>
+          }
+          mobileNav={<MeganavMobile mobileNavItems={mobileNavItems} />}
+          searchButton={
+            <button
+              type="button"
+              data-control="search"
+              data-id={searchDataId}
+              className="cursor-pointer w-auto group focus:outline-none block mx-0 px-0 flex justify-center"
+              aria-expanded="false"
+              aria-controls="panel-search"
+              aria-label="Ask AI"
+            >
+              <Icon
+                name="icon-gui-magnifying-glass-outline"
+                color="text-neutral-1300 dark:text-neutral-000"
+                size="24px"
+              />
+            </button>
+          }
+          headerLinks={[{ href: "/contact", label: "Contact us" }]}
+          sessionState={sessionState}
+        />
+      </div>
+      <div id="meganav" className="h-64"></div>
+    </>
   );
 };
 
