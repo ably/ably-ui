@@ -12,10 +12,10 @@ export const MeganavMobile = ({
   const menuItemClassname =
     "text-[18px] py-12 font-bold text-neutral-1000 dark:text-neutral-000";
   return (
-    <>
+    <div className="overflow-y-auto">
       <Accordion
         theme="transparent"
-        className="overflow-y-auto px-16 pt-16"
+        className="px-16 pt-16"
         data={mobileNavItems}
         icons={{
           closed: { name: "icon-gui-chevron-down-outline" },
@@ -43,6 +43,6 @@ export const MeganavMobile = ({
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };
