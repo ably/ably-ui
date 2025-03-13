@@ -218,8 +218,7 @@ const Header: React.FC<HeaderProps> = ({
           "fixed left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
           {
-            "md:top-0 transition-transform duration-300 ease-in-out":
-              !bannerVisible,
+            "md:top-0": !bannerVisible,
           },
         )}
         style={{ height: HEADER_HEIGHT }}
@@ -232,7 +231,7 @@ const Header: React.FC<HeaderProps> = ({
                 href={logoHref}
                 theme={theme}
                 additionalLinkAttrs={{
-                  className: cn("h-full focus-base rounded mr-32 w-[108px]", {
+                  className: cn("h-full focus-base rounded mr-32 w-[96px]", {
                     "flex dark:hidden": theme === "light",
                     "hidden dark:flex": theme === "dark",
                   }),

@@ -68,9 +68,12 @@ export const WithNotice = {
             },
           }}
         />
-        <div className="h-[500px] bg-neutral-000" id="main"></div>
-        <div className="h-[500px] bg-neutral-700"></div>
-        <div className="h-[500px] bg-neutral-200"></div>
+        <div className="h-[1400px] bg-neutral-000" id="main-theme-light"></div>
+        <div className="h-[1500px] bg-neutral-1300" id="main-theme-dark"></div>
+        <div
+          className="h-[1200px] bg-neutral-100"
+          id="footer-theme-light"
+        ></div>
       </div>
     );
   },
