@@ -2,7 +2,6 @@ import "array-flat-polyfill";
 
 export { default as reactRenderer, renderComponent } from "./react-renderer";
 export { default as loadSprites } from "./load-sprites";
-export { default as toggleChatWidget } from "./hubspot-chat-toggle";
 
 export * from "./remote-data-store";
 export * from "./remote-blogs-posts";
