@@ -45,7 +45,7 @@
     "http-server": "14.1.1",
     "jsdom": "^26.0.0",
     "mixpanel-browser": "^2.60.0",
-    "msw": "2.7.1",
+    "msw": "2.7.3",
     "msw-storybook-addon": "^2.0.2",
     "playwright": "^1.49.1",
     "posthog-js": "^1.217.4",
