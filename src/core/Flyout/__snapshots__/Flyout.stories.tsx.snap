@@ -11,19 +11,18 @@ exports[`Components/Flyout Default smoke-test 1`] = `
         class="flex list-none center"
         dir="ltr"
     >
-      <a data-radix-collection-item>
-        <a href
-           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
-        >
-          Home
-        </a>
+      <a href
+         class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+         data-radix-collection-item
+      >
+        Home
       </a>
       <li>
         <button id="radix-:r0:-trigger-radix-:r1:"
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r1:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Products
@@ -34,7 +33,7 @@ exports[`Components/Flyout Default smoke-test 1`] = `
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r2:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Solutions
@@ -45,25 +44,23 @@ exports[`Components/Flyout Default smoke-test 1`] = `
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r3:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Company
         </button>
       </li>
-      <a data-radix-collection-item>
-        <a href="/pricing"
-           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
-        >
-          Pricing
-        </a>
+      <a href="/pricing"
+         class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+         data-radix-collection-item
+      >
+        Pricing
       </a>
-      <a data-radix-collection-item>
-        <a href="/docs"
-           class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
-        >
-          Docs
-        </a>
+      <a href="/docs"
+         class="ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+         data-radix-collection-item
+      >
+        Docs
       </a>
     </ul>
   </div>
