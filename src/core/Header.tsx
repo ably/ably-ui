@@ -182,6 +182,7 @@ const Header: React.FC<HeaderProps> = ({
         const element = document.getElementById(scrollpoint.id);
         if (element) {
           const rect = element.getBoundingClientRect();
+
           if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
             setScrollpointClasses(scrollpoint.className);
             return;
@@ -202,7 +203,7 @@ const Header: React.FC<HeaderProps> = ({
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
-        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center p-6">
+        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center">
           {searchButton}
         </div>
       ) : null,

@@ -156,7 +156,7 @@ const Flyout = ({
       </NavigationMenu>
       {isOpen ? (
         <FlyOverlay
-          className="bg-neutral-1300 dark:bg-neutral-000 opacity-10 z-20 h-screen"
+          className="bg-neutral-1300 opacity-10 z-20 h-screen"
           fadingOut={fadingOut}
         />
       ) : null}
