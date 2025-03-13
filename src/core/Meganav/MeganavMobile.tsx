@@ -18,8 +18,8 @@ export const MeganavMobile = ({
         className="overflow-y-auto px-16 pt-16"
         data={mobileNavItems}
         icons={{
-          closed: { name: "icon-gui-chevron-down-solid" },
-          open: { name: "icon-gui-chevron-up-solid" },
+          closed: { name: "icon-gui-chevron-down-outline" },
+          open: { name: "icon-gui-chevron-up-outline" },
         }}
         options={{
           autoClose: true,
