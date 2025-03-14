@@ -62,7 +62,7 @@ const ProductLabel = ({
               selected === true && !unavailable,
           },
           {
-            "text-neutral-1000 dark:text-neutral-300":
+            "text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000":
               selected === false && !unavailable,
           },
           {

@@ -5,7 +5,7 @@ import { queryId } from "../dom-query";
 import { FLASH_DATA_ID } from "../Flash";
 
 const COOKIE_EXPIRY = 90;
-const COLLAPSE_TRIGGER_DISTANCE = 5;
+export const COLLAPSE_TRIGGER_DISTANCE = 5;
 const SCROLL_LISTENER_THROTTLE = 100;
 const RESIZE_LISTENER_THROTTLE = 100;
 

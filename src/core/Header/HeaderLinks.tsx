@@ -17,10 +17,12 @@ const testSessionState = {
 export const HeaderLinks: React.FC<
   Pick<
     HeaderProps,
-    "sessionState" | "headerLinks" | "searchButtonVisibility" | "searchButton"
-  > & {
-    className?: string;
-  }
+    | "sessionState"
+    | "headerLinks"
+    | "searchButtonVisibility"
+    | "searchButton"
+    | "className"
+  >
 > = ({
   sessionState = testSessionState,
   headerLinks,
@@ -58,7 +60,7 @@ export const HeaderLinks: React.FC<
   return (
     <nav
       className={cn(
-        "flex md:flex-1 md:items-center md:justify-end flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 md:gap-12 py-12 md:py-0",
+        "flex md:flex-1 md:items-center md:justify-end flex-col md:flex-row border-t-[1px] border-neutral-300 md:border-t-0 md:gap-16 pt-12 pb-16 md:py-0",
         className,
       )}
     >
@@ -123,7 +125,7 @@ export const HeaderLinks: React.FC<
               </DropdownMenu.Content>
             </DropdownMenu>
           </div>
-          <div className="block md:hidden p-16">
+          <div className="block md:hidden px-16 pt-16 pb-0">
             <LinkButton
               onClick={onClickLogout}
               variant="secondary"
@@ -136,18 +138,18 @@ export const HeaderLinks: React.FC<
           </div>
         </>
       ) : (
-        <div className="flex gap-12 py-12 md:py-0 px-16 md:px-0">
+        <div className="flex gap-16 pt-12 md:py-0 px-16 md:px-0">
           <LinkButton
             href="/login"
             variant="secondary"
-            className="flex-1 md:flex-none md:ui-button-secondary-xs"
+            className="flex-1 md:flex-none md:ui-button-secondary-xs hover:text-neutral-1300 dark:hover:text-neutral-000"
           >
             Login
           </LinkButton>
           <LinkButton
             href="/sign-up"
             variant="primary"
-            className="flex-1 md:flex-none md:ui-button-primary-xs"
+            className="flex-1 md:flex-none md:ui-button-primary-xs hover:text-neutral-000 dark:hover:text-neutral-1300"
           >
             Start free
           </LinkButton>

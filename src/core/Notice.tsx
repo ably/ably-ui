@@ -37,7 +37,7 @@ export type NoticeProps = {
   options?: { collapse: boolean };
 };
 
-const defaultTextColor = "text-neutral-1300";
+const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
 
 const contentWrapperClasses = "w-full pr-8 ui-text-p4 self-center";
 
@@ -61,7 +61,7 @@ const Notice = ({
   title,
   config,
   closeBtn,
-  bgColor = "bg-orange-100",
+  bgColor = "bg-orange-100 dark:bg-orange-1100",
   textColor = defaultTextColor,
 }: NoticeProps) => {
   useEffect(() => {
@@ -86,7 +86,7 @@ const Notice = ({
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
           <span className="pr-4">{bodyText}</span>
           {buttonLabel && (
-            <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light">
+            <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark">
               {buttonLabel}
             </span>
           )}

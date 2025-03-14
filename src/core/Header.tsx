@@ -10,6 +10,8 @@ import {
 import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
 import { Theme } from "./styles/colors/types";
+import { COLLAPSE_TRIGGER_DISTANCE } from "./Notice/component";
+import "./Header/Header.css";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -50,6 +52,14 @@ export type HeaderSessionState = {
  * Props for the Header component.
  */
 export type HeaderProps = {
+  /**
+   * Optional classnames to add to the header
+   */
+  className?: string;
+  /**
+   * Indicates if the notice banner is visible.
+   */
+  isNoticeVisible: boolean;
   /**
    * Optional search bar element.
    */
@@ -122,6 +132,8 @@ const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
 const MAX_MOBILE_MENU_WIDTH = "560px";
 
 const Header: React.FC<HeaderProps> = ({
+  className,
+  isNoticeVisible = false,
   searchBar,
   searchButton,
   logoHref,
@@ -135,6 +147,7 @@ const Header: React.FC<HeaderProps> = ({
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
+  const [bannerVisible, setBannerVisible] = useState(isNoticeVisible);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const closeMenu = () => {
@@ -152,7 +165,6 @@ const Header: React.FC<HeaderProps> = ({
         setShowMenu(false);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -172,6 +184,9 @@ const Header: React.FC<HeaderProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
+      setBannerVisible(
+        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
+      );
       for (const scrollpoint of themedScrollpoints) {
         const element = document.getElementById(scrollpoint.id);
         if (element) {
@@ -195,7 +210,7 @@ const Header: React.FC<HeaderProps> = ({
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
-        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center p-6">
+        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center">
           {searchButton}
         </div>
       ) : null,
@@ -207,12 +222,15 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed left-0 w-full z-10 top-0 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
+          {
+            "md:top-auto": bannerVisible,
+          },
         )}
         style={{ height: HEADER_HEIGHT }}
       >
-        <div className="flex items-center h-full">
+        <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">
             {(["light", "dark"] as Theme[]).map((theme) => (
               <Logo
@@ -220,7 +238,7 @@ const Header: React.FC<HeaderProps> = ({
                 href={logoHref}
                 theme={theme}
                 additionalLinkAttrs={{
-                  className: cn("h-full focus-base rounded mr-32 w-[108px]", {
+                  className: cn("h-full focus-base rounded mr-32 w-[96px]", {
                     "flex dark:hidden": theme === "light",
                     "hidden dark:flex": theme === "dark",
                   }),
@@ -281,7 +299,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20 mobile-menu-container"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(
