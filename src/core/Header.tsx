@@ -11,6 +11,7 @@ import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
 import { Theme } from "./styles/colors/types";
 import { COLLAPSE_TRIGGER_DISTANCE } from "./Notice/component";
+import "./Header/Header.css";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -55,6 +56,10 @@ export type HeaderProps = {
    * Optional classnames to add to the header
    */
   className?: string;
+  /**
+   * Indicates if the notice banner is visible.
+   */
+  isNoticeVisible: boolean;
   /**
    * Optional search bar element.
    */
@@ -128,6 +133,7 @@ const MAX_MOBILE_MENU_WIDTH = "560px";
 
 const Header: React.FC<HeaderProps> = ({
   className,
+  isNoticeVisible = false,
   searchBar,
   searchButton,
   logoHref,
@@ -141,7 +147,7 @@ const Header: React.FC<HeaderProps> = ({
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>("");
-  const [bannerVisible, setBannerVisible] = useState(true);
+  const [bannerVisible, setBannerVisible] = useState(isNoticeVisible);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const closeMenu = () => {
@@ -178,7 +184,9 @@ const Header: React.FC<HeaderProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      setBannerVisible(window.scrollY <= COLLAPSE_TRIGGER_DISTANCE);
+      setBannerVisible(
+        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
+      );
       for (const scrollpoint of themedScrollpoints) {
         const element = document.getElementById(scrollpoint.id);
         if (element) {
@@ -214,10 +222,10 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed left-0 w-full z-10 top-0 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
           {
-            "md:top-0": !bannerVisible,
+            "md:top-auto": bannerVisible,
           },
         )}
         style={{ height: HEADER_HEIGHT }}
@@ -291,7 +299,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20 mobile-menu-container"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(

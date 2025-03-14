@@ -11,16 +11,14 @@ export default {
 export const Default = {
   render: () => {
     return (
-      <div>
-        <Meganav
-          sessionState={{
-            signedIn: false,
-            logOut: { token: "", href: "" },
-            accountName: "",
-          }}
-          searchDataId="inkeep-search"
-        />
-      </div>
+      <Meganav
+        sessionState={{
+          signedIn: false,
+          logOut: { token: "", href: "" },
+          accountName: "",
+        }}
+        searchDataId="inkeep-search"
+      />
     );
   },
 };

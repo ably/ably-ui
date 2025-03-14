@@ -41,10 +41,15 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
   );
 
   useEffect(() => {
-    const noticeElement = document.querySelector('[data-id="ui-notice"]');
-    if (noticeElement) {
-      setNoticeHeight(noticeElement.getBoundingClientRect().height);
-    }
+    const observeNoticeResize = () => {
+      const noticeElement = document.querySelector('[data-id="ui-notice"]');
+      if (noticeElement) {
+        setNoticeHeight(noticeElement.getBoundingClientRect().height);
+      }
+    };
+    observeNoticeResize();
+    window.addEventListener("resize", observeNoticeResize);
+    return () => window.removeEventListener("resize", observeNoticeResize);
   }, []);
 
   return (
@@ -58,6 +63,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
         {notice && <Notice {...notice.props} config={notice.config} />}
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
+          isNoticeVisible={!!notice}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}
@@ -73,14 +79,15 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
               type="button"
               data-control="search"
               data-id={searchDataId}
-              className="cursor-pointer w-auto group focus:outline-none block mx-0 px-0 flex justify-center"
+              className="cursor-pointer w-auto group focus:outline-none mx-0 px-0 flex justify-center"
               aria-expanded="false"
               aria-controls="panel-search"
               aria-label="Ask AI"
             >
               <Icon
                 name="icon-gui-magnifying-glass-outline"
-                color="text-neutral-1300 dark:text-neutral-000"
+                color="text-neutral-1000 hover:text-neutral-1300
+                dark:text-neutral-300 hover:dark:text-neutral-000"
                 size="24px"
               />
             </button>
