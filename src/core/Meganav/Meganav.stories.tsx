@@ -40,7 +40,7 @@ export const SignedIn = {
 export const WithNotice = {
   render: () => {
     return (
-      <div>
+      <>
         <Meganav
           sessionState={{
             signedIn: false,
@@ -68,11 +68,29 @@ export const WithNotice = {
         />
         <div className="h-[1400px] bg-neutral-000" id="main-theme-light"></div>
         <div className="h-[1500px] bg-neutral-1300" id="main-theme-dark"></div>
-        <div
-          className="h-[1200px] bg-neutral-100"
-          id="footer-theme-light"
-        ></div>
-      </div>
+        <div className="h-[1200px] bg-neutral-100" id="main-theme-light"></div>
+      </>
+    );
+  },
+};
+
+export const LightThemeWithDarkMeganav = {
+  render: () => {
+    return (
+      <>
+        <Meganav
+          sessionState={{
+            signedIn: false,
+            logOut: { token: "", href: "" },
+            accountName: "",
+          }}
+          searchDataId="inkeep-search"
+          theme="dark"
+        />
+        <div className="h-[400px] bg-neutral-1300" id="main-theme-dark"></div>
+        <div className="h-[1500px] bg-neutral-000" id="main-theme-light"></div>
+        <div className="h-[1400px] bg-neutral-1300" id="main-theme-dark"></div>
+      </>
     );
   },
 };

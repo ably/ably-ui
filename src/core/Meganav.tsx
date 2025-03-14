@@ -28,9 +28,15 @@ export type MeganavProps = {
   sessionState: HeaderSessionState;
   searchDataId: string;
   notice?: MeganavNoticeBannerProps;
+  theme?: string;
 };
 
-const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
+const Meganav = ({
+  sessionState,
+  searchDataId,
+  notice,
+  theme,
+}: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
   const mobileNavItems = useMemo(
     () =>
@@ -56,7 +62,7 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
     <>
       <div
         className="absolute inset-0 w-full z-50"
-        id="meganav"
+        id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
         data-testid="meganav"
         style={{ height: HEADER_HEIGHT + noticeHeight }}
       >
@@ -100,6 +106,10 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
               className: "ui-theme-light !bg-transparent !border-none",
             },
             {
+              id: "meganav-theme-dark",
+              className: "ui-theme-dark !bg-transparent !border-none",
+            },
+            {
               id: "main",
               className: "ui-theme-light",
             },
@@ -110,10 +120,6 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
             {
               id: "main-theme-dark",
               className: "ui-theme-dark",
-            },
-            {
-              id: "footer-theme-light",
-              className: "ui-theme-light",
             },
           ]}
         />
