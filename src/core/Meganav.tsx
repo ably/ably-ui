@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo } from "react";
 import Header, { HeaderSessionState } from "./Header";
-import Icon from "./Icon";
 import Flyout from "./Flyout";
 import { menuItemsForHeader } from "./Meganav/data";
 import { MeganavMobile } from "./Meganav/MeganavMobile";
@@ -26,11 +25,11 @@ export type MeganavNoticeBannerProps = {
 
 export type MeganavProps = {
   sessionState: HeaderSessionState;
-  searchDataId: string;
   notice?: MeganavNoticeBannerProps;
+  theme?: string;
 };
 
-const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
+const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
   const mobileNavItems = useMemo(
     () =>
@@ -41,23 +40,29 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
   );
 
   useEffect(() => {
-    const noticeElement = document.querySelector('[data-id="ui-notice"]');
-    if (noticeElement) {
-      setNoticeHeight(noticeElement.getBoundingClientRect().height);
-    }
+    const observeNoticeResize = () => {
+      const noticeElement = document.querySelector('[data-id="ui-notice"]');
+      if (noticeElement) {
+        setNoticeHeight(noticeElement.getBoundingClientRect().height);
+      }
+    };
+    observeNoticeResize();
+    window.addEventListener("resize", observeNoticeResize);
+    return () => window.removeEventListener("resize", observeNoticeResize);
   }, []);
 
   return (
     <>
       <div
         className="absolute inset-0 w-full z-50"
-        id="meganav"
+        id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
         data-testid="meganav"
         style={{ height: HEADER_HEIGHT + noticeHeight }}
       >
         {notice && <Notice {...notice.props} config={notice.config} />}
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
+          isNoticeVisible={!!notice}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}
@@ -68,29 +73,17 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
             />
           }
           mobileNav={<MeganavMobile mobileNavItems={mobileNavItems} />}
-          searchButton={
-            <button
-              type="button"
-              data-control="search"
-              data-id={searchDataId}
-              className="cursor-pointer w-auto group focus:outline-none block mx-0 px-0 flex justify-center"
-              aria-expanded="false"
-              aria-controls="panel-search"
-              aria-label="Ask AI"
-            >
-              <Icon
-                name="icon-gui-magnifying-glass-outline"
-                color="text-neutral-1300 dark:text-neutral-000"
-                size="24px"
-              />
-            </button>
-          }
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
+          headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
           themedScrollpoints={[
             {
               id: "meganav",
               className: "ui-theme-light !bg-transparent !border-none",
+            },
+            {
+              id: "meganav-theme-dark",
+              className: "ui-theme-dark !bg-transparent !border-none",
             },
             {
               id: "main",
@@ -103,10 +96,6 @@ const Meganav = ({ sessionState, searchDataId, notice }: MeganavProps) => {
             {
               id: "main-theme-dark",
               className: "ui-theme-dark",
-            },
-            {
-              id: "footer-theme-light",
-              className: "ui-theme-light",
             },
           ]}
         />
