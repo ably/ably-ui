@@ -1,6 +1,6 @@
 import { delay, http, HttpResponse } from "msw";
 
-import Footer from "../Footer";
+import LegacyFooter from "./LegacyFooter";
 
 import ablyStack from "../images/ably-stack.svg";
 import bestSupport from "../images/g2-best-support-2025.svg";
@@ -11,8 +11,8 @@ import bestMeetsRequirements from "../images/g2-best-meets-requirements-2025.svg
 const statusUrl = "https://ntqy1wz94gjv.statuspage.io/api/v2/status.json";
 
 export default {
-  title: "Components/Footer",
-  component: Footer,
+  title: "Components/LegacyFooter",
+  component: LegacyFooter,
   parameters: {
     layout: "fullscreen",
     msw: {

@@ -1,10 +1,10 @@
 import React from "react";
 
-import Icon from "./Icon";
-import _absUrl from "./url-base.js";
-import { StatusIcon } from "./Status";
+import Icon from "../Icon";
+import _absUrl from "../url-base.js";
+import { StatusIcon } from "../Status";
 
-type FooterProps = {
+type LegacyFooterProps = {
   paths: {
     ablyStack: string;
     bestSupport: string;
@@ -16,7 +16,7 @@ type FooterProps = {
   statusUrl: string;
 };
 
-const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
+const LegacyFooter = ({ paths, urlBase, statusUrl }: LegacyFooterProps) => {
   const absUrl = (path: string) => _absUrl(path, urlBase);
 
   // create a react hook that calls the statusUrl and returns the status of the system every minute
@@ -528,4 +528,4 @@ const Footer = ({ paths, urlBase, statusUrl }: FooterProps) => {
   );
 };
 
-export default Footer;
+export default LegacyFooter;
