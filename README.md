@@ -108,7 +108,7 @@ module.exports = extendConfig((ablyUIConfig) => ({
 @import "@ably/ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
 @import "@ably/ui/core/styles.css"; /* styles for core module components and more */
 @import "@ably/ui/core/Meganav/component.css";
-@import "@ably/ui/core/ContactFooter/component.css";
+@import "@ably/ui/core/Flash/component.css";
 ```
 
 #### Importing React components
