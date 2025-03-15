@@ -34,9 +34,6 @@ export type MeganavPaths = {
   logo?: string;
   iconSprites: string;
   ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
   awsLogo?: string;
 };
 
@@ -90,7 +87,7 @@ type SignInProps = {
 // passed into the Meganav component, which then turns it into something
 // the Notice component can use. The type is exported for the benefit of
 // Voltaire
-export type MeganavNoticeProps = {
+export type NoticeApiProps = {
   props: {
     title: string;
     bodyText: string;
@@ -110,7 +107,7 @@ export type MeganavNoticeProps = {
 type MeganavProps = {
   paths?: MeganavPaths;
   themeName: "white" | "black" | "transparentToWhite";
-  notice?: MeganavNoticeProps;
+  notice?: NoticeApiProps;
   loginLink?: string;
   urlBase?: string;
   addSearchApiKey: string;
