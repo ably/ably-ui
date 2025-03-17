@@ -1,0 +1,739 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
+<div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          md
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          sm
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          xs
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control Disabled smoke-test 1`] = `
+<div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          md
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="true"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="false"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          sm
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="true"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="false"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          xs
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="true"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+           tabindex="-1"
+           role="button"
+           aria-pressed="false"
+           aria-disabled="true"
+      >
+        <span class="font-semibold transition-colors text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control Rounded smoke-test 1`] = `
+<div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          md
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-menu2 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-menu2 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          sm
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-menu3 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-menu3 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          xs
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-menu4 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-menu4 rounded-full"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
+<div class="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-16">
+  <div class="flex flex-col sm:flex-row gap-8">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            md
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-000 dark:text-neutral-1300">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            sm
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-000 dark:text-neutral-1300">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            xs
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-000 dark:text-neutral-1300">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
+<div class="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-16">
+  <div class="flex flex-col sm:flex-row gap-8">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            md
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            sm
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center">
+        <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+          <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+            xs
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+            Option 1
+          </span>
+        </div>
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+             tabindex="0"
+             role="button"
+             aria-pressed="false"
+        >
+          <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+            Option 2
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
+<div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          md
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 23px; height: 23px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 23px; height: 23px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          sm
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          xs
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 20px; height: 20px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 20px; height: 20px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
+<div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          md
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 23px; height: 23px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 23px; height: 23px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          sm
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center">
+      <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 mb-8">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          xs
+        </span>
+      </div>
+    </div>
+    <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Option 1
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 20px; height: 20px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+           tabindex="0"
+           role="button"
+           aria-pressed="false"
+      >
+        <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+          Option 2
+        </span>
+        <svg class
+             aria-hidden="true"
+             style="width: 20px; height: 20px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
