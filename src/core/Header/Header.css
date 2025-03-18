@@ -1,8 +1,0 @@
-@supports (-webkit-touch-callout: none) {
-    .mobile-menu-container {
-        /* Only applies to iOS devices */
-        padding-bottom: env(safe-area-inset-bottom, 0px);
-        /* Or with existing margin */
-        margin-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
-    }
-}

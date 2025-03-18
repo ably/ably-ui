@@ -11,7 +11,6 @@ import { HeaderLinks } from "./Header/HeaderLinks";
 import throttle from "lodash.throttle";
 import { Theme } from "./styles/colors/types";
 import { COLLAPSE_TRIGGER_DISTANCE } from "./Notice/component";
-import "./Header/Header.css";
 
 export type ThemedScrollpoint = {
   id: string;
@@ -305,7 +304,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20 mobile-menu-container"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(
