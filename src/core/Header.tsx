@@ -195,7 +195,7 @@ const Header: React.FC<HeaderProps> = ({
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
-        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center p-6">
+        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center">
           {searchButton}
         </div>
       ) : null,
@@ -232,7 +232,7 @@ const Header: React.FC<HeaderProps> = ({
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
             {searchButtonVisibility !== "desktop" ? wrappedSearchButton : null}
             <button
-              className="cursor-pointer focus-base rounded flex items-center"
+              className="cursor-pointer focus-base rounded flex items-center p-0"
               onClick={() => setShowMenu(!showMenu)}
               aria-expanded={showMenu}
               aria-controls="mobile-menu"
