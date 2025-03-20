@@ -81,7 +81,7 @@ export const HeaderLinks: React.FC<
           key={href}
           className={cn(
             headerLinkClasses,
-            "flex items-center gap-4 px-16 md:px-0",
+            "flex items-center gap-6 px-16 md:px-0 leading-none",
           )}
           href={href}
           target={external ? "_blank" : undefined}
@@ -89,7 +89,7 @@ export const HeaderLinks: React.FC<
         >
           {label}
           {external && (
-            <Icon name="icon-gui-arrow-top-right-on-square-outline" />
+            <Icon name="icon-gui-arrow-top-right-on-square-mini" size="20px" />
           )}
         </a>
       ))}
