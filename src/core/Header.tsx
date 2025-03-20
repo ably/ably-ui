@@ -220,7 +220,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed top-0 left-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
         )}
         style={{ height: HEADER_HEIGHT }}
@@ -280,7 +280,7 @@ const Header: React.FC<HeaderProps> = ({
         <>
           <div
             className={cn(
-              "fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300",
+              "fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300 z-40",
               {
                 "animate-[fade-in-ten-percent_150ms_ease-in-out_forwards]":
                   !fadingOut,
@@ -294,7 +294,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-50"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(
