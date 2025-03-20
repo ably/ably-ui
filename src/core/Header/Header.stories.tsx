@@ -17,7 +17,7 @@ const baseArgs: HeaderProps = {
   logoHref: "https://www.ably.com/",
   headerLinks: [
     { href: "/docs", label: "Docs" },
-    { href: "/tutorials", label: "Tutorials" },
+    { href: "/tutorials", label: "Tutorials", external: true },
   ],
   searchButton: <Icon name="icon-gui-magnifying-glass-outline" size="1.5rem" />,
   sessionState: {

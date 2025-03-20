@@ -112,6 +112,11 @@ export type HeaderProps = {
    * - "mobile": Visible only on mobile devices.
    */
   searchButtonVisibility?: "all" | "desktop" | "mobile";
+
+  /**
+   * Optional location object to detect location changes.
+   */
+  location?: Location;
 };
 
 const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
@@ -131,6 +136,7 @@ const Header: React.FC<HeaderProps> = ({
   sessionState,
   themedScrollpoints = [],
   searchButtonVisibility = "all",
+  location,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
@@ -169,6 +175,13 @@ const Header: React.FC<HeaderProps> = ({
       document.body.classList.remove("overflow-hidden");
     };
   }, [showMenu]);
+
+  // Close menu when location changes
+  useEffect(() => {
+    if (location && showMenu) {
+      closeMenu();
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
