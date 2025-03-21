@@ -112,6 +112,11 @@ export type HeaderProps = {
    * - "mobile": Visible only on mobile devices.
    */
   searchButtonVisibility?: "all" | "desktop" | "mobile";
+
+  /**
+   * Optional location object to detect location changes.
+   */
+  location?: Location;
 };
 
 const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
@@ -131,6 +136,7 @@ const Header: React.FC<HeaderProps> = ({
   sessionState,
   themedScrollpoints = [],
   searchButtonVisibility = "all",
+  location,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
@@ -170,6 +176,13 @@ const Header: React.FC<HeaderProps> = ({
     };
   }, [showMenu]);
 
+  // Close menu when location changes
+  useEffect(() => {
+    if (location && showMenu) {
+      closeMenu();
+    }
+  }, [location]);
+
   useEffect(() => {
     const handleScroll = () => {
       for (const scrollpoint of themedScrollpoints) {
@@ -195,7 +208,7 @@ const Header: React.FC<HeaderProps> = ({
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
-        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center p-6">
+        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center">
           {searchButton}
         </div>
       ) : null,
@@ -207,7 +220,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed top-0 left-0 w-full z-10 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed top-0 left-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
           scrollpointClasses,
         )}
         style={{ height: HEADER_HEIGHT }}
@@ -232,7 +245,7 @@ const Header: React.FC<HeaderProps> = ({
           <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
             {searchButtonVisibility !== "desktop" ? wrappedSearchButton : null}
             <button
-              className="cursor-pointer focus-base rounded flex items-center"
+              className="cursor-pointer focus-base rounded flex items-center p-0"
               onClick={() => setShowMenu(!showMenu)}
               aria-expanded={showMenu}
               aria-controls="mobile-menu"
@@ -267,7 +280,7 @@ const Header: React.FC<HeaderProps> = ({
         <>
           <div
             className={cn(
-              "fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300",
+              "fixed inset-0 bg-neutral-1300 dark:bg-neutral-1300 z-40",
               {
                 "animate-[fade-in-ten-percent_150ms_ease-in-out_forwards]":
                   !fadingOut,
@@ -281,7 +294,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-20"
+            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-50"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(

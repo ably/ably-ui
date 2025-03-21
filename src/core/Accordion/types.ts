@@ -26,6 +26,13 @@ export type AccordionData = {
    * @param index - The index of the clicked accordion item.
    */
   onClick?: (index: number) => void;
+
+  /**
+   * Indicates whether the accordion item is interactive.
+   * When false, the item cannot be expanded or collapsed by user interaction.
+   * @default true
+   */
+  interactive?: boolean;
 };
 
 export type AccordionIcons = {

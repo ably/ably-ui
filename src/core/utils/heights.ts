@@ -7,12 +7,12 @@ export const HEADER_HEIGHT = 64;
 export const HEADER_BOTTOM_MARGIN = 24;
 
 /**
- * Calculates the maximum height for a component by subtracting the total of given heights from 100vh.
+ * Calculates the maximum height for a component by subtracting the total of given heights from 100dvh.
  *
  * @param {...number} heights - An array of heights in pixels.
  * @returns {string} The CSS calc expression for the maximum height.
  */
 export const componentMaxHeight = (...heights: number[]): string => {
   const totalHeight = heights.reduce((sum, height) => sum + height, 0) + "px";
-  return `calc(100vh - ${totalHeight})`;
+  return `calc(min(100dvh, 100vh) - ${totalHeight})`;
 };

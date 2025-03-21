@@ -31,6 +31,7 @@ type AccordionRowProps = {
   index: number;
   onClick: () => void;
   openRowValues: string | string[];
+  rowInteractive?: boolean;
 };
 
 export type AccordionProps = {
@@ -65,6 +66,7 @@ const AccordionRow = ({
   index,
   onClick,
   openRowValues,
+  rowInteractive = true,
 }: AccordionRowProps) => {
   const { selectable, sticky } = options || {};
   const rowKey = `accordion-item-${index}`;
@@ -95,7 +97,7 @@ const AccordionRow = ({
           "flex w-full group/accordion-trigger py-16 ui-text-p1 font-bold text-left items-center gap-12 transition-colors focus:outline-none":
             true,
           "px-16 mb-16 rounded-lg": isNonTransparentTheme(theme),
-          "rounded-none": !isNonTransparentTheme(theme),
+          "px-0 rounded-none": !isNonTransparentTheme(theme),
           "pointer-events-none focus-visible:outline-none":
             isStaticTheme(theme),
           "focus-base": !isStaticTheme(theme),
@@ -115,7 +117,7 @@ const AccordionRow = ({
           />
         ) : null}
         <span>{name}</span>
-        {!selectable && !isStaticTheme(theme) ? (
+        {!selectable && !isStaticTheme(theme) && rowInteractive ? (
           <span className="flex-1 justify-end flex items-center">
             <Icon
               name={isOpen ? toggleIcons.open.name : toggleIcons.closed.name}
@@ -125,15 +127,17 @@ const AccordionRow = ({
           </span>
         ) : null}
       </AccordionTrigger>
-      <AccordionContent
-        className={cn({
-          "ui-text-p2 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down":
-            true,
-          [options?.contentCSS ?? ""]: options?.contentCSS,
-        })}
-      >
-        <div className="pb-16">{children}</div>
-      </AccordionContent>
+      {rowInteractive && (
+        <AccordionContent
+          className={cn({
+            "ui-text-p2 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down":
+              true,
+            [options?.contentCSS ?? ""]: options?.contentCSS,
+          })}
+        >
+          <div className="pb-16">{children}</div>
+        </AccordionContent>
+      )}
     </AccordionItem>
   );
 };
@@ -177,6 +181,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           item.onClick?.(index);
         }}
         openRowValues={openRowValues}
+        rowInteractive={item.interactive}
       >
         {item.content}
       </AccordionRow>
