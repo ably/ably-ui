@@ -52,6 +52,10 @@ export type HeaderSessionState = {
  */
 export type HeaderProps = {
   /**
+   * Optional classname for styling the header.
+   */
+  headerClassName?: string;
+  /**
    * Optional classnames to add to the header
    */
   className?: string;
@@ -141,6 +145,7 @@ const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
 const MAX_MOBILE_MENU_WIDTH = "560px";
 
 const Header: React.FC<HeaderProps> = ({
+  headerClassName,
   className,
   isNoticeVisible = false,
   searchBar,
@@ -169,6 +174,31 @@ const Header: React.FC<HeaderProps> = ({
       setFadingOut(false);
     }, 150);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setBannerVisible(
+        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
+      );
+      for (const scrollpoint of themedScrollpoints) {
+        const element = document.getElementById(scrollpoint.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
+            setScrollpointClasses(scrollpoint.className);
+            return;
+          }
+        }
+      }
+    };
+
+    const throttledHandleScroll = throttle(handleScroll, 150);
+
+    handleScroll();
+
+    window.addEventListener("scroll", throttledHandleScroll);
+    return () => window.removeEventListener("scroll", throttledHandleScroll);
+  }, [themedScrollpoints]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -200,31 +230,6 @@ const Header: React.FC<HeaderProps> = ({
     }
   }, [location]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setBannerVisible(
-        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
-      );
-      for (const scrollpoint of themedScrollpoints) {
-        const element = document.getElementById(scrollpoint.id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
-            setScrollpointClasses(scrollpoint.className);
-            return;
-          }
-        }
-      }
-    };
-
-    const throttledHandleScroll = throttle(handleScroll, 150);
-
-    handleScroll();
-
-    window.addEventListener("scroll", throttledHandleScroll);
-    return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints]);
-
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
@@ -241,6 +246,7 @@ const Header: React.FC<HeaderProps> = ({
         role="banner"
         className={cn(
           "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          headerClassName,
           scrollpointClasses,
           {
             "md:top-auto": bannerVisible,

@@ -35,7 +35,7 @@ export type MenuItem = {
 const panelClassName = "w-full sm:w-[815px]";
 
 const panelLeftFeatureClassName =
-  "bg-neutral-100 dark:bg-neutral-1200 hidden md:grid border border-neutral-300 dark:border-neutral-1000 hover:border-neutral-500 dark:hover:border-neutral-700 rounded-lg cursor-pointer group/meganav-panel";
+  "bg-neutral-100 dark:bg-neutral-1200 hidden md:grid border border-neutral-300 dark:border-neutral-1000 hover:border-neutral-400 dark:hover:border-neutral-800 rounded-lg cursor-pointer group/meganav-panel";
 
 const productsMenu: FlyoutPanelList[] = [
   {
@@ -130,7 +130,7 @@ const companyMenu: FlyoutPanelList[] = [
   },
 ];
 
-const ablyAwards = [
+export const ablyAwards = [
   {
     image: BestRequirementsWinter2025,
     desc: "G2 Best Requirements Winter 2025",

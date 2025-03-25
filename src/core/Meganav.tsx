@@ -75,24 +75,25 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
           headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
+          headerClassName="bg-transparent border-b-0"
           themedScrollpoints={[
             {
               id: "meganav",
-              className:
-                "ui-theme-light !bg-transparent !border-none transition-colors",
+              className: "ui-theme-light !bg-transparent !border-none",
             },
             {
               id: "meganav-theme-dark",
-              className:
-                "ui-theme-dark !bg-transparent !border-none transition-colors",
+              className: "ui-theme-dark !bg-transparent !border-none",
             },
             {
               id: "main",
-              className: "ui-theme-light transition-colors",
+              className:
+                "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
             },
             {
               id: "main-theme-dark",
-              className: "ui-theme-dark transition-colors",
+              className:
+                "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
             },
           ]}
         />
