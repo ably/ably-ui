@@ -58,7 +58,7 @@ export type HeaderProps = {
   /**
    * Indicates if the notice banner is visible.
    */
-  isNoticeVisible: boolean;
+  isNoticeVisible?: boolean;
   /**
    * Optional search bar element.
    */

@@ -69,33 +69,30 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
               className="justify-left z-40"
               flyOutClassName="flex justify-left"
               viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 bg-neutral-000 dark:bg-neutral-1300"
-              hasAnimation={true}
             />
           }
-          mobileNav={<MeganavMobile mobileNavItems={mobileNavItems} />}
+          mobileNav={<MeganavMobile navItems={mobileNavItems} />}
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
           headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
           themedScrollpoints={[
             {
               id: "meganav",
-              className: "ui-theme-light !bg-transparent !border-none",
+              className:
+                "ui-theme-light !bg-transparent !border-none transition-colors",
             },
             {
               id: "meganav-theme-dark",
-              className: "ui-theme-dark !bg-transparent !border-none",
+              className:
+                "ui-theme-dark !bg-transparent !border-none transition-colors",
             },
             {
               id: "main",
-              className: "ui-theme-light",
-            },
-            {
-              id: "main-theme-light",
-              className: "ui-theme-light",
+              className: "ui-theme-light transition-colors",
             },
             {
               id: "main-theme-dark",
-              className: "ui-theme-dark",
+              className: "ui-theme-dark transition-colors",
             },
           ]}
         />

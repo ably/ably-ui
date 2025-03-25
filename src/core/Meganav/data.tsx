@@ -7,6 +7,7 @@ import CompanyNavImage from "./images/founders-nav-image.png";
 import BestRequirementsWinter2025 from "../images/g2-best-meets-requirements-2025.svg";
 import BestSupportWinter2025 from "../images/g2-best-support-2025.svg";
 import HighPerformerWinter2025 from "../images/g2-high-performer-2025.svg";
+import UsersMostLikelyToRecommend from "../images/g2-users-most-likely-to-recommend-2025.svg";
 
 export type FlyoutPanelList = {
   label: string;
@@ -40,7 +41,7 @@ const productsMenu: FlyoutPanelList[] = [
   {
     label: "Infrastructure",
     icon: "icon-gui-globe-alt-outline",
-    link: "/infrastructure",
+    link: "/four-pillars-of-dependability",
   },
   {
     label: "Integrations",
@@ -142,6 +143,10 @@ const ablyAwards = [
     image: HighPerformerWinter2025,
     desc: "G2 High Performer Winter 2025",
   },
+  {
+    image: UsersMostLikelyToRecommend,
+    desc: "G2 Users Most Likely to Recommend Winter 2025",
+  },
 ];
 
 export const menuItemLinks = [
@@ -183,7 +188,7 @@ export const menuItemsForHeader: MenuItem[] = [
         panelRightItems={companyMenu}
         panelRightBottom={
           <div className="flex-1 gap-x-8 hidden md:flex">
-            {ablyAwards.map((award) => (
+            {ablyAwards.slice(0, 3).map((award) => (
               <img
                 key={award.desc}
                 src={award.image}

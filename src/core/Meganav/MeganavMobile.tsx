@@ -4,11 +4,7 @@ import { AccordionData } from "../Accordion/types";
 import { menuItemLinks } from "./data";
 import cn from "../utils/cn";
 
-export const MeganavMobile = ({
-  mobileNavItems,
-}: {
-  mobileNavItems: AccordionData[];
-}) => {
+export const MeganavMobile = ({ navItems }: { navItems: AccordionData[] }) => {
   const menuItemClassname =
     "text-[18px] py-12 font-bold text-neutral-1000 dark:text-neutral-000";
   return (
@@ -16,7 +12,7 @@ export const MeganavMobile = ({
       <Accordion
         theme="transparent"
         className="px-16 pt-16"
-        data={mobileNavItems}
+        data={navItems}
         icons={{
           closed: { name: "icon-gui-chevron-down-outline" },
           open: { name: "icon-gui-chevron-up-outline" },

@@ -17,7 +17,6 @@ export const Default = {
           logOut: { token: "", href: "" },
           accountName: "",
         }}
-        searchDataId="inkeep-search"
       />
     );
   },
@@ -31,7 +30,6 @@ export const SignedIn = {
           logOut: { token: "00", href: "users/sign_out" },
           accountName: "Ably Realtime",
         }}
-        searchDataId="inkeep-search"
       />
     );
   },
@@ -47,7 +45,6 @@ export const WithNotice = {
             logOut: { token: "", href: "" },
             accountName: "",
           }}
-          searchDataId="inkeep-search"
           notice={{
             props: {
               title: "📣 Introducing server-side batching",
@@ -66,9 +63,9 @@ export const WithNotice = {
             },
           }}
         />
-        <div className="h-[1400px] bg-neutral-000" id="main-theme-light"></div>
+        <div className="h-[1400px] bg-neutral-000" id="main"></div>
         <div className="h-[1500px] bg-neutral-1300" id="main-theme-dark"></div>
-        <div className="h-[1200px] bg-neutral-100" id="main-theme-light"></div>
+        <div className="h-[1200px] bg-neutral-100" id="main"></div>
       </>
     );
   },
@@ -84,11 +81,10 @@ export const LightThemeWithDarkMeganav = {
             logOut: { token: "", href: "" },
             accountName: "",
           }}
-          searchDataId="inkeep-search"
           theme="dark"
         />
         <div className="h-[400px] bg-neutral-1300" id="main-theme-dark"></div>
-        <div className="h-[1500px] bg-neutral-000" id="main-theme-light"></div>
+        <div className="h-[1500px] bg-neutral-000" id="main"></div>
         <div className="h-[1400px] bg-neutral-1300" id="main-theme-dark"></div>
       </>
     );

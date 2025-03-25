@@ -52,10 +52,6 @@ type FlyoutProps = {
    * Optional class name for the viewport.
    */
   viewPortClassName?: string;
-  /**
-   * Flag to indicate if animation should be applied.
-   */
-  hasAnimation: boolean;
 };
 
 const DEFAULT_MENU_LINK_STYLING =
@@ -91,7 +87,6 @@ const Flyout = ({
   flyOutClassName,
   menuLinkClassName,
   viewPortClassName,
-  hasAnimation,
 }: FlyoutProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
@@ -120,6 +115,8 @@ const Flyout = ({
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
                     "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
+                    "[&[data-state=open]]:bg-neutral-100 dark:[&[data-state=open]]:bg-neutral-1200",
+                    "[&[data-state=open]]:text-neutral-1300 dark:[&[data-state=open]]:text-neutral-000",
                     DEFAULT_MENU_LINK_STYLING,
                     menuLinkClassName,
                   )}
@@ -129,7 +126,7 @@ const Flyout = ({
                 <NavigationMenuContent
                   className={cn(
                     "absolute right-0 top-0 p-24 z-10",
-                    hasAnimation && PANEL_ANIMATION,
+                    PANEL_ANIMATION,
                     panelClassName,
                   )}
                 >

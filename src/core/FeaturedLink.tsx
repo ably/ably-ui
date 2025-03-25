@@ -16,9 +16,9 @@ type FeaturedLinkProps = {
   onClick?: () => void;
   disabled?: boolean;
   /**
-   * Optional class name for group hover state.
+   * Optional class name for the icon.
    */
-  groupHoverClassName?: string;
+  iconClassName?: string;
 };
 
 type TargetProps = { target?: string; rel?: string };
@@ -53,7 +53,7 @@ const FeaturedLink = ({
   onClick = undefined,
   children,
   disabled = false,
-  groupHoverClassName = "",
+  iconClassName = "",
 }: FeaturedLinkProps) => {
   const targetAndRel = buildTargetAndRel(url, newWindow);
 
@@ -91,7 +91,7 @@ const FeaturedLink = ({
             additionalCSS={cn(
               "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180",
               { "group-hover/featured-link:right-0": !disabled },
-              groupHoverClassName,
+              iconClassName,
             )}
           />
           {children}
@@ -108,7 +108,7 @@ const FeaturedLink = ({
               {
                 "group-hover/featured-link:left-0": !disabled,
               },
-              groupHoverClassName,
+              iconClassName,
             )}
           />
         </>

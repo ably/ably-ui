@@ -129,7 +129,6 @@ const FlyoutStory = () => {
       className="justify-center relative z-40"
       flyOutClassName="flex w-full justify-center"
       viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8"
-      hasAnimation={true}
     />
   );
 };

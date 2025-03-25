@@ -22,7 +22,7 @@ exports[`Components/Flyout Default smoke-test 1`] = `
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r1:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 [&amp;[data-state=open]]:bg-neutral-100 dark:[&amp;[data-state=open]]:bg-neutral-1200 [&amp;[data-state=open]]:text-neutral-1300 dark:[&amp;[data-state=open]]:text-neutral-000 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Products
@@ -33,7 +33,7 @@ exports[`Components/Flyout Default smoke-test 1`] = `
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r2:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 [&amp;[data-state=open]]:bg-neutral-100 dark:[&amp;[data-state=open]]:bg-neutral-1200 [&amp;[data-state=open]]:text-neutral-1300 dark:[&amp;[data-state=open]]:text-neutral-000 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Solutions
@@ -44,7 +44,7 @@ exports[`Components/Flyout Default smoke-test 1`] = `
                 data-state="closed"
                 aria-expanded="false"
                 aria-controls="radix-:r0:-content-radix-:r3:"
-                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
+                class="group outline-none focus:outline-none select-none cursor-pointer relative rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200 [&amp;[data-state=open]]:bg-neutral-100 dark:[&amp;[data-state=open]]:bg-neutral-1200 [&amp;[data-state=open]]:text-neutral-1300 dark:[&amp;[data-state=open]]:text-neutral-000 ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between"
                 data-radix-collection-item
         >
           Company
