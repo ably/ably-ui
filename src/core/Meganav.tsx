@@ -75,7 +75,6 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
           headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
-          headerClassName="bg-transparent border-b-0"
           themedScrollpoints={[
             {
               id: "meganav",
