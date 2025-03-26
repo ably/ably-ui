@@ -1,9 +1,9 @@
 import React from "react";
 import cn from "../utils/cn";
 import Icon from "../Icon";
-import { FlyoutPanelHighlight, FlyoutPanelList } from "./data";
+import { FlyoutPanelHighlight, FlyoutPanelList, productsForNav } from "./data";
 import FeaturedLink from "../FeaturedLink";
-import { ProductName, productNames, products } from "../ProductTile/data";
+import { ProductName, productNames } from "../ProductTile/data";
 import ProductTile from "../ProductTile";
 
 export const MeganavPanel = ({
@@ -41,7 +41,7 @@ export const MeganavPanel = ({
                 key={product}
                 selected={false}
                 onClick={() => {
-                  const productLink = products[product].link;
+                  const productLink = productsForNav[product].link;
                   if (productLink) window.location.href = productLink;
                 }}
                 animateIcons={true}

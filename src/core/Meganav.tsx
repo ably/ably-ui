@@ -68,7 +68,7 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
               menuItems={menuItemsForHeader}
               className="justify-left z-40"
               flyOutClassName="flex justify-left"
-              viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8 bg-neutral-000 dark:bg-neutral-1300"
+              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-4 bg-neutral-000 dark:bg-neutral-1300"
             />
           }
           mobileNav={<MeganavMobile navItems={mobileNavItems} />}

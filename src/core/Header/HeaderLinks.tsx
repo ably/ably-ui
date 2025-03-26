@@ -138,7 +138,7 @@ export const HeaderLinks: React.FC<
           </div>
         </>
       ) : (
-        <div className="flex gap-16 pt-12 md:py-0 px-16 md:px-0">
+        <div className="flex gap-12 pt-12 md:py-0 px-16 md:px-0">
           <LinkButton
             href="/login"
             variant="secondary"

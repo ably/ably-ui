@@ -8,6 +8,7 @@ import BestRequirementsWinter2025 from "../images/g2-best-meets-requirements-202
 import BestSupportWinter2025 from "../images/g2-best-support-2025.svg";
 import HighPerformerWinter2025 from "../images/g2-high-performer-2025.svg";
 import UsersMostLikelyToRecommend from "../images/g2-users-most-likely-to-recommend-2025.svg";
+import { products } from "../ProductTile/data";
 
 export type FlyoutPanelList = {
   label: string;
@@ -205,3 +206,11 @@ export const menuItemsForHeader: MenuItem[] = [
   },
   ...menuItemLinks,
 ];
+
+export const productsForNav = {
+  ...products,
+  pubsub: { ...products.pubsub, link: "/pubsub" },
+  liveSync: { ...products.liveSync, link: "/livesync" },
+  chat: { ...products.chat, link: "/chat" },
+  spaces: { ...products.spaces, link: "/spaces" },
+};
