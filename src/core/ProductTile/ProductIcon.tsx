@@ -30,8 +30,8 @@ const ProductIcon = ({
 
   return (
     // Outer container, contains the gradient stroke (since we can't natively have CSS gradient strokes)
-    <div
-      className={cn("p-1 bg-gradient-to-b", {
+    <span
+      className={cn("block p-1 bg-gradient-to-b", {
         "from-neutral-1000 to-neutral-1300 dark:from-neutral-000 dark:to-neutral-300":
           selected,
         "from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300":
@@ -40,7 +40,7 @@ const ProductIcon = ({
       style={{ width: size, height: size, borderRadius: size / 4 }}
     >
       {/* Inner container, contains the foreground container element */}
-      <div
+      <span
         className={cn("flex items-center justify-center", {
           "bg-neutral-1200 dark:bg-neutral-100": selected,
           "bg-neutral-100 dark:bg-neutral-1200": !selected,
@@ -73,8 +73,8 @@ const ProductIcon = ({
             hidden: hoverName && selected,
           })}
         />
-      </div>
-    </div>
+      </span>
+    </span>
   );
 };
 
