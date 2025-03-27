@@ -40,7 +40,7 @@ export const MeganavPanel = ({
             ))
           : panelLeft && (
               <a
-                className="grid grid-cols-1 xs:grid-cols-2"
+                className="grid grid-cols-1 xs:grid-cols-2 pointer-events-auto"
                 href={panelLeft.url}
               >
                 <span className="block w-full p-24">
@@ -95,7 +95,7 @@ export const MeganavPanel = ({
                 additionalCSS="text-neutral-1000 dark:text-neutral-300"
               />
               <a
-                className="ui-text-menu2 md:ui-text-menu3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
+                className="pointer-events-auto ui-text-menu2 md:ui-text-menu3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
                 href={item.link}
               >
                 {item.label}
