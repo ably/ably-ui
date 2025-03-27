@@ -30,7 +30,7 @@ const MeganavProductTile = ({
         {
           "hover:bg-neutral-100 dark:hover:bg-neutral-1200": !unavailable,
         },
-        { "cursor-pointer": !unavailable },
+        { "pointer-events-auto": !unavailable },
         { "pointer-events-none": unavailable },
       )}
       aria-hidden={unavailable}
