@@ -1,12 +1,15 @@
 import { IconName } from "../Icon/types";
 
-export type ProductName =
-  | "pubsub"
-  | "chat"
-  | "spaces"
-  | "liveSync"
-  | "assetTracking"
-  | "liveObjects";
+export const productNames = [
+  "pubsub",
+  "chat",
+  "spaces",
+  "liveSync",
+  "assetTracking",
+  "liveObjects",
+] as const;
+
+export type ProductName = (typeof productNames)[number];
 
 type Products = Record<
   ProductName,

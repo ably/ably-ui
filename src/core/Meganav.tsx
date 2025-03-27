@@ -1,96 +1,12 @@
-import React, { ReactNode, useEffect, useState } from "react";
-
-import { connectState } from "./remote-data-store.js";
-import { selectSessionData } from "./remote-session-data.js";
-
-import Logo from "./Logo";
-import MeganavData from "./Meganav/component.json";
-import MeganavScripts from "./Meganav/component.js";
-import MeganavItemsDesktop from "./MeganavItemsDesktop";
-import MeganavItemsSignedIn from "./MeganavItemsSignedIn";
-import MeganavItemsMobile from "./MeganavItemsMobile";
+import React, { useEffect, useMemo } from "react";
+import Header, { HeaderSessionState } from "./Header";
+import Flyout from "./Flyout";
+import { menuItemsForHeader } from "./Meganav/data";
+import { MeganavMobile } from "./Meganav/MeganavMobile";
 import Notice from "./Notice";
-import _absUrl from "./url-base.js";
-import MeganavContentProducts from "./MeganavContentProducts";
-import MeganavContentUseCases from "./MeganavContentUseCases";
-import MeganavContentCompany from "./MeganavContentCompany";
-import MeganavContentDevelopers from "./MeganavContentDevelopers";
-import MeganavSearch from "./MeganavSearch";
-import { ColorClass } from "./styles/colors/types";
+import { HEADER_HEIGHT } from "./utils/heights";
 
-export type MeganavTheme = {
-  backgroundColor?: ColorClass;
-  textColor?: ColorClass;
-  buttonBackgroundColor?: ColorClass;
-  buttonTextColor?: ColorClass;
-  mobileMenuColor: ColorClass;
-  logoTextColor?: ColorClass;
-  barShadow?: string;
-};
-
-export type AbsUrl = (path: string) => string;
-
-export type MeganavPaths = {
-  logo?: string;
-  iconSprites: string;
-  ablyStack: string;
-  blogThumb1: string;
-  blogThumb2: string;
-  blogThumb3: string;
-  awsLogo?: string;
-};
-
-export type MeganavPanels = {
-  [index: string]: ({
-    paths,
-    absUrl,
-    statusUrl,
-  }: {
-    paths?: MeganavPaths;
-    absUrl: (path: string) => string;
-    statusUrl: string;
-  }) => ReactNode;
-};
-
-export type MeganavSessionState = {
-  signedIn: boolean;
-  logOut: {
-    token: string;
-    href: string;
-    text: string;
-  };
-  accountName: string;
-  preferredEmail: string;
-  account: {
-    links: {
-      dashboard: {
-        href: string;
-      };
-    };
-  };
-  mySettings: {
-    text: string;
-    href: string;
-  };
-  myAccessTokens: {
-    text: string;
-    href: string;
-  };
-};
-
-type SignInProps = {
-  sessionState: MeganavSessionState;
-  theme: MeganavTheme;
-  loginLink: string;
-  absUrl: AbsUrl;
-  searchDataId?: string;
-};
-
-// This type is based on the API response from the notice API and the data
-// passed into the Meganav component, which then turns it into something
-// the Notice component can use. The type is exported for the benefit of
-// Voltaire
-export type MeganavNoticeProps = {
+export type MeganavNoticeBannerProps = {
   props: {
     title: string;
     bodyText: string;
@@ -107,147 +23,81 @@ export type MeganavNoticeProps = {
   };
 };
 
-type MeganavProps = {
-  paths?: MeganavPaths;
-  themeName: "white" | "black" | "transparentToWhite";
-  notice?: MeganavNoticeProps;
-  loginLink?: string;
-  urlBase?: string;
-  addSearchApiKey: string;
-  statusUrl: string;
-  searchDataId?: string;
+export type MeganavProps = {
+  sessionState: HeaderSessionState;
+  notice?: MeganavNoticeBannerProps;
+  theme?: string;
 };
 
-const SignIn = ({
-  sessionState,
-  theme,
-  loginLink,
-  absUrl,
-  searchDataId,
-}: SignInProps) => {
-  return sessionState.signedIn ? (
-    <MeganavItemsSignedIn
-      absUrl={absUrl}
-      sessionState={sessionState}
-      theme={theme}
-      searchDataId={searchDataId}
-    />
-  ) : (
-    <ul className="hidden md:flex items-center">
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl("/contact")}
-          className={`ui-meganav-link ${theme.textColor}`}
-          data-id="meganav-link"
-        >
-          Contact us
-        </a>
-      </li>
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl(loginLink)}
-          className={`ui-meganav-link mr-0 ${theme.textColor}`}
-          data-id="meganav-link"
-        >
-          Login
-        </a>
-      </li>
-      <li className="ui-meganav-item">
-        <MeganavSearch absUrl={absUrl} dataId={searchDataId} />
-      </li>
-      <li className="ui-meganav-item">
-        <a
-          href={absUrl("/sign-up")}
-          data-id="meganav-sign-up-btn"
-          className={`ui-btn p-btn-small ${theme.buttonBackgroundColor} ${theme.buttonTextColor}`}
-        >
-          Sign up free
-        </a>
-      </li>
-    </ul>
+const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
+  const [noticeHeight, setNoticeHeight] = React.useState(0);
+  const mobileNavItems = useMemo(
+    () =>
+      menuItemsForHeader
+        .filter((item) => !item.isHiddenMobile)
+        .map(({ name, link, content }) => ({ name, link, content })),
+    [],
   );
-};
-
-const SignInPlaceholder = () => <div />;
-
-const panels = {
-  MeganavContentProducts,
-  MeganavContentUseCases,
-  MeganavContentCompany,
-  MeganavContentDevelopers,
-};
-
-const Meganav = ({
-  paths,
-  themeName = "white",
-  notice,
-  loginLink = "/login",
-  urlBase,
-  addSearchApiKey,
-  statusUrl,
-  searchDataId,
-}: MeganavProps) => {
-  const [sessionState, setSessionState] = useState<MeganavSessionState>();
 
   useEffect(() => {
-    // Note if state is never updated, sessionState stays null and never removes the placeholder.
-    // This makes SSR consistent (ie. we always show the placeholder)
-    connectState(selectSessionData, setSessionState);
+    const observeNoticeResize = () => {
+      const noticeElement = document.querySelector('[data-id="ui-notice"]');
+      if (noticeElement) {
+        setNoticeHeight(noticeElement.getBoundingClientRect().height);
+      }
+    };
+    observeNoticeResize();
+    window.addEventListener("resize", observeNoticeResize);
+    return () => window.removeEventListener("resize", observeNoticeResize);
   }, []);
 
-  useEffect(() => {
-    const teardown = MeganavScripts({ themeName, addSearchApiKey });
-    return () => teardown();
-  }, [sessionState]);
-
-  const theme = MeganavData.themes[themeName] as MeganavTheme;
-  const absUrl = (path: string) => _absUrl(path, urlBase);
-
   return (
-    <nav
-      className={`ui-meganav-wrapper ${theme.backgroundColor} ${theme.barShadow}`}
-      data-id="meganav"
-      aria-label="Main"
-    >
-      {notice && <Notice {...notice.props} config={notice.config} />}
-      <div className="ui-meganav ui-grid-px">
-        <div className="mr-24">
-          <Logo dataId="meganav-logo" href={urlBase} logoUrl={paths?.logo} />
-        </div>
-
-        <MeganavItemsDesktop
-          panels={panels}
-          paths={paths}
-          theme={theme}
-          absUrl={absUrl}
-          statusUrl={statusUrl}
-        />
-
-        {/* Because we load the session state through fetch, we display a placeholder until fetch returns */}
-        {sessionState ? (
-          <SignIn
-            sessionState={sessionState}
-            theme={theme}
-            loginLink={loginLink}
-            absUrl={absUrl}
-            searchDataId={searchDataId}
-          />
-        ) : (
-          <SignInPlaceholder />
-        )}
-
-        <MeganavItemsMobile
-          panels={panels}
+    <>
+      <div
+        className="absolute inset-0 w-full z-50"
+        id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
+        data-testid="meganav"
+        style={{ height: HEADER_HEIGHT + noticeHeight }}
+      >
+        {notice && <Notice {...notice.props} config={notice.config} />}
+        <Header
+          className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
+          isNoticeVisible={!!notice}
+          nav={
+            <Flyout
+              menuItems={menuItemsForHeader}
+              className="justify-left z-40"
+              flyOutClassName="flex justify-left"
+              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-4 bg-neutral-000 dark:bg-neutral-1300"
+            />
+          }
+          mobileNav={<MeganavMobile navItems={mobileNavItems} />}
+          headerLinks={[{ href: "/contact", label: "Contact us" }]}
+          headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
-          paths={paths}
-          theme={theme}
-          loginLink={loginLink}
-          absUrl={absUrl}
-          statusUrl={statusUrl}
-          searchDataId={searchDataId}
+          themedScrollpoints={[
+            {
+              id: "meganav",
+              className: "ui-theme-light !bg-transparent !border-none",
+            },
+            {
+              id: "meganav-theme-dark",
+              className: "ui-theme-dark !bg-transparent !border-none",
+            },
+            {
+              id: "main",
+              className:
+                "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
+            },
+            {
+              id: "main-theme-dark",
+              className:
+                "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
+            },
+          ]}
         />
       </div>
-    </nav>
+    </>
   );
 };
 

@@ -20,9 +20,9 @@ type FlyoutProps = {
    */
   menuItems: {
     /**
-     * Label for the menu item.
+     * Name for the menu item.
      */
-    label: string;
+    name: string;
     /**
      * Optional content to be displayed in the flyout panel.
      */
@@ -52,14 +52,10 @@ type FlyoutProps = {
    * Optional class name for the viewport.
    */
   viewPortClassName?: string;
-  /**
-   * Flag to indicate if animation should be applied.
-   */
-  hasAnimation: boolean;
 };
 
 const DEFAULT_MENU_LINK_STYLING =
-  "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
+  "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
 const DEFAULT_VIEWPORT_STYLING =
   "relative overflow-hidden w-full h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] transition-[width,_height] duration-300 data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in sm:w-[var(--radix-navigation-menu-viewport-width)]";
 const PANEL_ANIMATION =
@@ -81,7 +77,7 @@ const FlyOverlay = ({
       },
       className,
     )}
-    style={{ height: componentMaxHeight(HEADER_HEIGHT) }}
+    style={{ height: componentMaxHeight(HEADER_HEIGHT), top: HEADER_HEIGHT }}
   ></div>
 );
 
@@ -91,7 +87,6 @@ const Flyout = ({
   flyOutClassName,
   menuLinkClassName,
   viewPortClassName,
-  hasAnimation,
 }: FlyoutProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
@@ -113,22 +108,25 @@ const Flyout = ({
         delayDuration={0}
       >
         <NavigationMenuList className="flex list-none center">
-          {menuItems.map(({ label, content, link, panelClassName }) =>
+          {menuItems.map(({ name, content, link, panelClassName }) =>
             content ? (
-              <NavigationMenuItem key={label}>
+              <NavigationMenuItem key={name}>
                 <NavigationMenuTrigger
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
+                    "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
+                    "[&[data-state=open]]:bg-neutral-100 dark:[&[data-state=open]]:bg-neutral-1200",
+                    "[&[data-state=open]]:text-neutral-1300 dark:[&[data-state=open]]:text-neutral-000",
                     DEFAULT_MENU_LINK_STYLING,
                     menuLinkClassName,
                   )}
                 >
-                  {label}
+                  {name}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent
                   className={cn(
-                    "absolute inset-x-0 top-0 p-24 z-10",
-                    hasAnimation && PANEL_ANIMATION,
+                    "absolute right-0 top-0 p-24 z-10",
+                    PANEL_ANIMATION,
                     panelClassName,
                   )}
                 >
@@ -136,19 +134,18 @@ const Flyout = ({
                 </NavigationMenuContent>
               </NavigationMenuItem>
             ) : (
-              <NavigationMenuLink key={label}>
-                <a
-                  href={link}
-                  className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
-                >
-                  {label}
-                </a>
+              <NavigationMenuLink
+                key={name}
+                href={link}
+                className={cn(DEFAULT_MENU_LINK_STYLING, menuLinkClassName)}
+              >
+                {name}
               </NavigationMenuLink>
             ),
           )}
         </NavigationMenuList>
 
-        <div className={cn("absolute left-0 top-full", flyOutClassName)}>
+        <div className={cn("absolute top-full", flyOutClassName)}>
           <NavigationMenuViewport
             className={cn(DEFAULT_VIEWPORT_STYLING, viewPortClassName)}
           />
@@ -156,7 +153,7 @@ const Flyout = ({
       </NavigationMenu>
       {isOpen ? (
         <FlyOverlay
-          className="bg-neutral-1300 dark:bg-neutral-000 opacity-10 z-20 h-screen"
+          className="bg-neutral-1300 opacity-10 z-20 h-screen mix-blend-multiply"
           fadingOut={fadingOut}
         />
       ) : null}
