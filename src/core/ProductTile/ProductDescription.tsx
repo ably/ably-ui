@@ -19,9 +19,9 @@ const ProductDescription = ({
   }
 
   return (
-    <p
+    <span
       className={cn(
-        "ui-text-p3 font-medium leading-snug",
+        "block ui-text-p3 font-medium leading-snug",
         {
           "text-neutral-300 dark:text-neutral-1000": selected && !unavailable,
         },
@@ -32,7 +32,7 @@ const ProductDescription = ({
       )}
     >
       {description}
-    </p>
+    </span>
   );
 };
 

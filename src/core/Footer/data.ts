@@ -17,7 +17,7 @@ export const footerLinks: FooterLinksProps[] = [
       { label: "Ably LiveSync", link: "/livesync" },
       { label: "Ably Chat", link: "/chat" },
       { label: "Ably Spaces", link: "/spaces" },
-      { label: "Ably Asset Tracking", link: "/docs/asset-tracking" },
+      { label: "Ably Asset Tracking", link: "/solutions/asset-tracking" },
       { label: "Compare our tech", link: "/compare" },
     ],
   },
