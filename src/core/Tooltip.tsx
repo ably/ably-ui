@@ -11,6 +11,7 @@ import React, {
 } from "react";
 import { createPortal } from "react-dom";
 import Icon from "./Icon";
+import cn from "./utils/cn";
 
 type TooltipProps = {
   triggerElement?: ReactNode;
@@ -139,7 +140,7 @@ const Tooltip = ({
   };
 
   return (
-    <div {...rest} className={`inline-flex ml-8 ${rest?.className ?? ""}`}>
+    <div {...rest} className={cn("inline-flex ml-8", rest?.className)}>
       <button
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={(event) => {
@@ -179,9 +180,14 @@ const Tooltip = ({
                 boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.2)",
               }}
               {...tooltipProps}
-              className={`bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-16 ${interactive ? "" : "pointer-events-none"} rounded-lg absolute ${
-                tooltipProps?.className ?? ""
-              } ${fadeOut ? "animate-[tooltipExit_0.25s_ease-in-out]" : "animate-[tooltipEntry_0.25s_ease-in-out]"}`}
+              className={cn(
+                "bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-16",
+                { "pointer-events-none": !interactive },
+                "rounded-lg absolute",
+                tooltipProps?.className,
+                { "animate-[tooltipExit_0.25s_ease-in-out]": fadeOut },
+                { "animate-[tooltipEntry_0.25s_ease-in-out]": !fadeOut },
+              )}
             >
               <div className="max-w-[240px] w-auto">{children}</div>
             </div>,
