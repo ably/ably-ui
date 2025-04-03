@@ -9,7 +9,7 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8 ">
+    <div class="inline-flex ml-8">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
@@ -25,7 +25,7 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
   </div>
   <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8 "
+         class="inline-flex ml-8"
     >
       <button type="button"
               aria-describedby="tooltip"
@@ -52,7 +52,7 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8 ">
+    <div class="inline-flex ml-8">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
@@ -68,7 +68,7 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
   </div>
   <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8 "
+         class="inline-flex ml-8"
     >
       <button type="button"
               aria-describedby="tooltip"
@@ -95,7 +95,7 @@ exports[`Components/Tooltip LeftBound smoke-test 1`] = `
     light
   </div>
   <div class="w-256 h-256 bg-neutral-1300 flex items-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8 ">
+    <div class="inline-flex ml-8">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
@@ -111,7 +111,7 @@ exports[`Components/Tooltip LeftBound smoke-test 1`] = `
   </div>
   <div class="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8 "
+         class="inline-flex ml-8"
     >
       <button type="button"
               aria-describedby="tooltip"
