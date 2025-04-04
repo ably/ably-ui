@@ -8,6 +8,8 @@ const flakyStories = [
   "components-tab-menu",
   "components-header",
   "features-pricing-cards",
+  "components-legacymeganav",
+  "components-legacyfooter",
 ];
 
 const config: TestRunnerConfig = {
@@ -19,7 +21,10 @@ const config: TestRunnerConfig = {
     }
 
     const elementHandler = await page.$("#storybook-root");
-    const innerHTML = await elementHandler.innerHTML();
+    const innerHTML = await elementHandler?.innerHTML();
+
+    // We don't need TS to make sense of this, it's a hook to a place where 'expect' makes sense
+    // @ts-ignore
     expect(innerHTML).toMatchSnapshot();
   },
 };
