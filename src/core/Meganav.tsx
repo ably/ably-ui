@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from "react";
-import Header, { HeaderSessionState } from "./Header";
+import Header, { HeaderSessionState, ThemedScrollpoint } from "./Header";
 import Flyout from "./Flyout";
 import { menuItemsForHeader } from "./Meganav/data";
 import { MeganavMobile } from "./Meganav/MeganavMobile";
@@ -27,9 +27,15 @@ export type MeganavProps = {
   sessionState: HeaderSessionState;
   notice?: MeganavNoticeBannerProps;
   theme?: string;
+  themedScrollpoints?: ThemedScrollpoint[];
 };
 
-const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
+const Meganav = ({
+  sessionState,
+  notice,
+  theme,
+  themedScrollpoints,
+}: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
   const mobileNavItems = useMemo(
     () =>
@@ -38,6 +44,25 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
         .map(({ name, link, content }) => ({ name, link, content })),
     [],
   );
+
+  const defaultThemedScrollpoints = [
+    {
+      id: "meganav",
+      className: "ui-theme-light !bg-transparent !border-none",
+    },
+    {
+      id: "meganav-theme-dark",
+      className: "ui-theme-dark !bg-transparent !border-none",
+    },
+    {
+      id: "main",
+      className: "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
+    },
+    {
+      id: "main-theme-dark",
+      className: "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
+    },
+  ];
 
   useEffect(() => {
     const observeNoticeResize = () => {
@@ -75,26 +100,7 @@ const Meganav = ({ sessionState, notice, theme }: MeganavProps) => {
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
           headerLinksClassName="md:gap-x-24 "
           sessionState={sessionState}
-          themedScrollpoints={[
-            {
-              id: "meganav",
-              className: "ui-theme-light !bg-transparent !border-none",
-            },
-            {
-              id: "meganav-theme-dark",
-              className: "ui-theme-dark !bg-transparent !border-none",
-            },
-            {
-              id: "main",
-              className:
-                "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
-            },
-            {
-              id: "main-theme-dark",
-              className:
-                "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
-            },
-          ]}
+          themedScrollpoints={themedScrollpoints ?? defaultThemedScrollpoints}
         />
       </div>
     </>
