@@ -4,19 +4,19 @@
   }
 
   .ui-button-lg-base {
-    @apply ui-button-base ui-text-button1 h-[56px] px-[28px] py-[17px] gap-12 [&>svg]:!w-24 [&>svg]:!h-24;
+    @apply ui-button-base ui-text-label1 font-bold h-[56px] px-[28px] py-[17px] gap-12 [&>svg]:!w-24 [&>svg]:!h-24;
   }
 
   .ui-button-md-base {
-    @apply ui-button-base ui-text-button2 h-[48px] px-24 py-[13.5px] gap-[10px] [&>svg]:!w-24 [&>svg]:!h-24;
+    @apply ui-button-base ui-text-label2 font-bold h-[48px] px-24 py-[13.5px] gap-[10px] [&>svg]:!w-24 [&>svg]:!h-24;
   }
 
   .ui-button-sm-base {
-    @apply ui-button-base ui-text-button3 h-[40px] px-20 py-[10px] gap-8 [&>svg]:!w-20 [&>svg]:!h-20;
+    @apply ui-button-base ui-text-label3 font-bold h-[40px] px-20 py-[10px] gap-8 [&>svg]:!w-20 [&>svg]:!h-20;
   }
 
   .ui-button-xs-base {
-    @apply ui-button-base ui-text-button4 h-[36px] px-12 py-[9px] gap-6 [&>svg]:!w-16 [&>svg]:!h-16;
+    @apply ui-button-base ui-text-label4 font-bold h-[36px] px-12 py-[9px] gap-6 [&>svg]:!w-16 [&>svg]:!h-16;
   }
 
   .ui-button-disabled-base {

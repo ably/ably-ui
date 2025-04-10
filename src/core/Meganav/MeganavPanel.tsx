@@ -95,7 +95,7 @@ export const MeganavPanel = ({
                 additionalCSS="text-neutral-1000 dark:text-neutral-300"
               />
               <a
-                className="pointer-events-auto ui-text-menu2 md:ui-text-menu3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
+                className="pointer-events-auto ui-text-label2 md:ui-text-label3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
                 href={item.link}
               >
                 {item.label}

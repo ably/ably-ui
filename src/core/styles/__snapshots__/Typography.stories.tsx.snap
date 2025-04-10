@@ -60,76 +60,36 @@ exports[`Styles/Typography Decorative smoke-test 1`] = `
 
 exports[`Styles/Typography GUI smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-16">
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button1">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-label1">
     <div>
-      Button label 1
+      Label 1
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button1
+      .ui-text-label1
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button2">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-label2">
     <div>
-      Button label 2
+      Label 2
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button2
+      .ui-text-label2
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button3">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-label3">
     <div>
-      Button label 3
+      Label 3
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button3
+      .ui-text-label3
     </code>
   </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-button4">
+  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-label4">
     <div>
-      Button label 4
+      Label 4
     </div>
     <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-button4
-    </code>
-  </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu1">
-    <div>
-      Menu label 1
-    </div>
-    <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu1
-    </code>
-  </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu2">
-    <div>
-      Menu label 2
-    </div>
-    <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu2
-    </code>
-  </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu3">
-    <div>
-      Menu label 3
-    </div>
-    <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu3
-    </code>
-  </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text-menu4">
-    <div>
-      Menu label 4
-    </div>
-    <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text-menu4
-    </code>
-  </div>
-  <div class="rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000 ui-text">
-    <div>
-      Link
-    </div>
-    <code class="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
-      .ui-text
+      .ui-text-label4
     </code>
   </div>
 </div>

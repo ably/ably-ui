@@ -80,43 +80,27 @@
     @apply tracking-widen-0.16;
   }
 
-  .ui-text-menu1 {
-    @apply font-sans text-neutral-900 text-menu1 font-semibold leading-snug;
+  .ui-text-label1 {
+    @apply font-sans text-neutral-900 text-label1 font-semibold leading-snug;
   }
 
-  .ui-text-menu2 {
-    @apply font-sans text-neutral-900 text-menu2 font-semibold leading-snug;
+  .ui-text-label2 {
+    @apply font-sans text-neutral-900 text-label2 font-semibold leading-snug;
   }
 
-  .ui-text-menu3 {
-    @apply font-sans text-neutral-900 text-menu3 font-semibold leading-snug;
+  .ui-text-label3 {
+    @apply font-sans text-neutral-900 text-label3 font-semibold leading-snug;
   }
 
-  .ui-text-menu4 {
-    @apply font-sans text-neutral-900 text-menu4 font-semibold leading-snug;
+  .ui-text-label4 {
+    @apply font-sans text-neutral-900 text-label4 font-semibold leading-snug;
   }
 
-  .ui-theme-dark .ui-text-menu1,
-  .ui-theme-dark .ui-text-menu2,
-  .ui-theme-dark .ui-text-menu3,
-  .ui-theme-dark .ui-text-menu4 {
+  .ui-theme-dark .ui-text-label1,
+  .ui-theme-dark .ui-text-label2,
+  .ui-theme-dark .ui-text-label3,
+  .ui-theme-dark .ui-text-label4 {
     @apply text-neutral-300;
-  }
-
-  .ui-text-button1 {
-    @apply font-sans text-btn1 font-bold leading-snug;
-  }
-
-  .ui-text-button2 {
-    @apply font-sans text-btn2 font-bold leading-snug;
-  }
-
-  .ui-text-button3 {
-    @apply font-sans text-btn3 font-bold leading-snug;
-  }
-
-  .ui-text-button4 {
-    @apply font-sans text-btn4 font-bold leading-snug;
   }
 
   .ui-text-code {

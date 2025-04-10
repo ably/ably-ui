@@ -6,7 +6,7 @@ exports[`Components/Dropdown Menu Default smoke-test 1`] = `
 >
   <button id="menu-trigger"
           role="button"
-          class="flex items-center ui-text-button3 text-neutral-1000 dark:text-neutral-300 focus:outline-none ui-text-h3"
+          class="flex items-center ui-text-label3 font-bold text-neutral-1000 dark:text-neutral-300 focus:outline-none ui-text-h3"
   >
     Dropdown Menu Trigger
     <svg class="text-neutral-1300 dark:text-neutral-000"

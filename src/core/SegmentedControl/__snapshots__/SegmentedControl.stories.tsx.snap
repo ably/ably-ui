@@ -11,7 +11,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -20,7 +20,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -40,7 +40,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -49,7 +49,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -69,7 +69,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -78,7 +78,7 @@ exports[`Components/Segmented Control DefaultVariant smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -103,7 +103,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="true"
@@ -113,7 +113,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="false"
@@ -134,7 +134,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="true"
@@ -144,7 +144,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="false"
@@ -165,7 +165,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="true"
@@ -175,7 +175,7 @@ exports[`Components/Segmented Control Disabled smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
+      <div class="focus-base flex items-center justify-center select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 cursor-not-allowed hover:bg-inherit dark:hover:bg-inherit active:bg-inherit dark:active:bg-inherit rounded-lg"
            tabindex="-1"
            role="button"
            aria-pressed="false"
@@ -201,7 +201,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-menu2 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-label2 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -210,7 +210,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-menu2 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] px-[18px] ui-text-label2 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -230,7 +230,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-menu3 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-label3 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -239,7 +239,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-menu3 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] px-[14px] ui-text-label3 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -259,7 +259,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-menu4 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-label4 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -268,7 +268,7 @@ exports[`Components/Segmented Control Rounded smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-menu4 rounded-full"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 px-12 ui-text-label4 rounded-full"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -294,7 +294,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -303,7 +303,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -323,7 +323,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -332,7 +332,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -352,7 +352,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-1000 dark:bg-neutral-300 text-neutral-000 dark:text-neutral-1300 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -361,7 +361,7 @@ exports[`Components/Segmented Control StrongVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -388,7 +388,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -397,7 +397,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -417,7 +417,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -426,7 +426,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -446,7 +446,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
         </div>
       </div>
       <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1000 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="true"
@@ -455,7 +455,7 @@ exports[`Components/Segmented Control SubtleVariant smoke-test 1`] = `
             Option 1
           </span>
         </div>
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
              tabindex="0"
              role="button"
              aria-pressed="false"
@@ -481,7 +481,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -497,7 +497,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -524,7 +524,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -540,7 +540,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -567,7 +567,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -583,7 +583,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
           Option 1
         </span>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -615,7 +615,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -631,7 +631,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-menu2 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-48 p-12 gap-[10px] ui-text-label2 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -658,7 +658,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -674,7 +674,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-menu3 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
@@ -701,7 +701,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
       </div>
     </div>
     <div class="flex gap-8 justify-center items-center p-8 border rounded-lg">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-200 dark:bg-neutral-1100 text-neutral-1300 dark:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="true"
@@ -717,7 +717,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
           </use>
         </svg>
       </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-menu4 rounded-lg"
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-36 p-8 gap-8 ui-text-label4 rounded-lg"
            tabindex="0"
            role="button"
            aria-pressed="false"
