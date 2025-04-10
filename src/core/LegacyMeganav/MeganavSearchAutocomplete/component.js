@@ -68,7 +68,7 @@ const init = ({ input, container, listContainer, clear, client }) => {
         button.type = "button";
 
         button.classList.add(
-          "ui-text-menu2",
+          "ui-text-label2",
           "font-medium",
           "p-8",
           "w-full",

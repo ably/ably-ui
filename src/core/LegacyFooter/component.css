@@ -4,11 +4,11 @@
   }
 
   .ui-footer-menu-row-link {
-    @apply text-menu3 text-cool-black font-sans font-medium hover:text-gui-hover block;
+    @apply text-label3 text-cool-black font-sans font-medium hover:text-gui-hover block;
   }
 
   .ui-footer-link {
-    @apply text-gui-default hover:text-gui-hover text-menu3 font-sans font-medium;
+    @apply text-gui-default hover:text-gui-hover text-label3 font-sans font-medium;
   }
 
   .ui-footer-compliance-text {

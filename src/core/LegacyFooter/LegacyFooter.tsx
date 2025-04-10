@@ -370,7 +370,7 @@ const LegacyFooter = ({ paths, urlBase, statusUrl }: LegacyFooterProps) => {
                 >
                   <Icon name="icon-social-glassdoor" size="1.5rem" />
                 </a>
-                <div className="pl-16 text-menu3 font-sans font-medium">
+                <div className="pl-16 text-label3 font-sans font-medium">
                   <strong className="block font-medium">
                     We&apos;re hiring!
                   </strong>
@@ -395,7 +395,7 @@ const LegacyFooter = ({ paths, urlBase, statusUrl }: LegacyFooterProps) => {
               >
                 <Icon name="icon-social-glassdoor" size="1.5rem" />
               </a>
-              <div className="text-menu3 font-sans font-medium">
+              <div className="text-label3 font-sans font-medium">
                 <strong className="block font-medium">
                   We&apos;re hiring!
                 </strong>

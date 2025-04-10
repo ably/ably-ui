@@ -168,7 +168,7 @@ const MeganavItemsMobile = ({
             <div className="flex justify-between items-center mb-16">
               <a
                 href={absUrl("/contact")}
-                className="text-menu2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
+                className="text-label2 font-medium block ml-0 mr-8 lg:mx-12 p-0 hover:text-gui-hover focus:text-gui-focus focus:outline-none"
               >
                 Contact us
               </a>

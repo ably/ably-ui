@@ -37,7 +37,7 @@ const Panels = ({
       {platforms.map((item) => (
         <li className="list-none py-6" key={item}>
           <a
-            className="ui-text-menu3 text-neutral-1000 dark:text-neutral-300"
+            className="ui-text-label3 text-neutral-1000 dark:text-neutral-300"
             href={`/platform/${item.toLowerCase()}`}
           >
             {item}
