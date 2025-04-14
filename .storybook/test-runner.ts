@@ -8,8 +8,6 @@ const flakyStories = [
   "components-tab-menu",
   "components-header",
   "features-pricing-cards",
-  "components-legacymeganav",
-  "components-legacyfooter",
 ];
 
 const config: TestRunnerConfig = {
