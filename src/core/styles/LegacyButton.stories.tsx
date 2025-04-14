@@ -120,10 +120,10 @@ export const LinkStyledAsButton = {
 export const ExtraSmall = {
   render: () => (
     <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-xsmall text-btn4">
+      <button type="button" className="ui-btn p-btn-xsmall text-label4">
         Primary button
       </button>
-      <button type="button" className="ui-btn p-btn-xsmall text-btn4">
+      <button type="button" className="ui-btn p-btn-xsmall text-label4">
         <Icon
           name="icon-gui-magnifying-glass-micro"
           size="1rem"
@@ -131,10 +131,13 @@ export const ExtraSmall = {
         />
         Primary button with icon
       </button>
-      <button type="button" className="ui-btn-alt p-btn-xsmall text-btn4">
+      <button type="button" className="ui-btn-alt p-btn-xsmall text-label4">
         Primary button alternative
       </button>
-      <button type="button" className="ui-btn-secondary p-btn-xsmall text-btn4">
+      <button
+        type="button"
+        className="ui-btn-secondary p-btn-xsmall text-label4"
+      >
         Secondary button
       </button>
     </div>
@@ -144,10 +147,10 @@ export const ExtraSmall = {
 export const Small = {
   render: () => (
     <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-small text-btn3">
+      <button type="button" className="ui-btn p-btn-small text-label3">
         Primary button
       </button>
-      <button type="button" className="ui-btn p-btn-small text-btn3">
+      <button type="button" className="ui-btn p-btn-small text-label3">
         <Icon
           name="icon-gui-magnifying-glass-micro"
           size="1rem"
@@ -155,10 +158,13 @@ export const Small = {
         />
         Primary button with icon
       </button>
-      <button type="button" className="ui-btn-alt p-btn-small text-btn3">
+      <button type="button" className="ui-btn-alt p-btn-small text-label3">
         Primary button alternative
       </button>
-      <button type="button" className="ui-btn-secondary p-btn-small text-btn3">
+      <button
+        type="button"
+        className="ui-btn-secondary p-btn-small text-label3"
+      >
         Secondary button
       </button>
     </div>
@@ -168,10 +174,10 @@ export const Small = {
 export const Large = {
   render: () => (
     <div className="flex flex-col gap-16 max-w-[300px]">
-      <button type="button" className="ui-btn p-btn-large text-btn1">
+      <button type="button" className="ui-btn p-btn-large text-label1">
         Primary button
       </button>
-      <button type="button" className="ui-btn p-btn-large text-btn1">
+      <button type="button" className="ui-btn p-btn-large text-label1">
         <Icon
           name="icon-gui-magnifying-glass-micro"
           size="1rem"
@@ -179,10 +185,13 @@ export const Large = {
         />
         Primary button with icon
       </button>
-      <button type="button" className="ui-btn-alt p-btn-large text-btn1">
+      <button type="button" className="ui-btn-alt p-btn-large text-label1">
         Primary button alternative
       </button>
-      <button type="button" className="ui-btn-secondary p-btn-large text-btn1">
+      <button
+        type="button"
+        className="ui-btn-secondary p-btn-large text-label1"
+      >
         Secondary button
       </button>
     </div>

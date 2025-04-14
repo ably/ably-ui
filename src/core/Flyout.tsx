@@ -55,7 +55,7 @@ type FlyoutProps = {
 };
 
 const DEFAULT_MENU_LINK_STYLING =
-  "ui-text-menu3 font-bold text-neutral-1000 dark:neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
+  "ui-text-label3 font-bold text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 px-12 py-8 flex items-center justify-between";
 const DEFAULT_VIEWPORT_STYLING =
   "relative overflow-hidden w-full h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] transition-[width,_height] duration-300 data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in sm:w-[var(--radix-navigation-menu-viewport-width)]";
 const PANEL_ANIMATION =

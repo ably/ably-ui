@@ -36,7 +36,7 @@ WithTabMenuNav.args = {
   nav: (
     <TabMenu
       tabs={["Tab 1", "Tab 2"]}
-      tabClassName="ui-text-menu3 !px-16"
+      tabClassName="ui-text-label3 !px-16"
       options={{ underline: false, flexibleTabHeight: true }}
     />
   ),
@@ -46,7 +46,7 @@ WithTabMenuNav.args = {
       contents={["Content 1", "Content 2"]}
       rootClassName="h-full overflow-y-hidden min-h-[51px] flex flex-col"
       contentClassName="h-full py-16 overflow-y-scroll p-32"
-      tabClassName="ui-text-menu2 !px-16"
+      tabClassName="ui-text-label2 !px-16"
       options={{ flexibleTabWidth: true }}
     />
   ),

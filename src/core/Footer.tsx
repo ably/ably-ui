@@ -10,7 +10,7 @@ import { ablyAwards } from "./Meganav/data";
 
 const Footer = () => {
   const textColorClassnames =
-    "ui-text-menu3 font-medium transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000 active:text-neutral-800 active:dark:text-neutral-400 focus:outline focus:outline-gui-focus";
+    "ui-text-label3 font-medium transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000 active:text-neutral-800 active:dark:text-neutral-400 focus:outline focus:outline-gui-focus";
 
   return (
     <footer

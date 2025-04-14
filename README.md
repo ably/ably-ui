@@ -107,7 +107,6 @@ module.exports = extendConfig((ablyUIConfig) => ({
 
 @import "@ably/ui/reset/styles.css"; /* needed as we disable the default Tailwind reset */
 @import "@ably/ui/core/styles.css"; /* styles for core module components and more */
-@import "@ably/ui/core/Meganav/component.css";
 @import "@ably/ui/core/Flash/component.css";
 ```
 
@@ -187,21 +186,21 @@ We have a dynamic SWC configuration which allows us to support compile-time feat
 
 For example, there could be a flag somewhere in our code that logs additional debug information in development that is useless in a released version. It could look like this:
 
-~~~ts
+```ts
 // Example usage in api-client.ts
 declare const __DEBUG_MODE__: boolean;
 
 const api = createApiClient();
 if (__DEBUG_MODE__) {
-  console.log('Debug mode enabled');
+  console.log("Debug mode enabled");
 }
-~~~
+```
 
 The flag can be added to the list in `swc.config.ts`, and enabled with an environment variable:
 
-~~~
+```
 $ DEBUG_MODE=true yarn build
-~~~
+```
 
 ### Publishing pre-release packages for review apps
 
@@ -316,4 +315,3 @@ This will release the packages and update library and create & push the commit &
 Snapshots are also assessed via `test-runner`. To generate new snapshots, run `yarn test:update-snapshots`.
 
 You can run the tests by either running a dev instance of Storybook locally and then running `yarn test`, or by pushing a branch to GitHub.
-

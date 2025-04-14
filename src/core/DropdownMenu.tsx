@@ -101,7 +101,7 @@ const Trigger = ({
       role="button"
       onClick={() => setOpen(!isOpen)}
       className={cn(
-        "flex items-center ui-text-button3 text-neutral-1000 dark:text-neutral-300 focus:outline-none",
+        "flex items-center ui-text-label3 font-bold text-neutral-1000 dark:text-neutral-300 focus:outline-none",
         triggerClassNames,
       )}
     >

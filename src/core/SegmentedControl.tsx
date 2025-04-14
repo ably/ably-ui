@@ -72,9 +72,9 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
   };
 
   const textStyles = {
-    md: "ui-text-menu2",
-    sm: "ui-text-menu3",
-    xs: "ui-text-menu4",
+    md: "ui-text-label2",
+    sm: "ui-text-label3",
+    xs: "ui-text-label4",
   };
 
   const iconSizes: Record<SegmentedControlSize, IconSize> = {
