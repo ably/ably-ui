@@ -81,19 +81,19 @@
   }
 
   .ui-text-label1 {
-    @apply font-sans text-neutral-900 text-label1 font-semibold leading-snug;
+    @apply font-sans text-neutral-900 text-label1 font-semibold;
   }
 
   .ui-text-label2 {
-    @apply font-sans text-neutral-900 text-label2 font-semibold leading-snug;
+    @apply font-sans text-neutral-900 text-label2 font-semibold;
   }
 
   .ui-text-label3 {
-    @apply font-sans text-neutral-900 text-label3 font-semibold leading-snug;
+    @apply font-sans text-neutral-900 text-label3 font-semibold;
   }
 
   .ui-text-label4 {
-    @apply font-sans text-neutral-900 text-label4 font-semibold leading-snug;
+    @apply font-sans text-neutral-900 text-label4 font-semibold;
   }
 
   .ui-theme-dark .ui-text-label1,
