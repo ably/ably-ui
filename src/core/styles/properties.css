@@ -212,13 +212,11 @@
     --fs-code: 0.813rem;
     --fs-code2: 0.688rem;
 
-    --lh-dense: 1;
-    --lh-tight: 1.125;
-    --lh-snug: 1.15;
+    --lh-none: 1;
+    --lh-dense: 1.125;
     --lh-min-normal: 1.2;
-    --lh-normal: 1.25;
-    --lh-relaxed: 1.45;
-    --lh-extra-relaxed: 1.6;
+    --lh-snug: 1.4;
+    --lh-relaxed: 1.6;
 
     --ls-tighten-0_025: -0.025em;
     --ls-tighten-0_02: -0.02em;
