@@ -1,17 +1,17 @@
-import React, { ReactNode, useEffect } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import Icon from "./Icon";
 import cn from "./utils/cn.js";
 import NoticeScripts from "./Notice/component.js";
+import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 type ContentWrapperProps = {
   buttonLink: string;
   children: ReactNode;
   textColor?: ColorClass | ColorThemeSet;
 };
-import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
@@ -66,6 +66,9 @@ const Notice = ({
   bgColor = "bg-orange-100 dark:bg-orange-1100",
   textColor = defaultTextColor,
 }: NoticeProps) => {
+  const contentRef = useRef<HTMLSpanElement>(null);
+  useRailsUjsLinks(contentRef);
+
   useEffect(() => {
     NoticeScripts({
       bannerContainer: document.querySelector('[data-id="ui-notice"]'),
@@ -81,8 +84,6 @@ const Notice = ({
     ALLOWED_TAGS: ["a"],
     ALLOWED_ATTR: ["href", "data-method", "rel"],
   });
-
-  const contentRef = useRailsUjsLinks();
 
   return (
     <div
