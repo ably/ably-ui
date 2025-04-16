@@ -1,4 +1,4 @@
-import { useEffect, useRef, RefObject } from "react";
+import { useEffect, RefObject } from "react";
 
 type HttpMethod = "get" | "post" | "put" | "patch" | "delete";
 
@@ -14,15 +14,17 @@ interface CsrfMetaTag extends HTMLMetaElement {
   content: string;
 }
 
-const useRailsUjsLinks = (): RefObject<HTMLDivElement> => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
+const useRailsUjsLinks = (containerRef: RefObject<HTMLElement>): void => {
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
     const handleClick = (event: MouseEvent): void => {
-      const target = event.target as HTMLElement;
+      if (!(event.target instanceof HTMLElement)) {
+        return;
+      }
+
+      const target = event.target;
       const link = target.closest<RailsUjsLink>("a[data-method]");
       if (!link) return;
 
@@ -83,9 +85,7 @@ const useRailsUjsLinks = (): RefObject<HTMLDivElement> => {
 
     container.addEventListener("click", handleClick);
     return () => container.removeEventListener("click", handleClick);
-  }, []);
-
-  return containerRef;
+  }, [containerRef]);
 };
 
 export default useRailsUjsLinks;
