@@ -78,9 +78,9 @@ const Notice = ({
         collapse: config?.options?.collapse || false,
       },
     });
-  }, []);
+  }, [config?.cookieId, config?.noticeId, config?.options?.collapse]);
 
-  const safeContent = DOMPurify.sanitize(bodyText, {
+  const safeContent = DOMPurify.sanitize(bodyText ?? "", {
     ALLOWED_TAGS: ["a"],
     ALLOWED_ATTR: ["href", "data-method", "rel"],
   });
