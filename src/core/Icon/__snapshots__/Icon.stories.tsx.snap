@@ -910,6 +910,23 @@ exports[`Components/Icon DisplayIcons smoke-test 1`] = `
           <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
                style="width: 24px; height: 24px;"
           >
+            <use xlink:href="#sprite-icon-display-last-seen">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-display-last-seen
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
             <use xlink:href="#sprite-icon-display-lightbulb-col">
             </use>
           </svg>
@@ -1241,6 +1258,40 @@ exports[`Components/Icon DisplayIcons smoke-test 1`] = `
       <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
         <p>
           icon-display-quickstart-guides-col
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-display-reactions">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-display-reactions
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-display-read-receipts">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-display-read-receipts
         </p>
       </code>
     </div>
