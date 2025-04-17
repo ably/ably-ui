@@ -13,7 +13,6 @@ export default {
   },
 };
 
-
 export const Default = {
   render: (args) => <Notice {...args} />,
 };
@@ -21,6 +20,7 @@ export const Default = {
 export const RailsUjs = {
   args: {
     title: "With Rails UJS",
-    bodyText: "<a href='/logout' data-method='delete'>Logout</a> but with script tags <script>alert('hello')</script>",
+    bodyText:
+      "<a href='/logout' data-method='delete'>Logout</a> but with script tags <script>alert('hello')</script>",
   },
 };
