@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Notice Default smoke-test 1`] = `
+<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+     data-id="ui-notice"
+     style
+>
+  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+    <a href="/"
+       class="w-full pr-8 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+    >
+      <strong class="font-bold whitespace-nowrap pr-4">
+        Flashy title
+      </strong>
+      <span class="pr-4">
+        This is a notice
+      </span>
+    </a>
+    <button type="button"
+            class="ml-auto h-20 w-20 border-none bg-none self-baseline"
+    >
+      <svg class="text-neutral-1300 dark:text-neutral-000"
+           style="width: 1.25rem; height: 1.25rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-x-mark-outline">
+        </use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/Notice RailsUjs smoke-test 1`] = `
+<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+     data-id="ui-notice"
+     style
+>
+  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+    <a href="/"
+       class="w-full pr-8 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+    >
+      <strong class="font-bold whitespace-nowrap pr-4">
+        With Rails UJS
+      </strong>
+      <span class="pr-4">
+        <a data-method="delete"
+           href="/logout"
+        >
+          Logout
+        </a>
+        but with script tags
+      </span>
+    </a>
+    <button type="button"
+            class="ml-auto h-20 w-20 border-none bg-none self-baseline"
+    >
+      <svg class="text-neutral-1300 dark:text-neutral-000"
+           style="width: 1.25rem; height: 1.25rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-x-mark-outline">
+        </use>
+      </svg>
+    </button>
+  </div>
+</div>
+`;

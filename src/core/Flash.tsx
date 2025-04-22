@@ -17,7 +17,7 @@ type FlashProps = {
 };
 
 type FlashesProps = {
-  flashes: { items: FlashProps[] };
+  flashes: { items: Pick<FlashProps, "type" | "content">[] };
 };
 
 type BackendFlashesProps = {
@@ -128,7 +128,8 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
 
   const safeContent = DOMPurify.sanitize(content, {
     ALLOWED_TAGS: ["a"],
-    ALLOWED_ATTR: ["href", "data-method", "rel"],
+    ALLOWED_ATTR: ["href", "data-method"],
+    ALLOWED_URI_REGEXP: /^\/[^/]/,
   });
 
   const withIcons: Record<FlashPropsType, IconName | ""> = {
@@ -155,6 +156,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
       style={style}
       ref={ref}
       data-id="ui-flash"
+      data-testid="ui-flash"
     >
       <div
         className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}
@@ -204,6 +206,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
           ...flash,
           id: Math.random().toString(36).slice(2),
           removed: false,
+          removeFlash,
         })),
       ];
     });
@@ -214,7 +217,7 @@ const Flashes = ({ flashes }: FlashesProps) => {
       {flashesWithIds
         .filter((item) => !item.removed)
         .map((flash) => (
-          <Flash key={flash.id} {...flash} removeFlash={removeFlash} />
+          <Flash key={flash.id} {...flash} />
         ))}
     </div>
   );

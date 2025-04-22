@@ -6,6 +6,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
 >
   <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
        data-id="ui-flash"
+       data-testid="ui-flash"
   >
     <div class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle">
       <svg class="text-cool-black mr-16 self-baseline"
@@ -31,6 +32,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
   </div>
   <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
        data-id="ui-flash"
+       data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
       <svg class="text-cool-black mr-16 self-baseline"
@@ -56,6 +58,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
   </div>
   <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
        data-id="ui-flash"
+       data-testid="ui-flash"
   >
     <div class="bg-gui-error p-32 flex align-center rounded shadow-container-subtle">
       <svg class="text-white mr-16 self-baseline"
@@ -81,6 +84,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
   </div>
   <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
        data-id="ui-flash"
+       data-testid="ui-flash"
   >
     <div class="bg-active-orange p-32 flex align-center rounded shadow-container-subtle">
       <svg class="text-white mr-16 self-baseline"
@@ -106,6 +110,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
   </div>
   <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
        data-id="ui-flash"
+       data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
       <p class="ui-text-p1 mr-16 text-cool-black">
@@ -114,6 +119,119 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Flash WithLinks play-test 1`] = `
+<div class="ui-flash"
+     data-id="ui-flashes"
+>
+  <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
+       data-id="ui-flash"
+       data-testid="ui-flash"
+  >
+    <div class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle">
+      <svg class="text-cool-black mr-16 self-baseline"
+           style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-check-outline">
+        </use>
+      </svg>
+      <p class="ui-text-p1 mr-16 text-cool-black">
+        Valid link:
+        <a href="/valid-link">
+          Click me
+        </a>
+      </p>
+      <button type="button"
+              class="p-0 ml-auto self-start focus:outline-none"
+      >
+        <svg class="text-cool-black transition-colors"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
+       data-id="ui-flash"
+       data-testid="ui-flash"
+  >
+    <div class="bg-gui-error p-32 flex align-center rounded shadow-container-subtle">
+      <svg class="text-white mr-16 self-baseline"
+           style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
+        </use>
+      </svg>
+      <p class="ui-text-p1 mr-16 text-white">
+        Invalid link:
+        <a>
+          Should be removed
+        </a>
+      </p>
+      <button type="button"
+              class="p-0 ml-auto self-start focus:outline-none"
+      >
+        <svg class="text-white transition-colors"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
+       data-id="ui-flash"
+       data-testid="ui-flash"
+  >
+    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
+      <p class="ui-text-p1 mr-16 text-cool-black">
+        Link with data-method:
+        <a data-method="delete"
+           href="/delete"
+        >
+          Delete
+        </a>
+      </p>
+      <button type="button"
+              class="p-0 ml-auto self-start focus:outline-none"
+      >
+      </button>
+    </div>
+  </div>
+  <div class="ui-flash-message ui-grid-px ui-flash-message-enter"
+       data-id="ui-flash"
+       data-testid="ui-flash"
+  >
+    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
+      <svg class="text-cool-black mr-16 self-baseline"
+           style="width: 1.5rem; height: 1.5rem;"
+      >
+        <use xlink:href="#sprite-icon-gui-ably-badge">
+        </use>
+      </svg>
+      <p class="ui-text-p1 mr-16 text-cool-black">
+        Invalid link with proto relative:
+        <a>
+          External
+        </a>
+      </p>
+      <button type="button"
+              class="p-0 ml-auto self-start focus:outline-none"
+      >
+        <svg class="text-cool-black transition-colors"
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <use xlink:href="#sprite-icon-gui-x-mark-outline">
+          </use>
+        </svg>
       </button>
     </div>
   </div>

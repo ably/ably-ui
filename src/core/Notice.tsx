@@ -1,9 +1,11 @@
-import React, { ReactNode, useEffect } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
+import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import Icon from "./Icon";
 import cn from "./utils/cn.js";
 import NoticeScripts from "./Notice/component.js";
+import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
 
 type ContentWrapperProps = {
   buttonLink: string;
@@ -64,6 +66,9 @@ const Notice = ({
   bgColor = "bg-orange-100 dark:bg-orange-1100",
   textColor = defaultTextColor,
 }: NoticeProps) => {
+  const contentRef = useRef<HTMLSpanElement>(null);
+  useRailsUjsLinks(contentRef);
+
   useEffect(() => {
     NoticeScripts({
       bannerContainer: document.querySelector('[data-id="ui-notice"]'),
@@ -73,7 +78,13 @@ const Notice = ({
         collapse: config?.options?.collapse || false,
       },
     });
-  }, []);
+  }, [config?.cookieId, config?.noticeId, config?.options?.collapse]);
+
+  const safeContent = DOMPurify.sanitize(bodyText ?? "", {
+    ALLOWED_TAGS: ["a"],
+    ALLOWED_ATTR: ["href", "data-method"],
+    ALLOWED_URI_REGEXP: /^\/[^/]/,
+  });
 
   return (
     <div
@@ -84,7 +95,13 @@ const Notice = ({
       <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
           <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
-          <span className="pr-4">{bodyText}</span>
+          <span
+            ref={contentRef}
+            className="pr-4"
+            dangerouslySetInnerHTML={{
+              __html: safeContent,
+            }}
+          ></span>
           {buttonLabel && (
             <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark">
               {buttonLabel}

@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "16.1.1",
+  "version": "16.1.2",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/addon-interactions": "^8.6.4",
     "@storybook/react-vite": "^8.6.4",
     "@storybook/test": "^8.6.4",
     "@storybook/test-runner": "^0.22.0",
@@ -68,9 +69,9 @@
     "build:sprites": "ts-node scripts/generate-sprites.ts",
     "build": "yarn build:prebuild && yarn build:sprites && yarn build:swc && yarn build:tsc && yarn build:cleanup",
     "watch": "yarn build:swc -w",
-    "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx}",
-    "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx}",
-    "lint": "eslint *.{js,ts} src/**/*.{js,ts,tsx}",
+    "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
+    "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
+    "lint": "eslint *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
     "update:all": "./scripts/update-dependents.sh",
     "pre-release": "./scripts/pre-release.sh",
     "release": "./scripts/release.sh",
