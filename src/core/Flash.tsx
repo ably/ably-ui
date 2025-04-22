@@ -128,7 +128,8 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
 
   const safeContent = DOMPurify.sanitize(content, {
     ALLOWED_TAGS: ["a"],
-    ALLOWED_ATTR: ["href", "data-method", "rel"],
+    ALLOWED_ATTR: ["href", "data-method"],
+    ALLOWED_URI_REGEXP: /^\/[^/]/,
   });
 
   const withIcons: Record<FlashPropsType, IconName | ""> = {
@@ -155,6 +156,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
       style={style}
       ref={ref}
       data-id="ui-flash"
+      data-testid="ui-flash"
     >
       <div
         className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}

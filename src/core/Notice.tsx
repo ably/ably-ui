@@ -82,7 +82,8 @@ const Notice = ({
 
   const safeContent = DOMPurify.sanitize(bodyText ?? "", {
     ALLOWED_TAGS: ["a"],
-    ALLOWED_ATTR: ["href", "data-method", "rel"],
+    ALLOWED_ATTR: ["href", "data-method"],
+    ALLOWED_URI_REGEXP: /^\/[^/]/,
   });
 
   return (
