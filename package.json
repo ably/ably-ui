@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/addon-interactions": "^8.6.4",
     "@storybook/react-vite": "^8.6.4",
     "@storybook/test": "^8.6.4",
     "@storybook/test-runner": "^0.22.0",

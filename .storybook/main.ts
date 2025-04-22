@@ -11,6 +11,7 @@ const config: StorybookConfig = {
   },
   addons: [
     "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
     "storybook-dark-mode",
     "@whitespace/storybook-addon-html",
   ],
