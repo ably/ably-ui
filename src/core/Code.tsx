@@ -1,10 +1,10 @@
 import React from "react";
-
 import {
   highlightSnippet,
   registerDefaultLanguages,
 } from "./utils/syntax-highlighter";
 import languagesRegistry from "./utils/syntax-highlighter-registry";
+import cn from "./utils/cn";
 
 registerDefaultLanguages(languagesRegistry);
 
@@ -33,14 +33,17 @@ const Code = ({
 
   return (
     <div
-      className={`hljs overflow-auto flex ${padding} ${additionalCSS}`}
+      className={cn("hljs overflow-auto flex", padding, additionalCSS)}
       data-id="code"
     >
       {showLines ? (
         <div>
           {[...Array(lineCount)].map((_, i) => (
             <p
-              className={`mr-24 font-mono text-right text-neutral-800 ${lineCSS ?? ""}`}
+              className={cn(
+                "mr-24 font-mono text-right text-neutral-800",
+                lineCSS,
+              )}
               key={i}
             >
               {i + 1}
