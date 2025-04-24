@@ -1,0 +1,2494 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Code Snippet Default smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:r0:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          8
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          9
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          10
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+          <span class="hljs-comment">
+            // Publish a message to the channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            publish
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          , {
+          <span class="hljs-attr">
+            text
+          </span>
+          :
+          <span class="hljs-string">
+            'Hello world!'
+          </span>
+          });
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      JSON-Only Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12">
+    <svg class="mr-8"
+         style="width: 16px; height: 16px;"
+    >
+      <use xlink:href="#sprite-icon-tech-web">
+      </use>
+    </svg>
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+      JSON
+    </span>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          8
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          9
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          10
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          11
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          12
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          13
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          14
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          15
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          16
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          17
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          18
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          19
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          20
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          21
+        </p>
+      </div>
+      <pre lang="json">
+        <code class="language-json ui-text-code">
+          <span class="hljs-punctuation">
+            {
+          </span>
+          <span class="hljs-attr">
+            "items"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-punctuation">
+            [
+          </span>
+          <span class="hljs-punctuation">
+            {
+          </span>
+          <span class="hljs-attr">
+            "id"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "XeETKz24PM:0:0"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "clientId"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "user123"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "connectionId"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "hCD9Jksk28"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "timestamp"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-number">
+            1654321098765
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "name"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "event"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "data"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-punctuation">
+            {
+          </span>
+          <span class="hljs-attr">
+            "text"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "Hello world!"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "id"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-number">
+            42
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "metadata"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-punctuation">
+            {
+          </span>
+          <span class="hljs-attr">
+            "source"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "mobile-app"
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "priority"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "high"
+          </span>
+          <span class="hljs-punctuation">
+            }
+          </span>
+          <span class="hljs-punctuation">
+            }
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "encoding"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-string">
+            "json"
+          </span>
+          <span class="hljs-punctuation">
+            }
+          </span>
+          <span class="hljs-punctuation">
+            ]
+          </span>
+          <span class="hljs-punctuation">
+            ,
+          </span>
+          <span class="hljs-attr">
+            "hasNext"
+          </span>
+          <span class="hljs-punctuation">
+            :
+          </span>
+          <span class="hljs-literal">
+            <span class="hljs-keyword">
+              true
+            </span>
+          </span>
+          <span class="hljs-punctuation">
+            }
+          </span>
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
+<div class="space-y-16">
+  <div>
+    <h3 class="ui-text-h3 mb-8">
+      Installation
+    </h3>
+    <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[54px]"
+         tabindex="0"
+    >
+      <div class="absolute top-8 left-8 z-10">
+        <div class="w-36 h-36 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-gui-command-line-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="pl-56">
+        <div class="hljs overflow-auto flex p-32 bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-[56px] py-12"
+             data-id="code"
+        >
+          <pre lang="shell">
+            <code class="language-shell ui-text-code">
+              npm install @ably/asset-tracking
+              <span class="hljs-comment">
+                # or
+              </span>
+              yarn add @ably/asset-tracking
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 class="ui-text-h3 mb-8">
+      Starting the server
+    </h3>
+    <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[54px]"
+         tabindex="0"
+    >
+      <div class="absolute top-8 left-8 z-10">
+        <div class="w-36 h-36 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-gui-command-line-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="pl-56">
+        <div class="hljs overflow-auto flex p-32 bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-[56px] py-12"
+             data-id="code"
+        >
+          <pre lang="shell">
+            <code class="language-shell ui-text-code">
+              <span class="hljs-built_in">
+                cd
+              </span>
+              server
+npm run start
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 class="ui-text-h3 mb-8">
+      Complex command
+    </h3>
+    <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[54px]"
+         tabindex="0"
+    >
+      <div class="absolute top-8 left-8 z-10">
+        <div class="w-36 h-36 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+          <svg class="text-neutral-1300 dark:text-neutral-000"
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-gui-command-line-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="pl-56">
+        <div class="hljs overflow-auto flex p-32 bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-[56px] py-12"
+             data-id="code"
+        >
+          <pre lang="shell">
+            <code class="language-shell ui-text-code">
+              curl -X POST https://api.ably.io/keys \\
+  -H
+              <span class="hljs-string">
+                "Content-Type: application/json"
+              </span>
+              \\
+  -H
+              <span class="hljs-string">
+                "Authorization: Bearer
+                <span class="hljs-variable">
+                  \${API_KEY}
+                </span>
+                "
+              </span>
+              \\
+  -d
+              <span class="hljs-string">
+                '{
+    "name": "My API Key",
+    "capabilities": {
+      "*": ["publish", "subscribe"]
+    }
+  }'
+              </span>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet ShellMode smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[54px]"
+     tabindex="0"
+>
+  <div class="absolute top-8 left-8 z-10">
+    <div class="w-36 h-36 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+      <svg class="text-neutral-1300 dark:text-neutral-000"
+           style="width: 20px; height: 20px;"
+      >
+        <use xlink:href="#sprite-icon-gui-command-line-outline">
+        </use>
+      </svg>
+    </div>
+  </div>
+  <div class="pl-56">
+    <div class="hljs overflow-auto flex p-32 bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-[56px] py-12"
+         data-id="code"
+    >
+      <pre lang="shell">
+        <code class="language-shell ui-text-code">
+          npm install @ably/asset-tracking
+          <span class="hljs-comment">
+            # or
+          </span>
+          yarn add @ably/asset-tracking
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12 rounded-t-lg">
+    <svg class="mr-8"
+         style="width: 16px; height: 16px;"
+    >
+      <use xlink:href="#sprite-icon-tech-javascript">
+      </use>
+    </svg>
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+      JavaScript
+    </span>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          8
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          9
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          10
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+          <span class="hljs-comment">
+            // Publish a message to the channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            publish
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          , {
+          <span class="hljs-attr">
+            text
+          </span>
+          :
+          <span class="hljs-string">
+            'Hello world!'
+          </span>
+          });
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      JavaScript Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12">
+    <svg class="mr-8"
+         style="width: 16px; height: 16px;"
+    >
+      <use xlink:href="#sprite-icon-tech-javascript">
+      </use>
+    </svg>
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+      JavaScript
+    </span>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      API Key Selection Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:rk:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-12 py-12">
+    <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-4">
+      API key:
+    </span>
+    <button type="button"
+            role="combobox"
+            aria-controls="radix-:rl:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            class="inline-flex items-center justify-between rounded px-8 py-4 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 focus-base"
+            aria-label="API Key"
+    >
+      <span style="pointer-events: none;">
+        abcd1234
+      </span>
+      <span aria-hidden="true">
+        <svg class
+             style="width: 16px; height: 16px;"
+        >
+          <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+          </use>
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      TypeScript Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-javascript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-typescript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          TypeScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-swift">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:r7:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-typescript">
+            </use>
+          </svg>
+          <span>
+            TypeScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="typescript">
+        <code class="language-typescript ui-text-code">
+          <span class="hljs-keyword">
+            const
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            const
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-function">
+            (
+            <span class="hljs-params">
+              message: Ably.Types.Message
+            </span>
+            ) =&gt;
+          </span>
+          {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Demo API Keys
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:rh:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-12 py-12">
+    <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-4">
+      API key:
+    </span>
+    <div class="flex items-center">
+      <div class="inline-flex rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 ml-4 bg-neutral-200 dark:bg-neutral-1100">
+        <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+          DEMO ONLY
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <svg class="text-neutral-700 dark:text-neutral-600"
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-information-circle-outline">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Subscribe Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-swift">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:r3:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Missing Language Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-javascript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:rb:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-ruby">
+            </use>
+          </svg>
+          <span>
+            Ruby
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="px-64 py-24 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-12 items-center">
+      <svg class="text-yellow-600 dark:text-yellow-400"
+           style="width: 24px; height: 24px;"
+      >
+        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
+        </use>
+      </svg>
+      <p class="ui-text-p3 text-neutral-700 dark:text-neutral-600">
+        You're currently viewing the Ruby docs. There either isn't a Ruby code sample for this example, or this feature isn't supported in Ruby. Switch language to view this example in a different language, or check which SDKs support this feature.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
+<div>
+  <div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+    <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+      <div class="flex space-x-6">
+        <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+        </div>
+        <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+        </div>
+        <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+        </div>
+      </div>
+      <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+        Language Change Example
+      </div>
+      <div class="w-[48px]">
+      </div>
+    </div>
+    <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 h-[56px]">
+      <div class="flex gap-12 justify-start">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+            Realtime
+          </span>
+        </div>
+        <div class="inline-flex ml-0">
+          <button type="button"
+                  aria-describedby="tooltip"
+                  class="p-0 relative focus:outline-none h-[1rem] "
+          >
+            <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+                 tabindex="0"
+                 role="button"
+                 aria-pressed="false"
+            >
+              <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+                REST
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+      <div class="hidden sm:flex gap-8">
+        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+             tabindex="0"
+             role="button"
+             aria-pressed="true"
+        >
+          <svg class
+               aria-hidden="true"
+               style="width: 22px; height: 22px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+            JavaScript
+          </span>
+        </div>
+        <div class="inline-flex ml-0">
+          <button type="button"
+                  aria-describedby="tooltip"
+                  class="p-0 relative focus:outline-none h-[1rem] "
+          >
+            <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+                 tabindex="0"
+                 role="button"
+                 aria-pressed="false"
+            >
+              <svg class
+                   aria-hidden="true"
+                   style="width: 22px; height: 22px;"
+              >
+                <use xlink:href="#sprite-icon-tech-typescript">
+                </use>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="sm:hidden w-full">
+        <button type="button"
+                role="combobox"
+                aria-controls="radix-:re:"
+                aria-expanded="false"
+                aria-autocomplete="none"
+                dir="ltr"
+                data-state="closed"
+                class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+                aria-label="Select language"
+        >
+          <div class="flex items-center gap-8"
+               style="pointer-events: none;"
+          >
+            <svg class
+                 style="width: 20px; height: 20px;"
+            >
+              <use xlink:href="#sprite-icon-tech-javascript">
+              </use>
+            </svg>
+            <span>
+              JavaScript
+            </span>
+          </div>
+          <span aria-hidden="true">
+            <svg class
+                 style="width: 16px; height: 16px;"
+            >
+              <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+              </use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="relative"
+         tabindex="0"
+    >
+      <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+           data-id="code"
+      >
+        <div>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            1
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            2
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            3
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            4
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            5
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            6
+          </p>
+          <p class="mr-24 font-mono text-right text-neutral-800">
+            7
+          </p>
+        </div>
+        <pre lang="javascript">
+          <code class="language-javascript ui-text-code">
+            <span class="hljs-keyword">
+              var
+            </span>
+            ably =
+            <span class="hljs-keyword">
+              new
+            </span>
+            <span class="hljs-title class_">
+              Ably
+            </span>
+            .
+            <span class="hljs-title class_">
+              Realtime
+            </span>
+            (
+            <span class="hljs-string">
+              'API_KEY'
+            </span>
+            );
+            <span class="hljs-keyword">
+              var
+            </span>
+            channel = ably.
+            <span class="hljs-property">
+              channels
+            </span>
+            .
+            <span class="hljs-title function_">
+              get
+            </span>
+            (
+            <span class="hljs-string">
+              'channel-name'
+            </span>
+            );
+            <span class="hljs-comment">
+              // Subscribe to messages on channel
+            </span>
+            channel.
+            <span class="hljs-title function_">
+              subscribe
+            </span>
+            (
+            <span class="hljs-string">
+              'event'
+            </span>
+            ,
+            <span class="hljs-keyword">
+              function
+            </span>
+            (
+            <span class="hljs-params">
+              message
+            </span>
+            ) {
+            <span class="hljs-variable language_">
+              console
+            </span>
+            .
+            <span class="hljs-title function_">
+              log
+            </span>
+            (message.
+            <span class="hljs-property">
+              data
+            </span>
+            );
+});
+          </code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      SDK Type Example
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 h-[56px]">
+    <div class="flex gap-12 justify-start">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Realtime
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+              REST
+            </span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:rr:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;

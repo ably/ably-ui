@@ -113,16 +113,18 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
       {leftIcon && (
         <Icon name={leftIcon} size={iconSizes[size]} aria-hidden="true" />
       )}
-      <span
-        className={cn(
-          "font-semibold transition-colors",
-          contentColorStyles[variant][activeKey],
-          disabled &&
-            "text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark",
-        )}
-      >
-        {children}
-      </span>
+      {children && (
+        <span
+          className={cn(
+            "font-semibold transition-colors",
+            contentColorStyles[variant][activeKey],
+            disabled &&
+              "text-gui-unavailable dark:text-gui-unavailable-dark hover:text-gui-unavailable dark:hover:text-gui-unavailable-dark",
+          )}
+        >
+          {children}
+        </span>
+      )}
       {rightIcon && (
         <Icon name={rightIcon} size={iconSizes[size]} aria-hidden="true" />
       )}
