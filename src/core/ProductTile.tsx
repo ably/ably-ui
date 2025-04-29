@@ -34,6 +34,16 @@ export type ProductTileProps = {
   className?: string;
 
   /**
+   * Additional CSS class names to apply to the product description container.
+   */
+  descriptionClassName?: string;
+
+  /**
+   * Additional CSS class names to apply to the product name / label container.
+   */
+  labelClassName?: string;
+
+  /**
    * Callback function to handle click events on the product tile.
    */
   onClick?: () => void;
@@ -75,6 +85,8 @@ const ProductTile = ({
   showLabel = true,
   size = "40px",
   animateIcons = false,
+  descriptionClassName,
+  labelClassName,
 }: ProductTileProps) => {
   const { icon, hoverIcon, label, description, link, unavailable } =
     products[name] ?? {};
@@ -124,6 +136,7 @@ const ProductTile = ({
           unavailable={!!unavailable}
           numericalSize={numericalSize}
           showLabel={showLabel}
+          className={labelClassName}
         />
       </div>
       <ProductDescription
@@ -131,6 +144,7 @@ const ProductTile = ({
         selected={selected}
         unavailable={!!unavailable}
         showDescription={showDescription}
+        className={descriptionClassName}
       />
       {selected && link ? (
         <LinkButton

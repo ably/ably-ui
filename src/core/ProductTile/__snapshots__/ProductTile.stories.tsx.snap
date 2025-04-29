@@ -315,14 +315,14 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       >
         Ably
       </span>
-      <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+      <span class="block ui-text-p2 font-bold dark:text-neutral-000 mt-[-3px] text-orange-500"
             style="font-size: 15.3846px;"
       >
         Pub/Sub
       </span>
     </span>
   </div>
-  <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+  <span class="block ui-text-p3 font-medium leading-snug dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300 text-blue-500">
     Low-level APIs to build any realtime experience
   </span>
 </div>
