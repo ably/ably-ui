@@ -7,6 +7,7 @@ type ProductLabelProps = {
   selected?: boolean;
   numericalSize: number;
   showLabel?: boolean;
+  className?: string;
 };
 
 const LABEL_FONT_SIZE_RATIO = 4;
@@ -18,6 +19,7 @@ const ProductLabel = ({
   selected,
   numericalSize,
   showLabel,
+  className,
 }: ProductLabelProps) => {
   if (!label || !showLabel) {
     return null;
@@ -73,6 +75,7 @@ const ProductLabel = ({
             "text-neutral-700 dark:text-neutral-600": unavailable,
           },
           { "mt-[-3px]": !unavailable },
+          className,
         )}
         style={{ fontSize: numericalSize / DESCRIPTION_FONT_SIZE_RATIO }}
       >
