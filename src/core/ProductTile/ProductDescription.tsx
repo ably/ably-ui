@@ -6,6 +6,7 @@ type ProductDescriptionProps = {
   selected?: boolean;
   unavailable: boolean;
   showDescription?: boolean;
+  className?: string;
 };
 
 const ProductDescription = ({
@@ -13,6 +14,7 @@ const ProductDescription = ({
   selected,
   unavailable,
   showDescription = true,
+  className,
 }: ProductDescriptionProps) => {
   if (!description || !showDescription) {
     return null;
@@ -29,6 +31,7 @@ const ProductDescription = ({
           "text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300":
             !selected,
         },
+        className,
       )}
     >
       {description}
