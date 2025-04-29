@@ -62,6 +62,8 @@ export const ProductTileWithOverriddenStylesAndClick = {
       key="pubsub"
       name="pubsub"
       className="bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer"
+      labelClassName="text-orange-500"
+      descriptionClassName="text-blue-500"
       onClick={() => alert("yo congrats on the click")}
     />
   ),
@@ -69,7 +71,7 @@ export const ProductTileWithOverriddenStylesAndClick = {
     docs: {
       description: {
         story:
-          "`className` is overridden to change the background color and cursor. `onClick` is also overridden to show an alert on click.",
+          "`className` is overridden to change the background color and cursor. `labelClassName` and `descriptionClassName` are used to change the text color of the label and description respectively. `onClick` is also overridden to show an alert on click.",
       },
     },
   },
