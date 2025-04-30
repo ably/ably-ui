@@ -27,9 +27,14 @@ const Code = ({
   showLines,
   lineCSS,
 }: CodeProps) => {
-  const HTMLraw = highlightSnippet(language, `${snippet}`.trim()) ?? "";
+  // Trim the snippet and remove trailing empty lines
+  const trimmedSnippet = snippet.trimEnd();
+  const HTMLraw = highlightSnippet(language, trimmedSnippet) ?? "";
   const className = `language-${language} ${textSize}`;
-  const lineCount = snippet.split(/\r\n|\r|\n/).length;
+
+  // Calculate line count after removing trailing empty lines
+  const lines = trimmedSnippet.split(/\r\n|\r|\n/);
+  const lineCount = lines.length;
 
   return (
     <div
