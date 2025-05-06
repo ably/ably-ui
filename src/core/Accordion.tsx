@@ -1,4 +1,10 @@
-import React, { ReactNode, useMemo, useState, forwardRef } from "react";
+import React, {
+  ReactNode,
+  useMemo,
+  useState,
+  forwardRef,
+  useEffect,
+} from "react";
 import {
   AccordionContent,
   AccordionItem,
@@ -30,7 +36,7 @@ type AccordionRowProps = {
   options?: AccordionOptions;
   index: number;
   onClick: () => void;
-  openRowValues: string | string[];
+  openRowValues: string[];
   rowInteractive?: boolean;
 };
 
@@ -165,9 +171,12 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           );
     }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
 
-    const [openRowValues, setOpenRowValues] = useState<string | string[]>(
-      openIndexes,
-    );
+    const [openRowValues, setOpenRowValues] = useState<string[]>(openIndexes);
+
+    useEffect(() => {
+      setOpenRowValues(openIndexes);
+    }, [openIndexes]);
+
     const innerAccordion = data.map((item, index) => (
       <AccordionRow
         key={item.name}
@@ -193,15 +202,15 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           <RadixAccordion
             type="single"
             collapsible
-            defaultValue={openIndexes[0]}
-            onValueChange={(values) => setOpenRowValues(values)}
+            value={openRowValues[0]}
+            onValueChange={(values) => setOpenRowValues([values])}
           >
             {innerAccordion}
           </RadixAccordion>
         ) : (
           <RadixAccordion
             type="multiple"
-            defaultValue={openIndexes}
+            value={openRowValues}
             onValueChange={(values) => setOpenRowValues(values)}
           >
             {innerAccordion}

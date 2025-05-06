@@ -100,6 +100,11 @@ export type HeaderProps = {
   headerLinksClassName?: string;
 
   /**
+   * Optional classname for styling the header center container.
+   */
+  headerCenterClassName?: string;
+
+  /**
    * Optional desktop navigation element.
    */
   nav?: ReactNode;
@@ -148,6 +153,7 @@ const Header: React.FC<HeaderProps> = ({
   logoHref,
   headerLinks,
   headerLinksClassName,
+  headerCenterClassName,
   nav,
   mobileNav,
   sessionState,
@@ -288,7 +294,13 @@ const Header: React.FC<HeaderProps> = ({
             </button>
           </div>
           {searchBar ? (
-            <div className={cn(FLEXIBLE_DESKTOP_CLASSES, "justify-center")}>
+            <div
+              className={cn(
+                FLEXIBLE_DESKTOP_CLASSES,
+                "justify-center",
+                headerCenterClassName,
+              )}
+            >
               {searchBar}
             </div>
           ) : null}
