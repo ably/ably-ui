@@ -1797,19 +1797,19 @@
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
-"@storybook/builder-vite@8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/builder-vite/-/builder-vite-8.6.4.tgz"
-  integrity sha512-FuSP2GhWVVTt6NdX0UJHhPOqhu09X4apSk+KWUf3aITRIJg9gbPYtJDBmxv1vXQEgvfCDdYBYbeG1khiO/Ghfw==
+"@storybook/builder-vite@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-8.6.12.tgz#33e5f795d1531bfcaa8f697f81a1baff2f1deedd"
+  integrity sha512-Gju21ud/3Qw4v2vLNaa5SuJECsI9ICNRr2G0UyCCzRvCHg8jpA9lDReu2NqhLDyFIuDG+ZYT38gcaHEUoNQ8KQ==
   dependencies:
-    "@storybook/csf-plugin" "8.6.4"
+    "@storybook/csf-plugin" "8.6.12"
     browser-assert "^1.2.1"
     ts-dedent "^2.0.0"
 
-"@storybook/components@8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/components/-/components-8.6.4.tgz"
-  integrity sha512-91VEVFWOgHkEFoNFMk6gs1AuOE9Yp7N283BXQOW+AgP+atpzED6t/fIBPGqJ2ewAuzLJ+cFOrasSzoNwVfg3Jg==
+"@storybook/components@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-8.6.12.tgz#8bfaf4bb061145c8a8acdda6f334691ad716b202"
+  integrity sha512-FiaE8xvCdvKC2arYusgtlDNZ77b8ysr8njAYQZwwaIHjy27TbR2tEpLDCmUwSbANNmivtc/xGEiDDwcNppMWlQ==
 
 "@storybook/components@^8.0.0":
   version "8.3.0"
@@ -1837,6 +1837,13 @@
     semver "^7.6.2"
     util "^0.12.5"
     ws "^8.2.3"
+
+"@storybook/csf-plugin@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-plugin/-/csf-plugin-8.6.12.tgz#5850c7ffe3864ded80a0ca9b906bb6e09aab492c"
+  integrity sha512-6s8CnP1aoKPb3XtC0jRLUp8M5vTA8RhGAwQDKUsFpCC7g89JR9CaKs9FY2ZSzsNbjR15uASi7b3K8BzeYumYQg==
+  dependencies:
+    unplugin "^1.3.1"
 
 "@storybook/csf-plugin@8.6.4":
   version "8.6.4"
@@ -1883,20 +1890,25 @@
     "@storybook/global" "^5.0.0"
     "@vitest/utils" "^2.1.1"
 
-"@storybook/manager-api@8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/manager-api/-/manager-api-8.6.4.tgz"
-  integrity sha512-w/Nn/VznfbIg2oezDfzZNwSTDY5kBZbzxVBHLCnIcyu2AKt2Yto3pfGi60SikFcTrsClaAKT7D92kMQ9qdQNQQ==
+"@storybook/manager-api@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.6.12.tgz#a9169a3fb8de97ba406ed83314112d5c47d035ad"
+  integrity sha512-O0SpISeJLNTQvhSBOsWzzkCgs8vCjOq1578rwqHlC6jWWm4QmtfdyXqnv7rR1Hk08kQ+Dzqh0uhwHx0nfwy4nQ==
 
 "@storybook/manager-api@^8.0.0":
   version "8.3.0"
   resolved "https://registry.npmjs.org/@storybook/manager-api/-/manager-api-8.3.0.tgz"
   integrity sha512-5WBLEFHpe4H+9vZZLjNh7msIkyl9MPt4/C2nI+MXKZyU55xBBgiAy4fcD9aj02PcbhyR4JhLqbqmdeBe5Xafeg==
 
-"@storybook/preview-api@8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/preview-api/-/preview-api-8.6.4.tgz"
-  integrity sha512-5HBfxggzxGz0dg2c61NpPiQJav7UAmzsQlzmI5SzWOS6lkaylcDG8giwKzASVCXVWBxNji9qIDFM++UH090aDg==
+"@storybook/preview-api@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/preview-api/-/preview-api-8.6.12.tgz#07ac0c697801d4c2ffe26afb2673d8a417bd63ef"
+  integrity sha512-84FE3Hrs0AYKHqpDZOwx1S/ffOfxBdL65lhCoeI8GoWwCkzwa9zEP3kvXBo/BnEDO7nAfxvMhjASTZXbKRJh5Q==
+
+"@storybook/react-dom-shim@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.6.12.tgz#425fc62e8445e41239c18b0f78ce97a6e06d4eae"
+  integrity sha512-51QvoimkBzYs8s3rCYnY5h0cFqLz/Mh0vRcughwYaXckWzDBV8l67WBO5Xf5nBsukCbWyqBVPpEQLww8s7mrLA==
 
 "@storybook/react-dom-shim@8.6.4":
   version "8.6.4"
@@ -1904,31 +1916,31 @@
   integrity sha512-kTGJ3aFdmfCFzYaDFGmZWfTXr9xhbUaf0tJ6+nEjc4tME6mFwMI+tTUT6U/J6mJhZuc2DjvIRA7bM0x77dIDqw==
 
 "@storybook/react-vite@^8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/react-vite/-/react-vite-8.6.4.tgz"
-  integrity sha512-MEmD6sP2tUI/SYCXCeWGTs8umZj+N0e3DHXCQUz0nCsJH7kuCTTipOTBQvr/GuEstNd7BNG5k8aLIRrXLjAvdA==
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/react-vite/-/react-vite-8.6.12.tgz#48e8f86a84579cde948966a159d6001ca711c48a"
+  integrity sha512-UA2Kule99oyFgHdhcuhrRwCKyWu/yMbqbl9U7NwowFHNwWWFjVMMir/AmfShb/H1C1DQ3LqOad6/QwJyPLjP8g==
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript" "0.5.0"
     "@rollup/pluginutils" "^5.0.2"
-    "@storybook/builder-vite" "8.6.4"
-    "@storybook/react" "8.6.4"
+    "@storybook/builder-vite" "8.6.12"
+    "@storybook/react" "8.6.12"
     find-up "^5.0.0"
     magic-string "^0.30.0"
     react-docgen "^7.0.0"
     resolve "^1.22.8"
     tsconfig-paths "^4.2.0"
 
-"@storybook/react@8.6.4":
-  version "8.6.4"
-  resolved "https://registry.npmjs.org/@storybook/react/-/react-8.6.4.tgz"
-  integrity sha512-pfv4hMhu3AScOh0l86uIzmXLSQ0XA/e0reIVwQcxKht6miaKArhx9GkS4mMp6SO23ZoV5G/nfLgUaMVPVE0ZPg==
+"@storybook/react@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-8.6.12.tgz#b3918a83555973a90fb132843c080465ec1bea66"
+  integrity sha512-NzxlHLA5DkDgZM/dMwTYinuzRs6rsUPmlqP+NIv6YaciQ4NGnTYyOC7R/SqI6HHFm8ZZ5eMYvpfiFmhZ9rU+rQ==
   dependencies:
-    "@storybook/components" "8.6.4"
+    "@storybook/components" "8.6.12"
     "@storybook/global" "^5.0.0"
-    "@storybook/manager-api" "8.6.4"
-    "@storybook/preview-api" "8.6.4"
-    "@storybook/react-dom-shim" "8.6.4"
-    "@storybook/theming" "8.6.4"
+    "@storybook/manager-api" "8.6.12"
+    "@storybook/preview-api" "8.6.12"
+    "@storybook/react-dom-shim" "8.6.12"
+    "@storybook/theming" "8.6.12"
 
 "@storybook/test-runner@^0.22.0":
   version "0.22.0"
@@ -1986,7 +1998,7 @@
   resolved "https://registry.npmjs.org/@storybook/theming/-/theming-8.6.12.tgz"
   integrity sha512-6VjZg8HJ2Op7+KV7ihJpYrDnFtd9D1jrQnUS8LckcpuBXrIEbaut5+34ObY8ssQnSqkk2GwIZBBBQYQBCVvkOw==
 
-"@storybook/theming@8.6.4", "@storybook/theming@^8.0.0":
+"@storybook/theming@^8.0.0":
   version "8.6.4"
   resolved "https://registry.npmjs.org/@storybook/theming/-/theming-8.6.4.tgz"
   integrity sha512-g9Ns4uenC9oAWETaJ/tEKEIPMdS+CqjNWZz5Wbw1bLNhXwADZgKrVqawzZi64+bYYtQ+i8VCTjPoFa6s2eHiDQ==
