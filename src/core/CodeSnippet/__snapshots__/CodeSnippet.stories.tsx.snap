@@ -340,7 +340,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
     <svg class="mr-8"
          style="width: 16px; height: 16px;"
     >
-      <use xlink:href="#sprite-icon-tech-web">
+      <use xlink:href="#sprite-icon-tech-json">
       </use>
     </svg>
     <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">

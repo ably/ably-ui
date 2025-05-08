@@ -76,7 +76,7 @@ const languages: LanguageMap = {
   },
   json: {
     label: "JSON",
-    icon: "icon-tech-web",
+    icon: "icon-tech-json",
     syntaxHighlighterKey: "json",
   },
   xml: {
