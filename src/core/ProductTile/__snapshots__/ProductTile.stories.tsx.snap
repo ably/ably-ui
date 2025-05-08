@@ -242,16 +242,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 pointer-events-none"
-       aria-hidden="true"
-  >
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
           <svg class="hidden group-hover/product-tile:flex"
@@ -260,7 +258,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
             <use xlink:href="#sprite-icon-product-liveobjects">
             </use>
           </svg>
-          <svg class="text-neutral-600 dark:text-neutral-700 flex group-hover/product-tile:hidden"
+          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -269,14 +267,12 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
       <span class="flex flex-col justify-center">
-        <span class="block">
-          <span class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
-                style="font-size: 6px; padding: 2.5px 5px;"
-          >
-            COMING SOON
-          </span>
+        <span class="block font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+              style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-700 dark:text-neutral-600"
+        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
@@ -505,19 +501,17 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 pointer-events-none"
-       aria-hidden="true"
-  >
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-600 dark:text-neutral-700"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -526,14 +520,12 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
       <span class="flex flex-col justify-center">
-        <span class="block">
-          <span class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
-                style="font-size: 6px; padding: 2.5px 5px;"
-          >
-            COMING SOON
-          </span>
+        <span class="block font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+              style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-700 dark:text-neutral-600"
+        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
@@ -649,9 +641,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300 pointer-events-none"
-       aria-hidden="true"
-  >
+  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -661,7 +651,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-600 dark:text-neutral-700"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -851,9 +841,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 pointer-events-none"
-       aria-hidden="true"
-  >
+  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -863,7 +851,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-600 dark:text-neutral-700"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -872,14 +860,12 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
       <span class="flex flex-col justify-center">
-        <span class="block">
-          <span class="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-widen-0.04 font-bold leading-snug"
-                style="font-size: 6px; padding: 2.5px 5px;"
-          >
-            COMING SOON
-          </span>
+        <span class="block font-bold uppercase ui-text-p2 leading-snug text-neutral-700 dark:text-neutral-500"
+              style="font-size: 10px; letter-spacing: 0.06em;"
+        >
+          Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-700 dark:text-neutral-600"
+        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
