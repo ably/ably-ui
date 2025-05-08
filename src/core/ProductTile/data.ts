@@ -65,6 +65,5 @@ export const products: Products = {
     icon: "icon-product-liveobjects-mono",
     hoverIcon: "icon-product-liveobjects",
     link: "/docs/liveobjects",
-    unavailable: true,
   },
 };
