@@ -555,3 +555,96 @@ export const JsonOnlySnippet: Story = {
     </CodeSnippet>
   ),
 };
+
+/**
+ * CodeSnippet with line numbers disabled via the showCodeLines prop.
+ * This demonstrates how to hide line numbers in code snippets when they're not needed.
+ */
+export const WithoutCodeLines: Story = {
+  render: () => (
+    <CodeSnippet showCodeLines={false} headerRow title="No Line Numbers">
+      <pre>
+        <code className="language-javascript">
+          {`var ably = new Ably.Realtime('API_KEY');
+var channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', function(message) {
+  console.log(message.data);
+});`}
+        </code>
+      </pre>
+      <pre>
+        <code className="language-typescript">
+          {`const ably = new Ably.Realtime('API_KEY');
+const channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', (message: Ably.Types.Message) => {
+  console.log(message.data);
+});`}
+        </code>
+      </pre>
+    </CodeSnippet>
+  ),
+};
+
+/**
+ * CodeSnippet with custom language ordering that controls the display order
+ * of languages in the selector tabs.
+ */
+export const WithCustomLanguageOrder: Story = {
+  render: () => (
+    <CodeSnippet
+      headerRow
+      title="Custom Language Order"
+      languageOrdering={["swift", "typescript", "javascript"]}
+    >
+      <pre>
+        <code className="language-javascript">
+          {`var ably = new Ably.Realtime('API_KEY');
+var channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', function(message) {
+  console.log(message.data);
+});`}
+        </code>
+      </pre>
+      <pre>
+        <code className="language-typescript">
+          {`const ably = new Ably.Realtime('API_KEY');
+const channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', (message: Ably.Types.Message) => {
+  console.log(message.data);
+});`}
+        </code>
+      </pre>
+      <pre>
+        <code className="language-swift">
+          {`let ably = ARTRealtime(key: "API_KEY")
+let channel = ably.channels.get("channel-name")
+
+// Subscribe to messages on channel
+channel.subscribe("event") { message in
+  print("\\(message.data)")
+}`}
+        </code>
+      </pre>
+      <pre>
+        <code className="language-python">
+          {`ably = Ably.Realtime(key='API_KEY')
+channel = ably.channels.get('channel-name')
+
+# Subscribe to messages on channel
+def on_message(message):
+    print(message.data)
+
+channel.subscribe('event', on_message)`}
+        </code>
+      </pre>
+    </CodeSnippet>
+  ),
+};

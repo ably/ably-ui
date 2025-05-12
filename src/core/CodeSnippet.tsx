@@ -70,6 +70,15 @@ export interface CodeSnippetProps {
    * Default SDK type to use for the code snippet
    */
   sdk?: SDKType;
+  /**
+   * Whether to show line numbers in code snippets
+   */
+  showCodeLines?: boolean;
+  /**
+   * Defines the order in which languages should be displayed.
+   * Languages not in this array will be shown after those that are included.
+   */
+  languageOrdering?: string[];
 }
 
 /**
@@ -85,6 +94,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   onChange,
   apiKeys,
   sdk,
+  showCodeLines = true,
+  languageOrdering,
 }) => {
   // Extract languages and SDK types from children
   const {
@@ -197,13 +208,49 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
   // Get languages filtered by active SDK type - optimized with primitive dependencies
   const filteredLanguages = useMemo(() => {
+    let filtered = [];
+
     if (!state.activeSDKType || !showSDKSelector) {
-      return languages;
+      filtered = languages;
+    } else {
+      filtered = languages.filter((lang) =>
+        lang.startsWith(`${state.activeSDKType}_`),
+      );
     }
-    return languages.filter((lang) =>
-      lang.startsWith(`${state.activeSDKType}_`),
-    );
-  }, [state.activeSDKType, showSDKSelector, languages]);
+
+    // Apply custom ordering if languageOrdering is provided
+    if (languageOrdering && languageOrdering.length > 0) {
+      // Sort the languages based on the order in languageOrdering
+      filtered.sort((a, b) => {
+        // Get base language names without SDK prefixes
+        const aBase = originalLangMap.get(a) || a;
+        const bBase = originalLangMap.get(b) || b;
+
+        const aIndex = languageOrdering.indexOf(aBase);
+        const bIndex = languageOrdering.indexOf(bBase);
+
+        // If both languages are in the ordering array, sort by their position
+        if (aIndex !== -1 && bIndex !== -1) {
+          return aIndex - bIndex;
+        }
+
+        // If only one language is in the ordering array, it should come first
+        if (aIndex !== -1) return -1;
+        if (bIndex !== -1) return 1;
+
+        // If neither language is in the ordering array, maintain their original order
+        return 0;
+      });
+    }
+
+    return filtered;
+  }, [
+    state.activeSDKType,
+    showSDKSelector,
+    languages,
+    languageOrdering,
+    originalLangMap,
+  ]);
 
   // Determine the initial active language - simplified dependencies
   const initialActiveLanguage = useMemo((): string | null => {
@@ -315,7 +362,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               language={langInfo.syntaxHighlighterKey || cleanLang}
               snippet={String(codeContent)}
               additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
-              showLines
+              showLines={showCodeLines}
             />
           );
         }
@@ -328,6 +375,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     childrenArray,
     originalLangMap,
     hasOnlyJsonSnippet,
+    showCodeLines,
   ]);
 
   // Check if there's a snippet available for the active language
@@ -642,9 +690,13 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         ) : (
           <div
             className={cn(
-              "border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12",
-              headerRow ? "" : "rounded-t-lg",
+              "border-b border-neutral-200 dark:border-neutral-1100 h-[34px] inline-flex items-center px-12",
+              { "rounded-t-lg": !headerRow },
+              { "cursor-pointer": filteredLanguages.length > 0 },
             )}
+            {...(filteredLanguages.length > 0 && {
+              onClick: () => handleLanguageChange(filteredLanguages[0]),
+            })}
           >
             {filteredLanguages.length > 0 && (
               <>
@@ -653,7 +705,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
                   size="16px"
                   additionalCSS="mr-8"
                 />
-                <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+                <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
                   {getLanguageDisplayName(filteredLanguages[0])}
                 </span>
               </>
