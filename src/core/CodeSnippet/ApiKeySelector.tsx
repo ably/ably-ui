@@ -10,13 +10,18 @@ interface ApiKeySelectorProps {
   onApiKeyChange: (apiKey: string) => void;
 }
 
-const SPECIAL_API_KEYS = { DEMO: "demo" };
+// Define constants at the module level
+const SPECIAL_API_KEYS = {
+  DEMO: "demo",
+} as const;
 
-const ApiKeySelector = memo<ApiKeySelectorProps>(
+const ApiKeySelector = memo(
   ({ apiKeys, selectedApiKey, onApiKeyChange }: ApiKeySelectorProps) => {
-    // Check if we're in demo mode
-    const isDemoMode =
-      apiKeys?.length === 1 && apiKeys[0] === SPECIAL_API_KEYS.DEMO;
+    // Check if we're in demo mode - only compute this once
+    const isDemoMode = useMemo(
+      () => apiKeys?.length === 1 && apiKeys[0] === SPECIAL_API_KEYS.DEMO,
+      [apiKeys],
+    );
 
     // Memoize API key items to prevent recreating them on each render
     const apiKeyItems = useMemo(() => {
@@ -36,29 +41,35 @@ const ApiKeySelector = memo<ApiKeySelectorProps>(
       ));
     }, [apiKeys, isDemoMode]);
 
+    // Render the demo mode UI
+    const renderDemoMode = useMemo(
+      () => (
+        <div className="flex items-center">
+          <Badge className="ml-4 bg-neutral-200 dark:bg-neutral-1100">
+            DEMO ONLY
+          </Badge>
+          <Tooltip
+            className="ml-0"
+            triggerElement={
+              <Icon
+                name="icon-gui-information-circle-outline"
+                size="16px"
+                color="text-neutral-700 dark:text-neutral-600"
+              />
+            }
+          >
+            This code example uses a temporary key that is rate limited and
+            expires in 4 hrs. Sign in to Ably to use your API keys instead.
+          </Tooltip>
+        </div>
+      ),
+      [],
+    );
+
     // Render the dropdown only if we have API keys
-    const apiKeyDropdown = useMemo(() => {
+    const renderApiKeyDropdown = useMemo(() => {
       if (isDemoMode) {
-        return (
-          <div className="flex items-center">
-            <Badge className="ml-4 bg-neutral-200 dark:bg-neutral-1100">
-              DEMO ONLY
-            </Badge>
-            <Tooltip
-              className="ml-0"
-              triggerElement={
-                <Icon
-                  name="icon-gui-information-circle-outline"
-                  size="16px"
-                  color="text-neutral-700 dark:text-neutral-600"
-                />
-              }
-            >
-              This code example uses a temporary key that is rate limited and
-              expires in 4 hrs. Sign in to Ably to use your API keys instead.
-            </Tooltip>
-          </div>
-        );
+        return renderDemoMode;
       }
 
       if (!apiKeys?.length) {
@@ -96,14 +107,21 @@ const ApiKeySelector = memo<ApiKeySelectorProps>(
           </Select.Portal>
         </Select.Root>
       );
-    }, [apiKeys, isDemoMode, selectedApiKey, onApiKeyChange]);
+    }, [
+      apiKeys,
+      isDemoMode,
+      selectedApiKey,
+      onApiKeyChange,
+      apiKeyItems,
+      renderDemoMode,
+    ]);
 
     return (
       <div className="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-12 py-12">
         <span className="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-4">
           API key:
         </span>
-        {apiKeyDropdown}
+        {renderApiKeyDropdown}
       </div>
     );
   },

@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useState, useCallback, memo } from "react";
 import Icon from "../Icon";
 import Code from "../Code";
 import cn from "../utils/cn";
@@ -19,10 +19,10 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
 }) => {
   const { isCopied, copy } = useCopyToClipboard();
   const codeRef = useRef<HTMLDivElement>(null);
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
+  // Handler to copy the shell command content
   const handleCopy = useCallback(() => {
-    if (!codeRef.current) return;
     copy(content);
   }, [copy, content]);
 
@@ -66,4 +66,6 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
   );
 };
 
-export default ShellCommandView;
+ShellCommandView.displayName = "ShellCommandView";
+
+export default memo(ShellCommandView);
