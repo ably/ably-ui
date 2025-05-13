@@ -212,15 +212,6 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
         <p class="mr-24 font-mono text-right text-neutral-800">
           7
         </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          8
-        </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          9
-        </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          10
-        </p>
       </div>
       <pre lang="javascript">
         <code class="language-javascript ui-text-code">
@@ -292,26 +283,6 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
           </span>
           );
 });
-          <span class="hljs-comment">
-            // Publish a message to the channel
-          </span>
-          channel.
-          <span class="hljs-title function_">
-            publish
-          </span>
-          (
-          <span class="hljs-string">
-            'event'
-          </span>
-          , {
-          <span class="hljs-attr">
-            text
-          </span>
-          :
-          <span class="hljs-string">
-            'Hello world!'
-          </span>
-          });
         </code>
       </pre>
     </div>
@@ -336,14 +307,14 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
     <div class="w-[48px]">
     </div>
   </div>
-  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12">
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] inline-flex items-center px-12 cursor-pointer">
     <svg class="mr-8"
          style="width: 16px; height: 16px;"
     >
       <use xlink:href="#sprite-icon-tech-json">
       </use>
     </svg>
-    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JSON
     </span>
   </div>
@@ -766,14 +737,14 @@ exports[`Components/Code Snippet ShellMode smoke-test 1`] = `
 
 exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
 <div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
-  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12 rounded-t-lg">
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] inline-flex items-center px-12 rounded-t-lg cursor-pointer">
     <svg class="mr-8"
          style="width: 16px; height: 16px;"
     >
       <use xlink:href="#sprite-icon-tech-javascript">
       </use>
     </svg>
-    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JavaScript
     </span>
   </div>
@@ -804,15 +775,6 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
         </p>
         <p class="mr-24 font-mono text-right text-neutral-800">
           7
-        </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          8
-        </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          9
-        </p>
-        <p class="mr-24 font-mono text-right text-neutral-800">
-          10
         </p>
       </div>
       <pre lang="javascript">
@@ -885,26 +847,6 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
           </span>
           );
 });
-          <span class="hljs-comment">
-            // Publish a message to the channel
-          </span>
-          channel.
-          <span class="hljs-title function_">
-            publish
-          </span>
-          (
-          <span class="hljs-string">
-            'event'
-          </span>
-          , {
-          <span class="hljs-attr">
-            text
-          </span>
-          :
-          <span class="hljs-string">
-            'Hello world!'
-          </span>
-          });
         </code>
       </pre>
     </div>
@@ -929,14 +871,14 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
     <div class="w-[48px]">
     </div>
   </div>
-  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] flex items-center px-12">
+  <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[34px] inline-flex items-center px-12 cursor-pointer">
     <svg class="mr-8"
          style="width: 16px; height: 16px;"
     >
       <use xlink:href="#sprite-icon-tech-javascript">
       </use>
     </svg>
-    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500">
+    <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JavaScript
     </span>
   </div>
@@ -1266,6 +1208,226 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
         </svg>
       </span>
     </button>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Custom Language Order
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-swift">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Swift
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-javascript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-python">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:r11:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-swift">
+            </use>
+          </svg>
+          <span>
+            Swift
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-24 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="swift">
+        <code class="language-swift ui-text-code">
+          <span class="hljs-keyword">
+            let
+          </span>
+          ably
+          <span class="hljs-operator">
+            =
+          </span>
+          <span class="hljs-type">
+            ARTRealtime
+          </span>
+          (key:
+          <span class="hljs-string">
+            "API_KEY"
+          </span>
+          )
+          <span class="hljs-keyword">
+            let
+          </span>
+          channel
+          <span class="hljs-operator">
+            =
+          </span>
+          ably.channels.get(
+          <span class="hljs-string">
+            "channel-name"
+          </span>
+          )
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.subscribe(
+          <span class="hljs-string">
+            "event"
+          </span>
+          ) { message
+          <span class="hljs-keyword">
+            in
+          </span>
+          <span class="hljs-built_in">
+            print
+          </span>
+          (
+          <span class="hljs-string">
+            "
+            <span class="hljs-subst">
+              \\(message.data)
+            </span>
+            "
+          </span>
+          )
+}
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -2416,6 +2578,180 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
           7
         </p>
       </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            'API_KEY'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]">
+  <div class="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+    <div class="flex space-x-6">
+      <div class="w-[12px] h-[12px] rounded-full bg-orange-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-yellow-500">
+      </div>
+      <div class="w-[12px] h-[12px] rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      No Line Numbers
+    </div>
+    <div class="w-[48px]">
+    </div>
+  </div>
+  <div class="p-8 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[58px]">
+    <div class="hidden sm:flex gap-8">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <use xlink:href="#sprite-icon-tech-javascript">
+          </use>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-40 p-[9px] gap-[9px] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <use xlink:href="#sprite-icon-tech-typescript">
+              </use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:ru:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-12 py-8 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-4 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-8"
+             style="pointer-events: none;"
+        >
+          <svg class
+               style="width: 20px; height: 20px;"
+          >
+            <use xlink:href="#sprite-icon-tech-javascript">
+            </use>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg class
+               style="width: 16px; height: 16px;"
+          >
+            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
+            </use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-32 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+         data-id="code"
+    >
       <pre lang="javascript">
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">

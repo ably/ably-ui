@@ -2,6 +2,96 @@ import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import CodeSnippet, { CodeSnippetProps } from "../CodeSnippet";
 
+// Common code snippets for reuse across stories
+const CODE_SNIPPETS = {
+  javascript: `var ably = new Ably.Realtime('API_KEY');
+var channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', function(message) {
+  console.log(message.data);
+});`,
+  typescript: `const ably = new Ably.Realtime('API_KEY');
+const channel = ably.channels.get('channel-name');
+            
+// Subscribe to messages on channel
+channel.subscribe('event', (message: Ably.Types.Message) => {
+  console.log(message.data);
+});`,
+  swift: `let ably = ARTRealtime(key: "API_KEY")
+let channel = ably.channels.get("channel-name")
+
+// Subscribe to messages on channel
+channel.subscribe("event") { message in
+  print("\\(message.data)")
+}`,
+  python: `ably = Ably.Realtime(key='API_KEY')
+channel = ably.channels.get('channel-name')
+
+# Subscribe to messages on channel
+def on_message(message):
+    print(message.data)
+
+channel.subscribe('event', on_message)`,
+  php: `var ably = new Ably.Rest('API_KEY');
+
+// Publish a message
+ably.channels.get('channel-name').publish('event', { text: 'Hello REST API!' }, function(err) {
+  if (err) {
+    console.log('Error publishing message:', err);
+  } else {
+    console.log('Message published successfully');
+  }
+});`,
+  kotlin: `val ably = AblyRest("API_KEY")
+
+// Publish a message
+ably.channels.get("channel-name").publish(
+  "event",
+  "{"text":"Hello REST API!"}"
+) { err ->
+  println(
+    if (err != null) "Error publishing message: $err"
+    else "Message published successfully"
+  )
+}`,
+  shellInstall: `npm install @ably/asset-tracking
+# or
+yarn add @ably/asset-tracking`,
+  shellStartServer: `cd server
+npm run start`,
+  shellComplex: `curl -X POST https://api.ably.io/keys \\
+  -H "Content-Type: application/json" \\
+  -H "Authorization: Bearer \${API_KEY}" \\
+  -d '{
+    "name": "My API Key",
+    "capabilities": {
+      "*": ["publish", "subscribe"]
+    }
+  }'`,
+  json: `{
+  "items": [
+    {
+      "id": "XeETKz24PM:0:0",
+      "clientId": "user123",
+      "connectionId": "hCD9Jksk28",
+      "timestamp": 1654321098765,
+      "name": "event",
+      "data": {
+        "text": "Hello world!",
+        "id": 42,
+        "metadata": {
+          "source": "mobile-app",
+          "priority": "high"
+        }
+      },
+      "encoding": "json"
+    }
+  ],
+  "hasNext": true
+}`,
+};
+
 /**
  * The CodeSnippet component displays code with language selector tabs.
  * It automatically extracts language information from its children and provides
@@ -39,26 +129,10 @@ export const Default: Story = {
   render: () => (
     <CodeSnippet>
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -72,18 +146,7 @@ export const SingleLanguage: Story = {
   render: () => (
     <CodeSnippet>
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});
-
-// Publish a message to the channel
-channel.publish('event', { text: 'Hello world!' });`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -96,37 +159,13 @@ export const WithHeaderRow: Story = {
   render: () => (
     <CodeSnippet headerRow title="Subscribe Example">
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
       <pre>
-        <code className="language-swift">
-          {`let ably = ARTRealtime(key: "API_KEY")
-let channel = ably.channels.get("channel-name")
-
-// Subscribe to messages on channel
-channel.subscribe("event") { message in
-  print("\\(message.data)")
-}`}
-        </code>
+        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -140,15 +179,7 @@ export const SingleLanguageWithHeader: Story = {
   render: () => (
     <CodeSnippet headerRow title="JavaScript Example">
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -161,37 +192,13 @@ export const WithDefaultLanguage: Story = {
   render: () => (
     <CodeSnippet headerRow title="TypeScript Example" lang="typescript">
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
       <pre>
-        <code className="language-swift">
-          {`let ably = ARTRealtime(key: "API_KEY")
-let channel = ably.channels.get("channel-name")
-
-// Subscribe to messages on channel
-channel.subscribe("event") { message in
-  print("\\(message.data)")
-}`}
-        </code>
+        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -206,26 +213,10 @@ export const WithMissingLanguageSnippet: Story = {
   render: () => (
     <CodeSnippet headerRow title="Missing Language Example" lang="ruby">
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -248,47 +239,19 @@ export const WithOnChangeCallback: Story = {
         >
           <pre>
             <code className="language-realtime_javascript">
-              {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
+              {CODE_SNIPPETS.javascript}
             </code>
           </pre>
           <pre>
             <code className="language-realtime_typescript">
-              {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
+              {CODE_SNIPPETS.typescript}
             </code>
           </pre>
           <pre>
-            <code className="language-rest_swift">
-              {`let ably = ARTRealtime(key: "API_KEY")
-let channel = ably.channels.get("channel-name")
-
-// Subscribe to messages on channel
-channel.subscribe("event") { message in
-  print("\\(message.data)")
-}`}
-            </code>
+            <code className="language-rest_swift">{CODE_SNIPPETS.swift}</code>
           </pre>
           <pre>
-            <code className="language-rest_php">
-              {`let ably = ARTRealtime(key: "API_KEY")
-let channel = ably.channels.get("channel-name")
-
-// Subscribe to messages on channel
-channel.subscribe("event") { message in 
-  print("\\(message.data)")
-}`}
-            </code>
+            <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
           </pre>
         </CodeSnippet>
       </div>
@@ -303,26 +266,10 @@ export const WithDemoApiKeys: Story = {
   render: () => (
     <CodeSnippet headerRow title="Demo API Keys" apiKeys={["demo"]}>
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -340,26 +287,10 @@ export const WithApiKeys: Story = {
       apiKeys={["abcd1234", "efgh5678", "ijkl9012"]}
     >
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
       <pre>
-        <code className="language-typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
-        </code>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -374,49 +305,19 @@ export const WithSDKTypes: Story = {
     <CodeSnippet headerRow title="SDK Type Example">
       <pre>
         <code className="language-realtime_javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});`}
+          {CODE_SNIPPETS.javascript}
         </code>
       </pre>
       <pre>
         <code className="language-realtime_typescript">
-          {`const ably = new Ably.Realtime('API_KEY');
-const channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', (message: Ably.Types.Message) => {
-  console.log(message.data);
-});`}
+          {CODE_SNIPPETS.typescript}
         </code>
       </pre>
       <pre>
-        <code className="language-rest_php">
-          {`var ably = new Ably.Rest('API_KEY');
-
-// Publish a message
-ably.channels.get('channel-name').publish('event', { text: 'Hello REST API!' }, function(err) {
-  if (err) {
-    console.log('Error publishing message:', err);
-  } else {
-    console.log('Message published successfully');
-  }
-});`}
-        </code>
+        <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
       </pre>
       <pre>
-        <code className="language-rest_kotlin">
-          {`const ably = new Ably.Rest('API_KEY');
-
-// Publish a message
-ably.channels.get('channel-name').publish('event', { text: 'Hello REST API!' })
-  .then(() => console.log('Message published successfully'))
-  .catch(err => console.log('Error publishing message:', err));`}
-        </code>
+        <code className="language-rest_kotlin">{CODE_SNIPPETS.kotlin}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -430,11 +331,7 @@ export const ShellMode: Story = {
   render: () => (
     <CodeSnippet>
       <pre>
-        <code className="language-shell">
-          {`npm install @ably/asset-tracking
-# or
-yarn add @ably/asset-tracking`}
-        </code>
+        <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -451,11 +348,7 @@ export const MultipleShellExamples: Story = {
         <h3 className="ui-text-h3 mb-8">Installation</h3>
         <CodeSnippet>
           <pre>
-            <code className="language-shell">
-              {`npm install @ably/asset-tracking
-# or
-yarn add @ably/asset-tracking`}
-            </code>
+            <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
           </pre>
         </CodeSnippet>
       </div>
@@ -465,8 +358,7 @@ yarn add @ably/asset-tracking`}
         <CodeSnippet>
           <pre>
             <code className="language-shell">
-              {`cd server
-npm run start`}
+              {CODE_SNIPPETS.shellStartServer}
             </code>
           </pre>
         </CodeSnippet>
@@ -476,17 +368,7 @@ npm run start`}
         <h3 className="ui-text-h3 mb-8">Complex command</h3>
         <CodeSnippet>
           <pre>
-            <code className="language-shell">
-              {`curl -X POST https://api.ably.io/keys \\
-  -H "Content-Type: application/json" \\
-  -H "Authorization: Bearer \${API_KEY}" \\
-  -d '{
-    "name": "My API Key",
-    "capabilities": {
-      "*": ["publish", "subscribe"]
-    }
-  }'`}
-            </code>
+            <code className="language-shell">{CODE_SNIPPETS.shellComplex}</code>
           </pre>
         </CodeSnippet>
       </div>
@@ -502,18 +384,7 @@ export const FixedMode: Story = {
   render: () => (
     <CodeSnippet fixed>
       <pre>
-        <code className="language-javascript">
-          {`var ably = new Ably.Realtime('API_KEY');
-var channel = ably.channels.get('channel-name');
-            
-// Subscribe to messages on channel
-channel.subscribe('event', function(message) {
-  console.log(message.data);
-});
-
-// Publish a message to the channel
-channel.publish('event', { text: 'Hello world!' });`}
-        </code>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>
     </CodeSnippet>
   ),
@@ -528,29 +399,51 @@ export const JsonOnlySnippet: Story = {
   render: () => (
     <CodeSnippet headerRow title="JSON-Only Example" lang="ruby">
       <pre>
-        <code className="language-json">
-          {`{
-  "items": [
-    {
-      "id": "XeETKz24PM:0:0",
-      "clientId": "user123",
-      "connectionId": "hCD9Jksk28",
-      "timestamp": 1654321098765,
-      "name": "event",
-      "data": {
-        "text": "Hello world!",
-        "id": 42,
-        "metadata": {
-          "source": "mobile-app",
-          "priority": "high"
-        }
-      },
-      "encoding": "json"
-    }
-  ],
-  "hasNext": true
-}`}
-        </code>
+        <code className="language-json">{CODE_SNIPPETS.json}</code>
+      </pre>
+    </CodeSnippet>
+  ),
+};
+
+/**
+ * CodeSnippet with line numbers disabled via the showCodeLines prop.
+ * This demonstrates how to hide line numbers in code snippets when they're not needed.
+ */
+export const WithoutCodeLines: Story = {
+  render: () => (
+    <CodeSnippet showCodeLines={false} headerRow title="No Line Numbers">
+      <pre>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
+      </pre>
+      <pre>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
+      </pre>
+    </CodeSnippet>
+  ),
+};
+
+/**
+ * CodeSnippet with custom language ordering that controls the display order
+ * of languages in the selector tabs.
+ */
+export const WithCustomLanguageOrder: Story = {
+  render: () => (
+    <CodeSnippet
+      headerRow
+      title="Custom Language Order"
+      languageOrdering={["swift", "typescript", "javascript"]}
+    >
+      <pre>
+        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
+      </pre>
+      <pre>
+        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
+      </pre>
+      <pre>
+        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
+      </pre>
+      <pre>
+        <code className="language-python">{CODE_SNIPPETS.python}</code>
       </pre>
     </CodeSnippet>
   ),
