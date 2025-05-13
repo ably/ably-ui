@@ -20,7 +20,7 @@ import CopyButton from "./CodeSnippet/CopyButton";
 import TooltipButton from "./CodeSnippet/TooltipButton";
 
 // Define SDK type
-type SDKType = "realtime" | "rest" | null;
+export type SDKType = "realtime" | "rest" | null;
 
 export interface CodeSnippetProps {
   /**
