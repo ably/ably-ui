@@ -207,6 +207,8 @@ export const menuItemsForHeader: MenuItem[] = [
   ...menuItemLinks,
 ];
 
+// Since the product-tile data is used in other projects, we update it here
+// for the meganav.
 export const productsForNav = {
   ...products,
   pubsub: { ...products.pubsub, link: "/pubsub" },
@@ -217,4 +219,5 @@ export const productsForNav = {
     ...products.assetTracking,
     link: "/solutions/asset-tracking",
   },
+  liveObjects: { ...products.liveObjects, link: "/liveobjects" },
 };
