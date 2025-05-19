@@ -5,7 +5,7 @@ export const planData: PricingDataFeature[] = [
   {
     title: {
       content: "Free",
-      className: "font-mono text-p3 uppercase font-extrabold tracking-[0.16em]",
+      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
       color: "text-neutral-600 dark:text-neutral-700",
     },
     description: {
@@ -46,7 +46,7 @@ export const planData: PricingDataFeature[] = [
   {
     title: {
       content: "Standard",
-      className: "font-mono text-p3 uppercase font-extrabold tracking-[0.16em]",
+      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
       color: "text-neutral-1300 dark:text-neutral-000",
     },
     description: {
@@ -101,7 +101,7 @@ export const planData: PricingDataFeature[] = [
   {
     title: {
       content: "Pro",
-      className: "font-mono text-p3 uppercase font-extrabold tracking-[0.16em]",
+      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
       color: "text-neutral-1300 dark:text-neutral-000",
     },
     description: {
@@ -157,7 +157,7 @@ export const planData: PricingDataFeature[] = [
   {
     title: {
       content: "Enterprise",
-      className: "font-mono text-p3 uppercase font-extrabold tracking-[0.16em]",
+      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
       color: "text-orange-600",
     },
     description: {
