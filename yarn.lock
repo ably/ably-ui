@@ -2601,10 +2601,10 @@
     loupe "^3.1.2"
     tinyrainbow "^1.2.0"
 
-"@whitespace/storybook-addon-html@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@whitespace/storybook-addon-html/-/storybook-addon-html-6.1.1.tgz"
-  integrity sha512-sq/9c6s4PXugl//Q5iFwKoHF3tBDTEfJQubb62HWspF+CqBrDLHVEh7VYoEjubm5LjihxdFV3+mjj8Ck6bnoHQ==
+"@whitespace/storybook-addon-html@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@whitespace/storybook-addon-html/-/storybook-addon-html-7.0.0.tgz#dc043f0fab428040e1939b641e16e3b2f7f1de68"
+  integrity sha512-GCpy1Xch7v3UZ/TmKUFnF0lFEt6qct/zqO/64LfoEOwr3zV5YDdidHBURSNp5qK8Q68wPLs/nVhbAzAEvudR8w==
 
 "@xhmikosr/archive-type@^7.0.0":
   version "7.0.0"
