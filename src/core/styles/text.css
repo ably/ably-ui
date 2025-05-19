@@ -1,36 +1,36 @@
 @layer components {
   .ui-text-title {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-title-xs xs:text-title xl:text-title-xl;
     @apply tracking-tighten-0.015 xs:tracking-tighten-0.02 xl:tracking-tighten-0.02;
   }
 
   .ui-text-h1 {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-h1-xs xs:text-h1 xl:text-h1-xl;
     @apply tracking-tighten-0.0125 xs:tracking-tighten-0.015;
   }
 
   .ui-text-h2 {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-h2-xs xs:text-h2 xl:text-h2-xl;
     @apply tracking-tighten-0.015 xs:tracking-tighten-0.01;
   }
 
   .ui-text-h3 {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-h3;
     @apply tracking-tighten-0.005;
   }
 
   .ui-text-h4 {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-h4;
     @apply tracking-tighten-0.0015;
   }
 
   .ui-text-h5 {
-    @apply font-sans font-extrabold text-cool-black;
+    @apply font-sans font-bold text-cool-black;
     @apply text-h5;
     @apply tracking-tighten-0.0025;
   }
