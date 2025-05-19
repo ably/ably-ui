@@ -51,7 +51,6 @@
     "playwright": "^1.49.1",
     "posthog-js": "^1.217.4",
     "prettier": "^3.2.5",
-    "react-syntax-highlighter": "^15.6.1",
     "storybook": "^8.6.4",
     "storybook-dark-mode": "^4.0.2",
     "svg-sprite": "^2.0.4",
