@@ -4,7 +4,6 @@ module.exports = {
   darkMode: ["selector", ".ui-theme-dark"],
   theme: {
     screens: {
-      // CSS custom properties can't be used in media queries
       xs: "428px",
       sm: "768px",
       md: "1040px",
@@ -57,7 +56,6 @@ module.exports = {
       "neutral-1100": "var(--color-neutral-1100)",
       "neutral-1200": "var(--color-neutral-1200)",
       "neutral-1300": "var(--color-neutral-1300)",
-
       "orange-100": "var(--color-orange-100)",
       "orange-200": "var(--color-orange-200)",
       "orange-300": "var(--color-orange-300)",
@@ -69,7 +67,6 @@ module.exports = {
       "orange-900": "var(--color-orange-900)",
       "orange-1000": "var(--color-orange-1000)",
       "orange-1100": "var(--color-orange-1100)",
-
       "yellow-100": "var(--color-yellow-100)",
       "yellow-200": "var(--color-yellow-200)",
       "yellow-300": "var(--color-yellow-300)",
@@ -115,7 +112,6 @@ module.exports = {
       "pink-700": "var(--color-pink-700)",
       "pink-800": "var(--color-pink-800)",
       "pink-900": "var(--color-pink-900)",
-
       "gui-blue-default-light": "var(--color-gui-blue-default-light)",
       "gui-blue-hover-light": "var(--color-gui-blue-hover-light)",
       "gui-blue-active-light": "var(--color-gui-blue-active-light)",
@@ -130,7 +126,6 @@ module.exports = {
       "gui-error-red": "var(--color-gui-error-red)",
       "gui-focus": "var(--color-gui-focus)",
       "gui-focus-outline": "var(--color-gui-focus-outline)",
-
       transparent: "transparent",
       "cool-black": "var(--color-neutral-1300)",
       "active-orange": "var(--color-orange-600)",
@@ -200,83 +195,6 @@ module.exports = {
         "monospace",
       ],
     },
-    margin: (theme, { negative }) => ({
-      auto: "auto",
-      ...theme("spacing"),
-      ...negative(theme("spacing")),
-    }),
-    padding: (theme) => ({
-      btn: "var(--spacing-btn)",
-      "btn-small": "var(--spacing-btn-small)",
-      "btn-xsmall": "var(--spacing-btn-xsmall)",
-      "btn-large": "var(--spacing-btn-large)",
-      "menu-row": "var(--spacing-menu-row)",
-      "menu-row-snug": "var(--spacing-menu-row-snug)",
-      "menu-row-title": "var(--spacing-menu-row-title)",
-      media: "var(--spacing-media)",
-      input: "var(--spacing-input)",
-      overline: "var(--spacing-overline)",
-      ...theme("spacing"),
-    }),
-    spacing: {
-      0: "var(--spacing-0)",
-      1: "var(--spacing-1)",
-      2: "var(--spacing-2)",
-      4: "var(--spacing-4)",
-      6: "var(--spacing-6)",
-      8: "var(--spacing-8)",
-      12: "var(--spacing-12)",
-      14: "var(--spacing-14)",
-      16: "var(--spacing-16)",
-      20: "var(--spacing-20)",
-      24: "var(--spacing-24)",
-      32: "var(--spacing-32)",
-      36: "var(--spacing-36)",
-      40: "var(--spacing-40)",
-      48: "var(--spacing-48)",
-      64: "var(--spacing-64)",
-      72: "var(--spacing-72)",
-      80: "var(--spacing-80)",
-      88: "var(--spacing-88)",
-      96: "var(--spacing-96)",
-      128: "var(--spacing-128)",
-      160: "var(--spacing-160)",
-      256: "var(--spacing-256)",
-    },
-    maxWidth: (theme, { breakpoints }) => ({
-      0: "0",
-      none: "none",
-      unset: "unset",
-      ...theme("spacing"),
-      ...breakpoints(theme("screens")),
-    }),
-    boxShadow: {
-      subtle: "0px 1px 0px var(--color-neutral-500)",
-      tooltip: "0px 5px 10px 0px #00000022",
-      container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
-      "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
-      input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", // color-gui-hover at 50%
-      quote: "0rem 1.5rem 2rem 0rem #0000000d",
-      // opacity
-    },
-    dropShadow: {
-      toggle: ["0 4px 4px rgba(0,0,0,0.25)", "0 4px 8px rgba(0,0,0,0.15)"],
-    },
-    letterSpacing: {
-      "tighten-0.025": "var(--ls-tighten-0_025)",
-      "tighten-0.02": "var(--ls-tighten-0_02)",
-      "tighten-0.015": "var(--ls-tighten-0_015)",
-      "tighten-0.0125": "var(--ls-tighten-0_0125)",
-      "tighten-0.01": "var(--ls-tighten-0_01)",
-      "tighten-0.005": "var(--ls-tighten-0_005)",
-      "tighten-0.0025": "var(--ls-tighten-0_0025)",
-      "tighten-0.0015": "var(--ls-tighten-0_0015)",
-      "widen-0": 0,
-      "widen-0.1": "var(--ls-widen-0_1)",
-      "widen-0.15": "var(--ls-widen-0_15)",
-      "widen-0.16": "var(--ls-widen-0_16)",
-      "widen-0.04": "var(--ls-widen-0_04)",
-    },
     extend: {
       backgroundImage: {
         "gradient-active-orange": "var(--gradient-active-orange)",
@@ -289,13 +207,12 @@ module.exports = {
       },
       transitionProperty: {
         input: "background-color, box-shadow",
-        filter: "filter",
+      },
+      dropShadow: {
+        toggle: ["0 4px 4px rgba(0,0,0,0.25)", "0 4px 8px rgba(0,0,0,0.15)"],
       },
       outline: {
         "gui-focus": "1.5px solid var(--color-gui-focus-outline)",
-      },
-      width: {
-        "extend-8": "calc(100% + var(--spacing-8))",
       },
       borderWidth: {
         btn: "1.5px",
@@ -304,13 +221,29 @@ module.exports = {
         dynamic:
           "repeat(var(--dynamic-grid-columns-count), minmax(var(--dynamic-grid-column-min-width), var(--dynamic-grid-column-max-width)))",
       },
-      gridRowStart: {
-        8: "8",
-      },
       lineHeight: {
         dense: "var(--lh-dense)",
         snug: "var(--lh-snug)",
         relaxed: "var(--lh-relaxed)",
+      },
+      padding: {
+        btn: "var(--spacing-btn)",
+        "btn-small": "var(--spacing-btn-small)",
+        "btn-xsmall": "var(--spacing-btn-xsmall)",
+        "btn-large": "var(--spacing-btn-large)",
+        "menu-row": "var(--spacing-menu-row)",
+        "menu-row-snug": "var(--spacing-menu-row-snug)",
+        "menu-row-title": "var(--spacing-menu-row-title)",
+        media: "var(--spacing-media)",
+        input: "var(--spacing-input)",
+      },
+      boxShadow: {
+        subtle: "0px 1px 0px var(--color-neutral-500)",
+        tooltip: "0px 5px 10px 0px #00000022",
+        container: "0px 40px 40px rgba(0, 0, 0, 0.1)",
+        "container-subtle": "0px 16px 64px rgba(0, 0, 0, 0.1)",
+        input: "0px 0px 8px 0px rgba(8, 103, 196, 1)", // color-gui-hover at 50%
+        quote: "0rem 1.5rem 2rem 0rem #0000000d",
       },
       keyframes: {
         tooltipEntry: {
@@ -380,28 +313,6 @@ module.exports = {
       square: "square",
       circle: "circle",
     },
-  },
-  variants: {
-    extend: {
-      borderColor: ["hover", "focus", "active", "group-focus", "disabled"],
-      textColor: [
-        "hover",
-        "focus",
-        "active",
-        "group-focus",
-        "disabled",
-        "visited",
-      ],
-      display: ["group-focus"],
-      backgroundColor: ["hover", "focus", "active", "group-focus", "disabled"],
-      backgroundImage: ["hover", "active", "focus"],
-      filter: ["hover"],
-      cursor: ["disabled"],
-      inset: ["group-hover"],
-    },
-  },
-  corePlugins: {
-    preflight: false,
   },
   plugins: [require("@tailwindcss/container-queries")],
 };
