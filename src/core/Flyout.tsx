@@ -112,6 +112,7 @@ const Flyout = ({
             content ? (
               <NavigationMenuItem key={name}>
                 <NavigationMenuTrigger
+                  onClick={(event) => event.preventDefault()}
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
                     "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
