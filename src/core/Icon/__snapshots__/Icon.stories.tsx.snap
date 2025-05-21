@@ -6056,6 +6056,108 @@ exports[`Components/Icon GUIIcons smoke-test 1`] = `
           <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
                style="width: 24px; height: 24px;"
           >
+            <use xlink:href="#sprite-icon-gui-prod-asset-tracking-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-asset-tracking-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-gui-prod-chat-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-chat-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-gui-prod-liveobjects-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-liveobjects-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-gui-prod-livesync-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-livesync-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-gui-prod-pubsub-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-pubsub-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
+            <use xlink:href="#sprite-icon-gui-prod-spaces-outline">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+        <p>
+          icon-gui-prod-spaces-outline
+        </p>
+      </code>
+    </div>
+    <div class="border p-8 flex flex-col items-center justify-between gap-12 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
             <use xlink:href="#sprite-icon-gui-puzzle-piece-outline">
             </use>
           </svg>
