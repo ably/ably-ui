@@ -35,7 +35,7 @@ const SlideIndicator = ({
 }: SliderIndicatorProps) => {
   return (
     <ul
-      className={`flex gap-4 left-1/2 ${
+      className={`flex gap-1 left-1/2 ${
         isInline ? "bottom-0" : "absolute bottom-0 transform -translate-x-1/2"
       }`}
     >
@@ -43,7 +43,7 @@ const SlideIndicator = ({
         intervalIndicator ? (
           <li
             key={i}
-            className="relative w-40 h-4 mx-1 rounded-full bg-neutral-500"
+            className="relative w-10 h-1 mx-px rounded-full bg-neutral-500"
           >
             {i === activeIndex && (
               <span
@@ -154,7 +154,7 @@ const Slider = ({ children, options }: SliderProps) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-y-visible overflow-x-clip w-full py-40">
+      <div className="overflow-y-visible overflow-x-clip w-full py-10">
         <div
           className={`flex items-center ${
             translationCoefficient !== 0
@@ -168,7 +168,7 @@ const Slider = ({ children, options }: SliderProps) => {
           {slides.map((child, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 flex justify-center sm:px-60"
+              className="w-full flex-shrink-0 flex justify-center sm:px-[3.75rem]"
             >
               {child}
             </div>
@@ -179,17 +179,17 @@ const Slider = ({ children, options }: SliderProps) => {
       <div
         className={`flex items-center pointer-events-none ${
           isInline
-            ? "ui-standard-container justify-center gap-24 -mt-16"
+            ? "ui-standard-container justify-center gap-6 -mt-4"
             : "sm:flex sm:absolute inset-0 justify-between"
         }`}
       >
         <button
           className={`${
-            isInline ? "w-32 h-32" : "hidden sm:flex w-48 h-48"
+            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left`}
           onClick={prev}
         >
-          <div className="ui-icon-cta-holder flex w-48">
+          <div className="ui-icon-cta-holder flex w-12">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
               <Icon name="icon-gui-arrow-long-left-outline" size="1.5rem" />
             </div>
@@ -209,11 +209,11 @@ const Slider = ({ children, options }: SliderProps) => {
 
         <button
           className={`${
-            isInline ? "w-32 h-32" : "hidden sm:flex w-48 h-48"
+            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right`}
           onClick={next}
         >
-          <div className="ui-icon-cta-holder flex w-48">
+          <div className="ui-icon-cta-holder flex w-12">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
               <Icon name="icon-gui-arrow-long-right-outline" size="1.5rem" />
             </div>

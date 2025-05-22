@@ -248,7 +248,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-24 md:px-64",
+          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 md:px-16",
           scrollpointClasses,
           {
             "md:top-auto": bannerVisible,
@@ -264,7 +264,7 @@ const Header: React.FC<HeaderProps> = ({
                 href={logoHref}
                 theme={theme}
                 additionalLinkAttrs={{
-                  className: cn("h-full focus-base rounded mr-32 w-[96px]", {
+                  className: cn("h-full focus-base rounded mr-8 w-24", {
                     "flex dark:hidden": theme === "light",
                     "hidden dark:flex": theme === "dark",
                   }),
@@ -273,7 +273,7 @@ const Header: React.FC<HeaderProps> = ({
             ))}
             <div className={FLEXIBLE_DESKTOP_CLASSES}>{nav}</div>
           </nav>
-          <div className="flex md:hidden flex-1 items-center justify-end gap-24 h-full">
+          <div className="flex md:hidden flex-1 items-center justify-end gap-6 h-full">
             {searchButtonVisibility !== "desktop" ? wrappedSearchButton : null}
             <button
               className="cursor-pointer focus-base rounded flex items-center p-0"
@@ -331,7 +331,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[76px] overflow-y-hidden mx-12 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-50"
+            className="md:hidden fixed flex flex-col top-[4.75rem] overflow-y-hidden mx-3 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-50"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(

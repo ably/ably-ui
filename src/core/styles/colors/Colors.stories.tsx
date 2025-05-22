@@ -9,13 +9,13 @@ const colorSet = (colors, useClass = "") =>
   colors.map((color) => (
     <div
       key={color}
-      className="rounded-lg w-128 bg-neutral-100 dark:bg-neutral-1200 flex flex-col"
+      className="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col"
     >
       <div
-        className={`h-[100px] rounded-t-lg ${useClass}`}
+        className={`h-[6.25rem] rounded-t-lg ${useClass}`}
         style={{ backgroundColor: useClass ? `` : `var(--color-${color})` }}
       />
-      <div className="p-12 flex flex-col flex-1">
+      <div className="p-3 flex flex-col flex-1">
         <p className="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
           {color}
         </p>
@@ -46,7 +46,7 @@ const varToValues = (color: string) => {
 
 export const NeutralColors = {
   render: () => (
-    <div className="flex flex-wrap gap-24">
+    <div className="flex flex-wrap gap-6">
       {colorSet([...colorRoles.neutral])}
     </div>
   ),
@@ -61,7 +61,7 @@ export const NeutralColors = {
 
 export const OrangeColors = {
   render: () => (
-    <div className="flex flex-wrap gap-24">
+    <div className="flex flex-wrap gap-6">
       {colorSet([...colorRoles.orange])}
     </div>
   ),
@@ -76,7 +76,7 @@ export const OrangeColors = {
 
 export const SecondaryColors = {
   render: () => (
-    <div className="flex flex-wrap gap-24">
+    <div className="flex flex-wrap gap-6">
       {colorSet([...colorRoles.secondary])}
     </div>
   ),
@@ -91,7 +91,7 @@ export const SecondaryColors = {
 
 export const GUIColors = {
   render: () => (
-    <div className="flex flex-wrap gap-24">{colorSet([...colorRoles.gui])}</div>
+    <div className="flex flex-wrap gap-6">{colorSet([...colorRoles.gui])}</div>
   ),
   parameters: {
     docs: {

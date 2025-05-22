@@ -9,7 +9,7 @@ const LabelCell = ({
   ...rest
 }: PropsWithChildren<React.TdHTMLAttributes<HTMLTableCellElement>>) => {
   const classes = `
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell ${
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell ${
       rest?.className ?? ""
     }
   `;
@@ -29,11 +29,11 @@ const TableCell = ({
   <td
     {...rest}
     className={`
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
         ${
           isRowHeader
-            ? "rounded-l-none rounded-r sm:rounded-lg py-20 px-24"
-            : "py-6"
+            ? "rounded-l-none rounded-r sm:rounded-lg py-5 px-6"
+            : "py-1.5"
         }
         ${rest?.className ?? ""}
       `}
@@ -48,7 +48,7 @@ const HeaderCell = ({
 }: PropsWithChildren<React.TdHTMLAttributes<HTMLTableCellElement>>) => (
   <td
     {...rest}
-    className={`ui-text-h3 px-24 py-24 hidden sm:table-cell ${
+    className={`ui-text-h3 px-6 py-6 hidden sm:table-cell ${
       rest?.className ?? ""
     }`}
   >
@@ -62,7 +62,7 @@ const CtaCell = ({
 }: PropsWithChildren<React.TdHTMLAttributes<HTMLTableCellElement>>) => (
   <td
     {...rest}
-    className={`pt-24 hidden sm:table-cell ${rest?.className ?? ""}`}
+    className={`pt-6 hidden sm:table-cell ${rest?.className ?? ""}`}
   >
     {children}
   </td>

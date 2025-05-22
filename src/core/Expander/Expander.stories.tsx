@@ -22,7 +22,7 @@ export default {
 const longContentInner = (
   <div>
     <p>Ipsum</p>
-    <ul className="mb-16 list-inside list-disc">
+    <ul className="mb-4 list-inside list-disc">
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
       <li>Sed convallis ex pharetra, tristique tellus vel, rhoncus velit.</li>
       <li>Mauris molestie felis et scelerisque ullamcorper.</li>
@@ -34,19 +34,19 @@ const longContentInner = (
       <li>Donec nec turpis vel urna egestas fringilla.</li>
     </ul>
     <p>Ipsum</p>
-    <ul className="mb-16 list-inside list-disc">
+    <ul className="mb-4 list-inside list-disc">
       <li>Mauris ut nibh vel metus cursus semper.</li>
       <li>Ut mattis tortor eu urna accumsan gravida.</li>
       <li>Nunc pellentesque neque at elit pretium tempor.</li>
       <li>Curabitur finibus magna vitae nunc varius fermentum.</li>
     </ul>
-    <ul className="mb-16 list-inside list-disc">
+    <ul className="mb-4 list-inside list-disc">
       <li>Curabitur vehicula mi iaculis, luctus augue eu, venenatis quam.</li>
       <li>Praesent in eros efficitur, consequat ante eu, faucibus arcu.</li>
       <li>Nulla laoreet nibh a odio interdum, non molestie diam auctor.</li>
     </ul>
     <p>Ipsum</p>
-    <ul className="mb-16 list-inside list-disc">
+    <ul className="mb-4 list-inside list-disc">
       <li>
         Praesent aliquam diam tincidunt, sollicitudin tortor eget, vulputate
         lacus.
@@ -59,7 +59,7 @@ const longContentInner = (
       <li>Aenean a elit sed nibh pretium lacinia sed convallis sapien.</li>
     </ul>
     <p>Ipsum</p>
-    <ul className="mb-16 list-inside list-disc">
+    <ul className="mb-4 list-inside list-disc">
       <li>
         Nulla malesuada libero id dolor aliquam, non sagittis mi scelerisque.
       </li>
@@ -88,7 +88,7 @@ export const ShortContent = {
     <Expander>
       <div>
         <p>Ipsum</p>
-        <ul className="mb-16 list-inside list-disc">
+        <ul className="mb-4 list-inside list-disc">
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
           <li>
             Sed convallis ex pharetra, tristique tellus vel, rhoncus velit.
@@ -117,7 +117,7 @@ export const ShortContent = {
 export const OverriddenContentStyles = {
   render: () => (
     <Expander
-      className="bg-neutral-400 p-16 rounded-lg"
+      className="bg-neutral-400 p-4 rounded-lg"
       fadeClassName="from-neutral-800"
     >
       {longContentInner}
@@ -138,7 +138,7 @@ export const OverriddenControls = {
     <Expander
       controlsClassName="ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
       controlsOpenedLabel={
-        <span className="flex items-center gap-8">
+        <span className="flex items-center gap-2">
           Away with you, knave.{" "}
           <Icon
             color="text-pink-500"

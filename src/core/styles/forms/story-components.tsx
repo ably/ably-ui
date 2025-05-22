@@ -34,7 +34,7 @@ export const Checkbox = ({ index, disabled }: FormElementProps) => (
 );
 
 export const RadioButton = ({ index, disabled }: FormElementProps) => (
-  <div className="flex items-center gap-8">
+  <div className="flex items-center gap-2">
     <input
       data-ui-radio-native=""
       type="radio"

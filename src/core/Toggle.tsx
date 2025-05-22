@@ -17,11 +17,11 @@ const Toggle: React.FC<ToggleProps> = ({
   className,
   ...props
 }) => {
-  const rootSize = size === "sm" ? "w-[42px] h-24" : "w-[56px] h-32";
+  const rootSize = size === "sm" ? "w-[2.625rem] h-6" : "w-14 h-8";
   const thumbSize =
     size === "sm"
-      ? "w-[21px] h-[21px] translate-x-1 data-[state=checked]:translate-x-[20px]"
-      : "h-[28px] w-[28px] translate-x-2 data-[state=checked]:translate-x-[26px]";
+      ? "w-[1.3125rem] h-[1.3125rem] translate-x-px data-[state=checked]:translate-x-5"
+      : "h-7 w-7 translate-x-0.5 data-[state=checked]:translate-x-[1.625rem]";
 
   return (
     <div className="flex items-center">
@@ -42,7 +42,7 @@ const Toggle: React.FC<ToggleProps> = ({
         />
       </Switch.Root>
       {label ? (
-        <label className="ml-16" htmlFor={id}>
+        <label className="ml-4" htmlFor={id}>
           {label}
         </label>
       ) : null}

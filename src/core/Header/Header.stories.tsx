@@ -36,7 +36,7 @@ WithTabMenuNav.args = {
   nav: (
     <TabMenu
       tabs={["Tab 1", "Tab 2"]}
-      tabClassName="ui-text-label3 !px-16"
+      tabClassName="ui-text-label3 !px-4"
       options={{ underline: false, flexibleTabHeight: true }}
     />
   ),
@@ -44,9 +44,9 @@ WithTabMenuNav.args = {
     <TabMenu
       tabs={["Tab 1", "Tab 2"]}
       contents={["Content 1", "Content 2"]}
-      rootClassName="h-full overflow-y-hidden min-h-[51px] flex flex-col"
-      contentClassName="h-full py-16 overflow-y-scroll p-32"
-      tabClassName="ui-text-label2 !px-16"
+      rootClassName="h-full overflow-y-hidden min-h-[3.1875rem] flex flex-col"
+      contentClassName="h-full py-4 overflow-y-scroll p-8"
+      tabClassName="ui-text-label2 !px-4"
       options={{ flexibleTabWidth: true }}
     />
   ),
@@ -56,7 +56,7 @@ export const WithButtonNav = Template.bind({});
 WithButtonNav.args = {
   ...baseArgs,
   nav: (
-    <div className="flex gap-8">
+    <div className="flex gap-2">
       {["Products", "Solutions", "Company", "Pricing", "Docs"].map((link) => (
         <Button variant="secondary" size="xs" key={link}>
           {link}
@@ -66,7 +66,7 @@ WithButtonNav.args = {
   ),
   mobileNav: (
     <Accordion
-      className="p-16"
+      className="p-4"
       data={[
         { name: "Products", content: "Products content" },
         { name: "Solutions", content: "Solutions content" },
@@ -89,7 +89,7 @@ LoggedIn.args = {
 
 export const WithThemedScrollpoints = {
   render: () => (
-    <div className="h-[3000px] -m-16">
+    <div className="h-[187.5rem] -m-4">
       <Header
         {...WithButtonNav.args}
         themedScrollpoints={[
@@ -109,18 +109,18 @@ export const WithThemedScrollpoints = {
       />
       <div
         id="header-zone"
-        className="w-full bg-gradient-to-r from-neutral-000 to-orange-600 h-128 flex justify-center"
+        className="w-full bg-gradient-to-r from-neutral-000 to-orange-600 h-32 flex justify-center"
       >
-        <p className="ui-text-p2 text-neutral-1300 flex gap-4 items-center p-64">
+        <p className="ui-text-p2 text-neutral-1300 flex gap-1 items-center p-16">
           I&apos;m transparent! (scroll down{" "}
           <Icon name="icon-gui-arrow-down-outline" />)
         </p>
       </div>
       <div
         id="light-zone"
-        className="w-full h-[800px] bg-neutral-000 flex justify-center"
+        className="w-full h-[50rem] bg-neutral-000 flex justify-center"
       >
-        <p className="ui-text-p2 text-neutral-1300 p-64">
+        <p className="ui-text-p2 text-neutral-1300 p-16">
           I&apos;m light themed!
         </p>
       </div>
@@ -128,7 +128,7 @@ export const WithThemedScrollpoints = {
         id="dark-zone"
         className="w-full h-full bg-neutral-1300 flex justify-center"
       >
-        <p className="ui-text-p2 text-neutral-000 p-64">
+        <p className="ui-text-p2 text-neutral-000 p-16">
           I&apos;m dark themed!
         </p>
       </div>
@@ -140,6 +140,6 @@ export const WithSearchBar = Template.bind({});
 WithSearchBar.args = {
   ...baseArgs,
   searchBar: (
-    <input type="text" placeholder="Search" className="ui-input w-256" />
+    <input type="text" placeholder="Search" className="ui-input w-64" />
   ),
 };

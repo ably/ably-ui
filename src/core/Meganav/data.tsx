@@ -33,7 +33,7 @@ export type MenuItem = {
   panelClassName?: string;
 };
 
-const panelClassName = "w-full sm:w-[815px]";
+const panelClassName = "w-full sm:w-[50.9375rem]";
 
 const panelLeftFeatureClassName =
   "bg-neutral-100 dark:bg-neutral-1200 hidden md:grid border border-neutral-300 dark:border-neutral-1000 hover:border-neutral-400 dark:hover:border-neutral-800 rounded-lg cursor-pointer group/meganav-panel";
@@ -188,7 +188,7 @@ export const menuItemsForHeader: MenuItem[] = [
         panelLeftClassName={panelLeftFeatureClassName}
         panelRightItems={companyMenu}
         panelRightBottom={
-          <div className="flex-1 gap-x-8 hidden md:flex">
+          <div className="flex-1 gap-x-2 hidden md:flex">
             {ablyAwards.slice(0, 3).map((award) => (
               <img
                 key={award.desc}

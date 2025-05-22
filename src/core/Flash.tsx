@@ -159,18 +159,18 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
       data-testid="ui-flash"
     >
       <div
-        className={`${FLASH_BG_COLOR[type]} p-32 flex align-center rounded shadow-container-subtle`}
+        className={`${FLASH_BG_COLOR[type]} p-8 flex align-center rounded shadow-container-subtle`}
       >
         {withIcons[type] && iconColor[type] && (
           <Icon
             name={withIcons[type]}
             color={iconColor[type]}
             size="1.5rem"
-            additionalCSS="mr-16 self-baseline"
+            additionalCSS="mr-4 self-baseline"
           />
         )}
         <p
-          className={`ui-text-p1 mr-16 ${FLASH_TEXT_COLOR[type]}`}
+          className={`ui-text-p1 mr-4 ${FLASH_TEXT_COLOR[type]}`}
           dangerouslySetInnerHTML={{ __html: safeContent }}
         />
         <button

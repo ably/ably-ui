@@ -14,7 +14,7 @@ export const ProductTiles = {
       React.useState<ProductName | null>(null);
 
     return (
-      <div className="grid sm:grid-cols-3 gap-32">
+      <div className="grid sm:grid-cols-3 gap-8">
         {Object.keys(products).map((product) => (
           <ProductTile
             key={product}
@@ -39,7 +39,7 @@ export const ProductTiles = {
 export const StaticProductTiles = {
   render: () => {
     return (
-      <div className="grid sm:grid-cols-3 gap-32">
+      <div className="grid sm:grid-cols-3 gap-8">
         {Object.keys(products).map((product) => (
           <ProductTile key={product} name={product as ProductName} />
         ))}
@@ -79,7 +79,7 @@ export const ProductTileWithOverriddenStylesAndClick = {
 
 export const ProductTilesWithoutDescriptionsOrLabels = {
   render: () => (
-    <div className="grid sm:grid-cols-3 gap-32 justify-center">
+    <div className="grid sm:grid-cols-3 gap-8 justify-center">
       {Object.keys(products).map((product) => (
         <ProductTile
           key={product}
@@ -125,7 +125,7 @@ export const ProductTileWithFilledIcons = {
       React.useState<ProductName | null>(null);
 
     return (
-      <div className="grid sm:grid-cols-3 gap-32">
+      <div className="grid sm:grid-cols-3 gap-8">
         {Object.keys(products).map((product) => (
           <ProductTile
             key={product}

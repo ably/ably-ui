@@ -61,7 +61,7 @@ const renderIcons = (iconSet: IconName[]) => {
   return (
     <div>
       {iconSet.some((icon) => icon.includes("-gui-")) && (
-        <div className="flex items-center pt-16 gap-8 px-16 flex-wrap">
+        <div className="flex items-center pt-4 gap-2 px-4 flex-wrap">
           <span className="ui-text-p1 text-neutral-1300 dark:text-neutral-000">
             Filter icons:
           </span>
@@ -77,10 +77,10 @@ const renderIcons = (iconSet: IconName[]) => {
           ))}
         </div>
       )}
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-16 max-w-screen-lg mb-64 p-16">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 max-w-screen-lg mb-16 p-4">
         {filteredIcons.map((icon) => (
           <div
-            className="border p-8 flex flex-col items-center justify-between gap-12 rounded"
+            className="border p-2 flex flex-col items-center justify-between gap-3 rounded"
             key={icon}
           >
             <div className="inline-flex">
@@ -93,7 +93,7 @@ const renderIcons = (iconSet: IconName[]) => {
                 />
               </div>
             </div>
-            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-16">
+            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-4">
               <p>{icon}</p>
             </code>
           </div>
@@ -125,8 +125,8 @@ export const ProductIcons = {
 
 export const IconWithSecondaryColor = {
   render: () => (
-    <div className="flex items-center justify-center p-16 gap-24">
-      <div className="flex gap-24">
+    <div className="flex items-center justify-center p-4 gap-6">
+      <div className="flex gap-6">
         <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
           Non-themed:
         </h4>
@@ -142,7 +142,7 @@ export const IconWithSecondaryColor = {
           size="1.5rem"
         />
       </div>
-      <div className="flex gap-24">
+      <div className="flex gap-6">
         <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
           Themed:
         </h4>

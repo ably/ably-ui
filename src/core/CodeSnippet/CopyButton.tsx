@@ -14,7 +14,7 @@ interface CopyButtonProps {
 const CopyButton = memo(
   ({ onCopy, isCopied, tooltip = "Copy" }: CopyButtonProps) => {
     return (
-      <div className="absolute top-8 right-8 z-10">
+      <div className="absolute top-2 right-2 z-10">
         <TooltipButton tooltip={tooltip} onClick={onCopy} variant="icon-button">
           <Icon
             name="icon-gui-document-duplicate-outline"
@@ -24,7 +24,7 @@ const CopyButton = memo(
         </TooltipButton>
 
         {isCopied ? (
-          <div className="absolute right-[40px] top-0 bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300 py-6 px-12 rounded ui-text-label4 whitespace-nowrap">
+          <div className="absolute right-10 top-0 bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300 py-1.5 px-3 rounded ui-text-label4 whitespace-nowrap">
             Copied!
           </div>
         ) : null}
