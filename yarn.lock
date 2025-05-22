@@ -1985,9 +1985,9 @@
   integrity sha512-g9Ns4uenC9oAWETaJ/tEKEIPMdS+CqjNWZz5Wbw1bLNhXwADZgKrVqawzZi64+bYYtQ+i8VCTjPoFa6s2eHiDQ==
 
 "@swc/cli@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.npmjs.org/@swc/cli/-/cli-0.7.3.tgz"
-  integrity sha512-rnVXNnlURjdOuPaBIwZ3TmBA44BF/eP0j154LanlgPEYfau74ige7cpKlKkZr1IBqMOG99lAnYNxQipDWA3hdg==
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@swc/cli/-/cli-0.7.7.tgz#b367daba7db5a25fdcdbefe6a80f4c49c300d5fc"
+  integrity sha512-j4yYm9bx3pxWofaJKX1BFwj/3ngUDynN4UIQ2Xd2h0h/7Gt7zkReBTpDN7g5S13mgAYxacaTHTOUsz18097E8w==
   dependencies:
     "@swc/counter" "^0.1.3"
     "@xhmikosr/bin-wrapper" "^13.0.5"
