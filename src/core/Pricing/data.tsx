@@ -232,7 +232,7 @@ export const consumptionData: PricingDataFeature[] = [
   },
   {
     title: {
-      content: "Channels",
+      content: "Channels and Chat rooms",
       className: "ui-text-h3",
       color: "text-neutral-1300 dark:text-neutral-000",
       tooltip: (
