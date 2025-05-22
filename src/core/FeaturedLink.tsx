@@ -89,7 +89,7 @@ const FeaturedLink = ({
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(
-              "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180",
+              "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180 inline-block",
               { "group-hover/featured-link:right-0": !disabled },
               iconClassName,
             )}
@@ -104,7 +104,7 @@ const FeaturedLink = ({
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(
-              "align-middle ml-8 relative -top-1 -left-4 transition-[left]",
+              "align-middle ml-8 relative -top-1 -left-4 transition-[left] inline-block",
               {
                 "group-hover/featured-link:left-0": !disabled,
               },
