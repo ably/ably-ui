@@ -14,7 +14,7 @@ export type AccordionData = {
   /**
    * The optional icon name to be displayed alongside the accordion item.
    */
-  icon?: IconName;
+  icon?: IconName | AccordionIcon;
 
   /**
    * The content to be displayed when the accordion item is expanded.
@@ -35,15 +35,14 @@ export type AccordionData = {
   interactive?: boolean;
 };
 
+export type AccordionIcon = {
+  name: IconName;
+  css?: string;
+};
+
 export type AccordionIcons = {
-  closed: {
-    name: IconName;
-    css?: string;
-  };
-  open: {
-    name: IconName;
-    css?: string;
-  };
+  closed: AccordionIcon;
+  open: AccordionIcon;
 };
 
 export const accordionThemes = ["default", "transparent", "static"] as const;
