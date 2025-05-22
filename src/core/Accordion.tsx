@@ -16,6 +16,7 @@ import Icon from "./Icon";
 import type { IconName } from "./Icon/types";
 import type {
   AccordionData,
+  AccordionIcon,
   AccordionIcons,
   AccordionOptions,
   AccordionTheme,
@@ -30,7 +31,7 @@ import cn from "./utils/cn";
 type AccordionRowProps = {
   children: ReactNode;
   name: string;
-  rowIcon?: IconName;
+  rowIcon?: IconName | AccordionIcon;
   theme: AccordionTheme;
   toggleIcons: AccordionIcons;
   options?: AccordionOptions;
@@ -117,8 +118,11 @@ const AccordionRow = ({
       >
         {rowIcon ? (
           <Icon
-            name={rowIcon}
+            name={typeof rowIcon === "object" ? rowIcon.name : rowIcon}
             color={textClass}
+            additionalCSS={
+              typeof rowIcon === "object" && rowIcon.css ? rowIcon.css : ""
+            }
             size={options?.rowIconSize ?? "32px"}
           />
         ) : null}
