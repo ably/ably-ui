@@ -67,7 +67,7 @@ const FeaturedLink = ({
           "text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus":
             !disabled,
         },
-        { "py-8": !flush },
+        { "py-2": !flush },
         `ui-${textSize}`,
         additionalCSS,
       )}
@@ -89,7 +89,7 @@ const FeaturedLink = ({
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(
-              "align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180",
+              "align-middle mr-2 relative -top-px -right-1 transition-[right] transform rotate-180",
               { "group-hover/featured-link:right-0": !disabled },
               iconClassName,
             )}
@@ -104,7 +104,7 @@ const FeaturedLink = ({
             size={`calc(var(--featured-link-icon-size) * 1.25)`}
             color={iconColor}
             additionalCSS={cn(
-              "align-middle ml-8 relative -top-1 -left-4 transition-[left]",
+              "align-middle ml-2 relative -top-px -left-1 transition-[left]",
               {
                 "group-hover/featured-link:left-0": !disabled,
               },

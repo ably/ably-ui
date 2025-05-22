@@ -21,7 +21,7 @@ export const MeganavPanel = ({
   panelRightBottom?: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-x-24 bg-neutral-000 dark:bg-neutral-1300">
+    <div className="flex flex-col md:flex-row gap-x-6 bg-neutral-000 dark:bg-neutral-1300">
       <div
         className={cn(
           "flex-[7] flex-shrink-0 group",
@@ -43,21 +43,21 @@ export const MeganavPanel = ({
                 className="grid grid-cols-1 xs:grid-cols-2 pointer-events-auto"
                 href={panelLeft.url}
               >
-                <span className="block w-full p-24">
+                <span className="block w-full p-6">
                   <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
                     {panelLeft.heading}
                   </h4>
-                  <span className="block ui-text-p3 text-neutral-800 dark:text-neutral-500 mt-8">
+                  <span className="block ui-text-p3 text-neutral-800 dark:text-neutral-500 mt-2">
                     {panelLeft.content}
                   </span>
-                  <span className="py-8 font-sans font-bold block group/featured-link text-neutral-1300 dark:text-neutral-000 mt-16 ui-text-p3 hover:text-neutral-1300 dark:hover:text-neutral-000">
+                  <span className="py-2 font-sans font-bold block group/featured-link text-neutral-1300 dark:text-neutral-000 mt-4 ui-text-p3 hover:text-neutral-1300 dark:hover:text-neutral-000">
                     {panelLeft.labelLink}
                     <Icon
                       name="icon-gui-arrow-long-right-outline"
                       size="18px"
                       color="text-orange-600"
                       additionalCSS={cn(
-                        "align-middle ml-8 relative -top-1 -left-4 transition-[left]",
+                        "align-middle ml-2 relative -top-px -left-1 transition-[left]",
                         "group-hover/featured-link:left-0 group-hover/meganav-panel:left-0",
                       )}
                     />
@@ -76,7 +76,7 @@ export const MeganavPanel = ({
       <div className="flex-[3] flex-shrink-0 flex flex-col justify-between">
         <ul>
           {panelRightHeading && (
-            <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 my-12">
+            <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 my-3">
               {panelRightHeading}
             </p>
           )}
@@ -84,7 +84,7 @@ export const MeganavPanel = ({
           {panelRightItems.map((item) => (
             <li
               className={cn(
-                "list-none py-[10px] md:py-8  my-0 flex gap-x-[10px] group hover:cursor-pointer",
+                "list-none py-2.5 md:py-2  my-0 flex gap-x-2.5 group hover:cursor-pointer",
                 item.isMobile ? "md:hidden" : "md:flex",
               )}
               key={item.label}
@@ -104,7 +104,7 @@ export const MeganavPanel = ({
           ))}
         </ul>
         {panelRightBottom && (
-          <div className="items-end mt-16 md:mt-0">{panelRightBottom}</div>
+          <div className="items-end mt-4 md:mt-0">{panelRightBottom}</div>
         )}
       </div>
     </div>

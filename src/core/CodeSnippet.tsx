@@ -350,7 +350,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               key={langName}
               language={langInfo.syntaxHighlighterKey || cleanLang}
               snippet={String(codeContent)}
-              additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-24 py-16"
+              additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
               showLines={showCodeLines}
             />
           );
@@ -446,7 +446,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (!activeLanguageInfo) return () => null;
 
     return () => (
-      <div className="px-64 py-24 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-12 items-center">
+      <div className="px-16 py-6 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-3 items-center">
         <Icon
           name="icon-gui-exclamation-triangle-outline"
           color="text-yellow-600 dark:text-yellow-400"
@@ -506,17 +506,17 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   return (
     <div
       className={cn(
-        "rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[54px]",
+        "rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]",
         className,
       )}
     >
       {headerRow && (
-        <div className="h-[38px] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-4 px-12 rounded-t-lg">
+        <div className="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
           {/* macOS window buttons */}
-          <div className="flex space-x-6">
-            <div className="w-[12px] h-[12px] rounded-full bg-orange-500"></div>
-            <div className="w-[12px] h-[12px] rounded-full bg-yellow-500"></div>
-            <div className="w-[12px] h-[12px] rounded-full bg-green-500"></div>
+          <div className="flex space-x-1.5">
+            <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
 
           {/* Title */}
@@ -525,7 +525,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           </div>
 
           {/* Empty div for balance */}
-          <div className="w-[48px]"></div>
+          <div className="w-12"></div>
         </div>
       )}
 
@@ -533,11 +533,11 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       {showSDKSelector && (
         <div
           className={cn(
-            "p-8 border-b border-neutral-200 dark:border-neutral-1100 h-[56px]",
+            "p-2 border-b border-neutral-200 dark:border-neutral-1100 h-14",
             headerRow ? "" : "rounded-t-lg",
           )}
         >
-          <div className="flex gap-12 justify-start">
+          <div className="flex gap-3 justify-start">
             {sdkTypes.has("realtime") && (
               <TooltipButton
                 tooltip="Realtime SDK"
@@ -581,7 +581,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         ) : (
           <div
             className={cn(
-              "border-b border-neutral-200 dark:border-neutral-1100 h-[34px] inline-flex items-center px-12",
+              "border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3",
               { "rounded-t-lg": !headerRow },
               { "cursor-pointer": filteredLanguages.length > 0 },
             )}
@@ -594,7 +594,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
                 <Icon
                   name={getLanguageIcon(filteredLanguages[0])}
                   size="16px"
-                  additionalCSS="mr-8"
+                  additionalCSS="mr-2"
                 />
                 <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
                   {getLanguageDisplayName(filteredLanguages[0])}

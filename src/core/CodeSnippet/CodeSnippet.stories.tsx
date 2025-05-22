@@ -343,9 +343,9 @@ export const ShellMode: Story = {
  */
 export const MultipleShellExamples: Story = {
   render: () => (
-    <div className="space-y-16">
+    <div className="space-y-4">
       <div>
-        <h3 className="ui-text-h3 mb-8">Installation</h3>
+        <h3 className="ui-text-h3 mb-2">Installation</h3>
         <CodeSnippet>
           <pre>
             <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
@@ -354,7 +354,7 @@ export const MultipleShellExamples: Story = {
       </div>
 
       <div>
-        <h3 className="ui-text-h3 mb-8">Starting the server</h3>
+        <h3 className="ui-text-h3 mb-2">Starting the server</h3>
         <CodeSnippet>
           <pre>
             <code className="language-shell">
@@ -365,7 +365,7 @@ export const MultipleShellExamples: Story = {
       </div>
 
       <div>
-        <h3 className="ui-text-h3 mb-8">Complex command</h3>
+        <h3 className="ui-text-h3 mb-2">Complex command</h3>
         <CodeSnippet>
           <pre>
             <code className="language-shell">{CODE_SNIPPETS.shellComplex}</code>

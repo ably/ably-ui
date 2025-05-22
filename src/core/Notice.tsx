@@ -41,7 +41,7 @@ export type NoticeProps = {
 
 const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
 
-const contentWrapperClasses = "w-full pr-8 ui-text-p4 self-center";
+const contentWrapperClasses = "w-full pr-2 ui-text-p4 self-center";
 
 const ContentWrapper = ({
   buttonLink,
@@ -92,12 +92,12 @@ const Notice = ({
       data-id="ui-notice"
       style={{ maxHeight: 0, overflow: "hidden" }}
     >
-      <div className="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+      <div className="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
-          <strong className="font-bold whitespace-nowrap pr-4">{title}</strong>
+          <strong className="font-bold whitespace-nowrap pr-1">{title}</strong>
           <span
             ref={contentRef}
-            className="pr-4"
+            className="pr-1"
             dangerouslySetInnerHTML={{
               __html: safeContent,
             }}
@@ -112,7 +112,7 @@ const Notice = ({
         {closeBtn && (
           <button
             type="button"
-            className="ml-auto h-20 w-20 border-none bg-none self-baseline"
+            className="ml-auto h-5 w-5 border-none bg-none self-baseline"
           >
             <Icon
               name="icon-gui-x-mark-outline"

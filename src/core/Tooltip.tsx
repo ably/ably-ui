@@ -140,7 +140,7 @@ const Tooltip = ({
   };
 
   return (
-    <div {...rest} className={cn("inline-flex ml-8", rest?.className)}>
+    <div {...rest} className={cn("inline-flex ml-2", rest?.className)}>
       <button
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={(event) => {
@@ -181,7 +181,7 @@ const Tooltip = ({
               }}
               {...tooltipProps}
               className={cn(
-                "bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-16",
+                "bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-4",
                 { "pointer-events-none": !interactive },
                 "rounded-lg absolute",
                 tooltipProps?.className,
@@ -189,7 +189,7 @@ const Tooltip = ({
                 { "animate-[tooltipEntry_0.25s_ease-in-out]": !fadeOut },
               )}
             >
-              <div className="max-w-[240px] w-auto">{children}</div>
+              <div className="max-w-60 w-auto">{children}</div>
             </div>,
             document.body,
           )

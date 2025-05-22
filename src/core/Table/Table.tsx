@@ -17,7 +17,7 @@ export const Table = ({
   <table
     id={id}
     {...rest}
-    className={`ui-standard-container mb-4 sm:table-fixed ${
+    className={`ui-standard-container mb-1 sm:table-fixed ${
       rest?.className ?? ""
     }`}
   >
@@ -49,7 +49,7 @@ export const TableRowHeader = ({
   ...rest
 }: PropsWithChildren<TableHTMLAttributes<HTMLTableRowElement>>) => (
   <tr
-    className={`-ml-24 mt-8 sm:ml-0 sm:mt-0 sm:sticky z-10 ${
+    className={`-ml-6 mt-2 sm:ml-0 sm:mt-0 sm:sticky z-10 ${
       rest?.className ?? ""
     }`}
   >

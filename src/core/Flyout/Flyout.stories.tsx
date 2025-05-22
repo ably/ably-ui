@@ -19,7 +19,7 @@ const platforms = [
 ];
 
 const panelClassName =
-  "w-full sm:w-[816px] bg-neutral-000 dark:bg-neutral-1300";
+  "w-full sm:w-[51rem] bg-neutral-000 dark:bg-neutral-1300";
 
 const Panels = ({
   panelLeft,
@@ -28,14 +28,14 @@ const Panels = ({
   panelLeft: React.ReactNode;
   platforms: string[];
 }) => (
-  <div className="flex flex-row gap-x-24">
+  <div className="flex flex-row gap-x-6">
     <div className="flex-6">{panelLeft}</div>
-    <div className="flex-4 pt-12">
-      <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 pb-6">
+    <div className="flex-4 pt-3">
+      <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 pb-1.5">
         platform
       </p>
       {platforms.map((item) => (
-        <li className="list-none py-6" key={item}>
+        <li className="list-none py-1.5" key={item}>
           <a
             className="ui-text-label3 text-neutral-1000 dark:text-neutral-300"
             href={`/platform/${item.toLowerCase()}`}
@@ -49,11 +49,11 @@ const Panels = ({
 );
 
 const DefaultPanelLeft = ({ title, desc }: { title: string; desc: string }) => (
-  <div className="bg-neutral-100 dark:bg-neutral-1200 w-full p-24">
+  <div className="bg-neutral-100 dark:bg-neutral-1200 w-full p-6">
     <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
       {title}
     </h4>
-    <p className="ui-text-p3 text-neutral-800 dark:text-neutral-500 mt-8">
+    <p className="ui-text-p3 text-neutral-800 dark:text-neutral-500 mt-2">
       {desc}
     </p>
     <FeaturedLink
@@ -128,7 +128,7 @@ const FlyoutStory = () => {
       menuItems={menuItems}
       className="justify-center relative z-40"
       flyOutClassName="flex w-full justify-center"
-      viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-8"
+      viewPortClassName="ui-shadow-lg-medium border border-neutral-000 dark:border-neutral-1300 rounded-2xl mt-2"
     />
   );
 };

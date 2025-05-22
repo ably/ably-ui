@@ -22,7 +22,7 @@ const CookieMessage = ({ cookieId, urlBase }: CookieMessageProps) => {
   const handleClose = () => {
     Cookie.set(cookieId, "1", { expires: COOKIE_EXPIRY });
 
-    ref.current?.classList.add("bottom-1", "opacity-0");
+    ref.current?.classList.add("bottom-px", "opacity-0");
     setTimeout(() => setHideCookieMessage(true), 500);
   };
 
@@ -33,14 +33,14 @@ const CookieMessage = ({ cookieId, urlBase }: CookieMessageProps) => {
 
   return (
     <div className="ui-cookie-message" ref={ref}>
-      <p className="ui-text-p2 pr-32">
+      <p className="ui-text-p2 pr-8">
         <a href={absUrl("/privacy")} className="underline">
           How we use cookies
         </a>{" "}
         to improve your experience.
       </p>
       <button
-        className="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap"
+        className="ui-btn-secondary mt-3 sm:mt-0 whitespace-nowrap"
         onClick={handleClose}
       >
         Accept and close

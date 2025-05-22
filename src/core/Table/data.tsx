@@ -32,7 +32,7 @@ const testRow = (index: number) => ({
       label: "yes",
       content: (
         <div className="flex items-center sm:flex-col sm:items-start">
-          <span className="sm:order-1 px-6 sm:py-6 sm:px-0">Supported</span>
+          <span className="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">Supported</span>
           <span className="sm:order-0">
             <Supported />
           </span>
@@ -44,7 +44,7 @@ const testRow = (index: number) => ({
       label: "no",
       content: (
         <div className="flex items-center  sm:flex-col sm:items-start">
-          <span className="sm:order-1 px-6 sm:py-6 sm:px-0">Unsupported</span>
+          <span className="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">Unsupported</span>
           <span className="sm:order-0">
             <Unsupported />
           </span>
@@ -63,8 +63,8 @@ const sections = ["Features", "Support", "Technical Support"].map((label) => ({
 export const PricingPageTable = () => {
   return (
     <div className="ui-standard-container">
-      <h2 className="ui-text-h2 text-center m-32">Pricing Page Table</h2>
-      <p className="text-center m-32">Example content</p>
+      <h2 className="ui-text-h2 text-center m-8">Pricing Page Table</h2>
+      <p className="text-center m-8">Example content</p>
       <Table.Root>
         <Table.Header>
           <Table.Row>
@@ -97,7 +97,7 @@ export const PricingPageTable = () => {
                     <Tooltip>Example tooltip</Tooltip>
                   </Table.LabelCell>
                   {row.cells.map((cell) => (
-                    <Table.Cell key={cell.label} className="last:mb-16 sm:mb-0">
+                    <Table.Cell key={cell.label} className="last:mb-4 sm:mb-0">
                       <div className="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
                         {cell.column}
                       </div>

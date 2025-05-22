@@ -17,16 +17,16 @@ const Footer = () => {
       className="w-full bg-neutral-100 dark:bg-neutral-1200 border-t border-neutral-300 dark:border-neutral-1000"
       data-id="footer"
     >
-      <div className="max-w-screen-xl mx-auto ui-grid-px pt-40 sm:pt-48 md:pt-64 pb-40">
-        <div className="flex flex-col sm:flex-row gap-x-24 gap-y-48 mb-64 justify-between">
-          <div className="flex-1 flex flex-col gap-24">
+      <div className="max-w-screen-xl mx-auto ui-grid-px pt-10 sm:pt-12 md:pt-16 pb-10">
+        <div className="flex flex-col sm:flex-row gap-x-6 gap-y-12 mb-16 justify-between">
+          <div className="flex-1 flex flex-col gap-6">
             {(["light", "dark"] as Theme[]).map((theme) => (
               <Logo
                 key={theme}
                 href="/"
                 theme={theme}
                 additionalLinkAttrs={{
-                  className: cn("focus-base rounded w-[102px]", {
+                  className: cn("focus-base rounded w-[6.375rem]", {
                     "flex dark:hidden": theme === "light",
                     "hidden dark:flex": theme === "dark",
                   }),
@@ -36,7 +36,7 @@ const Footer = () => {
 
             <Status statusUrl={StatusUrl} showDescription />
 
-            <div className="flex gap-x-24">
+            <div className="flex gap-x-6">
               {socialLinks.map((link) => (
                 <a
                   key={link.key}
@@ -44,7 +44,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label={`Visit Ably on ${link.key}`}
-                  className="w-20 h-20 group/social-icon"
+                  className="w-5 h-5 group/social-icon"
                 >
                   <Icon
                     name={link.monoIcon}
@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            <div className="flex gap-8 mt-16">
+            <div className="flex gap-2 mt-4">
               {ablyAwards.map((award) => (
                 <img
                   key={award.desc}
@@ -71,15 +71,15 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex-1 md:flex-[2] flex flex-row flex-wrap gap-x-24 gap-y-48">
+          <div className="flex-1 md:flex-[2] flex flex-row flex-wrap gap-x-6 gap-y-12">
             {footerLinks.map(({ title, links }) => (
               <div key={title} className="flex-1 basis-1/3 md:basis-1">
-                <h3 className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 mb-16">
+                <h3 className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 mb-4">
                   {title}
                 </h3>
-                <ul className="flex flex-col gap-y-12">
+                <ul className="flex flex-col gap-y-3">
                   {links.map(({ label, link, badge }) => (
-                    <li key={label} className="flex gap-x-8">
+                    <li key={label} className="flex gap-x-2">
                       <a
                         href={link}
                         className={textColorClassnames}
@@ -100,8 +100,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-24 border-t border-neutral-300 dark:border-neutral-1000">
-          <div className="flex gap-24">
+        <div className="pt-6 border-t border-neutral-300 dark:border-neutral-1000">
+          <div className="flex gap-6">
             {bottomFooterLinks.map((link) => (
               <a
                 key={link.label}

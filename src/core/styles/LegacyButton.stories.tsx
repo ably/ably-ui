@@ -7,7 +7,7 @@ export default {
 
 export const Standard = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn">
         Primary button
       </button>
@@ -32,7 +32,7 @@ export const Standard = {
 
 export const Inverted = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn-invert">
         Primary button
       </button>
@@ -51,7 +51,7 @@ export const Inverted = {
 
 export const WithIcons = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn">
         <Icon
           name="icon-gui-magnifying-glass-micro"
@@ -106,7 +106,7 @@ export const WithIcons = {
 
 export const LinkStyledAsButton = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <a href="#" role="button" className="ui-btn">
         Link
       </a>
@@ -119,7 +119,7 @@ export const LinkStyledAsButton = {
 
 export const ExtraSmall = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn p-btn-xsmall text-label4">
         Primary button
       </button>
@@ -146,7 +146,7 @@ export const ExtraSmall = {
 
 export const Small = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn p-btn-small text-label3">
         Primary button
       </button>
@@ -173,7 +173,7 @@ export const Small = {
 
 export const Large = {
   render: () => (
-    <div className="flex flex-col gap-16 max-w-[300px]">
+    <div className="flex flex-col gap-4 max-w-[18.75rem]">
       <button type="button" className="ui-btn p-btn-large text-label1">
         Primary button
       </button>

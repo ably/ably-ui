@@ -29,7 +29,7 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
   return (
     <div
       className={cn(
-        "rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[54px]",
+        "rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative min-h-[3.375rem]",
         className,
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -40,8 +40,8 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
       ref={codeRef}
     >
       {/* Shell Icon */}
-      <div className="absolute top-8 left-8 z-10">
-        <div className="w-36 h-36 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+      <div className="absolute top-2 left-2 z-10">
+        <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
           <Icon
             name="icon-gui-command-line-outline"
             size="20px"
@@ -51,11 +51,11 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
       </div>
 
       {/* Code Content */}
-      <div className="pl-56">
+      <div className="pl-14">
         <Code
           language="shell"
           snippet={content}
-          additionalCSS="bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-[56px] py-12"
+          additionalCSS="bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-14 py-3"
           showLines={false}
         />
       </div>

@@ -2,37 +2,37 @@
   .ui-text-title {
     @apply font-sans font-bold text-cool-black;
     @apply text-title-xs xs:text-title xl:text-title-xl;
-    @apply tracking-tighten-0.015 xs:tracking-tighten-0.02 xl:tracking-tighten-0.02;
+    @apply tracking-[-0.015em] xs:tracking-[-0.02em] xl:tracking-[-0.02em];
   }
 
   .ui-text-h1 {
     @apply font-sans font-bold text-cool-black;
     @apply text-h1-xs xs:text-h1 xl:text-h1-xl;
-    @apply tracking-tighten-0.0125 xs:tracking-tighten-0.015;
+    @apply tracking-[-0.0125em] xs:tracking-[-0.015em];
   }
 
   .ui-text-h2 {
     @apply font-sans font-bold text-cool-black;
     @apply text-h2-xs xs:text-h2 xl:text-h2-xl;
-    @apply tracking-tighten-0.015 xs:tracking-tighten-0.01;
+    @apply tracking-[-0.015em] xs:tracking-[-0.01em];
   }
 
   .ui-text-h3 {
     @apply font-sans font-bold text-cool-black;
     @apply text-h3;
-    @apply tracking-tighten-0.005;
+    @apply tracking-[-0.005em];
   }
 
   .ui-text-h4 {
     @apply font-sans font-bold text-cool-black;
     @apply text-h4;
-    @apply tracking-tighten-0.0015;
+    @apply tracking-[-0.0015em];
   }
 
   .ui-text-h5 {
     @apply font-sans font-bold text-cool-black;
     @apply text-h5;
-    @apply tracking-tighten-0.0025;
+    @apply tracking-[-0.0025em];
   }
 
   .ui-text-p1 {
@@ -54,13 +54,13 @@
   .ui-text-standfirst {
     @apply font-sans font-light text-active-orange;
     @apply text-standfirst xl:text-standfirst-xl;
-    @apply tracking-tighten-0.025 xl:tracking-tighten-0.015;
+    @apply tracking-tight xl:tracking-[-0.015em];
   }
 
   .ui-text-quote {
     @apply font-sans font-normal text-cool-black;
     @apply text-quote leading-normal;
-    @apply tracking-tighten-0.0015;
+    @apply tracking-[-0.0015em];
   }
 
   .ui-text-sub-header {
@@ -71,13 +71,13 @@
   .ui-text-overline1 {
     @apply font-mono font-medium text-active-orange uppercase;
     @apply text-overline1 leading-normal;
-    @apply tracking-widen-0.16;
+    @apply tracking-[0.16em];
   }
 
   .ui-text-overline2 {
     @apply font-mono font-medium text-active-orange uppercase;
     @apply text-overline2 leading-normal;
-    @apply tracking-widen-0.16;
+    @apply tracking-[0.16em];
   }
 
   .ui-text-label1 {
@@ -112,7 +112,7 @@
   }
 
   .ui-text-code-inline {
-    @apply inline-flex font-mono px-[3px] py-4 text-code text-neutral-1000 font-medium bg-neutral-200 border border-neutral-400 rounded-md;
+    @apply inline-flex font-mono px-[0.1875rem] py-1 text-code text-neutral-1000 font-medium bg-neutral-200 border border-neutral-400 rounded-md;
   }
 
   .dark .ui-text-code-inline {
@@ -121,19 +121,19 @@
 
   .ui-unordered-list {
     @apply text-p1 font-medium text-charcoal-grey;
-    @apply ml-32 my-16;
+    @apply ml-8 my-4;
     @apply list-disc;
   }
 
   .ui-ordered-list {
     @apply text-p1 font-medium text-charcoal-grey;
-    @apply ml-32 my-16;
+    @apply ml-8 my-4;
     @apply list-decimal;
   }
 
   .ui-ordered-list li,
   .ui-unordered-list li {
-    @apply mb-8;
+    @apply mb-2;
   }
 
   .ui-unordered-list li > *:last-of-type:not(ul):not(ol),
@@ -142,19 +142,19 @@
   }
 
   .ui-unordered-list ul {
-    @apply ml-24 my-8 list-circle;
+    @apply ml-6 my-2 list-circle;
   }
 
   .ui-ordered-list ol {
-    @apply ml-24 my-16 list-decimal;
+    @apply ml-6 my-4 list-decimal;
   }
 
   .ui-unordered-list ul ul {
-    @apply list-square my-8;
+    @apply list-square my-2;
   }
 
   .ui-unordered-list ul ul {
-    @apply my-8;
+    @apply my-2;
   }
 
   .ui-link {

@@ -31,7 +31,7 @@ const ProductIcon = ({
   return (
     // Outer container, contains the gradient stroke (since we can't natively have CSS gradient strokes)
     <span
-      className={cn("block p-1 bg-gradient-to-b", {
+      className={cn("block p-px bg-gradient-to-b", {
         "from-neutral-1000 to-neutral-1300 dark:from-neutral-000 dark:to-neutral-300":
           selected,
         "from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300":

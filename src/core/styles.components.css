@@ -31,18 +31,18 @@
   }
 
   .ui-section-spacing {
-    @apply my-80 sm:my-96 md:my-128;
-  }
-
-  .ui-content-spacing {
-    @apply my-40 sm:my-48 md:my-64;
-  }
-
-  .ui-divider-spacing {
     @apply my-20 sm:my-24 md:my-32;
   }
 
+  .ui-content-spacing {
+    @apply my-10 sm:my-12 md:my-16;
+  }
+
+  .ui-divider-spacing {
+    @apply my-5 sm:my-6 md:my-8;
+  }
+
   .ui-container-padding {
-    @apply px-24 py-40 sm:px-40 sm:py-48 md:p-64;
+    @apply px-6 py-10 sm:px-10 sm:py-12 md:p-16;
   }
 }
