@@ -64,7 +64,10 @@ export const WithNotice = {
           }}
         />
         <div className="h-[87.5rem] bg-neutral-200 -mt-4" id="main"></div>
-        <div className="h-[93.75rem] bg-neutral-1300" id="main-theme-dark"></div>
+        <div
+          className="h-[93.75rem] bg-neutral-1300"
+          id="main-theme-dark"
+        ></div>
         <div className="h-[75rem] bg-neutral-100" id="main"></div>
       </>
     );
