@@ -29,11 +29,11 @@ const shadowClasses = {
 };
 
 const shadowRow = (weight: "soft" | "medium" | "strong") => (
-  <div className="flex gap-32">
+  <div className="flex gap-8">
     {shadowClasses[weight].map((shadowClass) => (
       <div
         key={shadowClass}
-        className={`${weight === "strong" ? "bg-neutral-1100 text-white" : "bg-white"} rounded-lg w-64 h-64 ${shadowClass} flex items-center justify-center ui-text-p1`}
+        className={`${weight === "strong" ? "bg-neutral-1100 text-white" : "bg-white"} rounded-lg w-16 h-16 ${shadowClass} flex items-center justify-center ui-text-p1`}
       >
         {shadowClass.split("-")[2]}
       </div>

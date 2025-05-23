@@ -70,15 +70,15 @@
   }
 
   .ui-btn-icon {
-    @apply w-24 h-24 mr-16;
+    @apply w-6 h-6 mr-4;
   }
 
   .ui-btn-icon-small {
-    @apply w-20 h-20 mr-12;
+    @apply w-5 h-5 mr-3;
   }
 
   .ui-btn-icon-xsmall {
-    @apply w-16 h-16 mr-8;
+    @apply w-4 h-4 mr-2;
   }
   .ui-btn.ui-btn-disabled,
   .ui-btn-invert.ui-btn-disabled {

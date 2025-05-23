@@ -48,15 +48,15 @@ const sizes = [
 ];
 
 const buttonSet = (type: ButtonType) => (
-  <div className="grid grid-cols-2 sm:grid-cols-4 gap-16">
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
     {Array(4)
       .fill(0)
       .map((_, index) => (
-        <div key={`button-variant-${index}`} className="flex flex-col gap-16">
+        <div key={`button-variant-${index}`} className="flex flex-col gap-4">
           {sizes.map((size, sizeIndex) => (
             <Tooltip
               key={`button-size-${sizeIndex}`}
-              triggerProps={{ className: "h-[60px]" }}
+              triggerProps={{ className: "h-[3.75rem]" }}
               triggerElement={
                 <button
                   type="button"
@@ -104,7 +104,7 @@ const buttonSet = (type: ButtonType) => (
 
 export const ReactComponent = {
   render: () => (
-    <div className="grid sm:grid-cols-3 gap-16">
+    <div className="grid sm:grid-cols-3 gap-4">
       <div>
         <Button variant="priority" size="lg">
           Hello React!

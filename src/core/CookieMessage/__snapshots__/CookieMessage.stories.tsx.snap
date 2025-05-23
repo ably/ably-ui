@@ -2,7 +2,7 @@
 
 exports[`Components/Cookie Message Default smoke-test 1`] = `
 <div class="ui-cookie-message">
-  <p class="ui-text-p2 pr-32">
+  <p class="ui-text-p2 pr-8">
     <a href="/privacy"
        class="underline"
     >
@@ -10,7 +10,7 @@ exports[`Components/Cookie Message Default smoke-test 1`] = `
     </a>
     to improve your experience.
   </p>
-  <button class="ui-btn-secondary mt-12 sm:mt-0 whitespace-nowrap">
+  <button class="ui-btn-secondary mt-3 sm:mt-0 whitespace-nowrap">
     Accept and close
   </button>
 </div>

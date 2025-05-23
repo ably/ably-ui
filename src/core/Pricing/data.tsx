@@ -64,7 +64,7 @@ export const planData: PricingDataFeature[] = [
           >
             / month
           </p>
-          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-1.5">
             + consumption
           </p>
         </>
@@ -119,7 +119,7 @@ export const planData: PricingDataFeature[] = [
           >
             / month
           </p>
-          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-6">
+          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-1.5">
             + consumption
           </p>
         </>

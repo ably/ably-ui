@@ -19,9 +19,9 @@ const exampleOptionFields = (
 
 export const Inputs = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16">
+    <div className="grid sm:grid-cols-2 gap-4">
       <div>
-        <p className="mb-16 text-neutral-800">Default</p>
+        <p className="mb-4 text-neutral-800">Default</p>
         <input
           type="search"
           className="ui-input"
@@ -30,7 +30,7 @@ export const Inputs = {
         />
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Disabled</p>
+        <p className="mb-4 text-neutral-800">Disabled</p>
         <input
           type="search"
           className="ui-input disabled"
@@ -40,7 +40,7 @@ export const Inputs = {
         />
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Invalid</p>
+        <p className="mb-4 text-neutral-800">Invalid</p>
         <input
           type="search"
           className="ui-input disabled"
@@ -48,17 +48,17 @@ export const Inputs = {
           autoComplete="off"
           required
         />
-        <p className="ui-text-p3 text-gui-error-red mt-8">Oof, what an input</p>
+        <p className="ui-text-p3 text-gui-error-red mt-2">Oof, what an input</p>
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">With character insert</p>
+        <p className="mb-4 text-neutral-800">With character insert</p>
         <div className="relative">
-          <div className="h-32 w-32 absolute left-8 top-8 flex items-center justify-center select-none cursor-default">
+          <div className="h-8 w-8 absolute left-2 top-2 flex items-center justify-center select-none cursor-default">
             $
           </div>
           <input
             type="search"
-            className="ui-input pl-40"
+            className="ui-input pl-10"
             placeholder="With icon"
             autoComplete="off"
           />
@@ -70,28 +70,28 @@ export const Inputs = {
 
 export const Dropdowns = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16">
+    <div className="grid sm:grid-cols-2 gap-4">
       <div>
-        <p className="mb-16 text-neutral-800">Default</p>
+        <p className="mb-4 text-neutral-800">Default</p>
         <select className="ui-dropdown" defaultValue="select">
           {exampleOptionFields}
         </select>
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Small</p>
+        <p className="mb-4 text-neutral-800">Small</p>
         <select className="ui-dropdown-small" defaultValue="select">
           {exampleOptionFields}
         </select>
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Disabled</p>
+        <p className="mb-4 text-neutral-800">Disabled</p>
         <select className="ui-dropdown" defaultValue="select" disabled>
           {exampleOptionFields}
         </select>
       </div>
       <div>
-        <p className="mb-16 text-neutral-800">Synthetic</p>
-        <div className="ui-dropdown max-w-256" tabIndex={0}>
+        <p className="mb-4 text-neutral-800">Synthetic</p>
+        <div className="ui-dropdown max-w-64" tabIndex={0}>
           Select language
         </div>
       </div>
@@ -101,10 +101,10 @@ export const Dropdowns = {
 
 export const Checkboxes = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16">
+    <div className="grid sm:grid-cols-2 gap-4">
       {["Default", "Disabled"].map((label, groupIndex) => (
-        <div key={label} className="flex flex-col gap-8">
-          <p className="mb-16 text-neutral-800">{label}</p>
+        <div key={label} className="flex flex-col gap-2">
+          <p className="mb-4 text-neutral-800">{label}</p>
           {Array(3)
             .fill(0)
             .map((_, i) => (
@@ -122,10 +122,10 @@ export const Checkboxes = {
 
 export const RadioButtons = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16">
+    <div className="grid sm:grid-cols-2 gap-4">
       {["Default", "Disabled"].map((label, groupIndex) => (
-        <div key={label} className="flex flex-col gap-8">
-          <p className="mb-16 text-neutral-800">{label}</p>
+        <div key={label} className="flex flex-col gap-2">
+          <p className="mb-4 text-neutral-800">{label}</p>
           {Array(3)
             .fill(0)
             .map((_, i) => (
@@ -143,7 +143,7 @@ export const RadioButtons = {
 
 export const Textareas = {
   render: () => (
-    <div className="mb-40">
+    <div className="mb-10">
       <label className="ui-text-p1 block" htmlFor="example-text-area"></label>
       <textarea
         id="example-text-area"
@@ -160,29 +160,29 @@ export const Textareas = {
 
 export const Toggles = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16">
-      <div className="flex gap-16 items-center">
+    <div className="grid sm:grid-cols-2 gap-4">
+      <div className="flex gap-4 items-center">
         <label className="ui-toggle">
           <input type="checkbox" />
           <span className="ui-toggle-slider" />
         </label>
         <p>Default</p>
       </div>
-      <div className="flex gap-16 items-center">
+      <div className="flex gap-4 items-center">
         <label className="ui-toggle">
           <input type="checkbox" defaultChecked />
           <span className="ui-toggle-slider" />
         </label>
         <p>Pre-checked</p>
       </div>
-      <div className="flex gap-16 items-center">
+      <div className="flex gap-4 items-center">
         <label className="ui-toggle">
           <input type="checkbox" disabled />
           <span className="ui-toggle-slider" />
         </label>
         <p>Disabled</p>
       </div>
-      <div className="flex gap-16 items-center">
+      <div className="flex gap-4 items-center">
         <label className="ui-toggle">
           <input type="checkbox" className="peer" />
           <span className="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800" />

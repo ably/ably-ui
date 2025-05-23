@@ -75,13 +75,13 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   const sizeClass = useMemo(() => {
     switch (size) {
       case "xs":
-        return "px-8 py-0 text-[10px] leading-tight";
+        return "px-2 py-0 text-[10px] leading-tight";
       case "sm":
-        return "px-8 py-2 text-[10px] leading-tight";
+        return "px-2 py-0.5 text-[10px] leading-tight";
       case "md":
-        return "px-[10px] py-2 text-[11px] leading-normal";
+        return "px-2.5 py-0.5 text-[11px] leading-normal";
       case "lg":
-        return "px-12 py-[3px] text-[12px] leading-normal";
+        return "px-3 py-[0.1875rem] text-[12px] leading-normal";
     }
   }, [size]);
 
@@ -120,7 +120,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   return (
     <div
       className={cn(
-        "inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold",
+        "inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold",
         sizeClass,
         colorClass,
         { "focus-base": focusable },
@@ -140,7 +140,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
       {iconBefore ? (
         <Icon name={iconBefore} size={iconSize} color={colorClass} />
       ) : null}
-      <span className={cn("whitespace-nowrap tracking-widen-0.04", childClass)}>
+      <span className={cn("whitespace-nowrap tracking-[0.04em]", childClass)}>
         {children}
       </span>
       {iconAfter ? (

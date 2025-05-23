@@ -18,7 +18,7 @@ export default {
 };
 
 const Template = ({ data, delimiter }: PricingCardsProps) => (
-  <div className="dark:bg-gradient-to-r dark:from-blue-800 dark:to-pink-800 p-32">
+  <div className="dark:bg-gradient-to-r dark:from-blue-800 dark:to-pink-800 p-8">
     <PricingCards data={data} delimiter={delimiter} />
   </div>
 );

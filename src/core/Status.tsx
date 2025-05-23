@@ -54,7 +54,7 @@ export const StatusIcon = ({
   return (
     <span
       className={cn(
-        "inline-flex h-8 aspect-square rounded-full",
+        "inline-flex h-2 aspect-square rounded-full",
         indicatorClass(data?.status?.indicator),
         { "animate-pulse": isLoading || error },
       )}
@@ -76,7 +76,7 @@ const Status = ({
     <a
       href="https://status.ably.com"
       className={cn(
-        "inline-flex group/status items-center gap-8",
+        "inline-flex group/status items-center gap-2",
         additionalCSS,
       )}
       target="_blank"
@@ -87,7 +87,7 @@ const Status = ({
         refreshInterval={refreshInterval ?? 1000 * 60}
       />
       {showDescription && data?.status?.description && (
-        <div className="flex gap-8 ui-text-label4 font-medium text-neutral-900 group-hover/status:text-neutral-1300 dark:text-neutral-400 dark:group-hover/status:text-neutral-000 transition-colors">
+        <div className="flex gap-2 ui-text-label4 font-medium text-neutral-900 group-hover/status:text-neutral-1300 dark:text-neutral-400 dark:group-hover/status:text-neutral-000 transition-colors">
           <span>
             {data.status.description.charAt(0).toUpperCase() +
               data.status.description.slice(1).toLowerCase()}

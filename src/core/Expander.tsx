@@ -69,7 +69,7 @@ const Expander = ({
       >
         {showControls && !expanded && (
           <div
-            className={`h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ${
+            className={`h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ${
               fadeClassName ?? ""
             }`}
           ></div>
@@ -82,7 +82,7 @@ const Expander = ({
           onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
           tabIndex={0}
           data-testid="expander-controls"
-          className={`${heightThreshold === 0 && !expanded ? "" : "mt-16"} cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
+          className={`${heightThreshold === 0 && !expanded ? "" : "mt-4"} cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
         >
           {expanded
             ? (controlsOpenedLabel ?? "View less -")

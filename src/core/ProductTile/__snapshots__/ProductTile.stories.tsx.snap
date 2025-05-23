@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
-<div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+<div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
   <div class="items-center flex"
        style="gap: 48px;"
   >
-    <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+    <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
           style="width: 144px; height: 144px; border-radius: 36px;"
     >
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -36,12 +36,12 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
 `;
 
 exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
-<div class="grid sm:grid-cols-3 gap-32">
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+<div class="grid sm:grid-cols-3 gap-8">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -78,11 +78,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -119,11 +119,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -160,11 +160,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -201,11 +201,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -242,11 +242,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -287,11 +287,11 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
 `;
 
 exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-test 1`] = `
-<div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer">
+<div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-pink-200 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-400 cursor-pointer">
   <div class="items-center flex"
        style="gap: 13.3333px;"
   >
-    <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+    <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
           style="width: 40px; height: 40px; border-radius: 10px;"
     >
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -325,12 +325,12 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
 `;
 
 exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
-<div class="grid sm:grid-cols-3 gap-32">
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+<div class="grid sm:grid-cols-3 gap-8">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -361,11 +361,11 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -396,11 +396,11 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -431,11 +431,11 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -466,11 +466,11 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -501,11 +501,11 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
@@ -540,12 +540,12 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
 `;
 
 exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-test 1`] = `
-<div class="grid sm:grid-cols-3 gap-32 justify-center">
+<div class="grid sm:grid-cols-3 gap-8 justify-center">
   <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -565,7 +565,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -585,7 +585,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -605,7 +605,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -625,7 +625,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -645,7 +645,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -665,12 +665,12 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
 `;
 
 exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
-<div class="grid sm:grid-cols-3 gap-32">
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+<div class="grid sm:grid-cols-3 gap-8">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -701,11 +701,11 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -736,11 +736,11 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -771,11 +771,11 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -806,11 +806,11 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
@@ -841,11 +841,11 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-12 rounded-lg gap-8 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
-      <span class="block p-1 bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
+      <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"

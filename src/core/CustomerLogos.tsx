@@ -17,7 +17,7 @@ const CustomerLogos = ({
   return (
     <section className="w-full bg-white">
       <ul
-        className={`py-64 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center ${additionalCss}`}
+        className={`py-16 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center ${additionalCss}`}
       >
         {companies.map((company) => (
           <li

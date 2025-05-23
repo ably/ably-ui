@@ -86,19 +86,19 @@ const Meganav = ({
       >
         {notice && <Notice {...notice.props} config={notice.config} />}
         <Header
-          className="max-w-screen-xl mx-auto px-0 sm:px-32 md:px-40 lg:px-64"
+          className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
           isNoticeVisible={!!notice}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}
               className="justify-left z-40"
               flyOutClassName="flex justify-left"
-              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-4 bg-neutral-000 dark:bg-neutral-1300"
+              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-1 bg-neutral-000 dark:bg-neutral-1300"
             />
           }
           mobileNav={<MeganavMobile navItems={mobileNavItems} />}
           headerLinks={[{ href: "/contact", label: "Contact us" }]}
-          headerLinksClassName="md:gap-x-24 "
+          headerLinksClassName="md:gap-x-6 "
           sessionState={sessionState}
           themedScrollpoints={themedScrollpoints ?? defaultThemedScrollpoints}
         />

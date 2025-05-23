@@ -16,7 +16,7 @@ var channel = ably.channels.get('web-pal');
 channel.subscribe('greeting', function(message) {
   alert(message.data);
 });`,
-    additionalCSS: "bg-neutral-1200 p-16",
+    additionalCSS: "bg-neutral-1200 p-4",
   },
 };
 

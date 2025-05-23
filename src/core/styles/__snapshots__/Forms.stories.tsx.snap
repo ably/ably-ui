@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Styles/Forms Checkboxes smoke-test 1`] = `
-<div class="grid sm:grid-cols-2 gap-16">
-  <div class="flex flex-col gap-8">
-    <p class="mb-16 text-neutral-800">
+<div class="grid sm:grid-cols-2 gap-4">
+  <div class="flex flex-col gap-2">
+    <p class="mb-4 text-neutral-800">
       Default
     </p>
     <div class="ui-checkbox-p1 flex items-center">
@@ -79,8 +79,8 @@ exports[`Styles/Forms Checkboxes smoke-test 1`] = `
       </label>
     </div>
   </div>
-  <div class="flex flex-col gap-8">
-    <p class="mb-16 text-neutral-800">
+  <div class="flex flex-col gap-2">
+    <p class="mb-4 text-neutral-800">
       Disabled
     </p>
     <div class="ui-checkbox-p1 flex items-center">
@@ -163,9 +163,9 @@ exports[`Styles/Forms Checkboxes smoke-test 1`] = `
 `;
 
 exports[`Styles/Forms Dropdowns smoke-test 1`] = `
-<div class="grid sm:grid-cols-2 gap-16">
+<div class="grid sm:grid-cols-2 gap-4">
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Default
     </p>
     <select class="ui-dropdown">
@@ -190,7 +190,7 @@ exports[`Styles/Forms Dropdowns smoke-test 1`] = `
     </select>
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Small
     </p>
     <select class="ui-dropdown-small">
@@ -215,7 +215,7 @@ exports[`Styles/Forms Dropdowns smoke-test 1`] = `
     </select>
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Disabled
     </p>
     <select class="ui-dropdown"
@@ -242,10 +242,10 @@ exports[`Styles/Forms Dropdowns smoke-test 1`] = `
     </select>
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Synthetic
     </p>
-    <div class="ui-dropdown max-w-256"
+    <div class="ui-dropdown max-w-64"
          tabindex="0"
     >
       Select language
@@ -255,9 +255,9 @@ exports[`Styles/Forms Dropdowns smoke-test 1`] = `
 `;
 
 exports[`Styles/Forms Inputs smoke-test 1`] = `
-<div class="grid sm:grid-cols-2 gap-16">
+<div class="grid sm:grid-cols-2 gap-4">
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Default
     </p>
     <input type="search"
@@ -267,7 +267,7 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
     >
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Disabled
     </p>
     <input type="search"
@@ -278,7 +278,7 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
     >
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       Invalid
     </p>
     <input type="search"
@@ -287,20 +287,20 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
            autocomplete="off"
            required
     >
-    <p class="ui-text-p3 text-gui-error-red mt-8">
+    <p class="ui-text-p3 text-gui-error-red mt-2">
       Oof, what an input
     </p>
   </div>
   <div>
-    <p class="mb-16 text-neutral-800">
+    <p class="mb-4 text-neutral-800">
       With character insert
     </p>
     <div class="relative">
-      <div class="h-32 w-32 absolute left-8 top-8 flex items-center justify-center select-none cursor-default">
+      <div class="h-8 w-8 absolute left-2 top-2 flex items-center justify-center select-none cursor-default">
         $
       </div>
       <input type="search"
-             class="ui-input pl-40"
+             class="ui-input pl-10"
              placeholder="With icon"
              autocomplete="off"
       >
@@ -310,12 +310,12 @@ exports[`Styles/Forms Inputs smoke-test 1`] = `
 `;
 
 exports[`Styles/Forms RadioButtons smoke-test 1`] = `
-<div class="grid sm:grid-cols-2 gap-16">
-  <div class="flex flex-col gap-8">
-    <p class="mb-16 text-neutral-800">
+<div class="grid sm:grid-cols-2 gap-4">
+  <div class="flex flex-col gap-2">
+    <p class="mb-4 text-neutral-800">
       Default
     </p>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-1"
@@ -329,7 +329,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
         Option 1
       </label>
     </div>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-2"
@@ -343,7 +343,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
         Option 2
       </label>
     </div>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-3"
@@ -358,11 +358,11 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
       </label>
     </div>
   </div>
-  <div class="flex flex-col gap-8">
-    <p class="mb-16 text-neutral-800">
+  <div class="flex flex-col gap-2">
+    <p class="mb-4 text-neutral-800">
       Disabled
     </p>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-4"
@@ -377,7 +377,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
         Option 4
       </label>
     </div>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-5"
@@ -392,7 +392,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
         Option 5
       </label>
     </div>
-    <div class="flex items-center gap-8">
+    <div class="flex items-center gap-2">
       <input data-ui-radio-native
              type="radio"
              id="radio-example-6"
@@ -412,7 +412,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
 `;
 
 exports[`Styles/Forms Textareas smoke-test 1`] = `
-<div class="mb-40">
+<div class="mb-10">
   <label class="ui-text-p1 block"
          for="example-text-area"
   >
@@ -430,8 +430,8 @@ exports[`Styles/Forms Textareas smoke-test 1`] = `
 `;
 
 exports[`Styles/Forms Toggles smoke-test 1`] = `
-<div class="grid sm:grid-cols-2 gap-16">
-  <div class="flex gap-16 items-center">
+<div class="grid sm:grid-cols-2 gap-4">
+  <div class="flex gap-4 items-center">
     <label class="ui-toggle">
       <input type="checkbox">
       <span class="ui-toggle-slider">
@@ -441,7 +441,7 @@ exports[`Styles/Forms Toggles smoke-test 1`] = `
       Default
     </p>
   </div>
-  <div class="flex gap-16 items-center">
+  <div class="flex gap-4 items-center">
     <label class="ui-toggle">
       <input type="checkbox"
              checked
@@ -453,7 +453,7 @@ exports[`Styles/Forms Toggles smoke-test 1`] = `
       Pre-checked
     </p>
   </div>
-  <div class="flex gap-16 items-center">
+  <div class="flex gap-4 items-center">
     <label class="ui-toggle">
       <input type="checkbox"
              disabled
@@ -465,7 +465,7 @@ exports[`Styles/Forms Toggles smoke-test 1`] = `
       Disabled
     </p>
   </div>
-  <div class="flex gap-16 items-center">
+  <div class="flex gap-4 items-center">
     <label class="ui-toggle">
       <input type="checkbox"
              class="peer"

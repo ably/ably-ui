@@ -9,13 +9,13 @@ export default {
 } as Meta;
 
 const Template: StoryFn<TabMenuProps> = (args) => (
-  <div className={cn({ "h-160": args.options?.flexibleTabHeight })}>
+  <div className={cn({ "h-40": args.options?.flexibleTabHeight })}>
     <TabMenu {...args} />
   </div>
 );
 
 const ExampleContent = ({ children }: PropsWithChildren) => (
-  <div className="p-8 border border-neutral-200 mt-16 rounded-lg">
+  <div className="p-2 border border-neutral-200 mt-4 rounded-lg">
     {children}
   </div>
 );

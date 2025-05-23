@@ -7,12 +7,12 @@ const loremText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.";
 
 const lorem = (
-  <p className="mb-16 text-neutral-1300 dark:text-neutral-000">{loremText}</p>
+  <p className="mb-4 text-neutral-1300 dark:text-neutral-000">{loremText}</p>
 );
 
 const textarea = (
   <textarea
-    className="w-full h-256 bg-neutral-700 p-16 rounded-xl leading-relaxed"
+    className="w-full h-64 bg-neutral-700 p-4 rounded-xl leading-relaxed"
     defaultValue={loremText}
   />
 );
@@ -51,14 +51,14 @@ const dataWithCustomClickable = data.map((datum) => ({
 }));
 
 const AccordionPresentation = ({ data, options }: AccordionProps) => (
-  <div className="grid sm:grid-cols-2 gap-16 w-full">
+  <div className="grid sm:grid-cols-2 gap-4 w-full">
     {accordionThemes
       .filter((theme) => !theme.toLowerCase().includes("static"))
       .map((theme) => (
-        <div key={theme} className={"p-16 rounded-lg"}>
+        <div key={theme} className={"p-4 rounded-lg"}>
           <p
             className={
-              "ui-text-p3 mb-16 text-center text-neutral-1300 dark:text-neutral-000 font-mono"
+              "ui-text-p3 mb-4 text-center text-neutral-1300 dark:text-neutral-000 font-mono"
             }
           >
             {theme}
@@ -115,7 +115,7 @@ export const SelectableHeaders = {
 
 export const StickyHeaders = {
   render: () => (
-    <div className="h-[400px]">
+    <div className="h-[25rem]">
       {AccordionPresentation({
         data: data,
         options: { sticky: true, defaultOpenIndexes: [0, 1, 2, 3] },
@@ -186,15 +186,15 @@ export const WithResizableInnerContent = {
 
 export const StaticAndFullyOpen = {
   render: () => (
-    <div className="grid sm:grid-cols-2 gap-16 w-full">
+    <div className="grid sm:grid-cols-2 gap-4 w-full">
       {accordionThemes
         .filter((theme) => theme.toLowerCase().includes("static"))
         .map((theme) => (
           <div
             key={theme}
-            className={`p-16 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
+            className={`p-4 rounded-lg ${theme.includes("dark") ? "bg-neutral-1300" : ""}`}
           >
-            <p className="ui-text-p3 mb-16 text-center font-mono">{theme}</p>
+            <p className="ui-text-p3 mb-4 text-center font-mono">{theme}</p>
             <Accordion
               data={data}
               options={{ fullyOpen: true }}
@@ -237,7 +237,7 @@ export const WithCustomElementCSS = {
       options: {
         selectedHeaderCSS: "bg-green-400 hover:bg-blue-600",
         contentCSS: "bg-yellow-200",
-        headerCSS: "bg-pink-400 hover:bg-pink-600 h-40",
+        headerCSS: "bg-pink-400 hover:bg-pink-600 h-10",
         iconSize: "40px",
         rowIconSize: "12px",
       },

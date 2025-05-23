@@ -101,9 +101,9 @@ const AccordionRow = ({
       <AccordionTrigger
         onClick={onClick}
         className={cn({
-          "flex w-full group/accordion-trigger py-16 ui-text-p1 font-bold text-left items-center gap-12 transition-colors focus:outline-none":
+          "flex w-full group/accordion-trigger py-4 ui-text-p1 font-bold text-left items-center gap-3 transition-colors focus:outline-none":
             true,
-          "px-16 mb-16 rounded-lg": isNonTransparentTheme(theme),
+          "px-4 mb-4 rounded-lg": isNonTransparentTheme(theme),
           "px-0 rounded-none": !isNonTransparentTheme(theme),
           "pointer-events-none focus-visible:outline-none":
             isStaticTheme(theme),
@@ -145,7 +145,7 @@ const AccordionRow = ({
             [options?.contentCSS ?? ""]: options?.contentCSS,
           })}
         >
-          <div className="pb-16">{children}</div>
+          <div className="pb-4">{children}</div>
         </AccordionContent>
       )}
     </AccordionItem>
