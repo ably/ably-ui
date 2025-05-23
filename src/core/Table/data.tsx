@@ -44,7 +44,9 @@ const testRow = (index: number) => ({
       label: "no",
       content: (
         <div className="flex items-center  sm:flex-col sm:items-start">
-          <span className="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">Unsupported</span>
+          <span className="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
+            Unsupported
+          </span>
           <span className="sm:order-0">
             <Unsupported />
           </span>
