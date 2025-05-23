@@ -2,20 +2,20 @@
 
 exports[`Components/Table PricingPage smoke-test 1`] = `
 <div class="ui-standard-container">
-  <h2 class="ui-text-h2 text-center m-32">
+  <h2 class="ui-text-h2 text-center m-8">
     Pricing Page Table
   </h2>
-  <p class="text-center m-32">
+  <p class="text-center m-8">
     Example content
   </p>
-  <table class="ui-standard-container mb-4 sm:table-fixed ">
+  <table class="ui-standard-container mb-1 sm:table-fixed ">
     <thead class="sticky bg-white z-10 top-0 ">
       <tr>
         <td class="bg-white">
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
         
       ">
           <span class="ui-text-h3 hidden sm:block">
@@ -23,8 +23,8 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </span>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
         
       ">
           <span class="ui-text-h3 hidden sm:block">
@@ -32,8 +32,8 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </span>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
         
       ">
           <span class="ui-text-h3 hidden sm:block">
@@ -43,11 +43,11 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
     </thead>
     <tbody>
-      <tr class="-ml-24 mt-8 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
+      <tr class="-ml-6 mt-2 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
         <td colspan="4"
             class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        rounded-l-none rounded-r sm:rounded-lg py-20 px-24
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        rounded-l-none rounded-r sm:rounded-lg py-5 px-6
         
       "
         >
@@ -56,19 +56,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -78,9 +78,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -88,19 +88,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -111,19 +111,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -136,19 +136,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -158,9 +158,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -168,19 +168,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -191,19 +191,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -216,19 +216,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -238,9 +238,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -248,19 +248,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -271,19 +271,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -296,19 +296,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -318,9 +318,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -328,19 +328,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -351,19 +351,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -376,19 +376,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -398,9 +398,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -408,19 +408,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -431,19 +431,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -454,11 +454,11 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
       </tr>
-      <tr class="-ml-24 mt-8 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
+      <tr class="-ml-6 mt-2 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
         <td colspan="4"
             class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        rounded-l-none rounded-r sm:rounded-lg py-20 px-24
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        rounded-l-none rounded-r sm:rounded-lg py-5 px-6
         
       "
         >
@@ -467,19 +467,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -489,9 +489,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -499,19 +499,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -522,19 +522,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -547,19 +547,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -569,9 +569,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -579,19 +579,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -602,19 +602,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -627,19 +627,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -649,9 +649,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -659,19 +659,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -682,19 +682,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -707,19 +707,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -729,9 +729,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -739,19 +739,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -762,19 +762,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -787,19 +787,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -809,9 +809,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -819,19 +819,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -842,19 +842,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -865,11 +865,11 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
       </tr>
-      <tr class="-ml-24 mt-8 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
+      <tr class="-ml-6 mt-2 sm:ml-0 sm:mt-0 sm:sticky z-10 ">
         <td colspan="4"
             class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        rounded-l-none rounded-r sm:rounded-lg py-20 px-24
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        rounded-l-none rounded-r sm:rounded-lg py-5 px-6
         
       "
         >
@@ -878,19 +878,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 1
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -900,9 +900,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -910,19 +910,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -933,19 +933,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -958,19 +958,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 2
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -980,9 +980,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -990,19 +990,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1013,19 +1013,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1038,19 +1038,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 3
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1060,9 +1060,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -1070,19 +1070,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1093,19 +1093,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1118,19 +1118,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 4
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1140,9 +1140,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -1150,19 +1150,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1173,19 +1173,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1198,19 +1198,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-    ui-text-p1 font-bold pt-24 pb-8 border-light-grey sm:p-24 sm:relative sm:top-2 flex sm:table-cell border-t border-light-grey
+    ui-text-p1 font-bold pt-6 pb-2 border-light-grey sm:p-6 sm:relative sm:top-0.5 flex sm:table-cell border-t border-light-grey
   ">
           <a class="ui-link"
              href="#"
           >
             Label 5
           </a>
-          <div class="inline-flex ml-8">
+          <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1220,9 +1220,9 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Free
@@ -1230,19 +1230,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           Cell content
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             PAYG
           </div>
           <div class="flex items-center sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1253,19 +1253,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           </div>
         </td>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
-        last:mb-16 sm:mb-0
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
+        last:mb-4 sm:mb-0
       ">
           <div class="flex-1 sm:hidden !text-dark-grey ui-text-overline2">
             Custom
           </div>
           <div class="flex items-center  sm:flex-col sm:items-start">
-            <span class="sm:order-1 px-6 sm:py-6 sm:px-0">
+            <span class="sm:order-1 px-1.5 sm:py-1.5 sm:px-0">
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1278,26 +1278,26 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
       </tr>
       <tr>
         <td class="
-        border-light-grey sm:p-24 leading-none flex sm:table-cell
-        py-6
+        border-light-grey sm:p-6 leading-none flex sm:table-cell
+        py-1.5
         
       ">
         </td>
-        <td class="pt-24 hidden sm:table-cell ">
+        <td class="pt-6 hidden sm:table-cell ">
           <a href="#"
              class="ui-btn-secondary"
           >
             Get started
           </a>
         </td>
-        <td class="pt-24 hidden sm:table-cell ">
+        <td class="pt-6 hidden sm:table-cell ">
           <a href="#"
              class="ui-btn-secondary"
           >
             Get started
           </a>
         </td>
-        <td class="pt-24 hidden sm:table-cell ">
+        <td class="pt-6 hidden sm:table-cell ">
           <a href="#"
              class="ui-btn"
           >

@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Code CodeWithLines smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-32"
+<div class="hljs overflow-auto flex p-8"
      data-id="code"
 >
   <div>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       1
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       2
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       3
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       4
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       5
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       6
     </p>
-    <p class="mr-24 font-mono text-right text-neutral-800">
+    <p class="mr-6 font-mono text-right text-neutral-800">
       7
     </p>
   </div>
@@ -99,7 +99,7 @@ exports[`Components/Code CodeWithLines smoke-test 1`] = `
 `;
 
 exports[`Components/Code Java smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-32"
+<div class="hljs overflow-auto flex p-8"
      data-id="code"
 >
   <pre lang="java">
@@ -180,7 +180,7 @@ channel.subscribe(
 `;
 
 exports[`Components/Code Javascript smoke-test 1`] = `
-<div class="hljs overflow-auto flex bg-neutral-1200 p-16"
+<div class="hljs overflow-auto flex bg-neutral-1200 p-4"
      data-id="code"
 >
   <pre lang="javascript">
@@ -255,7 +255,7 @@ exports[`Components/Code Javascript smoke-test 1`] = `
 `;
 
 exports[`Components/Code Kotlin smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-32"
+<div class="hljs overflow-auto flex p-8"
      data-id="code"
 >
   <pre lang="kotlin">
@@ -310,7 +310,7 @@ exports[`Components/Code Kotlin smoke-test 1`] = `
 `;
 
 exports[`Components/Code Swift smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-32"
+<div class="hljs overflow-auto flex p-8"
      data-id="code"
 >
   <pre lang="swift">

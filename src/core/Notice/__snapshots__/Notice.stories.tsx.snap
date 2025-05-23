@@ -5,21 +5,21 @@ exports[`Components/Notice Default smoke-test 1`] = `
      data-id="ui-notice"
      style
 >
-  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+  <div class="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
     <a href="/"
-       class="w-full pr-8 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+       class="w-full pr-2 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
     >
-      <strong class="font-bold whitespace-nowrap pr-4">
+      <strong class="font-bold whitespace-nowrap pr-1">
         Flashy title
       </strong>
-      <span class="pr-4">
+      <span class="pr-1">
         This is a notice
       </span>
     </a>
     <button type="button"
-            class="ml-auto h-20 w-20 border-none bg-none self-baseline"
+            class="ml-auto h-5 w-5 border-none bg-none self-baseline"
     >
-      <svg class="text-neutral-1300 dark:text-neutral-000"
+      <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -35,14 +35,14 @@ exports[`Components/Notice RailsUjs smoke-test 1`] = `
      data-id="ui-notice"
      style
 >
-  <div class="ui-grid-px py-16 max-w-screen-xl mx-auto flex items-start">
+  <div class="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
     <a href="/"
-       class="w-full pr-8 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+       class="w-full pr-2 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
     >
-      <strong class="font-bold whitespace-nowrap pr-4">
+      <strong class="font-bold whitespace-nowrap pr-1">
         With Rails UJS
       </strong>
-      <span class="pr-4">
+      <span class="pr-1">
         <a data-method="delete"
            href="/logout"
         >
@@ -52,9 +52,9 @@ exports[`Components/Notice RailsUjs smoke-test 1`] = `
       </span>
     </a>
     <button type="button"
-            class="ml-auto h-20 w-20 border-none bg-none self-baseline"
+            class="ml-auto h-5 w-5 border-none bg-none self-baseline"
     >
-      <svg class="text-neutral-1300 dark:text-neutral-000"
+      <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <use xlink:href="#sprite-icon-gui-x-mark-outline">

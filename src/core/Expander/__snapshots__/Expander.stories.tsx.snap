@@ -5,14 +5,14 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
      class="overflow-hidden transition-all relative "
      style="height: 200px;"
 >
-  <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ">
+  <div class="h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ">
   </div>
   <div>
     <div>
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
@@ -35,7 +35,7 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Mauris ut nibh vel metus cursus semper.
         </li>
@@ -49,7 +49,7 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
           Curabitur finibus magna vitae nunc varius fermentum.
         </li>
       </ul>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Curabitur vehicula mi iaculis, luctus augue eu, venenatis quam.
         </li>
@@ -63,7 +63,7 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Praesent aliquam diam tincidunt, sollicitudin tortor eget, vulputate lacus.
         </li>
@@ -83,7 +83,7 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Nulla malesuada libero id dolor aliquam, non sagittis mi scelerisque.
         </li>
@@ -99,7 +99,7 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
 </div>
 <div tabindex="0"
      data-testid="expander-controls"
-     class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
+     class="mt-4 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
 >
   View all +
 </div>
@@ -107,17 +107,17 @@ exports[`Components/Expander LongContent smoke-test 1`] = `
 
 exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
 <div data-testid="expander-container"
-     class="overflow-hidden transition-all relative bg-neutral-400 p-16 rounded-lg"
+     class="overflow-hidden transition-all relative bg-neutral-400 p-4 rounded-lg"
      style="height: 200px;"
 >
-  <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 from-neutral-800">
+  <div class="h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 from-neutral-800">
   </div>
   <div>
     <div>
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
@@ -140,7 +140,7 @@ exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Mauris ut nibh vel metus cursus semper.
         </li>
@@ -154,7 +154,7 @@ exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
           Curabitur finibus magna vitae nunc varius fermentum.
         </li>
       </ul>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Curabitur vehicula mi iaculis, luctus augue eu, venenatis quam.
         </li>
@@ -168,7 +168,7 @@ exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Praesent aliquam diam tincidunt, sollicitudin tortor eget, vulputate lacus.
         </li>
@@ -188,7 +188,7 @@ exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Nulla malesuada libero id dolor aliquam, non sagittis mi scelerisque.
         </li>
@@ -204,7 +204,7 @@ exports[`Components/Expander OverriddenContentStyles smoke-test 1`] = `
 </div>
 <div tabindex="0"
      data-testid="expander-controls"
-     class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
+     class="mt-4 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light "
 >
   View all +
 </div>
@@ -220,7 +220,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
@@ -243,7 +243,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Mauris ut nibh vel metus cursus semper.
         </li>
@@ -257,7 +257,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
           Curabitur finibus magna vitae nunc varius fermentum.
         </li>
       </ul>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Curabitur vehicula mi iaculis, luctus augue eu, venenatis quam.
         </li>
@@ -271,7 +271,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Praesent aliquam diam tincidunt, sollicitudin tortor eget, vulputate lacus.
         </li>
@@ -291,7 +291,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Nulla malesuada libero id dolor aliquam, non sagittis mi scelerisque.
         </li>
@@ -307,11 +307,11 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
 </div>
 <div tabindex="0"
      data-testid="expander-controls"
-     class="mt-16 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
+     class="mt-4 cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ui-btn text-white w-full ui-text-p1 border rounded-xl hover:text-white"
 >
-  <span class="flex items-center gap-8">
+  <span class="flex items-center gap-2">
     Away with you, knave.
-    <svg class="text-pink-500"
+    <svg class="inline-block text-pink-500"
          style="width: 24px; height: 24px;"
     >
       <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
@@ -331,7 +331,7 @@ exports[`Components/Expander ShortContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
@@ -361,14 +361,14 @@ exports[`Components/Expander ZeroHeightContent smoke-test 1`] = `
      class="overflow-hidden transition-all relative "
      style="height: 0px;"
 >
-  <div class="h-64 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 from-transparent">
+  <div class="h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 from-transparent">
   </div>
   <div>
     <div>
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </li>
@@ -391,7 +391,7 @@ exports[`Components/Expander ZeroHeightContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Mauris ut nibh vel metus cursus semper.
         </li>
@@ -405,7 +405,7 @@ exports[`Components/Expander ZeroHeightContent smoke-test 1`] = `
           Curabitur finibus magna vitae nunc varius fermentum.
         </li>
       </ul>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Curabitur vehicula mi iaculis, luctus augue eu, venenatis quam.
         </li>
@@ -419,7 +419,7 @@ exports[`Components/Expander ZeroHeightContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Praesent aliquam diam tincidunt, sollicitudin tortor eget, vulputate lacus.
         </li>
@@ -439,7 +439,7 @@ exports[`Components/Expander ZeroHeightContent smoke-test 1`] = `
       <p>
         Ipsum
       </p>
-      <ul class="mb-16 list-inside list-disc">
+      <ul class="mb-4 list-inside list-disc">
         <li>
           Nulla malesuada libero id dolor aliquam, non sagittis mi scelerisque.
         </li>

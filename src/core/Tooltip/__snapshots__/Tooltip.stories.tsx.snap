@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Tooltip Central smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
+<div class="grid grid-cols-2 gap-4 w-[37.5rem]">
   <div class="font-mono text-center">
     dark
   </div>
   <div class="font-mono text-center">
     light
   </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8">
+  <div class="w-64 h-64 bg-neutral-1300 flex items-center justify-center m-6 border mx-auto rounded-lg">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -23,15 +23,15 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
+  <div class="w-64 h-64 flex items-center justify-center m-6 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8"
+         class="inline-flex ml-2"
     >
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -44,20 +44,20 @@ exports[`Components/Tooltip Central smoke-test 1`] = `
 `;
 
 exports[`Components/Tooltip Interactive smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
+<div class="grid grid-cols-2 gap-4 w-[37.5rem]">
   <div class="font-mono text-center">
     dark
   </div>
   <div class="font-mono text-center">
     light
   </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center justify-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8">
+  <div class="w-64 h-64 bg-neutral-1300 flex items-center justify-center m-6 border mx-auto rounded-lg">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -66,15 +66,15 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="w-256 h-256 flex items-center justify-center m-24 border mx-auto rounded-lg">
+  <div class="w-64 h-64 flex items-center justify-center m-6 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8"
+         class="inline-flex ml-2"
     >
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -87,20 +87,20 @@ exports[`Components/Tooltip Interactive smoke-test 1`] = `
 `;
 
 exports[`Components/Tooltip LeftBound smoke-test 1`] = `
-<div class="grid grid-cols-2 gap-16 w-[600px]">
+<div class="grid grid-cols-2 gap-4 w-[37.5rem]">
   <div class="font-mono text-center">
     dark
   </div>
   <div class="font-mono text-center">
     light
   </div>
-  <div class="w-256 h-256 bg-neutral-1300 flex items-center m-24 border mx-auto rounded-lg">
-    <div class="inline-flex ml-8">
+  <div class="w-64 h-64 bg-neutral-1300 flex items-center m-6 border mx-auto rounded-lg">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -109,15 +109,15 @@ exports[`Components/Tooltip LeftBound smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="w-256 h-256 flex items-center m-24 border mx-auto rounded-lg">
+  <div class="w-64 h-64 flex items-center m-6 border mx-auto rounded-lg">
     <div theme="light"
-         class="inline-flex ml-8"
+         class="inline-flex ml-2"
     >
       <button type="button"
               aria-describedby="tooltip"
               class="p-0 relative focus:outline-none h-[1rem] "
       >
-        <svg class="text-neutral-800 dark:text-neutral-500"
+        <svg class="inline-block text-neutral-800 dark:text-neutral-500"
              style="width: 1rem; height: 1rem;"
         >
           <use xlink:href="#sprite-icon-gui-information-circle-micro">

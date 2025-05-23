@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Badge Default smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>
 `;
 
 exports[`Components/Badge Disabled smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 cursor-not-allowed disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark">
-  <svg class="text-neutral-900 dark:text-neutral-400"
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 cursor-not-allowed disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark">
+  <svg class="inline-block text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
     <use xlink:href="#sprite-icon-gui-check-circled">
     </use>
   </svg>
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>
 `;
 
 exports[`Components/Badge Focusable smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 focus-base"
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 focus-base"
      tabindex="0"
 >
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>
 `;
 
 exports[`Components/Badge Hoverable smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 hover:bg-neutral-300 hover:dark:bg-neutral-1000 active:bg-neutral-300 dark:active:bg-neutral-1000">
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 hover:bg-neutral-300 hover:dark:bg-neutral-1000 active:bg-neutral-300 dark:active:bg-neutral-1000">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>
 `;
 
 exports[`Components/Badge WithAfterIcon smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
-  <svg class="text-neutral-900 dark:text-neutral-400"
+  <svg class="inline-block text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
     <use xlink:href="#sprite-icon-gui-chevron-down-outline">
@@ -55,28 +55,28 @@ exports[`Components/Badge WithAfterIcon smoke-test 1`] = `
 `;
 
 exports[`Components/Badge WithBeforeIcon smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <svg class="text-neutral-900 dark:text-neutral-400"
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
+  <svg class="inline-block text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
     <use xlink:href="#sprite-icon-gui-check-lotus-circled">
     </use>
   </svg>
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>
 `;
 
 exports[`Components/Badge WithLargeIconSize smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-4 items-center focus-base transition-colors select-none font-semibold px-[10px] py-2 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <svg class="text-neutral-900 dark:text-neutral-400"
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
+  <svg class="inline-block text-neutral-900 dark:text-neutral-400"
        style="width: 16px; height: 16px;"
   >
     <use xlink:href="#sprite-icon-gui-check-circled">
     </use>
   </svg>
-  <span class="whitespace-nowrap tracking-widen-0.04 leading-[20px]">
+  <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
 </div>

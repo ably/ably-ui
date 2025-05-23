@@ -8,20 +8,20 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-16 self-baseline"
+    <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-check-outline">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-cool-black">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         Congratulations! You've won the Oscar
       </p>
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg class="inline-block text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -34,20 +34,20 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-16 self-baseline"
+    <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-ably-badge">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-cool-black">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         This is a notice
       </p>
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg class="inline-block text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -60,20 +60,20 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-gui-error p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-16 self-baseline"
+    <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-white">
+      <p class="ui-text-p1 mr-4 text-white">
         This is an error, very bad
       </p>
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg class="inline-block text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -86,20 +86,20 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-active-orange p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-16 self-baseline"
+    <div class="bg-active-orange p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-white">
+      <p class="ui-text-p1 mr-4 text-white">
         This is an alert
       </p>
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg class="inline-block text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -112,8 +112,8 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
-      <p class="ui-text-p1 mr-16 text-cool-black">
+    <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         Some useful information, you are welcome
       </p>
       <button type="button"
@@ -133,14 +133,14 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-zingy-green p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-16 self-baseline"
+    <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-check-outline">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-cool-black">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         Valid link:
         <a href="/valid-link">
           Click me
@@ -149,7 +149,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg class="inline-block text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -162,14 +162,14 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-gui-error p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-16 self-baseline"
+    <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-white">
+      <p class="ui-text-p1 mr-4 text-white">
         Invalid link:
         <a>
           Should be removed
@@ -178,7 +178,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg class="inline-block text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -191,8 +191,8 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
-      <p class="ui-text-p1 mr-16 text-cool-black">
+    <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         Link with data-method:
         <a data-method="delete"
            href="/delete"
@@ -210,14 +210,14 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-id="ui-flash"
        data-testid="ui-flash"
   >
-    <div class="bg-electric-cyan p-32 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-16 self-baseline"
+    <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
+      <svg class="inline-block text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-ably-badge">
         </use>
       </svg>
-      <p class="ui-text-p1 mr-16 text-cool-black">
+      <p class="ui-text-p1 mr-4 text-cool-black">
         Invalid link with proto relative:
         <a>
           External
@@ -226,7 +226,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg class="inline-block text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
