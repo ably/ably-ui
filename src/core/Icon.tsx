@@ -45,6 +45,7 @@ const Icon = ({
       return (
         <svg
           className={cn(
+            "inline-block",
             { [`${color}`]: color },
             { [`${additionalCSS}`]: additionalCSS },
             {

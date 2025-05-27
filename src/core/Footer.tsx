@@ -44,7 +44,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label={`Visit Ably on ${link.key}`}
-                  className="w-5 h-5 group/social-icon"
+                  className="w-5 h-5 flex group/social-icon"
                 >
                   <Icon
                     name={link.monoIcon}
