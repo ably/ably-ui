@@ -44,7 +44,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -97,7 +97,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -150,7 +150,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -171,7 +171,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
     <button class="hidden sm:flex w-12 h-12 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -179,7 +179,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -205,7 +205,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
     <button class="hidden sm:flex w-12 h-12 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -213,7 +213,7 @@ exports[`Components/Slider FloatingControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -270,7 +270,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -323,7 +323,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -376,7 +376,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -397,7 +397,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
     <button class="w-8 h-8 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -405,7 +405,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -431,7 +431,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
     <button class="w-8 h-8 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -439,7 +439,7 @@ exports[`Components/Slider InlineControlPosition smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -496,7 +496,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -549,7 +549,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -602,7 +602,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
                  class="ui-btn self-start"
               >
                 Read case study
-                <svg class="inline-block ml-1"
+                <svg class="ml-1"
                      style="width: 1.25rem; height: 1.25rem;"
                 >
                   <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -623,7 +623,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
     <button class="hidden sm:flex w-12 h-12 pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -631,7 +631,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-left-outline">
@@ -673,7 +673,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
     <button class="hidden sm:flex w-12 h-12 pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right">
       <div class="ui-icon-cta-holder flex w-12">
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -681,7 +681,7 @@ exports[`Components/Slider WithoutIntervalIndicator smoke-test 1`] = `
           </svg>
         </div>
         <div class="w-full h-full flex-shrink-0 flex items-center justify-center">
-          <svg class="inline-block"
+          <svg class
                style="width: 1.5rem; height: 1.5rem;"
           >
             <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">

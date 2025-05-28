@@ -486,7 +486,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -502,7 +502,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -529,7 +529,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -545,7 +545,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -572,7 +572,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -588,7 +588,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -623,7 +623,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -639,7 +639,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -666,7 +666,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -682,7 +682,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -709,7 +709,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -725,7 +725,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class="inline-block"
+        <svg class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >

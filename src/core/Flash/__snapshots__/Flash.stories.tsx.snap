@@ -9,7 +9,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-cool-black mr-4 self-baseline"
+      <svg class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-check-outline">
@@ -21,7 +21,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-cool-black transition-colors"
+        <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -35,7 +35,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-cool-black mr-4 self-baseline"
+      <svg class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-ably-badge">
@@ -47,7 +47,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-cool-black transition-colors"
+        <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -61,7 +61,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-white mr-4 self-baseline"
+      <svg class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
@@ -73,7 +73,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-white transition-colors"
+        <svg class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -87,7 +87,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-active-orange p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-white mr-4 self-baseline"
+      <svg class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
@@ -99,7 +99,7 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-white transition-colors"
+        <svg class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -134,7 +134,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-cool-black mr-4 self-baseline"
+      <svg class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-check-outline">
@@ -149,7 +149,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-cool-black transition-colors"
+        <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -163,7 +163,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-white mr-4 self-baseline"
+      <svg class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
@@ -178,7 +178,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-white transition-colors"
+        <svg class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -211,7 +211,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="inline-block text-cool-black mr-4 self-baseline"
+      <svg class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
         <use xlink:href="#sprite-icon-gui-ably-badge">
@@ -226,7 +226,7 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="inline-block text-cool-black transition-colors"
+        <svg class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
           <use xlink:href="#sprite-icon-gui-x-mark-outline">

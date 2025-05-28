@@ -19,7 +19,7 @@ exports[`Components/Notice Default smoke-test 1`] = `
     <button type="button"
             class="ml-auto h-5 w-5 border-none bg-none self-baseline"
     >
-      <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+      <svg class="text-neutral-1300 dark:text-neutral-000"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <use xlink:href="#sprite-icon-gui-x-mark-outline">
@@ -54,7 +54,7 @@ exports[`Components/Notice RailsUjs smoke-test 1`] = `
     <button type="button"
             class="ml-auto h-5 w-5 border-none bg-none self-baseline"
     >
-      <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+      <svg class="text-neutral-1300 dark:text-neutral-000"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <use xlink:href="#sprite-icon-gui-x-mark-outline">

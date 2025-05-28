@@ -11,7 +11,7 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
             style="height: 142px; border-radius: 36px;"
       >
-        <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+        <svg class="text-neutral-1300 dark:text-neutral-000"
              style="width: 96px; height: 96px;"
         >
           <use xlink:href="#sprite-icon-product-pubsub-mono">
@@ -297,7 +297,7 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
             style="height: 38px; border-radius: 10px;"
       >
-        <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+        <svg class="text-neutral-1300 dark:text-neutral-000"
              style="width: 26.6667px; height: 26.6667px;"
         >
           <use xlink:href="#sprite-icon-product-pubsub-mono">
@@ -336,7 +336,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-pubsub-mono">
@@ -371,7 +371,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-chat-mono">
@@ -406,7 +406,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-spaces-mono">
@@ -441,7 +441,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-livesync-mono">
@@ -476,7 +476,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-asset-tracking-mono">
@@ -511,7 +511,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -551,7 +551,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-pubsub-mono">
@@ -571,7 +571,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-chat-mono">
@@ -591,7 +591,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-spaces-mono">
@@ -611,7 +611,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-livesync-mono">
@@ -631,7 +631,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-asset-tracking-mono">
@@ -651,7 +651,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">
@@ -676,7 +676,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-pubsub-mono">
@@ -711,7 +711,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-chat-mono">
@@ -746,7 +746,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-spaces-mono">
@@ -781,7 +781,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-livesync-mono">
@@ -816,7 +816,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-asset-tracking-mono">
@@ -851,7 +851,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="inline-block text-neutral-1300 dark:text-neutral-000"
+          <svg class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <use xlink:href="#sprite-icon-product-liveobjects-mono">

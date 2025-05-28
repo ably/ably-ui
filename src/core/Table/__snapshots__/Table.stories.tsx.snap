@@ -68,7 +68,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -100,7 +100,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -123,7 +123,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -148,7 +148,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -180,7 +180,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -203,7 +203,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -228,7 +228,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -260,7 +260,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -283,7 +283,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -308,7 +308,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -340,7 +340,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -363,7 +363,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -388,7 +388,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -420,7 +420,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -443,7 +443,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -479,7 +479,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -511,7 +511,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -534,7 +534,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -559,7 +559,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -591,7 +591,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -614,7 +614,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -639,7 +639,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -671,7 +671,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -694,7 +694,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -719,7 +719,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -751,7 +751,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -774,7 +774,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -799,7 +799,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -831,7 +831,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -854,7 +854,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -890,7 +890,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -922,7 +922,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -945,7 +945,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -970,7 +970,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1002,7 +1002,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1025,7 +1025,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1050,7 +1050,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1082,7 +1082,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1105,7 +1105,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1130,7 +1130,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1162,7 +1162,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1185,7 +1185,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1210,7 +1210,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="inline-block text-neutral-800 dark:text-neutral-500"
+              <svg class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
                 <use xlink:href="#sprite-icon-gui-information-circle-micro">
@@ -1242,7 +1242,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-success flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
@@ -1265,7 +1265,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="inline-block text-gui-error flex-grow-0 flex-shrink-0"
+              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >

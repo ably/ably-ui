@@ -311,7 +311,7 @@ exports[`Components/Expander OverriddenControls play-test 1`] = `
 >
   <span class="flex items-center gap-2">
     Away with you, knave.
-    <svg class="inline-block text-pink-500"
+    <svg class="text-pink-500"
          style="width: 24px; height: 24px;"
     >
       <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">

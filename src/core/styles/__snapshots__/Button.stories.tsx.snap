@@ -491,7 +491,7 @@ exports[`Components/Button ReactComponent smoke-test 1`] = `
   </div>
   <div>
     <button class="ui-button-primary ui-button-left-icon">
-      <svg class="inline-block"
+      <svg class
            style="width: 0.75rem; height: 0.75rem;"
       >
         <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
@@ -503,7 +503,7 @@ exports[`Components/Button ReactComponent smoke-test 1`] = `
   <div>
     <button class="ui-button-secondary-xs">
       Hello React!
-      <svg class="inline-block"
+      <svg class
            style="width: 0.75rem; height: 0.75rem;"
       >
         <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">

@@ -314,5 +314,8 @@ module.exports = {
       circle: "circle",
     },
   },
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [require("@tailwindcss/container-queries")],
 };
