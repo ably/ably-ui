@@ -64,7 +64,7 @@ const TooltipButton = memo(
         <div
           role="button"
           className={cn(
-            "w-32 h-32 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
+            "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
             className,
           )}
           onClick={onClick}

@@ -28,15 +28,15 @@ const SegmentedControlGrid = (props: SegmentedControlProps) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-8">
+    <div className="flex flex-col sm:flex-row gap-2">
       {["md", "sm", "xs"].map((size) => (
-        <div key={size} className="flex flex-col gap-4">
+        <div key={size} className="flex flex-col gap-1">
           <div className="flex flex-col items-center">
-            <Badge className="mb-8">{size}</Badge>
+            <Badge className="mb-2">{size}</Badge>
           </div>
           <div
             key={size}
-            className="flex gap-8 justify-center items-center p-8 border rounded-lg"
+            className="flex gap-2 justify-center items-center p-2 border rounded-lg"
           >
             {[0, 1].map((index) => (
               <SegmentedControl
@@ -70,7 +70,7 @@ export const DefaultVariant: Story = {
  */
 export const SubtleVariant: Story = {
   render: () => (
-    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-16">
+    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-4">
       <SegmentedControlGrid variant="subtle" />
     </div>
   ),
@@ -82,7 +82,7 @@ export const SubtleVariant: Story = {
  */
 export const StrongVariant: Story = {
   render: () => (
-    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-16">
+    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-4">
       <SegmentedControlGrid variant="strong" />
     </div>
   ),

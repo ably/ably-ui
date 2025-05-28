@@ -6,8 +6,8 @@ export default {
 
 export const StandardContainer = {
   render: () => (
-    <div className="ui-standard-container mb-32">
-      <div className="bg-mid-grey align-center p-32">
+    <div className="ui-standard-container mb-8">
+      <div className="bg-mid-grey align-center p-8">
         <p className="ui-text-h3 text-center">ui-standard-container</p>
       </div>
     </div>
@@ -24,19 +24,19 @@ export const StandardContainer = {
 
 export const GridGap = {
   render: () => (
-    <div className="ui-standard-container mb-32">
-      <div className="bg-mid-grey align-center p-32">
+    <div className="ui-standard-container mb-8">
+      <div className="bg-mid-grey align-center p-8">
         <div className="grid grid-cols-4 ui-grid-gap">
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             1
           </div>
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             2
           </div>
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             3
           </div>
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             4
           </div>
         </div>
@@ -55,10 +55,10 @@ export const GridGap = {
 
 export const GridPX = {
   render: () => (
-    <div className="ui-standard-container mb-32">
-      <div className="bg-mid-grey align-center p-32">
+    <div className="ui-standard-container mb-8">
+      <div className="bg-mid-grey align-center p-8">
         <div className="ui-grid-px">
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             Text
           </div>
         </div>
@@ -77,10 +77,10 @@ export const GridPX = {
 
 export const GridMX = {
   render: () => (
-    <div className="ui-standard-container mb-32">
-      <div className="bg-mid-grey align-center p-32">
+    <div className="ui-standard-container mb-8">
+      <div className="bg-mid-grey align-center p-8">
         <div className="ui-grid-mx">
-          <div className="bg-cool-black text-white font-sans p-32 text-center">
+          <div className="bg-cool-black text-white font-sans p-8 text-center">
             Text
           </div>
         </div>
@@ -100,11 +100,11 @@ export const GridMX = {
 export const FullContainerOverride = {
   render: () => (
     <div className="overflow-x-hidden">
-      <div className="ui-standard-container mb-32">
-        <div className="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-32 ui-full-container-override text-white">
+      <div className="ui-standard-container mb-8">
+        <div className="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-8 ui-full-container-override text-white">
           <div>
             {[...Array(20)].map((_, i) => (
-              <span className="mx-8 rounded-lg bg-cool-black p-16" key={i}>
+              <span className="mx-2 rounded-lg bg-cool-black p-4" key={i}>
                 Content
               </span>
             ))}
@@ -126,11 +126,11 @@ export const FullContainerOverride = {
 export const FullBorderlessContainerOverride = {
   render: () => (
     <div className="overflow-x-hidden">
-      <div className="ui-standard-container mb-32">
-        <div className="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-32 ui-full-borderless-container-override text-white">
+      <div className="ui-standard-container mb-8">
+        <div className="bg-[linear-gradient(to_right,cyan_49.9%,blue_50%,cyan_50.1%)] align-center p-8 ui-full-borderless-container-override text-white">
           <div className="text-center">
             {[...Array(20)].map((_, i) => (
-              <span className="mx-8 rounded-lg bg-cool-black p-16" key={i}>
+              <span className="mx-2 rounded-lg bg-cool-black p-4" key={i}>
                 Content
               </span>
             ))}

@@ -22,7 +22,7 @@ const Code = ({
   language,
   snippet,
   textSize = "ui-text-code",
-  padding = "p-32",
+  padding = "p-8",
   additionalCSS = "",
   showLines,
   lineCSS,
@@ -46,7 +46,7 @@ const Code = ({
           {[...Array(lineCount)].map((_, i) => (
             <p
               className={cn(
-                "mr-24 font-mono text-right text-neutral-800",
+                "mr-6 font-mono text-right text-neutral-800",
                 lineCSS,
               )}
               key={i}

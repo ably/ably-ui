@@ -147,20 +147,20 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
   return (
     <a
       href={url}
-      className="menu-link group block p-8 rounded-lg
+      className="menu-link group block p-2 rounded-lg
       hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000"
     >
-      <p className="mb-4">
+      <p className="mb-1">
         {title}
         {iconName ? (
           <Icon
             name={iconName}
             size="1rem"
-            additionalCSS="align-middle ml-8 relative -top-1 -left-4 text-neutral-1300 dark:text-neutral-000"
+            additionalCSS="align-middle ml-2 relative -top-px -left-1 text-neutral-1300 dark:text-neutral-000"
           />
         ) : null}
       </p>
-      {subtitle ? <p className="ui-text-p3 mb-16">{subtitle}</p> : null}
+      {subtitle ? <p className="ui-text-p3 mb-4">{subtitle}</p> : null}
       {children}
     </a>
   );

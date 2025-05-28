@@ -43,8 +43,8 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (
       <div
-        className={cn("flex items-center justify-center w-full @[920px]:w-20", {
-          "m-8": delimiter !== "blank",
+        className={cn("flex items-center justify-center w-full @[920px]:w-5", {
+          "m-2": delimiter !== "blank",
         })}
       >
         {delimiter !== "blank" ? (
@@ -98,7 +98,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
     >
       <div
         className={cn(
-          "gap-8",
+          "gap-2",
           delimiter ? gridRules.delimited : gridRules.nonDelimited,
         )}
       >
@@ -108,7 +108,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
               {delimiterColumn(index)}
               <div
                 className={cn(
-                  "relative border flex-1 px-24 py-32 flex flex-col gap-24 rounded-2xl group min-w-[272px] backdrop-blur",
+                  "relative border flex-1 px-6 py-8 flex flex-col gap-6 rounded-2xl group min-w-[17rem] backdrop-blur",
                   borderClasses(border?.color)?.border ??
                     "border-neutral-200 dark:border-neutral-1100",
                   border?.style,
@@ -121,7 +121,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                 {border ? (
                   <div
                     className={cn(
-                      "flex items-center absolute z-10 -top-12 self-center font-semibold uppercase text-neutral-000 font-sans h-24 text-[11px] px-[10px] py-2 rounded-2xl select-none tracking-widen-0.1",
+                      "flex items-center absolute z-10 -top-3 self-center font-semibold uppercase text-neutral-000 font-sans h-6 text-[11px] px-2.5 py-0.5 rounded-2xl select-none tracking-widest",
                       borderClasses(border?.color)?.border,
                       borderClasses(border?.color)?.bg,
                     )}
@@ -139,12 +139,12 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   )}
                 ></div>
                 <div
-                  className={cn(`relative z-10 flex flex-col gap-24`, {
+                  className={cn(`relative z-10 flex flex-col gap-6`, {
                     "@[520px]:flex-1 @[920px]:flex-none": delimiter,
                   })}
                 >
                   <div>
-                    <div className="flex items-center mb-12">
+                    <div className="flex items-center mb-3">
                       <p className={cn(title.className, title.color)}>
                         {title.content}
                       </p>
@@ -158,7 +158,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     </div>
                     <p
                       className={cn(
-                        "ui-text-p1 min-h-[20px]",
+                        "ui-text-p1 min-h-5",
                         description.className,
                         description.color,
                       )}
@@ -170,7 +170,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     </p>
                   </div>
                   <div
-                    className={cn("flex items-end gap-8", {
+                    className={cn("flex items-end gap-2", {
                       "@[520px]:flex-col @[520px]:items-start @[920px]:flex-row @[920px]:items-end":
                         delimiter,
                     })}
@@ -199,27 +199,27 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                       </LinkButton>
                     </div>
                   ) : delimiter ? null : (
-                    <div className="flex items-center justify-center h-48 w-full">
-                      <hr className="border-neutral-500 dark:border-neutral-800 w-64" />
+                    <div className="flex items-center justify-center h-12 w-full">
+                      <hr className="border-neutral-500 dark:border-neutral-800 w-16" />
                     </div>
                   )}
                 </div>
-                <div className="flex-1 flex flex-col gap-24 relative z-10">
+                <div className="flex-1 flex flex-col gap-6 relative z-10">
                   {sections.map(({ title, items, listItemColors, cta }) => (
-                    <div key={title} className="flex flex-col gap-12">
+                    <div key={title} className="flex flex-col gap-3">
                       <p className="text-neutral-800 dark:text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
                         {title}
                       </p>
                       <div
-                        className={cn({ "flex flex-col gap-4": !delimiter })}
+                        className={cn({ "flex flex-col gap-1": !delimiter })}
                       >
                         {items.map((item, index) =>
                           Array.isArray(item) ? (
                             <div
                               key={item[0]}
                               className={cn(
-                                "flex justify-between gap-16 px-8 -mx-8",
-                                index === 0 ? "py-8" : "py-4",
+                                "flex justify-between gap-4 px-2 -mx-2",
+                                index === 0 ? "py-2" : "py-1",
                                 index > 0 && index % 2 === 0
                                   ? "bg-blue-100 dark:bg-blue-900 rounded-md"
                                   : "",
@@ -240,14 +240,14 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                               ))}
                             </div>
                           ) : (
-                            <div key={item} className="flex gap-8 items-start">
+                            <div key={item} className="flex gap-2 items-start">
                               {listItemColors ? (
                                 <Icon
                                   name="icon-gui-check-circled-fill"
                                   color={listItemColors.background}
                                   secondaryColor={listItemColors.foreground}
                                   size="16px"
-                                  additionalCSS="mt-2"
+                                  additionalCSS="mt-0.5"
                                 />
                               ) : null}
                               <div
@@ -263,16 +263,16 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         )}
                       </div>
                       {cta ? (
-                        <div className="relative -mx-24 flex items-center h-40 overflow-x-hidden">
+                        <div className="relative -mx-6 flex items-center h-10 overflow-x-hidden">
                           <FeaturedLink
                             url={cta.url}
-                            additionalCSS="absolute translate-x-24 sm:-translate-x-[120px] sm:opacity-0 sm:group-hover:translate-x-24 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 dark:text-neutral-500 dark:hover:text-neutral-000 cursor-pointer"
+                            additionalCSS="absolute translate-x-6 sm:-translate-x-[7.5rem] sm:opacity-0 sm:group-hover:translate-x-6 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 dark:text-neutral-500 dark:hover:text-neutral-000 cursor-pointer"
                             onClick={cta.onClick}
                             iconColor={listItemColors?.foreground}
                           >
                             {cta.text}
                           </FeaturedLink>
-                          <div className="absolute hidden sm:block sm:translate-x-24 sm:opacity-100 sm:group-hover:translate-x-[120px] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-widen-0.15 font-light text-p3 text-neutral-500 dark:text-neutral-800">
+                          <div className="absolute hidden sm:block sm:translate-x-6 sm:opacity-100 sm:group-hover:translate-x-[7.5rem] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-[0.15em] font-light text-p3 text-neutral-500 dark:text-neutral-800">
                             •••
                           </div>
                         </div>

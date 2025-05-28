@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Button Primary smoke-test 1`] = `
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -15,10 +15,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -27,10 +27,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -39,10 +39,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -52,11 +52,11 @@ exports[`Components/Button Primary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -69,10 +69,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -85,10 +85,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -101,10 +101,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -118,11 +118,11 @@ exports[`Components/Button Primary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -135,10 +135,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -151,10 +151,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -167,10 +167,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -184,11 +184,11 @@ exports[`Components/Button Primary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -198,10 +198,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -211,10 +211,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -224,10 +224,10 @@ exports[`Components/Button Primary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -242,12 +242,12 @@ exports[`Components/Button Primary smoke-test 1`] = `
 `;
 
 exports[`Components/Button Priority smoke-test 1`] = `
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -256,10 +256,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -268,10 +268,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -280,10 +280,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -293,11 +293,11 @@ exports[`Components/Button Priority smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -310,10 +310,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -326,10 +326,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -342,10 +342,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -359,11 +359,11 @@ exports[`Components/Button Priority smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -376,10 +376,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -392,10 +392,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -408,10 +408,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -425,11 +425,11 @@ exports[`Components/Button Priority smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -439,10 +439,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -452,10 +452,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -465,10 +465,10 @@ exports[`Components/Button Priority smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -483,7 +483,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
 `;
 
 exports[`Components/Button ReactComponent smoke-test 1`] = `
-<div class="grid sm:grid-cols-3 gap-16">
+<div class="grid sm:grid-cols-3 gap-4">
   <div>
     <button class="ui-button-priority-lg">
       Hello React!
@@ -515,12 +515,12 @@ exports[`Components/Button ReactComponent smoke-test 1`] = `
 `;
 
 exports[`Components/Button Secondary smoke-test 1`] = `
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-16">
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -529,10 +529,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -541,10 +541,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -553,10 +553,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -566,11 +566,11 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -583,10 +583,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -599,10 +599,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -615,10 +615,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -632,11 +632,11 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -649,10 +649,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -665,10 +665,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -681,10 +681,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         </svg>
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -698,11 +698,11 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       </button>
     </div>
   </div>
-  <div class="flex flex-col gap-16">
-    <div class="inline-flex ml-8">
+  <div class="flex flex-col gap-4">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -712,10 +712,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Large
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -725,10 +725,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Regular
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -738,10 +738,10 @@ exports[`Components/Button Secondary smoke-test 1`] = `
         Small
       </button>
     </div>
-    <div class="inline-flex ml-8">
+    <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[60px]"
+              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
       >
       </button>
       <button type="button"

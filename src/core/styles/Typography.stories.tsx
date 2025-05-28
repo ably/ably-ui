@@ -49,12 +49,12 @@ const fontCell = (style) => (
   <div
     key={style.label}
     className={cn(
-      "rounded-lg p-16 flex flex-col gap-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
+      "rounded-lg p-4 flex flex-col gap-2 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
       style.className,
     )}
   >
     <div>{style.label}</div>
-    <code className="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-8">
+    <code className="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-2">
       {style.className
         .split(" ")
         .map((className) => `.${className}`)
@@ -65,7 +65,7 @@ const fontCell = (style) => (
 
 export const Primary = {
   render: () => (
-    <div className="grid sm:grid-cols-3 gap-16">
+    <div className="grid sm:grid-cols-3 gap-4">
       {styles.primary.map((style) => fontCell(style))}
     </div>
   ),
@@ -81,7 +81,7 @@ export const Primary = {
 
 export const Decorative = {
   render: () => (
-    <div className="grid sm:grid-cols-3 gap-16">
+    <div className="grid sm:grid-cols-3 gap-4">
       {styles.decorative.map((style) => fontCell(style))}
     </div>
   ),
@@ -89,7 +89,7 @@ export const Decorative = {
 
 export const GUI = {
   render: () => (
-    <div className="grid sm:grid-cols-3 gap-16">
+    <div className="grid sm:grid-cols-3 gap-4">
       {styles.gui.map((style) => fontCell(style))}
     </div>
   ),
@@ -97,7 +97,7 @@ export const GUI = {
 
 export const Code = {
   render: () => (
-    <div className="grid grid-cols-2 gap-16">
+    <div className="grid grid-cols-2 gap-4">
       {styles.code.map((style) => fontCell(style))}
     </div>
   ),
@@ -106,12 +106,12 @@ export const Code = {
 export const Links = {
   render: () => (
     <>
-      <h3 className="ui-text-h2 mb-24">Links</h3>
-      <p className="ui-text-p1 mb-24">
+      <h3 className="ui-text-h2 mb-6">Links</h3>
+      <p className="ui-text-p1 mb-6">
         The default text color is inherited from the surrounding text.
       </p>
       <div className="flex flex-wrap">
-        <div className="p-16 mb-16 mr-16 border rounded">
+        <div className="p-4 mb-4 mr-4 border rounded">
           <p className="ui-text-p1 text-charcoal-grey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
@@ -123,7 +123,7 @@ export const Links = {
             .
           </p>
         </div>
-        <div className="p-16 mb-16 mr-16 border rounded bg-cool-black">
+        <div className="p-4 mb-4 mr-4 border rounded bg-cool-black">
           <p className="ui-text-p1 text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
@@ -135,7 +135,7 @@ export const Links = {
             .
           </p>
         </div>
-        <div className="p-16 mb-16 mr-16 border rounded bg-jazzy-pink">
+        <div className="p-4 mb-4 mr-4 border rounded bg-jazzy-pink">
           <p className="ui-text-p1 text-charcoal-grey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
@@ -154,15 +154,15 @@ export const Links = {
 export const Lists = {
   render: () => (
     <>
-      <h3 className="ui-text-h2 mb-24">Lists</h3>
-      <p className="ui-text-p1 mb-24">
+      <h3 className="ui-text-h2 mb-6">Lists</h3>
+      <p className="ui-text-p1 mb-6">
         Note that lists support having li items and li items with children,
         while keeping the same margin (in these examples, the ordered list has
         paragraphs).
       </p>
 
-      <div className="mb-40">
-        <h4 className="ui-text-h3 mb-16">Unordered</h4>
+      <div className="mb-10">
+        <h4 className="ui-text-h3 mb-4">Unordered</h4>
         <p className="ui-text-p1">
           This is the preceding paragraph sed nisl id lectus scelerisque
           facilisis consectetur eget nisl. Morbi scelerisque felis vel
@@ -189,7 +189,7 @@ export const Lists = {
           </li>
           <li>Etiam et erat et lorem elementum commodo.</li>
         </ul>
-        <p className="ui-text-p1 mb-24">
+        <p className="ui-text-p1 mb-6">
           This is the following paragraph sed nisl id lectus scelerisque
           facilisis consectetur eget nisl. Morbi scelerisque felis vel
           ullamcorper viverra. In id ante quis quam sodales auctor in a ante.
@@ -198,8 +198,8 @@ export const Lists = {
         </p>
       </div>
 
-      <div className="mb-40">
-        <h4 className="ui-text-h3 mb-16">Ordered</h4>
+      <div className="mb-10">
+        <h4 className="ui-text-h3 mb-4">Ordered</h4>
         <p className="ui-text-p1">
           This is the preceding paragraph sed nisl id lectus scelerisque
           facilisis consectetur eget nisl. Morbi scelerisque felis vel
@@ -230,7 +230,7 @@ export const Lists = {
             </ol>
           </li>
         </ol>
-        <p className="ui-text-p1 mb-24">
+        <p className="ui-text-p1 mb-6">
           This is the following paragraph sed nisl id lectus scelerisque
           facilisis consectetur eget nisl. Morbi scelerisque felis vel
           ullamcorper viverra. In id ante quis quam sodales auctor in a ante.

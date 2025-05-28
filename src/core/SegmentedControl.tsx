@@ -66,9 +66,9 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
   };
 
   const sizeStyles = {
-    md: cn("h-48 p-12 gap-[10px]", rounded && "px-[18px]"),
-    sm: cn("h-40 p-[9px] gap-[9px]", rounded && "px-[14px]"),
-    xs: cn("h-36 p-8 gap-8", rounded && "px-12"),
+    md: cn("h-12 p-3 gap-2.5", rounded && "px-[1.125rem]"),
+    sm: cn("h-10 p-[0.5625rem] gap-[0.5625rem]", rounded && "px-3.5"),
+    xs: cn("h-9 p-2 gap-2", rounded && "px-3"),
   };
 
   const textStyles = {

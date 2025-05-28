@@ -2,11 +2,11 @@
 
 exports[`Components/Featured Link Default smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2"
+   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-2 ui-text-p2"
    style="--featured-link-icon-size: var(--fs-p2);"
 >
   Featured link
-  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
+  <svg class="align-middle ml-2 relative -top-px -left-1 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -17,11 +17,11 @@ exports[`Components/Featured Link Default smoke-test 1`] = `
 
 exports[`Components/Featured Link Disabled smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link text-gui-unavailable pointer-events-none py-8 ui-text-p2"
+   class="font-sans font-bold block group/featured-link text-gui-unavailable pointer-events-none py-2 ui-text-p2"
    style="--featured-link-icon-size: var(--fs-p2);"
 >
   Featured link
-  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left]"
+  <svg class="align-middle ml-2 relative -top-px -left-1 transition-[left]"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -32,11 +32,11 @@ exports[`Components/Featured Link Disabled smoke-test 1`] = `
 
 exports[`Components/Featured Link Large smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p1"
+   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-2 ui-text-p1"
    style="--featured-link-icon-size: var(--fs-p1);"
 >
   Featured link
-  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
+  <svg class="align-middle ml-2 relative -top-px -left-1 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -47,11 +47,11 @@ exports[`Components/Featured Link Large smoke-test 1`] = `
 
 exports[`Components/Featured Link Pink smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2 text-pink-800"
+   class="font-sans font-bold block group/featured-link hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-2 ui-text-p2 text-pink-800"
    style="--featured-link-icon-size: var(--fs-p2);"
 >
   Featured link
-  <svg class="text-pink-500 align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
+  <svg class="text-pink-500 align-middle ml-2 relative -top-px -left-1 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -62,10 +62,10 @@ exports[`Components/Featured Link Pink smoke-test 1`] = `
 
 exports[`Components/Featured Link Reverse smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p2"
+   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-2 ui-text-p2"
    style="--featured-link-icon-size: var(--fs-p2);"
 >
-  <svg class="align-middle mr-8 relative -top-1 -right-4 transition-[right] transform rotate-180 group-hover/featured-link:right-0"
+  <svg class="align-middle mr-2 relative -top-px -right-1 transition-[right] transform rotate-180 group-hover/featured-link:right-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
@@ -77,11 +77,11 @@ exports[`Components/Featured Link Reverse smoke-test 1`] = `
 
 exports[`Components/Featured Link Small smoke-test 1`] = `
 <a href="#"
-   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-8 ui-text-p3"
+   class="font-sans font-bold block group/featured-link text-gui-default hover:text-gui-hover focus:text-gui-focus focus:outline-none focus-visible:outline-gui-focus py-2 ui-text-p3"
    style="--featured-link-icon-size: var(--fs-p3);"
 >
   Featured link
-  <svg class="align-middle ml-8 relative -top-1 -left-4 transition-[left] group-hover/featured-link:left-0"
+  <svg class="align-middle ml-2 relative -top-px -left-1 transition-[left] group-hover/featured-link:left-0"
        style="width: calc(var(--featured-link-icon-size) * 1.25); height: calc(var(--featured-link-icon-size) * 1.25);"
   >
     <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
