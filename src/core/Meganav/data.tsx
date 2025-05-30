@@ -77,24 +77,24 @@ const solutionsMenu: FlyoutPanelList[] = [
     isMobile: true,
   },
   {
-    label: "BizTech",
+    label: "CXTech",
     icon: "icon-gui-building-office-outline",
-    link: "/solutions/ecommerce-and-retail",
+    link: "/cx-tech",
   },
   {
     label: "FinTech",
     icon: "icon-gui-currency-dollar-outline",
-    link: "/solutions/fintech",
+    link: "/fin-tech",
   },
   {
     label: "HealthTech",
     icon: "icon-gui-heart-outline",
-    link: "/solutions/healthcare",
+    link: "/health-tech",
   },
   {
     label: "EdTech",
     icon: "icon-gui-academic-cap-outline",
-    link: "/solutions/edtech",
+    link: "/ed-tech",
   },
 ];
 
