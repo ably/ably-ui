@@ -120,3 +120,18 @@ WithNoAnimatedHighlight.parameters = {
     },
   },
 };
+
+export const WithCustomTabContent = Template.bind({});
+WithCustomTabContent.args = {
+  tabs: [
+    <a key="tab-1" href="#tab-1">
+      Tab 1
+    </a>,
+    <a key="tab-2" href="#tab-2">
+      Tab 2
+    </a>,
+    <a key="tab-3" href="#tab-3">
+      Tab 3
+    </a>,
+  ],
+};
