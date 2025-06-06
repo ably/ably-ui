@@ -3,14 +3,20 @@ import * as Tabs from "@radix-ui/react-tabs";
 import throttle from "lodash.throttle";
 import cn from "./utils/cn";
 
+type TabTriggerContent =
+  | string
+  | { label: string; disabled?: boolean }
+  | ReactNode;
+
 /**
  * Props for the TabMenu component.
  */
+
 export type TabMenuProps = {
   /**
    * An array of tabs, which can be either a string or an object with a label and an optional disabled state.
    */
-  tabs: (string | { label: string; disabled?: boolean })[];
+  tabs: TabTriggerContent[];
 
   /**
    * An optional array of React nodes representing the content for each tab.
@@ -138,6 +144,22 @@ const TabMenu: React.FC<TabMenuProps> = ({
     updateHighlightDimensions(event.currentTarget as HTMLButtonElement);
   };
 
+  const tabTriggerContent = (tab: TabTriggerContent) => {
+    if (!tab) {
+      return null;
+    }
+
+    if (React.isValidElement(tab) || typeof tab === "string") {
+      return tab;
+    }
+
+    if (typeof tab === "object" && "label" in tab) {
+      return tab.label;
+    }
+
+    return null;
+  };
+
   return (
     <Tabs.Root
       defaultValue={`tab-${defaultTabIndex}`}
@@ -154,22 +176,29 @@ const TabMenu: React.FC<TabMenuProps> = ({
           { "h-full": flexibleTabHeight },
         )}
       >
-        {tabs.map((tab, index) => (
-          <Tabs.Trigger
-            key={`tab-${index}`}
-            className={cn(
-              "lg:px-6 md:px-5 px-4 py-4 ui-text-label1 font-bold data-[state=active]:text-neutral-1300 text-neutral-1000 dark:data-[state=active]:text-neutral-000 dark:text-neutral-300 focus:outline-none focus-visible:outline-gui-focus transition-colors hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-900 dark:active:text-neutral-400 disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark disabled:cursor-not-allowed",
-              { "flex-1": flexibleTabWidth },
-              { "h-full": flexibleTabHeight },
-              tabClassName,
-            )}
-            value={`tab-${index}`}
-            onClick={(event) => handleTabClick(event, index)}
-            disabled={typeof tab === "object" ? tab.disabled : false}
-          >
-            {typeof tab === "object" ? tab.label : tab}
-          </Tabs.Trigger>
-        ))}
+        {tabs.map(
+          (tab, index) =>
+            tab && (
+              <Tabs.Trigger
+                key={`tab-${index}`}
+                className={cn(
+                  "lg:px-6 md:px-5 px-4 py-4 ui-text-label1 font-bold data-[state=active]:text-neutral-1300 text-neutral-1000 dark:data-[state=active]:text-neutral-000 dark:text-neutral-300 focus:outline-none focus-visible:outline-gui-focus transition-colors hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-900 dark:active:text-neutral-400 disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark disabled:cursor-not-allowed",
+                  { "flex-1": flexibleTabWidth },
+                  { "h-full": flexibleTabHeight },
+                  tabClassName,
+                )}
+                value={`tab-${index}`}
+                onClick={(event) => handleTabClick(event, index)}
+                disabled={
+                  typeof tab === "object" && "disabled" in tab
+                    ? tab.disabled
+                    : false
+                }
+              >
+                {tabTriggerContent(tab)}
+              </Tabs.Trigger>
+            ),
+        )}
         <div
           className={cn(
             "absolute bottom-0 bg-neutral-1300 dark:bg-neutral-000 h-[0.1875rem] w-6",
