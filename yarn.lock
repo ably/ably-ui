@@ -1929,9 +1929,9 @@
     "@storybook/theming" "8.6.14"
 
 "@storybook/test-runner@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.npmjs.org/@storybook/test-runner/-/test-runner-0.22.0.tgz"
-  integrity sha512-fKY6MTE/bcvMaulKXy+z0fPmRXJx1REkYMOMcGn8zn6uffyBigGgaVf/sZ+AZfibwvjzg/StWhJ9HvAM8pc14g==
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.22.1.tgz#02243015d648a806316e5efec5887608ee2d8b95"
+  integrity sha512-F5omZH0Pj2Y0UXSqShl1RuPrnhLBbb/yPFnZbVWDSPWZHDSX+dfBuu1T2zVfJplNKd04RzJuMbWHPFtZ0mimSw==
   dependencies:
     "@babel/core" "^7.22.5"
     "@babel/generator" "^7.22.5"
