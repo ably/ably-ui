@@ -1,6 +1,11 @@
-import React, { CSSProperties, useCallback } from "react";
+import React, { CSSProperties, useCallback, useMemo } from "react";
 
-import { defaultIconSecondaryColor } from "./Icon/utils";
+import {
+  defaultIconSecondaryColor,
+  getHeroicon,
+  toPascalCase,
+} from "./Icon/utils";
+import * as IconComponents from "./Icon/components";
 import { IconName, IconSize } from "./Icon/types";
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 import { convertTailwindClassToVar } from "./styles/colors/utils";
@@ -13,6 +18,22 @@ export type IconProps = {
   secondaryColor?: ColorClass | ColorThemeSet;
   additionalCSS?: string;
   variant?: "outline" | "solid" | "micro" | "mini";
+};
+
+// Helper function to get a heroicon component from the static map
+const getHeroiconComponent = (
+  iconName: string,
+): React.ComponentType<React.SVGProps<SVGSVGElement>> | null => {
+  // Parse the icon name to extract heroicon name and variant
+  // Expected format: icon-gui-{heroicon-name}-{variant}
+  const match = iconName.match(/^icon-gui-(.+)-(outline|solid|mini|micro)$/);
+  if (!match) {
+    return null;
+  }
+
+  const [, heroiconName, variant] = match;
+  const component = getHeroicon(heroiconName, variant);
+  return component;
 };
 
 const Icon = ({
@@ -31,6 +52,20 @@ const Icon = ({
   const iconName =
     variant && !name.endsWith(`-${variant}`) ? `${name}-${variant}` : name;
 
+  // Get the local icon component (memoized)
+  const LocalIconComponent = useMemo(():
+    | React.ComponentType<React.SVGProps<SVGSVGElement>>
+    | undefined => {
+    return IconComponents[
+      toPascalCase(iconName) as keyof typeof IconComponents
+    ];
+  }, [iconName]);
+
+  // Get the heroicon component only if no local component is found (memoized)
+  const HeroiconComponent = useMemo(() => {
+    return LocalIconComponent ? null : getHeroiconComponent(iconName);
+  }, [LocalIconComponent, iconName]);
+
   const iconSvg = useCallback(
     (secondaryColor?: ColorClass, isDark?: boolean, isThemed?: boolean) => {
       let secondaryColorValue;
@@ -42,8 +77,15 @@ const Icon = ({
         );
       }
 
+      // Try local component first
+      const IconComponent = LocalIconComponent || HeroiconComponent;
+
+      if (!IconComponent) {
+        return null;
+      }
+
       return (
-        <svg
+        <IconComponent
           className={cn(
             { [`${color}`]: color },
             { [`${additionalCSS}`]: additionalCSS },
@@ -64,19 +106,19 @@ const Icon = ({
             } as CSSProperties
           }
           {...additionalAttributes}
-        >
-          <use xlinkHref={`#sprite-${iconName}`} />
-        </svg>
+        />
       );
     },
     [
+      LocalIconComponent,
+      HeroiconComponent,
       iconName,
       size,
       color,
       additionalCSS,
-      additionalAttributes,
       lightSecondaryColor,
       darkSecondaryColor,
+      name,
     ],
   );
 

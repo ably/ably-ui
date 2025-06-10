@@ -59,8 +59,8 @@
   code,
   kbd,
   samp {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace;
+    font-family:
+      Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   button {
@@ -131,9 +131,5 @@
   a {
     color: inherit;
     text-decoration: inherit;
-  }
-
-  svg {
-    fill: currentColor;
   }
 }

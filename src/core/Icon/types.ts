@@ -12,12 +12,17 @@ export const iconNames = {
   product: productIcons,
 };
 
+// Type for heroicons following the pattern: icon-gui-{name}-{variant}
+type HeroiconVariant = "outline" | "solid" | "mini" | "micro";
+type HeroiconName = `icon-gui-${string}-${HeroiconVariant}`;
+
 export type IconName =
   | (typeof iconNames.gui)[number]
   | (typeof iconNames.display)[number]
   | (typeof iconNames.social)[number]
   | (typeof iconNames.tech)[number]
-  | (typeof iconNames.product)[number];
+  | (typeof iconNames.product)[number]
+  | HeroiconName;
 
 export type IconSize =
   | `${number}px`
