@@ -11,11 +11,19 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
             style="height: 142px; border-radius: 36px;"
       >
-        <svg class="text-neutral-1300 dark:text-neutral-000"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="128"
+             height="128"
+             fill="none"
+             viewbox="0 0 128 128"
+             class="text-neutral-1300 dark:text-neutral-000"
              style="width: 96px; height: 96px;"
         >
-          <use xlink:href="#sprite-icon-product-pubsub-mono">
-          </use>
+          <path stroke="currentColor"
+                stroke-width="5"
+                d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+          >
+          </path>
         </svg>
       </span>
     </span>
@@ -47,17 +55,50 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-pubsub">
-            </use>
+            <path fill="url(#a)"
+                  fill-rule="evenodd"
+                  d="M54.48 12.572c3.453-5.551 12.02-3.105 12.02 3.433V41.5h41.302c5.099 0 8.212 5.603 5.519 9.933L73.52 115.428c-3.453 5.551-12.02 3.105-12.02-3.433V86.5H20.198c-5.099 0-8.212-5.603-5.52-9.933z"
+                  clip-rule="evenodd"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="64"
+                              x2="64"
+                              y1="27.434"
+                              y2="110.189"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-pubsub-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -88,17 +129,50 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-chat">
-            </use>
+            <path fill="url(#a)"
+                  fill-rule="evenodd"
+                  d="M11.5 35c0-12.426 10.074-22.5 22.5-22.5h60c12.426 0 22.5 10.074 22.5 22.5v74.41c0 7.385-8.77 11.257-14.227 6.281l-22.812-20.8a1.5 1.5 0 0 0-1.01-.391H34c-12.426 0-22.5-10.074-22.5-22.5z"
+                  clip-rule="evenodd"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="64"
+                              x2="64"
+                              y1="29.85"
+                              y2="109.883"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-chat-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M34 11h60c11.046 0 20 8.954 20 20v74.41c0 5.213-6.19 7.946-10.043 4.434l-22.812-20.8A4 4 0 0 0 78.45 88H34c-11.046 0-20-8.954-20-20V31c0-11.046 8.954-20 20-20Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -129,17 +203,48 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-spaces">
-            </use>
+            <path fill="url(#a)"
+                  d="M15.318 25.777c-1.762-6.366 4.093-12.221 10.46-10.46l84.559 23.406c7.856 2.174 8.443 13.088.866 16.093L73.036 69.951a5.5 5.5 0 0 0-3.085 3.085l-15.135 38.167c-3.005 7.577-13.919 6.99-16.093-.866z"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="65.785"
+                              x2="65.785"
+                              y1="31.716"
+                              y2="108.821"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-spaces-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="m41.23 109.769-23.404-84.56c-1.244-4.494 2.889-8.627 7.383-7.383l84.56 23.405c5.545 1.535 5.96 9.239.611 11.36L72.213 67.726a8 8 0 0 0-4.487 4.487L52.59 110.38c-2.121 5.349-9.825 4.934-11.36-.611Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -170,17 +275,51 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-livesync">
-            </use>
+            <path fill="url(#a)"
+                  fill-rule="evenodd"
+                  d="M13.5 52a2.5 2.5 0 0 0-5 0v25c0 23.472 19.028 42.5 42.5 42.5h64.029c3.353 0 4.787-4.26 2.117-6.288l-50.03-37.985c-2.304-1.75-5.616-.106-5.616 2.788V114.5H51c-20.71 0-37.5-16.79-37.5-37.5zm53-2.015c0 2.894-3.312 4.538-5.617 2.788L10.854 14.788C8.184 12.76 9.618 8.5 12.971 8.5H77c23.472 0 42.5 19.028 42.5 42.5v25a2.5 2.5 0 1 1-5 0V51c0-20.71-16.79-37.5-37.5-37.5H66.5z"
+                  clip-rule="evenodd"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="64"
+                              x2="64"
+                              y1="101.232"
+                              y2="16.969"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-livesync-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M115.029 117H64V78.015a1 1 0 0 1 1.605-.797l50.029 37.986c.763.579.353 1.796-.605 1.796ZM11 52v25c0 22.091 17.909 40 40 40h13M12.97 11H64v38.985a1 1 0 0 1-1.605.797L12.366 12.797c-.763-.58-.353-1.797.605-1.797ZM117 76V51c0-22.091-17.909-40-40-40H64"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -211,17 +350,49 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-asset-tracking">
-            </use>
+            <path fill="url(#a)"
+                  fill-rule="evenodd"
+                  d="M72.208 116.222C85.188 101.747 109 72.533 109 53c0-24.853-20.147-45-45-45S19 28.147 19 53c0 19.533 23.811 48.747 36.792 63.222 4.435 4.945 11.98 4.945 16.416 0M64 71c9.941 0 18-8.059 18-18s-8.059-18-18-18-18 8.059-18 18 8.059 18 18 18"
+                  clip-rule="evenodd"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="64"
+                              x2="64"
+                              y1="26.421"
+                              y2="111.391"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-            </use>
+            <path fill="currentColor"
+                  d="m72.208 116.222-1.861-1.669zm-16.416 0-1.86 1.669zM106.5 53c0 4.412-1.355 9.548-3.723 15.103-2.358 5.532-5.658 11.333-9.396 17.034-7.477 11.404-16.582 22.22-23.034 29.416l3.722 3.338c6.528-7.28 15.82-18.308 23.493-30.013 3.838-5.852 7.302-11.922 9.814-17.814 2.502-5.868 4.124-11.71 4.124-17.064zM64 10.5c23.472 0 42.5 19.028 42.5 42.5h5c0-26.233-21.266-47.5-47.5-47.5zM21.5 53c0-23.472 19.028-42.5 42.5-42.5v-5C37.767 5.5 16.5 26.767 16.5 53zm36.154 61.553c-6.453-7.196-15.558-18.012-23.035-29.416-3.738-5.701-7.038-11.502-9.396-17.034C22.855 62.548 21.5 57.413 21.5 53h-5c0 5.355 1.622 11.196 4.124 17.064 2.512 5.892 5.976 11.962 9.814 17.815 7.674 11.704 16.965 22.732 23.493 30.012zm12.693 0c-3.442 3.837-9.252 3.837-12.693 0l-3.723 3.338c5.429 6.053 14.71 6.053 20.138 0zM79.5 53c0 8.56-6.94 15.5-15.5 15.5v5c11.322 0 20.5-9.178 20.5-20.5zM64 37.5c8.56 0 15.5 6.94 15.5 15.5h5c0-11.322-9.178-20.5-20.5-20.5zM48.5 53c0-8.56 6.94-15.5 15.5-15.5v-5c-11.322 0-20.5 9.178-20.5 20.5zM64 68.5c-8.56 0-15.5-6.94-15.5-15.5h-5c0 11.322 9.178 20.5 20.5 20.5z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -252,17 +423,67 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="hidden group-hover/product-tile:flex"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-liveobjects">
-            </use>
+            <rect width="110"
+                  height="110"
+                  x="9"
+                  y="9"
+                  fill="url(#a)"
+                  rx="26"
+            >
+            </rect>
+            <path stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5"
+                  d="m43 66 17 17 26-38"
+            >
+            </path>
+            <defs>
+              <linearGradient id="a"
+                              x1="64"
+                              x2="64"
+                              y1="27.103"
+                              y2="110.608"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF5416">
+                </stop>
+                <stop offset="1"
+                      stop-color="#FF2739"
+                >
+                </stop>
+              </linearGradient>
+            </defs>
           </svg>
-          <svg class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-liveobjects-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M76 11h17c13.255 0 24 10.745 24 24v17M52 11H35c-13.255 0-24 10.745-24 24v17m0 24v17c0 13.255 10.745 24 24 24h17m65-41v17c0 13.255-10.745 24-24 24H76"
+            >
+            </path>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5"
+                  d="m43 66 17 17 26-38"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -297,11 +518,19 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
             style="height: 38px; border-radius: 10px;"
       >
-        <svg class="text-neutral-1300 dark:text-neutral-000"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="128"
+             height="128"
+             fill="none"
+             viewbox="0 0 128 128"
+             class="text-neutral-1300 dark:text-neutral-000"
              style="width: 26.6667px; height: 26.6667px;"
         >
-          <use xlink:href="#sprite-icon-product-pubsub-mono">
-          </use>
+          <path stroke="currentColor"
+                stroke-width="5"
+                d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+          >
+          </path>
         </svg>
       </span>
     </span>
@@ -336,11 +565,19 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-pubsub-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -371,11 +608,19 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-chat-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M34 11h60c11.046 0 20 8.954 20 20v74.41c0 5.213-6.19 7.946-10.043 4.434l-22.812-20.8A4 4 0 0 0 78.45 88H34c-11.046 0-20-8.954-20-20V31c0-11.046 8.954-20 20-20Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -406,11 +651,19 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-spaces-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="m41.23 109.769-23.404-84.56c-1.244-4.494 2.889-8.627 7.383-7.383l84.56 23.405c5.545 1.535 5.96 9.239.611 11.36L72.213 67.726a8 8 0 0 0-4.487 4.487L52.59 110.38c-2.121 5.349-9.825 4.934-11.36-.611Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -441,11 +694,20 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-livesync-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M115.029 117H64V78.015a1 1 0 0 1 1.605-.797l50.029 37.986c.763.579.353 1.796-.605 1.796ZM11 52v25c0 22.091 17.909 40 40 40h13M12.97 11H64v38.985a1 1 0 0 1-1.605.797L12.366 12.797c-.763-.58-.353-1.797.605-1.797ZM117 76V51c0-22.091-17.909-40-40-40H64"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -476,11 +738,18 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-            </use>
+            <path fill="currentColor"
+                  d="m72.208 116.222-1.861-1.669zm-16.416 0-1.86 1.669zM106.5 53c0 4.412-1.355 9.548-3.723 15.103-2.358 5.532-5.658 11.333-9.396 17.034-7.477 11.404-16.582 22.22-23.034 29.416l3.722 3.338c6.528-7.28 15.82-18.308 23.493-30.013 3.838-5.852 7.302-11.922 9.814-17.814 2.502-5.868 4.124-11.71 4.124-17.064zM64 10.5c23.472 0 42.5 19.028 42.5 42.5h5c0-26.233-21.266-47.5-47.5-47.5zM21.5 53c0-23.472 19.028-42.5 42.5-42.5v-5C37.767 5.5 16.5 26.767 16.5 53zm36.154 61.553c-6.453-7.196-15.558-18.012-23.035-29.416-3.738-5.701-7.038-11.502-9.396-17.034C22.855 62.548 21.5 57.413 21.5 53h-5c0 5.355 1.622 11.196 4.124 17.064 2.512 5.892 5.976 11.962 9.814 17.815 7.674 11.704 16.965 22.732 23.493 30.012zm12.693 0c-3.442 3.837-9.252 3.837-12.693 0l-3.723 3.338c5.429 6.053 14.71 6.053 20.138 0zM79.5 53c0 8.56-6.94 15.5-15.5 15.5v5c11.322 0 20.5-9.178 20.5-20.5zM64 37.5c8.56 0 15.5 6.94 15.5 15.5h5c0-11.322-9.178-20.5-20.5-20.5zM48.5 53c0-8.56 6.94-15.5 15.5-15.5v-5c-11.322 0-20.5 9.178-20.5 20.5zM64 68.5c-8.56 0-15.5-6.94-15.5-15.5h-5c0 11.322 9.178 20.5 20.5 20.5z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -511,11 +780,27 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-liveobjects-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M76 11h17c13.255 0 24 10.745 24 24v17M52 11H35c-13.255 0-24 10.745-24 24v17m0 24v17c0 13.255 10.745 24 24 24h17m65-41v17c0 13.255-10.745 24-24 24H76"
+            >
+            </path>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5"
+                  d="m43 66 17 17 26-38"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -551,11 +836,19 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-pubsub-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -571,11 +864,19 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-chat-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M34 11h60c11.046 0 20 8.954 20 20v74.41c0 5.213-6.19 7.946-10.043 4.434l-22.812-20.8A4 4 0 0 0 78.45 88H34c-11.046 0-20-8.954-20-20V31c0-11.046 8.954-20 20-20Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -591,11 +892,19 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-spaces-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="m41.23 109.769-23.404-84.56c-1.244-4.494 2.889-8.627 7.383-7.383l84.56 23.405c5.545 1.535 5.96 9.239.611 11.36L72.213 67.726a8 8 0 0 0-4.487 4.487L52.59 110.38c-2.121 5.349-9.825 4.934-11.36-.611Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -611,11 +920,20 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-livesync-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M115.029 117H64V78.015a1 1 0 0 1 1.605-.797l50.029 37.986c.763.579.353 1.796-.605 1.796ZM11 52v25c0 22.091 17.909 40 40 40h13M12.97 11H64v38.985a1 1 0 0 1-1.605.797L12.366 12.797c-.763-.58-.353-1.797.605-1.797ZM117 76V51c0-22.091-17.909-40-40-40H64"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -631,11 +949,18 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-            </use>
+            <path fill="currentColor"
+                  d="m72.208 116.222-1.861-1.669zm-16.416 0-1.86 1.669zM106.5 53c0 4.412-1.355 9.548-3.723 15.103-2.358 5.532-5.658 11.333-9.396 17.034-7.477 11.404-16.582 22.22-23.034 29.416l3.722 3.338c6.528-7.28 15.82-18.308 23.493-30.013 3.838-5.852 7.302-11.922 9.814-17.814 2.502-5.868 4.124-11.71 4.124-17.064zM64 10.5c23.472 0 42.5 19.028 42.5 42.5h5c0-26.233-21.266-47.5-47.5-47.5zM21.5 53c0-23.472 19.028-42.5 42.5-42.5v-5C37.767 5.5 16.5 26.767 16.5 53zm36.154 61.553c-6.453-7.196-15.558-18.012-23.035-29.416-3.738-5.701-7.038-11.502-9.396-17.034C22.855 62.548 21.5 57.413 21.5 53h-5c0 5.355 1.622 11.196 4.124 17.064 2.512 5.892 5.976 11.962 9.814 17.815 7.674 11.704 16.965 22.732 23.493 30.012zm12.693 0c-3.442 3.837-9.252 3.837-12.693 0l-3.723 3.338c5.429 6.053 14.71 6.053 20.138 0zM79.5 53c0 8.56-6.94 15.5-15.5 15.5v5c11.322 0 20.5-9.178 20.5-20.5zM64 37.5c8.56 0 15.5 6.94 15.5 15.5h5c0-11.322-9.178-20.5-20.5-20.5zM48.5 53c0-8.56 6.94-15.5 15.5-15.5v-5c-11.322 0-20.5 9.178-20.5 20.5zM64 68.5c-8.56 0-15.5-6.94-15.5-15.5h-5c0 11.322 9.178 20.5 20.5 20.5z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -651,11 +976,27 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-liveobjects-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M76 11h17c13.255 0 24 10.745 24 24v17M52 11H35c-13.255 0-24 10.745-24 24v17m0 24v17c0 13.255 10.745 24 24 24h17m65-41v17c0 13.255-10.745 24-24 24H76"
+            >
+            </path>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5"
+                  d="m43 66 17 17 26-38"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -676,11 +1017,19 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-pubsub-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M56.603 13.893 16.802 77.888C15.145 80.552 17.06 84 20.198 84H62a2 2 0 0 1 2 2v25.995c0 4.023 5.272 5.529 7.397 2.112l39.801-63.994c1.657-2.665-.259-6.113-3.396-6.113H66a2 2 0 0 1-2-2V16.005c0-4.023-5.272-5.529-7.397-2.112Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -711,11 +1060,19 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-chat-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="M34 11h60c11.046 0 20 8.954 20 20v74.41c0 5.213-6.19 7.946-10.043 4.434l-22.812-20.8A4 4 0 0 0 78.45 88H34c-11.046 0-20-8.954-20-20V31c0-11.046 8.954-20 20-20Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -746,11 +1103,19 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-spaces-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-width="5"
+                  d="m41.23 109.769-23.404-84.56c-1.244-4.494 2.889-8.627 7.383-7.383l84.56 23.405c5.545 1.535 5.96 9.239.611 11.36L72.213 67.726a8 8 0 0 0-4.487 4.487L52.59 110.38c-2.121 5.349-9.825 4.934-11.36-.611Z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -781,11 +1146,20 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-livesync-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M115.029 117H64V78.015a1 1 0 0 1 1.605-.797l50.029 37.986c.763.579.353 1.796-.605 1.796ZM11 52v25c0 22.091 17.909 40 40 40h13M12.97 11H64v38.985a1 1 0 0 1-1.605.797L12.366 12.797c-.763-.58-.353-1.797.605-1.797ZM117 76V51c0-22.091-17.909-40-40-40H64"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -816,11 +1190,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-asset-tracking-mono">
-            </use>
+            <path fill="currentColor"
+                  d="m72.208 116.222-1.861-1.669zm-16.416 0-1.86 1.669zM106.5 53c0 4.412-1.355 9.548-3.723 15.103-2.358 5.532-5.658 11.333-9.396 17.034-7.477 11.404-16.582 22.22-23.034 29.416l3.722 3.338c6.528-7.28 15.82-18.308 23.493-30.013 3.838-5.852 7.302-11.922 9.814-17.814 2.502-5.868 4.124-11.71 4.124-17.064zM64 10.5c23.472 0 42.5 19.028 42.5 42.5h5c0-26.233-21.266-47.5-47.5-47.5zM21.5 53c0-23.472 19.028-42.5 42.5-42.5v-5C37.767 5.5 16.5 26.767 16.5 53zm36.154 61.553c-6.453-7.196-15.558-18.012-23.035-29.416-3.738-5.701-7.038-11.502-9.396-17.034C22.855 62.548 21.5 57.413 21.5 53h-5c0 5.355 1.622 11.196 4.124 17.064 2.512 5.892 5.976 11.962 9.814 17.815 7.674 11.704 16.965 22.732 23.493 30.012zm12.693 0c-3.442 3.837-9.252 3.837-12.693 0l-3.723 3.338c5.429 6.053 14.71 6.053 20.138 0zM79.5 53c0 8.56-6.94 15.5-15.5 15.5v5c11.322 0 20.5-9.178 20.5-20.5zM64 37.5c8.56 0 15.5 6.94 15.5 15.5h5c0-11.322-9.178-20.5-20.5-20.5zM48.5 53c0-8.56 6.94-15.5 15.5-15.5v-5c-11.322 0-20.5 9.178-20.5 20.5zM64 68.5c-8.56 0-15.5-6.94-15.5-15.5h-5c0 11.322 9.178 20.5 20.5 20.5z"
+            >
+            </path>
           </svg>
         </span>
       </span>
@@ -851,11 +1232,27 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200"
               style="height: 38px; border-radius: 10px;"
         >
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="128"
+               height="128"
+               fill="none"
+               viewbox="0 0 128 128"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <use xlink:href="#sprite-icon-product-liveobjects-mono">
-            </use>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  d="M76 11h17c13.255 0 24 10.745 24 24v17M52 11H35c-13.255 0-24 10.745-24 24v17m0 24v17c0 13.255 10.745 24 24 24h17m65-41v17c0 13.255-10.745 24-24 24H76"
+            >
+            </path>
+            <path stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="5"
+                  d="m43 66 17 17 26-38"
+            >
+            </path>
           </svg>
         </span>
       </span>

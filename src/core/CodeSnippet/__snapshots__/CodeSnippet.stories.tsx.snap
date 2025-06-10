@@ -9,12 +9,33 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -30,12 +51,35 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -55,22 +99,53 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -308,11 +383,34 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
     </div>
   </div>
   <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 cursor-pointer">
-    <svg class="mr-2"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="48"
+         height="48"
+         fill="none"
+         viewbox="0 0 48 48"
+         class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <use xlink:href="#sprite-icon-tech-json">
-      </use>
+      <g clip-path="url(#a)">
+        <path stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="3"
+              d="M36 2h3a4 4 0 0 1 4 4v12.092a4 4 0 0 0 1.056 2.708l1.761 1.915a2 2 0 0 1 .068 2.63l-1.965 2.37a4 4 0 0 0-.92 2.553V42a4 4 0 0 1-4 4h-3M12 2H9a4 4 0 0 0-4 4v12.092A4 4 0 0 1 3.944 20.8l-1.761 1.915a2 2 0 0 0-.068 2.63l1.965 2.37A4 4 0 0 1 5 30.269V42a4 4 0 0 0 4 4h3"
+        >
+        </path>
+        <path fill="currentColor"
+              d="M26 41V25.67h3.213l4.263 12.39-.147-1.575a79 79 0 0 1-.105-1.87 39 39 0 0 1-.042-1.68V25.67h2.394V41h-3.213l-4.221-12.39.105 1.47q.063.861.105 1.764t.042 1.659V41zM17.038 41.21q-1.47 0-2.562-.546a4.1 4.1 0 0 1-1.659-1.575q-.567-1.029-.567-2.415v-6.678q0-1.386.567-2.394a3.9 3.9 0 0 1 1.659-1.575q1.092-.567 2.562-.567 1.491 0 2.562.567 1.071.546 1.638 1.575.588 1.008.588 2.373v6.699q0 1.386-.588 2.415a3.95 3.95 0 0 1-1.638 1.575q-1.071.546-2.562.546m0-2.31q1.071 0 1.617-.567.546-.588.546-1.659v-6.678q0-1.092-.546-1.659t-1.617-.567-1.617.567-.546 1.659v6.678q0 1.071.546 1.659.567.567 1.617.567M30.895 22.21q-1.575 0-2.73-.525t-1.785-1.491q-.609-.987-.63-2.31h2.625q0 .945.672 1.491.693.525 1.869.525 1.134 0 1.764-.525.651-.525.651-1.449 0-.777-.462-1.344-.441-.588-1.281-.798l-1.764-.483q-1.806-.462-2.793-1.659-.966-1.197-.966-2.898 0-1.302.588-2.268a3.9 3.9 0 0 1 1.659-1.491q1.092-.525 2.562-.525 2.226 0 3.528 1.155 1.302 1.134 1.323 3.066H33.1q0-.903-.588-1.407-.588-.525-1.659-.525-1.029 0-1.596.483t-.567 1.365q0 .798.42 1.365.441.546 1.26.777l1.827.504q1.827.462 2.793 1.659.966 1.176.966 2.919 0 1.302-.63 2.31-.63.987-1.764 1.533t-2.667.546M17.04 22.23q-2.331 0-3.696-1.28Q12 19.648 12 17.464h2.625q0 1.155.651 1.806.651.65 1.764.65t1.764-.63q.651-.65.651-1.805v-8.38h-3.57V6.67h6.195v10.815q0 2.205-1.365 3.486-1.344 1.26-3.675 1.26"
+        >
+        </path>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff"
+                d="M0 0h48v48H0z"
+          >
+          </path>
+        </clipPath>
+      </defs>
     </svg>
     <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JSON
@@ -588,11 +686,21 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
     >
       <div class="absolute top-2 left-2 z-10">
         <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-gui-command-line-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+            >
+            </path>
           </svg>
         </div>
       </div>
@@ -622,11 +730,21 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
     >
       <div class="absolute top-2 left-2 z-10">
         <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-gui-command-line-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+            >
+            </path>
           </svg>
         </div>
       </div>
@@ -656,11 +774,21 @@ npm run start
     >
       <div class="absolute top-2 left-2 z-10">
         <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
-          <svg class="text-neutral-1300 dark:text-neutral-000"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class="text-neutral-1300 dark:text-neutral-000"
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-gui-command-line-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+            >
+            </path>
           </svg>
         </div>
       </div>
@@ -709,11 +837,21 @@ exports[`Components/Code Snippet ShellMode smoke-test 1`] = `
 >
   <div class="absolute top-2 left-2 z-10">
     <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
-      <svg class="text-neutral-1300 dark:text-neutral-000"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-neutral-1300 dark:text-neutral-000"
            style="width: 20px; height: 20px;"
       >
-        <use xlink:href="#sprite-icon-gui-command-line-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+        >
+        </path>
       </svg>
     </div>
   </div>
@@ -738,11 +876,32 @@ exports[`Components/Code Snippet ShellMode smoke-test 1`] = `
 exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
 <div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
   <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 rounded-t-lg cursor-pointer">
-    <svg class="mr-2"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="48"
+         height="48"
+         fill="none"
+         viewbox="0 0 48 48"
+         class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <use xlink:href="#sprite-icon-tech-javascript">
-      </use>
+      <g clip-path="url(#a)">
+        <path fill="#F7DF1E"
+              d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+        >
+        </path>
+        <path fill="#000"
+              d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+        >
+        </path>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff"
+                d="M0 0h48v48H0z"
+          >
+          </path>
+        </clipPath>
+      </defs>
     </svg>
     <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JavaScript
@@ -872,11 +1031,32 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
     </div>
   </div>
   <div class="border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 cursor-pointer">
-    <svg class="mr-2"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="48"
+         height="48"
+         fill="none"
+         viewbox="0 0 48 48"
+         class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <use xlink:href="#sprite-icon-tech-javascript">
-      </use>
+      <g clip-path="url(#a)">
+        <path fill="#F7DF1E"
+              d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+        >
+        </path>
+        <path fill="#000"
+              d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+        >
+        </path>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff"
+                d="M0 0h48v48H0z"
+          >
+          </path>
+        </clipPath>
+      </defs>
     </svg>
     <span class="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
       JavaScript
@@ -1012,12 +1192,33 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -1033,12 +1234,35 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1058,22 +1282,53 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -1200,11 +1455,21 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
         abcd1234
       </span>
       <span aria-hidden="true">
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
              style="width: 16px; height: 16px;"
         >
-          <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          >
+          </path>
         </svg>
       </span>
     </button>
@@ -1236,12 +1501,68 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-swift">
-          </use>
+          <g fill-rule="evenodd"
+             clip-path="url(#a)"
+             clip-rule="evenodd"
+          >
+            <path fill="url(#b)"
+                  d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+            >
+            </path>
+            <path fill="url(#c)"
+                  d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+            >
+            </path>
+            <path fill="#FEFEFE"
+                  d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+            >
+            </path>
+          </g>
+          <defs>
+            <linearGradient id="b"
+                            x1="2.813"
+                            x2="-6.259"
+                            y1="-6.259"
+                            y2="45.187"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#FAAE41">
+              </stop>
+              <stop offset="1"
+                    stop-color="#EF3E31"
+              >
+              </stop>
+            </linearGradient>
+            <linearGradient id="c"
+                            x1="4.876"
+                            x2="-1.23"
+                            y1="-2.365"
+                            y2="35.34"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#E29F3A">
+              </stop>
+              <stop offset="1"
+                    stop-color="#D43929"
+              >
+              </stop>
+            </linearGradient>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Swift
@@ -1257,12 +1578,35 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1277,12 +1621,33 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-javascript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1297,12 +1662,86 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-python">
-              </use>
+              <g fill-rule="evenodd"
+                 clip-path="url(#a)"
+                 clip-rule="evenodd"
+              >
+                <path fill="url(#b)"
+                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
+                >
+                </path>
+                <path fill="url(#c)"
+                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
+                >
+                </path>
+                <path fill="url(#d)"
+                      d="M29.156 33.479c.99 0 1.793.811 1.793 1.815 0 1.007-.803 1.827-1.794 1.827-.987 0-1.793-.82-1.793-1.827 0-1.004.806-1.815 1.794-1.815m5.368-23.046v4.244c0 3.29-2.79 6.059-5.97 6.059h-9.546c-2.614 0-4.778 2.238-4.778 4.857v9.1c0 2.59 2.252 4.113 4.778 4.856 3.025.89 5.926 1.05 9.546 0 2.406-.696 4.778-2.099 4.778-4.856V31.05h-9.546v-1.215H38.11c2.778 0 3.813-1.937 4.78-4.845.997-2.993.954-5.872 0-9.713-.687-2.765-1.998-4.845-4.78-4.845z"
+                >
+                </path>
+                <path fill="#4786CF"
+                      d="M4 20.149v-.052c.003-1.506.232-2.99.673-4.819.76-3.176 3.193-4.845 5.97-4.845h13.143V9.22H14.23V5.577c0-2.758.734-4.254 4.778-4.968a27.3 27.3 0 0 1 4.567-.39 30 30 0 0 1 4.979.39c2.593.432 4.778 2.378 4.778 4.968v9.1c0 2.669-2.121 4.856-4.778 4.856h-9.546c-3.24 0-5.97 2.782-5.97 5.937v4.366H9.752c-2.778 0-4.4-2.015-5.08-4.845-.45-1.869-.67-3.368-.672-4.842M18.407 3.148c-.991 0-1.794.82-1.794 1.827 0 1.003.803 1.815 1.794 1.815.987 0 1.793-.812 1.793-1.815 0-1.008-.806-1.827-1.793-1.827"
+                >
+                </path>
+              </g>
+              <defs>
+                <radialGradient id="b"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#C6C6C6">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#fff"
+                  >
+                  </stop>
+                </radialGradient>
+                <radialGradient id="c"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#C6C6C6">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#fff"
+                  >
+                  </stop>
+                </radialGradient>
+                <linearGradient id="d"
+                                x1="38.828"
+                                x2="30.863"
+                                y1="27.877"
+                                y2="16.841"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FFD33A">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#FFE873"
+                  >
+                  </stop>
+                </linearGradient>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1322,22 +1761,88 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-swift">
-            </use>
+            <g fill-rule="evenodd"
+               clip-path="url(#a)"
+               clip-rule="evenodd"
+            >
+              <path fill="url(#b)"
+                    d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+              >
+              </path>
+              <path fill="url(#c)"
+                    d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+              >
+              </path>
+              <path fill="#FEFEFE"
+                    d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+              >
+              </path>
+            </g>
+            <defs>
+              <linearGradient id="b"
+                              x1="2.813"
+                              x2="-6.259"
+                              y1="-6.259"
+                              y2="45.187"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FAAE41">
+                </stop>
+                <stop offset="1"
+                      stop-color="#EF3E31"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="c"
+                              x1="4.876"
+                              x2="-1.23"
+                              y1="-2.365"
+                              y2="35.34"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#E29F3A">
+                </stop>
+                <stop offset="1"
+                      stop-color="#D43929"
+                >
+                </stop>
+              </linearGradient>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             Swift
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -1461,12 +1966,33 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-javascript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1476,12 +2002,35 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-typescript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#007ACC"
+                  d="M0 24V0h48v48H0"
+            >
+            </path>
+            <path fill="#fff"
+                  fill-rule="evenodd"
+                  d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                  clip-rule="evenodd"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           TypeScript
@@ -1497,12 +2046,68 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-swift">
-              </use>
+              <g fill-rule="evenodd"
+                 clip-path="url(#a)"
+                 clip-rule="evenodd"
+              >
+                <path fill="url(#b)"
+                      d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+                >
+                </path>
+                <path fill="url(#c)"
+                      d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+                >
+                </path>
+                <path fill="#FEFEFE"
+                      d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+                >
+                </path>
+              </g>
+              <defs>
+                <linearGradient id="b"
+                                x1="2.813"
+                                x2="-6.259"
+                                y1="-6.259"
+                                y2="45.187"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FAAE41">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#EF3E31"
+                  >
+                  </stop>
+                </linearGradient>
+                <linearGradient id="c"
+                                x1="4.876"
+                                x2="-1.23"
+                                y1="-2.365"
+                                y2="35.34"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E29F3A">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#D43929"
+                  >
+                  </stop>
+                </linearGradient>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1522,22 +2127,55 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-typescript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#007ACC"
+                    d="M0 24V0h48v48H0"
+              >
+              </path>
+              <path fill="#fff"
+                    fill-rule="evenodd"
+                    d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                    clip-rule="evenodd"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             TypeScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -1673,12 +2311,33 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -1694,12 +2353,35 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1719,22 +2401,53 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -1858,11 +2571,21 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                 aria-describedby="tooltip"
                 class="p-0 relative focus:outline-none h-[1rem] "
         >
-          <svg class="text-neutral-700 dark:text-neutral-600"
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class="text-neutral-700 dark:text-neutral-600"
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-information-circle-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+            >
+            </path>
           </svg>
         </button>
       </div>
@@ -1895,12 +2618,33 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -1916,12 +2660,35 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1936,12 +2703,68 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-swift">
-              </use>
+              <g fill-rule="evenodd"
+                 clip-path="url(#a)"
+                 clip-rule="evenodd"
+              >
+                <path fill="url(#b)"
+                      d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+                >
+                </path>
+                <path fill="url(#c)"
+                      d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+                >
+                </path>
+                <path fill="#FEFEFE"
+                      d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+                >
+                </path>
+              </g>
+              <defs>
+                <linearGradient id="b"
+                                x1="2.813"
+                                x2="-6.259"
+                                y1="-6.259"
+                                y2="45.187"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FAAE41">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#EF3E31"
+                  >
+                  </stop>
+                </linearGradient>
+                <linearGradient id="c"
+                                x1="4.876"
+                                x2="-1.23"
+                                y1="-2.365"
+                                y2="35.34"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E29F3A">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#D43929"
+                  >
+                  </stop>
+                </linearGradient>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -1961,22 +2784,53 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -2117,12 +2971,33 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-javascript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -2137,12 +3012,35 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -2162,22 +3060,509 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-ruby">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="url(#b)"
+                    d="M37.174 31.582 9.779 47.849l35.471-2.407 2.732-35.767z"
+              >
+              </path>
+              <path fill="url(#c)"
+                    d="M45.308 45.417 42.26 24.375l-8.305 10.966z"
+              >
+              </path>
+              <path fill="url(#d)"
+                    d="m45.35 45.417-22.336-1.753-13.116 4.139z"
+              >
+              </path>
+              <path fill="url(#e)"
+                    d="m9.93 47.808 5.58-18.28-12.28 2.626z"
+              >
+              </path>
+              <path fill="url(#f)"
+                    d="m0 38.285 3.422-6.24-2.768-7.436z"
+              >
+              </path>
+              <path fill="url(#g)"
+                    d="m33.953 35.401-5.134-20.11-14.693 13.773z"
+              >
+              </path>
+              <path fill="url(#h)"
+                    d="M46.817 15.574 32.93 4.23 29.06 16.734z"
+              >
+              </path>
+              <path fill="url(#i)"
+                    d="m40.322.186-8.168 4.515L27 .126z"
+              >
+              </path>
+              <path fill="#fff"
+                    d="m.47 24.375 2.785 7.9 12.102-2.715 13.815-12.84 3.9-12.385L26.931 0 16.494 3.906c-3.288 3.059-9.67 9.11-9.9 9.225-.227.116-4.213 7.65-6.124 11.244"
+              >
+              </path>
+              <path fill="url(#j)"
+                    d="M10.249 10.183C17.376 3.117 26.564-1.059 30.09 2.5c3.524 3.558-.213 12.203-7.34 19.268-7.128 7.064-16.202 11.469-19.725 7.911-3.526-3.555.097-12.43 7.224-19.495"
+              >
+              </path>
+              <path fill="url(#k)"
+                    d="m9.93 47.8 5.535-18.337 18.386 5.907C27.203 41.603 19.81 46.873 9.93 47.8"
+              >
+              </path>
+              <path fill="#9E1209"
+                    d="M0 38.204c.262 9.408 7.05 9.548 9.941 9.631L3.262 32.236z"
+              >
+              </path>
+              <path fill="url(#l)"
+                    d="M3.233 32.255 2.185 44.742c1.978 2.702 4.7 2.937 7.555 2.727-2.065-5.142-6.192-15.422-6.507-15.214"
+              >
+              </path>
+              <path fill="url(#m)"
+                    d="m29.197 16.683 4.72 18.696C39.47 29.54 44.453 23.263 46.894 15.5z"
+              >
+              </path>
+              <path fill="url(#n)"
+                    d="m15.458 29.463 7.4 14.279c4.377-2.374 7.804-5.265 10.942-8.363z"
+              >
+              </path>
+              <path fill="url(#o)"
+                    d="M46.846 15.594c1.89-5.701 2.325-13.88-6.582-15.398l-7.31 4.037z"
+              >
+              </path>
+              <path fill="url(#p)"
+                    d="M29.223 16.713c4.267 2.622 12.867 7.89 13.041 7.987.271.152 3.708-5.796 4.488-9.157z"
+              >
+              </path>
+              <path fill="url(#q)"
+                    d="m32.912 4.265 14.702 2.063C46.83 3.003 44.42.858 40.312.187z"
+              >
+              </path>
+            </g>
+            <defs>
+              <linearGradient id="b"
+                              x1="51.112"
+                              x2="41.001"
+                              y1="47.178"
+                              y2="29.274"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FB7655">
+                </stop>
+                <stop stop-color="#FB7655">
+                </stop>
+                <stop offset="0.41"
+                      stop-color="#E42B1E"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#900"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#900"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="c"
+                              x1="67.988"
+                              x2="22.822"
+                              y1="-4.343"
+                              y2="-6.911"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#871101">
+                </stop>
+                <stop stop-color="#871101">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#911209"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#911209"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="d"
+                              x1="2787.28"
+                              x2="2787.11"
+                              y1="559.152"
+                              y2="-83.088"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#871101">
+                </stop>
+                <stop stop-color="#871101">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#911209"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#911209"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="e"
+                              x1="4.959"
+                              x2="12.911"
+                              y1="34.187"
+                              y2="44.708"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#fff">
+                </stop>
+                <stop stop-color="#fff">
+                </stop>
+                <stop offset="0.23"
+                      stop-color="#E57252"
+                >
+                </stop>
+                <stop offset="0.46"
+                      stop-color="#DE3B20"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#A60003"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#A60003"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="f"
+                              x1="-11.51"
+                              x2="1.418"
+                              y1="52.752"
+                              y2="53.259"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#fff">
+                </stop>
+                <stop stop-color="#fff">
+                </stop>
+                <stop offset="0.31"
+                      stop-color="#DE4024"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#BF190B"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#BF190B"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="g"
+                              x1="16.647"
+                              x2="17.436"
+                              y1="18.967"
+                              y2="32.38"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#fff">
+                </stop>
+                <stop stop-color="#fff">
+                </stop>
+                <stop offset="0.23"
+                      stop-color="#E4714E"
+                >
+                </stop>
+                <stop offset="0.56"
+                      stop-color="#BE1A0D"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#A80D00"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#A80D00"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="h"
+                              x1="21.859"
+                              x2="22.969"
+                              y1="2.592"
+                              y2="22.043"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#fff">
+                </stop>
+                <stop stop-color="#fff">
+                </stop>
+                <stop offset="0.18"
+                      stop-color="#E46342"
+                >
+                </stop>
+                <stop offset="0.4"
+                      stop-color="#C82410"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#A80D00"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#A80D00"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="i"
+                              x1="88.161"
+                              x2="89.301"
+                              y1="7.302"
+                              y2="-33.694"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#fff">
+                </stop>
+                <stop stop-color="#fff">
+                </stop>
+                <stop offset="0.54"
+                      stop-color="#C81F11"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#BF0905"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#BF0905"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="j"
+                              x1="14.71"
+                              x2="51.846"
+                              y1="56.193"
+                              y2="17.788"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#BD0012">
+                </stop>
+                <stop stop-color="#BD0012">
+                </stop>
+                <stop offset="0.07"
+                      stop-color="#fff"
+                >
+                </stop>
+                <stop offset="0.17"
+                      stop-color="#fff"
+                >
+                </stop>
+                <stop offset="0.27"
+                      stop-color="#C82F1C"
+                >
+                </stop>
+                <stop offset="0.33"
+                      stop-color="#820C01"
+                >
+                </stop>
+                <stop offset="0.46"
+                      stop-color="#A31601"
+                >
+                </stop>
+                <stop offset="0.72"
+                      stop-color="#B31301"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#E82609"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#E82609"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="k"
+                              x1="27.062"
+                              x2="17.422"
+                              y1="39.083"
+                              y2="32.193"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#8C0C01">
+                </stop>
+                <stop stop-color="#8C0C01">
+                </stop>
+                <stop offset="0.54"
+                      stop-color="#990C00"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#A80D0E"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#A80D0E"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="l"
+                              x1="11.381"
+                              x2="-7.149"
+                              y1="31.099"
+                              y2="27.336"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#8B2114">
+                </stop>
+                <stop stop-color="#8B2114">
+                </stop>
+                <stop offset="0.43"
+                      stop-color="#9E100A"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#B3100C"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#B3100C"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="m"
+                              x1="48.563"
+                              x2="35.215"
+                              y1="20.922"
+                              y2="13.408"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#7E110B">
+                </stop>
+                <stop stop-color="#7E110B">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#9E0C00"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#9E0C00"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="o"
+                              x1="49.814"
+                              x2="44.46"
+                              y1="8.931"
+                              y2="3.77"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#79130D">
+                </stop>
+                <stop stop-color="#79130D">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#9E120B"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#9E120B"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="q"
+                              x1="10.024"
+                              x2="11.64"
+                              y1="0.08"
+                              y2="23.505"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#B31000">
+                </stop>
+                <stop stop-color="#B31000">
+                </stop>
+                <stop offset="0.44"
+                      stop-color="#910F08"
+                >
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#791C12"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#791C12"
+                >
+                </stop>
+              </linearGradient>
+              <radialGradient id="n"
+                              cx="0"
+                              cy="0"
+                              r="1"
+                              gradienttransform="matrix(16.212 0 0 12.6203 17.943 35.297)"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#A30C00">
+                </stop>
+                <stop stop-color="#A30C00">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#800E08"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#800E08"
+                >
+                </stop>
+              </radialGradient>
+              <radialGradient id="p"
+                              cx="0"
+                              cy="0"
+                              r="1"
+                              gradienttransform="matrix(12.1954 0 0 6.37254 34.832 19.226)"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#A80D00">
+                </stop>
+                <stop stop-color="#A80D00">
+                </stop>
+                <stop offset="0.99"
+                      stop-color="#7E0E08"
+                >
+                </stop>
+                <stop offset="1"
+                      stop-color="#7E0E08"
+                >
+                </stop>
+              </radialGradient>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             Ruby
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -2187,11 +3572,21 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
        tabindex="0"
   >
     <div class="px-16 py-6 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-3 items-center">
-      <svg class="text-yellow-600 dark:text-yellow-400"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-yellow-600 dark:text-yellow-400"
            style="width: 24px; height: 24px;"
       >
-        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+        >
+        </path>
       </svg>
       <p class="ui-text-p3 text-neutral-700 dark:text-neutral-600">
         You're currently viewing the Ruby docs. There either isn't a Ruby code sample for this example, or this feature isn't supported in Ruby. Switch language to view this example in a different language, or check which SDKs support this feature.
@@ -2255,12 +3650,33 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
              role="button"
              aria-pressed="true"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                aria-hidden="true"
                style="width: 22px; height: 22px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
             JavaScript
@@ -2276,12 +3692,35 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                  role="button"
                  aria-pressed="false"
             >
-              <svg class
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="48"
+                   height="48"
+                   fill="none"
+                   viewbox="0 0 48 48"
+                   class
                    aria-hidden="true"
                    style="width: 22px; height: 22px;"
               >
-                <use xlink:href="#sprite-icon-tech-typescript">
-                </use>
+                <g clip-path="url(#a)">
+                  <path fill="#007ACC"
+                        d="M0 24V0h48v48H0"
+                  >
+                  </path>
+                  <path fill="#fff"
+                        fill-rule="evenodd"
+                        d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                        clip-rule="evenodd"
+                  >
+                  </path>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff"
+                          d="M0 0h48v48H0z"
+                    >
+                    </path>
+                  </clipPath>
+                </defs>
               </svg>
             </div>
           </button>
@@ -2301,22 +3740,53 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
           <div class="flex items-center gap-2"
                style="pointer-events: none;"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  style="width: 20px; height: 20px;"
             >
-              <use xlink:href="#sprite-icon-tech-javascript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
             <span>
               JavaScript
             </span>
           </div>
           <span aria-hidden="true">
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewbox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="currentColor"
+                 aria-hidden="true"
+                 data-slot="icon"
+                 class
                  style="width: 16px; height: 16px;"
             >
-              <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-              </use>
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              >
+              </path>
             </svg>
           </span>
         </button>
@@ -2482,12 +3952,33 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -2503,12 +3994,35 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -2528,22 +4042,53 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
@@ -2679,12 +4224,33 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           JavaScript
@@ -2700,12 +4266,35 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                role="button"
                aria-pressed="false"
           >
-            <svg class
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <use xlink:href="#sprite-icon-tech-typescript">
-              </use>
+              <g clip-path="url(#a)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </button>
@@ -2725,22 +4314,53 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
         <div class="flex items-center gap-2"
              style="pointer-events: none;"
         >
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
                style="width: 20px; height: 20px;"
           >
-            <use xlink:href="#sprite-icon-tech-javascript">
-            </use>
+            <g clip-path="url(#a)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
           </svg>
           <span>
             JavaScript
           </span>
         </div>
         <span aria-hidden="true">
-          <svg class
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
                style="width: 16px; height: 16px;"
           >
-            <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-            </use>
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
           </svg>
         </span>
       </button>
