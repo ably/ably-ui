@@ -9981,6 +9981,23 @@ exports[`Components/Icon TechIcons smoke-test 1`] = `
           <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
                style="width: 24px; height: 24px;"
           >
+            <use xlink:href="#sprite-icon-tech-openai">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <code class="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-4">
+        <p>
+          icon-tech-openai
+        </p>
+      </code>
+    </div>
+    <div class="border p-2 flex flex-col items-center justify-between gap-3 rounded">
+      <div class="inline-flex">
+        <div class="flex">
+          <svg class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+               style="width: 24px; height: 24px;"
+          >
             <use xlink:href="#sprite-icon-tech-parse-server">
             </use>
           </svg>
