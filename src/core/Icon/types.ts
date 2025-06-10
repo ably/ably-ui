@@ -1,11 +1,15 @@
-import { computedIcons } from "./computed-icons";
+import { displayIcons } from "./computed-icons/display-icons";
+import { guiIcons } from "./computed-icons/gui-icons";
+import { socialIcons } from "./computed-icons/social-icons";
+import { techIcons } from "./computed-icons/tech-icons";
+import { productIcons } from "./computed-icons/product-icons";
 
 export const iconNames = {
-  gui: computedIcons.gui,
-  display: computedIcons.display,
-  social: computedIcons.social,
-  tech: computedIcons.tech,
-  product: computedIcons.product,
+  gui: guiIcons,
+  display: displayIcons,
+  social: socialIcons,
+  tech: techIcons,
+  product: productIcons,
 };
 
 export type IconName =

@@ -4,7 +4,6 @@ import { initialize, mswLoader } from "msw-storybook-addon";
 import "./styles.css";
 import { themes } from "@storybook/theming";
 import theme, { brandImage, brandImageDark } from "./theme";
-import loadIcons from "../src/core/icons";
 
 initialize({
   onUnhandledRequest: "bypass",
@@ -17,12 +16,6 @@ initialize({
 });
 
 const preview = {
-  decorators: [
-    (Story) => {
-      loadIcons();
-      return <Story />;
-    },
-  ],
   parameters: {
     controls: {
       matchers: {
