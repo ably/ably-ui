@@ -62,7 +62,8 @@ exports[`Components/Flash Default smoke-test 1`] = `
            class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <path fill-rule="evenodd"
+        <path fill="currentColor"
+              fill-rule="evenodd"
               d="M2.77 19.615 11.849 3H9.4L1 18.373zm18.282 0L11.975 3h2.449l8.399 15.373zm-9.14-6.962 9.014 7.06L19.086 21l-7.174-5.617L4.737 21l-1.84-1.288z"
               clip-rule="evenodd"
         >
@@ -335,7 +336,8 @@ exports[`Components/Flash WithLinks play-test 1`] = `
            class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <path fill-rule="evenodd"
+        <path fill="currentColor"
+              fill-rule="evenodd"
               d="M2.77 19.615 11.849 3H9.4L1 18.373zm18.282 0L11.975 3h2.449l8.399 15.373zm-9.14-6.962 9.014 7.06L19.086 21l-7.174-5.617L4.737 21l-1.84-1.288z"
               clip-rule="evenodd"
         >
