@@ -112,6 +112,7 @@ async function convertSvgToComponent(
             name: "preset-default",
             params: {
               overrides: {
+                cleanupIds: false,
                 removeViewBox: false,
               },
             },

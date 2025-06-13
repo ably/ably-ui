@@ -18,7 +18,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -29,7 +29,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -60,7 +60,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -73,7 +73,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -107,7 +107,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -118,7 +118,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -391,7 +391,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#a)">
+      <g clip-path="url(#clip0_4810_1924)">
         <path stroke="currentColor"
               stroke-linecap="round"
               stroke-width="3"
@@ -404,7 +404,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="a">
+        <clipPath id="clip0_4810_1924">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -884,7 +884,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#a)">
+      <g clip-path="url(#clip0_1031_1922)">
         <path fill="#F7DF1E"
               d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
         >
@@ -895,7 +895,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="a">
+        <clipPath id="clip0_1031_1922">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -1039,7 +1039,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#a)">
+      <g clip-path="url(#clip0_1031_1922)">
         <path fill="#F7DF1E"
               d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
         >
@@ -1050,7 +1050,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="a">
+        <clipPath id="clip0_1031_1922">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -1201,7 +1201,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -1212,7 +1212,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -1243,7 +1243,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -1256,7 +1256,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1290,7 +1290,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -1301,7 +1301,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -1511,14 +1511,14 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
              style="width: 22px; height: 22px;"
         >
           <g fill-rule="evenodd"
-             clip-path="url(#a)"
+             clip-path="url(#clip0_1031_1912)"
              clip-rule="evenodd"
           >
-            <path fill="url(#b)"
+            <path fill="url(#paint0_linear_1031_1912)"
                   d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
             >
             </path>
-            <path fill="url(#c)"
+            <path fill="url(#paint1_linear_1031_1912)"
                   d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
             >
             </path>
@@ -1528,7 +1528,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <linearGradient id="b"
+            <linearGradient id="paint0_linear_1031_1912"
                             x1="2.813"
                             x2="-6.259"
                             y1="-6.259"
@@ -1542,7 +1542,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               >
               </stop>
             </linearGradient>
-            <linearGradient id="c"
+            <linearGradient id="paint1_linear_1031_1912"
                             x1="4.876"
                             x2="-1.23"
                             y1="-2.365"
@@ -1556,7 +1556,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               >
               </stop>
             </linearGradient>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1912">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -1587,7 +1587,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -1600,7 +1600,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1630,7 +1630,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1922)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -1641,7 +1641,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1922">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1672,18 +1672,18 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  style="width: 22px; height: 22px;"
             >
               <g fill-rule="evenodd"
-                 clip-path="url(#a)"
+                 clip-path="url(#clip0_1031_1963)"
                  clip-rule="evenodd"
               >
-                <path fill="url(#b)"
+                <path fill="url(#paint0_radial_1031_1963)"
                       d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="url(#c)"
+                <path fill="url(#paint1_radial_1031_1963)"
                       d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="url(#d)"
+                <path fill="url(#paint2_linear_1031_1963)"
                       d="M29.156 33.479c.99 0 1.793.811 1.793 1.815 0 1.007-.803 1.827-1.794 1.827-.987 0-1.793-.82-1.793-1.827 0-1.004.806-1.815 1.794-1.815m5.368-23.046v4.244c0 3.29-2.79 6.059-5.97 6.059h-9.546c-2.614 0-4.778 2.238-4.778 4.857v9.1c0 2.59 2.252 4.113 4.778 4.856 3.025.89 5.926 1.05 9.546 0 2.406-.696 4.778-2.099 4.778-4.856V31.05h-9.546v-1.215H38.11c2.778 0 3.813-1.937 4.78-4.845.997-2.993.954-5.872 0-9.713-.687-2.765-1.998-4.845-4.78-4.845z"
                 >
                 </path>
@@ -1693,7 +1693,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <radialGradient id="b"
+                <radialGradient id="paint0_radial_1031_1963"
                                 cx="0"
                                 cy="0"
                                 r="1"
@@ -1707,7 +1707,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </radialGradient>
-                <radialGradient id="c"
+                <radialGradient id="paint1_radial_1031_1963"
                                 cx="0"
                                 cy="0"
                                 r="1"
@@ -1721,7 +1721,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </radialGradient>
-                <linearGradient id="d"
+                <linearGradient id="paint2_linear_1031_1963"
                                 x1="38.828"
                                 x2="30.863"
                                 y1="27.877"
@@ -1735,7 +1735,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1963">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1770,14 +1770,14 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                style="width: 20px; height: 20px;"
           >
             <g fill-rule="evenodd"
-               clip-path="url(#a)"
+               clip-path="url(#clip0_1031_1912)"
                clip-rule="evenodd"
             >
-              <path fill="url(#b)"
+              <path fill="url(#paint0_linear_1031_1912)"
                     d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
               >
               </path>
-              <path fill="url(#c)"
+              <path fill="url(#paint1_linear_1031_1912)"
                     d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
               >
               </path>
@@ -1787,7 +1787,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <linearGradient id="b"
+              <linearGradient id="paint0_linear_1031_1912"
                               x1="2.813"
                               x2="-6.259"
                               y1="-6.259"
@@ -1801,7 +1801,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="c"
+              <linearGradient id="paint1_linear_1031_1912"
                               x1="4.876"
                               x2="-1.23"
                               y1="-2.365"
@@ -1815,7 +1815,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1912">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -1975,7 +1975,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1922)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -1986,7 +1986,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1922">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2011,7 +2011,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1977)">
             <path fill="#007ACC"
                   d="M0 24V0h48v48H0"
             >
@@ -2024,7 +2024,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1977">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -2056,14 +2056,14 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                  style="width: 22px; height: 22px;"
             >
               <g fill-rule="evenodd"
-                 clip-path="url(#a)"
+                 clip-path="url(#clip0_1031_1912)"
                  clip-rule="evenodd"
               >
-                <path fill="url(#b)"
+                <path fill="url(#paint0_linear_1031_1912)"
                       d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
                 >
                 </path>
-                <path fill="url(#c)"
+                <path fill="url(#paint1_linear_1031_1912)"
                       d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
                 >
                 </path>
@@ -2073,7 +2073,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <linearGradient id="b"
+                <linearGradient id="paint0_linear_1031_1912"
                                 x1="2.813"
                                 x2="-6.259"
                                 y1="-6.259"
@@ -2087,7 +2087,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <linearGradient id="c"
+                <linearGradient id="paint1_linear_1031_1912"
                                 x1="4.876"
                                 x2="-1.23"
                                 y1="-2.365"
@@ -2101,7 +2101,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1912">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2135,7 +2135,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1977)">
               <path fill="#007ACC"
                     d="M0 24V0h48v48H0"
               >
@@ -2148,7 +2148,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1977">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2320,7 +2320,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -2331,7 +2331,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -2362,7 +2362,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -2375,7 +2375,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2409,7 +2409,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -2420,7 +2420,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2627,7 +2627,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -2638,7 +2638,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -2669,7 +2669,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -2682,7 +2682,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2713,14 +2713,14 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                  style="width: 22px; height: 22px;"
             >
               <g fill-rule="evenodd"
-                 clip-path="url(#a)"
+                 clip-path="url(#clip0_1031_1912)"
                  clip-rule="evenodd"
               >
-                <path fill="url(#b)"
+                <path fill="url(#paint0_linear_1031_1912)"
                       d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
                 >
                 </path>
-                <path fill="url(#c)"
+                <path fill="url(#paint1_linear_1031_1912)"
                       d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
                 >
                 </path>
@@ -2730,7 +2730,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <linearGradient id="b"
+                <linearGradient id="paint0_linear_1031_1912"
                                 x1="2.813"
                                 x2="-6.259"
                                 y1="-6.259"
@@ -2744,7 +2744,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <linearGradient id="c"
+                <linearGradient id="paint1_linear_1031_1912"
                                 x1="4.876"
                                 x2="-1.23"
                                 y1="-2.365"
@@ -2758,7 +2758,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1912">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2792,7 +2792,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -2803,7 +2803,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2980,7 +2980,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1922)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -2991,7 +2991,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1922">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3021,7 +3021,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -3034,7 +3034,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3068,36 +3068,36 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
-              <path fill="url(#b)"
+            <g clip-path="url(#clip0_1031_2037)">
+              <path fill="url(#paint0_linear_1031_2037)"
                     d="M37.174 31.582 9.779 47.849l35.471-2.407 2.732-35.767z"
               >
               </path>
-              <path fill="url(#c)"
+              <path fill="url(#paint1_linear_1031_2037)"
                     d="M45.308 45.417 42.26 24.375l-8.305 10.966z"
               >
               </path>
-              <path fill="url(#d)"
+              <path fill="url(#paint2_linear_1031_2037)"
                     d="m45.35 45.417-22.336-1.753-13.116 4.139z"
               >
               </path>
-              <path fill="url(#e)"
+              <path fill="url(#paint3_linear_1031_2037)"
                     d="m9.93 47.808 5.58-18.28-12.28 2.626z"
               >
               </path>
-              <path fill="url(#f)"
+              <path fill="url(#paint4_linear_1031_2037)"
                     d="m0 38.285 3.422-6.24-2.768-7.436z"
               >
               </path>
-              <path fill="url(#g)"
+              <path fill="url(#paint5_linear_1031_2037)"
                     d="m33.953 35.401-5.134-20.11-14.693 13.773z"
               >
               </path>
-              <path fill="url(#h)"
+              <path fill="url(#paint6_linear_1031_2037)"
                     d="M46.817 15.574 32.93 4.23 29.06 16.734z"
               >
               </path>
-              <path fill="url(#i)"
+              <path fill="url(#paint7_linear_1031_2037)"
                     d="m40.322.186-8.168 4.515L27 .126z"
               >
               </path>
@@ -3105,11 +3105,11 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                     d="m.47 24.375 2.785 7.9 12.102-2.715 13.815-12.84 3.9-12.385L26.931 0 16.494 3.906c-3.288 3.059-9.67 9.11-9.9 9.225-.227.116-4.213 7.65-6.124 11.244"
               >
               </path>
-              <path fill="url(#j)"
+              <path fill="url(#paint8_linear_1031_2037)"
                     d="M10.249 10.183C17.376 3.117 26.564-1.059 30.09 2.5c3.524 3.558-.213 12.203-7.34 19.268-7.128 7.064-16.202 11.469-19.725 7.911-3.526-3.555.097-12.43 7.224-19.495"
               >
               </path>
-              <path fill="url(#k)"
+              <path fill="url(#paint9_linear_1031_2037)"
                     d="m9.93 47.8 5.535-18.337 18.386 5.907C27.203 41.603 19.81 46.873 9.93 47.8"
               >
               </path>
@@ -3117,33 +3117,33 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                     d="M0 38.204c.262 9.408 7.05 9.548 9.941 9.631L3.262 32.236z"
               >
               </path>
-              <path fill="url(#l)"
+              <path fill="url(#paint10_linear_1031_2037)"
                     d="M3.233 32.255 2.185 44.742c1.978 2.702 4.7 2.937 7.555 2.727-2.065-5.142-6.192-15.422-6.507-15.214"
               >
               </path>
-              <path fill="url(#m)"
+              <path fill="url(#paint11_linear_1031_2037)"
                     d="m29.197 16.683 4.72 18.696C39.47 29.54 44.453 23.263 46.894 15.5z"
               >
               </path>
-              <path fill="url(#n)"
+              <path fill="url(#paint12_radial_1031_2037)"
                     d="m15.458 29.463 7.4 14.279c4.377-2.374 7.804-5.265 10.942-8.363z"
               >
               </path>
-              <path fill="url(#o)"
+              <path fill="url(#paint13_linear_1031_2037)"
                     d="M46.846 15.594c1.89-5.701 2.325-13.88-6.582-15.398l-7.31 4.037z"
               >
               </path>
-              <path fill="url(#p)"
+              <path fill="url(#paint14_radial_1031_2037)"
                     d="M29.223 16.713c4.267 2.622 12.867 7.89 13.041 7.987.271.152 3.708-5.796 4.488-9.157z"
               >
               </path>
-              <path fill="url(#q)"
+              <path fill="url(#paint15_linear_1031_2037)"
                     d="m32.912 4.265 14.702 2.063C46.83 3.003 44.42.858 40.312.187z"
               >
               </path>
             </g>
             <defs>
-              <linearGradient id="b"
+              <linearGradient id="paint0_linear_1031_2037"
                               x1="51.112"
                               x2="41.001"
                               y1="47.178"
@@ -3167,7 +3167,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="c"
+              <linearGradient id="paint1_linear_1031_2037"
                               x1="67.988"
                               x2="22.822"
                               y1="-4.343"
@@ -3187,7 +3187,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="d"
+              <linearGradient id="paint2_linear_1031_2037"
                               x1="2787.28"
                               x2="2787.11"
                               y1="559.152"
@@ -3207,7 +3207,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="e"
+              <linearGradient id="paint3_linear_1031_2037"
                               x1="4.959"
                               x2="12.911"
                               y1="34.187"
@@ -3235,7 +3235,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="f"
+              <linearGradient id="paint4_linear_1031_2037"
                               x1="-11.51"
                               x2="1.418"
                               y1="52.752"
@@ -3259,7 +3259,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="g"
+              <linearGradient id="paint5_linear_1031_2037"
                               x1="16.647"
                               x2="17.436"
                               y1="18.967"
@@ -3287,7 +3287,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="h"
+              <linearGradient id="paint6_linear_1031_2037"
                               x1="21.859"
                               x2="22.969"
                               y1="2.592"
@@ -3315,7 +3315,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="i"
+              <linearGradient id="paint7_linear_1031_2037"
                               x1="88.161"
                               x2="89.301"
                               y1="7.302"
@@ -3339,7 +3339,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="j"
+              <linearGradient id="paint8_linear_1031_2037"
                               x1="14.71"
                               x2="51.846"
                               y1="56.193"
@@ -3383,7 +3383,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="k"
+              <linearGradient id="paint9_linear_1031_2037"
                               x1="27.062"
                               x2="17.422"
                               y1="39.083"
@@ -3407,7 +3407,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="l"
+              <linearGradient id="paint10_linear_1031_2037"
                               x1="11.381"
                               x2="-7.149"
                               y1="31.099"
@@ -3431,7 +3431,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="m"
+              <linearGradient id="paint11_linear_1031_2037"
                               x1="48.563"
                               x2="35.215"
                               y1="20.922"
@@ -3451,7 +3451,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="o"
+              <linearGradient id="paint13_linear_1031_2037"
                               x1="49.814"
                               x2="44.46"
                               y1="8.931"
@@ -3471,7 +3471,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="q"
+              <linearGradient id="paint15_linear_1031_2037"
                               x1="10.024"
                               x2="11.64"
                               y1="0.08"
@@ -3495,7 +3495,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <radialGradient id="n"
+              <radialGradient id="paint12_radial_1031_2037"
                               cx="0"
                               cy="0"
                               r="1"
@@ -3515,7 +3515,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </radialGradient>
-              <radialGradient id="p"
+              <radialGradient id="paint14_radial_1031_2037"
                               cx="0"
                               cy="0"
                               r="1"
@@ -3535,7 +3535,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </radialGradient>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_2037">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -3659,7 +3659,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                aria-hidden="true"
                style="width: 22px; height: 22px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -3670,7 +3670,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -3701,7 +3701,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                    aria-hidden="true"
                    style="width: 22px; height: 22px;"
               >
-                <g clip-path="url(#a)">
+                <g clip-path="url(#clip0_1031_1977)">
                   <path fill="#007ACC"
                         d="M0 24V0h48v48H0"
                   >
@@ -3714,7 +3714,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                   </path>
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="clip0_1031_1977">
                     <path fill="#fff"
                           d="M0 0h48v48H0z"
                     >
@@ -3748,7 +3748,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                  class
                  style="width: 20px; height: 20px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1922)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -3759,7 +3759,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1922">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3961,7 +3961,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -3972,7 +3972,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4003,7 +4003,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4016,7 +4016,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4050,7 +4050,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4061,7 +4061,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -4233,7 +4233,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -4244,7 +4244,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4275,7 +4275,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#a)">
+              <g clip-path="url(#clip0_1031_1977)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4288,7 +4288,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="clip0_1031_1977">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4322,7 +4322,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#a)">
+            <g clip-path="url(#clip0_1031_1922)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4333,7 +4333,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="clip0_1031_1922">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
