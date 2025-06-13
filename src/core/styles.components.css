@@ -34,6 +34,12 @@
     @apply my-20 sm:my-24 md:my-32;
   }
 
+  .ui-section-spacing-collapse {
+    /* This removes the spacing between adjacent .ui-section-spacing classes,
+       in a way that handles margin collapsing as well (hence not an exact opposite) */
+    @apply -my-4 sm:-my-8 md:-my-16;
+  }
+
   .ui-content-spacing {
     @apply my-10 sm:my-12 md:my-16;
   }
