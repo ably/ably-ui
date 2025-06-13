@@ -12940,6 +12940,7 @@ exports[`Components/Icon TechIcons smoke-test 1`] = `
                width="48"
                height="48"
                fill="none"
+               viewbox="0 0 48 48"
                class="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
                style="width: 24px; height: 24px;"
           >
