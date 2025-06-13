@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "17.2.1",
+  "version": "17.3.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
     "@storybook/react-vite": "^8.6.14",
     "@storybook/test": "^8.6.14",
     "@storybook/test-runner": "^0.23.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
     "@swc/cli": "^0.7.3",
     "@swc/core": "^1.4.11",
     "@tailwindcss/container-queries": "^0.1.1",
@@ -46,7 +49,7 @@
     "http-server": "14.1.1",
     "jsdom": "^26.0.0",
     "mixpanel-browser": "^2.60.0",
-    "msw": "2.10.2",
+    "msw": "2.9.0",
     "msw-storybook-addon": "^2.0.2",
     "playwright": "^1.49.1",
     "posthog-js": "^1.217.4",
@@ -65,8 +68,8 @@
     "build:swc": "ts-node swc.config.ts",
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
-    "build:sprites": "ts-node scripts/generate-sprites.ts",
-    "build": "yarn build:prebuild && yarn build:sprites && yarn build:swc && yarn build:tsc && yarn build:cleanup",
+    "build:icons": "ts-node scripts/generate-icons.ts",
+    "build": "yarn build:prebuild && yarn build:icons && yarn build:swc && yarn build:tsc && yarn build:cleanup",
     "watch": "yarn build:swc -w",
     "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
     "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
@@ -83,6 +86,7 @@
     "test:vitest": "vitest --environment=jsdom --dir=src"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-navigation-menu": "^1.2.4",
     "@radix-ui/react-select": "^2.2.2",

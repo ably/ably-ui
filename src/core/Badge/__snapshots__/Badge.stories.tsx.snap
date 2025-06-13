@@ -10,12 +10,6 @@ exports[`Components/Badge Default smoke-test 1`] = `
 
 exports[`Components/Badge Disabled smoke-test 1`] = `
 <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 cursor-not-allowed disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark">
-  <svg class="text-neutral-900 dark:text-neutral-400"
-       style="width: 12px; height: 12px;"
-  >
-    <use xlink:href="#sprite-icon-gui-check-circled">
-    </use>
-  </svg>
   <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
@@ -45,22 +39,41 @@ exports[`Components/Badge WithAfterIcon smoke-test 1`] = `
   <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>
-  <svg class="text-neutral-900 dark:text-neutral-400"
+  <svg xmlns="http://www.w3.org/2000/svg"
+       fill="none"
+       viewbox="0 0 24 24"
+       stroke-width="1.5"
+       stroke="currentColor"
+       aria-hidden="true"
+       data-slot="icon"
+       class="text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
-    <use xlink:href="#sprite-icon-gui-chevron-down-outline">
-    </use>
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+    >
+    </path>
   </svg>
 </div>
 `;
 
 exports[`Components/Badge WithBeforeIcon smoke-test 1`] = `
 <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <svg class="text-neutral-900 dark:text-neutral-400"
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="12"
+       height="12"
+       fill="none"
+       viewbox="0 0 12 12"
+       class="text-neutral-900 dark:text-neutral-400"
        style="width: 12px; height: 12px;"
   >
-    <use xlink:href="#sprite-icon-gui-check-lotus-circled">
-    </use>
+    <path stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 6.375 5.625 7.5 7.5 4.875M10.5 6c0 .634-.315 1.195-.796 1.534a1.87 1.87 0 0 1-1.282 2.11c-.287.091-.592.111-.888.06A1.87 1.87 0 0 1 6 10.5a1.87 1.87 0 0 1-1.534-.796 1.873 1.873 0 0 1-2.17-2.17A1.87 1.87 0 0 1 1.5 6c0-.634.315-1.195.797-1.534a1.87 1.87 0 0 1 1.281-2.11c.287-.091.592-.111.888-.06a1.873 1.873 0 0 1 3.068 0 1.873 1.873 0 0 1 2.17 2.17A1.87 1.87 0 0 1 10.5 6"
+    >
+    </path>
   </svg>
   <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
@@ -70,12 +83,6 @@ exports[`Components/Badge WithBeforeIcon smoke-test 1`] = `
 
 exports[`Components/Badge WithLargeIconSize smoke-test 1`] = `
 <div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400">
-  <svg class="text-neutral-900 dark:text-neutral-400"
-       style="width: 16px; height: 16px;"
-  >
-    <use xlink:href="#sprite-icon-gui-check-circled">
-    </use>
-  </svg>
   <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>

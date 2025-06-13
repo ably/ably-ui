@@ -60,6 +60,19 @@ const renderIcons = (iconSet: IconName[]) => {
 
   return (
     <div>
+      <p className="p-4 pb-0">
+        Below is a record of all custom icons available in the library. We also
+        have access to all variants of icons in the{" "}
+        <a
+          href="https://heroicons.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ui-link"
+        >
+          Heroicons
+        </a>{" "}
+        library.
+      </p>
       {iconSet.some((icon) => icon.includes("-gui-")) && (
         <div className="flex items-center pt-4 gap-2 px-4 flex-wrap">
           <span className="ui-text-p1 text-neutral-1300 dark:text-neutral-000">

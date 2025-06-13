@@ -68,11 +68,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -100,12 +108,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -123,12 +139,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -148,11 +172,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -180,12 +212,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -203,12 +243,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -228,11 +276,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -260,12 +316,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -283,12 +347,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -308,11 +380,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -340,12 +420,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -363,12 +451,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -388,11 +484,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -420,12 +524,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -443,12 +555,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -479,11 +599,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -511,12 +639,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -534,12 +670,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -559,11 +703,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -591,12 +743,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -614,12 +774,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -639,11 +807,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -671,12 +847,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -694,12 +878,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -719,11 +911,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -751,12 +951,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -774,12 +982,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -799,11 +1015,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -831,12 +1055,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -854,12 +1086,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -890,11 +1130,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -922,12 +1170,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -945,12 +1201,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -970,11 +1234,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -1002,12 +1274,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1025,12 +1305,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1050,11 +1338,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -1082,12 +1378,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1105,12 +1409,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1130,11 +1442,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -1162,12 +1482,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1185,12 +1513,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1210,11 +1546,19 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                     aria-describedby="tooltip"
                     class="p-0 relative focus:outline-none h-[1rem] "
             >
-              <svg class="text-neutral-800 dark:text-neutral-500"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 16 16"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-neutral-800 dark:text-neutral-500"
                    style="width: 1rem; height: 1rem;"
               >
-                <use xlink:href="#sprite-icon-gui-information-circle-micro">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </button>
           </div>
@@ -1242,12 +1586,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Supported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-success flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-success flex-grow-0 flex-shrink-0"
                    data-testid="supported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-check-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>
@@ -1265,12 +1617,20 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
               Unsupported
             </span>
             <span class="sm:order-0">
-              <svg class="text-gui-error flex-grow-0 flex-shrink-0"
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true"
+                   data-slot="icon"
+                   class="text-gui-error flex-grow-0 flex-shrink-0"
                    data-testid="unsupported-icon"
                    style="width: 1.5rem; height: 1.5rem;"
               >
-                <use xlink:href="#sprite-icon-gui-x-circle-solid">
-                </use>
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                      clip-rule="evenodd"
+                >
+                </path>
               </svg>
             </span>
           </div>

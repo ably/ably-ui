@@ -122,15 +122,44 @@ import Meganav from "@ably/ui/core/Meganav";
 
 ### Icons
 
-Putting SVG files inside a`src/MODULE_NAME/icons` folder will add them to a per-module sprites file that will be available at the root of the module (e.g., `core/sprites.svg`). This file can be loaded with the `loadSprites` helper available in the `core` module or include in the page directly.
+We have access to two sets of icons via the `Icon` component, custom local assets hosted in the repo itself, and the third-party Heroicons library.
 
-Usage with the `Icon` React component:
+#### Local Custom Icons
+
+Putting SVG files inside a `src/core/icons` folder will:
+
+1. Add them to a per-group sprites file (e.g., `core/sprites-gui.svg`) for backward compatibility
+2. Generate React components that can be imported dynamically
+
+The sprites file can be loaded with the `loadSprites` helper available in the `core` module or included in the page directly.
+
+#### Heroicons Integration
+
+The system automatically falls back to [Heroicons](https://heroicons.com/) when a local icon isn't found, using this naming convention:
+
+- `icon-gui-{heroicon-name}-{variant}`
+
+Where `variant` can be:
+
+- `outline` → 24px outline icons
+- `solid` → 24px solid icons
+- `mini` → 20px solid icons
+- `micro` → 16px solid icons
+
+#### Usage with the Icon React Component
 
 ```tsx
+// Local custom icon
 <Icon name="icon-display-live-chat" size="3rem" additionalCSS="block mb-16" />
+
+// Heroicon with explicit variant
+<Icon name="icon-gui-arrow-long-right-outline" size="2rem" />
+
+// Heroicon using variant prop (appends variant to name)
+<Icon name="icon-gui-chevron-down" variant="solid" size="1.5rem" />
 ```
 
-Usage without a component:
+#### Usage without a component (sprites method)
 
 ```html
 <!-- The width and height are required for correct sizing. The actual color class might depend on the svg and whether it uses strokes, fills etc. Note as well xlink:href, which is xlinkHref in react. -->
@@ -152,6 +181,14 @@ Usage without a component, in React, with hover states. Note the [group](https:/
   </svg>
 </a>
 ```
+
+#### How the Fallback System Works
+
+1. **First**: Attempts to load a local React component generated from your custom SVGs
+2. **Fallback**: If no local component exists, dynamically imports the corresponding heroicon
+3. **Graceful degradation**: If neither exists, returns null (no icon displayed)
+
+This hybrid approach allows you to use custom brand icons while having access to the entire heroicons library as a fallback.
 
 See https://ably-ui.herokuapp.com/components/icon for more details.
 

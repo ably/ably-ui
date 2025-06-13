@@ -486,12 +486,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -502,12 +523,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -529,12 +571,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -545,12 +608,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -572,12 +656,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="true"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -588,12 +693,33 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
            role="button"
            aria-pressed="false"
       >
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -623,12 +749,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-12 p-3 gap-2.5 ui-text-label2 rounded-lg"
@@ -639,12 +786,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
     </div>
@@ -666,12 +834,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg"
@@ -682,12 +871,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
     </div>
@@ -709,12 +919,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-9 p-2 gap-2 ui-text-label4 rounded-lg"
@@ -725,12 +956,33 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
         </span>
-        <svg class
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <use xlink:href="#sprite-icon-tech-javascript">
-          </use>
+          <g clip-path="url(#a)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
         </svg>
       </div>
     </div>

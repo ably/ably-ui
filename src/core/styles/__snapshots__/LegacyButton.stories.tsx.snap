@@ -10,11 +10,19 @@ exports[`Styles/Button (legacy) ExtraSmall smoke-test 1`] = `
   <button type="button"
           class="ui-btn p-btn-xsmall text-label4"
   >
-    <svg class="ui-btn-icon-xsmall"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon-xsmall"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Primary button with icon
   </button>
@@ -68,11 +76,19 @@ exports[`Styles/Button (legacy) Large smoke-test 1`] = `
   <button type="button"
           class="ui-btn p-btn-large text-label1"
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Primary button with icon
   </button>
@@ -116,11 +132,19 @@ exports[`Styles/Button (legacy) Small smoke-test 1`] = `
   <button type="button"
           class="ui-btn p-btn-small text-label3"
   >
-    <svg class="ui-btn-icon-small"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon-small"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Primary button with icon
   </button>
@@ -180,33 +204,57 @@ exports[`Styles/Button (legacy) WithIcons smoke-test 1`] = `
   <button type="button"
           class="ui-btn"
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Primary button with icon
   </button>
   <button type="button"
           class="ui-btn-alt"
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Primary button alternative with icon
   </button>
   <button type="button"
           class="ui-btn-secondary"
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Secondary button with icon
   </button>
@@ -214,11 +262,19 @@ exports[`Styles/Button (legacy) WithIcons smoke-test 1`] = `
           class="ui-btn"
           disabled
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Unavailable primary button with icon
   </button>
@@ -226,11 +282,19 @@ exports[`Styles/Button (legacy) WithIcons smoke-test 1`] = `
           class="ui-btn-alt"
           disabled
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Unavailable primary button alternative with icon
   </button>
@@ -238,11 +302,19 @@ exports[`Styles/Button (legacy) WithIcons smoke-test 1`] = `
           class="ui-btn-secondary"
           disabled
   >
-    <svg class="ui-btn-icon"
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 16 16"
+         fill="currentColor"
+         aria-hidden="true"
+         data-slot="icon"
+         class="ui-btn-icon"
          style="width: 1rem; height: 1rem;"
     >
-      <use xlink:href="#sprite-icon-gui-magnifying-glass-micro">
-      </use>
+      <path fill-rule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clip-rule="evenodd"
+      >
+      </path>
     </svg>
     Unavailable secondary button with icon
   </button>

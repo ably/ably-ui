@@ -9,11 +9,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-check-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 12.75 6 6 9-13.5"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-cool-black">
         Congratulations! You've won the Oscar
@@ -21,11 +31,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -35,11 +55,18 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="24"
+           height="24"
+           viewbox="0 0 24 24"
+           class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-ably-badge">
-        </use>
+        <path fill-rule="evenodd"
+              d="M2.77 19.615 11.849 3H9.4L1 18.373zm18.282 0L11.975 3h2.449l8.399 15.373zm-9.14-6.962 9.014 7.06L19.086 21l-7.174-5.617L4.737 21l-1.84-1.288z"
+              clip-rule="evenodd"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-cool-black">
         This is a notice
@@ -47,11 +74,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -61,11 +98,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-white">
         This is an error, very bad
@@ -73,11 +120,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -87,11 +144,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-active-orange p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-white">
         This is an alert
@@ -99,11 +166,21 @@ exports[`Components/Flash Default smoke-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -134,11 +211,21 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-zingy-green p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-check-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 12.75 6 6 9-13.5"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-cool-black">
         Valid link:
@@ -149,11 +236,21 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -163,11 +260,21 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-gui-error p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-white mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewbox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           aria-hidden="true"
+           data-slot="icon"
+           class="text-white mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-exclamation-triangle-outline">
-        </use>
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-white">
         Invalid link:
@@ -178,11 +285,21 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-white transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-white transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -211,11 +328,18 @@ exports[`Components/Flash WithLinks play-test 1`] = `
        data-testid="ui-flash"
   >
     <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
-      <svg class="text-cool-black mr-4 self-baseline"
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="24"
+           height="24"
+           viewbox="0 0 24 24"
+           class="text-cool-black mr-4 self-baseline"
            style="width: 1.5rem; height: 1.5rem;"
       >
-        <use xlink:href="#sprite-icon-gui-ably-badge">
-        </use>
+        <path fill-rule="evenodd"
+              d="M2.77 19.615 11.849 3H9.4L1 18.373zm18.282 0L11.975 3h2.449l8.399 15.373zm-9.14-6.962 9.014 7.06L19.086 21l-7.174-5.617L4.737 21l-1.84-1.288z"
+              clip-rule="evenodd"
+        >
+        </path>
       </svg>
       <p class="ui-text-p1 mr-4 text-cool-black">
         Invalid link with proto relative:
@@ -226,11 +350,21 @@ exports[`Components/Flash WithLinks play-test 1`] = `
       <button type="button"
               class="p-0 ml-auto self-start focus:outline-none"
       >
-        <svg class="text-cool-black transition-colors"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class="text-cool-black transition-colors"
              style="width: 1.5rem; height: 1.5rem;"
         >
-          <use xlink:href="#sprite-icon-gui-x-mark-outline">
-          </use>
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+          >
+          </path>
         </svg>
       </button>
     </div>
