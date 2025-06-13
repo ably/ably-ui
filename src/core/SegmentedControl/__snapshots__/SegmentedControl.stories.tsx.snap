@@ -495,7 +495,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -506,7 +506,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -532,7 +532,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -543,7 +543,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -580,7 +580,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -591,7 +591,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -617,7 +617,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -628,7 +628,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -665,7 +665,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -676,7 +676,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -702,7 +702,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -713,7 +713,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -758,7 +758,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -769,7 +769,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -795,7 +795,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -806,7 +806,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -843,7 +843,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -854,7 +854,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -880,7 +880,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -891,7 +891,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -928,7 +928,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -939,7 +939,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -965,7 +965,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
-          <g clip-path="url(#a)">
+          <g clip-path="url(#clip0_1031_1922)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -976,7 +976,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="a">
+            <clipPath id="clip0_1031_1922">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
