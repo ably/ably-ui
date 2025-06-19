@@ -324,16 +324,30 @@ export const WithSDKTypes: Story = {
 };
 
 /**
- * Special shell command mode that displays terminal commands with a distinctive UI.
- * Includes a terminal icon and streamlined appearance for better readability.
+ * Plain mode that displays plain code with a relevant icon, if supplied.
  */
-export const ShellMode: Story = {
+export const PlainMode: Story = {
   render: () => (
-    <CodeSnippet>
-      <pre>
-        <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
-      </pre>
-    </CodeSnippet>
+    <div className="flex flex-col gap-4">
+      <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+        Shell
+      </h4>
+      <CodeSnippet>
+        <pre>
+          <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
+        </pre>
+      </CodeSnippet>
+      <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+        Text
+      </h4>
+      <CodeSnippet>
+        <pre>
+          <code className="language-text">
+            It was the best of times, it was the blurst of times.
+          </code>
+        </pre>
+      </CodeSnippet>
+    </div>
   ),
 };
 

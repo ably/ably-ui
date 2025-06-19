@@ -15,7 +15,7 @@ import LanguageSelector from "./CodeSnippet/LanguageSelector";
 import ApiKeySelector from "./CodeSnippet/ApiKeySelector";
 import { IconName } from "./Icon/types";
 import useCopyToClipboard from "./utils/useCopyToClipboard";
-import ShellCommandView from "./CodeSnippet/ShellCommandView";
+import PlainCodeView from "./CodeSnippet/PlainCodeView";
 import CopyButton from "./CodeSnippet/CopyButton";
 import TooltipButton from "./CodeSnippet/TooltipButton";
 
@@ -112,20 +112,21 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     languages,
     sdkTypes,
     originalLangMap,
-    isSingleShellCommand,
+    isSinglePlainCommand,
   } = useMemo(() => {
     const childrenArray = Children.toArray(children);
     const languages: string[] = [];
     const sdkTypes = new Set<SDKType>();
     const originalLangMap = new Map<string, string>();
 
-    // Check if we have a single shell command
-    const isSingleShellCommand =
+    // Check if we have a single plain code command (shell or text)
+    const isSinglePlainCommand =
       childrenArray.length === 1 &&
-      isValidElement(childrenArray[0]) &&
-      isValidElement(childrenArray[0].props.children) &&
-      childrenArray[0].props.children.props.className?.includes(
-        "language-shell",
+      ["language-shell", "language-text"].some(
+        (lang) =>
+          isValidElement(childrenArray[0]) &&
+          isValidElement(childrenArray[0].props.children) &&
+          childrenArray[0].props.children.props.className?.includes(lang),
       );
 
     // Extract all available languages from children and identify SDK types
@@ -164,7 +165,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       languages,
       sdkTypes,
       originalLangMap,
-      isSingleShellCommand,
+      isSinglePlainCommand,
     };
   }, [children, extractLanguageFromCode]);
 
@@ -488,17 +489,26 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     NoSnippetMessage,
   ]);
 
-  // Render special case for shell commands
-  if (isSingleShellCommand) {
-    const shellChild = childrenArray[0];
+  // Render special case for plain commands (shell or text)
+  if (isSinglePlainCommand) {
+    const plainChild = childrenArray[0];
     if (
-      isValidElement(shellChild) &&
-      isValidElement(shellChild.props.children)
+      isValidElement(plainChild) &&
+      isValidElement(plainChild.props.children)
     ) {
-      const codeElement = shellChild.props.children;
+      const codeElement = plainChild.props.children;
       const codeContent = codeElement.props.children;
+      const language = extractLanguageFromCode(codeElement);
+
+      if (!language || !codeContent) return null;
+
       return (
-        <ShellCommandView content={String(codeContent)} className={className} />
+        <PlainCodeView
+          content={String(codeContent)}
+          className={className}
+          language={language}
+          icon={language === "shell" ? "icon-gui-command-line-outline" : null}
+        />
       );
     }
   }
