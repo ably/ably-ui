@@ -1,131 +1,128 @@
-import React, { memo, useMemo } from "react";
+import React, { useMemo } from "react";
 import * as Select from "@radix-ui/react-select";
 import Badge from "../Badge";
 import Icon from "../Icon";
 import Tooltip from "../Tooltip";
+import type { ApiKeysItem } from "../CodeSnippet";
 
-interface ApiKeySelectorProps {
-  apiKeys?: string[];
+type ApiKeySelectorProps = {
+  apiKeys?: ApiKeysItem[];
   selectedApiKey: string;
   onApiKeyChange: (apiKey: string) => void;
-}
+};
 
-// Define constants at the module level
-const SPECIAL_API_KEYS = {
-  DEMO: "demo",
-} as const;
+const ApiKeySelector = ({
+  apiKeys,
+  selectedApiKey,
+  onApiKeyChange,
+}: ApiKeySelectorProps) => {
+  const isDemoMode = useMemo(
+    () => apiKeys?.length === 1 && apiKeys[0].app === "demo",
+    [apiKeys],
+  );
 
-const ApiKeySelector = memo(
-  ({ apiKeys, selectedApiKey, onApiKeyChange }: ApiKeySelectorProps) => {
-    // Check if we're in demo mode - only compute this once
-    const isDemoMode = useMemo(
-      () => apiKeys?.length === 1 && apiKeys[0] === SPECIAL_API_KEYS.DEMO,
-      [apiKeys],
-    );
-
-    // Memoize API key items to prevent recreating them on each render
-    const apiKeyItems = useMemo(() => {
-      if (!apiKeys?.length || isDemoMode) return null;
-
-      return apiKeys.map((key) => (
-        <Select.Item
-          key={key}
-          value={key}
-          className="relative flex items-center rounded px-2 py-1.5 text-14 text-neutral-1300 dark:text-neutral-000 select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base"
+  // Render the demo mode UI
+  const renderDemoMode = useMemo(
+    () => (
+      <div className="flex items-center gap-2">
+        <Badge className="ml-1 bg-neutral-200 dark:bg-neutral-1100">
+          DEMO ONLY
+        </Badge>
+        <Tooltip
+          className="ml-0"
+          triggerElement={
+            <Icon
+              name="icon-gui-information-circle-outline"
+              size="16px"
+              color="text-neutral-700 dark:text-neutral-600"
+            />
+          }
         >
-          <Select.ItemText>{key}</Select.ItemText>
-          <Select.ItemIndicator className="absolute right-2">
-            <Icon name="icon-gui-check-outline" size="16px" />
-          </Select.ItemIndicator>
-        </Select.Item>
-      ));
-    }, [apiKeys, isDemoMode]);
+          This code example uses a temporary key that is rate limited and
+          expires in 4 hrs. Sign in to Ably to use your API keys instead.
+        </Tooltip>
+      </div>
+    ),
+    [],
+  );
 
-    // Render the demo mode UI
-    const renderDemoMode = useMemo(
-      () => (
-        <div className="flex items-center">
-          <Badge className="ml-1 bg-neutral-200 dark:bg-neutral-1100">
-            DEMO ONLY
-          </Badge>
-          <Tooltip
-            className="ml-0"
-            triggerElement={
-              <Icon
-                name="icon-gui-information-circle-outline"
-                size="16px"
-                color="text-neutral-700 dark:text-neutral-600"
-              />
-            }
-          >
-            This code example uses a temporary key that is rate limited and
-            expires in 4 hrs. Sign in to Ably to use your API keys instead.
-          </Tooltip>
-        </div>
-      ),
-      [],
-    );
+  // Render the dropdown only if we have API keys
+  const renderApiKeyDropdown = useMemo(() => {
+    if (isDemoMode) {
+      return renderDemoMode;
+    }
 
-    // Render the dropdown only if we have API keys
-    const renderApiKeyDropdown = useMemo(() => {
-      if (isDemoMode) {
-        return renderDemoMode;
-      }
-
-      if (!apiKeys?.length) {
-        return null;
-      }
-
-      return (
-        <Select.Root value={selectedApiKey} onValueChange={onApiKeyChange}>
-          <Select.Trigger
-            className="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base"
-            aria-label="API Key"
-          >
-            <Select.Value />
-            <Select.Icon>
-              <Icon name="icon-gui-chevron-down-outline" size="16px" />
-            </Select.Icon>
-          </Select.Trigger>
-
-          <Select.Portal>
-            <Select.Content className="overflow-hidden rounded-md bg-neutral-000 dark:bg-neutral-1300 border border-neutral-200 dark:border-neutral-1000 shadow-md z-50">
-              <Select.ScrollUpButton className="flex items-center justify-center h-6 bg-neutral-000 dark:bg-neutral-1300 text-neutral-1300 dark:text-neutral-000 cursor-default focus-base">
-                <Icon
-                  name="icon-gui-chevron-down-outline"
-                  size="16px"
-                  additionalCSS="rotate-180"
-                />
-              </Select.ScrollUpButton>
-
-              <Select.Viewport className="p-1">{apiKeyItems}</Select.Viewport>
-
-              <Select.ScrollDownButton className="flex items-center justify-center h-6 bg-neutral-000 dark:bg-neutral-1300 text-neutral-1300 dark:text-neutral-000 cursor-default focus-base">
-                <Icon name="icon-gui-chevron-down-outline" size="16px" />
-              </Select.ScrollDownButton>
-            </Select.Content>
-          </Select.Portal>
-        </Select.Root>
-      );
-    }, [
-      apiKeys,
-      isDemoMode,
-      selectedApiKey,
-      onApiKeyChange,
-      apiKeyItems,
-      renderDemoMode,
-    ]);
+    if (!apiKeys?.length) {
+      return null;
+    }
 
     return (
-      <div className="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-3 py-3">
-        <span className="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
-          API key:
-        </span>
-        {renderApiKeyDropdown}
-      </div>
+      <Select.Root value={selectedApiKey} onValueChange={onApiKeyChange}>
+        <Select.Trigger
+          className="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base font-mono"
+          aria-label="API Key"
+        >
+          <Select.Value />
+          <Select.Icon>
+            <Icon name="icon-gui-chevron-down-outline" size="16px" />
+          </Select.Icon>
+        </Select.Trigger>
+
+        <Select.Portal>
+          <Select.Content className="overflow-hidden rounded-md bg-neutral-000 dark:bg-neutral-1300 border border-neutral-200 dark:border-neutral-1000 shadow-md z-50">
+            <Select.ScrollUpButton className="flex items-center justify-center h-6 bg-neutral-000 dark:bg-neutral-1300 text-neutral-1300 dark:text-neutral-000 cursor-default focus-base">
+              <Icon
+                name="icon-gui-chevron-down-outline"
+                size="16px"
+                additionalCSS="rotate-180"
+              />
+            </Select.ScrollUpButton>
+
+            <Select.Viewport className="p-1">
+              {apiKeys.map((apiKeyItem) => (
+                <Select.Group key={apiKeyItem.app}>
+                  {apiKeys.length > 1 && (
+                    <Select.Label className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 mt-1">
+                      {apiKeyItem.app}
+                    </Select.Label>
+                  )}
+                  {apiKeyItem.keys.map(({ name, key }) => (
+                    <Select.Item
+                      key={`${apiKeyItem.app}-${name}-${key}`}
+                      value={key}
+                      className="font-mono relative flex items-center justify-between rounded px-2 py-1.5 text-14 text-neutral-1300 dark:text-neutral-000 select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base"
+                    >
+                      <Select.ItemText>
+                        {key.length > 10 ? `${key.substring(0, 10)}...` : key}
+                        {name && ` - ${name}`}
+                      </Select.ItemText>
+                      <Select.ItemIndicator>
+                        <Icon name="icon-gui-check-outline" size="16px" />
+                      </Select.ItemIndicator>
+                    </Select.Item>
+                  ))}
+                </Select.Group>
+              ))}
+            </Select.Viewport>
+
+            <Select.ScrollDownButton className="flex items-center justify-center h-6 bg-neutral-000 dark:bg-neutral-1300 text-neutral-1300 dark:text-neutral-000 cursor-default focus-base">
+              <Icon name="icon-gui-chevron-down-outline" size="16px" />
+            </Select.ScrollDownButton>
+          </Select.Content>
+        </Select.Portal>
+      </Select.Root>
     );
-  },
-);
+  }, [apiKeys, isDemoMode, selectedApiKey, onApiKeyChange, renderDemoMode]);
+
+  return (
+    <div className="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-3 py-3">
+      <span className="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
+        API key:
+      </span>
+      {renderApiKeyDropdown}
+    </div>
+  );
+};
 
 // Define a display name to improve debugging
 ApiKeySelector.displayName = "ApiKeySelector";

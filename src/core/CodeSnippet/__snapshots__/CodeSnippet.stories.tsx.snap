@@ -18,7 +18,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r8:)">
+          <g clip-path="url(#clip0_1031_1922-:r0:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -29,7 +29,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r8:">
+            <clipPath id="clip0_1031_1922-:r0:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -107,7 +107,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r9:)">
+            <g clip-path="url(#clip0_1031_1922-:r3:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -118,7 +118,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r9:">
+              <clipPath id="clip0_1031_1922-:r3:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -198,7 +198,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -306,7 +306,7 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -391,7 +391,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#clip0_4810_1924-:r3a:)">
+      <g clip-path="url(#clip0_4810_1924-:r36:)">
         <path stroke="currentColor"
               stroke-linecap="round"
               stroke-width="3"
@@ -404,7 +404,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="clip0_4810_1924-:r3a:">
+        <clipPath id="clip0_4810_1924-:r36:">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -676,9 +676,9 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
 `;
 
 exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
-<div class="space-y-4">
+<div class="flex flex-col gap-4">
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Installation
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -720,7 +720,7 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
     </div>
   </div>
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Starting the server
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -762,7 +762,7 @@ npm run start
     </div>
   </div>
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Complex command
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -803,9 +803,9 @@ npm run start
             <span class="hljs-string">
               "Authorization: Bearer
               <span class="hljs-variable">
-                \${{{API_KEY}
+                \${{API_KEY}
               </span>
-              }}"
+              }"
             </span>
             \\
   -d
@@ -897,7 +897,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#clip0_1031_1922-:rb:)">
+      <g clip-path="url(#clip0_1031_1922-:ra:)">
         <path fill="#F7DF1E"
               d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
         >
@@ -908,7 +908,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="clip0_1031_1922-:rb:">
+        <clipPath id="clip0_1031_1922-:ra:">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -967,7 +967,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -1052,7 +1052,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
          class="mr-2"
          style="width: 16px; height: 16px;"
     >
-      <g clip-path="url(#clip0_1031_1922-:rq:)">
+      <g clip-path="url(#clip0_1031_1922-:ro:)">
         <path fill="#F7DF1E"
               d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
         >
@@ -1063,7 +1063,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
         </path>
       </g>
       <defs>
-        <clipPath id="clip0_1031_1922-:rq:">
+        <clipPath id="clip0_1031_1922-:ro:">
           <path fill="#fff"
                 d="M0 0h48v48H0z"
           >
@@ -1122,7 +1122,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -1214,7 +1214,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r2o:)">
+          <g clip-path="url(#clip0_1031_1922-:r25:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -1225,7 +1225,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r2o:">
+            <clipPath id="clip0_1031_1922-:r25:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -1256,7 +1256,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r2b:)">
+              <g clip-path="url(#clip0_1031_1977-:r26:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -1269,7 +1269,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r2b:">
+                <clipPath id="clip0_1031_1977-:r26:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1284,1142 +1284,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r2c:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
-              aria-label="Select language"
-      >
-        <div class="flex items-center gap-2"
-             style="pointer-events: none;"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="48"
-               height="48"
-               fill="none"
-               viewbox="0 0 48 48"
-               class
-               style="width: 20px; height: 20px;"
-          >
-            <g clip-path="url(#clip0_1031_1922-:r2p:)">
-              <path fill="#F7DF1E"
-                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
-              >
-              </path>
-              <path fill="#000"
-                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
-              >
-              </path>
-            </g>
-            <defs>
-              <clipPath id="clip0_1031_1922-:r2p:">
-                <path fill="#fff"
-                      d="M0 0h48v48H0z"
-                >
-                </path>
-              </clipPath>
-            </defs>
-          </svg>
-          <span>
-            JavaScript
-          </span>
-        </div>
-        <span aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewbox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-               aria-hidden="true"
-               data-slot="icon"
-               class
-               style="width: 16px; height: 16px;"
-          >
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-            >
-            </path>
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div class="relative"
-       tabindex="0"
-  >
-    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
-         data-id="code"
-    >
-      <div>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          1
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          2
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          3
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          4
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          5
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          6
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          7
-        </p>
-      </div>
-      <pre lang="javascript">
-        <code class="language-javascript ui-text-code">
-          <span class="hljs-keyword">
-            var
-          </span>
-          ably =
-          <span class="hljs-keyword">
-            new
-          </span>
-          <span class="hljs-title class_">
-            Ably
-          </span>
-          .
-          <span class="hljs-title class_">
-            Realtime
-          </span>
-          (
-          <span class="hljs-string">
-            'API_KEY'
-          </span>
-          );
-          <span class="hljs-keyword">
-            var
-          </span>
-          channel = ably.
-          <span class="hljs-property">
-            channels
-          </span>
-          .
-          <span class="hljs-title function_">
-            get
-          </span>
-          (
-          <span class="hljs-string">
-            'channel-name'
-          </span>
-          );
-          <span class="hljs-comment">
-            // Subscribe to messages on channel
-          </span>
-          channel.
-          <span class="hljs-title function_">
-            subscribe
-          </span>
-          (
-          <span class="hljs-string">
-            'event'
-          </span>
-          ,
-          <span class="hljs-keyword">
-            function
-          </span>
-          (
-          <span class="hljs-params">
-            message
-          </span>
-          ) {
-          <span class="hljs-variable language_">
-            console
-          </span>
-          .
-          <span class="hljs-title function_">
-            log
-          </span>
-          (message.
-          <span class="hljs-property">
-            data
-          </span>
-          );
-});
-        </code>
-      </pre>
-    </div>
-  </div>
-  <div class="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-3 py-3">
-    <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
-      API key:
-    </span>
-    <button type="button"
-            role="combobox"
-            aria-controls="radix-:r2e:"
-            aria-expanded="false"
-            aria-autocomplete="none"
-            dir="ltr"
-            data-state="closed"
-            class="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base"
-            aria-label="API Key"
-    >
-      <span style="pointer-events: none;">
-        abcd1234
-      </span>
-      <span aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             fill="none"
-             viewbox="0 0 24 24"
-             stroke-width="1.5"
-             stroke="currentColor"
-             aria-hidden="true"
-             data-slot="icon"
-             class
-             style="width: 16px; height: 16px;"
-        >
-          <path stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-          >
-          </path>
-        </svg>
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
-<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
-  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
-    <div class="flex space-x-1.5">
-      <div class="w-3 h-3 rounded-full bg-orange-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-yellow-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-green-500">
-      </div>
-    </div>
-    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
-      Custom Language Order
-    </div>
-    <div class="w-12">
-    </div>
-  </div>
-  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
-    <div class="hidden sm:flex gap-2">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
-           tabindex="0"
-           role="button"
-           aria-pressed="true"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="48"
-             height="48"
-             fill="none"
-             viewbox="0 0 48 48"
-             class
-             aria-hidden="true"
-             style="width: 22px; height: 22px;"
-        >
-          <g fill-rule="evenodd"
-             clip-path="url(#clip0_1031_1912-:r44:)"
-             clip-rule="evenodd"
-          >
-            <path fill="url(#paint0_linear_1031_1912-:r44:)"
-                  d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
-            >
-            </path>
-            <path fill="url(#paint1_linear_1031_1912-:r44:)"
-                  d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
-            >
-            </path>
-            <path fill="#FEFEFE"
-                  d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
-            >
-            </path>
-          </g>
-          <defs>
-            <linearGradient id="paint0_linear_1031_1912-:r44:"
-                            x1="2.813"
-                            x2="-6.259"
-                            y1="-6.259"
-                            y2="45.187"
-                            gradientunits="userSpaceOnUse"
-            >
-              <stop stop-color="#FAAE41">
-              </stop>
-              <stop offset="1"
-                    stop-color="#EF3E31"
-              >
-              </stop>
-            </linearGradient>
-            <linearGradient id="paint1_linear_1031_1912-:r44:"
-                            x1="4.876"
-                            x2="-1.23"
-                            y1="-2.365"
-                            y2="35.34"
-                            gradientunits="userSpaceOnUse"
-            >
-              <stop stop-color="#E29F3A">
-              </stop>
-              <stop offset="1"
-                    stop-color="#D43929"
-              >
-              </stop>
-            </linearGradient>
-            <clipPath id="clip0_1031_1912-:r44:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
-        </svg>
-        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
-          Swift
-        </span>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g clip-path="url(#clip0_1031_1977-:r3n:)">
-                <path fill="#007ACC"
-                      d="M0 24V0h48v48H0"
-                >
-                </path>
-                <path fill="#fff"
-                      fill-rule="evenodd"
-                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
-                      clip-rule="evenodd"
-                >
-                </path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1031_1977-:r3n:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g clip-path="url(#clip0_1031_1922-:r3o:)">
-                <path fill="#F7DF1E"
-                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
-                >
-                </path>
-                <path fill="#000"
-                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
-                >
-                </path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1031_1922-:r3o:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g fill-rule="evenodd"
-                 clip-path="url(#clip0_1031_1963-:r3p:)"
-                 clip-rule="evenodd"
-              >
-                <path fill="url(#paint0_radial_1031_1963-:r3p:)"
-                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
-                >
-                </path>
-                <path fill="url(#paint1_radial_1031_1963-:r3p:)"
-                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
-                >
-                </path>
-                <path fill="url(#paint2_linear_1031_1963-:r3p:)"
-                      d="M29.156 33.479c.99 0 1.793.811 1.793 1.815 0 1.007-.803 1.827-1.794 1.827-.987 0-1.793-.82-1.793-1.827 0-1.004.806-1.815 1.794-1.815m5.368-23.046v4.244c0 3.29-2.79 6.059-5.97 6.059h-9.546c-2.614 0-4.778 2.238-4.778 4.857v9.1c0 2.59 2.252 4.113 4.778 4.856 3.025.89 5.926 1.05 9.546 0 2.406-.696 4.778-2.099 4.778-4.856V31.05h-9.546v-1.215H38.11c2.778 0 3.813-1.937 4.78-4.845.997-2.993.954-5.872 0-9.713-.687-2.765-1.998-4.845-4.78-4.845z"
-                >
-                </path>
-                <path fill="#4786CF"
-                      d="M4 20.149v-.052c.003-1.506.232-2.99.673-4.819.76-3.176 3.193-4.845 5.97-4.845h13.143V9.22H14.23V5.577c0-2.758.734-4.254 4.778-4.968a27.3 27.3 0 0 1 4.567-.39 30 30 0 0 1 4.979.39c2.593.432 4.778 2.378 4.778 4.968v9.1c0 2.669-2.121 4.856-4.778 4.856h-9.546c-3.24 0-5.97 2.782-5.97 5.937v4.366H9.752c-2.778 0-4.4-2.015-5.08-4.845-.45-1.869-.67-3.368-.672-4.842M18.407 3.148c-.991 0-1.794.82-1.794 1.827 0 1.003.803 1.815 1.794 1.815.987 0 1.793-.812 1.793-1.815 0-1.008-.806-1.827-1.793-1.827"
-                >
-                </path>
-              </g>
-              <defs>
-                <radialGradient id="paint0_radial_1031_1963-:r3p:"
-                                cx="0"
-                                cy="0"
-                                r="1"
-                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
-                                gradientunits="userSpaceOnUse"
-                >
-                  <stop stop-color="#C6C6C6">
-                  </stop>
-                  <stop offset="1"
-                        stop-color="#fff"
-                  >
-                  </stop>
-                </radialGradient>
-                <radialGradient id="paint1_radial_1031_1963-:r3p:"
-                                cx="0"
-                                cy="0"
-                                r="1"
-                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
-                                gradientunits="userSpaceOnUse"
-                >
-                  <stop stop-color="#C6C6C6">
-                  </stop>
-                  <stop offset="1"
-                        stop-color="#fff"
-                  >
-                  </stop>
-                </radialGradient>
-                <linearGradient id="paint2_linear_1031_1963-:r3p:"
-                                x1="38.828"
-                                x2="30.863"
-                                y1="27.877"
-                                y2="16.841"
-                                gradientunits="userSpaceOnUse"
-                >
-                  <stop stop-color="#FFD33A">
-                  </stop>
-                  <stop offset="1"
-                        stop-color="#FFE873"
-                  >
-                  </stop>
-                </linearGradient>
-                <clipPath id="clip0_1031_1963-:r3p:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div class="sm:hidden w-full">
-      <button type="button"
-              role="combobox"
-              aria-controls="radix-:r3q:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
-              aria-label="Select language"
-      >
-        <div class="flex items-center gap-2"
-             style="pointer-events: none;"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="48"
-               height="48"
-               fill="none"
-               viewbox="0 0 48 48"
-               class
-               style="width: 20px; height: 20px;"
-          >
-            <g fill-rule="evenodd"
-               clip-path="url(#clip0_1031_1912-:r45:)"
-               clip-rule="evenodd"
-            >
-              <path fill="url(#paint0_linear_1031_1912-:r45:)"
-                    d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
-              >
-              </path>
-              <path fill="url(#paint1_linear_1031_1912-:r45:)"
-                    d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
-              >
-              </path>
-              <path fill="#FEFEFE"
-                    d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
-              >
-              </path>
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_1031_1912-:r45:"
-                              x1="2.813"
-                              x2="-6.259"
-                              y1="-6.259"
-                              y2="45.187"
-                              gradientunits="userSpaceOnUse"
-              >
-                <stop stop-color="#FAAE41">
-                </stop>
-                <stop offset="1"
-                      stop-color="#EF3E31"
-                >
-                </stop>
-              </linearGradient>
-              <linearGradient id="paint1_linear_1031_1912-:r45:"
-                              x1="4.876"
-                              x2="-1.23"
-                              y1="-2.365"
-                              y2="35.34"
-                              gradientunits="userSpaceOnUse"
-              >
-                <stop stop-color="#E29F3A">
-                </stop>
-                <stop offset="1"
-                      stop-color="#D43929"
-                >
-                </stop>
-              </linearGradient>
-              <clipPath id="clip0_1031_1912-:r45:">
-                <path fill="#fff"
-                      d="M0 0h48v48H0z"
-                >
-                </path>
-              </clipPath>
-            </defs>
-          </svg>
-          <span>
-            Swift
-          </span>
-        </div>
-        <span aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewbox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-               aria-hidden="true"
-               data-slot="icon"
-               class
-               style="width: 16px; height: 16px;"
-          >
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-            >
-            </path>
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div class="relative"
-       tabindex="0"
-  >
-    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
-         data-id="code"
-    >
-      <div>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          1
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          2
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          3
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          4
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          5
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          6
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          7
-        </p>
-      </div>
-      <pre lang="swift">
-        <code class="language-swift ui-text-code">
-          <span class="hljs-keyword">
-            let
-          </span>
-          ably
-          <span class="hljs-operator">
-            =
-          </span>
-          <span class="hljs-type">
-            ARTRealtime
-          </span>
-          (key:
-          <span class="hljs-string">
-            "API_KEY"
-          </span>
-          )
-          <span class="hljs-keyword">
-            let
-          </span>
-          channel
-          <span class="hljs-operator">
-            =
-          </span>
-          ably.channels.get(
-          <span class="hljs-string">
-            "channel-name"
-          </span>
-          )
-          <span class="hljs-comment">
-            // Subscribe to messages on channel
-          </span>
-          channel.subscribe(
-          <span class="hljs-string">
-            "event"
-          </span>
-          ) { message
-          <span class="hljs-keyword">
-            in
-          </span>
-          <span class="hljs-built_in">
-            print
-          </span>
-          (
-          <span class="hljs-string">
-            "
-            <span class="hljs-subst">
-              \\(message.data)
-            </span>
-            "
-          </span>
-          )
-}
-        </code>
-      </pre>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
-<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
-  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
-    <div class="flex space-x-1.5">
-      <div class="w-3 h-3 rounded-full bg-orange-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-yellow-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-green-500">
-      </div>
-    </div>
-    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
-      TypeScript Example
-    </div>
-    <div class="w-12">
-    </div>
-  </div>
-  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
-    <div class="hidden sm:flex gap-2">
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g clip-path="url(#clip0_1031_1922-:rr:)">
-                <path fill="#F7DF1E"
-                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
-                >
-                </path>
-                <path fill="#000"
-                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
-                >
-                </path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1031_1922-:rr:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g clip-path="url(#clip0_1031_1977-:rs:)">
-                <path fill="#007ACC"
-                      d="M0 24V0h48v48H0"
-                >
-                </path>
-                <path fill="#fff"
-                      fill-rule="evenodd"
-                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
-                      clip-rule="evenodd"
-                >
-                </path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1031_1977-:rs:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
-           tabindex="0"
-           role="button"
-           aria-pressed="true"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="48"
-             height="48"
-             fill="none"
-             viewbox="0 0 48 48"
-             class
-             aria-hidden="true"
-             style="width: 22px; height: 22px;"
-        >
-          <g fill-rule="evenodd"
-             clip-path="url(#clip0_1031_1912-:r16:)"
-             clip-rule="evenodd"
-          >
-            <path fill="url(#paint0_linear_1031_1912-:r16:)"
-                  d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
-            >
-            </path>
-            <path fill="url(#paint1_linear_1031_1912-:r16:)"
-                  d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
-            >
-            </path>
-            <path fill="#FEFEFE"
-                  d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
-            >
-            </path>
-          </g>
-          <defs>
-            <linearGradient id="paint0_linear_1031_1912-:r16:"
-                            x1="2.813"
-                            x2="-6.259"
-                            y1="-6.259"
-                            y2="45.187"
-                            gradientunits="userSpaceOnUse"
-            >
-              <stop stop-color="#FAAE41">
-              </stop>
-              <stop offset="1"
-                    stop-color="#EF3E31"
-              >
-              </stop>
-            </linearGradient>
-            <linearGradient id="paint1_linear_1031_1912-:r16:"
-                            x1="4.876"
-                            x2="-1.23"
-                            y1="-2.365"
-                            y2="35.34"
-                            gradientunits="userSpaceOnUse"
-            >
-              <stop stop-color="#E29F3A">
-              </stop>
-              <stop offset="1"
-                    stop-color="#D43929"
-              >
-              </stop>
-            </linearGradient>
-            <clipPath id="clip0_1031_1912-:r16:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
-        </svg>
-        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
-          Swift
-        </span>
-      </div>
-    </div>
-    <div class="sm:hidden w-full">
-      <button type="button"
-              role="combobox"
-              aria-controls="radix-:ru:"
-              aria-expanded="false"
-              aria-autocomplete="none"
-              dir="ltr"
-              data-state="closed"
-              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
-              aria-label="Select language"
-      >
-        <div class="flex items-center gap-2"
-             style="pointer-events: none;"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="48"
-               height="48"
-               fill="none"
-               viewbox="0 0 48 48"
-               class
-               style="width: 20px; height: 20px;"
-          >
-            <g fill-rule="evenodd"
-               clip-path="url(#clip0_1031_1912-:r17:)"
-               clip-rule="evenodd"
-            >
-              <path fill="url(#paint0_linear_1031_1912-:r17:)"
-                    d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
-              >
-              </path>
-              <path fill="url(#paint1_linear_1031_1912-:r17:)"
-                    d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
-              >
-              </path>
-              <path fill="#FEFEFE"
-                    d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
-              >
-              </path>
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_1031_1912-:r17:"
-                              x1="2.813"
-                              x2="-6.259"
-                              y1="-6.259"
-                              y2="45.187"
-                              gradientunits="userSpaceOnUse"
-              >
-                <stop stop-color="#FAAE41">
-                </stop>
-                <stop offset="1"
-                      stop-color="#EF3E31"
-                >
-                </stop>
-              </linearGradient>
-              <linearGradient id="paint1_linear_1031_1912-:r17:"
-                              x1="4.876"
-                              x2="-1.23"
-                              y1="-2.365"
-                              y2="35.34"
-                              gradientunits="userSpaceOnUse"
-              >
-                <stop stop-color="#E29F3A">
-                </stop>
-                <stop offset="1"
-                      stop-color="#D43929"
-                >
-                </stop>
-              </linearGradient>
-              <clipPath id="clip0_1031_1912-:r17:">
-                <path fill="#fff"
-                      d="M0 0h48v48H0z"
-                >
-                </path>
-              </clipPath>
-            </defs>
-          </svg>
-          <span>
-            Swift
-          </span>
-        </div>
-        <span aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewbox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-               aria-hidden="true"
-               data-slot="icon"
-               class
-               style="width: 16px; height: 16px;"
-          >
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-            >
-            </path>
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div class="relative"
-       tabindex="0"
-  >
-    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
-         data-id="code"
-    >
-      <div>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          1
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          2
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          3
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          4
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          5
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          6
-        </p>
-        <p class="mr-6 font-mono text-right text-neutral-800">
-          7
-        </p>
-      </div>
-      <pre lang="swift">
-        <code class="language-swift ui-text-code">
-          <span class="hljs-keyword">
-            let
-          </span>
-          ably
-          <span class="hljs-operator">
-            =
-          </span>
-          <span class="hljs-type">
-            ARTRealtime
-          </span>
-          (key:
-          <span class="hljs-string">
-            "API_KEY"
-          </span>
-          )
-          <span class="hljs-keyword">
-            let
-          </span>
-          channel
-          <span class="hljs-operator">
-            =
-          </span>
-          ably.channels.get(
-          <span class="hljs-string">
-            "channel-name"
-          </span>
-          )
-          <span class="hljs-comment">
-            // Subscribe to messages on channel
-          </span>
-          channel.subscribe(
-          <span class="hljs-string">
-            "event"
-          </span>
-          ) { message
-          <span class="hljs-keyword">
-            in
-          </span>
-          <span class="hljs-built_in">
-            print
-          </span>
-          (
-          <span class="hljs-string">
-            "
-            <span class="hljs-subst">
-              \\(message.data)
-            </span>
-            "
-          </span>
-          )
-}
-        </code>
-      </pre>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
-<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
-  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
-    <div class="flex space-x-1.5">
-      <div class="w-3 h-3 rounded-full bg-orange-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-yellow-500">
-      </div>
-      <div class="w-3 h-3 rounded-full bg-green-500">
-      </div>
-    </div>
-    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
-      Demo API Keys
-    </div>
-    <div class="w-12">
-    </div>
-  </div>
-  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
-    <div class="hidden sm:flex gap-2">
-      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
-           tabindex="0"
-           role="button"
-           aria-pressed="true"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="48"
-             height="48"
-             fill="none"
-             viewbox="0 0 48 48"
-             class
-             aria-hidden="true"
-             style="width: 22px; height: 22px;"
-        >
-          <g clip-path="url(#clip0_1031_1922-:r27:)">
-            <path fill="#F7DF1E"
-                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
-            >
-            </path>
-            <path fill="#000"
-                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
-            >
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r27:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
-        </svg>
-        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
-          JavaScript
-        </span>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
-        >
-          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
-               tabindex="0"
-               role="button"
-               aria-pressed="false"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="48"
-                 height="48"
-                 fill="none"
-                 viewbox="0 0 48 48"
-                 class
-                 aria-hidden="true"
-                 style="width: 22px; height: 22px;"
-            >
-              <g clip-path="url(#clip0_1031_1977-:r1v:)">
-                <path fill="#007ACC"
-                      d="M0 24V0h48v48H0"
-                >
-                </path>
-                <path fill="#fff"
-                      fill-rule="evenodd"
-                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
-                      clip-rule="evenodd"
-                >
-                </path>
-              </g>
-              <defs>
-                <clipPath id="clip0_1031_1977-:r1v:">
-                  <path fill="#fff"
-                        d="M0 0h48v48H0z"
-                  >
-                  </path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div class="sm:hidden w-full">
-      <button type="button"
-              role="combobox"
-              aria-controls="radix-:r20:"
+              aria-controls="radix-:r27:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -2529,7 +1394,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            'bigkey123456:*****'
           </span>
           );
           <span class="hljs-keyword">
@@ -2589,41 +1454,43 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
     <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
       API key:
     </span>
-    <div class="flex items-center">
-      <div class="inline-flex rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 ml-1 bg-neutral-200 dark:bg-neutral-1100">
-        <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
-          DEMO ONLY
-        </span>
-      </div>
-      <div class="inline-flex ml-0">
-        <button type="button"
-                aria-describedby="tooltip"
-                class="p-0 relative focus:outline-none h-[1rem] "
+    <button type="button"
+            role="combobox"
+            aria-controls="radix-:r2a:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            class="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base font-mono"
+            aria-label="API Key"
+    >
+      <span style="pointer-events: none;">
+        bigkey1234... - Big Key
+      </span>
+      <span aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 16px; height: 16px;"
         >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewbox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-               aria-hidden="true"
-               data-slot="icon"
-               class="text-neutral-700 dark:text-neutral-600"
-               style="width: 16px; height: 16px;"
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
           >
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
-            >
-            </path>
-          </svg>
-        </button>
-      </div>
-    </div>
+          </path>
+        </svg>
+      </span>
+    </button>
   </div>
 </div>
 `;
 
-exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
+exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
 <div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
   <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
     <div class="flex space-x-1.5">
@@ -2635,7 +1502,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
       </div>
     </div>
     <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
-      Subscribe Example
+      Custom Language Order
     </div>
     <div class="w-12">
     </div>
@@ -2656,18 +1523,53 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:rn:)">
-            <path fill="#F7DF1E"
-                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+          <g fill-rule="evenodd"
+             clip-path="url(#clip0_1031_1912-:r3h:)"
+             clip-rule="evenodd"
+          >
+            <path fill="url(#paint0_linear_1031_1912-:r3h:)"
+                  d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
             >
             </path>
-            <path fill="#000"
-                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            <path fill="url(#paint1_linear_1031_1912-:r3h:)"
+                  d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+            >
+            </path>
+            <path fill="#FEFEFE"
+                  d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
             >
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:rn:">
+            <linearGradient id="paint0_linear_1031_1912-:r3h:"
+                            x1="2.813"
+                            x2="-6.259"
+                            y1="-6.259"
+                            y2="45.187"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#FAAE41">
+              </stop>
+              <stop offset="1"
+                    stop-color="#EF3E31"
+              >
+              </stop>
+            </linearGradient>
+            <linearGradient id="paint1_linear_1031_1912-:r3h:"
+                            x1="4.876"
+                            x2="-1.23"
+                            y1="-2.365"
+                            y2="35.34"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#E29F3A">
+              </stop>
+              <stop offset="1"
+                    stop-color="#D43929"
+              >
+              </stop>
+            </linearGradient>
+            <clipPath id="clip0_1031_1912-:r3h:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -2676,7 +1578,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
           </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
-          JavaScript
+          Swift
         </span>
       </div>
       <div class="inline-flex ml-0">
@@ -2698,7 +1600,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:rd:)">
+              <g clip-path="url(#clip0_1031_1977-:r3i:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -2711,7 +1613,48 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:rd:">
+                <clipPath id="clip0_1031_1977-:r3i:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g clip-path="url(#clip0_1031_1922-:r3j:)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1031_1922-:r3j:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2742,52 +1685,70 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                  style="width: 22px; height: 22px;"
             >
               <g fill-rule="evenodd"
-                 clip-path="url(#clip0_1031_1912-:re:)"
+                 clip-path="url(#clip0_1031_1963-:r3k:)"
                  clip-rule="evenodd"
               >
-                <path fill="url(#paint0_linear_1031_1912-:re:)"
-                      d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+                <path fill="url(#paint0_radial_1031_1963-:r3k:)"
+                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="url(#paint1_linear_1031_1912-:re:)"
-                      d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+                <path fill="url(#paint1_radial_1031_1963-:r3k:)"
+                      d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="#FEFEFE"
-                      d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+                <path fill="url(#paint2_linear_1031_1963-:r3k:)"
+                      d="M29.156 33.479c.99 0 1.793.811 1.793 1.815 0 1.007-.803 1.827-1.794 1.827-.987 0-1.793-.82-1.793-1.827 0-1.004.806-1.815 1.794-1.815m5.368-23.046v4.244c0 3.29-2.79 6.059-5.97 6.059h-9.546c-2.614 0-4.778 2.238-4.778 4.857v9.1c0 2.59 2.252 4.113 4.778 4.856 3.025.89 5.926 1.05 9.546 0 2.406-.696 4.778-2.099 4.778-4.856V31.05h-9.546v-1.215H38.11c2.778 0 3.813-1.937 4.78-4.845.997-2.993.954-5.872 0-9.713-.687-2.765-1.998-4.845-4.78-4.845z"
+                >
+                </path>
+                <path fill="#4786CF"
+                      d="M4 20.149v-.052c.003-1.506.232-2.99.673-4.819.76-3.176 3.193-4.845 5.97-4.845h13.143V9.22H14.23V5.577c0-2.758.734-4.254 4.778-4.968a27.3 27.3 0 0 1 4.567-.39 30 30 0 0 1 4.979.39c2.593.432 4.778 2.378 4.778 4.968v9.1c0 2.669-2.121 4.856-4.778 4.856h-9.546c-3.24 0-5.97 2.782-5.97 5.937v4.366H9.752c-2.778 0-4.4-2.015-5.08-4.845-.45-1.869-.67-3.368-.672-4.842M18.407 3.148c-.991 0-1.794.82-1.794 1.827 0 1.003.803 1.815 1.794 1.815.987 0 1.793-.812 1.793-1.815 0-1.008-.806-1.827-1.793-1.827"
                 >
                 </path>
               </g>
               <defs>
-                <linearGradient id="paint0_linear_1031_1912-:re:"
-                                x1="2.813"
-                                x2="-6.259"
-                                y1="-6.259"
-                                y2="45.187"
+                <radialGradient id="paint0_radial_1031_1963-:r3k:"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
                                 gradientunits="userSpaceOnUse"
                 >
-                  <stop stop-color="#FAAE41">
+                  <stop stop-color="#C6C6C6">
                   </stop>
                   <stop offset="1"
-                        stop-color="#EF3E31"
+                        stop-color="#fff"
+                  >
+                  </stop>
+                </radialGradient>
+                <radialGradient id="paint1_radial_1031_1963-:r3k:"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradienttransform="matrix(0 -2.48291 56.2936 0 23.895 45.735)"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#C6C6C6">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#fff"
+                  >
+                  </stop>
+                </radialGradient>
+                <linearGradient id="paint2_linear_1031_1963-:r3k:"
+                                x1="38.828"
+                                x2="30.863"
+                                y1="27.877"
+                                y2="16.841"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FFD33A">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#FFE873"
                   >
                   </stop>
                 </linearGradient>
-                <linearGradient id="paint1_linear_1031_1912-:re:"
-                                x1="4.876"
-                                x2="-1.23"
-                                y1="-2.365"
-                                y2="35.34"
-                                gradientunits="userSpaceOnUse"
-                >
-                  <stop stop-color="#E29F3A">
-                  </stop>
-                  <stop offset="1"
-                        stop-color="#D43929"
-                  >
-                  </stop>
-                </linearGradient>
-                <clipPath id="clip0_1031_1912-:re:">
+                <clipPath id="clip0_1031_1963-:r3k:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2802,7 +1763,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:rf:"
+              aria-controls="radix-:r3l:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -2821,7 +1782,663 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:ro:)">
+            <g fill-rule="evenodd"
+               clip-path="url(#clip0_1031_1912-:r3m:)"
+               clip-rule="evenodd"
+            >
+              <path fill="url(#paint0_linear_1031_1912-:r3m:)"
+                    d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+              >
+              </path>
+              <path fill="url(#paint1_linear_1031_1912-:r3m:)"
+                    d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+              >
+              </path>
+              <path fill="#FEFEFE"
+                    d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+              >
+              </path>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_1031_1912-:r3m:"
+                              x1="2.813"
+                              x2="-6.259"
+                              y1="-6.259"
+                              y2="45.187"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FAAE41">
+                </stop>
+                <stop offset="1"
+                      stop-color="#EF3E31"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="paint1_linear_1031_1912-:r3m:"
+                              x1="4.876"
+                              x2="-1.23"
+                              y1="-2.365"
+                              y2="35.34"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#E29F3A">
+                </stop>
+                <stop offset="1"
+                      stop-color="#D43929"
+                >
+                </stop>
+              </linearGradient>
+              <clipPath id="clip0_1031_1912-:r3m:">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>
+            Swift
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
+               style="width: 16px; height: 16px;"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="swift">
+        <code class="language-swift ui-text-code">
+          <span class="hljs-keyword">
+            let
+          </span>
+          ably
+          <span class="hljs-operator">
+            =
+          </span>
+          <span class="hljs-type">
+            ARTRealtime
+          </span>
+          (key:
+          <span class="hljs-string">
+            "{{API_KEY}}"
+          </span>
+          )
+          <span class="hljs-keyword">
+            let
+          </span>
+          channel
+          <span class="hljs-operator">
+            =
+          </span>
+          ably.channels.get(
+          <span class="hljs-string">
+            "channel-name"
+          </span>
+          )
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.subscribe(
+          <span class="hljs-string">
+            "event"
+          </span>
+          ) { message
+          <span class="hljs-keyword">
+            in
+          </span>
+          <span class="hljs-built_in">
+            print
+          </span>
+          (
+          <span class="hljs-string">
+            "
+            <span class="hljs-subst">
+              \\(message.data)
+            </span>
+            "
+          </span>
+          )
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
+  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
+    <div class="flex space-x-1.5">
+      <div class="w-3 h-3 rounded-full bg-orange-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-yellow-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      TypeScript Example
+    </div>
+    <div class="w-12">
+    </div>
+  </div>
+  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
+    <div class="hidden sm:flex gap-2">
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g clip-path="url(#clip0_1031_1922-:rp:)">
+                <path fill="#F7DF1E"
+                      d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+                >
+                </path>
+                <path fill="#000"
+                      d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1031_1922-:rp:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g clip-path="url(#clip0_1031_1977-:rq:)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1031_1977-:rq:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <g fill-rule="evenodd"
+             clip-path="url(#clip0_1031_1912-:rr:)"
+             clip-rule="evenodd"
+          >
+            <path fill="url(#paint0_linear_1031_1912-:rr:)"
+                  d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+            >
+            </path>
+            <path fill="url(#paint1_linear_1031_1912-:rr:)"
+                  d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+            >
+            </path>
+            <path fill="#FEFEFE"
+                  d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+            >
+            </path>
+          </g>
+          <defs>
+            <linearGradient id="paint0_linear_1031_1912-:rr:"
+                            x1="2.813"
+                            x2="-6.259"
+                            y1="-6.259"
+                            y2="45.187"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#FAAE41">
+              </stop>
+              <stop offset="1"
+                    stop-color="#EF3E31"
+              >
+              </stop>
+            </linearGradient>
+            <linearGradient id="paint1_linear_1031_1912-:rr:"
+                            x1="4.876"
+                            x2="-1.23"
+                            y1="-2.365"
+                            y2="35.34"
+                            gradientunits="userSpaceOnUse"
+            >
+              <stop stop-color="#E29F3A">
+              </stop>
+              <stop offset="1"
+                    stop-color="#D43929"
+              >
+              </stop>
+            </linearGradient>
+            <clipPath id="clip0_1031_1912-:rr:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          Swift
+        </span>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:rs:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-2"
+             style="pointer-events: none;"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
+               style="width: 20px; height: 20px;"
+          >
+            <g fill-rule="evenodd"
+               clip-path="url(#clip0_1031_1912-:rt:)"
+               clip-rule="evenodd"
+            >
+              <path fill="url(#paint0_linear_1031_1912-:rt:)"
+                    d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+              >
+              </path>
+              <path fill="url(#paint1_linear_1031_1912-:rt:)"
+                    d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+              >
+              </path>
+              <path fill="#FEFEFE"
+                    d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+              >
+              </path>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_1031_1912-:rt:"
+                              x1="2.813"
+                              x2="-6.259"
+                              y1="-6.259"
+                              y2="45.187"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#FAAE41">
+                </stop>
+                <stop offset="1"
+                      stop-color="#EF3E31"
+                >
+                </stop>
+              </linearGradient>
+              <linearGradient id="paint1_linear_1031_1912-:rt:"
+                              x1="4.876"
+                              x2="-1.23"
+                              y1="-2.365"
+                              y2="35.34"
+                              gradientunits="userSpaceOnUse"
+              >
+                <stop stop-color="#E29F3A">
+                </stop>
+                <stop offset="1"
+                      stop-color="#D43929"
+                >
+                </stop>
+              </linearGradient>
+              <clipPath id="clip0_1031_1912-:rt:">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>
+            Swift
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
+               style="width: 16px; height: 16px;"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="swift">
+        <code class="language-swift ui-text-code">
+          <span class="hljs-keyword">
+            let
+          </span>
+          ably
+          <span class="hljs-operator">
+            =
+          </span>
+          <span class="hljs-type">
+            ARTRealtime
+          </span>
+          (key:
+          <span class="hljs-string">
+            "{{API_KEY}}"
+          </span>
+          )
+          <span class="hljs-keyword">
+            let
+          </span>
+          channel
+          <span class="hljs-operator">
+            =
+          </span>
+          ably.channels.get(
+          <span class="hljs-string">
+            "channel-name"
+          </span>
+          )
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.subscribe(
+          <span class="hljs-string">
+            "event"
+          </span>
+          ) { message
+          <span class="hljs-keyword">
+            in
+          </span>
+          <span class="hljs-built_in">
+            print
+          </span>
+          (
+          <span class="hljs-string">
+            "
+            <span class="hljs-subst">
+              \\(message.data)
+            </span>
+            "
+          </span>
+          )
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
+  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
+    <div class="flex space-x-1.5">
+      <div class="w-3 h-3 rounded-full bg-orange-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-yellow-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Demo API Keys
+    </div>
+    <div class="w-12">
+    </div>
+  </div>
+  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
+    <div class="hidden sm:flex gap-2">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <g clip-path="url(#clip0_1031_1922-:r1q:)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="clip0_1031_1922-:r1q:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g clip-path="url(#clip0_1031_1977-:r1r:)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1031_1977-:r1r:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:r1s:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-2"
+             style="pointer-events: none;"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
+               style="width: 20px; height: 20px;"
+          >
+            <g clip-path="url(#clip0_1031_1922-:r1t:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -2832,7 +2449,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:ro:">
+              <clipPath id="clip0_1031_1922-:r1t:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2912,7 +2529,390 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            'demokey123:*****'
+          </span>
+          );
+          <span class="hljs-keyword">
+            var
+          </span>
+          channel = ably.
+          <span class="hljs-property">
+            channels
+          </span>
+          .
+          <span class="hljs-title function_">
+            get
+          </span>
+          (
+          <span class="hljs-string">
+            'channel-name'
+          </span>
+          );
+          <span class="hljs-comment">
+            // Subscribe to messages on channel
+          </span>
+          channel.
+          <span class="hljs-title function_">
+            subscribe
+          </span>
+          (
+          <span class="hljs-string">
+            'event'
+          </span>
+          ,
+          <span class="hljs-keyword">
+            function
+          </span>
+          (
+          <span class="hljs-params">
+            message
+          </span>
+          ) {
+          <span class="hljs-variable language_">
+            console
+          </span>
+          .
+          <span class="hljs-title function_">
+            log
+          </span>
+          (message.
+          <span class="hljs-property">
+            data
+          </span>
+          );
+});
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-3 py-3">
+    <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
+      API key:
+    </span>
+    <div class="flex items-center gap-2">
+      <div class="inline-flex rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 ml-1 bg-neutral-200 dark:bg-neutral-1100">
+        <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
+          DEMO ONLY
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class="text-neutral-700 dark:text-neutral-600"
+               style="width: 16px; height: 16px;"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+            >
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
+<div class="rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]">
+  <div class="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
+    <div class="flex space-x-1.5">
+      <div class="w-3 h-3 rounded-full bg-orange-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-yellow-500">
+      </div>
+      <div class="w-3 h-3 rounded-full bg-green-500">
+      </div>
+    </div>
+    <div class="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+      Subscribe Example
+    </div>
+    <div class="w-12">
+    </div>
+  </div>
+  <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
+    <div class="hidden sm:flex gap-2">
+      <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
+           tabindex="0"
+           role="button"
+           aria-pressed="true"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="48"
+             height="48"
+             fill="none"
+             viewbox="0 0 48 48"
+             class
+             aria-hidden="true"
+             style="width: 22px; height: 22px;"
+        >
+          <g clip-path="url(#clip0_1031_1922-:rb:)">
+            <path fill="#F7DF1E"
+                  d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+            >
+            </path>
+            <path fill="#000"
+                  d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+            >
+            </path>
+          </g>
+          <defs>
+            <clipPath id="clip0_1031_1922-:rb:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
+          JavaScript
+        </span>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g clip-path="url(#clip0_1031_1977-:rc:)">
+                <path fill="#007ACC"
+                      d="M0 24V0h48v48H0"
+                >
+                </path>
+                <path fill="#fff"
+                      fill-rule="evenodd"
+                      d="M41.568 23.796c-.84-.876-1.776-1.428-3-1.716l.024-.024c-.828-.216-2.808-.288-3.648-.12-2.592.48-4.404 2.16-4.92 4.56-.168.684-.108 2.388.072 3.084.24.804.756 1.776 1.32 2.4.984 1.032 2.04 1.704 4.524 2.76 2.16.96 2.928 1.392 3.312 1.92.276.42.36.672.36 1.224 0 .6-.192 1.032-.636 1.44-1.032.936-3.12 1.044-4.68.24-.516-.288-1.404-1.128-1.8-1.752l-.312-.42-1.356.792-1.8 1.044-.456.288c-.048.084.804 1.368 1.248 1.848 1.128 1.236 2.964 2.196 4.884 2.556.9.156 2.82.18 3.66.036 2.676-.444 4.548-1.8 5.316-3.804.684-1.836.456-4.284-.564-5.844-.9-1.392-2.388-2.364-5.82-3.84-1.86-.816-2.46-1.212-2.784-1.872-.144-.312-.216-.528-.216-.912 0-1.26.96-2.016 2.4-1.92.996.072 1.632.456 2.256 1.344.192.312.384.516.432.48 1.26-.78 3.336-2.184 3.336-2.256-.048-.216-.708-1.056-1.152-1.536M10.524 26.04v-1.956l.036.012v-1.968l8.4-.036c4.62 0 8.424.012 8.424.048.048.024.048.9.048 1.98v1.92h-6.24V43.8h-4.428V26.04z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1031_1977-:rc:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="inline-flex ml-0">
+        <button type="button"
+                aria-describedby="tooltip"
+                class="p-0 relative focus:outline-none h-[1rem] "
+        >
+          <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+               tabindex="0"
+               role="button"
+               aria-pressed="false"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="48"
+                 height="48"
+                 fill="none"
+                 viewbox="0 0 48 48"
+                 class
+                 aria-hidden="true"
+                 style="width: 22px; height: 22px;"
+            >
+              <g fill-rule="evenodd"
+                 clip-path="url(#clip0_1031_1912-:rd:)"
+                 clip-rule="evenodd"
+              >
+                <path fill="url(#paint0_linear_1031_1912-:rd:)"
+                      d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+                >
+                </path>
+                <path fill="url(#paint1_linear_1031_1912-:rd:)"
+                      d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+                >
+                </path>
+                <path fill="#FEFEFE"
+                      d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+                >
+                </path>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_1031_1912-:rd:"
+                                x1="2.813"
+                                x2="-6.259"
+                                y1="-6.259"
+                                y2="45.187"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FAAE41">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#EF3E31"
+                  >
+                  </stop>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1031_1912-:rd:"
+                                x1="4.876"
+                                x2="-1.23"
+                                y1="-2.365"
+                                y2="35.34"
+                                gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E29F3A">
+                  </stop>
+                  <stop offset="1"
+                        stop-color="#D43929"
+                  >
+                  </stop>
+                </linearGradient>
+                <clipPath id="clip0_1031_1912-:rd:">
+                  <path fill="#fff"
+                        d="M0 0h48v48H0z"
+                  >
+                  </path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sm:hidden w-full">
+      <button type="button"
+              role="combobox"
+              aria-controls="radix-:re:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
+              aria-label="Select language"
+      >
+        <div class="flex items-center gap-2"
+             style="pointer-events: none;"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="48"
+               height="48"
+               fill="none"
+               viewbox="0 0 48 48"
+               class
+               style="width: 20px; height: 20px;"
+          >
+            <g clip-path="url(#clip0_1031_1922-:rf:)">
+              <path fill="#F7DF1E"
+                    d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
+              >
+              </path>
+              <path fill="#000"
+                    d="M32.244 37.5c.967 1.579 2.225 2.74 4.45 2.74 1.868 0 3.062-.935 3.062-2.225 0-1.547-1.227-2.095-3.284-2.995l-1.127-.484c-3.255-1.386-5.417-3.123-5.417-6.796 0-3.382 2.577-5.958 6.605-5.958 2.868 0 4.93.998 6.416 3.612l-3.513 2.255c-.773-1.387-1.607-1.933-2.903-1.933-1.32 0-2.158.838-2.158 1.933 0 1.353.838 1.9 2.773 2.739l1.128.483c3.832 1.643 5.996 3.319 5.996 7.086 0 4.06-3.19 6.285-7.474 6.285-4.19 0-6.896-1.996-8.22-4.612zm-15.934.391c.709 1.257 1.353 2.32 2.903 2.32 1.482 0 2.417-.58 2.417-2.834V22.04h4.51v15.398c0 4.67-2.738 6.796-6.735 6.796-3.612 0-5.703-1.869-6.767-4.12z"
+              >
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0_1031_1922-:rf:">
+                <path fill="#fff"
+                      d="M0 0h48v48H0z"
+                >
+                </path>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>
+            JavaScript
+          </span>
+        </div>
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewbox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               aria-hidden="true"
+               data-slot="icon"
+               class
+               style="width: 16px; height: 16px;"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            >
+            </path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="relative"
+       tabindex="0"
+  >
+    <div class="hljs overflow-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+         data-id="code"
+    >
+      <div>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          1
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          2
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          3
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          4
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          5
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          6
+        </p>
+        <p class="mr-6 font-mono text-right text-neutral-800">
+          7
+        </p>
+      </div>
+      <pre lang="javascript">
+        <code class="language-javascript ui-text-code">
+          <span class="hljs-keyword">
+            var
+          </span>
+          ably =
+          <span class="hljs-keyword">
+            new
+          </span>
+          <span class="hljs-title class_">
+            Ably
+          </span>
+          .
+          <span class="hljs-title class_">
+            Realtime
+          </span>
+          (
+          <span class="hljs-string">
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -3009,7 +3009,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1922-:r19:)">
+              <g clip-path="url(#clip0_1031_1922-:r16:)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -3020,7 +3020,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1922-:r19:">
+                <clipPath id="clip0_1031_1922-:r16:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3050,7 +3050,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r1a:)">
+              <g clip-path="url(#clip0_1031_1977-:r17:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -3063,7 +3063,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r1a:">
+                <clipPath id="clip0_1031_1977-:r17:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3078,7 +3078,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r1b:"
+              aria-controls="radix-:r18:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -3097,36 +3097,36 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_2037-:r1h:)">
-              <path fill="url(#paint0_linear_1031_2037-:r1h:)"
+            <g clip-path="url(#clip0_1031_2037-:r19:)">
+              <path fill="url(#paint0_linear_1031_2037-:r19:)"
                     d="M37.174 31.582 9.779 47.849l35.471-2.407 2.732-35.767z"
               >
               </path>
-              <path fill="url(#paint1_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint1_linear_1031_2037-:r19:)"
                     d="M45.308 45.417 42.26 24.375l-8.305 10.966z"
               >
               </path>
-              <path fill="url(#paint2_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint2_linear_1031_2037-:r19:)"
                     d="m45.35 45.417-22.336-1.753-13.116 4.139z"
               >
               </path>
-              <path fill="url(#paint3_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint3_linear_1031_2037-:r19:)"
                     d="m9.93 47.808 5.58-18.28-12.28 2.626z"
               >
               </path>
-              <path fill="url(#paint4_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint4_linear_1031_2037-:r19:)"
                     d="m0 38.285 3.422-6.24-2.768-7.436z"
               >
               </path>
-              <path fill="url(#paint5_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint5_linear_1031_2037-:r19:)"
                     d="m33.953 35.401-5.134-20.11-14.693 13.773z"
               >
               </path>
-              <path fill="url(#paint6_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint6_linear_1031_2037-:r19:)"
                     d="M46.817 15.574 32.93 4.23 29.06 16.734z"
               >
               </path>
-              <path fill="url(#paint7_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint7_linear_1031_2037-:r19:)"
                     d="m40.322.186-8.168 4.515L27 .126z"
               >
               </path>
@@ -3134,11 +3134,11 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                     d="m.47 24.375 2.785 7.9 12.102-2.715 13.815-12.84 3.9-12.385L26.931 0 16.494 3.906c-3.288 3.059-9.67 9.11-9.9 9.225-.227.116-4.213 7.65-6.124 11.244"
               >
               </path>
-              <path fill="url(#paint8_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint8_linear_1031_2037-:r19:)"
                     d="M10.249 10.183C17.376 3.117 26.564-1.059 30.09 2.5c3.524 3.558-.213 12.203-7.34 19.268-7.128 7.064-16.202 11.469-19.725 7.911-3.526-3.555.097-12.43 7.224-19.495"
               >
               </path>
-              <path fill="url(#paint9_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint9_linear_1031_2037-:r19:)"
                     d="m9.93 47.8 5.535-18.337 18.386 5.907C27.203 41.603 19.81 46.873 9.93 47.8"
               >
               </path>
@@ -3146,33 +3146,33 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                     d="M0 38.204c.262 9.408 7.05 9.548 9.941 9.631L3.262 32.236z"
               >
               </path>
-              <path fill="url(#paint10_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint10_linear_1031_2037-:r19:)"
                     d="M3.233 32.255 2.185 44.742c1.978 2.702 4.7 2.937 7.555 2.727-2.065-5.142-6.192-15.422-6.507-15.214"
               >
               </path>
-              <path fill="url(#paint11_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint11_linear_1031_2037-:r19:)"
                     d="m29.197 16.683 4.72 18.696C39.47 29.54 44.453 23.263 46.894 15.5z"
               >
               </path>
-              <path fill="url(#paint12_radial_1031_2037-:r1h:)"
+              <path fill="url(#paint12_radial_1031_2037-:r19:)"
                     d="m15.458 29.463 7.4 14.279c4.377-2.374 7.804-5.265 10.942-8.363z"
               >
               </path>
-              <path fill="url(#paint13_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint13_linear_1031_2037-:r19:)"
                     d="M46.846 15.594c1.89-5.701 2.325-13.88-6.582-15.398l-7.31 4.037z"
               >
               </path>
-              <path fill="url(#paint14_radial_1031_2037-:r1h:)"
+              <path fill="url(#paint14_radial_1031_2037-:r19:)"
                     d="M29.223 16.713c4.267 2.622 12.867 7.89 13.041 7.987.271.152 3.708-5.796 4.488-9.157z"
               >
               </path>
-              <path fill="url(#paint15_linear_1031_2037-:r1h:)"
+              <path fill="url(#paint15_linear_1031_2037-:r19:)"
                     d="m32.912 4.265 14.702 2.063C46.83 3.003 44.42.858 40.312.187z"
               >
               </path>
             </g>
             <defs>
-              <linearGradient id="paint0_linear_1031_2037-:r1h:"
+              <linearGradient id="paint0_linear_1031_2037-:r19:"
                               x1="51.112"
                               x2="41.001"
                               y1="47.178"
@@ -3196,7 +3196,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint1_linear_1031_2037-:r1h:"
+              <linearGradient id="paint1_linear_1031_2037-:r19:"
                               x1="67.988"
                               x2="22.822"
                               y1="-4.343"
@@ -3216,7 +3216,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint2_linear_1031_2037-:r1h:"
+              <linearGradient id="paint2_linear_1031_2037-:r19:"
                               x1="2787.28"
                               x2="2787.11"
                               y1="559.152"
@@ -3236,7 +3236,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint3_linear_1031_2037-:r1h:"
+              <linearGradient id="paint3_linear_1031_2037-:r19:"
                               x1="4.959"
                               x2="12.911"
                               y1="34.187"
@@ -3264,7 +3264,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint4_linear_1031_2037-:r1h:"
+              <linearGradient id="paint4_linear_1031_2037-:r19:"
                               x1="-11.51"
                               x2="1.418"
                               y1="52.752"
@@ -3288,7 +3288,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint5_linear_1031_2037-:r1h:"
+              <linearGradient id="paint5_linear_1031_2037-:r19:"
                               x1="16.647"
                               x2="17.436"
                               y1="18.967"
@@ -3316,7 +3316,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint6_linear_1031_2037-:r1h:"
+              <linearGradient id="paint6_linear_1031_2037-:r19:"
                               x1="21.859"
                               x2="22.969"
                               y1="2.592"
@@ -3344,7 +3344,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint7_linear_1031_2037-:r1h:"
+              <linearGradient id="paint7_linear_1031_2037-:r19:"
                               x1="88.161"
                               x2="89.301"
                               y1="7.302"
@@ -3368,7 +3368,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint8_linear_1031_2037-:r1h:"
+              <linearGradient id="paint8_linear_1031_2037-:r19:"
                               x1="14.71"
                               x2="51.846"
                               y1="56.193"
@@ -3412,7 +3412,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint9_linear_1031_2037-:r1h:"
+              <linearGradient id="paint9_linear_1031_2037-:r19:"
                               x1="27.062"
                               x2="17.422"
                               y1="39.083"
@@ -3436,7 +3436,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint10_linear_1031_2037-:r1h:"
+              <linearGradient id="paint10_linear_1031_2037-:r19:"
                               x1="11.381"
                               x2="-7.149"
                               y1="31.099"
@@ -3460,7 +3460,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint11_linear_1031_2037-:r1h:"
+              <linearGradient id="paint11_linear_1031_2037-:r19:"
                               x1="48.563"
                               x2="35.215"
                               y1="20.922"
@@ -3480,7 +3480,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint13_linear_1031_2037-:r1h:"
+              <linearGradient id="paint13_linear_1031_2037-:r19:"
                               x1="49.814"
                               x2="44.46"
                               y1="8.931"
@@ -3500,7 +3500,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint15_linear_1031_2037-:r1h:"
+              <linearGradient id="paint15_linear_1031_2037-:r19:"
                               x1="10.024"
                               x2="11.64"
                               y1="0.08"
@@ -3524,7 +3524,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <radialGradient id="paint12_radial_1031_2037-:r1h:"
+              <radialGradient id="paint12_radial_1031_2037-:r19:"
                               cx="0"
                               cy="0"
                               r="1"
@@ -3544,7 +3544,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </radialGradient>
-              <radialGradient id="paint14_radial_1031_2037-:r1h:"
+              <radialGradient id="paint14_radial_1031_2037-:r19:"
                               cx="0"
                               cy="0"
                               r="1"
@@ -3564,7 +3564,7 @@ exports[`Components/Code Snippet WithMissingLanguageSnippet smoke-test 1`] = `
                 >
                 </stop>
               </radialGradient>
-              <clipPath id="clip0_1031_2037-:r1h:">
+              <clipPath id="clip0_1031_2037-:r19:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -3688,7 +3688,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                aria-hidden="true"
                style="width: 22px; height: 22px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r1r:)">
+            <g clip-path="url(#clip0_1031_1922-:r1g:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -3699,7 +3699,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r1r:">
+              <clipPath id="clip0_1031_1922-:r1g:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -3730,7 +3730,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                    aria-hidden="true"
                    style="width: 22px; height: 22px;"
               >
-                <g clip-path="url(#clip0_1031_1977-:r1k:)">
+                <g clip-path="url(#clip0_1031_1977-:r1h:)">
                   <path fill="#007ACC"
                         d="M0 24V0h48v48H0"
                   >
@@ -3743,7 +3743,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                   </path>
                 </g>
                 <defs>
-                  <clipPath id="clip0_1031_1977-:r1k:">
+                  <clipPath id="clip0_1031_1977-:r1h:">
                     <path fill="#fff"
                           d="M0 0h48v48H0z"
                     >
@@ -3758,7 +3758,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
       <div class="sm:hidden w-full">
         <button type="button"
                 role="combobox"
-                aria-controls="radix-:r1l:"
+                aria-controls="radix-:r1i:"
                 aria-expanded="false"
                 aria-autocomplete="none"
                 dir="ltr"
@@ -3777,7 +3777,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                  class
                  style="width: 20px; height: 20px;"
             >
-              <g clip-path="url(#clip0_1031_1922-:r1s:)">
+              <g clip-path="url(#clip0_1031_1922-:r1j:)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -3788,7 +3788,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1922-:r1s:">
+                <clipPath id="clip0_1031_1922-:r1j:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -3868,7 +3868,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
             </span>
             (
             <span class="hljs-string">
-              'API_KEY'
+              '{{API_KEY}}'
             </span>
             );
             <span class="hljs-keyword">
@@ -3990,7 +3990,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r33:)">
+          <g clip-path="url(#clip0_1031_1922-:r2o:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -4001,7 +4001,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r33:">
+            <clipPath id="clip0_1031_1922-:r2o:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4032,7 +4032,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r2s:)">
+              <g clip-path="url(#clip0_1031_1977-:r2p:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4045,7 +4045,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r2s:">
+                <clipPath id="clip0_1031_1977-:r2p:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4060,7 +4060,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r2t:"
+              aria-controls="radix-:r2q:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4079,7 +4079,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r34:)">
+            <g clip-path="url(#clip0_1031_1922-:r2r:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4090,7 +4090,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r34:">
+              <clipPath id="clip0_1031_1922-:r2r:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -4170,7 +4170,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -4262,7 +4262,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r3j:)">
+          <g clip-path="url(#clip0_1031_1922-:r37:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -4273,7 +4273,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r3j:">
+            <clipPath id="clip0_1031_1922-:r37:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4304,7 +4304,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r3c:)">
+              <g clip-path="url(#clip0_1031_1977-:r38:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4317,7 +4317,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r3c:">
+                <clipPath id="clip0_1031_1977-:r38:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4332,7 +4332,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r3d:"
+              aria-controls="radix-:r39:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4351,7 +4351,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r3k:)">
+            <g clip-path="url(#clip0_1031_1922-:r3a:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4362,7 +4362,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r3k:">
+              <clipPath id="clip0_1031_1922-:r3a:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -4419,7 +4419,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">

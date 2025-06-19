@@ -4,7 +4,7 @@ import SegmentedControl from "../SegmentedControl";
 import cn from "../utils/cn";
 import { IconName } from "../Icon/types";
 
-interface TooltipButtonProps {
+type TooltipButtonProps = {
   tooltip: string;
   active?: boolean;
   onClick: () => void;
@@ -14,7 +14,7 @@ interface TooltipButtonProps {
   variant?: "segmented" | "icon-button";
   size?: "sm" | "md";
   alwaysShowLabel?: boolean;
-}
+};
 
 /**
  * A unified tooltip button component that can render either a segmented control or an icon button

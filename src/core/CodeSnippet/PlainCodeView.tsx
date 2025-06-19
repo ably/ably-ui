@@ -6,12 +6,12 @@ import useCopyToClipboard from "../utils/useCopyToClipboard";
 import CopyButton from "./CopyButton";
 import { IconName } from "../Icon/types";
 
-interface PlainCodeViewProps {
+type PlainCodeViewProps = {
   content: string;
   language: string;
   icon: IconName | null;
   className?: string;
-}
+};
 
 /**
  * A specialized component for displaying plain code (shell commands, text, etc.) with copy functionality
