@@ -55,7 +55,7 @@ const ShellCommandView: React.FC<ShellCommandViewProps> = ({
         <Code
           language="shell"
           snippet={content}
-          additionalCSS="bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-14 py-3"
+          additionalCSS="bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 pl-0 pr-4 py-3"
           showLines={false}
         />
       </div>
