@@ -198,7 +198,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -306,7 +306,7 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -676,9 +676,9 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
 `;
 
 exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
-<div class="space-y-4">
+<div class="flex flex-col gap-4">
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Installation
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -720,7 +720,7 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
     </div>
   </div>
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Starting the server
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -762,7 +762,7 @@ npm run start
     </div>
   </div>
   <div>
-    <h3 class="ui-text-h3 mb-2">
+    <h3 class="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
       Complex command
     </h3>
     <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-[3.375rem]"
@@ -803,9 +803,9 @@ npm run start
             <span class="hljs-string">
               "Authorization: Bearer
               <span class="hljs-variable">
-                \${{{API_KEY}
+                \${{API_KEY}
               </span>
-              }}"
+              }"
             </span>
             \\
   -d
@@ -967,7 +967,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -1122,7 +1122,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -1394,7 +1394,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            'bigkey123456:*****'
           </span>
           );
           <span class="hljs-keyword">
@@ -1461,11 +1461,11 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
             aria-autocomplete="none"
             dir="ltr"
             data-state="closed"
-            class="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base"
+            class="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base font-mono"
             aria-label="API Key"
     >
       <span style="pointer-events: none;">
-        abcd1234
+        bigkey1234... - Big Key
       </span>
       <span aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -1763,7 +1763,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r11:"
+              aria-controls="radix-:r14:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -1904,7 +1904,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
           </span>
           (key:
           <span class="hljs-string">
-            "API_KEY"
+            "{{API_KEY}}"
           </span>
           )
           <span class="hljs-keyword">
@@ -2241,7 +2241,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -2275,7 +2275,21 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
           <span class="hljs-function">
             (
             <span class="hljs-params">
-              message: Ably.Types.Message
+              <span class="hljs-attr">
+                message
+              </span>
+              :
+              <span class="hljs-title class_">
+                Ably
+              </span>
+              .
+              <span class="hljs-title class_">
+                Types
+              </span>
+              .
+              <span class="hljs-title class_">
+                Message
+              </span>
             </span>
             ) =&gt;
           </span>
@@ -2513,7 +2527,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            'demokey123:*****'
           </span>
           );
           <span class="hljs-keyword">
@@ -2573,7 +2587,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
     <span class="ui-text-label4 text-neutral-700 dark:text-neutral-600 mr-1">
       API key:
     </span>
-    <div class="flex items-center">
+    <div class="flex items-center gap-2">
       <div class="inline-flex rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 ml-1 bg-neutral-200 dark:bg-neutral-1100">
         <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
           DEMO ONLY
@@ -2896,7 +2910,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -3852,7 +3866,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
             </span>
             (
             <span class="hljs-string">
-              'API_KEY'
+              '{{API_KEY}}'
             </span>
             );
             <span class="hljs-keyword">
@@ -4044,7 +4058,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:rr:"
+              aria-controls="radix-:ru:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4154,7 +4168,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
@@ -4316,7 +4330,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:ru:"
+              aria-controls="radix-:r11:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4403,7 +4417,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'API_KEY'
+            '{{API_KEY}}'
           </span>
           );
           <span class="hljs-keyword">
