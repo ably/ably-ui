@@ -37,16 +37,13 @@ const Code = ({
   const lineCount = lines.length;
 
   return (
-    <div
-      className={cn("hljs overflow-auto flex", padding, additionalCSS)}
-      data-id="code"
-    >
+    <div className={cn("hljs flex", padding, additionalCSS)} data-id="code">
       {showLines ? (
-        <div>
+        <div className="text-sm leading-6 pt-0.5">
           {[...Array(lineCount)].map((_, i) => (
             <p
               className={cn(
-                "mr-6 font-mono text-right text-neutral-800",
+                "mr-4 font-mono text-right text-neutral-800",
                 lineCSS,
               )}
               key={i}
@@ -56,7 +53,7 @@ const Code = ({
           ))}
         </div>
       ) : null}
-      <pre lang={language}>
+      <pre lang={language} className="overflow-auto flex-1 leading-6">
         <code
           className={className}
           dangerouslySetInnerHTML={{ __html: HTMLraw }}
