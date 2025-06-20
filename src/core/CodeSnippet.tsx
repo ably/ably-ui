@@ -9,20 +9,25 @@ import React, {
 } from "react";
 import Code from "./Code";
 import cn from "./utils/cn";
-import { getLanguageInfo } from "./CodeSnippet/languages";
 import Icon from "./Icon";
+import { getLanguageInfo, stripSdkType } from "./CodeSnippet/languages";
 import LanguageSelector from "./CodeSnippet/LanguageSelector";
 import ApiKeySelector from "./CodeSnippet/ApiKeySelector";
-import { IconName } from "./Icon/types";
 import useCopyToClipboard from "./utils/useCopyToClipboard";
-import ShellCommandView from "./CodeSnippet/ShellCommandView";
+import PlainCodeView from "./CodeSnippet/PlainCodeView";
 import CopyButton from "./CodeSnippet/CopyButton";
 import TooltipButton from "./CodeSnippet/TooltipButton";
 
 // Define SDK type
 export type SDKType = "realtime" | "rest" | null;
 
-export interface CodeSnippetProps {
+// Define API key types
+export type ApiKeysItem = {
+  app: string;
+  keys: { name: string; key: string }[];
+};
+
+export type CodeSnippetProps = {
   /**
    * If true, hides the language selector row completely
    */
@@ -47,7 +52,7 @@ export interface CodeSnippetProps {
    * Default language to display. If not found in available languages, first available is used.
    * If found in languages but no matching snippet exists, a message is displayed.
    */
-  lang?: string;
+  lang: string;
   /**
    * Callback fired when the active language changes
    */
@@ -55,7 +60,7 @@ export interface CodeSnippetProps {
   /**
    * List of API keys to display in a dropdown
    */
-  apiKeys?: string[];
+  apiKeys?: ApiKeysItem[];
   /**
    * Default SDK type to use for the code snippet
    */
@@ -69,7 +74,12 @@ export interface CodeSnippetProps {
    * Languages not in this array will be shown after those that are included.
    */
   languageOrdering?: string[];
-}
+};
+
+// Substitution function for API key placeholders
+const substituteApiKey = (content: string, apiKey: string): string => {
+  return content.replace(/\{\{API_KEY\}\}/g, `${apiKey.split(":")[0]}:*****`);
+};
 
 /**
  * CodeSnippet component that displays code with language switching capability
@@ -90,7 +100,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   const codeRef = useRef<HTMLDivElement>(null);
   const { isCopied, copy } = useCopyToClipboard();
 
-  // Helper function to extract language from code element
   const extractLanguageFromCode = useCallback(
     (codeElement: React.ReactElement | null): string | null => {
       if (!codeElement || !codeElement.props.className) return null;
@@ -106,69 +115,58 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     [],
   );
 
-  // Parse children to extract languages and SDK types - only needs to run once
-  const {
-    childrenArray,
-    languages,
-    sdkTypes,
-    originalLangMap,
-    isSingleShellCommand,
-  } = useMemo(() => {
-    const childrenArray = Children.toArray(children);
-    const languages: string[] = [];
-    const sdkTypes = new Set<SDKType>();
-    const originalLangMap = new Map<string, string>();
+  const { codeData, languages, sdkTypes, isSinglePlainCommand } =
+    useMemo(() => {
+      const childrenArray = Children.toArray(children);
+      const languages: string[] = [];
+      const sdkTypes = new Set<SDKType>();
+      const codeData: { language: string; content: string }[] = [];
 
-    // Check if we have a single shell command
-    const isSingleShellCommand =
-      childrenArray.length === 1 &&
-      isValidElement(childrenArray[0]) &&
-      isValidElement(childrenArray[0].props.children) &&
-      childrenArray[0].props.children.props.className?.includes(
-        "language-shell",
-      );
+      const isSinglePlainCommand =
+        childrenArray.length === 1 &&
+        ["language-shell", "language-text"].some(
+          (lang) =>
+            isValidElement(childrenArray[0]) &&
+            isValidElement(childrenArray[0].props.children) &&
+            childrenArray[0].props.children.props.className?.includes(lang),
+        );
 
-    // Extract all available languages from children and identify SDK types
-    childrenArray.forEach((child) => {
-      if (!isValidElement(child)) return;
+      childrenArray.forEach((child) => {
+        if (!isValidElement(child)) return;
 
-      const preElement = child;
-      const codeElement = isValidElement(preElement.props.children)
-        ? preElement.props.children
-        : null;
+        const preElement = child;
+        const codeElement = isValidElement(preElement.props.children)
+          ? preElement.props.children
+          : null;
 
-      const langName = extractLanguageFromCode(codeElement);
-      if (!langName) return;
+        if (!codeElement) return;
 
-      // Look for SDK prefixes in the language name itself
-      if (langName.startsWith("realtime_")) {
-        const baseLanguage = langName.substring(9);
-        sdkTypes.add("realtime");
-        originalLangMap.set(langName, baseLanguage);
-      } else if (langName.startsWith("rest_")) {
-        const baseLanguage = langName.substring(5);
-        sdkTypes.add("rest");
-        originalLangMap.set(langName, baseLanguage);
-      } else {
-        originalLangMap.set(langName, langName);
-      }
+        const codeLanguage = extractLanguageFromCode(codeElement);
 
-      // Add to languages list if not already included
-      if (!languages.includes(langName)) {
-        languages.push(langName);
-      }
-    });
+        if (!codeLanguage) return;
 
-    return {
-      childrenArray,
-      languages,
-      sdkTypes,
-      originalLangMap,
-      isSingleShellCommand,
-    };
-  }, [children, extractLanguageFromCode]);
+        if (codeLanguage.startsWith("realtime_")) {
+          sdkTypes.add("realtime");
+        } else if (codeLanguage.startsWith("rest_")) {
+          sdkTypes.add("rest");
+        }
 
-  // Simplified state management with separate hooks
+        if (!languages.includes(codeLanguage)) {
+          languages.push(codeLanguage);
+        }
+
+        const codeContent = codeElement.props.children;
+        codeData.push({ language: codeLanguage, content: codeContent });
+      });
+
+      return {
+        codeData,
+        languages,
+        sdkTypes,
+        isSinglePlainCommand,
+      };
+    }, [children, extractLanguageFromCode]);
+
   const [activeSDKType, setActiveSDKType] = useState<SDKType>(() => {
     if (sdkTypes.size === 0) return null;
     if (sdk && sdkTypes.has(sdk)) return sdk;
@@ -176,24 +174,10 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (sdkTypes.has("rest")) return "rest";
     return null;
   });
-  const [activeLanguage, setActiveLanguage] = useState<string | null>(null);
-  const [selectedApiKey, setSelectedApiKey] = useState(() =>
-    apiKeys && apiKeys.length > 0 ? apiKeys[0] : "",
-  );
-  const [isHovering, setIsHovering] = useState(false);
 
-  // Check if we need to show SDK type selector
   const showSDKSelector = sdkTypes.size > 0;
 
-  // Check if there is only a JSON snippet
-  const hasOnlyJsonSnippet = useMemo(
-    () => languages.length === 1 && languages[0] === "json",
-    [languages],
-  );
-
-  // Get languages filtered by active SDK type & apply ordering
   const filteredLanguages = useMemo(() => {
-    // Filter by SDK type if needed
     const filtered =
       !activeSDKType || !showSDKSelector
         ? [...languages]
@@ -202,8 +186,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     // Apply custom ordering if provided
     if (languageOrdering && languageOrdering.length > 0) {
       filtered.sort((a, b) => {
-        const aBase = originalLangMap.get(a) || a;
-        const bBase = originalLangMap.get(b) || b;
+        const aBase = stripSdkType(a);
+        const bBase = stripSdkType(b);
 
         const aIndex = languageOrdering.indexOf(aBase);
         const bIndex = languageOrdering.indexOf(bBase);
@@ -216,178 +200,110 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     }
 
     return filtered;
-  }, [
-    activeSDKType,
-    showSDKSelector,
-    languages,
-    languageOrdering,
-    originalLangMap,
-  ]);
+  }, [activeSDKType, showSDKSelector, languages, languageOrdering]);
 
-  // Determine the initial active language
-  const initialActiveLanguage = useMemo((): string | null => {
-    if (!lang) {
-      return filteredLanguages.length > 0 ? filteredLanguages[0] : null;
+  const activeLanguage = useMemo(() => {
+    if (sdk && sdkTypes.has(sdk)) {
+      return languages.find((l) => l === `${sdk}_${lang}`) ?? lang;
     }
 
-    // Try with SDK prefix if applicable
-    if (activeSDKType) {
-      const prefixedLang = `${activeSDKType}_${lang}`;
-      if (languages.includes(prefixedLang)) {
-        return prefixedLang;
-      }
-    }
+    if (lang) return lang;
 
-    // Try direct match
-    if (languages.includes(lang)) {
-      return lang;
-    }
+    if (filteredLanguages.length > 0) return filteredLanguages[0];
 
-    // Check if it's a known language but not available
-    if (getLanguageInfo(lang).label !== lang) {
-      return lang;
-    }
+    return lang;
+  }, [lang, sdk, sdkTypes, filteredLanguages]);
 
-    // Fallback to first available
-    return filteredLanguages.length > 0 ? filteredLanguages[0] : null;
-  }, [lang, activeSDKType, languages, filteredLanguages]);
+  const [selectedApiKey, setSelectedApiKey] = useState<string>(
+    () => apiKeys?.[0]?.keys?.[0]?.key ?? "",
+  );
 
-  // Initialize activeLanguage after filteredLanguages are calculated
   useEffect(() => {
-    setActiveLanguage(initialActiveLanguage);
-  }, [initialActiveLanguage]);
-
-  // Update selected API key if apiKeys changes
-  useEffect(() => {
-    if (apiKeys && apiKeys.length > 0 && !apiKeys.includes(selectedApiKey)) {
-      setSelectedApiKey(apiKeys[0]);
+    if (!selectedApiKey && apiKeys && apiKeys.length > 0) {
+      setSelectedApiKey(apiKeys[0].keys?.[0]?.key);
     }
-  }, [apiKeys, selectedApiKey]);
+  }, [apiKeys]);
 
-  // Clean language utilities
-  const getCleanLanguage = useCallback(
-    (lang: string | null) => (lang ? originalLangMap.get(lang) || lang : null),
-    [originalLangMap],
+  const requiresApiKeySubstitution = useMemo(() => {
+    const containsPlaceholder = codeData.some(
+      (code) =>
+        code?.content.includes("{{API_KEY}}") && code?.language === lang,
+    );
+
+    return (
+      containsPlaceholder && !!apiKeys && apiKeys.length > 0 && !!selectedApiKey
+    );
+  }, [codeData, apiKeys, selectedApiKey, lang]);
+
+  const [isHovering, setIsHovering] = useState(false);
+
+  const hasOnlyJsonSnippet = useMemo(
+    () => languages.length === 1 && languages[0] === "json",
+    [languages],
   );
 
-  // Get language info for display
-  const getLanguageInfoForDisplay = useCallback(
-    (lang: string | null) => {
-      if (!lang) return null;
-      const cleanLang = getCleanLanguage(lang);
-      return cleanLang ? getLanguageInfo(cleanLang) : null;
-    },
-    [getCleanLanguage],
-  );
-
-  // For language display name and icon (only depends on originalLangMap)
-  const getLanguageDisplayName = useCallback(
-    (lang: string) => {
-      const cleanLang = getCleanLanguage(lang);
-      return cleanLang ? getLanguageInfo(cleanLang).label : lang;
-    },
-    [getCleanLanguage],
-  );
-
-  const getLanguageIcon = useCallback(
-    (lang: string): IconName => {
-      const cleanLang = getCleanLanguage(lang);
-      return cleanLang
-        ? getLanguageInfo(cleanLang).icon
-        : "icon-gui-document-mini";
-    },
-    [getCleanLanguage],
-  );
-
-  // Memoize the active language info
-  const activeLanguageInfo = useMemo(
-    () => getLanguageInfoForDisplay(activeLanguage),
-    [getLanguageInfoForDisplay, activeLanguage],
-  );
-
-  // Filter and process children for the active language
   const processedChildren = useMemo(() => {
     if (!activeLanguage) return [];
 
-    // Target language is either the active one or json in json-only mode
     const targetLanguage = hasOnlyJsonSnippet ? "json" : activeLanguage;
 
-    return childrenArray
-      .filter((child) => {
-        if (!isValidElement(child)) return false;
-        const codeElement = isValidElement(child.props.children)
-          ? child.props.children
-          : null;
-        const langName = extractLanguageFromCode(codeElement);
-        return langName === targetLanguage;
+    return codeData
+      .filter((code) => {
+        return code?.language === targetLanguage;
       })
-      .map((child) => {
-        if (!isValidElement(child)) return child;
+      .map((code) => {
+        if (!code) return null;
 
-        const preElement = child;
-        const codeElement = isValidElement(preElement.props.children)
-          ? preElement.props.children
-          : null;
-        if (!codeElement) return child;
+        const cleanLang = hasOnlyJsonSnippet ? "json" : code.language;
+        const langInfo = getLanguageInfo(cleanLang ?? "");
 
-        const codeContent = codeElement.props.children;
-        const langName = extractLanguageFromCode(codeElement);
-        if (!langName) return child;
-
-        const cleanLang = hasOnlyJsonSnippet
-          ? "json"
-          : getCleanLanguage(langName) || langName;
-        const langInfo = getLanguageInfo(cleanLang);
-
-        // Handle primitive content types
         if (
-          typeof codeContent === "string" ||
-          typeof codeContent === "number" ||
-          typeof codeContent === "boolean"
+          typeof code.content === "string" ||
+          typeof code.content === "number" ||
+          typeof code.content === "boolean"
         ) {
+          // Apply API key substitution if apiKeys are provided
+          let processedContent = String(code.content);
+          if (requiresApiKeySubstitution) {
+            processedContent = substituteApiKey(
+              processedContent,
+              selectedApiKey,
+            );
+          }
+
+          if (!langInfo.syntaxHighlighterKey || !cleanLang) return null;
+
           return (
             <Code
-              key={langName}
+              key={code.language}
               language={langInfo.syntaxHighlighterKey || cleanLang}
-              snippet={String(codeContent)}
+              snippet={processedContent}
               additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
               showLines={showCodeLines}
             />
           );
         }
 
-        return child;
+        return null;
       });
   }, [
     activeLanguage,
-    childrenArray,
-    extractLanguageFromCode,
-    getCleanLanguage,
+    codeData,
     hasOnlyJsonSnippet,
     showCodeLines,
+    apiKeys,
+    selectedApiKey,
   ]);
 
-  // Check if there's a snippet available for the active language
   const hasSnippetForActiveLanguage = useMemo(() => {
     if (!activeLanguage) return false;
     if (hasOnlyJsonSnippet) return true;
 
-    return childrenArray.some((child) => {
-      if (!isValidElement(child)) return false;
-      const codeElement = isValidElement(child.props.children)
-        ? child.props.children
-        : null;
-      const langName = extractLanguageFromCode(codeElement);
-      return langName === activeLanguage;
+    return codeData.some((code) => {
+      return code?.language === activeLanguage;
     });
-  }, [
-    activeLanguage,
-    childrenArray,
-    extractLanguageFromCode,
-    hasOnlyJsonSnippet,
-  ]);
+  }, [activeLanguage, hasOnlyJsonSnippet, codeData]);
 
-  // Function to get the current code text content
   const getCodeText = useCallback((): string | null => {
     if (!activeLanguage || !hasSnippetForActiveLanguage || !codeRef.current)
       return null;
@@ -413,37 +329,35 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     return null;
   }, [activeLanguage, hasSnippetForActiveLanguage, hasOnlyJsonSnippet]);
 
-  // Event handlers
   const handleSDKTypeChange = useCallback(
     (type: SDKType) => {
       // pick first language matching the new SDK prefix
-      const nextLang = languages.find((l) => l.startsWith(`${type}_`)) ?? null;
+      const nextLang = stripSdkType(
+        languages.find((l) => l.startsWith(`${type}_`)) ?? lang,
+      );
       setActiveSDKType(type);
-      setActiveLanguage(nextLang);
+
+      // Call onChange with clean language name
+      if (onChange && nextLang) {
+        onChange(nextLang, type);
+      }
     },
     [languages],
   );
 
   const handleLanguageChange = useCallback(
     (language: string) => {
-      setActiveLanguage(language);
-
-      // Call onChange with clean language name
       if (onChange) {
-        const cleanLang = getCleanLanguage(language) || language;
-        onChange(cleanLang, activeSDKType);
+        onChange(stripSdkType(language), activeSDKType);
       }
     },
-    [onChange, getCleanLanguage, activeSDKType],
+    [onChange, activeSDKType],
   );
 
-  const handleApiKeyChange = useCallback((apiKey: string) => {
-    setSelectedApiKey(apiKey);
-  }, []);
-
-  // Optimize no-snippet message as a component
   const NoSnippetMessage = useMemo(() => {
-    if (!activeLanguageInfo) return () => null;
+    if (!activeLanguage) return () => null;
+
+    const activeLanguageInfo = getLanguageInfo(activeLanguage);
 
     return () => (
       <div className="px-16 py-6 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-3 items-center">
@@ -461,13 +375,11 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         </p>
       </div>
     );
-  }, [activeLanguageInfo]);
+  }, [activeLanguage]);
 
-  // Determine if we should show the language selector
   const showLanguageSelector = !fixed && filteredLanguages.length > 0;
   const showFullSelector = filteredLanguages.length > 1;
 
-  // Memoize renderContent
   const renderContent = useMemo(() => {
     if (!activeLanguage) return null;
 
@@ -475,7 +387,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       return processedChildren;
     }
 
-    if (activeLanguageInfo) {
+    if (activeLanguage) {
       return <NoSnippetMessage />;
     }
 
@@ -484,21 +396,31 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     activeLanguage,
     hasSnippetForActiveLanguage,
     processedChildren,
-    activeLanguageInfo,
     NoSnippetMessage,
   ]);
 
-  // Render special case for shell commands
-  if (isSingleShellCommand) {
-    const shellChild = childrenArray[0];
-    if (
-      isValidElement(shellChild) &&
-      isValidElement(shellChild.props.children)
-    ) {
-      const codeElement = shellChild.props.children;
-      const codeContent = codeElement.props.children;
+  // Render special case for plain commands (shell or text)
+  if (isSinglePlainCommand) {
+    const plainChild = codeData[0];
+    if (plainChild) {
+      const codeContent = plainChild.content;
+      const language = plainChild.language;
+
+      if (!language || !codeContent) return null;
+
+      // Apply API key substitution if apiKeys are provided
+      let processedContent = String(codeContent);
+      if (requiresApiKeySubstitution) {
+        processedContent = substituteApiKey(processedContent, selectedApiKey);
+      }
+
       return (
-        <ShellCommandView content={String(codeContent)} className={className} />
+        <PlainCodeView
+          content={processedContent}
+          className={className}
+          language={language}
+          icon={language === "shell" ? "icon-gui-command-line-outline" : null}
+        />
       );
     }
   }
@@ -512,14 +434,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     >
       {headerRow && (
         <div className="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
-          {/* macOS window buttons */}
           <div className="flex space-x-1.5">
             <div className="w-3 h-3 rounded-full bg-orange-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
 
-          {/* Title */}
           <div className="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
             {title}
           </div>
@@ -528,8 +448,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           <div className="w-12"></div>
         </div>
       )}
-
-      {/* SDK Type Selector Row */}
       {showSDKSelector && (
         <div
           className={cn(
@@ -567,16 +485,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         </div>
       )}
 
-      {/* Language Selector Row */}
       {showLanguageSelector &&
         (showFullSelector ? (
           <LanguageSelector
             languages={filteredLanguages}
             activeLanguage={activeLanguage}
             onLanguageChange={handleLanguageChange}
-            getLanguageDisplayName={getLanguageDisplayName}
-            getLanguageIcon={getLanguageIcon}
-            activeLanguageInfo={activeLanguageInfo}
           />
         ) : (
           <div
@@ -592,18 +506,17 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {filteredLanguages.length > 0 && (
               <>
                 <Icon
-                  name={getLanguageIcon(filteredLanguages[0])}
+                  name={getLanguageInfo(filteredLanguages[0]).icon}
                   size="16px"
                   additionalCSS="mr-2"
                 />
                 <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
-                  {getLanguageDisplayName(filteredLanguages[0])}
+                  {getLanguageInfo(filteredLanguages[0]).label}
                 </span>
               </>
             )}
           </div>
         ))}
-
       <div
         ref={codeRef}
         className="relative"
@@ -614,8 +527,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         tabIndex={0}
       >
         {renderContent}
-
-        {/* Copy button - simplified conditional */}
         {isHovering && activeLanguage && hasSnippetForActiveLanguage && (
           <CopyButton
             onCopy={() => {
@@ -626,13 +537,11 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           />
         )}
       </div>
-
-      {/* API Key Selector */}
-      {apiKeys && (
+      {requiresApiKeySubstitution && (
         <ApiKeySelector
           apiKeys={apiKeys}
           selectedApiKey={selectedApiKey}
-          onApiKeyChange={handleApiKeyChange}
+          onApiKeyChange={setSelectedApiKey}
         />
       )}
     </div>

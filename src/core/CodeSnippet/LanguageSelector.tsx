@@ -1,34 +1,22 @@
 import React, { memo, useMemo } from "react";
 import * as Select from "@radix-ui/react-select";
 import Icon from "../Icon";
-import { IconName } from "../Icon/types";
 import TooltipButton from "./TooltipButton";
-import { LanguageInfo } from "./languages";
+import { getLanguageInfo } from "./languages";
 
-interface LanguageSelectorProps {
+type LanguageSelectorProps = {
   languages: string[];
-  activeLanguage: string | null;
+  activeLanguage: string;
   onLanguageChange: (language: string) => void;
-  getLanguageDisplayName: (lang: string) => string;
-  getLanguageIcon: (lang: string) => IconName;
-  activeLanguageInfo: LanguageInfo | null;
-}
+};
 
 const LanguageSelector = memo(
-  ({
-    languages,
-    activeLanguage,
-    onLanguageChange,
-    getLanguageDisplayName,
-    getLanguageIcon,
-    activeLanguageInfo,
-  }: LanguageSelectorProps) => {
-    // Memoize the desktop language elements to avoid recreating on each render
+  ({ languages, activeLanguage, onLanguageChange }: LanguageSelectorProps) => {
     const desktopLanguageElements = useMemo(
       () =>
         languages.map((lang) => {
           const active = activeLanguage === lang;
-          const displayName = getLanguageDisplayName(lang);
+          const displayName = getLanguageInfo(lang).label;
 
           return (
             <TooltipButton
@@ -36,7 +24,7 @@ const LanguageSelector = memo(
               tooltip={displayName}
               active={active}
               onClick={() => onLanguageChange(lang)}
-              icon={getLanguageIcon(lang)}
+              icon={getLanguageInfo(lang).icon}
               variant="segmented"
               size="sm"
             >
@@ -44,16 +32,9 @@ const LanguageSelector = memo(
             </TooltipButton>
           );
         }),
-      [
-        languages,
-        activeLanguage,
-        onLanguageChange,
-        getLanguageDisplayName,
-        getLanguageIcon,
-      ],
+      [languages, activeLanguage, onLanguageChange],
     );
 
-    // Memoize the mobile language elements
     const mobileLanguageElements = useMemo(
       () =>
         languages.map((lang) => (
@@ -64,8 +45,8 @@ const LanguageSelector = memo(
           >
             <Select.ItemText asChild>
               <div className="flex items-center gap-2">
-                <Icon name={getLanguageIcon(lang)} size="20px" />
-                <span>{getLanguageDisplayName(lang)}</span>
+                <Icon name={getLanguageInfo(lang).icon} size="20px" />
+                <span>{getLanguageInfo(lang).label}</span>
               </div>
             </Select.ItemText>
             <Select.ItemIndicator className="absolute right-2">
@@ -73,27 +54,24 @@ const LanguageSelector = memo(
             </Select.ItemIndicator>
           </Select.Item>
         )),
-      [languages, getLanguageDisplayName, getLanguageIcon],
+      [languages],
     );
 
-    // Memoize the mobile Select.Value content as it's recreated on every render
     const mobileSelectValue = useMemo(
       () =>
-        activeLanguage && activeLanguageInfo ? (
+        activeLanguage ? (
           <div className="flex items-center gap-2">
-            <Icon name={activeLanguageInfo.icon} size="20px" />
-            <span>{activeLanguageInfo.label}</span>
+            <Icon name={getLanguageInfo(activeLanguage).icon} size="20px" />
+            <span>{getLanguageInfo(activeLanguage).label}</span>
           </div>
         ) : null,
-      [activeLanguage, activeLanguageInfo],
+      [activeLanguage],
     );
 
     return (
       <div className="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
-        {/* Desktop language selector - SegmentedControls */}
         <div className="hidden sm:flex gap-2">{desktopLanguageElements}</div>
 
-        {/* Mobile language selector - Select dropdown */}
         <div className="sm:hidden w-full">
           <Select.Root
             value={activeLanguage || undefined}

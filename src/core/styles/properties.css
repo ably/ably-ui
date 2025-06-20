@@ -122,19 +122,6 @@
     --color-gui-hover-dark: var(--color-gui-blue-hover-dark);
     --color-gui-active-dark: var(--color-gui-blue-active-dark);
 
-    /* code syntax: theme */
-    --syntax-black: var(--color-neutral-1300);
-    --syntax-dark-grey: var(--color-neutral-800);
-    --syntax-mid-grey: var(--color-neutral-500);
-    --syntax-light-grey: var(--color-neutral-200);
-    --syntax-extra-light-grey: var(--color-neutral-100);
-    --syntax-orange: #e78c45;
-    --syntax-yellow: #e7c547;
-    --syntax-blue: #3490ec;
-    --syntax-green: #b9ca4a;
-    --syntax-red: #d54e53;
-    --syntax-lilac: #bb87d3;
-
     /* flat colors for social icons */
     --icon-color-linkedin: #1269bf;
     --icon-color-twitter: #2caae1;
