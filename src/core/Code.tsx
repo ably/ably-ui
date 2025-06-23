@@ -39,7 +39,7 @@ const Code = ({
   return (
     <div className={cn("hljs flex", padding, additionalCSS)} data-id="code">
       {showLines ? (
-        <div className="text-sm leading-6 pt-0.5">
+        <div className="text-code leading-6 pt-px">
           {[...Array(lineCount)].map((_, i) => (
             <p
               className={cn(

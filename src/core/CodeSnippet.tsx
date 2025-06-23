@@ -497,16 +497,19 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         ) : (
           <div
             className={cn(
-              "border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3",
+              "border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 w-full",
               { "rounded-t-lg": !headerRow },
-              { "cursor-pointer": filteredLanguages.length > 0 },
             )}
-            {...(filteredLanguages.length > 0 && {
-              onClick: () => handleLanguageChange(filteredLanguages[0]),
-            })}
           >
             {filteredLanguages.length > 0 && (
-              <>
+              <div
+                className={cn("inline-flex items-center", {
+                  "cursor-pointer": filteredLanguages.length > 0,
+                })}
+                {...(filteredLanguages.length > 0 && {
+                  onClick: () => handleLanguageChange(filteredLanguages[0]),
+                })}
+              >
                 <Icon
                   name={getLanguageInfo(filteredLanguages[0]).icon}
                   size="16px"
@@ -515,7 +518,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
                 <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
                   {getLanguageInfo(filteredLanguages[0]).label}
                 </span>
-              </>
+              </div>
             )}
           </div>
         ))}
