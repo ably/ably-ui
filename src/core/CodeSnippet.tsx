@@ -52,7 +52,7 @@ export type CodeSnippetProps = {
    * Default language to display. If not found in available languages, first available is used.
    * If found in languages but no matching snippet exists, a message is displayed.
    */
-  lang: string;
+  lang?: string;
   /**
    * Callback fired when the active language changes
    */
@@ -204,14 +204,14 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
   const activeLanguage = useMemo(() => {
     if (sdk && sdkTypes.has(sdk)) {
-      return languages.find((l) => l === `${sdk}_${lang}`) ?? lang;
+      return languages.find((l) => l === `${sdk}_${lang}`) ?? languages[0];
     }
 
     if (lang) return lang;
 
     if (filteredLanguages.length > 0) return filteredLanguages[0];
 
-    return lang;
+    return languages[0];
   }, [lang, sdk, sdkTypes, filteredLanguages]);
 
   const [selectedApiKey, setSelectedApiKey] = useState<string>(
@@ -331,13 +331,15 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
   const handleSDKTypeChange = useCallback(
     (type: SDKType) => {
-      // pick first language matching the new SDK prefix
       const nextLang = stripSdkType(
-        languages.find((l) => l.startsWith(`${type}_`)) ?? lang,
+        languages.find(
+          (l) => l === `${type}_${stripSdkType(activeLanguage)}`,
+        ) ??
+          languages.find((l) => l.startsWith(`${type}_`)) ??
+          activeLanguage,
       );
       setActiveSDKType(type);
 
-      // Call onChange with clean language name
       if (onChange && nextLang) {
         onChange(nextLang, type);
       }
