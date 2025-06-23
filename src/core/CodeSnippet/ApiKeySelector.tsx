@@ -59,17 +59,17 @@ const ApiKeySelector = ({
     return (
       <Select.Root value={selectedApiKey} onValueChange={onApiKeyChange}>
         <Select.Trigger
-          className="inline-flex items-center justify-between rounded px-2 py-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-1 focus-base font-mono"
+          className="font-sans inline-flex items-center justify-between rounded px-3 py-2 ml-1 text-14 text-neutral-1300 dark:text-neutral-000 bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 gap-2 focus-base border"
           aria-label="API Key"
         >
           <Select.Value />
-          <Select.Icon>
-            <Icon name="icon-gui-chevron-down-outline" size="16px" />
+          <Select.Icon className="size-4">
+            <Icon name="icon-gui-chevron-down-micro" size="16px" />
           </Select.Icon>
         </Select.Trigger>
 
         <Select.Portal>
-          <Select.Content className="overflow-hidden rounded-md bg-neutral-000 dark:bg-neutral-1300 border border-neutral-200 dark:border-neutral-1000 shadow-md z-50">
+          <Select.Content className="overflow-hidden rounded-lg bg-neutral-000 dark:bg-neutral-1300 border border-neutral-200 dark:border-neutral-1000 shadow-md z-50">
             <Select.ScrollUpButton className="flex items-center justify-center h-6 bg-neutral-000 dark:bg-neutral-1300 text-neutral-1300 dark:text-neutral-000 cursor-default focus-base">
               <Icon
                 name="icon-gui-chevron-down-outline"
@@ -78,11 +78,11 @@ const ApiKeySelector = ({
               />
             </Select.ScrollUpButton>
 
-            <Select.Viewport className="p-1">
+            <Select.Viewport className="rounded-lg font-sans">
               {apiKeys.map((apiKeyItem) => (
                 <Select.Group key={apiKeyItem.app}>
                   {apiKeys.length > 1 && (
-                    <Select.Label className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 mt-1">
+                    <Select.Label className="text-neutral-700 rounded-none dark:text-neutral-600 p-1 bg-neutral-200 dark:bg-neutral-1100">
                       {apiKeyItem.app}
                     </Select.Label>
                   )}
@@ -90,14 +90,16 @@ const ApiKeySelector = ({
                     <Select.Item
                       key={`${apiKeyItem.app}-${name}-${key}`}
                       value={key}
-                      className="font-mono relative flex items-center justify-between rounded px-2 py-1.5 text-14 text-neutral-1300 dark:text-neutral-000 select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base"
+                      className="relative flex items-center justify-between m-2 p-2 rounded-lg text-14 text-neutral-1300 dark:text-neutral-000 select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base min-w-64"
                     >
                       <Select.ItemText>
                         {key.length > 10 ? `${key.substring(0, 10)}...` : key}
-                        {name && ` - ${name}`}
+                        <span className="font-light">
+                          {name && ` - ${name}`}
+                        </span>
                       </Select.ItemText>
-                      <Select.ItemIndicator>
-                        <Icon name="icon-gui-check-outline" size="16px" />
+                      <Select.ItemIndicator className="size-4">
+                        <Icon name="icon-gui-check-micro" size="16px" />
                       </Select.ItemIndicator>
                     </Select.Item>
                   ))}
