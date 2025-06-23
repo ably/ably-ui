@@ -52,7 +52,7 @@ export type CodeSnippetProps = {
    * Default language to display. If not found in available languages, first available is used.
    * If found in languages but no matching snippet exists, a message is displayed.
    */
-  lang?: string;
+  lang: string | null;
   /**
    * Callback fired when the active language changes
    */
@@ -304,31 +304,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     });
   }, [activeLanguage, hasOnlyJsonSnippet, codeData]);
 
-  const getCodeText = useCallback((): string | null => {
-    if (!activeLanguage || !hasSnippetForActiveLanguage || !codeRef.current)
-      return null;
-
-    const allPreElements = codeRef.current.querySelectorAll("pre");
-    for (const preElement of Array.from(allPreElements)) {
-      const codeElement = preElement.querySelector("code");
-      if (!codeElement || !codeElement.className) continue;
-
-      const classNames = codeElement.className.split(" ");
-      const langClass = classNames.find((cls) => cls.startsWith("language-"));
-      if (!langClass) continue;
-
-      const langName = langClass.substring(9);
-      if (
-        (hasOnlyJsonSnippet && langName === "json") ||
-        (!hasOnlyJsonSnippet && langName === activeLanguage)
-      ) {
-        return codeElement.textContent || "";
-      }
-    }
-
-    return null;
-  }, [activeLanguage, hasSnippetForActiveLanguage, hasOnlyJsonSnippet]);
-
   const handleSDKTypeChange = useCallback(
     (type: SDKType) => {
       const nextLang = stripSdkType(
@@ -389,11 +364,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       return processedChildren;
     }
 
-    if (activeLanguage) {
-      return <NoSnippetMessage />;
-    }
-
-    return null;
+    return <NoSnippetMessage />;
   }, [
     activeLanguage,
     hasSnippetForActiveLanguage,
@@ -532,10 +503,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         tabIndex={0}
       >
         {renderContent}
-        {isHovering && activeLanguage && hasSnippetForActiveLanguage && (
+        {isHovering && activeLanguage && (
           <CopyButton
             onCopy={() => {
-              const text = getCodeText();
+              const text = codeData.find(
+                (code) => code.language === activeLanguage,
+              )?.content;
               if (text) copy(text);
             }}
             isCopied={isCopied}
