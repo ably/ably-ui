@@ -4,7 +4,7 @@ exports[`Components/Code CodeWithLines smoke-test 1`] = `
 <div class="hljs flex p-8"
      data-id="code"
 >
-  <div class="text-sm leading-6 pt-0.5">
+  <div class="text-code leading-6 pt-px">
     <p class="mr-4 font-mono text-right text-neutral-800">
       1
     </p>
