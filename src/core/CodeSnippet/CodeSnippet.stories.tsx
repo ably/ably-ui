@@ -398,15 +398,15 @@ export const WithApiKeys: Story = {
           {
             app: "ably",
             keys: [
-              { name: "Big Key", key: "bigkey123456" },
-              { name: "Small Key", key: "smallkey123456" },
+              { name: "Big Key", key: "bigkey:123456" },
+              { name: "Small Key", key: "smallkey:123456" },
             ],
           },
           {
             app: "bably",
             keys: [
-              { name: "Big Key", key: "bigkey654321" },
-              { name: "Small Key", key: "smallkey654321" },
+              { name: "Big Key", key: "bigkey:654321" },
+              { name: "Small Key", key: "smallkey:654321" },
             ],
           },
         ]}

@@ -77,8 +77,15 @@ export type CodeSnippetProps = {
 };
 
 // Substitution function for API key placeholders
-const substituteApiKey = (content: string, apiKey: string): string => {
-  return content.replace(/\{\{API_KEY\}\}/g, `${apiKey.split(":")[0]}:*****`);
+const substituteApiKey = (
+  content: string,
+  apiKey: string,
+  mask = true,
+): string => {
+  return content.replace(
+    /\{\{API_KEY\}\}/g,
+    mask ? `${apiKey.split(":")[0]}:*****` : apiKey,
+  );
 };
 
 /**
@@ -99,6 +106,49 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 }) => {
   const codeRef = useRef<HTMLDivElement>(null);
   const { isCopied, copy } = useCopyToClipboard();
+
+  const [selectedApiKey, setSelectedApiKey] = useState<string>(
+    () => apiKeys?.[0]?.keys?.[0]?.key ?? "",
+  );
+
+  useEffect(() => {
+    if (!selectedApiKey && apiKeys && apiKeys.length > 0) {
+      setSelectedApiKey(apiKeys[0].keys?.[0]?.key);
+    }
+  }, [apiKeys, selectedApiKey]);
+
+  useEffect(() => {
+    const element = codeRef.current;
+    if (!element) return;
+
+    // Detects the key masking via substituteApiKey (i.e. "abcde:*****") and replaces it with the actual API key
+    const unmaskRenderedApiKey = (content: string, apiKey: string): string => {
+      return content.replace(/(['"]?)([^:'"]+):\*{5}\1/g, `$1${apiKey}$1`);
+    };
+
+    const handleCopy = (event: ClipboardEvent) => {
+      const selection = window.getSelection();
+      if (!selection || selection.rangeCount === 0) return;
+
+      const selectedText = selection.toString();
+      if (!selectedText) return;
+
+      // Check if the selection is within our element
+      const range = selection.getRangeAt(0);
+      if (!element.contains(range.commonAncestorContainer)) return;
+
+      const modifiedText = unmaskRenderedApiKey(selectedText, selectedApiKey);
+
+      event.clipboardData?.setData("text/plain", modifiedText);
+      event.preventDefault();
+    };
+
+    document.addEventListener("copy", handleCopy);
+
+    return () => {
+      document.removeEventListener("copy", handleCopy);
+    };
+  }, [codeRef.current, selectedApiKey]);
 
   const extractLanguageFromCode = useCallback(
     (codeElement: React.ReactElement | null): string | null => {
@@ -213,16 +263,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
     return languages[0];
   }, [lang, sdk, sdkTypes, filteredLanguages]);
-
-  const [selectedApiKey, setSelectedApiKey] = useState<string>(
-    () => apiKeys?.[0]?.keys?.[0]?.key ?? "",
-  );
-
-  useEffect(() => {
-    if (!selectedApiKey && apiKeys && apiKeys.length > 0) {
-      setSelectedApiKey(apiKeys[0].keys?.[0]?.key);
-    }
-  }, [apiKeys]);
 
   const requiresApiKeySubstitution = useMemo(() => {
     const containsPlaceholder = codeData.some(
@@ -509,7 +549,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               const text = codeData.find(
                 (code) => code.language === activeLanguage,
               )?.content;
-              if (text) copy(text);
+              if (text) copy(substituteApiKey(text, selectedApiKey, false));
             }}
             isCopied={isCopied}
           />
