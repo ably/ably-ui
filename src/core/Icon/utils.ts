@@ -60,3 +60,37 @@ export const getHeroicon = (
     return null;
   }
 };
+
+export const setUniqueIds = (el: SVGSVGElement | null, uniqueId: string) => {
+  if (el) {
+    // Find all elements with IDs in defs and their URL references
+    const defsElements = el.querySelectorAll("defs [id]");
+    const elementsWithUrls = el.querySelectorAll(
+      '[fill*="url("], [stroke*="url("], [filter*="url("], [clip-path*="url("], [mask*="url("]',
+    );
+
+    defsElements.forEach((def) => {
+      const oldId = def.id;
+
+      // Prevent re-aliasing of processed ids
+      if (oldId.includes(uniqueId)) {
+        return;
+      }
+
+      const newId = `${oldId}-${uniqueId}`;
+
+      def.id = newId;
+
+      // Update all URL references to this ID
+      const regex = new RegExp(`url\\(#${oldId}\\)`, "g");
+      elementsWithUrls.forEach((element) => {
+        ["fill", "stroke", "filter", "clip-path", "mask"].forEach((attr) => {
+          const value = element.getAttribute(attr);
+          if (value && value.includes(`url(#${oldId})`)) {
+            element.setAttribute(attr, value.replace(regex, `url(#${newId})`));
+          }
+        });
+      });
+    });
+  }
+};
