@@ -190,7 +190,7 @@ export const SingleLanguageWithHeader: Story = {
  */
 export const WithDefaultLanguage: Story = {
   render: () => (
-    <CodeSnippet headerRow title="TypeScript Example" lang="typescript">
+    <CodeSnippet headerRow title="TypeScript Example" lang="swift">
       <pre>
         <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
       </pre>

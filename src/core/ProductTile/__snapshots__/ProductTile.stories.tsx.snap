@@ -63,14 +63,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <path fill="url(#paint0_linear_3807_142)"
+            <path fill="url(#paint0_linear_3807_142-:rk:)"
                   fill-rule="evenodd"
                   d="M54.48 12.572c3.453-5.551 12.02-3.105 12.02 3.433V41.5h41.302c5.099 0 8.212 5.603 5.519 9.933L73.52 115.428c-3.453 5.551-12.02 3.105-12.02-3.433V86.5H20.198c-5.099 0-8.212-5.603-5.52-9.933z"
                   clip-rule="evenodd"
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3807_142"
+              <linearGradient id="paint0_linear_3807_142-:rk:"
                               x1="64"
                               x2="64"
                               y1="27.434"
@@ -137,14 +137,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <path fill="url(#paint0_linear_3636_438)"
+            <path fill="url(#paint0_linear_3636_438-:rm:)"
                   fill-rule="evenodd"
                   d="M11.5 35c0-12.426 10.074-22.5 22.5-22.5h60c12.426 0 22.5 10.074 22.5 22.5v74.41c0 7.385-8.77 11.257-14.227 6.281l-22.812-20.8a1.5 1.5 0 0 0-1.01-.391H34c-12.426 0-22.5-10.074-22.5-22.5z"
                   clip-rule="evenodd"
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3636_438"
+              <linearGradient id="paint0_linear_3636_438-:rm:"
                               x1="64"
                               x2="64"
                               y1="29.85"
@@ -211,12 +211,12 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <path fill="url(#paint0_linear_3807_221)"
+            <path fill="url(#paint0_linear_3807_221-:ro:)"
                   d="M15.318 25.777c-1.762-6.366 4.093-12.221 10.46-10.46l84.559 23.406c7.856 2.174 8.443 13.088.866 16.093L73.036 69.951a5.5 5.5 0 0 0-3.085 3.085l-15.135 38.167c-3.005 7.577-13.919 6.99-16.093-.866z"
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3807_221"
+              <linearGradient id="paint0_linear_3807_221-:ro:"
                               x1="65.785"
                               x2="65.785"
                               y1="31.716"
@@ -283,14 +283,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <path fill="url(#paint0_linear_3807_387)"
+            <path fill="url(#paint0_linear_3807_387-:rq:)"
                   fill-rule="evenodd"
                   d="M13.5 52a2.5 2.5 0 0 0-5 0v25c0 23.472 19.028 42.5 42.5 42.5h64.029c3.353 0 4.787-4.26 2.117-6.288l-50.03-37.985c-2.304-1.75-5.616-.106-5.616 2.788V114.5H51c-20.71 0-37.5-16.79-37.5-37.5zm53-2.015c0 2.894-3.312 4.538-5.617 2.788L10.854 14.788C8.184 12.76 9.618 8.5 12.971 8.5H77c23.472 0 42.5 19.028 42.5 42.5v25a2.5 2.5 0 1 1-5 0V51c0-20.71-16.79-37.5-37.5-37.5H66.5z"
                   clip-rule="evenodd"
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3807_387"
+              <linearGradient id="paint0_linear_3807_387-:rq:"
                               x1="64"
                               x2="64"
                               y1="101.232"
@@ -358,14 +358,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                class="hidden group-hover/product-tile:flex"
                style="width: 26.6667px; height: 26.6667px;"
           >
-            <path fill="url(#paint0_linear_3807_424)"
+            <path fill="url(#paint0_linear_3807_424-:rs:)"
                   fill-rule="evenodd"
                   d="M72.208 116.222C85.188 101.747 109 72.533 109 53c0-24.853-20.147-45-45-45S19 28.147 19 53c0 19.533 23.811 48.747 36.792 63.222 4.435 4.945 11.98 4.945 16.416 0M64 71c9.941 0 18-8.059 18-18s-8.059-18-18-18-18 8.059-18 18 8.059 18 18 18"
                   clip-rule="evenodd"
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3807_424"
+              <linearGradient id="paint0_linear_3807_424-:rs:"
                               x1="64"
                               x2="64"
                               y1="26.421"
@@ -435,7 +435,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                   height="110"
                   x="9"
                   y="9"
-                  fill="url(#paint0_linear_3807_520)"
+                  fill="url(#paint0_linear_3807_520-:ru:)"
                   rx="26"
             >
             </rect>
@@ -447,7 +447,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
             >
             </path>
             <defs>
-              <linearGradient id="paint0_linear_3807_520"
+              <linearGradient id="paint0_linear_3807_520-:ru:"
                               x1="64"
                               x2="64"
                               y1="27.103"

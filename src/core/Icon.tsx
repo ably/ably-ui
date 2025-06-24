@@ -1,8 +1,9 @@
-import React, { CSSProperties, useCallback, useMemo } from "react";
+import React, { CSSProperties, useCallback, useId, useMemo } from "react";
 
 import {
   defaultIconSecondaryColor,
   getHeroicon,
+  setUniqueIds,
   toPascalCase,
 } from "./Icon/utils";
 import * as IconComponents from "./Icon/components";
@@ -45,6 +46,8 @@ const Icon = ({
   variant,
   ...additionalAttributes
 }: IconProps) => {
+  const uniqueId = useId();
+
   const [lightSecondaryColor, darkSecondaryColor] = (
     secondaryColor ?? ""
   ).split(" dark:") as [ColorClass, ColorClass | undefined];
@@ -66,48 +69,67 @@ const Icon = ({
     return LocalIconComponent ? null : getHeroiconComponent(iconName);
   }, [LocalIconComponent, iconName]);
 
+  const setUniqueIdsRef = useCallback(
+    (el: SVGSVGElement | null) => {
+      setUniqueIds(el, uniqueId);
+    },
+    [uniqueId],
+  );
+
   const iconSvg = useCallback(
     (secondaryColor?: ColorClass, isDark?: boolean, isThemed?: boolean) => {
-      let secondaryColorValue;
-      if (secondaryColor) {
-        secondaryColorValue = convertTailwindClassToVar(secondaryColor);
-      } else if (defaultIconSecondaryColor(name)) {
-        secondaryColorValue = convertTailwindClassToVar(
-          defaultIconSecondaryColor(name),
+      if (LocalIconComponent) {
+        let secondaryColorValue;
+        if (secondaryColor) {
+          secondaryColorValue = convertTailwindClassToVar(secondaryColor);
+        } else if (defaultIconSecondaryColor(name)) {
+          secondaryColorValue = convertTailwindClassToVar(
+            defaultIconSecondaryColor(name),
+          );
+        }
+
+        return (
+          <LocalIconComponent
+            className={cn(
+              { [`${color}`]: color },
+              { [`${additionalCSS}`]: additionalCSS },
+              {
+                "hidden dark:block": secondaryColor && !isDark && isThemed,
+              },
+              {
+                "dark:hidden": secondaryColor && isDark && isThemed,
+              },
+            )}
+            style={
+              {
+                width: size,
+                height: size,
+                ...(secondaryColorValue && {
+                  "--ui-icon-secondary-color": secondaryColorValue,
+                }),
+              } as CSSProperties
+            }
+            {...additionalAttributes}
+            ref={setUniqueIdsRef}
+          />
         );
       }
 
-      // Try local component first
-      const IconComponent = LocalIconComponent || HeroiconComponent;
-
-      if (!IconComponent) {
-        return null;
-      }
-
-      return (
-        <IconComponent
-          className={cn(
-            { [`${color}`]: color },
-            { [`${additionalCSS}`]: additionalCSS },
-            {
-              "hidden dark:block": secondaryColor && !isDark && isThemed,
-            },
-            {
-              "dark:hidden": secondaryColor && isDark && isThemed,
-            },
-          )}
-          style={
-            {
+      if (HeroiconComponent) {
+        return (
+          <HeroiconComponent
+            className={cn(
+              { [`${color}`]: color },
+              { [`${additionalCSS}`]: additionalCSS },
+            )}
+            style={{
               width: size,
               height: size,
-              ...(secondaryColorValue && {
-                "--ui-icon-secondary-color": secondaryColorValue,
-              }),
-            } as CSSProperties
-          }
-          {...additionalAttributes}
-        />
-      );
+            }}
+            {...additionalAttributes}
+          />
+        );
+      }
     },
     [
       LocalIconComponent,
