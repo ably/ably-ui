@@ -1,31 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import CodeSnippet, { CodeSnippetProps } from "../CodeSnippet";
+import CodeSnippet from "../CodeSnippet";
+import type { CodeSnippetProps, SDKType } from "../CodeSnippet";
 
 // Common code snippets for reuse across stories
 const CODE_SNIPPETS = {
-  javascript: `var ably = new Ably.Realtime('API_KEY');
+  javascript: `var ably = new Ably.Realtime('{{API_KEY}}');
 var channel = ably.channels.get('channel-name');
             
 // Subscribe to messages on channel
 channel.subscribe('event', function(message) {
   console.log(message.data);
 });`,
-  typescript: `const ably = new Ably.Realtime('API_KEY');
+  typescript: `const ably = new Ably.Realtime('{{API_KEY}}');
 const channel = ably.channels.get('channel-name');
             
 // Subscribe to messages on channel
 channel.subscribe('event', (message: Ably.Types.Message) => {
   console.log(message.data);
 });`,
-  swift: `let ably = ARTRealtime(key: "API_KEY")
+  swift: `let ably = ARTRealtime(key: "{{API_KEY}}")
 let channel = ably.channels.get("channel-name")
 
 // Subscribe to messages on channel
 channel.subscribe("event") { message in
   print("\\(message.data)")
 }`,
-  python: `ably = Ably.Realtime(key='API_KEY')
+  python: `ably = Ably.Realtime(key='{{API_KEY}}')
 channel = ably.channels.get('channel-name')
 
 # Subscribe to messages on channel
@@ -33,7 +34,7 @@ def on_message(message):
     print(message.data)
 
 channel.subscribe('event', on_message)`,
-  php: `var ably = new Ably.Rest('API_KEY');
+  php: `var ably = new Ably.Rest('{{API_KEY}}');
 
 // Publish a message
 ably.channels.get('channel-name').publish('event', { text: 'Hello REST API!' }, function(err) {
@@ -43,7 +44,7 @@ ably.channels.get('channel-name').publish('event', { text: 'Hello REST API!' }, 
     console.log('Message published successfully');
   }
 });`,
-  kotlin: `val ably = AblyRest("API_KEY")
+  kotlin: `val ably = AblyRest("{{API_KEY}}")
 
 // Publish a message
 ably.channels.get("channel-name").publish(
@@ -62,7 +63,7 @@ yarn add @ably/asset-tracking`,
 npm run start`,
   shellComplex: `curl -X POST https://api.ably.io/keys \\
   -H "Content-Type: application/json" \\
-  -H "Authorization: Bearer \${API_KEY}" \\
+  -H "Authorization: Bearer \${{API_KEY}}" \\
   -d '{
     "name": "My API Key",
     "capabilities": {
@@ -126,16 +127,29 @@ type Story = StoryObj<CodeSnippetProps>;
  * Default example showing JavaScript and TypeScript code with language selector.
  */
 export const Default: Story = {
-  render: () => (
-    <CodeSnippet>
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -143,32 +157,58 @@ export const Default: Story = {
  * with just an icon and language name.
  */
 export const SingleLanguage: Story = {
-  render: () => (
-    <CodeSnippet>
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
  * CodeSnippet with a macOS-style window header showing title and window controls.
  */
 export const WithHeaderRow: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="Subscribe Example">
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-      <pre>
-        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="Subscribe Example"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-swift">{CODE_SNIPPETS.swift}</code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -176,32 +216,60 @@ export const WithHeaderRow: Story = {
  * A simplified language selector is shown with just the icon and name.
  */
 export const SingleLanguageWithHeader: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="JavaScript Example">
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="JavaScript Example"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
  * CodeSnippet with a specified default language, which will be selected when the component mounts.
  */
 export const WithDefaultLanguage: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="TypeScript Example" lang="swift">
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-      <pre>
-        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("swift");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="TypeScript Example"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-swift">{CODE_SNIPPETS.swift}</code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -210,16 +278,31 @@ export const WithDefaultLanguage: Story = {
  * a helpful message is shown prompting the user to switch languages.
  */
 export const WithMissingLanguageSnippet: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="Missing Language Example" lang="ruby">
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("ruby");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="Missing Language Example"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -228,12 +311,20 @@ export const WithMissingLanguageSnippet: Story = {
  */
 export const WithOnChangeCallback: Story = {
   render: () => {
+    const [currentLang, setCurrentLang] = useState<string>(
+      "realtime_javascript",
+    );
+    const [_currentSdk, setCurrentSdk] = useState<string>("realtime");
+
     return (
       <div>
         <CodeSnippet
           headerRow
           title="Language Change Example"
+          lang={currentLang}
           onChange={(lang, sdk) => {
+            setCurrentLang(lang);
+            setCurrentSdk(sdk || "realtime");
             alert(`Language changed to: ${lang} and SDK: ${sdk}`);
           }}
         >
@@ -263,16 +354,34 @@ export const WithOnChangeCallback: Story = {
  * CodeSnippet with demo API key mode, showing a "DEMO ONLY" badge and information tooltip.
  */
 export const WithDemoApiKeys: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="Demo API Keys" apiKeys={["demo"]}>
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="Demo API Keys"
+        apiKeys={[
+          { app: "demo", keys: [{ name: "demo", key: "demokey:123456" }] },
+        ]}
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -280,20 +389,47 @@ export const WithDemoApiKeys: Story = {
  * The selected API key could be used to replace placeholders in the code.
  */
 export const WithApiKeys: Story = {
-  render: () => (
-    <CodeSnippet
-      headerRow
-      title="API Key Selection Example"
-      apiKeys={["abcd1234", "efgh5678", "ijkl9012"]}
-    >
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="API Key Selection Example"
+        apiKeys={[
+          {
+            app: "ably",
+            keys: [
+              { name: "Big Key", key: "bigkey:123456" },
+              { name: "Small Key", key: "smallkey:123456" },
+            ],
+          },
+          {
+            app: "bably",
+            keys: [
+              { name: "Big Key", key: "bigkey:654321" },
+              { name: "Small Key", key: "smallkey:654321" },
+            ],
+          },
+        ]}
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -301,40 +437,78 @@ export const WithApiKeys: Story = {
  * based on the selected SDK type. Languages must have appropriate prefixes to be filtered.
  */
 export const WithSDKTypes: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="SDK Type Example">
-      <pre>
-        <code className="language-realtime_javascript">
-          {CODE_SNIPPETS.javascript}
-        </code>
-      </pre>
-      <pre>
-        <code className="language-realtime_typescript">
-          {CODE_SNIPPETS.typescript}
-        </code>
-      </pre>
-      <pre>
-        <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
-      </pre>
-      <pre>
-        <code className="language-rest_kotlin">{CODE_SNIPPETS.kotlin}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+    const [currentSdk, setCurrentSdk] = useState<SDKType>("realtime");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="SDK Type Example"
+        lang={currentLang}
+        sdk={currentSdk}
+        onChange={(lang, sdk) => {
+          setCurrentLang(lang);
+          setCurrentSdk(sdk || "realtime");
+        }}
+      >
+        <pre>
+          <code className="language-realtime_javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-realtime_typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
+        </pre>
+        <pre>
+          <code className="language-rest_kotlin">{CODE_SNIPPETS.kotlin}</code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
- * Special shell command mode that displays terminal commands with a distinctive UI.
- * Includes a terminal icon and streamlined appearance for better readability.
+ * Plain mode that displays plain code with a relevant icon, if supplied.
  */
-export const ShellMode: Story = {
-  render: () => (
-    <CodeSnippet>
-      <pre>
-        <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+export const PlainMode: Story = {
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("shell");
+
+    return (
+      <div className="flex flex-col gap-4">
+        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+          Shell
+        </h4>
+        <CodeSnippet
+          lang={currentLang}
+          onChange={(lang) => setCurrentLang(lang)}
+        >
+          <pre>
+            <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
+          </pre>
+        </CodeSnippet>
+        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+          Text
+        </h4>
+        <CodeSnippet
+          lang={currentLang}
+          onChange={(lang) => setCurrentLang(lang)}
+        >
+          <pre>
+            <code className="language-text">
+              It was the best of times, it was the blurst of times.
+            </code>
+          </pre>
+        </CodeSnippet>
+      </div>
+    );
+  },
 };
 
 /**
@@ -342,38 +516,61 @@ export const ShellMode: Story = {
  * with different types of terminal commands.
  */
 export const MultipleShellExamples: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <div>
-        <h3 className="ui-text-h3 mb-2">Installation</h3>
-        <CodeSnippet>
-          <pre>
-            <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
-          </pre>
-        </CodeSnippet>
-      </div>
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("shell");
 
-      <div>
-        <h3 className="ui-text-h3 mb-2">Starting the server</h3>
-        <CodeSnippet>
-          <pre>
-            <code className="language-shell">
-              {CODE_SNIPPETS.shellStartServer}
-            </code>
-          </pre>
-        </CodeSnippet>
-      </div>
+    return (
+      <div className="flex flex-col gap-4">
+        <div>
+          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
+            Installation
+          </h3>
+          <CodeSnippet
+            lang={currentLang}
+            onChange={(lang) => setCurrentLang(lang)}
+          >
+            <pre>
+              <code className="language-shell">
+                {CODE_SNIPPETS.shellInstall}
+              </code>
+            </pre>
+          </CodeSnippet>
+        </div>
 
-      <div>
-        <h3 className="ui-text-h3 mb-2">Complex command</h3>
-        <CodeSnippet>
-          <pre>
-            <code className="language-shell">{CODE_SNIPPETS.shellComplex}</code>
-          </pre>
-        </CodeSnippet>
+        <div>
+          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
+            Starting the server
+          </h3>
+          <CodeSnippet
+            lang={currentLang}
+            onChange={(lang) => setCurrentLang(lang)}
+          >
+            <pre>
+              <code className="language-shell">
+                {CODE_SNIPPETS.shellStartServer}
+              </code>
+            </pre>
+          </CodeSnippet>
+        </div>
+
+        <div>
+          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
+            Complex command
+          </h3>
+          <CodeSnippet
+            lang={currentLang}
+            onChange={(lang) => setCurrentLang(lang)}
+          >
+            <pre>
+              <code className="language-shell">
+                {CODE_SNIPPETS.shellComplex}
+              </code>
+            </pre>
+          </CodeSnippet>
+        </div>
       </div>
-    </div>
-  ),
+    );
+  },
 };
 
 /**
@@ -381,13 +578,23 @@ export const MultipleShellExamples: Story = {
  * even when languages are provided.
  */
 export const FixedMode: Story = {
-  render: () => (
-    <CodeSnippet fixed>
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        fixed
+        lang={currentLang}
+        onChange={(lang) => setCurrentLang(lang)}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -396,13 +603,24 @@ export const FixedMode: Story = {
  * instead of showing the NoSnippetMessage.
  */
 export const JsonOnlySnippet: Story = {
-  render: () => (
-    <CodeSnippet headerRow title="JSON-Only Example" lang="ruby">
-      <pre>
-        <code className="language-json">{CODE_SNIPPETS.json}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("ruby");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="JSON-Only Example"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-json">{CODE_SNIPPETS.json}</code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -410,16 +628,32 @@ export const JsonOnlySnippet: Story = {
  * This demonstrates how to hide line numbers in code snippets when they're not needed.
  */
 export const WithoutCodeLines: Story = {
-  render: () => (
-    <CodeSnippet showCodeLines={false} headerRow title="No Line Numbers">
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        showCodeLines={false}
+        headerRow
+        title="No Line Numbers"
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };
 
 /**
@@ -427,24 +661,36 @@ export const WithoutCodeLines: Story = {
  * of languages in the selector tabs.
  */
 export const WithCustomLanguageOrder: Story = {
-  render: () => (
-    <CodeSnippet
-      headerRow
-      title="Custom Language Order"
-      languageOrdering={["swift", "typescript", "javascript"]}
-    >
-      <pre>
-        <code className="language-javascript">{CODE_SNIPPETS.javascript}</code>
-      </pre>
-      <pre>
-        <code className="language-typescript">{CODE_SNIPPETS.typescript}</code>
-      </pre>
-      <pre>
-        <code className="language-swift">{CODE_SNIPPETS.swift}</code>
-      </pre>
-      <pre>
-        <code className="language-python">{CODE_SNIPPETS.python}</code>
-      </pre>
-    </CodeSnippet>
-  ),
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("swift");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="Custom Language Order"
+        languageOrdering={["swift", "typescript", "javascript"]}
+        lang={currentLang}
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-swift">{CODE_SNIPPETS.swift}</code>
+        </pre>
+        <pre>
+          <code className="language-python">{CODE_SNIPPETS.python}</code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
 };

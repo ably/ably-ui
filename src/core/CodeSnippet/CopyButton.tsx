@@ -2,11 +2,11 @@ import React, { memo } from "react";
 import Icon from "../Icon";
 import TooltipButton from "./TooltipButton";
 
-interface CopyButtonProps {
+type CopyButtonProps = {
   onCopy: () => void;
   isCopied: boolean;
   tooltip?: string;
-}
+};
 
 /**
  * A reusable copy button component with tooltip and copied indicator

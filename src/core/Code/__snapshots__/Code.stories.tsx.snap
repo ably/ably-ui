@@ -1,33 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Code CodeWithLines smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-8"
+<div class="hljs flex p-8"
      data-id="code"
 >
-  <div>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+  <div class="text-code leading-6 pt-px">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       1
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       2
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       3
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       4
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       5
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       6
     </p>
-    <p class="mr-6 font-mono text-right text-neutral-800">
+    <p class="mr-4 font-mono text-right text-neutral-800">
       7
     </p>
   </div>
-  <pre lang="javascript">
+  <pre lang="javascript"
+       class="overflow-auto flex-1 leading-6"
+  >
     <code class="language-javascript ui-text-code">
       <span class="hljs-keyword">
         var
@@ -99,10 +101,12 @@ exports[`Components/Code CodeWithLines smoke-test 1`] = `
 `;
 
 exports[`Components/Code Java smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-8"
+<div class="hljs flex p-8"
      data-id="code"
 >
-  <pre lang="java">
+  <pre lang="java"
+       class="overflow-auto flex-1 leading-6"
+  >
     <code class="language-java ui-text-code">
       <span class="hljs-type">
         AblyRealtime
@@ -180,10 +184,12 @@ channel.subscribe(
 `;
 
 exports[`Components/Code Javascript smoke-test 1`] = `
-<div class="hljs overflow-auto flex bg-neutral-1200 p-4"
+<div class="hljs flex bg-neutral-1200 p-4"
      data-id="code"
 >
-  <pre lang="javascript">
+  <pre lang="javascript"
+       class="overflow-auto flex-1 leading-6"
+  >
     <code class="language-javascript ui-text-code">
       <span class="hljs-keyword">
         var
@@ -255,10 +261,12 @@ exports[`Components/Code Javascript smoke-test 1`] = `
 `;
 
 exports[`Components/Code Kotlin smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-8"
+<div class="hljs flex p-8"
      data-id="code"
 >
-  <pre lang="kotlin">
+  <pre lang="kotlin"
+       class="overflow-auto flex-1 leading-6"
+  >
     <code class="language-kotlin ui-text-code">
       <span class="hljs-keyword">
         var
@@ -310,10 +318,12 @@ exports[`Components/Code Kotlin smoke-test 1`] = `
 `;
 
 exports[`Components/Code Swift smoke-test 1`] = `
-<div class="hljs overflow-auto flex p-8"
+<div class="hljs flex p-8"
      data-id="code"
 >
-  <pre lang="swift">
+  <pre lang="swift"
+       class="overflow-auto flex-1 leading-6"
+  >
     <code class="language-swift ui-text-code">
       <span class="hljs-keyword">
         let

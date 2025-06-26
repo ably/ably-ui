@@ -122,9 +122,16 @@ const languages: LanguageMap = {
   },
 };
 
+export const stripSdkType = (lang: string) => {
+  if (lang.startsWith("realtime_") || lang.startsWith("rest_")) {
+    return lang.split("_").slice(1).join("_");
+  }
+  return lang;
+};
+
 // Fallback function to handle languages not in the map
 export const getLanguageInfo = (langKey: string): LanguageInfo => {
-  const key = langKey.toLowerCase();
+  const key = stripSdkType(langKey).toLowerCase();
 
   if (languages[key]) {
     return languages[key];
