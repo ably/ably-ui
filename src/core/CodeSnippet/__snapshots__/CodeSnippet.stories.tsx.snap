@@ -396,7 +396,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
            class="mr-2"
            style="width: 16px; height: 16px;"
       >
-        <g clip-path="url(#clip0_4810_1924-:r36:)">
+        <g clip-path="url(#clip0_4810_1924-:r3c:)">
           <path stroke="currentColor"
                 stroke-linecap="round"
                 stroke-width="3"
@@ -409,7 +409,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
           </path>
         </g>
         <defs>
-          <clipPath id="clip0_4810_1924-:r36:">
+          <clipPath id="clip0_4810_1924-:r3c:">
             <path fill="#fff"
                   d="M0 0h48v48H0z"
             >
@@ -1240,7 +1240,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r25:)">
+          <g clip-path="url(#clip0_1031_1922-:r2b:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -1251,7 +1251,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r25:">
+            <clipPath id="clip0_1031_1922-:r2b:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -1282,7 +1282,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r26:)">
+              <g clip-path="url(#clip0_1031_1977-:r2c:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -1295,7 +1295,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r26:">
+                <clipPath id="clip0_1031_1977-:r2c:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1310,7 +1310,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r27:"
+              aria-controls="radix-:r2d:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -1329,7 +1329,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r28:)">
+            <g clip-path="url(#clip0_1031_1922-:r2e:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -1340,7 +1340,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r28:">
+              <clipPath id="clip0_1031_1922-:r2e:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -1484,7 +1484,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
     </span>
     <button type="button"
             role="combobox"
-            aria-controls="radix-:r2a:"
+            aria-controls="radix-:r2g:"
             aria-expanded="false"
             aria-autocomplete="none"
             dir="ltr"
@@ -1555,14 +1555,14 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
              style="width: 22px; height: 22px;"
         >
           <g fill-rule="evenodd"
-             clip-path="url(#clip0_1031_1912-:r3h:)"
+             clip-path="url(#clip0_1031_1912-:r3n:)"
              clip-rule="evenodd"
           >
-            <path fill="url(#paint0_linear_1031_1912-:r3h:)"
+            <path fill="url(#paint0_linear_1031_1912-:r3n:)"
                   d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
             >
             </path>
-            <path fill="url(#paint1_linear_1031_1912-:r3h:)"
+            <path fill="url(#paint1_linear_1031_1912-:r3n:)"
                   d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
             >
             </path>
@@ -1572,7 +1572,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <linearGradient id="paint0_linear_1031_1912-:r3h:"
+            <linearGradient id="paint0_linear_1031_1912-:r3n:"
                             x1="2.813"
                             x2="-6.259"
                             y1="-6.259"
@@ -1586,7 +1586,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               >
               </stop>
             </linearGradient>
-            <linearGradient id="paint1_linear_1031_1912-:r3h:"
+            <linearGradient id="paint1_linear_1031_1912-:r3n:"
                             x1="4.876"
                             x2="-1.23"
                             y1="-2.365"
@@ -1600,7 +1600,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               >
               </stop>
             </linearGradient>
-            <clipPath id="clip0_1031_1912-:r3h:">
+            <clipPath id="clip0_1031_1912-:r3n:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -1631,7 +1631,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r3i:)">
+              <g clip-path="url(#clip0_1031_1977-:r3o:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -1644,7 +1644,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r3i:">
+                <clipPath id="clip0_1031_1977-:r3o:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1674,7 +1674,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1922-:r3j:)">
+              <g clip-path="url(#clip0_1031_1922-:r3p:)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -1685,7 +1685,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1922-:r3j:">
+                <clipPath id="clip0_1031_1922-:r3p:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1716,18 +1716,18 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                  style="width: 22px; height: 22px;"
             >
               <g fill-rule="evenodd"
-                 clip-path="url(#clip0_1031_1963-:r3k:)"
+                 clip-path="url(#clip0_1031_1963-:r3q:)"
                  clip-rule="evenodd"
               >
-                <path fill="url(#paint0_radial_1031_1963-:r3k:)"
+                <path fill="url(#paint0_radial_1031_1963-:r3q:)"
                       d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="url(#paint1_radial_1031_1963-:r3k:)"
+                <path fill="url(#paint1_radial_1031_1963-:r3q:)"
                       d="M23.895 48.218c-7.073 0-12.807-1.112-12.807-2.483s5.734-2.483 12.807-2.483 12.807 1.112 12.807 2.483-5.734 2.483-12.807 2.483"
                 >
                 </path>
-                <path fill="url(#paint2_linear_1031_1963-:r3k:)"
+                <path fill="url(#paint2_linear_1031_1963-:r3q:)"
                       d="M29.156 33.479c.99 0 1.793.811 1.793 1.815 0 1.007-.803 1.827-1.794 1.827-.987 0-1.793-.82-1.793-1.827 0-1.004.806-1.815 1.794-1.815m5.368-23.046v4.244c0 3.29-2.79 6.059-5.97 6.059h-9.546c-2.614 0-4.778 2.238-4.778 4.857v9.1c0 2.59 2.252 4.113 4.778 4.856 3.025.89 5.926 1.05 9.546 0 2.406-.696 4.778-2.099 4.778-4.856V31.05h-9.546v-1.215H38.11c2.778 0 3.813-1.937 4.78-4.845.997-2.993.954-5.872 0-9.713-.687-2.765-1.998-4.845-4.78-4.845z"
                 >
                 </path>
@@ -1737,7 +1737,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <radialGradient id="paint0_radial_1031_1963-:r3k:"
+                <radialGradient id="paint0_radial_1031_1963-:r3q:"
                                 cx="0"
                                 cy="0"
                                 r="1"
@@ -1751,7 +1751,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </radialGradient>
-                <radialGradient id="paint1_radial_1031_1963-:r3k:"
+                <radialGradient id="paint1_radial_1031_1963-:r3q:"
                                 cx="0"
                                 cy="0"
                                 r="1"
@@ -1765,7 +1765,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </radialGradient>
-                <linearGradient id="paint2_linear_1031_1963-:r3k:"
+                <linearGradient id="paint2_linear_1031_1963-:r3q:"
                                 x1="38.828"
                                 x2="30.863"
                                 y1="27.877"
@@ -1779,7 +1779,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                   >
                   </stop>
                 </linearGradient>
-                <clipPath id="clip0_1031_1963-:r3k:">
+                <clipPath id="clip0_1031_1963-:r3q:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -1794,7 +1794,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r3l:"
+              aria-controls="radix-:r3r:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -1814,14 +1814,14 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                style="width: 20px; height: 20px;"
           >
             <g fill-rule="evenodd"
-               clip-path="url(#clip0_1031_1912-:r3m:)"
+               clip-path="url(#clip0_1031_1912-:r3s:)"
                clip-rule="evenodd"
             >
-              <path fill="url(#paint0_linear_1031_1912-:r3m:)"
+              <path fill="url(#paint0_linear_1031_1912-:r3s:)"
                     d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
               >
               </path>
-              <path fill="url(#paint1_linear_1031_1912-:r3m:)"
+              <path fill="url(#paint1_linear_1031_1912-:r3s:)"
                     d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
               >
               </path>
@@ -1831,7 +1831,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <linearGradient id="paint0_linear_1031_1912-:r3m:"
+              <linearGradient id="paint0_linear_1031_1912-:r3s:"
                               x1="2.813"
                               x2="-6.259"
                               y1="-6.259"
@@ -1845,7 +1845,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <linearGradient id="paint1_linear_1031_1912-:r3m:"
+              <linearGradient id="paint1_linear_1031_1912-:r3s:"
                               x1="4.876"
                               x2="-1.23"
                               y1="-2.365"
@@ -1859,7 +1859,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
                 >
                 </stop>
               </linearGradient>
-              <clipPath id="clip0_1031_1912-:r3m:">
+              <clipPath id="clip0_1031_1912-:r3s:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2384,7 +2384,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r1q:)">
+          <g clip-path="url(#clip0_1031_1922-:r20:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -2395,7 +2395,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r1q:">
+            <clipPath id="clip0_1031_1922-:r20:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -2426,7 +2426,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r1r:)">
+              <g clip-path="url(#clip0_1031_1977-:r21:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -2439,7 +2439,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r1r:">
+                <clipPath id="clip0_1031_1977-:r21:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -2454,7 +2454,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r1s:"
+              aria-controls="radix-:r22:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -2473,7 +2473,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r1t:)">
+            <g clip-path="url(#clip0_1031_1922-:r23:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -2484,7 +2484,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r1t:">
+              <clipPath id="clip0_1031_1922-:r23:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -2566,7 +2566,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
           </span>
           (
           <span class="hljs-string">
-            'demokey123:*****'
+            'demokey:*****'
           </span>
           );
           <span class="hljs-keyword">
@@ -3684,14 +3684,21 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
     </div>
     <div class="p-2 border-b border-neutral-200 dark:border-neutral-1100 h-14">
       <div class="flex gap-3 justify-start">
-        <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors text-neutral-1300 dark:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-000 dark:bg-neutral-1300"
-             tabindex="0"
-             role="button"
-             aria-pressed="true"
-        >
-          <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
-            Realtime
-          </span>
+        <div class="inline-flex ml-0">
+          <button type="button"
+                  aria-describedby="tooltip"
+                  class="p-0 relative focus:outline-none h-[1rem] "
+          >
+            <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+                 tabindex="0"
+                 role="button"
+                 aria-pressed="false"
+            >
+              <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
+                Realtime
+              </span>
+            </div>
+          </button>
         </div>
         <div class="inline-flex ml-0">
           <button type="button"
@@ -3793,11 +3800,126 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
             </div>
           </button>
         </div>
+        <div class="inline-flex ml-0">
+          <button type="button"
+                  aria-describedby="tooltip"
+                  class="p-0 relative focus:outline-none h-[1rem] "
+          >
+            <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+                 tabindex="0"
+                 role="button"
+                 aria-pressed="false"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="48"
+                   height="48"
+                   fill="none"
+                   viewbox="0 0 48 48"
+                   class
+                   aria-hidden="true"
+                   style="width: 22px; height: 22px;"
+              >
+                <g fill-rule="evenodd"
+                   clip-path="url(#clip0_1031_1912-:r1i:)"
+                   clip-rule="evenodd"
+                >
+                  <path fill="url(#paint0_linear_1031_1912-:r1i:)"
+                        d="M10.633 0C4.76 0 0 4.76 0 10.633v26.734C0 43.24 4.76 48 10.633 48h26.734C43.24 48 48 43.24 48 37.367V10.633C48 4.76 43.24 0 37.367 0z"
+                  >
+                  </path>
+                  <path fill="url(#paint1_linear_1031_1912-:r1i:)"
+                        d="M10.624.038C4.756.038 0 4.795 0 10.662v12.092l4.925 5.301c.05.088 6.417 11.228 19.817 11.228 6.054 0 7.813-3.104 10.814-3.104 3.104 0 4.967 3.104 4.967 3.104 1.811-4.45-2.69-9.52-2.69-9.52s5.122-11.848-10.71-22.61l-.001-.001L20.107.038z"
+                  >
+                  </path>
+                  <path fill="#FEFEFE"
+                        d="M27.16 7.155c15.833 10.763 10.71 22.612 10.71 22.612s4.502 5.07 2.691 9.52c0 0-1.863-3.105-4.967-3.105-3.001 0-4.76 3.105-10.814 3.105-13.453 0-19.817-11.228-19.817-11.228 12.113 7.982 20.386 2.328 20.386 2.328-5.465-3.174-17.075-18.316-17.075-18.316 10.12 8.608 14.488 10.865 14.488 10.865-2.615-2.152-9.935-12.676-9.935-12.676 5.857 5.926 17.49 14.177 17.49 14.177 3.317-9.12-3.157-17.282-3.157-17.282"
+                  >
+                  </path>
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_1031_1912-:r1i:"
+                                  x1="2.813"
+                                  x2="-6.259"
+                                  y1="-6.259"
+                                  y2="45.187"
+                                  gradientunits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FAAE41">
+                    </stop>
+                    <stop offset="1"
+                          stop-color="#EF3E31"
+                    >
+                    </stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1031_1912-:r1i:"
+                                  x1="4.876"
+                                  x2="-1.23"
+                                  y1="-2.365"
+                                  y2="35.34"
+                                  gradientunits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E29F3A">
+                    </stop>
+                    <stop offset="1"
+                          stop-color="#D43929"
+                    >
+                    </stop>
+                  </linearGradient>
+                  <clipPath id="clip0_1031_1912-:r1i:">
+                    <path fill="#fff"
+                          d="M0 0h48v48H0z"
+                    >
+                    </path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="inline-flex ml-0">
+          <button type="button"
+                  aria-describedby="tooltip"
+                  class="p-0 relative focus:outline-none h-[1rem] "
+          >
+            <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg focus-base bg-neutral-100 dark:bg-neutral-1200"
+                 tabindex="0"
+                 role="button"
+                 aria-pressed="false"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="48"
+                   height="48"
+                   fill="none"
+                   viewbox="0 0 48 48"
+                   class
+                   aria-hidden="true"
+                   style="width: 22px; height: 22px;"
+              >
+                <path fill="#000"
+                      fill-rule="evenodd"
+                      d="M10.917 17.073H3.798L0 36.118h3.692l1.01-5.047h3.187q1.62 0 3.134-.372 1.515-.372 2.842-1.753a8.2 8.2 0 0 0 1.7-2.443q.638-1.355.824-2.763.479-3.081-.93-4.86-1.408-1.781-4.542-1.807m-4.016 3.055.005-.026-.026.026zm0 0L5.312 28.07q.16.027.32.027h.371q2.55.027 4.25-.505 1.7-.558 2.284-3.878.479-2.789-.956-3.214-1.408-.425-3.533-.398a8 8 0 0 1-.61.026z"
+                      clip-rule="evenodd"
+                >
+                </path>
+                <path fill="#000"
+                      d="M20.595 12h3.665l-1.036 5.073h3.294q2.71.054 4.037 1.116 1.355 1.062.797 4.037l-1.78 8.846h-3.718l1.7-8.447q.266-1.328-.16-1.886-.425-.558-1.832-.558l-2.949-.027-2.178 10.918H16.77z"
+                >
+                </path>
+                <path fill="#000"
+                      fill-rule="evenodd"
+                      d="M42.407 17.073h-7.119L31.49 36.118h3.692l1.01-5.047h3.187q1.62 0 3.134-.372 1.515-.372 2.842-1.753a8.2 8.2 0 0 0 1.7-2.443q.638-1.355.824-2.763.479-3.081-.93-4.86-1.409-1.781-4.542-1.807m-4.016 3.055.005-.026-.026.026zm0 0-1.588 7.942q.159.027.318.027h.372q2.55.027 4.25-.505 1.7-.558 2.284-3.878.479-2.789-.956-3.214-1.408-.425-3.533-.398a8 8 0 0 1-.61.026z"
+                      clip-rule="evenodd"
+                >
+                </path>
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
       <div class="sm:hidden w-full">
         <button type="button"
                 role="combobox"
-                aria-controls="radix-:r1i:"
+                aria-controls="radix-:r1k:"
                 aria-expanded="false"
                 aria-autocomplete="none"
                 dir="ltr"
@@ -3816,7 +3938,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                  class
                  style="width: 20px; height: 20px;"
             >
-              <g clip-path="url(#clip0_1031_1922-:r1j:)">
+              <g clip-path="url(#clip0_1031_1922-:r1l:)">
                 <path fill="#F7DF1E"
                       d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
                 >
@@ -3827,7 +3949,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1922-:r1j:">
+                <clipPath id="clip0_1031_1922-:r1l:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4031,7 +4153,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r2o:)">
+          <g clip-path="url(#clip0_1031_1922-:r2u:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -4042,7 +4164,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r2o:">
+            <clipPath id="clip0_1031_1922-:r2u:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4073,7 +4195,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r2p:)">
+              <g clip-path="url(#clip0_1031_1977-:r2v:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4086,7 +4208,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r2p:">
+                <clipPath id="clip0_1031_1977-:r2v:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4101,7 +4223,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r2q:"
+              aria-controls="radix-:r30:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4120,7 +4242,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r2r:)">
+            <g clip-path="url(#clip0_1031_1922-:r31:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4131,7 +4253,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r2r:">
+              <clipPath id="clip0_1031_1922-:r31:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >
@@ -4305,7 +4427,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
-          <g clip-path="url(#clip0_1031_1922-:r37:)">
+          <g clip-path="url(#clip0_1031_1922-:r3d:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
             >
@@ -4316,7 +4438,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
             </path>
           </g>
           <defs>
-            <clipPath id="clip0_1031_1922-:r37:">
+            <clipPath id="clip0_1031_1922-:r3d:">
               <path fill="#fff"
                     d="M0 0h48v48H0z"
               >
@@ -4347,7 +4469,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                  aria-hidden="true"
                  style="width: 22px; height: 22px;"
             >
-              <g clip-path="url(#clip0_1031_1977-:r38:)">
+              <g clip-path="url(#clip0_1031_1977-:r3e:)">
                 <path fill="#007ACC"
                       d="M0 24V0h48v48H0"
                 >
@@ -4360,7 +4482,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                 </path>
               </g>
               <defs>
-                <clipPath id="clip0_1031_1977-:r38:">
+                <clipPath id="clip0_1031_1977-:r3e:">
                   <path fill="#fff"
                         d="M0 0h48v48H0z"
                   >
@@ -4375,7 +4497,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
     <div class="sm:hidden w-full">
       <button type="button"
               role="combobox"
-              aria-controls="radix-:r39:"
+              aria-controls="radix-:r3f:"
               aria-expanded="false"
               aria-autocomplete="none"
               dir="ltr"
@@ -4394,7 +4516,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
                class
                style="width: 20px; height: 20px;"
           >
-            <g clip-path="url(#clip0_1031_1922-:r3a:)">
+            <g clip-path="url(#clip0_1031_1922-:r3g:)">
               <path fill="#F7DF1E"
                     d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
               >
@@ -4405,7 +4527,7 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
               </path>
             </g>
             <defs>
-              <clipPath id="clip0_1031_1922-:r3a:">
+              <clipPath id="clip0_1031_1922-:r3g:">
                 <path fill="#fff"
                       d="M0 0h48v48H0z"
                 >

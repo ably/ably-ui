@@ -361,7 +361,9 @@ export const WithDemoApiKeys: Story = {
       <CodeSnippet
         headerRow
         title="Demo API Keys"
-        apiKeys={[{ app: "demo", keys: [{ name: "demo", key: "demokey123" }] }]}
+        apiKeys={[
+          { app: "demo", keys: [{ name: "demo", key: "demokey:123456" }] },
+        ]}
         lang={currentLang}
         onChange={(lang, _sdk) => {
           setCurrentLang(lang);

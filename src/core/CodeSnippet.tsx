@@ -217,21 +217,13 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       };
     }, [children, extractLanguageFromCode]);
 
-  const [activeSDKType, setActiveSDKType] = useState<SDKType>(() => {
-    if (sdkTypes.size === 0) return null;
-    if (sdk && sdkTypes.has(sdk)) return sdk;
-    if (sdkTypes.has("realtime")) return "realtime";
-    if (sdkTypes.has("rest")) return "rest";
-    return null;
-  });
-
   const showSDKSelector = sdkTypes.size > 0;
 
   const filteredLanguages = useMemo(() => {
     const filtered =
-      !activeSDKType || !showSDKSelector
+      !sdk || !showSDKSelector
         ? [...languages]
-        : languages.filter((lang) => lang.startsWith(`${activeSDKType}_`));
+        : languages.filter((lang) => lang.startsWith(`${sdk}_`));
 
     // Apply custom ordering if provided
     if (languageOrdering && languageOrdering.length > 0) {
@@ -250,11 +242,11 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     }
 
     return filtered;
-  }, [activeSDKType, showSDKSelector, languages, languageOrdering]);
+  }, [sdk, showSDKSelector, languages, languageOrdering]);
 
   const activeLanguage = useMemo(() => {
     if (sdk && sdkTypes.has(sdk)) {
-      return languages.find((l) => l === `${sdk}_${lang}`) ?? languages[0];
+      return `${sdk}_${lang}`;
     }
 
     if (lang) return lang;
@@ -353,10 +345,9 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           languages.find((l) => l.startsWith(`${type}_`)) ??
           activeLanguage,
       );
-      setActiveSDKType(type);
 
       if (onChange && nextLang) {
-        onChange(nextLang, type);
+        onChange(stripSdkType(activeLanguage), type);
       }
     },
     [languages],
@@ -365,10 +356,10 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   const handleLanguageChange = useCallback(
     (language: string) => {
       if (onChange) {
-        onChange(stripSdkType(language), activeSDKType);
+        onChange(stripSdkType(language), sdk);
       }
     },
-    [onChange, activeSDKType],
+    [onChange, sdk],
   );
 
   const NoSnippetMessage = useMemo(() => {
@@ -472,7 +463,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {sdkTypes.has("realtime") && (
               <TooltipButton
                 tooltip="Realtime SDK"
-                active={activeSDKType === "realtime"}
+                active={sdk === "realtime"}
                 onClick={() => handleSDKTypeChange("realtime")}
                 variant="segmented"
                 size="sm"
@@ -485,7 +476,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {sdkTypes.has("rest") && (
               <TooltipButton
                 tooltip="REST SDK"
-                active={activeSDKType === "rest"}
+                active={sdk === "rest"}
                 onClick={() => handleSDKTypeChange("rest")}
                 variant="segmented"
                 size="sm"
