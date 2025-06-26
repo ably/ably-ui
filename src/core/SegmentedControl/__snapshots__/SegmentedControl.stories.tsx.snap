@@ -495,6 +495,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r0:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r0:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -505,14 +513,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r0:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -532,6 +532,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r1:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r1:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -542,14 +550,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r1:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -580,6 +580,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r2:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r2:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -590,14 +598,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r2:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -617,6 +617,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r3:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r3:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -627,14 +635,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r3:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -665,6 +665,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r4:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r4:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -675,14 +683,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r4:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1300 dark:text-neutral-000">
           Option 1
@@ -702,6 +702,14 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r5:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r5:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -712,14 +720,6 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r5:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
         <span class="font-semibold transition-colors text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000">
           Option 2
@@ -758,6 +758,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r6:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r6:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -768,14 +776,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r6:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-12 p-3 gap-2.5 ui-text-label2 rounded-lg"
@@ -795,6 +795,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r7:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r7:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -805,14 +813,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r7:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
     </div>
@@ -843,6 +843,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r8:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r8:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -853,14 +861,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r8:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-10 p-[0.5625rem] gap-[0.5625rem] ui-text-label3 rounded-lg"
@@ -880,6 +880,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:r9:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:r9:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -890,14 +898,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:r9:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
     </div>
@@ -928,6 +928,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:ra:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:ra:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -938,14 +946,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:ra:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <div class="focus-base flex items-center justify-center cursor-pointer select-none transition-colors bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 h-9 p-2 gap-2 ui-text-label4 rounded-lg"
@@ -965,6 +965,14 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
+          <defs>
+            <clipPath id="clip0_1031_1922-:rb:">
+              <path fill="#fff"
+                    d="M0 0h48v48H0z"
+              >
+              </path>
+            </clipPath>
+          </defs>
           <g clip-path="url(#clip0_1031_1922-:rb:)">
             <path fill="#F7DF1E"
                   d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2"
@@ -975,14 +983,6 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
             >
             </path>
           </g>
-          <defs>
-            <clipPath id="clip0_1031_1922-:rb:">
-              <path fill="#fff"
-                    d="M0 0h48v48H0z"
-              >
-              </path>
-            </clipPath>
-          </defs>
         </svg>
       </div>
     </div>
