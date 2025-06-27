@@ -41,14 +41,17 @@ if git rev-parse "${TAG}" >/dev/null 2>&1; then
 fi
 
 echo "> Install packages, making sure they are up to date"
-echo "> yarn (npm)"
-yarn --frozen-lockfile
+echo "> pnpm (npm)"
+pnpm install --frozen-lockfile
 
 echo "> Build library"
-NODE_ENV=production yarn build
+NODE_ENV=production pnpm build
+
+echo "> Update package.json version"
+pnpm version $VERSION --no-git-checks
 
 echo "> Publish the npm package to the registry"
-yarn publish --no-git-tag-version --new-version $VERSION --tag dev
+pnpm publish --tag dev --no-git-checks
 
 echo "Update Pre Release versions"
 ./scripts/update-pre-release-versions.sh $ABLY_UI_VERSION $PACKAGE_SUFFIX

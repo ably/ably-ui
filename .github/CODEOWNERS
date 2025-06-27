@@ -3,4 +3,4 @@
 
 # Only set ownership on our package management files to help with dependabot updates
 package.json @ably/team-website
-yarn.lock @ably/team-website
+pnpm-lock.yaml @ably/team-website

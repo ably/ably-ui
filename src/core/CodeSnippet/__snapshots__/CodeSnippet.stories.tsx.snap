@@ -723,7 +723,7 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
             <span class="hljs-comment">
               # or
             </span>
-            yarn add @ably/asset-tracking
+            pnpm add @ably/asset-tracking
           </code>
         </pre>
       </div>
@@ -878,7 +878,7 @@ exports[`Components/Code Snippet PlainMode smoke-test 1`] = `
           <span class="hljs-comment">
             # or
           </span>
-          yarn add @ably/asset-tracking
+          pnpm add @ably/asset-tracking
         </code>
       </pre>
     </div>

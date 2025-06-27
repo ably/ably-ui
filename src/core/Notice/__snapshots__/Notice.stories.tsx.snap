@@ -53,8 +53,8 @@ exports[`Components/Notice RailsUjs smoke-test 1`] = `
         With Rails UJS
       </strong>
       <span class="pr-1">
-        <a data-method="delete"
-           href="/logout"
+        <a href="/logout"
+           data-method="delete"
         >
           Logout
         </a>

@@ -58,7 +58,7 @@ ably.channels.get("channel-name").publish(
 }`,
   shellInstall: `npm install @ably/asset-tracking
 # or
-yarn add @ably/asset-tracking`,
+pnpm add @ably/asset-tracking`,
   shellStartServer: `cd server
 npm run start`,
   shellComplex: `curl -X POST https://api.ably.io/keys \\

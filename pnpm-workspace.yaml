@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@swc/core'
+  - core-js
+  - esbuild
+  - msw
+  - nice-napi
