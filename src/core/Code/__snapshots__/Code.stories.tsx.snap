@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Code CodeWithLines smoke-test 1`] = `
-<div class="hljs flex p-8"
+<div class="hljs overflow-y-auto flex p-8"
      data-id="code"
 >
   <div class="text-code leading-6 pt-px">
@@ -28,7 +28,7 @@ exports[`Components/Code CodeWithLines smoke-test 1`] = `
     </p>
   </div>
   <pre lang="javascript"
-       class="overflow-auto flex-1 leading-6"
+       class="overflow-x-auto h-full flex-1 leading-6"
   >
     <code class="language-javascript ui-text-code">
       <span class="hljs-keyword">
@@ -101,11 +101,11 @@ exports[`Components/Code CodeWithLines smoke-test 1`] = `
 `;
 
 exports[`Components/Code Java smoke-test 1`] = `
-<div class="hljs flex p-8"
+<div class="hljs overflow-y-auto flex p-8"
      data-id="code"
 >
   <pre lang="java"
-       class="overflow-auto flex-1 leading-6"
+       class="overflow-x-auto h-full flex-1 leading-6"
   >
     <code class="language-java ui-text-code">
       <span class="hljs-type">
@@ -184,11 +184,11 @@ channel.subscribe(
 `;
 
 exports[`Components/Code Javascript smoke-test 1`] = `
-<div class="hljs flex bg-neutral-1200 p-4"
+<div class="hljs overflow-y-auto flex bg-neutral-1200 p-4"
      data-id="code"
 >
   <pre lang="javascript"
-       class="overflow-auto flex-1 leading-6"
+       class="overflow-x-auto h-full flex-1 leading-6"
   >
     <code class="language-javascript ui-text-code">
       <span class="hljs-keyword">
@@ -261,11 +261,11 @@ exports[`Components/Code Javascript smoke-test 1`] = `
 `;
 
 exports[`Components/Code Kotlin smoke-test 1`] = `
-<div class="hljs flex p-8"
+<div class="hljs overflow-y-auto flex p-8"
      data-id="code"
 >
   <pre lang="kotlin"
-       class="overflow-auto flex-1 leading-6"
+       class="overflow-x-auto h-full flex-1 leading-6"
   >
     <code class="language-kotlin ui-text-code">
       <span class="hljs-keyword">
@@ -318,11 +318,11 @@ exports[`Components/Code Kotlin smoke-test 1`] = `
 `;
 
 exports[`Components/Code Swift smoke-test 1`] = `
-<div class="hljs flex p-8"
+<div class="hljs overflow-y-auto flex p-8"
      data-id="code"
 >
   <pre lang="swift"
-       class="overflow-auto flex-1 leading-6"
+       class="overflow-x-auto h-full flex-1 leading-6"
   >
     <code class="language-swift ui-text-code">
       <span class="hljs-keyword">
