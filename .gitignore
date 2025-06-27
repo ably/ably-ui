@@ -1,7 +1,8 @@
 .bundle
 .DS_Store
 node_modules
-yarn-error.log
+pnpm-debug.log*
+pnpm-error.log
 /dist
 /preview
 /core

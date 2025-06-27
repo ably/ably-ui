@@ -17,7 +17,7 @@ VERSION=$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 TAG=v$ABLY_UI_VERSION-dev.$PACKAGE_SUFFIX
 
 echo "> Commit version and publish update to $TAG"
-git add package.json yarn.lock
+git add package.json pnpm-lock.yaml
 git commit -m "Publish $TAG"
 
 echo "> Tag commit with $TAG"
