@@ -312,8 +312,8 @@ exports[`Components/Flash WithLinks play-test 1`] = `
     <div class="bg-electric-cyan p-8 flex align-center rounded shadow-container-subtle">
       <p class="ui-text-p1 mr-4 text-cool-black">
         Link with data-method:
-        <a data-method="delete"
-           href="/delete"
+        <a href="/delete"
+           data-method="delete"
         >
           Delete
         </a>
