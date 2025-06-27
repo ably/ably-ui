@@ -9,3 +9,17 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
+    groups:
+      storybook:
+        patterns:
+          - "@storybook/*"
+          - "storybook"
+      ts-eslint:
+        patterns:
+          - "@typescript-eslint/*"
+      svgr:
+        patterns:
+          - "@svgr/*"
+      swc:
+        patterns:
+          - "@swc/*"
