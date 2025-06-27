@@ -154,7 +154,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -181,7 +181,7 @@ exports[`Components/Code Snippet Default smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -264,7 +264,7 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -291,7 +291,7 @@ exports[`Components/Code Snippet FixedMode smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -425,7 +425,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -494,7 +494,7 @@ exports[`Components/Code Snippet JsonOnlySnippet smoke-test 1`] = `
         </p>
       </div>
       <pre lang="json"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-json ui-text-code">
           <span class="hljs-punctuation">
@@ -712,11 +712,11 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="hljs flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
+      <div class="hljs overflow-y-auto flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
            data-id="code"
       >
         <pre lang="shell"
-             class="overflow-auto flex-1 leading-6"
+             class="overflow-x-auto h-full flex-1 leading-6"
         >
           <code class="language-shell ui-text-code">
             npm install @ably/asset-tracking
@@ -756,11 +756,11 @@ exports[`Components/Code Snippet MultipleShellExamples smoke-test 1`] = `
           </svg>
         </div>
       </div>
-      <div class="hljs flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
+      <div class="hljs overflow-y-auto flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
            data-id="code"
       >
         <pre lang="shell"
-             class="overflow-auto flex-1 leading-6"
+             class="overflow-x-auto h-full flex-1 leading-6"
         >
           <code class="language-shell ui-text-code">
             <span class="hljs-built_in">
@@ -800,11 +800,11 @@ npm run start
           </svg>
         </div>
       </div>
-      <div class="hljs flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
+      <div class="hljs overflow-y-auto flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
            data-id="code"
       >
         <pre lang="shell"
-             class="overflow-auto flex-1 leading-6"
+             class="overflow-x-auto h-full flex-1 leading-6"
         >
           <code class="language-shell ui-text-code">
             curl -X POST https://api.ably.io/keys \\
@@ -867,11 +867,11 @@ exports[`Components/Code Snippet PlainMode smoke-test 1`] = `
         </svg>
       </div>
     </div>
-    <div class="hljs flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
+    <div class="hljs overflow-y-auto flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2 pl-14"
          data-id="code"
     >
       <pre lang="shell"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-shell ui-text-code">
           npm install @ably/asset-tracking
@@ -889,11 +889,11 @@ exports[`Components/Code Snippet PlainMode smoke-test 1`] = `
   <div class="rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center min-h-12"
        tabindex="0"
   >
-    <div class="hljs flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2"
+    <div class="hljs overflow-y-auto flex p-8 w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2"
          data-id="code"
     >
       <pre lang="text"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-text ui-text-code">
           It was the best of times, it was the blurst of times.
@@ -943,7 +943,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -970,7 +970,7 @@ exports[`Components/Code Snippet SingleLanguage smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -1102,7 +1102,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -1129,7 +1129,7 @@ exports[`Components/Code Snippet SingleLanguageWithHeader smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -1376,7 +1376,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -1403,7 +1403,7 @@ exports[`Components/Code Snippet WithApiKeys smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -1895,7 +1895,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -1922,7 +1922,7 @@ exports[`Components/Code Snippet WithCustomLanguageOrder smoke-test 1`] = `
         </p>
       </div>
       <pre lang="swift"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-swift ui-text-code">
           <span class="hljs-keyword">
@@ -2263,7 +2263,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -2290,7 +2290,7 @@ exports[`Components/Code Snippet WithDefaultLanguage smoke-test 1`] = `
         </p>
       </div>
       <pre lang="swift"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-swift ui-text-code">
           <span class="hljs-keyword">
@@ -2520,7 +2520,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -2547,7 +2547,7 @@ exports[`Components/Code Snippet WithDemoApiKeys smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -2905,7 +2905,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -2932,7 +2932,7 @@ exports[`Components/Code Snippet WithHeaderRow smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -3985,7 +3985,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
     <div class="relative"
          tabindex="0"
     >
-      <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+      <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
            data-id="code"
       >
         <div class="text-code leading-6 pt-px">
@@ -4012,7 +4012,7 @@ exports[`Components/Code Snippet WithOnChangeCallback smoke-test 1`] = `
           </p>
         </div>
         <pre lang="javascript"
-             class="overflow-auto flex-1 leading-6"
+             class="overflow-x-auto h-full flex-1 leading-6"
         >
           <code class="language-javascript ui-text-code">
             <span class="hljs-keyword">
@@ -4289,7 +4289,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <div class="text-code leading-6 pt-px">
@@ -4316,7 +4316,7 @@ exports[`Components/Code Snippet WithSDKTypes smoke-test 1`] = `
         </p>
       </div>
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
@@ -4563,11 +4563,11 @@ exports[`Components/Code Snippet WithoutCodeLines smoke-test 1`] = `
   <div class="relative"
        tabindex="0"
   >
-    <div class="hljs flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+    <div class="hljs overflow-y-auto flex p-8 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
          data-id="code"
     >
       <pre lang="javascript"
-           class="overflow-auto flex-1 leading-6"
+           class="overflow-x-auto h-full flex-1 leading-6"
       >
         <code class="language-javascript ui-text-code">
           <span class="hljs-keyword">
