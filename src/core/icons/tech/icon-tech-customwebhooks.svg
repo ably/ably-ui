@@ -1,13 +1,20 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1031_2010)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M44 2H4C2.89543 2 2 2.89543 2 4V44C2 45.1046 2.89543 46 4 46H44C45.1046 46 46 45.1046 46 44V4C46 2.89543 45.1046 2 44 2ZM4 0C1.79086 0 0 1.79086 0 4V44C0 46.2091 1.79086 48 4 48H44C46.2091 48 48 46.2091 48 44V4C48 1.79086 46.2091 0 44 0H4Z" fill="#03020D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.9334 26L29.0001 20.8L30.2001 19.2L38.2001 25.2C38.4519 25.3888 38.6001 25.6852 38.6001 26C38.6001 26.3147 38.4519 26.6111 38.2001 26.8L30.2001 32.8L29.0001 31.2L35.9334 26Z" fill="#03020D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 22L18.6 16.8L17.4 15.2L9.4 21.2C9.14819 21.3888 9 21.6852 9 22C9 22.3147 9.14819 22.6111 9.4 22.8L17.4 28.8L18.6 27.2L11.6667 22Z" fill="#03020D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M27.96 12.28L20.96 36.28L19.04 35.72L26.04 11.72L27.96 12.28Z" fill="#03020D"/>
-</g>
-<defs>
-<clipPath id="clip0_1031_2010">
-<rect width="48" height="48" fill="white"/>
-</clipPath>
-</defs>
+  <defs>
+    <clipPath id="clip0_1031_2010">
+      <rect width="48" height="48" fill="white" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip0_1031_2010)">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M44 2H4C2.89543 2 2 2.89543 2 4V44C2 45.1046 2.89543 46 4 46H44C45.1046 46 46 45.1046 46 44V4C46 2.89543 45.1046 2 44 2ZM4 0C1.79086 0 0 1.79086 0 4V44C0 46.2091 1.79086 48 4 48H44C46.2091 48 48 46.2091 48 44V4C48 1.79086 46.2091 0 44 0H4Z"
+      fill="#03020D" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M35.9334 26L29.0001 20.8L30.2001 19.2L38.2001 25.2C38.4519 25.3888 38.6001 25.6852 38.6001 26C38.6001 26.3147 38.4519 26.6111 38.2001 26.8L30.2001 32.8L29.0001 31.2L35.9334 26Z"
+      fill="#03020D" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M11.6667 22L18.6 16.8L17.4 15.2L9.4 21.2C9.14819 21.3888 9 21.6852 9 22C9 22.3147 9.14819 22.6111 9.4 22.8L17.4 28.8L18.6 27.2L11.6667 22Z"
+      fill="#03020D" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M27.96 12.28L20.96 36.28L19.04 35.72L26.04 11.72L27.96 12.28Z" fill="#03020D" />
+  </g>
 </svg>
