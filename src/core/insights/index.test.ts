@@ -2,7 +2,7 @@
  * @vitest-environment jsdom
  */
 
-import { describe, expect, beforeEach, afterEach, it, vi } from "vitest";
+import { describe, expect, beforeEach, afterEach, it, vi, Mock } from "vitest";
 
 import * as datalayer from "./datalayer";
 import * as mixpanel from "./mixpanel";
@@ -13,6 +13,7 @@ import * as insights from "./index";
 // Mock the dependencies
 vi.mock("./datalayer", () => ({
   track: vi.fn(),
+  trackPageView: vi.fn(),
 }));
 
 vi.mock("./mixpanel", () => ({
@@ -90,6 +91,7 @@ describe("Insights Command Queue", () => {
       expect(posthog.identify).not.toHaveBeenCalled();
       expect(mixpanel.trackPageView).not.toHaveBeenCalled();
       expect(posthog.trackPageView).not.toHaveBeenCalled();
+      expect(datalayer.trackPageView).not.toHaveBeenCalled();
 
       // Now initialize
       insights.initInsights(testConfig);
@@ -122,11 +124,12 @@ describe("Insights Command Queue", () => {
 
       expect(mixpanel.trackPageView).toHaveBeenCalled();
       expect(posthog.trackPageView).toHaveBeenCalled();
+      expect(datalayer.trackPageView).not.toHaveBeenCalled();
     });
 
     it("should handle errors in queued methods gracefully", async () => {
       // Setup an error for one of the methods
-      mixpanel.track.mockImplementationOnce(() => {
+      (mixpanel.track as Mock).mockImplementationOnce(() => {
         throw new Error("Mixpanel error");
       });
 
@@ -152,6 +155,14 @@ describe("Insights Command Queue", () => {
       });
       expect(mixpanel.trackPageView).toHaveBeenCalled();
       expect(posthog.trackPageView).toHaveBeenCalled();
+      expect(datalayer.trackPageView).not.toHaveBeenCalled();
+    });
+
+    it("should report page view to GTM as well when includeDataLayer is true", () => {
+      insights.trackPageView({ includeDataLayer: true });
+      expect(mixpanel.trackPageView).toHaveBeenCalled();
+      expect(posthog.trackPageView).toHaveBeenCalled();
+      expect(datalayer.trackPageView).toHaveBeenCalled();
     });
   });
 
@@ -188,6 +199,7 @@ describe("Insights Command Queue", () => {
       insights.trackPageView();
       expect(mixpanel.trackPageView).toHaveBeenCalled();
       expect(posthog.trackPageView).toHaveBeenCalled();
+      expect(datalayer.trackPageView).not.toHaveBeenCalled();
 
       insights.startSessionRecording();
       expect(mixpanel.startSessionRecording).toHaveBeenCalled();
@@ -204,6 +216,13 @@ describe("Insights Command Queue", () => {
       insights.disableDebugMode();
       expect(mixpanel.disableDebugMode).toHaveBeenCalled();
       expect(posthog.disableDebugMode).toHaveBeenCalled();
+    });
+
+    it("should report page view to GTM as well when includeDataLayer is true", () => {
+      insights.trackPageView({ includeDataLayer: true });
+      expect(mixpanel.trackPageView).toHaveBeenCalled();
+      expect(posthog.trackPageView).toHaveBeenCalled();
+      expect(datalayer.trackPageView).toHaveBeenCalled();
     });
   });
 
@@ -281,7 +300,7 @@ describe("Insights Command Queue", () => {
   describe("Error Handling", () => {
     it("should handle initialization errors gracefully", () => {
       // Setup an error in initialization
-      mixpanel.initMixpanel.mockImplementationOnce(() => {
+      (mixpanel.initMixpanel as Mock).mockImplementationOnce(() => {
         throw new Error("Mixpanel init error");
       });
 
@@ -303,11 +322,11 @@ describe("Insights Command Queue", () => {
       vi.clearAllMocks();
 
       // Setup errors in tracking
-      mixpanel.track.mockImplementationOnce(() => {
+      (mixpanel.track as Mock).mockImplementationOnce(() => {
         throw new Error("Mixpanel track error");
       });
 
-      posthog.track.mockImplementationOnce(() => {
+      (posthog.track as Mock).mockImplementationOnce(() => {
         throw new Error("Posthog track error");
       });
 

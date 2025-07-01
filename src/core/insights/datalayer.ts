@@ -17,3 +17,7 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
     ...properties,
   });
 };
+
+export const trackPageView = () => {
+  track("client-side-route-change");
+};
