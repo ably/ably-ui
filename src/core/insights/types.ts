@@ -13,7 +13,7 @@ export interface AnalyticsService {
   enableDebugMode: () => void;
   disableDebugMode: () => void;
   identify: (identity: InsightsIdentity) => void;
-  trackPageView: () => void;
+  trackPageView: (options?: TrackPageViewOptions) => void;
   track: (event: string, properties?: Record<string, unknown>) => void;
   startSessionRecording: () => void;
   stopSessionRecording: () => void;
@@ -32,4 +32,8 @@ export type InsightsIdentity = {
   organisationId?: string;
   email?: string;
   name?: string;
+};
+
+export type TrackPageViewOptions = {
+  includeDataLayer?: boolean;
 };

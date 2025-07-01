@@ -1,4 +1,8 @@
-import { InsightsConfig, InsightsIdentity } from "./types";
+import {
+  InsightsConfig,
+  InsightsIdentity,
+  TrackPageViewOptions,
+} from "./types";
 import { InsightsCommandQueue } from "./command-queue";
 export type { InsightsConfig };
 
@@ -32,7 +36,8 @@ export const enableDebugMode = () => insights.enableDebugMode();
 export const disableDebugMode = () => insights.disableDebugMode();
 export const identify = (identity: InsightsIdentity) =>
   insights.identify(identity);
-export const trackPageView = () => insights.trackPageView();
+export const trackPageView = (options?: TrackPageViewOptions) =>
+  insights.trackPageView(options);
 export const track = (event: string, properties?: Record<string, unknown>) =>
   insights.track(event, properties);
 export const startSessionRecording = () => insights.startSessionRecording();

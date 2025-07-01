@@ -2,6 +2,7 @@ import type {
   AnalyticsService,
   InsightsConfig,
   InsightsIdentity,
+  TrackPageViewOptions,
 } from "./types";
 import * as datalayer from "./datalayer";
 import * as mixpanel from "./mixpanel";
@@ -111,7 +112,7 @@ export class InsightsService implements AnalyticsService {
     }
   }
 
-  trackPageView(): void {
+  trackPageView(options?: TrackPageViewOptions): void {
     if (this.debugMode) {
       logger.info("Tracking page view");
     }
@@ -129,6 +130,16 @@ export class InsightsService implements AnalyticsService {
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Posthog", e);
+      }
+    }
+
+    if (options?.includeDataLayer) {
+      try {
+        datalayer.trackPageView();
+      } catch (e) {
+        if (this.debugMode) {
+          logger.error("Failed to track page view in GTM", e);
+        }
       }
     }
   }

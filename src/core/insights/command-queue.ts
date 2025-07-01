@@ -3,6 +3,7 @@ import {
   Command,
   InsightsConfig,
   InsightsIdentity,
+  TrackPageViewOptions,
 } from "./types";
 import { InsightsService } from "./service";
 import * as logger from "./logger";
@@ -117,7 +118,7 @@ export class InsightsCommandQueue implements AnalyticsService {
   enableDebugMode(): void {}
   disableDebugMode(): void {}
   identify(_identity: InsightsIdentity): void {}
-  trackPageView(): void {}
+  trackPageView(_options?: TrackPageViewOptions): void {}
   track(_event: string, _properties?: Record<string, unknown>): void {}
   startSessionRecording(): void {}
   stopSessionRecording(): void {}
