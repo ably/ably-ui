@@ -2,20 +2,6 @@
 
 `ably-ui` is the of home of the Ably design system library ([https://ably-ui.herokuapp.com/](https://ably-ui.herokuapp.com/)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.
 
-## Getting started
-
-`ably-ui` is a library built in mind with supporting a variety of websites/apps based on core web technologies. That's why where possible we build based on those but publish in a way that is easy to consume for frameworks we use across our properties.
-
-As an example, the `Logo` component has two templates, for a [React](https://reactjs.org/) component and [view-component](https://viewcomponent.org/) but uses the same CSS classes and same JavaScript hooks (`data-id`).
-
-In some cases, this is impractical. Some components will be more specialized and take advantage of a given framework, and we will have no need to make it available in multiple frameworks (for example, something that is only used within signed in, SPA like areas).
-
-### Guiding principles
-
-1. Provide easy access to common patterns and assets, from brand colours to navigation.
-2. Use the web platform as much as possible without relying on frameworks.
-3. Be flexible in how the library can be integrated.
-
 ### Library structure
 
 The library is built out of modules, assets, and JavaScript components. A module is a container for all of those.
@@ -24,8 +10,6 @@ For example, the `core` module provides the most general elements one can build 
 
 Components do not require assets directly — instead, it's up to the consumer to load the assets and pass them to the components. This ensures flexibility in terms of URLs.
 
-Each module, apart from components, exposes a `scripts.js` and `styles.css`. `scripts.js` contains helper functions. `styles.css` contains CSS that does not belong to any module in particular.
-
 ### Installation
 
 ### NPM
@@ -33,10 +17,6 @@ Each module, apart from components, exposes a `scripts.js` and `styles.css`. `sc
 This type of installation gives you access to module/components assets as well as React components.
 
 ```bash
-npm install @ably/ui
-
-# or
-
 pnpm add @ably/ui # Preferred
 ```
 
@@ -211,6 +191,24 @@ An important part of ably-ui is ensuring the produced UI is accessible to as wid
 
 To visualise the assets in `ably-ui`, there is a Storybook instance, which serves as both a showcase and a development environment.
 
+### Quick Start
+
+The easiest way to get started is to use the development script:
+
+```bash
+./bin/dev
+```
+
+This script will:
+
+- Check that all required tools (Node.js, pnpm) are installed at the correct versions via asdf
+- Install all project dependencies
+- Start Storybook automatically
+
+### Manual Setup
+
+If you prefer to run commands manually:
+
 Firstly, ensure you have all of the required project dependencies by running `pnpm install` in the project root.
 
 Then, to run Storybook, run `pnpm storybook` in the project root - it should open automatically in your browser.
@@ -282,8 +280,8 @@ All components live in `src` and follow a directory and filename convention:
 - module directory (TitleCase)
   - module asset files: `scripts.js` for JavaScript and `styles.css` for CSS
   - component directory (TitleCase)
-    - `component.js` - supporting/legacy JS script
-    - `component.css` - additional CSS
+    - `component.js` - supporting JS script (legacy)
+    - `component.css` - additional CSS (legacy)
     - `[ComponentName].stories.tsx` - if React, a Storybook presentation file
   - if React, `[ComponentName].tsx` at a sibling level to the component directory
 

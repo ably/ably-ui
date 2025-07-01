@@ -330,11 +330,11 @@ async function generateIcons() {
       fs.writeFileSync(iconJsonPath, generatedIconGroups, "utf-8");
 
       console.log(
-        `${spriteCliIcons[key]}  ${key} icons generated successfully! (${icons.length} total)`,
+        `${spriteCliIcons[key]} ${key} icons generated successfully! (${icons.length} total)`,
       );
     }
 
-    console.log("✅ Icons generation completed successfully!");
+    console.log("✅ Icon generation completed successfully!");
   } catch (error) {
     console.error("Error generating icons:", error);
     process.exit(1);
