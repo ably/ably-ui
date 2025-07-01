@@ -18,6 +18,10 @@
   "msw": {
     "workerDirectory": "./public"
   },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
