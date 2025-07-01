@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Check for asdf
+if ! command -v asdf >/dev/null 2>&1; then
+  echo "❌ asdf is not installed. Please install asdf first." >&2
+  exit 1
+fi
+
+# Check all tools in .tool-versions
+while read -r tool version; do
+  # Skip empty lines
+  [[ -z "$tool" || -z "$version" ]] && continue
+  
+  echo "🛠️ Checking $tool version..."
+  
+  # Check if tool is installed via asdf
+  if ! asdf where "$tool" >/dev/null 2>&1; then
+    echo "🛠️ $tool is not installed via asdf, installing $version..."
+    asdf plugin add "$tool" 2>/dev/null || true
+    asdf install "$tool" "$version"
+  else
+    # Check if the correct version is installed
+    if ! asdf list "$tool" | grep -q "$version"; then
+      echo "🛠️ Installing $tool $version..."
+      asdf install "$tool" "$version"
+    fi
+  fi
+done < .tool-versions
+
+# Ensure asdf shims are up to date
+asdf reshim
+
+# Install JS dependencies
+if ! command -v pnpm >/dev/null 2>&1; then
+  echo "❌ pnpm is not installed or not in PATH. Please check asdf setup." >&2
+  exit 1
+fi
+
+echo "📦 Installing JS dependencies with pnpm..."
+pnpm install
+
+# Run Storybook
+echo "📚 Starting Storybook..."
+pnpm storybook 

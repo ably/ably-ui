@@ -18,12 +18,16 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: "pnpm"
       - name: Install dependencies
-        run: yarn && npx playwright install --with-deps
+        run: pnpm install --frozen-lockfile && npx playwright install --with-deps
       - name: Lint
         uses: wearerequired/lint-action@v2
         with:
@@ -35,4 +39,4 @@ jobs:
           prettier_extensions: js,ts,tsx
           prettier_auto_fix: false
       - name: Run Storybook test-runner
-        run: yarn test
+        run: pnpm test

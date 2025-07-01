@@ -18,10 +18,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: "main"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install -g yarn
+          cache: "pnpm"
       - name: Release latest Ably UI version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -42,7 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: yarn && yarn build-storybook
+        run: pnpm install --frozen-lockfile && pnpm build-storybook
       - name: Upload
         uses: actions/upload-pages-artifact@v3.0.1
         with:

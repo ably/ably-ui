@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "17.4.2",
+  "version": "17.5.0",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/react": "^8.6.14",
     "@storybook/react-vite": "^8.6.14",
     "@storybook/test": "^8.6.14",
     "@storybook/test-runner": "^0.23.0",
@@ -61,7 +62,8 @@
     "ts-node": "^10.9.2",
     "typescript": "5.8.3",
     "vite": "^6.2.0",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.8",
+    "wait-on": "^8.0.3"
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
@@ -69,8 +71,8 @@
     "build:tsc": "tsc && node tsc.js && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build:icons": "ts-node scripts/generate-icons.ts",
-    "build": "yarn build:prebuild && yarn build:icons && yarn build:swc && yarn build:tsc && yarn build:cleanup",
-    "watch": "yarn build:swc -w",
+    "build": "pnpm build:prebuild && pnpm build:icons && pnpm build:swc && pnpm build:tsc && pnpm build:cleanup",
+    "watch": "pnpm build:swc -w",
     "format:check": "prettier -c *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
     "format:write": "prettier -w *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
     "lint": "eslint *.{js,ts} src/**/*.{js,ts,tsx,stories.tsx}",
@@ -78,11 +80,11 @@
     "pre-release": "./scripts/pre-release.sh",
     "release": "./scripts/release.sh",
     "start": "vite --port 5000",
-    "storybook": "yarn build && storybook dev -p 6006",
-    "build-storybook": "yarn build && storybook build --quiet -o preview",
-    "test": "yarn test:storybook && yarn test:vitest run",
-    "test:storybook": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook --url http://127.0.0.1:6007\"",
-    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && yarn http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && yarn test-storybook -u --url http://127.0.0.1:6007\"",
+    "storybook": "pnpm build && storybook dev -p 6006",
+    "build-storybook": "pnpm build && storybook build --quiet -o preview",
+    "test": "pnpm test:storybook && pnpm test:vitest run",
+    "test:storybook": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook --url http://127.0.0.1:6007\"",
+    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook -u --url http://127.0.0.1:6007\"",
     "test:vitest": "vitest --environment=jsdom --dir=src"
   },
   "dependencies": {
