@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 // Directory containing the .d.ts files
 const directoryPath = "./types";
@@ -9,7 +9,7 @@ const indexPath = "./index.d.ts";
 
 // Function to recursively get all .d.ts files
 function getDtsFiles(dir) {
-  let results = [];
+  let results: string[] = [];
   const list = fs.readdirSync(dir);
 
   list.forEach((file) => {
@@ -19,7 +19,7 @@ function getDtsFiles(dir) {
     if (stat && stat.isDirectory()) {
       // Recursively search in subdirectories
       results = results.concat(getDtsFiles(filePath));
-    } else if (file.endsWith(".d.ts") && file !== "index.d.ts") {
+    } else if (file.endsWith(".d.ts")) {
       // Add .d.ts file to results
       results.push(filePath);
     }
@@ -55,7 +55,8 @@ dtsFiles.forEach((file) => {
     path
       .relative(directoryPath, file)
       .replace(/\\/g, "/")
-      .replace(/\.d\.ts$/, "");
+      .replace(/\.d\.ts$/, "")
+      .replace(/\/index$/, "");
 
   fs.appendFileSync(
     indexPath,

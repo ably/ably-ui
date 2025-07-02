@@ -1,6 +1,6 @@
 {
   "name": "@ably/ui",
-  "version": "17.5.4",
+  "version": "17.5.5",
   "description": "Home of the Ably design system library ([design.ably.com](https://design.ably.com)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.",
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/js-cookie": "^3.0.6",
     "@types/lodash.throttle": "^4.1.9",
+    "@types/mixpanel-browser": "^2.60.0",
     "@types/node": "^20",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
@@ -69,7 +70,7 @@
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
     "build:swc": "ts-node swc.config.ts",
-    "build:tsc": "tsc && node tsc.js && rm -r types",
+    "build:tsc": "tsc && ts-node tsc.ts && rm -r types",
     "build:cleanup": "mv dist/* . && rm -r dist",
     "build:icons": "ts-node scripts/generate-icons.ts",
     "build": "pnpm build:prebuild && pnpm build:icons && pnpm build:swc && pnpm build:tsc && pnpm build:cleanup",

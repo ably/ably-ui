@@ -25,7 +25,7 @@ export const initMixpanel = (
       : false,
     track_pageview: false, // We'll track page views manually
     record_sessions_percent: recordSessionsPercent,
-    record_mask_text_selector: null, // Prevents all text from being masked - we have other masking configured/enabled
+    record_mask_text_selector: undefined, // Prevents all text from being masked - we have other masking configured/enabled
   });
 };
 

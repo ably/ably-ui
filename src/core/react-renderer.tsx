@@ -1,14 +1,18 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-const renderComponent = (Component, props, node) => {
+const renderComponent = (
+  Component: React.FC,
+  props: React.ComponentProps<React.FC>,
+  node: HTMLElement,
+) => {
   const root = createRoot(node);
   root.render(<Component {...props} />);
 };
 
 export { renderComponent };
 
-export default function reactRenderer(components) {
+export default function reactRenderer(components: Record<string, React.FC>) {
   const reactComponents = document.querySelectorAll("[data-react]");
 
   Array.from(reactComponents).forEach((node) => {

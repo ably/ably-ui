@@ -18,7 +18,7 @@ export class InsightsCommandQueue implements AnalyticsService {
   constructor() {
     // Create a proxy that will either queue commands or execute them directly
     return new Proxy(this, {
-      get: (target: InsightsCommandQueue, prop: string) => {
+      get: (target: InsightsCommandQueue, prop: keyof InsightsCommandQueue) => {
         // Return actual properties of the queue
         if (prop in target && typeof target[prop] !== "function") {
           return target[prop];
@@ -40,7 +40,7 @@ export class InsightsCommandQueue implements AnalyticsService {
             }
 
             target.queue.push({
-              methodName: prop as keyof AnalyticsService,
+              methodName: prop,
               args,
             });
 
@@ -49,7 +49,9 @@ export class InsightsCommandQueue implements AnalyticsService {
 
           // Execute the command immediately on the real implementation
           if (typeof target.realImplementation[prop] === "function") {
-            return target.realImplementation[prop](...args);
+            return (
+              target.realImplementation[prop] as (...args: unknown[]) => unknown
+            )(...args);
           }
         };
       },

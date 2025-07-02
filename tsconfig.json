@@ -23,6 +23,6 @@
   "ts-node": {
     "swc": true
   },
-  "include": ["src/**/*.tsx", "custom.d.ts"],
+  "include": ["src/**/*", "custom.d.ts"],
   "exclude": ["node_modules/**/*", "public", "preview", "src/**/*.stories.tsx", "src/core/react-renderer.tsx"]
 }
