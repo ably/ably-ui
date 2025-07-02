@@ -1,0 +1,98 @@
+daemon off;
+
+worker_processes auto;
+
+events {
+  use epoll;
+  accept_mutex on;
+  worker_connections 1024;
+}
+
+http {
+  gzip on;
+  gzip_comp_level 2;
+  gzip_min_length 512;
+  gzip_proxied any;
+  gzip_vary on;
+  gzip_types
+    text/plain
+    text/css
+    text/xml
+    text/javascript
+    application/javascript
+    application/json;
+
+  server_tokens off;
+
+  access_log /dev/stdout;
+  error_log /dev/stderr;
+
+  include mime.types;
+  default_type application/octet-stream;
+  sendfile on;
+
+  client_body_timeout 30;
+  client_header_timeout 30;
+  keepalive_timeout 30;
+  send_timeout 30;
+
+  # Rate limiting - basic protection
+  limit_req_zone $binary_remote_addr zone=basic:10m rate=10r/s;
+
+  server {
+    listen <%= ENV['PORT'] %>;
+    server_name _;
+
+    root /app/preview;
+    index index.html;
+
+    <% if File.exist?('config/.htpasswd') && !File.zero?('config/.htpasswd') %>
+    # Basic Authentication enabled
+    auth_basic "Ably UI Review App";
+    auth_basic_user_file .htpasswd;
+    <% end %>
+
+    # Enable gzip
+    gzip_static on;
+
+    # Rate limiting
+    limit_req zone=basic burst=20 nodelay;
+
+    # Security headers
+    add_header X-Frame-Options DENY always;
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+    add_header X-XSS-Protection "1; mode=block" always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-ancestors 'none';" always;
+
+    # Force HTTPS
+    if ($http_x_forwarded_proto != "https") {
+      return 301 https://$host$request_uri;
+    }
+
+    # Prevent access to hidden files
+    location ~ /\. {
+      deny all;
+      access_log off;
+      log_not_found off;
+    }
+
+    # Handle Storybook routing
+    location / {
+      try_files $uri $uri/ /index.html;
+    }
+
+    # Cache static assets
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+      expires 1y;
+      add_header Cache-Control "public" always;
+    }
+
+    # Don't cache HTML files
+    location ~* \.(html)$ {
+      expires -1;
+      add_header Cache-Control "no-cache, no-store, must-revalidate" always;
+      add_header Pragma "no-cache" always;
+    }
+  }
+}

@@ -84,6 +84,7 @@
     "start": "vite --port 5000",
     "storybook": "pnpm build && storybook dev -p 6006",
     "build-storybook": "pnpm build && storybook build --quiet -o preview",
+    "heroku-postbuild": "pnpm build-storybook && chmod +x scripts/setup-auth.sh && ./scripts/setup-auth.sh",
     "test": "pnpm test:storybook && pnpm test:vitest run",
     "test:storybook": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook --url http://127.0.0.1:6007\"",
     "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook -u --url http://127.0.0.1:6007\"",
