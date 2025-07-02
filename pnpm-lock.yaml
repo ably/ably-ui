@@ -108,6 +108,9 @@ importers:
       '@types/lodash.throttle':
         specifier: ^4.1.9
         version: 4.1.9
+      '@types/mixpanel-browser':
+        specifier: ^2.60.0
+        version: 2.60.0
       '@types/node':
         specifier: ^20
         version: 20.19.1
@@ -2166,6 +2169,9 @@ packages:
 
   '@types/mdx@2.0.10':
     resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}
+
+  '@types/mixpanel-browser@2.60.0':
+    resolution: {integrity: sha512-70oe8T3KdxHwsSo5aZphALdoqcsIorQBrlisnouIn9Do4dmC2C6/D56978CmSE/BO2QHgb85ojPGa4R8OFvVHA==}
 
   '@types/node@20.19.1':
     resolution: {integrity: sha512-jJD50LtlD2dodAEO653i3YF04NWak6jN3ky+Ri3Em3mGR39/glWiboM/IePaRbgwSfqM1TpGXfAg8ohn/4dTgA==}
@@ -7706,6 +7712,8 @@ snapshots:
   '@types/lodash@4.17.7': {}
 
   '@types/mdx@2.0.10': {}
+
+  '@types/mixpanel-browser@2.60.0': {}
 
   '@types/node@20.19.1':
     dependencies:

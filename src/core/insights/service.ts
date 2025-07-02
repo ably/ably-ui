@@ -221,7 +221,7 @@ export class InsightsService implements AnalyticsService {
   setupObserver(): () => void {
     // Helper to get all data-insight-* attributes from an element
     const getInsightAttributes = (
-      element,
+      element: HTMLElement,
     ): { event?: string; [key: string]: string | undefined } => {
       // limit how many data attributes we'll process
       const MAX_ATTRIBUTES = 10;
@@ -230,7 +230,7 @@ export class InsightsService implements AnalyticsService {
       const attributes: { event?: string; [key: string]: string | undefined } =
         {};
 
-      for (const attr of element.attributes) {
+      for (const attr of Array.from(element.attributes)) {
         if (count >= MAX_ATTRIBUTES) break;
         if (attr.name.startsWith("data-insight-")) {
           // Validate attribute name format
@@ -244,7 +244,7 @@ export class InsightsService implements AnalyticsService {
           const key = attr.name
             .replace("data-insight-", "")
             .split("-")
-            .map((part, index) =>
+            .map((part: string, index: number) =>
               index === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1),
             )
             .join("");
@@ -256,14 +256,15 @@ export class InsightsService implements AnalyticsService {
     };
 
     // Helper to find closest element with data-insight attributes
-    const findClosestElementWithInsights = (element) => {
+    const findClosestElementWithInsights = (element: HTMLElement) => {
       let current = element;
       while (current && current !== document.body) {
         const insights = getInsightAttributes(current);
         if (Object.keys(insights).length > 0) {
           return insights;
         }
-        current = current.parentElement;
+
+        current = current.parentElement as HTMLElement;
       }
       return null;
     };
