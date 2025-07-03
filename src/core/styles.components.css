@@ -53,6 +53,38 @@
     @apply -my-0.5 sm:-my-1 md:-my-2;
   }
 
+  .ui-section-spacing-collapse-order-first-full {
+    @apply -mb-8 sm:-mb-16 md:-mb-32;
+  }
+
+  .ui-section-spacing-collapse-order-first-half {
+    @apply -mb-4 sm:-mb-8 md:-mb-16;
+  }
+
+  .ui-section-spacing-collapse-order-first-quarter {
+    @apply -mb-2 sm:-mb-4 md:-mb-8;
+  }
+
+  .ui-section-spacing-collapse-order-first-eighth {
+    @apply -mb-1 sm:-mb-2 md:-mb-4;
+  }
+
+  .ui-section-spacing-collapse-order-last-full {
+    @apply -mt-8 sm:-mt-16 md:-mt-32;
+  }
+
+  .ui-section-spacing-collapse-order-last-half {
+    @apply -mt-4 sm:-mt-8 md:-mt-16;
+  }
+
+  .ui-section-spacing-collapse-order-last-quarter {
+    @apply -mt-2 sm:-mt-4 md:-mt-8;
+  }
+
+  .ui-section-spacing-collapse-order-last-eighth {
+    @apply -mt-1 sm:-mt-2 md:-mt-4;
+  }
+
   .ui-content-spacing {
     @apply my-10 sm:my-12 md:my-16;
   }
