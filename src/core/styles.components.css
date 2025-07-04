@@ -38,51 +38,19 @@
      in a way that handles margin collapsing as well (hence not an exact opposite) */
   .ui-section-spacing-collapse,
   .ui-section-spacing-collapse-full {
-    @apply -my-4 sm:-my-8 md:-my-16;
+    @apply -my-4 sm:-my-8 md:-my-16 first:-mb-8 sm:first:-mb-16 md:first:-mb-32 last:-mt-8 sm:last:-mt-16 md:last:-mt-32;
   }
 
   .ui-section-spacing-collapse-half {
-    @apply -my-2 sm:-my-4 md:-my-8;
+    @apply -my-2 sm:-my-4 md:-my-8 first:-mb-4 sm:first:-mb-8 md:first:-mb-16 last:-mt-4 sm:last:-mt-8 md:last:-mt-16;
   }
 
   .ui-section-spacing-collapse-quarter {
-    @apply -my-1 sm:-my-2 md:-my-4;
+    @apply -my-1 sm:-my-2 md:-my-4 first:-mb-2 sm:first:-mb-4 md:first:-mb-8 last:-mt-2 sm:last:-mt-4 md:last:-mt-8;
   }
 
   .ui-section-spacing-collapse-eighth {
-    @apply -my-0.5 sm:-my-1 md:-my-2;
-  }
-
-  .ui-section-spacing-collapse-order-first-full {
-    @apply -mb-8 sm:-mb-16 md:-mb-32;
-  }
-
-  .ui-section-spacing-collapse-order-first-half {
-    @apply -mb-4 sm:-mb-8 md:-mb-16;
-  }
-
-  .ui-section-spacing-collapse-order-first-quarter {
-    @apply -mb-2 sm:-mb-4 md:-mb-8;
-  }
-
-  .ui-section-spacing-collapse-order-first-eighth {
-    @apply -mb-1 sm:-mb-2 md:-mb-4;
-  }
-
-  .ui-section-spacing-collapse-order-last-full {
-    @apply -mt-8 sm:-mt-16 md:-mt-32;
-  }
-
-  .ui-section-spacing-collapse-order-last-half {
-    @apply -mt-4 sm:-mt-8 md:-mt-16;
-  }
-
-  .ui-section-spacing-collapse-order-last-quarter {
-    @apply -mt-2 sm:-mt-4 md:-mt-8;
-  }
-
-  .ui-section-spacing-collapse-order-last-eighth {
-    @apply -mt-1 sm:-mt-2 md:-mt-4;
+    @apply -my-0.5 sm:-my-1 md:-my-2 first:-mb-1 sm:first:-mb-2 md:first:-mb-4 last:-mt-1 sm:last:-mt-2 md:last:-mt-4;
   }
 
   .ui-content-spacing {
