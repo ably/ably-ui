@@ -6,7 +6,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -18,7 +18,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -30,7 +30,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -42,7 +42,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -56,7 +56,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -84,7 +84,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -112,7 +112,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -140,7 +140,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -170,7 +170,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -198,7 +198,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -226,7 +226,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -254,7 +254,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -284,7 +284,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -297,7 +297,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -310,7 +310,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -323,7 +323,7 @@ exports[`Components/Button Primary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -343,7 +343,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -355,7 +355,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -367,7 +367,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -379,7 +379,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -393,7 +393,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -421,7 +421,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -449,7 +449,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -477,7 +477,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -507,7 +507,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -535,7 +535,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -563,7 +563,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -591,7 +591,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -621,7 +621,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -634,7 +634,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -647,7 +647,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -660,7 +660,7 @@ exports[`Components/Button Priority smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -732,7 +732,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -744,7 +744,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -756,7 +756,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -768,7 +768,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -782,7 +782,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -810,7 +810,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -838,7 +838,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -866,7 +866,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -896,7 +896,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -924,7 +924,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -952,7 +952,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -980,7 +980,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -1010,7 +1010,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -1023,7 +1023,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -1036,7 +1036,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"
@@ -1049,7 +1049,7 @@ exports[`Components/Button Secondary smoke-test 1`] = `
     <div class="inline-flex ml-2">
       <button type="button"
               aria-describedby="tooltip"
-              class="p-0 relative focus:outline-none h-[1rem] h-[3.75rem]"
+              class="p-0 relative focus:outline-none h-[3.75rem]"
       >
       </button>
       <button type="button"

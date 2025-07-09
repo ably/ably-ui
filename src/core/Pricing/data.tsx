@@ -1,17 +1,18 @@
 import React from "react";
 import { PricingDataFeature } from "./types";
+import Tooltip from "../Tooltip";
 
 export const planData: PricingDataFeature[] = [
   {
     title: {
       content: "Free",
-      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
-      color: "text-neutral-600 dark:text-neutral-700",
+      className: "ui-text-h4 tracking-[-0.002rem]",
+      color: "text-neutral-1300 dark:text-neutral-000",
     },
     description: {
       content: "Build a proof of concept.",
-      className: "ui-text-p1",
-      color: "text-neutral-800 dark:text-neutral-500",
+      className: "ui-text-p3",
+      color: "text-neutral-700 dark:text-neutral-600",
     },
     price: { amount: "$0" },
     cta: {
@@ -21,9 +22,8 @@ export const planData: PricingDataFeature[] = [
     },
     sections: [
       {
-        title: "Limits",
+        title: "Capacity",
         items: [
-          "200 concurrent channels",
           "200 concurrent connections",
           "500 messages / second",
           "6M messages / month",
@@ -31,28 +31,32 @@ export const planData: PricingDataFeature[] = [
       },
       {
         title: "Includes",
-        items: ["Community & email support (best effort)", "No commitment"],
+        items: [
+          "Build with any Ably product",
+          "Community & email support (best effort)",
+          "No commitment",
+        ],
         listItemColors: {
           foreground: "text-neutral-700 dark:text-neutral-600",
-          background: "text-neutral-300 dark:text-neutral-1000",
-        },
-        cta: {
-          text: "See all features",
-          url: "#pricing-table",
+          background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
     ],
+    bottomCta: {
+      text: "See all features",
+      url: "#pricing-table",
+    },
   },
   {
     title: {
       content: "Standard",
-      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
+      className: "ui-text-h4 tracking-[-0.002rem]",
       color: "text-neutral-1300 dark:text-neutral-000",
     },
     description: {
       content: "Roll-out into production.",
-      className: "ui-text-p1",
-      color: "text-neutral-800 dark:text-neutral-500",
+      className: "ui-text-p3",
+      color: "text-neutral-700 dark:text-neutral-600",
     },
     price: {
       amount: "$29",
@@ -64,20 +68,27 @@ export const planData: PricingDataFeature[] = [
           >
             / month
           </p>
-          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-1.5">
-            + consumption
-          </p>
+          <div className="flex -mt-1">
+            <p className="ui-text-p3 font-bold text-gui-blue-default-dark leading-[1.4rem]">
+              + usage
+            </p>
+            <Tooltip interactive={true} iconSize="1.25rem">
+              Usage is billed on top of your plan. You&apos;ll be charged
+              monthly based on how many messages, channel minutes, and
+              connection minutes you use. See rates above.
+            </Tooltip>
+          </div>
         </>
       ),
     },
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=standard",
-      iconColor: "text-gui-blue-default-dark dark:text-gui-blue-default-light",
+      iconColor: "text-neutral-600 dark:text-neutral-700",
     },
     sections: [
       {
-        title: "Limits",
+        title: "Capacity",
         items: [
           "10k concurrent channels",
           "10k concurrent connections",
@@ -86,28 +97,32 @@ export const planData: PricingDataFeature[] = [
       },
       {
         title: "Includes",
-        items: ["1 day email support SLA", "Uptime SLO"],
+        items: [
+          "Build with any Ably product",
+          "1 day email support SLA",
+          "Uptime SLO",
+        ],
         listItemColors: {
-          foreground: "text-blue-600 dark:text-blue-400",
-          background: "text-blue-200 dark:text-blue-800",
-        },
-        cta: {
-          text: "See all features",
-          url: "#pricing-table",
+          foreground: "text-neutral-700 dark:text-neutral-600",
+          background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
     ],
+    bottomCta: {
+      text: "See all features",
+      url: "#pricing-table",
+    },
   },
   {
     title: {
       content: "Pro",
-      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
+      className: "ui-text-h4 tracking-[-0.002rem]",
       color: "text-neutral-1300 dark:text-neutral-000",
     },
     description: {
-      content: "Scale with confidence.",
-      className: "ui-text-p1",
-      color: "text-neutral-800 dark:text-neutral-500",
+      content: "Scale business critical workloads.",
+      className: "ui-text-p3",
+      color: "text-neutral-700 dark:text-neutral-600",
     },
     price: {
       amount: "$399",
@@ -119,20 +134,27 @@ export const planData: PricingDataFeature[] = [
           >
             / month
           </p>
-          <p className="ui-text-p2 font-bold text-gui-blue-default-dark -mt-1.5">
-            + consumption
-          </p>
+          <div className="flex -mt-1">
+            <p className="ui-text-p3 font-bold text-gui-blue-default-dark leading-[1.4rem]">
+              + usage
+            </p>
+            <Tooltip interactive={true} iconSize="1.25rem">
+              Usage is billed on top of your plan. You&apos;ll be charged
+              monthly based on how many messages, channel minutes, and
+              connection minutes you use. See rates above.
+            </Tooltip>
+          </div>
         </>
       ),
     },
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=pro",
-      iconColor: "text-gui-blue-default-dark dark:text-gui-blue-default-light",
+      iconColor: "text-neutral-600 dark:text-neutral-700",
     },
     sections: [
       {
-        title: "Limits",
+        title: "Capacity",
         items: [
           "50k concurrent channels",
           "50k concurrent connections",
@@ -141,29 +163,34 @@ export const planData: PricingDataFeature[] = [
       },
       {
         title: "Includes",
-        items: ["2 hour support SLA", "Datadog (lite)", "Uptime SLO"],
+        items: [
+          "Build with any Ably product",
+          "4 hour email support SLA",
+          "Datadog (lite)",
+          "Uptime SLO",
+        ],
         listItemColors: {
-          foreground: "text-blue-600 dark:text-blue-400",
-          background: "text-blue-200 dark:text-blue-800",
-        },
-        cta: {
-          text: "See all features",
-          url: "#pricing-table",
+          foreground: "text-neutral-700 dark:text-neutral-600",
+          background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
     ],
+    bottomCta: {
+      text: "See all features",
+      url: "#pricing-table",
+    },
   },
 
   {
     title: {
       content: "Enterprise",
-      className: "font-mono text-p3 uppercase font-bold tracking-[0.16em]",
+      className: "ui-text-h4 tracking-[-0.002rem]",
       color: "text-orange-600",
     },
     description: {
-      content: "Deliver without limits.",
-      className: "ui-text-p1",
-      color: "text-neutral-800 dark:text-neutral-500",
+      content: "Serious workloads without limits.",
+      className: "ui-text-p3",
+      color: "text-neutral-700 dark:text-neutral-600",
     },
     price: { amount: "Custom" },
     cta: {
@@ -172,16 +199,17 @@ export const planData: PricingDataFeature[] = [
     },
     sections: [
       {
-        title: "Unlimited",
+        title: "Capacity",
         items: [
-          "Concurrent channels",
-          "Concurrent connections",
-          "Messages / second",
+          "Unlimited concurrent channels",
+          "Unlimited connections",
+          "Unlimited messages / second",
         ],
       },
       {
         title: "Includes",
         items: [
+          "Build with any Ably product",
           "24/7 mission critical support",
           "99.999% uptime SLAs",
           "Committed use discounts",
@@ -189,15 +217,15 @@ export const planData: PricingDataFeature[] = [
           "CNAME, SSO, & more",
         ],
         listItemColors: {
-          foreground: "text-orange-600 dark:text-orange-600",
-          background: "text-orange-200 dark:text-orange-1000",
-        },
-        cta: {
-          text: "See all features",
-          url: "#pricing-table",
+          foreground: "text-orange-700 dark:text-orange-500",
+          background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
     ],
+    bottomCta: {
+      text: "See all features",
+      url: "#pricing-table",
+    },
   },
 ];
 
@@ -229,10 +257,11 @@ export const consumptionData: PricingDataFeature[] = [
         ],
       },
     ],
+    subtext: "As low as $0.50/M with volume discount",
   },
   {
     title: {
-      content: "Channels and Chat rooms",
+      content: "Channels",
       className: "ui-text-h3",
       color: "text-neutral-1300 dark:text-neutral-000",
       tooltip: (
@@ -264,6 +293,7 @@ export const consumptionData: PricingDataFeature[] = [
         ],
       },
     ],
+    subtext: "As low as $0.20/M with volume discount",
   },
   {
     title: {
@@ -299,5 +329,6 @@ export const consumptionData: PricingDataFeature[] = [
         ],
       },
     ],
+    subtext: "As low as $0.20/M with volume discount",
   },
 ];

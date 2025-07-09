@@ -21,7 +21,6 @@ export type PricingDataFeatureSection = {
   title: string;
   items: string[] | string[][];
   listItemColors?: { foreground: ColorThemeSet; background: ColorThemeSet };
-  cta?: PricingDataFeatureCta;
 };
 
 export type PricingDataFeatureBorder = {
@@ -37,4 +36,6 @@ export type PricingDataFeature = {
   cta?: PricingDataFeatureCta;
   sections: PricingDataFeatureSection[];
   border?: PricingDataFeatureBorder;
+  subtext?: string;
+  bottomCta?: PricingDataFeatureCta;
 };

@@ -112,7 +112,12 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
       aria-disabled={disabled}
     >
       {leftIcon && (
-        <Icon name={leftIcon} size={iconSizes[size]} aria-hidden="true" color={contentColorStyles[variant][activeKey] as ColorClass} />
+        <Icon
+          name={leftIcon}
+          size={iconSizes[size]}
+          aria-hidden="true"
+          color={contentColorStyles[variant][activeKey] as ColorClass}
+        />
       )}
       {children && (
         <span
@@ -127,7 +132,12 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
         </span>
       )}
       {rightIcon && (
-        <Icon name={rightIcon} size={iconSizes[size]} aria-hidden="true" color={contentColorStyles[variant][activeKey] as ColorClass}  />
+        <Icon
+          name={rightIcon}
+          size={iconSizes[size]}
+          aria-hidden="true"
+          color={contentColorStyles[variant][activeKey] as ColorClass}
+        />
       )}
     </div>
   );

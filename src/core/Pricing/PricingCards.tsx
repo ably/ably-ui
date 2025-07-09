@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 import throttle from "lodash.throttle";
 import type { PricingDataFeature } from "./types";
 import Icon from "../Icon";
-import FeaturedLink from "../FeaturedLink";
 import LinkButton from "../LinkButton";
 import { IconName } from "../Icon/types";
 import Tooltip from "../Tooltip";
@@ -103,12 +102,15 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
         )}
       >
         {data.map(
-          ({ title, description, price, cta, sections, border }, index) => (
+          (
+            { title, description, price, cta, sections, border, bottomCta },
+            index,
+          ) => (
             <Fragment key={title.content}>
               {delimiterColumn(index)}
               <div
                 className={cn(
-                  "relative border flex-1 px-6 py-8 flex flex-col gap-6 rounded-2xl group min-w-[17rem] backdrop-blur",
+                  "relative border flex-1 px-6 pt-6 pb-4 flex flex-col gap-6 rounded-2xl group min-w-[17rem] backdrop-blur bg-neutral-100 dark:bg-neutral-1200",
                   borderClasses(border?.color)?.border ??
                     "border-neutral-200 dark:border-neutral-1100",
                   border?.style,
@@ -130,27 +132,19 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                   </div>
                 ) : null}
                 <div
-                  className={cn(
-                    "absolute z-0 top-0 left-0 w-full h-full rounded-2xl bg-neutral-000 dark:bg-neutral-1300 transition-[colors,opacity] opacity-25",
-                    {
-                      "group-hover:bg-neutral-100 dark:group-hover:bg-neutral-1200 group-hover:opacity-100":
-                        !delimiter,
-                    },
-                  )}
-                ></div>
-                <div
-                  className={cn(`relative z-10 flex flex-col gap-6`, {
+                  className={cn(`relative z-10 flex flex-col gap-4`, {
                     "@[520px]:flex-1 @[920px]:flex-none": delimiter,
                   })}
                 >
                   <div>
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <p className={cn(title.className, title.color)}>
                         {title.content}
                       </p>
                       {title.tooltip ? (
                         <Tooltip
                           interactive={typeof title.tooltip !== "string"}
+                          iconSize="1.25rem"
                         >
                           {title.tooltip}
                         </Tooltip>
@@ -158,7 +152,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     </div>
                     <p
                       className={cn(
-                        "ui-text-p1 min-h-5",
+                        "ui-text-h1 text-h1-xl h-5 block",
                         description.className,
                         description.color,
                       )}
@@ -175,7 +169,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         delimiter,
                     })}
                   >
-                    <p className="ui-text-title font-medium tracking-tight leading-none text-neutral-1300 dark:text-neutral-000">
+                    <p className="ui-text-h1 text-h1-xl font-medium tracking-tight leading-none text-neutral-1300 dark:text-neutral-000">
                       {price.amount}
                     </p>
                     <div className="ui-text-p3 text-neutral-1300 dark:text-neutral-000">
@@ -192,7 +186,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         href={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
-                        rightIcon="icon-gui-arrow-long-right-outline"
+                        rightIcon="icon-gui-arrow-right-outline"
                         iconColor={cta.iconColor}
                       >
                         {cta.text}
@@ -204,15 +198,13 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     </div>
                   )}
                 </div>
-                <div className="flex-1 flex flex-col gap-6 relative z-10">
-                  {sections.map(({ title, items, listItemColors, cta }) => (
-                    <div key={title} className="flex flex-col gap-3">
-                      <p className="text-neutral-800 dark:text-neutral-500 font-mono uppercase text-overline2 tracking-[0.16em]">
+                <div className="flex flex-col gap-4 relative z-10 flex-grow">
+                  {sections.map(({ title, items, listItemColors }) => (
+                    <div key={title} className="flex flex-col gap-2">
+                      <p className="text-neutral-700 dark:text-neutral-600 font-mono uppercase text-overline2 font-medium tracking-[0.12em] h-4">
                         {title}
                       </p>
-                      <div
-                        className={cn({ "flex flex-col gap-1": !delimiter })}
-                      >
+                      <div className={cn({ "flex flex-col": !delimiter })}>
                         {items.map((item, index) =>
                           Array.isArray(item) ? (
                             <div
@@ -231,7 +223,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                                   className={cn(
                                     "ui-text-p3",
                                     index === 0 ? "font-bold" : "font-medium",
-                                    "text-neutral-1000 dark:text-neutral-300",
+                                    "text-neutral-1000 dark:text-neutral-300 leading-[1.4rem]",
                                     subIndex % 2 === 1 ? "text-right" : "",
                                   )}
                                 >
@@ -240,20 +232,19 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                               ))}
                             </div>
                           ) : (
-                            <div key={item} className="flex gap-2 items-start">
+                            <div key={item} className="flex items-start">
                               {listItemColors ? (
                                 <Icon
                                   name="icon-gui-check-circled-fill"
                                   color={listItemColors.background}
                                   secondaryColor={listItemColors.foreground}
                                   size="16px"
-                                  additionalCSS="mt-0.5"
+                                  additionalCSS="mt-1"
                                 />
                               ) : null}
                               <div
                                 className={cn(
-                                  `flex-1 font-medium text-neutral-1000 dark:text-neutral-300`,
-                                  listItemColors ? "ui-text-p3" : "ui-text-p2",
+                                  `flex-1 font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3`,
                                 )}
                               >
                                 {item}
@@ -262,24 +253,32 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                           ),
                         )}
                       </div>
-                      {cta ? (
-                        <div className="relative -mx-6 flex items-center h-10 overflow-x-hidden">
-                          <FeaturedLink
-                            url={cta.url}
-                            additionalCSS="absolute translate-x-6 sm:-translate-x-[7.5rem] sm:opacity-0 sm:group-hover:translate-x-6 duration-300 delay-0 sm:group-hover:delay-100 sm:group-hover:opacity-100 transition-[transform,opacity] font-medium ui-text-p3 dark:text-neutral-500 dark:hover:text-neutral-000 cursor-pointer"
-                            onClick={cta.onClick}
-                            iconColor={listItemColors?.foreground}
-                          >
-                            {cta.text}
-                          </FeaturedLink>
-                          <div className="absolute hidden sm:block sm:translate-x-6 sm:opacity-100 sm:group-hover:translate-x-[7.5rem] sm:group-hover:opacity-0 duration-200 delay-100 sm:group-hover:delay-0 transition-[transform,opacity] leading-6 tracking-[0.15em] font-light text-p3 text-neutral-500 dark:text-neutral-800">
-                            •••
-                          </div>
-                        </div>
-                      ) : null}
                     </div>
                   ))}
                 </div>
+
+                {bottomCta && (
+                  <div>
+                    <div className="border-t border-neutral-200 dark:border-neutral-1100 -mx-6"></div>
+                    <a
+                      href={bottomCta.url}
+                      className={cn(
+                        "text-[13px] font-sans font-semibold block group/bottom-cta cursor-pointer pt-4",
+                        "text-neutral-700 dark:text-neutral-600 hover:text-neutral-1300 dark:hover:text-neutral-000 focus:outline-none focus-visible:outline-gui-focus",
+                      )}
+                    >
+                      {bottomCta.text}
+                      <Icon
+                        name="icon-gui-arrow-down-outline"
+                        size="12px"
+                        color={bottomCta.iconColor}
+                        additionalCSS={cn(
+                          "align-middle ml-2 relative transition-[bottom] group-hover/bottom-cta:-bottom-0.5",
+                        )}
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
               {delimiterColumn(index)}
             </Fragment>

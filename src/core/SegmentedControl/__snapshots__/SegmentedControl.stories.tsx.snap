@@ -491,7 +491,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -528,7 +528,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -576,7 +576,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -613,7 +613,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -661,7 +661,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -698,7 +698,7 @@ exports[`Components/Segmented Control WithLeftIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -754,7 +754,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -791,7 +791,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 23px; height: 23px;"
         >
@@ -839,7 +839,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -876,7 +876,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 22px; height: 22px;"
         >
@@ -924,7 +924,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1300 dark:text-neutral-000"
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >
@@ -961,7 +961,7 @@ exports[`Components/Segmented Control WithRightIcon smoke-test 1`] = `
              height="48"
              fill="none"
              viewbox="0 0 48 48"
-             class
+             class="text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000"
              aria-hidden="true"
              style="width: 20px; height: 20px;"
         >

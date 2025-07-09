@@ -155,14 +155,15 @@ const Tooltip = ({
         ref={reference}
         aria-describedby="tooltip"
         {...triggerProps}
-        className={`p-0 relative focus:outline-none h-[1rem] ${
-          triggerProps?.className ?? ""
-        }`}
+        className={cn(
+          "p-0 relative focus:outline-none h-[1rem]",
+          triggerProps?.className,
+        )}
       >
         {triggerElement ?? (
           <Icon
             name="icon-gui-information-circle-outline"
-            color="text-neutral-700 dark:text-neutral-600"
+            color="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
             size={iconSize as IconSize}
           />
         )}
@@ -184,7 +185,7 @@ const Tooltip = ({
               }}
               {...tooltipProps}
               className={cn(
-                "bg-neutral-1000 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-1000 ui-text-p3 font-medium p-4",
+                "bg-neutral-300 dark:bg-neutral-1000 text-neutral-1100 dark:text-neutral-200 ui-text-p3 font-medium p-4",
                 { "pointer-events-none": !interactive },
                 "rounded-lg absolute",
                 tooltipProps?.className,

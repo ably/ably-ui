@@ -66,7 +66,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -75,7 +75,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -172,7 +172,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -181,7 +181,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -278,7 +278,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -287,7 +287,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -384,7 +384,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -393,7 +393,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -490,7 +490,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -499,7 +499,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -607,7 +607,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -616,7 +616,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -713,7 +713,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -722,7 +722,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -819,7 +819,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -828,7 +828,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -925,7 +925,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -934,7 +934,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1031,7 +1031,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1040,7 +1040,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1148,7 +1148,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1157,7 +1157,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1254,7 +1254,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1263,7 +1263,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1360,7 +1360,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1369,7 +1369,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1466,7 +1466,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1475,7 +1475,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
@@ -1572,7 +1572,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
           <div class="inline-flex ml-2">
             <button type="button"
                     aria-describedby="tooltip"
-                    class="p-0 relative focus:outline-none h-[1rem] "
+                    class="p-0 relative focus:outline-none h-[1rem]"
             >
               <svg xmlns="http://www.w3.org/2000/svg"
                    fill="none"
@@ -1581,7 +1581,7 @@ exports[`Components/Table PricingPage smoke-test 1`] = `
                    stroke="currentColor"
                    aria-hidden="true"
                    data-slot="icon"
-                   class="text-neutral-700 dark:text-neutral-600"
+                   class="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
                    style="width: 1rem; height: 1rem;"
               >
                 <path stroke-linecap="round"
