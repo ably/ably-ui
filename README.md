@@ -343,6 +343,19 @@ This will trigger GitHub actions in supported apps (currently [Voltaire](http://
 
 This will release the packages and update library and create & push the commit & tag, and also create corresponding PRs in Voltaire & Website. It will also deploy a new Storybook site to [https://ably.github.io/ably-ui/](https://ably.github.io/ably-ui/).
 
+### Review Apps
+
+Review apps allow you to create temporary deployments of Storybook for sharing UI changes with stakeholders without requiring local development setup.
+
+To create a review app:
+
+1. Create a pull request with your changes
+2. Add the `review-app` label to your PR
+3. A Heroku review app will be automatically created and deployed
+4. The deployment will appear in the deployments section of your PR (basic auth is enabled - ask fellow contributors for credentials if needed)
+
+Review apps are automatically cleaned up when the PR is closed or the label is removed. Only repository contributors can create review apps.
+
 ### Running tests
 
 `ably-ui` uses Storybook's `test-runner`, which on push automatically turns all stories into executable tests, underpinned by Jest and Playright. This means that we don't have to explicitly write tests for stories, though we have the ability to write [https://storybook.js.org/docs/writing-stories/play-function](play functions), which allow us to test more detailed interactions. More information on the capabilities of `test-runner` can be found [https://storybook.js.org/docs/writing-tests/test-runner](here).

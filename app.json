@@ -1,0 +1,36 @@
+{
+  "name": "Ably UI Storybook Review App",
+  "description": "Review app for Ably UI Storybook - automatically deployed from PR labels",
+  "repository": "https://github.com/ably/ably-ui",
+  "logo": "https://ably.com/favicon.ico",
+  "keywords": ["storybook", "ui", "react", "ably", "design-system"],
+  "success_url": "/",
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment for building Storybook",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Install devDependencies for building Storybook",
+      "value": "false"
+    },
+    "BASIC_AUTH_USER": {
+      "description": "Username for basic authentication (optional)",
+      "required": false
+    },
+    "BASIC_AUTH_PASSWORD": {
+      "description": "Password for basic authentication (optional)",
+      "required": false
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku-community/nginx"
+    }
+  ],
+  "stack": "heroku-24"
+}
