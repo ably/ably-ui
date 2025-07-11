@@ -12,12 +12,14 @@ import React, {
 import { createPortal } from "react-dom";
 import Icon from "./Icon";
 import cn from "./utils/cn";
+import { IconSize } from "./Icon/types";
 
 type TooltipProps = {
   triggerElement?: ReactNode;
   triggerProps?: ButtonHTMLAttributes<HTMLButtonElement>;
   tooltipProps?: HTMLAttributes<HTMLDivElement>;
   interactive?: boolean;
+  iconSize?: IconSize;
 } & HTMLAttributes<HTMLDivElement>;
 
 const Tooltip = ({
@@ -26,6 +28,7 @@ const Tooltip = ({
   triggerProps,
   tooltipProps,
   interactive = false,
+  iconSize = "1rem",
   ...rest
 }: PropsWithChildren<TooltipProps>) => {
   const [open, setOpen] = useState(false);
@@ -158,9 +161,9 @@ const Tooltip = ({
       >
         {triggerElement ?? (
           <Icon
-            name="icon-gui-information-circle-micro"
-            color="text-neutral-800 dark:text-neutral-500"
-            size="1rem"
+            name="icon-gui-information-circle-outline"
+            color="text-neutral-700 dark:text-neutral-600"
+            size={iconSize as IconSize}
           />
         )}
       </button>
