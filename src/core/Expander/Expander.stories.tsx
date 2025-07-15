@@ -1,5 +1,5 @@
 import React from "react";
-import { userEvent, within, expect, waitFor } from "@storybook/test";
+import { userEvent, within, expect, waitFor } from "storybook/test";
 import Expander from "../Expander";
 import Icon from "../Icon";
 

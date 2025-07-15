@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import CodeSnippet from "../CodeSnippet";
 import type { CodeSnippetProps, SDKType } from "../CodeSnippet";
 

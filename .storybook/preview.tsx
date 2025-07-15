@@ -2,7 +2,7 @@ import React from "react";
 import { initialize, mswLoader } from "msw-storybook-addon";
 
 import "./styles.css";
-import { themes } from "@storybook/theming";
+import { themes } from "storybook/theming";
 import theme, { brandImage, brandImageDark } from "./theme";
 
 initialize({

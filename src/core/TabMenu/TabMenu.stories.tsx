@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react-vite";
 import TabMenu, { TabMenuProps } from "../TabMenu";
 import cn from "../utils/cn";
 
