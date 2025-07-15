@@ -1,6 +1,6 @@
 import React from "react";
 import Flash, { reducerFlashes } from "../Flash";
-import { expect, within } from "@storybook/test";
+import { expect, within } from "storybook/test";
 
 import {
   attachStoreToWindow,
