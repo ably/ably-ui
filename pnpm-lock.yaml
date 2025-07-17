@@ -152,7 +152,7 @@ importers:
         version: 26.1.0
       mixpanel-browser:
         specifier: ^2.60.0
-        version: 2.65.0
+        version: 2.66.0
       msw:
         specifier: 2.10.2
         version: 2.10.2(@types/node@20.19.1)(typescript@5.8.3)
@@ -4071,8 +4071,8 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  mixpanel-browser@2.65.0:
-    resolution: {integrity: sha512-BtrVYqilloAqx3TIhoIpNikHznTocEy/z3QIf6WEiz4PFxrgI6LgSMFIVKqLqGZJ8svrPlHbpp/CJp5wQYUZWw==}
+  mixpanel-browser@2.66.0:
+    resolution: {integrity: sha512-n02abeEhQCNHnpQlYTYx8EzcZGpNXvmw8ozgbFiTbthMRY65aPXuRat5hCiZXllZ+UY31awszFx/LpryPwie0A==}
 
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
@@ -9894,7 +9894,7 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mixpanel-browser@2.65.0:
+  mixpanel-browser@2.66.0:
     dependencies:
       rrweb: 2.0.0-alpha.18
 
@@ -10540,7 +10540,7 @@ snapshots:
 
   rrweb-snapshot@2.0.0-alpha.18:
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.6
 
   rrweb@2.0.0-alpha.18:
     dependencies:
