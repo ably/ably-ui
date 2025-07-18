@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import cn from "./utils/cn";
 import Icon from "./Icon";
 import type { IconName, IconSize } from "./Icon/types";
+import { ColorClass } from "./styles/colors/types";
 
 export type SegmentedControlSize = "md" | "sm" | "xs";
 
@@ -111,7 +112,12 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
       aria-disabled={disabled}
     >
       {leftIcon && (
-        <Icon name={leftIcon} size={iconSizes[size]} aria-hidden="true" />
+        <Icon
+          name={leftIcon}
+          size={iconSizes[size]}
+          aria-hidden="true"
+          color={contentColorStyles[variant][activeKey] as ColorClass}
+        />
       )}
       {children && (
         <span
@@ -126,7 +132,12 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
         </span>
       )}
       {rightIcon && (
-        <Icon name={rightIcon} size={iconSizes[size]} aria-hidden="true" />
+        <Icon
+          name={rightIcon}
+          size={iconSizes[size]}
+          aria-hidden="true"
+          color={contentColorStyles[variant][activeKey] as ColorClass}
+        />
       )}
     </div>
   );
