@@ -62,9 +62,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
       <button type="button"
               class="ui-button-primary-lg ui-button-lg-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Large
       </button>
@@ -78,9 +90,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
       <button type="button"
               class="ui-button-primary ui-button-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Regular
       </button>
@@ -94,9 +118,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
       <button type="button"
               class="ui-button-primary-sm ui-button-sm-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Small
       </button>
@@ -110,9 +146,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
       <button type="button"
               class="ui-button-primary-xs"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Extra small
       </button>
@@ -129,9 +177,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-lg ui-button-lg-right-icon"
       >
         Large
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -145,9 +205,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary ui-button-right-icon"
       >
         Regular
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -161,9 +233,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-sm ui-button-sm-right-icon"
       >
         Small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -177,9 +261,21 @@ exports[`Components/Button Primary smoke-test 1`] = `
               class="ui-button-primary-xs"
       >
         Extra small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -303,9 +399,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
       <button type="button"
               class="ui-button-priority-lg ui-button-lg-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Large
       </button>
@@ -319,9 +427,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
       <button type="button"
               class="ui-button-priority ui-button-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Regular
       </button>
@@ -335,9 +455,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
       <button type="button"
               class="ui-button-priority-sm ui-button-sm-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Small
       </button>
@@ -351,9 +483,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
       <button type="button"
               class="ui-button-priority-xs"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Extra small
       </button>
@@ -370,9 +514,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-lg ui-button-lg-right-icon"
       >
         Large
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -386,9 +542,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority ui-button-right-icon"
       >
         Regular
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -402,9 +570,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-sm ui-button-sm-right-icon"
       >
         Small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -418,9 +598,21 @@ exports[`Components/Button Priority smoke-test 1`] = `
               class="ui-button-priority-xs"
       >
         Extra small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -596,9 +788,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       <button type="button"
               class="ui-button-secondary-lg ui-button-lg-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Large
       </button>
@@ -612,9 +816,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       <button type="button"
               class="ui-button-secondary ui-button-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Regular
       </button>
@@ -628,9 +844,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       <button type="button"
               class="ui-button-secondary-sm ui-button-sm-left-icon"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Small
       </button>
@@ -644,9 +872,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
       <button type="button"
               class="ui-button-secondary-xs"
       >
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-magnifying-glass-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          >
+          </path>
         </svg>
         Extra small
       </button>
@@ -663,9 +903,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-lg ui-button-lg-right-icon"
       >
         Large
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -679,9 +931,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary ui-button-right-icon"
       >
         Regular
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -695,9 +959,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-sm ui-button-sm-right-icon"
       >
         Small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>
@@ -711,9 +987,21 @@ exports[`Components/Button Secondary smoke-test 1`] = `
               class="ui-button-secondary-xs"
       >
         Extra small
-        <svg style="width: 1.5rem; height: 1.5rem;">
-          <use xlink:href="#sprite-icon-gui-arrow-long-right-outline">
-          </use>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             aria-hidden="true"
+             data-slot="icon"
+             class
+             style="width: 1.5rem; height: 1.5rem;"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          >
+          </path>
         </svg>
       </button>
     </div>

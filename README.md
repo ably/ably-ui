@@ -102,31 +102,18 @@ import Meganav from "@ably/ui/core/Meganav";
 
 ### Icons
 
-We have access to two sets of icons via the `Icon` component, custom local assets hosted in the repo itself, and the third-party Heroicons library.
+Icons are available in two formats to support different application types:
 
-#### Local Custom Icons
+1. **React Component Imports** (recommended for React apps)
+2. **SVG Spritesheets** (fallback for non-React apps)
 
-Putting SVG files inside a `src/core/icons` folder will:
+We provide access to both custom local assets hosted in the repo and the third-party [Heroicons](https://heroicons.com/) library.
 
-1. Add them to a per-group sprites file (e.g., `core/sprites-gui.svg`) for backward compatibility
-2. Generate React components that can be imported dynamically
+#### For React Applications (Recommended)
 
-The sprites file can be loaded with the `loadSprites` helper available in the `core` module or included in the page directly.
+**Using the Icon React Component**
 
-#### Heroicons Integration
-
-The system automatically falls back to [Heroicons](https://heroicons.com/) when a local icon isn't found, using this naming convention:
-
-- `icon-gui-{heroicon-name}-{variant}`
-
-Where `variant` can be:
-
-- `outline` → 24px outline icons
-- `solid` → 24px solid icons
-- `mini` → 20px solid icons
-- `micro` → 16px solid icons
-
-#### Usage with the Icon React Component
+The `Icon` component is the preferred method for React applications, providing automatic fallback and consistent sizing:
 
 ```tsx
 // Local custom icon
@@ -139,7 +126,17 @@ Where `variant` can be:
 <Icon name="icon-gui-chevron-down" variant="solid" size="1.5rem" />
 ```
 
-#### Usage without a component (sprites method)
+**How the React Component Works**
+
+1. **First**: Attempts to load a local React component generated from your custom SVGs
+2. **Fallback**: If no local component exists, dynamically imports the corresponding heroicon
+3. **Graceful degradation**: If neither exists, returns null (no icon displayed)
+
+#### For Non-React Applications
+
+**Using SVG Spritesheets**
+
+For applications that don't use React, icons are available as SVG sprites that can be referenced directly:
 
 ```html
 <!-- The width and height are required for correct sizing. The actual color class might depend on the svg and whether it uses strokes, fills etc. Note as well xlink:href, which is xlinkHref in react. -->
@@ -148,7 +145,7 @@ Where `variant` can be:
 </svg>
 ```
 
-Usage without a component, in React, with hover states. Note the [group](https://tailwindcss.com/docs/hover-focus-and-other-states#group-hover) class:
+Even in React applications, you can use the sprite method for advanced use cases like hover states with the [group](https://tailwindcss.com/docs/hover-focus-and-other-states#group-hover) class:
 
 ```tsx
 <a
@@ -162,11 +159,29 @@ Usage without a component, in React, with hover states. Note the [group](https:/
 </a>
 ```
 
-#### How the Fallback System Works
+The sprites file can be loaded with the `loadSprites` helper available in the `core` module or included in the page directly.
 
-1. **First**: Attempts to load a local React component generated from your custom SVGs
-2. **Fallback**: If no local component exists, dynamically imports the corresponding heroicon
-3. **Graceful degradation**: If neither exists, returns null (no icon displayed)
+#### Icon Sources
+
+**Local Custom Icons**
+
+Putting SVG files inside a `src/core/icons` folder will:
+
+1. Generate React components that can be imported dynamically
+2. Add them to a per-group sprites file (e.g., `core/sprites-gui.svg`) for non-React usage
+
+**Heroicons Integration**
+
+The system automatically falls back to [Heroicons](https://heroicons.com/) when a local icon isn't found, using this naming convention:
+
+- `icon-gui-{heroicon-name}-{variant}`
+
+Where `variant` can be:
+
+- `outline` → 24px outline icons
+- `solid` → 24px solid icons
+- `mini` → 20px solid icons
+- `micro` → 16px solid icons
 
 This hybrid approach allows you to use custom brand icons while having access to the entire heroicons library as a fallback.
 

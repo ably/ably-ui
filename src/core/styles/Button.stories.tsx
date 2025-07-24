@@ -2,6 +2,7 @@ import React from "react";
 import Button, { ButtonType, iconModifierClasses } from "../Button";
 import Tooltip from "../Tooltip";
 import cn from "../utils/cn";
+import Icon from "../Icon";
 
 export default {
   title: "Components/Button",
@@ -73,15 +74,17 @@ const buttonSet = (type: ButtonType) => (
                   disabled={index === 3}
                 >
                   {index === 1 ? (
-                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
-                      <use xlinkHref="#sprite-icon-gui-magnifying-glass-outline"></use>
-                    </svg>
+                    <Icon
+                      name="icon-gui-magnifying-glass-outline"
+                      size="1.5rem"
+                    />
                   ) : null}
                   {size.label}
                   {index === 2 ? (
-                    <svg style={{ width: "1.5rem", height: "1.5rem" }}>
-                      <use xlinkHref="#sprite-icon-gui-arrow-long-right-outline"></use>
-                    </svg>
+                    <Icon
+                      name="icon-gui-arrow-long-right-outline"
+                      size="1.5rem"
+                    />
                   ) : null}
                 </button>
               }
