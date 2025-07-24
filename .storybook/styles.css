@@ -14,3 +14,7 @@
 @import "../src/reset/styles.css";
 
 @import "./application.css";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
