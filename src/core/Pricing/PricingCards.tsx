@@ -200,7 +200,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                 </div>
                 <div className="flex flex-col gap-4 relative z-10 flex-grow">
                   {sections.map(({ title, items, listItemColors }) => (
-                    <div key={title} className="flex flex-col gap-2">
+                    <div key={title} className="flex flex-col gap-3">
                       <p className="text-neutral-700 dark:text-neutral-600 font-mono uppercase text-overline2 font-medium tracking-[0.12em] h-4">
                         {title}
                       </p>
@@ -232,7 +232,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                               ))}
                             </div>
                           ) : (
-                            <div key={item} className="flex items-start">
+                            <div key={item} className="flex items-start gap-2">
                               {listItemColors ? (
                                 <Icon
                                   name="icon-gui-check-circled-fill"
@@ -263,7 +263,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     <a
                       href={bottomCta.url}
                       className={cn(
-                        "text-[13px] font-sans font-semibold block group/bottom-cta cursor-pointer pt-4",
+                        "text-[13px] font-sans font-semibold group/bottom-cta cursor-pointer pt-4 flex items-center",
                         "text-neutral-700 dark:text-neutral-600 hover:text-neutral-1300 dark:hover:text-neutral-000 focus:outline-none focus-visible:outline-gui-focus",
                       )}
                     >
@@ -273,7 +273,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         size="12px"
                         color={bottomCta.iconColor}
                         additionalCSS={cn(
-                          "align-middle ml-2 relative transition-[bottom] group-hover/bottom-cta:-bottom-0.5",
+                          "align-middle ml-2 relative transition-[bottom] bottom-0 group-hover/bottom-cta:-bottom-0.5",
                         )}
                       />
                     </a>
