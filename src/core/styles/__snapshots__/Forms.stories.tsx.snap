@@ -468,7 +468,7 @@ exports[`Styles/Forms Textareas smoke-test 1`] = `
   <textarea id="example-text-area"
             class="ui-textarea"
             rows="2"
-            placeholder="The <textarea> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form."
+            placeholder="The &lt;textarea&gt; HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form."
   >
   </textarea>
   <p class="ui-text-p3 text-dark-grey">
