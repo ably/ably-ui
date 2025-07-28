@@ -101,7 +101,7 @@ importers:
         version: 4.1.9
       '@types/mixpanel-browser':
         specifier: ^2.60.0
-        version: 2.60.0
+        version: 2.66.0
       '@types/node':
         specifier: ^20
         version: 20.19.1
@@ -152,7 +152,7 @@ importers:
         version: 26.1.0
       mixpanel-browser:
         specifier: ^2.60.0
-        version: 2.66.0
+        version: 2.67.0
       msw:
         specifier: 2.10.2
         version: 2.10.2(@types/node@20.19.1)(typescript@5.8.3)
@@ -1894,8 +1894,9 @@ packages:
   '@types/mdx@2.0.10':
     resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}
 
-  '@types/mixpanel-browser@2.60.0':
-    resolution: {integrity: sha512-70oe8T3KdxHwsSo5aZphALdoqcsIorQBrlisnouIn9Do4dmC2C6/D56978CmSE/BO2QHgb85ojPGa4R8OFvVHA==}
+  '@types/mixpanel-browser@2.66.0':
+    resolution: {integrity: sha512-07zYZZ9ZVHc7R4ktM+3a2clZvKkj+EJcYZ/FevTs011Fr9tdp59lVgAskMf6ZQUp3lOHLqi7K3f+9QtmEsqh1w==}
+    deprecated: This is a stub types definition. mixpanel-browser provides its own type definitions, so you do not need this installed.
 
   '@types/node@20.19.1':
     resolution: {integrity: sha512-jJD50LtlD2dodAEO653i3YF04NWak6jN3ky+Ri3Em3mGR39/glWiboM/IePaRbgwSfqM1TpGXfAg8ohn/4dTgA==}
@@ -4071,8 +4072,8 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  mixpanel-browser@2.66.0:
-    resolution: {integrity: sha512-n02abeEhQCNHnpQlYTYx8EzcZGpNXvmw8ozgbFiTbthMRY65aPXuRat5hCiZXllZ+UY31awszFx/LpryPwie0A==}
+  mixpanel-browser@2.67.0:
+    resolution: {integrity: sha512-LudY4eRIkvjEpAlIAg10i2T2mbtiKZ4XlMGbTyF1kcAhEqMa9JhEEdEcjxYPwiKhuMVSBM3RVkNCZaNqcnE4ww==}
 
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
@@ -7268,7 +7269,9 @@ snapshots:
 
   '@types/mdx@2.0.10': {}
 
-  '@types/mixpanel-browser@2.60.0': {}
+  '@types/mixpanel-browser@2.66.0':
+    dependencies:
+      mixpanel-browser: 2.67.0
 
   '@types/node@20.19.1':
     dependencies:
@@ -9889,7 +9892,7 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mixpanel-browser@2.66.0:
+  mixpanel-browser@2.67.0:
     dependencies:
       rrweb: 2.0.0-alpha.18
 
