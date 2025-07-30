@@ -60,6 +60,10 @@ export type HeaderProps = {
    */
   isNoticeVisible?: boolean;
   /**
+   * Height of the notice banner in pixels.
+   */
+  noticeHeight?: number;
+  /**
    * Optional search bar element.
    */
   searchBar?: ReactNode;
@@ -153,6 +157,7 @@ const MAX_MOBILE_MENU_WIDTH = "560px";
 const Header: React.FC<HeaderProps> = ({
   className,
   isNoticeVisible = false,
+  noticeHeight = 0,
   searchBar,
   searchButton,
   logoHref,
@@ -183,6 +188,16 @@ const Header: React.FC<HeaderProps> = ({
       setFadingOut(false);
     }, 150);
   };
+
+  useEffect(() => {
+    const handleNoticeClose = () => {
+      setBannerVisible(false);
+    };
+
+    document.addEventListener("notice-closed", handleNoticeClose);
+    return () =>
+      document.removeEventListener("notice-closed", handleNoticeClose);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -260,7 +275,10 @@ const Header: React.FC<HeaderProps> = ({
             "md:top-auto": bannerVisible,
           },
         )}
-        style={{ height: HEADER_HEIGHT }}
+        style={{
+          height: HEADER_HEIGHT,
+          top: bannerVisible ? `${noticeHeight}px` : "0",
+        }}
       >
         <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">

@@ -28,6 +28,7 @@ export type MeganavProps = {
   notice?: MeganavNoticeBannerProps;
   theme?: string;
   themedScrollpoints?: ThemedScrollpoint[];
+  onNoticeClose?: () => void;
 };
 
 const Meganav = ({
@@ -35,6 +36,7 @@ const Meganav = ({
   notice,
   theme,
   themedScrollpoints,
+  onNoticeClose,
 }: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
   const mobileNavItems = useMemo(
@@ -84,10 +86,17 @@ const Meganav = ({
         data-testid="meganav"
         style={{ height: HEADER_HEIGHT + noticeHeight }}
       >
-        {notice && <Notice {...notice.props} config={notice.config} />}
+        {notice && (
+          <Notice
+            {...notice.props}
+            config={notice.config}
+            onClose={onNoticeClose}
+          />
+        )}
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
           isNoticeVisible={!!notice}
+          noticeHeight={noticeHeight}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}
