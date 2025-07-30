@@ -1,7 +1,13 @@
 @layer components {
   .ui-announcement {
-    @apply font-sans;
-    max-height: 37.5rem;
-    transition: max-height 300ms;
+    @apply font-sans transition-[max-height,transform,opacity] duration-150 ease-in-out;
+  }
+
+  .ui-announcement-visible {
+    @apply max-h-[37.5rem] translate-y-0 opacity-100 overflow-visible;
+  }
+
+  .ui-announcement-hidden {
+    @apply max-h-0 -translate-y-full opacity-0 overflow-hidden;
   }
 }

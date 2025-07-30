@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
@@ -32,6 +32,7 @@ export type NoticeProps = {
   };
   bgColor?: string;
   textColor?: ColorClass | ColorThemeSet;
+  onClose?: () => void;
 
   bannerContainer?: Element | null;
   cookieId?: string;
@@ -65,12 +66,14 @@ const Notice = ({
   closeBtn,
   bgColor = "bg-orange-100 dark:bg-orange-1100",
   textColor = defaultTextColor,
+  onClose,
 }: NoticeProps) => {
   const contentRef = useRef<HTMLSpanElement>(null);
+  const [isClosing, setIsClosing] = useState(false);
   useRailsUjsLinks(contentRef);
 
   useEffect(() => {
-    NoticeScripts({
+    const cleanup = NoticeScripts({
       bannerContainer: document.querySelector('[data-id="ui-notice"]'),
       cookieId: config?.cookieId,
       noticeId: config?.noticeId,
@@ -78,6 +81,8 @@ const Notice = ({
         collapse: config?.options?.collapse || false,
       },
     });
+
+    return cleanup;
   }, [config?.cookieId, config?.noticeId, config?.options?.collapse]);
 
   const safeContent = DOMPurify.sanitize(bodyText ?? "", {
@@ -88,9 +93,15 @@ const Notice = ({
 
   return (
     <div
-      className={cn("ui-announcement", bgColor, textColor)}
+      className={cn(
+        "ui-announcement relative z-[60]",
+        isClosing
+          ? "ui-announcement-hidden max-h-0 -translate-y-full opacity-0 overflow-hidden" // have to add the classes here as src/core/Notice/component.css is not being properly imported or distributed when ably-ui is used as a package.
+          : "ui-announcement-visible",
+        bgColor,
+        textColor,
+      )}
       data-id="ui-notice"
-      style={{ maxHeight: 0, overflow: "hidden" }}
     >
       <div className="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
         <ContentWrapper buttonLink={buttonLink ?? "#"}>
@@ -112,7 +123,14 @@ const Notice = ({
         {closeBtn && (
           <button
             type="button"
-            className="ml-auto h-5 w-5 border-none bg-none self-baseline"
+            className="ml-auto h-5 w-5 border-none bg-none self-baseline outline-none focus:outline-none focus:ring-0 focus:border-transparent"
+            onClick={() => {
+              setIsClosing(true);
+              setTimeout(() => {
+                document.dispatchEvent(new CustomEvent("notice-closed"));
+                onClose?.();
+              }, 100);
+            }}
           >
             <Icon
               name="icon-gui-x-mark-outline"
