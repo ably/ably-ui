@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Notice Default smoke-test 1`] = `
-<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+<div class="ui-announcement relative z-[60] bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
      data-id="ui-notice"
      style
 >
@@ -41,7 +41,7 @@ exports[`Components/Notice Default smoke-test 1`] = `
 `;
 
 exports[`Components/Notice RailsUjs smoke-test 1`] = `
-<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+<div class="ui-announcement relative z-[60] bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
      data-id="ui-notice"
      style
 >

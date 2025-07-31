@@ -32,6 +32,7 @@ export type NoticeProps = {
   };
   bgColor?: string;
   textColor?: ColorClass | ColorThemeSet;
+  onClose?: () => void;
 
   bannerContainer?: Element | null;
   cookieId?: string;
@@ -65,6 +66,7 @@ const Notice = ({
   closeBtn,
   bgColor = "bg-orange-100 dark:bg-orange-1100",
   textColor = defaultTextColor,
+  onClose,
 }: NoticeProps) => {
   const contentRef = useRef<HTMLSpanElement>(null);
   useRailsUjsLinks(contentRef);
@@ -88,7 +90,7 @@ const Notice = ({
 
   return (
     <div
-      className={cn("ui-announcement", bgColor, textColor)}
+      className={cn("ui-announcement relative z-[60]", bgColor, textColor)}
       data-id="ui-notice"
       style={{ maxHeight: 0, overflow: "hidden" }}
     >
@@ -113,6 +115,10 @@ const Notice = ({
           <button
             type="button"
             className="ml-auto h-5 w-5 border-none bg-none self-baseline"
+            onClick={() => {
+              document.dispatchEvent(new CustomEvent("notice-closed"));
+              onClose?.();
+            }}
           >
             <Icon
               name="icon-gui-x-mark-outline"
