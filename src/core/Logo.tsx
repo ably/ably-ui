@@ -1,4 +1,6 @@
-import React from "react";
+import React, { AnchorHTMLAttributes, ImgHTMLAttributes } from "react";
+import Badge from "./Badge";
+import cn from "./utils/cn";
 import LogoAssetMonoStacked from "./images/logo/ably-logo-mono-stacked.svg";
 import LogoAssetMonoWhiteStacked from "./images/logo/ably-logo-mono-white-stacked.svg";
 import LogoAssetMonoWhite from "./images/logo/ably-logo-mono-white.svg";
@@ -13,11 +15,12 @@ type LogoProps = {
   logoUrl?: string;
   logoAlt?: string;
   href?: string;
-  additionalImgAttrs?: object;
-  additionalLinkAttrs?: object;
+  additionalImgAttrs?: ImgHTMLAttributes<HTMLImageElement>;
+  additionalLinkAttrs?: AnchorHTMLAttributes<HTMLAnchorElement>;
   theme?: "light" | "dark";
   variant?: "default" | "mono";
   orientation?: "default" | "stacked";
+  badge?: string;
 };
 
 const Logo = ({
@@ -30,6 +33,7 @@ const Logo = ({
   orientation = "default",
   logoUrl,
   logoAlt = "Ably logo",
+  badge,
 }: LogoProps) => {
   const getLogoSrc = React.useCallback(() => {
     if (logoUrl) return logoUrl;
@@ -56,8 +60,21 @@ const Logo = ({
   const logoSrc = getLogoSrc();
 
   return (
-    <a href={href} data-id={dataId} className="block" {...additionalLinkAttrs}>
-      <img src={logoSrc} width="108px" alt={logoAlt} {...additionalImgAttrs} />
+    <a
+      href={href}
+      data-id={dataId}
+      {...additionalLinkAttrs}
+      className={cn(
+        "flex items-center gap-2 justify-center",
+        additionalLinkAttrs?.className,
+      )}
+    >
+      <img src={logoSrc} width="96px" alt={logoAlt} {...additionalImgAttrs} />
+      {badge && (
+        <Badge className="uppercase h-8 bg-transparent dark:bg-transparent rounded border border-neutral-400 dark:border-neutral-900 text-lg p-2 font-semibold text-neutral-800 dark:text-neutral-500">
+          {badge}
+        </Badge>
+      )}
     </a>
   );
 };
