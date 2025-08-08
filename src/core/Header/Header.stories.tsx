@@ -143,3 +143,9 @@ WithSearchBar.args = {
     <input type="text" placeholder="Search" className="ui-input w-64" />
   ),
 };
+
+export const WithLogoBadge = Template.bind({});
+WithLogoBadge.args = {
+  ...baseArgs,
+  logoBadge: "docs",
+};

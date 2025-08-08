@@ -136,6 +136,11 @@ export type HeaderProps = {
    * Optional location object to detect location changes.
    */
   location?: Location;
+
+  /**
+   * Optional badge text to display on the logo.
+   */
+  logoBadge?: string;
 };
 
 const FLEXIBLE_DESKTOP_CLASSES = "hidden md:flex flex-1 items-center h-full";
@@ -160,6 +165,7 @@ const Header: React.FC<HeaderProps> = ({
   themedScrollpoints = [],
   searchButtonVisibility = "all",
   location,
+  logoBadge,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
@@ -248,7 +254,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 md:px-16",
+          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 lg:px-16",
           scrollpointClasses,
           {
             "md:top-auto": bannerVisible,
@@ -263,8 +269,9 @@ const Header: React.FC<HeaderProps> = ({
                 key={theme}
                 href={logoHref}
                 theme={theme}
+                badge={logoBadge}
                 additionalLinkAttrs={{
-                  className: cn("h-full focus-base rounded mr-8 w-24", {
+                  className: cn("h-full focus-base rounded mr-4 lg:mr-8", {
                     "flex dark:hidden": theme === "light",
                     "hidden dark:flex": theme === "dark",
                   }),
