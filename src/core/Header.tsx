@@ -60,6 +60,10 @@ export type HeaderProps = {
    */
   isNoticeVisible?: boolean;
   /**
+   * Height of the notice banner in pixels.
+   */
+  noticeHeight?: number;
+  /**
    * Optional search bar element.
    */
   searchBar?: ReactNode;
@@ -148,6 +152,7 @@ const MAX_MOBILE_MENU_WIDTH = "560px";
 const Header: React.FC<HeaderProps> = ({
   className,
   isNoticeVisible = false,
+  noticeHeight = 0,
   searchBar,
   searchButton,
   logoHref,
@@ -179,6 +184,16 @@ const Header: React.FC<HeaderProps> = ({
   };
 
   useEffect(() => {
+    const handleNoticeClose = () => {
+      setBannerVisible(false);
+    };
+
+    document.addEventListener("notice-closed", handleNoticeClose);
+    return () =>
+      document.removeEventListener("notice-closed", handleNoticeClose);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setBannerVisible(
         window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
@@ -201,7 +216,7 @@ const Header: React.FC<HeaderProps> = ({
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints]);
+  }, [themedScrollpoints, isNoticeVisible]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -242,19 +257,21 @@ const Header: React.FC<HeaderProps> = ({
       ) : null,
     [searchButton],
   );
-
   return (
     <>
       <header
         role="banner"
         className={cn(
-          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 md:px-16",
+          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-all duration-300 ease-in-out px-6 md:px-16",
           scrollpointClasses,
           {
             "md:top-auto": bannerVisible,
           },
         )}
-        style={{ height: HEADER_HEIGHT }}
+        style={{
+          height: HEADER_HEIGHT,
+          top: bannerVisible ? `${noticeHeight}px` : "0",
+        }}
       >
         <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">
