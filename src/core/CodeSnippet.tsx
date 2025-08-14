@@ -259,7 +259,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   const requiresApiKeySubstitution = useMemo(() => {
     const containsPlaceholder = codeData.some(
       (code) =>
-        code?.content.includes("{{API_KEY}}") && code?.language === lang,
+        code?.content.includes("{{API_KEY}}") &&
+        stripSdkType(code?.language) === lang,
     );
 
     return (
