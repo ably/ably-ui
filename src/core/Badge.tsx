@@ -57,6 +57,11 @@ interface BadgeProps {
    * Accessible label for the badge when interactive
    */
   ariaLabel?: string;
+
+  /**
+   * Additional CSS class names to apply to the children of the badge.
+   */
+  childClassName?: string;
 }
 
 const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
@@ -65,6 +70,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   iconBefore,
   iconAfter,
   className,
+  childClassName,
   children,
   disabled = false,
   focusable = false,
@@ -140,7 +146,13 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
       {iconBefore ? (
         <Icon name={iconBefore} size={iconSize} color={colorClass} />
       ) : null}
-      <span className={cn("whitespace-nowrap tracking-[0.04em]", childClass)}>
+      <span
+        className={cn(
+          "whitespace-nowrap tracking-[0.04em]",
+          childClass,
+          childClassName,
+        )}
+      >
         {children}
       </span>
       {iconAfter ? (
