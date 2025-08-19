@@ -96,8 +96,8 @@ exports[`Components/Logo WithBadge smoke-test 1`] = `
          width="96px"
          alt="Ably logo"
     >
-    <div class="inline-flex gap-1 items-center focus-base transition-colors select-none uppercase h-8 bg-transparent dark:bg-transparent rounded border border-neutral-400 dark:border-neutral-900 text-lg p-2 font-semibold text-neutral-800 dark:text-neutral-500">
-      <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
+    <div class="inline-flex gap-1 items-center focus-base transition-colors select-none uppercase h-[25px] px-1.5 py-[3px] bg-transparent mt-[2px] dark:bg-transparent rounded-[4px] border border-neutral-400 dark:border-neutral-900 text-sm font-semibold text-neutral-800 dark:text-neutral-500">
+      <span class="whitespace-nowrap leading-[20px] tracking-[0.01em]">
         docs
       </span>
     </div>
@@ -109,8 +109,8 @@ exports[`Components/Logo WithBadge smoke-test 1`] = `
          width="96px"
          alt="Ably logo"
     >
-    <div class="inline-flex gap-1 items-center focus-base transition-colors select-none uppercase h-8 bg-transparent dark:bg-transparent rounded border border-neutral-400 dark:border-neutral-900 text-lg p-2 font-semibold text-neutral-800 dark:text-neutral-500">
-      <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
+    <div class="inline-flex gap-1 items-center focus-base transition-colors select-none uppercase h-[25px] px-1.5 py-[3px] bg-transparent mt-[2px] dark:bg-transparent rounded-[4px] border border-neutral-400 dark:border-neutral-900 text-sm font-semibold text-neutral-800 dark:text-neutral-500">
+      <span class="whitespace-nowrap leading-[20px] tracking-[0.01em]">
         docs
       </span>
     </div>

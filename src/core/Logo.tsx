@@ -71,7 +71,10 @@ const Logo = ({
     >
       <img src={logoSrc} width="96px" alt={logoAlt} {...additionalImgAttrs} />
       {badge && (
-        <Badge className="uppercase h-8 bg-transparent dark:bg-transparent rounded border border-neutral-400 dark:border-neutral-900 text-lg p-2 font-semibold text-neutral-800 dark:text-neutral-500">
+        <Badge
+          className="uppercase h-[25px] px-1.5 py-[3px] bg-transparent mt-[2px] dark:bg-transparent rounded-[4px] border border-neutral-400 dark:border-neutral-900 text-sm font-semibold text-neutral-800 dark:text-neutral-500"
+          childClassName="tracking-[0.01em]"
+        >
           {badge}
         </Badge>
       )}
