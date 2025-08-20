@@ -306,51 +306,6 @@ export const WithMissingLanguageSnippet: Story = {
 };
 
 /**
- * CodeSnippet with a language change callback that's fired whenever the user
- * selects a different language. Note: this callback doesn't fire on initial render.
- */
-export const WithOnChangeCallback: Story = {
-  render: () => {
-    const [currentLang, setCurrentLang] = useState<string>(
-      "realtime_javascript",
-    );
-    const [_currentSdk, setCurrentSdk] = useState<string>("realtime");
-
-    return (
-      <div>
-        <CodeSnippet
-          headerRow
-          title="Language Change Example"
-          lang={currentLang}
-          onChange={(lang, sdk) => {
-            setCurrentLang(lang);
-            setCurrentSdk(sdk || "realtime");
-            alert(`Language changed to: ${lang} and SDK: ${sdk}`);
-          }}
-        >
-          <pre>
-            <code className="language-realtime_javascript">
-              {CODE_SNIPPETS.javascript}
-            </code>
-          </pre>
-          <pre>
-            <code className="language-realtime_typescript">
-              {CODE_SNIPPETS.typescript}
-            </code>
-          </pre>
-          <pre>
-            <code className="language-rest_swift">{CODE_SNIPPETS.swift}</code>
-          </pre>
-          <pre>
-            <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
-          </pre>
-        </CodeSnippet>
-      </div>
-    );
-  },
-};
-
-/**
  * CodeSnippet with demo API key mode, showing a "DEMO ONLY" badge and information tooltip.
  */
 export const WithDemoApiKeys: Story = {
@@ -469,6 +424,57 @@ export const WithSDKTypes: Story = {
           <code className="language-rest_kotlin">{CODE_SNIPPETS.kotlin}</code>
         </pre>
       </CodeSnippet>
+    );
+  },
+};
+
+export const WithFallbackSDKTypeAcrossInstances: Story = {
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+    const [currentSdk, setCurrentSdk] = useState<SDKType>("realtime");
+
+    return (
+      <div className="flex flex-col gap-4">
+        <CodeSnippet
+          headerRow
+          title="SDK Type Example (realtime only)"
+          lang={currentLang}
+          sdk={currentSdk}
+          onChange={(lang, sdk) => {
+            setCurrentLang(lang);
+            setCurrentSdk(sdk || "realtime");
+          }}
+        >
+          <pre>
+            <code className="language-realtime_javascript">
+              {CODE_SNIPPETS.javascript}
+            </code>
+          </pre>
+          <pre>
+            <code className="language-realtime_typescript">
+              {CODE_SNIPPETS.typescript}
+            </code>
+          </pre>
+        </CodeSnippet>
+
+        <CodeSnippet
+          headerRow
+          title="SDK Type Example (rest only)"
+          lang={currentLang}
+          sdk={currentSdk}
+          onChange={(lang, sdk) => {
+            setCurrentLang(lang);
+            setCurrentSdk(sdk || "realtime");
+          }}
+        >
+          <pre>
+            <code className="language-rest_php">{CODE_SNIPPETS.php}</code>
+          </pre>
+          <pre>
+            <code className="language-rest_kotlin">{CODE_SNIPPETS.kotlin}</code>
+          </pre>
+        </CodeSnippet>
+      </div>
     );
   },
 };
