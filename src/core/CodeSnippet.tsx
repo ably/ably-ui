@@ -217,13 +217,20 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       };
     }, [children, extractLanguageFromCode]);
 
+  const resolvedSdk: SDKType = useMemo(() => {
+    if (sdkTypes.size === 1 && sdk && !sdkTypes.has(sdk)) {
+      return Array.from(sdkTypes)[0];
+    }
+    return sdk ?? null;
+  }, [sdk, sdkTypes]);
+
   const showSDKSelector = sdkTypes.size > 0;
 
   const filteredLanguages = useMemo(() => {
     const filtered =
-      !sdk || !showSDKSelector
+      !resolvedSdk || !showSDKSelector
         ? [...languages]
-        : languages.filter((lang) => lang.startsWith(`${sdk}_`));
+        : languages.filter((lang) => lang.startsWith(`${resolvedSdk}_`));
 
     // Apply custom ordering if provided
     if (languageOrdering && languageOrdering.length > 0) {
@@ -242,11 +249,11 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     }
 
     return filtered;
-  }, [sdk, showSDKSelector, languages, languageOrdering]);
+  }, [resolvedSdk, showSDKSelector, languages, languageOrdering]);
 
   const activeLanguage = useMemo(() => {
-    if (sdk && sdkTypes.has(sdk)) {
-      return `${sdk}_${lang}`;
+    if (resolvedSdk && sdkTypes.has(resolvedSdk)) {
+      return `${resolvedSdk}_${lang}`;
     }
 
     if (lang) return lang;
@@ -254,7 +261,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (filteredLanguages.length > 0) return filteredLanguages[0];
 
     return languages[0];
-  }, [lang, sdk, sdkTypes, filteredLanguages]);
+  }, [lang, resolvedSdk, sdkTypes, filteredLanguages]);
 
   const requiresApiKeySubstitution = useMemo(() => {
     const containsPlaceholder = codeData.some(
@@ -357,10 +364,10 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   const handleLanguageChange = useCallback(
     (language: string) => {
       if (onChange) {
-        onChange(stripSdkType(language), sdk);
+        onChange(stripSdkType(language), resolvedSdk);
       }
     },
-    [onChange, sdk],
+    [onChange, resolvedSdk],
   );
 
   const NoSnippetMessage = useMemo(() => {
@@ -464,7 +471,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {sdkTypes.has("realtime") && (
               <TooltipButton
                 tooltip="Realtime SDK"
-                active={sdk === "realtime"}
+                active={resolvedSdk === "realtime"}
                 onClick={() => handleSDKTypeChange("realtime")}
                 variant="segmented"
                 size="sm"
@@ -477,7 +484,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {sdkTypes.has("rest") && (
               <TooltipButton
                 tooltip="REST SDK"
-                active={sdk === "rest"}
+                active={resolvedSdk === "rest"}
                 onClick={() => handleSDKTypeChange("rest")}
                 variant="segmented"
                 size="sm"
