@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect } from "react";
 import * as Tabs from "@radix-ui/react-tabs";
-import throttle from "lodash.throttle";
+import { throttle } from "es-toolkit/compat";
 import cn from "./utils/cn";
 
 type TabTriggerContent =

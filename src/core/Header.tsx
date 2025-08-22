@@ -8,7 +8,7 @@ import {
   HEADER_HEIGHT,
 } from "./utils/heights";
 import { HeaderLinks } from "./Header/HeaderLinks";
-import throttle from "lodash.throttle";
+import { throttle } from "es-toolkit/compat";
 import { Theme } from "./styles/colors/types";
 import { COLLAPSE_TRIGGER_DISTANCE } from "./Notice/component";
 

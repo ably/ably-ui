@@ -1,5 +1,5 @@
 import Cookie from "js-cookie";
-import throttle from "lodash.throttle";
+import { throttle } from "es-toolkit/compat";
 
 import { queryId } from "../dom-query";
 import { FLASH_DATA_ID } from "../Flash";
