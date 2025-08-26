@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import throttle from "lodash.throttle";
+import { throttle } from "es-toolkit/compat";
 import type { PricingDataFeature } from "./types";
 import Icon from "../Icon";
 import LinkButton from "../LinkButton";

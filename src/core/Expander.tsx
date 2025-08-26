@@ -5,7 +5,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import throttle from "lodash.throttle";
+import { throttle } from "es-toolkit/compat";
 
 type ExpanderProps = {
   heightThreshold?: number;

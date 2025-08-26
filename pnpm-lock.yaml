@@ -35,6 +35,9 @@ importers:
       dompurify:
         specifier: ^3.2.4
         version: 3.2.6
+      es-toolkit:
+        specifier: ^1.39.10
+        version: 1.39.10
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
@@ -44,9 +47,6 @@ importers:
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
-      lodash.throttle:
-        specifier: ^4.1.1
-        version: 4.1.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -96,9 +96,6 @@ importers:
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6
-      '@types/lodash.throttle':
-        specifier: ^4.1.9
-        version: 4.1.9
       '@types/mixpanel-browser':
         specifier: ^2.60.0
         version: 2.66.0
@@ -1898,12 +1895,6 @@ packages:
   '@types/js-cookie@3.0.6':
     resolution: {integrity: sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==}
 
-  '@types/lodash.throttle@4.1.9':
-    resolution: {integrity: sha512-PCPVfpfueguWZQB7pJQK890F2scYKoDUL3iM522AptHWn7d5NQmeS/LTEHIcLr5PaTzl3dK2Z0xSUHHTHwaL5g==}
-
-  '@types/lodash@4.17.7':
-    resolution: {integrity: sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==}
-
   '@types/mdx@2.0.10':
     resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}
 
@@ -2936,6 +2927,9 @@ packages:
     resolution: {integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==}
     engines: {node: '>= 0.4'}
 
+  es-toolkit@1.39.10:
+    resolution: {integrity: sha512-E0iGnTtbDhkeczB0T+mxmoVlT4YNweEKBLq7oaU4p11mecdsZpNWOglI4895Vh4usbQ+LsJiuLuI2L0Vdmfm2w==}
+
   es6-error@4.1.1:
     resolution: {integrity: sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==}
 
@@ -3955,9 +3949,6 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-
-  lodash.throttle@4.1.1:
-    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -7283,12 +7274,6 @@ snapshots:
 
   '@types/js-cookie@3.0.6': {}
 
-  '@types/lodash.throttle@4.1.9':
-    dependencies:
-      '@types/lodash': 4.17.7
-
-  '@types/lodash@4.17.7': {}
-
   '@types/mdx@2.0.10': {}
 
   '@types/mixpanel-browser@2.66.0':
@@ -8494,6 +8479,8 @@ snapshots:
       is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
+
+  es-toolkit@1.39.10: {}
 
   es6-error@4.1.1: {}
 
@@ -9808,8 +9795,6 @@ snapshots:
   lodash.flattendeep@4.4.0: {}
 
   lodash.merge@4.6.2: {}
-
-  lodash.throttle@4.1.1: {}
 
   lodash@4.17.21: {}
 
