@@ -52,6 +52,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        "ably-heading": "var(--color-ably-heading)",
+        "ably-primary": "var(--color-ably-primary)",
+        "ably-secondary": "var(--color-ably-secondary)",
+        "ably-label": "var(--color-ably-label)",
         "neutral-000": "var(--color-neutral-000)",
         "neutral-100": "var(--color-neutral-100)",
         "neutral-200": "var(--color-neutral-200)",
