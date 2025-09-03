@@ -79,6 +79,11 @@ const languages: LanguageMap = {
     icon: "icon-tech-json",
     syntaxHighlighterKey: "json",
   },
+  laravel: {
+    label: "Laravel",
+    icon: "icon-tech-laravel-broadcast",
+    syntaxHighlighterKey: "php",
+  },
   xml: {
     label: "XML",
     icon: "icon-tech-web",
