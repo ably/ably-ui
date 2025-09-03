@@ -1,5 +1,6 @@
 import React from "react";
 import { initialize, mswLoader } from "msw-storybook-addon";
+import type { Preview } from "@storybook/react";
 
 import "./styles.css";
 import { themes } from "storybook/theming";
@@ -15,7 +16,7 @@ initialize({
   },
 });
 
-const preview = {
+const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
