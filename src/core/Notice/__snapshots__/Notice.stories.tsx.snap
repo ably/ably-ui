@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Notice Default smoke-test 1`] = `
-<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-ably-primary"
      data-id="ui-notice"
      style
 >
   <div class="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
     <a href="/"
-       class="w-full pr-2 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+       class="w-full pr-2 ui-text-p4 self-center text-ably-primary"
     >
       <strong class="font-bold whitespace-nowrap pr-1">
         Flashy title
@@ -26,7 +26,7 @@ exports[`Components/Notice Default smoke-test 1`] = `
            stroke="currentColor"
            aria-hidden="true"
            data-slot="icon"
-           class="text-neutral-1300 dark:text-neutral-000"
+           class="text-ably-primary"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <path stroke-linecap="round"
@@ -41,13 +41,13 @@ exports[`Components/Notice Default smoke-test 1`] = `
 `;
 
 exports[`Components/Notice RailsUjs smoke-test 1`] = `
-<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-neutral-1300 dark:text-neutral-000"
+<div class="ui-announcement bg-orange-100 dark:bg-orange-1100 text-ably-primary"
      data-id="ui-notice"
      style
 >
   <div class="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
     <a href="/"
-       class="w-full pr-2 ui-text-p4 self-center text-neutral-1300 dark:text-neutral-000"
+       class="w-full pr-2 ui-text-p4 self-center text-ably-primary"
     >
       <strong class="font-bold whitespace-nowrap pr-1">
         With Rails UJS
@@ -71,7 +71,7 @@ exports[`Components/Notice RailsUjs smoke-test 1`] = `
            stroke="currentColor"
            aria-hidden="true"
            data-slot="icon"
-           class="text-neutral-1300 dark:text-neutral-000"
+           class="text-ably-primary"
            style="width: 1.25rem; height: 1.25rem;"
       >
         <path stroke-linecap="round"

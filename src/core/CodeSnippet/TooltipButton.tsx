@@ -50,7 +50,7 @@ const TooltipButton = memo(
             className={cn(
               "focus-base",
               active
-                ? "bg-neutral-000 dark:bg-neutral-1300"
+                ? "bg-ably-primary-inverse"
                 : "bg-neutral-100 dark:bg-neutral-1200",
               className,
             )}
@@ -64,7 +64,7 @@ const TooltipButton = memo(
         <div
           role="button"
           className={cn(
-            "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
+            "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-ably-secondary-inverse transition-colors focus-base",
             className,
           )}
           onClick={onClick}

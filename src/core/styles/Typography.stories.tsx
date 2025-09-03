@@ -49,12 +49,12 @@ const fontCell = (style) => (
   <div
     key={style.label}
     className={cn(
-      "rounded-lg p-4 flex flex-col gap-2 bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-000",
+      "rounded-lg p-4 flex flex-col gap-2 bg-neutral-100 dark:bg-neutral-1200",
       style.className,
     )}
   >
     <div>{style.label}</div>
-    <code className="font-mono ui-text-code2 bg-neutral-200 text-neutral-1200 dark:bg-neutral-1100 dark:text-neutral-100 rounded-lg p-2">
+    <code className="font-mono ui-text-code2 bg-neutral-200 dark:bg-neutral-1100 rounded-lg p-2">
       {style.className
         .split(" ")
         .map((className) => `.${className}`)
@@ -112,7 +112,7 @@ export const Links = {
       </p>
       <div className="flex flex-wrap">
         <div className="p-4 mb-4 mr-4 border rounded">
-          <p className="ui-text-p1 text-charcoal-grey">
+          <p className="ui-text-p1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
             nostra,{" "}
@@ -124,7 +124,7 @@ export const Links = {
           </p>
         </div>
         <div className="p-4 mb-4 mr-4 border rounded bg-cool-black">
-          <p className="ui-text-p1 text-white">
+          <p className="ui-text-p1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
             nostra,{" "}
@@ -136,7 +136,7 @@ export const Links = {
           </p>
         </div>
         <div className="p-4 mb-4 mr-4 border rounded bg-jazzy-pink">
-          <p className="ui-text-p1 text-charcoal-grey">
+          <p className="ui-text-p1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Class aptent taciti sociosqu ad litora torquent per conubia
             nostra{" "}

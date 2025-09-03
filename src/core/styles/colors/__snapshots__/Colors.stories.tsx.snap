@@ -1,5 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
+<div class="flex flex-wrap gap-6">
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-1300) 50%, var(--color-neutral-000) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-1300 / neutral-000
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-000) 50%, var(--color-neutral-1300) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary-inverse
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-000 / neutral-1300
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-1000) 50%, var(--color-neutral-300) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-secondary
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-1000 / neutral-300
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-300) 50%, var(--color-neutral-1000) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-secondary-inverse
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-300 / neutral-1000
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-800) 50%, var(--color-neutral-500) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-tertiary
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-800 / neutral-500
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-500) 50%, var(--color-neutral-800) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-tertiary-inverse
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-500 / neutral-800
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-700) 50%, var(--color-neutral-600) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-label
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-700 / neutral-600
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-600) 50%, var(--color-neutral-700) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-label-inverse
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-600 / neutral-700
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Styles/Colors GUIColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
   <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
@@ -8,13 +125,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-default-light
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #006edc
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 110, 220)
       </p>
     </div>
@@ -25,13 +142,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-hover-light
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #0862b9
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(8, 98, 185)
       </p>
     </div>
@@ -42,13 +159,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-active-light
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #074095
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(7, 64, 149)
       </p>
     </div>
@@ -59,13 +176,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-default-dark
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #4da6ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(77, 166, 255)
       </p>
     </div>
@@ -76,13 +193,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-hover-dark
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2894ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(40, 148, 255)
       </p>
     </div>
@@ -93,13 +210,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-active-dark
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #0080ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 128, 255)
       </p>
     </div>
@@ -110,13 +227,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-blue-focus
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #80b9f2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(128, 185, 242)
       </p>
     </div>
@@ -127,13 +244,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-unavailable
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #a8a8a8
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(168, 168, 168)
       </p>
     </div>
@@ -144,13 +261,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-success-green
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #11cb24
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(17, 203, 36)
       </p>
     </div>
@@ -161,13 +278,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-error-red
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #fb0c0c
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(251, 12, 12)
       </p>
     </div>
@@ -178,13 +295,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-focus
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #80b9f2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(128, 185, 242)
       </p>
     </div>
@@ -195,13 +312,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-focus-outline
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #80b9f2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(128, 185, 242)
       </p>
     </div>
@@ -212,13 +329,13 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         gui-visited
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #4887c2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(72, 135, 194)
       </p>
     </div>
@@ -234,13 +351,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-000
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffffff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 255, 255)
       </p>
     </div>
@@ -251,13 +368,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #f6f8fa
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(246, 248, 250)
       </p>
     </div>
@@ -268,13 +385,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #eef1f6
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(238, 241, 246)
       </p>
     </div>
@@ -285,13 +402,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #e6eaf0
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(230, 234, 240)
       </p>
     </div>
@@ -302,13 +419,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #e2e7ef
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(226, 231, 239)
       </p>
     </div>
@@ -319,13 +436,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #c6ced9
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(198, 206, 217)
       </p>
     </div>
@@ -336,13 +453,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #a7b1be
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(167, 177, 190)
       </p>
     </div>
@@ -353,13 +470,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #8992a4
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(137, 146, 164)
       </p>
     </div>
@@ -370,13 +487,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #687288
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(104, 114, 136)
       </p>
     </div>
@@ -387,13 +504,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #5b5a72
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(91, 90, 114)
       </p>
     </div>
@@ -404,13 +521,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-1000
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #434356
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(67, 67, 86)
       </p>
     </div>
@@ -421,13 +538,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-1100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2c3344
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(44, 51, 68)
       </p>
     </div>
@@ -438,13 +555,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-1200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #141924
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(20, 25, 36)
       </p>
     </div>
@@ -455,13 +572,13 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         neutral-1300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #03020d
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(3, 2, 13)
       </p>
     </div>
@@ -477,13 +594,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #fff5f1
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 245, 241)
       </p>
     </div>
@@ -494,13 +611,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffe3d8
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 227, 216)
       </p>
     </div>
@@ -511,13 +628,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffc4ae
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 196, 174)
       </p>
     </div>
@@ -528,13 +645,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff9c79
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 156, 121)
       </p>
     </div>
@@ -545,13 +662,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff723f
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 114, 63)
       </p>
     </div>
@@ -562,13 +679,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff5416
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 84, 22)
       </p>
     </div>
@@ -579,13 +696,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff2739
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 39, 57)
       </p>
     </div>
@@ -596,13 +713,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #e40000
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(228, 0, 0)
       </p>
     </div>
@@ -613,13 +730,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #b82202
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(184, 34, 2)
       </p>
     </div>
@@ -630,13 +747,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-1000
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #751500
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(117, 21, 0)
       </p>
     </div>
@@ -647,13 +764,13 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         orange-1100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2a0b00
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(42, 11, 0)
       </p>
     </div>
@@ -669,13 +786,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #fffbef
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 251, 239)
       </p>
     </div>
@@ -686,13 +803,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #fff0ba
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 240, 186)
       </p>
     </div>
@@ -703,13 +820,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffe27c
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 226, 124)
       </p>
     </div>
@@ -720,13 +837,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffd43d
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 212, 61)
       </p>
     </div>
@@ -737,13 +854,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #f8c100
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(248, 193, 0)
       </p>
     </div>
@@ -754,13 +871,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #e8a700
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(232, 167, 0)
       </p>
     </div>
@@ -771,13 +888,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ac8600
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(172, 134, 0)
       </p>
     </div>
@@ -788,13 +905,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #654f00
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(101, 79, 0)
       </p>
     </div>
@@ -805,13 +922,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         yellow-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #291c01
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(41, 28, 1)
       </p>
     </div>
@@ -822,13 +939,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #f1fff1
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(241, 255, 241)
       </p>
     </div>
@@ -839,13 +956,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #b8ffbb
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(184, 255, 187)
       </p>
     </div>
@@ -856,13 +973,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #80ff85
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(128, 255, 133)
       </p>
     </div>
@@ -873,13 +990,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #08ff13
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(8, 255, 19)
       </p>
     </div>
@@ -890,13 +1007,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #00e80b
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 232, 11)
       </p>
     </div>
@@ -907,13 +1024,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #00c008
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 192, 8)
       </p>
     </div>
@@ -924,13 +1041,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #008e06
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 142, 6)
       </p>
     </div>
@@ -941,13 +1058,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #005303
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 83, 3)
       </p>
     </div>
@@ -958,13 +1075,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         green-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #002a02
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 42, 2)
       </p>
     </div>
@@ -975,13 +1092,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #f1fbff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(241, 251, 255)
       </p>
     </div>
@@ -992,13 +1109,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #b8eaff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(184, 234, 255)
       </p>
     </div>
@@ -1009,13 +1126,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #80d9ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(128, 217, 255)
       </p>
     </div>
@@ -1026,13 +1143,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #4ad4ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(74, 212, 255)
       </p>
     </div>
@@ -1043,13 +1160,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2cc0ff
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(44, 192, 255)
       </p>
     </div>
@@ -1060,13 +1177,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #00a5ec
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 165, 236)
       </p>
     </div>
@@ -1077,13 +1194,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #0284cd
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(2, 132, 205)
       </p>
     </div>
@@ -1094,13 +1211,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #004b75
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 75, 117)
       </p>
     </div>
@@ -1111,13 +1228,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         blue-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #001b2a
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(0, 27, 42)
       </p>
     </div>
@@ -1128,13 +1245,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #f7f2fe
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(247, 242, 254)
       </p>
     </div>
@@ -1145,13 +1262,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #d8bcfb
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(216, 188, 251)
       </p>
     </div>
@@ -1162,13 +1279,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #b986f8
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(185, 134, 248)
       </p>
     </div>
@@ -1179,13 +1296,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #9951f5
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(153, 81, 245)
       </p>
     </div>
@@ -1196,13 +1313,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #7a1bf2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(122, 27, 242)
       </p>
     </div>
@@ -1213,13 +1330,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #5f0bc9
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(95, 11, 201)
       </p>
     </div>
@@ -1230,13 +1347,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #460894
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(70, 8, 148)
       </p>
     </div>
@@ -1247,13 +1364,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2d055e
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(45, 5, 94)
       </p>
     </div>
@@ -1264,13 +1381,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         violet-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #130228
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(19, 2, 40)
       </p>
     </div>
@@ -1281,13 +1398,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-100
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #fff1fc
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 241, 252)
       </p>
     </div>
@@ -1298,13 +1415,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-200
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ffb8f1
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 184, 241)
       </p>
     </div>
@@ -1315,13 +1432,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-300
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff80e6
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 128, 230)
       </p>
     </div>
@@ -1332,13 +1449,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-400
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff47db
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 71, 219)
       </p>
     </div>
@@ -1349,13 +1466,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-500
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #ff17d2
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(255, 23, 210)
       </p>
     </div>
@@ -1366,13 +1483,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-600
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #d400ab
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(212, 0, 171)
       </p>
     </div>
@@ -1383,13 +1500,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-700
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #9c007e
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(156, 0, 126)
       </p>
     </div>
@@ -1400,13 +1517,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-800
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #630050
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(99, 0, 80)
       </p>
     </div>
@@ -1417,13 +1534,13 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
     >
     </div>
     <div class="p-3 flex flex-col flex-1">
-      <p class="ui-text-p2 font-semibold flex-1 text-neutral-1000 dark:text-neutral-300">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
         pink-900
       </p>
-      <p class="ui-text-p3 font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 font-normal text-ably-tertiary">
         #2a0022
       </p>
-      <p class="ui-text-p3 text-[12px] font-normal text-neutral-800 dark:text-neutral-500">
+      <p class="ui-text-p3 text-[12px] font-normal text-ably-tertiary">
         rgb(42, 0, 34)
       </p>
     </div>

@@ -163,7 +163,8 @@ const Tooltip = ({
         {triggerElement ?? (
           <Icon
             name="icon-gui-information-circle-outline"
-            color="text-neutral-700 dark:text-neutral-600 hover:text-neutral-1000 dark:hover:text-neutral-300"
+            color="text-ably-label"
+            additionalCSS="hover:text-ably-secondary"
             size={iconSize}
           />
         )}

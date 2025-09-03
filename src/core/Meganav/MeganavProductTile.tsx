@@ -26,7 +26,7 @@ const MeganavProductTile = ({
       className={cn(
         "transition-colors group/product-tile",
         "flex flex-col p-3 rounded-lg gap-2",
-        "bg-neutral-000 dark:bg-neutral-1300",
+        "bg-ably-primary-inverse",
         {
           "hover:bg-neutral-100 dark:hover:bg-neutral-1200": !unavailable,
         },

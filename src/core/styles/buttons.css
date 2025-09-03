@@ -36,19 +36,19 @@
   }
 
   .ui-button-primary-base {
-    @apply bg-neutral-1300 text-neutral-000 hover:bg-neutral-1100 active:bg-neutral-1200 active:text-neutral-300 ui-button-disabled-base;
+    @apply bg-ably-primary text-ably-primary-inverse hover:bg-neutral-1100 active:bg-neutral-1200 active:text-neutral-300 ui-button-disabled-base;
   }
 
   .ui-theme-dark .ui-button-primary-base {
-    @apply bg-neutral-000 text-neutral-1300 hover:bg-neutral-200 active:bg-neutral-100 active:text-neutral-1000 ui-button-disabled-base-dark;
+    @apply hover:bg-neutral-200 active:bg-neutral-100 active:text-neutral-1000 ui-button-disabled-base-dark;
   }
 
   .ui-button-secondary-base {
-    @apply text-neutral-1300 active:text-neutral-1000 border border-neutral-600 hover:border-neutral-800 active:border-neutral-700 disabled:border-gui-unavailable disabled:text-gui-unavailable;
+    @apply text-ably-primary active:text-neutral-1000 border border-neutral-600 hover:border-neutral-800 active:border-neutral-700 disabled:border-gui-unavailable disabled:text-gui-unavailable;
   }
 
   .ui-theme-dark .ui-button-secondary-base {
-    @apply text-neutral-000 active:text-neutral-300 border-neutral-700 hover:border-neutral-500 active:border-neutral-600 disabled:border-gui-unavailable-dark disabled:text-gui-unavailable-dark;
+    @apply active:text-neutral-300 border-neutral-700 hover:border-neutral-500 active:border-neutral-600 disabled:border-gui-unavailable-dark disabled:text-gui-unavailable-dark;
   }
 
   .ui-button-priority-lg {

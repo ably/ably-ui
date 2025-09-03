@@ -131,7 +131,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
         colorClass,
         { "focus-base": focusable },
         {
-          "hover:bg-neutral-300 hover:dark:bg-neutral-1000 active:bg-neutral-300 dark:active:bg-neutral-1000":
+          "hover:bg-ably-secondary-inverse active:bg-ably-secondary-inverse":
             hoverable,
         },
         {

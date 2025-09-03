@@ -21,7 +21,10 @@ type PricingDataFeatureCta = {
 export type PricingDataFeatureSection = {
   title: string;
   items: string[] | string[][];
-  listItemColors?: { foreground: ColorThemeSet; background: ColorThemeSet };
+  listItemColors?: {
+    foreground: ColorClass | ColorThemeSet;
+    background: ColorClass | ColorThemeSet;
+  };
 };
 
 export type PricingDataFeatureBorder = {

@@ -44,10 +44,7 @@ export const RadioButton = ({ index, disabled }: FormElementProps) => (
       className="ui-radio"
       disabled={disabled}
     />
-    <label
-      className="text-neutral-1300 dark:text-neutral-000"
-      htmlFor={`radio-example-${index}`}
-    >
+    <label className="text-ably-primary" htmlFor={`radio-example-${index}`}>
       Option {index}
     </label>
   </div>

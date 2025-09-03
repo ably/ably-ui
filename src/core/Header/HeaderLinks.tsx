@@ -34,10 +34,10 @@ export const HeaderLinks: React.FC<
   const formRef = useRef<HTMLFormElement>(null);
 
   const headerLinkClasses =
-    "ui-text-label2 md:ui-text-label3 !font-bold py-4 text-neutral-1300 dark:text-neutral-000 md:text-neutral-1000 dark:md:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-1300 dark:active:text-neutral-000 transition-colors";
+    "ui-text-label2 md:ui-text-label3 !font-bold py-4 text-ably-primary md:text-ably-secondary hover:text-ably-primary active:text-ably-primary transition-colors";
 
   const dropdownMenuLinkClasses =
-    "block p-2 ui-text-label3 font-semibold text-neutral-1000 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 rounded-lg";
+    "block p-2 ui-text-label3 font-semibold text-ably-secondary hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 rounded-lg";
 
   const onClickLogout = (e: MouseEvent) => {
     e.preventDefault();
@@ -69,7 +69,7 @@ export const HeaderLinks: React.FC<
           {LogoutForm}
           <div className="block md:hidden">
             <div className="flex flex-col border-b-[1px] border-neutral-300 px-4 pb-3 mb-3">
-              <span className="py-3 ui-text-sub-header text-[18px] text-neutral-700 dark:text-neutral-600 font-bold">
+              <span className="py-3 ui-text-sub-header text-[18px] text-ably-label font-bold">
                 {sessionState.accountName}
               </span>
               {<DashboardLink className={headerLinkClasses} />}
@@ -142,14 +142,14 @@ export const HeaderLinks: React.FC<
           <LinkButton
             href="/login"
             variant="secondary"
-            className="flex-1 md:flex-none md:ui-button-secondary-xs hover:text-neutral-1300 dark:hover:text-neutral-000"
+            className="flex-1 md:flex-none md:ui-button-secondary-xs hover:text-ably-primary"
           >
             Login
           </LinkButton>
           <LinkButton
             href="/sign-up"
             variant="primary"
-            className="flex-1 md:flex-none md:ui-button-primary-xs hover:text-neutral-000 dark:hover:text-neutral-1300"
+            className="flex-1 md:flex-none md:ui-button-primary-xs hover:text-ably-primary-inverse"
           >
             Start free
           </LinkButton>

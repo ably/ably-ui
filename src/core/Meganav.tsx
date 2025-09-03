@@ -56,11 +56,11 @@ const Meganav = ({
     },
     {
       id: "main",
-      className: "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
+      className: "ui-theme-light bg-ably-primary-inverse border-b",
     },
     {
       id: "main-theme-dark",
-      className: "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
+      className: "ui-theme-dark bg-ably-primary-inverse border-b",
     },
   ];
 
@@ -93,7 +93,7 @@ const Meganav = ({
               menuItems={menuItemsForHeader}
               className="justify-left z-40"
               flyOutClassName="flex justify-left"
-              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-1 bg-neutral-000 dark:bg-neutral-1300"
+              viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-1 bg-ably-primary-inverse"
             />
           }
           mobileNav={<MeganavMobile navItems={mobileNavItems} />}

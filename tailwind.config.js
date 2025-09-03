@@ -52,6 +52,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        "ably-primary": "var(--color-ably-primary)",
+        "ably-primary-inverse": "var(--color-ably-primary-inverse)",
+        "ably-secondary": "var(--color-ably-secondary)",
+        "ably-secondary-inverse": "var(--color-ably-secondary-inverse)",
+        "ably-tertiary": "var(--color-ably-tertiary)",
+        "ably-tertiary-inverse": "var(--color-ably-tertiary-inverse)",
+        "ably-label": "var(--color-ably-label)",
+        "ably-label-inverse": "var(--color-ably-label-inverse)",
         "neutral-000": "var(--color-neutral-000)",
         "neutral-100": "var(--color-neutral-100)",
         "neutral-200": "var(--color-neutral-200)",

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
-<div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+<div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
   <div class="items-center flex"
        style="gap: 48px;"
   >
@@ -16,7 +16,7 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
              height="128"
              fill="none"
              viewbox="0 0 128 128"
-             class="text-neutral-1300 dark:text-neutral-000"
+             class="text-ably-primary"
              style="width: 96px; height: 96px;"
         >
           <path stroke="currentColor"
@@ -33,7 +33,7 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
       >
         Ably
       </span>
-      <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+      <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
             style="font-size: 55.3846px;"
       >
         Pub/Sub
@@ -45,14 +45,14 @@ exports[`Components/Product Tile LargerProductTile smoke-test 1`] = `
 
 exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-8">
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -108,25 +108,25 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Pub/Sub
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -182,25 +182,25 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Chat
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -254,25 +254,25 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Spaces
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +311,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -329,25 +329,25 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveSync
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path fill="currentColor"
@@ -402,25 +402,25 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Asset Tracking
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -468,7 +468,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000 flex group-hover/product-tile:hidden"
+               class="text-ably-primary flex group-hover/product-tile:hidden"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -493,14 +493,14 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Sync application state across client devices.
     </span>
   </div>
@@ -523,7 +523,7 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
              height="128"
              fill="none"
              viewbox="0 0 128 128"
-             class="text-neutral-1300 dark:text-neutral-000"
+             class="text-ably-primary"
              style="width: 26.6667px; height: 26.6667px;"
         >
           <path stroke="currentColor"
@@ -540,14 +540,14 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       >
         Ably
       </span>
-      <span class="block ui-text-p2 font-bold dark:text-neutral-000 mt-[-3px] text-orange-500"
+      <span class="block ui-text-p2 font-bold mt-[-3px] text-orange-500"
             style="font-size: 15.3846px;"
       >
         Pub/Sub
       </span>
     </span>
   </div>
-  <span class="block ui-text-p3 font-medium leading-snug dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300 text-blue-500">
+  <span class="block ui-text-p3 font-medium leading-snug group-hover/product-tile:text-ably-secondary text-blue-500">
     Low-level APIs for building realtime applications.
   </span>
 </div>
@@ -555,14 +555,14 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
 
 exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-8">
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -570,7 +570,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -587,25 +587,25 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Pub/Sub
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -613,7 +613,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -630,25 +630,25 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Chat
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -656,7 +656,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -673,25 +673,25 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Spaces
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -699,7 +699,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -717,25 +717,25 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveSync
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -743,7 +743,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path fill="currentColor"
@@ -759,25 +759,25 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Asset Tracking
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 cursor-pointer">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
       <span class="block p-px bg-gradient-to-b from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300"
             style="width: 40px; height: 40px; border-radius: 10px;"
       >
-        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300"
+        <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-1200 group-hover/product-tile:bg-ably-primary-inverse"
               style="height: 38px; border-radius: 10px;"
         >
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -785,7 +785,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -810,14 +810,14 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-secondary group-hover/product-tile:text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Sync application state across client devices.
     </span>
   </div>
@@ -826,7 +826,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
 
 exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-8 justify-center">
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -841,7 +841,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -854,7 +854,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -869,7 +869,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -882,7 +882,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -897,7 +897,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -910,7 +910,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -925,7 +925,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -939,7 +939,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -954,7 +954,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path fill="currentColor"
@@ -966,7 +966,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
       </span>
     </div>
   </div>
-  <div class="transition-colors group/product-tile bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile bg-ably-primary-inverse">
     <div class="items-center inline-flex"
          style="gap: 0px;"
     >
@@ -981,7 +981,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1007,7 +1007,7 @@ exports[`Components/Product Tile ProductTilesWithoutDescriptionsOrLabels smoke-t
 
 exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
 <div class="grid sm:grid-cols-3 gap-8">
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1022,7 +1022,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1039,18 +1039,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Pub/Sub
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Low-level APIs for building realtime applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1065,7 +1065,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1082,18 +1082,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Chat
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Build feature-rich live chat experiences.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1108,7 +1108,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1125,18 +1125,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Spaces
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Enhance your application with collaborative features.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1151,7 +1151,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1169,18 +1169,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveSync
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Fan-out database changes to client applications.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1195,7 +1195,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path fill="currentColor"
@@ -1211,18 +1211,18 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           Asset Tracking
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Track the geographic location of assets and fleets.
     </span>
   </div>
-  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-neutral-000 dark:bg-neutral-1300">
+  <div class="transition-colors group/product-tile flex flex-col p-3 rounded-lg gap-2 bg-ably-primary-inverse">
     <div class="items-center flex"
          style="gap: 13.3333px;"
     >
@@ -1237,7 +1237,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
                height="128"
                fill="none"
                viewbox="0 0 128 128"
-               class="text-neutral-1300 dark:text-neutral-000"
+               class="text-ably-primary"
                style="width: 26.6667px; height: 26.6667px;"
           >
             <path stroke="currentColor"
@@ -1262,14 +1262,14 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         >
           Ably
         </span>
-        <span class="block ui-text-p2 font-bold text-neutral-1300 dark:text-neutral-000 mt-[-3px]"
+        <span class="block ui-text-p2 font-bold text-ably-primary mt-[-3px]"
               style="font-size: 15.3846px;"
         >
           LiveObjects
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-ably-tertiary group-hover/product-tile:text-ably-secondary">
       Sync application state across client devices.
     </span>
   </div>

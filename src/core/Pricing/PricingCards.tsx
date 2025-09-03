@@ -50,7 +50,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
           <Icon
             name={delimiter}
             size="20px"
-            additionalCSS={"text-neutral-800 dark:text-neutral-500"}
+            additionalCSS={"text-ably-tertiary"}
           />
         ) : null}
       </div>
@@ -169,10 +169,10 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                         delimiter,
                     })}
                   >
-                    <p className="ui-text-h1 text-h1-xl font-medium tracking-tight leading-none text-neutral-1300 dark:text-neutral-000">
+                    <p className="ui-text-h1 text-h1-xl font-medium tracking-tight leading-none text-ably-primary">
                       {price.amount}
                     </p>
-                    <div className="ui-text-p3 text-neutral-1300 dark:text-neutral-000">
+                    <div className="ui-text-p3 text-ably-primary">
                       {price.content}
                     </div>
                   </div>
@@ -199,7 +199,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                 <div className="flex flex-col gap-4 relative z-10 flex-grow">
                   {sections.map(({ title, items, listItemColors }) => (
                     <div key={title} className="flex flex-col gap-3">
-                      <p className="text-neutral-700 dark:text-neutral-600 font-mono uppercase text-overline2 font-medium tracking-[0.12em] h-4">
+                      <p className="text-ably-label font-mono uppercase text-overline2 font-medium tracking-[0.12em] h-4">
                         {title}
                       </p>
                       <div className={cn({ "flex flex-col": !delimiter })}>
@@ -221,7 +221,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                                   className={cn(
                                     "ui-text-p3",
                                     index === 0 ? "font-bold" : "font-medium",
-                                    "text-neutral-1000 dark:text-neutral-300 leading-[1.4rem]",
+                                    "text-ably-secondary leading-[1.4rem]",
                                     subIndex % 2 === 1 ? "text-right" : "",
                                   )}
                                 >
@@ -242,7 +242,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                               ) : null}
                               <div
                                 className={cn(
-                                  `flex-1 font-medium text-neutral-1000 dark:text-neutral-300 ui-text-p3`,
+                                  `flex-1 font-medium text-ably-secondary ui-text-p3`,
                                 )}
                               >
                                 {item}
@@ -262,7 +262,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                       href={bottomCta.url}
                       className={cn(
                         "text-[13px] font-sans font-semibold group/bottom-cta cursor-pointer pt-4 flex items-center",
-                        "text-neutral-700 dark:text-neutral-600 hover:text-neutral-1300 dark:hover:text-neutral-000 focus:outline-none focus-visible:outline-gui-focus",
+                        "text-ably-label hover:text-ably-primary focus:outline-none focus-visible:outline-gui-focus",
                       )}
                     >
                       {bottomCta.text}

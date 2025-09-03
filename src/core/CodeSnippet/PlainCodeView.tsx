@@ -34,7 +34,7 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
   return (
     <div
       className={cn(
-        "rounded-lg overflow-hidden bg-neutral-000 dark:bg-neutral-1300 border border-neutral-300 dark:border-neutral-1000 relative flex items-center",
+        "rounded-lg overflow-hidden bg-ably-primary-inverse border border-ably-secondary-inverse relative flex items-center",
         language === "shell" ? "min-h-[3.375rem]" : "min-h-12",
         className,
       )}
@@ -48,11 +48,7 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
       {icon && (
         <div className="absolute top-2 left-2 z-10">
           <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
-            <Icon
-              name={icon}
-              size="20px"
-              color="text-neutral-1300 dark:text-neutral-000"
-            />
+            <Icon name={icon} size="20px" color="text-ably-primary" />
           </div>
         </div>
       )}
@@ -61,7 +57,7 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
         language={language}
         snippet={content}
         additionalCSS={cn(
-          "w-full bg-neutral-000 text-neutral-1300 dark:bg-neutral-1300 dark:text-neutral-200 px-4 py-2",
+          "w-full bg-ably-primary-inverse text-neutral-1300 dark:text-neutral-200 px-4 py-2",
           icon && "pl-14",
         )}
         showLines={false}

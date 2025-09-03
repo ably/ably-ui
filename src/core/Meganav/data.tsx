@@ -36,7 +36,7 @@ export type MenuItem = {
 const panelClassName = "w-full sm:w-[50.9375rem]";
 
 const panelLeftFeatureClassName =
-  "bg-neutral-100 dark:bg-neutral-1200 hidden md:grid border border-neutral-300 dark:border-neutral-1000 hover:border-neutral-400 dark:hover:border-neutral-800 rounded-lg cursor-pointer group/meganav-panel";
+  "bg-neutral-100 dark:bg-neutral-1200 hidden md:grid border border-ably-secondary-inverse hover:border-neutral-400 dark:hover:border-neutral-800 rounded-lg cursor-pointer group/meganav-panel";
 
 const productsMenu: FlyoutPanelList[] = [
   {

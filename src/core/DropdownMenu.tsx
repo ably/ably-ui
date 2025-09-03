@@ -101,7 +101,7 @@ const Trigger = ({
       role="button"
       onClick={() => setOpen(!isOpen)}
       className={cn(
-        "flex items-center ui-text-label3 font-bold text-neutral-1000 dark:text-neutral-300 focus:outline-none",
+        "flex items-center ui-text-label3 font-bold text-ably-secondary focus:outline-none",
         triggerClassNames,
       )}
     >
@@ -111,7 +111,7 @@ const Trigger = ({
           isOpen ? "icon-gui-chevron-up-mini" : "icon-gui-chevron-down-mini"
         }
         size="1.25rem"
-        additionalCSS="text-neutral-1300 dark:text-neutral-000"
+        additionalCSS="text-ably-primary"
       />
     </button>
   );
@@ -133,7 +133,7 @@ const Content = ({
       id="menu-content"
       role="menu"
       className={cn(
-        "flex flex-col absolute z-10 border border-neutral-400 dark:border-neutral-900 bg-neutral-000 dark:bg-neutral-1300 rounded-lg ui-shadow-md-soft",
+        "flex flex-col absolute z-10 border border-neutral-400 dark:border-neutral-900 bg-ably-primary-inverse rounded-lg ui-shadow-md-soft",
         anchorPosition === "right" ? "right-0" : "left-0",
         contentClassNames,
       )}
@@ -148,7 +148,7 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
     <a
       href={url}
       className="menu-link group block p-2 rounded-lg
-      hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 hover:dark:text-neutral-000"
+      hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-ably-secondary hover:text-ably-primary"
     >
       <p className="mb-1">
         {title}
@@ -156,7 +156,7 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
           <Icon
             name={iconName}
             size="1rem"
-            additionalCSS="align-middle ml-2 relative -top-px -left-1 text-neutral-1300 dark:text-neutral-000"
+            additionalCSS="align-middle ml-2 relative -top-px -left-1 text-ably-primary"
           />
         ) : null}
       </p>

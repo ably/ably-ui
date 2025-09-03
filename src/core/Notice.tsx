@@ -39,7 +39,7 @@ export type NoticeProps = {
   options?: { collapse: boolean };
 };
 
-const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
+const defaultTextColor = "text-ably-primary";
 
 const contentWrapperClasses = "w-full pr-2 ui-text-p4 self-center";
 

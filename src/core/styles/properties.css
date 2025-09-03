@@ -166,6 +166,16 @@
       var(--color-jazzy-pink) 100%
     );
 
+    /* Used for theming */
+    --color-ably-primary: var(--color-neutral-1300);
+    --color-ably-primary-inverse: var(--color-neutral-000);
+    --color-ably-secondary: var(--color-neutral-1000);
+    --color-ably-secondary-inverse: var(--color-neutral-300);
+    --color-ably-tertiary: var(--color-neutral-800);
+    --color-ably-tertiary-inverse: var(--color-neutral-500);
+    --color-ably-label: var(--color-neutral-700);
+    --color-ably-label-inverse: var(--color-neutral-600);
+
     --fs-title-xl: 3rem;
     --fs-title: 2.75rem;
     --fs-title-xs: 2.5rem;
@@ -266,5 +276,16 @@
 
     /* Expose component values for cross-component usage */
     --ui-meganav-height: 4rem;
+  }
+
+  .ui-theme-dark {
+    --color-ably-primary: var(--color-neutral-000);
+    --color-ably-primary-inverse: var(--color-neutral-1300);
+    --color-ably-secondary: var(--color-neutral-300);
+    --color-ably-secondary-inverse: var(--color-neutral-1000);
+    --color-ably-tertiary: var(--color-neutral-500);
+    --color-ably-tertiary-inverse: var(--color-neutral-800);
+    --color-ably-label: var(--color-neutral-600);
+    --color-ably-label-inverse: var(--color-neutral-700);
   }
 }

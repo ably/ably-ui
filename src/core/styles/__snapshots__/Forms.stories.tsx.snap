@@ -371,7 +371,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              class="ui-radio"
              value="option-1"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-1"
       >
         Option 1
@@ -385,7 +385,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              class="ui-radio"
              value="option-2"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-2"
       >
         Option 2
@@ -399,7 +399,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              class="ui-radio"
              value="option-3"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-3"
       >
         Option 3
@@ -419,7 +419,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              disabled
              value="option-4"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-4"
       >
         Option 4
@@ -434,7 +434,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              disabled
              value="option-5"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-5"
       >
         Option 5
@@ -449,7 +449,7 @@ exports[`Styles/Forms RadioButtons smoke-test 1`] = `
              disabled
              value="option-6"
       >
-      <label class="text-neutral-1300 dark:text-neutral-000"
+      <label class="text-ably-primary"
              for="radio-example-6"
       >
         Option 6

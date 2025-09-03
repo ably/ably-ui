@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { IconName, IconSize } from "../Icon/types";
-import { ColorThemeSet } from "../styles/colors/types";
+import { ColorClass, ColorThemeSet } from "../styles/colors/types";
 
 /**
  * Represents the data structure for an Accordion component.
@@ -56,32 +56,32 @@ export type AccordionThemeColors = {
   /**
    * Background color class for the accordion.
    */
-  bg: ColorThemeSet;
+  bg: ColorClass | ColorThemeSet;
 
   /**
    * Background color when the accordion item is hovered.
    */
-  hoverBg: ColorThemeSet;
+  hoverBg: ColorClass | ColorThemeSet;
 
   /**
    * Text color class for the accordion.
    */
-  text: ColorThemeSet;
+  text: ColorClass | ColorThemeSet;
 
   /**
    * Color class for the toggle icon of the accordion.
    */
-  toggleIconColor: ColorThemeSet;
+  toggleIconColor: ColorClass | ColorThemeSet;
 
   /**
    * Optional background color class for selectable accordion items.
    */
-  selectableBg?: ColorThemeSet;
+  selectableBg?: ColorClass | ColorThemeSet;
 
   /**
    * Optional text color class for selectable accordion items.
    */
-  selectableText?: ColorThemeSet;
+  selectableText?: ColorClass | ColorThemeSet;
 
   /**
    * Optional border color for the accordion.

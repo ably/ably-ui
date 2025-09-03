@@ -8,7 +8,7 @@ export default {
     buttonLink: "/",
     title: "Flashy title",
     bodyText: "This is a notice",
-    textColor: "text-neutral-1300 dark:text-neutral-000",
+    textColor: "text-ably-primary",
     closeBtn: true,
   },
 };

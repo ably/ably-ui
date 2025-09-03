@@ -44,7 +44,7 @@ const ProductIcon = ({
         className={cn("flex items-center justify-center", {
           "bg-neutral-1200 dark:bg-neutral-100": selected,
           "bg-neutral-100 dark:bg-neutral-1200": !selected,
-          "group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300":
+          "group-hover/product-tile:bg-ably-primary-inverse":
             selected === false && !unavailable,
         })}
         style={{ height: innerSize, borderRadius: size / 4 }}
@@ -64,11 +64,10 @@ const ProductIcon = ({
           name={name}
           size={`${iconSize}px`}
           additionalCSS={cn({
-            "text-neutral-000 dark:text-neutral-1300": selected && !unavailable,
-            "text-neutral-1300 dark:text-neutral-000":
-              !selected && !unavailable,
-            "text-neutral-700 dark:text-neutral-600": selected && unavailable,
-            "text-neutral-600 dark:text-neutral-700": !selected && unavailable,
+            "text-ably-primary-inverse": selected && !unavailable,
+            "text-ably-primary": !selected && !unavailable,
+            "text-ably-label": selected && unavailable,
+            "text-ably-label-inverse": !selected && unavailable,
             "flex group-hover/product-tile:hidden": hoverName && !selected,
             hidden: hoverName && selected,
           })}

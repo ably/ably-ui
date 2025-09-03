@@ -98,9 +98,9 @@ const ProductTile = ({
       className={cn(
         "transition-colors group/product-tile",
         { "flex flex-col p-3 rounded-lg gap-2": containerPresent },
-        { "bg-neutral-1300 dark:bg-neutral-000": selected },
+        { "bg-ably-primary": selected },
         {
-          "bg-neutral-000 dark:bg-neutral-1300": !selected,
+          "bg-ably-primary-inverse": !selected,
         },
         {
           "hover:bg-neutral-100 dark:hover:bg-neutral-1200":
@@ -150,7 +150,7 @@ const ProductTile = ({
         <LinkButton
           variant="secondary"
           size="xs"
-          className="mt-2 !text-neutral-000 dark:!text-neutral-1300"
+          className="mt-2 !text-ably-primary-inverse"
           rightIcon="icon-gui-arrow-right-micro"
           iconColor="text-orange-600"
           href={link}

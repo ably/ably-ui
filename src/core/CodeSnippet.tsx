@@ -382,7 +382,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           color="text-yellow-600 dark:text-yellow-400"
           size="24px"
         />
-        <p className="ui-text-p3 text-neutral-700 dark:text-neutral-600">
+        <p className="ui-text-p3 text-ably-label">
           You&apos;re currently viewing the {activeLanguageInfo.label} docs.
           There either isn&apos;t a {activeLanguageInfo.label} code sample for
           this example, or this feature isn&apos;t supported in{" "}
@@ -440,19 +440,19 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   return (
     <div
       className={cn(
-        "rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 min-h-[3.375rem]",
+        "rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-ably-secondary-inverse min-h-[3.375rem]",
         className,
       )}
     >
       {headerRow && (
-        <div className="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-neutral-300 dark:border-neutral-1000 flex items-center py-1 px-3 rounded-t-lg">
+        <div className="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-ably-secondary-inverse flex items-center py-1 px-3 rounded-t-lg">
           <div className="flex space-x-1.5">
             <div className="w-3 h-3 rounded-full bg-orange-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
 
-          <div className="flex-1 text-center ui-text-p3 font-bold text-neutral-1300 dark:text-neutral-000">
+          <div className="flex-1 text-center ui-text-p3 font-bold text-ably-primary">
             {title}
           </div>
 
@@ -525,7 +525,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
                   size="16px"
                   additionalCSS="mr-2"
                 />
-                <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
+                <span className="ui-text-label4 font-semibold text-ably-tertiary select-none">
                   {getLanguageInfo(filteredLanguages[0]).label}
                 </span>
               </div>

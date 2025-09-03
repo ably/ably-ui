@@ -21,7 +21,7 @@ export const MeganavPanel = ({
   panelRightBottom?: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-x-6 bg-neutral-000 dark:bg-neutral-1300">
+    <div className="flex flex-col md:flex-row gap-x-6 bg-ably-primary-inverse">
       <div
         className={cn(
           "flex-[7] flex-shrink-0 group",
@@ -44,13 +44,13 @@ export const MeganavPanel = ({
                 href={panelLeft.url}
               >
                 <span className="block w-full p-6">
-                  <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
+                  <h4 className="ui-text-h4 text-ably-primary">
                     {panelLeft.heading}
                   </h4>
-                  <span className="block ui-text-p3 text-neutral-800 dark:text-neutral-500 mt-2">
+                  <span className="block ui-text-p3 text-ably-tertiary mt-2">
                     {panelLeft.content}
                   </span>
-                  <span className="py-2 font-sans font-bold block group/featured-link text-neutral-1300 dark:text-neutral-000 mt-4 ui-text-p3 hover:text-neutral-1300 dark:hover:text-neutral-000">
+                  <span className="py-2 font-sans font-bold block group/featured-link text-ably-primary mt-4 ui-text-p3 hover:text-ably-primary">
                     {panelLeft.labelLink}
                     <Icon
                       name="icon-gui-arrow-long-right-outline"
@@ -76,7 +76,7 @@ export const MeganavPanel = ({
       <div className="flex-[3] flex-shrink-0 flex flex-col justify-between">
         <ul>
           {panelRightHeading && (
-            <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 my-3">
+            <p className="ui-text-overline2 text-ably-label my-3">
               {panelRightHeading}
             </p>
           )}
@@ -92,10 +92,10 @@ export const MeganavPanel = ({
               <Icon
                 name={item.icon}
                 size="1.25rem"
-                additionalCSS="text-neutral-1000 dark:text-neutral-300"
+                additionalCSS="text-ably-secondary"
               />
               <a
-                className="pointer-events-auto ui-text-label2 md:ui-text-label3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
+                className="pointer-events-auto ui-text-label2 md:ui-text-label3 font-semibold text-ably-secondary group-hover:text-ably-primary"
                 href={item.link}
               >
                 {item.label}

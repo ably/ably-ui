@@ -87,7 +87,7 @@ const Status = ({
         refreshInterval={refreshInterval ?? 1000 * 60}
       />
       {showDescription && data?.status?.description && (
-        <div className="flex gap-2 ui-text-label4 font-medium text-neutral-900 group-hover/status:text-neutral-1300 dark:text-neutral-400 dark:group-hover/status:text-neutral-000 transition-colors">
+        <div className="flex gap-2 ui-text-label4 font-medium text-neutral-900 group-hover/status:text-ably-primary dark:text-neutral-400 transition-colors">
           <span>
             {data.status.description.charAt(0).toUpperCase() +
               data.status.description.slice(1).toLowerCase()}

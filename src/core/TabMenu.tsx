@@ -170,8 +170,7 @@ const TabMenu: React.FC<TabMenuProps> = ({
         className={cn(
           "relative",
           {
-            "flex border-b border-neutral-300 dark:border-neutral-1000":
-              underline,
+            "flex border-b border-ably-secondary-inverse": underline,
           },
           { "h-full": flexibleTabHeight },
         )}
@@ -182,7 +181,7 @@ const TabMenu: React.FC<TabMenuProps> = ({
               <Tabs.Trigger
                 key={`tab-${index}`}
                 className={cn(
-                  "lg:px-6 md:px-5 px-4 py-4 ui-text-label1 font-bold data-[state=active]:text-neutral-1300 text-neutral-1000 dark:data-[state=active]:text-neutral-000 dark:text-neutral-300 focus:outline-none focus-visible:outline-gui-focus transition-colors hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-900 dark:active:text-neutral-400 disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark disabled:cursor-not-allowed",
+                  "lg:px-6 md:px-5 px-4 py-4 ui-text-label1 font-bold data-[state=active]:text-ably-primary text-ably-secondary focus:outline-none focus-visible:outline-gui-focus transition-colors hover:text-ably-primary active:text-neutral-900 dark:active:text-neutral-400 disabled:text-gui-unavailable dark:disabled:text-gui-unavailable-dark disabled:cursor-not-allowed",
                   { "flex-1": flexibleTabWidth },
                   { "h-full": flexibleTabHeight },
                   tabClassName,
@@ -200,10 +199,9 @@ const TabMenu: React.FC<TabMenuProps> = ({
             ),
         )}
         <div
-          className={cn(
-            "absolute bottom-0 bg-neutral-1300 dark:bg-neutral-000 h-[0.1875rem] w-6",
-            { "transition-[transform,width]": animated },
-          )}
+          className={cn("absolute bottom-0 bg-ably-primary h-[0.1875rem] w-6", {
+            "transition-[transform,width]": animated,
+          })}
           style={{
             transform: `translateX(${highlight.offset}px)`,
             width: `${highlight.width}px`,

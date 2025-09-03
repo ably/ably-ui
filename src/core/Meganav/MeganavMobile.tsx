@@ -22,7 +22,7 @@ export const MeganavMobile = ({ navItems }: { navItems: AccordionData[] }) => {
           hideBorders: true,
           headerCSS: `px-0 ${menuItemClassname}`,
           contentCSS: "px-0",
-          selectedHeaderCSS: "text-neutral-1300 dark:text-neutral-000",
+          selectedHeaderCSS: "text-ably-primary",
           rowIconSize: "24px",
         }}
       />

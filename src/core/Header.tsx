@@ -242,7 +242,7 @@ const Header: React.FC<HeaderProps> = ({
   const wrappedSearchButton = useMemo(
     () =>
       searchButton ? (
-        <div className="text-neutral-1300 dark:text-neutral-000 flex items-center">
+        <div className="text-ably-primary flex items-center">
           {searchButton}
         </div>
       ) : null,
@@ -254,7 +254,7 @@ const Header: React.FC<HeaderProps> = ({
       <header
         role="banner"
         className={cn(
-          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 lg:px-16",
+          "fixed left-0 top-0 w-full z-50 bg-ably-primary-inverse border-b border-ably-secondary-inverse transition-colors px-6 lg:px-16",
           scrollpointClasses,
           {
             "md:top-auto": bannerVisible,
@@ -295,7 +295,7 @@ const Header: React.FC<HeaderProps> = ({
                     ? "icon-gui-x-mark-outline"
                     : "icon-gui-bars-3-outline"
                 }
-                additionalCSS="text-neutral-1300 dark:text-neutral-000"
+                additionalCSS="text-ably-primary"
                 size="1.5rem"
               />
             </button>
@@ -338,7 +338,7 @@ const Header: React.FC<HeaderProps> = ({
           />
           <div
             id="mobile-menu"
-            className="md:hidden fixed flex flex-col top-[4.75rem] overflow-y-hidden mx-3 right-0 w-[calc(100%-24px)] bg-neutral-000 dark:bg-neutral-1300 rounded-2xl ui-shadow-lg-medium z-50"
+            className="md:hidden fixed flex flex-col top-[4.75rem] overflow-y-hidden mx-3 right-0 w-[calc(100%-24px)] bg-ably-primary-inverse rounded-2xl ui-shadow-lg-medium z-50"
             style={{
               maxWidth: MAX_MOBILE_MENU_WIDTH,
               maxHeight: componentMaxHeight(

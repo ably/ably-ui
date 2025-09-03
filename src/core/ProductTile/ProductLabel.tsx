@@ -60,19 +60,17 @@ const ProductLabel = ({
         className={cn(
           "block ui-text-p2 font-bold",
           {
-            "text-neutral-000 dark:text-neutral-1300":
-              selected === true && !unavailable,
+            "text-ably-primary-inverse": selected === true && !unavailable,
           },
           {
-            "text-neutral-1000 dark:text-neutral-300 group-hover/product-tile:text-neutral-1300 dark:group-hover/product-tile:text-neutral-000":
+            "text-ably-secondary group-hover/product-tile:text-ably-primary":
               selected === false && !unavailable,
           },
           {
-            "text-neutral-1300 dark:text-neutral-000":
-              selected === undefined && !unavailable,
+            "text-ably-primary": selected === undefined && !unavailable,
           },
           {
-            "text-neutral-700 dark:text-neutral-600": unavailable,
+            "text-ably-label": unavailable,
           },
           { "mt-[-3px]": !unavailable },
           className,

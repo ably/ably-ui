@@ -34,15 +34,15 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
     default: {
       active: "bg-neutral-200 dark:bg-neutral-1100",
       inactive:
-        "bg-neutral-000 dark:bg-neutral-1300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200",
+        "bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200",
     },
     subtle: {
-      active: "bg-neutral-000 dark:bg-neutral-1000",
+      active: "bg-ably-primary-inverse",
       inactive:
         "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100",
     },
     strong: {
-      active: "bg-neutral-1000 dark:bg-neutral-300",
+      active: "bg-ably-secondary",
       inactive:
         "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100",
     },
@@ -50,19 +50,16 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
 
   const contentColorStyles = {
     default: {
-      active: "text-neutral-1300 dark:text-neutral-000",
-      inactive:
-        "text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000",
+      active: "text-ably-primary",
+      inactive: "text-ably-secondary hover:text-ably-primary",
     },
     subtle: {
-      active: "text-neutral-1300 dark:text-neutral-000",
-      inactive:
-        "text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000",
+      active: "text-ably-primary",
+      inactive: "text-ably-secondary hover:text-ably-primary",
     },
     strong: {
-      active: "text-neutral-000 dark:text-neutral-1300",
-      inactive:
-        "text-neutral-1000 dark:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000",
+      active: "text-ably-primary-inverse",
+      inactive: "text-ably-secondary hover:text-ably-primary",
     },
   };
 

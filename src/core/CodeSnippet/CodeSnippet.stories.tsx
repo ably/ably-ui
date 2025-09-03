@@ -488,9 +488,7 @@ export const PlainMode: Story = {
 
     return (
       <div className="flex flex-col gap-4">
-        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Shell
-        </h4>
+        <h4 className="ui-text-h4 text-ably-primary">Shell</h4>
         <CodeSnippet
           lang={currentLang}
           onChange={(lang) => setCurrentLang(lang)}
@@ -499,9 +497,7 @@ export const PlainMode: Story = {
             <code className="language-shell">{CODE_SNIPPETS.shellInstall}</code>
           </pre>
         </CodeSnippet>
-        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Text
-        </h4>
+        <h4 className="ui-text-h4 text-ably-primary">Text</h4>
         <CodeSnippet
           lang={currentLang}
           onChange={(lang) => setCurrentLang(lang)}
@@ -528,9 +524,7 @@ export const MultipleShellExamples: Story = {
     return (
       <div className="flex flex-col gap-4">
         <div>
-          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
-            Installation
-          </h3>
+          <h3 className="ui-text-h4 text-ably-primary mb-2">Installation</h3>
           <CodeSnippet
             lang={currentLang}
             onChange={(lang) => setCurrentLang(lang)}
@@ -544,7 +538,7 @@ export const MultipleShellExamples: Story = {
         </div>
 
         <div>
-          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
+          <h3 className="ui-text-h4 text-ably-primary mb-2">
             Starting the server
           </h3>
           <CodeSnippet
@@ -560,9 +554,7 @@ export const MultipleShellExamples: Story = {
         </div>
 
         <div>
-          <h3 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000 mb-2">
-            Complex command
-          </h3>
+          <h3 className="ui-text-h4 text-ably-primary mb-2">Complex command</h3>
           <CodeSnippet
             lang={currentLang}
             onChange={(lang) => setCurrentLang(lang)}

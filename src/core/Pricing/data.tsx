@@ -7,18 +7,18 @@ export const planData: PricingDataFeature[] = [
     title: {
       content: "Free",
       className: "ui-text-h4 tracking-[-0.002rem]",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
     },
     description: {
       content: "Build a proof of concept.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: { amount: "$0" },
     cta: {
       text: "Start for free",
       url: "/sign-up",
-      iconColor: "text-neutral-600 dark:text-neutral-700",
+      iconColor: "text-ably-label-inverse",
     },
     sections: [
       {
@@ -37,7 +37,7 @@ export const planData: PricingDataFeature[] = [
           "No commitment",
         ],
         listItemColors: {
-          foreground: "text-neutral-700 dark:text-neutral-600",
+          foreground: "text-ably-label",
           background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
@@ -51,12 +51,12 @@ export const planData: PricingDataFeature[] = [
     title: {
       content: "Standard",
       className: "ui-text-h4 tracking-[-0.002rem]",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
     },
     description: {
       content: "Roll-out into production.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: {
       amount: "$29",
@@ -84,7 +84,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=standard",
-      iconColor: "text-neutral-600 dark:text-neutral-700",
+      iconColor: "text-ably-label-inverse",
     },
     sections: [
       {
@@ -103,7 +103,7 @@ export const planData: PricingDataFeature[] = [
           "Uptime SLO",
         ],
         listItemColors: {
-          foreground: "text-neutral-700 dark:text-neutral-600",
+          foreground: "text-ably-label",
           background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
@@ -117,12 +117,12 @@ export const planData: PricingDataFeature[] = [
     title: {
       content: "Pro",
       className: "ui-text-h4 tracking-[-0.002rem]",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
     },
     description: {
       content: "Scale business critical workloads.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: {
       amount: "$399",
@@ -150,7 +150,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Get started",
       url: "/users/paid_sign_up?package=pro",
-      iconColor: "text-neutral-600 dark:text-neutral-700",
+      iconColor: "text-ably-label-inverse",
     },
     sections: [
       {
@@ -170,7 +170,7 @@ export const planData: PricingDataFeature[] = [
           "Uptime SLO",
         ],
         listItemColors: {
-          foreground: "text-neutral-700 dark:text-neutral-600",
+          foreground: "text-ably-label",
           background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
@@ -190,7 +190,7 @@ export const planData: PricingDataFeature[] = [
     description: {
       content: "Serious workloads without limits.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: { amount: "Custom" },
     cta: {
@@ -218,7 +218,7 @@ export const planData: PricingDataFeature[] = [
           "CNAME, SSO, & more",
         ],
         listItemColors: {
-          foreground: "text-orange-700 dark:text-orange-500",
+          foreground: "text-ably-label",
           background: "text-neutral-100 dark:text-neutral-1200",
         },
       },
@@ -235,13 +235,13 @@ export const consumptionData: PricingDataFeature[] = [
     title: {
       content: "Messages",
       className: "ui-text-h3",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
     },
     description: {
       content:
         "Messages contain the data that a client is communicating, such as the contents of a chat message.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: { amount: "$2.50", content: "/ million" },
     sections: [
@@ -264,7 +264,7 @@ export const consumptionData: PricingDataFeature[] = [
     title: {
       content: "Channels",
       className: "ui-text-h3",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
       tooltip: (
         <p>
           We charge you for the amount of time a channel is active in our
@@ -277,7 +277,7 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Channels are used to route messages from publishers to subscribers. Channels are billed by the minute when actively being used by a connected client.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: { amount: "$1.00", content: "/ million mins" },
     sections: [
@@ -300,7 +300,7 @@ export const consumptionData: PricingDataFeature[] = [
     title: {
       content: "Connections",
       className: "ui-text-h3",
-      color: "text-neutral-1300 dark:text-neutral-000",
+      color: "text-ably-primary",
       tooltip: (
         <p>
           We charge you for the amount of time devices are connected to our
@@ -313,7 +313,7 @@ export const consumptionData: PricingDataFeature[] = [
       content:
         "Clients establish and maintain a connection to the Ably service, typically over WebSockets.",
       className: "ui-text-p3",
-      color: "text-neutral-700 dark:text-neutral-600",
+      color: "text-ably-label",
     },
     price: { amount: "$1.00", content: "/ million mins" },
     sections: [

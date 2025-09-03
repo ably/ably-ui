@@ -3,7 +3,15 @@ export type ColorName =
   | (typeof orangeColors)[number]
   | (typeof secondaryColors)[number]
   | (typeof guiColors)[number]
-  | (typeof aliasedColors)[number];
+  | (typeof aliasedColors)[number]
+  | "ably-primary"
+  | "ably-primary-inverse"
+  | "ably-secondary"
+  | "ably-secondary-inverse"
+  | "ably-tertiary"
+  | "ably-tertiary-inverse"
+  | "ably-label"
+  | "ably-label-inverse";
 
 export const variants = ["", "dark:"] as const;
 

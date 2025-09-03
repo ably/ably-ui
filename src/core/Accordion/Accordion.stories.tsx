@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Accordion, { AccordionProps } from "../Accordion";
 import { IconName } from "../Icon/types";
 import { accordionThemes } from "./types";
@@ -6,9 +6,7 @@ import { accordionThemes } from "./types";
 const loremText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque congue risus id lobortis. Vivamus blandit dolor at ultricies cursus. Phasellus pharetra nunc erat, quis porttitor mauris faucibus in. Donec feugiat dapibus orci et blandit. Duis eleifend accumsan est nec euismod. Proin imperdiet malesuada lacus, a aliquam eros aliquet nec. Sed eu dolor finibus, sodales nisl a, egestas mi. In semper interdum lacinia. Duis malesuada diam quis purus blandit, sit amet imperdiet neque accumsan. Morbi viverra vitae risus ut pellentesque. Praesent ac blandit augue. Aliquam purus lectus, lacinia in semper vitae, dictum eu felis. Donec vel pulvinar eros, id facilisis neque. Aenean odio arcu, accumsan vel est in, lobortis rhoncus ligula. Pellentesque sit amet odio velit.";
 
-const lorem = (
-  <p className="mb-4 text-neutral-1300 dark:text-neutral-000">{loremText}</p>
-);
+const lorem = <p className="mb-4 text-ably-primary">{loremText}</p>;
 
 const textarea = (
   <textarea
@@ -58,7 +56,7 @@ const AccordionPresentation = ({ data, options }: AccordionProps) => (
         <div key={theme} className={"p-4 rounded-lg"}>
           <p
             className={
-              "ui-text-p3 mb-4 text-center text-neutral-1300 dark:text-neutral-000 font-mono"
+              "ui-text-p3 mb-4 text-center text-ably-primary font-mono"
             }
           >
             {theme}

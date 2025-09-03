@@ -4,10 +4,10 @@ export const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
   default: {
     bg: "bg-neutral-200 dark:bg-neutral-1100",
     hoverBg: "hover:bg-neutral-300 dark:hover:bg-neutral-1100",
-    text: "text-neutral-1300 dark:text-white",
+    text: "text-ably-primary",
     toggleIconColor: "text-neutral-1000 dark:text-orange-600",
     selectableBg: "bg-neutral-1200 dark:bg-neutral-300",
-    selectableText: "text-neutral-000 dark:text-neutral-1300",
+    selectableText: "text-ably-primary-inverse",
   },
   transparent: {
     bg: "bg-transparent dark:bg-transparent",
@@ -20,10 +20,10 @@ export const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
   static: {
     bg: "bg-neutral-200 dark:bg-neutral-1200",
     hoverBg: "hover:bg-neutral-200 dark:hover:bg-neutral-1200",
-    text: "text-neutral-1300 dark:text-white",
+    text: "text-ably-primary",
     toggleIconColor: "text-neutral-200 dark:text-neutral-1200",
     selectableBg: "bg-neutral-1200 dark:bg-neutral-1200",
-    selectableText: "text-white dark:text-neutral-1300",
+    selectableText: "text-ably-primary-inverse",
   },
 };
 

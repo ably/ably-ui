@@ -75,9 +75,7 @@ const renderIcons = (iconSet: IconName[]) => {
       </p>
       {iconSet.some((icon) => icon.includes("-gui-")) && (
         <div className="flex items-center pt-4 gap-2 px-4 flex-wrap">
-          <span className="ui-text-p1 text-neutral-1300 dark:text-neutral-000">
-            Filter icons:
-          </span>
+          <span className="ui-text-p1 text-ably-primary">Filter icons:</span>
           {iconVariants.map((variant) => (
             <Button
               key={variant}
@@ -100,13 +98,13 @@ const renderIcons = (iconSet: IconName[]) => {
               <div className="flex">
                 <Icon
                   name={icon}
-                  additionalCSS="hover:text-active-orange text-neutral-1300 dark:text-neutral-000 transition-colors"
+                  additionalCSS="hover:text-active-orange text-ably-primary transition-colors"
                   color="text-cool-black"
                   size={getIconSize(icon)}
                 />
               </div>
             </div>
-            <code className="ui-text-code2 text-neutral-1300 dark:text-neutral-000 text-center flex flex-col items-center justify-center flex-1 gap-4">
+            <code className="ui-text-code2 text-ably-primary text-center flex flex-col items-center justify-center flex-1 gap-4">
               <p>{icon}</p>
             </code>
           </div>
@@ -140,9 +138,7 @@ export const IconWithSecondaryColor = {
   render: () => (
     <div className="flex items-center justify-center p-4 gap-6">
       <div className="flex gap-6">
-        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Non-themed:
-        </h4>
+        <h4 className="ui-text-h4 text-ably-primary">Non-themed:</h4>
         <Icon
           name="icon-gui-check-circled-fill"
           color="text-orange-600"
@@ -151,14 +147,12 @@ export const IconWithSecondaryColor = {
         <Icon
           name="icon-gui-check-circled-fill"
           color="text-orange-600"
-          secondaryColor="text-neutral-1300"
+          secondaryColor="text-ably-primary"
           size="1.5rem"
         />
       </div>
       <div className="flex gap-6">
-        <h4 className="ui-text-h4 text-neutral-1300 dark:text-neutral-000">
-          Themed:
-        </h4>
+        <h4 className="ui-text-h4 text-ably-primary">Themed:</h4>
         <Icon
           name="icon-gui-check-circled-fill"
           color="text-orange-600"

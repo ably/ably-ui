@@ -25,10 +25,10 @@ const ProductDescription = ({
       className={cn(
         "block ui-text-p3 font-medium leading-snug",
         {
-          "text-neutral-300 dark:text-neutral-1000": selected && !unavailable,
+          "text-ably-secondary-inverse": selected && !unavailable,
         },
         {
-          "text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300":
+          "text-ably-tertiary group-hover/product-tile:text-ably-secondary":
             !selected,
         },
         className,

@@ -27,7 +27,7 @@ exports[`Components/Badge Focusable smoke-test 1`] = `
 `;
 
 exports[`Components/Badge Hoverable smoke-test 1`] = `
-<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 hover:bg-neutral-300 hover:dark:bg-neutral-1000 active:bg-neutral-300 dark:active:bg-neutral-1000">
+<div class="inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold px-2.5 py-0.5 text-[11px] leading-normal text-neutral-900 dark:text-neutral-400 hover:bg-ably-secondary-inverse active:bg-ably-secondary-inverse">
   <span class="whitespace-nowrap tracking-[0.04em] leading-[20px]">
     BADGE
   </span>

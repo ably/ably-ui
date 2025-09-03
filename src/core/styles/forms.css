@@ -28,12 +28,12 @@
 
   .ui-checkbox-label-p1 {
     @apply select-none;
-    @apply text-p1 font-medium text-neutral-1300;
+    @apply text-p1 font-medium text-ably-primary;
   }
 
   .ui-checkbox-label-p2 {
     @apply select-none;
-    @apply text-p2 font-medium text-neutral-1300;
+    @apply text-p2 font-medium text-ably-primary;
   }
 
   .ui-theme-dark .ui-checkbox-label-p1,

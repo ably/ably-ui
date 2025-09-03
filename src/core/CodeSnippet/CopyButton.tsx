@@ -19,12 +19,12 @@ const CopyButton = memo(
           <Icon
             name="icon-gui-document-duplicate-outline"
             size="20px"
-            color="text-neutral-1300 dark:text-neutral-000"
+            color="text-ably-primary"
           />
         </TooltipButton>
 
         {isCopied ? (
-          <div className="absolute right-10 top-0 bg-neutral-1300 dark:bg-neutral-000 text-neutral-000 dark:text-neutral-1300 py-1.5 px-3 rounded ui-text-label4 whitespace-nowrap">
+          <div className="absolute right-10 top-0 bg-ably-primary text-ably-primary-inverse py-1.5 px-3 rounded ui-text-label4 whitespace-nowrap">
             Copied!
           </div>
         ) : null}
