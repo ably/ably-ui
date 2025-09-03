@@ -115,7 +115,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs for building realtime applications.
     </span>
   </div>
@@ -189,7 +189,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Build feature-rich live chat experiences.
     </span>
   </div>
@@ -261,7 +261,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Enhance your application with collaborative features.
     </span>
   </div>
@@ -336,7 +336,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Fan-out database changes to client applications.
     </span>
   </div>
@@ -409,7 +409,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Track the geographic location of assets and fleets.
     </span>
   </div>
@@ -500,7 +500,7 @@ exports[`Components/Product Tile ProductTileWithFilledIcons smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across client devices.
     </span>
   </div>
@@ -547,7 +547,7 @@ exports[`Components/Product Tile ProductTileWithOverriddenStylesAndClick smoke-t
       </span>
     </span>
   </div>
-  <span class="block ui-text-p3 font-medium leading-snug dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300 text-blue-500">
+  <span class="block ui-text-p3 font-medium leading-snug dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300 text-blue-500">
     Low-level APIs for building realtime applications.
   </span>
 </div>
@@ -594,7 +594,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs for building realtime applications.
     </span>
   </div>
@@ -637,7 +637,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Build feature-rich live chat experiences.
     </span>
   </div>
@@ -680,7 +680,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Enhance your application with collaborative features.
     </span>
   </div>
@@ -724,7 +724,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Fan-out database changes to client applications.
     </span>
   </div>
@@ -766,7 +766,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Track the geographic location of assets and fleets.
     </span>
   </div>
@@ -817,7 +817,7 @@ exports[`Components/Product Tile ProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across client devices.
     </span>
   </div>
@@ -1046,7 +1046,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Low-level APIs for building realtime applications.
     </span>
   </div>
@@ -1089,7 +1089,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Build feature-rich live chat experiences.
     </span>
   </div>
@@ -1132,7 +1132,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Enhance your application with collaborative features.
     </span>
   </div>
@@ -1176,7 +1176,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Fan-out database changes to client applications.
     </span>
   </div>
@@ -1218,7 +1218,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Track the geographic location of assets and fleets.
     </span>
   </div>
@@ -1269,7 +1269,7 @@ exports[`Components/Product Tile StaticProductTiles smoke-test 1`] = `
         </span>
       </span>
     </div>
-    <span class="block ui-text-p3 font-medium leading-snug text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
+    <span class="block ui-text-p3 font-medium leading-snug text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300">
       Sync application state across client devices.
     </span>
   </div>

@@ -28,7 +28,7 @@ const ProductDescription = ({
           "text-neutral-300 dark:text-neutral-1000": selected && !unavailable,
         },
         {
-          "text-neutral-700 dark:text-neutral-600 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300":
+          "text-neutral-800 dark:text-neutral-500 group-hover/product-tile:text-neutral-1000 dark:group-hover/product-tile:text-neutral-300":
             !selected,
         },
         className,
