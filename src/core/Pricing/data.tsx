@@ -196,6 +196,7 @@ export const planData: PricingDataFeature[] = [
     cta: {
       text: "Contact us",
       url: "/contact",
+      isPriority: true,
     },
     sections: [
       {

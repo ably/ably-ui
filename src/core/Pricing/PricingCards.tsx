@@ -180,9 +180,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
                     <div className="group">
                       <LinkButton
                         className={cn("w-full", cta.className)}
-                        variant={
-                          cta.url === "/contact" ? "priority" : "primary"
-                        }
+                        variant={cta.isPriority ? "priority" : "primary"}
                         href={cta.url}
                         onClick={cta.onClick}
                         disabled={cta.disabled}
