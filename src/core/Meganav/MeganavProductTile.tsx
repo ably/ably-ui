@@ -28,7 +28,7 @@ const MeganavProductTile = ({
         "flex flex-col p-3 rounded-lg gap-2",
         "bg-ably-primary-inverse",
         {
-          "hover:bg-neutral-100 dark:hover:bg-neutral-1200": !unavailable,
+          "hover:bg-ably-primary-inverse-accent": !unavailable,
         },
         { "pointer-events-auto": !unavailable },
         { "pointer-events-none": unavailable },

@@ -169,6 +169,10 @@
     /* Used for theming */
     --color-ably-primary: var(--color-neutral-1300);
     --color-ably-primary-inverse: var(--color-neutral-000);
+    --color-ably-primary-accent: var(--color-neutral-1200);
+    --color-ably-primary-inverse-accent: var(--color-neutral-100);
+    --color-ably-primary-active: var(--color-neutral-1100);
+    --color-ably-primary-inverse-active: var(--color-neutral-200);
     --color-ably-secondary: var(--color-neutral-1000);
     --color-ably-secondary-inverse: var(--color-neutral-300);
     --color-ably-tertiary: var(--color-neutral-800);
@@ -281,6 +285,10 @@
   .ui-theme-dark {
     --color-ably-primary: var(--color-neutral-000);
     --color-ably-primary-inverse: var(--color-neutral-1300);
+    --color-ably-primary-accent: var(--color-neutral-100);
+    --color-ably-primary-inverse-accent: var(--color-neutral-1200);
+    --color-ably-primary-active: var(--color-neutral-200);
+    --color-ably-primary-inverse-active: var(--color-neutral-1100);
     --color-ably-secondary: var(--color-neutral-300);
     --color-ably-secondary-inverse: var(--color-neutral-1000);
     --color-ably-tertiary: var(--color-neutral-500);

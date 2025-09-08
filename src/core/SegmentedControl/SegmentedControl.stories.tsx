@@ -70,7 +70,7 @@ export const DefaultVariant: Story = {
  */
 export const SubtleVariant: Story = {
   render: () => (
-    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-4">
+    <div className="bg-ably-primary-inverse-accent rounded-lg p-4">
       <SegmentedControlGrid variant="subtle" />
     </div>
   ),
@@ -82,7 +82,7 @@ export const SubtleVariant: Story = {
  */
 export const StrongVariant: Story = {
   render: () => (
-    <div className="bg-neutral-100 dark:bg-neutral-1200 rounded-lg p-4">
+    <div className="bg-ably-primary-inverse-accent rounded-lg p-4">
       <SegmentedControlGrid variant="strong" />
     </div>
   ),

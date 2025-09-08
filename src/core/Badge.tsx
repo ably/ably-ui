@@ -126,7 +126,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   return (
     <div
       className={cn(
-        "inline-flex bg-neutral-100 dark:bg-neutral-1200 rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold",
+        "inline-flex bg-ably-primary-inverse-accent rounded-2xl gap-1 items-center focus-base transition-colors select-none font-semibold",
         sizeClass,
         colorClass,
         { "focus-base": focusable },

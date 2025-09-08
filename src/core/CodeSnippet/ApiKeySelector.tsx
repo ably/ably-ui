@@ -25,9 +25,7 @@ const ApiKeySelector = ({
   const renderDemoMode = useMemo(
     () => (
       <div className="flex items-center gap-2">
-        <Badge className="ml-1 bg-neutral-200 dark:bg-neutral-1100">
-          DEMO ONLY
-        </Badge>
+        <Badge className="ml-1 bg-ably-primary-inverse-active">DEMO ONLY</Badge>
         <Tooltip
           className="ml-0"
           triggerElement={
@@ -59,7 +57,7 @@ const ApiKeySelector = ({
     return (
       <Select.Root value={selectedApiKey} onValueChange={onApiKeyChange}>
         <Select.Trigger
-          className="font-sans inline-flex items-center justify-between rounded px-3 py-2 ml-1 text-14 text-ably-primary bg-neutral-200 dark:bg-neutral-1100 hover:bg-ably-secondary-inverse gap-2 focus-base border"
+          className="font-sans inline-flex items-center justify-between rounded px-3 py-2 ml-1 text-14 text-ably-primary bg-ably-primary-inverse-active hover:bg-ably-secondary-inverse gap-2 focus-base border"
           aria-label="API Key"
         >
           <Select.Value />
@@ -69,7 +67,7 @@ const ApiKeySelector = ({
         </Select.Trigger>
 
         <Select.Portal>
-          <Select.Content className="overflow-hidden rounded-lg bg-ably-primary-inverse border border-neutral-200 dark:border-neutral-1000 shadow-md z-50">
+          <Select.Content className="overflow-hidden rounded-lg bg-ably-primary-inverse border border-ably-primary-inverse-active shadow-md z-50">
             <Select.ScrollUpButton className="flex items-center justify-center h-6 bg-ably-primary-inverse text-ably-primary cursor-default focus-base">
               <Icon
                 name="icon-gui-chevron-down-outline"
@@ -82,7 +80,7 @@ const ApiKeySelector = ({
               {apiKeys.map((apiKeyItem) => (
                 <Select.Group key={apiKeyItem.app}>
                   {apiKeys.length > 1 && (
-                    <Select.Label className="text-ably-label rounded-none p-1 bg-neutral-200 dark:bg-neutral-1100">
+                    <Select.Label className="text-ably-label rounded-none p-1 bg-ably-primary-inverse-active">
                       {apiKeyItem.app}
                     </Select.Label>
                   )}
@@ -90,7 +88,7 @@ const ApiKeySelector = ({
                     <Select.Item
                       key={`${apiKeyItem.app}-${name}-${key}`}
                       value={key}
-                      className="relative flex items-center justify-between m-2 p-2 rounded-lg text-14 text-ably-primary select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base min-w-64"
+                      className="relative flex items-center justify-between m-2 p-2 rounded-lg text-14 text-ably-primary select-none hover:bg-ably-primary-inverse-accent data-[highlighted]:outline-none data-[highlighted]:bg-ably-primary-inverse-accent focus-base min-w-64"
                     >
                       <Select.ItemText>
                         {key.length > 10 ? `${key.substring(0, 10)}...` : key}
@@ -117,7 +115,7 @@ const ApiKeySelector = ({
   }, [apiKeys, isDemoMode, selectedApiKey, onApiKeyChange, renderDemoMode]);
 
   return (
-    <div className="flex items-center border-t border-neutral-200 dark:border-neutral-1100 px-3 py-3">
+    <div className="flex items-center border-t border-ably-primary-inverse-active px-3 py-3">
       <span className="ui-text-label4 text-ably-label mr-1">API key:</span>
       {renderApiKeyDropdown}
     </div>

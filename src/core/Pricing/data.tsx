@@ -38,7 +38,7 @@ export const planData: PricingDataFeature[] = [
         ],
         listItemColors: {
           foreground: "text-ably-label",
-          background: "text-neutral-100 dark:text-neutral-1200",
+          background: "text-ably-primary-inverse-accent",
         },
       },
     ],
@@ -104,7 +104,7 @@ export const planData: PricingDataFeature[] = [
         ],
         listItemColors: {
           foreground: "text-ably-label",
-          background: "text-neutral-100 dark:text-neutral-1200",
+          background: "text-ably-primary-inverse-accent",
         },
       },
     ],
@@ -171,7 +171,7 @@ export const planData: PricingDataFeature[] = [
         ],
         listItemColors: {
           foreground: "text-ably-label",
-          background: "text-neutral-100 dark:text-neutral-1200",
+          background: "text-ably-primary-inverse-accent",
         },
       },
     ],
@@ -219,7 +219,7 @@ export const planData: PricingDataFeature[] = [
         ],
         listItemColors: {
           foreground: "text-ably-label",
-          background: "text-neutral-100 dark:text-neutral-1200",
+          background: "text-ably-primary-inverse-accent",
         },
       },
     ],

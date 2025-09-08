@@ -49,12 +49,12 @@ const fontCell = (style) => (
   <div
     key={style.label}
     className={cn(
-      "rounded-lg p-4 flex flex-col gap-2 bg-neutral-100 dark:bg-neutral-1200",
+      "rounded-lg p-4 flex flex-col gap-2 bg-ably-primary-inverse-accent",
       style.className,
     )}
   >
     <div>{style.label}</div>
-    <code className="font-mono ui-text-code2 bg-neutral-200 dark:bg-neutral-1100 rounded-lg p-2">
+    <code className="font-mono ui-text-code2 bg-ably-primary-inverse-active rounded-lg p-2">
       {style.className
         .split(" ")
         .map((className) => `.${className}`)

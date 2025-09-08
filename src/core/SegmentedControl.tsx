@@ -32,19 +32,19 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
 }) => {
   const colorStyles = {
     default: {
-      active: "bg-neutral-200 dark:bg-neutral-1100",
+      active: "bg-ably-primary-inverse-active",
       inactive:
-        "bg-ably-primary-inverse hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-100 dark:active:bg-neutral-1200",
+        "bg-ably-primary-inverse hover:bg-ably-primary-inverse-accent active:bg-ably-primary-inverse-accent",
     },
     subtle: {
       active: "bg-ably-primary-inverse",
       inactive:
-        "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100",
+        "bg-ably-primary-inverse-accent hover:bg-ably-primary-inverse-active active:bg-ably-primary-inverse-active",
     },
     strong: {
       active: "bg-ably-secondary",
       inactive:
-        "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-200 dark:active:bg-neutral-1100",
+        "bg-ably-primary-inverse-accent hover:bg-ably-primary-inverse-active active:bg-ably-primary-inverse-active",
     },
   };
 

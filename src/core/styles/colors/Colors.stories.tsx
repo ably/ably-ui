@@ -15,7 +15,7 @@ const colorSet = (colors, useClass = "") =>
     return (
       <div
         key={key}
-        className="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col"
+        className="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col"
       >
         {isUtility ? (
           // Split color view for utilities (diagonal)
@@ -83,6 +83,26 @@ export const AblyUtilityClasses = {
           name: "ably-primary-inverse",
           lightColor: "neutral-000",
           darkColor: "neutral-1300",
+        },
+        {
+          name: "ably-primary-accent",
+          lightColor: "neutral-1200",
+          darkColor: "neutral-100",
+        },
+        {
+          name: "ably-primary-inverse-accent",
+          lightColor: "neutral-100",
+          darkColor: "neutral-1200",
+        },
+        {
+          name: "ably-primary-active",
+          lightColor: "neutral-1100",
+          darkColor: "neutral-200",
+        },
+        {
+          name: "ably-primary-inverse-active",
+          lightColor: "neutral-200",
+          darkColor: "neutral-1100",
         },
         {
           name: "ably-secondary",

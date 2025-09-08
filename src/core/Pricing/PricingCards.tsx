@@ -110,9 +110,9 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
               {delimiterColumn(index)}
               <div
                 className={cn(
-                  "relative border flex-1 px-6 pt-6 pb-4 flex flex-col gap-6 rounded-2xl group min-w-[17rem] backdrop-blur bg-neutral-100 dark:bg-neutral-1200",
+                  "relative border flex-1 px-6 pt-6 pb-4 flex flex-col gap-6 rounded-2xl group min-w-[17rem] backdrop-blur bg-ably-primary-inverse-accent",
                   borderClasses(border?.color)?.border ??
-                    "border-neutral-200 dark:border-neutral-1100",
+                    "border-ably-primary-inverse-active",
                   border?.style,
                   { "@[520px]:flex-row @[920px]:flex-col": delimiter },
                 )}
@@ -257,7 +257,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
 
                 {bottomCta && (
                   <div>
-                    <div className="border-t border-neutral-200 dark:border-neutral-1100 -mx-6"></div>
+                    <div className="border-t border-ably-primary-inverse-active -mx-6"></div>
                     <a
                       href={bottomCta.url}
                       className={cn(

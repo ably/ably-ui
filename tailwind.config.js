@@ -54,6 +54,12 @@ module.exports = {
       colors: {
         "ably-primary": "var(--color-ably-primary)",
         "ably-primary-inverse": "var(--color-ably-primary-inverse)",
+        "ably-primary-accent": "var(--color-ably-primary-accent)",
+        "ably-primary-inverse-accent":
+          "var(--color-ably-primary-inverse-accent)",
+        "ably-primary-active": "var(--color-ably-primary-active)",
+        "ably-primary-inverse-active":
+          "var(--color-ably-primary-inverse-active)",
         "ably-secondary": "var(--color-ably-secondary)",
         "ably-secondary-inverse": "var(--color-ably-secondary-inverse)",
         "ably-tertiary": "var(--color-ably-tertiary)",

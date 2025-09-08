@@ -37,7 +37,7 @@ export const HeaderLinks: React.FC<
     "ui-text-label2 md:ui-text-label3 !font-bold py-4 text-ably-primary md:text-ably-secondary hover:text-ably-primary active:text-ably-primary transition-colors";
 
   const dropdownMenuLinkClasses =
-    "block p-2 ui-text-label3 font-semibold text-ably-secondary hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 rounded-lg";
+    "block p-2 ui-text-label3 font-semibold text-ably-secondary hover:bg-ably-primary-inverse-accent active:bg-ably-primary-inverse-active rounded-lg";
 
   const onClickLogout = (e: MouseEvent) => {
     e.preventDefault();

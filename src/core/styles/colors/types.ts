@@ -6,6 +6,10 @@ export type ColorName =
   | (typeof aliasedColors)[number]
   | "ably-primary"
   | "ably-primary-inverse"
+  | "ably-primary-accent"
+  | "ably-primary-inverse-accent"
+  | "ably-primary-active"
+  | "ably-primary-inverse-active"
   | "ably-secondary"
   | "ably-secondary-inverse"
   | "ably-tertiary"

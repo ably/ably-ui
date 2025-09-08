@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="w-full bg-neutral-100 dark:bg-neutral-1200 border-t border-ably-secondary-inverse"
+      className="w-full bg-ably-primary-inverse-accent border-t border-ably-secondary-inverse"
       data-id="footer"
     >
       <div className="max-w-screen-xl mx-auto ui-grid-px pt-10 sm:pt-12 md:pt-16 pb-10">

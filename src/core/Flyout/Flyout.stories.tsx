@@ -46,7 +46,7 @@ const Panels = ({
 );
 
 const DefaultPanelLeft = ({ title, desc }: { title: string; desc: string }) => (
-  <div className="bg-neutral-100 dark:bg-neutral-1200 w-full p-6">
+  <div className="bg-ably-primary-inverse-accent w-full p-6">
     <h4 className="ui-text-h4 text-ably-primary">{title}</h4>
     <p className="ui-text-p3 text-ably-tertiary mt-2">{desc}</p>
     <FeaturedLink

@@ -318,7 +318,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               key={code.language}
               language={langInfo.syntaxHighlighterKey || cleanLang}
               snippet={processedContent}
-              additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+              additionalCSS="bg-ably-primary-inverse-accent text-neutral-1300 dark:text-neutral-200 px-6 py-4"
               showLines={showCodeLines}
             />
           );
@@ -440,12 +440,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   return (
     <div
       className={cn(
-        "rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-1200 border border-ably-secondary-inverse min-h-[3.375rem]",
+        "rounded-lg overflow-hidden bg-ably-primary-inverse-accent border border-ably-secondary-inverse min-h-[3.375rem]",
         className,
       )}
     >
       {headerRow && (
-        <div className="h-[2.375rem] bg-neutral-200 dark:bg-neutral-1100 border-b border-ably-secondary-inverse flex items-center py-1 px-3 rounded-t-lg">
+        <div className="h-[2.375rem] bg-ably-primary-inverse-active border-b border-ably-secondary-inverse flex items-center py-1 px-3 rounded-t-lg">
           <div className="flex space-x-1.5">
             <div className="w-3 h-3 rounded-full bg-orange-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -463,7 +463,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       {showSDKSelector && (
         <div
           className={cn(
-            "p-2 border-b border-neutral-200 dark:border-neutral-1100 h-14",
+            "p-2 border-b border-ably-primary-inverse-active h-14",
             headerRow ? "" : "rounded-t-lg",
           )}
         >
@@ -507,7 +507,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         ) : (
           <div
             className={cn(
-              "border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 w-full",
+              "border-b border-ably-primary-inverse-active h-[2.125rem] inline-flex items-center px-3 w-full",
               { "rounded-t-lg": !headerRow },
             )}
           >

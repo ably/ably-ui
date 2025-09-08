@@ -115,8 +115,8 @@ const Flyout = ({
                   onClick={(event) => event.preventDefault()}
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
-                    "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
-                    "[&[data-state=open]]:bg-neutral-100 dark:[&[data-state=open]]:bg-neutral-1200",
+                    "rounded-md hover:bg-ably-primary-inverse-accent",
+                    "[&[data-state=open]]:bg-ably-primary-inverse-accent",
                     "[&[data-state=open]]:text-ably-primary",
                     DEFAULT_MENU_LINK_STYLING,
                     menuLinkClassName,

@@ -103,7 +103,7 @@ const ProductTile = ({
           "bg-ably-primary-inverse": !selected,
         },
         {
-          "hover:bg-neutral-100 dark:hover:bg-neutral-1200":
+          "hover:bg-ably-primary-inverse-accent":
             selected === false && !unavailable,
         },
         { "cursor-pointer": selected !== undefined && !unavailable },

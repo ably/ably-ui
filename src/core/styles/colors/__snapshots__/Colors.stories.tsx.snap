@@ -2,7 +2,7 @@
 
 exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-1300) 50%, var(--color-neutral-000) 50%);"
     >
@@ -16,7 +16,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-000) 50%, var(--color-neutral-1300) 50%);"
     >
@@ -30,7 +30,63 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-1200) 50%, var(--color-neutral-100) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary-accent
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-1200 / neutral-100
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-100) 50%, var(--color-neutral-1200) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary-inverse-accent
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-100 / neutral-1200
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-1100) 50%, var(--color-neutral-200) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary-active
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-1100 / neutral-200
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
+    <div class="h-[6.25rem] rounded-t-lg"
+         style="background: linear-gradient(45deg, var(--color-neutral-200) 50%, var(--color-neutral-1100) 50%);"
+    >
+    </div>
+    <div class="p-3 flex flex-col flex-1">
+      <p class="ui-text-p2 font-semibold flex-1 text-ably-secondary">
+        ably-primary-inverse-active
+      </p>
+      <p class="ui-text-p3 font-normal text-ably-tertiary text-xs">
+        neutral-200 / neutral-1100
+      </p>
+    </div>
+  </div>
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-1000) 50%, var(--color-neutral-300) 50%);"
     >
@@ -44,7 +100,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-300) 50%, var(--color-neutral-1000) 50%);"
     >
@@ -58,7 +114,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-800) 50%, var(--color-neutral-500) 50%);"
     >
@@ -72,7 +128,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-500) 50%, var(--color-neutral-800) 50%);"
     >
@@ -86,7 +142,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-700) 50%, var(--color-neutral-600) 50%);"
     >
@@ -100,7 +156,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg"
          style="background: linear-gradient(45deg, var(--color-neutral-600) 50%, var(--color-neutral-700) 50%);"
     >
@@ -119,7 +175,7 @@ exports[`Styles/Colors AblyUtilityClasses smoke-test 1`] = `
 
 exports[`Styles/Colors GUIColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-default-light);"
     >
@@ -136,7 +192,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-hover-light);"
     >
@@ -153,7 +209,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-active-light);"
     >
@@ -170,7 +226,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-default-dark);"
     >
@@ -187,7 +243,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-hover-dark);"
     >
@@ -204,7 +260,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-active-dark);"
     >
@@ -221,7 +277,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-blue-focus);"
     >
@@ -238,7 +294,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-unavailable);"
     >
@@ -255,7 +311,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-success-green);"
     >
@@ -272,7 +328,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-error-red);"
     >
@@ -289,7 +345,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-focus);"
     >
@@ -306,7 +362,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-focus-outline);"
     >
@@ -323,7 +379,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-gui-visited);"
     >
@@ -345,7 +401,7 @@ exports[`Styles/Colors GUIColors smoke-test 1`] = `
 
 exports[`Styles/Colors NeutralColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-000);"
     >
@@ -362,7 +418,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-100);"
     >
@@ -379,7 +435,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-200);"
     >
@@ -396,7 +452,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-300);"
     >
@@ -413,7 +469,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-400);"
     >
@@ -430,7 +486,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-500);"
     >
@@ -447,7 +503,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-600);"
     >
@@ -464,7 +520,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-700);"
     >
@@ -481,7 +537,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-800);"
     >
@@ -498,7 +554,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-900);"
     >
@@ -515,7 +571,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-1000);"
     >
@@ -532,7 +588,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-1100);"
     >
@@ -549,7 +605,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-1200);"
     >
@@ -566,7 +622,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-neutral-1300);"
     >
@@ -588,7 +644,7 @@ exports[`Styles/Colors NeutralColors smoke-test 1`] = `
 
 exports[`Styles/Colors OrangeColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-100);"
     >
@@ -605,7 +661,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-200);"
     >
@@ -622,7 +678,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-300);"
     >
@@ -639,7 +695,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-400);"
     >
@@ -656,7 +712,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-500);"
     >
@@ -673,7 +729,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-600);"
     >
@@ -690,7 +746,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-700);"
     >
@@ -707,7 +763,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-800);"
     >
@@ -724,7 +780,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-900);"
     >
@@ -741,7 +797,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-1000);"
     >
@@ -758,7 +814,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-orange-1100);"
     >
@@ -780,7 +836,7 @@ exports[`Styles/Colors OrangeColors smoke-test 1`] = `
 
 exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
 <div class="flex flex-wrap gap-6">
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-100);"
     >
@@ -797,7 +853,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-200);"
     >
@@ -814,7 +870,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-300);"
     >
@@ -831,7 +887,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-400);"
     >
@@ -848,7 +904,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-500);"
     >
@@ -865,7 +921,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-600);"
     >
@@ -882,7 +938,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-700);"
     >
@@ -899,7 +955,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-800);"
     >
@@ -916,7 +972,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-yellow-900);"
     >
@@ -933,7 +989,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-100);"
     >
@@ -950,7 +1006,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-200);"
     >
@@ -967,7 +1023,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-300);"
     >
@@ -984,7 +1040,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-400);"
     >
@@ -1001,7 +1057,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-500);"
     >
@@ -1018,7 +1074,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-600);"
     >
@@ -1035,7 +1091,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-700);"
     >
@@ -1052,7 +1108,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-800);"
     >
@@ -1069,7 +1125,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-green-900);"
     >
@@ -1086,7 +1142,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-100);"
     >
@@ -1103,7 +1159,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-200);"
     >
@@ -1120,7 +1176,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-300);"
     >
@@ -1137,7 +1193,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-400);"
     >
@@ -1154,7 +1210,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-500);"
     >
@@ -1171,7 +1227,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-600);"
     >
@@ -1188,7 +1244,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-700);"
     >
@@ -1205,7 +1261,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-800);"
     >
@@ -1222,7 +1278,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-blue-900);"
     >
@@ -1239,7 +1295,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-100);"
     >
@@ -1256,7 +1312,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-200);"
     >
@@ -1273,7 +1329,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-300);"
     >
@@ -1290,7 +1346,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-400);"
     >
@@ -1307,7 +1363,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-500);"
     >
@@ -1324,7 +1380,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-600);"
     >
@@ -1341,7 +1397,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-700);"
     >
@@ -1358,7 +1414,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-800);"
     >
@@ -1375,7 +1431,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-violet-900);"
     >
@@ -1392,7 +1448,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-100);"
     >
@@ -1409,7 +1465,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-200);"
     >
@@ -1426,7 +1482,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-300);"
     >
@@ -1443,7 +1499,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-400);"
     >
@@ -1460,7 +1516,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-500);"
     >
@@ -1477,7 +1533,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-600);"
     >
@@ -1494,7 +1550,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-700);"
     >
@@ -1511,7 +1567,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-800);"
     >
@@ -1528,7 +1584,7 @@ exports[`Styles/Colors SecondaryColors smoke-test 1`] = `
       </p>
     </div>
   </div>
-  <div class="rounded-lg w-32 bg-neutral-100 dark:bg-neutral-1200 flex flex-col">
+  <div class="rounded-lg w-32 bg-ably-primary-inverse-accent flex flex-col">
     <div class="h-[6.25rem] rounded-t-lg "
          style="background-color: var(--color-pink-900);"
     >

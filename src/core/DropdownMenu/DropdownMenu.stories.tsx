@@ -30,7 +30,7 @@ export const Default = {
           href="https://ably.com/docs"
           target="_blank"
           rel="noreferrer"
-          className="group block p-2 hover:bg-neutral-100 dark:hover:bg-neutral-1200 hover:text-ably-primary rounded-lg"
+          className="group block p-2 hover:bg-ably-primary-inverse-accent hover:text-ably-primary rounded-lg"
         >
           <p className="ui-featured-link group-hover:text-gui-hover font-light text-ably-primary">
             Using plain HTML

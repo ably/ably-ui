@@ -148,7 +148,7 @@ const Link = ({ url, title, subtitle, iconName, children }: LinkProps) => {
     <a
       href={url}
       className="menu-link group block p-2 rounded-lg
-      hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 text-ably-secondary hover:text-ably-primary"
+      hover:bg-ably-primary-inverse-accent active:bg-ably-primary-inverse-active text-ably-secondary hover:text-ably-primary"
     >
       <p className="mb-1">
         {title}

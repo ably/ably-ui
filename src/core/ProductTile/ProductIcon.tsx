@@ -42,8 +42,8 @@ const ProductIcon = ({
       {/* Inner container, contains the foreground container element */}
       <span
         className={cn("flex items-center justify-center", {
-          "bg-neutral-1200 dark:bg-neutral-100": selected,
-          "bg-neutral-100 dark:bg-neutral-1200": !selected,
+          "bg-ably-primary-accent": selected,
+          "bg-ably-primary-inverse-accent": !selected,
           "group-hover/product-tile:bg-ably-primary-inverse":
             selected === false && !unavailable,
         })}

@@ -51,7 +51,7 @@ const TooltipButton = memo(
               "focus-base",
               active
                 ? "bg-ably-primary-inverse"
-                : "bg-neutral-100 dark:bg-neutral-1200",
+                : "bg-ably-primary-inverse-accent",
               className,
             )}
           >
@@ -64,7 +64,7 @@ const TooltipButton = memo(
         <div
           role="button"
           className={cn(
-            "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-ably-secondary-inverse transition-colors focus-base",
+            "w-8 h-8 rounded-lg flex items-center justify-center bg-ably-primary-inverse-active hover:bg-ably-secondary-inverse transition-colors focus-base",
             className,
           )}
           onClick={onClick}

@@ -32,7 +32,7 @@ const ProductLabel = ({
       {unavailable ? (
         <span className="block">
           <span
-            className="table-cell font-sans bg-neutral-300 dark:bg-neutral-1000 rounded-full text-gui-unavailable tracking-[0.04em] font-bold leading-snug"
+            className="table-cell font-sans bg-ably-secondary-inverse rounded-full text-gui-unavailable tracking-[0.04em] font-bold leading-snug"
             style={{
               fontSize: dynamicFontSize * 0.6,
               padding: `${dynamicFontSize * 0.25}px ${dynamicFontSize * 0.5}px`,

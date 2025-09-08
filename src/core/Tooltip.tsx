@@ -186,7 +186,7 @@ const Tooltip = ({
               }}
               {...tooltipProps}
               className={cn(
-                "bg-neutral-300 dark:bg-neutral-1000 text-neutral-1100 dark:text-neutral-200 ui-text-p3 font-medium p-4",
+                "bg-ably-secondary-inverse text-neutral-1100 dark:text-neutral-200 ui-text-p3 font-medium p-4",
                 { "pointer-events-none": !interactive },
                 "rounded-lg absolute",
                 tooltipProps?.className,

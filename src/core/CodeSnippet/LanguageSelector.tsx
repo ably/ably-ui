@@ -41,7 +41,7 @@ const LanguageSelector = memo(
           <Select.Item
             key={lang}
             value={lang}
-            className="relative flex items-center rounded px-2 py-1.5 text-14 text-ably-primary select-none hover:bg-neutral-100 dark:hover:bg-neutral-1200 data-[highlighted]:outline-none data-[highlighted]:bg-neutral-100 dark:data-[highlighted]:bg-neutral-1200 focus-base"
+            className="relative flex items-center rounded px-2 py-1.5 text-14 text-ably-primary select-none hover:bg-ably-primary-inverse-accent data-[highlighted]:outline-none data-[highlighted]:bg-ably-primary-inverse-accent focus-base"
           >
             <Select.ItemText asChild>
               <div className="flex items-center gap-2">
@@ -69,7 +69,7 @@ const LanguageSelector = memo(
     );
 
     return (
-      <div className="p-2 border-b border-neutral-200 dark:border-neutral-1100 overflow-x-auto h-[3.625rem]">
+      <div className="p-2 border-b border-ably-primary-inverse-active overflow-x-auto h-[3.625rem]">
         <div className="hidden sm:flex gap-2">{desktopLanguageElements}</div>
 
         <div className="sm:hidden w-full">
@@ -78,7 +78,7 @@ const LanguageSelector = memo(
             onValueChange={onLanguageChange}
           >
             <Select.Trigger
-              className="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-ably-primary bg-neutral-200 dark:bg-neutral-1100 hover:bg-ably-secondary-inverse gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
+              className="w-full inline-flex items-center justify-between rounded-lg px-3 py-2 text-14 text-ably-primary bg-ably-primary-inverse-active hover:bg-ably-secondary-inverse gap-1 border border-neutral-300 dark:border-neutral-900 focus-base"
               aria-label="Select language"
             >
               <Select.Value asChild>{mobileSelectValue}</Select.Value>
@@ -89,7 +89,7 @@ const LanguageSelector = memo(
 
             <Select.Portal>
               <Select.Content
-                className="overflow-hidden rounded-md bg-ably-primary-inverse border border-neutral-200 dark:border-neutral-1000 shadow-md z-50 w-[var(--radix-select-trigger-width)]"
+                className="overflow-hidden rounded-md bg-ably-primary-inverse border border-ably-primary-inverse-active shadow-md z-50 w-[var(--radix-select-trigger-width)]"
                 position="popper"
               >
                 <Select.ScrollUpButton className="flex items-center justify-center h-6 bg-ably-primary-inverse text-ably-primary cursor-default focus-base">

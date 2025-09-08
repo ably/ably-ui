@@ -47,7 +47,7 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
     >
       {icon && (
         <div className="absolute top-2 left-2 z-10">
-          <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100">
+          <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-ably-primary-inverse-active">
             <Icon name={icon} size="20px" color="text-ably-primary" />
           </div>
         </div>
