@@ -21,8 +21,8 @@
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {
     "@storybook/addon-docs": "^9.1.4",
+    "@storybook/addon-vitest": "^9.1.5",
     "@storybook/react-vite": "^9.1.4",
-    "@storybook/test-runner": "^0.23.0",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
@@ -58,8 +58,9 @@
     "ts-node": "^10.9.2",
     "typescript": "5.9.2",
     "vite": "^7.1.4",
-    "vitest": "^3.0.8",
-    "wait-on": "^8.0.3"
+    "vitest": "^3.2.4",
+    "@vitest/browser": "3.2.4",
+    "@vitest/coverage-v8": "3.2.4"
   },
   "scripts": {
     "build:prebuild": "rm -rf core reset && mkdir -p dist/core",
@@ -69,8 +70,8 @@
     "build:icons": "ts-node scripts/generate-icons.ts",
     "build": "pnpm build:prebuild && pnpm build:icons && pnpm build:swc && pnpm build:tsc && pnpm build:cleanup",
     "watch": "pnpm build:swc -w",
-    "format:check": "prettier -c \"*.{js,ts}\" \"src/**/*.{js,ts,tsx}\"",
-    "format:write": "prettier -w \"*.{js,ts}\" \"src/**/*.{js,ts,tsx}\"",
+    "format:check": "prettier -c \"*.{js,ts}\" \".storybook/*.{js,ts,tsx}\" \"src/**/*.{js,ts,tsx}\"",
+    "format:write": "prettier -w \"*.{js,ts}\" \".storybook/*.{js,ts,tsx}\" \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint *.{js,ts} src/**/*.{js,ts,tsx}",
     "update:all": "./scripts/update-dependents.sh",
     "pre-release": "./scripts/pre-release.sh",
@@ -79,10 +80,8 @@
     "storybook": "pnpm build && storybook dev -p 6006",
     "build-storybook": "pnpm build && storybook build --quiet -o preview",
     "heroku-postbuild": "pnpm build-storybook && ./scripts/setup-auth.sh",
-    "test": "pnpm test:storybook && pnpm test:vitest run",
-    "test:storybook": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook --url http://127.0.0.1:6007\"",
-    "test:update-snapshots": "npx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook && pnpm http-server preview --port 6007 --silent\" \"wait-on tcp:6007 && pnpm test-storybook -u --url http://127.0.0.1:6007\"",
-    "test:vitest": "vitest --environment=jsdom --dir=src"
+    "test": "vitest --run",
+    "test:ci": "pnpm build:icons && pnpm test"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

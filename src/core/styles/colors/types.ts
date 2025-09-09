@@ -123,7 +123,7 @@ export const pinkColors = [
   "pink-900",
 ] as const;
 
-const secondaryColors = [
+export const secondaryColors = [
   ...yellowColors,
   ...greenColors,
   ...blueColors,
@@ -131,7 +131,7 @@ const secondaryColors = [
   ...pinkColors,
 ] as const;
 
-const guiColors = [
+export const guiColors = [
   "gui-blue-default-light",
   "gui-blue-hover-light",
   "gui-blue-active-light",

@@ -373,8 +373,14 @@ Review apps are automatically cleaned up when the PR is closed or the label is r
 
 ### Running tests
 
-`ably-ui` uses Storybook's `test-runner`, which on push automatically turns all stories into executable tests, underpinned by Jest and Playright. This means that we don't have to explicitly write tests for stories, though we have the ability to write [https://storybook.js.org/docs/writing-stories/play-function](play functions), which allow us to test more detailed interactions. More information on the capabilities of `test-runner` can be found [https://storybook.js.org/docs/writing-tests/test-runner](here).
+`ably-ui` uses [vitest](https://vitest.dev/) with the [Storybook addon for vitest](https://storybook.js.org/docs/writing-tests/integrations/vitest-addon) to automatically turn all stories into executable tests. This means that we don't have to explicitly write tests for stories, though we have the ability to write [play functions](https://storybook.js.org/docs/writing-stories/play-function), which allow us to test more detailed interactions.
 
-Snapshots are also assessed via `test-runner`. To generate new snapshots, run `pnpm test:update-snapshots`.
+The tests run in a browser environment using Playwright, providing comprehensive visual regression testing and interaction testing capabilities.
 
-You can run the tests by either running a dev instance of Storybook locally and then running `pnpm test`, or by pushing a branch to GitHub.
+You can run the tests locally using:
+
+```bash
+pnpm test
+```
+
+This will run all story tests using vitest in a headless browser environment.

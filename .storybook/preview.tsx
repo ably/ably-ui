@@ -1,6 +1,6 @@
 import React from "react";
 import { initialize, mswLoader } from "msw-storybook-addon";
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 
 import "./styles.css";
 import { themes } from "storybook/theming";
@@ -8,6 +8,7 @@ import theme, { brandImage, brandImageDark } from "./theme";
 
 initialize({
   onUnhandledRequest: "bypass",
+  quiet: true, // Reduce MSW logging
   serviceWorker: {
     url:
       location.hostname === "ably.github.io"
