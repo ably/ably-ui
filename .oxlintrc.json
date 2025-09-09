@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": ["react", "import", "jsx-a11y", "vitest"],
+  "rules": {
+    "typescript/no-unused-vars": "warn",
+    "react/display-name": "off",
+    "typescript/explicit-module-boundary-types": "off",
+    "typescript/no-non-null-assertion": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
