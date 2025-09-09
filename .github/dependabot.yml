@@ -14,9 +14,9 @@ updates:
         patterns:
           - "@storybook/*"
           - "storybook"
-      ts-eslint:
+      oxlint:
         patterns:
-          - "@typescript-eslint/*"
+          - "oxlint"
       svgr:
         patterns:
           - "@svgr/*"

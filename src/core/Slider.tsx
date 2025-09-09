@@ -2,6 +2,7 @@ import React, {
   useState,
   useEffect,
   useRef,
+  useCallback,
   ReactNode,
   TouchEvent,
 } from "react";
@@ -90,30 +91,32 @@ const Slider = ({ children, options }: SliderProps) => {
 
   const isInline = options?.controlPosition === "inline";
 
-  const next = () => {
+  const next = useCallback(() => {
     if (!slideLock) {
       setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
       setTranslationCoefficient(1);
-      resetInterval();
       setSlideLock(true);
     }
-  };
+  }, [slideLock, children.length]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     if (!slideLock) {
       setActiveIndex((prevIndex) =>
         prevIndex > 0 ? prevIndex - 1 : children.length - 1,
       );
       setTranslationCoefficient(-1);
-      resetInterval();
       setSlideLock(true);
     }
-  };
+  }, [slideLock, children.length]);
 
-  const resetInterval = () => {
+  const resetInterval = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(next, options?.interval ?? 10000);
-  };
+    timerRef.current = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
+      setTranslationCoefficient(1);
+      setSlideLock(true);
+    }, options?.interval ?? 10000);
+  }, [children.length, options?.interval]);
 
   const handleTouchStart = (e: TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
@@ -137,7 +140,7 @@ const Slider = ({ children, options }: SliderProps) => {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [children.length, options?.interval]);
+  }, [children.length, options?.interval, resetInterval]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -145,7 +148,7 @@ const Slider = ({ children, options }: SliderProps) => {
       setTranslationCoefficient(0);
       setSlideLock(false);
     }, SLIDE_TRANSITION_LENGTH);
-  }, [activeIndex]);
+  }, [activeIndex, children]);
 
   return (
     <div

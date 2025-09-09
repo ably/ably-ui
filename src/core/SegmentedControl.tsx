@@ -107,6 +107,7 @@ const SegmentedControl: React.FC<PropsWithChildren<SegmentedControlProps>> = ({
         className,
       )}
       tabIndex={disabled ? -1 : 0}
+      // eslint-disable-next-line jsx-a11y/prefer-tag-over-role - creates unwanted button on button hierarchies elsewhere
       role="button"
       aria-pressed={active}
       aria-disabled={disabled}

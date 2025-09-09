@@ -108,10 +108,18 @@ const ProductTile = ({
         },
         { "cursor-pointer": selected !== undefined && !unavailable },
         { "pointer-events-none": unavailable },
+        { "focus-base": onClick && !unavailable },
         { [`${className}`]: className },
       )}
       aria-hidden={unavailable}
       onClick={onClick}
+      onKeyDown={(e) => {
+        if ((e.key === "Enter" || e.key === " ") && onClick && !unavailable) {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      tabIndex={onClick && !unavailable ? 0 : -1}
     >
       <div
         className={cn(

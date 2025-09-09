@@ -115,7 +115,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (!selectedApiKey && apiKeys && apiKeys.length > 0) {
       setSelectedApiKey(apiKeys[0].keys?.[0]?.key);
     }
-  }, [apiKeys, selectedApiKey]);
+  }, [selectedApiKey, apiKeys]);
 
   useEffect(() => {
     const element = codeRef.current;
@@ -148,7 +148,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     return () => {
       document.removeEventListener("copy", handleCopy);
     };
-  }, [codeRef.current, selectedApiKey]);
+  }, [selectedApiKey]);
 
   const extractLanguageFromCode = useCallback(
     (codeElement: React.ReactElement | null): string | null => {
@@ -261,7 +261,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (filteredLanguages.length > 0) return filteredLanguages[0];
 
     return languages[0];
-  }, [lang, resolvedSdk, sdkTypes, filteredLanguages]);
+  }, [lang, resolvedSdk, sdkTypes, filteredLanguages, languages]);
 
   const requiresApiKeySubstitution = useMemo(() => {
     const containsPlaceholder = codeData.some(
@@ -331,8 +331,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     codeData,
     hasOnlyJsonSnippet,
     showCodeLines,
-    apiKeys,
     selectedApiKey,
+    requiresApiKeySubstitution,
   ]);
 
   const hasSnippetForActiveLanguage = useMemo(() => {
@@ -358,7 +358,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         onChange(stripSdkType(activeLanguage), type);
       }
     },
-    [languages],
+    [languages, activeLanguage, onChange],
   );
 
   const handleLanguageChange = useCallback(

@@ -4,7 +4,7 @@
     "es2021": true,
     "node": true
   },
-  "plugins": ["react", "import", "jsx-a11y", "vitest"],
+  "plugins": ["typescript", "unicorn", "oxc", "react", "react-perf", "import", "jsx-a11y", "vitest"],
   "rules": {
     "typescript/no-unused-vars": "warn",
     "react/display-name": "off",

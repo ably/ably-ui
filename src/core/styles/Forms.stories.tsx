@@ -144,7 +144,9 @@ export const RadioButtons = {
 export const Textareas = {
   render: () => (
     <div className="mb-10">
-      <label className="ui-text-p1 block" htmlFor="example-text-area"></label>
+      <label className="ui-text-p1 block" htmlFor="example-text-area">
+        Textarea Label
+      </label>
       <textarea
         id="example-text-area"
         className="ui-textarea"
@@ -162,28 +164,28 @@ export const Toggles = {
   render: () => (
     <div className="grid sm:grid-cols-2 gap-4">
       <div className="flex gap-4 items-center">
-        <label className="ui-toggle">
+        <label className="ui-toggle" aria-label="Default toggle">
           <input type="checkbox" />
           <span className="ui-toggle-slider" />
         </label>
         <p>Default</p>
       </div>
       <div className="flex gap-4 items-center">
-        <label className="ui-toggle">
+        <label className="ui-toggle" aria-label="Pre-checked toggle">
           <input type="checkbox" defaultChecked />
           <span className="ui-toggle-slider" />
         </label>
         <p>Pre-checked</p>
       </div>
       <div className="flex gap-4 items-center">
-        <label className="ui-toggle">
+        <label className="ui-toggle" aria-label="Disabled toggle">
           <input type="checkbox" disabled />
           <span className="ui-toggle-slider" />
         </label>
         <p>Disabled</p>
       </div>
       <div className="flex gap-4 items-center">
-        <label className="ui-toggle">
+        <label className="ui-toggle" aria-label="Custom color toggle">
           <input type="checkbox" className="peer" />
           <span className="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800" />
         </label>

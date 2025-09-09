@@ -171,7 +171,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
         : indexValues.filter((_, index) =>
             options?.defaultOpenIndexes?.includes(index),
           );
-    }, [options?.defaultOpenIndexes, options?.fullyOpen, data.length]);
+    }, [options?.defaultOpenIndexes, options?.fullyOpen, data]);
 
     const [openRowValues, setOpenRowValues] = useState<string[]>(openIndexes);
 

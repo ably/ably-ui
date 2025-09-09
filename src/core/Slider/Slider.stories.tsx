@@ -14,7 +14,10 @@ const Slide = ({ name }: { name: string }) => (
         <div className="flex flex-col sm:flex-row gap-8">
           <div className="flex gap-2">
             <div className="static self-center sm:absolute sm:-bottom-12 sm:-right-14 rounded-full bg-gradient-to-l from-neutral-200 to-50% to-neutral-500 w-12 h-12 sm:w-[12.5625rem] sm:h-[12.5625rem] md:w-[16.0625rem] md:h-[16.0625rem] lg:w-[17.5rem] lg:h-[17.5rem] overflow-hidden flex items-center justify-center sm:border-[16px] border-neutral-200">
-              <img src="https://picsum.photos/id/64/200" alt="test-image" />
+              <img
+                src="https://picsum.photos/id/64/200"
+                alt="User profile avatar"
+              />
             </div>
             <div className="sm:py-4">
               <p className="ui-text-p1 text-neutral-1300">{name}</p>
@@ -26,7 +29,7 @@ const Slide = ({ name }: { name: string }) => (
 
           <div className="w-20 h-px sm:w-px sm:h-full bg-neutral-500"></div>
           <div className="flex items-center gap-1">
-            <img src="https://picsum.photos/id/145/40" alt="test-image" />
+            <img src="https://picsum.photos/id/145/40" alt="Company logo" />
             <p className="ui-text-h4 font-bold">Mentimeter</p>
           </div>
         </div>

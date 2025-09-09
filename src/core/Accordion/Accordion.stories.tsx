@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Accordion, { AccordionProps } from "../Accordion";
 import { IconName } from "../Icon/types";
 import { accordionThemes } from "./types";

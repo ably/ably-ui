@@ -81,6 +81,12 @@ const FeaturedLink = ({
       }
       {...targetAndRel}
       onClick={onClick}
+      onKeyDown={(e) => {
+        if ((e.key === "Enter" || e.key === " ") && onClick) {
+          e.preventDefault();
+          onClick();
+        }
+      }}
     >
       {reverse ? (
         <>

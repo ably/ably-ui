@@ -88,7 +88,7 @@ const useAutoHide = (type: string, closeFlash: () => void) => {
         clearTimeout(timeoutId.current);
       }
     };
-  }, []);
+  }, [type, closeFlash]);
 };
 
 const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
@@ -239,7 +239,7 @@ const BackendFlashes = ({ flashes }: BackendFlashesProps) => {
         payload: transformedFlashes,
       });
     }
-  }, []);
+  }, [flashes]);
 
   const WrappedFlashes = ConnectStateWrapper(Flashes, {
     flashes: selectFlashes,

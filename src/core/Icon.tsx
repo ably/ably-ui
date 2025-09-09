@@ -134,13 +134,12 @@ const Icon = ({
     [
       LocalIconComponent,
       HeroiconComponent,
-      iconName,
       size,
       color,
       additionalCSS,
-      lightSecondaryColor,
-      darkSecondaryColor,
       name,
+      additionalAttributes,
+      setUniqueIdsRef,
     ],
   );
 

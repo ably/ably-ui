@@ -61,8 +61,7 @@ const TooltipButton = memo(
       }
 
       return (
-        <div
-          role="button"
+        <button
           className={cn(
             "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
             className,
@@ -71,7 +70,7 @@ const TooltipButton = memo(
           aria-label={tooltip}
         >
           {children}
-        </div>
+        </button>
       );
     }, [
       variant,

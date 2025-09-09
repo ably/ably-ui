@@ -98,7 +98,6 @@ const Trigger = ({
     <button
       id="menu-trigger"
       aria-label={description}
-      role="button"
       onClick={() => setOpen(!isOpen)}
       className={cn(
         "flex items-center ui-text-label3 font-bold text-neutral-1000 dark:text-neutral-300 focus:outline-none",

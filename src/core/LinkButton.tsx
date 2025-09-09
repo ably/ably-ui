@@ -7,9 +7,13 @@ import {
 import cn from "./utils/cn";
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
 
+type LinkButtonEvent =
+  | React.MouseEvent<HTMLAnchorElement>
+  | React.KeyboardEvent<HTMLAnchorElement>;
+
 export type LinkButtonProps = ButtonPropsBase & {
   disabled?: boolean;
-  onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+  onClick?: (event: LinkButtonEvent) => void;
   iconColor?: ColorClass | ColorThemeSet;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
@@ -25,7 +29,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   iconColor,
   ...rest
 }) => {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = (e: LinkButtonEvent) => {
     if (disabled) {
       e.preventDefault();
       return;
@@ -44,9 +48,14 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           "ui-button-disabled dark:ui-button-disabled-dark": disabled,
         }),
       })}
-      role="button"
       aria-disabled={disabled}
       onClick={handleClick}
+      onKeyDown={(e) => {
+        if ((e.key === "Enter" || e.key === " ") && handleClick && !disabled) {
+          e.preventDefault();
+          handleClick(e);
+        }
+      }}
       {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
     >
       {commonButtonInterior({ leftIcon, rightIcon, iconColor, children })}

@@ -321,7 +321,7 @@ If using positioning any other than static, be mindful of creating stacking cont
 
 ### Formatting & linting files
 
-By default, [Prettier](https://prettier.io/) & [ESLint](https://eslint.org/) will handle most of the frontend files. You can use them through your editor (which should pick up the relevant config files) or on the command line (see `scripts` in package.json).
+By default, [Prettier](https://prettier.io/) & [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html) will handle most of the frontend files. You can use them through your editor (which should pick up the relevant config files) or on the command line (see `scripts` in package.json).
 
 ### Adding a new component
 

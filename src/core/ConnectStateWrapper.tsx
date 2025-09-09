@@ -35,7 +35,7 @@ const ConnectStateWrapper = (Component: any, selectors: any) => {
     Object.keys(selectors).forEach((key) => {
       connectState(selectors[key], setStateForKey(key));
     });
-  }, []);
+  }, [selectors]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const WrappedComponent = (props: any) => <Component {...props} {...state} />;

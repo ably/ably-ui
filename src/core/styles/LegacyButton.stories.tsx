@@ -107,12 +107,10 @@ export const WithIcons = {
 export const LinkStyledAsButton = {
   render: () => (
     <div className="flex flex-col gap-4 max-w-[18.75rem]">
-      <a href="#" role="button" className="ui-btn">
-        Link
-      </a>
-      <a href="#" role="button" className="ui-btn ui-btn-disabled">
-        Disabled link
-      </a>
+      <button className="ui-btn">Button</button>
+      <button className="ui-btn ui-btn-disabled" disabled>
+        Disabled button
+      </button>
     </div>
   ),
 };

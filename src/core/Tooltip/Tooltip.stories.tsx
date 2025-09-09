@@ -49,7 +49,7 @@ export const Interactive = {
       <div className="w-64 h-64 bg-neutral-1300 flex items-center justify-center m-6 border mx-auto rounded-lg">
         <Tooltip interactive>
           Here&apos;s some super stuff with a{" "}
-          <a href="#" className="ui-link">
+          <a href="https://example.com" className="ui-link">
             super interactive link
           </a>{" "}
           in it
@@ -58,7 +58,7 @@ export const Interactive = {
       <div className="w-64 h-64 flex items-center justify-center m-6 border mx-auto rounded-lg">
         <Tooltip theme="light" interactive>
           Here&apos;s some super stuff with a{" "}
-          <a href="#" className="ui-link">
+          <a href="https://example.com" className="ui-link">
             super interactive link
           </a>{" "}
           in it

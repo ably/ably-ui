@@ -114,13 +114,12 @@ export const HeaderLinks: React.FC<
               >
                 <div className="p-2">
                   {<DashboardLink className={dropdownMenuLinkClasses} />}
-                  <a
+                  <button
                     onClick={onClickLogout}
-                    href="#"
                     className={dropdownMenuLinkClasses}
                   >
                     Logout
-                  </a>
+                  </button>
                 </div>
               </DropdownMenu.Content>
             </DropdownMenu>

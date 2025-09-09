@@ -1,4 +1,11 @@
-import React, { useState, useEffect, useRef, ReactNode, useMemo } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  ReactNode,
+  useMemo,
+  useCallback,
+} from "react";
 import Icon from "./Icon";
 import cn from "./utils/cn";
 import Logo from "./Logo";
@@ -175,14 +182,14 @@ const Header: React.FC<HeaderProps> = ({
     themedScrollpoints.length > 0 ? themedScrollpoints[0].className : "",
   );
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setFadingOut(true);
 
     setTimeout(() => {
       setShowMenu(false);
       setFadingOut(false);
     }, 150);
-  };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -207,7 +214,7 @@ const Header: React.FC<HeaderProps> = ({
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints]);
+  }, [themedScrollpoints, isNoticeVisible]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -237,7 +244,7 @@ const Header: React.FC<HeaderProps> = ({
     if (location && showMenu) {
       closeMenu();
     }
-  }, [location]);
+  }, [location, showMenu, closeMenu]);
 
   const wrappedSearchButton = useMemo(
     () =>
