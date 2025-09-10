@@ -36,5 +36,5 @@ jobs:
           prettier: true
           prettier_extensions: js,ts,tsx
           prettier_auto_fix: false
-      - name: Run Storybook test-runner
-        run: pnpm test
+      - name: Run Storybook test
+        run: pnpm test:ci

@@ -9,7 +9,11 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
-  addons: ["@storybook/addon-docs", "@vueless/storybook-dark-mode"],
+  addons: [
+    "@storybook/addon-docs",
+    "@vueless/storybook-dark-mode",
+    "@storybook/addon-vitest",
+  ],
   docs: {},
   typescript: {
     reactDocgen: "react-docgen-typescript",
