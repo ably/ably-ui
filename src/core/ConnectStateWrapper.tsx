@@ -35,6 +35,7 @@ const ConnectStateWrapper = (Component: any, selectors: any) => {
     Object.keys(selectors).forEach((key) => {
       connectState(selectors[key], setStateForKey(key));
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

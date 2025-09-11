@@ -91,7 +91,13 @@ export const Dropdowns = {
       </div>
       <div>
         <p className="mb-4 text-neutral-800">Synthetic</p>
-        <div className="ui-dropdown max-w-64" tabIndex={0}>
+        <div
+          className="ui-dropdown max-w-64"
+          tabIndex={0}
+          role="combobox"
+          aria-expanded="false"
+          aria-controls="language-options"
+        >
           Select language
         </div>
       </div>
@@ -144,7 +150,9 @@ export const RadioButtons = {
 export const Textareas = {
   render: () => (
     <div className="mb-10">
-      <label className="ui-text-p1 block" htmlFor="example-text-area"></label>
+      <label className="ui-text-p1 block" htmlFor="example-text-area">
+        Example textarea
+      </label>
       <textarea
         id="example-text-area"
         className="ui-textarea"
@@ -163,6 +171,7 @@ export const Toggles = {
     <div className="grid sm:grid-cols-2 gap-4">
       <div className="flex gap-4 items-center">
         <label className="ui-toggle">
+          <span className="sr-only">Default toggle</span>
           <input type="checkbox" />
           <span className="ui-toggle-slider" />
         </label>
@@ -170,6 +179,7 @@ export const Toggles = {
       </div>
       <div className="flex gap-4 items-center">
         <label className="ui-toggle">
+          <span className="sr-only">Pre-checked toggle</span>
           <input type="checkbox" defaultChecked />
           <span className="ui-toggle-slider" />
         </label>
@@ -177,6 +187,7 @@ export const Toggles = {
       </div>
       <div className="flex gap-4 items-center">
         <label className="ui-toggle">
+          <span className="sr-only">Disabled toggle</span>
           <input type="checkbox" disabled />
           <span className="ui-toggle-slider" />
         </label>
@@ -184,6 +195,7 @@ export const Toggles = {
       </div>
       <div className="flex gap-4 items-center">
         <label className="ui-toggle">
+          <span className="sr-only">Custom styled toggle</span>
           <input type="checkbox" className="peer" />
           <span className="ui-toggle-slider peer-checked:!bg-pink-600 bg-blue-800" />
         </label>

@@ -93,7 +93,7 @@ export const PricingPageTable = () => {
                     key={row.label}
                     className="border-t border-light-grey"
                   >
-                    <a className="ui-link" href="#">
+                    <a href="/" className="ui-link">
                       {row.label}
                     </a>
                     <Tooltip>Example tooltip</Tooltip>
@@ -113,17 +113,17 @@ export const PricingPageTable = () => {
           <Table.Row>
             <Table.Cell></Table.Cell>
             <Table.CtaCell>
-              <a href="#" className="ui-btn-secondary">
+              <a href="/" className="ui-btn-secondary">
                 Get started
               </a>
             </Table.CtaCell>
             <Table.CtaCell>
-              <a href="#" className="ui-btn-secondary">
+              <a href="/" className="ui-btn-secondary">
                 Get started
               </a>
             </Table.CtaCell>
             <Table.CtaCell>
-              <a href="#" className="ui-btn">
+              <a href="/" className="ui-btn">
                 Contact sales
               </a>
             </Table.CtaCell>

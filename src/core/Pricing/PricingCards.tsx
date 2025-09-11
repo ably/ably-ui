@@ -37,7 +37,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
       window.removeEventListener("resize", determineMaxDescriptionHeight);
       determineMaxDescriptionHeight.cancel();
     };
-  }, []);
+  }, [determineMaxDescriptionHeight]);
 
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (

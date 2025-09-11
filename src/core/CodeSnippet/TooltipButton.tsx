@@ -68,6 +68,13 @@ const TooltipButton = memo(
             className,
           )}
           onClick={onClick}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              onClick?.();
+            }
+          }}
+          tabIndex={0}
           aria-label={tooltip}
         >
           {children}

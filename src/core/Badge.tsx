@@ -141,6 +141,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
         className,
       )}
       tabIndex={focusable ? 0 : undefined}
+      role={focusable ? "button" : undefined}
       aria-label={focusable || hoverable ? ariaLabel : undefined}
     >
       {iconBefore ? (

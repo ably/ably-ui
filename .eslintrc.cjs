@@ -11,6 +11,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react-perf/recommended",
     "plugin:storybook/recommended",
+    "plugin:jsx-a11y/recommended",
   ],
   parserOptions: {
     ecmaVersion: 12,

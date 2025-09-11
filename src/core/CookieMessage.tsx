@@ -17,7 +17,7 @@ const CookieMessage = ({ cookieId, urlBase }: CookieMessageProps) => {
   useEffect(() => {
     const isCookieSet = Cookie.get(cookieId) ? true : false;
     setHideCookieMessage(isCookieSet);
-  }, []);
+  }, [cookieId]);
 
   const handleClose = () => {
     Cookie.set(cookieId, "1", { expires: COOKIE_EXPIRY });

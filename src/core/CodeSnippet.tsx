@@ -148,7 +148,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     return () => {
       document.removeEventListener("copy", handleCopy);
     };
-  }, [codeRef.current, selectedApiKey]);
+  }, [selectedApiKey]);
 
   const extractLanguageFromCode = useCallback(
     (codeElement: React.ReactElement | null): string | null => {
@@ -261,7 +261,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (filteredLanguages.length > 0) return filteredLanguages[0];
 
     return languages[0];
-  }, [lang, resolvedSdk, sdkTypes, filteredLanguages]);
+  }, [resolvedSdk, sdkTypes, lang, filteredLanguages, languages]);
 
   const requiresApiKeySubstitution = useMemo(() => {
     const containsPlaceholder = codeData.some(
@@ -328,10 +328,10 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       });
   }, [
     activeLanguage,
-    codeData,
     hasOnlyJsonSnippet,
+    codeData,
+    requiresApiKeySubstitution,
     showCodeLines,
-    apiKeys,
     selectedApiKey,
   ]);
 
@@ -358,7 +358,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         onChange(stripSdkType(activeLanguage), type);
       }
     },
-    [languages],
+    [activeLanguage, languages, onChange],
   );
 
   const handleLanguageChange = useCallback(
@@ -540,6 +540,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         onFocus={() => setIsHovering(true)}
         onBlur={() => setIsHovering(false)}
         tabIndex={0}
+        role="button"
+        aria-label="Focusable code snippet area"
       >
         {renderContent}
         {isHovering && activeLanguage && (

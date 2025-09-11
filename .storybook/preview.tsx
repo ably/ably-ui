@@ -1,4 +1,3 @@
-import React from "react";
 import { initialize, mswLoader } from "msw-storybook-addon";
 import type { Preview } from "@storybook/react-vite";
 

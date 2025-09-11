@@ -47,6 +47,13 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       role="button"
       aria-disabled={disabled}
       onClick={handleClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleClick(e as React.KeyboardEvent<HTMLAnchorElement>);
+        }
+      }}
+      tabIndex={0}
       {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
     >
       {commonButtonInterior({ leftIcon, rightIcon, iconColor, children })}
