@@ -207,7 +207,7 @@ const Header: React.FC<HeaderProps> = ({
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints]);
+  }, [themedScrollpoints, isNoticeVisible]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -237,7 +237,7 @@ const Header: React.FC<HeaderProps> = ({
     if (location && showMenu) {
       closeMenu();
     }
-  }, [location]);
+  }, [location, showMenu]);
 
   const wrappedSearchButton = useMemo(
     () =>

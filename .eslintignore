@@ -4,3 +4,4 @@ vendor
 preview/public
 preview/tmp
 node_modules
+*.d.ts

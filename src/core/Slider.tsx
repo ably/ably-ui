@@ -4,6 +4,7 @@ import React, {
   useRef,
   ReactNode,
   TouchEvent,
+  useCallback,
 } from "react";
 import Icon from "./Icon";
 
@@ -90,30 +91,37 @@ const Slider = ({ children, options }: SliderProps) => {
 
   const isInline = options?.controlPosition === "inline";
 
-  const next = () => {
+  const nextRef = useRef<() => void>();
+
+  const next = useCallback(() => {
     if (!slideLock) {
       setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
       setTranslationCoefficient(1);
-      resetInterval();
       setSlideLock(true);
     }
-  };
+  }, [children.length, slideLock]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     if (!slideLock) {
       setActiveIndex((prevIndex) =>
         prevIndex > 0 ? prevIndex - 1 : children.length - 1,
       );
       setTranslationCoefficient(-1);
-      resetInterval();
       setSlideLock(true);
     }
-  };
+  }, [children.length, slideLock]);
 
-  const resetInterval = () => {
+  // Update the ref whenever next changes
+  nextRef.current = next;
+
+  const resetInterval = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(next, options?.interval ?? 10000);
-  };
+    timerRef.current = setInterval(() => {
+      if (nextRef.current) {
+        nextRef.current();
+      }
+    }, options?.interval ?? 10000);
+  }, [options?.interval]);
 
   const handleTouchStart = (e: TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
@@ -126,9 +134,11 @@ const Slider = ({ children, options }: SliderProps) => {
   const handleTouchEnd = () => {
     if (touchStartX - touchEndX > 50) {
       next();
+      resetInterval();
     }
     if (touchStartX - touchEndX < -50) {
       prev();
+      resetInterval();
     }
   };
 
@@ -137,7 +147,7 @@ const Slider = ({ children, options }: SliderProps) => {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [children.length, options?.interval]);
+  }, [children.length, options?.interval, resetInterval]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -145,7 +155,7 @@ const Slider = ({ children, options }: SliderProps) => {
       setTranslationCoefficient(0);
       setSlideLock(false);
     }, SLIDE_TRANSITION_LENGTH);
-  }, [activeIndex]);
+  }, [activeIndex, children]);
 
   return (
     <div
@@ -187,7 +197,10 @@ const Slider = ({ children, options }: SliderProps) => {
           className={`${
             isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left`}
-          onClick={prev}
+          onClick={() => {
+            prev();
+            resetInterval();
+          }}
         >
           <div className="ui-icon-cta-holder flex w-12">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
@@ -211,7 +224,10 @@ const Slider = ({ children, options }: SliderProps) => {
           className={`${
             isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
           } pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right`}
-          onClick={next}
+          onClick={() => {
+            next();
+            resetInterval();
+          }}
         >
           <div className="ui-icon-cta-holder flex w-12">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">

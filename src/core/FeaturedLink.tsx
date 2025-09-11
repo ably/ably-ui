@@ -81,6 +81,17 @@ const FeaturedLink = ({
       }
       {...targetAndRel}
       onClick={onClick}
+      onKeyDown={
+        onClick
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onClick();
+              }
+            }
+          : undefined
+      }
+      role={onClick && !url ? "button" : undefined}
     >
       {reverse ? (
         <>

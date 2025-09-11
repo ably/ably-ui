@@ -43,6 +43,8 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
       onFocus={() => setIsHovering(true)}
       onBlur={() => setIsHovering(false)}
       tabIndex={0}
+      role="button"
+      aria-label="Focusable code view area"
       ref={codeRef}
     >
       {icon && (
