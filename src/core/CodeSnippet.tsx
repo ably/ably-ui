@@ -264,16 +264,14 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   }, [lang, resolvedSdk, sdkTypes, filteredLanguages]);
 
   const requiresApiKeySubstitution = useMemo(() => {
-    const containsPlaceholder = codeData.some(
-      (code) =>
-        code?.content.includes("{{API_KEY}}") &&
-        stripSdkType(code?.language) === lang,
+    const containsPlaceholder = codeData.some((code) =>
+      code?.content.includes("{{API_KEY}}"),
     );
 
     return (
       containsPlaceholder && !!apiKeys && apiKeys.length > 0 && !!selectedApiKey
     );
-  }, [codeData, apiKeys, selectedApiKey, lang]);
+  }, [codeData, apiKeys, selectedApiKey]);
 
   const [isHovering, setIsHovering] = useState(false);
 
