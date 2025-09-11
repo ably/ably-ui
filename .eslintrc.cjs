@@ -4,34 +4,38 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint:recommended", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react-perf/recommended",
+    "plugin:storybook/recommended",
+  ],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
   },
   rules: {
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        argsIgnorePattern: "^_",
-        varsIgnorePattern: "^_",
-      },
-    ],
+    "react/display-name": "off",
+    "react-perf/jsx-no-new-function-as-prop": "off",
+    "react-perf/jsx-no-new-object-as-prop": "off",
+    "react-perf/jsx-no-new-array-as-prop": "off",
   },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
-      extends: [
-        "plugin:react/recommended",
-        "prettier",
-        "plugin:storybook/recommended",
-        "plugin:@typescript-eslint/recommended",
-      ],
-      plugins: ["@typescript-eslint"],
+      extends: ["plugin:@typescript-eslint/recommended"],
       rules: {
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            argsIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+          },
+        ],
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-non-null-assertion": 0,
-        "react/display-name": "off",
       },
     },
   ],
@@ -39,5 +43,5 @@ module.exports = {
     react: {
       version: "detect", // Automatically detect the React version
     },
-  }
+  },
 };
