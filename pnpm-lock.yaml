@@ -161,7 +161,7 @@ importers:
         version: 26.1.0
       mixpanel-browser:
         specifier: ^2.60.0
-        version: 2.69.1
+        version: 2.70.0
       msw:
         specifier: 2.11.1
         version: 2.11.1(@types/node@20.19.1)(typescript@5.9.2)
@@ -3776,8 +3776,8 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  mixpanel-browser@2.69.1:
-    resolution: {integrity: sha512-wXSCOnoh6t6YEqfZauglXQW1PeWTbF/1Q1rMguCouhc4z2xcdpYJFYArNxyFapI5Xsp3LJqReHbquVhr5Udsxw==}
+  mixpanel-browser@2.70.0:
+    resolution: {integrity: sha512-iXSD6t9iNTHd1cHbBlP4LrJACgAKfFrssttGKAy4sNu+BodVccTlJQJeBxINZUBsP/WbWMFSuDo2xHRUr3OG/A==}
 
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
@@ -8884,7 +8884,7 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mixpanel-browser@2.69.1:
+  mixpanel-browser@2.70.0:
     dependencies:
       '@mixpanel/rrweb': 2.0.0-alpha.18.1
 
