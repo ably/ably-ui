@@ -42,7 +42,7 @@
     "@vueless/storybook-dark-mode": "^9.0.8",
     "autoprefixer": "^10.0.2",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.2.0",
