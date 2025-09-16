@@ -33,6 +33,27 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     onClick?.(e);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (e.repeat) return;
+    // Space: prevent page scroll on keydown; activate on keyup.
+    if (e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      return;
+    }
+    // Enter activates on keydown.
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (!disabled) e.currentTarget.click();
+    }
+  };
+
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      if (!disabled) e.currentTarget.click();
+    }
+  };
+
   return (
     <a
       {...commonButtonProps({
@@ -47,12 +68,8 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       role="button"
       aria-disabled={disabled}
       onClick={handleClick}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          handleClick(e as React.KeyboardEvent<HTMLAnchorElement>);
-        }
-      }}
+      onKeyDown={handleKeyDown}
+      onKeyUp={handleKeyUp}
       tabIndex={0}
       {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
     >
