@@ -40,12 +40,7 @@ const Meganav = ({
 }: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
 
-  const memoizedNoticeHeight = useMemo(() => {
-    if (!notice) {
-      return 0;
-    }
-    return noticeHeight;
-  }, [notice, noticeHeight]);
+  const finalNoticeHeight = notice ? noticeHeight : 0;
 
   const mobileNavItems = useMemo(
     () =>
@@ -106,7 +101,7 @@ const Meganav = ({
         className="absolute inset-0 w-full z-50"
         id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
         data-testid="meganav"
-        style={{ height: HEADER_HEIGHT + memoizedNoticeHeight }}
+        style={{ height: HEADER_HEIGHT + finalNoticeHeight }}
       >
         {notice && (
           <Notice
@@ -118,7 +113,7 @@ const Meganav = ({
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
           isNoticeBannerEnabled={!!notice}
-          noticeHeight={memoizedNoticeHeight}
+          noticeHeight={finalNoticeHeight}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}

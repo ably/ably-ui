@@ -91,12 +91,13 @@ const Notice = ({
     ALLOWED_URI_REGEXP: /^\/[^/]/,
   });
 
+  // have to add the style classes here as src/core/Notice/component.css is not being properly imported or distributed when ably-ui is used as a package.
   return (
     <div
       className={cn(
         "ui-announcement relative z-[60]",
         isClosing
-          ? "ui-announcement-hidden max-h-0 -translate-y-full opacity-0 overflow-hidden" // have to add the classes here as src/core/Notice/component.css is not being properly imported or distributed when ably-ui is used as a package.
+          ? "ui-announcement-hidden max-h-0 -translate-y-full opacity-0 overflow-hidden"
           : "ui-announcement-visible",
         bgColor,
         textColor,
@@ -129,7 +130,7 @@ const Notice = ({
               setTimeout(() => {
                 document.dispatchEvent(new CustomEvent("notice-closed"));
                 onClose?.();
-              }, 100);
+              }, 300);
             }}
           >
             <Icon

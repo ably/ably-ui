@@ -189,21 +189,17 @@ const Header: React.FC<HeaderProps> = ({
     themedScrollpoints.length > 0 ? themedScrollpoints[0].className : "",
   );
 
-  const headerProps = useMemo(
-    () => ({
-      style: {
-        height: HEADER_HEIGHT,
-        top: noticeBannerVisible ? `${noticeHeight}px` : "0",
-      },
-      className: cn(
-        "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-all duration-300 ease-in-out px-6 lg:px-16",
-        scrollpointClasses,
-        {
-          "md:top-auto": noticeBannerVisible,
-        },
-      ),
-    }),
-    [noticeBannerVisible, noticeHeight, scrollpointClasses],
+  const headerStyle = {
+    height: HEADER_HEIGHT,
+    top: noticeBannerVisible ? `${noticeHeight}px` : "0",
+  };
+
+  const headerClassName = cn(
+    "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-all duration-300 ease-in-out px-6 lg:px-16",
+    scrollpointClasses,
+    {
+      "md:top-auto": noticeBannerVisible,
+    },
   );
 
   const closeMenu = () => {
@@ -298,7 +294,7 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header role="banner" {...headerProps}>
+      <header role="banner" style={headerStyle} className={headerClassName}>
         <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">
             {(["light", "dark"] as Theme[]).map((theme) => (

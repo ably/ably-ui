@@ -1,6 +1,6 @@
 @layer components {
   .ui-announcement {
-    @apply font-sans transition-[max-height,transform,opacity] duration-150 ease-in-out;
+    @apply font-sans transition-[max-height,transform,opacity] duration-300 ease-in-out;
   }
 
   .ui-announcement-visible {
