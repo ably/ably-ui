@@ -7,7 +7,7 @@ import { ColorClassColorGroups } from "./styles/colors/types";
 /**
  * Props for the Badge component.
  */
-interface BadgeProps {
+export interface BadgeProps {
   /**
    * The size of the badge. Can be one of "xs", "sm", "md", or "lg".
    */

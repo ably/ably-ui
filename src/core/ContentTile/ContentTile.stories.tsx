@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type React from "react";
+import React from "react";
 import ContentTile from "../ContentTile";
 
 const meta: Meta<typeof ContentTile> = {
@@ -12,11 +12,7 @@ export default meta;
 
 type Story = StoryObj<typeof ContentTile>;
 
-const gridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "2rem",
-};
+const gridStyle = "grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8";
 
 const fullImage = (
   <img src="https://placecats.com/300/200" alt="Kitten" className="rounded-t" />
@@ -28,7 +24,7 @@ const centeredImage = (
 
 export const WithImageFeature: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -44,7 +40,7 @@ export const WithImageFeature: Story = {
 
 export const WithCenteredImageFeature: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -61,7 +57,7 @@ export const WithCenteredImageFeature: Story = {
 
 export const WithFeatureIcons: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -80,13 +76,13 @@ export const WithFeatureIcons: Story = {
   ),
 };
 
-export const WithImageFeatureAndCTA: Story = {
+export const WithImageFeatureAndExplicitCTA: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
-          title={`Content Tile with CTA ${i}`}
+          title={`Content Tile with explicit CTA ${i}`}
           description="This ContentTile displays a call-to-action button."
           feature={fullImage}
           featureType="image"
@@ -101,9 +97,31 @@ export const WithImageFeatureAndCTA: Story = {
   ),
 };
 
+export const WithImageFeatureAndImplicitCTA: Story = {
+  render: () => (
+    <div className={gridStyle}>
+      {[1, 2, 3, 4].map((i) => (
+        <ContentTile
+          key={i}
+          title={`Content Tile with implicit CTA ${i}`}
+          description="This ContentTile is linked but has no call-to-action button."
+          feature={fullImage}
+          featureType="image"
+          cta={{
+            text: "Learn More",
+            url: `https://ably.com/${i}`,
+            implicit: true,
+          }}
+          onClick={(url) => console.log(`Clicked ${url}`)}
+        />
+      ))}
+    </div>
+  ),
+};
+
 export const WithIconFeature: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -119,7 +137,7 @@ export const WithIconFeature: Story = {
 
 export const WithIconFeatureAndCTA: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -140,7 +158,7 @@ export const WithIconFeatureAndCTA: Story = {
 
 export const WithCTAOnly: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -159,7 +177,7 @@ export const WithCTAOnly: Story = {
 
 export const WithBadges: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -167,9 +185,9 @@ export const WithBadges: Story = {
           description="This ContentTile displays several badges."
           featureType="image"
           badges={[
-            "New",
-            { label: "Featured", className: "bg-blue-100 text-blue-800" },
-            { label: "Beta", className: "bg-yellow-100 text-yellow-800" },
+            { label: "New" },
+            { label: "Featured", color: "blue" },
+            { label: "Beta", color: "yellow" },
           ]}
         />
       ))}
@@ -179,7 +197,7 @@ export const WithBadges: Story = {
 
 export const WithImageFeatureAndEverything: Story = {
   render: () => (
-    <div style={gridStyle}>
+    <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
         <ContentTile
           key={i}
@@ -193,10 +211,7 @@ export const WithImageFeatureAndEverything: Story = {
             url: `https://ably.com/${i}`,
           }}
           onClick={(url) => console.log(`Clicked ${url}`)}
-          badges={[
-            "Popular",
-            { label: "Pro", className: "bg-green-100 text-green-800" },
-          ]}
+          badges={[{ label: "Popular" }, { label: "Pro", color: "green" }]}
         />
       ))}
     </div>
