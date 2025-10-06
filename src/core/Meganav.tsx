@@ -28,6 +28,7 @@ export type MeganavProps = {
   notice?: MeganavNoticeBannerProps;
   theme?: string;
   themedScrollpoints?: ThemedScrollpoint[];
+  onNoticeClose?: () => void;
 };
 
 const Meganav = ({
@@ -35,8 +36,12 @@ const Meganav = ({
   notice,
   theme,
   themedScrollpoints,
+  onNoticeClose,
 }: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
+
+  const finalNoticeHeight = notice ? noticeHeight : 0;
+
   const mobileNavItems = useMemo(
     () =>
       menuItemsForHeader
@@ -65,16 +70,30 @@ const Meganav = ({
   ];
 
   useEffect(() => {
-    const observeNoticeResize = () => {
-      const noticeElement = document.querySelector('[data-id="ui-notice"]');
-      if (noticeElement) {
-        setNoticeHeight(noticeElement.getBoundingClientRect().height);
-      }
+    if (!notice) {
+      setNoticeHeight(0);
+      return;
+    }
+
+    const noticeElement = document.querySelector('[data-id="ui-notice"]');
+    if (!noticeElement) return;
+
+    const updateNoticeHeight = () => {
+      setNoticeHeight(noticeElement.getBoundingClientRect().height);
     };
-    observeNoticeResize();
-    window.addEventListener("resize", observeNoticeResize);
-    return () => window.removeEventListener("resize", observeNoticeResize);
-  }, []);
+
+    const observer = new ResizeObserver(updateNoticeHeight);
+    observer.observe(noticeElement);
+
+    const timeoutId = setTimeout(updateNoticeHeight, 0);
+    window.addEventListener("resize", updateNoticeHeight);
+
+    return () => {
+      clearTimeout(timeoutId);
+      observer.disconnect();
+      window.removeEventListener("resize", updateNoticeHeight);
+    };
+  }, [notice]);
 
   return (
     <>
@@ -82,12 +101,19 @@ const Meganav = ({
         className="absolute inset-0 w-full z-50"
         id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
         data-testid="meganav"
-        style={{ height: HEADER_HEIGHT + noticeHeight }}
+        style={{ height: HEADER_HEIGHT + finalNoticeHeight }}
       >
-        {notice && <Notice {...notice.props} config={notice.config} />}
+        {notice && (
+          <Notice
+            {...notice.props}
+            config={notice.config}
+            onClose={onNoticeClose}
+          />
+        )}
         <Header
           className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
-          isNoticeVisible={!!notice}
+          isNoticeBannerEnabled={!!notice}
+          noticeHeight={finalNoticeHeight}
           nav={
             <Flyout
               menuItems={menuItemsForHeader}

@@ -1,4 +1,11 @@
-import React, { useState, useEffect, useRef, ReactNode, useMemo } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  ReactNode,
+  useMemo,
+  useCallback,
+} from "react";
 import Icon from "./Icon";
 import cn from "./utils/cn";
 import Logo from "./Logo";
@@ -56,9 +63,13 @@ export type HeaderProps = {
    */
   className?: string;
   /**
-   * Indicates if the notice banner is visible.
+   * Indicates if the notice banner is enabled.
    */
-  isNoticeVisible?: boolean;
+  isNoticeBannerEnabled?: boolean;
+  /**
+   * Height of the notice banner in pixels.
+   */
+  noticeHeight?: number;
   /**
    * Optional search bar element.
    */
@@ -152,7 +163,8 @@ const MAX_MOBILE_MENU_WIDTH = "560px";
 
 const Header: React.FC<HeaderProps> = ({
   className,
-  isNoticeVisible = false,
+  isNoticeBannerEnabled = false,
+  noticeHeight = 0,
   searchBar,
   searchButton,
   logoHref,
@@ -169,10 +181,25 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
-  const [bannerVisible, setBannerVisible] = useState(isNoticeVisible);
+  const [noticeBannerVisible, setNoticeBannerVisible] = useState(
+    isNoticeBannerEnabled,
+  );
   const menuRef = useRef<HTMLDivElement>(null);
   const [scrollpointClasses, setScrollpointClasses] = useState<string>(
     themedScrollpoints.length > 0 ? themedScrollpoints[0].className : "",
+  );
+
+  const headerStyle = {
+    height: HEADER_HEIGHT,
+    top: noticeBannerVisible ? `${noticeHeight}px` : "0",
+  };
+
+  const headerClassName = cn(
+    "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-all duration-300 ease-in-out px-6 lg:px-16",
+    scrollpointClasses,
+    {
+      "md:top-auto": noticeBannerVisible,
+    },
   );
 
   const closeMenu = () => {
@@ -184,10 +211,26 @@ const Header: React.FC<HeaderProps> = ({
     }, 150);
   };
 
+  const handleNoticeClose = useCallback(() => {
+    setNoticeBannerVisible(false);
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("notice-closed", handleNoticeClose);
+    return () =>
+      document.removeEventListener("notice-closed", handleNoticeClose);
+  }, [handleNoticeClose]);
+
   useEffect(() => {
     const handleScroll = () => {
-      setBannerVisible(
-        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE && isNoticeVisible,
+      const noticeElement = document.querySelector('[data-id="ui-notice"]');
+      const isNoticeClosedToBeHidden = noticeElement?.classList.contains(
+        "ui-announcement-hidden",
+      );
+      setNoticeBannerVisible(
+        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE &&
+          isNoticeBannerEnabled &&
+          !isNoticeClosedToBeHidden,
       );
       for (const scrollpoint of themedScrollpoints) {
         const element = document.getElementById(scrollpoint.id);
@@ -201,13 +244,13 @@ const Header: React.FC<HeaderProps> = ({
       }
     };
 
-    const throttledHandleScroll = throttle(handleScroll, 150);
+    const throttledHandleScroll = throttle(handleScroll, 100);
 
     handleScroll();
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints, isNoticeVisible]);
+  }, [themedScrollpoints, isNoticeBannerEnabled]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -251,17 +294,7 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header
-        role="banner"
-        className={cn(
-          "fixed left-0 top-0 w-full z-50 bg-neutral-000 dark:bg-neutral-1300 border-b border-neutral-300 dark:border-neutral-1000 transition-colors px-6 lg:px-16",
-          scrollpointClasses,
-          {
-            "md:top-auto": bannerVisible,
-          },
-        )}
-        style={{ height: HEADER_HEIGHT }}
-      >
+      <header role="banner" style={headerStyle} className={headerClassName}>
         <div className={cn("flex items-center h-full", className)}>
           <nav className="flex flex-1 h-full items-center">
             {(["light", "dark"] as Theme[]).map((theme) => (

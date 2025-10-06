@@ -34,15 +34,15 @@ const hideOnMobile = (bannerContainer) => {
 };
 
 const hideNotice = (bannerContainer) => {
-  bannerContainer.style.maxHeight = 0;
-  bannerContainer.style.overflow = "hidden";
+  bannerContainer.classList.remove("ui-announcement-visible");
+  bannerContainer.classList.add("ui-announcement-hidden");
 
   adjustFlashMargin(false);
 };
 
 const showNotice = (bannerContainer) => {
-  bannerContainer.style.maxHeight = null;
-  bannerContainer.style.overflow = null;
+  bannerContainer.classList.remove("ui-announcement-hidden");
+  bannerContainer.classList.add("ui-announcement-visible");
 
   adjustFlashMargin(true);
 };
@@ -70,7 +70,7 @@ const setupNoticeCollapse = (bannerContainer) => {
 
     if (scrollTop > COLLAPSE_TRIGGER_DISTANCE) {
       hideNotice(bannerContainer);
-    } else if (bannerContainer.style.overflow) {
+    } else if (bannerContainer.classList.contains("ui-announcement-hidden")) {
       showNotice(bannerContainer);
     }
   }, SCROLL_LISTENER_THROTTLE);
@@ -99,7 +99,7 @@ const setupCloseBtn = (
 
   closeBtn.addEventListener("click", listener);
 
-  return () => document.removeEventListener("click", listener);
+  return () => closeBtn.removeEventListener("click", listener);
 };
 
 const resizeHandler = (bannerContainer) => {
