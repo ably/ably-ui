@@ -1,111 +1,101 @@
-import React, { memo, useMemo } from "react";
+import React, { useMemo } from "react";
 import Tooltip from "../Tooltip";
-import SegmentedControl from "../SegmentedControl";
+import SegmentedControl, { SegmentedControlSize } from "../SegmentedControl";
 import cn from "../utils/cn";
 import { IconName } from "../Icon/types";
+import type { TooltipProps } from "@radix-ui/react-tooltip";
 
 type TooltipButtonProps = {
-  tooltip: string;
+  tooltip: string | React.ReactNode;
   active?: boolean;
   onClick: () => void;
   icon?: IconName;
   className?: string;
   children?: React.ReactNode;
   variant?: "segmented" | "icon-button";
-  size?: "sm" | "md";
+  size?: SegmentedControlSize;
   alwaysShowLabel?: boolean;
+  tooltipRootProps?: TooltipProps;
 };
 
-/**
- * A unified tooltip button component that can render either a segmented control or an icon button
- */
-const TooltipButton = memo(
-  ({
-    tooltip,
-    active = false,
-    onClick,
-    icon,
-    className,
-    children,
-    variant = "segmented",
-    size = "sm",
-    alwaysShowLabel = false,
-  }: TooltipButtonProps) => {
-    // Only show tooltip for inactive segmented controls or all icon buttons
-    const showTooltip =
-      (variant === "segmented" && !active) || variant === "icon-button";
+const TooltipButton = ({
+  tooltip,
+  active = false,
+  onClick,
+  icon,
+  className,
+  children,
+  variant = "segmented",
+  size = "sm",
+  alwaysShowLabel = false,
+  tooltipRootProps,
+}: TooltipButtonProps) => {
+  const showTooltip =
+    (variant === "segmented" && !active) || variant === "icon-button";
 
-    // Determine whether to show children based on active state and alwaysShowLabel
-    const showChildren = active || alwaysShowLabel;
+  const showChildren = active || alwaysShowLabel;
 
-    // Create the button element based on variant
-    const buttonElement = useMemo(() => {
-      if (variant === "segmented") {
-        return (
-          <SegmentedControl
-            size={size}
-            active={active}
-            onClick={onClick}
-            leftIcon={icon}
-            className={cn(
-              "focus-base",
-              active
-                ? "bg-neutral-000 dark:bg-neutral-1300"
-                : "bg-neutral-100 dark:bg-neutral-1200",
-              className,
-            )}
-          >
-            {showChildren ? children : null}
-          </SegmentedControl>
-        );
-      }
-
+  // Create the button element based on variant
+  const buttonElement = useMemo(() => {
+    if (variant === "segmented") {
       return (
-        <div
-          role="button"
+        <SegmentedControl
+          size={size}
+          active={active}
+          onClick={onClick}
+          leftIcon={icon}
           className={cn(
-            "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
+            "focus-base transition-colors",
+            active
+              ? "bg-neutral-000 dark:bg-neutral-1100"
+              : "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-400 dark:active:bg-neutral-900",
             className,
           )}
-          onClick={onClick}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              onClick?.();
-            }
-          }}
-          tabIndex={0}
-          aria-label={tooltip}
         >
-          {children}
-        </div>
-      );
-    }, [
-      variant,
-      size,
-      active,
-      onClick,
-      icon,
-      className,
-      showChildren,
-      children,
-      tooltip,
-    ]);
-
-    // Render with tooltip if needed
-    if (showTooltip) {
-      return (
-        <Tooltip triggerElement={buttonElement} className="ml-0">
-          {tooltip}
-        </Tooltip>
+          {showChildren ? children : null}
+        </SegmentedControl>
       );
     }
 
-    return buttonElement;
-  },
-);
+    return (
+      <div
+        role="button"
+        className={cn(
+          "w-8 h-8 rounded-lg flex items-center justify-center bg-neutral-200 dark:bg-neutral-1100 hover:bg-neutral-300 dark:hover:bg-neutral-1000 transition-colors focus-base",
+          className,
+        )}
+        onClick={onClick}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onClick?.();
+          }
+        }}
+        tabIndex={0}
+      >
+        {children}
+      </div>
+    );
+  }, [variant, size, active, onClick, icon, className, showChildren, children]);
 
-// Add displayName for better debugging
-TooltipButton.displayName = "TooltipButton";
+  if (showTooltip) {
+    return (
+      <Tooltip
+        triggerElement={buttonElement}
+        rootProps={tooltipRootProps}
+        className="ml-0"
+        contentProps={{
+          className:
+            "px-2 py-1 bg-neutral-1100 dark:bg-neutral-200 text-neutral-300 dark:text-neutral-1000",
+        }}
+        triggerProps={{ className: "ml-0 h-auto" }}
+      >
+        {tooltip}
+      </Tooltip>
+    );
+  }
+
+  return buttonElement;
+};
 
 export default TooltipButton;

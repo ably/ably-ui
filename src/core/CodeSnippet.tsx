@@ -13,10 +13,9 @@ import Icon from "./Icon";
 import { getLanguageInfo, stripSdkType } from "./CodeSnippet/languages";
 import LanguageSelector from "./CodeSnippet/LanguageSelector";
 import ApiKeySelector from "./CodeSnippet/ApiKeySelector";
-import useCopyToClipboard from "./utils/useCopyToClipboard";
 import PlainCodeView from "./CodeSnippet/PlainCodeView";
 import CopyButton from "./CodeSnippet/CopyButton";
-import TooltipButton from "./CodeSnippet/TooltipButton";
+import SegmentedControl from "./SegmentedControl";
 
 // Define SDK type
 export type SDKType = "realtime" | "rest" | null;
@@ -105,7 +104,6 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   languageOrdering,
 }) => {
   const codeRef = useRef<HTMLDivElement>(null);
-  const { isCopied, copy } = useCopyToClipboard();
 
   const [selectedApiKey, setSelectedApiKey] = useState<string>(
     () => apiKeys?.[0]?.keys?.[0]?.key ?? "",
@@ -317,7 +315,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               key={code.language}
               language={langInfo.syntaxHighlighterKey || cleanLang}
               snippet={processedContent}
-              additionalCSS="bg-neutral-100 text-neutral-1300 dark:bg-neutral-1200 dark:text-neutral-200 px-6 py-4"
+              additionalCSS="!bg-neutral-000 text-neutral-1300 dark:!bg-neutral-1300 dark:text-neutral-200 px-6 py-4"
               showLines={showCodeLines}
             />
           );
@@ -455,42 +453,42 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             {title}
           </div>
 
-          {/* Empty div for balance */}
           <div className="w-12"></div>
         </div>
       )}
+
       {showSDKSelector && (
         <div
           className={cn(
-            "p-2 border-b border-neutral-200 dark:border-neutral-1100 h-14",
+            "p-2 border-b border-neutral-300 dark:border-neutral-1000",
+            sdkTypes.size === 1 && "p-1",
             headerRow ? "" : "rounded-t-lg",
           )}
         >
-          <div className="flex gap-3 justify-start">
-            {sdkTypes.has("realtime") && (
-              <TooltipButton
-                tooltip="Realtime SDK"
-                active={resolvedSdk === "realtime"}
-                onClick={() => handleSDKTypeChange("realtime")}
-                variant="segmented"
-                size="sm"
-                alwaysShowLabel={true}
-              >
-                Realtime
-              </TooltipButton>
-            )}
-
-            {sdkTypes.has("rest") && (
-              <TooltipButton
-                tooltip="REST SDK"
-                active={resolvedSdk === "rest"}
-                onClick={() => handleSDKTypeChange("rest")}
-                variant="segmented"
-                size="sm"
-                alwaysShowLabel={true}
-              >
-                REST
-              </TooltipButton>
+          <div className="flex gap-1 justify-start">
+            {["realtime", "rest"].map(
+              (type) =>
+                sdkTypes.has(type as SDKType) && (
+                  <SegmentedControl
+                    key={type}
+                    onClick={() => handleSDKTypeChange(type as SDKType)}
+                    size="xs"
+                    active={resolvedSdk === type}
+                    className={cn(
+                      "text-[11px] font-semibold px-2 py-1 h-auto",
+                      sdkTypes.size === 1 &&
+                        "pointer-events-none bg-neutral-100 dark:bg-neutral-1200 !text-neutral-800 !dark:text-neutral-500",
+                      sdkTypes.size > 1 &&
+                        resolvedSdk !== type &&
+                        "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-200 dark:hover:bg-neutral-1100 active:bg-neutral-400 dark:active:bg-neutral-900",
+                      sdkTypes.size > 1 &&
+                        resolvedSdk === type &&
+                        "bg-neutral-000 dark:bg-neutral-1100",
+                    )}
+                  >
+                    {type === "realtime" ? "Realtime" : "REST"}
+                  </SegmentedControl>
+                ),
             )}
           </div>
         </div>
@@ -506,7 +504,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         ) : (
           <div
             className={cn(
-              "border-b border-neutral-200 dark:border-neutral-1100 h-[2.125rem] inline-flex items-center px-3 w-full",
+              "border-b border-neutral-300 dark:border-neutral-1000 h-[2.125rem] inline-flex items-center px-3 w-full",
               { "rounded-t-lg": !headerRow },
             )}
           >
@@ -538,20 +536,19 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         onMouseLeave={() => setIsHovering(false)}
         onFocus={() => setIsHovering(true)}
         onBlur={() => setIsHovering(false)}
-        tabIndex={0}
-        role="button"
-        aria-label="Focusable code snippet area"
       >
         {renderContent}
-        {isHovering && activeLanguage && (
+        {isHovering && activeLanguage && hasSnippetForActiveLanguage && (
           <CopyButton
             onCopy={() => {
               const text = codeData.find(
                 (code) => code.language === activeLanguage,
               )?.content;
-              if (text) copy(substituteApiKey(text, selectedApiKey, false));
+              if (text)
+                navigator.clipboard.writeText(
+                  substituteApiKey(text, selectedApiKey, false),
+                );
             }}
-            isCopied={isCopied}
           />
         )}
       </div>

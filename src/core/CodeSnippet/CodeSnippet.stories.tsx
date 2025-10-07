@@ -428,6 +428,39 @@ export const WithSDKTypes: Story = {
   },
 };
 
+/**
+ * CodeSnippet with a single SDK type ("realtime") and multiple languages.
+ * The SDK selector shows the condensed form.
+ */
+export const WithSingleSDKType: Story = {
+  render: () => {
+    const [currentLang, setCurrentLang] = useState<string>("javascript");
+
+    return (
+      <CodeSnippet
+        headerRow
+        title="SDK Type Example (realtime only)"
+        lang={currentLang}
+        sdk="realtime"
+        onChange={(lang, _sdk) => {
+          setCurrentLang(lang);
+        }}
+      >
+        <pre>
+          <code className="language-realtime_javascript">
+            {CODE_SNIPPETS.javascript}
+          </code>
+        </pre>
+        <pre>
+          <code className="language-realtime_typescript">
+            {CODE_SNIPPETS.typescript}
+          </code>
+        </pre>
+      </CodeSnippet>
+    );
+  },
+};
+
 export const WithFallbackSDKTypeAcrossInstances: Story = {
   render: () => {
     const [currentLang, setCurrentLang] = useState<string>("javascript");

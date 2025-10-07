@@ -42,7 +42,7 @@ const Code = ({
       data-id="code"
     >
       {showLines ? (
-        <div className="text-code leading-6 pt-px">
+        <div className="text-p4 leading-normal pt-px">
           {[...Array(lineCount)].map((_, i) => (
             <p
               className={cn(
@@ -56,7 +56,10 @@ const Code = ({
           ))}
         </div>
       ) : null}
-      <pre lang={language} className="overflow-x-auto h-full flex-1 leading-6">
+      <pre
+        lang={language}
+        className="overflow-x-auto h-full flex-1 text-p4 leading-normal"
+      >
         <code
           className={className}
           dangerouslySetInnerHTML={{ __html: HTMLraw }}
