@@ -1,12 +1,9 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  ReactNode,
-  TouchEvent,
-  useCallback,
-} from "react";
+import React, { ReactNode, useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import type { EmblaCarouselType } from "embla-carousel";
 import Icon from "./Icon";
+import cn from "./utils/cn";
 
 interface SliderProps {
   children: ReactNode[];
@@ -25,8 +22,6 @@ interface SliderIndicatorProps {
   isInline?: boolean;
 }
 
-const SLIDE_TRANSITION_LENGTH = 300;
-
 const SlideIndicator = ({
   numSlides,
   activeIndex,
@@ -36,9 +31,10 @@ const SlideIndicator = ({
 }: SliderIndicatorProps) => {
   return (
     <ul
-      className={`flex gap-1 left-1/2 ${
-        isInline ? "bottom-0" : "absolute bottom-0 transform -translate-x-1/2"
-      }`}
+      className={cn(
+        "flex gap-1 left-1/2",
+        isInline ? "bottom-0" : "absolute bottom-0 transform -translate-x-1/2",
+      )}
     >
       {Array.from({ length: numSlides }, (_, i) =>
         intervalIndicator ? (
@@ -58,9 +54,10 @@ const SlideIndicator = ({
         ) : (
           <li key={i}>
             <span
-              className={`ui-slider-marker ${
-                i === activeIndex ? "text-active-orange" : "text-cool-black"
-              }`}
+              className={cn(
+                "ui-slider-marker",
+                i === activeIndex ? "text-active-orange" : "text-cool-black",
+              )}
               data-id="slider-marker"
             >
               &#x2b24;
@@ -72,110 +69,43 @@ const SlideIndicator = ({
   );
 };
 
-const setupSlides = (children: ReactNode[], activeIndex: number) => [
-  children[activeIndex === 0 ? children.length - 1 : activeIndex - 1],
-  children[activeIndex],
-  children[activeIndex === children.length - 1 ? 0 : activeIndex + 1],
-];
-
 const Slider = ({ children, options }: SliderProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
-  const [slides, setSlides] = useState<ReactNode[]>(
-    setupSlides(children, activeIndex),
-  );
-  const [translationCoefficient, setTranslationCoefficient] = useState(0);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const [slideLock, setSlideLock] = useState(false);
-
+  const interval = options?.interval ?? 10000;
   const isInline = options?.controlPosition === "inline";
 
-  const nextRef = useRef<() => void>();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 }, [
+    Autoplay({ delay: interval, stopOnInteraction: false }),
+  ]);
 
-  const next = useCallback(() => {
-    if (!slideLock) {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % children.length);
-      setTranslationCoefficient(1);
-      setSlideLock(true);
-    }
-  }, [children.length, slideLock]);
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
-  const prev = useCallback(() => {
-    if (!slideLock) {
-      setActiveIndex((prevIndex) =>
-        prevIndex > 0 ? prevIndex - 1 : children.length - 1,
-      );
-      setTranslationCoefficient(-1);
-      setSlideLock(true);
-    }
-  }, [children.length, slideLock]);
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
-  // Update the ref whenever next changes
-  nextRef.current = next;
-
-  const resetInterval = useCallback(() => {
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(() => {
-      if (nextRef.current) {
-        nextRef.current();
-      }
-    }, options?.interval ?? 10000);
-  }, [options?.interval]);
-
-  const handleTouchStart = (e: TouchEvent) => {
-    setTouchStartX(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e: TouchEvent) => {
-    setTouchEndX(e.touches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStartX - touchEndX > 50) {
-      next();
-      resetInterval();
-    }
-    if (touchStartX - touchEndX < -50) {
-      prev();
-      resetInterval();
-    }
-  };
+  const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
+    setActiveIndex(emblaApi.selectedScrollSnap());
+  }, []);
 
   useEffect(() => {
-    resetInterval();
+    if (!emblaApi) return;
+
+    onSelect(emblaApi);
+    emblaApi.on("select", onSelect).on("reInit", onSelect);
+
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      emblaApi.off("select", onSelect).off("reInit", onSelect);
     };
-  }, [children.length, options?.interval, resetInterval]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setSlides(setupSlides(children, activeIndex));
-      setTranslationCoefficient(0);
-      setSlideLock(false);
-    }, SLIDE_TRANSITION_LENGTH);
-  }, [activeIndex, children]);
+  }, [emblaApi, onSelect]);
 
   return (
-    <div
-      className="relative"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      <div className="overflow-y-visible overflow-x-clip w-full py-10">
-        <div
-          className={`flex items-center ${
-            translationCoefficient !== 0
-              ? `transition-transform ease-in-out duration-${SLIDE_TRANSITION_LENGTH}`
-              : ""
-          } `}
-          style={{
-            transform: `translateX(-${(translationCoefficient + 1) * 100}%)`,
-          }}
-        >
-          {slides.map((child, index) => (
+    <div className="relative">
+      <div className="overflow-hidden w-full py-10" ref={emblaRef}>
+        <div className="flex">
+          {children.map((child, index) => (
             <div
               key={index}
               className="w-full flex-shrink-0 flex justify-center sm:px-[3.75rem]"
@@ -187,20 +117,19 @@ const Slider = ({ children, options }: SliderProps) => {
       </div>
 
       <div
-        className={`flex items-center pointer-events-none ${
+        className={cn(
+          "flex items-center pointer-events-none",
           isInline
             ? "ui-standard-container justify-center gap-6 -mt-4"
-            : "sm:flex sm:absolute inset-0 justify-between"
-        }`}
+            : "sm:flex sm:absolute inset-0 justify-between",
+        )}
       >
         <button
-          className={`${
-            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
-          } pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left`}
-          onClick={() => {
-            prev();
-            resetInterval();
-          }}
+          className={cn(
+            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12",
+            "pointer-events-auto rounded border border-mid-grey hover:border-active-orange flex justify-center items-center ui-icon-cta ui-icon-cta-left",
+          )}
+          onClick={scrollPrev}
         >
           <div className="ui-icon-cta-holder flex w-12">
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
@@ -215,21 +144,24 @@ const Slider = ({ children, options }: SliderProps) => {
         <SlideIndicator
           numSlides={children.length}
           activeIndex={activeIndex}
-          interval={options?.interval ?? 10000}
+          interval={interval}
           intervalIndicator={options?.intervalIndicator}
           isInline={isInline}
         />
 
         <button
-          className={`${
-            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12"
-          } pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right`}
-          onClick={() => {
-            next();
-            resetInterval();
-          }}
+          className={cn(
+            isInline ? "w-8 h-8" : "hidden sm:flex w-12 h-12",
+            "pointer-events-auto rounded border border-mid-grey hover:border-active-orange justify-center items-center ui-icon-cta ui-icon-cta-right",
+          )}
+          onClick={scrollNext}
         >
-          <div className="ui-icon-cta-holder flex w-12">
+          <div
+            className={cn(
+              "ui-icon-cta-holder flex w-12",
+              isInline ? "-ml-3.5" : "",
+            )}
+          >
             <div className="w-full h-full flex-shrink-0 flex items-center justify-center">
               <Icon name="icon-gui-arrow-long-right-outline" size="1.5rem" />
             </div>
