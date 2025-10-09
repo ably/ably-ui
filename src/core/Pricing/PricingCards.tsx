@@ -16,19 +16,19 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
   const descriptionsRef = useRef<(HTMLSpanElement | null)[]>([]);
   const [descriptionHeight, setDescriptionHeight] = useState<number>(0);
 
-  const determineMaxDescriptionHeight = throttle(() => {
-    if (descriptionsRef.current.length) {
-      setDescriptionHeight(
-        Math.max(
-          ...descriptionsRef.current.map(
-            (description) => description?.getBoundingClientRect().height ?? 0,
-          ),
-        ),
-      );
-    }
-  }, 100);
-
   useEffect(() => {
+    const determineMaxDescriptionHeight = throttle(() => {
+      if (descriptionsRef.current.length) {
+        setDescriptionHeight(
+          Math.max(
+            ...descriptionsRef.current.map(
+              (description) => description?.getBoundingClientRect().height ?? 0,
+            ),
+          ),
+        );
+      }
+    }, 100);
+
     determineMaxDescriptionHeight();
 
     window.addEventListener("resize", determineMaxDescriptionHeight);
@@ -37,7 +37,7 @@ const PricingCards = ({ data, delimiter }: PricingCardsProps) => {
       window.removeEventListener("resize", determineMaxDescriptionHeight);
       determineMaxDescriptionHeight.cancel();
     };
-  }, [determineMaxDescriptionHeight]);
+  }, []);
 
   const delimiterColumn = (index: number) =>
     delimiter && index % 2 === 1 ? (

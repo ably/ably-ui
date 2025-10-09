@@ -1,4 +1,4 @@
-import React, { MouseEvent, useRef } from "react";
+import React, { MouseEvent, useRef, useMemo } from "react";
 import { HeaderProps } from "../Header";
 import Icon from "../Icon";
 import LinkButton from "../LinkButton";
@@ -44,11 +44,15 @@ export const HeaderLinks: React.FC<
     formRef.current?.submit();
   };
 
-  const DashboardLink = ({ className }: { className: string }) => (
-    <a href="/dashboard" className={className}>
-      Dashboard
-    </a>
-  );
+  const DashboardLink = ({ className }: { className: string }) =>
+    useMemo(
+      () => (
+        <a href="/dashboard" className={className}>
+          Dashboard
+        </a>
+      ),
+      [className],
+    );
 
   const LogoutForm = (
     <form ref={formRef} method="post" action={logOut.href} className="hidden">
@@ -113,7 +117,7 @@ export const HeaderLinks: React.FC<
                 contentClassNames="w-60 mt-3"
               >
                 <div className="p-2">
-                  {<DashboardLink className={dropdownMenuLinkClasses} />}
+                  <DashboardLink className={dropdownMenuLinkClasses} />
                   <button
                     onClick={onClickLogout}
                     className={dropdownMenuLinkClasses}

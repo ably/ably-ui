@@ -105,6 +105,16 @@ const TabMenu: React.FC<TabMenuProps> = ({
     }
   }, [animatedOption, highlight.width]);
 
+  const updateHighlightDimensions = (element: HTMLButtonElement) => {
+    const { left: parentLeft } = listRef.current?.getBoundingClientRect() ?? {};
+    const { left, width } = element.getBoundingClientRect() ?? {};
+
+    setHighlight({
+      offset: (left ?? 0) - (parentLeft ?? 0),
+      width: width ?? 0,
+    });
+  };
+
   useEffect(() => {
     const handleResize = throttle(() => {
       const activeTabElement =
@@ -125,16 +135,6 @@ const TabMenu: React.FC<TabMenuProps> = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const updateHighlightDimensions = (element: HTMLButtonElement) => {
-    const { left: parentLeft } = listRef.current?.getBoundingClientRect() ?? {};
-    const { left, width } = element.getBoundingClientRect() ?? {};
-
-    setHighlight({
-      offset: (left ?? 0) - (parentLeft ?? 0),
-      width: width ?? 0,
-    });
-  };
 
   const handleTabClick = (
     event: React.MouseEvent<HTMLButtonElement>,

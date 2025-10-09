@@ -12,11 +12,16 @@ type CookieMessageProps = {
 
 const CookieMessage = ({ cookieId, urlBase }: CookieMessageProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [hideCookieMessage, setHideCookieMessage] = useState(true);
+  const [hideCookieMessage, setHideCookieMessage] = useState(() =>
+    Cookie.get(cookieId) ? true : false,
+  );
 
   useEffect(() => {
     const isCookieSet = Cookie.get(cookieId) ? true : false;
-    setHideCookieMessage(isCookieSet);
+    if (hideCookieMessage !== isCookieSet) {
+      setHideCookieMessage(isCookieSet);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cookieId]);
 
   const handleClose = () => {
