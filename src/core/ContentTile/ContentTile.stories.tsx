@@ -90,7 +90,7 @@ export const WithImageFeatureAndExplicitCTA: Story = {
             text: "Learn More",
             url: `https://ably.com/${i}`,
           }}
-          onClick={(url) => console.log(`Clicked ${url}`)}
+          onClick={(url) => alert(`Clicked ${url}`)}
         />
       ))}
     </div>
@@ -112,7 +112,7 @@ export const WithImageFeatureAndImplicitCTA: Story = {
             url: `https://ably.com/${i}`,
             implicit: true,
           }}
-          onClick={(url) => console.log(`Clicked ${url}`)}
+          onClick={(url) => alert(`Clicked ${url}`)}
         />
       ))}
     </div>
@@ -149,7 +149,7 @@ export const WithIconFeatureAndCTA: Story = {
             text: "Learn More",
             url: `https://ably.com/${i}`,
           }}
-          onClick={(url) => console.log(`Clicked ${url}`)}
+          onClick={(url) => alert(`Clicked ${url}`)}
         />
       ))}
     </div>
@@ -168,7 +168,7 @@ export const WithCTAOnly: Story = {
             text: "Learn More",
             url: `https://ably.com/${i}`,
           }}
-          onClick={(url) => console.log(`Clicked ${url}`)}
+          onClick={(url) => alert(`Clicked ${url}`)}
         />
       ))}
     </div>
@@ -210,7 +210,7 @@ export const WithImageFeatureAndEverything: Story = {
             text: "Get Started",
             url: `https://ably.com/${i}`,
           }}
-          onClick={(url) => console.log(`Clicked ${url}`)}
+          onClick={(url) => alert(`Clicked ${url}`)}
           badges={[{ label: "Popular" }, { label: "Pro", color: "green" }]}
         />
       ))}

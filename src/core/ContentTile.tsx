@@ -81,8 +81,7 @@ const ContentTile: React.FC<ContentTileProps> = ({
           className={cn(
             "content-tile__feature relative p-3 h-[200px] pb-0 flex items-end justify-center overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 transition-[border-color,height]",
             centerFeature && "items-center pb-3",
-            cta &&
-              "group-hover/content-tile:border-neutral-500 dark:group-hover/content-tile:border-neutral-800",
+
             featureClassName,
           )}
         >
@@ -118,18 +117,16 @@ const ContentTile: React.FC<ContentTileProps> = ({
     }
 
     return null;
-  }, [
-    centerFeature,
-    cta,
-    feature,
-    featureClassName,
-    featureIcons,
-    featureType,
-  ]);
+  }, [centerFeature, feature, featureClassName, featureIcons, featureType]);
 
   return (
     <div
-      className={cn("group/content-tile", cta && "cursor-pointer", className)}
+      className={cn(
+        "group/content-tile p-5 border border-neutral-300 dark:border-neutral-1000 rounded-lg",
+        cta &&
+          "cursor-pointer hover:border-neutral-500 dark:hover:border-neutral-800 transition-colors",
+        className,
+      )}
       {...(cta && {
         onClick: handleClick,
         onKeyDown: (e: React.KeyboardEvent) => {
@@ -148,7 +145,8 @@ const ContentTile: React.FC<ContentTileProps> = ({
         {title && (
           <h2
             className={cn(
-              "content-tile__title mt-4 mb-2 ui-text-h4 text-neutral-1300 dark:text-neutral-000",
+              "content-tile__title mb-2 ui-text-h4 text-neutral-1300 dark:text-neutral-000",
+              feature && "mt-4",
               titleClassName,
             )}
           >
@@ -158,7 +156,10 @@ const ContentTile: React.FC<ContentTileProps> = ({
         {description && (
           <div
             className={cn(
-              "content-tile__description mb-2 ui-text-p2 text-neutral-800 dark:text-neutral-500 group-hover/content-tile:text-neutral-1000 dark:group-hover/content-tile:text-neutral-300 transition-colors",
+              "content-tile__description ui-text-p2 text-neutral-1000 dark:text-neutral-300",
+              cta &&
+                "text-neutral-800 dark:text-neutral-500 group-hover/content-tile:text-neutral-1000 dark:group-hover/content-tile:text-neutral-300 transition-colors",
+              (badges || (cta && !cta.implicit)) && "mb-2",
               descriptionClassName,
             )}
           >
@@ -182,7 +183,7 @@ const ContentTile: React.FC<ContentTileProps> = ({
           <FeaturedLink
             url="#"
             additionalCSS={cn(
-              "pt-0 pointer-events-none font-medium items-center text-neutral-800 dark:text-neutral-500 group-hover/content-tile:text-neutral-1300 dark:group-hover/content-tile:text-neutral-000 transition-colors [&_svg]:group-hover/content-tile:left-0",
+              "py-0 pointer-events-none font-medium items-center text-neutral-800 dark:text-neutral-500 group-hover/content-tile:text-neutral-1300 dark:group-hover/content-tile:text-neutral-000 transition-colors [&_svg]:group-hover/content-tile:left-0",
               ctaClassName,
             )}
             iconColor="text-orange-600"
