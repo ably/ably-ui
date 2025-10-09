@@ -8,7 +8,7 @@ module.exports = {
     "eslint:recommended",
     "prettier",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended-legacy",
+    "plugin:react-hooks/recommended",
     "plugin:react-perf/recommended",
     "plugin:storybook/recommended",
     "plugin:jsx-a11y/recommended",

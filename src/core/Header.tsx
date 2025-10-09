@@ -280,7 +280,8 @@ const Header: React.FC<HeaderProps> = ({
     if (location && showMenu) {
       closeMenu();
     }
-  }, [location, showMenu]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
 
   const wrappedSearchButton = useMemo(
     () =>

@@ -115,7 +115,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     if (!selectedApiKey && apiKeys && apiKeys.length > 0) {
       setSelectedApiKey(apiKeys[0].keys?.[0]?.key);
     }
-  }, [apiKeys, selectedApiKey]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [apiKeys]);
 
   useEffect(() => {
     const element = codeRef.current;
@@ -368,12 +369,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     [onChange, resolvedSdk],
   );
 
-  const NoSnippetMessage = useMemo(() => {
-    if (!activeLanguage) return () => null;
+  const noSnippetMessage = useMemo(() => {
+    if (!activeLanguage) return null;
 
     const activeLanguageInfo = getLanguageInfo(activeLanguage);
 
-    return () => (
+    return (
       <div className="px-16 py-6 ui-text-body2 text-neutral-800 dark:text-neutral-400 text-center flex flex-col gap-3 items-center">
         <Icon
           name="icon-gui-exclamation-triangle-outline"
@@ -401,12 +402,12 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
       return processedChildren;
     }
 
-    return <NoSnippetMessage />;
+    return noSnippetMessage;
   }, [
     activeLanguage,
     hasSnippetForActiveLanguage,
     processedChildren,
-    NoSnippetMessage,
+    noSnippetMessage,
   ]);
 
   // Render special case for plain commands (shell or text)

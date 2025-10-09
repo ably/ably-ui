@@ -95,7 +95,6 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [closed, setClosed] = useState(false);
   const [flashHeight, setFlashHeight] = useState(0);
-  const [triggerEntryAnimation, setTriggerEntryAnimation] = useState(false);
 
   const closeFlash = () => {
     if (ref.current) {
@@ -111,10 +110,9 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
     }, 100);
   };
 
-  useEffect(() => setTriggerEntryAnimation(true), []);
   useAutoHide(type, closeFlash);
 
-  const animateEntry = triggerEntryAnimation && !closed;
+  const animateEntry = !closed;
 
   let style;
 
@@ -199,17 +197,28 @@ const Flashes = ({ flashes }: FlashesProps) => {
     setFlashesWithIds((items) => items.filter((item) => item.id !== flashId));
 
   useEffect(() => {
+    if (!flashes?.items?.length) return;
+
     setFlashesWithIds((state) => {
-      return [
-        ...state,
-        ...(flashes?.items ?? []).map((flash) => ({
+      const newFlashes = (flashes.items ?? [])
+        .filter(
+          (flash) =>
+            !state.some(
+              (existing) =>
+                existing.content === flash.content &&
+                existing.type === flash.type,
+            ),
+        )
+        .map((flash) => ({
           ...flash,
           id: Math.random().toString(36).slice(2),
           removed: false,
           removeFlash,
-        })),
-      ];
+        }));
+
+      return newFlashes.length > 0 ? [...state, ...newFlashes] : state;
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flashes]);
 
   return (

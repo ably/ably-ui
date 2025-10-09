@@ -71,7 +71,9 @@ const Meganav = ({
 
   useEffect(() => {
     if (!notice) {
-      setNoticeHeight(0);
+      if (noticeHeight !== 0) {
+        setNoticeHeight(0);
+      }
       return;
     }
 
@@ -93,6 +95,7 @@ const Meganav = ({
       observer.disconnect();
       window.removeEventListener("resize", updateNoticeHeight);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [notice]);
 
   return (
