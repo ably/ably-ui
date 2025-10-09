@@ -5,7 +5,9 @@ import React, {
   useRef,
   useState,
 } from "react";
+import * as RadixCollapsible from "@radix-ui/react-collapsible";
 import { throttle } from "es-toolkit/compat";
+import cn from "./utils/cn";
 
 type ExpanderProps = {
   heightThreshold?: number;
@@ -28,7 +30,6 @@ const Expander = ({
   const innerRef = useRef<HTMLDivElement>(null);
   const [showControls, setShowControls] = useState(false);
   const [contentHeight, setContentHeight] = useState<number>(heightThreshold);
-  const [height, setHeight] = useState<number | "auto">(heightThreshold);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
@@ -36,16 +37,8 @@ const Expander = ({
       setContentHeight(innerRef.current.clientHeight);
     }
 
-    if (contentHeight < heightThreshold) {
-      setHeight("auto");
-    } else if (expanded) {
-      setHeight(contentHeight);
-    } else {
-      setHeight(heightThreshold);
-    }
-
     setShowControls(contentHeight >= heightThreshold);
-  }, [contentHeight, heightThreshold, expanded]);
+  }, [contentHeight, heightThreshold]);
 
   useEffect(() => {
     const onResize = throttle(() => {
@@ -60,38 +53,47 @@ const Expander = ({
     };
   }, []);
 
+  const height =
+    contentHeight < heightThreshold
+      ? "auto"
+      : expanded
+        ? contentHeight
+        : heightThreshold;
+
   return (
-    <>
+    <RadixCollapsible.Root open={expanded} onOpenChange={setExpanded}>
       <div
         style={{ height }}
         data-testid="expander-container"
-        className={`overflow-hidden transition-all relative ${className ?? ""}`}
+        className={cn("overflow-hidden transition-all relative", className)}
       >
         {showControls && !expanded && (
           <div
-            className={`h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0 ${
-              fadeClassName ?? ""
-            }`}
+            className={cn(
+              "h-16 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 left-0 right-0",
+              fadeClassName,
+            )}
           ></div>
         )}
         <div ref={innerRef}>{children}</div>
       </div>
       {showControls && (
-        <div
-          onClick={() => setExpanded(!expanded)}
-          onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
-          tabIndex={0}
-          role="button"
-          aria-expanded={expanded}
-          data-testid="expander-controls"
-          className={`${heightThreshold === 0 && !expanded ? "" : "mt-4"} cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light ${controlsClassName ?? ""}`}
-        >
-          {expanded
-            ? (controlsOpenedLabel ?? "View less -")
-            : (controlsClosedLabel ?? "View all +")}
-        </div>
+        <RadixCollapsible.Trigger asChild>
+          <button
+            data-testid="expander-controls"
+            className={cn(
+              heightThreshold === 0 && !expanded ? "" : "mt-4",
+              "cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light",
+              controlsClassName,
+            )}
+          >
+            {expanded
+              ? (controlsOpenedLabel ?? "View less -")
+              : (controlsClosedLabel ?? "View all +")}
+          </button>
+        </RadixCollapsible.Trigger>
       )}
-    </>
+    </RadixCollapsible.Root>
   );
 };
 
