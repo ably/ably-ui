@@ -6,17 +6,28 @@ export default {
   tags: ["autodocs"],
 };
 
+const defaultArgs = {
+  additionalCSS: "border border-neutral-300",
+};
+
 export const Javascript = {
   args: {
     language: "javascript",
     snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
 var channel = ably.channels.get('web-pal');
-    
+
 // Subscribe to messages on channel
 channel.subscribe('greeting', function(message) {
   alert(message.data);
 });`,
-    additionalCSS: "bg-neutral-1200 p-4",
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "Basic JavaScript code snippet with syntax highlighting.",
+      },
+    },
   },
 };
 
@@ -30,6 +41,14 @@ let channel = ably.channels.get("web-pal")
 channel.subscribe("greeting") { message in
   print("\\(message.data)")
 }`,
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "Swift code snippet with syntax highlighting.",
+      },
+    },
   },
 };
 
@@ -49,6 +68,14 @@ listener = new MessageListener() {
   };
 };
 channel.subscribe("greeting", listener);`,
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "Java code snippet with syntax highlighting.",
+      },
+    },
   },
 };
 
@@ -68,6 +95,14 @@ val exampleConstraints = DefaultResolutionConstraints(
   batteryLevelThreshold = 10.0f,
   lowBatteryMultiplier = 2.0f
 )`,
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "Kotlin code snippet with syntax highlighting.",
+      },
+    },
   },
 };
 
@@ -77,10 +112,42 @@ export const CodeWithLines = {
     language: "javascript",
     snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
 var channel = ably.channels.get('web-pal');
-    
+
 // Subscribe to messages on channel
 channel.subscribe('greeting', function(message) {
   alert(message.data);
 });`,
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Code snippet with line numbers displayed using the `showLines` prop.",
+      },
+    },
+  },
+};
+
+export const CodeWithWrap = {
+  args: {
+    wrap: true,
+    language: "javascript",
+    snippet: `var ably = new Ably.Realtime('1WChTA.mc0Biw:kNfiYG4KiPgmHHgH');
+var channel = ably.channels.get('web-pal');
+
+// This is a very long line that demonstrates the wrap functionality: it will wrap instead of creating a horizontal scrollbar when the content exceeds the container width
+channel.subscribe('greeting', function(message) {
+  alert(message.data);
+});`,
+    ...defaultArgs,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Code snippet with the `wrap` prop enabled, causing long lines to wrap instead of creating horizontal scrollbars.",
+      },
+    },
   },
 };

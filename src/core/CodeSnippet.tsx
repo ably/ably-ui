@@ -73,6 +73,10 @@ export type CodeSnippetProps = {
    * Languages not in this array will be shown after those that are included.
    */
   languageOrdering?: string[];
+  /**
+   * Whether to wrap code content instead of scrolling
+   */
+  wrapCode?: boolean;
 };
 
 // Substitution function for API key placeholders
@@ -102,6 +106,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   sdk,
   showCodeLines = true,
   languageOrdering,
+  wrapCode = false,
 }) => {
   const codeRef = useRef<HTMLDivElement>(null);
 
@@ -317,6 +322,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
               snippet={processedContent}
               additionalCSS="!bg-neutral-000 text-neutral-1300 dark:!bg-neutral-1300 dark:text-neutral-200 px-6 py-4"
               showLines={showCodeLines}
+              wrap={wrapCode}
             />
           );
         }
@@ -329,6 +335,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     codeData,
     requiresApiKeySubstitution,
     showCodeLines,
+    wrapCode,
     selectedApiKey,
   ]);
 

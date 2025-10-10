@@ -16,6 +16,7 @@ type CodeProps = {
   additionalCSS?: string;
   showLines?: boolean;
   lineCSS?: string;
+  wrap?: boolean;
 };
 
 const Code = ({
@@ -26,6 +27,7 @@ const Code = ({
   additionalCSS = "",
   showLines,
   lineCSS,
+  wrap = false,
 }: CodeProps) => {
   // Trim the snippet and remove trailing empty lines
   const trimmedSnippet = snippet.trimEnd();
@@ -58,7 +60,10 @@ const Code = ({
       ) : null}
       <pre
         lang={language}
-        className="overflow-x-auto h-full flex-1 text-p4 leading-normal"
+        className={cn(
+          "h-full flex-1 text-p4 leading-normal",
+          wrap ? "whitespace-pre-wrap break-words" : "overflow-x-auto",
+        )}
       >
         <code
           className={className}
