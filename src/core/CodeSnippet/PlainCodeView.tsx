@@ -1,8 +1,7 @@
-import React, { useRef, useState, useCallback, memo } from "react";
+import React, { useRef, useState } from "react";
 import Icon from "../Icon";
 import Code from "../Code";
 import cn from "../utils/cn";
-import useCopyToClipboard from "../utils/useCopyToClipboard";
 import CopyButton from "./CopyButton";
 import { IconName } from "../Icon/types";
 
@@ -13,23 +12,14 @@ type PlainCodeViewProps = {
   className?: string;
 };
 
-/**
- * A specialized component for displaying plain code (shell commands, text, etc.) with copy functionality
- */
 const PlainCodeView: React.FC<PlainCodeViewProps> = ({
   content,
   className,
   language,
   icon,
 }) => {
-  const { isCopied, copy } = useCopyToClipboard();
   const codeRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
-
-  // Handler to copy the content
-  const handleCopy = useCallback(() => {
-    copy(content);
-  }, [copy, content]);
 
   return (
     <div
@@ -69,11 +59,11 @@ const PlainCodeView: React.FC<PlainCodeViewProps> = ({
         showLines={false}
       />
 
-      {isHovering && <CopyButton onCopy={handleCopy} isCopied={isCopied} />}
+      {isHovering && (
+        <CopyButton onCopy={() => navigator.clipboard.writeText(content)} />
+      )}
     </div>
   );
 };
 
-PlainCodeView.displayName = "PlainCodeView";
-
-export default memo(PlainCodeView);
+export default PlainCodeView;
