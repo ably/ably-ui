@@ -73,7 +73,7 @@ const LanguageSelector = ({
 
   return (
     <div className="p-2 border-b border-neutral-300 dark:border-neutral-1000 overflow-x-auto">
-      <div className="hidden sm:flex gap-2">{desktopLanguageElements}</div>
+      <div className="hidden sm:flex gap-1">{desktopLanguageElements}</div>
 
       <div className="sm:hidden w-full">
         <Select.Root
