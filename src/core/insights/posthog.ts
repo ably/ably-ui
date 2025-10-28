@@ -45,8 +45,8 @@ export const identify = ({
   }
 };
 
-export const trackPageView = () => {
-  posthog.capture("$pageview");
+export const trackPageView = (properties?: Record<string, unknown>) => {
+  posthog.capture("$pageview", properties);
 };
 
 export const track = (event: string, properties?: Record<string, unknown>) => {

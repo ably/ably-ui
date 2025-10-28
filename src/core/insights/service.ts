@@ -113,12 +113,14 @@ export class InsightsService implements AnalyticsService {
   }
 
   trackPageView(options?: TrackPageViewOptions): void {
+    const { excludeIds, includeDataLayer, ...properties } = options ?? {};
+
     if (this.debugMode) {
       logger.info("Tracking page view");
     }
 
     try {
-      mixpanel.trackPageView(options?.excludeIds);
+      mixpanel.trackPageView({ excludeIds, ...properties });
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Mixpanel", e);
@@ -126,16 +128,16 @@ export class InsightsService implements AnalyticsService {
     }
 
     try {
-      posthog.trackPageView();
+      posthog.trackPageView(properties);
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Posthog", e);
       }
     }
 
-    if (options?.includeDataLayer) {
+    if (includeDataLayer) {
       try {
-        datalayer.trackPageView();
+        datalayer.trackPageView(properties);
       } catch (e) {
         if (this.debugMode) {
           logger.error("Failed to track page view in GTM", e);
