@@ -36,4 +36,5 @@ export type InsightsIdentity = {
 
 export type TrackPageViewOptions = {
   includeDataLayer?: boolean;
+  excludeIds?: string[];
 };

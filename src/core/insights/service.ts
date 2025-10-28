@@ -118,7 +118,7 @@ export class InsightsService implements AnalyticsService {
     }
 
     try {
-      mixpanel.trackPageView();
+      mixpanel.trackPageView(options?.excludeIds);
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Mixpanel", e);
