@@ -65,14 +65,21 @@ export const identify = ({
   }
 };
 
-// Simple function to replace all digits in a URL path with {redacted},
+// Simple function to replace all digits and IDs in a URL path with {redacted},
 // purely to make reporting based on aggregates easier
-const redactUrlSegments = () => {
+const redactUrlSegments = (excludeIds?: string[]) => {
   const pathSegments = window.location.pathname.split("/");
 
   const redactedSegments = pathSegments.map((segment) => {
-    // Check if the segment contains only digits
-    return /^\d+$/.test(segment) ? "{redacted}" : segment;
+    // Redact if the segment contains only digits or matches any of the excluded IDs
+    if (
+      /^\d+$/.test(segment) ||
+      excludeIds?.some((id) => id && id !== "" && segment === id)
+    ) {
+      return "{redacted}";
+    }
+
+    return segment;
   });
 
   // Join the segments back together
@@ -82,10 +89,10 @@ const redactUrlSegments = () => {
   return decodeURI(url.toString()).toLowerCase();
 };
 
-export const trackPageView = () => {
+export const trackPageView = (excludeIds?: string[]) => {
   // Add the redacted URL to the page view event for reporting
   mixpanel.track_pageview({
-    redacted_path: redactUrlSegments(),
+    redacted_path: redactUrlSegments(excludeIds),
   });
 };
 
