@@ -44,6 +44,10 @@ type ContentTileProps = {
   descriptionClassName?: string;
   /** Additional CSS classes for the CTA element */
   ctaClassName?: string;
+  /** Whether to add padding-top to the feature content (default: true) */
+  featurePadding?: boolean;
+  /** Whether to encapsulate the content tile in an outer container (default: true) */
+  encapsulated?: boolean;
 };
 
 const ContentTile: React.FC<ContentTileProps> = ({
@@ -61,6 +65,8 @@ const ContentTile: React.FC<ContentTileProps> = ({
   titleClassName,
   descriptionClassName,
   ctaClassName,
+  featurePadding = true,
+  encapsulated = true,
 }) => {
   const handleClick = useCallback(() => {
     if (!cta) return;
@@ -81,14 +87,17 @@ const ContentTile: React.FC<ContentTileProps> = ({
           className={cn(
             "content-tile__feature relative p-3 h-[200px] pb-0 flex items-end justify-center overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-1200 border border-neutral-300 dark:border-neutral-1000 transition-[border-color,height]",
             centerFeature && "items-center pb-3",
-
+            cta &&
+              !encapsulated &&
+              "group-hover/content-tile:border-neutral-500 dark:group-hover/content-tile:border-neutral-800 transition-colors",
             featureClassName,
           )}
         >
           <div
             className={cn(
               "flex justify-center max-h-[200px]",
-              !centerFeature && "pt-6 [&_img]:min-w-max [&_img]:h-[200px]",
+              !centerFeature && "[&_img]:min-w-max [&_img]:h-[200px]",
+              featurePadding && !centerFeature && "pt-6",
             )}
           >
             {feature}
@@ -117,14 +126,27 @@ const ContentTile: React.FC<ContentTileProps> = ({
     }
 
     return null;
-  }, [centerFeature, feature, featureClassName, featureIcons, featureType]);
+  }, [
+    centerFeature,
+    feature,
+    featureClassName,
+    featureIcons,
+    encapsulated,
+    featurePadding,
+    featureType,
+    cta,
+  ]);
 
   return (
     <div
       className={cn(
-        "group/content-tile p-5 border border-neutral-300 dark:border-neutral-1000 rounded-lg",
+        "group/content-tile",
+        encapsulated &&
+          "p-5 border border-neutral-300 dark:border-neutral-1000 rounded-lg",
+        cta && "cursor-pointer",
         cta &&
-          "cursor-pointer hover:border-neutral-500 dark:hover:border-neutral-800 transition-colors",
+          encapsulated &&
+          "hover:border-neutral-500 dark:hover:border-neutral-800 transition-colors",
         className,
       )}
       {...(cta && {

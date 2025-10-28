@@ -23,6 +23,14 @@ const centeredImage = (
 );
 
 export const WithImageFeature: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Displays a ContentTile with an image feature that extends to fill the container. Props: `featureType="image"`, `featurePadding={false}` to allow the image to reach the edges.',
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -32,6 +40,7 @@ export const WithImageFeature: Story = {
           description="This ContentTile displays an image above the content."
           feature={fullImage}
           featureType="image"
+          featurePadding={false}
         />
       ))}
     </div>
@@ -39,6 +48,14 @@ export const WithImageFeature: Story = {
 };
 
 export const WithCenteredImageFeature: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Displays a ContentTile with a vertically centered image feature. Props: `featureType="image"`, `centerFeature={true}` to vertically center the image within the feature container.',
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -56,6 +73,14 @@ export const WithCenteredImageFeature: Story = {
 };
 
 export const WithFeatureIcons: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a ContentTile with technology icons overlaid in the bottom-right corner of the image feature. Props: `featureIcons` array contains icon names that are displayed as badges on the image.",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -77,6 +102,14 @@ export const WithFeatureIcons: Story = {
 };
 
 export const WithImageFeatureAndExplicitCTA: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a ContentTile with an image feature and a visible call-to-action link. Props: `cta` object with `text` and `url`, making the entire tile clickable with hover effects and displaying the CTA link text at the bottom.",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -98,6 +131,14 @@ export const WithImageFeatureAndExplicitCTA: Story = {
 };
 
 export const WithImageFeatureAndImplicitCTA: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a ContentTile that is clickable but doesn't show an explicit CTA link. Props: `cta.implicit={true}` makes the entire tile clickable with hover effects, but hides the CTA link text.",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -120,6 +161,14 @@ export const WithImageFeatureAndImplicitCTA: Story = {
 };
 
 export const WithIconFeature: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Displays a ContentTile with a single icon as the feature element. Props: `featureType="icon"` with `feature` set to an icon name string, rendering a smaller, icon-based header instead of a full image.',
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -136,6 +185,14 @@ export const WithIconFeature: Story = {
 };
 
 export const WithIconFeatureAndCTA: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Displays a ContentTile combining an icon feature with a call-to-action link. Props: `featureType="icon"` with `cta` object, creating a compact tile suitable for navigation cards or action items.',
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -157,6 +214,14 @@ export const WithIconFeatureAndCTA: Story = {
 };
 
 export const WithCTAOnly: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a minimal ContentTile with only text content and a CTA link, no feature element. Props: `cta` object without `feature` prop, creating a simple text-based card ideal for link lists or navigation menus.",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -176,6 +241,14 @@ export const WithCTAOnly: Story = {
 };
 
 export const WithBadges: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a ContentTile with status or category badges below the description. Props: `badges` array of objects with `label` and optional `color`, useful for highlighting features, statuses, or categories (e.g., 'New', 'Beta', 'Featured').",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -196,6 +269,14 @@ export const WithBadges: Story = {
 };
 
 export const WithImageFeatureAndEverything: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Demonstrates a fully-featured ContentTile with all available options combined. Props: `feature` (image), `featureIcons` (tech badges), `cta` (clickable link), and `badges` (status labels), showcasing the component's maximum capabilities.",
+      },
+    },
+  },
   render: () => (
     <div className={gridStyle}>
       {[1, 2, 3, 4].map((i) => (
@@ -212,6 +293,36 @@ export const WithImageFeatureAndEverything: Story = {
           }}
           onClick={(url) => alert(`Clicked ${url}`)}
           badges={[{ label: "Popular" }, { label: "Pro", color: "green" }]}
+        />
+      ))}
+    </div>
+  ),
+};
+
+export const WithNonEncapsulatedContentTile: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Displays a ContentTile with non-encapsulated styling and no feature padding. Props: `encapsulated={false}` with `featurePadding={false}`, creating a more compact layout where the image extends to the container edges.",
+      },
+    },
+  },
+  render: () => (
+    <div className={gridStyle}>
+      {[1, 2, 3, 4].map((i) => (
+        <ContentTile
+          key={i}
+          title={`Content Tile with Non-Encapsulated Content ${i}`}
+          description="This ContentTile displays a content tile with non-encapsulated content."
+          encapsulated={false}
+          feature={fullImage}
+          featureType="image"
+          featurePadding={false}
+          cta={{
+            text: "Get Started",
+            url: `https://ably.com/${i}`,
+          }}
         />
       ))}
     </div>
