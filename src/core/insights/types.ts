@@ -32,7 +32,7 @@ export type InsightsIdentity = {
   organisationId?: string;
   email?: string;
   name?: string;
-};
+} & Record<string, unknown>;
 
 export type TrackPageViewOptions = {
   includeDataLayer?: boolean;

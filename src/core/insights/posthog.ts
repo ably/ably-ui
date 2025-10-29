@@ -23,6 +23,7 @@ export const identify = ({
   organisationId,
   email,
   name,
+  ...properties
 }: InsightsIdentity) => {
   // In very rare cases we might have a user without an account, so we'll
   // let null/undefined/blank strings through on that one
@@ -31,7 +32,7 @@ export const identify = ({
   }
 
   if (userId !== posthog.get_distinct_id()) {
-    posthog.identify(userId, { email, name });
+    posthog.identify(userId, { email, name, ...properties });
   }
 
   // Associate all events in this session with this account

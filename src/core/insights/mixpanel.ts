@@ -43,6 +43,7 @@ export const identify = ({
   organisationId,
   email,
   name,
+  ...properties
 }: InsightsIdentity) => {
   // In very rare cases we might have a user without an account, so we'll
   // let null/undefined/blank strings through on that one
@@ -52,16 +53,23 @@ export const identify = ({
 
   mixpanel.identify(userId.toString());
 
+  const peopleProperties: Record<string, unknown> = { ...properties };
+
   if (email || name) {
-    mixpanel.people.set({ $email: email, $name: name });
+    peopleProperties.$email = email;
+    peopleProperties.$name = name;
+  }
+
+  if (organisationId) {
+    peopleProperties.organization_id = [organisationId.toString()];
+  }
+
+  if (Object.keys(peopleProperties).length > 0) {
+    mixpanel.people.set(peopleProperties);
   }
 
   if (accountId) {
     mixpanel.people.union({ accounts: [accountId.toString()] });
-  }
-
-  if (organisationId) {
-    mixpanel.people.set({ organization_id: [organisationId.toString()] });
   }
 };
 
