@@ -13,7 +13,7 @@ export const themeClasses: Record<AccordionTheme, AccordionThemeColors> = {
     bg: "bg-transparent dark:bg-transparent",
     hoverBg: "hover:bg-transparent dark:hover:bg-transparent",
     text: "text-neutral-1000 dark:text-neutral-000",
-    toggleIconColor: "text-dark-grey dark:text-orange-600",
+    toggleIconColor: "text-neutral-700 dark:text-neutral-600",
     border:
       "border-neutral-500 border-b last:border-none dark:border-neutral-1000",
   },
