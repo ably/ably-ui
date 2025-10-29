@@ -74,7 +74,8 @@ export class InsightsService implements AnalyticsService {
   }
 
   identify(identity: InsightsIdentity): void {
-    const { userId, accountId, organisationId, email, name } = identity;
+    const { userId, accountId, organisationId, email, name, ...properties } =
+      identity;
 
     // In very rare cases we might have a user without an account, so we'll
     // let null/undefined/blank strings through on that one
@@ -92,11 +93,19 @@ export class InsightsService implements AnalyticsService {
         organisationId,
         email,
         name,
+        ...properties,
       });
     }
 
     try {
-      mixpanel.identify({ userId, accountId, organisationId, email, name });
+      mixpanel.identify({
+        userId,
+        accountId,
+        organisationId,
+        email,
+        name,
+        ...properties,
+      });
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to identify user in Mixpanel", e);
@@ -104,7 +113,14 @@ export class InsightsService implements AnalyticsService {
     }
 
     try {
-      posthog.identify({ userId, accountId, organisationId, email, name });
+      posthog.identify({
+        userId,
+        accountId,
+        organisationId,
+        email,
+        name,
+        ...properties,
+      });
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to identify user in Posthog", e);
@@ -113,12 +129,14 @@ export class InsightsService implements AnalyticsService {
   }
 
   trackPageView(options?: TrackPageViewOptions): void {
+    const { excludeIds, includeDataLayer, ...properties } = options ?? {};
+
     if (this.debugMode) {
       logger.info("Tracking page view");
     }
 
     try {
-      mixpanel.trackPageView(options?.excludeIds);
+      mixpanel.trackPageView({ excludeIds, ...properties });
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Mixpanel", e);
@@ -126,16 +144,16 @@ export class InsightsService implements AnalyticsService {
     }
 
     try {
-      posthog.trackPageView();
+      posthog.trackPageView(properties);
     } catch (e) {
       if (this.debugMode) {
         logger.error("Failed to track page view in Posthog", e);
       }
     }
 
-    if (options?.includeDataLayer) {
+    if (includeDataLayer) {
       try {
-        datalayer.trackPageView();
+        datalayer.trackPageView(properties);
       } catch (e) {
         if (this.debugMode) {
           logger.error("Failed to track page view in GTM", e);

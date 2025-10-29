@@ -18,6 +18,6 @@ export const track = (event: string, properties?: Record<string, unknown>) => {
   });
 };
 
-export const trackPageView = () => {
-  track("client-side-route-change");
+export const trackPageView = (properties?: Record<string, unknown>) => {
+  track("client-side-route-change", properties);
 };

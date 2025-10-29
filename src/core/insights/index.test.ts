@@ -392,4 +392,134 @@ describe("Insights Command Queue", () => {
       expect(logger.info).not.toHaveBeenCalled();
     });
   });
+
+  describe("Arbitrary Properties", () => {
+    const customPageViewProperties = {
+      customProperty: "custom-value",
+      anotherProperty: 123,
+      nestedObject: { foo: "bar" },
+    };
+
+    const customPageViewPropertiesWithDataLayer = {
+      customProperty: "custom-value",
+      anotherProperty: 456,
+    };
+
+    const customPageViewPropertiesWithExcludeIds = {
+      customProperty: "test",
+      count: 789,
+    };
+
+    const customIdentityProperties = {
+      customProperty: "user-custom-value",
+      userSegment: "premium",
+      signupDate: "2024-01-01",
+    };
+
+    const customMinimalIdentityProperties = {
+      customField1: "value1",
+      customField2: 999,
+      customField3: { nested: true },
+    };
+
+    beforeEach(() => {
+      insights.initInsights(testConfig);
+      vi.clearAllMocks();
+    });
+
+    it("should pass arbitrary properties through trackPageView", () => {
+      // Call trackPageView with custom properties
+      insights.trackPageView(customPageViewProperties);
+
+      // Verify mixpanel received all properties
+      expect(mixpanel.trackPageView).toHaveBeenCalledWith(
+        customPageViewProperties,
+      );
+
+      // Verify posthog received all properties
+      expect(posthog.trackPageView).toHaveBeenCalledWith(
+        customPageViewProperties,
+      );
+
+      // Verify datalayer did not receive anything (includeDataLayer not set)
+      expect(datalayer.trackPageView).not.toHaveBeenCalled();
+    });
+
+    it("should pass arbitrary properties through trackPageView with includeDataLayer", () => {
+      // Call trackPageView with custom properties and includeDataLayer
+      insights.trackPageView({
+        includeDataLayer: true,
+        ...customPageViewPropertiesWithDataLayer,
+      });
+
+      // Verify mixpanel received custom properties (includeDataLayer filtered out)
+      expect(mixpanel.trackPageView).toHaveBeenCalledWith(
+        customPageViewPropertiesWithDataLayer,
+      );
+
+      // Verify posthog received custom properties (includeDataLayer filtered out)
+      expect(posthog.trackPageView).toHaveBeenCalledWith(
+        customPageViewPropertiesWithDataLayer,
+      );
+
+      // Verify datalayer received custom properties (includeDataLayer filtered out)
+      expect(datalayer.trackPageView).toHaveBeenCalledWith(
+        customPageViewPropertiesWithDataLayer,
+      );
+    });
+
+    it("should pass arbitrary properties through trackPageView with excludeIds", () => {
+      const excludeIds = ["id1", "id2"];
+
+      // Call trackPageView with custom properties and excludeIds
+      insights.trackPageView({
+        excludeIds,
+        ...customPageViewPropertiesWithExcludeIds,
+      });
+
+      // Verify mixpanel received excludeIds and custom properties
+      expect(mixpanel.trackPageView).toHaveBeenCalledWith({
+        excludeIds,
+        ...customPageViewPropertiesWithExcludeIds,
+      });
+
+      // Verify posthog received only custom properties (excludeIds filtered out)
+      expect(posthog.trackPageView).toHaveBeenCalledWith(
+        customPageViewPropertiesWithExcludeIds,
+      );
+    });
+
+    it("should pass arbitrary properties through identify", () => {
+      const identityWithCustomProps = {
+        ...testIdentity,
+        ...customIdentityProperties,
+      };
+
+      // Call identify with custom properties
+      insights.identify(identityWithCustomProps);
+
+      // Verify mixpanel received all properties
+      expect(mixpanel.identify).toHaveBeenCalledWith(identityWithCustomProps);
+
+      // Verify posthog received all properties
+      expect(posthog.identify).toHaveBeenCalledWith(identityWithCustomProps);
+    });
+
+    it("should pass arbitrary properties through identify with minimal identity", () => {
+      const minimalIdentity = {
+        userId: "minimal-user",
+        accountId: "minimal-account",
+        ...customMinimalIdentityProperties,
+      };
+
+      // Call identify with only required fields plus custom properties
+      insights.identify(minimalIdentity);
+
+      // Verify mixpanel received all properties
+      expect(mixpanel.identify).toHaveBeenCalledWith(minimalIdentity);
+
+      // Verify posthog received all properties
+      expect(posthog.identify).toHaveBeenCalledWith(minimalIdentity);
+    });
+  });
 });

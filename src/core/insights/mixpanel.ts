@@ -1,6 +1,6 @@
 import mixpanel from "mixpanel-browser";
 
-import { InsightsIdentity } from "./types";
+import { InsightsIdentity, TrackPageViewOptions } from "./types";
 
 export const initMixpanel = (
   token: string,
@@ -43,6 +43,7 @@ export const identify = ({
   organisationId,
   email,
   name,
+  ...properties
 }: InsightsIdentity) => {
   // In very rare cases we might have a user without an account, so we'll
   // let null/undefined/blank strings through on that one
@@ -52,29 +53,36 @@ export const identify = ({
 
   mixpanel.identify(userId.toString());
 
+  const peopleProperties: Record<string, unknown> = { ...properties };
+
   if (email || name) {
-    mixpanel.people.set({ $email: email, $name: name });
+    peopleProperties.$email = email;
+    peopleProperties.$name = name;
+  }
+
+  if (organisationId) {
+    peopleProperties.organization_id = [organisationId.toString()];
+  }
+
+  if (Object.keys(peopleProperties).length > 0) {
+    mixpanel.people.set(peopleProperties);
   }
 
   if (accountId) {
     mixpanel.people.union({ accounts: [accountId.toString()] });
   }
-
-  if (organisationId) {
-    mixpanel.people.set({ organization_id: [organisationId.toString()] });
-  }
 };
 
 // Simple function to replace all digits and IDs in a URL path with {redacted},
 // purely to make reporting based on aggregates easier
-const redactUrlSegments = (excludeIds?: string[]) => {
+const redactUrlSegments = (excludeIds: string[]) => {
   const pathSegments = window.location.pathname.split("/");
 
   const redactedSegments = pathSegments.map((segment) => {
     // Redact if the segment contains only digits or matches any of the excluded IDs
     if (
       /^\d+$/.test(segment) ||
-      excludeIds?.some((id) => id && id !== "" && segment === id)
+      excludeIds.some((id) => id && id !== "" && segment === id)
     ) {
       return "{redacted}";
     }
@@ -89,10 +97,13 @@ const redactUrlSegments = (excludeIds?: string[]) => {
   return decodeURI(url.toString()).toLowerCase();
 };
 
-export const trackPageView = (excludeIds?: string[]) => {
+export const trackPageView = (properties?: TrackPageViewOptions) => {
+  const { excludeIds, ...rest } = properties ?? {};
+
   // Add the redacted URL to the page view event for reporting
   mixpanel.track_pageview({
-    redacted_path: redactUrlSegments(excludeIds),
+    redacted_path: redactUrlSegments(excludeIds ?? []),
+    ...rest,
   });
 };
 
