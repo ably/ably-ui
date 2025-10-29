@@ -47,7 +47,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-react-perf": "^3.3.3",
-    "eslint-plugin-storybook": "^9.1.4",
+    "eslint-plugin-storybook": "^10.0.0",
     "heroicons": "^2.2.0",
     "http-server": "14.1.1",
     "jsdom": "^27.0.0",
