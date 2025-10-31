@@ -1,5 +1,4 @@
-import type React from "react";
-import { useCallback, useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 import Badge, { type BadgeProps } from "./Badge";
 import FeaturedLink from "./FeaturedLink";
 import Icon from "./Icon";
@@ -11,8 +10,8 @@ type ContentTileProps = {
   title?: string;
   /** Additional CSS classes for the root container */
   className?: string;
-  /** The description text to display */
-  description?: string;
+  /** The description content to display (text or React elements) */
+  description?: string | React.ReactNode;
   /**
    * Call-to-action configuration.
    * - text: The CTA button or link text.
