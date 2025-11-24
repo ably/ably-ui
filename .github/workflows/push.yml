@@ -25,7 +25,9 @@ jobs:
           node-version: 20
           cache: "pnpm"
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile && npx playwright install --with-deps
+        run: pnpm install --frozen-lockfile --ignore-scripts && npx playwright install --with-deps
+      - name: Security Audit
+        run: pnpm audit --audit-level=critical
       - name: Lint
         uses: wearerequired/lint-action@v2
         with:
