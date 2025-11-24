@@ -42,12 +42,12 @@ const productsMenu: FlyoutPanelList[] = [
   {
     label: "Infrastructure",
     icon: "icon-gui-globe-alt-outline",
-    link: "/four-pillars-of-dependability",
+    link: "/platform",
   },
   {
     label: "Integrations",
     icon: "icon-gui-puzzle-piece-outline",
-    link: "/integrations",
+    link: "/platform",
   },
   {
     label: "SDKs",
