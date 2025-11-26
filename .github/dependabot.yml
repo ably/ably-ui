@@ -5,6 +5,13 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+    # Security: 7-day cooldown gives the community time to detect and report
+    # malicious packages before they're automatically proposed for our codebase
+    # This protects against supply chain attacks like Shai Hulud
+    # See internal security docs: Search Confluence Web space for 'Supply Chain Security'
+    cooldown:
+      default-days: 7
+      include: ['*']
     open-pull-requests-limit: 2
     ignore:
       - dependency-name: "*"
@@ -28,6 +35,10 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    # Security: Apply same 7-day cooldown to posthog-js weekly updates
+    cooldown:
+      default-days: 7
+      include: ['*']
     open-pull-requests-limit: 2
     allow:
       - dependency-name: "posthog-js"

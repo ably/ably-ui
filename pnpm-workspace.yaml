@@ -1,9 +1,18 @@
 packages:
   - "."
 
+# Security: Disable postinstall scripts by default to protect against supply chain attacks
+# This works in conjunction with .npmrc to prevent malicious code execution during package installation
+# See internal security docs: Search Confluence Web space for 'Supply Chain Security'
+settings:
+  ignore-scripts: true
+
+# Whitelist of packages explicitly allowed to run postinstall/build scripts
+# Only add packages here after verifying their postinstall scripts are safe and necessary
+# Each package should have a documented reason for requiring script execution
 onlyBuiltDependencies:
-  - "@swc/core"
-  - core-js
-  - esbuild
-  - msw
-  - nice-napi
+  - "@swc/core"  # Rust-based JavaScript/TypeScript compiler - native binary compilation
+  - core-js      # Browser polyfills setup and configuration
+  - esbuild      # Go-based bundler - platform-specific binary download
+  - msw          # Mock Service Worker - service worker registration
+  - nice-napi    # Native addon build interface - native module compilation

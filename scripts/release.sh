@@ -7,7 +7,7 @@ env
 VERSION=$1
 
 echo "Install packages, making sure they are up to date"
-pnpm install --frozen-lockfile
+pnpm install --frozen-lockfile --ignore-scripts
 
 echo "Build library"
 NODE_ENV=production pnpm build
