@@ -21,6 +21,7 @@ export const initMixpanel = (
       ? {
           block_selectors: blockSelectors,
           capture_text_content: true,
+          pageview: false, // We'll track page views manually
         }
       : false,
     track_pageview: false, // We'll track page views manually
