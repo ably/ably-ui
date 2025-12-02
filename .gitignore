@@ -7,8 +7,11 @@ pnpm-error.log
 /preview
 /core
 /reset
-.idea/*
 types
 index.d.ts
 /src/core/Icon/computed-icons
 /src/core/Icon/components/
+
+# Ignore local development tools
+.idea/*
+.claude/settings.local.json
