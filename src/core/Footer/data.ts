@@ -1,4 +1,8 @@
 import { IconName } from "../Icon/types";
+import G2BestMeetsRequirementsSpring2025 from "../images/badges/g2-best-meets-requirements-spring-2025.svg";
+import G2BestSupportSpring2025 from "../images/badges/g2-best-support-spring-2025.svg";
+import G2EasiestToUseSpring2025 from "../images/badges/g2-easiest-to-use-spring-2025.svg";
+import G2UsersMostLikelyToRecommendSpring2025 from "../images/badges/g2-users-most-likely-to-recommend-spring-2025.svg";
 
 type FooterLinksProps = {
   title: string;
@@ -95,5 +99,24 @@ export const socialLinks: {
     colorIcon: "icon-social-youtube",
     monoIcon: "icon-social-youtube-mono",
     link: "https://www.youtube.com/c/AblyRealtime",
+  },
+];
+
+export const ablyAwardsFooter = [
+  {
+    image: G2BestMeetsRequirementsSpring2025,
+    desc: "G2 Best Meets Requirements Spring 2025",
+  },
+  {
+    image: G2BestSupportSpring2025,
+    desc: "G2 Best Support Spring 2025",
+  },
+  {
+    image: G2UsersMostLikelyToRecommendSpring2025,
+    desc: "G2 Users Most Likely to Recommend Spring 2025",
+  },
+  {
+    image: G2EasiestToUseSpring2025,
+    desc: "G2 Easiest to Use Spring 2025",
   },
 ];
