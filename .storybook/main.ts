@@ -11,7 +11,7 @@ const config: StorybookConfig = {
   },
   addons: [
     "@storybook/addon-docs",
-    "@vueless/storybook-dark-mode",
+    "@storybook/addon-themes",
     "@storybook/addon-vitest",
   ],
   docs: {},

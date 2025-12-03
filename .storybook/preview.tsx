@@ -1,9 +1,9 @@
 import { initialize, mswLoader } from "msw-storybook-addon";
 import type { Preview } from "@storybook/react-vite";
+import { withThemeByClassName } from "@storybook/addon-themes";
 
 import "./styles.css";
-import { themes } from "storybook/theming";
-import theme, { brandImage, brandImageDark } from "./theme";
+import theme from "./theme";
 
 initialize({
   onUnhandledRequest: "bypass",
@@ -33,22 +33,16 @@ const preview: Preview = {
         order: ["Features", "Components", "Styles"],
       },
     },
-    darkMode: {
-      dark: {
-        ...themes.dark,
-        fontBase: '"Manrope", sans-serif',
-        brandImage: brandImageDark,
-      },
-      light: {
-        ...themes.light,
-        fontBase: '"Manrope", sans-serif',
-        brandImage: brandImage,
-      },
-      stylePreview: true,
-      darkClass: "ui-theme-dark",
-      lightClass: "ui-theme-light",
-    },
   },
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: "ui-theme-light",
+        dark: "ui-theme-dark",
+      },
+      defaultTheme: "light",
+    }),
+  ],
   loaders: [mswLoader],
   tags: ["autodocs"],
 };
