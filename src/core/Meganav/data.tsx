@@ -11,7 +11,7 @@ import { products } from "../ProductTile/data";
 
 export type FlyoutPanelList = {
   label: string;
-  icon: IconName;
+  icon?: IconName;
   link: string;
   isMobile?: boolean;
 };
@@ -57,6 +57,21 @@ const productsMenu: FlyoutPanelList[] = [
     label: "Security & Compliance",
     icon: "icon-gui-shield-check-outline",
     link: "/security-and-compliance",
+  },
+];
+
+const compareMenu: FlyoutPanelList[] = [
+  {
+    label: "Ably vs Pusher",
+    link: "/ably-vs-pusher",
+  },
+  {
+    label: "Ably vs PubNub",
+    link: "/ably-vs-pubnub",
+  },
+  {
+    label: "Ably vs Socket.io",
+    link: "/ably-vs-socket.io",
   },
 ];
 
@@ -157,8 +172,14 @@ export const menuItemsForHeader: MenuItem[] = [
       <MeganavPanel
         displayProductTile={true}
         panelLeftClassName="grid"
-        panelRightItems={productsMenu}
-        panelRightHeading="platform"
+        panelRightItems={[
+          { label: "Platform", listItems: productsMenu },
+          {
+            label: "Compare our tech",
+            listItems: compareMenu,
+            icon: "icon-gui-arrow-long-right-outline",
+          },
+        ]}
         panelRightBottom={<Status statusUrl={StatusUrl} showDescription />}
       />
     ),
@@ -170,7 +191,7 @@ export const menuItemsForHeader: MenuItem[] = [
       <MeganavPanel
         panelLeft={solutionsHighlight}
         panelLeftClassName={panelLeftFeatureClassName}
-        panelRightItems={solutionsMenu}
+        panelRightItems={[{ label: "Solutions", listItems: solutionsMenu }]}
       />
     ),
     panelClassName,
@@ -181,7 +202,7 @@ export const menuItemsForHeader: MenuItem[] = [
       <MeganavPanel
         panelLeft={companyHighlight}
         panelLeftClassName={panelLeftFeatureClassName}
-        panelRightItems={companyMenu}
+        panelRightItems={[{ label: "Company", listItems: companyMenu }]}
         panelRightBottom={
           <div className="flex-1 gap-x-2 hidden md:flex">
             {ablyAwards.slice(0, 3).map((award) => (

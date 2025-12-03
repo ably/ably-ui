@@ -4,22 +4,30 @@ import Icon from "../Icon";
 import { FlyoutPanelHighlight, FlyoutPanelList, productsForNav } from "./data";
 import { ProductName, productNames } from "../ProductTile/data";
 import MeganavProductTile from "./MeganavProductTile";
+import { IconName } from "../Icon/types";
+import MeganavPanelRight from "./MeganavPanelRight";
+
+export type MeganavPanelRightItem = {
+  label: string;
+  listItems: FlyoutPanelList[];
+  icon?: IconName;
+};
+
+type MeganavPanelProps = {
+  displayProductTile?: boolean;
+  panelLeft?: FlyoutPanelHighlight;
+  panelLeftClassName?: string;
+  panelRightItems: MeganavPanelRightItem[];
+  panelRightBottom?: React.ReactNode;
+};
 
 export const MeganavPanel = ({
   displayProductTile,
   panelLeft,
   panelLeftClassName,
-  panelRightHeading,
   panelRightItems,
   panelRightBottom,
-}: {
-  displayProductTile?: boolean;
-  panelLeft?: FlyoutPanelHighlight;
-  panelLeftClassName?: string;
-  panelRightHeading?: string;
-  panelRightItems: FlyoutPanelList[];
-  panelRightBottom?: React.ReactNode;
-}) => {
+}: MeganavPanelProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-x-6 bg-neutral-000 dark:bg-neutral-1300">
       <div
@@ -74,35 +82,14 @@ export const MeganavPanel = ({
             )}
       </div>
       <div className="flex-[3] flex-shrink-0 flex flex-col justify-between">
-        <ul>
-          {panelRightHeading && (
-            <p className="ui-text-overline2 text-neutral-700 dark:text-neutral-600 my-3">
-              {panelRightHeading}
-            </p>
-          )}
-
-          {panelRightItems.map((item) => (
-            <li
-              className={cn(
-                "list-none py-2.5 md:py-2  my-0 flex gap-x-2.5 group hover:cursor-pointer",
-                item.isMobile ? "md:hidden" : "md:flex",
-              )}
-              key={item.label}
-            >
-              <Icon
-                name={item.icon}
-                size="1.25rem"
-                additionalCSS="text-neutral-1000 dark:text-neutral-300"
-              />
-              <a
-                className="pointer-events-auto ui-text-label2 md:ui-text-label3 font-semibold text-neutral-1000 dark:text-neutral-300 group-hover:text-neutral-1300 dark:group-hover:text-neutral-000"
-                href={item.link}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {panelRightItems.map((rightItem) => (
+          <MeganavPanelRight
+            key={rightItem.label}
+            label={rightItem.label}
+            listItems={rightItem.listItems}
+            icon={rightItem.icon}
+          />
+        ))}
         {panelRightBottom && (
           <div className="items-end mt-4 md:mt-0">{panelRightBottom}</div>
         )}
