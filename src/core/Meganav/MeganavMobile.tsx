@@ -6,7 +6,7 @@ import cn from "../utils/cn";
 
 export const MeganavMobile = ({ navItems }: { navItems: AccordionData[] }) => {
   const menuItemClassname =
-    "text-[18px] py-3 font-bold text-neutral-1000 dark:text-neutral-000";
+    "text-[18px] py-3 font-bold text-neutral-1000 dark:text-neutral-000 hover:text-neutral-1000 dark:hover:text-neutral-000 active:text-neutral-1000 dark:active:text-neutral-000";
   return (
     <div className="overflow-y-auto">
       <Accordion

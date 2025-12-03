@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo } from "react";
 import Header, { HeaderSessionState, ThemedScrollpoint } from "./Header";
 import Flyout from "./Flyout";
-import { menuItemsForHeader } from "./Meganav/data";
 import { MeganavMobile } from "./Meganav/MeganavMobile";
 import Notice from "./Notice";
 import { HEADER_HEIGHT } from "./utils/heights";
+import { BlogPost } from "./Meganav/MeganavBlog";
+import { getMenuItemsForHeader } from "./Meganav/utils/getMenuItemsForHeader";
 
 export type MeganavNoticeBannerProps = {
   props: {
@@ -25,6 +26,7 @@ export type MeganavNoticeBannerProps = {
 
 export type MeganavProps = {
   sessionState: HeaderSessionState;
+  blogPosts: BlogPost[];
   notice?: MeganavNoticeBannerProps;
   theme?: string;
   themedScrollpoints?: ThemedScrollpoint[];
@@ -37,17 +39,23 @@ const Meganav = ({
   theme,
   themedScrollpoints,
   onNoticeClose,
+  blogPosts,
 }: MeganavProps) => {
   const [noticeHeight, setNoticeHeight] = React.useState(0);
 
   const finalNoticeHeight = notice ? noticeHeight : 0;
 
+  const headerMenuItems = useMemo(
+    () => getMenuItemsForHeader(blogPosts),
+    [blogPosts],
+  );
+
   const mobileNavItems = useMemo(
     () =>
-      menuItemsForHeader
+      headerMenuItems
         .filter((item) => !item.isHiddenMobile)
         .map(({ name, link, content }) => ({ name, link, content })),
-    [],
+    [headerMenuItems],
   );
 
   const defaultThemedScrollpoints = [
@@ -114,12 +122,12 @@ const Meganav = ({
           />
         )}
         <Header
-          className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
+          className="max-w-screen-xl mx-auto"
           isNoticeBannerEnabled={!!notice}
           noticeHeight={finalNoticeHeight}
           nav={
             <Flyout
-              menuItems={menuItemsForHeader}
+              menuItems={headerMenuItems}
               className="justify-left z-40"
               flyOutClassName="flex justify-left"
               viewPortClassName="ui-shadow-lg-medium border border-neutral-200 dark:border-neutral-1100 rounded-2xl -mt-1 bg-neutral-000 dark:bg-neutral-1300"

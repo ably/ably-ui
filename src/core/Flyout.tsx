@@ -130,7 +130,7 @@ const Flyout = ({
                 </NavigationMenuTrigger>
                 <NavigationMenuContent
                   className={cn(
-                    "absolute right-0 top-0 p-6 z-10",
+                    "absolute right-0 top-0 z-10",
                     PANEL_ANIMATION,
                     panelClassName,
                   )}
