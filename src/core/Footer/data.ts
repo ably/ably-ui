@@ -14,10 +14,11 @@ export const footerLinks: FooterLinksProps[] = [
     title: "Products",
     links: [
       { label: "Ably Pub/Sub", link: "/pubsub" },
-      { label: "Ably LiveSync", link: "/livesync" },
       { label: "Ably Chat", link: "/chat" },
+      { label: "Ably AI Transport", link: "/ai-transport" },
+      { label: "Ably LiveObjects", link: "/liveobjects" },
       { label: "Ably Spaces", link: "/spaces" },
-      { label: "Ably Asset Tracking", link: "/solutions/asset-tracking" },
+      { label: "Ably LiveSync", link: "/livesync" },
       { label: "Compare our tech", link: "/compare" },
     ],
   },

@@ -215,9 +215,9 @@ export const productsForNav = {
   liveSync: { ...products.liveSync, link: "/livesync" },
   chat: { ...products.chat, link: "/chat" },
   spaces: { ...products.spaces, link: "/spaces" },
-  assetTracking: {
-    ...products.assetTracking,
-    link: "/solutions/asset-tracking",
+  aiTransport: {
+    ...products.aiTransport,
+    link: "/ai-transport",
   },
   liveObjects: { ...products.liveObjects, link: "/liveobjects" },
 };
