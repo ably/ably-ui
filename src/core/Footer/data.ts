@@ -1,4 +1,8 @@
 import { IconName } from "../Icon/types";
+import G2BestMeetsRequirementsSpring2025 from "../images/badges/g2-best-meets-requirements-spring-2025.svg";
+import G2BestSupportSpring2025 from "../images/badges/g2-best-support-spring-2025.svg";
+import G2EasiestToUseSpring2025 from "../images/badges/g2-easiest-to-use-spring-2025.svg";
+import G2UsersMostLikelyToRecommendSpring2025 from "../images/badges/g2-users-most-likely-to-recommend-spring-2025.svg";
 
 type FooterLinksProps = {
   title: string;
@@ -14,18 +18,19 @@ export const footerLinks: FooterLinksProps[] = [
     title: "Products",
     links: [
       { label: "Ably Pub/Sub", link: "/pubsub" },
-      { label: "Ably LiveSync", link: "/livesync" },
       { label: "Ably Chat", link: "/chat" },
+      { label: "Ably AI Transport", link: "/ai-transport" },
+      { label: "Ably LiveObjects", link: "/liveobjects" },
       { label: "Ably Spaces", link: "/spaces" },
-      { label: "Ably Asset Tracking", link: "/solutions/asset-tracking" },
+      { label: "Ably LiveSync", link: "/livesync" },
       { label: "Compare our tech", link: "/compare" },
     ],
   },
   {
     title: "Platform",
     links: [
-      { label: "Infrastructure", link: "/four-pillars-of-dependability" },
-      { label: "Integrations", link: "/integrations" },
+      { label: "Infrastructure", link: "/platform" },
+      { label: "Integrations", link: "/platform" },
       { label: "SDKs", link: "/docs/sdks" },
       { label: "Changelog", link: "https://changelog.ably.com/" },
       { label: "Security & Compliance", link: "/security-and-compliance" },
@@ -94,5 +99,24 @@ export const socialLinks: {
     colorIcon: "icon-social-youtube",
     monoIcon: "icon-social-youtube-mono",
     link: "https://www.youtube.com/c/AblyRealtime",
+  },
+];
+
+export const ablyAwardsFooter = [
+  {
+    image: G2BestMeetsRequirementsSpring2025,
+    desc: "G2 Best Meets Requirements Spring 2025",
+  },
+  {
+    image: G2BestSupportSpring2025,
+    desc: "G2 Best Support Spring 2025",
+  },
+  {
+    image: G2UsersMostLikelyToRecommendSpring2025,
+    desc: "G2 Users Most Likely to Recommend Spring 2025",
+  },
+  {
+    image: G2EasiestToUseSpring2025,
+    desc: "G2 Easiest to Use Spring 2025",
   },
 ];

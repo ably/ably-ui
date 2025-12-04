@@ -5,8 +5,12 @@ import Status, { StatusUrl } from "./Status";
 import { Theme } from "./styles/colors/types";
 import Logo from "./Logo";
 import Badge from "./Badge";
-import { bottomFooterLinks, footerLinks, socialLinks } from "./Footer/data";
-import { ablyAwards } from "./Meganav/data";
+import {
+  bottomFooterLinks,
+  footerLinks,
+  socialLinks,
+  ablyAwardsFooter,
+} from "./Footer/data";
 
 const Footer = () => {
   const textColorClassnames =
@@ -59,14 +63,14 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            <div className="flex gap-2 mt-4">
-              {ablyAwards.map((award) => (
+            <div className="flex flex-wrap gap-2 mt-4 max-w-full">
+              {ablyAwardsFooter.map((award) => (
                 <img
                   key={award.desc}
                   src={award.image}
                   alt={award.desc}
-                  width="57"
-                  height="64"
+                  width="55"
+                  height="63"
                 />
               ))}
             </div>

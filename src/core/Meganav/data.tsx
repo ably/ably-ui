@@ -4,10 +4,9 @@ import { MeganavPanel } from "./MeganavPanel";
 import Status, { StatusUrl } from "../Status";
 import FanEngagementNavImage from "./images/fan-engagement-nav-image.png";
 import CompanyNavImage from "./images/founders-nav-image.png";
-import BestRequirementsWinter2025 from "../images/g2-best-meets-requirements-2025.svg";
-import BestSupportWinter2025 from "../images/g2-best-support-2025.svg";
-import HighPerformerWinter2025 from "../images/g2-high-performer-2025.svg";
-import UsersMostLikelyToRecommend from "../images/g2-users-most-likely-to-recommend-2025.svg";
+import G2BestMeetsRequirementsSpring2025 from "../images/badges/g2-best-meets-requirements-spring-2025.svg";
+import G2BestResultsSpring2025 from "../images/badges/g2-best-results-spring-2025.svg";
+import G2BestSupportSpring2025 from "../images/badges/g2-best-support-spring-2025.svg";
 import { products } from "../ProductTile/data";
 
 export type FlyoutPanelList = {
@@ -133,20 +132,16 @@ const companyMenu: FlyoutPanelList[] = [
 
 export const ablyAwards = [
   {
-    image: BestRequirementsWinter2025,
-    desc: "G2 Best Requirements Winter 2025",
+    image: G2BestSupportSpring2025,
+    desc: "G2 Best Support Spring 2025",
   },
   {
-    image: BestSupportWinter2025,
-    desc: "G2 Best Support Winter 2025",
+    image: G2BestMeetsRequirementsSpring2025,
+    desc: "G2 Best Meets Requirements Spring 2025",
   },
   {
-    image: HighPerformerWinter2025,
-    desc: "G2 High Performer Winter 2025",
-  },
-  {
-    image: UsersMostLikelyToRecommend,
-    desc: "G2 Users Most Likely to Recommend Winter 2025",
+    image: G2BestResultsSpring2025,
+    desc: "G2 Best Results Spring 2025",
   },
 ];
 
@@ -215,9 +210,9 @@ export const productsForNav = {
   liveSync: { ...products.liveSync, link: "/livesync" },
   chat: { ...products.chat, link: "/chat" },
   spaces: { ...products.spaces, link: "/spaces" },
-  assetTracking: {
-    ...products.assetTracking,
-    link: "/solutions/asset-tracking",
+  aiTransport: {
+    ...products.aiTransport,
+    link: "/ai-transport",
   },
   liveObjects: { ...products.liveObjects, link: "/liveobjects" },
 };
