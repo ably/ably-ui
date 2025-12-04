@@ -29,8 +29,8 @@ export const footerLinks: FooterLinksProps[] = [
   {
     title: "Platform",
     links: [
-      { label: "Infrastructure", link: "/four-pillars-of-dependability" },
-      { label: "Integrations", link: "/integrations" },
+      { label: "Infrastructure", link: "/platform" },
+      { label: "Integrations", link: "/platform" },
       { label: "SDKs", link: "/docs/sdks" },
       { label: "Changelog", link: "https://changelog.ably.com/" },
       { label: "Security & Compliance", link: "/security-and-compliance" },
