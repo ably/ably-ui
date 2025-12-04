@@ -39,14 +39,14 @@ const panelLeftFeatureClassName =
 
 const productsMenu: FlyoutPanelList[] = [
   {
-    label: "Infrastructure",
+    label: "Architecture",
     icon: "icon-gui-globe-alt-outline",
     link: "/platform",
   },
   {
     label: "Integrations",
     icon: "icon-gui-puzzle-piece-outline",
-    link: "/platform",
+    link: "/docs/platform/integrations",
   },
   {
     label: "SDKs",
