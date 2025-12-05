@@ -7,6 +7,7 @@ type ProductLabelProps = {
   selected?: boolean;
   numericalSize: number;
   showLabel?: boolean;
+  showAblyText?: boolean;
   className?: string;
 };
 
@@ -19,6 +20,7 @@ const ProductLabel = ({
   selected,
   numericalSize,
   showLabel,
+  showAblyText = true,
   className,
 }: ProductLabelProps) => {
   if (!label || !showLabel) {
@@ -42,19 +44,21 @@ const ProductLabel = ({
           </span>
         </span>
       ) : (
-        <span
-          className={cn(
-            "block font-bold uppercase ui-text-p2 leading-snug",
-            { "text-neutral-500 dark:text-neutral-700": selected },
-            { "text-neutral-700 dark:text-neutral-500": !selected },
-          )}
-          style={{
-            fontSize: dynamicFontSize,
-            letterSpacing: "0.06em",
-          }}
-        >
-          Ably
-        </span>
+        showAblyText && (
+          <span
+            className={cn(
+              "block font-bold uppercase ui-text-p2 leading-snug",
+              { "text-neutral-500 dark:text-neutral-700": selected },
+              { "text-neutral-700 dark:text-neutral-500": !selected },
+            )}
+            style={{
+              fontSize: dynamicFontSize,
+              letterSpacing: "0.06em",
+            }}
+          >
+            Ably
+          </span>
+        )
       )}
       <span
         className={cn(

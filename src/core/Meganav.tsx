@@ -114,7 +114,7 @@ const Meganav = ({
           />
         )}
         <Header
-          className="max-w-screen-xl mx-auto px-0 sm:px-8 md:px-10 lg:px-16"
+          className="max-w-screen-xl mx-auto"
           isNoticeBannerEnabled={!!notice}
           noticeHeight={finalNoticeHeight}
           nav={
