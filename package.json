@@ -12,7 +12,9 @@
     "reset",
     "tailwind.config.js",
     "tailwind.extend.js",
-    "index.d.ts"
+    "index.d.ts",
+    "AGENTS.md",
+    "CLAUDE.md"
   ],
   "types": "index.d.ts",
   "msw": {
