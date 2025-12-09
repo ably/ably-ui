@@ -1,12 +1,12 @@
 @layer components {
   .ui-text-title {
-    @apply font-sans font-bold text-cool-black;
+    @apply font-sans font-medium text-cool-black;
     @apply text-title-xs xs:text-title xl:text-title-xl;
     @apply tracking-[-0.015em] xs:tracking-[-0.02em] xl:tracking-[-0.02em];
   }
 
   .ui-text-h1 {
-    @apply font-sans font-bold text-cool-black;
+    @apply font-sans font-medium text-cool-black;
     @apply text-h1-xs xs:text-h1 xl:text-h1-xl;
     @apply tracking-[-0.0125em] xs:tracking-[-0.015em];
   }
