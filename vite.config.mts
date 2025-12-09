@@ -16,8 +16,11 @@ export default defineConfig({
     projects: [
       {
         test: {
-          name: "insights",
-          include: ["src/core/insights/index.test.ts"],
+          name: "unit",
+          include: [
+            "src/core/insights/index.test.ts",
+            "src/core/hooks/use-themed-scrollpoints.test.ts",
+          ],
           environment: "jsdom",
         },
       },
