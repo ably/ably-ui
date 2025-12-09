@@ -25,7 +25,7 @@ describe("useThemedScrollpoints", () => {
         unobserve: mockUnobserve,
         disconnect: mockDisconnect,
       };
-    }) as any;
+    }) as unknown as typeof IntersectionObserver;
 
     // Mock requestAnimationFrame
     global.requestAnimationFrame = vi.fn((cb) => {
