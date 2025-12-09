@@ -164,7 +164,7 @@ describe("useThemedScrollpoints", () => {
         {
           target: elem2,
           isIntersecting: true,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
       ],
       {} as IntersectionObserver
     );
@@ -192,7 +192,7 @@ describe("useThemedScrollpoints", () => {
         {
           target: elem,
           isIntersecting: true,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
       ],
       {} as IntersectionObserver
     );
@@ -224,7 +224,7 @@ describe("useThemedScrollpoints", () => {
         {
           target: elem2,
           isIntersecting: false,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
       ],
       {} as IntersectionObserver
     );
@@ -258,11 +258,11 @@ describe("useThemedScrollpoints", () => {
         {
           target: elem2,
           isIntersecting: true,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
         {
           target: elem3,
           isIntersecting: true,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
       ],
       {} as IntersectionObserver
     );
@@ -341,7 +341,7 @@ describe("useThemedScrollpoints", () => {
         {
           target: elem,
           isIntersecting: true,
-        } as IntersectionObserverEntry,
+        } as unknown as IntersectionObserverEntry,
       ],
       {} as IntersectionObserver
     );
