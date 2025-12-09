@@ -11,7 +11,7 @@ import { useState, useEffect, useRef, RefObject } from "react";
  */
 export function useContentHeight(
   ref: RefObject<HTMLElement>,
-  initialHeight = 0
+  initialHeight = 0,
 ): number {
   const [contentHeight, setContentHeight] = useState<number>(initialHeight);
   const observerRef = useRef<ResizeObserver | null>(null);

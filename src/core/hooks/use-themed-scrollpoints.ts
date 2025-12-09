@@ -4,10 +4,10 @@ import { ThemedScrollpoint } from "../Header/types";
 const HEADER_HEIGHT = 64;
 
 export function useThemedScrollpoints(
-  scrollpoints: ThemedScrollpoint[]
+  scrollpoints: ThemedScrollpoint[],
 ): string {
   const [activeClassName, setActiveClassName] = useState<string>(
-    scrollpoints.length > 0 ? scrollpoints[0].className : ""
+    scrollpoints.length > 0 ? scrollpoints[0].className : "",
   );
 
   const previousClassNameRef = useRef<string>(activeClassName);
@@ -24,10 +24,13 @@ export function useThemedScrollpoints(
           for (const entry of entries) {
             if (entry.isIntersecting) {
               const scrollpoint = scrollpoints.find(
-                (sp) => sp.id === entry.target.id
+                (sp) => sp.id === entry.target.id,
               );
 
-              if (scrollpoint && scrollpoint.className !== previousClassNameRef.current) {
+              if (
+                scrollpoint &&
+                scrollpoint.className !== previousClassNameRef.current
+              ) {
                 previousClassNameRef.current = scrollpoint.className;
                 setActiveClassName(scrollpoint.className);
                 return;
@@ -39,7 +42,7 @@ export function useThemedScrollpoints(
       {
         rootMargin: `-${HEADER_HEIGHT}px 0px 0px 0px`,
         threshold: 0,
-      }
+      },
     );
 
     scrollpoints.forEach(({ id }) => {
@@ -48,7 +51,7 @@ export function useThemedScrollpoints(
         observerRef.current?.observe(element);
       } else {
         console.warn(
-          `useThemedScrollpoints: Element with id "${id}" not found in DOM`
+          `useThemedScrollpoints: Element with id "${id}" not found in DOM`,
         );
       }
     });

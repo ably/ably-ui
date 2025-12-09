@@ -226,7 +226,7 @@ const Header: React.FC<HeaderProps> = ({
     const noticeElement = document.querySelector('[data-id="ui-notice"]');
 
     if (!noticeElement) {
-      console.warn('Header: Notice element not found');
+      console.warn("Header: Notice element not found");
       return;
     }
 
@@ -234,11 +234,12 @@ const Header: React.FC<HeaderProps> = ({
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const isNoticeHidden = noticeElement.classList.contains("ui-announcement-hidden");
+      const isNoticeHidden = noticeElement.classList.contains(
+        "ui-announcement-hidden",
+      );
 
       const shouldBeVisible =
-        scrollY <= COLLAPSE_TRIGGER_DISTANCE &&
-        !isNoticeHidden;
+        scrollY <= COLLAPSE_TRIGGER_DISTANCE && !isNoticeHidden;
 
       if (shouldBeVisible !== previousVisibility) {
         previousVisibility = shouldBeVisible;

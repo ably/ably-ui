@@ -76,7 +76,7 @@ describe("useThemedScrollpoints", () => {
       expect.objectContaining({
         rootMargin: "-64px 0px 0px 0px",
         threshold: 0,
-      })
+      }),
     );
   });
 
@@ -109,7 +109,7 @@ describe("useThemedScrollpoints", () => {
     renderHook(() => useThemedScrollpoints(scrollpoints));
 
     expect(consoleWarn).toHaveBeenCalledWith(
-      expect.stringContaining('Element with id "non-existent" not found')
+      expect.stringContaining('Element with id "non-existent" not found'),
     );
 
     consoleWarn.mockRestore();
@@ -133,7 +133,7 @@ describe("useThemedScrollpoints", () => {
     expect(mockObserve).toHaveBeenCalledTimes(1);
     expect(mockObserve).toHaveBeenCalledWith(elem);
     expect(consoleWarn).toHaveBeenCalledWith(
-      expect.stringContaining('Element with id "missing" not found')
+      expect.stringContaining('Element with id "missing" not found'),
     );
 
     consoleWarn.mockRestore();
@@ -166,7 +166,7 @@ describe("useThemedScrollpoints", () => {
           isIntersecting: true,
         } as unknown as IntersectionObserverEntry,
       ],
-      {} as IntersectionObserver
+      {} as IntersectionObserver,
     );
 
     await waitFor(() => {
@@ -194,7 +194,7 @@ describe("useThemedScrollpoints", () => {
           isIntersecting: true,
         } as unknown as IntersectionObserverEntry,
       ],
-      {} as IntersectionObserver
+      {} as IntersectionObserver,
     );
 
     // Should not trigger re-render (className unchanged)
@@ -226,7 +226,7 @@ describe("useThemedScrollpoints", () => {
           isIntersecting: false,
         } as unknown as IntersectionObserverEntry,
       ],
-      {} as IntersectionObserver
+      {} as IntersectionObserver,
     );
 
     // Should remain unchanged
@@ -264,7 +264,7 @@ describe("useThemedScrollpoints", () => {
           isIntersecting: true,
         } as unknown as IntersectionObserverEntry,
       ],
-      {} as IntersectionObserver
+      {} as IntersectionObserver,
     );
 
     await waitFor(() => {
@@ -301,7 +301,7 @@ describe("useThemedScrollpoints", () => {
         initialProps: {
           scrollpoints: [{ id: "zone1", className: "theme-light" }],
         },
-      }
+      },
     );
 
     expect(IntersectionObserver).toHaveBeenCalledTimes(1);
@@ -343,7 +343,7 @@ describe("useThemedScrollpoints", () => {
           isIntersecting: true,
         } as unknown as IntersectionObserverEntry,
       ],
-      {} as IntersectionObserver
+      {} as IntersectionObserver,
     );
 
     expect(rafSpy).toHaveBeenCalled();

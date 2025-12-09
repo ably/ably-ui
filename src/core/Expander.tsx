@@ -34,7 +34,7 @@ const Expander = ({
 
   const showControls = useMemo(
     () => contentHeight >= heightThreshold,
-    [contentHeight, heightThreshold]
+    [contentHeight, heightThreshold],
   );
 
   const height = useMemo(
@@ -44,7 +44,7 @@ const Expander = ({
         : expanded
           ? contentHeight
           : heightThreshold,
-    [contentHeight, heightThreshold, expanded]
+    [contentHeight, heightThreshold, expanded],
   );
 
   return (
