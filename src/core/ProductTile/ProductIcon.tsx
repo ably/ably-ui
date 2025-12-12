@@ -22,58 +22,40 @@ const ProductIcon = ({
     return null;
   }
 
-  // Inner container is 2px smaller to account for 1px padding on each side
-  const innerSize = size - 2;
-
   // Padding around the icon is 1/4 the icon's size, so the icon is 4 of 6 parts
   const iconSize = (size / 6) * 4;
 
   return (
     // Outer container, contains the gradient stroke (since we can't natively have CSS gradient strokes)
+
     <span
-      className={cn("block p-px bg-gradient-to-b", {
-        "from-neutral-1000 to-neutral-1300 dark:from-neutral-000 dark:to-neutral-300":
-          selected,
-        "from-neutral-000 to-neutral-300 dark:from-neutral-1000 dark:to-neutral-1300":
-          !selected,
-      })}
-      style={{ width: size, height: size, borderRadius: size / 4 }}
+      className="flex items-center justify-center border border-neutral-300 dark:border-neutral-1000 rounded-xl
+      bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-000 dark:hover:bg-neutral-1300 active:bg-neutral-000 dark:active:bg-neutral-1300"
+      style={{ width: size, height: size }}
     >
-      {/* Inner container, contains the foreground container element */}
-      <span
-        className={cn("flex items-center justify-center", {
-          "bg-neutral-1200 dark:bg-neutral-100": selected,
-          "bg-neutral-100 dark:bg-neutral-1200": !selected,
-          "group-hover/product-tile:bg-neutral-000 dark:group-hover/product-tile:bg-neutral-1300":
-            selected === false && !unavailable,
-        })}
-        style={{ height: innerSize, borderRadius: size / 4 }}
-      >
-        {/* The product icons themselves */}
-        {hoverName ? (
-          <Icon
-            name={hoverName}
-            size={`${iconSize}px`}
-            additionalCSS={cn({
-              "hidden group-hover/product-tile:flex": !selected,
-              flex: selected,
-            })}
-          />
-        ) : null}
+      {/* The product icons themselves */}
+      {hoverName ? (
         <Icon
-          name={name}
+          name={hoverName}
           size={`${iconSize}px`}
           additionalCSS={cn({
-            "text-neutral-000 dark:text-neutral-1300": selected && !unavailable,
-            "text-neutral-1300 dark:text-neutral-000":
-              !selected && !unavailable,
-            "text-neutral-700 dark:text-neutral-600": selected && unavailable,
-            "text-neutral-600 dark:text-neutral-700": !selected && unavailable,
-            "flex group-hover/product-tile:hidden": hoverName && !selected,
-            hidden: hoverName && selected,
+            "hidden group-hover/product-tile:flex": !selected,
+            flex: selected,
           })}
         />
-      </span>
+      ) : null}
+      <Icon
+        name={name}
+        size={`${iconSize}px`}
+        additionalCSS={cn({
+          "text-neutral-000 dark:text-neutral-1300": selected && !unavailable,
+          "text-neutral-1300 dark:text-neutral-000": !selected && !unavailable,
+          "text-neutral-700 dark:text-neutral-600": selected && unavailable,
+          "text-neutral-600 dark:text-neutral-700": !selected && unavailable,
+          "flex group-hover/product-tile:hidden": hoverName && !selected,
+          hidden: hoverName && selected,
+        })}
+      />
     </span>
   );
 };
