@@ -49,7 +49,7 @@ export interface BadgeProps {
   hoverable?: boolean;
 
   /**
-   * The size of the icons in the badge. Defaults to 12px.
+   * The size of the icons in the badge. If not provided, it will be derived from the badge size.
    */
   iconSize?: IconSize;
 
@@ -64,6 +64,16 @@ export interface BadgeProps {
   childClassName?: string;
 }
 
+const defaultIconSizeByBadgeSize: Record<
+  NonNullable<BadgeProps["size"]>,
+  IconSize
+> = {
+  lg: "16px",
+  md: "15px",
+  sm: "14px",
+  xs: "13px",
+};
+
 const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   size = "md",
   color = "neutral",
@@ -75,7 +85,7 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
   disabled = false,
   focusable = false,
   hoverable = false,
-  iconSize = "12px",
+  iconSize,
   ariaLabel,
 }) => {
   const sizeClass = useMemo(() => {
@@ -123,6 +133,8 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
     }
   }, [color]);
 
+  const computedIconSize = iconSize ?? defaultIconSizeByBadgeSize[size];
+
   return (
     <div
       className={cn(
@@ -145,8 +157,9 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
       aria-label={focusable || hoverable ? ariaLabel : undefined}
     >
       {iconBefore ? (
-        <Icon name={iconBefore} size={iconSize} color={colorClass} />
+        <Icon name={iconBefore} size={computedIconSize} color={colorClass} />
       ) : null}
+
       <span
         className={cn(
           "whitespace-nowrap tracking-[0.04em]",
@@ -156,8 +169,9 @@ const Badge: React.FC<PropsWithChildren<BadgeProps>> = ({
       >
         {children}
       </span>
+
       {iconAfter ? (
-        <Icon name={iconAfter} size={iconSize} color={colorClass} />
+        <Icon name={iconAfter} size={computedIconSize} color={colorClass} />
       ) : null}
     </div>
   );
