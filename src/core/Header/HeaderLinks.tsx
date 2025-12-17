@@ -34,7 +34,7 @@ export const HeaderLinks: React.FC<
   const formRef = useRef<HTMLFormElement>(null);
 
   const headerLinkClasses =
-    "ui-text-label2 md:ui-text-label3 !font-bold py-4 text-neutral-1300 dark:text-neutral-000 md:text-neutral-1000 dark:md:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-1300 dark:active:text-neutral-000 transition-colors";
+    "font-sans !text-label2 md:!text-label3 font-bold py-4 text-neutral-1300 dark:text-neutral-000 md:text-neutral-1000 dark:md:text-neutral-300 hover:text-neutral-1300 dark:hover:text-neutral-000 active:text-neutral-1300 dark:active:text-neutral-000 transition-colors";
 
   const dropdownMenuLinkClasses =
     "block p-2 ui-text-label3 font-semibold text-neutral-1000 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-1200 active:bg-neutral-200 dark:active:bg-neutral-1100 rounded-lg";

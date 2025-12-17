@@ -26,14 +26,14 @@ type Products = Record<
 export const products: Products = {
   pubsub: {
     label: "Pub/Sub",
-    description: "Low-level APIs for building realtime applications.",
+    description: "Low-level APIs to build any realtime experience.",
     icon: "icon-product-pubsub-mono",
     hoverIcon: "icon-product-pubsub",
     link: "/docs/channels",
   },
   chat: {
     label: "Chat",
-    description: "Build feature-rich live chat experiences.",
+    description: "Rapidly build chat features and roll-out at scale.",
     icon: "icon-product-chat-mono",
     hoverIcon: "icon-product-chat",
     link: "/docs/chat",
@@ -46,21 +46,21 @@ export const products: Products = {
   },
   liveObjects: {
     label: "LiveObjects",
-    description: "Sync application state across client devices.",
+    description: "Sync application state across multiple devices.",
     icon: "icon-product-liveobjects-mono",
     hoverIcon: "icon-product-liveobjects",
     link: "/docs/liveobjects",
   },
   spaces: {
     label: "Spaces",
-    description: "Enhance your application with collaborative features.",
+    description: "Create collaborative environments in a few lines of code.",
     icon: "icon-product-spaces-mono",
     hoverIcon: "icon-product-spaces",
     link: "/docs/spaces",
   },
   liveSync: {
     label: "LiveSync",
-    description: "Fan-out database changes to client applications.",
+    description: "Sync database changes with frontend clients.",
     icon: "icon-product-livesync-mono",
     hoverIcon: "icon-product-livesync",
     link: "/docs/livesync",

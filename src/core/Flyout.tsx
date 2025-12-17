@@ -112,7 +112,11 @@ const Flyout = ({
             content ? (
               <NavigationMenuItem key={name}>
                 <NavigationMenuTrigger
-                  onClick={(event) => event.preventDefault()}
+                  onPointerDown={(event) => {
+                    if (event.pointerType === "mouse") {
+                      event.preventDefault();
+                    }
+                  }}
                   className={cn(
                     "group outline-none focus:outline-none select-none cursor-pointer relative",
                     "rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-1200",
@@ -126,7 +130,7 @@ const Flyout = ({
                 </NavigationMenuTrigger>
                 <NavigationMenuContent
                   className={cn(
-                    "absolute right-0 top-0 p-6 z-10",
+                    "absolute right-0 top-0 z-10",
                     PANEL_ANIMATION,
                     panelClassName,
                   )}
