@@ -59,7 +59,7 @@
     "playwright": "^1.49.1",
     "posthog-js": "^1.304.0",
     "prettier": "^3.2.5",
-    "storybook": "^10.0.0",
+    "storybook": "^10.1.10",
     "svg-sprite": "^2.0.4",
     "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.2",
