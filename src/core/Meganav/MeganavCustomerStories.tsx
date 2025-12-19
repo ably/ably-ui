@@ -44,18 +44,18 @@ const MeganavCustomerStories = ({
             className="rounded bg-neutral-100 dark:bg-neutral-1200 
             group-hover/customer-story-highlight:bg-neutral-000 
             dark:group-hover/customer-story-highlight:bg-neutral-1300
-          flex justify-center items-center gap-4 h-[180px]"
+          flex justify-center items-center gap-4 h-[120px]"
           >
             <img
               src={companyLogo}
               alt={companyName}
-              className="max-h-[120px] dark:hidden"
+              className="max-h-[90px] max-w-[180px] dark:hidden"
             />
             {companyLogoDark && (
               <img
                 src={companyLogoDark}
                 alt={companyName}
-                className="max-h-[120px] hidden dark:block"
+                className="max-h-[90px] max-w-[180px] hidden dark:block"
               />
             )}
           </figure>
