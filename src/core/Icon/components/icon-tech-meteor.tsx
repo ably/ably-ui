@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechMeteor = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_2040"><path fill="#fff" d="M0 48V0h48v48z" /></clipPath></defs><g clipPath="url(#clip0_1031_2040)"><path fill="#FF6A3E" fillRule="evenodd" d="M47.616 32.075c-.749.804-1.727.114-1.727.114L24.02 8.645l23.77 21.823s.575.804-.173 1.608m-2.446-7.63-9.912-10.704 10.852 9.896s.285.377-.086.754c-.37.376-.854.054-.854.054m1.621 14.201c-1.071 1.152-2.47.166-2.47.166L13.015 5.11l34.022 31.235s.824 1.151-.247 2.301m-3.212 5.673c-1.071 1.15-2.472.164-2.472.164L0 1l43.826 41.017s.823 1.15-.247 2.302m-5.931 3.123c-1.072 1.15-2.472.165-2.472.165L3.872 13.905 37.895 45.14s.823 1.151-.247 2.302m-7.167.086c-.748.804-1.726.115-1.726.115L6.885 24.098l23.77 21.822s.574.805-.174 1.608m-7.358-1.93c-.37.377-.853.054-.853.054l-9.912-10.704 10.851 9.896s.284.377-.086.754" clipRule="evenodd" /></g></svg>;
+const ForwardRef = forwardRef(IconTechMeteor);
+export default ForwardRef;

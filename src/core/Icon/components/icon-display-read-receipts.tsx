@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayReadReceipts = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} d="m20.486 28.766 15.986-18.071M17.692 32.524l-3.114 3.888c-.94 1.067-1.733 1.248-2.78 0L1.024 23.902" /><path stroke="#FF5416" strokeLinecap="round" strokeWidth={1.5} d="M10.755 23.901 21.18 35.717c1.39 1.39 2.085 1.39 3.475 0L46.897 10" /></svg>;
+const ForwardRef = forwardRef(IconDisplayReadReceipts);
+export default ForwardRef;

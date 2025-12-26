@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechDjango = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<rect width={48} height={48} fill="#144A34" rx={4} /><path fill="#fff" fillRule="evenodd" d="M26.577 6H20.69v8.976c-.88-.23-1.605-.306-2.56-.306C11.974 14.67 8 18.57 8 24.57c0 6.23 3.746 9.479 10.932 9.48 2.408 0 4.625-.23 7.645-.803zm-7.874 13.41c.726 0 1.3.076 1.987.305v9.442c-.84.114-1.376.152-2.026.152-3.02 0-4.663-1.72-4.663-4.854 0-3.21 1.72-5.046 4.702-5.046m17.238 9.326V15.091h-5.886v11.62c0 5.121-.268 7.07-1.11 8.752-.802 1.645-2.063 2.715-4.662 3.938L29.749 42c2.599-1.3 3.86-2.485 4.816-4.358 1.032-1.95 1.376-4.204 1.376-8.906m0-22.704h-5.886v6.039h5.886z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechDjango);
+export default ForwardRef;

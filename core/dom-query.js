@@ -1,0 +1,2 @@
+export const queryId=(val,root=document)=>root.querySelector(`[data-id="${CSS.escape(val)}"]`);export const queryIdAll=(val,root=document)=>root.querySelectorAll(`[data-id="${CSS.escape(val)}"]`);
+//# sourceMappingURL=dom-query.js.map

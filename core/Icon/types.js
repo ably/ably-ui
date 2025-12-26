@@ -1,0 +1,2 @@
+import{displayIcons}from"./computed-icons/display-icons";import{guiIcons}from"./computed-icons/gui-icons";import{socialIcons}from"./computed-icons/social-icons";import{techIcons}from"./computed-icons/tech-icons";import{productIcons}from"./computed-icons/product-icons";export const iconNames={gui:guiIcons,display:displayIcons,social:socialIcons,tech:techIcons,product:productIcons};
+//# sourceMappingURL=types.js.map

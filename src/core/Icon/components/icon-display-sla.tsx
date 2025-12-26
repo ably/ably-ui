@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplaySla = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={49} fill="none" viewBox="0 0 48 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} d="M8.72 5.643c.855-.856 2.036-1.47 3.28-1.47h16.847c1.26 0 2.465.5 3.355 1.391l7.158 7.158c.89.89 1.39 2.09 1.39 3.35v24.85c0 1.245-.614 2.426-1.47 3.281-.855.855-2.036 1.47-3.28 1.47H12c-1.244 0-2.425-.615-3.28-1.47-.856-.855-1.47-2.036-1.47-3.28v-32c0-1.244.614-2.425 1.47-3.28Z" /><path fill="#FF5416" fillRule="evenodd" stroke="#FF5416" strokeWidth={1.92} d="M16.417 27.34a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" clipRule="evenodd" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m20.778 26.897 2.88 2.822 4.478-4.645" /><path stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} d="M29 4.423v7.333c0 2.292 1.76 3.667 3.52 3.667H40" /></svg>;
+const ForwardRef = forwardRef(IconDisplaySla);
+export default ForwardRef;

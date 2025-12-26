@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayDynamicChannelGroups = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={49} height={49} fill="none" viewBox="0 0 49 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_3795_3659"><path fill="#fff" d="M.333.423h48v48h-48z" /></clipPath></defs><g clipPath="url(#clip0_3795_3659)"><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M24.316 24.331c-.383.225-.825.515-1.27.87-1.207.966-2.553 2.522-2.553 4.677v10.908a2.886 2.886 0 0 1-2.887 2.887H3.97a2.886 2.886 0 0 1-2.887-2.886V8.059A2.886 2.886 0 0 1 3.97 5.173h13.636a2.884 2.884 0 0 1 2.886 2.883v10.912c0 .887.367 1.715.837 2.42.473.71 1.09 1.353 1.685 1.888.458.413.914.77 1.302 1.055" /><ellipse cx={15.171} cy={13.351} stroke="#C6CED9" strokeWidth={1.5} rx={2.435} ry={4.383} /><path stroke="#C6CED9" strokeWidth={1.5} d="M15.658 8.968H6.892c-1.614 0-2.922 1.962-2.922 4.383 0 2.42 1.308 4.383 2.922 4.383h8.766" /><ellipse cx={15.171} cy={24.844} stroke="#C6CED9" strokeWidth={1.5} rx={2.435} ry={4.383} /><path stroke="#C6CED9" strokeWidth={1.5} d="M15.658 20.461H6.892c-1.614 0-2.922 1.963-2.922 4.383s1.308 4.383 2.922 4.383h8.766" /><ellipse cx={15.171} cy={36.337} stroke="#C6CED9" strokeWidth={1.5} rx={2.435} ry={4.383} /><path stroke="#C6CED9" strokeWidth={1.5} d="M15.658 31.954H6.892c-1.614 0-2.922 1.963-2.922 4.383s1.308 4.384 2.922 4.384h8.766" /><path stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} d="M32.06 24.423h-7.272" /><circle cx={41.333} cy={24.423} r={7} fill="#FF5416" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m38.103 24.872 2.584 2.243 3.877-5.384" /></g></svg>;
+const ForwardRef = forwardRef(IconDisplayDynamicChannelGroups);
+export default ForwardRef;

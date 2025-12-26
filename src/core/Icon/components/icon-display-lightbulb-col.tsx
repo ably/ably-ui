@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayLightbulbCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={40} height={41} fill="none" viewBox="0 0 40 41" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#03020D" d="M15.833 33v-.75a.75.75 0 0 0-.75.75zm8.333 0h.75a.75.75 0 0 0-.75-.75zm-8.333 3.125h-.75a.75.75 0 0 0 .461.692zm8.333 0 .289.692a.75.75 0 0 0 .461-.692zm-8.333-2.375h8.333v-1.5h-8.333zm-.75-.75v3.125h1.5V33zm.75 3.125-.288.692.003.002.006.002.024.01a12 12 0 0 0 .408.159c.27.101.649.236 1.082.372.844.264 1.978.555 2.932.555v-1.5c-.713 0-1.663-.23-2.485-.487a19 19 0 0 1-1.37-.488l-.019-.007-.004-.002zM20 37.917c.954 0 2.087-.291 2.932-.555a21 21 0 0 0 1.513-.54l.007-.003.002-.001-.288-.693-.288-.692q-.002 0-.005.002l-.018.007-.076.03q-.104.043-.293.114c-.25.093-.601.219-1.002.344-.822.257-1.772.487-2.484.487zm4.916-1.792V33h-1.5v3.125z" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M34.166 18.833h2.5M3.333 18.833h2.5" /><path fill="#FF5416" d="M25.002 30.71a.75.75 0 0 1-.72.54h-8.567a.75.75 0 0 1-.72-.54l-.002-.006-.007-.023-.029-.095a19.334 19.334 0 0 0-.554-1.53c-.387-.941-.89-1.92-1.415-2.443a9.87 9.87 0 0 1-2.714-5.058 9.84 9.84 0 0 1 .565-5.709 9.9 9.9 0 0 1 3.653-4.432 9.94 9.94 0 0 1 11.016 0 9.9 9.9 0 0 1 3.653 4.432 9.84 9.84 0 0 1-2.15 10.767c-.525.523-1.028 1.502-1.416 2.442a19 19 0 0 0-.555 1.531l-.029.095-.007.023z" /><path stroke="#fff" strokeLinecap="round" strokeWidth={1.5} d="M13.333 19.667A6.667 6.667 0 0 1 20 13" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="m32.55 8.366-1.768 1.768M7.45 8.366l1.767 1.768M20 3.833v2.5" /></svg>;
+const ForwardRef = forwardRef(IconDisplayLightbulbCol);
+export default ForwardRef;

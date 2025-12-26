@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAwsAppSync = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><linearGradient id="paint0_linear_1031_1992" x1={-9.939} x2={57.939} y1={57.939} y2={-9.939} gradientUnits="userSpaceOnUse"><stop stopColor="#B0084D" /><stop offset={1} stopColor="#FF4F8B" /></linearGradient><clipPath id="clip0_1031_1992"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1992)"><path fill="url(#paint0_linear_1031_1992)" d="M48 0H0v48h48z" /><path fill="#fff" d="M24.07 38.547c-2.44 0-4.84-.62-6.976-1.798l.64-1.12a13.241 13.241 0 0 0 17.632-18.56l-.64 3.2-1.28-.25.928-4.659a.64.64 0 0 1 .75-.505l4.697.928-.25 1.28-3.136-.64A14.54 14.54 0 0 1 24.07 38.547m-11.09-5.58a.7.7 0 0 1-.16 0l-4.64-1.165.313-1.242 2.982.749A14.522 14.522 0 0 1 30.99 11.251l-.64 1.12A13.242 13.242 0 0 0 12.69 30.83l.832-3.309 1.242.307-1.165 4.64a.64.64 0 0 1-.62.5m16.153-2.759a2.56 2.56 0 0 1-2.477-1.92h-5.28a2.56 2.56 0 1 1-2.483-3.2q.35 0 .691.09l2.675-4.634a2.56 2.56 0 1 1 3.52 0l2.675 4.634q.334-.09.679-.09a2.56 2.56 0 1 1 0 5.12m0-3.84a1.28 1.28 0 1 0 0 2.56 1.28 1.28 0 0 0 0-2.56m-10.24 0a1.28 1.28 0 1 0 0 2.56 1.28 1.28 0 0 0 0-2.56m2.483.64h5.28a2.56 2.56 0 0 1 .691-1.197L24.66 21.16a2.56 2.56 0 0 1-1.28 0l-2.681 4.659c.33.33.565.743.678 1.197zm2.637-9.6a1.28 1.28 0 1 0 0 2.56 1.28 1.28 0 0 0 0-2.56" /></g></svg>;
+const ForwardRef = forwardRef(IconTechAwsAppSync);
+export default ForwardRef;

@@ -1,0 +1,16 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechVscode = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={66} height={66} fill="none" viewBox="0 0 66 66" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><filter id="filter0_d_1031_1962" width={64.696} height={52.944} x={0.637} y={12.264} colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity={0} result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feOffset /><feGaussianBlur stdDeviation={4.167} /><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" /><feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1031_1962" /><feBlend in="SourceGraphic" in2="effect1_dropShadow_1031_1962" result="shape" /></filter><filter id="filter1_d_1031_1962" width={31.667} height={64.419} x={33.667} y={0.79} colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity={0} result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" /><feOffset /><feGaussianBlur stdDeviation={4.167} /><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" /><feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1031_1962" /><feBlend in="SourceGraphic" in2="effect1_dropShadow_1031_1962" result="shape" /></filter><linearGradient id="paint0_linear_1031_1962" x1={32.971} x2={32.971} y1={9.124} y2={56.876} gradientUnits="userSpaceOnUse"><stop stopColor="#fff" /><stop offset={1} stopColor="#fff" stopOpacity={0} /></linearGradient></defs><path fill="#0065A9" d="m55.302 14.182-9.89-4.762A2.99 2.99 0 0 0 42 10L9.623 39.52a2 2 0 0 0 .002 2.957l2.645 2.405a2 2 0 0 0 2.554.113l38.99-29.578C55.12 14.425 57 15.358 57 17v-.115a3 3 0 0 0-1.699-2.703" /><g filter="url(#filter0_d_1031_1962)"><path fill="#007ACC" d="m55.302 51.818-9.89 4.762A2.99 2.99 0 0 1 42 56L9.623 26.48a2 2 0 0 1 .002-2.958l2.645-2.404a2 2 0 0 1 2.554-.114l38.99 29.578C55.12 51.574 57 50.642 57 49v.115a3 3 0 0 1-1.699 2.703" /></g><g filter="url(#filter1_d_1031_1962)"><path fill="#1F9CF0" d="M45.412 56.58A2.99 2.99 0 0 1 42 56c1.107 1.107 3 .323 3-1.243V11.242c0-1.565-1.893-2.35-3-1.242a2.99 2.99 0 0 1 3.412-.58l9.888 4.755a3 3 0 0 1 1.7 2.703v32.244a3 3 0 0 1-1.7 2.703z" /></g><path fill="url(#paint0_linear_1031_1962)" fillRule="evenodd" d="M43.009 56.672a2.99 2.99 0 0 0 2.38-.091l9.883-4.756a3 3 0 0 0 1.699-2.703V16.878a3 3 0 0 0-1.699-2.703L45.39 9.419a2.99 2.99 0 0 0-3.41.58L23.06 27.26l-8.24-6.255a2 2 0 0 0-2.553.114l-2.643 2.404a2 2 0 0 0-.002 2.958L16.769 33l-7.146 6.52a2 2 0 0 0 .002 2.957l2.643 2.405a2 2 0 0 0 2.553.113l8.24-6.255L41.98 56c.3.3.65.525 1.029.672m1.97-34.569L30.622 33l14.355 10.896z" clipRule="evenodd" opacity={0.25} style={{
+    mixBlendMode: "overlay"
+  }} /></svg>;
+const ForwardRef = forwardRef(IconTechVscode);
+export default ForwardRef;

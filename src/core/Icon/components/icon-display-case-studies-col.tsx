@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayCaseStudiesCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={40} height={41} fill="none" viewBox="0 0 40 41" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M7.266 4.433C7.98 3.72 8.963 3.208 10 3.208h14.039a3.95 3.95 0 0 1 2.796 1.16l5.965 5.965a3.94 3.94 0 0 1 1.158 2.792v20.708c0 1.037-.512 2.021-1.225 2.734-.712.713-1.697 1.225-2.733 1.225H10c-1.037 0-2.021-.512-2.734-1.225-.712-.713-1.224-1.697-1.224-2.734V7.167c0-1.037.512-2.021 1.224-2.734Z" /><path fill="#FF5416" fillRule="evenodd" d="M20 14.875c.242 0 .462.14.565.359l1.856 3.943 4.324.547a.625.625 0 0 1 .35 1.075l-3.177 2.984.816 4.28a.625.625 0 0 1-.915.666l-3.82-2.1-3.818 2.1a.625.625 0 0 1-.916-.665l.816-4.281-3.176-2.984a.625.625 0 0 1 .35-1.075l4.323-.547 1.856-3.943a.63.63 0 0 1 .566-.359" clipRule="evenodd" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M24.206 3.417V8.83c-.04 1.252.492 2.026 1.197 2.746s1.685 1.241 2.722 1.252h5.625" /></svg>;
+const ForwardRef = forwardRef(IconDisplayCaseStudiesCol);
+export default ForwardRef;

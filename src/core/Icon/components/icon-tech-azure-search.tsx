@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAzureSearch = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#59B4D9" fillRule="evenodd" d="m42.28 21.97.058-1.225C42.338 14.257 36.746 9 29.892 9a12.7 12.7 0 0 0-5.63 1.264 12.6 12.6 0 0 0-4.478 3.621A9.8 9.8 0 0 0 14.8 12.55c-5.183 0-9.407 3.997-9.407 8.905v.702C1.887 23.853 0 26.658 0 30.166 0 35.69 4.71 40 10.728 40h26.544C43.29 40 48 35.69 48 30.166c.023-3.642-2.04-6.558-5.72-8.195" clipRule="evenodd" /><path fill="#fff" fillRule="evenodd" d="M31.84 24.145c0 2.378-1.939 4.306-4.331 4.306s-4.332-1.928-4.332-4.306 1.94-4.306 4.332-4.306 4.331 1.928 4.331 4.306m2.56 0c0 3.784-3.085 6.85-6.891 6.85a6.9 6.9 0 0 1-3.168-.764q-.04.046-.084.088l-4.703 4.671a2.02 2.02 0 0 1-2.844 0 1.99 1.99 0 0 1 0-2.828l4.704-4.672.051-.05a6.8 6.8 0 0 1-.848-3.295c0-3.784 3.086-6.851 6.892-6.851s6.892 3.067 6.892 6.85" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechAzureSearch);
+export default ForwardRef;

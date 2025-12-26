@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiCodeDoc = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#03020D" fillRule="evenodd" d="M20 22.5H4a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 .5-.5h10.757a1.5 1.5 0 0 1 1.061.44l4.243 4.242a1.5 1.5 0 0 1 .439 1.06V22a.5.5 0 0 1-.5.5m1.121-17.379L16.88.88A3 3 0 0 0 14.757 0H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7.243a3 3 0 0 0-.879-2.122M9.481 8.076a.75.75 0 0 0-.961-1.152l-3 2.5a.75.75 0 0 0 0 1.152l3 2.5a.75.75 0 1 0 .96-1.152L7.172 10zm4.235-1.794a.75.75 0 0 1 .502.933l-3 10a.75.75 0 0 1-1.436-.43l3-10a.75.75 0 0 1 .934-.503m.804 5.794a.75.75 0 0 1 .96-1.152l3 2.5a.75.75 0 0 1 0 1.152l-3 2.5a.75.75 0 1 1-.96-1.152L16.828 14z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconGuiCodeDoc);
+export default ForwardRef;

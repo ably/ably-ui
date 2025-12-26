@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayAuthentication = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={49} height={49} fill="none" viewBox="0 0 49 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={1.5} d="M42.804 29.423c1.834-4.95 1.694-8.684 1.694-8.684V6.004C32.386 7.448 24.534 1.923 24.534 1.923A33.27 33.27 0 0 1 4.5 5.87l.066 16.188c.865 18.23 19.968 25.865 19.968 25.865a43 43 0 0 0 4.256-2.226" /><path stroke="#C6CED9" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M30.5 16.92a6 6 0 1 1-12 .006 6 6 0 0 1 12-.007ZM32.737 27.81c-1.13-1.208-2.66-1.887-4.257-1.887h-7.96c-1.597 0-3.128.679-4.257 1.888S14.5 30.659 14.5 32.369v.554" /><path fill="#FF5416" fillRule="evenodd" d="M28.45 37.923a8 8 0 1 1 15.998 0 8 8 0 0 1-15.999 0" clipRule="evenodd" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m32.81 37.48 2.881 2.822 4.477-4.645" /></svg>;
+const ForwardRef = forwardRef(IconDisplayAuthentication);
+export default ForwardRef;

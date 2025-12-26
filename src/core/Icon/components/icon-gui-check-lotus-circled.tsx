@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiCheckLotusCircled = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} fill="none" viewBox="0 0 12 12" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M4.5 6.375 5.625 7.5 7.5 4.875M10.5 6c0 .634-.315 1.195-.796 1.534a1.87 1.87 0 0 1-1.282 2.11c-.287.091-.592.111-.888.06A1.87 1.87 0 0 1 6 10.5a1.87 1.87 0 0 1-1.534-.796 1.873 1.873 0 0 1-2.17-2.17A1.87 1.87 0 0 1 1.5 6c0-.634.315-1.195.797-1.534a1.87 1.87 0 0 1 1.281-2.11c.287-.091.592-.111.888-.06a1.873 1.873 0 0 1 3.068 0 1.873 1.873 0 0 1 2.17 2.17A1.87 1.87 0 0 1 10.5 6" /></svg>;
+const ForwardRef = forwardRef(IconGuiCheckLotusCircled);
+export default ForwardRef;

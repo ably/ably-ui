@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayMultiUserSpacesCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={49} height={48} fill="none" viewBox="0 0 49 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#03020D" strokeLinejoin="round" strokeWidth={1.5} d="M13 13h6v6h-6zM31 13h6v6h-6zM13 31h6v6h-6z" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M16 19v12M34 19v7M19 16h12M19 34h10" /><path fill="#FF5416" fillRule="evenodd" d="M47.75 34.127a.75.75 0 0 0-.49-.675l-16.886-6.234a.75.75 0 0 0-.944 1.011l7.376 16.431a.75.75 0 0 0 1.393-.062l2.291-6.617 6.824-3.144a.75.75 0 0 0 .435-.71" clipRule="evenodd" /><path stroke="#03020D" strokeLinejoin="round" strokeWidth={1.5} d="M12.886 45.506 1.63 41.35l4.742-2.185 1.598-4.613zM30.257 1 19 5.156l4.743 2.185 1.597 4.613z" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M33 6h11" /></svg>;
+const ForwardRef = forwardRef(IconDisplayMultiUserSpacesCol);
+export default ForwardRef;

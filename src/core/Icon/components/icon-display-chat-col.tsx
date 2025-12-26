@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayChatCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#03020D" d="m12.5 24.067-.525-.536a.75.75 0 0 1 .525-.214zm2.5-.75a.75.75 0 0 1 0 1.5zm15.75-8.504a.75.75 0 0 1-1.5 0zm-1.5-5.475c0-.586-.306-1.238-.838-1.76-.53-.52-1.201-.828-1.812-.828v-1.5c1.089 0 2.119.527 2.863 1.258.743.73 1.287 1.746 1.287 2.83zM26.6 6.75H7.4v-1.5h19.2zm-19.2 0c-.611 0-1.281.307-1.812.828-.532.522-.838 1.174-.838 1.76h-1.5c0-1.084.544-2.1 1.287-2.83.744-.73 1.774-1.258 2.863-1.258zm5.1 17.317v-.75H15v1.5h-2.5zM4.75 9.337v19.186h-1.5V9.338zm7.75 14.73.525.535-.003.003-.008.008-.034.033-.13.127-2.011 1.978a486 486 0 0 0-3.306 3.28l-1.066-1.057c.754-.76 2.132-2.122 3.32-3.291.593-.586 1.14-1.123 1.539-1.515l.474-.465.163-.16.009-.01.002-.001zM7.533 30.03c-.902.91-1.974 1.199-2.9.786-.88-.391-1.383-1.317-1.383-2.293h1.5c0 .493.247.814.492.923.2.088.627.132 1.225-.472zM30.75 9.338v5.475h-1.5V9.338z" /><path fill="#FF5416" d="M18 21.089V32.48c0 1.669 1.7 3.338 3.4 3.338h14.1s4 3.922 5.5 5.436 3 .49 3-.98V21.09c0-1.669-1.7-3.338-3.4-3.338H21.4c-1.7 0-3.4 1.669-3.4 3.338" /></svg>;
+const ForwardRef = forwardRef(IconDisplayChatCol);
+export default ForwardRef;

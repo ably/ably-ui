@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplaySubscriptionFilters = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={49} fill="none" viewBox="0 0 48 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<ellipse cx={24} cy={24.423} stroke="#C6CED9" strokeWidth={1.5} rx={4} ry={8} /><path stroke="#C6CED9" strokeWidth={1.5} d="M24 16.423H12c-2.21 0-4 3.582-4 8s1.79 8 4 8h12" /><path stroke="#C6CED9" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M37 19.423v2a3 3 0 0 1-3 3H24M37 29.423v-2a3 3 0 0 0-3-3H24" /><path fill="#FF5416" fillRule="evenodd" d="M30.25 10.423a6.75 6.75 0 1 1 13.5 0 6.75 6.75 0 0 1-13.5 0" clipRule="evenodd" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m35 10.756 1.6 1.667 2.4-4" /><circle cx={37} cy={38.423} r={6} stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} /><path stroke="#C6CED9" strokeLinecap="round" strokeWidth={1.5} d="m35 36.423 4 4M39 36.423l-4 4" /><path stroke="#C6CED9" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M8 24.423H2" /></svg>;
+const ForwardRef = forwardRef(IconDisplaySubscriptionFilters);
+export default ForwardRef;

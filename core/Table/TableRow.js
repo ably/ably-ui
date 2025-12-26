@@ -1,0 +1,2 @@
+import React from"react";const CtaRow=({children})=>React.createElement("tr",null,React.createElement("td",{className:"hidden sm:block"}),children);const TableRow=({children,isHeader,...rest})=>React.createElement("tr",rest,isHeader&&React.createElement("td",{className:"bg-white"}),children);export{TableRow,CtaRow};
+//# sourceMappingURL=TableRow.js.map

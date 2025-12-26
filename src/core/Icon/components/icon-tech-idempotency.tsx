@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechIdempotency = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_2025"><path fill="#fff" d="M0 48V0h48v48z" /></clipPath></defs><g fill="#03020D" clipPath="url(#clip0_1031_2025)"><path fillRule="evenodd" d="M46 24c0-6.075-4.925-11-11-11s-11 4.925-11 11 4.925 11 11 11 11-4.925 11-11m2 0c0-7.18-5.82-13-13-13s-13 5.82-13 13 5.82 13 13 13 13-5.82 13-13" clipRule="evenodd" /><path d="M11.65 44.922a1 1 0 0 0 0 1.414l.014.014a1 1 0 0 0 1.414 0l7.864-7.864v6.857a1 1 0 0 0 1 1h.029a1 1 0 0 0 1-1V36.03a1 1 0 0 0-1-1h-9.314a1 1 0 0 0-1 1v.029a1 1 0 0 0 1 1h6.857zM2 25.01a1 1 0 0 1-1-1v-.02a1 1 0 0 1 1-1h11.121l-4.848-4.848a1 1 0 0 1 0-1.415l.02-.02a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1-1.414 0l-.02-.02a1 1 0 0 1 0-1.415l4.848-4.848z" /><path fillRule="evenodd" d="M40 22a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1M40 26a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1" clipRule="evenodd" /><path d="M11.65 3.45a1 1 0 0 1 0-1.413l.014-.015a1 1 0 0 1 1.414 0l7.864 7.864V3.03a1 1 0 0 1 1-1h.029a1 1 0 0 1 1 1v9.314a1 1 0 0 1-1 1h-9.314a1 1 0 0 1-1-1v-.028a1 1 0 0 1 1-1h6.857z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechIdempotency);
+export default ForwardRef;

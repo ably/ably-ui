@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechFeatherjs = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1964"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g fill="#03020D" clipPath="url(#clip0_1031_1964)"><path fillRule="evenodd" d="M24 46c12.15 0 22-9.85 22-22S36.15 2 24 2 2 11.85 2 24s9.85 22 22 22m0 2c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24" clipRule="evenodd" /><path d="M27.981 7.63c-1.624-.295-5.55 5.666-6.849 9.296-.099.276-.325 1.284-.325 1.55 0 0 1.017 2.187 1.3 2.7-.473-.246-1.452-2.141-1.452-2.141-.473.9-.925 5.033-.778 5.8 0 0 1.053 1.566 1.462 1.957-.561-.187-1.506-1.456-1.506-1.456-.177.546-.143 1.682-.059 2.066.709 1.033 1.653 1.151 1.653 1.151s-1.033 10.3.532 11.067c.974-.207 1.21-11.51 1.21-11.51s1.181.089 1.447-.206c.6-.413 1.997-4.704 2.017-5.323 0 0-1.62.304-2.411.61.596-.59 2.499-.988 2.499-.988.516-.619 1.602-4.831 1.711-6.13.028-.325.09-.725.042-1.307 0 0-1.548.34-1.87.222.327-.037 1.909-.644 1.909-.644.28-2.523.367-6.55-.532-6.714m-5.664 26.72c-.123 3.033-.201 3.89-.329 4.606-.059.133-.118.155-.177-.015-.541-2.489-.502-21.233 5.668-29.762-3.588 6.551-5.22 19.12-5.162 25.17" /></g></svg>;
+const ForwardRef = forwardRef(IconTechFeatherjs);
+export default ForwardRef;

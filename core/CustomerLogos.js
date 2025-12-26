@@ -1,0 +1,2 @@
+import React from"react";const CustomerLogos=({companies,additionalCss=""})=>{return React.createElement("section",{className:"w-full bg-white"},React.createElement("ul",{className:`py-16 flex flex-row flex-wrap md:flex-nowrap content-between m-auto items-center ${additionalCss}`},companies.map(company=>React.createElement("li",{key:company.label,className:"flex-auto text-center sm:w-1/3 w-1/2"},React.createElement("img",{alt:company.label,src:company.logo,className:"mx-auto"})))))};export default CustomerLogos;
+//# sourceMappingURL=CustomerLogos.js.map

@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechGrpc = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><linearGradient id="paint0_linear_1031_1927" x1={31.75} x2={42.853} y1={13} y2={11.082} gradientUnits="userSpaceOnUse"><stop stopColor="#00B0AD" /><stop offset={1} stopColor="#6DC9C9" /></linearGradient><linearGradient id="paint1_linear_1031_1927" x1={6} x2={24.79} y1={16.5} y2={13.254} gradientUnits="userSpaceOnUse"><stop stopColor="#6DC9C9" /><stop offset={1} stopColor="#00B0AD" /></linearGradient><clipPath id="clip0_1031_1927"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1927)"><path fill="url(#paint0_linear_1031_1927)" d="M31.75 3.25h9.75V13h-9.75z" /><path fill="url(#paint1_linear_1031_1927)" d="M6 0h16.5v16.5H6z" /><path fill="#03020D" d="M19.096 41.557q1.28 1.722 3.331 2.758t4.568 1.037q2.205 0 3.75-.64 1.544-.639 2.494-1.743a6.7 6.7 0 0 0 1.368-2.581q.419-1.48.419-3.155v-3.707h-.089q-1.412 2.119-3.441 3-2.03.884-4.28.883-2.251 0-4.215-.794a10.7 10.7 0 0 1-3.42-2.184 10.1 10.1 0 0 1-2.294-3.332q-.84-1.941-.839-4.192 0-2.25.794-4.192a10.8 10.8 0 0 1 2.185-3.398 9.85 9.85 0 0 1 3.31-2.273q1.92-.817 4.214-.817.926 0 1.963.177t2.074.619a9.7 9.7 0 0 1 2.052 1.212q1.014.774 1.898 1.964h.088v-3.441h2.912v20.475q0 1.678-.419 3.574a8.8 8.8 0 0 1-1.632 3.487q-1.215 1.589-3.376 2.648Q30.348 48 26.862 48q-3.09 0-5.516-1.015t-4.412-3.133zm.53-14.738q0 1.632.595 3.066a8 8 0 0 0 1.633 2.516 7.9 7.9 0 0 0 2.427 1.72q1.39.64 3.023.64a8.1 8.1 0 0 0 3.023-.573 8 8 0 0 0 2.536-1.61 7 7 0 0 0 1.7-2.494q.595-1.456.551-3.265 0-1.633-.53-3.067a7.4 7.4 0 0 0-1.544-2.516 7.5 7.5 0 0 0-2.471-1.72q-1.456-.64-3.265-.64a7.15 7.15 0 0 0-3.023.64c-.91.415-1.734.999-2.427 1.72a8.1 8.1 0 0 0-1.633 2.516 7.9 7.9 0 0 0-.596 3.067M14.528 3.241 9.582 8.224l4.983 4.946 4.216-.015L14.36 8.77l21.828-.082-1.913 1.927 2.107-.008 2.474-2.492-2.492-2.473-2.108.008 1.928 1.912-21.828.081 4.387-4.417z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechGrpc);
+export default ForwardRef;

@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechPrisma = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#16BD77" fillRule="evenodd" d="M5.363 33.148a2.33 2.33 0 0 1-.019-2.465L22.861 2.148c.974-1.587 3.327-1.448 4.107.243l16.003 34.665a2.33 2.33 0 0 1-1.449 3.207L16.63 47.72a2.334 2.334 0 0 1-2.64-.984zm19.519-22.656c.169-.84 1.32-.961 1.66-.175l11.039 25.507a.873.873 0 0 1-.553 1.184l-17.2 5.127a.874.874 0 0 1-1.107-1.01z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechPrisma);
+export default ForwardRef;

@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAkka = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1904"><path fill="#fff" d="M0 48V0h48v48z" /></clipPath></defs><g clipPath="url(#clip0_1031_1904)"><path fill="#0B5567" d="M40.603 39.917c7.304 5.84 11.983-11.597.345-14.812-9.766-2.706-19.593 1.933-29.44 12.757 0 0 18.189-6.653 29.095 2.055" /><path fill="#15A9CE" d="M11.67 37.72c7-7.264 18.637-15.362 29.482-12.371 2.523.712 4.313 2.177 5.473 3.927L36.37 8.583c-1.465-2.34-5.21-1.851-7.325-.06L1.945 31.228c-2.462 2.116-2.604 5.88-.326 8.159a5.554 5.554 0 0 0 7.427.406z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechAkka);
+export default ForwardRef;

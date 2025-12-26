@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear_transport" x1="74" y1="4" x2="74" y2="104"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5416" />
+      <stop offset="1" stop-color="#FF2739" />
+    </linearGradient>
+  </defs>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M74 4C76.2324 4 78.1943 5.47989 78.8076 7.62639L84.2289 26.601C86.6018 34.9062 93.0938 41.3982 101.399 43.7711L120.374 49.1924C122.52 49.8057 124 51.7676 124 54C124 56.2324 122.52 58.1943 120.374 58.8076L101.399 64.2289C93.0938 66.6018 86.6018 73.0938 84.2289 81.399L78.8076 100.374C78.1943 102.52 76.2324 104 74 104C71.7676 104 69.8057 102.52 69.1924 100.374L63.7711 81.399C61.3982 73.0938 54.9062 66.6018 46.601 64.2289L27.6264 58.8076C25.4799 58.1943 24 56.2324 24 54C24 51.7676 25.4799 49.8057 27.6264 49.1924L46.601 43.7711C54.9062 41.3982 61.3982 34.9062 63.7711 26.601L69.1924 7.62639C69.8057 5.47989 71.7676 4 74 4Z" fill="url(#paint0_linear_transport)" />
+  <path d="M47 95L21 121" stroke="url(#paint0_linear_transport)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 84L17 98" stroke="url(#paint0_linear_transport)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

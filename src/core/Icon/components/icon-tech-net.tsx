@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechNet = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1921"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1921)"><path fill="#512BD4" d="M46 0H2a2 2 0 0 0-2 2v44a2 2 0 0 0 2 2h44a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2" /><path fill="#fff" d="M8.555 30.667q-.51 0-.865-.34a1.12 1.12 0 0 1-.357-.826q0-.487.357-.835.356-.348.865-.348.517 0 .874.348.365.348.365.835 0 .478-.365.826a1.22 1.22 0 0 1-.874.34M41.333 19.757h-3.495v10.718h-2.02V19.757h-3.487V18h9.002zM31.626 30.475h-6.83V18h6.559v1.757h-4.54v3.532h4.183v1.749h-4.183v3.689h4.811zM22.123 30.475h-2.206l-5.812-9.17a4 4 0 0 1-.365-.721h-.051q.068.4.068 1.714v8.177h-1.952V18h2.35l5.618 8.952q.356.556.458.765h.034q-.085-.495-.085-1.679V18h1.943z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechNet);
+export default ForwardRef;
