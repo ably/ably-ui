@@ -16,9 +16,8 @@ const spriteConfig = {
     id: {
       generator: (filename: string) => {
         const nameWithoutExtension = filename.replace(".svg", "");
-        return nameWithoutExtension.startsWith("icon-")
-          ? `sprite-${nameWithoutExtension}`
-          : `hero-sprite-icon-gui-${nameWithoutExtension}`;
+        // All icons use sprite-{name} format for consistency
+        return `sprite-${nameWithoutExtension}`;
       },
     },
   },
@@ -179,15 +178,23 @@ async function processSvgDir(dirString: string) {
           }
         }
 
-        // Only process files from our SVG directories
+        const svgContent = fs.readFileSync(path.resolve(dir, file), "utf-8");
+        const isHeroicon = dir.includes("heroicons");
+
+        // Add to sprite - use the transformed filename for heroicons so ID includes variant
+        const spriteFileName = isHeroicon
+          ? `${fileNameWithoutExtension}.svg`
+          : file;
+        sprites
+          .find((sprite) => sprite.key === key)
+          ?.sprite.add(
+            path.resolve(dir, spriteFileName),
+            spriteFileName,
+            svgContent,
+          );
+
+        // Only generate React components for local icons (heroicons use @heroicons/react)
         if (svgDirs.includes(dirString)) {
-          const svgContent = fs.readFileSync(path.resolve(dir, file), "utf-8");
-
-          // Add to sprite
-          sprites
-            .find((sprite) => sprite.key === key)
-            ?.sprite.add(path.resolve(dir, file), null, svgContent);
-
           // Generate React component
           const componentName = sanitizeComponentName(fileNameWithoutExtension)
             .split("-")
