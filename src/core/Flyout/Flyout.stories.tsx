@@ -3,7 +3,7 @@ import Flyout from "../Flyout";
 
 import FeaturedLink from "../FeaturedLink";
 import { ProductName, products } from "../ProductTile/data";
-import ProductTile from "../ProductTile";
+import MeganavTile from "../Meganav/MeganavTile";
 
 export default {
   title: "Components/Flyout",
@@ -75,9 +75,10 @@ const menuItems = [
         panelLeft={
           <div className="grid grid-cols-2">
             {Object.keys(products).map((product) => (
-              <ProductTile
-                name={product as ProductName}
+              <MeganavTile
+                productName={product as ProductName}
                 key={product}
+                link={`/products/${product}`}
                 animateIcons={true}
               />
             ))}
