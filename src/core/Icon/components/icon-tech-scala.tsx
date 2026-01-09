@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechScala = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><linearGradient id="paint0_linear_1031_1901" x1={9} x2={38.538} y1={25.846} y2={25.846} gradientUnits="userSpaceOnUse"><stop stopColor="#4F4F4F" /><stop offset={1} /></linearGradient><linearGradient id="paint1_linear_1031_1901" x1={9} x2={38.538} y1={11.077} y2={11.077} gradientUnits="userSpaceOnUse"><stop stopColor="#4F4F4F" /><stop offset={1} /></linearGradient><linearGradient id="paint2_linear_1031_1901" x1={9} x2={38.538} y1={14.769} y2={14.769} gradientUnits="userSpaceOnUse"><stop stopColor="#C40000" /><stop offset={1} stopColor="red" /></linearGradient><linearGradient id="paint3_linear_1031_1901" x1={9} x2={38.538} y1={29.538} y2={29.538} gradientUnits="userSpaceOnUse"><stop stopColor="#C40000" /><stop offset={1} stopColor="red" /></linearGradient><linearGradient id="paint4_linear_1031_1901" x1={9} x2={38.538} y1={0} y2={0} gradientUnits="userSpaceOnUse"><stop stopColor="#C40000" /><stop offset={1} stopColor="red" /></linearGradient><clipPath id="clip0_1031_1901"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1901)"><path fill="url(#paint0_linear_1031_1901)" d="M9 29.539v3.692c0 .622 13.428 1.665 22.177 3.692 4.226-.98 7.361-2.188 7.361-3.692v-3.692c0-1.503-3.135-2.713-7.361-3.693C22.428 27.874 9 28.916 9 29.54" /><path fill="url(#paint1_linear_1031_1901)" d="M9 14.77v3.692c0 .622 13.428 1.665 22.177 3.692 4.226-.98 7.361-2.188 7.361-3.692V14.77c0-1.503-3.135-2.713-7.361-3.693C22.428 13.105 9 14.147 9 14.77" /><path fill="url(#paint2_linear_1031_1901)" d="M9 22.154V33.23c0-.924 29.539-2.77 29.539-7.385V14.769C38.539 19.384 9 21.23 9 22.154" /><path fill="url(#paint3_linear_1031_1901)" d="M9 36.923v11.076c0-.923 29.539-2.769 29.539-7.384V29.538C38.539 34.153 9 35.999 9 36.923" /><path fill="url(#paint4_linear_1031_1901)" d="M9 7.385V18.46c0-.923 29.539-2.769 29.539-7.384V0C38.539 4.615 9 6.46 9 7.385" /></g></svg>;
+const ForwardRef = forwardRef(IconTechScala);
+export default ForwardRef;

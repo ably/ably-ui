@@ -1,0 +1,2 @@
+export const track=(event,properties)=>{if(typeof window==="undefined"){return}const dataLayer=window.dataLayer||[];window.dataLayer=dataLayer;window.dataLayer.push({event,...properties})};export const trackPageView=properties=>{track("client-side-route-change",properties)};
+//# sourceMappingURL=datalayer.js.map

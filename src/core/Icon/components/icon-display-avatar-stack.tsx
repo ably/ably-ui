@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayAvatarStack = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={49} height={49} fill="none" viewBox="0 0 49 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.636} d="M19.667 12.42a13 13 0 0 0-5-.997c-7.18 0-13 5.82-13 13s5.82 13 13 13c1.771 0 3.46-.354 5-.996" /><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.636} d="M29.667 12.42a13 13 0 0 0-5-.997c-7.18 0-13 5.82-13 13s5.82 13 13 13c1.771 0 3.46-.354 5-.996" /><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.636} d="M47.19 27.923a13 13 0 0 0 .477-3.5c0-7.18-5.82-13-13-13s-13 5.82-13 13 5.82 13 13 13q1.021 0 2-.153" /><circle cx={43.167} cy={33.923} r={4.5} fill="#FF5416" /><path fill="#C6CED9" d="M31.26 19.241h1.829v7.16q-.005.983-.418 1.695a2.8 2.8 0 0 1-1.153 1.088q-.735.378-1.715.378a3.9 3.9 0 0 1-1.611-.318 2.63 2.63 0 0 1-1.129-.954q-.417-.631-.417-1.572h1.834q.005.414.18.711.177.3.491.458.315.159.721.159.442 0 .75-.184a1.18 1.18 0 0 0 .468-.557q.165-.368.17-.905zM35.09 29.423V19.241h3.818q1.173 0 1.969.438.8.437 1.208 1.203.413.76.413 1.73 0 .98-.413 1.74a2.95 2.95 0 0 1-1.218 1.198q-.805.433-1.984.433h-2.53v-1.517h2.282q.686 0 1.123-.238.438-.24.646-.657.214-.417.214-.96 0-.54-.214-.954a1.45 1.45 0 0 0-.65-.64q-.438-.235-1.13-.235h-1.69v8.641z" /></svg>;
+const ForwardRef = forwardRef(IconDisplayAvatarStack);
+export default ForwardRef;

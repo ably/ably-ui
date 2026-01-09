@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechJsonWebTokens = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#fff" fillRule="evenodd" d="M27.635 12.912 27.587 0h-7.222l.048 12.912 3.611 4.944zM20.413 35.04V48h7.222V35.04l-3.61-4.944z" clipRule="evenodd" /><path fill="#00F2E6" fillRule="evenodd" d="m27.635 35.04 7.607 10.464 5.825-4.224-7.607-10.464-5.825-1.872zM20.413 12.912 12.758 2.448 6.933 6.672l7.607 10.464 5.873 1.872z" clipRule="evenodd" /><path fill="#00B9F1" fillRule="evenodd" d="M14.54 17.136 2.215 13.152 0 19.968 12.325 24l5.825-1.92zM29.85 25.872l3.61 4.944L45.785 34.8 48 27.984 35.675 24z" clipRule="evenodd" /><path fill="#D63AFF" fillRule="evenodd" d="M35.675 24 48 19.968l-2.215-6.816-12.325 3.984-3.61 4.944zM12.325 24 0 27.984 2.215 34.8l12.325-3.984 3.61-4.944z" clipRule="evenodd" /><path fill="#FB015B" fillRule="evenodd" d="M14.54 30.816 6.933 41.28l5.825 4.224 7.655-10.464v-6.096zM33.46 17.136l7.607-10.464-5.825-4.224-7.607 10.464v6.096z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechJsonWebTokens);
+export default ForwardRef;

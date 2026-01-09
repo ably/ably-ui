@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiFilterFlowStep2 = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" fillRule="evenodd" d="M22.394 2.248H1.682Zm-20.712 0H1.68Zm20.712 0c.26 0 .51.076.725.212.214.137.383.327.497.545a1.53 1.53 0 0 1 .006 1.404l-.004.007-2.071 3.932a.75.75 0 0 1-.664.4H3.195a.75.75 0 0 1-.663-.4L.458 4.412A1.52 1.52 0 0 1 .46 3.008c.114-.218.282-.409.496-.546s.465-.214.725-.214m20.594 1.5H1.805l1.843 3.5H20.43zM3.565 10.248H20.51c.236 0 .464.067.66.19a1.3 1.3 0 0 1 .457.49 1.36 1.36 0 0 1 .006 1.273l-.004.008-1.694 3.145a.75.75 0 0 1-.66.394H4.802a.75.75 0 0 1-.66-.394l-1.697-3.15a1.36 1.36 0 0 1 .002-1.274 1.3 1.3 0 0 1 .456-.491c.196-.123.424-.19.66-.191M5.447 17.248h13.181a1.15 1.15 0 0 1 1.01.599 1.2 1.2 0 0 1 .006 1.15l-.004.008-1.318 2.359a.75.75 0 0 1-.655.384H6.411a.75.75 0 0 1-.655-.384L4.436 19a1.193 1.193 0 0 1 .42-1.587c.177-.107.381-.165.59-.165m12.618 1.5H6.013l.838 1.5h10.376z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconGuiFilterFlowStep2);
+export default ForwardRef;

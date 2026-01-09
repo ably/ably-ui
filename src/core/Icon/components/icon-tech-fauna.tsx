@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechFauna = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#3A1AB6" d="M35.908 10.069c-2.91.991-4.31 2.769-5.264 5.538-.246.74-.862 1.557-1.555 2.108l2.386 2.611-7.573-5.411L3 0s1.508 10.006 2.032 13.687c.37 2.596 1 3.76 3.001 4.94l.8.44 3.448 1.857-2.047-1.085 9.45 5.27-.06.142-10.175-4.814c.539 1.888 1.586 5.522 2.032 7.127.477 1.73 1.016 2.36 2.663 2.973l3.032 1.133 1.878-.756-2.386 1.621L4.74 48c7.927-7.52 14.638-10.195 19.548-12.382 6.265-2.768 10.035-4.546 12.498-10.934 1.755-4.483 3.125-10.226 4.864-12.444l3.71-4.846s-7.681 2.077-9.451 2.675" /></svg>;
+const ForwardRef = forwardRef(IconTechFauna);
+export default ForwardRef;

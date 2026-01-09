@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiChecklistChecked = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#03020D" fillRule="evenodd" d="M2.75 4c0-.69.56-1.25 1.25-1.25h11a.75.75 0 0 0 0-1.5H4A2.75 2.75 0 0 0 1.25 4v16A2.75 2.75 0 0 0 4 22.75h16A2.75 2.75 0 0 0 22.75 20V9.476a.75.75 0 0 0-1.5 0V20c0 .69-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25zm17.874-.584a.75.75 0 1 0-1.248-.832l-7.431 11.147-3.36-4.2a.75.75 0 0 0-1.17.938l4 5a.75.75 0 0 0 1.209-.053z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconGuiChecklistChecked);
+export default ForwardRef;

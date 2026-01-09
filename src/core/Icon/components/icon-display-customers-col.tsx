@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayCustomersCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={40} height={41} fill="none" viewBox="0 0 40 41" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M30.834 31.334h5M30.834 27.167h5M4.167 25.918h5M30.834 23h5M4.167 21.751h5M30.417 18.834H35c1.667 0 3.333 1.667 3.333 3.334v11.666c0 1.667-1.666 3.333-3.333 3.333h-5M4.167 17.585h5" /><path stroke="#03020D" strokeLinecap="round" strokeMiterlimit={2.613} strokeWidth={1.5} d="M9.583 13.418H5c-1.667 0-3.333 1.25-3.333 2.916v17.5c0 1.667 1.666 3.333 3.333 3.334h5" /><path fill="#FF5416" d="M21.995 3.626c.848-.234 1.657-.418 2.171-.418 1.04 0 2.024.52 2.736 1.24s1.222 1.714 1.222 2.758v26.588c0 1.053-.508 2.047-1.223 2.766-.713.72-1.698 1.232-2.735 1.232h-8.332c-1.038 0-2.023-.513-2.736-1.232-.715-.72-1.223-1.713-1.223-2.766V9.735c0-1.03.395-1.825 1.087-2.462.661-.608 1.585-1.064 2.637-1.49l.006-.002.006-.003.02-.007.057-.022a75 75 0 0 1 .999-.369c.654-.238 1.544-.556 2.488-.874a55 55 0 0 1 2.82-.88" /><path fill="#fff" d="M16.191 24.653c.495-.523 1.243-.612 2.033-.612h3.552c.79 0 1.538.09 2.033.612.484.51.566 1.271.566 2.096v5c0 .825-.082 1.586-.566 2.097-.495.522-1.243.612-2.033.612h-3.552c-.79 0-1.538-.09-2.033-.612-.484-.51-.566-1.272-.566-2.097v-5c0-.825.082-1.586.566-2.096" /><path stroke="#fff" strokeLinecap="round" strokeWidth={1.5} d="M16.667 19.667h6.666M16.667 15.5h6.666M16.667 11.333h6.666" /></svg>;
+const ForwardRef = forwardRef(IconDisplayCustomersCol);
+export default ForwardRef;

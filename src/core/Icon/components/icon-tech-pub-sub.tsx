@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechPubSub = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#03020D" fillRule="evenodd" d="M24 46a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a4 4 0 1 0 0-8 4 4 0 0 0 0 8" clipRule="evenodd" /><path fill="#03020D" d="M46 35a4 4 0 1 1-8 0 4 4 0 0 1 8 0M10 35a4 4 0 1 1-8 0 4 4 0 0 1 8 0" /><path fill="#03020D" fillRule="evenodd" d="M25 30v8.5h-2V30zM32.324 27.833l10.203 6.316-1.053 1.7-10.203-6.316zM16.714 29.544 6.526 35.85l-1.052-1.7 10.187-6.307zM18.987 22.314l-8.45-5.633 1.11-1.664 8.45 5.633zM28.413 20.11l8.063-4.961 1.048 1.703-8.063 4.962z" clipRule="evenodd" /><path fill="#03020D" fillRule="evenodd" d="M24 29a5 5 0 1 0 0-10 5 5 0 0 0 0 10m0 2a7 7 0 1 0 0-14 7 7 0 0 0 0 14M42 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a4 4 0 1 0 0-8 4 4 0 0 0 0 8M6 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a4 4 0 1 0 0-8 4 4 0 0 0 0 8" clipRule="evenodd" /><path fill="#03020D" d="M28 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0" /><path fill="#03020D" fillRule="evenodd" d="M23 15V4h2v11z" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechPubSub);
+export default ForwardRef;

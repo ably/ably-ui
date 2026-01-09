@@ -1,0 +1,22 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M4 6.75H44C45.7949 6.75 47.25 8.20507 47.25 10V38C47.25 39.7949 45.7949 41.25 44 41.25H4C2.20507 41.25 0.75 39.7949 0.75 38V10C0.75 8.20507 2.20507 6.75 4 6.75Z"
+    stroke="currentColor" stroke-width="1.5" />
+  <path d="M0.5 13.5H47.5" stroke="currentColor" stroke-width="1.5" />
+  <path
+    d="M4.25 11.25C4.80228 11.25 5.25 10.8023 5.25 10.25C5.25 9.69772 4.80228 9.25 4.25 9.25C3.69772 9.25 3.25 9.69772 3.25 10.25C3.25 10.8023 3.69772 11.25 4.25 11.25Z"
+    fill="currentColor" />
+  <path
+    d="M7.25 11.25C7.80228 11.25 8.25 10.8023 8.25 10.25C8.25 9.69772 7.80228 9.25 7.25 9.25C6.69772 9.25 6.25 9.69772 6.25 10.25C6.25 10.8023 6.69772 11.25 7.25 11.25Z"
+    fill="currentColor" />
+  <path
+    d="M10.25 11.25C10.8023 11.25 11.25 10.8023 11.25 10.25C11.25 9.69772 10.8023 9.25 10.25 9.25C9.69772 9.25 9.25 9.69772 9.25 10.25C9.25 10.8023 9.69772 11.25 10.25 11.25Z"
+    fill="currentColor" />
+  <path
+    d="M31.0035 21C31.0035 19 32.0035 18 34.0035 18H38.0035C40.0035 18 41.0035 19 41.0035 20.9999V33C41.0035 35 40.0035 36 38.0035 36H34.0035C32.0035 36 31.0035 35 31.0035 33V21Z"
+    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4" />
+  <path d="M6 21C6 19 7 18 9 18H24C26 18 27 19 27 20.9999V22C27 24 26 25 24 25H9C7 25 6 24 6 22V21Z"
+    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4" />
+  <path d="M6 32C6 30 7 29 9 29H24C26 29 27 30 27 31.9999V33C27 35 26 36 24 36H9C7 36 6 35 6 33V32Z"
+    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4" />
+</svg>

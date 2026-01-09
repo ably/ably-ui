@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconSocialTwitterMono = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" d="M24 4.396a9.6 9.6 0 0 1-2.83.796A4.97 4.97 0 0 0 23.33 2.41a9.9 9.9 0 0 1-3.13 1.226 4.85 4.85 0 0 0-3.596-1.593c-2.72 0-4.915 2.255-4.915 5.024 0 .392.048.772.132 1.152-4.088-.208-7.708-2.206-10.142-5.257a5.14 5.14 0 0 0-.671 2.524c0 1.74.863 3.285 2.194 4.192a4.9 4.9 0 0 1-2.23-.625v.06c0 2.44 1.69 4.474 3.944 4.928-.408.11-.851.171-1.295.171a6 6 0 0 1-.923-.086c.624 1.998 2.446 3.456 4.592 3.493A9.73 9.73 0 0 1 0 19.703a13.75 13.75 0 0 0 7.54 2.254c9.051 0 13.99-7.66 13.99-14.302 0-.22 0-.428-.012-.649A9.8 9.8 0 0 0 24 4.396" /></svg>;
+const ForwardRef = forwardRef(IconSocialTwitterMono);
+export default ForwardRef;

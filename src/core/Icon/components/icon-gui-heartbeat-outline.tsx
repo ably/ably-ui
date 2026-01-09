@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiHeartbeatOutline = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.564 11c.276-.87.436-1.788.436-2.75 0-2.485-2.099-4.5-4.687-4.5-1.936 0-3.598 1.126-4.313 2.733-.715-1.607-2.377-2.733-4.312-2.733C5.098 3.75 3 5.765 3 8.25c0 .962.16 1.88.437 2.75m15.96 2.5C16.81 17.695 12 20.25 12 20.25s-4.81-2.555-7.398-6.75" /><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2 13.44h3.785l1.97-2.45 1.97 4.384L11.697 10l1.97 3.617 1.971-2.626 1.97 2.448H22" /></svg>;
+const ForwardRef = forwardRef(IconGuiHeartbeatOutline);
+export default ForwardRef;

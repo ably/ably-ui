@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayCloudServers = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" fillRule="evenodd" d="M22.93 1.25h-.002c-3.762.013-6.607.917-8.749 2.336-2.14 1.417-3.527 3.314-4.43 5.233-1.487 3.162-1.687 6.502-1.757 7.865C3.43 17.506 0 21.706 0 26.67c0 5.617 4.36 9.581 9.678 9.581a.75.75 0 0 0 0-1.5c-4.54 0-8.178-3.341-8.178-8.08 0-4.484 3.228-8.142 7.283-8.585a.75.75 0 0 0 .663-.652c.018-.148.031-.377.048-.671.08-1.428.247-4.4 1.613-7.304.812-1.727 2.037-3.387 3.9-4.621 1.862-1.233 4.41-2.075 7.925-2.087 5.695 0 10.908 3.92 12.77 9.737a.75.75 0 0 0 .677.52C42 13.28 46.5 18.104 46.5 24.13c0 6.078-4.592 10.484-10.335 10.621a.75.75 0 0 0 .036 1.5C42.734 36.094 48 31.046 48 24.13c0-6.593-4.81-12.01-11.033-12.584C34.79 5.416 29.162 1.25 22.93 1.25M33 26.5H13a1.5 1.5 0 0 0-1.5 1.5v4a1.5 1.5 0 0 0 1.5 1.5h20a1.5 1.5 0 0 0 1.5-1.5v-4a1.5 1.5 0 0 0-1.5-1.5M13 25a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3v-4a3 3 0 0 0-3-3zm1 2.75a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75m3.25.75a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0zM33 30a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-4 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m4 6.5H13a1.5 1.5 0 0 0-1.5 1.5v4a1.5 1.5 0 0 0 1.5 1.5h20a1.5 1.5 0 0 0 1.5-1.5v-4a1.5 1.5 0 0 0-1.5-1.5M13 36a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3v-4a3 3 0 0 0-3-3zm1.75 3.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0zm1.75-.75a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75M32 42a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-2-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconDisplayCloudServers);
+export default ForwardRef;

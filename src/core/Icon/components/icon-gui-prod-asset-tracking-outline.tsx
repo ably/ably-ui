@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiProdAssetTrackingOutline = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" d="m13.32 20.397.558.5zm-2.64 0-.558.5zm7.807-10.167c0 .644-.2 1.42-.571 2.292-.369.865-.888 1.779-1.482 2.685-1.189 1.813-2.64 3.538-3.672 4.69l1.116 1c1.056-1.176 2.563-2.964 3.81-4.867.624-.952 1.193-1.947 1.608-2.92.411-.965.69-1.953.69-2.88zM12 3.743a6.487 6.487 0 0 1 6.487 6.487h1.5A7.987 7.987 0 0 0 12 2.243zM5.513 10.23A6.487 6.487 0 0 1 12 3.743v-1.5a7.987 7.987 0 0 0-7.987 7.987zm5.726 9.666c-1.033-1.151-2.484-2.876-3.673-4.689-.594-.906-1.113-1.82-1.482-2.685-.371-.871-.57-1.648-.57-2.292h-1.5c0 .927.279 1.915.69 2.88.415.973.984 1.968 1.608 2.92 1.248 1.903 2.755 3.691 3.81 4.868zm1.523 0a1.01 1.01 0 0 1-1.524 0l-1.116 1.002a2.51 2.51 0 0 0 3.756 0zm1.383-9.666c0 1.185-.96 2.145-2.145 2.145v1.5a3.645 3.645 0 0 0 3.645-3.645zM12 8.085c1.185 0 2.145.96 2.145 2.145h1.5A3.645 3.645 0 0 0 12 6.585zM9.855 10.23c0-1.184.96-2.145 2.145-2.145v-1.5a3.645 3.645 0 0 0-3.645 3.645zM12 12.375a2.145 2.145 0 0 1-2.145-2.145h-1.5A3.645 3.645 0 0 0 12 13.875z" /></svg>;
+const ForwardRef = forwardRef(IconGuiProdAssetTrackingOutline);
+export default ForwardRef;

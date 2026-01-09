@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayLiveUpdatesResultsMetricsCol = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M36.5 9.5H33c-2.623 0-4.5 1.877-4.5 4.5v9c0 1.519.981 2.75 2.5 2.75h8.75A2.75 2.75 0 0 0 42.5 23v-7.5" /><path stroke="#03020D" strokeLinejoin="round" d="M31.429 17.5h3.321v-5h-3.321s-.929 0-.929 1v3c0 1 .929 1 .929 1Z" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" d="M40.5 15v1.5c0 1-.929 1-.929 1H36.25v-5H37" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="m29.5 31 2-3M42 31l-2-3M30.5 29.5H41" /><circle cx={31.5} cy={21.5} r={1.5} fill="#03020D" /><circle cx={39.5} cy={21.5} r={1.5} fill="#03020D" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M14.5 4.124a9 9 0 1 0 7.077 6.142" /><path fill="#03020D" stroke="#03020D" strokeWidth={1.5} d="m10.312 12.04 2.04-1.737a1 1 0 0 1 1.297 0l2.039 1.737a1 1 0 0 1 .27 1.157l-.84 1.949a1 1 0 0 1-.919.604h-2.398a1 1 0 0 1-.919-.604l-.84-1.949a1 1 0 0 1 .27-1.157Z" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="m10.195 4.61 2.156 1.837a1 1 0 0 0 1.298 0l.625-.532a1 1 0 0 0 .351-.761v-.935M21.775 13.5l-2.763-1.904a.31.31 0 0 1-.104-.386v0c.131-.275 1.076-.931 1.376-.982.308-.052.706-.126 1.216-.228" /><path stroke="#03020D" strokeWidth={1.5} d="m5.37 7.591 1.469 3.087a1 1 0 0 1-.336 1.253L3.688 13.87" /><path fill="#03020D" d="m16 18.5 1-.5 3 .5-2 2-2.5 1z" /><path stroke="#03020D" strokeWidth={1.5} d="m5.314 18.328 3.402-.327a1 1 0 0 1 1.064.742l.863 3.307M15.356 22.05l.864-3.306A1 1 0 0 1 17.284 18l3.401.328" /><path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M18.119 27.5a7.4 7.4 0 0 0-2.671-.5c-7.512.023-7.248 6.626-7.344 7.326C5.8 34.56 4 36.473 4 38.782 4 41.257 6.064 43 8.608 43h13.68C25.456 42.93 28 40.672 28 37.57A5.54 5.54 0 0 0 26.7 34" /><path fill="#FF5416" fillRule="evenodd" d="M19 30a4 4 0 1 1 8 0 4 4 0 0 1-8 0M16 5a4 4 0 1 1 8 0 4 4 0 0 1-8 0M38 10a4 4 0 1 1 8 0 4 4 0 0 1-8 0" clipRule="evenodd" /><path fill="#03020D" d="M7 11.5v-1l-1.5-2L4 11v2.5zM10 19l-1-1-3 .5 2 2 2 1zM19 11l2-1 1 2-.5 1-2-1zM14.5 5.5l-1.5 1L11 5V4h3.5z" /></svg>;
+const ForwardRef = forwardRef(IconDisplayLiveUpdatesResultsMetricsCol);
+export default ForwardRef;

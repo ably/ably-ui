@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconGuiProdAssetTrackingSolid = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" fillRule="evenodd" d="M4.013 10.23a7.987 7.987 0 0 1 15.974 0c0 .927-.28 1.915-.691 2.88-.415.973-.984 1.968-1.608 2.92-1.247 1.903-2.754 3.691-3.81 4.868a2.51 2.51 0 0 1-3.756 0c-1.055-1.177-2.562-2.965-3.81-4.868-.624-.952-1.193-1.947-1.608-2.92-.411-.965-.69-1.953-.69-2.88m4.342 0a3.645 3.645 0 1 1 7.29 0 3.645 3.645 0 0 1-7.29 0" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconGuiProdAssetTrackingSolid);
+export default ForwardRef;

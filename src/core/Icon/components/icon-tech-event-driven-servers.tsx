@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechEventDrivenServers = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1948"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g fill="#03020D" clipPath="url(#clip0_1031_1948)"><path d="M24.51 47a1 1 0 0 1-1 1h-.02a1 1 0 0 1-1-1V36.879l-3.783 3.782a1 1 0 0 1-1.414 0l-.02-.02a1 1 0 0 1 0-1.414l5.52-5.52a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-.02.02a1 1 0 0 1-1.414 0L24.51 36.88z" /><path fillRule="evenodd" d="M44 17H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h40a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2M4 15a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4v-8a4 4 0 0 0-4-4z" clipRule="evenodd" /><path d="M38 23c0-1.09.91-2 2-2s2 .91 2 2-.91 2-2 2-2-.91-2-2M33 23c0-1.09.91-2 2-2s2 .91 2 2-.91 2-2 2-2-.91-2-2" /><path fillRule="evenodd" d="M11 20a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1M7 20a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1" clipRule="evenodd" /><path d="M41.006 11a1 1 0 0 1-1 1h-.02a1 1 0 0 1-1-1V3.879L36.57 6.293a1 1 0 0 1-1.414 0l-.02-.02a1 1 0 0 1 0-1.415L39.288.707a1 1 0 0 1 1.415 0l4.151 4.151a1 1 0 0 1 0 1.415l-.02.02a1 1 0 0 1-1.414 0l-2.414-2.414zM25.006 11a1 1 0 0 1-1 1h-.02a1 1 0 0 1-1-1V3.879L20.57 6.293a1 1 0 0 1-1.414 0l-.02-.02a1 1 0 0 1 0-1.415L23.288.707a1 1 0 0 1 1.415 0l4.151 4.151a1 1 0 0 1 0 1.415l-.02.02a1 1 0 0 1-1.414 0l-2.414-2.414zM9.006 11a1 1 0 0 1-1 1h-.02a1 1 0 0 1-1-1V3.879L4.57 6.293a1 1 0 0 1-1.414 0l-.02-.02a1 1 0 0 1 0-1.415L7.288.707a1 1 0 0 1 1.415 0l4.151 4.151a1 1 0 0 1 0 1.415l-.02.02a1 1 0 0 1-1.414 0L9.006 3.879z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechEventDrivenServers);
+export default ForwardRef;

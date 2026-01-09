@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechRabbitMQ = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="#F60" fillRule="evenodd" d="M37.55 35.899c0 1.27-1.043 2.29-2.318 2.29h-5.028c-1.286 0-2.319-1.032-2.319-2.29v-4.683c0-1.27 1.043-2.29 2.32-2.29h5.027c1.286 0 2.319 1.031 2.319 2.29zm6.62-16.42H29.805c-1.15-.135-2.024-1.135-2.024-2.31V2.289C27.78 1.02 26.736 0 25.46 0h-5.028c-1.285 0-2.318 1.03-2.318 2.289v15.036c-.063 1.134-1.012 2.05-2.15 2.154H12.2a2.33 2.33 0 0 1-2.035-2.154V2.289C10.167 1.02 9.124 0 7.847 0H2.82C1.534 0 .5 1.03.5 2.289V45.71C.5 46.98 1.544 48 2.82 48H44.18c1.287 0 2.319-1.03 2.319-2.29V21.768a2.313 2.313 0 0 0-2.33-2.289" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconTechRabbitMQ);
+export default ForwardRef;

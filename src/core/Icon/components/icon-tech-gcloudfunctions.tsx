@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechGcloudfunctions = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1998"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1998)"><path fill="#EA4335" d="m31.932 15.653 4.172-4.173.278-1.756C28.78 2.81 16.694 3.594 9.839 11.36c-1.905 2.156-3.316 4.845-4.069 7.623l1.494-.211 8.344-1.376.644-.658c3.71-4.077 9.989-4.625 14.273-1.157z" /><path fill="#4285F4" d="M42.05 18.858a18.8 18.8 0 0 0-5.666-9.136l-5.857 5.857a10.41 10.41 0 0 1 3.821 8.256v1.038a5.21 5.21 0 0 1 5.211 5.212c0 2.877-2.333 5.154-5.21 5.154H23.91l-1.024 1.113v6.252l1.024.982h10.437c7.486.059 13.603-5.905 13.662-13.391a13.56 13.56 0 0 0-5.96-11.337" /><path fill="#34A853" d="M13.487 43.586H23.91V35.24H13.486c-.738 0-1.466-.16-2.136-.468l-1.48.453L5.67 39.4l-.367 1.42c2.358 1.779 5.233 2.78 8.185 2.767" /><path fill="#FBBC05" d="M13.486 16.516c-7.488.045-13.52 6.15-13.475 13.639A13.56 13.56 0 0 0 5.302 40.82l6.047-6.047a5.212 5.212 0 1 1 6.896-6.896l6.047-6.047a13.54 13.54 0 0 0-10.806-5.315" /></g></svg>;
+const ForwardRef = forwardRef(IconTechGcloudfunctions);
+export default ForwardRef;
