@@ -125,6 +125,11 @@ const languages: LanguageMap = {
     icon: "icon-tech-flutter",
     syntaxHighlighterKey: "dart",
   },
+  jetpack: {
+    label: "Jetpack Compose",
+    icon: "icon-tech-jetpack",
+    syntaxHighlighterKey: "kotlin",
+  },
 };
 
 export const stripSdkType = (lang: string) => {
