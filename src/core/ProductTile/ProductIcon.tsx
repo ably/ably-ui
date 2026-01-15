@@ -9,6 +9,7 @@ type ProductIconProps = {
   selected?: boolean;
   size: number;
   unavailable: boolean;
+  className?: string;
 };
 
 const ProductIcon = ({
@@ -17,6 +18,7 @@ const ProductIcon = ({
   selected,
   size,
   unavailable,
+  className,
 }: ProductIconProps) => {
   if (!name) {
     return null;
@@ -29,8 +31,11 @@ const ProductIcon = ({
     // Outer container, contains the gradient stroke (since we can't natively have CSS gradient strokes)
 
     <span
-      className="flex items-center justify-center border border-neutral-300 dark:border-neutral-1000 rounded-xl
-      bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-000 dark:hover:bg-neutral-1300 active:bg-neutral-000 dark:active:bg-neutral-1300"
+      className={cn(
+        "flex items-center justify-center border border-neutral-300 dark:border-neutral-1000 rounded-xl",
+        "bg-neutral-100 dark:bg-neutral-1200 hover:bg-neutral-000 dark:hover:bg-neutral-1300 active:bg-neutral-000 dark:active:bg-neutral-1300",
+        className,
+      )}
       style={{ width: size, height: size }}
     >
       {/* The product icons themselves */}
