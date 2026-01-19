@@ -187,8 +187,8 @@ importers:
         specifier: ^1.49.1
         version: 1.57.0
       posthog-js:
-        specifier: ^1.315.0
-        version: 1.315.0
+        specifier: ^1.318.1
+        version: 1.318.1
       prettier:
         specifier: ^3.2.5
         version: 3.7.1
@@ -853,11 +853,11 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@posthog/core@1.9.0':
-    resolution: {integrity: sha512-j7KSWxJTUtNyKynLt/p0hfip/3I46dWU2dk+pt7dKRoz2l5CYueHuHK4EO7Wlgno5yo1HO4sc4s30MXMTICHJw==}
+  '@posthog/core@1.9.1':
+    resolution: {integrity: sha512-kRb1ch2dhQjsAapZmu6V66551IF2LnCbc1rnrQqnR7ArooVyJN9KOPXre16AJ3ObJz2eTfuP7x25BMyS2Y5Exw==}
 
-  '@posthog/types@1.315.0':
-    resolution: {integrity: sha512-A3HcvYC93OLNSKlpelzI5sCCMsRaq4nREgJUJq09UEKngsexa3mQU4UdeR8TMisO4BLrQPPlqUBbs+C4OlMX7g==}
+  '@posthog/types@1.318.1':
+    resolution: {integrity: sha512-FYjHp4wlYvt4xc7MM+zIjfYICY/+lvjby/nOib29psTuUMT3nJXwqWz65QBox6XldaJdeId5F+UW6IOtJ1Q9iA==}
 
   '@radix-ui/number@1.1.1':
     resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
@@ -2813,6 +2813,9 @@ packages:
   dompurify@3.3.0:
     resolution: {integrity: sha512-r+f6MYR1gGN1eJv0TVQbhA7if/U7P87cdPl3HN5rikqaBSBxLiCb/b9O+2eG0cxz0ghyU+mU1QkbsOwERMYlWQ==}
 
+  dompurify@3.3.1:
+    resolution: {integrity: sha512-qkdCKzLNtrgPFP1Vo+98FRzJnBRGe4ffyCea9IwHB1fyxPOeNTHpLKYGd4Uk9xvNoH0ZoOjwZxNptyMwqrId1Q==}
+
   domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
 
@@ -4235,8 +4238,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.315.0:
-    resolution: {integrity: sha512-mdL0hCp/8xOQUB41d6JKROZxtgJvReT3gc9XuQIcfBbmzK2ZrNCxW2t+QV3Uj6JM1BNxbX5NE/cRCBdtaiCxrA==}
+  posthog-js@1.318.1:
+    resolution: {integrity: sha512-8zG02pcTYILB8At/9P2B2MJjuGq+DY3BeE01I4IPi6bnWNh3hka6+ZQhn9GfgtCQs7Ygk6qMaOxpUFvsDGQaQQ==}
 
   preact@10.28.2:
     resolution: {integrity: sha512-lbteaWGzGHdlIuiJ0l2Jq454m6kcpI1zNje6d8MlGAFlYvP2GO4ibnat7P74Esfz4sPTdM6UxtTwh/d3pwM9JA==}
@@ -4270,6 +4273,9 @@ packages:
   qs@6.13.0:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
     engines: {node: '>=0.6'}
+
+  query-selector-shadow-dom@1.0.1:
+    resolution: {integrity: sha512-lT5yCqEBgfoMYpf3F2xQRK7zEr1rhIIZuceDK6+xRkJQ4NMbHTwXqk4NkwDwQMNqXgG9r9fyHnzwNVs6zV5KRw==}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -5944,11 +5950,11 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@posthog/core@1.9.0':
+  '@posthog/core@1.9.1':
     dependencies:
       cross-spawn: 7.0.6
 
-  '@posthog/types@1.315.0': {}
+  '@posthog/types@1.318.1': {}
 
   '@radix-ui/number@1.1.1': {}
 
@@ -7927,6 +7933,10 @@ snapshots:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
+  dompurify@3.3.1:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
+
   domutils@2.8.0:
     dependencies:
       dom-serializer: 1.4.1
@@ -9524,13 +9534,15 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.315.0:
+  posthog-js@1.318.1:
     dependencies:
-      '@posthog/core': 1.9.0
-      '@posthog/types': 1.315.0
+      '@posthog/core': 1.9.1
+      '@posthog/types': 1.318.1
       core-js: 3.47.0
+      dompurify: 3.3.1
       fflate: 0.4.8
       preact: 10.28.2
+      query-selector-shadow-dom: 1.0.1
       web-vitals: 4.2.4
 
   preact@10.28.2: {}
@@ -9560,6 +9572,8 @@ snapshots:
   qs@6.13.0:
     dependencies:
       side-channel: 1.0.6
+
+  query-selector-shadow-dom@1.0.1: {}
 
   queue-microtask@1.2.3: {}
 
