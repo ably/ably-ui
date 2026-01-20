@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayCustomCname = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={49} height={49} fill="none" viewBox="0 0 49 49" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_3563_10959"><path fill="#fff" d="M.5.923h48v48H.5z" /></clipPath></defs><g clipPath="url(#clip0_3563_10959)"><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={1.5} d="M35.441 32.345C34.72 41.07 27.41 47.923 18.5 47.923c-9.389 0-17-7.611-17-17 0-8.819 6.715-16.07 15.311-16.917l.845-.042" /><path stroke="#C6CED9" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={1.5} d="M31.5 41.923c-3.319-1.853-7.918-3-13-3s-9.681 1.147-13 3" /><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={1.5} d="M5.5 20.923c3.319 1.853 7.918 3 13 3q.758 0 1.5-.034" /><path stroke="#C6CED9" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={1.5} d="M25.5 30.923c0 9.389-3.358 17-7.5 17s-7.5-7.611-7.5-17c0-8.62 2.83-15.742 6.5-16.85M1.5 30.923h24" /><circle cx={34.5} cy={14.923} r={14} fill="#FF5416" /><path stroke="#03020D" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m28.5 15.756 4.8 4.167 7.2-10" /></g></svg>;
+const ForwardRef = forwardRef(IconDisplayCustomCname);
+export default ForwardRef;

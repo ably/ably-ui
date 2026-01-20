@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechGclouddataflow = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><linearGradient id="paint0_linear_3013_13" x1={0.037} x2={0.037} y1={3} y2={45.328} gradientUnits="userSpaceOnUse"><stop stopColor="#4387FD" /><stop offset={1} stopColor="#4683EA" /></linearGradient></defs><path fill="url(#paint0_linear_3013_13)" d="M10.422 43.254.578 26.336a4.25 4.25 0 0 1 0-4.279L10.422 5.14A4.32 4.32 0 0 1 14.156 3h19.688c1.54 0 2.964.816 3.734 2.14l9.844 16.917a4.25 4.25 0 0 1 0 4.28l-9.844 16.917a4.32 4.32 0 0 1-3.734 2.14H14.156a4.32 4.32 0 0 1-3.734-2.14" /><path fill="#000" d="M45.739 29.156 30.264 13.623l-6.031 1.442-6.14-1.411 3.054 3.054-5.128 5.33.93.93-.89 2.188 1.861 1.86-1.897 1.933 4.721 4.72-2.644 1.166 10.515 10.558h6.56a2 2 0 0 0 1.73-.997z" opacity={0.07} /><circle cx={24.186} cy={26.247} r={1.33} fill="#fff" /><path fill="#fff" d="m30.242 27.778-5.044 2.955v-2.145h-2.023v2.145l-5.054-2.955v-1.336h-2.102v2.494l6.168 3.541-4.092 2.363 1.978 1.141h.055l4.058-2.343 4.059 2.343h.054l1.978-1.141-4.091-2.363 6.167-3.541v-2.494h-2.111z" /><circle cx={31.314} cy={24.252} r={1.33} fill="#fff" /><circle cx={17.058} cy={24.252} r={1.33} fill="#fff" /><circle cx={24.186} cy={22.257} r={1.33} fill="#fff" /><path fill="#fff" d="m26.191 16.006 4.086-2.36-1.978-1.141h-.054l-4.059 2.343-4.058-2.343h-.055l-1.978 1.142 4.086 2.359-6.162 3.538v2.494h2.102V20.7l5.054-2.954v2.17h2.023v-2.17l5.044 2.954v1.337h2.111v-2.494z" /></svg>;
+const ForwardRef = forwardRef(IconTechGclouddataflow);
+export default ForwardRef;

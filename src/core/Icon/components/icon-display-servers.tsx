@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayServers = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path fill="currentColor" fillRule="evenodd" d="M4 8.5h40a2.5 2.5 0 0 1 2.5 2.5v8a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 19v-8A2.5 2.5 0 0 1 4 8.5M0 11a4 4 0 0 1 4-4h40a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4 15.5h40a2.5 2.5 0 0 1 2.5 2.5v8a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 37v-8A2.5 2.5 0 0 1 4 26.5M0 29a4 4 0 0 1 4-4h40a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm6.75 1a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zM9 29.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75M41 34a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 11.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75m3.75.75a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zM42 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-7 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" clipRule="evenodd" /></svg>;
+const ForwardRef = forwardRef(IconDisplayServers);
+export default ForwardRef;

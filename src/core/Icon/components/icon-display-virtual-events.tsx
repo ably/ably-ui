@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayVirtualEvents = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={40} height={41} fill="none" viewBox="0 0 40 41" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<path stroke="#03020D" strokeLinecap="round" strokeWidth={1.5} d="M34.167 8.833c1.666 0 3.333 1.667 3.333 3.334v16.666c0 1.667-1.667 3.334-3.333 3.334H20.833m-15 0c-1.666 0-3.333-1.667-3.333-3.334V12.167c0-1.667 1.667-3.334 3.333-3.334h10.834" /><circle cx={12.5} cy={32.167} r={5.833} fill="#fff" stroke="#03020D" strokeWidth={1.5} /><path fill="#FF5416" fillRule="evenodd" d="M12.513 29.914a2.063 2.063 0 0 1 2.744.14 2.03 2.03 0 0 1 0 2.888l-2.104 2.086a.91.91 0 0 1-1.28 0L9.77 32.942a2.03 2.03 0 0 1 0-2.888 2.063 2.063 0 0 1 2.743-.14" clipRule="evenodd" /><path stroke="#03020D" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M27.5 25.916a1.667 1.667 0 1 0 3.334.002 1.667 1.667 0 0 0-3.334-.002Z" /><path stroke="#03020D" strokeWidth={1.5} d="M23.542 23.833c0-.805.653-1.458 1.458-1.458h8.333c.806 0 1.459.653 1.459 1.458V28c0 .805-.653 1.458-1.459 1.458H25A1.46 1.46 0 0 1 23.542 28z" /><path stroke="#03020D" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M5.833 26.26c0-1.149.423-2.251 1.176-3.064.752-.812 1.773-1.269 2.838-1.269h5.307c1.064 0 2.085.457 2.837 1.27s1.176 1.914 1.176 3.063M27.5 16.749a1.667 1.667 0 1 0 3.333.002 1.667 1.667 0 0 0-3.333-.002Z" /><path stroke="#03020D" strokeWidth={1.5} d="M23.542 14.667c0-.806.653-1.459 1.458-1.459h8.333c.806 0 1.459.653 1.459 1.459v4.166c0 .806-.653 1.459-1.459 1.459H25a1.46 1.46 0 0 1-1.458-1.459z" /><path stroke="#03020D" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={1.5} d="M8.796 15.977a3.813 3.813 0 1 0 7.626.005 3.813 3.813 0 0 0-7.626-.005Z" /><path fill="#FF5416" d="m22.32 10.617.08-.082h8.224c.513 0 .977-.255 1.302-.587.324-.332.574-.805.574-1.328V4.082c0-.523-.25-.996-.575-1.328-.324-.331-.788-.587-1.301-.587H20.21c-.513 0-.978.256-1.302.587-.325.332-.575.805-.575 1.328v7.644c0 .474.236.96.696 1.173.5.232 1.038.046 1.44-.375a194 194 0 0 1 1.852-1.907" /></svg>;
+const ForwardRef = forwardRef(IconDisplayVirtualEvents);
+export default ForwardRef;

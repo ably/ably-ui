@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAzureBus = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1926"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1926)"><path fill="#0F74C3" d="M1 37h4a1 1 0 0 1 1 1v4h36v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3v-7a1 1 0 0 1 1-1" /><path fill="#5FB5D7" fillRule="evenodd" d="M10 14.997V35h28V14.997l-9.849 9.439a6.5 6.5 0 0 1-1.597 1.125l-.324.163a4.99 4.99 0 0 1-4.46 0l-.324-.163a6.5 6.5 0 0 1-1.596-1.124zM37.916 13H10.084l10.804 10.354c.364.349.778.64 1.229.866l.324.162a3.49 3.49 0 0 0 3.118 0l.324-.162c.45-.226.866-.519 1.23-.867z" clipRule="evenodd" /><path fill="#0F74C3" d="M1 11h4a1 1 0 0 0 1-1V6h36v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a3 3 0 0 0-3-3H3a3 3 0 0 0-3 3v7a1 1 0 0 0 1 1" /></g></svg>;
+const ForwardRef = forwardRef(IconTechAzureBus);
+export default ForwardRef;

@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAwsGatewayWebsockets = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1925"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1925)"><path fill="#693CC5" d="M48 0H0v48h48z" /><path fill="#fff" d="M31.046 39.36a.64.64 0 0 1-.574-.348.64.64 0 0 1-.072-.292V9.28a.64.64 0 0 1 .307-.544.64.64 0 0 1 .64-.032l8.32 4.064a.64.64 0 0 1 .359.57v22.617a.64.64 0 0 1-.442.64l-8.32 2.765a.8.8 0 0 1-.218 0m.64-29.05v27.52l7.04-2.336v-21.76zM16.96 39.36a.8.8 0 0 1-.205 0l-8.32-2.765a.64.64 0 0 1-.435-.64V13.338a.64.64 0 0 1 .358-.57l8.32-4.064a.64.64 0 0 1 .64.032.64.64 0 0 1 .301.544v29.44a.64.64 0 0 1-.269.518.6.6 0 0 1-.39.122m-7.68-3.84 7.04 2.336v-27.52l-7.04 3.437z" /><path fill="#fff" d="M30.4 31.68h-1.92V30.4h1.92zm-3.84 0h-1.92V30.4h1.92zm-3.84 0H20.8V30.4h1.92zm-3.84 0h-1.92V30.4h1.92zM26.816 26.202l-.832-.973 1.83-1.549-1.836-1.562.832-.998 2.406 2.048a.642.642 0 0 1 0 .973zM21.19 26.202l-2.406-2.055a.64.64 0 0 1 0-.973l2.4-2.054.832.973-1.83 1.587 1.83 1.568zM24.662 20.027l-2.544 7.524 1.212.41 2.544-7.524zM30.4 17.6h-1.92v-1.28h1.92zm-3.84 0h-1.92v-1.28h1.92zm-3.84 0H20.8v-1.28h1.92zm-3.84 0h-1.92v-1.28h1.92z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechAwsGatewayWebsockets);
+export default ForwardRef;

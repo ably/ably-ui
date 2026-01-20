@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechAwskinesis = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><linearGradient id="paint0_linear_1031_1938" x1={-9.939} x2={57.939} y1={57.939} y2={-9.939} gradientUnits="userSpaceOnUse"><stop stopColor="#4D27A8" /><stop offset={1} stopColor="#A166FF" /></linearGradient><clipPath id="clip0_1031_1938"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_1938)"><path fill="url(#paint0_linear_1031_1938)" d="M48 0H0v48h48z" /><path fill="#fff" d="M40.02 20.8v1.28h-5.646C19.597 22.08 8.02 16.256 8.02 8.806Q8.016 8.401 8.07 8h1.28a5 5 0 0 0-.064.806c0 6.612 11.252 11.994 25.088 11.994z" /><path fill="#fff" d="M40.02 23.36v1.28h-7.834c-12.525 0-21.53 2.029-24.167 5.434v-1.716C10.816 25.914 16 24.646 21.062 24c-5.075-.64-10.24-1.92-13.05-4.307v-1.869c2.606 3.418 11.438 5.472 23.745 5.536z" /><path fill="#fff" d="M40.02 25.92v1.28h-5.646c-13.843 0-25.1 5.402-25.1 12.013q0 .395.057.787h-1.28A5.4 5.4 0 0 1 8 39.213C8 31.757 19.59 25.92 34.387 25.92z" /><path fill="#fff" d="M40.02 28.48v1.28h-2.65c-11.892 0-20.858 3.84-20.858 9.005V40h-1.28v-1.235c0-5.965 9.318-10.285 22.15-10.285zM40.02 18.234v1.28h-2.65c-12.852 0-22.176-4.352-22.176-10.35v-1.17h1.35v1.17c0 5.12 8.96 9.07 20.832 9.07z" /></g></svg>;
+const ForwardRef = forwardRef(IconTechAwskinesis);
+export default ForwardRef;

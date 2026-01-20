@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechWebsub = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_1959"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g fill="#03020D" clipPath="url(#clip0_1031_1959)"><path fillRule="evenodd" d="M44 2H4a2 2 0 0 0-2 2v40a2 2 0 0 0 2 2h40a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M4 0a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4z" clipRule="evenodd" /><path d="m15.686 31 2.64-10.06L20.986 31h2.48l3.88-14.2h-2.64L22.226 27l-2.66-10.2h-2.46L14.426 27l-2.46-10.2h-2.64l3.88 14.2zM37.245 27.16c0-4.86-6.28-4.22-6.28-6.86 0-.88.68-1.52 1.8-1.52l3.62 1.2V17.3c-1.08-.42-2.32-.74-3.68-.74-2.52 0-4.26 1.54-4.26 3.78 0 4.88 6.24 3.84 6.24 6.84 0 1.2-.86 1.82-2.18 1.82l-4.1-1.4v2.7c1.4.48 2.72.94 4.18.94 2.72 0 4.66-1.56 4.66-4.08" /></g></svg>;
+const ForwardRef = forwardRef(IconTechWebsub);
+export default ForwardRef;

@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconDisplayReactions = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<rect width={46.5} height={30.5} x={0.75} y={8.75} stroke="#C6CED9" strokeWidth={1.5} rx={15.25} /><path fill="#C6CED9" d="M36 18v11h-2.152v-9.061h-.07L31 21.582v-1.826L33.952 18z" /><path fill="#FF5416" d="M10.68 17.735a4.82 4.82 0 0 1 6.96 0l.05.051.05-.051a4.82 4.82 0 0 1 6.96 0c1.907 1.967 1.907 5.145 0 7.112l-6.084 6.275a1.29 1.29 0 0 1-1.852 0l-6.084-6.275c-1.907-1.967-1.907-5.145 0-7.112" /></svg>;
+const ForwardRef = forwardRef(IconDisplayReactions);
+export default ForwardRef;

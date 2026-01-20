@@ -1,0 +1,14 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconTechPushTechnology = ({
+  title,
+  titleId,
+  ...props
+}: SVGProps<SVGSVGElement> & SVGRProps, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} fill="none" viewBox="0 0 48 48" ref={ref} aria-labelledby={titleId} {...props}>{title ? <title id={titleId}>{title}</title> : null}<defs><clipPath id="clip0_1031_2020"><path fill="#fff" d="M0 0h48v48H0z" /></clipPath></defs><g clipPath="url(#clip0_1031_2020)"><path fill="#22AFEC" fillRule="evenodd" d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24c0 9.24 5.222 17.26 12.875 21.271V31.5a2.5 2.5 0 0 1 4.483-1.523A8.98 8.98 0 0 0 24.5 33.5a9 9 0 1 0 0-18 8.98 8.98 0 0 0-7.142 3.523 2.5 2.5 0 1 1-3.965-3.046A13.98 13.98 0 0 1 24.5 10.5c7.732 0 14 6.268 14 14s-6.268 14-14 14a13.94 13.94 0 0 1-6.625-1.664V47q0 .105-.009.21c1.958.515 4.014.79 6.134.79M9 24.5a2.5 2.5 0 0 1 2.5-2.5h10a2.5 2.5 0 0 1 0 5h-10A2.5 2.5 0 0 1 9 24.5" clipRule="evenodd" /></g></svg>;
+const ForwardRef = forwardRef(IconTechPushTechnology);
+export default ForwardRef;
