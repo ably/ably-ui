@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Accordion, { AccordionProps } from "../Accordion";
+import Badge from "../Badge";
 import { IconName } from "../Icon/types";
 import { accordionThemes } from "./types";
 
@@ -247,6 +248,60 @@ export const WithCustomElementCSS = {
       description: {
         story:
           "By modifying `headerCSS`, `selectedHeaderCSS`, `contentCSS`, `iconSize`, and `rowIconSize` in `options`, you can customize the styling of the header, row expansion icons (i.e. the plus and minus), and the icons on the left of the row. What's below is hideous, but you get the gist.",
+      },
+    },
+  },
+};
+
+const dataWithBadgeInHeading = [
+  {
+    name: "Basic Plan",
+    heading: (
+      <div className="flex items-center gap-2">
+        <span>Basic Plan</span>
+        <Badge size="sm" color="neutral">
+          Popular
+        </Badge>
+      </div>
+    ),
+    content: lorem,
+  },
+  {
+    name: "Pro Plan",
+    heading: (
+      <div className="flex items-center gap-2">
+        <span>Pro Plan</span>
+        <Badge size="sm" color="orange">
+          Best Value
+        </Badge>
+      </div>
+    ),
+    content: lorem,
+  },
+  {
+    name: "Enterprise Plan",
+    heading: (
+      <div className="flex items-center gap-2">
+        <span>Enterprise Plan</span>
+        <Badge size="sm" color="blue">
+          Recommended
+        </Badge>
+      </div>
+    ),
+    content: lorem,
+  },
+];
+
+export const WithBadgeOnHeading = {
+  render: () =>
+    AccordionPresentation({
+      data: dataWithBadgeInHeading,
+    }),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "You can customize the accordion heading by providing a `heading` prop with custom ReactNode content. This example shows headings with Badge components. The `heading` prop can be a ReactNode or a function that receives the item data, index, and isOpen state.",
       },
     },
   },

@@ -8,8 +8,15 @@ import { ColorThemeSet } from "../styles/colors/types";
 export type AccordionData = {
   /**
    * The name of the accordion item.
+   * @deprecated Use `heading` for custom heading content. This will be used as fallback if `heading` is not provided.
    */
   name: string;
+
+  /**
+   * Custom heading content. If provided, this will be used instead of `name`.
+   * Can be a ReactNode or a function that receives the index and isOpen state and returns ReactNode.
+   */
+  heading?: ReactNode | ((index: number, isOpen: boolean) => ReactNode);
 
   /**
    * The optional icon name to be displayed alongside the accordion item.
