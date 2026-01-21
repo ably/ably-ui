@@ -148,7 +148,14 @@ export const defaultBlogPosts: BlogPost[] = [
     title:
       "Ably AI Transport: keep your agents connected and stateful across devices",
     link: "/blog/ably-ai-transport",
-    categories: ["New Release", "AI Transport"],
+    categories: [
+      "New Release",
+      "AI Transport",
+      "New Feature",
+      "RealTime Experiences",
+      "Engineering",
+      "Ably News",
+    ],
     pubDate: "Dec 9, 2025",
   },
   {
