@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import DOMPurify from "dompurify";
-import { getRemoteDataStore } from "./remote-data-store.js";
-import ConnectStateWrapper from "./ConnectStateWrapper";
+import { useFlashStore, pushFlash, type FlashItem, type FlashType } from "./flash-store";
 import Icon from "./Icon";
 import { ColorClass } from "./styles/colors/types";
 import { IconName } from "./Icon/types";
 
-type FlashPropsType = "error" | "success" | "notice" | "info" | "alert";
+type FlashPropsType = FlashType;
 
 type FlashProps = {
   id: string;
@@ -29,6 +28,11 @@ const FLASH_DATA_ID = "ui-flashes";
 
 const initialState = { items: [] };
 
+/**
+ * @deprecated Use pushFlash from flash-store.ts instead.
+ * This reducer is kept for backward compatibility with consumers
+ * that still use the Redux pattern.
+ */
 const reducerFlashes = {
   [REDUCER_KEY]: (
     state: {
@@ -48,11 +52,6 @@ const reducerFlashes = {
     }
   },
 };
-
-// Not cool but redux isn't a long term plan here
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const selectFlashes = (store: any): { items: FlashProps[] } =>
-  store.getState()[REDUCER_KEY];
 
 const FLASH_BG_COLOR = {
   error: "bg-gui-error",
@@ -232,30 +231,52 @@ const Flashes = ({ flashes }: FlashesProps) => {
   );
 };
 
+/**
+ * A version of Flashes that uses the Zustand store directly.
+ * This is the new recommended way to use Flash.
+ */
+const ZustandFlashes = () => {
+  const items = useFlashStore((state) => state.items);
+  const remove = useFlashStore((state) => state.remove);
+
+  return (
+    <div className="ui-flash" data-id={FLASH_DATA_ID}>
+      {items.map((flash) => (
+        <Flash
+          key={flash.id}
+          id={flash.id}
+          type={flash.type}
+          content={flash.content}
+          removed={false}
+          removeFlash={remove}
+        />
+      ))}
+    </div>
+  );
+};
+
+/**
+ * BackendFlashes component - now uses Zustand instead of Redux.
+ *
+ * Receives flash messages from the backend (typically Rails)
+ * and pushes them to the Zustand store.
+ */
 const BackendFlashes = ({ flashes }: BackendFlashesProps) => {
   useEffect(() => {
     const transformedFlashes =
       flashes.map((flash) => {
         const [type, content] = flash;
-        return { type, content };
+        return { type: type as FlashType, content };
       }) || [];
 
     if (transformedFlashes.length > 0) {
-      const store = getRemoteDataStore();
-
-      store.dispatch({
-        type: "flash/push",
-        payload: transformedFlashes,
-      });
+      pushFlash(transformedFlashes);
     }
   }, [flashes]);
 
-  const WrappedFlashes = ConnectStateWrapper(Flashes, {
-    flashes: selectFlashes,
-  });
-
-  return <WrappedFlashes />;
+  return <ZustandFlashes />;
 };
 
-export { reducerFlashes, FLASH_DATA_ID, Flashes };
+export { reducerFlashes, FLASH_DATA_ID, Flashes, ZustandFlashes, pushFlash };
+export type { FlashItem, FlashType };
 export default BackendFlashes;
