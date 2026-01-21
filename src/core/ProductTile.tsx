@@ -44,8 +44,14 @@ export type ProductTileProps = {
   labelClassName?: string;
 
   /**
+   * Additional CSS class names to apply to the product icon.
+   */
+  iconClassName?: string;
+
+  /**
    * Callback function to handle click events on the product tile.
    */
+
   onClick?: () => void;
 
   /**
@@ -87,6 +93,7 @@ const ProductTile = ({
   animateIcons = false,
   descriptionClassName,
   labelClassName,
+  iconClassName,
 }: ProductTileProps) => {
   const { icon, hoverIcon, label, description, link, unavailable } =
     products[name] ?? {};
@@ -141,6 +148,7 @@ const ProductTile = ({
           hoverName={animateIcons ? hoverIcon : undefined}
           selected={selected}
           unavailable={!!unavailable}
+          className={iconClassName}
         />
         <ProductLabel
           label={label}
