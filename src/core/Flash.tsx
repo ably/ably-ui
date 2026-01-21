@@ -49,7 +49,6 @@ const reducerFlashes = {
   },
 };
 
-// Not cool but redux isn't a long term plan here
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const selectFlashes = (store: any): { items: FlashProps[] } =>
   store.getState()[REDUCER_KEY];
