@@ -53,7 +53,7 @@ const MeganavBlog = ({ title, link, icon, posts }: MeganavBlogProps) => {
       active:bg-neutral-200 dark:active:bg-neutral-1100 focus-base"
             key={post.link}
           >
-            <span className="flex gap-2">
+            <span className="flex flex-wrap gap-2">
               {post.categories.map((category: string) => (
                 <Badge
                   color={getCategoryColor(category)}

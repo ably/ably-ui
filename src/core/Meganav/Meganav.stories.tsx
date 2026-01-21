@@ -12,6 +12,7 @@ export const Default = {
   render: () => {
     return (
       <Meganav
+        blogPosts={[]}
         sessionState={{
           signedIn: false,
           logOut: { token: "", href: "" },
@@ -25,6 +26,7 @@ export const SignedIn = {
   render: () => {
     return (
       <Meganav
+        blogPosts={[]}
         sessionState={{
           signedIn: true,
           logOut: { token: "00", href: "users/sign_out" },
@@ -45,6 +47,7 @@ export const WithNotice = {
             logOut: { token: "", href: "" },
             accountName: "",
           }}
+          blogPosts={[]}
           notice={{
             props: {
               title: "📣 Introducing server-side batching",
@@ -79,6 +82,7 @@ export const LightThemeWithDarkMeganav = {
     return (
       <>
         <Meganav
+          blogPosts={[]}
           sessionState={{
             signedIn: false,
             logOut: { token: "", href: "" },
