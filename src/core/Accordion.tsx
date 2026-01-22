@@ -109,6 +109,7 @@ const AccordionRow = ({
       value={rowKey}
       className={cn({
         [`${border}`]: border && !options?.hideBorders,
+        [`${options?.selectedItemCSS}`]: options?.selectedItemCSS && isOpen,
       })}
     >
       <AccordionTrigger

@@ -8,13 +8,13 @@ import { ColorThemeSet } from "../styles/colors/types";
 export type AccordionData = {
   /**
    * The name of the accordion item.
-   * @deprecated Use `heading` for custom heading content. This will be used as fallback if `heading` is not provided.
    */
   name: string;
 
   /**
    * Custom heading content. If provided, this will be used instead of `name`.
-   * Can be a ReactNode or a function that receives the index and isOpen state and returns ReactNode.
+   * Can be a ReactNode or a function that receives the index and isOpen state
+   * and returns ReactNode.
    */
   heading?: ReactNode | ((index: number, isOpen: boolean) => ReactNode);
 
@@ -165,4 +165,10 @@ export type AccordionOptions = {
    * @default ""
    */
   contentCSS?: string;
+
+  /**
+   * Custom CSS classes to apply to the accordion item wrapper when it is open/active.
+   * @default ""
+   */
+  selectedItemCSS?: string;
 };

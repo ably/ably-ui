@@ -253,6 +253,26 @@ export const WithCustomElementCSS = {
   },
 };
 
+export const WithSelectedItemCSS = {
+  render: () =>
+    AccordionPresentation({
+      data: dataWithIcons,
+      options: {
+        defaultOpenIndexes: [0, 2],
+        selectedItemCSS:
+          "bg-blue-100 dark:bg-blue-900 rounded-lg p-2 border-2 border-blue-500 dark:border-blue-400",
+      },
+    }),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "By setting `selectedItemCSS` in `options`, you can apply custom CSS classes to the AccordionItem wrapper element when it is open/active. This example shows items 1 and 3 open with a blue background and border. The content remains visible and functional.",
+      },
+    },
+  },
+};
+
 const dataWithBadgeInHeading = [
   {
     name: "Basic Plan",
@@ -301,7 +321,7 @@ export const WithBadgeOnHeading = {
     docs: {
       description: {
         story:
-          "You can customize the accordion heading by providing a `heading` prop with custom ReactNode content. This example shows headings with Badge components. The `heading` prop can be a ReactNode or a function that receives the item data, index, and isOpen state.",
+          "You can customize the accordion heading by providing a `heading` prop with custom ReactNode content. This example shows headings with Badge components. The `heading` prop can be a ReactNode or a function that receives the index and isOpen state.",
       },
     },
   },
