@@ -144,6 +144,15 @@ const AccordionRow = ({
             <Icon
               name={isOpen ? toggleIcons.open.name : toggleIcons.closed.name}
               color={toggleIconColor}
+              additionalCSS={
+                isOpen
+                  ? (typeof toggleIcons.open === "object" &&
+                      toggleIcons.open.css) ||
+                    ""
+                  : (typeof toggleIcons.closed === "object" &&
+                      toggleIcons.closed.css) ||
+                    ""
+              }
               size={options?.iconSize ?? "16px"}
             />
           </span>
