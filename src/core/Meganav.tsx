@@ -109,7 +109,7 @@ const Meganav = ({
   return (
     <>
       <div
-        className="absolute inset-0 w-full z-50"
+        className="absolute top-0 left-0 right-0 w-full z-50"
         id={theme === "dark" ? "meganav-theme-dark" : "meganav"}
         data-testid="meganav"
         style={{ height: HEADER_HEIGHT + finalNoticeHeight }}
