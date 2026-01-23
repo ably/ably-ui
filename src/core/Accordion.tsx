@@ -31,6 +31,7 @@ import cn from "./utils/cn";
 type AccordionRowProps = {
   children: ReactNode;
   name: string;
+  heading?: ReactNode | ((index: number, isOpen: boolean) => ReactNode);
   rowIcon?: IconName | AccordionIcon;
   theme: AccordionTheme;
   toggleIcons: AccordionIcons;
@@ -65,6 +66,7 @@ export type AccordionProps = {
 
 const AccordionRow = ({
   name,
+  heading,
   children,
   rowIcon,
   options,
@@ -91,11 +93,23 @@ const AccordionRow = ({
 
   const textClass = (selectable && isOpen && selectableText) || text;
 
+  // Render custom heading or fallback to name
+  const renderHeading = () => {
+    if (heading) {
+      if (typeof heading === "function") {
+        return heading(index, isOpen);
+      }
+      return heading;
+    }
+    return <span>{name}</span>;
+  };
+
   return (
     <AccordionItem
       value={rowKey}
       className={cn({
         [`${border}`]: border && !options?.hideBorders,
+        [`${options?.selectedItemCSS}`]: options?.selectedItemCSS && isOpen,
       })}
     >
       <AccordionTrigger
@@ -125,12 +139,21 @@ const AccordionRow = ({
             size={options?.rowIconSize ?? "32px"}
           />
         ) : null}
-        <span>{name}</span>
+        {renderHeading()}
         {!selectable && !isStaticTheme(theme) && rowInteractive ? (
           <span className="flex-1 justify-end flex items-center">
             <Icon
               name={isOpen ? toggleIcons.open.name : toggleIcons.closed.name}
               color={toggleIconColor}
+              additionalCSS={
+                isOpen
+                  ? (typeof toggleIcons.open === "object" &&
+                      toggleIcons.open.css) ||
+                    ""
+                  : (typeof toggleIcons.closed === "object" &&
+                      toggleIcons.closed.css) ||
+                    ""
+              }
               size={options?.iconSize ?? "16px"}
             />
           </span>
@@ -183,6 +206,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
       <AccordionRow
         key={item.name}
         name={item.name}
+        heading={item.heading}
         rowIcon={item.icon}
         toggleIcons={icons}
         theme={theme}

@@ -12,6 +12,13 @@ export type AccordionData = {
   name: string;
 
   /**
+   * Custom heading content. If provided, this will be used instead of `name`.
+   * Can be a ReactNode or a function that receives the index and isOpen state
+   * and returns ReactNode.
+   */
+  heading?: ReactNode | ((index: number, isOpen: boolean) => ReactNode);
+
+  /**
    * The optional icon name to be displayed alongside the accordion item.
    */
   icon?: IconName | AccordionIcon;
@@ -158,4 +165,10 @@ export type AccordionOptions = {
    * @default ""
    */
   contentCSS?: string;
+
+  /**
+   * Custom CSS classes to apply to the accordion item wrapper when it is open/active.
+   * @default ""
+   */
+  selectedItemCSS?: string;
 };
