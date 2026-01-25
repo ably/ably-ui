@@ -3,6 +3,10 @@ import posthog from "posthog-js";
 import { InsightsIdentity } from "./types";
 
 export const initPosthog = (apiKey: string, apiHost: string) => {
+  if (!apiKey) {
+    return;
+  }
+
   posthog.init(apiKey, {
     api_host: apiHost,
     capture_pageview: false,
