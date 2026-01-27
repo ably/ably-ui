@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
@@ -6,6 +6,12 @@ import Icon from "./Icon";
 import cn from "./utils/cn.js";
 import NoticeScripts from "./Notice/component.js";
 import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
+
+type ContentWrapperProps = {
+  buttonLink: string;
+  children: ReactNode;
+  textColor?: ColorClass | ColorThemeSet;
+};
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
@@ -35,6 +41,21 @@ export type NoticeProps = {
 };
 
 const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
+
+const contentWrapperClasses = "w-full pr-2 ui-text-p4 self-center";
+
+const ContentWrapper = ({
+  buttonLink,
+  textColor = defaultTextColor,
+  children,
+}: ContentWrapperProps) =>
+  buttonLink ? (
+    <a href={buttonLink} className={cn(contentWrapperClasses, textColor)}>
+      {children}
+    </a>
+  ) : (
+    <div className={cn(contentWrapperClasses, textColor)}>{children}</div>
+  );
 
 const Notice = ({
   buttonLink,
@@ -70,10 +91,6 @@ const Notice = ({
     ALLOWED_URI_REGEXP: /^\/[^/]/,
   });
 
-  const isSafeButtonLink =
-    typeof buttonLink === "string" &&
-    (/^\/(?!\/)/.test(buttonLink) || /^https?:\/\//.test(buttonLink));
-
   // have to add the style classes here as src/core/Notice/component.css is not being properly imported or distributed when ably-ui is used as a package.
   return (
     <div
@@ -94,7 +111,7 @@ const Notice = ({
       >
         <div className="ui-grid-px py-4 max-w-screen-xl mx-auto relative">
           <div className="flex justify-center text-center px-10">
-            <div>
+            <ContentWrapper buttonLink={buttonLink ?? "#"}>
               <strong className="font-bold whitespace-nowrap pr-1">
                 {title}
               </strong>
@@ -103,20 +120,12 @@ const Notice = ({
                 className="pr-1"
                 dangerouslySetInnerHTML={{ __html: safeContent }}
               />
-              {buttonLabel &&
-                (isSafeButtonLink ? (
-                  <a
-                    href={buttonLink}
-                    className="focus-base transition-colors cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark"
-                  >
-                    {buttonLabel}
-                  </a>
-                ) : (
-                  <span className="focus-base transition-colors cursor-pointer whitespace-nowrap font-bold underline underline-offset-4 decoration-1 text-neutral-1100 hover:text-neutral-1300 dark:text-neutral-200 dark:hover:text-neutral-000">
-                    {buttonLabel}
-                  </span>
-                ))}
-            </div>
+              {buttonLabel && (
+                <span className="cursor-pointer whitespace-nowrap font-bold underline underline-offset-4 decoration-1 text-neutral-1100 hover:text-neutral-1300 dark:text-neutral-200 dark:hover:text-neutral-000">
+                  {buttonLabel}
+                </span>
+              )}
+            </ContentWrapper>
           </div>
 
           {closeBtn && (
