@@ -64,7 +64,7 @@ const Notice = ({
   title,
   config,
   closeBtn,
-  bgColor = "bg-orange-100 dark:bg-orange-1100",
+  bgColor = "bg-gradient-to-b from-orange-100 to-orange-200 dark:from-orange-1100 dark:to-orange-1000",
   textColor = defaultTextColor,
   onClose,
 }: NoticeProps) => {
@@ -95,51 +95,64 @@ const Notice = ({
   return (
     <div
       className={cn(
-        "ui-announcement relative z-[60]",
+        "ui-announcement relative z-[60] px-3 pt-3",
         isClosing
           ? "ui-announcement-hidden max-h-0 -translate-y-full opacity-0 overflow-hidden"
           : "ui-announcement-visible",
-        bgColor,
-        textColor,
       )}
       data-id="ui-notice"
     >
-      <div className="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
-        <ContentWrapper buttonLink={buttonLink ?? "#"}>
-          <strong className="font-bold whitespace-nowrap pr-1">{title}</strong>
-          <span
-            ref={contentRef}
-            className="pr-1"
-            dangerouslySetInnerHTML={{
-              __html: safeContent,
-            }}
-          ></span>
-          {buttonLabel && (
-            <span className="cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark">
-              {buttonLabel}
-            </span>
-          )}
-        </ContentWrapper>
-
-        {closeBtn && (
-          <button
-            type="button"
-            className="ml-auto h-5 w-5 border-none bg-none self-baseline outline-none focus:outline-none focus:ring-0 focus:border-transparent"
-            onClick={() => {
-              setIsClosing(true);
-              setTimeout(() => {
-                document.dispatchEvent(new CustomEvent("notice-closed"));
-                onClose?.();
-              }, 300);
-            }}
-          >
-            <Icon
-              name="icon-gui-x-mark-outline"
-              size="1.25rem"
-              color={textColor}
-            />
-          </button>
+      <div
+        className={cn(
+          // 8px radius + clip + inside stroke
+          "rounded-lg overflow-hidden ring-1 ring-inset ring-orange-200 dark:ring-orange-1000",
+          // gradient fill
+          bgColor,
+          textColor,
         )}
+      >
+        <div className="ui-grid-px py-4 max-w-screen-xl mx-auto relative">
+          {/* Center the copy */}
+          <div className="flex justify-center text-center px-10">
+            <ContentWrapper buttonLink={buttonLink ?? "#"}>
+              <strong className="font-bold whitespace-nowrap pr-1">
+                {title}
+              </strong>
+              <span
+                ref={contentRef}
+                className="pr-1"
+                dangerouslySetInnerHTML={{ __html: safeContent }}
+              />
+              {buttonLabel && (
+                 <span className="cursor-pointer whitespace-nowrap font-bold text-neutral-000 underline underline-offset-4 decoration-neutral-000 decoration-1">
+                  {buttonLabel}
+                 </span>
+              )}
+
+            </ContentWrapper>
+          </div>
+
+          {/* Close button: 16px from right, vertically centered, 24px icon */}
+          {closeBtn && (
+            <button
+              type="button"
+              className="absolute right-4 top-1/2 -translate-y-1/2 h-6 w-6 border-none bg-none outline-none focus:outline-none focus:ring-0 focus:border-transparent"
+              onClick={() => {
+                setIsClosing(true);
+                setTimeout(() => {
+                  document.dispatchEvent(new CustomEvent("notice-closed"));
+                  onClose?.();
+                }, 300);
+              }}
+            >
+              <Icon
+                name="icon-gui-x-mark-outline"
+                size="1.5rem"
+                color={textColor}
+              />
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
