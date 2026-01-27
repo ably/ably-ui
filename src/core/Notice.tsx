@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import DOMPurify from "dompurify";
 
 import { ColorClass, ColorThemeSet } from "./styles/colors/types";
@@ -6,12 +6,6 @@ import Icon from "./Icon";
 import cn from "./utils/cn.js";
 import NoticeScripts from "./Notice/component.js";
 import useRailsUjsLinks from "./hooks/use-rails-ujs-hooks";
-
-type ContentWrapperProps = {
-  buttonLink: string;
-  children: ReactNode;
-  textColor?: ColorClass | ColorThemeSet;
-};
 
 // TODO(jamiehenson):
 // This type is a bit messed up currently due to the NoticeScripts import being interpreted as NoticeProps.
@@ -44,21 +38,8 @@ const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
 
 const contentWrapperClasses = "w-full pr-2 ui-text-p4 self-center";
 
-const ContentWrapper = ({
-  buttonLink,
-  textColor = defaultTextColor,
-  children,
-}: ContentWrapperProps) =>
-  buttonLink ? (
-    <a href={buttonLink} className={cn(contentWrapperClasses, textColor)}>
-      {children}
-    </a>
-  ) : (
-    <div className={cn(contentWrapperClasses, textColor)}>{children}</div>
-  );
-
 const Notice = ({
-  buttonLink,
+  buttonLink: _buttonLink,
   buttonLabel,
   bodyText,
   title,
@@ -111,7 +92,7 @@ const Notice = ({
       >
         <div className="ui-grid-px py-4 max-w-screen-xl mx-auto relative">
           <div className="flex justify-center text-center px-10">
-            <ContentWrapper buttonLink={buttonLink ?? "#"}>
+            <div className={cn(contentWrapperClasses, textColor)}>
               <strong className="font-bold whitespace-nowrap pr-1">
                 {title}
               </strong>
@@ -125,7 +106,7 @@ const Notice = ({
                   {buttonLabel}
                 </span>
               )}
-            </ContentWrapper>
+            </div>
           </div>
 
           {closeBtn && (
