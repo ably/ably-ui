@@ -36,8 +36,6 @@ export type NoticeProps = {
 
 const defaultTextColor = "text-neutral-1300 dark:text-neutral-000";
 
-const contentWrapperClasses = "w-full pr-2 ui-text-p4 self-center";
-
 const Notice = ({
   buttonLink,
   buttonLabel,
@@ -87,51 +85,6 @@ const Notice = ({
       )}
       data-id="ui-notice"
     >
-      <div className="ui-grid-px py-4 max-w-screen-xl mx-auto flex items-start">
-        <div className={cn(contentWrapperClasses, textColor)}>
-          <strong className="font-bold whitespace-nowrap pr-1">{title}</strong>
-          <span
-            ref={contentRef}
-            className="pr-1"
-            dangerouslySetInnerHTML={{
-              __html: safeContent,
-            }}
-          ></span>
-          {buttonLabel &&
-            (isSafeButtonLink ? (
-              <a
-                href={buttonLink}
-                className="focus-base transition-colors cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark"
-              >
-                {buttonLabel}
-              </a>
-            ) : (
-              <span className="focus-base transition-colors cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark">
-                {buttonLabel}
-              </span>
-            ))}
-        </div>
-
-        {closeBtn && (
-          <button
-            type="button"
-            className="ml-auto h-5 w-5 border-none bg-none self-baseline outline-none focus:outline-none focus:ring-0 focus:border-transparent"
-            onClick={() => {
-              setIsClosing(true);
-              setTimeout(() => {
-                document.dispatchEvent(new CustomEvent("notice-closed"));
-                onClose?.();
-              }, 300);
-            }}
-          >
-            <Icon
-              name="icon-gui-x-mark-outline"
-              size="1.25rem"
-              color={textColor}
-            />
-          </button>
-        )}
-      </div>
       <div
         className={cn(
           "rounded-lg overflow-hidden ring-1 ring-inset ring-orange-200 dark:ring-orange-1000",
@@ -150,11 +103,19 @@ const Notice = ({
                 className="pr-1"
                 dangerouslySetInnerHTML={{ __html: safeContent }}
               />
-              {buttonLabel && (
-                <span className="cursor-pointer whitespace-nowrap font-bold underline underline-offset-4 decoration-1 text-neutral-1100 hover:text-neutral-1300 dark:text-neutral-200 dark:hover:text-neutral-000">
-                  {buttonLabel}
-                </span>
-              )}
+              {buttonLabel &&
+                (isSafeButtonLink ? (
+                  <a
+                    href={buttonLink}
+                    className="focus-base transition-colors cursor-pointer whitespace-nowrap text-gui-blue-default-light dark:text-gui-blue-default-dark"
+                  >
+                    {buttonLabel}
+                  </a>
+                ) : (
+                  <span className="focus-base transition-colors cursor-pointer whitespace-nowrap font-bold underline underline-offset-4 decoration-1 text-neutral-1100 hover:text-neutral-1300 dark:text-neutral-200 dark:hover:text-neutral-000">
+                    {buttonLabel}
+                  </span>
+                ))}
             </div>
           </div>
 
