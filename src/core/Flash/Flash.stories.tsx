@@ -1,13 +1,6 @@
 import React from "react";
-import Flash, { reducerFlashes } from "../Flash";
+import Flash, { FlashProvider } from "../Flash";
 import { expect, within } from "storybook/test";
-
-import {
-  attachStoreToWindow,
-  createRemoteDataStore,
-} from "../remote-data-store.js";
-import { reducerBlogPosts } from "../remote-blogs-posts.js";
-import { reducerSessionData } from "../remote-session-data.js";
 
 export default {
   title: "Components/Flash",
@@ -24,17 +17,11 @@ export default {
 };
 
 export const Default = {
-  render: (args) => {
-    const store = createRemoteDataStore({
-      ...reducerBlogPosts,
-      ...reducerSessionData,
-      ...reducerFlashes,
-    });
-
-    attachStoreToWindow(store);
-
-    return <Flash {...args} />;
-  },
+  render: (args) => (
+    <FlashProvider>
+      <Flash {...args} />
+    </FlashProvider>
+  ),
 };
 
 export const WithLinks = {
@@ -55,17 +42,11 @@ export const WithLinks = {
       ],
     ],
   },
-  render: (args) => {
-    const store = createRemoteDataStore({
-      ...reducerBlogPosts,
-      ...reducerSessionData,
-      ...reducerFlashes,
-    });
-
-    attachStoreToWindow(store);
-
-    return <Flash {...args} />;
-  },
+  render: (args) => (
+    <FlashProvider>
+      <Flash {...args} />
+    </FlashProvider>
+  ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 

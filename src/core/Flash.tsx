@@ -1,10 +1,18 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  createContext,
+  useContext,
+  useCallback,
+  useMemo,
+  PropsWithChildren,
+} from "react";
 import DOMPurify from "dompurify";
-import { getRemoteDataStore } from "./remote-data-store.js";
-import ConnectStateWrapper from "./ConnectStateWrapper";
 import Icon from "./Icon";
 import { ColorClass } from "./styles/colors/types";
 import { IconName } from "./Icon/types";
+import cn from "./utils/cn";
 
 type FlashPropsType = "error" | "success" | "notice" | "info" | "alert";
 
@@ -16,57 +24,88 @@ type FlashProps = {
   removeFlash: (id: string) => void;
 };
 
-type FlashesProps = {
-  flashes: { items: Pick<FlashProps, "type" | "content">[] };
-};
-
 type BackendFlashesProps = {
   flashes: string[][];
 };
 
-const REDUCER_KEY = "flashes";
 const FLASH_DATA_ID = "ui-flashes";
 
-const initialState = { items: [] };
-
-const reducerFlashes = {
-  [REDUCER_KEY]: (
-    state: {
-      items: FlashProps[];
-    } = initialState,
-    action: { type: string; payload: FlashProps | FlashProps[] },
-  ) => {
-    switch (action.type) {
-      case "flash/push": {
-        const flashes = Array.isArray(action.payload)
-          ? action.payload
-          : [action.payload];
-        return { items: [...state.items, ...flashes] };
-      }
-      default:
-        return state;
-    }
-  },
+type FlashContextType = {
+  flashes: FlashProps[];
+  addFlashes: (flashes: Pick<FlashProps, "type" | "content">[]) => void;
+  removeFlash: (id: string) => void;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const selectFlashes = (store: any): { items: FlashProps[] } =>
-  store.getState()[REDUCER_KEY];
+const FlashContext = createContext<FlashContextType | undefined>(undefined);
+
+type FlashProviderProps = PropsWithChildren;
+
+const FlashProvider = ({ children }: FlashProviderProps) => {
+  const [flashes, setFlashes] = useState<FlashProps[]>([]);
+
+  const removeFlash = useCallback((flashId: string) => {
+    setFlashes((prev) => prev.filter((item) => item.id !== flashId));
+  }, []);
+
+  const addFlashes = useCallback(
+    (newFlashes: Pick<FlashProps, "type" | "content">[]) => {
+      setFlashes((prev) => {
+        const withIds = newFlashes
+          .filter(
+            (flash) =>
+              !prev.some(
+                (existing) =>
+                  existing.content === flash.content &&
+                  existing.type === flash.type,
+              ),
+          )
+          .map((flash) => ({
+            ...flash,
+            id: Math.random().toString(36).slice(2),
+            removed: false,
+            removeFlash,
+          }));
+
+        return [...prev, ...withIds];
+      });
+    },
+    [removeFlash],
+  );
+
+  const contextValue = useMemo(
+    () => ({ flashes, addFlashes, removeFlash }),
+    [flashes, addFlashes, removeFlash],
+  );
+
+  return (
+    <FlashContext.Provider value={contextValue}>
+      {children}
+    </FlashContext.Provider>
+  );
+};
+
+const useFlashContext = () => {
+  const context = useContext(FlashContext);
+  if (context === undefined) {
+    throw new Error("useFlashContext must be used within FlashProvider");
+  }
+  return context;
+};
 
 const FLASH_BG_COLOR = {
   error: "bg-gui-error",
-  success: "bg-zingy-green",
-  notice: "bg-electric-cyan",
-  info: "bg-electric-cyan",
-  alert: "bg-active-orange",
+  success: "bg-green-400",
+  notice: "bg-blue-400",
+  info: "bg-blue-400",
+  alert: "bg-orange-600",
 };
 
 const FLASH_TEXT_COLOR = {
-  error: "text-white",
-  success: "text-cool-black",
-  notice: "text-cool-black",
-  info: "text-cool-black",
-  alert: "text-white",
+  error: "text-neutral-000",
+  success: "text-neutral-1300",
+  notice: "text-neutral-1300",
+  info: "text-neutral-1300",
+  alert: "text-neutral-000",
 };
 
 const AUTO_HIDE = ["success", "info", "notice"];
@@ -138,25 +177,29 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
   };
 
   const iconColor: Record<FlashPropsType, ColorClass | ""> = {
-    notice: "text-cool-black",
-    success: "text-cool-black",
-    error: "text-white",
-    alert: "text-white",
+    notice: FLASH_TEXT_COLOR.notice as ColorClass,
+    success: FLASH_TEXT_COLOR.success as ColorClass,
+    error: FLASH_TEXT_COLOR.error as ColorClass,
+    alert: FLASH_TEXT_COLOR.alert as ColorClass,
     info: "",
   };
 
   return (
     <div
-      className={`ui-flash-message ui-grid-px ${
-        animateEntry ? "ui-flash-message-enter" : ""
-      }`}
+      className={cn(
+        "ui-flash-message ui-grid-px",
+        animateEntry && "ui-flash-message-enter",
+      )}
       style={style}
       ref={ref}
       data-id="ui-flash"
       data-testid="ui-flash"
     >
       <div
-        className={`${FLASH_BG_COLOR[type]} p-8 flex align-center rounded shadow-container-subtle`}
+        className={cn(
+          FLASH_BG_COLOR[type],
+          "p-8 flex align-center rounded shadow-container-subtle",
+        )}
       >
         {withIcons[type] && iconColor[type] && (
           <Icon
@@ -167,7 +210,7 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
           />
         )}
         <p
-          className={`ui-text-p1 mr-4 ${FLASH_TEXT_COLOR[type]}`}
+          className={cn("ui-text-p1 mr-4", FLASH_TEXT_COLOR[type])}
           dangerouslySetInnerHTML={{ __html: safeContent }}
         />
         <button
@@ -189,72 +232,45 @@ const Flash = ({ id, type, content, removeFlash }: FlashProps) => {
   );
 };
 
-const Flashes = ({ flashes }: FlashesProps) => {
-  const [flashesWithIds, setFlashesWithIds] = useState<FlashProps[]>([]);
-
-  const removeFlash = (flashId: string) =>
-    setFlashesWithIds((items) => items.filter((item) => item.id !== flashId));
-
-  useEffect(() => {
-    if (!flashes?.items?.length) return;
-
-    setFlashesWithIds((state) => {
-      const newFlashes = (flashes.items ?? [])
-        .filter(
-          (flash) =>
-            !state.some(
-              (existing) =>
-                existing.content === flash.content &&
-                existing.type === flash.type,
-            ),
-        )
-        .map((flash) => ({
-          ...flash,
-          id: Math.random().toString(36).slice(2),
-          removed: false,
-          removeFlash,
-        }));
-
-      return newFlashes.length > 0 ? [...state, ...newFlashes] : state;
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [flashes]);
+const Flashes = () => {
+  const { flashes, removeFlash } = useFlashContext();
 
   return (
     <div className="ui-flash" data-id={FLASH_DATA_ID}>
-      {flashesWithIds
+      {flashes
         .filter((item) => !item.removed)
         .map((flash) => (
-          <Flash key={flash.id} {...flash} />
+          <Flash key={flash.id} {...flash} removeFlash={removeFlash} />
         ))}
     </div>
   );
 };
 
 const BackendFlashes = ({ flashes }: BackendFlashesProps) => {
+  const context = useContext(FlashContext);
+
   useEffect(() => {
-    const transformedFlashes =
-      flashes.map((flash) => {
-        const [type, content] = flash;
-        return { type, content };
-      }) || [];
+    if (!context) {
+      console.warn("BackendFlashes must be used within FlashProvider");
+      return;
+    }
+
+    const transformedFlashes = flashes.map((flash) => {
+      const [type, content] = flash;
+      return { type: type as FlashPropsType, content };
+    });
 
     if (transformedFlashes.length > 0) {
-      const store = getRemoteDataStore();
-
-      store.dispatch({
-        type: "flash/push",
-        payload: transformedFlashes,
-      });
+      context.addFlashes(transformedFlashes);
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flashes]);
 
-  const WrappedFlashes = ConnectStateWrapper(Flashes, {
-    flashes: selectFlashes,
-  });
+  if (!context) return null;
 
-  return <WrappedFlashes />;
+  return <Flashes />;
 };
 
-export { reducerFlashes, FLASH_DATA_ID, Flashes };
+export { FLASH_DATA_ID, Flashes, FlashProvider, useFlashContext };
 export default BackendFlashes;
