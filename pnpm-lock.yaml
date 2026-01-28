@@ -187,8 +187,8 @@ importers:
         specifier: ^1.49.1
         version: 1.57.0
       posthog-js:
-        specifier: ^1.331.0
-        version: 1.331.0
+        specifier: ^1.332.0
+        version: 1.332.0
       prettier:
         specifier: ^3.8.0
         version: 3.8.0
@@ -925,11 +925,11 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@posthog/core@1.11.0':
-    resolution: {integrity: sha512-BnUQ9FP5vqMr2NKntDSLfMCwO/pOI2In7kAjg6vLVzU1JdcPt266kwCZj84PTYbdSfHG5ELDs3hXNv9Rn+coUw==}
+  '@posthog/core@1.13.0':
+    resolution: {integrity: sha512-knjncrk7qRmssFRbGzBl1Tunt21GRpe0Wv+uVelyL0Rh7PdQUsgguulzXFTps8hA6wPwTU4kq85qnbAJ3eH6Wg==}
 
-  '@posthog/types@1.331.0':
-    resolution: {integrity: sha512-C2eT5T2zovjLB+KOOWOb4vGBInH58imeuOrH/DL3hpcH0V5Nd5ttOAZczr1AxsI08lR5VaUPCw2bUsfPxYJGRA==}
+  '@posthog/types@1.332.0':
+    resolution: {integrity: sha512-X6LFnT4B6d7vBph2v2NjajArzliZmOZieoNDHPV5e8JOcsOYichtWq38WLLe0B0iQBnF8Ofo5QIWsbNDjfJISw==}
 
   '@protobufjs/aspromise@1.1.2':
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -4343,8 +4343,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.331.0:
-    resolution: {integrity: sha512-9bUWkQXP95OhDxcjctKma8LSxpIxU+i7Xq+i/M4wjGjEvN7xt1ztNO4XKJYmEVT1Su3ZOLudidyWrSGL568F4A==}
+  posthog-js@1.332.0:
+    resolution: {integrity: sha512-w3+sL+IFK4mpfFmgTW7On8cR+z34pre+SOewx+eHZQSYF9RYqXsLIhrxagWbQKkowPd4tCwUHrkS1+VHsjnPqA==}
 
   preact@10.28.2:
     resolution: {integrity: sha512-lbteaWGzGHdlIuiJ0l2Jq454m6kcpI1zNje6d8MlGAFlYvP2GO4ibnat7P74Esfz4sPTdM6UxtTwh/d3pwM9JA==}
@@ -6135,11 +6135,11 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@posthog/core@1.11.0':
+  '@posthog/core@1.13.0':
     dependencies:
       cross-spawn: 7.0.6
 
-  '@posthog/types@1.331.0': {}
+  '@posthog/types@1.332.0': {}
 
   '@protobufjs/aspromise@1.1.2': {}
 
@@ -9744,15 +9744,15 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.331.0:
+  posthog-js@1.332.0:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.208.0
       '@opentelemetry/exporter-logs-otlp-http': 0.208.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-logs': 0.208.0(@opentelemetry/api@1.9.0)
-      '@posthog/core': 1.11.0
-      '@posthog/types': 1.331.0
+      '@posthog/core': 1.13.0
+      '@posthog/types': 1.332.0
       core-js: 3.48.0
       dompurify: 3.3.1
       fflate: 0.4.8
