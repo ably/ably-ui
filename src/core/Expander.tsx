@@ -1,13 +1,13 @@
 import React, {
   PropsWithChildren,
   ReactNode,
-  useEffect,
+  useMemo,
   useRef,
   useState,
 } from "react";
 import * as RadixCollapsible from "@radix-ui/react-collapsible";
-import { throttle } from "es-toolkit/compat";
 import cn from "./utils/cn";
+import { useContentHeight } from "./hooks/use-content-height";
 
 type ExpanderProps = {
   heightThreshold?: number;
@@ -28,37 +28,24 @@ const Expander = ({
   children,
 }: PropsWithChildren<ExpanderProps>) => {
   const innerRef = useRef<HTMLDivElement>(null);
-  const [showControls, setShowControls] = useState(false);
-  const [contentHeight, setContentHeight] = useState<number>(heightThreshold);
   const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    if (innerRef.current) {
-      setContentHeight(innerRef.current.clientHeight);
-    }
+  const contentHeight = useContentHeight(innerRef, heightThreshold);
 
-    setShowControls(contentHeight >= heightThreshold);
-  }, [contentHeight, heightThreshold]);
+  const showControls = useMemo(
+    () => contentHeight >= heightThreshold,
+    [contentHeight, heightThreshold],
+  );
 
-  useEffect(() => {
-    const onResize = throttle(() => {
-      if (innerRef.current) {
-        setContentHeight(innerRef.current.clientHeight);
-      }
-    }, 250);
-
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
-  }, []);
-
-  const height =
-    contentHeight < heightThreshold
-      ? "auto"
-      : expanded
-        ? contentHeight
-        : heightThreshold;
+  const height = useMemo(
+    () =>
+      contentHeight < heightThreshold
+        ? "auto"
+        : expanded
+          ? contentHeight
+          : heightThreshold,
+    [contentHeight, heightThreshold, expanded],
+  );
 
   return (
     <RadixCollapsible.Root open={expanded} onOpenChange={setExpanded}>
@@ -83,7 +70,7 @@ const Expander = ({
             data-testid="expander-controls"
             className={cn(
               heightThreshold === 0 && !expanded ? "" : "mt-4",
-              "cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light",
+              "cursor-pointer font-bold text-gui-blue-default-light hover:text-gui-blue-hover-light focus-base transition-colors",
               controlsClassName,
             )}
           >
