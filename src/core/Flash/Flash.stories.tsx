@@ -1,13 +1,7 @@
 import React from "react";
-import Flash, { reducerFlashes } from "../Flash";
-import { expect, within } from "storybook/test";
-
-import {
-  attachStoreToWindow,
-  createRemoteDataStore,
-} from "../remote-data-store.js";
-import { reducerBlogPosts } from "../remote-blogs-posts.js";
-import { reducerSessionData } from "../remote-session-data.js";
+import Flash, { pushFlash, ZustandFlashes } from "../Flash";
+import { useFlashStore, clearFlashes } from "../flash-store";
+import { expect, within, waitFor } from "storybook/test";
 
 export default {
   title: "Components/Flash",
@@ -21,18 +15,14 @@ export default {
       ["info", "Some useful information, you are welcome"],
     ],
   },
+  // Clear flash store before each story loads
+  beforeEach: () => {
+    clearFlashes();
+  },
 };
 
 export const Default = {
-  render: (args) => {
-    const store = createRemoteDataStore({
-      ...reducerBlogPosts,
-      ...reducerSessionData,
-      ...reducerFlashes,
-    });
-
-    attachStoreToWindow(store);
-
+  render: (args: { flashes: string[][] }) => {
     return <Flash {...args} />;
   },
 };
@@ -55,22 +45,23 @@ export const WithLinks = {
       ],
     ],
   },
-  render: (args) => {
-    const store = createRemoteDataStore({
-      ...reducerBlogPosts,
-      ...reducerSessionData,
-      ...reducerFlashes,
-    });
-
-    attachStoreToWindow(store);
-
+  render: (args: { flashes: string[][] }) => {
     return <Flash {...args} />;
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement);
 
-    // Wait for flashes to appear
-    const flashes = await canvas.findAllByTestId("ui-flash");
+    // Wait for flashes to appear with longer timeout
+    const flashes = await waitFor(
+      () => {
+        const found = canvas.getAllByTestId("ui-flash");
+        if (found.length < 4) {
+          throw new Error(`Expected 4 flashes, got ${found.length}`);
+        }
+        return found;
+      },
+      { timeout: 5000 }
+    );
 
     // Test valid link (should be present)
     const validLinkFlash = flashes[0];
@@ -100,5 +91,73 @@ export const WithLinks = {
     expect(relLink).toBeInTheDocument();
     expect(relLink).not.toHaveAttribute("href");
     expect(relLink).not.toHaveAttribute("rel");
+  },
+};
+
+/**
+ * This story demonstrates using the Zustand store directly
+ * with pushFlash() for programmatic flash creation.
+ */
+export const ZustandStoreDemo = {
+  render: () => {
+    const FlashDemo = () => {
+      const items = useFlashStore((state) => state.items);
+
+      const addSuccess = () => {
+        pushFlash({ type: "success", content: "Action completed successfully!" });
+      };
+
+      const addError = () => {
+        pushFlash({ type: "error", content: "Something went wrong." });
+      };
+
+      const addMultiple = () => {
+        pushFlash([
+          { type: "notice", content: "First notification" },
+          { type: "info", content: "Second notification" },
+        ]);
+      };
+
+      return (
+        <div>
+          <div className="mb-16 flex gap-8">
+            <button
+              type="button"
+              onClick={addSuccess}
+              className="px-16 py-8 bg-zingy-green text-cool-black rounded"
+            >
+              Add Success
+            </button>
+            <button
+              type="button"
+              onClick={addError}
+              className="px-16 py-8 bg-gui-error text-white rounded"
+            >
+              Add Error
+            </button>
+            <button
+              type="button"
+              onClick={addMultiple}
+              className="px-16 py-8 bg-electric-cyan text-cool-black rounded"
+            >
+              Add Multiple
+            </button>
+            <button
+              type="button"
+              onClick={clearFlashes}
+              className="px-16 py-8 bg-cool-black text-white rounded"
+            >
+              Clear All
+            </button>
+          </div>
+          <div className="text-sm text-neutral-700 mb-8">
+            Store contains {items.length} flash(es)
+          </div>
+          <ZustandFlashes />
+        </div>
+      );
+    };
+
+    return <FlashDemo />;
   },
 };
