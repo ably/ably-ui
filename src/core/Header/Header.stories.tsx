@@ -94,43 +94,67 @@ export const WithThemedScrollpoints = {
         {...WithButtonNav.args}
         themedScrollpoints={[
           {
-            id: "header-zone",
+            id: "hero-transparent",
             className: "ui-theme-light !bg-transparent !border-none",
           },
           {
-            id: "light-zone",
-            className: "ui-theme-light",
+            id: "hero-dark",
+            className: "ui-theme-dark !bg-transparent !border-none",
           },
           {
-            id: "dark-zone",
-            className: "ui-theme-dark",
+            id: "main-light",
+            className:
+              "ui-theme-light bg-neutral-000 dark:bg-neutral-1300 border-b",
+          },
+          {
+            id: "main-dark",
+            className:
+              "ui-theme-dark bg-neutral-000 dark:bg-neutral-1300 border-b",
           },
         ]}
       />
-      <div
-        id="header-zone"
-        className="w-full bg-gradient-to-r from-neutral-000 to-orange-600 h-32 flex justify-center"
-      >
-        <p className="ui-text-p2 text-neutral-1300 flex gap-1 items-center p-16">
-          I&apos;m transparent! (scroll down{" "}
-          <Icon name="icon-gui-arrow-down-outline" />)
-        </p>
+      {/* Wrapper with both hero and main sections starting at same position (like Voltaire) */}
+      <div className="relative">
+        {/* Hero section - transparent header, positioned absolutely to overlay */}
+        <div
+          id="hero-transparent"
+          className="w-full bg-gradient-to-r from-neutral-000 to-orange-600 h-32 flex justify-center absolute top-0 left-0 right-0 z-10"
+        >
+          <p className="ui-text-p2 text-neutral-1300 flex gap-1 items-center p-16">
+            Hero: Transparent header (scroll down{" "}
+            <Icon name="icon-gui-arrow-down-outline" />)
+          </p>
+        </div>
+        {/* Main content area starts at same position - header gets border */}
+        <div
+          id="main-light"
+          className="w-full h-[50rem] bg-neutral-000 flex justify-center pt-32"
+        >
+          <p className="ui-text-p2 text-neutral-1300 p-16">
+            Main: Light theme with border
+          </p>
+        </div>
       </div>
-      <div
-        id="light-zone"
-        className="w-full h-[50rem] bg-neutral-000 flex justify-center"
-      >
-        <p className="ui-text-p2 text-neutral-1300 p-16">
-          I&apos;m light themed!
-        </p>
-      </div>
-      <div
-        id="dark-zone"
-        className="w-full h-full bg-neutral-1300 flex justify-center"
-      >
-        <p className="ui-text-p2 text-neutral-000 p-16">
-          I&apos;m dark themed!
-        </p>
+      {/* Dark section wrapper */}
+      <div className="relative">
+        {/* Dark hero section - transparent header */}
+        <div
+          id="hero-dark"
+          className="w-full bg-gradient-to-r from-neutral-1300 to-violet-600 h-32 flex justify-center absolute top-0 left-0 right-0 z-10"
+        >
+          <p className="ui-text-p2 text-neutral-000 flex gap-1 items-center p-16">
+            Hero: Dark transparent header
+          </p>
+        </div>
+        {/* Dark content area - header gets border */}
+        <div
+          id="main-dark"
+          className="w-full h-full bg-neutral-1300 flex justify-center pt-32"
+        >
+          <p className="ui-text-p2 text-neutral-000 p-16">
+            Main: Dark theme with border
+          </p>
+        </div>
       </div>
     </div>
   ),

@@ -18,11 +18,10 @@ import { HeaderLinks } from "./Header/HeaderLinks";
 import { throttle } from "es-toolkit/compat";
 import { Theme } from "./styles/colors/types";
 import { COLLAPSE_TRIGGER_DISTANCE } from "./Notice/component";
+import { useThemedScrollpoints } from "./hooks/use-themed-scrollpoints";
+import { ThemedScrollpoint } from "./Header/types";
 
-export type ThemedScrollpoint = {
-  id: string;
-  className: string;
-};
+export type { ThemedScrollpoint };
 
 /**
  * Represents the state of the user session in the header.
@@ -185,9 +184,7 @@ const Header: React.FC<HeaderProps> = ({
     isNoticeBannerEnabled,
   );
   const menuRef = useRef<HTMLDivElement>(null);
-  const [scrollpointClasses, setScrollpointClasses] = useState<string>(
-    themedScrollpoints.length > 0 ? themedScrollpoints[0].className : "",
-  );
+  const scrollpointClasses = useThemedScrollpoints(themedScrollpoints);
 
   const headerStyle = {
     height: HEADER_HEIGHT,
@@ -222,25 +219,31 @@ const Header: React.FC<HeaderProps> = ({
   }, [handleNoticeClose]);
 
   useEffect(() => {
+    if (!isNoticeBannerEnabled) {
+      return;
+    }
+
+    const noticeElement = document.querySelector('[data-id="ui-notice"]');
+
+    if (!noticeElement) {
+      console.warn("Header: Notice element not found");
+      return;
+    }
+
+    let previousVisibility = noticeBannerVisible;
+
     const handleScroll = () => {
-      const noticeElement = document.querySelector('[data-id="ui-notice"]');
-      const isNoticeClosedToBeHidden = noticeElement?.classList.contains(
+      const scrollY = window.scrollY;
+      const isNoticeHidden = noticeElement.classList.contains(
         "ui-announcement-hidden",
       );
-      setNoticeBannerVisible(
-        window.scrollY <= COLLAPSE_TRIGGER_DISTANCE &&
-          isNoticeBannerEnabled &&
-          !isNoticeClosedToBeHidden,
-      );
-      for (const scrollpoint of themedScrollpoints) {
-        const element = document.getElementById(scrollpoint.id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= HEADER_HEIGHT && rect.bottom >= HEADER_HEIGHT) {
-            setScrollpointClasses(scrollpoint.className);
-            return;
-          }
-        }
+
+      const shouldBeVisible =
+        scrollY <= COLLAPSE_TRIGGER_DISTANCE && !isNoticeHidden;
+
+      if (shouldBeVisible !== previousVisibility) {
+        previousVisibility = shouldBeVisible;
+        setNoticeBannerVisible(shouldBeVisible);
       }
     };
 
@@ -248,9 +251,12 @@ const Header: React.FC<HeaderProps> = ({
 
     handleScroll();
 
-    window.addEventListener("scroll", throttledHandleScroll);
-    return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [themedScrollpoints, isNoticeBannerEnabled]);
+    window.addEventListener("scroll", throttledHandleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", throttledHandleScroll);
+    };
+  }, [isNoticeBannerEnabled, noticeBannerVisible]);
 
   useEffect(() => {
     const handleResize = () => {
