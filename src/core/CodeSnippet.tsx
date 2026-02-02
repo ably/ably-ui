@@ -281,7 +281,9 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         return fullLang;
       }
       // Fall back to first language with this prefix
-      const prefixMatch = languages.find((l) => l.startsWith(`${resolvedSdk}_`));
+      const prefixMatch = languages.find((l) =>
+        l.startsWith(`${resolvedSdk}_`),
+      );
       if (prefixMatch) return prefixMatch;
     }
 
