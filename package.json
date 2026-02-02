@@ -58,7 +58,7 @@
     "msw": "2.12.0",
     "msw-storybook-addon": "^2.0.5",
     "playwright": "^1.58.0",
-    "posthog-js": "^1.334.1",
+    "posthog-js": "^1.335.2",
     "prettier": "^3.8.0",
     "storybook": "^10.2.0",
     "svg-sprite": "^2.0.4",
