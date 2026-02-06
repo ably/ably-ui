@@ -18,7 +18,7 @@ import CopyButton from "./CodeSnippet/CopyButton";
 import SegmentedControl from "./SegmentedControl";
 
 // Define SDK type
-export type SDKType = "realtime" | "rest" | null;
+export type SDKType = "realtime" | "rest" | "fe" | "be" | null;
 
 // Define API key types
 export type ApiKeysItem = {
@@ -169,6 +169,21 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     [],
   );
 
+  // Helper to find the code element within pre's children (handles both single element and array)
+  const findCodeElement = useCallback(
+    (preChildren: React.ReactNode): React.ReactElement | null => {
+      if (isValidElement(preChildren)) {
+        return preChildren;
+      }
+      if (Array.isArray(preChildren)) {
+        const codeEl = preChildren.find((c) => isValidElement(c));
+        return codeEl && isValidElement(codeEl) ? codeEl : null;
+      }
+      return null;
+    },
+    [],
+  );
+
   const { codeData, languages, sdkTypes, isSinglePlainCommand } =
     useMemo(() => {
       const childrenArray = Children.toArray(children);
@@ -178,20 +193,17 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
       const isSinglePlainCommand =
         childrenArray.length === 1 &&
-        ["language-shell", "language-text"].some(
-          (lang) =>
-            isValidElement(childrenArray[0]) &&
-            isValidElement(childrenArray[0].props.children) &&
-            childrenArray[0].props.children.props.className?.includes(lang),
-        );
+        ["language-shell", "language-text"].some((lang) => {
+          if (!isValidElement(childrenArray[0])) return false;
+          const codeEl = findCodeElement(childrenArray[0].props.children);
+          return codeEl?.props.className?.includes(lang);
+        });
 
       childrenArray.forEach((child) => {
         if (!isValidElement(child)) return;
 
         const preElement = child;
-        const codeElement = isValidElement(preElement.props.children)
-          ? preElement.props.children
-          : null;
+        const codeElement = findCodeElement(preElement.props.children);
 
         if (!codeElement) return;
 
@@ -203,6 +215,10 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
           sdkTypes.add("realtime");
         } else if (codeLanguage.startsWith("rest_")) {
           sdkTypes.add("rest");
+        } else if (codeLanguage.startsWith("fe_")) {
+          sdkTypes.add("fe");
+        } else if (codeLanguage.startsWith("be_")) {
+          sdkTypes.add("be");
         }
 
         if (!languages.includes(codeLanguage)) {
@@ -219,7 +235,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         sdkTypes,
         isSinglePlainCommand,
       };
-    }, [children, extractLanguageFromCode]);
+    }, [children, extractLanguageFromCode, findCodeElement]);
 
   const resolvedSdk: SDKType = useMemo(() => {
     if (sdkTypes.size === 1 && sdk && !sdkTypes.has(sdk)) {
@@ -228,7 +244,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
     return sdk ?? null;
   }, [sdk, sdkTypes]);
 
-  const showSDKSelector = sdkTypes.size > 0;
+  // Only show SDK selector for realtime/rest types, not for fe/be (which are controlled by page-level selector)
+  const showSDKSelector = sdkTypes.has("realtime") || sdkTypes.has("rest");
 
   const filteredLanguages = useMemo(() => {
     const filtered =
@@ -256,6 +273,21 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
   }, [resolvedSdk, showSDKSelector, languages, languageOrdering]);
 
   const activeLanguage = useMemo(() => {
+    // For fe/be SDK types (controlled by page-level selector), construct the full language
+    if (resolvedSdk === "fe" || resolvedSdk === "be") {
+      const fullLang = `${resolvedSdk}_${lang}`;
+      // Verify this language exists in available languages
+      if (languages.includes(fullLang)) {
+        return fullLang;
+      }
+      // Fall back to first language with this prefix
+      const prefixMatch = languages.find((l) =>
+        l.startsWith(`${resolvedSdk}_`),
+      );
+      if (prefixMatch) return prefixMatch;
+    }
+
+    // For realtime/rest SDK types
     if (resolvedSdk && sdkTypes.has(resolvedSdk)) {
       return `${resolvedSdk}_${lang}`;
     }
@@ -399,6 +431,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
 
   const showLanguageSelector = !fixed && filteredLanguages.length > 0;
   const showFullSelector = filteredLanguages.length > 1;
+  // Show a read-only language label when fixed (controlled by external selector)
+  const showFixedLanguageLabel = fixed && activeLanguage;
 
   const renderContent = useMemo(() => {
     if (!activeLanguage) return null;
@@ -497,6 +531,26 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
                   </SegmentedControl>
                 ),
             )}
+          </div>
+        </div>
+      )}
+
+      {showFixedLanguageLabel && (
+        <div
+          className={cn(
+            "border-b border-neutral-300 dark:border-neutral-1000 h-[2.125rem] inline-flex items-center px-3 w-full",
+            { "rounded-t-lg": !headerRow },
+          )}
+        >
+          <div className="inline-flex items-center">
+            <Icon
+              name={getLanguageInfo(activeLanguage).icon}
+              size="16px"
+              additionalCSS="mr-2"
+            />
+            <span className="ui-text-label4 font-semibold text-neutral-800 dark:text-neutral-500 select-none">
+              {getLanguageInfo(activeLanguage).label}
+            </span>
           </div>
         </div>
       )}

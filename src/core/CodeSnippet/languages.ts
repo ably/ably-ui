@@ -133,8 +133,11 @@ const languages: LanguageMap = {
 };
 
 export const stripSdkType = (lang: string) => {
-  if (lang.startsWith("realtime_") || lang.startsWith("rest_")) {
-    return lang.split("_").slice(1).join("_");
+  const prefixes = ["realtime_", "rest_", "fe_", "be_"];
+  for (const prefix of prefixes) {
+    if (lang.startsWith(prefix)) {
+      return lang.slice(prefix.length);
+    }
   }
   return lang;
 };
