@@ -113,7 +113,7 @@ export const companyMenu: FlyoutPanelList[] = [
   {
     label: "Our story",
     icon: "icon-gui-ably-badge",
-    link: "/case-studies",
+    link: "/about",
   },
   {
     label: "Careers",
