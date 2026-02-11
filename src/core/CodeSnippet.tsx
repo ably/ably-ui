@@ -560,8 +560,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
         </div>
       )}
 
-      {showFixedLanguageLabel &&
-        renderLanguageLabel(activeLanguage)}
+      {showFixedLanguageLabel && renderLanguageLabel(activeLanguage)}
 
       {showLanguageSelector &&
         (showFullSelector ? (
@@ -571,9 +570,8 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({
             onLanguageChange={handleLanguageChange}
           />
         ) : (
-          renderLanguageLabel(
-            filteredLanguages[0],
-            () => handleLanguageChange(filteredLanguages[0]),
+          renderLanguageLabel(filteredLanguages[0], () =>
+            handleLanguageChange(filteredLanguages[0]),
           )
         ))}
       <div

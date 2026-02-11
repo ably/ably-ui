@@ -108,6 +108,7 @@ npm run start`,
  * - API key selector shows when apiKeys are provided
  * - SDK type selector (Realtime/REST) appears when language attributes have
  *   "realtime_" or "rest_" prefixes
+ * - Client/Agent SDK types for page-level controlled code snippets (e.g. AI Transport)
  * - Special shell command mode for terminal commands
  * - Copy to clipboard functionality
  */
