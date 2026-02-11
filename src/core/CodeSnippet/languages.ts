@@ -117,18 +117,13 @@ const languages: LanguageMap = {
   },
   android: {
     label: "Android",
-    icon: "icon-tech-android-head",
-    syntaxHighlighterKey: "java",
+    icon: "icon-tech-android-full",
+    syntaxHighlighterKey: "kotlin",
   },
   flutter: {
     label: "Flutter",
     icon: "icon-tech-flutter",
     syntaxHighlighterKey: "dart",
-  },
-  jetpack: {
-    label: "Jetpack Compose",
-    icon: "icon-tech-jetpack",
-    syntaxHighlighterKey: "kotlin",
   },
 };
 
