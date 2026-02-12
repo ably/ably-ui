@@ -20,6 +20,8 @@ export default defineConfig({
           include: [
             "src/core/insights/index.test.ts",
             "src/core/hooks/use-themed-scrollpoints.test.ts",
+            "src/core/CodeSnippet/languages.test.ts",
+            "src/core/CodeSnippet/CodeSnippet.test.tsx",
           ],
           environment: "jsdom",
         },

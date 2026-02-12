@@ -8,6 +8,9 @@ export interface LanguageInfo {
 
 export type LanguageMap = Record<string, LanguageInfo>;
 
+export const SDK_PREFIXES = ["realtime", "rest", "client", "agent"] as const;
+export type SDKType = (typeof SDK_PREFIXES)[number];
+
 const languages: LanguageMap = {
   javascript: {
     label: "JavaScript",
@@ -133,8 +136,11 @@ const languages: LanguageMap = {
 };
 
 export const stripSdkType = (lang: string) => {
-  if (lang.startsWith("realtime_") || lang.startsWith("rest_")) {
-    return lang.split("_").slice(1).join("_");
+  for (const prefix of SDK_PREFIXES) {
+    const withUnderscore = `${prefix}_`;
+    if (lang.startsWith(withUnderscore)) {
+      return lang.slice(withUnderscore.length);
+    }
   }
   return lang;
 };
