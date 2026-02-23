@@ -1,3 +1,7 @@
+> **This repository has been soft-archived.** The source code has moved to a
+> private monorepo. This repo exists solely to host the GitHub Pages deployment.
+> No new contributions are accepted.
+
 # ably-ui
 
 `ably-ui` is the of home of the Ably design system library ([https://ably-ui.herokuapp.com/](https://ably-ui.herokuapp.com/)). It provides a showcase, development/test environment and a publishing pipeline for different distributables.

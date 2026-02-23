@@ -12,7 +12,7 @@ updates:
     cooldown:
       default-days: 7
       include: ['*']
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 0
     versioning-strategy: increase
     ignore:
       - dependency-name: "*"
