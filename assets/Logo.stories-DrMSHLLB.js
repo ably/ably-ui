@@ -1,0 +1,9 @@
+import{j as e}from"./jsx-runtime-BX7wYO_o.js";import{L as d}from"./Logo-DPBsjrF5.js";import"./iframe-BhqeG6ro.js";import"./preload-helper-PPVm8Dsz.js";import"./Badge-D654oxWy.js";import"./Icon-BiANqV6K.js";import"./cn-Dw6GJglA.js";const L={title:"Components/Logo",component:d},a=(c,n,m)=>e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-2 gap-4",children:[e.jsx("div",{className:"text-center ui-text-code2 order-1",children:"light"}),e.jsx("div",{className:"text-center ui-text-code2 order-3 sm:order-2",children:"dark"}),e.jsx(d,{variant:c,orientation:n,theme:"light",badge:m,additionalLinkAttrs:{className:"text-center p-2 bg-neutral-000 rounded order-2 sm:order-3"}}),e.jsx(d,{variant:c,orientation:n,theme:"dark",badge:m,additionalLinkAttrs:{className:"ui-theme-dark text-center p-2 bg-neutral-1300 rounded order-4"}})]}),r={render:()=>a("default","default")},t={render:()=>a("mono","default")},o={render:()=>a("default","stacked")},s={render:()=>a("default","default","docs")};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "default")
+}`,...r.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("mono", "default")
+}`,...t.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "stacked")
+}`,...o.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "default", "docs")
+}`,...s.parameters?.docs?.source}}};const S=["Default","Mono","Stacked","WithBadge"];export{r as Default,t as Mono,o as Stacked,s as WithBadge,S as __namedExportsOrder,L as default};
