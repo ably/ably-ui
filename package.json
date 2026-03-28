@@ -100,7 +100,7 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "array-flat-polyfill": "^1.0.1",
     "clsx": "^2.1.1",
-    "dompurify": "^3.2.4",
+    "dompurify": "^3.3.2",
     "embla-carousel": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
