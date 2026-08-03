@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-CT_b8DTk.js";var t,n=e((()=>{t=``+new URL(`g2-best-meets-requirements-spring-2025-Dk1T9ZUi.svg`,import.meta.url).href})),r,i=e((()=>{r=``+new URL(`g2-best-support-spring-2025-7_zkSYHo.svg`,import.meta.url).href}));export{n as i,i as n,t as r,r as t};

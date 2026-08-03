@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-CT_b8DTk.js";var t,n=e((()=>{t=(...e)=>`calc(min(100dvh, 100vh) - ${e.reduce((e,t)=>e+t,0)+`px`})`}));export{n,t};
