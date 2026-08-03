@@ -1,0 +1,21 @@
+import{i as e}from"./preload-helper-CT_b8DTk.js";import{Jt as t}from"./iframe-BwCxeFni.js";import{t as n}from"./jsx-runtime-TD5IgBxr.js";var r,i,a=e((()=>{t(),r=n(),i=({ringColor:e=`text-dark-grey`,size:t=`1.5rem`,additionalCSS:n=``})=>(0,r.jsxs)(`svg`,{className:`${e} ${n}`,style:{width:t,height:t},height:`24`,viewBox:`0 0 24 24`,width:`24`,xmlns:`http://www.w3.org/2000/svg`,children:[(0,r.jsx)(`style`,{dangerouslySetInnerHTML:{__html:`
+      @keyframes chunk-animation {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .chunk {
+        transform: rotate(0deg);
+        transform-origin: center;
+        animation: chunk-animation 0.6s cubic-bezier(.44,.15,.66,.98) forwards infinite;
+      }
+    `}}),(0,r.jsx)(`path`,{fill:`currentColor`,d:`m12 1.99976c-1.9778 0-3.91121.58649-5.5557 1.6853s-2.92621 2.6606-3.68309 4.48786c-.75688 1.82728-.95491 3.83788-.56906 5.77778.38585 1.9398 1.33826 3.7216 2.73679 5.1201 1.39852 1.3985 3.18035 2.351 5.12016 2.7368 1.9398.3859 3.9505.1878 5.7777-.569 1.8273-.7569 3.3891-2.0387 4.4879-3.6831 1.0988-1.6445 1.6853-3.5779 1.6853-5.5557 0-1.3133-.2587-2.61362-.7612-3.82688-.5025-1.21325-1.2391-2.31565-2.1677-3.24423-.9286-.92859-2.031-1.66518-3.2443-2.16773-1.2132-.50255-2.5136-.7612-3.8268-.7612zm0 18.00004c-1.5822 0-3.12896-.4692-4.44456-1.3483-1.31559-.879-2.34097-2.1285-2.94647-3.5903s-.76393-3.0703-.45525-4.6222c.30868-1.55181 1.07061-2.97728 2.18943-4.0961s2.54428-1.88074 4.09615-2.18943c1.5518-.30868 3.1604-.15025 4.6222.45525s2.7112 1.63088 3.5903 2.94647c.879 1.3156 1.3482 2.86231 1.3482 4.44461 0 2.1217-.8428 4.1565-2.3431 5.6568s-3.5352 2.3432-5.6569 2.3432z`,opacity:`.5`}),(0,r.jsx)(`path`,{className:`chunk`,d:`m20 11.9998h2c0-1.3133-.2587-2.61362-.7612-3.82688-.5026-1.21325-1.2391-2.31565-2.1677-3.24423-.9286-.92859-2.031-1.66518-3.2443-2.16773-1.2132-.50255-2.5136-.7612-3.8268-.7612v2c2.1217 0 4.1566.84285 5.6569 2.34314 1.5002 1.50029 2.3431 3.53512 2.3431 5.6569z`,fill:`#ff5416`})]});try{i.displayName=`Loader`,i.__docgenInfo={description:``,displayName:`Loader`,filePath:`/home/runner/work/website/website/packages/ui/src/core/Loader.tsx`,methods:[],props:{size:{defaultValue:{value:`1.5rem`},declarations:[{fileName:`ui/src/core/Loader.tsx`,name:`TypeLiteral`}],description:``,name:`size`,required:!1,tags:{},type:{name:`string`}},ringColor:{defaultValue:{value:`text-dark-grey`},declarations:[{fileName:`ui/src/core/Loader.tsx`,name:`TypeLiteral`}],description:``,name:`ringColor`,required:!1,tags:{},type:{name:`string`}},additionalCSS:{defaultValue:{value:``},declarations:[{fileName:`ui/src/core/Loader.tsx`,name:`TypeLiteral`}],description:``,name:`additionalCSS`,required:!1,tags:{},type:{name:`string`}}},tags:{}}}catch{}})),o,s,c,l,u;e((()=>{a(),o={title:`Components/Loader`,component:i,tags:[`autodocs`]},s={},c={args:{ringColor:`text-light-grey`}},l={args:{size:`0.75em`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  args: {
+    ringColor: "text-light-grey"
+  }
+}`,...c.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  args: {
+    size: "0.75em"
+  }
+}`,...l.parameters?.docs?.source}}},u=[`Default`,`ChangedRingColor`,`HalfSize`]}))();export{c as ChangedRingColor,s as Default,l as HalfSize,u as __namedExportsOrder,o as default};
