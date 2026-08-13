@@ -1,0 +1,9 @@
+import{i as e}from"./preload-helper-CT_b8DTk.js";import{Jt as t}from"./iframe-B9InDt9-.js";import{t as n}from"./jsx-runtime-CauIFuYy.js";import{n as r,t as i}from"./Logo-CbYzJASY.js";var a,o,s,c,l,u,d,f;e((()=>{t(),r(),a=n(),o={title:`Components/Logo`,component:i},s=(e,t,n)=>(0,a.jsxs)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 gap-4`,children:[(0,a.jsx)(`div`,{className:`text-center ui-text-code2 order-1`,children:`light`}),(0,a.jsx)(`div`,{className:`text-center ui-text-code2 order-3 sm:order-2`,children:`dark`}),(0,a.jsx)(i,{variant:e,orientation:t,theme:`light`,badge:n,additionalLinkAttrs:{className:`text-center p-2 bg-neutral-000 rounded order-2 sm:order-3`}}),(0,a.jsx)(i,{variant:e,orientation:t,theme:`dark`,badge:n,additionalLinkAttrs:{className:`ui-theme-dark text-center p-2 bg-neutral-1300 rounded order-4`}})]}),c={render:()=>s(`default`,`default`)},l={render:()=>s(`mono`,`default`)},u={render:()=>s(`default`,`stacked`)},d={render:()=>s(`default`,`default`,`docs`)},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "default")
+}`,...c.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("mono", "default")
+}`,...l.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "stacked")
+}`,...u.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+  render: () => LogoSet("default", "default", "docs")
+}`,...d.parameters?.docs?.source}}},f=[`Default`,`Mono`,`Stacked`,`WithBadge`]}))();export{c as Default,l as Mono,u as Stacked,d as WithBadge,f as __namedExportsOrder,o as default};
