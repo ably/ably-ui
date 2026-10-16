@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t;function n(){return(n=e((()=>{t=``+new URL(`g2-best-meets-requirements-spring-2025-Dk1T9ZUi.svg`,import.meta.url).href})))()}var r;function i(){return(i=e((()=>{r=``+new URL(`g2-best-support-spring-2025-7_zkSYHo.svg`,import.meta.url).href})))()}export{n as i,i as n,t as r,r as t};

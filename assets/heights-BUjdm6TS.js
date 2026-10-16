@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t;function n(){return(n=e((()=>{t=(...e)=>`calc(min(100dvh, 100vh) - ${e.reduce((e,t)=>e+t,0)+`px`})`})))()}export{n,t};
